@@ -1,0 +1,15 @@
+name: "Build RFC index"
+description: "Builds an index from the IETF RFC mini-index. Outputs an index JSON file and optionally downloads the RFC documents in HTML format."
+inputs:
+  download-path:
+    description: "Path to download RFC documents to. Optional, will not download if not set."
+    required: false
+    default: ""
+outputs:
+  index-file:
+    description: "Path to generated index JSON"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello world"
+      shell: bash
