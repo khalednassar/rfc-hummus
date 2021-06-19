@@ -10,6 +10,6 @@ outputs:
     description: "Path to generated index JSON"
 runs:
   using: "docker"
-  image: "/index-builder.dockerfile"
+  image: "index-builder.dockerfile"
   args:
     - ${{ inputs.download-path }}
