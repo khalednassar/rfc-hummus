@@ -9,7 +9,7 @@ outputs:
   index-file:
     description: "Path to generated index JSON"
 runs:
-  using: "composite"
-  steps:
-    - run: echo "Hello world"
-      shell: bash
+  using: "docker"
+  image: "index-builder.dockerfile"
+  args:
+    - ${{ inputs.download-path }}

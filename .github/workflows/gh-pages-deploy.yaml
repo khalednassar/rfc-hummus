@@ -15,10 +15,10 @@ jobs:
 
       - uses: ./.github/actions/build-rfc-index
         with:
-          download-path: ./src/site/rfcs/
+          download-path: ./site/rfcs/
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src/site
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./src/site
