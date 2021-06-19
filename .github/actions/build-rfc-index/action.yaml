@@ -10,6 +10,7 @@ outputs:
     description: "Path to generated index JSON"
 runs:
   using: "docker"
-  image: "index-builder.dockerfile"
+  image: "../../../index-builder.dockerfile"
+  context: "../../../" # Is there really no better way?..
   args:
     - ${{ inputs.download-path }}
