@@ -11,6 +11,5 @@ outputs:
 runs:
   using: "docker"
   image: "../../../index-builder.dockerfile"
-  context: "../../../" # Is there really no better way?..
   args:
     - ${{ inputs.download-path }}
