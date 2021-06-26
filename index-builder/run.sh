@@ -1,6 +1,12 @@
 #!/bin/sh
 
-JSON_OUTPUT_FILENAME="gen-index.json"
-/built/index-builder "$JSON_OUTPUT_FILENAME" $@
+if [ $# -lt 2 ]; then
+    echo "Missing arguments" 1>&2
+    exit 1
+fi
 
-echo "::set-output name=index-file::$JSON_OUTPUT_FILENAME"
+JSON_OUTPUT_FILENAME="$1"
+DOWNLOAD_LOC="$2"
+/built/index-builder "$JSON_OUTPUT_FILENAME" "$DOWNLOAD_LOC"
+
+echo "::set-output name=index-file-path::$JSON_OUTPUT_FILENAME"

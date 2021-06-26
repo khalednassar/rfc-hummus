@@ -3,13 +3,19 @@ description: "Builds an index from the IETF RFC mini-index. Outputs an index JSO
 inputs:
   download-path:
     description: "Path to download RFC documents to. Optional, will not download if not set."
-    required: false
-    default: ""
-outputs:
-  index-file:
+    required: true
+    default: "./site/doc"
+  index-file-path:
     description: "Path to generated index JSON"
+    required: true
+    default: "./site/index.json"
+outputs:
+  index-file-path:
+    description: "Path to the generated index JSON"
+
 runs:
   using: "docker"
   image: "../../../index-builder.dockerfile"
   args:
     - ${{ inputs.download-path }}
+    - ${{ inputs.index-file-path }}
