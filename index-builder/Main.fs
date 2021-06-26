@@ -136,7 +136,6 @@ let main argv =
         let downloadTasks =
             parseIndex ()
             |> Async.RunSynchronously
-            |> List.take 100
             |> List.map (downloadFile downloadPath)
             |> (fun ts -> Async.Parallel(ts, 5))
 
