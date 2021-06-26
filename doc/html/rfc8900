@@ -1,0 +1,1527 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8900
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-intarea-frag-fragile/">
+  <meta name="description" content="IP Fragmentation Considered Fragile (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgmagenta"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8900.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8900.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8900.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8900.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8900/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8900/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/intarea/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-intarea-frag-fragile@ietf.org?subject=draft-ietf-intarea-frag-fragile" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-intarea-frag-fragile-17.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-intarea-frag-fragile-17.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-intarea-frag-fragile-17.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-intarea-frag-fragile-17">draft-ietf-intarea-frag-fragile-17</a>           Best Current Practice</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         R. Bonica
+Request for Comments: 8900                              Juniper Networks
+BCP: 230                                                        F. Baker
+Category: Best Current Practice                             Unaffiliated
+ISSN: 2070-1721                                                G. Huston
+                                                                   APNIC
+                                                               R. Hinden
+                                                    Check Point Software
+                                                                O. Troan
+                                                                   Cisco
+                                                                 F. Gont
+                                                            SI6 Networks
+                                                          September 2020
+
+
+                  <span class="h1">IP Fragmentation Considered Fragile</span>
+
+Abstract
+
+   This document describes IP fragmentation and explains how it
+   introduces fragility to Internet communication.
+
+   This document also proposes alternatives to IP fragmentation and
+   provides recommendations for developers and network operators.
+
+Status of This Memo
+
+   This memo documents an Internet Best Current Practice.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   BCPs is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8900">https://www.rfc-editor.org/info/rfc8900</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Requirements Language
+   2.  IP Fragmentation
+     2.1.  Links, Paths, MTU, and PMTU
+     2.2.  Fragmentation Procedures
+     2.3.  Upper-Layer Reliance on IP Fragmentation
+   3.  Increased Fragility
+     3.1.  Virtual Reassembly
+     3.2.  Policy-Based Routing
+     3.3.  Network Address Translation (NAT)
+     3.4.  Stateless Firewalls
+     3.5.  Equal-Cost Multipath, Link Aggregate Groups, and Stateless
+           Load Balancers
+     3.6.  IPv4 Reassembly Errors at High Data Rates
+     3.7.  Security Vulnerabilities
+     3.8.  PMTU Black-Holing Due to ICMP Loss
+       3.8.1.  Transient Loss
+       3.8.2.  Incorrect Implementation of Security Policy
+       3.8.3.  Persistent Loss Caused by Anycast
+       3.8.4.  Persistent Loss Caused by Unidirectional Routing
+     3.9.  Black-Holing Due to Filtering or Loss
+   4.  Alternatives to IP Fragmentation
+     4.1.  Transport-Layer Solutions
+     4.2.  Application-Layer Solutions
+   5.  Applications That Rely on IPv6 Fragmentation
+     5.1.  Domain Name Service (DNS)
+     5.2.  Open Shortest Path First (OSPF)
+     5.3.  Packet-in-Packet Encapsulations
+     5.4.  UDP Applications Enhancing Performance
+   6.  Recommendations
+     6.1.  For Application and Protocol Developers
+     6.2.  For System Developers
+     6.3.  For Middlebox Developers
+     6.4.  For ECMP, LAG, and Load-Balancer Developers And Operators
+     6.5.  For Network Operators
+   7.  IANA Considerations
+   8.  Security Considerations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Operational experience [<a href="#ref-Kent" title="&quot;Fragmentation Considered Harmful&quot;">Kent</a>] [<a href="#ref-Huston" title="&quot;IPv6, Large UDP Packets and the DNS&quot;">Huston</a>] [<a href="/doc/html/rfc7872" title="&quot;Observations on the Dropping of Packets with IPv6 Extension Headers in the Real World&quot;">RFC7872</a>] reveals that IP
+   fragmentation introduces fragility to Internet communication.  This
+   document describes IP fragmentation and explains the fragility it
+   introduces.  It also proposes alternatives to IP fragmentation and
+   provides recommendations for developers and network operators.
+
+   While this document identifies issues associated with IP
+   fragmentation, it does not recommend deprecation.  Legacy protocols
+   that depend upon IP fragmentation would do well to be updated to
+   remove that dependency.  However, some applications and environments
+   (see <a href="#section-5">Section 5</a>) require IP fragmentation.  In these cases, the
+   protocol will continue to rely on IP fragmentation, but the designer
+   should be aware that fragmented packets may result in black holes.  A
+   design should include appropriate safeguards.
+
+   Rather than deprecating IP fragmentation, this document recommends
+   that upper-layer protocols address the problem of fragmentation at
+   their layer, reducing their reliance on IP fragmentation to the
+   greatest degree possible.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="/doc/html/bcp14">BCP</a>
+   <a href="/doc/html/bcp14">14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  IP Fragmentation</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Links, Paths, MTU, and PMTU</span>
+
+   An Internet path connects a source node to a destination node.  A
+   path may contain links and routers.  If a path contains more than one
+   link, the links are connected in series, and a router connects each
+   link to the next.
+
+   Internet paths are dynamic.  Assume that the path from one node to
+   another contains a set of links and routers.  If a link or a router
+   fails, the path can also change so that it includes a different set
+   of links and routers.
+
+   Each link is constrained by the number of octets that it can convey
+   in a single IP packet.  This constraint is called the link Maximum
+   Transmission Unit (MTU).  IPv4 [<a href="/doc/html/rfc0791" title="&quot;Internet Protocol&quot;">RFC0791</a>] requires every link to
+   support an MTU of 68 octets or greater (see NOTE 1).  IPv6 [<a href="/doc/html/rfc8200" title="&quot;Internet Protocol, Version 6 (IPv6) Specification&quot;">RFC8200</a>]
+   similarly requires every link to support an MTU of 1280 octets or
+   greater.  These are called the IPv4 and IPv6 minimum link MTUs.
+
+   Some links, and some ways of using links, result in additional
+   variable overhead.  For the simple case of tunnels, this document
+   defers to other documents.  For other cases, such as MPLS, this
+   document considers the link MTU to include appropriate allowance for
+   any such overhead.
+
+   Likewise, each Internet path is constrained by the number of octets
+   that it can convey in a single IP packet.  This constraint is called
+   the Path MTU (PMTU).  For any given path, the PMTU is equal to the
+   smallest of its link MTUs.  Because Internet paths are dynamic, PMTU
+   is also dynamic.
+
+   For reasons described below, source nodes estimate the PMTU between
+   themselves and destination nodes.  A source node can produce
+   extremely conservative PMTU estimates in which:
+
+   *  The estimate for each IPv4 path is equal to the IPv4 minimum link
+      MTU.
+
+   *  The estimate for each IPv6 path is equal to the IPv6 minimum link
+      MTU.
+
+   While these conservative estimates are guaranteed to be less than or
+   equal to the actual PMTU, they are likely to be much less than the
+   actual PMTU.  This may adversely affect upper-layer protocol
+   performance.
+
+   By executing Path MTU Discovery (PMTUD) procedures [<a href="/doc/html/rfc1191" title="&quot;Path MTU discovery&quot;">RFC1191</a>]
+   [<a href="/doc/html/rfc8201" title="&quot;Path MTU Discovery for IP version 6&quot;">RFC8201</a>], a source node can maintain a less conservative estimate of
+   the PMTU between itself and a destination node.  In PMTUD, the source
+   node produces an initial PMTU estimate.  This initial estimate is
+   equal to the MTU of the first link along the path to the destination
+   node.  It can be greater than the actual PMTU.
+
+   Having produced an initial PMTU estimate, the source node sends non-
+   fragmentable IP packets to the destination node (see NOTE 2).  If one
+   of these packets is larger than the actual PMTU, a downstream router
+   will not be able to forward the packet through the next link along
+   the path.  Therefore, the downstream router drops the packet and
+   sends an Internet Control Message Protocol (ICMP) [<a href="/doc/html/rfc0792" title="&quot;Internet Control Message Protocol&quot;">RFC0792</a>] [<a href="/doc/html/rfc4443" title="&quot;Internet Control Message Protocol (ICMPv6) for the Internet Protocol Version 6 (IPv6) Specification&quot;">RFC4443</a>]
+   Packet Too Big (PTB) message to the source node (see NOTE 3).  The
+   ICMP PTB message indicates the MTU of the link through which the
+   packet could not be forwarded.  The source node uses this information
+   to refine its PMTU estimate.
+
+   PMTUD produces a running estimate of the PMTU between a source node
+   and a destination node.  Because PMTU is dynamic, the PMTU estimate
+   can be larger than the actual PMTU.  In order to detect PMTU
+   increases, PMTUD occasionally resets the PMTU estimate to its initial
+   value and repeats the procedure described above.
+
+   Ideally, PMTUD operates as described above.  However, in some
+   scenarios, PMTUD fails.  For example:
+
+   *  PMTUD relies on the network&#x27;s ability to deliver ICMP PTB messages
+      to the source node.  If the network cannot deliver ICMP PTB
+      messages to the source node, PMTUD fails.
+
+   *  PMTUD is susceptible to attack because ICMP messages are easily
+      forged [<a href="/doc/html/rfc5927" title="&quot;ICMP Attacks against TCP&quot;">RFC5927</a>] and not authenticated by the receiver.  Such
+      attacks can cause PMTUD to produce unnecessarily conservative PMTU
+      estimates.
+
+   NOTE 1:  In IPv4, every host must be able to reassemble a packet
+      whose length is less than or equal to 576 octets.  However, the
+      IPv4 minimum link MTU is not 576.  <a href="/doc/html/rfc791#section-3.2">Section&nbsp;3.2 of RFC 791</a>
+      [<a href="/doc/html/rfc0791" title="&quot;Internet Protocol&quot;">RFC0791</a>] explicitly states that the IPv4 minimum link MTU is 68
+      octets.
+
+   NOTE 2:  A non-fragmentable packet can be fragmented at its source.
+      However, it cannot be fragmented by a downstream node.  An IPv4
+      packet whose Don&#x27;t Fragment (DF) bit is set to 0 is fragmentable.
+      An IPv4 packet whose DF bit is set to 1 is non-fragmentable.  All
+      IPv6 packets are also non-fragmentable.
+
+   NOTE 3:  The ICMP PTB message has two instantiations.  In ICMPv4
+      [<a href="/doc/html/rfc0792" title="&quot;Internet Control Message Protocol&quot;">RFC0792</a>], the ICMP PTB message is a Destination Unreachable
+      message with Code equal to 4 (fragmentation needed and DF set).
+      This message was augmented by [<a href="/doc/html/rfc1191" title="&quot;Path MTU discovery&quot;">RFC1191</a>] to indicate the MTU of the
+      link through which the packet could not be forwarded.  In ICMPv6
+      [<a href="/doc/html/rfc4443" title="&quot;Internet Control Message Protocol (ICMPv6) for the Internet Protocol Version 6 (IPv6) Specification&quot;">RFC4443</a>], the ICMP PTB message is a Packet Too Big Message with
+      Code equal to 0.  This message also indicates the MTU of the link
+      through which the packet could not be forwarded.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Fragmentation Procedures</span>
+
+   When an upper-layer protocol submits data to the underlying IP
+   module, and the resulting IP packet&#x27;s length is greater than the
+   PMTU, the packet is divided into fragments.  Each fragment includes
+   an IP header and a portion of the original packet.
+
+   [<a id="ref-RFC0791">RFC0791</a>] describes IPv4 fragmentation procedures.  An IPv4 packet
+   whose DF bit is set to 1 may be fragmented by the source node, but
+   may not be fragmented by a downstream router.  An IPv4 packet whose
+   DF bit is set to 0 may be fragmented by the source node or by a
+   downstream router.  When an IPv4 packet is fragmented, all IP options
+   (which are within the IPv4 header) appear in the first fragment, but
+   only options whose &quot;copy&quot; bit is set to 1 appear in subsequent
+   fragments.
+
+   [<a href="/doc/html/rfc8200" title="&quot;Internet Protocol, Version 6 (IPv6) Specification&quot;">RFC8200</a>], notably in <a href="#section-4.5">Section 4.5</a>, describes IPv6 fragmentation
+   procedures.  An IPv6 packet may be fragmented only at the source
+   node.  When an IPv6 packet is fragmented, all extension headers
+   appear in the first fragment, but only per-fragment headers appear in
+   subsequent fragments.  Per-fragment headers include the following:
+
+   *  The IPv6 header.
+
+   *  The Hop-by-Hop Options header (if present).
+
+   *  The Destination Options header (if present and if it precedes a
+      Routing header).
+
+   *  The Routing header (if present).
+
+   *  The Fragment header.
+
+   In IPv4, the upper-layer header usually appears in the first
+   fragment, due to the sizes of the headers involved.  In IPv6, the
+   upper-layer header must appear in the first fragment.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Upper-Layer Reliance on IP Fragmentation</span>
+
+   Upper-layer protocols can operate in the following modes:
+
+   *  Do not rely on IP fragmentation.
+
+   *  Rely on IP fragmentation by the source node only.
+
+   *  Rely on IP fragmentation by any node.
+
+   Upper-layer protocols running over IPv4 can operate in all of the
+   above-mentioned modes.  Upper-layer protocols running over IPv6 can
+   operate in the first and second modes only.
+
+   Upper-layer protocols that operate in the first two modes (above)
+   require access to the PMTU estimate.  In order to fulfill this
+   requirement, they can:
+
+   *  Estimate the PMTU to be equal to the IPv4 or IPv6 minimum link
+      MTU.
+
+   *  Access the estimate that PMTUD produced.
+
+   *  Execute PMTUD procedures themselves.
+
+   *  Execute Packetization Layer PMTUD (PLPMTUD) procedures [<a href="/doc/html/rfc4821" title="&quot;Packetization Layer Path MTU Discovery&quot;">RFC4821</a>]
+      [<a href="/doc/html/rfc8899" title="&quot;Packetization Layer Path MTU Discovery for Datagram Transports&quot;">RFC8899</a>].
+
+   According to PLPMTUD procedures, the upper-layer protocol maintains a
+   running PMTU estimate.  It does so by sending probe packets of
+   various sizes to its upper-layer peer and receiving acknowledgements.
+   This strategy differs from PMTUD in that it relies on acknowledgement
+   of received messages, as opposed to ICMP PTB messages concerning
+   dropped messages.  Therefore, PLPMTUD does not rely on the network&#x27;s
+   ability to deliver ICMP PTB messages to the source.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Increased Fragility</span>
+
+   This section explains how IP fragmentation introduces fragility to
+   Internet communication.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Virtual Reassembly</span>
+
+   Virtual reassembly is a procedure in which a device conceptually
+   reassembles a packet, forwards its fragments, and discards the
+   reassembled copy.  In Address plus Port (A+P) [<a href="/doc/html/rfc6346" title="&quot;The Address plus Port (A+P) Approach to the IPv4 Address Shortage&quot;">RFC6346</a>] and Carrier
+   Grade NAT (CGN) [<a href="/doc/html/rfc6888" title="&quot;Common Requirements for Carrier-Grade NATs (CGNs)&quot;">RFC6888</a>], virtual reassembly is required in order to
+   correctly translate fragment addresses.  It could be useful to
+   address the problems in Sections <a href="#section-3.2">3.2</a>, <a href="#section-3.3">3.3</a>, <a href="#section-3.4">3.4</a>, and <a href="#section-3.5">3.5</a>.
+
+   Virtual reassembly is computationally expensive and holds state for
+   indeterminate periods of time.  Therefore, it is prone to errors and
+   attacks (<a href="#section-3.7">Section 3.7</a>).
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Policy-Based Routing</span>
+
+   IP fragmentation causes problems for routers that implement policy-
+   based routing.
+
+   When a router receives a packet, it identifies the next hop on route
+   to the packet&#x27;s destination and forwards the packet to that next hop.
+   In order to identify the next hop, the router interrogates a local
+   data structure called the Forwarding Information Base (FIB).
+
+   Normally, the FIB contains destination-based entries that map a
+   destination prefix to a next hop.  Policy-based routing allows
+   destination-based and policy-based entries to coexist in the same
+   FIB.  A policy-based FIB entry maps multiple fields, drawn from
+   either the IP or transport-layer header, to a next hop.
+
+
+   +=====+===================+=================+=======+===============+
+   |Entry| Type              | Dest. Prefix    | Next  | Next Hop      |
+   |     |                   |                 | Hdr / |               |
+   |     |                   |                 | Dest. |               |
+   |     |                   |                 | Port  |               |
+   +=====+===================+=================+=======+===============+
+   |  1  | Destination-based | 2001:db8::1/128 | Any / | 2001:db8:2::2 |
+   |     |                   |                 | Any   |               |
+   +-----+-------------------+-----------------+-------+---------------+
+   |  2  | Policy-based      | 2001:db8::1/128 | TCP / | 2001:db8:3::3 |
+   |     |                   |                 | 80    |               |
+   +-----+-------------------+-----------------+-------+---------------+
+
+                     Table 1: Policy-Based Routing FIB
+
+   Assume that a router maintains the FIB in Table 1.  The first FIB
+   entry is destination-based.  It maps a destination prefix
+   2001:db8::1/128 to a next hop 2001:db8:2::2.  The second FIB entry is
+   policy-based.  It maps the same destination prefix 2001:db8::1/128
+   and a destination port (TCP / 80) to a different next hop
+   (2001:db8:3::3).  The second entry is more specific than the first.
+
+   When the router receives the first fragment of a packet that is
+   destined for TCP port 80 on 2001:db8::1, it interrogates the FIB.
+   Both FIB entries satisfy the query.  The router selects the second
+   FIB entry because it is more specific and forwards the packet to
+   2001:db8:3::3.
+
+   When the router receives the second fragment of the packet, it
+   interrogates the FIB again.  This time, only the first FIB entry
+   satisfies the query, because the second fragment contains no
+   indication that the packet is destined for TCP port 80.  Therefore,
+   the router selects the first FIB entry and forwards the packet to
+   2001:db8:2::2.
+
+   Policy-based routing is also known as filter-based forwarding.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Network Address Translation (NAT)</span>
+
+   IP fragmentation causes problems for Network Address Translation
+   (NAT) devices.  When a NAT device detects a new, outbound flow, it
+   maps that flow&#x27;s source port and IP address to another source port
+   and IP address.  Having created that mapping, the NAT device
+   translates:
+
+   *  The source IP address and source port on each outbound packet.
+
+   *  The destination IP address and destination port on each inbound
+      packet.
+
+
+   A+P [<a href="/doc/html/rfc6346" title="&quot;The Address plus Port (A+P) Approach to the IPv4 Address Shortage&quot;">RFC6346</a>] and Carrier Grade NAT (CGN) [<a href="/doc/html/rfc6888" title="&quot;Common Requirements for Carrier-Grade NATs (CGNs)&quot;">RFC6888</a>] are two common
+   NAT strategies.  In both approaches, the NAT device must virtually
+   reassemble fragmented packets in order to translate and forward each
+   fragment.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Stateless Firewalls</span>
+
+   As discussed in more detail in <a href="#section-3.7">Section 3.7</a>, IP fragmentation causes
+   problems for stateless firewalls whose rules include TCP and UDP
+   ports.  Because port information is only available in the first
+   fragment and not available in the subsequent fragments, the firewall
+   is limited to the following options:
+
+   *  Accept all subsequent fragments, possibly admitting certain
+      classes of attack.
+
+   *  Block all subsequent fragments, possibly blocking legitimate
+      traffic.
+
+   Neither option is attractive.
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a>.  Equal-Cost Multipath, Link Aggregate Groups, and Stateless Load</span>
+<span class="h3">      Balancers</span>
+
+   IP fragmentation causes problems for Equal-Cost Multipath (ECMP),
+   Link Aggregate Groups (LAG), and other stateless load-distribution
+   technologies.  In order to assign a packet or packet fragment to a
+   link, an intermediate node executes a hash (i.e., load-distributing)
+   algorithm.  The following paragraphs describe a commonly deployed
+   hash algorithm.
+
+   If the packet or packet fragment contains a transport-layer header,
+   the algorithm accepts the following 5-tuple as input:
+
+   *  IP Source Address.
+
+   *  IP Destination Address.
+
+   *  IPv4 Protocol or IPv6 Next Header.
+
+   *  transport-layer source port.
+
+   *  transport-layer destination port.
+
+   If the packet or packet fragment does not contain a transport-layer
+   header, the algorithm accepts only the following 3-tuple as input:
+
+   *  IP Source Address.
+
+   *  IP Destination Address.
+
+   *  IPv4 Protocol or IPv6 Next Header.
+
+   Therefore, non-fragmented packets belonging to a flow can be assigned
+   to one link while fragmented packets belonging to the same flow can
+   be divided between that link and another.  This can cause suboptimal
+   load distribution.
+
+   [<a id="ref-RFC6438">RFC6438</a>] offers a partial solution to this problem for IPv6 devices
+   only.  According to [<a href="/doc/html/rfc6438" title="&quot;Using the IPv6 Flow Label for Equal Cost Multipath Routing and Link Aggregation in Tunnels&quot;">RFC6438</a>]:
+
+   |  At intermediate routers that perform load distribution, the hash
+   |  algorithm used to determine the outgoing component-link in an ECMP
+   |  and/or LAG toward the next hop MUST minimally include the 3-tuple
+   |  {dest addr, source addr, flow label} and MAY also include the
+   |  remaining components of the 5-tuple.
+
+   If the algorithm includes only the 3-tuple {dest addr, source addr,
+   flow label}, it will assign all fragments belonging to a packet to
+   the same link.  (See [<a href="/doc/html/rfc6437" title="&quot;IPv6 Flow Label Specification&quot;">RFC6437</a>] and [<a href="/doc/html/rfc7098" title="&quot;Using the IPv6 Flow Label for Load Balancing in Server Farms&quot;">RFC7098</a>]).
+
+   In order to avoid the problem described above, implementations SHOULD
+   implement the recommendations provided in <a href="#section-6.4">Section 6.4</a> of this
+   document.
+
+<span class="h3"><a class="selflink" id="section-3.6" href="#section-3.6">3.6</a>.  IPv4 Reassembly Errors at High Data Rates</span>
+
+   IPv4 fragmentation is not sufficiently robust for use under some
+   conditions in today&#x27;s Internet.  At high data rates, the 16-bit IP
+   identification field is not large enough to prevent duplicate IDs,
+   resulting in frequent incorrectly assembled IP fragments, and the TCP
+   and UDP checksums are insufficient to prevent the resulting corrupted
+   datagrams from being delivered to upper-layer protocols.  [<a href="/doc/html/rfc4963" title="&quot;IPv4 Reassembly Errors at High Data Rates&quot;">RFC4963</a>]
+   describes some easily reproduced experiments demonstrating the
+   problem and discusses some of the operational implications of these
+   observations.
+
+   These reassembly issues do not occur as frequently in IPv6 because
+   the IPv6 identification field is 32 bits long.
+
+<span class="h3"><a class="selflink" id="section-3.7" href="#section-3.7">3.7</a>.  Security Vulnerabilities</span>
+
+   Security researchers have documented several attacks that exploit IP
+   fragmentation.  The following are examples:
+
+   *  Overlapping fragment attacks [<a href="/doc/html/rfc1858" title="&quot;Security Considerations for IP Fragment Filtering&quot;">RFC1858</a>] [<a href="/doc/html/rfc3128" title="&quot;Protection Against a Variant of the Tiny Fragment Attack (RFC 1858)&quot;">RFC3128</a>] [<a href="/doc/html/rfc5722" title="&quot;Handling of Overlapping IPv6 Fragments&quot;">RFC5722</a>].
+
+   *  Resource exhaustion attacks.
+
+   *  Attacks based on predictable fragment identification values
+      [<a href="/doc/html/rfc7739" title="&quot;Security Implications of Predictable Fragment Identification Values&quot;">RFC7739</a>].
+
+   *  Evasion of Network Intrusion Detection Systems (NIDS)
+      [<a href="#ref-Ptacek1998">Ptacek1998</a>].
+
+   In the overlapping fragment attack, an attacker constructs a series
+   of packet fragments.  The first fragment contains an IP header, a
+   transport-layer header, and some transport-layer payload.  This
+   fragment complies with local security policy and is allowed to pass
+   through a stateless firewall.  A second fragment, having a nonzero
+   offset, overlaps with the first fragment.  The second fragment also
+   passes through the stateless firewall.  When the packet is
+   reassembled, the transport-layer header from the first fragment is
+   overwritten by data from the second fragment.  The reassembled packet
+   does not comply with local security policy.  Had it traversed the
+   firewall in one piece, the firewall would have rejected it.
+
+   A stateless firewall cannot protect against the overlapping fragment
+   attack.  However, destination nodes can protect against the
+   overlapping fragment attack by implementing the procedures described
+   in <a href="/doc/html/rfc1858">RFC 1858</a>, <a href="/doc/html/rfc3128">RFC 3128</a>, and <a href="/doc/html/rfc8200">RFC 8200</a>.  These reassembly procedures
+   detect the overlap and discard the packet.
+
+   The fragment reassembly algorithm is a stateful procedure in an
+   otherwise stateless protocol.  Therefore, it can be exploited by
+   resource exhaustion attacks.  An attacker can construct a series of
+   fragmented packets with one fragment missing from each packet so that
+   the reassembly is impossible.  Thus, this attack causes resource
+   exhaustion on the destination node, possibly denying reassembly
+   services to other flows.  This type of attack can be mitigated by
+   flushing fragment reassembly buffers when necessary, at the expense
+   of possibly dropping legitimate fragments.
+
+   Each IP fragment contains an &quot;Identification&quot; field that destination
+   nodes use to reassemble fragmented packets.  Some implementations set
+   the Identification field to a predictable value, thus making it easy
+   for an attacker to forge malicious IP fragments that would cause the
+   reassembly procedure for legitimate packets to fail.
+
+   NIDS aims at identifying malicious activity by analyzing network
+   traffic.  Ambiguity in the possible result of the fragment reassembly
+   process may allow an attacker to evade these systems.  Many of these
+   systems try to mitigate some of these evasion techniques (e.g., by
+   computing all possible outcomes of the fragment reassembly process,
+   at the expense of increased processing requirements).
+
+<span class="h3"><a class="selflink" id="section-3.8" href="#section-3.8">3.8</a>.  PMTU Black-Holing Due to ICMP Loss</span>
+
+   As mentioned in <a href="#section-2.3">Section 2.3</a>, upper-layer protocols can be configured
+   to rely on PMTUD.  Because PMTUD relies upon the network to deliver
+   ICMP PTB messages, those protocols also rely on the networks to
+   deliver ICMP PTB messages.
+
+   According to [<a href="/doc/html/rfc4890" title="&quot;Recommendations for Filtering ICMPv6 Messages in Firewalls&quot;">RFC4890</a>], ICMPv6 PTB messages must not be filtered.
+   However, ICMP PTB delivery is not reliable.  It is subject to both
+   transient and persistent loss.
+
+   Transient loss of ICMP PTB messages can cause transient PMTU black
+   holes.  When the conditions contributing to transient loss abate, the
+   network regains its ability to deliver ICMP PTB messages and
+   connectivity between the source and destination nodes is restored.
+   <a href="#section-3.8.1">Section 3.8.1</a> of this document describes conditions that lead to
+   transient loss of ICMP PTB messages.
+
+   Persistent loss of ICMP PTB messages can cause persistent black
+   holes.  Sections <a href="#section-3.8.2">3.8.2</a>, <a href="#section-3.8.3">3.8.3</a>, and <a href="#section-3.8.4">3.8.4</a> of this document describe
+   conditions that lead to persistent loss of ICMP PTB messages.
+
+   The problem described in this section is specific to PMTUD.  It does
+   not occur when the upper-layer protocol obtains its PMTU estimate
+   from PLPMTUD or from any other source.
+
+<span class="h4"><a class="selflink" id="section-3.8.1" href="#section-3.8.1">3.8.1</a>.  Transient Loss</span>
+
+   The following factors can contribute to transient loss of ICMP PTB
+   messages:
+
+   *  Network congestion.
+
+   *  Packet corruption.
+
+   *  Transient routing loops.
+
+   *  ICMP rate limiting.
+
+   The effect of rate limiting may be severe, as <a href="/doc/html/rfc4443">RFC 4443</a> recommends
+   strict rate limiting of ICMPv6 traffic.
+
+<span class="h4"><a class="selflink" id="section-3.8.2" href="#section-3.8.2">3.8.2</a>.  Incorrect Implementation of Security Policy</span>
+
+   Incorrect implementation of security policy can cause persistent loss
+   of ICMP PTB messages.
+
+   For example, assume that a Customer Premises Equipment (CPE) router
+   implements the following zone-based security policy:
+
+   *  Allow any traffic to flow from the inside zone to the outside
+      zone.
+
+   *  Do not allow any traffic to flow from the outside zone to the
+      inside zone unless it is part of an existing flow (i.e., it was
+      elicited by an outbound packet).
+
+   When a correct implementation of the above-mentioned security policy
+   receives an ICMP PTB message, it examines the ICMP PTB payload in
+   order to determine whether the original packet (i.e., the packet that
+   elicited the ICMP PTB message) belonged to an existing flow.  If the
+   original packet belonged to an existing flow, the implementation
+   allows the ICMP PTB to flow from the outside zone to the inside zone.
+   If not, the implementation discards the ICMP PTB message.
+
+   When an incorrect implementation of the above-mentioned security
+   policy receives an ICMP PTB message, it discards the packet because
+   its source address is not associated with an existing flow.
+
+   The security policy described above has been implemented incorrectly
+   on many consumer CPE routers.
+
+<span class="h4"><a class="selflink" id="section-3.8.3" href="#section-3.8.3">3.8.3</a>.  Persistent Loss Caused by Anycast</span>
+
+   Anycast can cause persistent loss of ICMP PTB messages.  Consider the
+   example below:
+
+   A DNS client sends a request to an anycast address.  The network
+   routes that DNS request to the nearest instance of that anycast
+   address (i.e., a DNS server).  The DNS server generates a response
+   and sends it back to the DNS client.  While the response does not
+   exceed the DNS server&#x27;s PMTU estimate, it does exceed the actual
+   PMTU.
+
+   A downstream router drops the packet and sends an ICMP PTB message
+   the packet&#x27;s source (i.e., the anycast address).  The network routes
+   the ICMP PTB message to the anycast instance closest to the
+   downstream router.  That anycast instance may not be the DNS server
+   that originated the DNS response.  It may be another DNS server with
+   the same anycast address.  The DNS server that originated the
+   response may never receive the ICMP PTB message and may never update
+   its PMTU estimate.
+
+<span class="h4"><a class="selflink" id="section-3.8.4" href="#section-3.8.4">3.8.4</a>.  Persistent Loss Caused by Unidirectional Routing</span>
+
+   Unidirectional routing can cause persistent loss of ICMP PTB
+   messages.  Consider the example below:
+
+   A source node sends a packet to a destination node.  All intermediate
+   nodes maintain a route to the destination node but do not maintain a
+   route to the source node.  In this case, when an intermediate node
+   encounters an MTU issue, it cannot send an ICMP PTB message to the
+   source node.
+
+<span class="h3"><a class="selflink" id="section-3.9" href="#section-3.9">3.9</a>.  Black-Holing Due to Filtering or Loss</span>
+
+   In <a href="/doc/html/rfc7872">RFC 7872</a>, researchers sampled Internet paths to determine whether
+   they would convey packets that contain IPv6 extension headers.
+   Sampled paths terminated at popular Internet sites (e.g., popular
+   web, mail, and DNS servers).
+
+   The study revealed that at least 28% of the sampled paths did not
+   convey packets containing the IPv6 Fragment extension header.  In
+   most cases, fragments were dropped in the destination autonomous
+   system.  In other cases, the fragments were dropped in transit
+   autonomous systems.
+
+   Another study [<a href="#ref-Huston" title="&quot;IPv6, Large UDP Packets and the DNS&quot;">Huston</a>] confirmed this finding.  It reported that 37%
+   of sampled endpoints used IPv6-capable DNS resolvers that were
+   incapable of receiving a fragmented IPv6 response.
+
+   It is difficult to determine why network operators drop fragments.
+   Possible causes follow:
+
+   *  Hardware inability to process fragmented packets.
+
+   *  Failure to change vendor defaults.
+
+   *  Unintentional misconfiguration.
+
+   *  Intentional configuration (e.g., network operators consciously
+      chooses to drop IPv6 fragments in order to address the issues
+      raised in Sections <a href="#section-3.2">3.2</a> through <a href="#section-3.8">3.8</a>, above.)
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Alternatives to IP Fragmentation</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Transport-Layer Solutions</span>
+
+   The Transport Control Protocol (TCP) [<a href="/doc/html/rfc0793" title="&quot;Transmission Control Protocol&quot;">RFC0793</a>]) can be operated in a
+   mode that does not require IP fragmentation.
+
+   Applications submit a stream of data to TCP.  TCP divides that stream
+   of data into segments, with no segment exceeding the TCP Maximum
+   Segment Size (MSS).  Each segment is encapsulated in a TCP header and
+   submitted to the underlying IP module.  The underlying IP module
+   prepends an IP header and forwards the resulting packet.
+
+   If the TCP MSS is sufficiently small, then the underlying IP module
+   never produces a packet whose length is greater than the actual PMTU.
+   Therefore, IP fragmentation is not required.
+
+   TCP offers the following mechanisms for MSS management:
+
+   *  Manual configuration.
+
+   *  PMTUD.
+
+   *  PLPMTUD.
+
+   Manual configuration is always applicable.  If the MSS is configured
+   to a sufficiently low value, the IP layer will never produce a packet
+   whose length is greater than the protocol minimum link MTU.  However,
+   manual configuration prevents TCP from taking advantage of larger
+   link MTUs.
+
+   Upper-layer protocols can implement PMTUD in order to discover and
+   take advantage of larger Path MTUs.  However, as mentioned in
+   <a href="#section-2.1">Section 2.1</a>, PMTUD relies upon the network to deliver ICMP PTB
+   messages.  Therefore, PMTUD can only provide an estimate of the PMTU
+   in environments where the risk of ICMP PTB loss is acceptable (e.g.,
+   known to not be filtered).
+
+   By contrast, PLPMTUD does not rely upon the network&#x27;s ability to
+   deliver ICMP PTB messages.  It utilizes probe messages sent as TCP
+   segments to determine whether the probed PMTU can be successfully
+   used across the network path.  In PLPMTUD, probing is separated from
+   congestion control, so that loss of a TCP probe segment does not
+   cause a reduction of the congestion control window.  [<a href="/doc/html/rfc4821" title="&quot;Packetization Layer Path MTU Discovery&quot;">RFC4821</a>]
+   defines PLPMTUD procedures for TCP.
+
+   While TCP will never knowingly cause the underlying IP module to emit
+   a packet that is larger than the PMTU estimate, it can cause the
+   underlying IP module to emit a packet that is larger than the actual
+   PMTU.  For example, if routing changes and as a result the PMTU
+   becomes smaller, TCP will not know until the ICMP PTB message
+   arrives.  If this occurs, the packet is dropped, the PMTU estimate is
+   updated, the segment is divided into smaller segments, and each
+   smaller segment is submitted to the underlying IP module.
+
+   The Datagram Congestion Control Protocol (DCCP) [<a href="/doc/html/rfc4340" title="&quot;Datagram Congestion Control Protocol (DCCP)&quot;">RFC4340</a>] and the
+   Stream Control Transmission Protocol (SCTP) [<a href="/doc/html/rfc4960" title="&quot;Stream Control Transmission Protocol&quot;">RFC4960</a>] also can be
+   operated in a mode that does not require IP fragmentation.  They both
+   accept data from an application and divide that data into segments,
+   with no segment exceeding a maximum size.
+
+   DCCP offers manual configuration, PMTUD, and PLPMTUD as mechanisms
+   for managing that maximum size.  Datagram protocols can also
+   implement PLPMTUD to estimate the PMTU via [<a href="/doc/html/rfc8899" title="&quot;Packetization Layer Path MTU Discovery for Datagram Transports&quot;">RFC8899</a>].  This proposes
+   procedures for performing PLPMTUD with UDP, UDP options, SCTP, QUIC,
+   and other datagram protocols.
+
+   Currently, User Datagram Protocol (UDP) [<a href="/doc/html/rfc0768" title="&quot;User Datagram Protocol&quot;">RFC0768</a>] lacks a
+   fragmentation mechanism of its own and relies on IP fragmentation.
+   However, [<a href="#ref-UDP-OPTIONS">UDP-OPTIONS</a>] proposes a fragmentation mechanism for UDP.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Application-Layer Solutions</span>
+
+   [<a id="ref-RFC8085">RFC8085</a>] recognizes that IP fragmentation reduces the reliability of
+   Internet communication.  It also recognizes that UDP lacks a
+   fragmentation mechanism of its own and relies on IP fragmentation.
+   Therefore, [<a href="/doc/html/rfc8085" title="&quot;UDP Usage Guidelines&quot;">RFC8085</a>] offers the following advice regarding
+   applications the run over the UDP:
+
+   |  An application SHOULD NOT send UDP datagrams that result in IP
+   |  packets that exceed the Maximum Transmission Unit (MTU) along the
+   |  path to the destination.  Consequently, an application SHOULD
+   |  either use the path MTU information provided by the IP layer or
+   |  implement Path MTU Discovery (PMTUD) itself [<a href="/doc/html/rfc1191" title="&quot;Path MTU discovery&quot;">RFC1191</a>] [<a href="/doc/html/rfc1981" title="&quot;Path MTU Discovery for IP version 6&quot;">RFC1981</a>]
+   |  [<a href="/doc/html/rfc4821" title="&quot;Packetization Layer Path MTU Discovery&quot;">RFC4821</a>] to determine whether the path to a destination will
+   |  support its desired message size without fragmentation.
+
+   <a href="/doc/html/rfc8085">RFC 8085</a> continues:
+
+   |  Applications that do not follow the recommendation to do PMTU/
+   |  PLPMTUD discovery SHOULD still avoid sending UDP datagrams that
+   |  would result in IP packets that exceed the path MTU.  Because the
+   |  actual path MTU is unknown, such applications SHOULD fall back to
+   |  sending messages that are shorter than the default effective MTU
+   |  for sending (EMTU_S in [<a href="/doc/html/rfc1122" title="&quot;Requirements for Internet Hosts - Communication Layers&quot;">RFC1122</a>]).  For IPv4, EMTU_S is the
+   |  smaller of 576 bytes and the first-hop MTU [<a href="/doc/html/rfc1122" title="&quot;Requirements for Internet Hosts - Communication Layers&quot;">RFC1122</a>].  For IPv6,
+   |  EMTU_S is 1280 bytes [<a href="/doc/html/rfc2460" title="&quot;Internet Protocol, Version 6 (IPv6) Specification&quot;">RFC2460</a>].  The effective PMTU for a directly
+   |  connected destination (with no routers on the path) is the
+   |  configured interface MTU, which could be less than the maximum
+   |  link payload size.  Transmission of minimum-sized UDP datagrams is
+   |  inefficient over paths that support a larger PMTU, which is a
+   |  second reason to implement PMTU discovery.
+
+   <a href="/doc/html/rfc8085">RFC 8085</a> assumes that for IPv4 an EMTU_S of 576 is sufficiently small
+   to be supported by most current Internet paths, even though the IPv4
+   minimum link MTU is 68 octets.
+
+   This advice applies equally to any application that runs directly
+   over IP.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Applications That Rely on IPv6 Fragmentation</span>
+
+   The following applications rely on IPv6 fragmentation:
+
+   *  DNS [<a href="/doc/html/rfc1035" title="&quot;Domain names - implementation and specification&quot;">RFC1035</a>].
+
+   *  OSPFv2 [<a href="/doc/html/rfc2328" title="&quot;OSPF Version 2&quot;">RFC2328</a>].
+
+   *  OSPFv3 [<a href="/doc/html/rfc5340" title="&quot;OSPF for IPv6&quot;">RFC5340</a>].
+
+   *  Packet-in-packet encapsulations.
+
+   Each of these applications relies on IPv6 fragmentation to a varying
+   degree.  In some cases, that reliance is essential and cannot be
+   broken without fundamentally changing the protocol.  In other cases,
+   that reliance is incidental, and most implementations already take
+   appropriate steps to avoid fragmentation.
+
+   This list is not comprehensive, and other protocols that rely on IP
+   fragmentation may exist.  They are not specifically considered in the
+   context of this document.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Domain Name Service (DNS)</span>
+
+   DNS relies on UDP for efficiency, and the consequence is the use of
+   IP fragmentation for large responses, as permitted by the Extension
+   Mechanisms for DNS (EDNS0) options in the query.  It is possible to
+   mitigate the issue of fragmentation-based packet loss by having
+   queries use smaller EDNS0 UDP buffer sizes or by having the DNS
+   server limit the size of its UDP responses to some self-imposed
+   maximum packet size that may be less than the preferred EDNS0 UDP
+   buffer size.  In both cases, large responses are truncated in the
+   DNS, signaling to the client to re-query using TCP to obtain the
+   complete response.  However, the operational issue of the partial
+   level of support for DNS over TCP, particularly in the case where
+   IPv6 transport is being used, becomes a limiting factor of the
+   efficacy of this approach [<a href="#ref-Damas" title="&quot;Measuring ATR&quot;">Damas</a>].
+
+   Larger DNS responses can normally be avoided by aggressively pruning
+   the Additional section of DNS responses.  One scenario where such
+   pruning is ineffective is in the use of DNSSEC, where large key sizes
+   act to increase the response size to certain DNS queries.  There is
+   no effective response to this situation within the DNS other than
+   using smaller cryptographic keys and adopting of DNSSEC
+   administrative practices that attempt to keep DNS response as short
+   as possible.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Open Shortest Path First (OSPF)</span>
+
+   OSPF implementations can emit messages large enough to cause
+   fragmentation.  However, in order to optimize performance, most OSPF
+   implementations restrict their maximum message size to a value that
+   will not cause fragmentation.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  Packet-in-Packet Encapsulations</span>
+
+   This document acknowledges that in some cases, packets must be
+   fragmented within IP-in-IP tunnels.  Therefore, this document makes
+   no additional recommendations regarding IP-in-IP tunnels.
+
+   In this document, packet-in-packet encapsulations include IP-in-IP
+   [<a href="/doc/html/rfc2003" title="&quot;IP Encapsulation within IP&quot;">RFC2003</a>], Generic Routing Encapsulation (GRE) [<a href="/doc/html/rfc2784" title="&quot;Generic Routing Encapsulation (GRE)&quot;">RFC2784</a>], GRE-in-UDP
+   [<a href="/doc/html/rfc8086" title="&quot;GRE- in-UDP Encapsulation&quot;">RFC8086</a>], and Generic Packet Tunneling in IPv6 [<a href="/doc/html/rfc2473" title="&quot;Generic Packet Tunneling in IPv6 Specification&quot;">RFC2473</a>].  [<a href="/doc/html/rfc4459" title="&quot;MTU and Fragmentation Issues with In-the- Network Tunneling&quot;">RFC4459</a>]
+   describes fragmentation issues associated with all of the above-
+   mentioned encapsulations.
+
+   The fragmentation strategy described for GRE in [<a href="/doc/html/rfc7588" title="&quot;A Widely Deployed Solution to the Generic Routing Encapsulation (GRE) Fragmentation Problem&quot;">RFC7588</a>] has been
+   deployed for all of the above-mentioned encapsulations.  This
+   strategy does not rely on IP fragmentation except in one corner case.
+   (See <a href="/doc/html/rfc7588#section-3.3.2.2">Section&nbsp;3.3.2.2 of [RFC7588]</a> and <a href="/doc/html/rfc2473#section-7.1">Section&nbsp;7.1 of [RFC2473]</a>.)
+   <a href="/doc/html/rfc7676#section-3.3">Section&nbsp;3.3 of [RFC7676]</a> further describes this corner case.
+
+   See [<a href="#ref-TUNNELS" title="&quot;IP Tunnels in the Internet Architecture&quot;">TUNNELS</a>] for further discussion.
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  UDP Applications Enhancing Performance</span>
+
+   Some UDP applications rely on IP fragmentation to achieve acceptable
+   levels of performance.  These applications use UDP datagram sizes
+   that are larger than the Path MTU so that more data can be conveyed
+   between the application and the kernel in a single system call.
+
+   To pick one example, the Licklider Transmission Protocol (LTP)
+   [<a href="/doc/html/rfc5326" title="&quot;Licklider Transmission Protocol - Specification&quot;">RFC5326</a>], which is in current use on the International Space Station
+   (ISS), uses UDP datagram sizes larger than the Path MTU to achieve
+   acceptable levels of performance even though this invokes IP
+   fragmentation.  More generally, SNMP and video applications may
+   transmit an application-layer quantum of data, depending on the
+   network layer to fragment and reassemble as needed.
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Recommendations</span>
+
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  For Application and Protocol Developers</span>
+
+   Developers SHOULD NOT develop new protocols or applications that rely
+   on IP fragmentation.  When a new protocol or application is deployed
+   in an environment that does not fully support IP fragmentation, it
+   SHOULD operate correctly, either in its default configuration or in a
+   specified alternative configuration.
+
+   While there may be controlled environments where IP fragmentation
+   works reliably, this is a deployment issue and can not be known to
+   someone developing a new protocol or application.  It is not
+   recommended that new protocols or applications be developed that rely
+   on IP fragmentation.  Protocols and applications that rely on IP
+   fragmentation will work less reliably on the Internet.
+
+   Legacy protocols that depend upon IP fragmentation SHOULD be updated
+   to break that dependency.  However, in some cases, there may be no
+   viable alternative to IP fragmentation (e.g., IPSEC tunnel mode, IP-
+   in-IP encapsulation).  Applications and protocols cannot necessarily
+   know or control whether they use lower layers or network paths that
+   rely on such fragmentation.  In these cases, the protocol will
+   continue to rely on IP fragmentation but should only be used in
+   environments where IP fragmentation is known to be supported.
+
+   Protocols may be able to avoid IP fragmentation by using a
+   sufficiently small MTU (e.g., The protocol minimum link MTU),
+   disabling IP fragmentation, and ensuring that the transport protocol
+   in use adapts its segment size to the MTU.  Other protocols may
+   deploy a sufficiently reliable PMTU discovery mechanism (e.g.,
+   PLPMTUD).
+
+   UDP applications SHOULD abide by the recommendations stated in
+   <a href="/doc/html/rfc8085#section-3.2">Section&nbsp;3.2 of [RFC8085]</a>.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  For System Developers</span>
+
+   Software libraries SHOULD include provision for PLPMTUD for each
+   supported transport protocol.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  For Middlebox Developers</span>
+
+   Middleboxes, which are systems that &quot;transparently&quot; perform policy
+   functions on passing traffic but do not participate in the routing
+   system, should process IP fragments in a manner that is consistent
+   with [<a href="/doc/html/rfc0791" title="&quot;Internet Protocol&quot;">RFC0791</a>] and [<a href="/doc/html/rfc8200" title="&quot;Internet Protocol, Version 6 (IPv6) Specification&quot;">RFC8200</a>].  In many cases, middleboxes must
+   maintain state in order to achieve this goal.
+
+   Price and performance considerations frequently motivate network
+   operators to deploy stateless middleboxes.  These stateless
+   middleboxes may perform suboptimally, process IP fragments in a
+   manner that is not compliant with <a href="/doc/html/rfc791">RFC 791</a> or <a href="/doc/html/rfc8200">RFC 8200</a>, or even
+   discard IP fragments completely.  Such behaviors are NOT RECOMMENDED.
+   If a middlebox implements nonstandard behavior with respect to IP
+   fragmentation, then that behavior MUST be clearly documented.
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  For ECMP, LAG, and Load-Balancer Developers And Operators</span>
+
+   In their default configuration, when the IPv6 Flow Label is not equal
+   to zero, IPv6 devices that implement Equal-Cost Multipath (ECMP)
+   Routing as described in OSPF [<a href="/doc/html/rfc2328" title="&quot;OSPF Version 2&quot;">RFC2328</a>] and other routing protocols,
+   Link Aggregation Grouping (LAG) [<a href="/doc/html/rfc7424" title="&quot;Mechanisms for Optimizing Link Aggregation Group (LAG) and Equal-Cost Multipath (ECMP) Component Link Utilization in Networks&quot;">RFC7424</a>], or other load-distribution
+   technologies SHOULD accept only the following fields as input to
+   their hash algorithm:
+
+   *  IP Source Address.
+
+   *  IP Destination Address.
+
+   *  Flow Label.
+
+   Operators SHOULD deploy these devices in their default configuration.
+
+   These recommendations are similar to those presented in [<a href="/doc/html/rfc6438" title="&quot;Using the IPv6 Flow Label for Equal Cost Multipath Routing and Link Aggregation in Tunnels&quot;">RFC6438</a>] and
+   [<a href="/doc/html/rfc7098" title="&quot;Using the IPv6 Flow Label for Load Balancing in Server Farms&quot;">RFC7098</a>].  They differ in that they specify a default configuration.
+
+<span class="h3"><a class="selflink" id="section-6.5" href="#section-6.5">6.5</a>.  For Network Operators</span>
+
+   Operators MUST ensure proper PMTUD operation in their network,
+   including making sure the network generates PTB packets when dropping
+   packets too large compared to outgoing interface MTU.  However,
+   implementations MAY rate limit the generation of ICMP messages per
+   [<a href="/doc/html/rfc1812" title="&quot;Requirements for IP Version 4 Routers&quot;">RFC1812</a>] and [<a href="/doc/html/rfc4443" title="&quot;Internet Control Message Protocol (ICMPv6) for the Internet Protocol Version 6 (IPv6) Specification&quot;">RFC4443</a>].
+
+   As per <a href="/doc/html/rfc4890">RFC 4890</a>, network operators MUST NOT filter ICMPv6 PTB
+   messages unless they are known to be forged or otherwise
+   illegitimate.  As stated in <a href="#section-3.8">Section 3.8</a>, filtering ICMPv6 PTB packets
+   causes PMTUD to fail.  Many upper-layer protocols rely on PMTUD.
+
+   As per <a href="/doc/html/rfc8200">RFC 8200</a>, network operators MUST NOT deploy IPv6 links whose
+   MTU is less than 1280 octets.
+
+   Network operators SHOULD NOT filter IP fragments if they are known to
+   have originated at a domain name server or be destined for a domain
+   name server.  This is because domain name services are critical to
+   operation of the Internet.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   This document mitigates some of the security considerations
+   associated with IP fragmentation by discouraging its use.  It does
+   not introduce any new security vulnerabilities, because it does not
+   introduce any new alternatives to IP fragmentation.  Instead, it
+   recommends well-understood alternatives.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC0768">RFC0768</a>]  Postel, J., &quot;User Datagram Protocol&quot;, STD 6, <a href="/doc/html/rfc768">RFC 768</a>,
+              DOI 10.17487/RFC0768, August 1980,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc768">https://www.rfc-editor.org/info/rfc768</a>&gt;.
+
+   [<a id="ref-RFC0791">RFC0791</a>]  Postel, J., &quot;Internet Protocol&quot;, STD 5, <a href="/doc/html/rfc791">RFC 791</a>,
+              DOI 10.17487/RFC0791, September 1981,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc791">https://www.rfc-editor.org/info/rfc791</a>&gt;.
+
+   [<a id="ref-RFC0792">RFC0792</a>]  Postel, J., &quot;Internet Control Message Protocol&quot;, STD 5,
+              <a href="/doc/html/rfc792">RFC 792</a>, DOI 10.17487/RFC0792, September 1981,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc792">https://www.rfc-editor.org/info/rfc792</a>&gt;.
+
+   [<a id="ref-RFC0793">RFC0793</a>]  Postel, J., &quot;Transmission Control Protocol&quot;, STD 7,
+              <a href="/doc/html/rfc793">RFC 793</a>, DOI 10.17487/RFC0793, September 1981,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc793">https://www.rfc-editor.org/info/rfc793</a>&gt;.
+
+   [<a id="ref-RFC1035">RFC1035</a>]  Mockapetris, P., &quot;Domain names - implementation and
+              specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, DOI 10.17487/RFC1035,
+              November 1987, &lt;<a href="https://www.rfc-editor.org/info/rfc1035">https://www.rfc-editor.org/info/rfc1035</a>&gt;.
+
+   [<a id="ref-RFC1191">RFC1191</a>]  Mogul, J. and S. Deering, &quot;Path MTU discovery&quot;, <a href="/doc/html/rfc1191">RFC 1191</a>,
+              DOI 10.17487/RFC1191, November 1990,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1191">https://www.rfc-editor.org/info/rfc1191</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC4443">RFC4443</a>]  Conta, A., Deering, S., and M. Gupta, Ed., &quot;Internet
+              Control Message Protocol (ICMPv6) for the Internet
+              Protocol Version 6 (IPv6) Specification&quot;, STD 89,
+              <a href="/doc/html/rfc4443">RFC 4443</a>, DOI 10.17487/RFC4443, March 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4443">https://www.rfc-editor.org/info/rfc4443</a>&gt;.
+
+   [<a id="ref-RFC4821">RFC4821</a>]  Mathis, M. and J. Heffner, &quot;Packetization Layer Path MTU
+              Discovery&quot;, <a href="/doc/html/rfc4821">RFC 4821</a>, DOI 10.17487/RFC4821, March 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4821">https://www.rfc-editor.org/info/rfc4821</a>&gt;.
+
+   [<a id="ref-RFC6437">RFC6437</a>]  Amante, S., Carpenter, B., Jiang, S., and J. Rajahalme,
+              &quot;IPv6 Flow Label Specification&quot;, <a href="/doc/html/rfc6437">RFC 6437</a>,
+              DOI 10.17487/RFC6437, November 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6437">https://www.rfc-editor.org/info/rfc6437</a>&gt;.
+
+   [<a id="ref-RFC6438">RFC6438</a>]  Carpenter, B. and S. Amante, &quot;Using the IPv6 Flow Label
+              for Equal Cost Multipath Routing and Link Aggregation in
+              Tunnels&quot;, <a href="/doc/html/rfc6438">RFC 6438</a>, DOI 10.17487/RFC6438, November 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6438">https://www.rfc-editor.org/info/rfc6438</a>&gt;.
+
+   [<a id="ref-RFC8085">RFC8085</a>]  Eggert, L., Fairhurst, G., and G. Shepherd, &quot;UDP Usage
+              Guidelines&quot;, <a href="/doc/html/bcp145">BCP 145</a>, <a href="/doc/html/rfc8085">RFC 8085</a>, DOI 10.17487/RFC8085,
+              March 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8085">https://www.rfc-editor.org/info/rfc8085</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8200">RFC8200</a>]  Deering, S. and R. Hinden, &quot;Internet Protocol, Version 6
+              (IPv6) Specification&quot;, STD 86, <a href="/doc/html/rfc8200">RFC 8200</a>,
+              DOI 10.17487/RFC8200, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8200">https://www.rfc-editor.org/info/rfc8200</a>&gt;.
+
+   [<a id="ref-RFC8201">RFC8201</a>]  McCann, J., Deering, S., Mogul, J., and R. Hinden, Ed.,
+              &quot;Path MTU Discovery for IP version 6&quot;, STD 87, <a href="/doc/html/rfc8201">RFC 8201</a>,
+              DOI 10.17487/RFC8201, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8201">https://www.rfc-editor.org/info/rfc8201</a>&gt;.
+
+   [<a id="ref-RFC8899">RFC8899</a>]  Fairhurst, G., Jones, T., Tüxen, M., Rüngeler, I., and T.
+              Völker, &quot;Packetization Layer Path MTU Discovery for
+              Datagram Transports&quot;, <a href="/doc/html/rfc8899">RFC 8899</a>, DOI 10.17487/RFC8899,
+              September 2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8899">https://www.rfc-editor.org/info/rfc8899</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-Damas">Damas</a>]    Damas, J. and G. Huston, &quot;Measuring ATR&quot;, April 2018,
+              &lt;<a href="http://www.potaroo.net/ispcol/2018-04/atr.html">http://www.potaroo.net/ispcol/2018-04/atr.html</a>&gt;.
+
+   [<a id="ref-Huston">Huston</a>]   Huston, G., &quot;IPv6, Large UDP Packets and the DNS&quot;, August
+              2017,
+              &lt;<a href="http://www.potaroo.net/ispcol/2017-08/xtn-hdrs.html">http://www.potaroo.net/ispcol/2017-08/xtn-hdrs.html</a>&gt;.
+
+   [<a id="ref-Kent">Kent</a>]     Kent, C. and J. Mogul, &quot;Fragmentation Considered Harmful&quot;,
+              SIGCOMM &#x27;87: Proceedings of the ACM workshop on Frontiers
+              in computer communications technology,
+              DOI 10.1145/55482.55524, August 1987,
+              &lt;<a href="http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-87-3.pdf">http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-</a>
+              <a href="http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-87-3.pdf">87-3.pdf</a>&gt;.
+
+   [<a id="ref-Ptacek1998">Ptacek1998</a>]
+              Ptacek, T. H. and T. N. Newsham, &quot;Insertion, Evasion and
+              Denial of Service: Eluding Network Intrusion Detection&quot;,
+              1998,
+              &lt;<a href="http://www.aciri.org/vern/Ptacek-Newsham-Evasion-98.ps">http://www.aciri.org/vern/Ptacek-Newsham-Evasion-98.ps</a>&gt;.
+
+   [<a id="ref-RFC1122">RFC1122</a>]  Braden, R., Ed., &quot;Requirements for Internet Hosts -
+              Communication Layers&quot;, STD 3, <a href="/doc/html/rfc1122">RFC 1122</a>,
+              DOI 10.17487/RFC1122, October 1989,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1122">https://www.rfc-editor.org/info/rfc1122</a>&gt;.
+
+   [<a id="ref-RFC1812">RFC1812</a>]  Baker, F., Ed., &quot;Requirements for IP Version 4 Routers&quot;,
+              <a href="/doc/html/rfc1812">RFC 1812</a>, DOI 10.17487/RFC1812, June 1995,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1812">https://www.rfc-editor.org/info/rfc1812</a>&gt;.
+
+   [<a id="ref-RFC1858">RFC1858</a>]  Ziemba, G., Reed, D., and P. Traina, &quot;Security
+              Considerations for IP Fragment Filtering&quot;, <a href="/doc/html/rfc1858">RFC 1858</a>,
+              DOI 10.17487/RFC1858, October 1995,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1858">https://www.rfc-editor.org/info/rfc1858</a>&gt;.
+
+   [<a id="ref-RFC1981">RFC1981</a>]  McCann, J., Deering, S., and J. Mogul, &quot;Path MTU Discovery
+              for IP version 6&quot;, <a href="/doc/html/rfc1981">RFC 1981</a>, DOI 10.17487/RFC1981, August
+              1996, &lt;<a href="https://www.rfc-editor.org/info/rfc1981">https://www.rfc-editor.org/info/rfc1981</a>&gt;.
+
+   [<a id="ref-RFC2003">RFC2003</a>]  Perkins, C., &quot;IP Encapsulation within IP&quot;, <a href="/doc/html/rfc2003">RFC 2003</a>,
+              DOI 10.17487/RFC2003, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2003">https://www.rfc-editor.org/info/rfc2003</a>&gt;.
+
+   [<a id="ref-RFC2328">RFC2328</a>]  Moy, J., &quot;OSPF Version 2&quot;, STD 54, <a href="/doc/html/rfc2328">RFC 2328</a>,
+              DOI 10.17487/RFC2328, April 1998,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2328">https://www.rfc-editor.org/info/rfc2328</a>&gt;.
+
+   [<a id="ref-RFC2460">RFC2460</a>]  Deering, S. and R. Hinden, &quot;Internet Protocol, Version 6
+              (IPv6) Specification&quot;, <a href="/doc/html/rfc2460">RFC 2460</a>, DOI 10.17487/RFC2460,
+              December 1998, &lt;<a href="https://www.rfc-editor.org/info/rfc2460">https://www.rfc-editor.org/info/rfc2460</a>&gt;.
+
+   [<a id="ref-RFC2473">RFC2473</a>]  Conta, A. and S. Deering, &quot;Generic Packet Tunneling in
+              IPv6 Specification&quot;, <a href="/doc/html/rfc2473">RFC 2473</a>, DOI 10.17487/RFC2473,
+              December 1998, &lt;<a href="https://www.rfc-editor.org/info/rfc2473">https://www.rfc-editor.org/info/rfc2473</a>&gt;.
+
+   [<a id="ref-RFC2784">RFC2784</a>]  Farinacci, D., Li, T., Hanks, S., Meyer, D., and P.
+              Traina, &quot;Generic Routing Encapsulation (GRE)&quot;, <a href="/doc/html/rfc2784">RFC 2784</a>,
+              DOI 10.17487/RFC2784, March 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2784">https://www.rfc-editor.org/info/rfc2784</a>&gt;.
+
+   [<a id="ref-RFC3128">RFC3128</a>]  Miller, I., &quot;Protection Against a Variant of the Tiny
+              Fragment Attack (<a href="/doc/html/rfc1858">RFC 1858</a>)&quot;, <a href="/doc/html/rfc3128">RFC 3128</a>,
+              DOI 10.17487/RFC3128, June 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3128">https://www.rfc-editor.org/info/rfc3128</a>&gt;.
+
+   [<a id="ref-RFC4340">RFC4340</a>]  Kohler, E., Handley, M., and S. Floyd, &quot;Datagram
+              Congestion Control Protocol (DCCP)&quot;, <a href="/doc/html/rfc4340">RFC 4340</a>,
+              DOI 10.17487/RFC4340, March 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4340">https://www.rfc-editor.org/info/rfc4340</a>&gt;.
+
+   [<a id="ref-RFC4459">RFC4459</a>]  Savola, P., &quot;MTU and Fragmentation Issues with In-the-
+              Network Tunneling&quot;, <a href="/doc/html/rfc4459">RFC 4459</a>, DOI 10.17487/RFC4459, April
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4459">https://www.rfc-editor.org/info/rfc4459</a>&gt;.
+
+   [<a id="ref-RFC4890">RFC4890</a>]  Davies, E. and J. Mohacsi, &quot;Recommendations for Filtering
+              ICMPv6 Messages in Firewalls&quot;, <a href="/doc/html/rfc4890">RFC 4890</a>,
+              DOI 10.17487/RFC4890, May 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4890">https://www.rfc-editor.org/info/rfc4890</a>&gt;.
+
+   [<a id="ref-RFC4960">RFC4960</a>]  Stewart, R., Ed., &quot;Stream Control Transmission Protocol&quot;,
+              <a href="/doc/html/rfc4960">RFC 4960</a>, DOI 10.17487/RFC4960, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4960">https://www.rfc-editor.org/info/rfc4960</a>&gt;.
+
+   [<a id="ref-RFC4963">RFC4963</a>]  Heffner, J., Mathis, M., and B. Chandler, &quot;IPv4 Reassembly
+              Errors at High Data Rates&quot;, <a href="/doc/html/rfc4963">RFC 4963</a>,
+              DOI 10.17487/RFC4963, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4963">https://www.rfc-editor.org/info/rfc4963</a>&gt;.
+
+   [<a id="ref-RFC5326">RFC5326</a>]  Ramadas, M., Burleigh, S., and S. Farrell, &quot;Licklider
+              Transmission Protocol - Specification&quot;, <a href="/doc/html/rfc5326">RFC 5326</a>,
+              DOI 10.17487/RFC5326, September 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5326">https://www.rfc-editor.org/info/rfc5326</a>&gt;.
+
+   [<a id="ref-RFC5340">RFC5340</a>]  Coltun, R., Ferguson, D., Moy, J., and A. Lindem, &quot;OSPF
+              for IPv6&quot;, <a href="/doc/html/rfc5340">RFC 5340</a>, DOI 10.17487/RFC5340, July 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5340">https://www.rfc-editor.org/info/rfc5340</a>&gt;.
+
+   [<a id="ref-RFC5722">RFC5722</a>]  Krishnan, S., &quot;Handling of Overlapping IPv6 Fragments&quot;,
+              <a href="/doc/html/rfc5722">RFC 5722</a>, DOI 10.17487/RFC5722, December 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5722">https://www.rfc-editor.org/info/rfc5722</a>&gt;.
+
+   [<a id="ref-RFC5927">RFC5927</a>]  Gont, F., &quot;ICMP Attacks against TCP&quot;, <a href="/doc/html/rfc5927">RFC 5927</a>,
+              DOI 10.17487/RFC5927, July 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5927">https://www.rfc-editor.org/info/rfc5927</a>&gt;.
+
+   [<a id="ref-RFC6346">RFC6346</a>]  Bush, R., Ed., &quot;The Address plus Port (A+P) Approach to
+              the IPv4 Address Shortage&quot;, <a href="/doc/html/rfc6346">RFC 6346</a>,
+              DOI 10.17487/RFC6346, August 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6346">https://www.rfc-editor.org/info/rfc6346</a>&gt;.
+
+   [<a id="ref-RFC6888">RFC6888</a>]  Perreault, S., Ed., Yamagata, I., Miyakawa, S., Nakagawa,
+              A., and H. Ashida, &quot;Common Requirements for Carrier-Grade
+              NATs (CGNs)&quot;, <a href="/doc/html/bcp127">BCP 127</a>, <a href="/doc/html/rfc6888">RFC 6888</a>, DOI 10.17487/RFC6888,
+              April 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc6888">https://www.rfc-editor.org/info/rfc6888</a>&gt;.
+
+   [<a id="ref-RFC7098">RFC7098</a>]  Carpenter, B., Jiang, S., and W. Tarreau, &quot;Using the IPv6
+              Flow Label for Load Balancing in Server Farms&quot;, <a href="/doc/html/rfc7098">RFC 7098</a>,
+              DOI 10.17487/RFC7098, January 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7098">https://www.rfc-editor.org/info/rfc7098</a>&gt;.
+
+   [<a id="ref-RFC7424">RFC7424</a>]  Krishnan, R., Yong, L., Ghanwani, A., So, N., and B.
+              Khasnabish, &quot;Mechanisms for Optimizing Link Aggregation
+              Group (LAG) and Equal-Cost Multipath (ECMP) Component Link
+              Utilization in Networks&quot;, <a href="/doc/html/rfc7424">RFC 7424</a>, DOI 10.17487/RFC7424,
+              January 2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7424">https://www.rfc-editor.org/info/rfc7424</a>&gt;.
+
+   [<a id="ref-RFC7588">RFC7588</a>]  Bonica, R., Pignataro, C., and J. Touch, &quot;A Widely
+              Deployed Solution to the Generic Routing Encapsulation
+              (GRE) Fragmentation Problem&quot;, <a href="/doc/html/rfc7588">RFC 7588</a>,
+              DOI 10.17487/RFC7588, July 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7588">https://www.rfc-editor.org/info/rfc7588</a>&gt;.
+
+   [<a id="ref-RFC7676">RFC7676</a>]  Pignataro, C., Bonica, R., and S. Krishnan, &quot;IPv6 Support
+              for Generic Routing Encapsulation (GRE)&quot;, <a href="/doc/html/rfc7676">RFC 7676</a>,
+              DOI 10.17487/RFC7676, October 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7676">https://www.rfc-editor.org/info/rfc7676</a>&gt;.
+
+   [<a id="ref-RFC7739">RFC7739</a>]  Gont, F., &quot;Security Implications of Predictable Fragment
+              Identification Values&quot;, <a href="/doc/html/rfc7739">RFC 7739</a>, DOI 10.17487/RFC7739,
+              February 2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7739">https://www.rfc-editor.org/info/rfc7739</a>&gt;.
+
+   [<a id="ref-RFC7872">RFC7872</a>]  Gont, F., Linkova, J., Chown, T., and W. Liu,
+              &quot;Observations on the Dropping of Packets with IPv6
+              Extension Headers in the Real World&quot;, <a href="/doc/html/rfc7872">RFC 7872</a>,
+              DOI 10.17487/RFC7872, June 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7872">https://www.rfc-editor.org/info/rfc7872</a>&gt;.
+
+   [<a id="ref-RFC8086">RFC8086</a>]  Yong, L., Ed., Crabbe, E., Xu, X., and T. Herbert, &quot;GRE-
+              in-UDP Encapsulation&quot;, <a href="/doc/html/rfc8086">RFC 8086</a>, DOI 10.17487/RFC8086,
+              March 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8086">https://www.rfc-editor.org/info/rfc8086</a>&gt;.
+
+   [<a id="ref-TUNNELS">TUNNELS</a>]  Touch, J. and M. Townsley, &quot;IP Tunnels in the Internet
+              Architecture&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-intarea-tunnels-10">draft-</a>
+              <a href="/doc/html/draft-ietf-intarea-tunnels-10">ietf-intarea-tunnels-10</a>, 12 September 2019,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-intarea-tunnels-10">https://tools.ietf.org/html/draft-ietf-intarea-tunnels-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-intarea-tunnels-10">10</a>&gt;.
+
+   [<a id="ref-UDP-OPTIONS">UDP-OPTIONS</a>]
+              Touch, J., &quot;Transport Options for UDP&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-tsvwg-udp-options-08">draft-ietf-tsvwg-udp-options-08</a>, 12
+              September 2019, &lt;<a href="https://tools.ietf.org/html/draft-ietf-tsvwg-udp-options-08">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-tsvwg-udp-options-08">tsvwg-udp-options-08</a>&gt;.
+
+Acknowledgements
+
+   Thanks to Mikael Abrahamsson, Brian Carpenter, Silambu Chelvan,
+   Lorenzo Colitti, Gorry Fairhurst, Joel Halpern, Mike Heard, Tom
+   Herbert, Tatuya Jinmei, Suresh Krishnan, Jen Linkova, Paolo Lucente,
+   Manoj Nayak, Eric Nygren, Fred Templin, and Joe Touch for their
+   comments.
+
+Authors&#x27; Addresses
+
+   Ron Bonica
+   Juniper Networks
+   2251 Corporate Park Drive
+   Herndon, Virginia 20171
+   United States of America
+
+   Email: rbonica@juniper.net
+
+
+   Fred Baker
+   Unaffiliated
+   Santa Barbara, California 93117
+   United States of America
+
+   Email: FredBaker.IETF@gmail.com
+
+
+   Geoff Huston
+   APNIC
+   6 Cordelia St
+   Brisbane 4101 QLD
+   Australia
+
+   Email: gih@apnic.net
+
+
+   Robert M. Hinden
+   Check Point Software
+   959 Skyway Road
+   San Carlos, California 94070
+   United States of America
+
+   Email: bob.hinden@gmail.com
+
+
+   Ole Troan
+   Cisco
+   Philip Pedersens vei 1
+   N-1366 Lysaker
+   Norway
+
+   Email: ot@cisco.com
+
+
+   Fernando Gont
+   SI6 Networks
+   Evaristo Carriego 2644
+   Haedo
+   Provincia de Buenos Aires
+   Argentina
+
+   Email: fgont@si6networks.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

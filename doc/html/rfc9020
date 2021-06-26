@@ -1,0 +1,2004 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc9020
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-spring-sr-yang/">
+  <meta name="description" content="YANG Data Model for Segment Routing (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc9020.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc9020.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc9020.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc9020.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc9020/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc9020/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/spring/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-spring-sr-yang@ietf.org?subject=draft-ietf-spring-sr-yang" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-spring-sr-yang-30.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-spring-sr-yang-30.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-spring-sr-yang-30.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-spring-sr-yang-30">draft-ietf-spring-sr-yang-30</a>                     Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      S. Litkowski
+Request for Comments: 9020                                 Cisco Systems
+Category: Standards Track                                          Y. Qu
+ISSN: 2070-1721                                                Futurewei
+                                                               A. Lindem
+                                                           Cisco Systems
+                                                               P. Sarkar
+                                                             VMware, Inc
+                                                             J. Tantsura
+                                                        Juniper Networks
+                                                                May 2021
+
+
+                  <span class="h1">YANG Data Model for Segment Routing</span>
+
+Abstract
+
+   This document defines three YANG data models.  The first is for
+   Segment Routing (SR) configuration and operation, which is to be
+   augmented by different Segment Routing data planes.  The next is a
+   YANG data model that defines a collection of generic types and
+   groupings for SR.  The third module defines the configuration and
+   operational states for the Segment Routing MPLS data plane.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc9020">https://www.rfc-editor.org/info/rfc9020</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology and Notation
+     2.1.  Tree Diagram
+     2.2.  Prefixes in Data Node Names
+   3.  Design of the Data Model
+   4.  Configuration
+   5.  IGP Control-Plane Configuration
+     5.1.  IGP Interface Configuration
+       5.1.1.  Adjacency SID (Adj-SID) Properties
+         5.1.1.1.  Bundling
+         5.1.1.2.  Protection
+   6.  State Data
+   7.  Notifications
+   8.  YANG Modules
+     8.1.  YANG Module for Segment Routing
+     8.2.  YANG Module for Segment Routing Common Types
+     8.3.  YANG Module for Segment Routing MPLS
+   9.  Security Considerations
+   10. IANA Considerations
+   11. References
+     11.1.  Normative References
+     11.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Configuration Examples
+     A.1.  SR-MPLS with IPv4
+     A.2.  SR-MPLS with IPv6
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document defines three YANG data models [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>].  The first
+   one is for Segment Routing (SR) [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>] configuration and
+   operation.  This document does not define the IGP extensions to
+   support SR, but the second module defines generic groupings to be
+   reused by IGP extension modules.  The reason for this design choice
+   is to not require implementations to support all IGP extensions.  For
+   example, an implementation may support the IS-IS extension but not
+   the OSPF extension.  The third YANG data model defines a module that
+   is intended to be used on network elements to configure or operate
+   the SR MPLS data plane [<a href="/doc/html/rfc8660" title="&quot;Segment Routing with the MPLS Data Plane&quot;">RFC8660</a>].
+
+   The YANG modules in this document conform to the Network Management
+   Datastore Architecture (NMDA) [<a href="/doc/html/rfc8342" title="&quot;Network Management Datastore Architecture (NMDA)&quot;">RFC8342</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology and Notation</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="/doc/html/bcp14">BCP</a>
+   <a href="/doc/html/bcp14">14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Tree Diagram</span>
+
+   Tree diagrams used in this document follow the notation defined in
+   [<a href="/doc/html/rfc8340" title="&quot;YANG Tree Diagrams&quot;">RFC8340</a>].
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Prefixes in Data Node Names</span>
+
+   In this document, names of data nodes, actions, and other data model
+   objects are often used without a prefix, as long as it is clear from
+   the context in which YANG module each name is defined.  Otherwise,
+   names are prefixed using the standard prefix associated with the
+   corresponding YANG module, as shown in Table 1.
+
+               +==========+====================+===========+
+               | Prefix   | YANG module        | Reference |
+               +==========+====================+===========+
+               | if       | ietf-interfaces    | [<a href="/doc/html/rfc8343" title="&quot;A YANG Data Model for Interface Management&quot;">RFC8343</a>] |
+               +----------+--------------------+-----------+
+               | rt       | ietf-routing       | [<a href="/doc/html/rfc8349" title="&quot;A YANG Data Model for Routing Management (NMDA Version)&quot;">RFC8349</a>] |
+               +----------+--------------------+-----------+
+               | rt-types | ietf-routing-types | [<a href="/doc/html/rfc8294" title="&quot;Common YANG Data Types for the Routing Area&quot;">RFC8294</a>] |
+               +----------+--------------------+-----------+
+               | yang     | ietf-yang-types    | [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>] |
+               +----------+--------------------+-----------+
+               | inet     | ietf-inet-types    | [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>] |
+               +----------+--------------------+-----------+
+
+                  Table 1: Prefixes and Corresponding YANG
+                                  Modules
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Design of the Data Model</span>
+
+   The ietf-segment-routing YANG module augments the routing container
+   in the ietf-routing model [<a href="/doc/html/rfc8349" title="&quot;A YANG Data Model for Routing Management (NMDA Version)&quot;">RFC8349</a>] and defines generic SR
+   configuration and operational state.  This module is augmented by
+   modules supporting different data planes.
+
+   Module ietf-segment-routing-mpls augments ietf-segment-routing and
+   supports SR-MPLS data plane configuration and operational state.
+
+   Module ietf-segment-routing-common defines generic types and
+   groupings that SHOULD be reused by IGP extension modules.
+
+   module: ietf-segment-routing
+     augment /rt:routing:
+       +--rw segment-routing
+
+   module: ietf-segment-routing-mpls
+     augment /rt:routing/sr:segment-routing:
+       +--rw sr-mpls
+          +--rw bindings
+          |  +--rw mapping-server {mapping-server}?
+          |  |  +--rw policy* [name]
+          |  |     +--rw name       string
+          |  |     +--rw entries
+          |  |        +--rw mapping-entry* [prefix algorithm]
+          |  |           +--rw prefix        inet:ip-prefix
+          |  |           +--rw value-type?   enumeration
+          |  |           +--rw start-sid     uint32
+          |  |           +--rw range?        uint32
+          |  |           +--rw algorithm     identityref
+          |  +--rw connected-prefix-sid-map
+          |  |  +--rw connected-prefix-sid* [prefix algorithm]
+          |  |     +--rw prefix               inet:ip-prefix
+          |  |     +--rw value-type?          enumeration
+          |  |     +--rw start-sid            uint32
+          |  |     +--rw range?               uint32
+          |  |     +--rw algorithm            identityref
+          |  |     +--rw last-hop-behavior?   enumeration
+          |  +--rw local-prefix-sid
+          |     +--rw local-prefix-sid* [prefix algorithm]
+          |        +--rw prefix        inet:ip-prefix
+          |        +--rw value-type?   enumeration
+          |        +--rw start-sid     uint32
+          |        +--rw range?        uint32
+          |        +--rw algorithm     identityref
+          +--rw srgb
+          |  +--rw srgb* [lower-bound upper-bound]
+          |     +--rw lower-bound    uint32
+          |     +--rw upper-bound    uint32
+          +--rw srlb
+          |  +--rw srlb* [lower-bound upper-bound]
+          |     +--rw lower-bound    uint32
+          |     +--rw upper-bound    uint32
+          +--ro label-blocks* []
+          |  +--ro lower-bound?   uint32
+          |  +--ro upper-bound?   uint32
+          |  +--ro size?          uint32
+          |  +--ro free?          uint32
+          |  +--ro used?          uint32
+          |  +--ro scope?         enumeration
+          +--ro sid-db
+             +--ro sid* [target sid source source-protocol binding-type]
+                +--ro target             string
+                +--ro sid                uint32
+                +--ro algorithm?         uint8
+                +--ro source             inet:ip-address
+                +--ro used?              boolean
+                +--ro source-protocol    -&gt; /rt:routing
+                                            /control-plane-protocols
+                                            /control-plane-protocol/name
+                +--ro binding-type       enumeration
+                +--ro scope?             enumeration
+
+     notifications:
+       +---n segment-routing-srgb-collision
+       |  +--ro srgb-collisions* []
+       |     +--ro lower-bound?          uint32
+       |     +--ro upper-bound?          uint32
+       |     +--ro routing-protocol?     -&gt; /rt:routing
+       |                                    /control-plane-protocols
+       |                                    /control-plane-protocol/name
+       |     +--ro originating-rtr-id?   router-or-system-id
+       +---n segment-routing-global-sid-collision
+       |  +--ro received-target?       string
+       |  +--ro new-sid-rtr-id?        router-or-system-id
+       |  +--ro original-target?       string
+       |  +--ro original-sid-rtr-id?   router-or-system-id
+       |  +--ro index?                 uint32
+       |  +--ro routing-protocol?      -&gt; /rt:routing
+       |                                  /control-plane-protocols
+       |                                  /control-plane-protocol/name
+       +---n segment-routing-index-out-of-range
+          +--ro received-target?    string
+          +--ro received-index?     uint32
+          +--ro routing-protocol?   -&gt; /rt:routing
+                                       /control-plane-protocols
+                                       /control-plane-protocol/name
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Configuration</span>
+
+   The module ietf-segment-routing-mpls augments the &quot;/rt:routing/
+   sr:segment-routing:&quot; with an sr-mpls container.  This container
+   defines all the configuration parameters related to the SR MPLS data
+   plane.
+
+   The sr-mpls configuration is split into global configuration and
+   interface configuration.
+
+   The global configuration includes:
+
+   Bindings:  Defines Prefix to Segment Identifier (Prefix-SID)
+      mappings.  The operator can control advertisement of Prefix-SIDs
+      independently for IPv4 and IPv6.  Two types of mappings are
+      available:
+
+      Mapping-server:  Maps prefixes that are not local to a SID.
+         Configuration of bindings does not automatically allow
+         advertisement of those bindings.  Advertisement must be
+         controlled by each routing-protocol instance (see <a href="#section-5">Section 5</a>).
+         Multiple mapping policies may be defined.
+
+      Connected prefixes:  Maps connected prefixes to a SID.
+         Advertisement of the mapping will be done by IGP when enabled
+         for SR (see <a href="#section-5">Section 5</a>).  The SID value can be expressed as an
+         index (default) or an absolute value.  The &quot;last-hop-behavior&quot;
+         configuration dictates the MPLS Penultimate Hop Popping (PHP)
+         behavior: &quot;explicit-null&quot;, &quot;php&quot;, or &quot;non-php&quot;.
+
+   Segment Routing Global Block (SRGB):  Defines a list of label blocks
+      represented by a pair of lower-bound/upper-bound labels.  The SRGB
+      is also agnostic to the control plane used.  So, all local
+      routing-protocol instances will have to advertise the same SRGB.
+
+   Segment Routing Local Block (SRLB):  Defines a list of label blocks
+      represented by a pair of lower-bound/upper-bound labels reserved
+      for local SIDs.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IGP Control-Plane Configuration</span>
+
+   Support of SR extensions for a particular IGP control plane is
+   achieved by augmenting routing-protocol configuration with SR
+   extensions.  This augmentation SHOULD be part of the routing-protocol
+   YANG modules as not to create any dependency for implementations to
+   support SR extensions for all routing protocols.
+
+   This module defines groupings that SHOULD be used by IGP SR modules.
+
+   The &quot;sr-control-plane&quot; grouping defines the generic global
+   configuration for the IGP.
+
+   The &quot;enabled&quot; leaf enables SR extensions for the routing-protocol
+   instance.
+
+   The &quot;bindings&quot; container controls the routing-protocol instance&#x27;s
+   advertisement of local bindings and the processing of received
+   bindings.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  IGP Interface Configuration</span>
+
+   The interface configuration is part of the &quot;igp-interface&quot; grouping
+   and includes Adjacency SID (Adj-SID) properties.
+
+<span class="h4"><a class="selflink" id="section-5.1.1" href="#section-5.1.1">5.1.1</a>.  Adjacency SID (Adj-SID) Properties</span>
+
+<span class="h5"><a class="selflink" id="section-5.1.1.1" href="#section-5.1.1.1">5.1.1.1</a>.  Bundling</span>
+
+   In case of parallel IP links between routers, an additional Adj-SID
+   [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>] may be advertised representing more than one adjacency
+   (i.e., a bundle of adjacencies).  The &quot;advertise-adj-group-sid&quot;
+   configuration controls for which group(s) an additional Adj-SID is
+   advertised.
+
+   The &quot;advertise-adj-group-sid&quot; is a list of group IDs.  Each group ID
+   will identify interfaces that are bundled together.
+
+           +-------+                 +------+
+           |       | ------- L1 ---- |      |
+           |   R1  | ------- L2 ---- |  R2  |
+           |       | ------- L3 ---- |      |
+           |       | ------- L4 ---- |      |
+           +-------+                 +------+
+
+   In the figure above, R1 and R2 are interconnected by four links.  A
+   routing protocol adjacency is established on each link.  The operator
+   would like to create Adj-SIDs that represent bundles of links.  We
+   can imagine two different bundles: L1/L2 and L3/L4.  To achieve this
+   behavior, the operator will configure a &quot;group-id&quot; X for interfaces
+   L1 and L2 and a &quot;group-id&quot; Y for interfaces L3 and L4.  This will
+   result in R1 advertising an additional Adj-SID for each adjacency.
+   For example, an Adj-SID with a value of 400 will be added to L1 and
+   L2, and an Adj-SID with a value of 500 will be added to L3 and L4.
+   As L1/L2 and L3/L4 do not share the same &quot;group-id&quot;, a different SID
+   value will be allocated.
+
+<span class="h5"><a class="selflink" id="section-5.1.1.2" href="#section-5.1.1.2">5.1.1.2</a>.  Protection</span>
+
+   The &quot;advertise-protection&quot; defines how protection for an interface is
+   advertised.  It does not control the activation or deactivation of
+   protection.  If the &quot;single&quot; option is used, a single Adj-SID will be
+   advertised for the interface.  If the interface is protected, the
+   B-Flag for the Adj-SID advertisement will be set.  If the &quot;dual&quot;
+   option is used and if the interface is protected, two Adj-SIDs will
+   be advertised for the interface adjacencies.  One Adj-SID will always
+   have the B-Flag set, and the other will have the B-Flag clear.  This
+   option is intended to be used in the case of traffic engineering
+   where a path must use either protected segments or unprotected
+   segments.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  State Data</span>
+
+   The operational state contains information reflecting the usage of
+   allocated SRGB labels.
+
+   It also includes a list of all global SIDs, their associated
+   bindings, and other information, such as the associated source
+   protocol and algorithm.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Notifications</span>
+
+   The model defines the following notifications for SR.
+
+   segment-routing-srgb-collision:  Raised when control-plane-advertised
+      SRGB blocks have conflicts
+
+   segment-routing-global-sid-collision:  Raised when a control-plane-
+      advertised index is already associated with another target (in
+      this version, the only defined targets are IPv4 and IPv6 prefixes)
+
+   segment-routing-index-out-of-range:  Raised when a control-plane-
+      advertised index falls outside the range of SRGBs configured for
+      the network device
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  YANG Modules</span>
+
+   There are three YANG modules included in this document.
+
+   The following RFCs are not referenced in the document text but are
+   referenced in the ietf-segment-routing.yang, ietf-segment-routing-
+   common.yang, and/or ietf-segment-routing-mpls.yang modules:
+   [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>], [<a href="/doc/html/rfc8294" title="&quot;Common YANG Data Types for the Routing Area&quot;">RFC8294</a>], [<a href="/doc/html/rfc8661" title="&quot;Segment Routing MPLS Interworking with LDP&quot;">RFC8661</a>], [<a href="/doc/html/rfc8665" title="&quot;OSPF Extensions for Segment Routing&quot;">RFC8665</a>], [<a href="/doc/html/rfc8667" title="&quot;IS-IS Extensions for Segment Routing&quot;">RFC8667</a>], [<a href="/doc/html/rfc8669" title="&quot;Segment Routing Prefix Segment Identifier Extensions for BGP&quot;">RFC8669</a>], and
+   [<a href="/doc/html/rfc8814" title="&quot;Signaling Maximum SID Depth (MSD) Using the Border Gateway Protocol - Link State&quot;">RFC8814</a>].
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  YANG Module for Segment Routing</span>
+
+   ietf-segment-routing.yang:  This module defines a generic framework
+      for Segment Routing (SR), and it is to be augmented by models for
+      different SR data planes.
+
+   &lt;CODE BEGINS&gt; file &quot;ietf-segment-routing@2021-05-26.yang&quot;
+   module ietf-segment-routing {
+     yang-version 1.1;
+     namespace &quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing&quot;;
+     prefix sr;
+
+     import ietf-routing {
+       prefix rt;
+       reference &quot;<a href="/doc/html/rfc8349">RFC 8349</a>: A YANG Data Model for Routing
+                            Management (NMDA Version)&quot;;
+     }
+
+     organization
+       &quot;IETF SPRING - SPRING Working Group&quot;;
+     contact
+       &quot;WG Web:   &lt;<a href="https://datatracker.ietf.org/wg/spring/">https://datatracker.ietf.org/wg/spring/</a>&gt;
+        WG List:  &lt;mailto:spring@ietf.org&gt;
+
+        Author:    Stephane Litkowski
+                  &lt;mailto:slitkows.ietf@gmail.com&gt;
+        Author:    Yingzhen Qu
+                  &lt;mailto:yingzhen.qu@futurewei.com&gt;
+        Author:    Acee Lindem
+                  &lt;mailto:acee@cisco.com&gt;
+        Author:    Pushpasis Sarkar
+                  &lt;mailto:pushpasis.ietf@gmail.com&gt;
+        Author:    Jeff Tantsura
+                  &lt;jefftant.ietf@gmail.com&gt;
+
+       &quot;;
+     description
+       &quot;This YANG module defines a generic framework for Segment
+        Routing (SR).  It is to be augmented by models for different
+        SR data planes.
+
+        This YANG module conforms to the Network Management
+        Datastore Architecture (NMDA), as described in <a href="/doc/html/rfc8242">RFC 8242</a>.
+
+        The key words &#x27;MUST&#x27;, &#x27;MUST NOT&#x27;, &#x27;REQUIRED&#x27;, &#x27;SHALL&#x27;, &#x27;SHALL
+        NOT&#x27;, &#x27;SHOULD&#x27;, &#x27;SHOULD NOT&#x27;, &#x27;RECOMMENDED&#x27;, &#x27;NOT RECOMMENDED&#x27;,
+        &#x27;MAY&#x27;, and &#x27;OPTIONAL&#x27; in this document are to be interpreted as
+        described in <a href="/doc/html/bcp14">BCP 14</a> (<a href="/doc/html/rfc2119">RFC 2119</a>) (<a href="/doc/html/rfc8174">RFC 8174</a>) when, and only when,
+        they appear in all capitals, as shown here.
+
+        Copyright (c) 2021 IETF Trust and the persons identified as
+        authors of the code.  All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD License
+        set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+        Relating to IETF Documents
+        (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>).
+
+        This version of this YANG module is part of <a href="/doc/html/rfc9020">RFC 9020</a>;
+        see the RFC itself for full legal notices.&quot;;
+
+     reference
+       &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing.&quot;;
+
+     revision 2021-05-26 {
+       description
+         &quot;Initial version&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing.&quot;;
+     }
+
+     augment &quot;/rt:routing&quot; {
+       description
+         &quot;This module augments the routing data model (<a href="/doc/html/rfc8349">RFC 8349</a>)
+          with Segment Routing (SR).&quot;;
+       container segment-routing {
+         description
+           &quot;Segment Routing configuration.  This container
+            is to be augmented by models for different SR
+            data planes.&quot;;
+         reference
+           &quot;<a href="/doc/html/rfc8402">RFC 8402</a>: Segment Routing Architecture.&quot;;
+       }
+     }
+   }
+   &lt;CODE ENDS&gt;
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  YANG Module for Segment Routing Common Types</span>
+
+   ietf-segment-routing-common.yang:  This module defines a collection
+      of generic types and groupings for SR, as defined in [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>].
+
+   &lt;CODE BEGINS&gt; file &quot;ietf-segment-routing-common@2021-05-26.yang&quot;
+   module ietf-segment-routing-common {
+     yang-version 1.1;
+     namespace
+      &quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing-common&quot;;
+     prefix sr-cmn;
+
+     import ietf-inet-types {
+       prefix inet;
+       reference
+         &quot;<a href="/doc/html/rfc6991">RFC 6991</a>: Common YANG Data Types&quot;;
+     }
+
+     organization
+       &quot;IETF SPRING - SPRING Working Group&quot;;
+     contact
+       &quot;WG Web:   &lt;<a href="https://datatracker.ietf.org/wg/spring/">https://datatracker.ietf.org/wg/spring/</a>&gt;
+        WG List:  &lt;mailto:spring@ietf.org&gt;
+
+        Author:    Stephane Litkowski
+                  &lt;mailto:slitkows.ietf@gmail.com&gt;
+        Author:    Yingzhen Qu
+                  &lt;mailto:yingzhen.qu@futurewei.com&gt;
+        Author:    Acee Lindem
+                  &lt;mailto:acee@cisco.com&gt;
+        Author:    Pushpasis Sarkar
+                  &lt;mailto:pushpasis.ietf@gmail.com&gt;
+        Author:    Jeff Tantsura
+                  &lt;jefftant.ietf@gmail.com&gt;
+
+       &quot;;
+     description
+       &quot;This YANG module defines a collection of generic types and
+        groupings for Segment Routing (SR), as described in <a href="/doc/html/rfc8402">RFC 8402</a>.
+
+        This YANG module conforms to the Network Management
+        Datastore Architecture (NMDA), as described in <a href="/doc/html/rfc8242">RFC 8242</a>.
+
+        The key words &#x27;MUST&#x27;, &#x27;MUST NOT&#x27;, &#x27;REQUIRED&#x27;, &#x27;SHALL&#x27;, &#x27;SHALL
+        NOT&#x27;, &#x27;SHOULD&#x27;, &#x27;SHOULD NOT&#x27;, &#x27;RECOMMENDED&#x27;, &#x27;NOT RECOMMENDED&#x27;,
+        &#x27;MAY&#x27;, and &#x27;OPTIONAL&#x27; in this document are to be interpreted as
+        described in <a href="/doc/html/bcp14">BCP 14</a> (<a href="/doc/html/rfc2119">RFC 2119</a>) (<a href="/doc/html/rfc8174">RFC 8174</a>) when, and only when,
+        they appear in all capitals, as shown here.
+
+        Copyright (c) 2021 IETF Trust and the persons identified as
+        authors of the code.  All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD License
+        set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+        Relating to IETF Documents
+        (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>).
+
+        This version of this YANG module is part of <a href="/doc/html/rfc9020">RFC 9020</a>;
+        see the RFC itself for full legal notices.&quot;;
+     reference
+       &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing&quot;;
+
+     revision 2021-05-26 {
+       description
+         &quot;Initial version&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing&quot;;
+     }
+
+     feature sid-last-hop-behavior {
+       description
+         &quot;Configurable last-hop behavior.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8660">RFC 8660</a>: Segment Routing with the MPLS Data Plane&quot;;
+     }
+
+     identity prefix-sid-algorithm {
+       description
+         &quot;Base identity for prefix-sid algorithm.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8402">RFC 8402</a>: Segment Routing Architecture&quot;;
+     }
+
+     identity prefix-sid-algorithm-shortest-path {
+       base prefix-sid-algorithm;
+       description
+         &quot;Shortest Path First (SPF) Prefix-SID algorithm.  This
+          is the default algorithm.&quot;;
+     }
+
+     identity prefix-sid-algorithm-strict-spf {
+       base prefix-sid-algorithm;
+       description
+         &quot;This algorithm mandates that the packet is forwarded
+          according to the ECMP-aware SPF algorithm.&quot;;
+     }
+
+     grouping srlr {
+       description
+         &quot;Grouping for SR Label Range configuration.&quot;;
+       leaf lower-bound {
+         type uint32;
+         description
+           &quot;Lower value in the label range.&quot;;
+       }
+       leaf upper-bound {
+         type uint32;
+         must &#x27;../lower-bound &lt; ../upper-bound&#x27; {
+           error-message
+             &quot;The upper-bound must be greater than the lower-bound.&quot;;
+           description
+             &quot;The value must be greater than lower-bound.&quot;;
+         }
+         description
+           &quot;Upper value in the label range.&quot;;
+       }
+     }
+
+     grouping srgb {
+       description
+         &quot;Grouping for SR Global Label Range.&quot;;
+       list srgb {
+         key &quot;lower-bound upper-bound&quot;;
+         ordered-by user;
+         description
+           &quot;List of global blocks to be advertised.&quot;;
+         uses srlr;
+       }
+     }
+
+     grouping srlb {
+       description
+         &quot;Grouping for SR Local Block Range.&quot;;
+       list srlb {
+         key &quot;lower-bound upper-bound&quot;;
+         ordered-by user;
+         description
+           &quot;List of SRLBs.&quot;;
+         uses srlr;
+       }
+     }
+
+     grouping sid-value-type {
+       description
+         &quot;Defines how the SID value is expressed.&quot;;
+       leaf value-type {
+         type enumeration {
+           enum index {
+             description
+               &quot;The value will be interpreted as an index.&quot;;
+           }
+           enum absolute {
+             description
+               &quot;The value will become interpreted as an absolute
+                value.&quot;;
+           }
+         }
+         default &quot;index&quot;;
+         description
+           &quot;This leaf defines how the value must be interpreted.&quot;;
+       }
+     }
+
+     grouping prefix-sid {
+       description
+         &quot;This grouping defines configuration of a Prefix-SID.&quot;;
+       leaf prefix {
+         type inet:ip-prefix;
+         description
+           &quot;Connected Prefix-SID.&quot;;
+       }
+       uses prefix-sid-attributes;
+     }
+
+     grouping ipv4-sid {
+       description
+         &quot;Grouping for an IPv4 Prefix-SID.&quot;;
+       leaf prefix {
+         type inet:ipv4-prefix;
+         description
+           &quot;Connected IPv4 Prefix-SID.&quot;;
+       }
+       uses prefix-sid-attributes;
+     }
+
+     grouping ipv6-sid {
+       description
+         &quot;Grouping for an IPv6 Prefix-SID.&quot;;
+       leaf prefix {
+         type inet:ipv6-prefix;
+         description
+           &quot;Connected IPv6 Prefix-SID.&quot;;
+       }
+       uses prefix-sid-attributes;
+     }
+
+     grouping last-hop-behavior {
+       description
+         &quot;Defines last-hop behavior.&quot;;
+       leaf last-hop-behavior {
+         if-feature &quot;sid-last-hop-behavior&quot;;
+         type enumeration {
+           enum explicit-null {
+             description
+               &quot;Use explicit-null for the SID.&quot;;
+           }
+           enum no-php {
+             description
+               &quot;Do not use MPLS Penultimate Hop Popping (PHP)
+                for the SID.&quot;;
+           }
+           enum php {
+             description
+               &quot;Use MPLS PHP for the SID.&quot;;
+           }
+         }
+         description
+           &quot;Configure last-hop behavior.&quot;;
+       }
+     }
+
+     grouping prefix-sid-attributes {
+       description
+         &quot;Grouping for Segment Routing (SR) prefix attributes.&quot;;
+       uses sid-value-type;
+       leaf start-sid {
+         type uint32;
+         mandatory true;
+         description
+           &quot;Value associated with prefix.  The value must be
+            interpreted in the context of sid-value-type.&quot;;
+       }
+       leaf range {
+         type uint32;
+         description
+           &quot;Indicates how many SIDs can be allocated.&quot;;
+       }
+       leaf algorithm {
+         type identityref {
+           base prefix-sid-algorithm;
+         }
+         description
+           &quot;Prefix-SID algorithm.&quot;;
+       }
+     }
+   }
+   &lt;CODE ENDS&gt;
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  YANG Module for Segment Routing MPLS</span>
+
+   ietf-segment-routing-mpls.yang:  This module defines the
+      configuration and operational states for the Segment Routing MPLS
+      data plane.
+
+   &lt;CODE BEGINS&gt; file &quot;ietf-segment-routing-mpls@2021-05-26.yang&quot;
+   module ietf-segment-routing-mpls {
+     yang-version 1.1;
+     namespace &quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing-mpls&quot;;
+     prefix sr-mpls;
+
+     import ietf-inet-types {
+       prefix inet;
+       reference
+         &quot;<a href="/doc/html/rfc6991">RFC 6991</a>: Common YANG Data Types&quot;;
+     }
+     import ietf-routing {
+       prefix rt;
+       reference
+         &quot;<a href="/doc/html/rfc8349">RFC 8349</a>: A YANG Data Model for Routing
+                    Management (NMDA Version)&quot;;
+     }
+     import ietf-routing-types {
+       prefix rt-types;
+       reference
+         &quot;<a href="/doc/html/rfc8294">RFC 8294</a>: Common YANG Data Types for the
+                    Routing Area&quot;;
+     }
+     import ietf-segment-routing {
+       prefix sr;
+       reference
+         &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing&quot;;
+     }
+     import ietf-segment-routing-common {
+       prefix sr-cmn;
+       reference
+         &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing&quot;;
+     }
+
+     organization
+       &quot;IETF SPRING - SPRING Working Group&quot;;
+     contact
+       &quot;WG Web:   &lt;<a href="https://datatracker.ietf.org/wg/spring/">https://datatracker.ietf.org/wg/spring/</a>&gt;
+        WG List:  &lt;mailto:spring@ietf.org&gt;
+
+        Author:    Stephane Litkowski
+                  &lt;mailto:slitkows.ietf@gmail.com&gt;
+        Author:    Yingzhen Qu
+                  &lt;mailto:yingzhen.qu@futurewei.com&gt;
+        Author:    Acee Lindem
+                  &lt;mailto:acee@cisco.com&gt;
+        Author:    Pushpasis Sarkar
+                  &lt;mailto:pushpasis.ietf@gmail.com&gt;
+        Author:    Jeff Tantsura
+                  &lt;jefftant.ietf@gmail.com&gt;
+
+       &quot;;
+     description
+       &quot;This YANG module defines a generic configuration model for
+        the Segment Routing MPLS data plane.
+
+        This YANG module conforms to the Network Management
+        Datastore Architecture (NMDA), as described in <a href="/doc/html/rfc8242">RFC 8242</a>.
+
+        The key words &#x27;MUST&#x27;, &#x27;MUST NOT&#x27;, &#x27;REQUIRED&#x27;, &#x27;SHALL&#x27;, &#x27;SHALL
+        NOT&#x27;, &#x27;SHOULD&#x27;, &#x27;SHOULD NOT&#x27;, &#x27;RECOMMENDED&#x27;, &#x27;NOT RECOMMENDED&#x27;,
+        &#x27;MAY&#x27;, and &#x27;OPTIONAL&#x27; in this document are to be interpreted as
+        described in <a href="/doc/html/bcp14">BCP 14</a> (<a href="/doc/html/rfc2119">RFC 2119</a>) (<a href="/doc/html/rfc8174">RFC 8174</a>) when, and only when,
+        they appear in all capitals, as shown here.
+
+        Copyright (c) 2021 IETF Trust and the persons identified as
+        authors of the code.  All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD License
+        set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+        Relating to IETF Documents
+        (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>).
+
+        This version of this YANG module is part of <a href="/doc/html/rfc9020">RFC 9020</a>;
+        see the RFC itself for full legal notices.&quot;;
+     reference
+       &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing&quot;;
+
+     revision 2021-05-26 {
+       description
+         &quot;Initial version&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc9020">RFC 9020</a>: YANG Data Model for Segment Routing&quot;;
+     }
+
+     feature mapping-server {
+       description
+         &quot;Support for Segment Routing Mapping Server (SRMS).&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8661">RFC 8661</a>: Segment Routing MPLS Interworking
+                    with LDP&quot;;
+     }
+
+     feature protocol-srgb {
+       description
+         &quot;Support for per-protocol Segment Routing Global Block
+          (SRGB) configuration.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8660">RFC 8660</a>: Segment Routing with the MPLS
+                    Data Plane&quot;;
+     }
+
+     typedef system-id {
+       type string {
+         pattern &#x27;[0-9A-Fa-f]{4}\.[0-9A-Fa-f]{4}\.[0-9A-Fa-f]{4}&#x27;;
+       }
+       description
+         &quot;This type defines an IS-IS system-id using a pattern.
+          An example system-id is 0143.0438.AEF0.&quot;;
+     }
+
+     typedef router-or-system-id {
+       type union {
+         type rt-types:router-id;
+         type system-id;
+       }
+       description
+         &quot;OSPF/BGP router-id or IS-IS system ID.&quot;;
+     }
+
+     grouping sr-control-plane {
+       description
+         &quot;Defines protocol configuration.&quot;;
+       container segment-routing {
+         description
+           &quot;Segment Routing global configuration.&quot;;
+         leaf enabled {
+           type boolean;
+           default &quot;false&quot;;
+           description
+             &quot;Enables Segment Routing control-plane protocol
+              extensions.&quot;;
+         }
+         container bindings {
+           if-feature &quot;mapping-server&quot;;
+           description
+             &quot;Control of binding advertisement and reception.&quot;;
+           container advertise {
+             description
+               &quot;Control advertisement of local mappings
+                in binding TLVs.&quot;;
+             leaf-list policies {
+               type leafref {
+                 path &quot;/rt:routing/sr:segment-routing/sr-mpls:sr-mpls&quot;
+                    + &quot;/sr-mpls:bindings/sr-mpls:mapping-server&quot;
+                    + &quot;/sr-mpls:policy/sr-mpls:name&quot;;
+               }
+               description
+                 &quot;List of binding advertisement policies.&quot;;
+             }
+           }
+           leaf receive {
+             type boolean;
+             default &quot;true&quot;;
+             description
+               &quot;Allow the reception and usage of binding TLVs.&quot;;
+           }
+         }
+       }
+     }
+
+     grouping igp-interface {
+       description
+         &quot;Grouping for IGP interface configuration.&quot;;
+       container segment-routing {
+         description
+           &quot;Container for SR interface configuration.&quot;;
+         container adjacency-sid {
+           description
+             &quot;Adjacency SID (Adj-SID) configuration.&quot;;
+           reference
+             &quot;<a href="/doc/html/rfc8660">RFC 8660</a>: Segment Routing with the MPLS
+                        Data Plane&quot;;
+           list adj-sids {
+             key &quot;value&quot;;
+             uses sr-cmn:sid-value-type;
+             leaf value {
+               type uint32;
+               description
+                 &quot;Value of the Adj-SID.&quot;;
+             }
+             leaf protected {
+               type boolean;
+               default &quot;false&quot;;
+               description
+                 &quot;It is used to protect the Adj-SID, e.g., using
+                  IP Fast Reroute (IPFRR) or MPLS-FRR.&quot;;
+             }
+             leaf weight {
+               type uint8;
+               description
+                 &quot;The load-balancing factor over parallel adjacencies.&quot;;
+               reference
+                 &quot;<a href="/doc/html/rfc8402">RFC 8402</a>: Segment Routing Architecture
+                  <a href="/doc/html/rfc8665">RFC 8665</a>: OSPF Extensions for Segment Routing
+                  <a href="/doc/html/rfc8667">RFC 8667</a>: IS-IS Extensions for Segment
+                            Routing&quot;;
+             }
+             description
+               &quot;List of Adj-SIDs and their configuration.&quot;;
+           }
+           list advertise-adj-group-sid {
+             key &quot;group-id&quot;;
+             description
+               &quot;Control advertisement of S-flag or G-flag.  Enable
+                advertisement of a common Adj-SID for parallel
+                links.&quot;;
+             reference
+               &quot;<a href="/doc/html/rfc8665">RFC 8665</a>: OSPF Extensions for Segment Routing,
+                          <a href="#section-6.1">Section 6.1</a>
+                <a href="/doc/html/rfc8667">RFC 8667</a>: IS-IS Extensions for Segment
+                          Routing, <a href="#section-2.2.1">Section 2.2.1</a>&quot;;
+             leaf group-id {
+               type uint32;
+               description
+                 &quot;The value is an internal value to identify a
+                  group-ID. Interfaces with the same group-ID
+                  will be bundled together.&quot;;
+             }
+           }
+           leaf advertise-protection {
+             type enumeration {
+               enum single {
+                 description
+                   &quot;A single Adj-SID is associated with the
+                    adjacency and reflects the protection
+                    configuration.&quot;;
+               }
+               enum dual {
+                 description
+                   &quot;Two Adj-SIDs will be associated with the adjacency
+                    if the interface is protected.  In this case, one
+                    Adj-SID will be advertised with the backup-flag
+                    set and the other with the backup-flag clear.  In
+                    the case where protection is not configured, a
+                    single Adj-SID will be advertised with the
+                    backup-flag clear.&quot;;
+               }
+             }
+             description
+               &quot;If set, the Adj-SID refers to a protected adjacency.&quot;;
+             reference
+               &quot;<a href="/doc/html/rfc8665">RFC 8665</a>: OSPF Extensions for Segment Routing,
+                          <a href="#section-6.1">Section 6.1</a>
+                <a href="/doc/html/rfc8667">RFC 8667</a>: IS-IS Extensions for Segment
+                          Routing, <a href="#section-2.2.1">Section 2.2.1</a>&quot;;
+           }
+         }
+       }
+     }
+
+     augment &quot;/rt:routing/sr:segment-routing&quot; {
+       description
+         &quot;This augments the routing data model (<a href="/doc/html/rfc8349">RFC 8349</a>)
+          with Segment Routing (SR) using the MPLS data plane.&quot;;
+       container sr-mpls {
+         description
+           &quot;Segment Routing global configuration and
+            operational state.&quot;;
+         container bindings {
+           description
+             &quot;List of bindings.&quot;;
+           container mapping-server {
+             if-feature &quot;mapping-server&quot;;
+             description
+               &quot;Configuration of mapping-server local entries.&quot;;
+             list policy {
+               key &quot;name&quot;;
+               description
+                 &quot;List mapping-server policies.&quot;;
+               leaf name {
+                 type string;
+                 description
+                   &quot;Name of the mapping policy.&quot;;
+               }
+               container entries {
+                 description
+                   &quot;IPv4/IPv6 mapping entries.&quot;;
+                 list mapping-entry {
+                   key &quot;prefix algorithm&quot;;
+                   description
+                     &quot;Mapping entries.&quot;;
+                   uses sr-cmn:prefix-sid;
+                 }
+               }
+             }
+           }
+           container connected-prefix-sid-map {
+             description
+               &quot;Prefix-SID configuration.&quot;;
+             list connected-prefix-sid {
+               key &quot;prefix algorithm&quot;;
+               description
+                 &quot;List of mappings of Prefix-SIDs to IPv4/IPv6
+                  local prefixes.&quot;;
+               uses sr-cmn:prefix-sid;
+               uses sr-cmn:last-hop-behavior;
+             }
+           }
+           container local-prefix-sid {
+             description
+               &quot;Local SID configuration.&quot;;
+             list local-prefix-sid {
+               key &quot;prefix algorithm&quot;;
+               description
+                 &quot;List of local IPv4/IPv6 Prefix-SIDs.&quot;;
+               uses sr-cmn:prefix-sid;
+             }
+           }
+         }
+         container srgb {
+           description
+             &quot;Global SRGB configuration.&quot;;
+           uses sr-cmn:srgb;
+         }
+         container srlb {
+           description
+             &quot;Segment Routing Local Block (SRLB) configuration.&quot;;
+           uses sr-cmn:srlb;
+         }
+         list label-blocks {
+           config false;
+           description
+             &quot;List of label blocks currently in use.&quot;;
+           leaf lower-bound {
+             type uint32;
+             description
+               &quot;Lower bound of the label block.&quot;;
+           }
+           leaf upper-bound {
+             type uint32;
+             description
+               &quot;Upper bound of the label block.&quot;;
+           }
+           leaf size {
+             type uint32;
+             description
+               &quot;Number of indexes in the block.&quot;;
+           }
+           leaf free {
+             type uint32;
+             description
+               &quot;Number of free indexes in the block.&quot;;
+           }
+           leaf used {
+             type uint32;
+             description
+               &quot;Number of indexes in use in the block.&quot;;
+           }
+           leaf scope {
+             type enumeration {
+               enum global {
+                 description
+                   &quot;Global SID.&quot;;
+               }
+               enum local {
+                 description
+                   &quot;Local SID.&quot;;
+               }
+             }
+             description
+               &quot;Scope of this label block.&quot;;
+           }
+         }
+         container sid-db {
+           config false;
+           description
+             &quot;List of prefix and SID associations.&quot;;
+           list sid {
+             key &quot;target sid source source-protocol binding-type&quot;;
+             ordered-by system;
+             description
+               &quot;SID binding.&quot;;
+             leaf target {
+               type string;
+               description
+                 &quot;Defines the target of the binding.  It can be a
+                  prefix or something else.&quot;;
+             }
+             leaf sid {
+               type uint32;
+               description
+                 &quot;Index associated with the prefix.&quot;;
+             }
+             leaf algorithm {
+               type uint8;
+               description
+                 &quot;Algorithm to be used for the Prefix-SID.&quot;;
+               reference
+                 &quot;<a href="/doc/html/rfc8665">RFC 8665</a>: OSPF Extensions for Segment Routing
+                  <a href="/doc/html/rfc8667">RFC 8667</a>: IS-IS Extensions for Segment
+                            Routing
+                  <a href="/doc/html/rfc8669">RFC 8669</a>: Segment Routing Prefix Segment
+                            Identifier Extensions to BGP&quot;;
+             }
+             leaf source {
+               type inet:ip-address;
+               description
+                 &quot;IP address of the router that owns the binding.&quot;;
+             }
+             leaf used {
+               type boolean;
+               description
+                 &quot;Indicates if the binding is installed in the
+                  forwarding plane.&quot;;
+             }
+             leaf source-protocol {
+               type leafref {
+                 path &quot;/rt:routing/rt:control-plane-protocols/&quot;
+                    + &quot;rt:control-plane-protocol/rt:name&quot;;
+               }
+               description
+                 &quot;Routing protocol that owns the binding.&quot;;
+             }
+             leaf binding-type {
+               type enumeration {
+                 enum prefix-sid {
+                   description
+                     &quot;Binding is learned from a Prefix-SID.&quot;;
+                 }
+                 enum binding-tlv {
+                   description
+                     &quot;Binding is learned from a binding TLV.&quot;;
+                 }
+               }
+               description
+                 &quot;Type of binding.&quot;;
+             }
+             leaf scope {
+               type enumeration {
+                 enum global {
+                   description
+                     &quot;Global SID.&quot;;
+                 }
+                 enum local {
+                   description
+                     &quot;Local SID.&quot;;
+                 }
+               }
+               description
+                 &quot;SID scoping.&quot;;
+             }
+           }
+         }
+       }
+     }
+
+     notification segment-routing-srgb-collision {
+       description
+         &quot;This notification is sent when SRGB blocks received from
+          different routers collide.&quot;;
+       list srgb-collisions {
+         description
+           &quot;List of SRGB blocks that collide.&quot;;
+         leaf lower-bound {
+           type uint32;
+           description
+             &quot;Lower value in the block.&quot;;
+         }
+         leaf upper-bound {
+           type uint32;
+           description
+             &quot;Upper value in the block.&quot;;
+         }
+         leaf routing-protocol {
+           type leafref {
+             path &quot;/rt:routing/rt:control-plane-protocols/&quot;
+                + &quot;rt:control-plane-protocol/rt:name&quot;;
+           }
+           description
+             &quot;Routing protocol reference for SRGB collision.&quot;;
+         }
+         leaf originating-rtr-id {
+           type router-or-system-id;
+           description
+             &quot;Originating router ID of this SRGB block.&quot;;
+         }
+       }
+     }
+
+     notification segment-routing-global-sid-collision {
+       description
+         &quot;This notification is sent when a new mapping is learned
+          containing a mapping where the SID is already used.
+          The notification generation must be throttled with at least
+          a 5-second gap between notifications.&quot;;
+       leaf received-target {
+         type string;
+         description
+           &quot;Target received in the router advertisement that caused
+            the SID collision.&quot;;
+       }
+       leaf new-sid-rtr-id {
+         type router-or-system-id;
+         description
+           &quot;Router ID that advertised the colliding SID.&quot;;
+       }
+       leaf original-target {
+         type string;
+         description
+           &quot;Target already available in the database with the same SID
+            as the received target.&quot;;
+       }
+       leaf original-sid-rtr-id {
+         type router-or-system-id;
+         description
+           &quot;Router ID for the router that originally advertised the
+            colliding SID, i.e., the instance in the database.&quot;;
+       }
+       leaf index {
+         type uint32;
+         description
+           &quot;Value of the index used by two different prefixes.&quot;;
+       }
+       leaf routing-protocol {
+         type leafref {
+           path &quot;/rt:routing/rt:control-plane-protocols/&quot;
+              + &quot;rt:control-plane-protocol/rt:name&quot;;
+         }
+         description
+           &quot;Routing protocol reference for colliding SID.&quot;;
+       }
+     }
+
+     notification segment-routing-index-out-of-range {
+       description
+         &quot;This notification is sent when a binding is received
+          containing a segment index that is out of the local
+          configured ranges.  The notification generation must be
+          throttled with at least a 5-second gap between
+          notifications.&quot;;
+       leaf received-target {
+         type string;
+         description
+           &quot;A human-readable string representing the target
+            received in the protocol-specific advertisement
+            corresponding to the out-of-range index.&quot;;
+       }
+       leaf received-index {
+         type uint32;
+         description
+           &quot;Value of the index received.&quot;;
+       }
+       leaf routing-protocol {
+         type leafref {
+           path &quot;/rt:routing/rt:control-plane-protocols/&quot;
+              + &quot;rt:control-plane-protocol/rt:name&quot;;
+         }
+         description
+           &quot;Routing protocol reference for out-of-range indexed.&quot;;
+       }
+     }
+   }
+   &lt;CODE ENDS&gt;
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Security Considerations</span>
+
+   The YANG modules specified in this document define a schema for data
+   that is designed to be accessed via network management protocols,
+   such as NETCONF [<a href="/doc/html/rfc6241" title="&quot;Network Configuration Protocol (NETCONF)&quot;">RFC6241</a>] or RESTCONF [<a href="/doc/html/rfc8040" title="&quot;RESTCONF Protocol&quot;">RFC8040</a>].  The lowest NETCONF
+   layer is the secure transport layer, and the mandatory-to-implement
+   secure transport is Secure Shell (SSH) [<a href="/doc/html/rfc6242" title="&quot;Using the NETCONF Protocol over Secure Shell (SSH)&quot;">RFC6242</a>].  The lowest
+   RESTCONF layer is HTTPS, and the mandatory-to-implement secure
+   transport is TLS [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>].
+
+   The Network Configuration Access Control Model (NACM) [<a href="/doc/html/rfc8341" title="&quot;Network Configuration Access Control Model&quot;">RFC8341</a>]
+   provides the means to restrict access for particular NETCONF or
+   RESTCONF users to a preconfigured subset of all available NETCONF or
+   RESTCONF protocol operations and content.
+
+   There are a number of data nodes defined in the modules that are
+   writable/creatable/deletable (i.e., config true, which is the
+   default).  These data nodes may be considered sensitive or vulnerable
+   in some network environments.  Write operations (e.g., edit-config)
+   to these data nodes without proper protection can have a negative
+   effect on network operations.  These are the subtrees and data nodes
+   and their sensitivity/vulnerability:
+
+   *  /segment-routing
+
+   *  /segment-routing/mpls
+
+   *  /segment-routing/mpls/bindings -- Modification to the local
+      bindings could result in a Denial-of-Service (DoS) attack.  An
+      attacker may also try to create segment conflicts (using the same
+      segment identifier for different purposes) to redirect traffic
+      within the trusted domain.  However, the traffic will remain
+      within the trusted domain.  Redirection could be used to route the
+      traffic to compromised nodes within the trusted domain or to avoid
+      certain security functions (e.g., firewall).  Refer to <a href="/doc/html/rfc8402#section-8.1">Section&nbsp;8.1
+      of [RFC8402]</a> for a discussion of the SR-MPLS trusted domain.
+
+   *  /segment-routing/mpls/srgb -- Modification of the Segment Routing
+      Global Block (SRGB) could be used to mount a DoS attack.  For
+      example, if the SRGB size is reduced to a very small value, a lot
+      of existing segments could no longer be installed leading to a
+      traffic disruption.
+
+   *  /segment-routing/mpls/srlb -- Modification of the Segment Routing
+      Local Block (SRLB) could be used to mount a DoS attack similar to
+      those applicable to the SRGB.
+
+   Some of the readable data nodes in these YANG modules may be
+   considered sensitive or vulnerable in some network environments.  It
+   is thus important to control read access (e.g., via get, get-config,
+   or notification) to these data nodes.  These are the subtrees and
+   data nodes and their sensitivity/vulnerability:
+
+   *  /segment-routing/mpls/bindings -- Knowledge of these data nodes
+      can be used to attack the local router with a Denial-of-Service
+      (DoS) attack.
+
+   *  /segment-routing/mpls/sid-db -- Knowledge of these data nodes can
+      be used to attack the other routers in the SR domain with either a
+      Denial-of-Service (DoS) attack or redirection traffic destined for
+      those routers.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  IANA Considerations</span>
+
+   This document registers a URI in the &quot;IETF XML Registry&quot; [<a href="/doc/html/rfc3688" title="&quot;The IETF XML Registry&quot;">RFC3688</a>].
+   Following the format in [<a href="/doc/html/rfc3688" title="&quot;The IETF XML Registry&quot;">RFC3688</a>], the following registration is
+   requested to be made:
+
+   ID:  yang:ietf-segment-routing-common
+   URI:  urn:ietf:params:xml:ns:yang:ietf-segment-routing-common
+   Registrant Contact:  The IESG.
+   XML:  N/A, the requested URI is an XML namespace.
+
+   ID:  yang:ietf-segment-routing
+   URI:  urn:ietf:params:xml:ns:yang:ietf-segment-routing
+   Registrant Contact:  The IESG.
+   XML:  N/A, the requested URI is an XML namespace.
+
+   ID:  yang:ietf-segment-routing-mpls
+   URI:  urn:ietf:params:xml:ns:yang:ietf-segment-routing-mpls
+   Registrant Contact:  The IESG.
+   XML:  N/A, the requested URI is an XML namespace.
+
+   This document registers YANG modules in the &quot;YANG Module Names&quot;
+   registry [<a href="/doc/html/rfc6020" title="&quot;YANG - A Data Modeling Language for the Network Configuration Protocol (NETCONF)&quot;">RFC6020</a>].
+
+   Name:  ietf-segment-routing-common
+   Maintained by IANA:  N
+   Namespace:  urn:ietf:params:xml:ns:yang:ietf-segment-routing-common
+   Prefix:  sr-cmn
+   Reference:  <a href="/doc/html/rfc9020">RFC 9020</a>
+
+   Name:  ietf-segment-routing
+   Maintained by IANA:  N
+   Namespace:  urn:ietf:params:xml:ns:yang:ietf-segment-routing
+   Prefix:  sr
+   Reference:  <a href="/doc/html/rfc9020">RFC 9020</a>
+
+   Name:  ietf-segment-routing-mpls
+   Maintained by IANA:  N
+   Namespace:  urn:ietf:params:xml:ns:yang:ietf-segment-routing-mpls
+   Prefix:  sr-mpls
+   Reference:  <a href="/doc/html/rfc9020">RFC 9020</a>
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-11.1" href="#section-11.1">11.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3688">RFC3688</a>]  Mealling, M., &quot;The IETF XML Registry&quot;, <a href="/doc/html/bcp81">BCP 81</a>, <a href="/doc/html/rfc3688">RFC 3688</a>,
+              DOI 10.17487/RFC3688, January 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3688">https://www.rfc-editor.org/info/rfc3688</a>&gt;.
+
+   [<a id="ref-RFC6020">RFC6020</a>]  Bjorklund, M., Ed., &quot;YANG - A Data Modeling Language for
+              the Network Configuration Protocol (NETCONF)&quot;, <a href="/doc/html/rfc6020">RFC 6020</a>,
+              DOI 10.17487/RFC6020, October 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6020">https://www.rfc-editor.org/info/rfc6020</a>&gt;.
+
+   [<a id="ref-RFC6241">RFC6241</a>]  Enns, R., Ed., Bjorklund, M., Ed., Schoenwaelder, J., Ed.,
+              and A. Bierman, Ed., &quot;Network Configuration Protocol
+              (NETCONF)&quot;, <a href="/doc/html/rfc6241">RFC 6241</a>, DOI 10.17487/RFC6241, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6241">https://www.rfc-editor.org/info/rfc6241</a>&gt;.
+
+   [<a id="ref-RFC6242">RFC6242</a>]  Wasserman, M., &quot;Using the NETCONF Protocol over Secure
+              Shell (SSH)&quot;, <a href="/doc/html/rfc6242">RFC 6242</a>, DOI 10.17487/RFC6242, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6242">https://www.rfc-editor.org/info/rfc6242</a>&gt;.
+
+   [<a id="ref-RFC6991">RFC6991</a>]  Schoenwaelder, J., Ed., &quot;Common YANG Data Types&quot;,
+              <a href="/doc/html/rfc6991">RFC 6991</a>, DOI 10.17487/RFC6991, July 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6991">https://www.rfc-editor.org/info/rfc6991</a>&gt;.
+
+   [<a id="ref-RFC7950">RFC7950</a>]  Bjorklund, M., Ed., &quot;The YANG 1.1 Data Modeling Language&quot;,
+              <a href="/doc/html/rfc7950">RFC 7950</a>, DOI 10.17487/RFC7950, August 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7950">https://www.rfc-editor.org/info/rfc7950</a>&gt;.
+
+   [<a id="ref-RFC8040">RFC8040</a>]  Bierman, A., Bjorklund, M., and K. Watsen, &quot;RESTCONF
+              Protocol&quot;, <a href="/doc/html/rfc8040">RFC 8040</a>, DOI 10.17487/RFC8040, January 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8040">https://www.rfc-editor.org/info/rfc8040</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8294">RFC8294</a>]  Liu, X., Qu, Y., Lindem, A., Hopps, C., and L. Berger,
+              &quot;Common YANG Data Types for the Routing Area&quot;, <a href="/doc/html/rfc8294">RFC 8294</a>,
+              DOI 10.17487/RFC8294, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8294">https://www.rfc-editor.org/info/rfc8294</a>&gt;.
+
+   [<a id="ref-RFC8341">RFC8341</a>]  Bierman, A. and M. Bjorklund, &quot;Network Configuration
+              Access Control Model&quot;, STD 91, <a href="/doc/html/rfc8341">RFC 8341</a>,
+              DOI 10.17487/RFC8341, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8341">https://www.rfc-editor.org/info/rfc8341</a>&gt;.
+
+   [<a id="ref-RFC8342">RFC8342</a>]  Bjorklund, M., Schoenwaelder, J., Shafer, P., Watsen, K.,
+              and R. Wilton, &quot;Network Management Datastore Architecture
+              (NMDA)&quot;, <a href="/doc/html/rfc8342">RFC 8342</a>, DOI 10.17487/RFC8342, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8342">https://www.rfc-editor.org/info/rfc8342</a>&gt;.
+
+   [<a id="ref-RFC8343">RFC8343</a>]  Bjorklund, M., &quot;A YANG Data Model for Interface
+              Management&quot;, <a href="/doc/html/rfc8343">RFC 8343</a>, DOI 10.17487/RFC8343, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8343">https://www.rfc-editor.org/info/rfc8343</a>&gt;.
+
+   [<a id="ref-RFC8349">RFC8349</a>]  Lhotka, L., Lindem, A., and Y. Qu, &quot;A YANG Data Model for
+              Routing Management (NMDA Version)&quot;, <a href="/doc/html/rfc8349">RFC 8349</a>,
+              DOI 10.17487/RFC8349, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8349">https://www.rfc-editor.org/info/rfc8349</a>&gt;.
+
+   [<a id="ref-RFC8402">RFC8402</a>]  Filsfils, C., Ed., Previdi, S., Ed., Ginsberg, L.,
+              Decraene, B., Litkowski, S., and R. Shakir, &quot;Segment
+              Routing Architecture&quot;, <a href="/doc/html/rfc8402">RFC 8402</a>, DOI 10.17487/RFC8402,
+              July 2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8402">https://www.rfc-editor.org/info/rfc8402</a>&gt;.
+
+   [<a id="ref-RFC8446">RFC8446</a>]  Rescorla, E., &quot;The Transport Layer Security (TLS) Protocol
+              Version 1.3&quot;, <a href="/doc/html/rfc8446">RFC 8446</a>, DOI 10.17487/RFC8446, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8446">https://www.rfc-editor.org/info/rfc8446</a>&gt;.
+
+   [<a id="ref-RFC8660">RFC8660</a>]  Bashandy, A., Ed., Filsfils, C., Ed., Previdi, S.,
+              Decraene, B., Litkowski, S., and R. Shakir, &quot;Segment
+              Routing with the MPLS Data Plane&quot;, <a href="/doc/html/rfc8660">RFC 8660</a>,
+              DOI 10.17487/RFC8660, December 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8660">https://www.rfc-editor.org/info/rfc8660</a>&gt;.
+
+   [<a id="ref-RFC8661">RFC8661</a>]  Bashandy, A., Ed., Filsfils, C., Ed., Previdi, S.,
+              Decraene, B., and S. Litkowski, &quot;Segment Routing MPLS
+              Interworking with LDP&quot;, <a href="/doc/html/rfc8661">RFC 8661</a>, DOI 10.17487/RFC8661,
+              December 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8661">https://www.rfc-editor.org/info/rfc8661</a>&gt;.
+
+   [<a id="ref-RFC8665">RFC8665</a>]  Psenak, P., Ed., Previdi, S., Ed., Filsfils, C., Gredler,
+              H., Shakir, R., Henderickx, W., and J. Tantsura, &quot;OSPF
+              Extensions for Segment Routing&quot;, <a href="/doc/html/rfc8665">RFC 8665</a>,
+              DOI 10.17487/RFC8665, December 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8665">https://www.rfc-editor.org/info/rfc8665</a>&gt;.
+
+   [<a id="ref-RFC8667">RFC8667</a>]  Previdi, S., Ed., Ginsberg, L., Ed., Filsfils, C.,
+              Bashandy, A., Gredler, H., and B. Decraene, &quot;IS-IS
+              Extensions for Segment Routing&quot;, <a href="/doc/html/rfc8667">RFC 8667</a>,
+              DOI 10.17487/RFC8667, December 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8667">https://www.rfc-editor.org/info/rfc8667</a>&gt;.
+
+   [<a id="ref-RFC8669">RFC8669</a>]  Previdi, S., Filsfils, C., Lindem, A., Ed., Sreekantiah,
+              A., and H. Gredler, &quot;Segment Routing Prefix Segment
+              Identifier Extensions for BGP&quot;, <a href="/doc/html/rfc8669">RFC 8669</a>,
+              DOI 10.17487/RFC8669, December 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8669">https://www.rfc-editor.org/info/rfc8669</a>&gt;.
+
+   [<a id="ref-RFC8814">RFC8814</a>]  Tantsura, J., Chunduri, U., Talaulikar, K., Mirsky, G.,
+              and N. Triantafillis, &quot;Signaling Maximum SID Depth (MSD)
+              Using the Border Gateway Protocol - Link State&quot;, <a href="/doc/html/rfc8814">RFC 8814</a>,
+              DOI 10.17487/RFC8814, August 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8814">https://www.rfc-editor.org/info/rfc8814</a>&gt;.
+
+   [<a id="ref-W3C.REC-xml11-20060816">W3C.REC-xml11-20060816</a>]
+              Bray, T., Paoli, J., Sperberg-McQueen, M., Maler, E.,
+              Yergeau, F., and J. Cowan, &quot;Extensible Markup Language
+              (XML) 1.1 (Second Edition)&quot;, World Wide Web Consortium
+              Recommendation REC-xml11-20060816, 16 August 2006,
+              &lt;<a href="https://www.w3.org/TR/2006/REC-xml11-20060816">https://www.w3.org/TR/2006/REC-xml11-20060816</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-11.2" href="#section-11.2">11.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC8340">RFC8340</a>]  Bjorklund, M. and L. Berger, Ed., &quot;YANG Tree Diagrams&quot;,
+              <a href="/doc/html/bcp215">BCP 215</a>, <a href="/doc/html/rfc8340">RFC 8340</a>, DOI 10.17487/RFC8340, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8340">https://www.rfc-editor.org/info/rfc8340</a>&gt;.
+
+   [<a id="ref-RFC8792">RFC8792</a>]  Watsen, K., Auerswald, E., Farrel, A., and Q. Wu,
+              &quot;Handling Long Lines in Content of Internet-Drafts and
+              RFCs&quot;, <a href="/doc/html/rfc8792">RFC 8792</a>, DOI 10.17487/RFC8792, June 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8792">https://www.rfc-editor.org/info/rfc8792</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Configuration Examples</span>
+
+   Note: &#x27;\&#x27; line wrapping per [<a href="/doc/html/rfc8792" title="&quot;Handling Long Lines in Content of Internet-Drafts and RFCs&quot;">RFC8792</a>].
+
+<span class="h3"><a class="selflink" id="appendix-A.1" href="#appendix-A.1">A.1</a>.  SR-MPLS with IPv4</span>
+
+   The following is an XML [<a href="#ref-W3C.REC-xml11-20060816">W3C.REC-xml11-20060816</a>] example using the
+   SR-MPLS YANG modules with IPv4 addresses.
+
+   &lt;routing xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-routing&quot;&gt;
+     &lt;segment-routing
+       xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing&quot;&gt;
+       &lt;sr-mpls
+         xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing-mpls&quot;&gt;
+         &lt;bindings&gt;
+           &lt;mapping-server&gt;
+             &lt;policy&gt;
+               &lt;name&gt;mapping 1&lt;/name&gt;
+               &lt;entries&gt;
+                 &lt;mapping-entry&gt;
+                   &lt;prefix&gt;198.51.100.0/24&lt;/prefix&gt;
+                   &lt;algorithm xmlns:sr-cmn=&quot;urn:ietf:params:xml:ns:yang\
+                     :ietf-segment-routing-common&quot;&gt;\
+                     sr-cmn:prefix-sid-algorithm-shortest-path\
+                   &lt;/algorithm&gt;
+                   &lt;start-sid&gt;200&lt;/start-sid&gt;
+                   &lt;range&gt;100&lt;/range&gt;
+                 &lt;/mapping-entry&gt;
+               &lt;/entries&gt;
+             &lt;/policy&gt;
+           &lt;/mapping-server&gt;
+           &lt;connected-prefix-sid-map&gt;
+             &lt;connected-prefix-sid&gt;
+               &lt;prefix&gt;192.0.2.0/24&lt;/prefix&gt;
+               &lt;algorithm xmlns:sr-cmn=&quot;urn:ietf:params:xml:ns:yang:\
+                 ietf-segment-routing-common&quot;&gt;\
+                 sr-cmn:prefix-sid-algorithm-strict-spf&lt;/algorithm&gt;
+               &lt;start-sid&gt;100&lt;/start-sid&gt;
+               &lt;range&gt;1&lt;/range&gt;
+               &lt;last-hop-behavior&gt;php&lt;/last-hop-behavior&gt;
+             &lt;/connected-prefix-sid&gt;
+           &lt;/connected-prefix-sid-map&gt;
+         &lt;/bindings&gt;
+         &lt;srgb&gt;
+           &lt;srgb&gt;
+             &lt;lower-bound&gt;45000&lt;/lower-bound&gt;
+             &lt;upper-bound&gt;55000&lt;/upper-bound&gt;
+           &lt;/srgb&gt;
+         &lt;/srgb&gt;
+       &lt;/sr-mpls&gt;
+     &lt;/segment-routing&gt;
+   &lt;/routing&gt;
+
+   The following is the same example using JSON format.
+
+   {
+     &quot;ietf-routing:routing&quot;: {
+       &quot;ietf-segment-routing:segment-routing&quot;: {
+         &quot;ietf-segment-routing-mpls:sr-mpls&quot;: {
+           &quot;bindings&quot;: {
+             &quot;mapping-server&quot;: {
+               &quot;policy&quot;: [
+                 {
+                   &quot;name&quot;: &quot;mapping 1&quot;,
+                   &quot;entries&quot;: {
+                     &quot;mapping-entry&quot;: [
+                       {
+                         &quot;prefix&quot;: &quot;198.51.100.0/24&quot;,
+                         &quot;algorithm&quot;: &quot;ietf-segment-routing-common:\
+                         prefix-sid-algorithm-shortest-path&quot;,
+                         &quot;start-sid&quot;: 200,
+                         &quot;range&quot;: 100
+                       }
+                     ]
+                   }
+                 }
+               ]
+             },
+             &quot;connected-prefix-sid-map&quot;: {
+               &quot;connected-prefix-sid&quot;: [
+                 {
+                   &quot;prefix&quot;: &quot;192.0.2.0/24&quot;,
+                   &quot;algorithm&quot;: &quot;ietf-segment-routing-common:\
+                   prefix-sid-algorithm-strict-spf&quot;,
+                   &quot;start-sid&quot;: 100,
+                   &quot;range&quot;: 1,
+                   &quot;last-hop-behavior&quot;: &quot;php&quot;
+                 }
+               ]
+             }
+           },
+           &quot;srgb&quot;: {
+             &quot;srgb&quot;: [
+               {
+                 &quot;lower-bound&quot;: 45000,
+                 &quot;upper-bound&quot;: 55000
+               }
+             ]
+           }
+         }
+       }
+     }
+   }
+
+<span class="h3"><a class="selflink" id="appendix-A.2" href="#appendix-A.2">A.2</a>.  SR-MPLS with IPv6</span>
+
+   The following is an XML [<a href="#ref-W3C.REC-xml11-20060816">W3C.REC-xml11-20060816</a>] example using the
+   SR-MPLS YANG modules with IPv6 addresses.
+
+   &lt;routing xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-routing&quot;&gt;
+     &lt;segment-routing
+       xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing&quot;&gt;
+       &lt;sr-mpls
+         xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-segment-routing-mpls&quot;&gt;
+         &lt;bindings&gt;
+           &lt;mapping-server&gt;
+             &lt;policy&gt;
+               &lt;name&gt;mapping 1&lt;/name&gt;
+               &lt;entries&gt;
+                 &lt;mapping-entry&gt;
+                   &lt;prefix&gt;2001:db8:aaaa:bbbb::/64&lt;/prefix&gt;
+                   &lt;algorithm xmlns:sr-cmn=&quot;urn:ietf:params:xml:ns:yang\
+                     :ietf-segment-routing-common&quot;&gt;\
+                     sr-cmn:prefix-sid-algorithm-shortest-path\
+                   &lt;/algorithm&gt;
+                   &lt;start-sid&gt;200&lt;/start-sid&gt;
+                   &lt;range&gt;100&lt;/range&gt;
+                 &lt;/mapping-entry&gt;
+               &lt;/entries&gt;
+             &lt;/policy&gt;
+           &lt;/mapping-server&gt;
+           &lt;connected-prefix-sid-map&gt;
+             &lt;connected-prefix-sid&gt;
+               &lt;prefix&gt;2001:db8:aaaa:cccc::/64&lt;/prefix&gt;
+               &lt;algorithm xmlns:sr-cmn=&quot;urn:ietf:params:xml:ns:yang:\
+                 ietf-segment-routing-common&quot;&gt;\
+                 sr-cmn:prefix-sid-algorithm-strict-spf&lt;/algorithm&gt;
+               &lt;start-sid&gt;100&lt;/start-sid&gt;
+               &lt;range&gt;1&lt;/range&gt;
+               &lt;last-hop-behavior&gt;php&lt;/last-hop-behavior&gt;
+             &lt;/connected-prefix-sid&gt;
+           &lt;/connected-prefix-sid-map&gt;
+         &lt;/bindings&gt;
+         &lt;srgb&gt;
+           &lt;srgb&gt;
+             &lt;lower-bound&gt;45000&lt;/lower-bound&gt;
+             &lt;upper-bound&gt;55000&lt;/upper-bound&gt;
+           &lt;/srgb&gt;
+         &lt;/srgb&gt;
+       &lt;/sr-mpls&gt;
+     &lt;/segment-routing&gt;
+   &lt;/routing&gt;
+
+   The following is the same example using JSON format.
+
+   {
+     &quot;ietf-routing:routing&quot;: {
+       &quot;ietf-segment-routing:segment-routing&quot;: {
+         &quot;ietf-segment-routing-mpls:sr-mpls&quot;: {
+           &quot;bindings&quot;: {
+             &quot;mapping-server&quot;: {
+               &quot;policy&quot;: [
+                 {
+                   &quot;name&quot;: &quot;mapping 1&quot;,
+                   &quot;entries&quot;: {
+                     &quot;mapping-entry&quot;: [
+                       {
+                         &quot;prefix&quot;: &quot;2001:db8:aaaa:bbbb::/64&quot;,
+                         &quot;algorithm&quot;: &quot;ietf-segment-routing-common:\
+                         prefix-sid-algorithm-shortest-path&quot;,
+                         &quot;start-sid&quot;: 200,
+                         &quot;range&quot;: 100
+                       }
+                     ]
+                   }
+                 }
+               ]
+             },
+             &quot;connected-prefix-sid-map&quot;: {
+               &quot;connected-prefix-sid&quot;: [
+                 {
+                   &quot;prefix&quot;: &quot;2001:db8:aaaa:cccc::/64&quot;,
+                   &quot;algorithm&quot;: &quot;ietf-segment-routing-common:\
+                   prefix-sid-algorithm-strict-spf&quot;,
+                   &quot;start-sid&quot;: 100,
+                   &quot;range&quot;: 1,
+                   &quot;last-hop-behavior&quot;: &quot;php&quot;
+                 }
+               ]
+             }
+           },
+           &quot;srgb&quot;: {
+             &quot;srgb&quot;: [
+               {
+                 &quot;lower-bound&quot;: 45000,
+                 &quot;upper-bound&quot;: 55000
+               }
+             ]
+           }
+         }
+       }
+     }
+   }
+
+Acknowledgements
+
+   The authors would like to thank Derek Yeung, Greg Hankins, Hannes
+   Gredler, Uma Chunduri, Jeffrey Zhang, Shradda Hedge, and Les Ginsberg
+   for their contributions.
+
+   Thanks to Ladislav Lhotka and Tom Petch for their thorough reviews
+   and helpful comments.
+
+   The authors would like to thank Benjamin Kaduk, Alvaro Retana, and
+   Roman Danyliw for IESG review and comments.
+
+Authors&#x27; Addresses
+
+   Stephane Litkowski
+   Cisco Systems
+
+   Email: slitkows.ietf@gmail.com
+
+
+   Yingzhen Qu
+   Futurewei
+
+   Email: yingzhen.qu@futurewei.com
+
+
+   Acee Lindem
+   Cisco Systems
+   301 Mindenhall Way
+   Cary, NC 27513
+   United States of America
+
+   Email: acee@cisco.com
+
+
+   Pushpasis Sarkar
+   VMware, Inc
+
+   Email: pushpasis.ietf@gmail.com
+
+
+   Jeff Tantsura
+   Juniper Networks
+
+   Email: jefftant.ietf@gmail.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

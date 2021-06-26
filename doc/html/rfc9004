@@ -1,0 +1,924 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc9004
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-bmwg-b2b-frame/">
+  <meta name="description" content="Updates for the Back-to-Back Frame Benchmark in RFC 2544 (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc9004.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc9004.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc9004.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc9004.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc9004/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc9004/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/bmwg/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-bmwg-b2b-frame@ietf.org?subject=draft-ietf-bmwg-b2b-frame" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-bmwg-b2b-frame-04.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-bmwg-b2b-frame-04.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-bmwg-b2b-frame-04.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-bmwg-b2b-frame-04">draft-ietf-bmwg-b2b-frame-04</a>                         Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         A. Morton
+Request for Comments: 9004                                     AT&amp;T Labs
+Updates: <a href="/doc/html/rfc2544">2544</a>                                                   May 2021
+Category: Informational
+ISSN: 2070-1721
+
+
+        <span class="h1">Updates for the Back-to-Back Frame Benchmark in <a href="/doc/html/rfc2544">RFC 2544</a></span>
+
+Abstract
+
+   Fundamental benchmarking methodologies for network interconnect
+   devices of interest to the IETF are defined in <a href="/doc/html/rfc2544">RFC 2544</a>.  This memo
+   updates the procedures of the test to measure the Back-to-Back Frames
+   benchmark of <a href="/doc/html/rfc2544">RFC 2544</a>, based on further experience.
+
+   This memo updates <a href="/doc/html/rfc2544#section-26.4">Section&nbsp;26.4 of RFC 2544</a>.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc9004">https://www.rfc-editor.org/info/rfc9004</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Requirements Language
+   3.  Scope and Goals
+   4.  Motivation
+   5.  Prerequisites
+   6.  Back-to-Back Frames
+     6.1.  Preparing the List of Frame Sizes
+     6.2.  Test for a Single Frame Size
+     6.3.  Test Repetition and Benchmark
+     6.4.  Benchmark Calculations
+   7.  Reporting
+   8.  Security Considerations
+   9.  IANA Considerations
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
+   Acknowledgments
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The IETF&#x27;s fundamental benchmarking methodologies are defined in
+   [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>], supported by the terms and definitions in [<a href="/doc/html/rfc1242" title="&quot;Benchmarking Terminology for Network Interconnection Devices&quot;">RFC1242</a>].
+   [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] actually obsoletes an earlier specification, [<a href="/doc/html/rfc1944" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC1944</a>].
+   Over time, the benchmarking community has updated [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] several
+   times, including the Device Reset benchmark [<a href="/doc/html/rfc6201" title="&quot;Device Reset Characterization&quot;">RFC6201</a>] and the
+   important Applicability Statement [<a href="/doc/html/rfc6815" title="&quot;Applicability Statement for RFC 2544: Use on Production Networks Considered Harmful&quot;">RFC6815</a>] concerning use outside
+   the Isolated Test Environment (ITE) required for accurate
+   benchmarking.  Other specifications implicitly update [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>], such
+   as the IPv6 benchmarking methodologies in [<a href="/doc/html/rfc5180" title="&quot;IPv6 Benchmarking Methodology for Network Interconnect Devices&quot;">RFC5180</a>].
+
+   Recent testing experience with the Back-to-Back Frame test and
+   benchmark in <a href="/doc/html/rfc2544#section-26.4">Section&nbsp;26.4 of [RFC2544]</a> indicates that an update is
+   warranted [<a href="#ref-OPNFV-2017">OPNFV-2017</a>] [<a href="#ref-VSPERF-b2b">VSPERF-b2b</a>].  In particular, analysis of the
+   results indicates that buffer size matters when compensating for
+   interruptions of software-packet processing, and this finding
+   increases the importance of the Back-to-Back Frame characterization
+   described here.  This memo provides additional rationale and the
+   updated method.
+
+   [<a id="ref-RFC2544">RFC2544</a>] provides its own requirements language consistent with
+   [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>], since [<a href="/doc/html/rfc1944" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC1944</a>] (which it obsoletes) predates [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>].
+   All three memos share common authorship.  Today, [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] clarifies
+   the usage of requirements language, so the requirements language
+   presented in this memo are expressed in accordance with [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>].
+   They are intended for those performing/reporting laboratory tests to
+   improve clarity and repeatability, and for those designing devices
+   that facilitate these tests.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Scope and Goals</span>
+
+   The scope of this memo is to define an updated method to
+   unambiguously perform tests, measure the benchmark(s), and report the
+   results for Back-to-Back Frames (as described in <a href="/doc/html/rfc2544#section-26.4">Section&nbsp;26.4 of
+   [RFC2544]</a>).
+
+   The goal is to provide more efficient test procedures where possible
+   and expand reporting with additional interpretation of the results.
+   The tests described in this memo address the cases in which the
+   maximum frame rate of a single ingress port cannot be transferred to
+   an egress port without loss (for some frame sizes of interest).
+
+   Benchmarks as described in [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] rely on test conditions with
+   constant frame sizes, with the goal of understanding what network-
+   device capability has been tested.  Tests with the smallest size
+   stress the header-processing capacity, and tests with the largest
+   size stress the overall bit-processing capacity.  Tests with sizes in
+   between may determine the transition between these two capacities.
+   However, conditions simultaneously sending a mixture of Internet
+   (IMIX) frame sizes, such as those described in [<a href="/doc/html/rfc6985" title="&quot;IMIX Genome: Specification of Variable Packet Sizes for Additional Testing&quot;">RFC6985</a>], MUST NOT be
+   used in Back-to-Back Frame testing.
+
+   <a href="/doc/html/rfc8239#section-3">Section&nbsp;3 of [RFC8239]</a> describes buffer-size testing for physical
+   networking devices in a data center.  Those methods measure buffer
+   latency directly with traffic on multiple ingress ports that overload
+   an egress port on the Device Under Test (DUT) and are not subject to
+   the revised calculations presented in this memo.  Likewise, the
+   methods of [<a href="/doc/html/rfc8239" title="&quot;Data Center Benchmarking Methodology&quot;">RFC8239</a>] SHOULD be used for test cases where the egress-
+   port buffer is the known point of overload.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Motivation</span>
+
+   <a href="/doc/html/rfc1242#section-3.1">Section&nbsp;3.1 of [RFC1242]</a> describes the rationale for the Back-to-Back
+   Frames benchmark.  To summarize, there are several reasons that
+   devices on a network produce bursts of frames at the minimum allowed
+   spacing; and it is, therefore, worthwhile to understand the DUT limit
+   on the length of such bursts in practice.  The same document also
+   states:
+
+   |  Tests of this parameter are intended to determine the extent of
+   |  data buffering in the device.
+
+   Since this test was defined, there have been occasional discussions
+   of the stability and repeatability of the results, both over time and
+   across labs.  Fortunately, the Open Platform for Network Function
+   Virtualization (OPNFV) project on Virtual Switch Performance (VSPERF)
+   Continuous Integration (CI) [<a href="#ref-VSPERF-CI">VSPERF-CI</a>] testing routinely repeats
+   Back-to-Back Frame tests to verify that test functionality has been
+   maintained through development of the test-control programs.  These
+   tests were used as a basis to evaluate stability and repeatability,
+   even across lab setups when the test platform was migrated to new DUT
+   hardware at the end of 2016.
+
+   When the VSPERF CI results were examined [<a href="#ref-VSPERF-b2b">VSPERF-b2b</a>], several
+   aspects of the results were considered notable:
+
+   1.  Back-to-Back Frame benchmark was very consistent for some fixed
+       frame sizes, and somewhat variable for other frame sizes.
+
+   2.  The number of Back-to-Back Frames with zero loss reported for
+       large frame sizes was unexpectedly long (translating to 30
+       seconds of buffer time), and no explanation or measurement limit
+       condition was indicated.  It was important that the buffering
+       time calculations were part of the referenced testing and
+       analysis [<a href="#ref-VSPERF-b2b">VSPERF-b2b</a>], because the calculated buffer time of 30
+       seconds for some frame sizes was clearly wrong or highly suspect.
+       On the other hand, a result expressed only as a large number of
+       Back-to-Back Frames does not permit such an easy comparison with
+       reality.
+
+   3.  Calculation of the extent of buffer time in the DUT helped to
+       explain the results observed with all frame sizes.  For example,
+       tests with some frame sizes cannot exceed the frame-header-
+       processing rate of the DUT, thus, no buffering occurs.
+       Therefore, the results depended on the test equipment and not the
+       DUT.
+
+   4.  It was found that a better estimate of the DUT buffer time could
+       be calculated using measurements of both the longest burst in
+       frames without loss and results from the Throughput tests
+       conducted according to <a href="/doc/html/rfc2544#section-26.1">Section&nbsp;26.1 of [RFC2544]</a>.  It is apparent
+       that the DUT&#x27;s frame-processing rate empties the buffer during a
+       trial and tends to increase the &quot;implied&quot; buffer-size estimate
+       (measured according to <a href="/doc/html/rfc2544#section-26.4">Section&nbsp;26.4 of [RFC2544]</a> because many
+       frames have departed the buffer when the burst of frames ends).
+       A calculation using the Throughput measurement can reveal a
+       &quot;corrected&quot; buffer-size estimate.
+
+   Further, if the Throughput tests of <a href="/doc/html/rfc2544#section-26.1">Section&nbsp;26.1 of [RFC2544]</a> are
+   conducted as a prerequisite, the number of frame sizes required for
+   Back-to-Back Frame benchmarking can be reduced to one or more of the
+   small frame sizes, or the results for large frame sizes can be noted
+   as invalid in the results if tested anyway.  These are the larger
+   frame sizes for which the Back-to-Back Frame rate cannot exceed the
+   frame-header-processing rate of the DUT and little or no buffering
+   occurs.
+
+   The material below provides the details of the calculation to
+   estimate the actual buffer storage available in the DUT, using
+   results from the Throughput tests for each frame size and the Max
+   Theoretical Frame Rate for the DUT links (which constrain the minimum
+   frame spacing).
+
+   In reality, there are many buffers and packet-header-processing steps
+   in a typical DUT.  The simplified model used in these calculations
+   for the DUT includes a packet-header-processing function with limited
+   rate of operation, as shown in Figure 1.
+
+                        |------------ DUT --------|
+   Generator -&gt; Ingress -&gt; Buffer -&gt; HeaderProc -&gt; Egress -&gt; Receiver
+
+                 Figure 1: Simplified Model for DUT Testing
+
+   So, in the Back-to-Back Frame testing:
+
+   1.  The ingress burst arrives at Max Theoretical Frame Rate, and
+       initially the frames are buffered.
+
+   2.  The packet-header-processing function (HeaderProc) operates at
+       the &quot;Measured Throughput&quot; (<a href="/doc/html/rfc2544#section-26.1">Section&nbsp;26.1 of [RFC2544]</a>), removing
+       frames from the buffer (this is the best approximation we have,
+       another acceptable approximation is the received frame rate
+       during Back-to-back Frame testing, if Measured Throughput is not
+       available).
+
+   3.  Frames that have been processed are clearly not in the buffer, so
+       the Corrected DUT Buffer Time equation (<a href="#section-6.4">Section 6.4</a>) estimates
+       and removes the frames that the DUT forwarded on egress during
+       the burst.  We define buffer time as the number of frames
+       occupying the buffer divided by the Max Theoretical Frame Rate
+       (on ingress) for the frame size under test.
+
+   4.  A helpful concept is the buffer-filling rate, which is the
+       difference between the Max Theoretical Frame Rate (ingress) and
+       the Measured Throughput (HeaderProc on egress).  If the actual
+       buffer size in frames is known, the time to fill the buffer
+       during a measurement can be calculated using the filling rate, as
+       a check on measurements.  However, the buffer in the model
+       represents many buffers of different sizes in the DUT data path.
+
+   Knowledge of approximate buffer storage size (in time or bytes) may
+   be useful in estimating whether frame losses will occur if DUT
+   forwarding is temporarily suspended in a production deployment due to
+   an unexpected interruption of frame processing (an interruption of
+   duration greater than the estimated buffer would certainly cause lost
+   frames).  In <a href="#section-6">Section 6</a>, the calculations for the correct buffer time
+   use the combination of offered load at Max Theoretical Frame Rate and
+   header-processing speed at 100% of Measured Throughput.  Other
+   combinations are possible, such as changing the percent of Measured
+   Throughput to account for other processes reducing the header
+   processing rate.
+
+   The presentation of OPNFV VSPERF evaluation and development of
+   enhanced search algorithms [<a href="#ref-VSPERF-BSLV">VSPERF-BSLV</a>] was given and discussed at
+   IETF 102.  The enhancements are intended to compensate for transient
+   processor interrupts that may cause loss at near-Throughput levels of
+   offered load.  Subsequent analysis of the results indicates that
+   buffers within the DUT can compensate for some interrupts, and this
+   finding increases the importance of the Back-to-Back Frame
+   characterization described here.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Prerequisites</span>
+
+   The test setup MUST be consistent with Figure 1 of [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>], or
+   Figure 2 of that document when the tester&#x27;s sender and receiver are
+   different devices.  Other mandatory testing aspects described in
+   [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] MUST be included, unless explicitly modified in the next
+   section.
+
+   The ingress and egress link speeds and link-layer protocols MUST be
+   specified and used to compute the Max Theoretical Frame Rate when
+   respecting the minimum interframe gap.
+
+   The test results for the Throughput benchmark conducted according to
+   <a href="/doc/html/rfc2544#section-26.1">Section&nbsp;26.1 of [RFC2544]</a> for all frame sizes RECOMMENDED by
+   [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] MUST be available to reduce the tested-frame-size list or
+   to note invalid results for individual frame sizes (because the burst
+   length may be essentially infinite for large frame sizes).
+
+   Note that:
+
+   *  the Throughput and the Back-to-Back Frame measurement-
+      configuration traffic characteristics (unidirectional or
+      bidirectional, and number of flows generated) MUST match.
+
+   *  the Throughput measurement MUST be taken under zero-loss
+      conditions, according to <a href="/doc/html/rfc2544#section-26.1">Section&nbsp;26.1 of [RFC2544]</a>.
+
+   The Back-to-Back Benchmark described in <a href="/doc/html/rfc1242#section-3.1">Section&nbsp;3.1 of [RFC1242]</a> MUST
+   be measured directly by the tester, where buffer size is inferred
+   from Back-to-Back Frame bursts and associated packet-loss
+   measurements.  Therefore, sources of frame loss that are unrelated to
+   consistent evaluation of buffer size SHOULD be identified and removed
+   or mitigated.  Example sources include:
+
+   *  On-path active components that are external to the DUT
+
+   *  Operating-system environment interrupting DUT operation
+
+   *  Shared-resource contention between the DUT and other off-path
+      component(s) impacting DUT&#x27;s behavior, sometimes called the &quot;noisy
+      neighbor&quot; problem with virtualized network functions.
+
+   Mitigations applicable to some of the sources above are discussed in
+   <a href="#section-6.2">Section 6.2</a>, with the other measurement requirements described below
+   in <a href="#section-6">Section 6</a>.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Back-to-Back Frames</span>
+
+   Objective: To characterize the ability of a DUT to process Back-to-
+   Back Frames as defined in [<a href="/doc/html/rfc1242" title="&quot;Benchmarking Terminology for Network Interconnection Devices&quot;">RFC1242</a>].
+
+   The procedure follows.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Preparing the List of Frame Sizes</span>
+
+   From the list of RECOMMENDED frame sizes (<a href="/doc/html/rfc2544#section-9">Section&nbsp;9 of [RFC2544]</a>),
+   select the subset of frame sizes whose Measured Throughput (during
+   prerequisite testing) was less than the Max Theoretical Frame Rate of
+   the DUT/test setup.  These are the only frame sizes where it is
+   possible to produce a burst of frames that cause the DUT buffers to
+   fill and eventually overflow, producing one or more discarded frames.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Test for a Single Frame Size</span>
+
+   Each trial in the test requires the tester to send a burst of frames
+   (after idle time) with the minimum interframe gap and to count the
+   corresponding frames forwarded by the DUT.
+
+   The duration of the trial includes three REQUIRED components:
+
+   1.  The time to send the burst of frames (at the back-to-back rate),
+       determined by the search algorithm.
+
+   2.  The time to receive the transferred burst of frames (at the
+       [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] Throughput rate), possibly truncated by buffer
+       overflow, and certainly including the latency of the DUT.
+
+   3.  At least 2 seconds not overlapping the time to receive the burst
+       (Component 2, above), to ensure that DUT buffers have depleted.
+       Longer times MUST be used when conditions warrant, such as when
+       buffer times &gt;2 seconds are measured or when burst sending times
+       are &gt;2 seconds, but care is needed, since this time component
+       directly increases trial duration, and many trials and tests
+       comprise a complete benchmarking study.
+
+   The upper search limit for the time to send each burst MUST be
+   configurable to values as high as 30 seconds (buffer time results
+   reported at or near the configured upper limit are likely invalid,
+   and the test MUST be repeated with a higher search limit).
+
+   If all frames have been received, the tester increases the length of
+   the burst according to the search algorithm and performs another
+   trial.
+
+   If the received frame count is less than the number of frames in the
+   burst, then the limit of DUT processing and buffering may have been
+   exceeded, and the burst length for the next trial is determined by
+   the search algorithm (the burst length is typically reduced, but see
+   below).
+
+   Classic search algorithms have been adapted for use in benchmarking,
+   where the search requires discovery of a pair of outcomes, one with
+   no loss and another with loss, at load conditions within the
+   acceptable tolerance or accuracy.  Conditions encountered when
+   benchmarking the infrastructure for network function virtualization
+   require algorithm enhancement.  Fortunately, the adaptation of Binary
+   Search, and an enhanced Binary Search with Loss Verification, have
+   been specified in Clause 12.3 of [<a href="#ref-TST009" title="&quot;Network Functions Virtualisation (NFV) Release 3; Testing; Specification of Networking Benchmarks and Measurement Methods for NFVI&quot;">TST009</a>].  These algorithms can
+   easily be used for Back-to-Back Frame benchmarking by replacing the
+   offered load level with burst length in frames.  [<a href="#ref-TST009" title="&quot;Network Functions Virtualisation (NFV) Release 3; Testing; Specification of Networking Benchmarks and Measurement Methods for NFVI&quot;">TST009</a>], Annex B
+   describes the theory behind the enhanced Binary Search with Loss
+   Verification algorithm.
+
+   There are also promising works in progress that may prove useful in
+   Back-to-Back Frame benchmarking.  [<a href="#ref-BMWG-MLRSEARCH">BMWG-MLRSEARCH</a>] and
+   [<a href="#ref-BMWG-PLRSEARCH">BMWG-PLRSEARCH</a>] are two such examples.
+
+   Either the [<a href="#ref-TST009" title="&quot;Network Functions Virtualisation (NFV) Release 3; Testing; Specification of Networking Benchmarks and Measurement Methods for NFVI&quot;">TST009</a>] Binary Search or Binary Search with Loss
+   Verification algorithms MUST be used, and input parameters to the
+   algorithm(s) MUST be reported.
+
+   The tester usually imposes a (configurable) minimum step size for
+   burst length, and the step size MUST be reported with the results (as
+   this influences the accuracy and variation of test results).
+
+   The original <a href="/doc/html/rfc2544#section-26.4">Section&nbsp;26.4 of [RFC2544]</a> definition is stated below:
+
+   |  The back-to-back value is the number of frames in the longest
+   |  burst that the DUT will handle without the loss of any frames.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Test Repetition and Benchmark</span>
+
+   On this topic, <a href="/doc/html/rfc2544#section-26.4">Section&nbsp;26.4 of [RFC2544]</a> requires:
+
+   |  The trial length MUST be at least 2 seconds and SHOULD be repeated
+   |  at least 50 times with the average of the recorded values being
+   |  reported.
+
+   Therefore, the Back-to-Back Frame benchmark is the average of burst-
+   length values over repeated tests to determine the longest burst of
+   frames that the DUT can successfully process and buffer without frame
+   loss.  Each of the repeated tests completes an independent search
+   process.
+
+   In this update, the test MUST be repeated N times (the number of
+   repetitions is now a variable that must be reported) for each frame
+   size in the subset list, and each Back-to-Back Frame value MUST be
+   made available for further processing (below).
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  Benchmark Calculations</span>
+
+   For each frame size, calculate the following summary statistics for
+   longest Back-to-Back Frame values over the N tests:
+
+   *  Average (Benchmark)
+
+   *  Minimum
+
+   *  Maximum
+
+   *  Standard Deviation
+
+   Further, calculate the Implied DUT Buffer Time and the Corrected DUT
+   Buffer Time in seconds, as follows:
+
+   Implied DUT buffer time =
+
+      Average num of Back-to-back Frames / Max Theoretical Frame Rate
+
+   The formula above is simply expressing the burst of frames in units
+   of time.
+
+   The next step is to apply a correction factor that accounts for the
+   DUT&#x27;s frame forwarding operation during the test (assuming the simple
+   model of the DUT composed of a buffer and a forwarding function,
+   described in <a href="#section-4">Section 4</a>).
+
+   Corrected DUT Buffer Time =
+                     /                                         \
+      Implied DUT    |Implied DUT       Measured Throughput    |
+   =  Buffer Time -  |Buffer Time * -------------------------- |
+                     |              Max Theoretical Frame Rate |
+                     \                                         /
+
+   where:
+
+   1.  The &quot;Measured Throughput&quot; is the [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>] Throughput Benchmark
+       for the frame size tested, as augmented by methods including the
+       Binary Search with Loss Verification algorithm in [<a href="#ref-TST009" title="&quot;Network Functions Virtualisation (NFV) Release 3; Testing; Specification of Networking Benchmarks and Measurement Methods for NFVI&quot;">TST009</a>] where
+       applicable and MUST be expressed in frames per second in this
+       equation.
+
+   2.  The &quot;Max Theoretical Frame Rate&quot; is a calculated value for the
+       interface speed and link-layer technology used, and it MUST be
+       expressed in frames per second in this equation.
+
+   The term on the far right in the formula for Corrected DUT Buffer
+   Time accounts for all the frames in the burst that were transmitted
+   by the DUT *while the burst of frames was sent in*.  So, these frames
+   are not in the buffer, and the buffer size is more accurately
+   estimated by excluding them.  If Measured Throughput is not
+   available, an acceptable approximation is the received frame rate
+   (see Forwarding Rate in [<a href="/doc/html/rfc2889" title="&quot;Benchmarking Methodology for LAN Switching Devices&quot;">RFC2889</a>] measured during Back-to-back Frame
+   testing).
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Reporting</span>
+
+   The Back-to-Back Frame results SHOULD be reported in the format of a
+   table with a row for each of the tested frame sizes.  There SHOULD be
+   columns for the frame size and the resultant average frame count for
+   each type of data stream tested.
+
+   The number of tests averaged for the benchmark, N, MUST be reported.
+
+   The minimum, maximum, and standard deviation across all complete
+   tests SHOULD also be reported (they are referred to as
+   &quot;Min,Max,StdDev&quot; in Table 1).
+
+   The Corrected DUT Buffer Time SHOULD also be reported.
+
+   If the tester operates using a limited maximum burst length in
+   frames, then this maximum length SHOULD be reported.
+
+    +=============+================+================+================+
+    | Frame Size, | Ave B2B        | Min,Max,StdDev | Corrected Buff |
+    | octets      | Length, frames |                | Time, Sec      |
+    +=============+================+================+================+
+    | 64          | 26000          | 25500,27000,20 | 0.00004        |
+    +-------------+----------------+----------------+----------------+
+
+                   Table 1: Back-to-Back Frame Results
+
+   Static and configuration parameters (reported with Table 1):
+
+   *  Number of test repetitions, N
+
+   *  Minimum Step Size (during searches), in frames.
+
+
+   If the tester has a specific (actual) frame rate of interest (less
+   than the Throughput rate), it is useful to estimate the buffer time
+   at that actual frame rate:
+
+   Actual Buffer Time =
+                                      Max Theoretical Frame Rate
+        = Corrected DUT Buffer Time * --------------------------
+                                          Actual Frame Rate
+
+   and report this value, properly labeled.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   Benchmarking activities as described in this memo are limited to
+   technology characterization using controlled stimuli in a laboratory
+   environment, with dedicated address space and the other constraints
+   of [<a href="/doc/html/rfc2544" title="&quot;Benchmarking Methodology for Network Interconnect Devices&quot;">RFC2544</a>].
+
+   The benchmarking network topology will be an independent test setup
+   and MUST NOT be connected to devices that may forward the test
+   traffic into a production network or misroute traffic to the test
+   management network.  See [<a href="/doc/html/rfc6815" title="&quot;Applicability Statement for RFC 2544: Use on Production Networks Considered Harmful&quot;">RFC6815</a>].
+
+   Further, benchmarking is performed on an &quot;opaque-box&quot; (a.k.a.
+   &quot;black-box&quot;) basis, relying solely on measurements observable
+   external to the Device or System Under Test (SUT).
+
+   The DUT developers are commonly independent from the personnel and
+   institutions conducting benchmarking studies.  DUT developers might
+   have incentives to alter the performance of the DUT if the test
+   conditions can be detected.  Special capabilities SHOULD NOT exist in
+   the DUT/SUT specifically for benchmarking purposes.  Procedures
+   described in this document are not designed to detect such activity.
+   Additional testing outside of the scope of this document would be
+   needed and has been used successfully in the past to discover such
+   malpractices.
+
+   Any implications for network security arising from the DUT/SUT SHOULD
+   be identical in the lab and in production networks.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC1242">RFC1242</a>]  Bradner, S., &quot;Benchmarking Terminology for Network
+              Interconnection Devices&quot;, <a href="/doc/html/rfc1242">RFC 1242</a>, DOI 10.17487/RFC1242,
+              July 1991, &lt;<a href="https://www.rfc-editor.org/info/rfc1242">https://www.rfc-editor.org/info/rfc1242</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC2544">RFC2544</a>]  Bradner, S. and J. McQuaid, &quot;Benchmarking Methodology for
+              Network Interconnect Devices&quot;, <a href="/doc/html/rfc2544">RFC 2544</a>,
+              DOI 10.17487/RFC2544, March 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2544">https://www.rfc-editor.org/info/rfc2544</a>&gt;.
+
+   [<a id="ref-RFC6985">RFC6985</a>]  Morton, A., &quot;IMIX Genome: Specification of Variable Packet
+              Sizes for Additional Testing&quot;, <a href="/doc/html/rfc6985">RFC 6985</a>,
+              DOI 10.17487/RFC6985, July 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6985">https://www.rfc-editor.org/info/rfc6985</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8239">RFC8239</a>]  Avramov, L. and J. Rapp, &quot;Data Center Benchmarking
+              Methodology&quot;, <a href="/doc/html/rfc8239">RFC 8239</a>, DOI 10.17487/RFC8239, August 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8239">https://www.rfc-editor.org/info/rfc8239</a>&gt;.
+
+   [<a id="ref-TST009">TST009</a>]   ETSI, &quot;Network Functions Virtualisation (NFV) Release 3;
+              Testing; Specification of Networking Benchmarks and
+              Measurement Methods for NFVI&quot;, Rapporteur: A. Morton, ETSI
+              GS NFV-TST 009 v3.4.1, December 2020,
+              &lt;<a href="https://www.etsi.org/deliver/etsi_gs/NFV-TST/001_099/009/03.04.01_60/gs_NFV-TST009v030401p.pdf">https://www.etsi.org/deliver/etsi_gs/NFV-</a>
+              <a href="https://www.etsi.org/deliver/etsi_gs/NFV-TST/001_099/009/03.04.01_60/gs_NFV-TST009v030401p.pdf">TST/001_099/009/03.04.01_60/gs_NFV-TST009v030401p.pdf</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-BMWG-MLRSEARCH">BMWG-MLRSEARCH</a>]
+              Konstantynowicz, M., Ed. and V. Polák, Ed., &quot;Multiple Loss
+              Ratio Search for Packet Throughput (MLRsearch)&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-ietf-bmwg-mlrsearch-00">draft-ietf-bmwg-mlrsearch-00</a>, 9
+              February 2021, &lt;<a href="https://tools.ietf.org/html/draft-ietf-bmwg-mlrsearch-00">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-bmwg-mlrsearch-00">bmwg-mlrsearch-00</a>&gt;.
+
+   [<a id="ref-BMWG-PLRSEARCH">BMWG-PLRSEARCH</a>]
+              Konstantynowicz, M., Ed. and V. Polák, Ed., &quot;Probabilistic
+              Loss Ratio Search for Packet Throughput (PLRsearch)&quot;, Work
+              in Progress, Internet-Draft, <a href="/doc/html/draft-vpolak-bmwg-plrsearch-03">draft-vpolak-bmwg-plrsearch-</a>
+              <a href="/doc/html/draft-vpolak-bmwg-plrsearch-03">03</a>, 6 March 2020, &lt;<a href="https://tools.ietf.org/html/draft-vpolak-bmwg-plrsearch-03">https://tools.ietf.org/html/draft-</a>
+              <a href="https://tools.ietf.org/html/draft-vpolak-bmwg-plrsearch-03">vpolak-bmwg-plrsearch-03</a>&gt;.
+
+   [<a id="ref-OPNFV-2017">OPNFV-2017</a>]
+              Cooper, T., Rao, S., and A. Morton, &quot;Dataplane
+              Performance, Capacity, and Benchmarking in OPNFV&quot;, 15 June
+              2017,
+              &lt;<a href="https://wiki.anuket.io/download/attachments/4404001/">https://wiki.anuket.io/download/attachments/4404001/</a>
+              VSPERF-Dataplane-Perf-Cap-Bench.pdf?version=1&amp;modification
+              Date=1621191833500&amp;api=v2&gt;.
+
+   [<a id="ref-RFC1944">RFC1944</a>]  Bradner, S. and J. McQuaid, &quot;Benchmarking Methodology for
+              Network Interconnect Devices&quot;, <a href="/doc/html/rfc1944">RFC 1944</a>,
+              DOI 10.17487/RFC1944, May 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1944">https://www.rfc-editor.org/info/rfc1944</a>&gt;.
+
+   [<a id="ref-RFC2889">RFC2889</a>]  Mandeville, R. and J. Perser, &quot;Benchmarking Methodology
+              for LAN Switching Devices&quot;, <a href="/doc/html/rfc2889">RFC 2889</a>,
+              DOI 10.17487/RFC2889, August 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2889">https://www.rfc-editor.org/info/rfc2889</a>&gt;.
+
+   [<a id="ref-RFC5180">RFC5180</a>]  Popoviciu, C., Hamza, A., Van de Velde, G., and D.
+              Dugatkin, &quot;IPv6 Benchmarking Methodology for Network
+              Interconnect Devices&quot;, <a href="/doc/html/rfc5180">RFC 5180</a>, DOI 10.17487/RFC5180, May
+              2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5180">https://www.rfc-editor.org/info/rfc5180</a>&gt;.
+
+   [<a id="ref-RFC6201">RFC6201</a>]  Asati, R., Pignataro, C., Calabria, F., and C. Olvera,
+              &quot;Device Reset Characterization&quot;, <a href="/doc/html/rfc6201">RFC 6201</a>,
+              DOI 10.17487/RFC6201, March 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6201">https://www.rfc-editor.org/info/rfc6201</a>&gt;.
+
+   [<a id="ref-RFC6815">RFC6815</a>]  Bradner, S., Dubray, K., McQuaid, J., and A. Morton,
+              &quot;Applicability Statement for <a href="/doc/html/rfc2544">RFC 2544</a>: Use on Production
+              Networks Considered Harmful&quot;, <a href="/doc/html/rfc6815">RFC 6815</a>,
+              DOI 10.17487/RFC6815, November 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6815">https://www.rfc-editor.org/info/rfc6815</a>&gt;.
+
+   [<a id="ref-VSPERF-b2b">VSPERF-b2b</a>]
+              Morton, A., &quot;Back2Back Testing Time Series (from CI)&quot;, May
+              2021, &lt;<a href="https://wiki.anuket.io/display/HOME/">https://wiki.anuket.io/display/HOME/</a>
+              Traffic+Generator+Testing#TrafficGeneratorTesting-
+              AppendixB:Back2BackTestingTimeSeries(fromCI)&gt;.
+
+   [<a id="ref-VSPERF-BSLV">VSPERF-BSLV</a>]
+              Rao, S. and A. Morton, &quot;Evolution of Repeatability in
+              Benchmarking: Fraser Plugfest (Summary for IETF BMWG)&quot;,
+              July 2018,
+              &lt;<a href="https://datatracker.ietf.org/meeting/102/materials/slides-102-bmwg-evolution-of-repeatability-in-benchmarking-fraser-plugfest-summary-for-ietf-bmwg-00">https://datatracker.ietf.org/meeting/102/materials/</a>
+              <a href="https://datatracker.ietf.org/meeting/102/materials/slides-102-bmwg-evolution-of-repeatability-in-benchmarking-fraser-plugfest-summary-for-ietf-bmwg-00">slides-102-bmwg-evolution-of-repeatability-in-</a>
+              <a href="https://datatracker.ietf.org/meeting/102/materials/slides-102-bmwg-evolution-of-repeatability-in-benchmarking-fraser-plugfest-summary-for-ietf-bmwg-00">benchmarking-fraser-plugfest-summary-for-ietf-bmwg-00</a>&gt;.
+
+   [<a id="ref-VSPERF-CI">VSPERF-CI</a>]
+              Tahhan, M., &quot;OPNFV VSPERF CI&quot;, September 2019,
+              &lt;<a href="https://wiki.anuket">https://wiki.anuket</a>.io/display/HOME/VSPERF+CI&gt;.
+
+Acknowledgments
+
+   Thanks to Trevor Cooper, Sridhar Rao, and Martin Klozik of the VSPERF
+   project for many contributions to the early testing [<a href="#ref-VSPERF-b2b">VSPERF-b2b</a>].
+   Yoshiaki Itou has also investigated the topic and made useful
+   suggestions.  Maciek Konstantyowicz and Vratko Polák also provided
+   many comments and suggestions based on extensive integration testing
+   and resulting search-algorithm proposals -- the most up-to-date
+   feedback possible.  Tim Carlin also provided comments and support for
+   the document.  Warren Kumari&#x27;s review improved readability in several
+   key passages.  David Black, Martin Duke, and Scott Bradner&#x27;s comments
+   improved the clarity and configuration advice on trial duration.
+   Mališa Vučinić suggested additional text on DUT design cautions in
+   the Security Considerations section.
+
+Author&#x27;s Address
+
+   Al Morton
+   AT&amp;T Labs
+   200 Laurel Avenue South
+   Middletown, NJ 07748
+   United States of America
+
+   Phone: +1 732 420 1571
+   Email: acmorton@att.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

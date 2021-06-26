@@ -1,0 +1,828 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8905
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-dold-payto/">
+  <meta name="description" content="The &#39;payto&#39; URI Scheme for Payments (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8905.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8905.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8905.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8905.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8905/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8905/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-dold-payto@ietf.org?subject=draft-dold-payto" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-dold-payto-14.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-dold-payto-14.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-dold-payto-14.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-dold-payto-14">draft-dold-payto-14</a>                                  Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Independent Submission                                           F. Dold
+Request for Comments: 8905                              Taler Systems SA
+Category: Informational                                      C. Grothoff
+ISSN: 2070-1721                      Bern University of Applied Sciences
+                                                            October 2020
+
+
+                  <span class="h1">The &#x27;payto&#x27; URI Scheme for Payments</span>
+
+Abstract
+
+   This document defines the &#x27;payto&#x27; Uniform Resource Identifier (URI)
+   scheme for designating targets for payments.
+
+   A unified URI scheme for all payment target types allows applications
+   to offer user interactions with URIs that represent payment targets,
+   simplifying the introduction of new payment systems and applications.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This is a contribution to the RFC Series, independently of any other
+   RFC stream.  The RFC Editor has chosen to publish this document at
+   its discretion and makes no statement about its value for
+   implementation or deployment.  Documents approved for publication by
+   the RFC Editor are not candidates for any level of Internet Standard;
+   see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8905">https://www.rfc-editor.org/info/rfc8905</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Objective
+     1.2.  Requirements Language
+   2.  Syntax of a &#x27;payto&#x27; URI
+   3.  Semantics
+   4.  Examples
+   5.  Generic Options
+   6.  Internationalization and Character Encoding
+   7.  Tracking Payment Target Types
+     7.1.  ACH Bank Account
+     7.2.  Business Identifier Code
+     7.3.  International Bank Account Number
+     7.4.  Unified Payments Interface
+     7.5.  Bitcoin Address
+     7.6.  Interledger Protocol Address
+     7.7.  Void Payment Target
+   8.  Security Considerations
+   9.  IANA Considerations
+   10. Payto Payment Target Types
+   11. References
+     11.1.  Normative References
+     11.2.  Informative References
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document defines the &#x27;payto&#x27; Uniform Resource Identifier (URI)
+   [<a href="/doc/html/rfc3986" title="&quot;Uniform Resource Identifier (URI): Generic Syntax&quot;">RFC3986</a>] scheme for designating transfer form data for payments.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Objective</span>
+
+   A &#x27;payto&#x27; URI always identifies the target of a payment.  A &#x27;payto&#x27;
+   URI consists of a payment target type, a target identifier, and
+   optional parameters such as an amount or a payment reference.
+
+   The interpretation of the target identifier is defined by the payment
+   target type and typically represents either a bank account or an
+   (unsettled) transaction.
+
+   A unified URI scheme for all payment target types allows applications
+   to offer user interactions with URIs that represent payment targets,
+   simplifying the introduction of new payment systems and applications.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Syntax of a &#x27;payto&#x27; URI</span>
+
+   This document uses the Augmented Backus-Naur Form (ABNF) of
+   [<a href="/doc/html/rfc5234" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">RFC5234</a>].
+
+     payto-URI = &quot;payto://&quot; authority path-abempty [ &quot;?&quot; opts ]
+     opts = opt *( &quot;&amp;&quot; opt )
+     opt-name = generic-opt / authority-specific-opt
+     opt-value = *pchar
+     opt = opt-name &quot;=&quot; opt-value
+     generic-opt = &quot;amount&quot; / &quot;receiver-name&quot; / &quot;sender-name&quot; /
+                   &quot;message&quot; / &quot;instruction&quot;
+     authority-specific-opt = ALPHA *( ALPHA / DIGIT / &quot;-&quot; / &quot;.&quot; )
+     authority = ALPHA *( ALPHA / DIGIT / &quot;-&quot; / &quot;.&quot; )
+
+   &#x27;path-abempty&#x27; is defined in <a href="/doc/html/rfc3986#section-3.3">Section&nbsp;3.3 of [RFC3986]</a>.  &#x27;pchar&#x27; is
+   defined in <a href="/doc/html/rfc3986#appendix-A">Appendix&nbsp;A of [RFC3986]</a>.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Semantics</span>
+
+   The authority component of a payment URI identifies the payment
+   target type.  The payment target types are defined in the &quot;Payto
+   Payment Target Types&quot; registry (see <a href="#section-10">Section 10</a>).  The path component
+   of the URI identifies the target for a payment as interpreted by the
+   respective payment target type.  The query component of the URI can
+   provide additional parameters for a payment.  Every payment target
+   type SHOULD accept the options defined in generic-opt.  The default
+   operation of applications that invoke a URI with the &#x27;payto&#x27; scheme
+   MUST be to launch an application (if available) associated with the
+   payment target type that can initiate a payment.  If multiple
+   handlers are registered for the same payment target type, the user
+   SHOULD be able to choose which application to launch.  This allows
+   users with multiple bank accounts (each accessed via the respective
+   bank&#x27;s banking application) to choose which account to pay with.  An
+   application SHOULD allow dereferencing a &#x27;payto&#x27; URI even if the
+   payment target type of that URI is not registered in the &quot;Payto
+   Payment Target Types&quot; registry.  Details of the payment MUST be taken
+   from the path and options given in the URI.  The user SHOULD be
+   allowed to modify these details before confirming a payment.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Examples</span>
+
+   Valid Example:
+
+   payto://iban/DE75512108001245126199?amount=EUR:200.0&amp;message=hello
+
+   Invalid Example (authority missing):
+
+   payto:iban/12345
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Generic Options</span>
+
+   Applications MUST accept URIs with options in any order.  The
+   &quot;amount&quot; option MUST NOT occur more than once.  Other options MAY be
+   allowed multiple times, with further restrictions depending on the
+   payment target type.  The following options SHOULD be understood by
+   every payment target type.
+
+   amount:  The amount to transfer.  The format MUST be:
+
+        amount = currency &quot;:&quot; unit [ &quot;.&quot; fraction ]
+        currency = 1*ALPHA
+        unit = 1*(DIGIT / &quot;,&quot;)
+        fraction = 1*(DIGIT / &quot;,&quot;)
+
+      If a 3-letter &#x27;currency&#x27; is used, it MUST be an [<a href="#ref-ISO4217" title="&quot;Codes for the representation of currencies&quot;">ISO4217</a>]
+      alphabetic code.  A payment target type MAY define semantics
+      beyond ISO 4217 for currency codes that are not 3 characters.  The
+      &#x27;unit&#x27; value MUST be smaller than 2^53.  If present, the
+      &#x27;fraction&#x27; MUST consist of no more than 8 decimal digits.  The use
+      of commas is optional for readability, and they MUST be ignored.
+
+   receiver-name:  Name of the entity that receives the payment
+      (creditor).  The value of this option MAY be subject to lossy
+      conversion, modification, and truncation (for example, due to line
+      wrapping or character set conversion).
+
+   sender-name:  Name of the entity that makes the payment (debtor).
+      The value of this option MAY be subject to lossy conversion,
+      modification, and truncation (for example, due to line wrapping or
+      character set conversion).
+
+   message:  A short message to identify the purpose of the payment.
+      The value of this option MAY be subject to lossy conversion,
+      modification, and truncation (for example, due to line wrapping or
+      character set conversion).
+
+   instruction:  A short message giving payment reconciliation
+      instructions to the recipient.  An instruction that follows the
+      character set and length limitation defined by the respective
+      payment target type SHOULD NOT be subject to lossy conversion.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Internationalization and Character Encoding</span>
+
+   Various payment systems use restricted character sets.  An
+   application that processes &#x27;payto&#x27; URIs MUST convert characters that
+   are not allowed by the respective payment systems into allowable
+   characters using either an encoding or a replacement table.  This
+   conversion process MAY be lossy, except for the instruction field.
+   If the value of the instruction field would be subject to lossy
+   conversion, modification, or truncation, the application SHOULD
+   refuse further processing of the payment until a different value for
+   the instruction is provided.
+
+   To avoid special encoding rules for the payment target identifier,
+   the userinfo component [<a href="/doc/html/rfc3986" title="&quot;Uniform Resource Identifier (URI): Generic Syntax&quot;">RFC3986</a>] is disallowed in &#x27;payto&#x27; URIs.
+   Instead, the payment target identifier is given as an option, where
+   encoding rules are uniform for all options.
+
+   Defining a generic way of tagging the language of option fields
+   containing natural language text (such as &quot;receiver-name&quot;, &quot;sender-
+   name&quot;, and &quot;message) is out of the scope of this document, as
+   internationalization must accommodate the restrictions and
+   requirements of the underlying banking system of the payment target
+   type.  The internationalization concerns SHOULD be individually
+   defined by each payment target type.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Tracking Payment Target Types</span>
+
+   A registry of &quot;Payto Payment Target Types&quot; is described in
+   <a href="#section-10">Section 10</a>.  The registration policy for this registry is &quot;First Come
+   First Served&quot;, as described in [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  When requesting new
+   entries, careful consideration of the following criteria is strongly
+   advised:
+
+   1.  The description clearly defines the syntax and semantics of the
+       payment target and optional parameters if applicable.
+
+   2.  Relevant references are provided if they are available.
+
+   3.  The chosen name is appropriate for the payment target type, does
+       not conflict with well-known payment systems, and avoids
+       potential to confuse users.
+
+   4.  The payment system underlying the payment target type is not
+       fundamentally incompatible with the general options (such as
+       positive decimal amounts) in this specification.
+
+   5.  The payment target type is not a vendor-specific version of a
+       payment target type that could be described more generally by a
+       vendor-neutral payment target type.
+
+   6.  The specification of the new payment target type remains within
+       the scope of payment transfer form data.  In particular,
+       specifying complete invoices is not in scope.  Neither are
+       processing instructions to the payment processor or bank beyond a
+       simple payment.
+
+   7.  The payment target and the options do not contain the payment
+       sender&#x27;s account details.
+
+   Documents that support requests for new registry entries should
+   provide the following information for each entry:
+
+   Name:  The name of the payment target type (case-insensitive ASCII
+      string, restricted to alphanumeric characters, dots, and dashes).
+
+   Description:  A description of the payment target type, including the
+      semantics of the path in the URI if applicable.
+
+   Example:  At least one example URI to illustrate the payment target
+      type.
+
+   Contact:  The contact information of a person to contact for further
+      information.
+
+   References:  Optionally, references describing the payment target
+      type (such as an RFC) and target-specific options or references
+      describing the payment system underlying the payment target type.
+
+   This document populates the registry with seven entries as follows
+   (see also <a href="#section-10">Section 10</a>).
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  ACH Bank Account</span>
+
+   Name:  ach
+
+   Description:  Automated Clearing House (ACH).  The path consists of
+      two components: the routing number and the account number.
+      Limitations on the length and character set of option values are
+      defined by the implementation of the handler.  Language tagging
+      and internationalization of options are not supported.
+
+   Example:
+      payto://ach/122000661/1234
+
+   Contact:  N/A
+
+   References:  [<a href="#ref-NACHA" title="&quot;2020 Nacha Operating Rules &amp; Guidelines&quot;">NACHA</a>], <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Business Identifier Code</span>
+
+   Name:  bic
+
+   Description:  Business Identifier Code (BIC).  The path consists of
+      just a BIC.  This is used for wire transfers between banks.  The
+      registry for BICs is provided by the Society for Worldwide
+      Interbank Financial Telecommunication (SWIFT).  The path does not
+      allow specifying a bank account number.  Limitations on the length
+      and character set of option values are defined by the
+      implementation of the handler.  Language tagging and
+      internationalization of options are not supported.
+
+   Example:
+      payto://bic/SOGEDEFFXXX
+
+   Contact:  N/A
+
+   References:  [<a href="#ref-BIC" title="&quot;Banking -- Banking telecommunication messages -- Business identifier code (BIC)&quot;">BIC</a>], <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h3"><a class="selflink" id="section-7.3" href="#section-7.3">7.3</a>.  International Bank Account Number</span>
+
+   Name:  iban
+
+   Description:  International Bank Account Number (IBAN).  Generally,
+      the IBAN allows to unambiguously derive the associated Business
+      Identifier Code (BIC) using a lookup in the respective proprietary
+      translation table.  However, some legacy applications process
+      payments to the same IBAN differently based on the specified BIC.
+      Thus, the path can consist of either a single component (the IBAN)
+      or two components (BIC followed by IBAN).  The &quot;message&quot; option of
+      the &#x27;payto&#x27; URI corresponds to the &quot;unstructured remittance
+      information&quot; of Single Euro Payments Area (SEPA) credit transfers
+      and is thus limited to 140 characters with character set
+      limitations that differ according to the countries of the banks
+      and payment processors involved in the payment.  The &quot;instruction&quot;
+      option of the &#x27;payto&#x27; URI corresponds to the &quot;end-to-end
+      identifier&quot; of SEPA credit transfers and is thus limited to, at
+      most, 35 characters, which can be alphanumeric or from the allowed
+      set of special characters, i.e., &quot;+?/-:().,&#x27;&quot;.  Language tagging
+      and internationalization of options are not supported.
+
+   Examples:
+      payto://iban/DE75512108001245126199
+      payto://iban/SOGEDEFFXXX/DE75512108001245126199
+
+   Contact:  N/A
+
+   References:  [<a href="#ref-ISO20022" title="&quot;Financial Services - Universal financial industry message scheme&quot;">ISO20022</a>], <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h3"><a class="selflink" id="section-7.4" href="#section-7.4">7.4</a>.  Unified Payments Interface</span>
+
+   Name:  upi
+
+   Description:  Unified Payment Interface (UPI).  The path is an
+      account alias.  The amount and receiver-name options are mandatory
+      for this payment target.  Limitations on the length and character
+      set of option values are defined by the implementation of the
+      handler.  Language tags and internationalization of options are
+      not supported.
+
+   Example:
+      payto://upi/alice@example.com?receiver-name=Alice&amp;amount=INR:200
+
+   Contact:  N/A
+
+   References:  [<a href="#ref-UPILinking">UPILinking</a>], <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h3"><a class="selflink" id="section-7.5" href="#section-7.5">7.5</a>.  Bitcoin Address</span>
+
+   Name:  bitcoin
+
+   Description:  Bitcoin protocol.  The path is a &quot;bitcoinaddress&quot;, as
+      per [<a href="#ref-BIP0021" title="&quot;Bitcoin Improvement Proposal 21&quot;">BIP0021</a>].  Limitations on the length and character set of
+      option values are defined by the implementation of the handler.
+      Language tags and internationalization of options are not
+      supported.
+
+   Example:
+      payto://bitcoin/12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu
+
+   Contact:  N/A
+
+   References:  [<a href="#ref-BIP0021" title="&quot;Bitcoin Improvement Proposal 21&quot;">BIP0021</a>], <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h3"><a class="selflink" id="section-7.6" href="#section-7.6">7.6</a>.  Interledger Protocol Address</span>
+
+   Name:  ilp
+
+   Description:  Interledger protocol (ILP).  The path is an ILP
+      address, as per [<a href="#ref-ILP-ADDR" title="&quot;ILP Addresses - v2.0.0&quot;">ILP-ADDR</a>].  Limitations on the length and
+      character set of option values are defined by the implementation
+      of the handler.  Language tagging and internationalization of
+      options are not supported.
+
+   Example:
+      payto://ilp/g.acme.bob
+
+   Contact:  N/A
+
+   References:  [<a href="#ref-ILP-ADDR" title="&quot;ILP Addresses - v2.0.0&quot;">ILP-ADDR</a>], <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h3"><a class="selflink" id="section-7.7" href="#section-7.7">7.7</a>.  Void Payment Target</span>
+
+   Name:  void
+
+   Description:  The &quot;void&quot; payment target type allows specifying the
+      parameters of an out-of-band payment (such as cash or other types
+      of in-person transactions).  The path is optional and interpreted
+      as a comment.  Limitations on the length and character set of
+      option values are defined by the implementation of the handler.
+      Language tags and internationalization of options are not
+      supported.
+
+   Example:
+      payto://void/?amount=EUR:10.5
+
+   Contact:  N/A
+
+   References:  <a href="/doc/html/rfc8905">RFC 8905</a>
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   Interactive applications handling the &#x27;payto&#x27; URI scheme MUST NOT
+   initiate any financial transactions without prior review and
+   confirmation from the user and MUST take measures to prevent
+   clickjacking [<a href="#ref-HMW12" title="&quot;Clickjacking: Attacks and Defenses&quot;">HMW12</a>].
+
+   Unless a &#x27;payto&#x27; URI is received over a trusted, authenticated
+   channel, a user might not be able to identify the target of a
+   payment.  In particular, due to homographs [<a href="#ref-unicode-tr36">unicode-tr36</a>], a payment
+   target type SHOULD NOT use human-readable names in combination with
+   unicode in the target account specification, as it could give the
+   user the illusion of being able to identify the target account from
+   the URI.
+
+   The authentication/authorization mechanisms and transport security
+   services used to process a payment encoded in a &#x27;payto&#x27; URI are
+   handled by the application and are not in scope of this document.
+
+   To avoid unnecessary data collection, payment target types SHOULD NOT
+   include personally identifying information about the sender of a
+   payment that is not essential for an application to conduct a
+   payment.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+   IANA maintains the &quot;Uniform Resource Identifier (URI) Schemes&quot;
+   registry, which contains an entry for the &#x27;payto&#x27; URI scheme as
+   follows.  IANA has updated that entry to reference this document.
+
+   Scheme name:  payto
+
+   Status:  provisional
+
+   URI scheme syntax:  See <a href="/doc/html/rfc8905#section-2">Section&nbsp;2 of RFC 8905</a>.
+
+   URI scheme semantics:  See <a href="/doc/html/rfc8905#section-3">Section&nbsp;3 of RFC 8905</a>.
+
+   Applications/protocols that use this scheme name:  payto URIs are
+      mainly used by financial software.
+
+   Contact:  Christian Grothoff &lt;grothoff@gnu.org&gt;
+
+   Change controller:  Christian Grothoff &lt;grothoff@gnu.org&gt;
+
+   References:  See <a href="/doc/html/rfc8905#section-11">Section&nbsp;11 of RFC 8905</a>.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Payto Payment Target Types</span>
+
+   This document specifies a list of payment target types.  It is
+   possible that future work will need to specify additional payment
+   target types.  The GNUnet Assigned Numbers Authority (GANA) [<a href="#ref-GANA" title="&quot;GNUnet Assigned Numbers Authority (GANA)&quot;">GANA</a>]
+   operates the &quot;Payto Payment Target Types&quot; registry to track the
+   following information for each payment target type:
+
+   Name:  The name of the payment target type (case-insensitive ASCII
+      string, restricted to alphanumeric characters, dots, and dashes)
+
+   Contact:  The contact information of a person to contact for further
+      information
+
+   References:  Optionally, references describing the payment target
+      type (such as an RFC) and target-specific options or references
+      describing the payment system underlying the payment target type
+
+   The entries in the &quot;Payto Payment Target Types&quot; registry defined in
+   this document are as follows:
+
+                     +=========+=========+===========+
+                     | Name    | Contact | Reference |
+                     +=========+=========+===========+
+                     | ach     | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+                     | bic     | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+                     | iban    | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+                     | upi     | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+                     | bitcoin | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+                     | ilp     | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+                     | void    | N/A     | <a href="/doc/html/rfc8905">RFC 8905</a>  |
+                     +---------+---------+-----------+
+
+                                  Table 1
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-11.1" href="#section-11.1">11.1</a>.  Normative References</span>
+
+   [<a id="ref-ISO20022">ISO20022</a>] International Organization for Standardization, &quot;Financial
+              Services - Universal financial industry message scheme&quot;,
+              ISO 20022, May 2013, &lt;<a href="https://www.iso.org">https://www.iso.org</a>&gt;.
+
+   [<a id="ref-ISO4217">ISO4217</a>]  International Organization for Standardization, &quot;Codes for
+              the representation of currencies&quot;, ISO 4217, August 2015,
+              &lt;<a href="https://www.iso.org">https://www.iso.org</a>&gt;.
+
+   [<a id="ref-NACHA">NACHA</a>]    Nacha, &quot;2020 Nacha Operating Rules &amp; Guidelines&quot;, 2019.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3986">RFC3986</a>]  Berners-Lee, T., Fielding, R., and L. Masinter, &quot;Uniform
+              Resource Identifier (URI): Generic Syntax&quot;, STD 66,
+              <a href="/doc/html/rfc3986">RFC 3986</a>, DOI 10.17487/RFC3986, January 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3986">https://www.rfc-editor.org/info/rfc3986</a>&gt;.
+
+   [<a id="ref-RFC5234">RFC5234</a>]  Crocker, D., Ed. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>,
+              DOI 10.17487/RFC5234, January 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5234">https://www.rfc-editor.org/info/rfc5234</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-unicode-tr36">unicode-tr36</a>]
+              Davis, M., Ed. and M. Suignard, Ed., &quot;Unicode Technical
+              Report #36: Unicode Security Considerations&quot;, September
+              2014.
+
+<span class="h3"><a class="selflink" id="section-11.2" href="#section-11.2">11.2</a>.  Informative References</span>
+
+   [<a id="ref-BIC">BIC</a>]      International Organization for Standardization, &quot;Banking
+              -- Banking telecommunication messages -- Business
+              identifier code (BIC)&quot;, ISO 9362, December 2014,
+              &lt;<a href="https://www.iso.org">https://www.iso.org</a>&gt;.
+
+   [<a id="ref-BIP0021">BIP0021</a>]  Schneider, N. and M. Corallo, &quot;Bitcoin Improvement
+              Proposal 21&quot;, September 2019, &lt;<a href="https://en.bitcoin.it/w/index.php?title=BIP_0021&amp;oldid=66778">https://en.bitcoin.it/w/</a>
+              <a href="https://en.bitcoin.it/w/index.php?title=BIP_0021&amp;oldid=66778">index.php?title=BIP_0021&amp;oldid=66778</a>&gt;.
+
+   [<a id="ref-GANA">GANA</a>]     GNUnet e.V., &quot;GNUnet Assigned Numbers Authority (GANA)&quot;,
+              April 2020, &lt;<a href="https://gana.gnunet.org/">https://gana.gnunet.org/</a>&gt;.
+
+   [<a id="ref-HMW12">HMW12</a>]    Huang, L., Moshchuk, A., Wang, H., Schecter, S., and C.
+              Jackson, &quot;Clickjacking: Attacks and Defenses&quot;, 2012,
+              &lt;<a href="https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final39.pdf">https://www.usenix.org/system/files/conference/</a>
+              <a href="https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final39.pdf">usenixsecurity12/sec12-final39.pdf</a>&gt;.
+
+   [<a id="ref-ILP-ADDR">ILP-ADDR</a>] Interledger, &quot;ILP Addresses - v2.0.0&quot;,
+              &lt;<a href="https://interledger.org/rfcs/0015-ilp-addresses/">https://interledger.org/rfcs/0015-ilp-addresses/</a>&gt;.
+
+   [<a id="ref-UPILinking">UPILinking</a>]
+              National Payments Corporation of India, &quot;Unified Payment
+              Interface - Common URL Specifications For Deep Linking And
+              Proximity Integration&quot;, November 2017,
+              &lt;<a href="https://www.npci.org.in/sites/default/files/UPI%20Linking%20Specs_ver%201.6.pdf">https://www.npci.org.in/sites/default/files/</a>
+              <a href="https://www.npci.org.in/sites/default/files/UPI%20Linking%20Specs_ver%201.6.pdf">UPI%20Linking%20Specs_ver%201.6.pdf</a>&gt;.
+
+Authors&#x27; Addresses
+
+   Florian Dold
+   Taler Systems SA
+   7, rue de Mondorf
+   L-5421 Erpeldange
+   Luxembourg
+
+   Email: dold@taler.net
+
+
+   Christian Grothoff
+   Bern University of Applied Sciences
+   Quellgasse 21
+   CH-2501 Biel/Bienne
+   Switzerland
+
+   Email: christian.grothoff@bfh.ch
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

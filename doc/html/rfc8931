@@ -1,0 +1,1757 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8931
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-6lo-fragment-recovery/">
+  <meta name="description" content="IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Selective Fragment Recovery (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8931.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8931.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8931.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8931.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8931/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8931/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/6lo/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-6lo-fragment-recovery@ietf.org?subject=draft-ietf-6lo-fragment-recovery" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-6lo-fragment-recovery-21.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-fragment-recovery-21.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-6lo-fragment-recovery-21.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-6lo-fragment-recovery-21">draft-ietf-6lo-fragment-recovery-21</a>              Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                   P. Thubert, Ed.
+Request for Comments: 8931                                 Cisco Systems
+Updates: <a href="/doc/html/rfc4944">4944</a>                                              November 2020
+Category: Standards Track
+ISSN: 2070-1721
+
+
+ <span class="h1">IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Selective</span>
+                           <span class="h1">Fragment Recovery</span>
+
+Abstract
+
+   This document updates <a href="/doc/html/rfc4944">RFC 4944</a> with a protocol that forwards
+   individual fragments across a route-over mesh and recovers them end
+   to end, with congestion control capabilities to protect the network.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8931">https://www.rfc-editor.org/info/rfc8931</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+     2.1.  Requirements Language
+     2.2.  Background
+     2.3.  Other Terms
+   3.  Updating <a href="/doc/html/rfc4944">RFC 4944</a>
+   4.  Extending <a href="/doc/html/rfc8930">RFC 8930</a>
+     4.1.  Slack in the First Fragment
+     4.2.  Gap between Frames
+     4.3.  Congestion Control
+     4.4.  Modifying the First Fragment
+   5.  New Dispatch Types and Headers
+     5.1.  Recoverable Fragment Dispatch Type and Header
+     5.2.  RFRAG Acknowledgment Dispatch Type and Header
+   6.  Fragment Recovery
+     6.1.  Forwarding Fragments
+       6.1.1.  Receiving the First Fragment
+       6.1.2.  Receiving the Next Fragments
+     6.2.  Receiving RFRAG Acknowledgments
+     6.3.  Aborting the Transmission of a Fragmented Packet
+     6.4.  Applying Recoverable Fragmentation along a Diverse Path
+   7.  Management Considerations
+     7.1.  Protocol Parameters
+     7.2.  Observing the Network
+   8.  Security Considerations
+   9.  IANA Considerations
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Rationale
+   <a href="#appendix-B">Appendix B</a>.  Requirements
+   <a href="#appendix-C">Appendix C</a>.  Considerations on Congestion Control
+   Acknowledgments
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   In most Low-Power and Lossy Network (LLN) applications, the bulk of
+   the traffic consists of small chunks of data (on the order of a few
+   bytes to a few tens of bytes) at a time.  Given that an IEEE Std
+   802.15.4 [<a href="#ref-IEEE.802.15.4">IEEE.802.15.4</a>] frame can carry a payload of 74 bytes or
+   more, fragmentation is usually not required.  However, and though
+   this happens only occasionally, a number of mission-critical
+   applications do require the capability to transfer larger chunks of
+   data, for instance, to support the firmware upgrade of the LLN nodes
+   or the extraction of logs from LLN nodes.
+
+   In the former case, the large chunk of data is transferred to the LLN
+   node, whereas in the latter case, the large chunk flows away from the
+   LLN node.  In both cases, the size can be on the order of 10 KB or
+   more, and an end-to-end reliable transport is required.
+
+   &quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot; [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>]
+   defines the original IPv6 over Low-Power Wireless Personal Area
+   Network (6LoWPAN) datagram fragmentation mechanism for LLNs.  One
+   critical issue with this original design is that routing an IPv6
+   [<a href="/doc/html/rfc8200" title="&quot;Internet Protocol, Version 6 (IPv6) Specification&quot;">RFC8200</a>] packet across a route-over mesh requires the reassembly of
+   the packet at each hop.  &quot;An Architecture for IPv6 over the TSCH mode
+   of IEEE 802.15.4&quot; [<a href="#ref-6TiSCH" title="&quot;An Architecture for IPv6 over the TSCH mode of IEEE 802.15.4&quot;">6TiSCH</a>] indicates that this may cause latency
+   along a path and impact critical resources such as memory and
+   battery; to alleviate those undesirable effects, it recommends using
+   a 6LoWPAN Fragment Forwarding (6LFF) technique.
+
+   &quot;On Forwarding 6LoWPAN Fragments over a Multihop IPv6 Network&quot;
+   [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] specifies the generic behavior that all 6LFF techniques
+   including this specification follow, and it presents the associated
+   caveats.  In particular, the routing information is fully indicated
+   in the first fragment, which is always forwarded first.  With this
+   specification, the first fragment is identified by a Sequence of 0 as
+   opposed to a dispatch type in [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>].  A state is formed and used
+   to forward all the next fragments along the same path.  The
+   Datagram_Tag is locally significant to the Layer 2 source of the
+   packet and is swapped at each hop; see <a href="#section-6">Section 6</a>.  This specification
+   encodes the Datagram_Tag in 1 byte, which will saturate if more than
+   256 datagrams transit in fragmented form over a single hop at the
+   same time.  This is not realistic at the time of this writing.
+   Should this happen in a new 6LoWPAN technology, a node will need to
+   use several link-layer addresses to increase its indexing capacity.
+
+   &quot;Virtual reassembly buffers in 6LoWPAN&quot; [<a href="#ref-LWIG-FRAG">LWIG-FRAG</a>] proposes a 6LFF
+   technique that is compatible with [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>] without the need to
+   define a new protocol.  However, adding that capability alone to the
+   local implementation of the original 6LoWPAN fragmentation would not
+   address the inherent fragility of fragmentation (see [<a href="/doc/html/rfc8900" title="&quot;IP Fragmentation Considered Fragile&quot;">RFC8900</a>]), in
+   particular, the issues of resources locked on the reassembling
+   endpoint and the wasted transmissions due to the loss of a single
+   fragment in a whole datagram.  [<a href="#ref-Kent" title="&quot;Fragmentation Considered Harmful&quot;">Kent</a>] compares the unreliable
+   delivery of fragments with a mechanism it calls &quot;selective
+   acknowledgments&quot; that recovers the loss of a fragment individually.
+   The paper illustrates the benefits that can be derived from such a
+   method; see Figures 1, 2, and 3 in Section 2.3 of [<a href="#ref-Kent" title="&quot;Fragmentation Considered Harmful&quot;">Kent</a>].  [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>]
+   has no selective recovery, and the whole datagram fails when one
+   fragment is not delivered to the reassembling endpoint.  Constrained
+   memory resources are blocked on the reassembling endpoint until it
+   times out, possibly causing the loss of subsequent packets that
+   cannot be received for the lack of buffers.
+
+   That problem is exacerbated when forwarding fragments over multiple
+   hops since a loss at an intermediate hop will not be discovered by
+   either the fragmenting or the reassembling endpoints.  Should this
+   happen, the source will keep on sending fragments, wasting even more
+   resources in the network since the datagram cannot arrive in its
+   entirety, which possibly contributes to the condition that caused the
+   loss.  [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>] is lacking a congestion control to avoid
+   participating in a saturation that may have caused the loss of the
+   fragment.  It has no signaling to abort a multi-fragment transmission
+   at any time and from either end, and if the capability to forward
+   fragments is implemented, clean up the related state in the network.
+
+   This specification provides a method to forward fragments over,
+   typically, a few hops in a route-over 6LoWPAN mesh and a selective
+   acknowledgment to recover individual fragments between 6LoWPAN
+   endpoints.  The method can help limit the congestion loss in the
+   network and addresses the requirements in <a href="#appendix-B">Appendix B</a>.  Flow control
+   is out of scope since the endpoints are expected to be able to store
+   the full datagram.  Deployments are expected to be managed and
+   homogeneous, and an incremental transition requires a flag day.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Background</span>
+
+   This document uses 6LoWPAN terms and concepts that are presented in
+   &quot;IPv6 over Low-Power Wireless Personal Area Networks (6LoWPANs):
+   Overview, Assumptions, Problem Statement, and Goals&quot; [<a href="/doc/html/rfc4919" title="&quot;IPv6 over Low-Power Wireless Personal Area Networks (6LoWPANs): Overview, Assumptions, Problem Statement, and Goals&quot;">RFC4919</a>];
+   &quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot; [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>];
+   and &quot;Problem Statement and Requirements for IPv6 over Low-Power
+   Wireless Personal Area Network (6LoWPAN) Routing&quot; [<a href="/doc/html/rfc6606" title="&quot;Problem Statement and Requirements for IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Routing&quot;">RFC6606</a>].
+
+   [<a id="ref-RFC8930">RFC8930</a>] discusses the generic concept of a Virtual Reassembly
+   Buffer (VRB) and specifies behaviors and caveats that are common to a
+   large family of 6LFF techniques including the mechanism specified by
+   this document, which is fully inherited from that specification.  It
+   also defines terms used in this document: Compressed Form,
+   Datagram_Tag, Datagram_Size, Fragment_Offset, and 6LoWPAN Fragment
+   Forwarding endpoint (commonly abbreviated as only &quot;endpoint&quot;).
+
+   Past experience with fragmentation has shown that misassociated or
+   lost fragments can lead to poor network behavior and, occasionally,
+   trouble at the application layer.  The reader is encouraged to read
+   &quot;IPv4 Reassembly Errors at High Data Rates&quot; [<a href="/doc/html/rfc4963" title="&quot;IPv4 Reassembly Errors at High Data Rates&quot;">RFC4963</a>] and follow the
+   references for more information.  That experience led to the
+   definition of the &quot;Path MTU Discovery for IP version 6&quot; [<a href="/doc/html/rfc8201" title="&quot;Path MTU Discovery for IP version 6&quot;">RFC8201</a>]
+   protocol that limits fragmentation over the Internet.  Specifically,
+   in the case of UDP, valuable additional information can be found in
+   &quot;UDP Usage Guidelines&quot; [<a href="/doc/html/rfc8085" title="&quot;UDP Usage Guidelines&quot;">RFC8085</a>].
+
+   &quot;The Benefits of Using Explicit Congestion Notification (ECN)&quot;
+   [<a href="/doc/html/rfc8087" title="&quot;The Benefits of Using Explicit Congestion Notification (ECN)&quot;">RFC8087</a>] provides useful information on the potential benefits and
+   pitfalls of using ECN.
+
+   Quoting &quot;Multiprotocol Label Switching Architecture&quot; [<a href="/doc/html/rfc3031" title="&quot;Multiprotocol Label Switching Architecture&quot;">RFC3031</a>]:
+
+   |  With MPLS, &quot;packets are &quot;labeled&quot; before they are forwarded [along
+   |  a Label Switched Path (LSP)].  At subsequent hops, there is no
+   |  further analysis of the packet&#x27;s network layer header.  Rather,
+   |  the label is used as an index into a table which specifies the
+   |  next hop, and a new label&quot;.
+
+   [<a id="ref-RFC8930">RFC8930</a>] leverages MPLS to forward fragments that actually do not
+   have a network-layer header, since the fragmentation occurs below IP,
+   and this specification makes it reversible so the reverse path can be
+   followed as well.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Other Terms</span>
+
+   This specification uses the following terms:
+
+   RFRAG:  Recoverable Fragment
+
+   RFRAG-ACK:  Recoverable Fragment Acknowledgment
+
+   RFRAG Acknowledgment Request:  An RFRAG with the Acknowledgment
+      Request flag (&quot;X&quot; flag) set.
+
+   NULL bitmap:  Refers to a bitmap with all bits set to zero.
+
+   FULL bitmap:  Refers to a bitmap with all bits set to one.
+
+   Reassembling endpoint:  The receiving endpoint.
+
+   Fragmenting endpoint:  The sending endpoint.
+
+   Forward direction:  The direction of a path, which is followed by the
+      RFRAG.
+
+   Reverse direction:  The reverse direction of a path, which is taken
+      by the RFRAG-ACK.
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Updating <a href="/doc/html/rfc4944">RFC 4944</a></span>
+
+   This specification updates the fragmentation mechanism that is
+   specified in [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>] for use in route-over LLNs by providing a
+   model where fragments can be forwarded end to end across a 6LoWPAN
+   LLN and where fragments that are lost on the way can be recovered
+   individually.  A new format for fragments is introduced, and new
+   dispatch types are defined in <a href="#section-5">Section 5</a>.
+
+   [<a id="ref-RFC8138">RFC8138</a>] allows modifying the size of a packet en route by removing
+   the consumed hops in a compressed Routing Header.  This requires that
+   Fragment_Offset and Datagram_Size (defined in <a href="#section-5.1">Section 5.1</a>) also be
+   modified en route, which is difficult to do in the uncompressed form.
+   This specification expresses those fields in the compressed form and
+   allows modifying them en route easily (more in <a href="#section-4.4">Section 4.4</a>).
+
+   To be consistent with <a href="/doc/html/rfc6282#section-2">Section&nbsp;2 of [RFC6282]</a>, for the fragmentation
+   mechanism described in <a href="/doc/html/rfc4944#section-5.3">Section&nbsp;5.3 of [RFC4944]</a>, any header that
+   cannot fit within the first fragment MUST NOT be compressed when
+   using the fragmentation mechanism described in this specification.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Extending <a href="/doc/html/rfc8930">RFC 8930</a></span>
+
+   This specification implements the generic 6LFF technique defined in
+   [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] and provides end-to-end fragment recovery and congestion
+   control mechanisms.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Slack in the First Fragment</span>
+
+   [<a id="ref-RFC8930">RFC8930</a>] allows for a refragmentation operation in intermediate
+   nodes, whereby the trailing bytes from a given fragment may be left
+   in the VRB to be added as the heading bytes in the next fragment.
+   This solves the case when the outgoing fragment needs more space than
+   the incoming fragment; that case may arise when the 6LoWPAN header
+   compression is not as efficient on the outgoing link or if the Link
+   MTU is reduced.
+
+   This specification cannot allow that refragmentation operation since
+   the fragments are recovered end to end based on a sequence number.
+   The Fragment_Size MUST be tailored to fit the minimal MTU along the
+   path, and the first fragment that contains a 6LoWPAN compressed
+   header MUST have enough slack to enable a less-efficient compression
+   in the next hops to still fit within the Link MTU.
+
+   For instance, if the fragmenting endpoint is also the 6LoWPAN
+   compression endpoint, it will elide the Interface ID (IID) of the
+   source IPv6 address when it matches the link-layer address [<a href="/doc/html/rfc6282" title="&quot;Compression Format for IPv6 Datagrams over IEEE 802.15.4-Based Networks&quot;">RFC6282</a>].
+   In that case, it MUST leave slack in the first fragment as the if MTU
+   on the first hop was 8 bytes less, so the next hop can expand the IID
+   within the same fragment within MTU.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Gap between Frames</span>
+
+   [<a id="ref-RFC8930">RFC8930</a>] requires that a configurable interval of time be inserted
+   between transmissions to the same next hop and, in particular,
+   between fragments of a same datagram.  In the case of half duplex
+   interfaces, this inter-frame gap ensures that the next hop is done
+   forwarding the previous frame and is capable of receiving the next
+   one.
+
+   In the case of a mesh operating at a single frequency with
+   omnidirectional antennas, a larger inter-frame gap is required to
+   protect the frame against hidden terminal collisions with the
+   previous frame of the same flow that is still progressing along a
+   common path.
+
+   The inter-frame gap is useful even for unfragmented datagrams, but it
+   becomes a necessity for fragments that are typically generated in a
+   fast sequence and are all sent over the exact same path.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Congestion Control</span>
+
+   The inter-frame gap is the only protection that [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] imposes by
+   default.  This document enables grouping fragments in windows and
+   requesting intermediate acknowledgments, so the number of in-flight
+   fragments can be bounded.  This document also adds an ECN mechanism
+   that can be used to protect the network by adapting the size of the
+   window, the size of the fragments, and/or the inter-frame gap.
+
+   This specification enables the fragmenting endpoint to apply a
+   congestion control mechanism to tune those parameters, but the
+   mechanism itself is out of scope.  In most cases, the expectation is
+   that most datagrams will require only a few fragments, and that only
+   the last fragment will be acknowledged.  A basic implementation of
+   the fragmenting endpoint is NOT REQUIRED to vary the size of the
+   window, the duration of the inter-frame gap, or the size of a
+   fragment in the middle of the transmission of a datagram, and it MAY
+   ignore the ECN signal or simply reset the window to 1 (see
+   <a href="#appendix-C">Appendix C</a>) until the end of this datagram upon detecting a
+   congestion.
+
+   An intermediate node that experiences a congestion MAY set the ECN
+   bit in a fragment, and the reassembling endpoint echoes the ECN bit
+   at most once at the next opportunity to acknowledge back.
+
+   The size of the fragments is typically computed from the Link MTU to
+   maximize the size of the resulting frames.  The size of the window
+   and the duration of the inter-frame gap SHOULD be configurable, to
+   reduce the chances of congestion and to follow the general
+   recommendations in [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>], respectively.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Modifying the First Fragment</span>
+
+   The compression of the hop limit, of the source and destination
+   addresses in the IPv6 header, and of the Routing Header, which are
+   all in the first fragment, may change en route in a route-over mesh
+   LLN.  If the size of the first fragment is modified, then the
+   intermediate node MUST adapt the Datagram_Size, encoded in the
+   Fragment_Size field, to reflect that difference.
+
+   The intermediate node MUST also save the difference of Datagram_Size
+   of the first fragment in the VRB and add it to the Fragment_Offset of
+   all the subsequent fragments that it forwards for that datagram.  In
+   the case of a Source Routing Header 6LoWPAN Routing Header (SRH-
+   6LoRH) [<a href="/doc/html/rfc8138" title="&quot;IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Routing Header&quot;">RFC8138</a>] being consumed and thus reduced, that difference is
+   negative, meaning that the Fragment_Offset is decremented by the
+   number of bytes that were consumed.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  New Dispatch Types and Headers</span>
+
+   This document specifies an alternative to the 6LoWPAN fragmentation
+   sub-layer [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>] to emulate a Link MTU up to 2048 bytes for the
+   upper layer, which can be the 6LoWPAN header compression sub-layer
+   that is defined in &quot;Compression Format for IPv6 Datagrams over IEEE
+   802.15.4-Based Networks&quot; [<a href="/doc/html/rfc6282" title="&quot;Compression Format for IPv6 Datagrams over IEEE 802.15.4-Based Networks&quot;">RFC6282</a>].  This specification also provides
+   a reliable transmission of the fragments over a multi-hop 6LoWPAN
+   route-over mesh network and a minimal congestion control to reduce
+   the chances of congestion loss.
+
+   A 6LoWPAN Fragment Forwarding [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] technique derived from MPLS
+   enables the forwarding of individual fragments across a 6LoWPAN
+   route-over mesh without reassembly at each hop.  The Datagram_Tag is
+   used as a label; it is locally unique to the node that owns the
+   source link-layer address of the fragment, so together the link-layer
+   address and the label can identify the fragment globally within the
+   lifetime of the datagram.  A node may build the Datagram_Tag in its
+   own locally significant way, as long as the chosen Datagram_Tag stays
+   unique to the particular datagram for its lifetime.  The result is
+   that the label does not need to be globally unique, but it must be
+   swapped at each hop as the source link-layer address changes.
+
+   In the following sections, a Datagram_Tag extends the semantics
+   defined in &quot;Fragmentation Type and Header&quot; (see <a href="/doc/html/rfc4944#section-5.3">Section&nbsp;5.3 of
+   [RFC4944]</a>).  The Datagram_Tag is a locally unique identifier for the
+   datagram from the perspective of the sender.  This means that the
+   Datagram_Tag identifies a datagram uniquely in the network when
+   associated with the source of the datagram.  As the datagram gets
+   forwarded, the source changes, and the Datagram_Tag must be swapped
+   as detailed in [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>].
+
+   This specification extends [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>] with two new dispatch types for
+   RFRAG and the RFRAG-ACK that is received back.  The new 6LoWPAN
+   dispatch types are taken from [<a href="/doc/html/rfc8025" title="&quot;IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Paging Dispatch&quot;">RFC8025</a>], as indicated in Table 1 of
+   <a href="#section-9">Section 9</a>.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Recoverable Fragment Dispatch Type and Header</span>
+
+   In this specification, if the packet is compressed, the size and
+   offset of the fragments are expressed with respect to the compressed
+   form of the packet, as opposed to the uncompressed (native) form.
+
+   The format of the fragment header is shown in Figure 1.  It is the
+   same for all fragments even though the Fragment_Offset is overloaded.
+   The format has a length and an offset, as well as a Sequence field.
+   This would be redundant if the offset was computed as the product of
+   the Sequence by the length, but this is not the case.  The position
+   of a fragment in the reassembly buffer is correlated with neither the
+   value of the Sequence field nor the order in which the fragments are
+   received.  This enables splitting fragments to cope with an MTU
+   deduction; see the example of fragment Sequence 5 that is retried end
+   to end as smaller fragment Sequences 13 and 14 in <a href="#section-6.2">Section 6.2</a>.
+
+   The first fragment is recognized by a Sequence of 0; it carries its
+   Fragment_Size and the Datagram_Size of the compressed packet before
+   it is fragmented, whereas the other fragments carry their
+   Fragment_Size and Fragment_Offset.  The last fragment for a datagram
+   is recognized when its Fragment_Offset and its Fragment_Size add up
+   to the stored Datagram_Size of the packet identified by the sender
+   link-layer address and the Datagram_Tag.
+
+                              1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+                                       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                       |1 1 1 0 1 0 0|E|  Datagram_Tag |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |X| Sequence|   Fragment_Size   |       Fragment_Offset         |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                                                X set == Ack-Request
+
+                  Figure 1: RFRAG Dispatch Type and Header
+
+   X:  1 bit; Ack-Request.  When set, the fragmenting endpoint requires
+      an RFRAG Acknowledgment from the reassembling endpoint.
+
+   E:  1 bit; Explicit Congestion Notification.  The &quot;E&quot; flag is cleared
+      by the source of the fragment and set by intermediate routers to
+      signal that this fragment experienced congestion along its path.
+
+   Fragment_Size:  10-bit unsigned integer.  The size of this fragment
+      in a unit that depends on link-layer technology.  Unless
+      overridden by a more specific specification, that unit is the
+      byte, which allows fragments up to 1023 bytes.
+
+   Datagram_Tag:  8 bits.  An identifier of the datagram that is locally
+      unique to the link-layer sender.
+
+   Sequence:  5-bit unsigned integer.  The sequence number of the
+      fragment in the acknowledgment bitmap.  Fragments are numbered as
+      [0..N], where N is in [0..31].  A Sequence of 0 indicates the
+      first fragment in a datagram, but non-zero values are not
+      indicative of the position in the reassembly buffer.
+
+   Fragment_Offset:  16-bit unsigned integer.
+
+      When the Fragment_Offset is set to a non-zero value, its semantics
+      depend on the value of the Sequence field as follows:
+
+      *  For a first fragment (i.e., with a Sequence of 0), this field
+         indicates the Datagram_Size of the compressed datagram, to help
+         the reassembling endpoint allocate an adapted buffer for the
+         reception and reassembly operations.  The fragment may be
+         stored for local reassembly.  Alternatively, it may be routed
+         based on the destination IPv6 address.  In that case, a VRB
+         state must be installed as described in <a href="#section-6.1.1">Section 6.1.1</a>.
+
+      *  When the Sequence is not 0, this field indicates the offset of
+         the fragment in the compressed form of the datagram.  The
+         fragment may be added to a local reassembly buffer or forwarded
+         based on an existing VRB as described in <a href="#section-6.1.2">Section 6.1.2</a>.
+
+      A Fragment_Offset that is set to a value of 0 indicates an abort
+      condition, and all states regarding the datagram should be cleaned
+      up once the processing of the fragment is complete; the processing
+      of the fragment depends on whether there is a VRB already
+      established for this datagram and if the next hop is still
+      reachable:
+
+      *  if a VRB already exists and the next hop is still reachable,
+         the fragment is to be forwarded along the associated LSP as
+         described in <a href="#section-6.1.2">Section 6.1.2</a>, without checking the value of the
+         Sequence field.
+
+      *  else, if the Sequence is 0, then the fragment is to be routed
+         as described in <a href="#section-6.1.1">Section 6.1.1</a>, but no state is conserved
+         afterwards.  In that case, the session, if it exists, is
+         aborted, and the packet is also forwarded in an attempt to
+         clean up the next hops along the path indicated by the IPv6
+         header (possibly including a Routing Header).
+
+      *  else (the Sequence is non-zero and either no VRB exists or the
+         next hop is unavailable), the fragment cannot be forwarded or
+         routed; the fragment is discarded and an abort RFRAG-ACK is
+         sent back to the source as described in <a href="#section-6.1.2">Section 6.1.2</a>.
+
+
+   Recoverable Fragments are sequenced, and a bitmap is used in the
+   RFRAG Acknowledgment to indicate the received fragments by setting
+   the individual bits that correspond to their sequence.
+
+   There is no requirement on the reassembling endpoint to check that
+   the received fragments are consecutive and non-overlapping.  This may
+   be useful, in particular, in the case where the MTU changes and a
+   fragment Sequence is retried with a smaller Fragment_Size, with the
+   remainder of the original fragment being retried with new Sequence
+   values.  The fragmenting endpoint knows that the datagram is fully
+   received when the acknowledged fragments cover the whole datagram,
+   which is implied by a FULL bitmap.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  RFRAG Acknowledgment Dispatch Type and Header</span>
+
+   This specification also defines a 4-byte RFRAG Acknowledgment Bitmap
+   that is used by the reassembling endpoint to selectively confirm the
+   reception of individual fragments.  A given offset in the bitmap maps
+   one to one with a given sequence number and indicates which fragment
+   is acknowledged as follows:
+
+                            1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |           RFRAG Acknowledgment Bitmap                         |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+        ^                 ^
+        |                 |    bitmap indicating whether:
+        |                 +----- Fragment with Sequence 9 was received
+        +----------------------- Fragment with Sequence 0 was received
+
+               Figure 2: RFRAG Acknowledgment Bitmap Encoding
+
+   Figure 3 shows an example RFRAG Acknowledgment Bitmap that indicates
+   that all fragments from Sequence 0 to 20 were received, except for
+   fragments 1, 2, and 16, which were lost and must be retried.
+
+                            1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |1|0|0|1|1|1|1|1|1|1|1|1|1|1|1|1|0|1|1|1|1|0|0|0|0|0|0|0|0|0|0|0|
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+               Figure 3: Example RFRAG Acknowledgment Bitmap
+
+   The RFRAG Acknowledgment Bitmap is included in an RFRAG
+   Acknowledgment header, as follows:
+
+                            1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+                                       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                       |1 1 1 0 1 0 1|E|  Datagram_Tag |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |          RFRAG Acknowledgment Bitmap (32 bits)                |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+          Figure 4: RFRAG Acknowledgment Dispatch Type and Header
+
+   E:  1 bit; Explicit Congestion Notification Echo.
+
+      When set, the fragmenting endpoint indicates that at least one of
+      the acknowledged fragments was received with an Explicit
+      Congestion Notification, indicating that the path followed by the
+      fragments is subject to congestion.  See more details in
+      <a href="#appendix-C">Appendix C</a>.
+
+   Datagram_Tag:  8 bits; an identifier of the datagram that is locally
+      unique to the link-layer recipient.
+
+   RFRAG Acknowledgment Bitmap:  An RFRAG Acknowledgment Bitmap, whereby
+      setting the bit at offset x indicates that fragment x was
+      received, as shown in Figure 2.  A NULL bitmap indicates that the
+      fragmentation process is aborted.  A FULL bitmap indicates that
+      the fragmentation process is complete; all fragments were received
+      at the reassembly endpoint.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Fragment Recovery</span>
+
+   The RFRAG header is used to transport a fragment and optionally
+   request an RFRAG-ACK that confirms the reception of one or more
+   fragments.  An RFRAG-ACK is carried as a standalone fragment header
+   (i.e., with no 6LoWPAN payload) in a message that is propagated back
+   to the fragmenting endpoint.  To achieve this, each hop that
+   performed an MPLS-like operation on fragments reverses that operation
+   for the RFRAG-ACK by sending a frame from the next hop to the
+   previous hop as known by its link-layer address in the VRB.  The
+   Datagram_Tag in the RFRAG-ACK is unique to the reassembling endpoint
+   and is enough information for an intermediate hop to locate the VRB
+   that contains the Datagram_Tag used by the previous hop and the Layer
+   2 information associated with it (interface and link-layer address).
+
+   The fragmenting endpoint (i.e., the node that fragments the packets
+   at the 6LoWPAN level) also controls the number of acknowledgments by
+   setting the Ack-Request flag in the RFRAG packets.
+
+   The fragmenting endpoint may set the Ack-Request flag on any fragment
+   to perform congestion control by limiting the number of outstanding
+   fragments, which are the fragments that have been sent but for which
+   reception or loss was not positively confirmed by the reassembling
+   endpoint.  The maximum number of outstanding fragments is controlled
+   by the Window-Size.  It is configurable and may vary in case of ECN
+   notification.  When the endpoint that reassembles the packets at the
+   6LoWPAN level receives a fragment with the Ack-Request flag set, it
+   MUST send an RFRAG-ACK back to the originator to confirm reception of
+   all the fragments it has received so far.
+
+   The Ack-Request (&quot;X&quot;) set in an RFRAG marks the end of a window.
+   This flag MUST be set on the last fragment if the fragmenting
+   endpoint wishes to perform an automatic repeat request (ARQ) process
+   for the datagram, and it MAY be set in any intermediate fragment for
+   the purpose of congestion control.
+
+   This ARQ process MUST be protected by a Retransmission Timeout (RTO)
+   timer, and the fragment that carries the &quot;X&quot; flag MAY be retried upon
+   a timeout for a configurable number of times (see <a href="#section-7.1">Section 7.1</a>) with
+   an exponential backoff.  Upon exhaustion of the retries, the
+   fragmenting endpoint may either abort the transmission of the
+   datagram or resend the first fragment with an &quot;X&quot; flag set in order
+   to establish a new path for the datagram and obtain the list of
+   fragments that were received over the old path in the acknowledgment
+   bitmap.  When the fragmenting endpoint knows that an underlying link-
+   layer mechanism protects the fragments, it may refrain from using the
+   RFRAG Acknowledgment mechanism and never set the Ack-Request bit.
+
+   The reassembling endpoint MAY issue unsolicited acknowledgments.  An
+   unsolicited acknowledgment signals to the fragmenting endpoint that
+   it can resume sending in case it has reached its maximum number of
+   outstanding fragments.  Another use is to inform the fragmenting
+   endpoint that the reassembling endpoint aborted the processing of an
+   individual datagram.
+
+   The RFRAG Acknowledgment carries an ECN indication for congestion
+   control (see <a href="#appendix-C">Appendix C</a>).  The reassembling endpoint of a fragment
+   with the &quot;E&quot; (ECN) flag set MUST echo that information at most once
+   by setting the &quot;E&quot; (ECN) flag in the next RFRAG-ACK.
+
+   In order to protect the datagram, the fragmenting endpoint transfers
+   a controlled number of fragments and flags to the last fragment of a
+   window with an RFRAG Acknowledgment Request.  The reassembling
+   endpoint MUST acknowledge a fragment with the acknowledgment request
+   bit set.  If any fragment immediately preceding an acknowledgment
+   request is still missing, the reassembling endpoint MAY intentionally
+   delay its acknowledgment to allow in-transit fragments to arrive.
+   Because it might defeat the round-trip time computation, delaying the
+   acknowledgment should be configurable and not enabled by default.
+
+   When enough fragments are received to cover the whole datagram, the
+   reassembling endpoint reconstructs the packet, passes it to the upper
+   layer, sends an RFRAG-ACK on the reverse path with a FULL bitmap, and
+   arms a short timer, e.g., on the order of an average round-trip time
+   in the network.  The FULL bitmap is used as opposed to a bitmap that
+   acknowledges only the received fragments to let the intermediate
+   nodes know that the datagram is fully received.  As the timer runs,
+   the reassembling endpoint absorbs the fragments that were still in
+   flight for that datagram without creating a new state, acknowledging
+   the ones that bear an Ack-Request with an FRAG Acknowledgment and the
+   FULL bitmap.  The reassembling endpoint aborts the communication if
+   fragments with a matching source and Datagram-Tag continue to be
+   received after the timer expires.
+
+   Note that acknowledgments might consume precious resources, so the
+   use of unsolicited acknowledgments SHOULD be configurable and not
+   enabled by default.
+
+   An observation is that streamlining the forwarding of fragments
+   generally reduces the latency over the LLN mesh, providing room for
+   retries within existing upper-layer reliability mechanisms.  The
+   fragmenting endpoint protects the transmission over the LLN mesh with
+   a retry timer that is configured for a use case and may be adapted
+   dynamically, e.g., according to the method detailed in [<a href="/doc/html/rfc6298" title="&quot;Computing TCP&#x27;s Retransmission Timer&quot;">RFC6298</a>].  It
+   is expected that the upper-layer retry mechanism obeys the
+   recommendations in [<a href="/doc/html/rfc8085" title="&quot;UDP Usage Guidelines&quot;">RFC8085</a>], in which case a single round of
+   fragment recovery should fit within the upper-layer recovery timers.
+
+   Fragments MUST be sent in a round-robin fashion: the sender MUST send
+   all the fragments for a first time before it retries any lost
+   fragment; lost fragments MUST be retried in sequence, oldest first.
+   This mechanism enables the receiver to acknowledge fragments that
+   were delayed in the network before they are retried.
+
+   When a single radio frequency is used by contiguous hops, the
+   fragmenting endpoint SHOULD insert a delay between the frames (e.g.,
+   carrying fragments) that are sent to the same next hop.  The delay
+   SHOULD cover multiple transmissions so as to let a frame progress a
+   few hops and avoid hidden terminal issues.  This precaution is not
+   required on channel hopping technologies such as Time-Slotted Channel
+   Hopping (TSCH) [<a href="/doc/html/rfc6554" title="&quot;An IPv6 Routing Header for Source Routes with the Routing Protocol for Low-Power and Lossy Networks (RPL)&quot;">RFC6554</a>], where nodes that communicate at Layer 2 are
+   scheduled to send and receive, respectively, and different hops
+   operate on different channels.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Forwarding Fragments</span>
+
+   This specification inherits from [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] and proposes a Virtual
+   Reassembly Buffer technique to forward fragments with no intermediate
+   reconstruction of the entire datagram.
+
+   The IPv6 header MUST be placed in the first fragment in full to
+   enable the routing decision.  The first fragment is routed and
+   creates an LSP from the fragmenting endpoint to the reassembling
+   endpoint.  The next fragments are label switched along that LSP.  As
+   a consequence, the next fragments can only follow the path that was
+   set up by the first fragment; they cannot follow an alternate route.
+   The Datagram_Tag is used to carry the label, which is swapped in each
+   hop.
+
+   If the first fragment is too large for the path MTU, it will
+   repeatedly fail and never establish an LSP.  In that case, the
+   fragmenting endpoint MAY retry the same datagram with a smaller
+   Fragment_Size, in which case it MUST abort the original attempt and
+   use a new Datagram_Tag for the new attempt.
+
+<span class="h4"><a class="selflink" id="section-6.1.1" href="#section-6.1.1">6.1.1</a>.  Receiving the First Fragment</span>
+
+   In route-over mode, the source and destination link-layer addresses
+   in a frame change at each hop.  The label that is formed and placed
+   in the Datagram_Tag by the sender is associated with the source link-
+   layer address and only valid (and temporarily unique) for that source
+   link-layer address.
+
+   Upon receiving the first fragment (i.e., with a Sequence of 0), an
+   intermediate router creates a VRB and the associated LSP state
+   indexed by the incoming interface, the previous-hop link-layer
+   address, and the Datagram_Tag and forwards the fragment along the
+   IPv6 route that matches the destination IPv6 address in the IPv6
+   header until it reaches the reassembling endpoint, as prescribed by
+   [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>].  The LSP state enables matching the next incoming
+   fragments of a datagram to the abstract forwarding information of the
+   next interface, source and next-hop link-layer addresses, and the
+   swapped Datagram_Tag.
+
+   In addition, the router also forms a reverse LSP state indexed by the
+   interface to the next hop, the link-layer address the router uses as
+   source for that datagram, and the swapped Datagram_Tag.  This reverse
+   LSP state enables matching the tuple (interface, destination link-
+   layer address, Datagram_Tag) found in an RFRAG-ACK to the abstract
+   forwarding information (previous interface, previous link-layer
+   address, Datagram_Tag) used to forward the RFRAG-ACK back to the
+   fragmenting endpoint.
+
+<span class="h4"><a class="selflink" id="section-6.1.2" href="#section-6.1.2">6.1.2</a>.  Receiving the Next Fragments</span>
+
+   Upon receiving the next fragment (i.e., with a non-zero Sequence), an
+   intermediate router looks up an LSP indexed by the tuple (incoming
+   interface, previous-hop link-layer address, Datagram_Tag) found in
+   the fragment.  If it is found, the router forwards the fragment using
+   the associated VRB as prescribed by [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>].
+
+   If the VRB for the tuple is not found, the router builds an RFRAG-ACK
+   to abort the transmission of the packet.  The resulting message has
+   the following information:
+
+   *  The source and destination link-layer addresses are swapped from
+      those found in the fragment, and the same interface is used
+
+   *  The Datagram_Tag is set to the Datagram_Tag found in the fragment
+
+   *  A NULL bitmap is used to signal the abort condition
+
+   At this point, the router is all set and can send the RFRAG-ACK back
+   to the previous router.  The RFRAG-ACK should normally be forwarded
+   all the way to the source using the reverse LSP state in the VRBs in
+   the intermediate routers as described in the next section.
+
+   [<a id="ref-RFC8930">RFC8930</a>] indicates that the reassembling endpoint stores &quot;the actual
+   packet data from the fragments received so far, in a form that makes
+   it possible to detect when the whole packet has been received and can
+   be processed or forwarded&quot;.  How this is computed is implementation
+   specific, but it relies on receiving all the bytes up to the
+   Datagram_Size indicated in the first fragment.  An implementation may
+   receive overlapping fragments as the result of retries after an MTU
+   change.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Receiving RFRAG Acknowledgments</span>
+
+   Upon receipt of an RFRAG-ACK, the router looks up a reverse LSP
+   indexed by the interface and destination link-layer address of the
+   received frame and the received Datagram_Tag in the RFRAG-ACK.  If it
+   is found, the router forwards the fragment using the associated VRB
+   as prescribed by [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>], but it uses the reverse LSP so that the
+   RFRAG-ACK flows back to the fragmenting endpoint.
+
+   If the reverse LSP is not found, the router MUST silently drop the
+   RFRAG-ACK message.
+
+   Either way, if the RFRAG-ACK indicates that the fragment was entirely
+   received (FULL bitmap), it arms a short timer, and upon timeout, the
+   VRB and all the associated states are destroyed.  Until the timer
+   elapses, fragments of that datagram may still be received, e.g., if
+   the RFRAG-ACK was lost on the path back, and the source retried the
+   last fragment.  In that case, the router generates an RFRAG-ACK with
+   a FULL bitmap back to the fragmenting endpoint if an acknowledgment
+   was requested; else, it silently drops the fragment.
+
+   This specification does not provide a method to discover the number
+   of hops or the minimal value of MTU along those hops.  In a typical
+   case, the MTU is constant and is the same across the network.  But
+   should the minimal MTU along the path decrease, it is possible to
+   retry a long fragment (say a Sequence of 5) with several shorter
+   fragments with a Sequence that was not used before (e.g., 13 and 14).
+   Fragment 5 is marked as abandoned and will not be retried anymore.
+   Note that when this mechanism is in place, it is hard to predict the
+   total number of fragments that will be needed or the final shape of
+   the bitmap that would cover the whole packet.  This is why the FULL
+   bitmap is used when the reassembling endpoint gets the whole datagram
+   regardless of which fragments were actually used to do so.
+   Intermediate nodes will know unambiguously that the process is
+   complete.  Note that Path MTU Discovery is out of scope for this
+   document.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Aborting the Transmission of a Fragmented Packet</span>
+
+   A reset is signaled on the forward path with a pseudo fragment that
+   has the Fragment_Offset set to 0.  The sender of a reset SHOULD also
+   set the Sequence and Fragment_Size field to 0.
+
+   When the fragmenting endpoint or a router on the path decides that a
+   packet should be dropped and the fragmentation process aborted, it
+   generates a reset pseudo fragment and forwards it down the fragment
+   path.
+
+   Each router along the path forwards the pseudo fragment in turn based
+   on the VRB state.  If an acknowledgment is not requested, the VRB and
+   all associated states are destroyed.
+
+   Upon reception of the pseudo fragment, the reassembling endpoint
+   cleans up all resources for the packet associated with the
+   Datagram_Tag.  If an acknowledgment is requested, the reassembling
+   endpoint responds with a NULL bitmap.
+
+   On the other hand, the reassembling endpoint might need to abort the
+   processing of a fragmented packet for internal reasons, for instance,
+   if it is out of reassembly buffers, already uses all 256 possible
+   values of the Datagram_Tag, or keeps receiving fragments beyond a
+   reasonable time while it considers that this packet is already fully
+   reassembled and was passed to the upper layer.  In that case, the
+   reassembling endpoint SHOULD indicate so to the fragmenting endpoint
+   with a NULL bitmap in an RFRAG-ACK.
+
+   The RFRAG-ACK is forwarded all the way back to the source of the
+   packet and cleans up all resources on the path.  Upon an
+   acknowledgment with a NULL bitmap, the fragmenting endpoint MUST
+   abort the transmission of the fragmented datagram with one exception:
+   in the particular case of the first fragment, it MAY decide to retry
+   via an alternate next hop instead.
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  Applying Recoverable Fragmentation along a Diverse Path</span>
+
+   The text above can be read with the assumption of a serial path
+   between a source and a destination.  The IPv6 over the TSCH mode of
+   IEEE 802.15.4e (6TiSCH) architecture (see Section 4.5.3 of [<a href="#ref-6TiSCH" title="&quot;An Architecture for IPv6 over the TSCH mode of IEEE 802.15.4&quot;">6TiSCH</a>])
+   defines the concept of a Track that can be a complex path between a
+   source and a destination with Packet ARQ, Replication, Elimination,
+   and Overhearing (PAREO) along the Track.  This specification can be
+   used along any subset of the complex Track where the first fragment
+   is flooded.  The last RFRAG Acknowledgment is flooded on that same
+   subset in the reverse direction.  Intermediate RFRAG Acknowledgments
+   can be flooded on any sub-subset of that reverse subset that reaches
+   back to the source.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Management Considerations</span>
+
+   This specification extends [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] and requires the same parameters
+   in the reassembling endpoint and on intermediate nodes.  There is no
+   new parameter as echoing ECN is always on.  These parameters
+   typically include the reassembly timeout at the reassembling
+   endpoint, an inactivity cleanup timer on the intermediate nodes, and
+   the number of messages that can be processed in parallel in all
+   nodes.
+
+   The configuration settings introduced by this specification only
+   apply to the fragmenting endpoint, which is in full control of the
+   transmission.  LLNs vary a lot in size (there can be thousands of
+   nodes in a mesh), in speed (from 10 Kbps to several Mbps at the PHY
+   layer), in traffic density, and in optimizations that are desired
+   (e.g., the selection of a Routing Protocol for LLNs (RPL) [<a href="/doc/html/rfc6550" title="&quot;RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks&quot;">RFC6550</a>]
+   Objective Function [<a href="/doc/html/rfc6552" title="&quot;Objective Function Zero for the Routing Protocol for Low-Power and Lossy Networks (RPL)&quot;">RFC6552</a>] impacts the shape of the routing graph).
+
+   For that reason, only very generic guidance can be given on the
+   settings of the fragmenting endpoint and on whether complex
+   algorithms are needed to perform congestion control or to estimate
+   the round-trip time.  To cover the most complex use cases, this
+   specification enables the fragmenting endpoint to vary the fragment
+   size, the window size, and the inter-frame gap based on the number of
+   losses, the observed variations of the round-trip time, and the
+   setting of the ECN bit.
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Protocol Parameters</span>
+
+   The management system SHOULD be capable of providing the parameters
+   listed in this section, and an implementation MUST abide by those
+   parameters and, in particular, never exceed the minimum and maximum
+   configured boundaries.
+
+   An implementation should consider the generic recommendations from
+   the IETF in the matter of congestion control and rate management for
+   IP datagrams in [<a href="/doc/html/rfc8085" title="&quot;UDP Usage Guidelines&quot;">RFC8085</a>].  An implementation may perform congestion
+   control by using a dynamic value of the window size (Window_Size),
+   adapting the fragment size (Fragment_Size), and potentially reducing
+   the load by inserting an inter-frame gap that is longer than
+   necessary.  In a large network where nodes contend for the bandwidth,
+   a larger Fragment_Size consumes less bandwidth but also reduces
+   fluidity and incurs higher chances of loss in transmission.
+
+   This is controlled by the following parameters:
+
+   inter-frame gap:  The inter-frame gap indicates the minimum amount of
+      time between transmissions.  The inter-frame gap controls the rate
+      at which fragments are sent, the ratio of air time, and the amount
+      of memory in intermediate nodes that a particular datagram will
+      use.  It can be used as a flow control, a congestion control, and/
+      or a collision control measure.  It MUST be set at a minimum to a
+      value that protects the propagation of one transmission against
+      collision with next [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>].  In a wireless network that uses
+      the same frequency along a path, this may represent the time for a
+      frame to progress over multiple hops (see more in <a href="#section-4.2">Section 4.2</a>).
+      It SHOULD be augmented beyond this as necessary to protect the
+      network against congestion.
+
+   MinFragmentSize:  The MinFragmentSize is the minimum value for the
+      Fragment_Size.  It MUST be lower than the minimum value of
+      smallest 1-hop MTU that can be encountered along the path.
+
+   OptFragmentSize:  The OptFragmentSize is the value for the
+      Fragment_Size that the fragmenting endpoint should use to start
+      with.  It is greater than or equal to MinFragmentSize.  It is less
+      than or equal to MaxFragmentSize.  For the first fragment, it must
+      account for the expansion of the IPv6 addresses and of the Hop
+      Limit field within MTU.  For all fragments, it is a balance
+      between the expected fluidity and the overhead of link-layer and
+      6LoWPAN headers.  For a small MTU, the idea is to keep it close to
+      the maximum, whereas for larger MTUs, it might make sense to keep
+      it short enough so that the duty cycle of the transmitter is
+      bounded, e.g., to transmit at least 10 frames per second.
+
+   MaxFragmentSize:  The MaxFragmentSize is the maximum value for the
+      Fragment_Size.  It MUST be lower than the maximum value of the
+      smallest 1-hop MTU that can be encountered along the path.  A
+      large value augments the chances of buffer bloat and transmission
+      loss.  The value MUST be less than 512 if the unit that is defined
+      for the PHY layer is the byte.
+
+   Window_Size:  The Window_Size MUST be at least 1 and less than 33.
+
+      *  If the round-trip time is known, the Window_Size SHOULD be set
+         to the round-trip time divided by the time per fragment; that
+         is, the time to transmit a fragment plus the inter-frame gap.
+
+      Otherwise:
+
+      *  A window_size of 32 indicates that only the last fragment is to
+         be acknowledged in each round.  This is the RECOMMENDED value
+         in a half-duplex LLN where the fragment acknowledgment consumes
+         roughly the same bandwidth on the same links as the fragments
+         themselves.
+
+      *  If it is set to a smaller value, more acks are generated.  In a
+         full-duplex network, the load on the forward path will be
+         lower, and a small value of 3 SHOULD be configured.
+
+   An implementation may perform its estimate of the RTO or use a
+   configured one.  The ARQ process is controlled by the following
+   parameters:
+
+   MinARQTimeOut:  The minimum amount of time a node should wait for an
+      RFRAG Acknowledgment before it takes the next action.  It MUST be
+      more than the maximum expected round-trip time in the respective
+      network.
+
+   OptARQTimeOut:  The initial value of the RTO, which is the amount of
+      time that a fragmenting endpoint should wait for an RFRAG
+      Acknowledgment before it takes the next action.  It is greater
+      than or equal to MinARQTimeOut.  It is less than or equal to
+      MaxARQTimeOut.  See <a href="#appendix-C">Appendix C</a> for recommendations on computing
+      the round-trip time.  By default, a value of 3 times the maximum
+      expected round-trip time in the respective network is RECOMMENDED.
+
+   MaxARQTimeOut:  The maximum amount of time a node should wait for the
+      RFRAG Acknowledgment before it takes the next action.  It must
+      cover the longest expected round-trip time and be several times
+      less than the timeout that covers the recomposition buffer at the
+      reassembling endpoint, which is typically on the order of the
+      minute.  An upper bound can be estimated to ensure that the
+      datagram is either fully transmitted or dropped before an upper
+      layer decides to retry it.
+
+   MaxFragRetries:  The maximum number of retries for a particular
+      fragment.  A default value of 3 is RECOMMENDED.  An upper bound
+      can be estimated to ensure that the datagram is either fully
+      transmitted or dropped before an upper layer decides to retry it.
+
+   MaxDatagramRetries:  The maximum number of retries from scratch for a
+      particular datagram.  A default value of 1 is RECOMMENDED.  An
+      upper bound can be estimated to ensure that the datagram is either
+      fully transmitted or dropped before an upper layer decides to
+      retry it.
+
+   An implementation may be capable of performing congestion control
+   based on ECN; see <a href="#appendix-C">Appendix C</a>.  This is controlled by the following
+   parameter:
+
+   UseECN:  Indicates whether the fragmenting endpoint should react to
+      ECN.  The fragmenting endpoint may react to ECN by varying the
+      Window_Size between MinWindowSize and MaxWindowSize, varying the
+      Fragment_Size between MinFragmentSize and MaxFragmentSize, and/or
+      increasing or reducing the inter-frame gap.  With this
+      specification, if UseECN is set and a fragmenting endpoint detects
+      a congestion, it may apply a congestion control method until the
+      end of the datagram, whereas if UseECN is reset, the endpoint does
+      not react to congestion.  Future specifications may provide
+      additional parameters and capabilities.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Observing the Network</span>
+
+   The management system should monitor the number of retries and ECN
+   settings that can be observed from the perspective of the fragmenting
+   endpoint with respect to the reassembling endpoint and reciprocally.
+   It may then tune the optimum size of Fragment_Size and of
+   Window_Size, OptFragmentSize, and OptWindowSize, respectively, at the
+   fragmenting endpoint towards a particular reassembling endpoint,
+   which is applicable to the next datagrams.  It will preferably tune
+   the inter-frame gap to increase the spacing between fragments of the
+   same datagram and reduce the buffer bloat in the intermediate node
+   that holds one or more fragments of that datagram.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   This document specifies an instantiation of a 6LFF technique and
+   inherits from the generic description in [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>].  The
+   considerations in the Security Considerations section of [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>]
+   equally apply to this document.
+
+   In addition to the threats detailed therein, an attacker that is on
+   path can prematurely end the transmission of a datagram by sending a
+   RFRAG Acknowledgment to the fragmenting endpoint.  It can also cause
+   extra transmissions of fragments by resetting bits in the RFRAG
+   Acknowledgment Bitmap and of RFRAG Acknowledgments by forcing the
+   Ack-Request bit in fragments that it forwards.
+
+   As indicated in [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>], secure joining and link-layer security are
+   REQUIRED to protect against those attacks, as the fragmentation
+   protocol does not include any native security mechanisms.
+
+   This specification does not recommend a particular algorithm for the
+   estimation of the duration of the RTO that covers the detection of
+   the loss of a fragment with the &quot;X&quot; flag set; regardless, an attacker
+   on the path may slow down or discard packets, which in turn can
+   affect the throughput of fragmented packets.
+
+   Compared to [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>], this specification reduces the Datagram_Tag to
+   8 bits, and the tag wraps faster than with [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>].  But for a
+   constrained network where a node is expected to be able to hold only
+   one or a few large packets in memory, 256 is still a large number.
+   Also, the acknowledgment mechanism allows cleaning up the state
+   rapidly once the packet is fully transmitted or aborted.
+
+   The abstract Virtual Recovery Buffer from [<a href="/doc/html/rfc8930" title="&quot;On Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Network) Fragments over a Multi-Hop IPv6 Network&quot;">RFC8930</a>] may be used to
+   perform a Denial-of-Service (DoS) attack against the intermediate
+   routers since the routers need to maintain a state per flow.  The
+   particular VRB implementation technique described in [<a href="#ref-LWIG-FRAG">LWIG-FRAG</a>]
+   allows realigning which data goes in which fragment; this causes the
+   intermediate node to store a portion of the data, which adds an
+   attack vector that is not present with this specification.  With this
+   specification, the data that is transported in each fragment is
+   conserved, and the state to keep does not include any data that would
+   not fit in the previous fragment.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+   This document allocates two patterns for a total of four dispatch
+   values for Recoverable Fragments from the &quot;Dispatch Type Field&quot;
+   registry that was created by [<a href="/doc/html/rfc4944" title="&quot;Transmission of IPv6 Packets over IEEE 802.15.4 Networks&quot;">RFC4944</a>] and reformatted by &quot;IPv6 over
+   Low-Power Wireless Personal Area Network (6LoWPAN) Paging Dispatch&quot;
+   [<a href="/doc/html/rfc8025" title="&quot;IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Paging Dispatch&quot;">RFC8025</a>].
+
+   +-------------+------+----------------------------------+-----------+
+   | Bit Pattern | Page | Header Type                      | Reference |
+   +-------------+------+----------------------------------+-----------+
+   | 11 10100x   | 0    | RFRAG - Recoverable Fragment     | <a href="/doc/html/rfc8931">RFC 8931</a>  |
+   +-------------+------+----------------------------------+-----------+
+   | 11 10100x   | 1-14 | Unassigned                       |           |
+   +-------------+------+----------------------------------+-----------+
+   | 11 10100x   | 15   | Reserved for Experimental Use    | <a href="/doc/html/rfc8025">RFC 8025</a>  |
+   +-------------+------+----------------------------------+-----------+
+   | 11 10101x   | 0    | RFRAG-ACK - RFRAG                | <a href="/doc/html/rfc8931">RFC 8931</a>  |
+   |             |      | Acknowledgment                   |           |
+   +-------------+------+----------------------------------+-----------+
+   | 11 10101x   | 1-14 | Unassigned                       |           |
+   +-------------+------+----------------------------------+-----------+
+   | 11 10101x   | 15   | Reserved for Experimental Use    | <a href="/doc/html/rfc8025">RFC 8025</a>  |
+   +-------------+------+----------------------------------+-----------+
+
+              Table 1: Additional Dispatch Value Bit Patterns
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC4919">RFC4919</a>]  Kushalnagar, N., Montenegro, G., and C. Schumacher, &quot;IPv6
+              over Low-Power Wireless Personal Area Networks (6LoWPANs):
+              Overview, Assumptions, Problem Statement, and Goals&quot;,
+              <a href="/doc/html/rfc4919">RFC 4919</a>, DOI 10.17487/RFC4919, August 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4919">https://www.rfc-editor.org/info/rfc4919</a>&gt;.
+
+   [<a id="ref-RFC4944">RFC4944</a>]  Montenegro, G., Kushalnagar, N., Hui, J., and D. Culler,
+              &quot;Transmission of IPv6 Packets over IEEE 802.15.4
+              Networks&quot;, <a href="/doc/html/rfc4944">RFC 4944</a>, DOI 10.17487/RFC4944, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4944">https://www.rfc-editor.org/info/rfc4944</a>&gt;.
+
+   [<a id="ref-RFC6282">RFC6282</a>]  Hui, J., Ed. and P. Thubert, &quot;Compression Format for IPv6
+              Datagrams over IEEE 802.15.4-Based Networks&quot;, <a href="/doc/html/rfc6282">RFC 6282</a>,
+              DOI 10.17487/RFC6282, September 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6282">https://www.rfc-editor.org/info/rfc6282</a>&gt;.
+
+   [<a id="ref-RFC6298">RFC6298</a>]  Paxson, V., Allman, M., Chu, J., and M. Sargent,
+              &quot;Computing TCP&#x27;s Retransmission Timer&quot;, <a href="/doc/html/rfc6298">RFC 6298</a>,
+              DOI 10.17487/RFC6298, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6298">https://www.rfc-editor.org/info/rfc6298</a>&gt;.
+
+   [<a id="ref-RFC6606">RFC6606</a>]  Kim, E., Kaspar, D., Gomez, C., and C. Bormann, &quot;Problem
+              Statement and Requirements for IPv6 over Low-Power
+              Wireless Personal Area Network (6LoWPAN) Routing&quot;,
+              <a href="/doc/html/rfc6606">RFC 6606</a>, DOI 10.17487/RFC6606, May 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6606">https://www.rfc-editor.org/info/rfc6606</a>&gt;.
+
+   [<a id="ref-RFC8025">RFC8025</a>]  Thubert, P., Ed. and R. Cragie, &quot;IPv6 over Low-Power
+              Wireless Personal Area Network (6LoWPAN) Paging Dispatch&quot;,
+              <a href="/doc/html/rfc8025">RFC 8025</a>, DOI 10.17487/RFC8025, November 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8025">https://www.rfc-editor.org/info/rfc8025</a>&gt;.
+
+   [<a id="ref-RFC8138">RFC8138</a>]  Thubert, P., Ed., Bormann, C., Toutain, L., and R. Cragie,
+              &quot;IPv6 over Low-Power Wireless Personal Area Network
+              (6LoWPAN) Routing Header&quot;, <a href="/doc/html/rfc8138">RFC 8138</a>, DOI 10.17487/RFC8138,
+              April 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8138">https://www.rfc-editor.org/info/rfc8138</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8200">RFC8200</a>]  Deering, S. and R. Hinden, &quot;Internet Protocol, Version 6
+              (IPv6) Specification&quot;, STD 86, <a href="/doc/html/rfc8200">RFC 8200</a>,
+              DOI 10.17487/RFC8200, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8200">https://www.rfc-editor.org/info/rfc8200</a>&gt;.
+
+   [<a id="ref-RFC8930">RFC8930</a>]  Watteyne, T., Ed., Thubert, P., Ed., and C. Bormann, &quot;On
+              Forwarding 6LoWPAN (IPv6 over Low-Power Wireless Personal
+              Area Network) Fragments over a Multi-Hop IPv6 Network&quot;,
+              <a href="/doc/html/rfc8930">RFC 8930</a>, DOI 10.17487/RFC8930, November 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8930">https://www.rfc-editor.org/info/rfc8930</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-6TiSCH">6TiSCH</a>]   Thubert, P., &quot;An Architecture for IPv6 over the TSCH mode
+              of IEEE 802.15.4&quot;, Work in Progress, Internet-Draft,
+              <a href="/doc/html/draft-ietf-6tisch-architecture-29">draft-ietf-6tisch-architecture-29</a>, 27 August 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-6tisch-architecture-29">https://tools.ietf.org/html/draft-ietf-6tisch-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-6tisch-architecture-29">architecture-29</a>&gt;.
+
+   [<a id="ref-IEEE.802.15.4">IEEE.802.15.4</a>]
+              IEEE, &quot;IEEE Standard for Low-Rate Wireless Networks&quot;,
+              IEEE Standard 802.15.4-2015,
+              DOI 10.1109/IEEESTD.2016.7460875, April 2016,
+              &lt;<a href="http://ieeexplore.ieee.org/document/7460875/">http://ieeexplore.ieee.org/document/7460875/</a>&gt;.
+
+   [<a id="ref-Kent">Kent</a>]     Kent, C. and J. Mogul, &quot;Fragmentation Considered Harmful&quot;,
+              SIGCOMM &#x27;87: Proceedings of the ACM workshop on Frontiers
+              in computer communications technology, pp. 390-401,
+              DOI 10.1145/55483.55524, August 1987,
+              &lt;<a href="http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-87-3.pdf">http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-</a>
+              <a href="http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-87-3.pdf">87-3.pdf</a>&gt;.
+
+   [<a id="ref-LWIG-FRAG">LWIG-FRAG</a>]
+              Bormann, C. and T. Watteyne, &quot;Virtual reassembly buffers
+              in 6LoWPAN&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-lwig-6lowpan-virtual-reassembly-02">draft-ietf-</a>
+              <a href="/doc/html/draft-ietf-lwig-6lowpan-virtual-reassembly-02">lwig-6lowpan-virtual-reassembly-02</a>, 9 March 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-lwig-6lowpan-virtual-reassembly-02">https://tools.ietf.org/html/draft-ietf-lwig-6lowpan-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-lwig-6lowpan-virtual-reassembly-02">virtual-reassembly-02</a>&gt;.
+
+   [<a id="ref-RFC2914">RFC2914</a>]  Floyd, S., &quot;Congestion Control Principles&quot;, <a href="/doc/html/bcp41">BCP 41</a>,
+              <a href="/doc/html/rfc2914">RFC 2914</a>, DOI 10.17487/RFC2914, September 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2914">https://www.rfc-editor.org/info/rfc2914</a>&gt;.
+
+   [<a id="ref-RFC3031">RFC3031</a>]  Rosen, E., Viswanathan, A., and R. Callon, &quot;Multiprotocol
+              Label Switching Architecture&quot;, <a href="/doc/html/rfc3031">RFC 3031</a>,
+              DOI 10.17487/RFC3031, January 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3031">https://www.rfc-editor.org/info/rfc3031</a>&gt;.
+
+   [<a id="ref-RFC3168">RFC3168</a>]  Ramakrishnan, K., Floyd, S., and D. Black, &quot;The Addition
+              of Explicit Congestion Notification (ECN) to IP&quot;,
+              <a href="/doc/html/rfc3168">RFC 3168</a>, DOI 10.17487/RFC3168, September 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3168">https://www.rfc-editor.org/info/rfc3168</a>&gt;.
+
+   [<a id="ref-RFC4963">RFC4963</a>]  Heffner, J., Mathis, M., and B. Chandler, &quot;IPv4 Reassembly
+              Errors at High Data Rates&quot;, <a href="/doc/html/rfc4963">RFC 4963</a>,
+              DOI 10.17487/RFC4963, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4963">https://www.rfc-editor.org/info/rfc4963</a>&gt;.
+
+   [<a id="ref-RFC5033">RFC5033</a>]  Floyd, S. and M. Allman, &quot;Specifying New Congestion
+              Control Algorithms&quot;, <a href="/doc/html/bcp133">BCP 133</a>, <a href="/doc/html/rfc5033">RFC 5033</a>,
+              DOI 10.17487/RFC5033, August 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5033">https://www.rfc-editor.org/info/rfc5033</a>&gt;.
+
+   [<a id="ref-RFC5681">RFC5681</a>]  Allman, M., Paxson, V., and E. Blanton, &quot;TCP Congestion
+              Control&quot;, <a href="/doc/html/rfc5681">RFC 5681</a>, DOI 10.17487/RFC5681, September 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5681">https://www.rfc-editor.org/info/rfc5681</a>&gt;.
+
+   [<a id="ref-RFC6550">RFC6550</a>]  Winter, T., Ed., Thubert, P., Ed., Brandt, A., Hui, J.,
+              Kelsey, R., Levis, P., Pister, K., Struik, R., Vasseur,
+              JP., and R. Alexander, &quot;RPL: IPv6 Routing Protocol for
+              Low-Power and Lossy Networks&quot;, <a href="/doc/html/rfc6550">RFC 6550</a>,
+              DOI 10.17487/RFC6550, March 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6550">https://www.rfc-editor.org/info/rfc6550</a>&gt;.
+
+   [<a id="ref-RFC6552">RFC6552</a>]  Thubert, P., Ed., &quot;Objective Function Zero for the Routing
+              Protocol for Low-Power and Lossy Networks (RPL)&quot;,
+              <a href="/doc/html/rfc6552">RFC 6552</a>, DOI 10.17487/RFC6552, March 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6552">https://www.rfc-editor.org/info/rfc6552</a>&gt;.
+
+   [<a id="ref-RFC6554">RFC6554</a>]  Hui, J., Vasseur, JP., Culler, D., and V. Manral, &quot;An IPv6
+              Routing Header for Source Routes with the Routing Protocol
+              for Low-Power and Lossy Networks (RPL)&quot;, <a href="/doc/html/rfc6554">RFC 6554</a>,
+              DOI 10.17487/RFC6554, March 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6554">https://www.rfc-editor.org/info/rfc6554</a>&gt;.
+
+   [<a id="ref-RFC7554">RFC7554</a>]  Watteyne, T., Ed., Palattella, M., and L. Grieco, &quot;Using
+              IEEE 802.15.4e Time-Slotted Channel Hopping (TSCH) in the
+              Internet of Things (IoT): Problem Statement&quot;, <a href="/doc/html/rfc7554">RFC 7554</a>,
+              DOI 10.17487/RFC7554, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7554">https://www.rfc-editor.org/info/rfc7554</a>&gt;.
+
+   [<a id="ref-RFC7567">RFC7567</a>]  Baker, F., Ed. and G. Fairhurst, Ed., &quot;IETF
+              Recommendations Regarding Active Queue Management&quot;,
+              <a href="/doc/html/bcp197">BCP 197</a>, <a href="/doc/html/rfc7567">RFC 7567</a>, DOI 10.17487/RFC7567, July 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7567">https://www.rfc-editor.org/info/rfc7567</a>&gt;.
+
+   [<a id="ref-RFC8085">RFC8085</a>]  Eggert, L., Fairhurst, G., and G. Shepherd, &quot;UDP Usage
+              Guidelines&quot;, <a href="/doc/html/bcp145">BCP 145</a>, <a href="/doc/html/rfc8085">RFC 8085</a>, DOI 10.17487/RFC8085,
+              March 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8085">https://www.rfc-editor.org/info/rfc8085</a>&gt;.
+
+   [<a id="ref-RFC8087">RFC8087</a>]  Fairhurst, G. and M. Welzl, &quot;The Benefits of Using
+              Explicit Congestion Notification (ECN)&quot;, <a href="/doc/html/rfc8087">RFC 8087</a>,
+              DOI 10.17487/RFC8087, March 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8087">https://www.rfc-editor.org/info/rfc8087</a>&gt;.
+
+   [<a id="ref-RFC8201">RFC8201</a>]  McCann, J., Deering, S., Mogul, J., and R. Hinden, Ed.,
+              &quot;Path MTU Discovery for IP version 6&quot;, STD 87, <a href="/doc/html/rfc8201">RFC 8201</a>,
+              DOI 10.17487/RFC8201, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8201">https://www.rfc-editor.org/info/rfc8201</a>&gt;.
+
+   [<a id="ref-RFC8900">RFC8900</a>]  Bonica, R., Baker, F., Huston, G., Hinden, R., Troan, O.,
+              and F. Gont, &quot;IP Fragmentation Considered Fragile&quot;,
+              <a href="/doc/html/bcp230">BCP 230</a>, <a href="/doc/html/rfc8900">RFC 8900</a>, DOI 10.17487/RFC8900, September 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8900">https://www.rfc-editor.org/info/rfc8900</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Rationale</span>
+
+   There are a number of uses for large packets in Wireless Sensor
+   Networks.  Such usages may not be the most typical or represent the
+   largest amount of traffic over the LLN; however, the associated
+   functionality can be critical enough to justify extra care for
+   ensuring effective transport of large packets across the LLN.
+
+   The list of those usages includes:
+
+   Towards the LLN node:
+
+      Firmware update:  For example, a new version of the LLN node
+         software is downloaded from a system manager over unicast or
+         multicast services.  Such a reflashing operation typically
+         involves updating a large number of similar LLN nodes over a
+         relatively short period of time.
+
+      Packages of commands:  A number of commands or a full
+         configuration can be packaged as a single message to ensure
+         consistency and enable atomic execution or complete rollback.
+         Until such commands are fully received and interpreted, the
+         intended operation will not take effect.
+
+   From the LLN node:
+
+      Waveform captures:  A number of consecutive samples are measured
+         at a high rate for a short time and then are transferred from a
+         sensor to a gateway or an edge server as a single large report.
+
+      Data logs:  LLN nodes may generate large logs of sampled data for
+         later extraction.  LLN nodes may also generate system logs to
+         assist in diagnosing problems on the node or network.
+
+      Large data packets:  Rich data types might require more than one
+         fragment.
+
+   Uncontrolled firmware download or waveform upload can easily result
+   in a massive increase of the traffic and saturate the network.
+
+   When a fragment is lost in transmission, the lack of recovery in the
+   original fragmentation system of <a href="/doc/html/rfc4944">RFC 4944</a> implies that all fragments
+   would need to be resent, further contributing to the congestion that
+   caused the initial loss and potentially leading to congestion
+   collapse.
+
+   This saturation may lead to excessive radio interference or random
+   early discard (leaky bucket) in relaying nodes.  Additional queuing
+   and memory congestion may result while waiting for a low-power next
+   hop to emerge from its sleep state.
+
+   Considering that <a href="/doc/html/rfc4944">RFC 4944</a> defines an MTU as 1280 bytes, and that in
+   most incarnations (except 802.15.4g) an IEEE Std 802.15.4 frame can
+   limit the link-layer payload to as few as 74 bytes, a packet might be
+   fragmented into at least 18 fragments at the 6LoWPAN shim layer.
+   Taking into account the worst-case header overhead for 6LoWPAN
+   Fragmentation and Mesh Addressing headers will increase the number of
+   required fragments to around 32.  This level of fragmentation is much
+   higher than that traditionally experienced over the Internet with
+   IPv4 fragments.  At the same time, the use of radios increases the
+   probability of transmission loss, and mesh-under techniques compound
+   that risk over multiple hops.
+
+   Mechanisms such as TCP or application-layer segmentation could be
+   used to support end-to-end reliable transport.  One option to support
+   bulk data transfer over a frame-size-constrained LLN is to set the
+   Maximum Segment Size to fit within the link maximum frame size.
+   However, doing so can add significant header overhead to each
+   802.15.4 frame and cause extraneous acknowledgments across the LLN
+   compared to the method in this specification.
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Requirements</span>
+
+   For one-hop communications, a number of LLN link layers propose a
+   local acknowledgment mechanism that is enough to detect and recover
+   the loss of fragments.  In a multi-hop environment, an end-to-end
+   fragment recovery mechanism might be a good complement to a hop-by-
+   hop Medium Access Control (MAC) recovery.  This document introduces a
+   simple protocol to recover individual fragments between 6LFF
+   endpoints that may be multiple hops away.
+
+   The method addresses the following requirements of an LLN:
+
+   Number of fragments:  The recovery mechanism must support highly
+      fragmented packets, with a maximum of 32 fragments per packet.
+
+   Minimum acknowledgment overhead:  Because the radio is half duplex,
+      and because of silent time spent in the various medium access
+      mechanisms, an acknowledgment consumes roughly as many resources
+      as a data fragment.
+
+      The new end-to-end fragment recovery mechanism should be able to
+      acknowledge multiple fragments in a single message and not require
+      an acknowledgment at all if fragments are already protected at a
+      lower layer.
+
+   Controlled latency:  The recovery mechanism must succeed or give up
+      within the time boundary imposed by the recovery process of the
+      upper-layer protocols.
+
+   Optional congestion control:  The aggregation of multiple concurrent
+      flows may lead to the saturation of the radio network and
+      congestion collapse.
+
+      The recovery mechanism should provide means for controlling the
+      number of fragments in transit over the LLN.
+
+<span class="h2"><a class="selflink" id="appendix-C" href="#appendix-C">Appendix C</a>.  Considerations on Congestion Control</span>
+
+   Considering that a multi-hop LLN can be a very sensitive environment
+   due to the limited queuing capabilities of a large population of its
+   nodes, this document recommends a simple and conservative approach to
+   congestion control, based on TCP congestion avoidance.
+
+   Congestion on the forward path is assumed in case of packet loss, and
+   packet loss is assumed upon timeout.  This document allows
+   controlling the number of outstanding fragments that have been
+   transmitted, but for which an acknowledgment was not yet received,
+   and that are still covered by the ARQ timer.
+
+   Congestion on the forward path can also be indicated by an ECN
+   mechanism.  Though whether and how ECN [<a href="/doc/html/rfc3168" title="&quot;The Addition of Explicit Congestion Notification (ECN) to IP&quot;">RFC3168</a>] is carried out over
+   the LoWPAN is out of scope, this document provides a way for the
+   destination endpoint to echo an ECN indication back to the
+   fragmenting endpoint in an acknowledgment message as represented in
+   Figure 4 in <a href="#section-5.2">Section 5.2</a>.
+
+   While the support of echoing the ECN at the reassembling endpoint is
+   mandatory, this specification only provides a minimalistic behavior
+   on the fragmenting endpoint.  If an &quot;E&quot; flag is received, the window
+   SHOULD be reduced at least by 1 and at max to 1.  Halving the window
+   for each &quot;E&quot; flag received could be a good compromise, but it needs
+   further experimentation.  A very simple implementation may just reset
+   the window to 1, so the fragments are sent and acknowledged one by
+   one.
+
+   Note that any action that has been performed upon detection of
+   congestion only applies for the transmission of one datagram, and the
+   next datagram starts with the configured Window_Size again.
+
+   The exact use of the Acknowledgment Request flag and of the window
+   are left to implementation.  An optimistic implementation could send
+   all the fragments up to Window_Size, setting the Acknowledgment
+   Request &quot;X&quot; flag only on the last fragment; wait for the bitmap,
+   which means a gap of half a round-trip time; and resend the losses.
+   A pessimistic implementation could set the &quot;X&quot; flag on the first
+   fragment to check that the path works and open the window only upon
+   receiving the RFRAG-ACK.  It could then set an &quot;X&quot; flag again on the
+   second fragment and use the window as a credit to send up to
+   Window_Size before it is blocked.  In that case, if the RFRAG-ACK
+   comes back before the window starves, the gating factor is the inter-
+   frame gap.  If the RFRAG-ACK does not arrive in time, the Window_Size
+   is the gating factor, and the transmission of the datagram is
+   delayed.
+
+   It must be noted that even though the inter-frame gap can be used as
+   a flow control or a congestion control measure, it also plays a
+   critical role in wireless collision avoidance.  In particular, when a
+   mesh operates on the same channel over multiple hops, the forwarding
+   of a fragment over a certain hop may collide with the forwarding of
+   the next fragment that is following over a previous hop but that is
+   in the same interference domain.  To prevent this, the fragmenting
+   endpoint is required to pace individual fragments within a transmit
+   window with an inter-frame gap.  This is needed to ensure that a
+   given fragment is sent only when the previous fragment has had a
+   chance to progress beyond the interference domain of this hop.  In
+   the case of 6TiSCH [<a href="#ref-6TiSCH" title="&quot;An Architecture for IPv6 over the TSCH mode of IEEE 802.15.4&quot;">6TiSCH</a>], which operates over the Time-Slotted
+   Channel Hopping (TSCH) mode of operation of IEEE 802.15.4 [<a href="/doc/html/rfc7554" title="&quot;Using IEEE 802.15.4e Time-Slotted Channel Hopping (TSCH) in the Internet of Things (IoT): Problem Statement&quot;">RFC7554</a>],
+   a fragment is forwarded over a different channel at a different time,
+   and it makes full sense to transmit the next fragment as soon as the
+   previous fragment has had its chance to be forwarded at the next hop.
+
+   Depending on the setting of the Window_Size and the inter-frame gap,
+   how the window is used, and the number of hops, the Window_Size may
+   or may not become the gating factor that blocks the transmission.  If
+   the sender uses the Window_Size as a credit:
+
+   *  a conservative Window_Size of, say, 3 will be the gating factor
+      that limits the transmission rate of the sender -- and causes
+      transmission gaps longer than the inter-frame gap -- as soon as
+      the number of hops exceeds 3 in a TSCH network and 5-9 in a single
+      frequency mesh.  The more hops the more the starving window will
+      add to latency of the transmission.
+
+   *  The recommendation to align the Window-Size to the round-trip time
+      divided by the time per fragment aligns the Window-Size to the
+      time it takes to get the RFAG_ACK before the window starves.  A
+      Window-Size that is higher than that increases the chances of a
+      congestion but does not improve the forward throughput.
+      Considering that the RFRAG-ACK takes the same path as the fragment
+      with the assumption that it travels at roughly the same speed, an
+      inter-frame gap that separates fragments by 2 hops leads to a
+      Window_Size that is roughly the number of hops.
+
+   *  Setting the Window-Size to 32 minimizes the cost of the
+      acknowledgment in a constrained network and frees bandwidth for
+      the fragments in a half-duplex network.  Using it increases the
+      risk of congestion if a bottleneck forms, but it optimizes the use
+      of resources under normal conditions.  When it is used, the only
+      protection for the network is the inter-frame gap, which must be
+      chosen wisely to prevent the formation of a bottleneck.
+
+   From the standpoint of a source 6LoWPAN endpoint, an outstanding
+   fragment is a fragment that was sent but for which no explicit
+   acknowledgment was yet received.  This means that the fragment might
+   be on the path or received but not yet acknowledged, or the
+   acknowledgment might be on the path back.  It is also possible that
+   either the fragment or the acknowledgment was lost on the way.
+
+   From the fragmenting endpoint standpoint, all outstanding fragments
+   might still be in the network and contribute to its congestion.
+   There is an assumption, though, that after a certain amount of time,
+   a frame is either received or lost, so it is not causing congestion
+   anymore.  This amount of time can be estimated based on the round-
+   trip time between the 6LoWPAN endpoints.  For the lack of a more
+   adapted technique, the method detailed in &quot;Computing TCP&#x27;s
+   Retransmission Timer&quot; [<a href="/doc/html/rfc6298" title="&quot;Computing TCP&#x27;s Retransmission Timer&quot;">RFC6298</a>] may be used for that computation.
+
+   This specification provides the necessary tools for the fragmenting
+   endpoint to take congestion control actions and protect the network,
+   but it leaves the implementation free to select the action to be
+   taken.  The intention is to use it to build experience and specify
+   more precisely the congestion control actions in one or more future
+   specifications.  &quot;Congestion Control Principles&quot; [<a href="/doc/html/rfc2914" title="&quot;Congestion Control Principles&quot;">RFC2914</a>] and
+   &quot;Specifying New Congestion Control Algorithms&quot; [<a href="/doc/html/rfc5033" title="&quot;Specifying New Congestion Control Algorithms&quot;">RFC5033</a>] provide
+   indications and wisdom that should help through this process.
+
+   [<a id="ref-RFC7567">RFC7567</a>] and [<a href="/doc/html/rfc5681" title="&quot;TCP Congestion Control&quot;">RFC5681</a>] provide deeper information on why congestion
+   control is needed and how TCP handles it.  Basically, the goal here
+   is to manage the number of fragments present in the network; this is
+   achieved by reducing the number of outstanding fragments over a
+   congested path by throttling the sources.
+
+Acknowledgments
+
+   The author wishes to thank Michel Veillette, Dario Tedeschi, Laurent
+   Toutain, Carles Gomez Montenegro, Thomas Watteyne, and Michael
+   Richardson for their in-depth reviews and comments.  Also, many
+   thanks to Roman Danyliw, Peter Yee, Colin Perkins, Tirumaleswar
+   Reddy.K, Éric Vyncke, Warren Kumari, Magnus Westerlund, Erik
+   Nordmark, and especially Benjamin Kaduk and Mirja Kühlewind for their
+   careful reviews and help during the IETF Last Call and IESG review
+   process.  Thanks to Jonathan Hui, Jay Werb, Christos Polyzois,
+   Soumitri Kolavennu, Pat Kinney, Margaret Wasserman, Richard Kelsey,
+   Carsten Bormann, and Harry Courtice for their various contributions
+   in the long process that lead to this document.
+
+Author&#x27;s Address
+
+   Pascal Thubert (editor)
+   Cisco Systems, Inc.
+   Building D
+   45 Allee des Ormes - BP1200
+   06254 MOUGINS - Sophia Antipolis
+   France
+
+   Phone: +33 497 23 26 34
+   Email: pthubert@cisco.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

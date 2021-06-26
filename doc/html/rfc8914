@@ -1,0 +1,874 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8914
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-dnsop-extended-error/">
+  <meta name="description" content="Extended DNS Errors (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8914.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8914.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8914.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8914.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8914/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8914/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/dnsop/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-dnsop-extended-error@ietf.org?subject=draft-ietf-dnsop-extended-error" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-dnsop-extended-error-16.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dnsop-extended-error-16.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-dnsop-extended-error-16.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-dnsop-extended-error-16">draft-ietf-dnsop-extended-error-16</a>               Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         W. Kumari
+Request for Comments: 8914                                        Google
+Category: Standards Track                                        E. Hunt
+ISSN: 2070-1721                                                      ISC
+                                                               R. Arends
+                                                                   ICANN
+                                                             W. Hardaker
+                                                                 USC/ISI
+                                                             D. Lawrence
+                                                              Salesforce
+                                                            October 2020
+
+
+                          <span class="h1">Extended DNS Errors</span>
+
+Abstract
+
+   This document defines an extensible method to return additional
+   information about the cause of DNS errors.  Though created primarily
+   to extend SERVFAIL to provide additional information about the cause
+   of DNS and DNSSEC failures, the Extended DNS Errors option defined in
+   this document allows all response types to contain extended error
+   information.  Extended DNS Error information does not change the
+   processing of RCODEs.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8914">https://www.rfc-editor.org/info/rfc8914</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction and Background
+     1.1.  Requirements Notation
+   2.  Extended DNS Error EDNS0 Option Format
+   3.  Extended DNS Error Processing
+   4.  Defined Extended DNS Errors
+     4.1.  Extended DNS Error Code 0 - Other
+     4.2.  Extended DNS Error Code 1 - Unsupported DNSKEY Algorithm
+     4.3.  Extended DNS Error Code 2 - Unsupported DS Digest Type
+     4.4.  Extended DNS Error Code 3 - Stale Answer
+     4.5.  Extended DNS Error Code 4 - Forged Answer
+     4.6.  Extended DNS Error Code 5 - DNSSEC Indeterminate
+     4.7.  Extended DNS Error Code 6 - DNSSEC Bogus
+     4.8.  Extended DNS Error Code 7 - Signature Expired
+     4.9.  Extended DNS Error Code 8 - Signature Not Yet Valid
+     4.10. Extended DNS Error Code 9 - DNSKEY Missing
+     4.11. Extended DNS Error Code 10 - RRSIGs Missing
+     4.12. Extended DNS Error Code 11 - No Zone Key Bit Set
+     4.13. Extended DNS Error Code 12 - NSEC Missing
+     4.14. Extended DNS Error Code 13 - Cached Error
+     4.15. Extended DNS Error Code 14 - Not Ready
+     4.16. Extended DNS Error Code 15 - Blocked
+     4.17. Extended DNS Error Code 16 - Censored
+     4.18. Extended DNS Error Code 17 - Filtered
+     4.19. Extended DNS Error Code 18 - Prohibited
+     4.20. Extended DNS Error Code 19 - Stale NXDOMAIN Answer
+     4.21. Extended DNS Error Code 20 - Not Authoritative
+     4.22. Extended DNS Error Code 21 - Not Supported
+     4.23. Extended DNS Error Code 22 - No Reachable Authority
+     4.24. Extended DNS Error Code 23 - Network Error
+     4.25. Extended DNS Error Code 24 - Invalid Data
+   5.  IANA Considerations
+     5.1.  A New Extended DNS Error Code EDNS Option
+     5.2.  New Registry for Extended DNS Error Codes
+   6.  Security Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction and Background</span>
+
+   There are many reasons that a DNS query may fail -- some of them
+   transient, some permanent; some can be resolved by querying another
+   server, some are likely best handled by stopping resolution.
+   Unfortunately, the error signals that a DNS server can return are
+   very limited and are not very expressive.  This means that
+   applications and resolvers often have to &quot;guess&quot; at what the issue
+   is, e.g., was the answer marked REFUSED because of a lame delegation
+   or because the nameserver is still starting up and loading zones?  Is
+   a SERVFAIL a DNSSEC validation issue, or is the nameserver
+   experiencing some other failure?  What error messages should be
+   presented to the user or logged under these conditions?
+
+   A good example of issues that would benefit from additional error
+   information are errors caused by DNSSEC validation issues.  When a
+   stub resolver queries a name that is DNSSEC bogus [<a href="/doc/html/rfc8499" title="&quot;DNS Terminology&quot;">RFC8499</a>] (using a
+   validating resolver), the stub resolver receives only a SERVFAIL in
+   response.  Unfortunately, the SERVFAIL Response Code (RCODE) is used
+   to signal many sorts of DNS errors, and so the stub resolver&#x27;s only
+   option is to ask the next configured DNS resolver.  The result of
+   trying the next resolver is one of two outcomes: either the next
+   resolver also validates and a SERVFAIL is returned again or the next
+   resolver is not a validating resolver and the user is returned a
+   potentially harmful result.  With an Extended DNS Error (EDE) option
+   enclosed in the response message, the resolver is able to return a
+   more descriptive reason as to why any failures happened or add
+   additional context to a message containing a NOERROR RCODE.
+
+   This document specifies a mechanism to extend DNS errors to provide
+   additional information about the cause of an error.  The Extended DNS
+   Error codes described in this document can be used by any system that
+   sends DNS queries and receives a response containing an EDE option.
+   Different codes are useful in different circumstances, and thus
+   different systems (stub resolvers, recursive resolvers, and
+   authoritative resolvers) might receive and use them.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Notation</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Extended DNS Error EDNS0 Option Format</span>
+
+   This document uses an Extended Mechanism for DNS (EDNS0) [<a href="/doc/html/rfc6891" title="&quot;Extension Mechanisms for DNS (EDNS(0))&quot;">RFC6891</a>]
+   option to include Extended DNS Error (EDE) information in DNS
+   messages.  The option is structured as follows:
+
+                                                1   1   1   1   1   1
+        0   1   2   3   4   5   6   7   8   9   0   1   2   3   4   5
+      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+   0: |                            OPTION-CODE                        |
+      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+   2: |                           OPTION-LENGTH                       |
+      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+   4: | INFO-CODE                                                     |
+      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+   6: / EXTRA-TEXT ...                                                /
+      +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+
+
+   Field definition details:
+
+   OPTION-CODE:
+      2 octets / 16 bits (defined in [<a href="/doc/html/rfc6891" title="&quot;Extension Mechanisms for DNS (EDNS(0))&quot;">RFC6891</a>]) contains the value 15
+      for EDE.
+
+   OPTION-LENGTH:
+      2 octets / 16 bits (defined in [<a href="/doc/html/rfc6891" title="&quot;Extension Mechanisms for DNS (EDNS(0))&quot;">RFC6891</a>]) contains the length of
+      the payload (everything after OPTION-LENGTH) in octets and should
+      be 2 plus the length of the EXTRA-TEXT field (which may be a zero-
+      length string).
+
+   INFO-CODE:
+      16 bits, which is the principal contribution of this document.
+      This 16-bit value, encoded in network most significant bit (MSB)
+      byte order, provides the additional context for the RESPONSE-CODE
+      of the DNS message.  The INFO-CODE serves as an index into the
+      &quot;Extended DNS Errors&quot; registry, defined and created in
+      <a href="#section-5.2">Section 5.2</a>.
+
+   EXTRA-TEXT:
+      a variable-length, UTF-8-encoded [<a href="/doc/html/rfc5198" title="&quot;Unicode Format for Network Interchange&quot;">RFC5198</a>] text field that may
+      hold additional textual information.  This information is intended
+      for human consumption (not automated parsing).  EDE text may be
+      null terminated but MUST NOT be assumed to be; the length MUST be
+      derived from the OPTION-LENGTH field.  The EXTRA-TEXT field may be
+      zero octets in length, indicating that there is no EXTRA-TEXT
+      included.  Care should be taken not to include private information
+      in the EXTRA-TEXT field that an observer would not otherwise have
+      access to, such as account numbers.
+
+   The Extended DNS Error (EDE) option can be included in any response
+   (SERVFAIL, NXDOMAIN, REFUSED, even NOERROR, etc.) to a query that
+   includes an OPT pseudo-RR [<a href="/doc/html/rfc6891" title="&quot;Extension Mechanisms for DNS (EDNS(0))&quot;">RFC6891</a>].  This document includes a set of
+   initial codepoints but is extensible via the IANA registry defined
+   and created in <a href="#section-5.2">Section 5.2</a>.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Extended DNS Error Processing</span>
+
+   When the response grows beyond the requestor&#x27;s UDP payload size
+   [<a href="/doc/html/rfc6891" title="&quot;Extension Mechanisms for DNS (EDNS(0))&quot;">RFC6891</a>], servers SHOULD truncate messages by dropping EDE options
+   before dropping other data from packets.  Implementations SHOULD set
+   the truncation bit when dropping EDE options.  Because long EXTRA-
+   TEXT fields may trigger truncation (which is undesirable given the
+   supplemental nature of EDE), implementers and operators creating EDE
+   options SHOULD avoid lengthy EXTRA-TEXT contents.
+
+   When a resolver or forwarder receives an EDE option, whether or not
+   (and how) to pass along EDE information on to their original client
+   is implementation dependent.  Implementations MAY choose to not
+   forward information, or they MAY choose to create a new EDE option(s)
+   that conveys the information encoded in the received EDE.  When doing
+   so, the source of the error SHOULD be attributed in the EXTRA-TEXT
+   field, since an EDNS0 option received by the original client will
+   appear to have come from the resolver or forwarder sending it.
+
+   This document does not allow or prohibit any particular extended
+   error codes and information to be matched with any particular RCODEs.
+   Some combinations of extended error codes and RCODEs may seem
+   nonsensical (such as resolver-specific extended error codes received
+   in responses from authoritative servers), so systems interpreting the
+   extended error codes MUST NOT assume that a combination will make
+   sense.  Receivers MUST be able to accept EDE codes and EXTRA-TEXT in
+   all messages, including those with a NOERROR RCODE but need not act
+   on them.  Applications MUST continue to follow requirements from
+   applicable specifications on how to process RCODEs no matter what EDE
+   values are also received.  Senders MAY include more than one EDE
+   option and receivers MUST be able to accept (but not necessarily
+   process or act on) multiple EDE options in a DNS message.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Defined Extended DNS Errors</span>
+
+   This document defines some initial EDE codes.  The mechanism is
+   intended to be extensible, and additional codepoints can be
+   registered in the &quot;Extended DNS Errors&quot; registry (<a href="#section-5.2">Section 5.2</a>).  The
+   INFO-CODE from the EDE EDNS option is used to serve as an index into
+   the &quot;Extended DNS Error&quot; IANA registry, the initial values for which
+   are defined in the following subsections.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Extended DNS Error Code 0 - Other</span>
+
+   The error in question falls into a category that does not match known
+   extended error codes.  Implementations SHOULD include an EXTRA-TEXT
+   value to augment this error code with additional information.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Extended DNS Error Code 1 - Unsupported DNSKEY Algorithm</span>
+
+   The resolver attempted to perform DNSSEC validation, but a DNSKEY
+   RRset contained only unsupported DNSSEC algorithms.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Extended DNS Error Code 2 - Unsupported DS Digest Type</span>
+
+   The resolver attempted to perform DNSSEC validation, but a DS RRset
+   contained only unsupported Digest Types.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Extended DNS Error Code 3 - Stale Answer</span>
+
+   The resolver was unable to resolve the answer within its time limits
+   and decided to answer with previously cached data instead of
+   answering with an error.  This is typically caused by problems
+   communicating with an authoritative server, possibly as result of a
+   denial of service (DoS) attack against another network.  (See also
+   Code 19.)
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  Extended DNS Error Code 4 - Forged Answer</span>
+
+   For policy reasons (legal obligation or malware filtering, for
+   instance), an answer was forged.  Note that this should be used when
+   an answer is still provided, not when failure codes are returned
+   instead.  See Blocked (15), Censored (16), and Filtered (17) for use
+   when returning other response codes.
+
+<span class="h3"><a class="selflink" id="section-4.6" href="#section-4.6">4.6</a>.  Extended DNS Error Code 5 - DNSSEC Indeterminate</span>
+
+   The resolver attempted to perform DNSSEC validation, but validation
+   ended in the Indeterminate state [<a href="/doc/html/rfc4035" title="&quot;Protocol Modifications for the DNS Security Extensions&quot;">RFC4035</a>].
+
+<span class="h3"><a class="selflink" id="section-4.7" href="#section-4.7">4.7</a>.  Extended DNS Error Code 6 - DNSSEC Bogus</span>
+
+   The resolver attempted to perform DNSSEC validation, but validation
+   ended in the Bogus state.
+
+<span class="h3"><a class="selflink" id="section-4.8" href="#section-4.8">4.8</a>.  Extended DNS Error Code 7 - Signature Expired</span>
+
+   The resolver attempted to perform DNSSEC validation, but no
+   signatures are presently valid and some (often all) are expired.
+
+<span class="h3"><a class="selflink" id="section-4.9" href="#section-4.9">4.9</a>.  Extended DNS Error Code 8 - Signature Not Yet Valid</span>
+
+   The resolver attempted to perform DNSSEC validation, but no
+   signatures are presently valid and at least some are not yet valid.
+
+<span class="h3"><a class="selflink" id="section-4.10" href="#section-4.10">4.10</a>.  Extended DNS Error Code 9 - DNSKEY Missing</span>
+
+   A DS record existed at a parent, but no supported matching DNSKEY
+   record could be found for the child.
+
+<span class="h3"><a class="selflink" id="section-4.11" href="#section-4.11">4.11</a>.  Extended DNS Error Code 10 - RRSIGs Missing</span>
+
+   The resolver attempted to perform DNSSEC validation, but no RRSIGs
+   could be found for at least one RRset where RRSIGs were expected.
+
+<span class="h3"><a class="selflink" id="section-4.12" href="#section-4.12">4.12</a>.  Extended DNS Error Code 11 - No Zone Key Bit Set</span>
+
+   The resolver attempted to perform DNSSEC validation, but no Zone Key
+   Bit was set in a DNSKEY.
+
+<span class="h3"><a class="selflink" id="section-4.13" href="#section-4.13">4.13</a>.  Extended DNS Error Code 12 - NSEC Missing</span>
+
+   The resolver attempted to perform DNSSEC validation, but the
+   requested data was missing and a covering NSEC or NSEC3 was not
+   provided.
+
+<span class="h3"><a class="selflink" id="section-4.14" href="#section-4.14">4.14</a>.  Extended DNS Error Code 13 - Cached Error</span>
+
+   The resolver is returning the SERVFAIL RCODE from its cache.
+
+<span class="h3"><a class="selflink" id="section-4.15" href="#section-4.15">4.15</a>.  Extended DNS Error Code 14 - Not Ready</span>
+
+   The server is unable to answer the query, as it was not fully
+   functional when the query was received.
+
+<span class="h3"><a class="selflink" id="section-4.16" href="#section-4.16">4.16</a>.  Extended DNS Error Code 15 - Blocked</span>
+
+   The server is unable to respond to the request because the domain is
+   on a blocklist due to an internal security policy imposed by the
+   operator of the server resolving or forwarding the query.
+
+<span class="h3"><a class="selflink" id="section-4.17" href="#section-4.17">4.17</a>.  Extended DNS Error Code 16 - Censored</span>
+
+   The server is unable to respond to the request because the domain is
+   on a blocklist due to an external requirement imposed by an entity
+   other than the operator of the server resolving or forwarding the
+   query.  Note that how the imposed policy is applied is irrelevant
+   (in-band DNS filtering, court order, etc.).
+
+<span class="h3"><a class="selflink" id="section-4.18" href="#section-4.18">4.18</a>.  Extended DNS Error Code 17 - Filtered</span>
+
+   The server is unable to respond to the request because the domain is
+   on a blocklist as requested by the client.  Functionally, this
+   amounts to &quot;you requested that we filter domains like this one.&quot;
+
+<span class="h3"><a class="selflink" id="section-4.19" href="#section-4.19">4.19</a>.  Extended DNS Error Code 18 - Prohibited</span>
+
+   An authoritative server or recursive resolver that receives a query
+   from an &quot;unauthorized&quot; client can annotate its REFUSED message with
+   this code.  Examples of &quot;unauthorized&quot; clients are recursive queries
+   from IP addresses outside the network, blocklisted IP addresses,
+   local policy, etc.
+
+<span class="h3"><a class="selflink" id="section-4.20" href="#section-4.20">4.20</a>.  Extended DNS Error Code 19 - Stale NXDOMAIN Answer</span>
+
+   The resolver was unable to resolve an answer within its configured
+   time limits and decided to answer with a previously cached NXDOMAIN
+   answer instead of answering with an error.  This may be caused, for
+   example, by problems communicating with an authoritative server,
+   possibly as result of a denial of service (DoS) attack against
+   another network.  (See also Code 3.)
+
+<span class="h3"><a class="selflink" id="section-4.21" href="#section-4.21">4.21</a>.  Extended DNS Error Code 20 - Not Authoritative</span>
+
+   An authoritative server that receives a query with the Recursion
+   Desired (RD) bit clear, or when it is not configured for recursion
+   for a domain for which it is not authoritative, SHOULD include this
+   EDE code in the REFUSED response.  A resolver that receives a query
+   with the RD bit clear SHOULD include this EDE code in the REFUSED
+   response.
+
+<span class="h3"><a class="selflink" id="section-4.22" href="#section-4.22">4.22</a>.  Extended DNS Error Code 21 - Not Supported</span>
+
+   The requested operation or query is not supported.
+
+<span class="h3"><a class="selflink" id="section-4.23" href="#section-4.23">4.23</a>.  Extended DNS Error Code 22 - No Reachable Authority</span>
+
+   The resolver could not reach any of the authoritative name servers
+   (or they potentially refused to reply).
+
+<span class="h3"><a class="selflink" id="section-4.24" href="#section-4.24">4.24</a>.  Extended DNS Error Code 23 - Network Error</span>
+
+   An unrecoverable error occurred while communicating with another
+   server.
+
+<span class="h3"><a class="selflink" id="section-4.25" href="#section-4.25">4.25</a>.  Extended DNS Error Code 24 - Invalid Data</span>
+
+   The authoritative server cannot answer with data for a zone it is
+   otherwise configured to support.  Examples of this include its most
+   recent zone being too old or having expired.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  A New Extended DNS Error Code EDNS Option</span>
+
+   This document defines a new EDNS(0) option, entitled &quot;Extended DNS
+   Error&quot;, with the assigned value of 15 from the &quot;DNS EDNS0 Option
+   Codes (OPT)&quot; registry:
+
+           +=======+====================+==========+===========+
+           | Value | Name               | Status   | Reference |
+           +=======+====================+==========+===========+
+           | 15    | Extended DNS Error | Standard | <a href="/doc/html/rfc8914">RFC 8914</a>  |
+           +-------+--------------------+----------+-----------+
+
+                                  Table 1
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  New Registry for Extended DNS Error Codes</span>
+
+   IANA has created and will maintain a new registry called &quot;Extended
+   DNS Error Codes&quot; on the &quot;Domain Name System (DNS) Parameters&quot; web
+   page as follows:
+
+                +===============+=========================+
+                | Range         | Registration Procedures |
+                +===============+=========================+
+                | 0 - 49151     | First Come First Served |
+                +---------------+-------------------------+
+                | 49152 - 65535 | Private Use             |
+                +---------------+-------------------------+
+
+                                  Table 2
+
+   The &quot;Extended DNS Error Codes&quot; registry is a table with three
+   columns: INFO-CODE, Purpose, and Reference.  The initial content is
+   as below.
+
+      +=============+==============================+===============+
+      | INFO-CODE   | Purpose                      | Reference     |
+      +=============+==============================+===============+
+      | 0           | Other Error                  | <a href="#section-4.1">Section 4.1</a>   |
+      +-------------+------------------------------+---------------+
+      | 1           | Unsupported DNSKEY Algorithm | <a href="#section-4.2">Section 4.2</a>   |
+      +-------------+------------------------------+---------------+
+      | 2           | Unsupported DS Digest Type   | <a href="#section-4.3">Section 4.3</a>   |
+      +-------------+------------------------------+---------------+
+      | 3           | Stale Answer                 | <a href="#section-4.4">Section 4.4</a>   |
+      |             |                              | and [<a href="/doc/html/rfc8767" title="&quot;Serving Stale Data to Improve DNS Resiliency&quot;">RFC8767</a>] |
+      +-------------+------------------------------+---------------+
+      | 4           | Forged Answer                | <a href="#section-4.5">Section 4.5</a>   |
+      +-------------+------------------------------+---------------+
+      | 5           | DNSSEC Indeterminate         | <a href="#section-4.6">Section 4.6</a>   |
+      +-------------+------------------------------+---------------+
+      | 6           | DNSSEC Bogus                 | <a href="#section-4.7">Section 4.7</a>   |
+      +-------------+------------------------------+---------------+
+      | 7           | Signature Expired            | <a href="#section-4.8">Section 4.8</a>   |
+      +-------------+------------------------------+---------------+
+      | 8           | Signature Not Yet Valid      | <a href="#section-4.9">Section 4.9</a>   |
+      +-------------+------------------------------+---------------+
+      | 9           | DNSKEY Missing               | <a href="#section-4.10">Section 4.10</a>  |
+      +-------------+------------------------------+---------------+
+      | 10          | RRSIGs Missing               | <a href="#section-4.11">Section 4.11</a>  |
+      +-------------+------------------------------+---------------+
+      | 11          | No Zone Key Bit Set          | <a href="#section-4.12">Section 4.12</a>  |
+      +-------------+------------------------------+---------------+
+      | 12          | NSEC Missing                 | <a href="#section-4.13">Section 4.13</a>  |
+      +-------------+------------------------------+---------------+
+      | 13          | Cached Error                 | <a href="#section-4.14">Section 4.14</a>  |
+      +-------------+------------------------------+---------------+
+      | 14          | Not Ready                    | <a href="#section-4.15">Section 4.15</a>  |
+      +-------------+------------------------------+---------------+
+      | 15          | Blocked                      | <a href="#section-4.16">Section 4.16</a>  |
+      +-------------+------------------------------+---------------+
+      | 16          | Censored                     | <a href="#section-4.17">Section 4.17</a>  |
+      +-------------+------------------------------+---------------+
+      | 17          | Filtered                     | <a href="#section-4.18">Section 4.18</a>  |
+      +-------------+------------------------------+---------------+
+      | 18          | Prohibited                   | <a href="#section-4.19">Section 4.19</a>  |
+      +-------------+------------------------------+---------------+
+      | 19          | Stale NXDomain Answer        | <a href="#section-4.20">Section 4.20</a>  |
+      +-------------+------------------------------+---------------+
+      | 20          | Not Authoritative            | <a href="#section-4.21">Section 4.21</a>  |
+      +-------------+------------------------------+---------------+
+      | 21          | Not Supported                | <a href="#section-4.22">Section 4.22</a>  |
+      +-------------+------------------------------+---------------+
+      | 22          | No Reachable Authority       | <a href="#section-4.23">Section 4.23</a>  |
+      +-------------+------------------------------+---------------+
+      | 23          | Network Error                | <a href="#section-4.24">Section 4.24</a>  |
+      +-------------+------------------------------+---------------+
+      | 24          | Invalid Data                 | <a href="#section-4.25">Section 4.25</a>  |
+      +-------------+------------------------------+---------------+
+      | 25-49151    | Unassigned                   |               |
+      +-------------+------------------------------+---------------+
+      | 49152-65535 | Reserved for Private Use     | <a href="#section-5.2">Section 5.2</a>   |
+      +-------------+------------------------------+---------------+
+
+                                 Table 3
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   Though DNSSEC continues to be deployed, unfortunately a significant
+   number of clients (~11% according to [<a href="#ref-GeoffValidation">GeoffValidation</a>]) that receive
+   a SERVFAIL from a validating resolver because of a DNSSEC validation
+   issue will simply ask the next (potentially non-validating) resolver
+   in their list and thus don&#x27;t get the protections that DNSSEC should
+   provide.
+
+   EDE information is unauthenticated information, unless secured by a
+   form of secured DNS transaction, such as [<a href="/doc/html/rfc2845" title="&quot;Secret Key Transaction Authentication for DNS (TSIG)&quot;">RFC2845</a>], [<a href="/doc/html/rfc2931" title="&quot;DNS Request and Transaction Signatures ( SIG(0)s )&quot;">RFC2931</a>],
+   [<a href="/doc/html/rfc8094" title="&quot;DNS over Datagram Transport Layer Security (DTLS)&quot;">RFC8094</a>], or [<a href="/doc/html/rfc8484" title="&quot;DNS Queries over HTTPS (DoH)&quot;">RFC8484</a>].  An attacker (e.g., a man in the middle
+   (MITM) or malicious recursive server) could insert an extended error
+   response into untrusted data -- although, ideally, clients and
+   resolvers would not trust any unauthenticated information.  As such,
+   EDE content should be treated only as diagnostic information and MUST
+   NOT alter DNS protocol processing.  Until all DNS answers are
+   authenticated via DNSSEC or the other mechanisms mentioned above,
+   there are some trade-offs.  As an example, an attacker who is able to
+   insert the DNSSEC Bogus Extended Error into a DNS message could
+   instead simply reply with a fictitious address (A or AAAA) record.
+   Note that DNS RCODEs also contain no authentication and can be just
+   as easily manipulated.
+
+   By design, EDE potentially exposes additional information via DNS
+   resolution processes that may leak information.  An example of this
+   is the Prohibited EDE code (18), which may leak the fact that the
+   name is on a blocklist.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC4035">RFC4035</a>]  Arends, R., Austein, R., Larson, M., Massey, D., and S.
+              Rose, &quot;Protocol Modifications for the DNS Security
+              Extensions&quot;, <a href="/doc/html/rfc4035">RFC 4035</a>, DOI 10.17487/RFC4035, March 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4035">https://www.rfc-editor.org/info/rfc4035</a>&gt;.
+
+   [<a id="ref-RFC5198">RFC5198</a>]  Klensin, J. and M. Padlipsky, &quot;Unicode Format for Network
+              Interchange&quot;, <a href="/doc/html/rfc5198">RFC 5198</a>, DOI 10.17487/RFC5198, March 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5198">https://www.rfc-editor.org/info/rfc5198</a>&gt;.
+
+   [<a id="ref-RFC6891">RFC6891</a>]  Damas, J., Graff, M., and P. Vixie, &quot;Extension Mechanisms
+              for DNS (EDNS(0))&quot;, STD 75, <a href="/doc/html/rfc6891">RFC 6891</a>,
+              DOI 10.17487/RFC6891, April 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6891">https://www.rfc-editor.org/info/rfc6891</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8499">RFC8499</a>]  Hoffman, P., Sullivan, A., and K. Fujiwara, &quot;DNS
+              Terminology&quot;, <a href="/doc/html/bcp219">BCP 219</a>, <a href="/doc/html/rfc8499">RFC 8499</a>, DOI 10.17487/RFC8499,
+              January 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8499">https://www.rfc-editor.org/info/rfc8499</a>&gt;.
+
+   [<a id="ref-RFC8767">RFC8767</a>]  Lawrence, D., Kumari, W., and P. Sood, &quot;Serving Stale Data
+              to Improve DNS Resiliency&quot;, <a href="/doc/html/rfc8767">RFC 8767</a>,
+              DOI 10.17487/RFC8767, March 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8767">https://www.rfc-editor.org/info/rfc8767</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-GeoffValidation">GeoffValidation</a>]
+              Huston, G., &quot;A quick review of DNSSEC Validation in
+              today&#x27;s Internet&quot;, June 2016, &lt;<a href="http://www.potaroo.net/presentations/2016-06-27-dnssec.pdf">http://www.potaroo.net/</a>
+              <a href="http://www.potaroo.net/presentations/2016-06-27-dnssec.pdf">presentations/2016-06-27-dnssec.pdf</a>&gt;.
+
+   [<a id="ref-RFC2845">RFC2845</a>]  Vixie, P., Gudmundsson, O., Eastlake 3rd, D., and B.
+              Wellington, &quot;Secret Key Transaction Authentication for DNS
+              (TSIG)&quot;, <a href="/doc/html/rfc2845">RFC 2845</a>, DOI 10.17487/RFC2845, May 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2845">https://www.rfc-editor.org/info/rfc2845</a>&gt;.
+
+   [<a id="ref-RFC2931">RFC2931</a>]  Eastlake 3rd, D., &quot;DNS Request and Transaction Signatures
+              ( SIG(0)s )&quot;, <a href="/doc/html/rfc2931">RFC 2931</a>, DOI 10.17487/RFC2931, September
+              2000, &lt;<a href="https://www.rfc-editor.org/info/rfc2931">https://www.rfc-editor.org/info/rfc2931</a>&gt;.
+
+   [<a id="ref-RFC8094">RFC8094</a>]  Reddy, T., Wing, D., and P. Patil, &quot;DNS over Datagram
+              Transport Layer Security (DTLS)&quot;, <a href="/doc/html/rfc8094">RFC 8094</a>,
+              DOI 10.17487/RFC8094, February 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8094">https://www.rfc-editor.org/info/rfc8094</a>&gt;.
+
+   [<a id="ref-RFC8484">RFC8484</a>]  Hoffman, P. and P. McManus, &quot;DNS Queries over HTTPS
+              (DoH)&quot;, <a href="/doc/html/rfc8484">RFC 8484</a>, DOI 10.17487/RFC8484, October 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8484">https://www.rfc-editor.org/info/rfc8484</a>&gt;.
+
+Acknowledgements
+
+   The authors wish to thank Joe Abley, Mark Andrews, Tim April,
+   Vittorio Bertola, Stephane Bortzmeyer, Vladimir Cunat, Ralph Dolmans,
+   Peter DeVries, Peter van Dijk, Mats Dufberg, Donald Eastlake, Bob
+   Harold, Paul Hoffman, Geoff Huston, Shane Kerr, Edward Lewis, Carlos
+   M. Martinez, George Michelson, Eric Orth, Michael Sheldon, Puneet
+   Sood, Petr Spacek, Ondrej Sury, John Todd, Loganaden Velvindron, and
+   Paul Vixie.  They also vaguely remember discussing this with a number
+   of people over the years but have forgotten who all of them were.
+   Apologies if we forgot to acknowledge your contributions.
+
+   One author also wants to thank the band Infected Mushroom for
+   providing a good background soundtrack.  Another author would like to
+   thank the band Mushroom Infectors.  This was funny at the time we
+   wrote it, but we cannot remember why...
+
+Authors&#x27; Addresses
+
+   Warren Kumari
+   Google
+   1600 Amphitheatre Parkway
+   Mountain View, CA 94043
+   United States of America
+
+   Email: warren@kumari.net
+
+
+   Evan Hunt
+   ISC
+   950 Charter St
+   Redwood City, CA 94063
+   United States of America
+
+   Email: each@isc.org
+
+
+   Roy Arends
+   ICANN
+
+   Email: roy.arends@icann.org
+
+
+   Wes Hardaker
+   USC/ISI
+   P.O. Box 382
+   Davis, CA 95617
+   United States of America
+
+   Email: ietf@hardakers.net
+
+
+   David C Lawrence
+   Salesforce
+   415 Mission St
+   San Francisco, CA 94105
+   United States of America
+
+   Email: tale@dd.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

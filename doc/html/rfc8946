@@ -1,0 +1,1117 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8946
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-stir-passport-divert/">
+  <meta name="description" content="Personal Assertion Token (PASSporT) Extension for Diverted Calls (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8946.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8946.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8946.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8946.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8946/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8946/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/stir/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-stir-passport-divert@ietf.org?subject=draft-ietf-stir-passport-divert" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-stir-passport-divert-09.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-stir-passport-divert-09.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-stir-passport-divert-09.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-stir-passport-divert-09">draft-ietf-stir-passport-divert-09</a>               Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       J. Peterson
+Request for Comments: 8946                                       Neustar
+Updates: <a href="/doc/html/rfc8224">8224</a>                                              February 2021
+Category: Standards Track
+ISSN: 2070-1721
+
+
+    <span class="h1">Personal Assertion Token (PASSporT) Extension for Diverted Calls</span>
+
+Abstract
+
+   The Personal Assertion Token (PASSporT) is specified in <a href="/doc/html/rfc8225">RFC 8225</a> to
+   convey cryptographically signed information about the people involved
+   in personal communications.  This document extends PASSporT to
+   include an indication that a call has been diverted from its original
+   destination to a new one.  This information can greatly improve the
+   decisions made by verification services in call forwarding scenarios.
+   Also specified here is an encapsulation mechanism for nesting a
+   PASSporT within another PASSporT that assists relying parties in some
+   diversion scenarios.
+
+   This document updates <a href="/doc/html/rfc8224">RFC 8224</a>.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8946">https://www.rfc-editor.org/info/rfc8946</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  The &quot;div&quot; PASSporT Type and Claim
+   4.  Using &quot;div&quot; in SIP
+     4.1.  Authentication Service Behavior
+     4.2.  Verification Service Behavior
+   5.  The &quot;div-o&quot; PASSporT Type
+     5.1.  Processing &quot;div-o&quot; PASSporTs
+   6.  Definition of &quot;opt&quot;
+   7.  &quot;div&quot; and Redirection
+   8.  Extending &quot;div&quot; to Work with Service Logic Tracking
+   9.  IANA Considerations
+     9.1.  JSON Web Token Claims Registrations
+       9.1.1.  &quot;div&quot; registration
+       9.1.2.  &quot;opt&quot; registration
+     9.2.  PASSporT Type Registrations
+   10. Privacy Considerations
+   11. Security Considerations
+   12. References
+     12.1.  Normative References
+     12.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Keys for Examples
+   Acknowledgments
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   A Personal Assertion Token (PASSporT) [<a href="/doc/html/rfc8225" title="&quot;PASSporT: Personal Assertion Token&quot;">RFC8225</a>] is a token format
+   based on the JSON Web Token (JWT) [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>] for conveying
+   cryptographically signed information about the people involved in
+   personal communications; it is used by the Secure Telephone Identity
+   Revisited (STIR) protocol [<a href="/doc/html/rfc8224" title="&quot;Authenticated Identity Management in the Session Initiation Protocol (SIP)&quot;">RFC8224</a>] to convey a signed assertion of
+   the identity of the participants in real-time communications
+   established via a protocol like SIP.  This specification extends
+   PASSporT to include an indication that a call has been diverted from
+   its original destination to a new one.
+
+   Although the STIR problem statement [<a href="/doc/html/rfc7340" title="&quot;Secure Telephone Identity Problem Statement and Requirements&quot;">RFC7340</a>] is focused on
+   preventing the impersonation of the caller&#x27;s identity, which is a
+   common enabler for threats such as robocalling and voicemail hacking
+   on the telephone network today, it also provides a signature over the
+   called number at the time that the authentication service sees it.
+   As <a href="/doc/html/rfc8224#section-12.1">[RFC8224], Section&nbsp;12.1</a> describes, this protection over the
+   contents of the To header field is intended to prevent a class of
+   cut-and-paste attacks.  If Alice calls Bob, for example, Bob might
+   attempt to cut and paste the Identity header field in Alice&#x27;s INVITE
+   into a new INVITE that Bob sends to Carol, and thus be able to fool
+   Carol into thinking the call came from Alice and not Bob. With the
+   signature over the To header field value, the INVITE Carol sees will
+   clearly have been destined originally for Bob, and thus Carol can
+   view the INVITE as suspect.
+
+   However, as <a href="/doc/html/rfc8224#section-12.1.1">[RFC8224], Section&nbsp;12.1.1</a> points out, it is difficult for
+   Carol to confirm or reject these suspicions based on the information
+   she receives from the baseline PASSporT object.  The common &quot;call
+   forwarding&quot; service serves as a good example of the reality that the
+   original called party number is not always the number to which a call
+   is delivered.  There are a number of potential ways for
+   intermediaries to indicate that such a forwarding operating has taken
+   place.  The address in the To header field value of SIP requests is
+   not supposed to change, according to baseline SIP behavior [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>];
+   instead, it is the Request-URI that is supposed to be updated when a
+   call is retargeted.  Practically speaking, however, many operational
+   environments do alter the To header field.  The History-Info header
+   field [<a href="/doc/html/rfc7044" title="&quot;An Extension to the Session Initiation Protocol (SIP) for Request History Information&quot;">RFC7044</a>] was created to store the Request-URIs that are
+   discarded by a call in transit.  The SIP Diversion header field
+   [<a href="/doc/html/rfc5806" title="&quot;Diversion Indication in SIP&quot;">RFC5806</a>], though historic, is still used for this purpose by some
+   operators today.  Neither of these header fields provide any
+   cryptographic assurance of secure redirection, and they both record
+   entries for minor syntactical changes in URIs that do not reflect a
+   change to the actual target of a call.
+
+   Therefore, this specification extends PASSporT with an explicit
+   indication that the original called number in PASSporT no longer
+   reflects the destination to which a call is intended to be delivered.
+   For this purpose, it specifies a Divert PASSporT type (&quot;div&quot;) for use
+   in common SIP retargeting cases; it is expected that in this case,
+   SIP INVITE requests will carry multiple Identity header fields, each
+   containing its own PASSporT.  Throughout this document, PASSporTs
+   that contain a &quot;div&quot; element will be referred to as &quot;div&quot; PASSporTs.
+   Verification services and the relying parties who make authorization
+   decisions about communications may use this diversion indication to
+   confirm that a legitimate retargeting of the call has taken place,
+   rather than a cut-and-paste attack.  For out-of-band use cases
+   [<a href="/doc/html/rfc8816" title="&quot;Secure Telephone Identity Revisited (STIR) Out-of-Band Architecture and Use Cases&quot;">RFC8816</a>] and other non-SIP applications of PASSporT, a separate
+   &quot;div-o&quot; PASSporT type is also specified, which defines an &quot;opt&quot;
+   PASSporT element for carrying nested PASSporTs within a PASSporT.
+   These shall in turn be referred to in this document as &quot;div-o&quot;
+   PASSporTs.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  The &quot;div&quot; PASSporT Type and Claim</span>
+
+   This specification defines a PASSporT [<a href="/doc/html/rfc8225" title="&quot;PASSporT: Personal Assertion Token&quot;">RFC8225</a>] type called &quot;div&quot;,
+   which may be employed by authentication services located at
+   retargeting entities.  All &quot;div&quot; PASSporTs MUST contain a new JSON
+   Web Token &quot;div&quot; claim, also specified in this document, which
+   indicates a previous destination for a call during its routing
+   process.  When a retargeting entity receives a call signed with a
+   PASSporT, it may act as an authentication service and create a new
+   PASSporT containing the &quot;div&quot; claim to attach to the call.
+
+   Note that a new PASSporT is only necessary when the canonical form of
+   the &quot;dest&quot; identifier (per the canonicalization procedures in
+   <a href="/doc/html/rfc8224#section-8.3">[RFC8224], Section&nbsp;8.3</a>) changes due to this retargeting.  If the
+   canonical form of the &quot;dest&quot; identifier is not changed during
+   retargeting, then a new PASSporT with a &quot;div&quot; claim MUST NOT be
+   produced.
+
+   The headers of the new PASSporTs generated by retargeting entities
+   MUST include the &quot;div&quot; PASSporT type and an &quot;x5u&quot; field pointing to a
+   credential that the retargeting entity controls. &quot;div&quot; PASSporTs MUST
+   use full form instead of compact form.  The new PASSporT header will
+   look as follows:
+
+   { &quot;typ&quot;:&quot;passport&quot;,
+     &quot;ppt&quot;:&quot;div&quot;,
+     &quot;alg&quot;:&quot;ES256&quot;,
+     &quot;x5u&quot;:&quot;https://www.example.com/cert.cer&quot; }
+
+   A &quot;div&quot; PASSporT claims set is populated with elements drawn from the
+   PASSporT(s) received for a call by the retargeting entity; at a high
+   level, the original identifier for the called party in the &quot;dest&quot;
+   object will become the &quot;div&quot; claim in the new PASSporT.  If the
+   &quot;dest&quot; object of the original PASSporT contains multiple identifiers,
+   because it contains one or more name/value pairs with an array as its
+   value, the retargeting entity MUST select only one identifier from
+   the value(s) of the &quot;dest&quot; object to occupy the value of the &quot;div&quot;
+   field in the new PASSporT.  Moreover, it MUST select an identifier
+   that is within the scope of the credential that the retargeting
+   entity will specify in the &quot;x5u&quot; of the PASSporT header (as described
+   below).
+
+   The new target for the call selected by the retargeting entity
+   becomes the value of the &quot;dest&quot; object of the new PASSporT.  The
+   &quot;orig&quot; object MUST be copied into the new PASSporT from the original
+   PASSporT received by the retargeting entity.  The retargeting entity
+   SHOULD retain the &quot;iat&quot; object from the original PASSporT, though if
+   in the underlying signaling protocol (e.g., SIP) the retargeting
+   entity changes the date and time information in the retargeted
+   request, the new PASSporT should instead reflect that date and time.
+   No other claims or extensions are to be copied from the original
+   PASSporT to the &quot;div&quot; PASSporT.
+
+   So, for an original PASSporT claims set of the form:
+
+      { &quot;dest&quot;:{&quot;tn&quot;:[&quot;12155551213&quot;]},
+        &quot;iat&quot;:1443208345,
+        &quot;orig&quot;:{&quot;tn&quot;:&quot;12155551212&quot;} }
+
+   If the retargeting entity is changing the target from 12155551213 to
+   12155551214, the claims set of a &quot;div&quot; PASSporT generated by the
+   retargeting entity would look as follows:
+
+      { &quot;dest&quot;:{&quot;tn&quot;:[&quot;12155551214&quot;]},
+        &quot;div&quot;:{&quot;tn&quot;:&quot;121555551213&quot;},
+        &quot;iat&quot;:1443208345,
+        &quot;orig&quot;:{&quot;tn&quot;:&quot;12155551212&quot;} }
+
+   The combined full form PASSporT (with a signature covered by the
+   ES256 keys given in <a href="#appendix-A">Appendix A</a>) would look as follows:
+
+   eyJhbGciOiJFUzI1NiIsInBwdCI6ImRpdiIsInR5cCI6InBhc3Nwb3J0IiwieDV1Ij \
+   oiaHR0cHM6Ly93d3cuZXhhbXBsZS5jb20vY2VydC5jZXIifQ.eyJkZXN0Ijp7InRuI \
+   jpbIjEyMTU1NTUxMjE0Il19LCJkaXYiOnsidG4iOiIxMjE1NTU1NTEyMTMifSwiaWF \
+   0IjoxNDQzMjA4MzQ1LCJvcmlnIjp7InRuIjoiMTIxNTU1NTEyMTIifX0.xBHWipDEE \
+   J8a6TsdX6xUXAnblsFiGUiAxwLiv0HLC9IICj6eG9jQd6WzeSSjHRBwxmChHhVIiMT \
+   SqIlk3yCNkg
+
+   The same &quot;div&quot; PASSporT would result if the &quot;dest&quot; object of the
+   original PASSporT contained an array value, such as
+   {&quot;tn&quot;:[&quot;12155551213&quot;,&quot;19995551234&quot;]}, and the retargeting entity
+   chose to retarget from the first telephone number in the array.
+   Every &quot;div&quot; PASSporT is diverting from only one identifier.
+
+   Note that the &quot;div&quot; element may contain other name/value pairs than
+   just a destination, including a History-Info indicator (see
+   <a href="#section-8">Section 8</a>).  After the PASSporT header and claims have been
+   constructed, their signature is generated per the guidance in
+   [<a href="/doc/html/rfc8225" title="&quot;PASSporT: Personal Assertion Token&quot;">RFC8225</a>] -- except for the credential required to sign it.  While in
+   the ordinary construction of a PASSporT, the credential used to sign
+   will have authority over the identity in the &quot;orig&quot; claim (for
+   example, a certificate with authority over the telephone number in
+   &quot;orig&quot; per [<a href="/doc/html/rfc8226" title="&quot;Secure Telephone Identity Credentials: Certificates&quot;">RFC8226</a>]), for all PASSporTs using the &quot;div&quot; type the
+   signature MUST be created with a credential with authority over the
+   identity present in the &quot;div&quot; claim.  So for the example above, where
+   the original &quot;dest&quot; is &quot;12155551213&quot;, the signer of the new PASSporT
+   object MUST have authority over that telephone number and need not
+   have any authority over the telephone number present in the &quot;orig&quot;
+   claim.
+
+   Note that Identity header fields are not ordered in a SIP request,
+   and in a case where there is a multiplicity of Identity header fields
+   in a request, some sorting may be required to match &quot;div&quot; PASSporTs
+   to their originals.
+
+   PASSporTs of type &quot;div&quot; MUST NOT contain an &quot;opt&quot; (see <a href="#section-6">Section 6</a>)
+   element in their payload.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Using &quot;div&quot; in SIP</span>
+
+   This section specifies SIP-specific usage for the &quot;div&quot; PASSporT type
+   and its handling in the SIP Identity header field &quot;ppt&quot; parameter
+   value.  Other protocols using PASSporT may define behavior specific
+   to their use of the &quot;div&quot; claim.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Authentication Service Behavior</span>
+
+   An authentication service only adds an Identity header field value
+   containing the &quot;div&quot; PASSporT type to a SIP request that already
+   contains at least one Identity header field value; it MUST NOT add a
+   &quot;div&quot; PASSporT to an INVITE that contains no Identity header field.
+   The retargeting entity SHOULD act as a verification service and
+   validate the existing Identity header field value(s) in the request
+   before proceeding; in some high-volume environments, it may instead
+   put that burden of validating the chain entirely on the terminating
+   verification service.  As the authentication service will be adding a
+   new PASSporT that refers to an original, it MUST NOT remove the
+   original request&#x27;s Identity header field value before forwarding.
+
+   As was stated in <a href="#section-3">Section 3</a>, the authentication service MUST sign any
+   &quot;div&quot; PASSporT with a credential that has a scope of authority
+   covering the identity it populates in the &quot;div&quot; element value.  Note
+   that this is a significant departure from baseline STIR
+   authentication service behavior, in which the PASSporT is signed by a
+   credential with authority over the &quot;orig&quot; field.  The &quot;div&quot; value
+   reflects the URI that caused the call to be routed to the retargeting
+   entity, so in ordinary operations, it would already be the STIR
+   entity holding the appropriate private keying material for calls
+   originating from that identity.
+
+   A SIP authentication service typically will derive the &quot;dest&quot; element
+   value of a &quot;div&quot; PASSporT from a new Request-URI that is set for the
+   SIP request before it is forwarded.  Older values of the Request-URI
+   may appear in header fields like Diversion or History-Info; this
+   document specifies an optional interaction with History-Info below in
+   <a href="#section-8">Section 8</a>.  Note as well that because PASSporT operates on
+   canonicalized telephone numbers and normalized URIs, many smaller
+   changes to the syntax of identifiers that might be captured by other
+   mechanisms that record retargeting (like History-Info) will likely
+   not require a &quot;div&quot; PASSporT.
+
+   When adding an Identity header field with a PASSporT claims set
+   containing a &quot;div&quot; claim, SIP authentication services MUST also add a
+   &quot;ppt&quot; parameter to that Identity header with a value of &quot;div&quot;.  For
+   the example PASSporT given in <a href="#section-3">Section 3</a>, the new Identity header
+   added after retargeting might look as follows:
+
+   Identity:eyJhbGciOiJFUzI1NiIsInBwdCI6ImRpdiIsInR5cCI6InBhc3Nwb3J0I \
+   iwieDV1IjoiaHR0cHM6Ly93d3cuZXhhbXBsZS5jb20vY2VydC5jZXIifQ.eyJkZXN0 \
+   Ijp7InRuIjpbIjEyMTU1NTUxMjE0Il19LCJkaXYiOnsidG4iOiIxMjE1NTU1NTEyMT \
+   MifSwiaWF0IjoxNDQzMjA4MzQ1LCJvcmlnIjp7InRuIjoiMTIxNTU1NTEyMTIifX0. \
+   xBHWipDEEJ8a6TsdX6xUXAnblsFiGUiAxwLiv0HLC9IICj6eG9jQd6WzeSSjHRBwxm \
+   ChHhVIiMTSqIlk3yCNkg; \
+   info=&lt;https://www.example.com/cert.cer&gt;;ppt=&quot;div&quot;
+
+   Note that in some deployments, an authentication service will need to
+   generate &quot;div&quot; PASSporTs for a request that contains multiple
+   non-&quot;div&quot; Identity header field values.  For example, a request
+   arriving at a retargeting entity might contain, in different Identity
+   header fields, a baseline [<a href="/doc/html/rfc8224" title="&quot;Authenticated Identity Management in the Session Initiation Protocol (SIP)&quot;">RFC8224</a>] PASSporT and a PASSporT of type
+   &quot;rph&quot; [<a href="/doc/html/rfc8443" title="&quot;Personal Assertion Token (PASSporT) Extension for Resource Priority Authorization&quot;">RFC8443</a>] signed by a separate authority.  Provided that these
+   PASSporTs share the same &quot;orig&quot; and &quot;dest&quot; values, the retargeting
+   entity&#x27;s authentication service SHOULD generate only one &quot;div&quot;
+   PASSporT.  If the &quot;orig&quot; or &quot;dest&quot; of these PASSporTs differ,
+   however, one &quot;div&quot; PASSporT SHOULD be generated for each non-&quot;div&quot;
+   PASSporT.  Note that this effectively creates multiple chains of
+   &quot;div&quot; PASSporTs in a single request, which complicates the procedures
+   that need to be performed at verification services.
+
+   Furthermore, a request may also be retargeted a second time, at which
+   point the subsequent retargeting entity SHOULD generate one &quot;div&quot;
+   PASSporT for each previous &quot;div&quot; PASSporT in the request that
+   contains a &quot;dest&quot; object with the value of the current target -- but
+   not for &quot;div&quot; PASSporTs with earlier targets.  Ordinarily, the
+   current target will be readily identifiable, as it will be in the
+   last &quot;div&quot; PASSporT in each chain, and in SIP cases, it will
+   correspond to the Request-URI received by the retargeting entity.
+   Moreover, the current target will be an identifier that the
+   retargeting entity possesses a credential to sign for, which may not
+   be true for earlier targets.  Ultimately, on each retargeting, the
+   number of PASSporTs added to a request will be equal to the number of
+   non-&quot;div&quot; PASSporTs that do not share the same &quot;orig&quot; and &quot;dest&quot;
+   object values.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Verification Service Behavior</span>
+
+   <a href="/doc/html/rfc8224#section-6.2">[RFC8224], Section&nbsp;6.2</a>, Step 5 requires that specifications defining
+   &quot;ppt&quot; values describe any additional or alternative verifier
+   behavior.  The job of a SIP verification service handling one or more
+   &quot;div&quot; PASSporTs is very different from that of a traditional
+   verification service.  At a high level, the immediate responsibility
+   of the verification service is to extract all PASSporTs from the two
+   or more Identity header fields in a request, identify which are &quot;div&quot;
+   PASSporTs and which are not, and then order and link the &quot;div&quot;
+   PASSporTs to the original PASSporT(s) in order to build one or more
+   chains of retargeting.
+
+   In order to validate a SIP request using the &quot;div&quot; PASSporT type, a
+   verification service needs to inspect all of the valid Identity
+   header field values associated with a request, as an Identity header
+   field value containing &quot;div&quot; necessarily refers to an earlier
+   PASSporT already in the message.  For each &quot;div&quot; PASSporT, the
+   verification service MUST find an earlier PASSporT that contains a
+   &quot;dest&quot; claim with a value equivalent to the &quot;div&quot; claim in each &quot;div&quot;
+   PASSporT.  It is possible that this earlier PASSporT will also
+   contain a &quot;div&quot; and that it will in turn chain to a still earlier
+   PASSporT stored in a different Identity header field value.  If a
+   complete chain cannot be constructed, the verification service cannot
+   complete &quot;div&quot; validation; it MAY still validate any non-&quot;div&quot;
+   PASSporTs in the request per the normal procedures in [<a href="/doc/html/rfc8224" title="&quot;Authenticated Identity Management in the Session Initiation Protocol (SIP)&quot;">RFC8224</a>].  If
+   a chain has been successfully constructed, the verification service
+   extracts from the outermost (that is, the most recent) PASSporT in
+   the chain a &quot;dest&quot; field; this will be a &quot;div&quot; PASSporT that no other
+   &quot;div&quot; PASSporT in the SIP request refers to.  Its &quot;dest&quot; element
+   value will be referred to in the procedures that follow as the value
+   of the &quot;outermost &quot;dest&quot; field&quot;.
+
+   Ultimately, by looking at this chain of transformations and
+   validating the associated signatures, the verification service will
+   be able to ascertain that the appropriate parties were responsible
+   for the retargeting of the call to its current destination.  This can
+   help the verification service to determine that the original PASSporT
+   in the call was not simply used in a cut-and-paste attack and inform
+   any associated authorization decisions in terms of how the call will
+   be treated -- though, per <a href="/doc/html/rfc8224#section-6.2.1">[RFC8224], Section&nbsp;6.2.1</a>, that decision is
+   a matter of local policy and is thus outside the scope of this
+   specification.
+
+   A verification service parses a chain of PASSporTs as follows:
+
+   1.  The verification service MUST compare the value in the outermost
+       &quot;dest&quot; field to the target of the call.  As it is anticipated
+       that SIP authentication services that create &quot;div&quot; PASSporTs will
+       populate the &quot;dest&quot; header from the retargeted Request-URI (see
+       <a href="#section-4.1">Section 4.1</a>), in ordinary SIP operations, the Request-URI is
+       where verification services will find the latest call target.
+       Note, however, that after a &quot;div&quot; PASSporT has been added to a
+       SIP request, the Request-URI may have been updated during normal
+       call processing to an identifier that no longer contains the
+       logical destination of a call; in this case, the verification
+       service MAY compare the &quot;dest&quot; field to a provisioned telephone
+       number for the recipient.
+
+   2.  The verification service MUST validate the signature over the
+       outermost &quot;div&quot; PASSporT and establish that the credential that
+       signed the &quot;div&quot; PASSporT has the authority to attest for the
+       identifier in the &quot;div&quot; element of the PASSporT (per <a href="/doc/html/rfc8224#section-6.2">[RFC8224],
+       Section&nbsp;6.2</a>, Step 3).
+
+   3.  The verification service MUST validate that the &quot;orig&quot; field of
+       the innermost PASSporT of the chain (the only PASSporT in the
+       chain that will not be of PASSporT type &quot;div&quot;) is equivalent to
+       the &quot;orig&quot; field of the outermost &quot;div&quot; PASSporT; in other words,
+       that the original calling identifier has not been altered by
+       retargeting authentication services.  If the &quot;orig&quot; value has
+       changed, the verification service MUST treat the entire PASSporT
+       chain as invalid.  The verification service MUST also verify that
+       all other &quot;div&quot; PASSporTs in the chain share the same &quot;orig&quot;
+       value.  Then, the verification service validates the relationship
+       of the &quot;orig&quot; field to the SIP-level call signaling per the
+       guidance in <a href="/doc/html/rfc8224#section-6.2">[RFC8224], Section&nbsp;6.2</a>, Step 2.
+
+   4.  The verification service MUST check the date freshness in the
+       outermost &quot;div&quot; PASSporT, per <a href="/doc/html/rfc8224#section-6.2">[RFC8224], Section&nbsp;6.2</a>, Step 4.
+       Furthermore, it is RECOMMENDED that the verification service
+       check that the &quot;iat&quot; field of the innermost PASSporT is also
+       within the date freshness interval; otherwise, the verification
+       service could allow attackers to replay an old, stale PASSporT
+       embedded in a fresh &quot;div&quot;.  However, note that in some use cases,
+       including certain ways that call transfers are implemented, it is
+       possible that an established call will be retargeted long after
+       it has originally been placed, and verification services may want
+       to allow a longer window for the freshness of the innermost
+       PASSporT if the call is transferred from a trusted party (as an
+       upper bound, a freshness window on the order of three hours might
+       suffice).
+
+   5.  The verification service MUST inspect and validate the signatures
+       on each and every PASSporT object in the chain between the
+       outermost &quot;div&quot; PASSporT and the innermost PASSporT.  Note that
+       (per <a href="#section-4.1">Section 4.1</a>) a chain may terminate at more than one
+       innermost PASSporT, in cases where a single &quot;div&quot; is used to
+       retarget from multiple innermost PASSporTs.  Also note that
+       <a href="/doc/html/rfc8224#section-6.2">[RFC8224], Section&nbsp;6.2</a>, Step 1 applies to the chain validation
+       process; if the innermost PASSporT contains an unsupported &quot;ppt&quot;,
+       its chain MUST be ignored.
+
+   Note that the To header field is not used in the first step above.
+   Optionally, the verification service MAY verify that the To header
+   field value of the received SIP signaling is equal to the &quot;dest&quot;
+   value in the innermost PASSporT; however, as has been observed in
+   some deployments, the original To header field value may be altered
+   by intermediaries to reflect changes of target.  Deployments that
+   change the original To header field value to conceal the original
+   destination of the call from the ultimate recipient should note that
+   the original destination of a call may be preserved in the innermost
+   PASSporT.  Future work on &quot;div&quot; might explore methods to implement
+   that sort of policy while retaining a secure chain of redirection.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  The &quot;div-o&quot; PASSporT Type</span>
+
+   This specification defines a &quot;div-o&quot; PASSporT type that uses the
+   &quot;div&quot; claim element in conjunction with the &quot;opt&quot; (<a href="#section-6">Section 6</a>) claim
+   element.  As is the case with &quot;div&quot; PASSporT type, a &quot;div-o&quot; PASSporT
+   is created by an authentication service acting for a retargeting
+   entity, but instead of generating a separate &quot;div&quot; PASSporT to be
+   conveyed alongside an original PASSporT, the authentication service
+   in this case embeds the original PASSporT inside the &quot;opt&quot; element of
+   the &quot;div-o&quot; PASSporT.  The &quot;div-o&quot; extension is designed for use in
+   non-SIP or gatewayed SIP environments where the conveyance of
+   PASSporTs in separate Identity header fields in impossible, such as
+   out-of-band STIR scenarios [<a href="/doc/html/rfc8816" title="&quot;Secure Telephone Identity Revisited (STIR) Out-of-Band Architecture and Use Cases&quot;">RFC8816</a>].
+
+   The syntax of &quot;div-o&quot; PASSporTs is very similar to &quot;div&quot;.  A &quot;div-o&quot;
+   PASSporT header object might look as follows:
+
+   { &quot;typ&quot;:&quot;passport&quot;,
+     &quot;ppt&quot;:&quot;div-o&quot;,
+     &quot;alg&quot;:&quot;ES256&quot;,
+     &quot;x5u&quot;:&quot;https://www.example.com/cert.cer&quot; }
+
+   Whereas a &quot;div&quot; PASSporT claims set contains only the &quot;orig&quot;, &quot;dest&quot;,
+   &quot;iat&quot;, and &quot;div&quot; elements, the &quot;div-o&quot; additionally MUST contain an
+   &quot;opt&quot; element (see <a href="#section-6">Section 6</a>), which encapsulates the full form of
+   the previous PASSporT from which the call was retargeted, triggering
+   the generation of this &quot;div-o&quot;.  The format of the &quot;opt&quot; element is
+   identical to the encoded PASSporT format given in <a href="/doc/html/rfc8225#appendix-A">Appendix&nbsp;A of
+   [RFC8225]</a>.
+
+   So, for an original PASSporT claims set of the form:
+
+      { &quot;orig&quot;:{&quot;tn&quot;:&quot;12155551212&quot;},
+        &quot;dest&quot;:{&quot;tn&quot;:[&quot;12155551213&quot;]},
+        &quot;iat&quot;:1443208345 }
+
+   If the retargeting entity is changing the target from 12155551213 to
+   12155551214, the new PASSporT claims set for &quot;div-o&quot; would look as
+   follows:
+
+    { &quot;orig&quot;:{&quot;tn&quot;:&quot;12155551212&quot;},
+      &quot;dest&quot;:{&quot;tn&quot;:[&quot;12155551214&quot;]},
+      &quot;iat&quot;:1443208345,
+      &quot;div&quot;:{&quot;tn&quot;:&quot;121555551213&quot;},
+      &quot;opt&quot;:&quot;eyJhbGciOiJFUzI1NiIsInR5cCI6InBhc3Nwb3J0IiwieDV1IjoiaHR0c \
+      HM6Ly93d3cuZXhhbXBsZS5jb20vY2VydC5jZXIifQ.eyJkZXN0Ijp7InRuIjpbIj \
+      EyMTU1NTUxMjEzIl19LCJpYXQiOjE0NDMyMDgzNDUsIm9yaWciOnsidG4iOiIxMj \
+      E1NTU1MTIxMiJ9fQ.1bEzkzcNbKvgz4QoMx0_DJ2T8qFMDC1sPqHPXl1WvbauzRJ \
+      RvYlZqQ0qgGTlS8tJ_wXjVe07Z3wvDrdApHhhYw&quot; }
+
+   While in ordinary operations, it is not expected that SIP would carry
+   a &quot;div-o&quot; PASSporT, it might be possible in some gatewaying
+   scenarios.  The resulting full form Identity header field with a
+   &quot;div-o&quot; PASSporT would look as follows:
+
+   Identity:eyJhbGciOiJFUzI1NiIsInBwdCI6ImRpdi1vIiwidHlwIjoicGFzc3Bvc \
+   nQiLCJ4NXUiOiJodHRwczovL3d3dy5leGFtcGxlLmNvbS9jZXJ0LmNlciJ9.eyJkZX \
+   N0Ijp7InRuIjoiMTIxNTU1NTEyMTQifSwiZGl2Ijp7InRuIjoiMTIxNTU1NTUxMjEz \
+   In0sImlhdCI6MTQ0MzIwODM0NSwib3B0IjoiZXlKaGJHY2lPaUpGVXpJMU5pSXNJbl \
+   I1Y0NJNkluQmhjM053YjNKMElpd2llRFYxSWpvaWFIUjBjSE02THk5M2QzY3VaWGho \
+   YlhCc1pTNWpiMjB2WTJWeWRDNWpaWElpZlEuZXlKa1pYTjBJanA3SW5SdUlqcGJJak \
+   V5TVRVMU5UVXhNakV6SWwxOUxDSnBZWFFpT2pFME5ETXlNRGd6TkRVc0ltOXlhV2Np \
+   T25zaWRHNGlPaUl4TWpFMU5UVTFNVEl4TWlKOWZRLjFiRXpremNOYkt2Z3o0UW9NeD \
+   BfREoyVDhxRk1EQzFzUHFIUFhsMVd2YmF1elJKUnZZbFpxUTBxZ0dUbFM4dEpfd1hq \
+   VmUwN1ozd3ZEcmRBcEhoaFl3Iiwib3JpZyI6eyJ0biI6IjEyMTU1NTUxMjEyIn19.C \
+   HeA9wRnthl7paMe6rP0TARpmFCXjmi_vF_HRz2O_oulB_R-G9xZNiLVvmvHv4gk6LI \
+   LaDV2y2VtHTLIEgmHig; \
+   info=&lt;https://www.example.com/cert.cer&gt;;ppt=&quot;div-o&quot;
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Processing &quot;div-o&quot; PASSporTs</span>
+
+   The authentication and verification service procedures required for
+   &quot;div-o&quot; closely follow the guidance given in Sections <a href="#section-4.1">4.1</a> and <a href="#section-4.2">4.2</a>,
+   with the major caveats being, first, that they do store or retrieve
+   PASSporTs via the Identity header field values of SIP requests and,
+   second, that they process nested PASSporTs in the &quot;opt&quot; claim
+   element.  But transposing the rest of the behaviors described above
+   to creating and validating &quot;div-o&quot; PASSporTs is straightforward.
+
+   For the &quot;div-o&quot; PASSporT type, retargeting authentication services
+   that handle calls with one or more existing PASSporTs will create a
+   corresponding &quot;div-o&quot; PASSporT for each received PASSporT.  Each
+   &quot;div-o&quot; PASSporT MUST contain an &quot;opt&quot; claim set element with the
+   value of the original PASSporT from which the &quot;div-o&quot; was created; as
+   specified in <a href="#section-4.1">Section 4.1</a>, the authentication service MUST populate
+   the &quot;div&quot; claim set element of the &quot;div-o&quot; PASSporT with the &quot;dest&quot;
+   field of the original PASSporT.  Each received PASSporT may in turn
+   contain its own &quot;opt&quot; claim set element if the retargeting
+   authentication service is not the first in its chain.  Note that if
+   the retargeting authentication service is handling a call with
+   multiple PASSporTs, which in ordinary SIP operation would result in
+   the construction of multiple &quot;div&quot; chains, it will in effect be
+   generating one &quot;div-o&quot; PASSporT per chain.
+
+   The job of a verification service is in many ways easier for &quot;div-o&quot;
+   than for &quot;div&quot;, as the verification service has no need to correlate
+   the PASSporTs it receives and assemble them into chains, as any
+   chains in &quot;div-o&quot; will be nested through the &quot;opt&quot; element.
+   Nonetheless, the verification services MUST perform the same chain
+   validation described in <a href="#section-4.2">Section 4.2</a> to validate that each nested
+   PASSporT shares the same &quot;orig&quot; field as its enclosing PASSporT and
+   that the &quot;dest&quot; field of each nested PASSporT corresponds to the
+   &quot;div&quot; field of its enclosing PASSporT.  The same checks MUST also be
+   performed for freshness, signature validation, and so on.  It is
+   similarly OPTIONAL for the verification service to determine that the
+   &quot;dest&quot; claims element of the outermost PASSporT corresponds to the
+   called party indication of receive telephone signaling, where such
+   indication would vary depending on the using protocol.
+
+   How authentication services or verification services receive or
+   transport PASSporTs for &quot;div-o&quot; is outside the scope of this document
+   and dependent on the using protocol.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Definition of &quot;opt&quot;</span>
+
+   The presence of an &quot;Original PASSporT&quot; (&quot;opt&quot;) claims set element
+   signifies that a PASSporT encapsulates another entire PASSporT within
+   it, typically a PASSporT that was transformed in some way to create
+   the current PASSporT.  Relying parties may need to consult the
+   encapsulated PASSporT in order to validate the identity of a caller.
+   &quot;opt&quot;, as defined in this specification, may be used by future
+   PASSporT extensions as well as in conjunction with &quot;div-o&quot;.
+
+   &quot;opt&quot; MUST contain a quoted full-form PASSporT, as specified by
+   <a href="/doc/html/rfc8225#appendix-A">[RFC8225], Appendix&nbsp;A</a>; it MUST NOT contain a compact form PASSporT.
+   For an example of a &quot;div-o&quot; PASSporT containing &quot;opt&quot;, see <a href="#section-5">Section 5</a>.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  &quot;div&quot; and Redirection</span>
+
+   The &quot;div&quot; mechanism exists primarily to prevent false negatives at
+   verification services when an arriving SIP request, due to
+   intermediary retargeting, does not appear to be intended for its
+   eventual recipient, because the original PASSporT &quot;dest&quot; value
+   designates a different destination.
+
+   Any intermediary that assigns a new target to a request can, instead
+   of retargeting and forwarding the request, redirect with a 3xx
+   response code.  In ordinary operations, a redirection poses no
+   difficulties for the operations of baseline STIR: when the user agent
+   client (UAC) receives the 3xx response, it will initiate a new
+   request to the new target (typically the target carried in the
+   Contact header field value of the 3xx), and the &quot;dest&quot; of the
+   PASSporT created for the new request will match that new target.  As
+   no impersonation attack can arise from this case, it creates no new
+   requirements for STIR.
+
+   However, some UACs record the original target of a call with
+   mechanisms like History-Info [<a href="/doc/html/rfc7044" title="&quot;An Extension to the Session Initiation Protocol (SIP) for Request History Information&quot;">RFC7044</a>] or Diversion [<a href="/doc/html/rfc5806" title="&quot;Diversion Indication in SIP&quot;">RFC5806</a>] and may
+   want to leverage STIR to demonstrate to the ultimate recipient that
+   the call has been redirected securely, that is, that the original
+   destination was the one that sent the redirection message that led to
+   the recipient receiving the request.  The semantics of the PASSporT
+   necessary for that assertion are the same as those for the &quot;div&quot;
+   retargeting cases above.  The only wrinkle is that the PASSporT needs
+   to be generated by the redirecting entity and sent back to the
+   originating user agent client within the 3xx response.
+
+   This introduces more complexity than might immediately be apparent.
+   In the first place, a 3xx response can convey multiple targets
+   through the Contact header field value; to accommodate this, the
+   &quot;div&quot; PASSporT MAY include one &quot;dest&quot; object array value per Contact,
+   but if the retargeting entity wants to keep the Contact list private
+   from targets, it may need to generate one PASSporT per Contact.  Bear
+   in mind as well that the original SIP request could have carried
+   multiple Identity header field values that had been added by
+   different authentication services in the request path, so a
+   redirecting entity might need to generate one &quot;div&quot; PASSporT for each
+   PASSporT in the original request.  Often, this will mean just one
+   &quot;div&quot; PASSporT, but for some deployment scenarios, it could require
+   an impractical number of combinations.  But in very complex call
+   routing scenarios, attestation of source identity would only add
+   limited value anyway.
+
+   Therefore, STIR-aware SIP intermediaries that redirect requests MAY
+   convey one or more PASSporTs in the backwards direction within
+   Identity header fields.  These redirecting entities will act as
+   authentication services for &quot;div&quot; as described in <a href="#section-4.1">Section 4.1</a>.  This
+   document consequently updates [<a href="/doc/html/rfc8224" title="&quot;Authenticated Identity Management in the Session Initiation Protocol (SIP)&quot;">RFC8224</a>] to permit carrying Identity
+   header fields in SIP 300-class responses.  It is left to the
+   originating user agent to determine which Identity header fields
+   should be copied from the 3xx into any new requests resulting from
+   the redirection, if any; use of these Identity header fields by
+   entities receiving a 3xx response is OPTIONAL.
+
+   Finally, note that if an intermediary in the response path consumes
+   the 3xx and explores new targets itself while performing sequential
+   forking, it will effectively retarget the call on behalf of the
+   redirecting server, and this will create the same need for &quot;div&quot;
+   PASSporTs as any other retargeted call.  These intermediaries MAY
+   also copy PASSporTs from the 3xx response and insert them into
+   sequential forking requests, if appropriate.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Extending &quot;div&quot; to Work with Service Logic Tracking</span>
+
+   It is anticipated that &quot;div&quot; may be used in concert with History-Info
+   [<a href="/doc/html/rfc7044" title="&quot;An Extension to the Session Initiation Protocol (SIP) for Request History Information&quot;">RFC7044</a>] in some deployments.  It may not be clear from the &quot;orig&quot;
+   and &quot;dest&quot; values which History-Info header a given PASSporT
+   correlates to, especially because some of the target changes tracked
+   by History-Info will not be reflected in a &quot;div&quot; PASSporT (see
+   <a href="#section-1">Section 1</a>).  Therefore, an &quot;hi&quot; element as defined here may appear in
+   &quot;div&quot; corresponding to the History-Info header field index parameter
+   value.  So for a History-Info header field with an index value of
+   &quot;1.2.1&quot;, the claims set of the corresponding PASSporT with &quot;div&quot;
+   might look like:
+
+      { &quot;orig&quot;:{&quot;tn&quot;:&quot;12155551212&quot;},
+        &quot;dest&quot;:{&quot;tn&quot;:[&quot;12155551214&quot;]},
+        &quot;iat&quot;:1443208345,
+        &quot;div&quot;:{&quot;tn&quot;:&quot;121555551213&quot;,
+               &quot;hi&quot;:&quot;1.2.1&quot;} }
+
+   Past experience has shown that there may be additional information
+   about the motivation for retargeting, which relying parties might
+   consider when making authorization decisions about a call; see, for
+   example, the &quot;reason&quot; associated with the SIP Diversion header field
+   [<a href="/doc/html/rfc5806" title="&quot;Diversion Indication in SIP&quot;">RFC5806</a>].  Future extensions to this specification might incorporate
+   reasons into &quot;div&quot;.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  JSON Web Token Claims Registrations</span>
+
+   Per this specification, IANA has added two new claims to the &quot;JSON
+   Web Token Claims&quot; registry as defined in [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>].
+
+<span class="h4"><a class="selflink" id="section-9.1.1" href="#section-9.1.1">9.1.1</a>.  &quot;div&quot; registration</span>
+
+   Claim Name:  div
+
+   Claim Description:  Diverted Target of a Call
+
+   Change Controller:  IESG
+
+   Reference:  <a href="/doc/html/rfc8946">RFC 8946</a>
+
+<span class="h4"><a class="selflink" id="section-9.1.2" href="#section-9.1.2">9.1.2</a>.  &quot;opt&quot; registration</span>
+
+   Claim Name:  opt
+
+   Claim Description:  Original PASSporT (in Full Form)
+
+   Change Controller:  IESG
+
+   Reference:  <a href="/doc/html/rfc8946">RFC 8946</a>
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  PASSporT Type Registrations</span>
+
+   This specification defines two new PASSporT types for the &quot;Personal
+   Assertion Token (PASSporT) Extensions&quot; registry defined in [<a href="/doc/html/rfc8225" title="&quot;PASSporT: Personal Assertion Token&quot;">RFC8225</a>],
+   which resides at &lt;<a href="https://www.iana.org/assignments/passport">https://www.iana.org/assignments/passport</a>&gt;.  They
+   are:
+
+   *  &quot;div&quot;, as defined in <a href="#section-3">Section 3</a>.
+
+   *  &quot;div-o&quot;, as defined in <a href="#section-5">Section 5</a>.
+
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Privacy Considerations</span>
+
+   There is an inherent trade-off in any mechanism that tracks, in SIP
+   signaling, how calls are routed through a network, as routing
+   decisions may expose policies set by users for how calls are
+   forwarded, potentially revealing relationships between different
+   identifiers representing the same user.  Note, however, that in
+   ordinary operations, this information is revealed to the user agent
+   service of the called party, not the calling party.  It is usually
+   the called party who establishes these forwarding relationships, and
+   if indeed some other party is responsible for calls being forwarded
+   to the called party, many times the called party should likely be
+   entitled to information about why they are receiving these calls.
+   Similarly, a redirecting entity who sends a 3xx in the backwards
+   direction knowingly shares information about service logic with the
+   caller&#x27;s network.  However, as there may be unforeseen circumstances
+   where the revelation of service logic to the called party poses a
+   privacy risk, implementers and users of this or similar diversion-
+   tracking techniques should understand the trade-off.
+
+   Furthermore, it is a general privacy risk of identity mechanisms
+   overall that they do not interface well with anonymization services;
+   the interaction of STIR with anonymization services is detailed in
+   <a href="/doc/html/rfc8224#section-11">[RFC8224], Section&nbsp;11</a>.  Any forwarding service that acts as an
+   anonymizing proxy may not be able to provide a secure chain of
+   retargeting due to the obfuscation of the originating identity.
+
+   Also see <a href="/doc/html/rfc8224#section-11">[RFC8224], Section&nbsp;11</a> for further considerations on the
+   privacy of using PASSporTs in SIP.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Security Considerations</span>
+
+   This specification describes a security feature and is primarily
+   concerned with increasing security when calls are forwarded.
+   Including information about how calls were retargeted during the
+   routing process can allow downstream entities to infer particulars of
+   the policies used to route calls through the network.  However,
+   including this information about forwarding is at the discretion of
+   the retargeting entity, so if there is a requirement to keep an
+   intermediate called number confidential, no PASSporT should be
+   created for that retargeting -- the only consequence will be that
+   downstream entities will be unable to correlate an incoming call with
+   the original PASSporT without access to some prior knowledge of the
+   policies that could have caused the retargeting.
+
+   Any extension that makes PASSporTs larger creates a potential
+   amplification mechanism for SIP-based DDoS attacks.  Since diversion
+   PASSporTs are created as a part of normal forwarding activity, this
+   risk arises at the discretion of the retargeting domain; simply using
+   3xx response redirections rather than retargeting (by supplying a
+   &quot;div&quot; per <a href="#section-7">Section 7</a>) mitigates the potential impact.  Under unusual
+   traffic loads, even domains that might ordinarily retarget requests
+   can switch to redirection.
+
+   SIP has an inherent capability to redirect requests, including
+   forking them to multiple parties -- potentially, a very large number
+   of parties.  The use of the &quot;div&quot; PASSporT type does not grant any
+   additional powers to attackers who hope to place bulk calls; if
+   present, the &quot;div&quot; PASSporT instead identifies the party responsible
+   for the forwarding.  As such, senders of bulk unsolicited traffic are
+   unlikely to find the use of &quot;div&quot; attractive.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3261">RFC3261</a>]  Rosenberg, J., Schulzrinne, H., Camarillo, G., Johnston,
+              A., Peterson, J., Sparks, R., Handley, M., and E.
+              Schooler, &quot;SIP: Session Initiation Protocol&quot;, <a href="/doc/html/rfc3261">RFC 3261</a>,
+              DOI 10.17487/RFC3261, June 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3261">https://www.rfc-editor.org/info/rfc3261</a>&gt;.
+
+   [<a id="ref-RFC7044">RFC7044</a>]  Barnes, M., Audet, F., Schubert, S., van Elburg, J., and
+              C. Holmberg, &quot;An Extension to the Session Initiation
+              Protocol (SIP) for Request History Information&quot;, <a href="/doc/html/rfc7044">RFC 7044</a>,
+              DOI 10.17487/RFC7044, February 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7044">https://www.rfc-editor.org/info/rfc7044</a>&gt;.
+
+   [<a id="ref-RFC7519">RFC7519</a>]  Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web Token
+              (JWT)&quot;, <a href="/doc/html/rfc7519">RFC 7519</a>, DOI 10.17487/RFC7519, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7519">https://www.rfc-editor.org/info/rfc7519</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8224">RFC8224</a>]  Peterson, J., Jennings, C., Rescorla, E., and C. Wendt,
+              &quot;Authenticated Identity Management in the Session
+              Initiation Protocol (SIP)&quot;, <a href="/doc/html/rfc8224">RFC 8224</a>,
+              DOI 10.17487/RFC8224, February 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8224">https://www.rfc-editor.org/info/rfc8224</a>&gt;.
+
+   [<a id="ref-RFC8225">RFC8225</a>]  Wendt, C. and J. Peterson, &quot;PASSporT: Personal Assertion
+              Token&quot;, <a href="/doc/html/rfc8225">RFC 8225</a>, DOI 10.17487/RFC8225, February 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8225">https://www.rfc-editor.org/info/rfc8225</a>&gt;.
+
+   [<a id="ref-RFC8226">RFC8226</a>]  Peterson, J. and S. Turner, &quot;Secure Telephone Identity
+              Credentials: Certificates&quot;, <a href="/doc/html/rfc8226">RFC 8226</a>,
+              DOI 10.17487/RFC8226, February 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8226">https://www.rfc-editor.org/info/rfc8226</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC5806">RFC5806</a>]  Levy, S. and M. Mohali, Ed., &quot;Diversion Indication in
+              SIP&quot;, <a href="/doc/html/rfc5806">RFC 5806</a>, DOI 10.17487/RFC5806, March 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5806">https://www.rfc-editor.org/info/rfc5806</a>&gt;.
+
+   [<a id="ref-RFC7340">RFC7340</a>]  Peterson, J., Schulzrinne, H., and H. Tschofenig, &quot;Secure
+              Telephone Identity Problem Statement and Requirements&quot;,
+              <a href="/doc/html/rfc7340">RFC 7340</a>, DOI 10.17487/RFC7340, September 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7340">https://www.rfc-editor.org/info/rfc7340</a>&gt;.
+
+   [<a id="ref-RFC8443">RFC8443</a>]  Singh, R., Dolly, M., Das, S., and A. Nguyen, &quot;Personal
+              Assertion Token (PASSporT) Extension for Resource Priority
+              Authorization&quot;, <a href="/doc/html/rfc8443">RFC 8443</a>, DOI 10.17487/RFC8443, August
+              2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8443">https://www.rfc-editor.org/info/rfc8443</a>&gt;.
+
+   [<a id="ref-RFC8816">RFC8816</a>]  Rescorla, E. and J. Peterson, &quot;Secure Telephone Identity
+              Revisited (STIR) Out-of-Band Architecture and Use Cases&quot;,
+              <a href="/doc/html/rfc8816">RFC 8816</a>, DOI 10.17487/RFC8816, February 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8816">https://www.rfc-editor.org/info/rfc8816</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Keys for Examples</span>
+
+   The following EC256 keys are used in the signing examples given in
+   this document.  WARNING: Do not use this key pair in production
+   systems.
+
+   -----BEGIN PUBLIC KEY-----
+   MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEmzGM1VsO+3IqbMF54rQMaYKQftO4
+   hUYm9wv5wutLgEd9FsiTy3+4+Wa2O7pffOXPC0QzO+yD8hGEXGP/2mZo6w==
+   -----END PUBLIC KEY-----
+
+   -----BEGIN EC PRIVATE KEY-----
+   MHcCAQEEIFKCsFZ4Wsw3ZpBxgc4Z0sOjaXDdMk07Ny1fKg6OntAkoAoGCCqGSM49
+   AwEHoUQDQgAEmzGM1VsO+3IqbMF54rQMaYKQftO4hUYm9wv5wutLgEd9FsiTy3+4
+   +Wa2O7pffOXPC0QzO+yD8hGEXGP/2mZo6w==
+   -----END EC PRIVATE KEY-----
+
+Acknowledgments
+
+   We would like to thank Ning Zhang, Dave Hancock, Chris Wendt, Sean
+   Turner, Russ Housley, Ben Campbell, Eric Burger, and Robert Sparks
+   for contributions to this document.
+
+Author&#x27;s Address
+
+   Jon Peterson
+   Neustar, Inc.
+   1800 Sutter St., Suite 570
+   Concord, CA 94520
+   United States of America
+
+   Email: jon.peterson@team.neustar
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

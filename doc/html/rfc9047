@@ -1,0 +1,747 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc9047
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-bess-evpn-na-flags/">
+  <meta name="description" content="Propagation of ARP/ND Flags in an Ethernet Virtual Private Network (EVPN) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc9047.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc9047.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc9047.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc9047.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc9047/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc9047/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/bess/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-bess-evpn-na-flags@ietf.org?subject=draft-ietf-bess-evpn-na-flags" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-bess-evpn-na-flags-09.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-bess-evpn-na-flags-09.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-bess-evpn-na-flags-09.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-bess-evpn-na-flags-09">draft-ietf-bess-evpn-na-flags-09</a>                 Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                   J. Rabadan, Ed.
+Request for Comments: 9047                                  S. Sathappan
+Category: Standards Track                                     K. Nagaraj
+ISSN: 2070-1721                                                    Nokia
+                                                                  W. Lin
+                                                                 Juniper
+                                                               June 2021
+
+
+   <span class="h1">Propagation of ARP/ND Flags in an Ethernet Virtual Private Network</span>
+                                 <span class="h1">(EVPN)</span>
+
+Abstract
+
+   This document defines an Extended Community that is advertised along
+   with an Ethernet Virtual Private Network (EVPN) Media Access Control
+   (MAC) / IP Advertisement route and carries information relevant to
+   the Address Resolution Protocol (ARP) / Neighbor Discovery (ND)
+   resolution so that an EVPN Provider Edge (PE) implementing a proxy-
+   ARP/ND function in broadcast domains (BDs) or an ARP/ND function on
+   Integrated Routing and Bridging (IRB) interfaces can reply to ARP
+   Requests or Neighbor Solicitation (NS) messages with the correct
+   information.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc9047">https://www.rfc-editor.org/info/rfc9047</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Terminology and Conventions
+   2.  The EVPN ARP/ND Extended Community
+   3.  Use of the EVPN ARP/ND Extended Community
+     3.1.  Transmission of the EVPN ARP/ND Extended Community
+     3.2.  Reception of the EVPN ARP/ND Extended Community
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   An EVPN MAC/IP Advertisement route can optionally carry IPv4 or IPv6
+   addresses associated with a MAC address.  Remote PE routers can use
+   this information to populate their ARP or ND tables on IRB interfaces
+   or their proxy-ARP/ND tables in BDs.  PEs can then reply locally (act
+   as an ARP/ND proxy, as per [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>]) to IPv4 ARP Requests and IPv6
+   Neighbor Solicitation messages and reduce or suppress the flooding
+   produced by the address resolution procedure.  However, the
+   information conveyed in the EVPN MAC/IP Advertisement route may not
+   be enough for the remote PE to reply to local ARP or ND requests.
+   For example, if a PE learns an IPv6 address and MAC address
+   combination ND entry via EVPN (denoted by IPv6-&gt;MAC), the PE would
+   not know if that particular IPv6-&gt;MAC pair belongs to a router or a
+   host or if that address is an anycast address, as this information is
+   not carried in the EVPN MAC/IP Advertisement routes.
+
+   This document defines an Extended Community that is advertised along
+   with an EVPN MAC/IP Advertisement route and carries information
+   relevant to the ARP/ND resolution so that an EVPN PE implementing a
+   proxy-ARP/ND function can reply to ARP Requests or Neighbor
+   Solicitations with the correct information.  In particular, the flags
+   defined in [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>] can now be conveyed along with a MAC/IP
+   Advertisement route so that an egress EVPN PE can issue Neighbor
+   Advertisement (NA) messages with the correct flag information.
+
+   The flags are carried in the EVPN Address Resolution Protocol and
+   Neighbor Discovery (ARP/ND) Extended Community, as described in the
+   following sections.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology and Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   EVPN:   Ethernet Virtual Private Networks, as in [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>]
+
+   BD:     Broadcast Domain, also described in [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>]
+
+   ARP:    Address Resolution Protocol
+
+   ND:     Neighbor Discovery protocol, specified in [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>]
+
+   PE:     Provider Edge router
+
+   CE:     Customer Edge router
+
+   IRB:    Integrated Routing and Bridging interface
+
+   Proxy-ARP/ND:  A function on the EVPN PEs by which received ARP
+           Requests or NS messages are replied to locally by the PE,
+           without the need to flood the requests to remote PEs in the
+           BD.  In order to reply to ARP Requests or NS messages, the PE
+           does a lookup on an ARP/ND table, which is a collection of
+           IP-&gt;MAC entries learned by the PE.
+
+   IP-&gt;MAC:  An IP address and MAC address combination that represents a
+           given host and is added to an ARP table or ND table.  This
+           document uses IP-&gt;MAC generically for IPv4 and IPv6
+           addresses.  When something is specific to IPv4, the document
+           will use IPv4-&gt;MAC; likewise, IPv6-&gt;MAC will be used when
+           something is specific to IPv6 entries only.
+
+   Familiarity with the terminology in [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>] and [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>] is
+   expected.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  The EVPN ARP/ND Extended Community</span>
+
+   This document defines a transitive EVPN Extended Community (Type
+   field value of 0x06) with a Sub-Type of 0x08, as allocated by IANA.
+   It is advertised along with EVPN MAC/IP Advertisement routes that
+   carry an IPv4 or IPv6 address.
+
+     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    | Type=0x06     | Sub-Type=0x08 |Flags (1 octet)| Reserved=0    |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                       Reserved=0                              |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+    Flags field:
+
+     0 1 2 3 4 5 6 7
+    +-+-+-+-+-+-+-+-+
+    |       |I| |O|R|
+    +-+-+-+-+-+-+-+-+
+
+   The following flags are defined in the Flags field, the third octet
+   of the Extended Community:
+
+   R:   Router flag (corresponds to Bit 23 of the Extended Community)
+
+        Bit 7 of the Flags field is defined as the &quot;Router flag&quot;.  When
+        set, the R flag indicates that the IPv6-&gt;MAC pair advertised in
+        the MAC/IP Advertisement route, along with the Extended
+        Community, belongs to an IPv6 router.  If the R flag is zero,
+        the IPv6-&gt;MAC pair belongs to a host.  The receiving PE
+        implementing the ND function will use this information in
+        Neighbor Advertisement messages for the associated IPv6 address.
+        This flag has no meaning for ARP IPv4-&gt;MAC entries and MUST be
+        ignored when the Extended Community is received with an EVPN
+        MAC/IP Advertisement route for an IPv4-&gt;MAC pair.
+
+   O:   Override flag (corresponds to Bit 22 of the Extended Community)
+
+        Bit 6 of the Flags field is defined as the &quot;Override flag&quot;.  An
+        egress PE will normally advertise IPv6-&gt;MAC pairs with the O
+        flag set, and only when IPv6 &quot;anycast&quot; is enabled in the BD or
+        interface will the PE send an IPv6-&gt;MAC pair with the O flag =
+        0.  The ingress PE will install the ND entry with the received O
+        flag and will always use this O flag value when replying to a
+        Neighbor Solicitation for the IPv6 address.  Similarly to the
+        Router Flag, the Override flag has no meaning for ARP IPv4-&gt;MAC
+        entries and MUST be ignored when the Extended Community is
+        received with an EVPN MAC/IP Advertisement route for an
+        IPv4-&gt;MAC pair.
+
+   I:   Immutable ARP/ND Binding flag (corresponds to Bit 20 of the
+        Extended Community)
+
+        Bit 4 of the Flags field is defined as the &quot;Immutable ARP/ND
+        Binding flag&quot;.  When set, the egress PE indicates that the
+        IP-&gt;MAC pair that was sent in an EVPN MAC/IP Advertisement route
+        (along with the Extended Community) is a configured ARP/ND
+        entry.  In this case, the IP address in the EVPN MAC/IP
+        Advertisement route can only be bound together with the MAC
+        address specified in the same route, and not with any other MAC
+        addresses received in a different route without the I flag set.
+
+   Bits 0-3 and 5 are not assigned by this document.  They MUST be set
+   to zero and ignored on receipt.
+
+   The reserved fields are set to 0 and ignored by the receiver.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Use of the EVPN ARP/ND Extended Community</span>
+
+   This section describes the relevant procedures when advertising and
+   processing the EVPN ARP/ND Extended Community.  In all the procedures
+   below, a &quot;PE&quot; must be interpreted as a &quot;PE that supports the proxy-
+   ARP/ND (introduced by [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>]) and implements the propagation of
+   the ARP/ND flags that this document specifies&quot;.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Transmission of the EVPN ARP/ND Extended Community</span>
+
+   When an IP-&gt;MAC entry is not learned via EVPN, a PE may learn IP-&gt;MAC
+   pairs in the management plane (this will create static entries in the
+   ARP/ND or proxy-ARP/ND table) or by snooping ARP or NA messages
+   coming from the CE (this will create dynamic entries).  Those static
+   and dynamic IP-&gt;MAC entries will be advertised in EVPN MAC/IP
+   Advertisement routes that use the EVPN ARP/ND Extended Community as
+   follows:
+
+   *  Advertised MAC/IP Advertisement routes for IPv6-&gt;MAC entries MUST
+      include one (and only one) ARP/ND Extended Community with the R
+      and O flag values associated with the entry.  Those flag values
+      are either dynamically learned (from NA messages) or configured in
+      case of static entries.
+
+   *  MAC/IP Advertisement routes for IPv4-&gt;MAC entries MAY include one
+      ARP/ND Extended Community.  If the EVPN ARP/ND Extended Community
+      is advertised along with an EVPN IPv4/MAC Advertisement route, the
+      R and O flags SHOULD be set to zero.
+
+   *  If an IP-&gt;MAC pair is static (it has been configured), the
+      corresponding MAC/IP Advertisement route MUST be sent along with
+      an ARP/ND Extended Community with the I flag set.
+
+   *  This Extended Community does not change the procedures described
+      in [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>].  Specifically, the procedures for advertising the
+      MAC Mobility Extended Community along with the MAC/IP
+      Advertisement route are not changed.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Reception of the EVPN ARP/ND Extended Community</span>
+
+   In addition to the procedures specified in [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>], a PE receiving
+   a MAC/IP Advertisement route will process the EVPN ARP/ND Extended
+   Community as follows:
+
+   *  Only one EVPN ARP/ND Extended Community is expected to be received
+      along with an EVPN MAC/IP Advertisement route.  If more than one
+      ARP/ND Extended Community is received, the PE MUST consider only
+      the first one on the list for processing purposes and MUST NOT
+      propagate the rest of the ARP/ND Extended Communities.
+
+   *  The R, O, and I flags MUST be ignored if they are advertised along
+      with an EVPN MAC/IP Advertisement route that does not contain an
+      IP (IPv4 or IPv6) address.  Otherwise, they are processed as
+      follows.
+
+   *  R and O flag processing:
+
+      -  If the EVPN MAC/IP Advertisement route contains an IPv6 address
+         and the EVPN ARP/ND Extended Community, the PE MUST add the R
+         and O flag values to the ND entry in the ND or proxy-ND table
+         and propagate the value of the R and O flags from the ARP/ND
+         Extended Community to the Neighbor Advertisements when replying
+         to a solicitation for the IPv6 address.
+
+      -  If no EVPN ARP/ND Extended Community is received along with the
+         route, the PE will add the default R and O flags to the entry.
+         The default R flag SHOULD be an administrative choice.  The
+         default O flag SHOULD be 1.
+
+      -  A PE MUST ignore the received R and O flags for an EVPN MAC/IP
+         Advertisement route that contains an IPv4-&gt;MAC pair.
+
+   *  I flag processing:
+
+      -  A PE receiving an EVPN MAC/IP Advertisement route containing an
+         IP-&gt;MAC and the I flag set SHOULD install the IP-&gt;MAC entry in
+         the ARP/ND or proxy-ARP/ND table as an &quot;immutable binding&quot;.
+         This immutable binding entry will override an existing non-
+         immutable binding for the same IP-&gt;MAC.  The absence of the
+         EVPN ARP/ND Extended Community in a MAC/IP Advertisement route
+         indicates that the IP-&gt;MAC entry is not an &quot;immutable binding&quot;.
+
+      -  Receiving multiple EVPN MAC/IP Advertisement routes with the I
+         flag set to 1 for the same IP but a different MAC address is
+         considered a misconfiguration or a transient error condition.
+         If this happens in the network, a PE receiving multiple routes
+         (with the I flag set to 1 for the same IP and a different MAC
+         address) SHOULD update the IP-&gt;MAC entry with the latest
+         received information.  Note that if a configured IP1-&gt;MAC1
+         changes to point to a new MAC address, i.e., IP1-&gt;MAC2, the
+         EVPN MAC/IP Advertisement route for IP1-&gt;MAC1 will be withdrawn
+         before the EVPN MAC/IP Advertisement route for IP1-&gt;MAC2 is
+         advertised.
+
+      -  A PE originating an EVPN MAC/IP Advertisement route for
+         IP1-&gt;MAC1 with the I flag set to 1 MAY also originate the route
+         with the &quot;Sticky/static flag&quot; set (in the MAC Mobility Extended
+         Community).  In such a case, the IP1-&gt;MAC1 binding is not only
+         immutable but it cannot move as well.  Even so, if an update
+         for the same immutable and static IP1-&gt;MAC1 is received from a
+         different PE, one of the two routes will be selected.  This is
+         analogous to the case described in <a href="/doc/html/rfc7432#section-15.2">Section&nbsp;15.2 of [RFC7432]</a>
+         when two MAC/IP routes with the static flag set are received,
+         and the PE likewise MUST alert the operator of such a
+         situation.
+
+   In a situation where a host (with an IP-&gt;MAC that is configured as
+   immutable binding in the attached PE) is allowed to move between PEs
+   (that is, the associated MAC is non-static), PEs can receive multiple
+   MAC/IP Advertisement routes for the same IP-&gt;MAC.  In such
+   situations, MAC mobility procedures as in [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>] dictate the
+   reachability of the MAC.
+
+   As an example of the use of the I flag, consider PE1, PE2, and PE3
+   attached to the same BD.  PE1 originates an EVPN MAC/IP Advertisement
+   route for IP1-&gt;MAC1 with the I flag set to 1 later on, PE2 also
+   originates an EVPN MAC/IP Advertisement route IP1-&gt;MAC1 with a higher
+   sequence number and the I flag set to 1.  Then all the EVPN PEs
+   attached to the same BD SHOULD retain their IP1-&gt;MAC1 ARP/ND binding
+   but update MAC1&#x27;s forwarding destination to PE2.  For some reason, if
+   PE3 originates an EVPN MAC/IP Advertisement route for IP1-&gt;MAC2 with
+   the I flag set to 0 (even with a higher sequence number), then the
+   EVPN PEs in the BD will not update their IP1-&gt;MAC1 ARP/ND bindings
+   since IP1 is bound to MAC1 (MAC2 SHOULD still be programmed in the
+   Layer 2 BDs).  This is considered a misconfiguration in PE3.
+
+   When the I flag is set to 1, a given IP is assumed to be always bound
+   to the same MAC address; therefore, the mobility procedures described
+   in [<a href="#ref-EXTENDED-MOBILITY">EXTENDED-MOBILITY</a>] for &quot;Host IP move to a new MAC&quot; will not
+   apply.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   The same security considerations described in [<a href="/doc/html/rfc7432" title="&quot;BGP MPLS-Based Ethernet VPN&quot;">RFC7432</a>] apply to this
+   document.  In general, it is worth noting that the use of proxy-ARP/
+   ND in EVPN BDs may add some security risks.  Attackers can make use
+   of ARP/ND messages to create state in all the PEs attached to the
+   same BD as the attacker and exhaust resources in those PEs.
+   Therefore, additional security mechanisms may be needed.  Some
+   examples of such additional security mechanisms are limiting the
+   number of proxy-ARP/ND entries per BD and/or per port or closely
+   monitoring the rate at which hosts create dynamic proxy-ARP/ND
+   entries.
+
+   In addition, this document adds pieces of information that impact the
+   way ARP/ND entries are installed in ARP/ND and/or proxy-ARP/ND tables
+   and, therefore, impacts the resolution protocols for IPv4 and IPv6
+   addresses.  For instance, if a given IPv6-&gt;MAC binding is configured
+   with the wrong R or O flags (intentionally or not) on a given PE, the
+   rest of the PEs attached to the same BD will install the wrong
+   information for the IPv6-&gt;MAC.  This will cause all the PEs in the BD
+   to reply to Neighbor Solicitations for the IPv6 with NA messages
+   containing the wrong R and O flags.  For example, as specified in
+   [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>], the receiver of an NA message with O not set will not
+   update its existing cache entry for the IP-&gt;MAC; hence, the
+   communication between the owner of the IP address and the receiver of
+   the NA message with the wrong O flag will fail.  Similarly, the
+   receiver of an NA message with the wrong R flag may update its
+   Default Router List by incorrectly adding or removing an entry, which
+   could, for example, lead to sending traffic to a node that is not a
+   router, causing the traffic to be dropped.
+
+   The I flag, or Immutable ARP/ND Binding flag, is a useful security
+   tool, allowing an operator to ensure a given IP address is always
+   bound to the same MAC and that information is distributed to all the
+   PEs attached to the same BD.  ARP/ND spoofing attacks, in which a
+   malicious host injects Gratuitous ARPs or unsolicited NAs for that IP
+   address with a different MAC address, will not succeed in programming
+   the ARP/ND and proxy-ARP/ND tables and therefore the spoofer will not
+   receive the traffic.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA has changed the name for Sub-Type Value 0x08 in the &quot;EVPN
+   Extended Community Sub-Types&quot; registry [<a href="#ref-IANA-BGP-EXT-COMM">IANA-BGP-EXT-COMM</a>] to the
+   following:
+
+        +================+===========================+===========+
+        | Sub-Type Value | Name                      | Reference |
+        +================+===========================+===========+
+        | 0x08           | ARP/ND Extended Community | <a href="/doc/html/rfc9047">RFC 9047</a>  |
+        +----------------+---------------------------+-----------+
+
+          Table 1: Updated Value in the &quot;EVPN Extended Community
+                           Sub-Types&quot; Registry
+
+   IANA has created the &quot;ARP/ND Extended Community Flags&quot; registry,
+   where the following initial allocations have been made:
+
+     +===============+===================================+===========+
+     | Flag Position | Name                              | Reference |
+     +===============+===================================+===========+
+     | 0-3           | Unassigned                        |           |
+     +---------------+-----------------------------------+-----------+
+     | 4             | Immutable ARP/ND Binding Flag (I) | <a href="/doc/html/rfc9047">RFC 9047</a>  |
+     +---------------+-----------------------------------+-----------+
+     | 5             | Unassigned                        |           |
+     +---------------+-----------------------------------+-----------+
+     | 6             | Override Flag (O)                 | <a href="/doc/html/rfc9047">RFC 9047</a>  |
+     +---------------+-----------------------------------+-----------+
+     | 7             | Router Flag (R)                   | <a href="/doc/html/rfc9047">RFC 9047</a>  |
+     +---------------+-----------------------------------+-----------+
+
+         Table 2: Initial Values of the &quot;ARP/ND Extended Community
+                              Flags&quot; Registry
+
+   The registration policy for this registry is Standards Action
+   [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  This registry is located in the &quot;Border Gateway Protocol
+   (BGP) Extended Communities&quot; registry [<a href="#ref-IANA-BGP-EXT-COMM">IANA-BGP-EXT-COMM</a>].
+
+   Note that the flag position 5 is left unassigned and not used in this
+   specification since it was previously requested by
+   [<a href="#ref-EVPN-IP-MAC-PROXY">EVPN-IP-MAC-PROXY</a>].
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC4861">RFC4861</a>]  Narten, T., Nordmark, E., Simpson, W., and H. Soliman,
+              &quot;Neighbor Discovery for IP version 6 (IPv6)&quot;, <a href="/doc/html/rfc4861">RFC 4861</a>,
+              DOI 10.17487/RFC4861, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4861">https://www.rfc-editor.org/info/rfc4861</a>&gt;.
+
+   [<a id="ref-RFC7432">RFC7432</a>]  Sajassi, A., Ed., Aggarwal, R., Bitar, N., Isaac, A.,
+              Uttaro, J., Drake, J., and W. Henderickx, &quot;BGP MPLS-Based
+              Ethernet VPN&quot;, <a href="/doc/html/rfc7432">RFC 7432</a>, DOI 10.17487/RFC7432, February
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7432">https://www.rfc-editor.org/info/rfc7432</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-EVPN-IP-MAC-PROXY">EVPN-IP-MAC-PROXY</a>]
+              Bickhart, R., Lin, W., Drake, J., Rabadan, J., and A. Lo,
+              &quot;Proxy IP-&gt;MAC Advertisement in EVPNs&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-rbickhart-evpn-ip-mac-proxy-adv-01">draft-rbickhart-evpn-ip-mac-proxy-adv-01</a>,
+              24 January 2020, &lt;<a href="https://tools.ietf.org/html/draft-rbickhart-evpn-ip-mac-proxy-adv-01">https://tools.ietf.org/html/draft-</a>
+              <a href="https://tools.ietf.org/html/draft-rbickhart-evpn-ip-mac-proxy-adv-01">rbickhart-evpn-ip-mac-proxy-adv-01</a>&gt;.
+
+   [<a id="ref-EXTENDED-MOBILITY">EXTENDED-MOBILITY</a>]
+              Malhotra, N., Ed., Sajassi, A., Pattekar, A., Lingala, A.,
+              Rabadan, J., and J. Drake, &quot;Extended Mobility Procedures
+              for EVPN-IRB&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-bess-evpn-irb-extended-mobility-05">draft-</a>
+              <a href="/doc/html/draft-ietf-bess-evpn-irb-extended-mobility-05">ietf-bess-evpn-irb-extended-mobility-05</a>, 15 March 2021,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-bess-evpn-irb-extended-mobility-05">https://tools.ietf.org/html/draft-ietf-bess-evpn-irb-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-bess-evpn-irb-extended-mobility-05">extended-mobility-05</a>&gt;.
+
+   [<a id="ref-IANA-BGP-EXT-COMM">IANA-BGP-EXT-COMM</a>]
+              IANA, &quot;Border Gateway Protocol (BGP) Extended
+              Communities&quot;, &lt;<a href="https://www.iana.org/assignments/bgp-extended-communities">https://www.iana.org/assignments/bgp-</a>
+              <a href="https://www.iana.org/assignments/bgp-extended-communities">extended-communities</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+Acknowledgments
+
+   The authors would like to thank Ali Sajassi for his feedback.
+
+Authors&#x27; Addresses
+
+   Jorge Rabadan (editor)
+   Nokia
+   777 Middlefield Road
+   Mountain View, CA 94043
+   United States of America
+
+   Email: jorge.rabadan@nokia.com
+
+
+   Senthil Sathappan
+   Nokia
+   701 E. Middlefield Road
+   Mountain View, CA 94043
+   United States of America
+
+   Email: senthil.sathappan@nokia.com
+
+
+   Kiran Nagaraj
+   Nokia
+   701 E. Middlefield Road
+   Mountain View, CA 94043
+   United States of America
+
+   Email: kiran.nagaraj@nokia.com
+
+
+   Wen Lin
+   Juniper Networks
+
+   Email: wlin@juniper.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

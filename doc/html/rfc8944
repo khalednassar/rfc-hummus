@@ -1,0 +1,1850 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8944
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-i2rs-yang-l2-network-topology/">
+  <meta name="description" content="A YANG Data Model for Layer 2 Network Topologies (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8944.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8944.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8944.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8944.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8944/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8944/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/i2rs/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-i2rs-yang-l2-network-topology@ietf.org?subject=draft-ietf-i2rs-yang-l2-network-topology" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-i2rs-yang-l2-network-topology-18.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-i2rs-yang-l2-network-topology-18.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-i2rs-yang-l2-network-topology-18.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-i2rs-yang-l2-network-topology-18">draft-ietf-i2rs-yang-l2-network-topology-18</a>      Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                           J. Dong
+Request for Comments: 8944                                        X. Wei
+Category: Standards Track                                          Q. Wu
+ISSN: 2070-1721                                                   Huawei
+                                                            M. Boucadair
+                                                                  Orange
+                                                                  A. Liu
+                                                                  Tecent
+                                                           November 2020
+
+
+            <span class="h1">A YANG Data Model for Layer 2 Network Topologies</span>
+
+Abstract
+
+   This document defines a YANG data model for Layer 2 network
+   topologies.  In particular, this data model augments the generic
+   network and network topology data models with topology attributes
+   that are specific to Layer 2.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8944">https://www.rfc-editor.org/info/rfc8944</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Layer 2 Topology Model
+   4.  Layer 2 Topology YANG Module
+   5.  IANA Considerations
+   6.  Security Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Companion YANG Module for Non-NMDA-Compliant
+           Implementations
+   <a href="#appendix-B">Appendix B</a>.  An Example
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a id="ref-RFC8345">RFC8345</a>] defines the YANG [<a href="/doc/html/rfc6020" title="&quot;YANG - A Data Modeling Language for the Network Configuration Protocol (NETCONF)&quot;">RFC6020</a>] [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>] data models of the
+   abstract (generic) network and network topology.  Such models can be
+   augmented with technology-specific details to build more specific
+   topology models.
+
+   This document defines the YANG data model for Layer 2 (L2) network
+   topologies by augmenting the generic network (<a href="/doc/html/rfc8345#section-6.1">Section&nbsp;6.1 of
+   [RFC8345]</a>) and network topology (<a href="/doc/html/rfc8345#section-6.2">Section&nbsp;6.2 of [RFC8345]</a>) data
+   models with L2-specific topology attributes.  An example is provided
+   in <a href="#appendix-B">Appendix B</a>.
+
+   There are multiple applications for such a data model.  For example,
+   within the context of Interface to the Routing System (I2RS), nodes
+   within the network can use the data model to capture their
+   understanding of the overall network topology and expose it to a
+   network controller.  A network controller can then use the
+   instantiated topology data to compare and reconcile its own view of
+   the network topology with that of the network elements that it
+   controls.  Alternatively, nodes within the network may compare and
+   reconcile this understanding either among themselves or with the help
+   of a controller.  Beyond the network element and the immediate
+   context of I2RS itself, a network controller might even use the data
+   model to represent its view of the topology that it controls and
+   expose it to external applications.  Further use cases where the data
+   model can be applied are described in [<a href="#ref-I2RS-UR" title="&quot;Summary of I2RS Use Case Requirements&quot;">I2RS-UR</a>].
+
+   This document uses the common YANG types defined in [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>] and
+   adopts the Network Management Datastore Architecture (NMDA)
+   [<a href="/doc/html/rfc8342" title="&quot;Network Management Datastore Architecture (NMDA)&quot;">RFC8342</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   The terminology for describing YANG modules is defined in [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>].
+   The meanings of the symbols used in the tree diagram are defined in
+   [<a href="/doc/html/rfc8340" title="&quot;YANG Tree Diagrams&quot;">RFC8340</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Layer 2 Topology Model</span>
+
+   The Layer 2 network topology YANG module is designed to be generic
+   and applicable to Layer 2 networks built with different Layer 2
+   technologies.  It can be used to describe both the physical and the
+   logical (virtual) Layer 2 network topologies.
+
+   The relationship between the Layer 2 topology module and the generic
+   network and network topology module is shown in Figure 1.  In order
+   to represent a Layer 2 network topology, the generic network and
+   topology models are augmented with L2-specific information, such as
+   the identifiers, identities (e.g., Provider Backbone Bridging
+   [<a href="#ref-IEEE802.1ah">IEEE802.1ah</a>], QinQ [<a href="#ref-IEEE802.1ad">IEEE802.1ad</a>], or Virtual eXtensible Local Area
+   Network (VXLAN) [<a href="/doc/html/rfc7348" title="&quot;Virtual eXtensible Local Area Network (VXLAN): A Framework for Overlaying Virtualized Layer 2 Networks over Layer 3 Networks&quot;">RFC7348</a>]), attributes, and states of the Layer 2
+   networks, nodes, links, and termination points.  Some of the
+   information may be collected via Link Layer Discovery Protocol (LLDP)
+   [<a href="#ref-IEEE802.1AB">IEEE802.1AB</a>] or other Layer 2 protocols, and some of them may be
+   locally configured.
+
+
+                          +---------------------+
+                          |    ietf-network     |
+                          +----------^----------+
+                                     |
+                                     |
+                          +---------------------+
+                          |ietf-network-topology|
+                          +----------^----------+
+                                     |
+                                     |
+                          +----------^----------+
+                          |   ietf-l2-topology  |
+                          +---------------------+
+
+              Figure 1: Layer 2 Topology YANG Module Structure
+
+   The structure of the &quot;ietf-l2-topology&quot; YANG module is depicted in
+   the following tree diagram:
+
+   module: ietf-l2-topology
+     augment /nw:networks/nw:network/nw:network-types:
+       +--rw l2-topology!
+     augment /nw:networks/nw:network:
+       +--rw l2-topology-attributes
+          +--rw name?    string
+          +--rw flags*   l2-flag-type
+     augment /nw:networks/nw:network/nw:node:
+       +--rw l2-node-attributes
+          +--rw name?                 string
+          +--rw flags*                node-flag-type
+          +--rw bridge-id*            string
+          +--rw management-address*   inet:ip-address
+          +--rw management-mac?       yang:mac-address
+          +--rw management-vlan?      string
+     augment /nw:networks/nw:network/nt:link:
+       +--rw l2-link-attributes
+          +--rw name?        string
+          +--rw flags*       link-flag-type
+          +--rw rate?        uint64
+          +--rw delay?       uint32
+          +--rw auto-nego?   boolean
+          +--rw duplex?      duplex-mode
+     augment /nw:networks/nw:network/nw:node/nt:termination-point:
+       +--rw l2-termination-point-attributes
+          +--rw interface-name?       string
+          +--rw mac-address?          yang:mac-address
+          +--rw port-number*          uint32
+          +--rw unnumbered-id*        uint32
+          +--rw encapsulation-type?   identityref
+          +--rw outer-tag?            dot1q-types:vid-range-type {VLAN}?
+          +--rw outer-tpid?           dot1q-types:dot1q-tag-type {QinQ}?
+          +--rw inner-tag?            dot1q-types:vid-range-type {VLAN}?
+          +--rw inner-tpid?           dot1q-types:dot1q-tag-type {QinQ}?
+          +--rw lag?                  boolean
+          +--rw member-link-tp*
+                 -&gt; /nw:networks/network/node/nt:termination-point/tp-id
+          +--rw vxlan {VXLAN}?
+             +--rw vni-id?   vni
+
+     notifications:
+       +---n l2-node-event
+       |  +--ro event-type?           l2-network-event-type
+       |  +--ro node-ref?
+                         -&gt; /nw:networks/network[nw:network-id=current()
+                            /../network-ref]/node/node-id
+       |  +--ro network-ref?          -&gt; /nw:networks/network/network-id
+       |  +--ro l2-topology!
+       |  +--ro l2-node-attributes
+       |     +--ro name?                 string
+       |     +--ro flags*                node-flag-type
+       |     +--ro bridge-id*            uint64
+       |     +--ro management-address*   inet:ip-address
+       |     +--ro management-mac?       yang:mac-address
+       |     +--ro management-vlan?      string
+       +---n l2-link-event
+       |  +--ro event-type?           l2-network-event-type
+       |  +--ro link-ref?
+                         -&gt; /nw:networks/network[nw:network-id=current()
+                            /../network-ref]/nt:link/link-id
+       |  +--ro network-ref?          -&gt; /nw:networks/network/network-id
+       |  +--ro l2-topology!
+       |  +--ro l2-link-attributes
+       |     +--ro name?        string
+       |     +--ro flags*       link-flag-type
+       |     +--ro rate?        uint64
+       |     +--ro delay?       uint32
+       |     +--ro auto-nego?   boolean
+       |     +--ro duplex?      duplex-mode
+       +---n l2-termination-point-event
+          +--ro event-type?                        l2-network-event-type
+          +--ro tp-ref?
+                         -&gt; /nw:networks/network[nw:network-id=current()
+                            /../network-ref]/node[nw:node-id=current()
+                            /../node-ref]/nt:termination-point/tp-id
+          +--ro node-ref?
+                         -&gt; /nw:networks/network[nw:network-id=current()
+                            /../network-ref]/node/node-id
+          +--ro network-ref?          -&gt; /nw:networks/network/network-id
+          +--ro l2-topology!
+          +--ro l2-termination-point-attributes
+             +--ro interface-name?       string
+             +--ro mac-address?          yang:mac-address
+             +--ro port-number*          uint32
+             +--ro unnumbered-id*        uint32
+             +--ro encapsulation-type?   identityref
+             +--ro outer-tag?         dot1q-types:vid-range-type {VLAN}?
+             +--ro outer-tpid?        dot1q-types:dot1q-tag-type {QinQ}?
+             +--ro inner-tag?         dot1q-types:vid-range-type {VLAN}?
+             +--ro inner-tpid?        dot1q-types:dot1q-tag-type {QinQ}?
+             +--ro lag?               boolean
+             +--ro member-link-tp*
+                 -&gt; /nw:networks/network/node/nt:termination-point/tp-id
+             +--ro vxlan {VXLAN}?
+                +--ro vni-id?   vni
+
+   The Layer 2 Topology YANG module augments the &quot;ietf-network&quot; and
+   &quot;ietf-network-topology&quot; YANG modules as follows:
+
+   *  A new network type &quot;l2-network-type&quot; is introduced.  This is
+      represented by a container object and is inserted under the
+      &quot;network-types&quot; container of the generic &quot;ietf-network&quot; module
+      defined in <a href="/doc/html/rfc8345#section-6.1">Section&nbsp;6.1 of [RFC8345]</a>.
+
+   *  Additional network attributes are introduced in a grouping &quot;l2-
+      network-attributes&quot;, which augments the &quot;network&quot; list of the
+      &quot;ietf-network&quot; module.  The attributes include the Layer 2 network
+      name and a set of flags.  Each type of flag is represented by a
+      separate identity.
+
+   *  Additional data objects for Layer 2 nodes are introduced by
+      augmenting the &quot;node&quot; list of the generic &quot;ietf-network&quot; module.
+      New objects include the Layer 2 node identifier, management
+      address, management MAC address, management VLAN, and a set of
+      flags.
+
+   *  Additional data objects for Layer 2 termination points are
+      introduced by augmenting the &quot;termination-point&quot; list of the
+      &quot;ietf-network-topology&quot; module defined in <a href="/doc/html/rfc8345#section-6.2">Section&nbsp;6.2 of
+      [RFC8345]</a>.  New objects include the interface name, encapsulation
+      type, lag support indication, and attributes that are specific to
+      the Layer 2 termination point type.
+
+   *  Links in the &quot;ietf-network-topology&quot; module are augmented as well
+      with a set of Layer 2 parameters, allowing to associate a link
+      with a name, a set of Layer 2 link attributes, and flags.
+
+   *  Some optional Layer 2 technology-specific attributes are
+      introduced in this module as Layer 2 features because these
+      attributes may be useful to expose to above services/applications.
+      Note that learning or configuring advanced Layer 2 technology-
+      specific attributes is not within the scope of the Layer 2
+      Topology YANG module; dedicated YANG modules should be used
+      instead (e.g., [<a href="#ref-TRILL-YANG">TRILL-YANG</a>]).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Layer 2 Topology YANG Module</span>
+
+   This module uses types defined in [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>], [<a href="/doc/html/rfc7224" title="&quot;IANA Interface Type YANG Module&quot;">RFC7224</a>],
+   [<a href="#ref-IEEE802.1Qcp">IEEE802.1Qcp</a>], and [<a href="/doc/html/rfc8345" title="&quot;A YANG Data Model for Network Topologies&quot;">RFC8345</a>].  It also references [<a href="#ref-IEEE802.1Q-2014">IEEE802.1Q-2014</a>],
+   [<a href="#ref-IEEE802.1ad">IEEE802.1ad</a>], [<a href="/doc/html/rfc7348" title="&quot;Virtual eXtensible Local Area Network (VXLAN): A Framework for Overlaying Virtualized Layer 2 Networks over Layer 3 Networks&quot;">RFC7348</a>], and [<a href="/doc/html/rfc7727" title="&quot;Spanning Tree Protocol (STP) Application of the Inter-Chassis Communication Protocol (ICCP)&quot;">RFC7727</a>].
+
+   &lt;CODE BEGINS&gt; file &quot;ietf-l2-topology@2020-11-15.yang&quot;
+   module ietf-l2-topology {
+     yang-version 1.1;
+     namespace &quot;urn:ietf:params:xml:ns:yang:ietf-l2-topology&quot;;
+     prefix l2t;
+
+     import ietf-network {
+       prefix nw;
+       reference
+         &quot;<a href="/doc/html/rfc8345">RFC 8345</a>: A YANG Data Model for Network Topologies&quot;;
+     }
+     import ietf-network-topology {
+       prefix nt;
+       reference
+         &quot;<a href="/doc/html/rfc8345">RFC 8345</a>: A YANG Data Model for Network Topologies&quot;;
+     }
+     import ietf-inet-types {
+       prefix inet;
+       reference
+         &quot;<a href="/doc/html/rfc6991">RFC 6991</a>:Common YANG Data Types&quot;;
+     }
+     import ietf-yang-types {
+       prefix yang;
+       reference
+         &quot;<a href="/doc/html/rfc6991">RFC 6991</a>:Common YANG Data Types&quot;;
+     }
+     import iana-if-type {
+       prefix ianaift;
+       reference
+         &quot;<a href="/doc/html/rfc7224">RFC 7224</a>: IANA Interface Type YANG Module&quot;;
+     }
+     import ieee802-dot1q-types {
+       prefix dot1q-types;
+       reference
+         &quot;IEEE Std 802.1Qcp-2018: Bridges and Bridged
+          Networks - Amendment: YANG Data Model&quot;;
+     }
+
+     organization
+       &quot;IETF I2RS (Interface to the Routing System) Working Group&quot;;
+     contact
+       &quot;WG Web:   &lt;<a href="https://datatracker.ietf.org/wg/i2rs">https://datatracker.ietf.org/wg/i2rs</a>&gt;
+        WG List:  &lt;mailto:i2rs@ietf.org&gt;
+
+        Editor:    Jie Dong
+                  &lt;mailto:jie.dong@huawei.com&gt;
+
+        Editor:    Xiugang Wei
+                  &lt;mailto:weixiugang@huawei.com&gt;
+
+        Editor:    Qin Wu
+                  &lt;mailto:bill.wu@huawei.com&gt;
+
+        Editor:    Mohamed Boucadair
+                  &lt;mailto:mohamed.boucadair@orange.com&gt;
+
+        Editor:    Anders Liu
+                  &lt;mailto:andersliu@tencent.com&gt;&quot;;
+     description
+       &quot;This module defines a basic model for the Layer 2 topology
+        of a network.
+
+        Copyright (c) 2020 IETF Trust and the persons identified as
+        authors of the code.  All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD License
+        set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+        Relating to IETF Documents
+        (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>).
+
+        This version of this YANG module is part of <a href="/doc/html/rfc8944">RFC 8944</a>; see
+        the RFC itself for full legal notices.&quot;;
+
+     revision 2020-11-15 {
+       description
+         &quot;Initial revision.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8944">RFC 8944</a>: A YANG Data Model for Layer 2 Network Topologies&quot;;
+     }
+
+     feature VLAN {
+       description
+         &quot;Enables VLAN tag support as defined in IEEE 802.1Q.&quot;;
+       reference
+         &quot;IEEE Std 802.1Q-2014: Bridges and Bridged Networks&quot;;
+     }
+
+     feature QinQ {
+       description
+         &quot;Enables QinQ double tag support as defined in IEEE 802.1ad.&quot;;
+       reference
+         &quot;IEEE Std 802.1ad: Provider Bridges&quot;;
+     }
+
+     feature VXLAN {
+       description
+         &quot;Enables VXLAN support as defined in <a href="/doc/html/rfc7348">RFC 7348</a>.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc7348">RFC 7348</a>: Virtual eXtensible Local Area Network (VXLAN):
+                    A Framework for Overlaying Virtualized Layer 2
+                    Networks over Layer 3 Networks&quot;;
+     }
+
+     identity flag-identity {
+       description
+         &quot;Base type for flags.&quot;;
+     }
+
+     identity eth-encapsulation-type {
+       base ianaift:iana-interface-type;
+       description
+         &quot;Base identity from which specific Ethernet
+          encapsulation types are derived.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc7224">RFC 7224</a>: IANA Interface Type YANG Module&quot;;
+     }
+
+     identity ethernet {
+       base eth-encapsulation-type;
+       description
+         &quot;Native Ethernet encapsulation.&quot;;
+     }
+
+     identity vlan {
+       base eth-encapsulation-type;
+       description
+         &quot;VLAN encapsulation.&quot;;
+     }
+
+     identity qinq {
+       base eth-encapsulation-type;
+       description
+         &quot;QinQ encapsulation.&quot;;
+     }
+
+     identity pbb {
+       base eth-encapsulation-type;
+       description
+         &quot;Provider Backbone Bridging (PBB) encapsulation.
+          The PBB functions are developed in IEEE 802.1ah.&quot;;
+     }
+
+     identity trill {
+       base eth-encapsulation-type;
+       description
+         &quot;Transparent Interconnection of Lots of Links (TRILL)
+          encapsulation.&quot;;
+     }
+
+     identity vpls {
+       base eth-encapsulation-type;
+       description
+         &quot;Ethernet Virtual Private LAN Service (VPLS)
+          interface encapsulation.&quot;;
+     }
+
+     identity vxlan {
+       base eth-encapsulation-type;
+       description
+         &quot;VXLAN Media Access Control (MAC) in UDP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc7348">RFC 7348</a>: Virtual eXtensible Local Area  Network (VXLAN):
+                    A Framework for Overlaying Virtualized Layer 2
+                    Networks over Layer 3 Networks&quot;;
+     }
+
+     typedef vni {
+       type uint32 {
+         range &quot;0..16777215&quot;;
+       }
+       description
+         &quot;VXLAN Network Identifier or VXLAN Segment ID.
+          It allows up to 16 M VXLAN segments to coexist
+          within the same administrative domain.
+
+          The use of value &#x27;0&#x27; is implementation specific.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc7348">RFC 7348</a>: Virtual eXtensible Local Area  Network (VXLAN):
+                    A Framework for Overlaying Virtualized Layer 2
+                    Networks over Layer 3 Networks&quot;;
+     }
+
+     typedef l2-flag-type {
+       type identityref {
+         base flag-identity;
+       }
+       description
+         &quot;Base type for L2 flags. One example of L2 flag
+          type is trill, which represents the trill topology
+          type.&quot;;
+     }
+
+     typedef node-flag-type {
+       type identityref {
+         base flag-identity;
+       }
+       description
+         &quot;Node flag attributes.  The physical node can be
+          one example of a node flag attribute.&quot;;
+     }
+
+     typedef link-flag-type {
+       type identityref {
+         base flag-identity;
+       }
+       description
+         &quot;Link flag attributes.  One example of a link flag
+          attribute is the pseudowire.&quot;;
+     }
+
+     typedef l2-network-event-type {
+       type enumeration {
+         enum addition {
+           value 0;
+           description
+             &quot;A Layer 2 node or link or termination-point
+              has been added.&quot;;
+         }
+         enum removal {
+           value 1;
+           description
+             &quot;A Layer 2 node or link or termination-point
+              has been removed.&quot;;
+         }
+         enum update {
+           value 2;
+           description
+             &quot;A Layer 2 node or link or termination-point
+              has been updated.&quot;;
+         }
+       }
+       description
+         &quot;Layer 2 network event type for notifications.&quot;;
+     }
+
+     typedef duplex-mode {
+       type enumeration {
+         enum full-duplex {
+           description
+             &quot;Indicates full-duplex mode.&quot;;
+         }
+         enum half-duplex {
+           description
+             &quot;Indicates half-duplex mode.&quot;;
+         }
+       }
+       description
+         &quot;Indicates the type of the duplex mode.&quot;;
+     }
+
+     grouping l2-network-type {
+       description
+         &quot;Indicates the topology type to be L2.&quot;;
+       container l2-topology {
+         presence &quot;Indicates L2 Network Topology.&quot;;
+         description
+           &quot;The presence of the container node indicates
+            L2 Network Topology.&quot;;
+       }
+     }
+
+     grouping l2-topology-attributes {
+       description
+         &quot;L2 topology scope attributes.&quot;;
+       container l2-topology-attributes {
+         description
+           &quot;Contains L2 topology attributes.&quot;;
+         leaf name {
+           type string;
+           description
+             &quot;Name of the topology.&quot;;
+         }
+         leaf-list flags {
+           type l2-flag-type;
+           description
+             &quot;Topology flags.&quot;;
+         }
+       }
+     }
+
+     grouping l2-node-attributes {
+       description
+         &quot;L2 node attributes.&quot;;
+       container l2-node-attributes {
+         description
+           &quot;Contains L2 node attributes.&quot;;
+         leaf name {
+           type string;
+           description
+             &quot;Node name.&quot;;
+         }
+         leaf-list flags {
+           type node-flag-type;
+           description
+             &quot;Node flags.  It can be used to indicate
+              node flag attributes.&quot;;
+         }
+         leaf-list bridge-id {
+           type string {
+             pattern &#x27;[0-9a-fA-F]{2}(:[0-9a-fA-F]{2}){7}&#x27;;
+           }
+           description
+             &quot;This is the bridge identifier represented as a
+              hexadecimal 8-octet string.  It has 4 bits of
+              priority, 12 bits of Multiple Spanning Tree
+              Instance Identifier (MSTI-ID), and the base bridge
+              identifier.  There may be multiple for each
+              spanning tree instance.&quot;;
+           reference
+             &quot;<a href="/doc/html/rfc7727">RFC 7727</a>: Spanning Tree Protocol (STP) Application of
+                        the Inter-Chassis Communication Protocol
+                        (ICCP)&quot;;
+         }
+         leaf-list management-address {
+           type inet:ip-address;
+           description
+             &quot;IP address used for management purpose.&quot;;
+         }
+         leaf management-mac {
+           type yang:mac-address;
+           description
+             &quot;This is a MAC address used for the bridge management.
+              It can be the Bridge Base VLAN ID (VID), interface
+              MAC address, or other. &quot;;
+         }
+         leaf management-vlan {
+           type string;
+           description
+             &quot;This is a VLAN that supports the management address.
+              The actual VLAN ID type and value would be a member of
+              this VLAN.&quot;;
+         }
+       }
+     }
+
+     grouping l2-link-attributes {
+       description
+         &quot;L2 link attributes.&quot;;
+       container l2-link-attributes {
+         description
+           &quot;Contains L2 link attributes.&quot;;
+         leaf name {
+           type string;
+           description
+             &quot;Link name.&quot;;
+         }
+         leaf-list flags {
+           type link-flag-type;
+           description
+             &quot;Link flags.  It can be used to indicate
+              link flag attributes.&quot;;
+         }
+         leaf rate {
+           type uint64;
+           units &quot;Kbps&quot;;
+           description
+             &quot;Link rate.  It specifies bandwidth requirements
+              associated with the specific link.  The link
+              contains a source and a destination.&quot;;
+         }
+         leaf delay {
+           type uint32;
+           units &quot;microseconds&quot;;
+           description
+             &quot;Unidirectional link delay in
+              microseconds.&quot;;
+         }
+         leaf auto-nego {
+           type boolean;
+           default &quot;true&quot;;
+           description
+             &quot;Set to true if auto-negotiation is supported.
+              Set to false if auto-negotiation is not supported.&quot;;
+         }
+         leaf duplex {
+           type duplex-mode;
+           description
+             &quot;Exposes the duplex mode, full-duplex or half-duplex.&quot;;
+         }
+       }
+     }
+
+     grouping l2-termination-point-attributes {
+       description
+         &quot;L2 termination point attributes.&quot;;
+       container l2-termination-point-attributes {
+         description
+           &quot;Containing L2 termination point attributes.&quot;;
+         leaf interface-name {
+           type string;
+           description
+             &quot;Name of the interface.  The name can (but does not
+              have to) correspond to an interface reference of a
+              containing node&#x27;s interface, i.e., the path name of a
+              corresponding interface data node on the containing
+              node is reminiscent of data type interface-ref defined
+              in <a href="/doc/html/rfc8343">RFC 8343</a>.  It should be noted that data type
+              interface-ref of <a href="/doc/html/rfc8343">RFC 8343</a> cannot be used directly,
+              as this data type is used to reference an interface
+              in a datastore of a single node in the network, not
+              to uniquely reference interfaces across a network.&quot;;
+         }
+         leaf mac-address {
+           type yang:mac-address;
+           description
+             &quot;Interface MAC address for logical link control.&quot;;
+         }
+         leaf-list port-number {
+           type uint32;
+           description
+             &quot; List of port numbers of the bridge ports for which each
+               entry contains bridge management information.&quot;;
+         }
+         leaf-list unnumbered-id {
+           type uint32;
+           description
+             &quot;List of unnumbered interface identifiers.
+              The unnumbered interface identifier will correspond to
+              the ifIndex value of the interface, i.e., the ifIndex
+              value of the ifEntry that represents the interface in
+              implementations where the Interfaces Group MIB
+              (<a href="/doc/html/rfc2863">RFC 2863</a>) is supported.&quot;;
+         }
+         leaf encapsulation-type {
+           type identityref {
+             base eth-encapsulation-type;
+           }
+           description
+             &quot;Encapsulation type of this
+                    termination point.&quot;;
+         }
+         leaf outer-tag {
+           if-feature &quot;VLAN&quot;;
+           type dot1q-types:vid-range-type;
+           description
+             &quot;The outermost VLAN tag.  It may include a list of VLAN
+              Ids or nonoverlapping VLAN ranges.&quot;;
+         }
+         leaf outer-tpid {
+           if-feature &quot;QinQ&quot;;
+           type dot1q-types:dot1q-tag-type;
+           description
+             &quot;Identifies a specific 802.1Q tag type of outermost VLAN
+              tag.&quot;;
+         }
+         leaf inner-tag {
+           if-feature &quot;VLAN&quot;;
+           type dot1q-types:vid-range-type;
+           description
+             &quot;The inner VLAN tag.  It may include a list of VLAN
+              Ids or nonoverlapping VLAN ranges.&quot;;
+         }
+         leaf inner-tpid {
+           if-feature &quot;QinQ&quot;;
+           type dot1q-types:dot1q-tag-type;
+           description
+             &quot;Identifies a specific 802.1Q tag type of inner VLAN tag.&quot;;
+         }
+         leaf lag {
+           type boolean;
+           default &quot;false&quot;;
+           description
+             &quot;Defines whether lag is supported or not.
+              When it is set to true, the lag is supported.&quot;;
+         }
+         leaf-list member-link-tp {
+           when &quot;../lag = &#x27;true&#x27;&quot; {
+             description
+               &quot;Relevant only when the lag interface is supported.&quot;;
+           }
+           type leafref {
+             path &quot;/nw:networks/nw:network/nw:node&quot;
+                + &quot;/nt:termination-point/nt:tp-id&quot;;
+           }
+           description
+             &quot;List of member link termination points associated with
+              specific L2 termination point.&quot;;
+         }
+         container vxlan {
+           when &quot;derived-from-or-self(../encapsulation-type, &quot;
+              + &quot;&#x27;l2t:vxlan&#x27;)&quot; {
+             description
+               &quot;Only applies when the type of the Ethernet
+                encapsulation is &#x27;vxlan&#x27;.&quot;;
+           }
+           if-feature &quot;VXLAN&quot;;
+           leaf vni-id {
+             type vni;
+             description
+               &quot;VXLAN Network Identifier (VNI).&quot;;
+           }
+           description
+             &quot;Vxlan encapsulation type.&quot;;
+         }
+       }
+     }
+
+     augment &quot;/nw:networks/nw:network/nw:network-types&quot; {
+       description
+         &quot;Introduces new network type for L2 topology.&quot;;
+       uses l2-network-type;
+     }
+     augment &quot;/nw:networks/nw:network&quot; {
+       when &#x27;/nw:networks/nw:network/nw:network-types/l2t:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Configuration parameters for the L2 network
+          as a whole.&quot;;
+       uses l2-topology-attributes;
+     }
+     augment &quot;/nw:networks/nw:network/nw:node&quot; {
+       when &#x27;/nw:networks/nw:network/nw:network-types/l2t:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Configuration parameters for L2 at the node
+          level.&quot;;
+       uses l2-node-attributes;
+     }
+     augment &quot;/nw:networks/nw:network/nt:link&quot; {
+       when &#x27;/nw:networks/nw:network/nw:network-types/l2t:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Augments L2 topology link information.&quot;;
+       uses l2-link-attributes;
+     }
+     augment &quot;/nw:networks/nw:network/nw:node/nt:termination-point&quot; {
+       when &#x27;/nw:networks/nw:network/nw:network-types/l2t:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Augments L2 topology termination point information.&quot;;
+       uses l2-termination-point-attributes;
+     }
+
+     notification l2-node-event {
+       description
+         &quot;Notification event for L2 node.&quot;;
+       leaf event-type {
+         type l2-network-event-type;
+         description
+           &quot;Event type.&quot;;
+       }
+       uses nw:node-ref;
+       uses l2-network-type;
+       uses l2-node-attributes;
+     }
+
+     notification l2-link-event {
+       description
+         &quot;Notification event for L2 link.&quot;;
+       leaf event-type {
+         type l2-network-event-type;
+         description
+           &quot;Event type.&quot;;
+       }
+       uses nt:link-ref;
+       uses l2-network-type;
+       uses l2-link-attributes;
+     }
+
+     notification l2-termination-point-event {
+       description
+         &quot;Notification event for L2 termination point.&quot;;
+       leaf event-type {
+         type l2-network-event-type;
+         description
+           &quot;Event type.&quot;;
+       }
+       uses nt:tp-ref;
+       uses l2-network-type;
+       uses l2-termination-point-attributes;
+     }
+   }
+   &lt;CODE ENDS&gt;
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA has registered the following URIs in the &quot;ns&quot; subregistry within
+   &quot;The IETF XML Registry&quot; [<a href="/doc/html/rfc3688" title="&quot;The IETF XML Registry&quot;">RFC3688</a>]:
+
+   URI:  urn:ietf:params:xml:ns:yang:ietf-l2-topology
+   Registrant Contact:  The IESG.
+   XML:  N/A; the requested URI is an XML namespace.
+
+   URI:  urn:ietf:params:xml:ns:yang:ietf-l2-topology-state
+   Registrant Contact:  The IESG.
+   XML:  N/A; the requested URI is an XML namespace.
+
+   IANA has registered the following YANG modules in the &quot;YANG Module
+   Names&quot; subregistry [<a href="/doc/html/rfc6020" title="&quot;YANG - A Data Modeling Language for the Network Configuration Protocol (NETCONF)&quot;">RFC6020</a>] within the &quot;YANG Parameters&quot; registry.
+
+   Name:  ietf-l2-topology
+   Namespace:  urn:ietf:params:xml:ns:yang:ietf-l2-topology
+   Prefix:  l2t
+   Reference:  <a href="/doc/html/rfc8944">RFC 8944</a>
+
+   Name:  ietf-l2-topology-state
+   Namespace:  urn:ietf:params:xml:ns:yang:ietf-l2-topology-state
+   Prefix:  l2t-s
+   Reference:  <a href="/doc/html/rfc8944">RFC 8944</a>
+
+   These modules are not maintained by IANA.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   The YANG modules specified in this document define a schema for data
+   that is designed to be accessed via network management protocols,
+   such as Network Configuration Protocol (NETCONF) [<a href="/doc/html/rfc6241" title="&quot;Network Configuration Protocol (NETCONF)&quot;">RFC6241</a>] or
+   RESTCONF [<a href="/doc/html/rfc8040" title="&quot;RESTCONF Protocol&quot;">RFC8040</a>].  The lowest NETCONF layer is the secure transport
+   layer, and the mandatory-to-implement secure transport is Secure
+   Shell (SSH) [<a href="/doc/html/rfc6242" title="&quot;Using the NETCONF Protocol over Secure Shell (SSH)&quot;">RFC6242</a>].  The lowest RESTCONF layer is HTTPS, and the
+   mandatory-to-implement secure transport is TLS [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>].
+
+   The Network Configuration Access Control Model (NACM) [<a href="/doc/html/rfc8341" title="&quot;Network Configuration Access Control Model&quot;">RFC8341</a>]
+   provides the means to restrict access for particular NETCONF or
+   RESTCONF users to a preconfigured subset of all available NETCONF or
+   RESTCONF protocol operations and content.
+
+   The Layer 2 topology module defines information that can be
+   configurable in certain instances, for example, in the case of
+   virtual topologies that can be created by client applications.  In
+   such cases, a malicious client could introduce topologies that are
+   undesired.  Specifically, a malicious client could attempt to remove
+   or add a node, a link, or a termination point by creating or deleting
+   corresponding elements in the node, link, and termination point
+   lists, respectively.  In the case of a topology that is learned, the
+   server will automatically prohibit such misconfiguration attempts.
+   In the case of a topology that is configured, i.e., whose origin is
+   &quot;intended&quot;, the undesired configuration could become effective and be
+   reflected in the operational state datastore [<a href="/doc/html/rfc8342" title="&quot;Network Management Datastore Architecture (NMDA)&quot;">RFC8342</a>], leading to
+   disruption of services provided via this topology.  For those
+   reasons, it is important that the NACM is vigorously applied to
+   prevent topology misconfiguration by unauthorized clients.
+
+   There are a number of data nodes defined in this YANG module that are
+   writable/creatable/deletable (i.e., config true, which is the
+   default).  These data nodes may be considered sensitive or vulnerable
+   in some network environments.  Write operations (e.g., edit-config)
+   to these data nodes without proper protection can have a negative
+   effect on network operations.  These are the subtrees and data nodes
+   and their sensitivity/vulnerability:
+
+   l2-network-attributes:
+      A malicious client could attempt to sabotage the configuration of
+      any of the contained attributes, such as the name or the flag data
+      nodes.
+
+   l2-node-attributes:
+      A malicious client could attempt to sabotage the configuration of
+      important node attributes, such as the name or the management-
+      address.
+
+   l2-link-attributes:
+      A malicious client could attempt to sabotage the configuration of
+      important link attributes, such as the rate or the delay data
+      nodes.
+
+   l2-termination-point-attributes:
+      A malicious client could attempt to sabotage the configuration of
+      important termination point attributes (e.g., &#x27;maximum-frame-
+      size&#x27;).
+
+   Some of the readable data nodes in this YANG module may be considered
+   sensitive or vulnerable in some network environments.  It is thus
+   important to control read access (e.g., via get, get-config, or
+   notification) to these data nodes.  In particular, the YANG module
+   for Layer 2 topology may expose sensitive information, for example,
+   the MAC addresses of devices or VLAN/VXLAN identifiers.  Unrestricted
+   use of such information can lead to privacy violations.  For example,
+   listing MAC addresses in a network allows monitoring of devices and
+   their movements.  Location information can be derived from MAC
+   addresses of network devices, bypassing protection of location
+   information by the Operating System.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3688">RFC3688</a>]  Mealling, M., &quot;The IETF XML Registry&quot;, <a href="/doc/html/bcp81">BCP 81</a>, <a href="/doc/html/rfc3688">RFC 3688</a>,
+              DOI 10.17487/RFC3688, January 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3688">https://www.rfc-editor.org/info/rfc3688</a>&gt;.
+
+   [<a id="ref-RFC6020">RFC6020</a>]  Bjorklund, M., Ed., &quot;YANG - A Data Modeling Language for
+              the Network Configuration Protocol (NETCONF)&quot;, <a href="/doc/html/rfc6020">RFC 6020</a>,
+              DOI 10.17487/RFC6020, October 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6020">https://www.rfc-editor.org/info/rfc6020</a>&gt;.
+
+   [<a id="ref-RFC6241">RFC6241</a>]  Enns, R., Ed., Bjorklund, M., Ed., Schoenwaelder, J., Ed.,
+              and A. Bierman, Ed., &quot;Network Configuration Protocol
+              (NETCONF)&quot;, <a href="/doc/html/rfc6241">RFC 6241</a>, DOI 10.17487/RFC6241, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6241">https://www.rfc-editor.org/info/rfc6241</a>&gt;.
+
+   [<a id="ref-RFC6242">RFC6242</a>]  Wasserman, M., &quot;Using the NETCONF Protocol over Secure
+              Shell (SSH)&quot;, <a href="/doc/html/rfc6242">RFC 6242</a>, DOI 10.17487/RFC6242, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6242">https://www.rfc-editor.org/info/rfc6242</a>&gt;.
+
+   [<a id="ref-RFC6991">RFC6991</a>]  Schoenwaelder, J., Ed., &quot;Common YANG Data Types&quot;,
+              <a href="/doc/html/rfc6991">RFC 6991</a>, DOI 10.17487/RFC6991, July 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6991">https://www.rfc-editor.org/info/rfc6991</a>&gt;.
+
+   [<a id="ref-RFC7224">RFC7224</a>]  Bjorklund, M., &quot;IANA Interface Type YANG Module&quot;,
+              <a href="/doc/html/rfc7224">RFC 7224</a>, DOI 10.17487/RFC7224, May 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7224">https://www.rfc-editor.org/info/rfc7224</a>&gt;.
+
+   [<a id="ref-RFC7348">RFC7348</a>]  Mahalingam, M., Dutt, D., Duda, K., Agarwal, P., Kreeger,
+              L., Sridhar, T., Bursell, M., and C. Wright, &quot;Virtual
+              eXtensible Local Area Network (VXLAN): A Framework for
+              Overlaying Virtualized Layer 2 Networks over Layer 3
+              Networks&quot;, <a href="/doc/html/rfc7348">RFC 7348</a>, DOI 10.17487/RFC7348, August 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7348">https://www.rfc-editor.org/info/rfc7348</a>&gt;.
+
+   [<a id="ref-RFC7950">RFC7950</a>]  Bjorklund, M., Ed., &quot;The YANG 1.1 Data Modeling Language&quot;,
+              <a href="/doc/html/rfc7950">RFC 7950</a>, DOI 10.17487/RFC7950, August 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7950">https://www.rfc-editor.org/info/rfc7950</a>&gt;.
+
+   [<a id="ref-RFC8040">RFC8040</a>]  Bierman, A., Bjorklund, M., and K. Watsen, &quot;RESTCONF
+              Protocol&quot;, <a href="/doc/html/rfc8040">RFC 8040</a>, DOI 10.17487/RFC8040, January 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8040">https://www.rfc-editor.org/info/rfc8040</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8341">RFC8341</a>]  Bierman, A. and M. Bjorklund, &quot;Network Configuration
+              Access Control Model&quot;, STD 91, <a href="/doc/html/rfc8341">RFC 8341</a>,
+              DOI 10.17487/RFC8341, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8341">https://www.rfc-editor.org/info/rfc8341</a>&gt;.
+
+   [<a id="ref-RFC8345">RFC8345</a>]  Clemm, A., Medved, J., Varga, R., Bahadur, N.,
+              Ananthakrishnan, H., and X. Liu, &quot;A YANG Data Model for
+              Network Topologies&quot;, <a href="/doc/html/rfc8345">RFC 8345</a>, DOI 10.17487/RFC8345, March
+              2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8345">https://www.rfc-editor.org/info/rfc8345</a>&gt;.
+
+   [<a id="ref-RFC8446">RFC8446</a>]  Rescorla, E., &quot;The Transport Layer Security (TLS) Protocol
+              Version 1.3&quot;, <a href="/doc/html/rfc8446">RFC 8446</a>, DOI 10.17487/RFC8446, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8446">https://www.rfc-editor.org/info/rfc8446</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-I2RS-UR">I2RS-UR</a>]  Hares, S. and M. Chen, &quot;Summary of I2RS Use Case
+              Requirements&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-i2rs-usecase-reqs-summary-03">draft-</a>
+              <a href="/doc/html/draft-ietf-i2rs-usecase-reqs-summary-03">ietf-i2rs-usecase-reqs-summary-03</a>, 15 November 2016,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-i2rs-usecase-reqs-summary-03">https://tools.ietf.org/html/draft-ietf-i2rs-usecase-reqs-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-i2rs-usecase-reqs-summary-03">summary-03</a>&gt;.
+
+   [<a id="ref-IEEE802.1AB">IEEE802.1AB</a>]
+              IEEE, &quot;IEEE Standard for Local and metropolitan area
+              networks - Station and Media Access Control Connectivity
+              Discovery&quot;, IEEE Std 802.1AB-2016,
+              DOI 10.1109/IEEESTD.2016.7433915, March 2016,
+              &lt;<a href="https://doi.org/10.1109/IEEESTD.2016.7433915">https://doi.org/10.1109/IEEESTD.2016.7433915</a>&gt;.
+
+   [<a id="ref-IEEE802.1ad">IEEE802.1ad</a>]
+              IEEE, &quot;IEEE Standard for Local and Metropolitan Area
+              Networks--Virtual Bridged Local Area Networks--Amendment
+              4: Provider Bridges&quot;, IEEE Std 802.1ad-2005,
+              DOI 10.1109/IEEESTD.2006.6044678, May 2006,
+              &lt;<a href="https://doi.org/10.1109/IEEESTD.2006.6044678">https://doi.org/10.1109/IEEESTD.2006.6044678</a>&gt;.
+
+   [<a id="ref-IEEE802.1ah">IEEE802.1ah</a>]
+              IEEE, &quot;IEEE Standard for Local and metropolitan area
+              networks -- Virtual Bridged Local Area Networks Amendment
+              7: Provider Backbone Bridges&quot;, IEEE Std 802.1ah-2008,
+              DOI 10.1109/IEEESTD.2008.4602826, August 2008,
+              &lt;<a href="https://doi.org/10.1109/IEEESTD.2008.4602826">https://doi.org/10.1109/IEEESTD.2008.4602826</a>&gt;.
+
+   [<a id="ref-IEEE802.1Q-2014">IEEE802.1Q-2014</a>]
+              IEEE, &quot;IEEE Standard for Local and metropolitan area
+              networks--Bridges and Bridged Networks&quot;, IEEE 802.1Q-2014,
+              DOI 10.1109/IEEESTD.2014.6991462, December 2014,
+              &lt;<a href="https://doi.org/10.1109/IEEESTD.2014.6991462">https://doi.org/10.1109/IEEESTD.2014.6991462</a>&gt;.
+
+   [<a id="ref-IEEE802.1Qcp">IEEE802.1Qcp</a>]
+              IEEE, &quot;IEEE Standard for Local and metropolitan area
+              networks--Bridges and Bridged Networks--Amendment 30: YANG
+              Data Model&quot;, IEEE Std 802.1Qcp-2018,
+              DOI 10.1109/IEEESTD.2018.8467507, September 2018,
+              &lt;<a href="https://doi.org/10.1109/IEEESTD.2018.8467507">https://doi.org/10.1109/IEEESTD.2018.8467507</a>&gt;.
+
+   [<a id="ref-RFC7727">RFC7727</a>]  Zhang, M., Wen, H., and J. Hu, &quot;Spanning Tree Protocol
+              (STP) Application of the Inter-Chassis Communication
+              Protocol (ICCP)&quot;, <a href="/doc/html/rfc7727">RFC 7727</a>, DOI 10.17487/RFC7727, January
+              2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7727">https://www.rfc-editor.org/info/rfc7727</a>&gt;.
+
+   [<a id="ref-RFC7951">RFC7951</a>]  Lhotka, L., &quot;JSON Encoding of Data Modeled with YANG&quot;,
+              <a href="/doc/html/rfc7951">RFC 7951</a>, DOI 10.17487/RFC7951, August 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7951">https://www.rfc-editor.org/info/rfc7951</a>&gt;.
+
+   [<a id="ref-RFC8340">RFC8340</a>]  Bjorklund, M. and L. Berger, Ed., &quot;YANG Tree Diagrams&quot;,
+              <a href="/doc/html/bcp215">BCP 215</a>, <a href="/doc/html/rfc8340">RFC 8340</a>, DOI 10.17487/RFC8340, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8340">https://www.rfc-editor.org/info/rfc8340</a>&gt;.
+
+   [<a id="ref-RFC8342">RFC8342</a>]  Bjorklund, M., Schoenwaelder, J., Shafer, P., Watsen, K.,
+              and R. Wilton, &quot;Network Management Datastore Architecture
+              (NMDA)&quot;, <a href="/doc/html/rfc8342">RFC 8342</a>, DOI 10.17487/RFC8342, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8342">https://www.rfc-editor.org/info/rfc8342</a>&gt;.
+
+   [<a id="ref-TRILL-YANG">TRILL-YANG</a>]
+              Hao, W., Li, Y., Kumar, D., Durrani, M., Zhai, H., and L.
+              Xia, &quot;TRILL YANG Data Model&quot;, Work in Progress, Internet-
+              Draft, <a href="/doc/html/draft-ietf-trill-yang-04">draft-ietf-trill-yang-04</a>, 20 December 2015,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-trill-yang-04">https://tools.ietf.org/html/draft-ietf-trill-yang-04</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Companion YANG Module for Non-NMDA-Compliant</span>
+             Implementations
+
+   The YANG module ietf-l2-topology defined in this document augments
+   two modules, &quot;ietf-network&quot; and &quot;ietf-network-topology&quot;, that are
+   designed to be used in conjunction with implementations that support
+   the Network Management Datastore Architecture (NMDA) defined in
+   [<a href="/doc/html/rfc8342" title="&quot;Network Management Datastore Architecture (NMDA)&quot;">RFC8342</a>].  In order to allow implementations to use the model even
+   in cases when NMDA is not supported, a set of companion modules have
+   been defined that represent a state model of networks and network
+   topologies, &quot;ietf-network-state&quot; and &quot;ietf-network-topology-state&quot;,
+   respectively.
+
+   In order to be able to use the model for Layer 2 topologies defined
+   in this document in conjunction with non-NMDA-compliant
+   implementations, a corresponding companion module is defined that
+   represents the operational state of Layer 2 network topologies.  The
+   module &quot;ietf-l2-topology-state&quot; mirrors the module &quot;ietf-l2-topology&quot;
+   defined in <a href="#section-4">Section 4</a>.  However, it augments &quot;ietf-network-state&quot; and
+   &quot;ietf-network-topology-state&quot; (instead of &quot;ietf-network&quot; and &quot;ietf-
+   network-topology&quot;) and all its data nodes are nonconfigurable.
+
+   The companion module &quot;ietf-l2-topology&quot; SHOULD NOT be supported by
+   implementations that support NMDA.  It is for this reason that this
+   module is defined in the informative appendix.
+
+   As the structure of this module mirrors that of its underlying
+   modules, the YANG tree is not depicted separately.
+
+   &lt;CODE BEGINS&gt; file &quot;ietf-l2-topology-state@2020-11-15.yang&quot;
+   module ietf-l2-topology-state {
+     yang-version 1.1;
+     namespace &quot;urn:ietf:params:xml:ns:yang:ietf-l2-topology-state&quot;;
+     prefix l2t-s;
+
+     import ietf-network-state {
+       prefix nw-s;
+       reference
+         &quot;<a href="/doc/html/rfc8345">RFC 8345</a>: A YANG Data Model for Network Topologies&quot;;
+     }
+     import ietf-network-topology-state {
+       prefix nt-s;
+       reference
+         &quot;<a href="/doc/html/rfc8345">RFC 8345</a>: A YANG Data Model for Network Topologies&quot;;
+     }
+     import ietf-l2-topology {
+       prefix l2t;
+       reference
+         &quot;<a href="/doc/html/rfc8944">RFC 8944</a>: A YANG Data Model for Layer 2 Network Topologies&quot;;
+     }
+
+     organization
+       &quot;IETF I2RS (Interface to the Routing System) Working Group&quot;;
+     contact
+       &quot;WG Web:   &lt;<a href="http://tools.ietf.org/wg/i2rs/">http://tools.ietf.org/wg/i2rs/</a>&gt;
+        WG List:  &lt;mailto:i2rs@ietf.org&gt;
+
+        Editor:    Jie Dong
+                  &lt;mailto:jie.dong@huawei.com&gt;
+        Editor:    Xiugang Wei
+                  &lt;mailto:weixiugang@huawei.com&gt;
+        Editor:    Qin Wu
+                  &lt;mailto:bill.wu@huawei.com&gt;
+        Editor:    Mohamed Boucadair
+                  &lt;mailto:mohamed.boucadair@orange.com&gt;
+        Editor:   Anders Liu
+                  &lt;andersliu@tencent.com&gt;&quot;;
+     description
+       &quot;This module defines a model for Layer 2 Network Topology
+        state, representing topology that either is learned or
+        results from applying topology that has been configured per
+        the &#x27;ietf-l2-topology&#x27; model, mirroring the
+        corresponding data nodes in this model.
+
+        This model mirrors &#x27;ietf-l2-topology&#x27; but contains only
+        read-only state data.  The model is not needed when the
+        underlying implementation infrastructure supports the
+        Network Management Datastore Architecture (NMDA).
+
+        Copyright (c) 2020 IETF Trust and the persons identified as
+        authors of the code.  All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD License
+        set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+        Relating to IETF Documents
+        (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>).
+
+        This version of this YANG module is part of <a href="/doc/html/rfc8944">RFC 8944</a>; see
+        the RFC itself for full legal notices.&quot;;
+
+     revision 2020-11-15 {
+       description
+         &quot;Initial revision.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8944">RFC 8944</a>: A YANG Data Model for Layer 2 Network Topologies&quot;;
+     }
+
+     /*
+      * Data nodes
+      */
+
+     augment &quot;/nw-s:networks/nw-s:network/nw-s:network-types&quot; {
+       description
+         &quot;Introduces a new network type for L2 topology.&quot;;
+       uses l2t:l2-network-type;
+     }
+
+     augment &quot;/nw-s:networks/nw-s:network&quot; {
+       when &#x27;nw-s:network-types/l2t-s:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Configuration parameters for the L2 network
+          as a whole.&quot;;
+       uses l2t:l2-topology-attributes;
+     }
+
+     augment &quot;/nw-s:networks/nw-s:network/nw-s:node&quot; {
+       when &#x27;../nw-s:network-types/l2t-s:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Configuration parameters for L2 at the node
+          level.&quot;;
+       uses l2t:l2-node-attributes;
+     }
+
+     augment &quot;/nw-s:networks/nw-s:network/nt-s:link&quot; {
+       when &#x27;../nw-s:network-types/l2t-s:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Augments L2 topology link information.&quot;;
+       uses l2t:l2-link-attributes;
+     }
+
+     augment &quot;/nw-s:networks/nw-s:network/nw-s:node/&quot;
+           + &quot;nt-s:termination-point&quot; {
+       when &#x27;../../nw-s:network-types/l2t-s:l2-topology&#x27; {
+         description
+           &quot;Augmentation parameters apply only for networks
+            with L2 topology.&quot;;
+       }
+       description
+         &quot;Augments L2 topology termination point information.&quot;;
+       uses l2t:l2-termination-point-attributes;
+     }
+
+     /*
+      * Notifications
+      */
+
+     notification l2-node-event {
+       description
+         &quot;Notification event for L2 node.&quot;;
+       leaf event-type {
+         type l2t:l2-network-event-type;
+         description
+           &quot;Event type.&quot;;
+       }
+       uses nw-s:node-ref;
+       uses l2t:l2-network-type;
+       uses l2t:l2-node-attributes;
+     }
+
+     notification l2-link-event {
+       description
+         &quot;Notification event for an L2 link.&quot;;
+       leaf event-type {
+         type l2t:l2-network-event-type;
+         description
+           &quot;Event type.&quot;;
+       }
+       uses nt-s:link-ref;
+       uses l2t:l2-network-type;
+       uses l2t:l2-link-attributes;
+     }
+
+     notification l2-termination-point-event {
+       description
+         &quot;Notification event for L2 termination point.&quot;;
+       leaf event-type {
+         type l2t:l2-network-event-type;
+         description
+           &quot;Event type.&quot;;
+       }
+       uses nt-s:tp-ref;
+       uses l2t:l2-network-type;
+       uses l2t:l2-termination-point-attributes;
+     }
+   }
+   &lt;CODE ENDS&gt;
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  An Example</span>
+
+   This section contains an example of an instance data tree in JSON
+   encoding [<a href="/doc/html/rfc7951" title="&quot;JSON Encoding of Data Modeled with YANG&quot;">RFC7951</a>].  The example instantiates &quot;ietf-l2-topology&quot; for
+   the topology that is depicted in the following diagram.  There are
+   three nodes: D1, D2, and D3.  D1 has three termination points: 1-0-1,
+   1-2-1, and 1-3-1.  D2 has three termination points as well: 2-1-1,
+   2-0-1, and 2-3-1.  D3 has two termination points: 3-1-1 and 3-2-1.
+   For termination point 1-0-1, it provides lag support and has two
+   member link termination points: 1-0-1-1 and 1-0-1-2.  In addition,
+   there are six links, two between each pair of nodes with one going in
+   each direction.
+
+
+                   +------------+                   +------------+
+                   |     D1     |                   |     D2     |
+          1-0-1-1 /-\          /-\                 /-\          /-\
+       &lt;---------&gt;| | 1-0-1    | |----------------&gt;| | 2-1-1    | |
+          1-0-1-2 | |    1-2-1 | |&lt;----------------| |    2-0-1 | |
+       &lt;--------&gt; \-/  1-3-1   \-/                 \-/  2-3-1   \-/
+                   |   /----\   |                   |   /----\   |
+                   +---|    |---+                   +---|    |---+
+                       \----/                           \----/
+                        A  |                             A  |
+                        |  |                             |  |
+                        |  |                             |  |
+                        |  |       +------------+        |  |
+                        |  |       |     D3     |        |  |
+                        |  |      /-\          /-\       |  |
+                        |  +-----&gt;| | 3-1-1    | |-------+  |
+                        +---------| |    3-2-1 | |&lt;---------+
+                                  \-/          \-/
+                                   |            |
+                                   +------------+
+
+                    Figure 2: A Network Topology Example
+
+   The corresponding instance data tree is depicted below:
+
+   {
+     &quot;ietf-network:networks&quot;: {
+       &quot;network&quot;: [
+         {
+           &quot;network-id&quot;: &quot;l2-topo-example&quot;,
+           &quot;node&quot;: [
+             {
+               &quot;node-id&quot;: &quot;D1&quot;,
+               &quot;ietf-network-topology:termination-point&quot;: [
+                 {
+                   &quot;tp-id&quot;: &quot;1-0-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:d0&quot;,
+                     &quot;lag&quot;: true,
+                     &quot;member-link-tp&quot;: [
+                       &quot;1-0-1-1&quot;,
+                       &quot;1-0-1-2&quot;
+                     ]
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;1-0-1-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:d3&quot;
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;1-0-1-2&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:d4&quot;
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;1-2-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:d1&quot;
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;1-3-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:d2&quot;
+                   }
+                 }
+               ],
+               &quot;ietf-l2-topology:l2-node-attributes&quot;: {
+                 &quot;management-address&quot;: [
+                   &quot;192.0.2.1&quot;,
+                   &quot;2001:db8:0:1::&quot;
+                 ]
+               }
+             },
+             {
+               &quot;node-id&quot;: &quot;D2&quot;,
+               &quot;ietf-network-topology:termination-point&quot;: [
+                 {
+                   &quot;tp-id&quot;: &quot;2-0-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:e0&quot;
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;2-1-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:e1&quot;
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;2-3-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:e2&quot;
+                   }
+                 }
+               ],
+               &quot;ietf-l2-topology:l2-node-attributes&quot;: {
+                 &quot;management-address&quot;: [
+                   &quot;192.0.2.2&quot;,
+                   &quot;2001:db8:0:2::&quot;
+                 ]
+               }
+             },
+             {
+               &quot;node-id&quot;: &quot;D3&quot;,
+               &quot;ietf-network-topology:termination-point&quot;: [
+                 {
+                   &quot;tp-id&quot;: &quot;3-1-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:f0&quot;
+                   }
+                 },
+                 {
+                   &quot;tp-id&quot;: &quot;3-2-1&quot;,
+                   &quot;ietf-l2-topology:l2-termination-point-attributes&quot;: {
+                     &quot;mac-address&quot;: &quot;00:00:5e:00:53:f1&quot;
+                   }
+                 }
+               ],
+               &quot;ietf-l2-topology:l2-node-attributes&quot;: {
+                 &quot;management-address&quot;: [
+                   &quot;192.0.2.3&quot;,
+                   &quot;2001:db8:0:3::&quot;
+                 ]
+               }
+             }
+           ],
+           &quot;ietf-network-topology:link&quot;: [
+             {
+               &quot;link-id&quot;: &quot;D1,1-2-1,D2,2-1-1&quot;,
+               &quot;source&quot;: {
+                 &quot;source-node&quot;: &quot;D1&quot;,
+                 &quot;source-tp&quot;: &quot;1-2-1&quot;
+               },
+               &quot;destination&quot;: {
+                 &quot;dest-node&quot;: &quot;D2&quot;,
+                 &quot;dest-tp&quot;: &quot;2-1-1&quot;
+               },
+               &quot;ietf-l2-topology:l2-link-attributes&quot;: {
+                 &quot;rate&quot;: &quot;1000&quot;
+               }
+             },
+             {
+               &quot;link-id&quot;: &quot;D2,2-1-1,D1,1-2-1&quot;,
+               &quot;source&quot;: {
+                 &quot;source-node&quot;: &quot;D2&quot;,
+                 &quot;source-tp&quot;: &quot;2-1-1&quot;
+               },
+               &quot;destination&quot;: {
+                 &quot;dest-node&quot;: &quot;D1&quot;,
+                 &quot;dest-tp&quot;: &quot;1-2-1&quot;
+               },
+               &quot;ietf-l2-topology:l2-link-attributes&quot;: {
+                 &quot;rate&quot;: &quot;1000&quot;
+               }
+             },
+             {
+               &quot;link-id&quot;: &quot;D1,1-3-1,D3,3-1-1&quot;,
+               &quot;source&quot;: {
+                 &quot;source-node&quot;: &quot;D1&quot;,
+                 &quot;source-tp&quot;: &quot;1-3-1&quot;
+               },
+               &quot;destination&quot;: {
+                 &quot;dest-node&quot;: &quot;D3&quot;,
+                 &quot;dest-tp&quot;: &quot;3-1-1&quot;
+               },
+               &quot;ietf-l2-topology:l2-link-attributes&quot;: {
+                 &quot;rate&quot;: &quot;1000&quot;
+               }
+             },
+             {
+               &quot;link-id&quot;: &quot;D3,3-1-1,D1,1-3-1&quot;,
+               &quot;source&quot;: {
+                 &quot;source-node&quot;: &quot;D3&quot;,
+                 &quot;source-tp&quot;: &quot;3-1-1&quot;
+               },
+               &quot;destination&quot;: {
+                 &quot;dest-node&quot;: &quot;D1&quot;,
+                 &quot;dest-tp&quot;: &quot;1-3-1&quot;
+               },
+               &quot;ietf-l2-topology:l2-link-attributes&quot;: {
+                 &quot;rate&quot;: &quot;1000&quot;
+               }
+             },
+             {
+               &quot;link-id&quot;: &quot;D2,2-3-1,D3,3-2-1&quot;,
+               &quot;source&quot;: {
+                 &quot;source-node&quot;: &quot;D2&quot;,
+                 &quot;source-tp&quot;: &quot;2-3-1&quot;
+               },
+               &quot;destination&quot;: {
+                 &quot;dest-node&quot;: &quot;D3&quot;,
+                 &quot;dest-tp&quot;: &quot;3-2-1&quot;
+               },
+               &quot;ietf-l2-topology:l2-link-attributes&quot;: {
+                 &quot;rate&quot;: &quot;1000&quot;
+               }
+             },
+             {
+               &quot;link-id&quot;: &quot;D3,3-2-1,D2,2-3-1&quot;,
+               &quot;source&quot;: {
+                 &quot;source-node&quot;: &quot;D3&quot;,
+                 &quot;source-tp&quot;: &quot;3-2-1&quot;
+               },
+               &quot;destination&quot;: {
+                 &quot;dest-node&quot;: &quot;D2&quot;,
+                 &quot;dest-tp&quot;: &quot;2-3-1&quot;
+               },
+               &quot;ietf-l2-topology:l2-link-attributes&quot;: {
+                 &quot;rate&quot;: &quot;1000&quot;
+               }
+             }
+           ]
+         }
+       ]
+     }
+   }
+
+Acknowledgements
+
+   The authors would like to acknowledge the comments and suggestions
+   received from Susan Hares, Alia Atlas, Juergen Schoenwaelder, Mach
+   Chen, Alexander Clemm, Sriganesh Kini, Oscar Gonzalez de Dios, Stig
+   Venaas, Christian Huitema, Meral Shirazipour, Benjamin Kaduk, and Don
+   Fedyk.
+
+   Many thanks to Ladislav Lhotka for the yang-doctors review.
+
+Authors&#x27; Addresses
+
+   Jie Dong
+   Huawei
+   Huawei Campus
+   No. 156 Beiqing Rd.
+   Beijing
+   100095
+   China
+
+   Email: jie.dong@huawei.com
+
+
+   Xiugang Wei
+   Huawei
+   Huawei Campus
+   No. 156 Beiqing Rd.
+   Beijing
+   100095
+   China
+
+   Email: weixiugang@huawei.com
+
+
+   Qin Wu
+   Huawei
+   101 Software Avenue
+   Yuhua District
+   Nanjing
+   210012
+   China
+
+   Email: bill.wu@huawei.com
+
+
+   Mohamed Boucadair
+   Orange
+   Rennes 35000
+   France
+
+   Email: mohamed.boucadair@orange.com
+
+
+   Anders Liu
+   Tecent
+   Yinke Building
+   38 Haidian St
+   Haidian District
+   Beijing
+   100080
+   China
+
+   Email: andersliu@tencent.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

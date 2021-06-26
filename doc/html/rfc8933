@@ -1,0 +1,622 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8933
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-lamps-cms-update-alg-id-protect/">
+  <meta name="description" content="Update to the Cryptographic Message Syntax (CMS) for Algorithm Identifier Protection (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8933.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8933.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8933.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8933.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8933/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8933/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/lamps/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-lamps-cms-update-alg-id-protect@ietf.org?subject=draft-ietf-lamps-cms-update-alg-id-protect" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-lamps-cms-update-alg-id-protect-05.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-lamps-cms-update-alg-id-protect-05.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-lamps-cms-update-alg-id-protect-05.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-lamps-cms-update-alg-id-protect-05">draft-ietf-lamps-cms-update-alg-id-protect-05</a>    Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        R. Housley
+Request for Comments: 8933                                Vigil Security
+Updates: <a href="/doc/html/rfc5652">5652</a>                                               October 2020
+Category: Standards Track
+ISSN: 2070-1721
+
+
+     <span class="h1">Update to the Cryptographic Message Syntax (CMS) for Algorithm</span>
+                         <span class="h1">Identifier Protection</span>
+
+Abstract
+
+   This document updates the Cryptographic Message Syntax (CMS)
+   specified in <a href="/doc/html/rfc5652">RFC 5652</a> to ensure that algorithm identifiers in signed-
+   data and authenticated-data content types are adequately protected.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8933">https://www.rfc-editor.org/info/rfc8933</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Required Use of the Same Hash Algorithm
+     3.1.  <a href="/doc/html/rfc5652#section-5.3">RFC 5652, Section&nbsp;5.3</a>
+     3.2.  <a href="/doc/html/rfc5652#section-5.4">RFC 5652, Section&nbsp;5.4</a>
+     3.3.  <a href="/doc/html/rfc5652#section-5.6">RFC 5652, Section&nbsp;5.6</a>
+     3.4.  Backward Compatibility Considerations
+     3.5.  Timestamp Compatibility Considerations
+   4.  Recommended Inclusion of the CMSAlgorithmProtection Attribute
+     4.1.  <a href="/doc/html/rfc5652#section-14">RFC 5652, Section&nbsp;14</a>
+   5.  IANA Considerations
+   6.  Security Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   Acknowledgements
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document updates the Cryptographic Message Syntax (CMS)
+   [<a href="/doc/html/rfc5652" title="&quot;Cryptographic Message Syntax (CMS)&quot;">RFC5652</a>] to ensure that algorithm identifiers in signed-data and
+   authenticated-data content types are adequately protected.
+
+   The CMS signed-data content type [<a href="/doc/html/rfc5652" title="&quot;Cryptographic Message Syntax (CMS)&quot;">RFC5652</a>], unlike X.509 certificates
+   [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>], can be vulnerable to algorithm substitution attacks.  In
+   an algorithm substitution attack, the attacker changes either the
+   algorithm identifier or the parameters associated with the algorithm
+   identifier to change the verification process used by the recipient.
+   The X.509 certificate structure protects the algorithm identifier and
+   the associated parameters by signing them.
+
+   In an algorithm substitution attack, the attacker looks for a
+   different algorithm that produces the same result as the algorithm
+   used by the originator.  As an example, if the signer of a message
+   used SHA-256 [<a href="#ref-SHS" title="&quot;Secure Hash Standard (SHS)&quot;">SHS</a>] as the digest algorithm to hash the message
+   content, then the attacker looks for a weaker hash algorithm that
+   produces a result that is of the same length.  The attacker&#x27;s goal is
+   to find a different message that results in the same hash value,
+   which is called a cross-algorithm collision.  Today, there are many
+   hash functions that produce 256-bit results.  One of them may be
+   found to be weak in the future.
+
+   Further, when a digest algorithm produces a larger result than is
+   needed by a digital signature algorithm, the digest value is reduced
+   to the size needed by the signature algorithm.  This can be done both
+   by truncation and modulo operations, with the simplest being
+   straightforward truncation.  In this situation, the attacker needs to
+   find a collision with the reduced digest value.  As an example, if
+   the message signer uses SHA-512 [<a href="#ref-SHS" title="&quot;Secure Hash Standard (SHS)&quot;">SHS</a>] as the digest algorithm and the
+   Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256
+   curve [<a href="#ref-DSS" title="&quot;Digital Signature Standard (DSS)&quot;">DSS</a>] as the signature algorithm, then the attacker needs to
+   find a collision with the first half of the digest.
+
+   Similar attacks can be mounted against parameterized algorithm
+   identifiers.  When randomized hash functions are employed, such as
+   the example in [<a href="/doc/html/rfc6210" title="&quot;Experiment: Hash Functions with Parameters in the Cryptographic Message Syntax (CMS) and S/MIME&quot;">RFC6210</a>], the algorithm identifier parameter includes
+   a random value that can be manipulated by an attacker looking for
+   collisions.  Some other algorithm identifiers include complex
+   parameter structures, and each value provides another opportunity for
+   manipulation by an attacker.
+
+   This document makes two updates to CMS to provide protection for the
+   algorithm identifier.  First, it mandates a convention followed by
+   many implementations by requiring the originator to use the same hash
+   algorithm to compute the digest of the message content and the digest
+   of signed attributes.  Second, it recommends that the originator
+   include the CMSAlgorithmProtection attribute [<a href="/doc/html/rfc6211" title="&quot;Cryptographic Message Syntax (CMS) Algorithm Identifier Protection Attribute&quot;">RFC6211</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Required Use of the Same Hash Algorithm</span>
+
+   This section updates [<a href="/doc/html/rfc5652" title="&quot;Cryptographic Message Syntax (CMS)&quot;">RFC5652</a>] to require the originator to use the
+   same hash algorithm to compute the digest of the message content and
+   the digest of signed attributes.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  <a href="/doc/html/rfc5652#section-5.3">RFC 5652, Section&nbsp;5.3</a></span>
+
+   Change the paragraph describing the digestAlgorithm as follows:
+
+   OLD:
+
+   |  digestAlgorithm identifies the message digest algorithm, and any
+   |  associated parameters, used by the signer.  The message digest is
+   |  computed on either the content being signed or the content
+   |  together with the signed attributes using the process described in
+   |  <a href="#section-5.4">Section 5.4</a>.  The message digest algorithm SHOULD be among those
+   |  listed in the digestAlgorithms field of the associated SignerData.
+   |  Implementations MAY fail to validate signatures that use a digest
+   |  algorithm that is not included in the SignedData digestAlgorithms
+   |  set.
+
+   NEW:
+
+   |  digestAlgorithm identifies the message digest algorithm, and any
+   |  associated parameters, used by the signer.  The message digest is
+   |  computed on either the content being signed or the content
+   |  together with the signedAttrs using the process described in
+   |  <a href="#section-5.4">Section 5.4</a>.  The message digest algorithm SHOULD be among those
+   |  listed in the digestAlgorithms field of the associated SignerData.
+   |  If the signedAttrs field is present in the SignerInfo, then the
+   |  same digest algorithm MUST be used to compute both the digest of
+   |  the SignedData encapContentInfo eContent, which is carried in the
+   |  message-digest attribute, and the digest of the DER-encoded
+   |  signedAttrs, which is passed to the signature algorithm.
+   |  Implementations MAY fail to validate signatures that use a digest
+   |  algorithm that is not included in the SignedData digestAlgorithms
+   |  set.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  <a href="/doc/html/rfc5652#section-5.4">RFC 5652, Section&nbsp;5.4</a></span>
+
+   Add the following paragraph as the second paragraph in <a href="#section-5.4">Section 5.4</a>.
+
+   ADD:
+
+   |  When the signedAttrs field is present, the same digest algorithm
+   |  MUST be used to compute the digest of the encapContentInfo
+   |  eContent OCTET STRING, which is carried in the message-digest
+   |  attribute and the digest of the collection of attributes that are
+   |  signed.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  <a href="/doc/html/rfc5652#section-5.6">RFC 5652, Section&nbsp;5.6</a></span>
+
+   Change the paragraph discussing the signed attributes as follows:
+
+   OLD:
+
+   |  The recipient MUST NOT rely on any message digest values computed
+   |  by the originator.  If the SignedData signerInfo includes
+   |  signedAttributes, then the content message digest MUST be
+   |  calculated as described in <a href="#section-5.4">Section 5.4</a>.  For the signature to be
+   |  valid, the message digest value calculated by the recipient MUST
+   |  be the same as the value of the messageDigest attribute included
+   |  in the signedAttributes of the SignedData signerInfo.
+
+   NEW:
+
+   |  The recipient MUST NOT rely on any message digest values computed
+   |  by the originator.  If the SignedData signerInfo includes the
+   |  signedAttrs field, then the content message digest MUST be
+   |  calculated as described in <a href="#section-5.4">Section 5.4</a> using the same digest
+   |  algorithm to compute the digest of the encapContentInfo eContent
+   |  OCTET STRING and the message-digest attribute.  For the signature
+   |  to be valid, the message digest value calculated by the recipient
+   |  MUST be the same as the value of the messageDigest attribute
+   |  included in the signedAttrs field of the SignedData signerInfo.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Backward Compatibility Considerations</span>
+
+   The new requirement introduced above might lead to incompatibility
+   with an implementation that allowed different digest algorithms to be
+   used to compute the digest of the message content and the digest of
+   signed attributes.  The signatures produced by such an implementation
+   when two different digest algorithms are used will be considered
+   invalid by an implementation that follows this specification.
+   However, most, if not all, implementations already require the
+   originator to use the same digest algorithm for both operations.
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a>.  Timestamp Compatibility Considerations</span>
+
+   The new requirement introduced above might lead to compatibility
+   issues for timestamping systems when the originator does not wish to
+   share the message content with the Time Stamping Authority (TSA)
+   [<a href="/doc/html/rfc3161" title="&quot;Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)&quot;">RFC3161</a>].  In this situation, the originator sends a TimeStampReq to
+   the TSA that includes a MessageImprint, which consists of a digest
+   algorithm identifier and a digest value.  The TSA then uses the
+   originator-provided digest in the MessageImprint.
+
+   When producing the TimeStampToken, the TSA MUST use the same digest
+   algorithm to compute the digest of the encapContentInfo eContent,
+   which is an OCTET STRING that contains the TSTInfo, and the message-
+   digest attribute within the SignerInfo.
+
+   To ensure that TimeStampToken values that were generated before this
+   update remain valid, no requirement is placed on a TSA to ensure that
+   the digest algorithm for the TimeStampToken matches the digest
+   algorithm for the MessageImprint embedded within the TSTInfo.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Recommended Inclusion of the CMSAlgorithmProtection Attribute</span>
+
+   This section updates [<a href="/doc/html/rfc5652" title="&quot;Cryptographic Message Syntax (CMS)&quot;">RFC5652</a>] to recommend that the originator
+   include the CMSAlgorithmProtection attribute [<a href="/doc/html/rfc6211" title="&quot;Cryptographic Message Syntax (CMS) Algorithm Identifier Protection Attribute&quot;">RFC6211</a>] whenever
+   signed attributes or authenticated attributes are present.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  <a href="/doc/html/rfc5652#section-14">RFC 5652, Section&nbsp;14</a></span>
+
+   Add the following paragraph as the eighth paragraph in <a href="#section-14">Section 14</a>:
+
+   ADD:
+
+   |  While there are no known algorithm substitution attacks today, the
+   |  inclusion of the algorithm identifiers used by the originator as a
+   |  signed attribute or an authenticated attribute makes such an
+   |  attack significantly more difficult.  Therefore, the originator of
+   |  a signed-data content type that includes signed attributes SHOULD
+   |  include the CMSAlgorithmProtection attribute [<a href="/doc/html/rfc6211" title="&quot;Cryptographic Message Syntax (CMS) Algorithm Identifier Protection Attribute&quot;">RFC6211</a>] as one of
+   |  the signed attributes.  Likewise, the originator of an
+   |  authenticated-data content type that includes authenticated
+   |  attributes SHOULD include the CMSAlgorithmProtection attribute
+   |  [<a href="/doc/html/rfc6211" title="&quot;Cryptographic Message Syntax (CMS) Algorithm Identifier Protection Attribute&quot;">RFC6211</a>] as one of the authenticated attributes.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   The security properties of the CMS [<a href="/doc/html/rfc5652" title="&quot;Cryptographic Message Syntax (CMS)&quot;">RFC5652</a>] signed-data and
+   authenticated-data content types are updated to offer protection for
+   algorithm identifiers, which makes algorithm substitution attacks
+   significantly more difficult.
+
+   For the signed-data content type, the improvements specified in this
+   document force an attacker to mount a hash algorithm substitution
+   attack on the overall signature, not just on the message digest of
+   the encapContentInfo eContent.
+
+   Some digital signature algorithms have prevented hash function
+   substitutions by including a digest algorithm identifier as an input
+   to the signature algorithm.  As discussed in [<a href="#ref-HASHID" title="&quot;On Hash Function Firewalls in Signature Schemes&quot;">HASHID</a>], such a
+   &quot;firewall&quot; may not be effective or even possible with newer signature
+   algorithms.  For example, RSASSA-PKCS1-v1_5 [<a href="/doc/html/rfc8017" title="&quot;PKCS #1: RSA Cryptography Specifications Version 2.2&quot;">RFC8017</a>] protects the
+   digest algorithm identifier, but RSASSA-PSS [<a href="/doc/html/rfc8017" title="&quot;PKCS #1: RSA Cryptography Specifications Version 2.2&quot;">RFC8017</a>] does not.
+   Therefore, it remains important that a signer have a way to signal to
+   a recipient which digest algorithms are allowed to be used in
+   conjunction with the verification of an overall signature.  This
+   signaling can be done as part of the specification of the signature
+   algorithm in an X.509v3 certificate extension [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>] or some other
+   means.  The Digital Signature Standard (DSS) [<a href="#ref-DSS" title="&quot;Digital Signature Standard (DSS)&quot;">DSS</a>] takes the first
+   approach by requiring the use of an &quot;approved&quot; one-way hash
+   algorithm.
+
+   For the authenticated-data content type, the improvements specified
+   in this document force an attacker to mount a MAC algorithm
+   substitution attack, which is difficult because the attacker does not
+   know the authentication key.
+
+   The CMSAlgorithmProtection attribute [<a href="/doc/html/rfc6211" title="&quot;Cryptographic Message Syntax (CMS) Algorithm Identifier Protection Attribute&quot;">RFC6211</a>] offers protection for
+   the algorithm identifiers used in the signed-data and authenticated-
+   data content types.  However, no protection is provided for the
+   algorithm identifiers in the enveloped-data, digested-data, or
+   encrypted-data content types.  Likewise, the CMSAlgorithmProtection
+   attribute provides no protection for the algorithm identifiers used
+   in the authenticated-enveloped-data content type defined in
+   [<a href="/doc/html/rfc5083" title="&quot;Cryptographic Message Syntax (CMS) Authenticated-Enveloped-Data Content Type&quot;">RFC5083</a>].  A mechanism for algorithm identifier protection for these
+   content types is work for the future.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3161">RFC3161</a>]  Adams, C., Cain, P., Pinkas, D., and R. Zuccherato,
+              &quot;Internet X.509 Public Key Infrastructure Time-Stamp
+              Protocol (TSP)&quot;, <a href="/doc/html/rfc3161">RFC 3161</a>, DOI 10.17487/RFC3161, August
+              2001, &lt;<a href="https://www.rfc-editor.org/info/rfc3161">https://www.rfc-editor.org/info/rfc3161</a>&gt;.
+
+   [<a id="ref-RFC5652">RFC5652</a>]  Housley, R., &quot;Cryptographic Message Syntax (CMS)&quot;, STD 70,
+              <a href="/doc/html/rfc5652">RFC 5652</a>, DOI 10.17487/RFC5652, September 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5652">https://www.rfc-editor.org/info/rfc5652</a>&gt;.
+
+   [<a id="ref-RFC6211">RFC6211</a>]  Schaad, J., &quot;Cryptographic Message Syntax (CMS) Algorithm
+              Identifier Protection Attribute&quot;, <a href="/doc/html/rfc6211">RFC 6211</a>,
+              DOI 10.17487/RFC6211, April 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6211">https://www.rfc-editor.org/info/rfc6211</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-DSS">DSS</a>]      National Institute of Standards and Technology (NIST),
+              &quot;Digital Signature Standard (DSS)&quot;, FIPS 186-4,
+              DOI 10.6028/NIST.FIPS.186-4, July 2013,
+              &lt;<a href="https://doi.org/10.6028/NIST.FIPS.186-4">https://doi.org/10.6028/NIST.FIPS.186-4</a>&gt;.
+
+   [<a id="ref-HASHID">HASHID</a>]   Kaliski, B., &quot;On Hash Function Firewalls in Signature
+              Schemes&quot;, DOI 10.1007/3-540-45760-7_1, Lecture Notes in
+              Computer Science, Volume 2271, February 2002,
+              &lt;<a href="https://doi.org/10.1007/3-540-45760-7_1">https://doi.org/10.1007/3-540-45760-7_1</a>&gt;.
+
+   [<a id="ref-RFC5083">RFC5083</a>]  Housley, R., &quot;Cryptographic Message Syntax (CMS)
+              Authenticated-Enveloped-Data Content Type&quot;, <a href="/doc/html/rfc5083">RFC 5083</a>,
+              DOI 10.17487/RFC5083, November 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5083">https://www.rfc-editor.org/info/rfc5083</a>&gt;.
+
+   [<a id="ref-RFC5280">RFC5280</a>]  Cooper, D., Santesson, S., Farrell, S., Boeyen, S.,
+              Housley, R., and W. Polk, &quot;Internet X.509 Public Key
+              Infrastructure Certificate and Certificate Revocation List
+              (CRL) Profile&quot;, <a href="/doc/html/rfc5280">RFC 5280</a>, DOI 10.17487/RFC5280, May 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5280">https://www.rfc-editor.org/info/rfc5280</a>&gt;.
+
+   [<a id="ref-RFC6210">RFC6210</a>]  Schaad, J., &quot;Experiment: Hash Functions with Parameters in
+              the Cryptographic Message Syntax (CMS) and S/MIME&quot;,
+              <a href="/doc/html/rfc6210">RFC 6210</a>, DOI 10.17487/RFC6210, April 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6210">https://www.rfc-editor.org/info/rfc6210</a>&gt;.
+
+   [<a id="ref-RFC8017">RFC8017</a>]  Moriarty, K., Ed., Kaliski, B., Jonsson, J., and A. Rusch,
+              &quot;PKCS #1: RSA Cryptography Specifications Version 2.2&quot;,
+              <a href="/doc/html/rfc8017">RFC 8017</a>, DOI 10.17487/RFC8017, November 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8017">https://www.rfc-editor.org/info/rfc8017</a>&gt;.
+
+   [<a id="ref-SHS">SHS</a>]      National Institute of Standards and Technology (NIST),
+              &quot;Secure Hash Standard (SHS)&quot;, FIPS 180-4,
+              DOI 10.6028/NIST.FIPS.180-4, August 2015,
+              &lt;<a href="https://doi.org/10.6028/NIST.FIPS.180-4">https://doi.org/10.6028/NIST.FIPS.180-4</a>&gt;.
+
+Acknowledgements
+
+   Many thanks to Jim Schaad and Peter Gutmann; without knowing it, they
+   motivated me to write this document.  Thanks to Roman Danyliw, Ben
+   Kaduk, and Peter Yee for their careful review and editorial
+   suggestions.
+
+Author&#x27;s Address
+
+   Russ Housley
+   Vigil Security, LLC
+   516 Dranesville Road
+   Herndon, VA 20170
+   United States of America
+
+   Email: housley@vigilsec.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,987 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc9005
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-pce-association-policy/">
+  <meta name="description" content="Path Computation Element Communication Protocol (PCEP) Extension for Associating Policies and Label Switched Paths (LSPs) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc9005.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc9005.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc9005.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc9005.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc9005/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc9005/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/pce/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-pce-association-policy@ietf.org?subject=draft-ietf-pce-association-policy" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-pce-association-policy-16.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-association-policy-16.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-pce-association-policy-16.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-pce-association-policy-16">draft-ietf-pce-association-policy-16</a>             Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      S. Litkowski
+Request for Comments: 9005                           Cisco Systems, Inc.
+Category: Standards Track                                   S. Sivabalan
+ISSN: 2070-1721                                                    Ciena
+                                                             J. Tantsura
+                                                        Juniper Networks
+                                                             J. Hardwick
+                                                     Metaswitch Networks
+                                                            李呈 (C. Li)
+                                  华为技术有限公司 (Huawei Technologies)
+                                                              March 2021
+
+
+  <span class="h1">Path Computation Element Communication Protocol (PCEP) Extension for</span>
+          <span class="h1">Associating Policies and Label Switched Paths (LSPs)</span>
+
+Abstract
+
+   This document introduces a simple mechanism to associate policies
+   with a group of Label Switched Paths (LSPs) via an extension to the
+   Path Computation Element Communication Protocol (PCEP).  The
+   extension allows a PCEP speaker to advertise to a PCEP peer that a
+   particular LSP belongs to a particular Policy Association Group
+   (PAG).
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc9005">https://www.rfc-editor.org/info/rfc9005</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Requirements Language
+   2.  Terminology
+   3.  Motivation
+     3.1.  Policy-Based Constraints
+   4.  Overview
+   5.  Policy Association Group
+     5.1.  POLICY-PARAMETERS-TLV
+   6.  Security Considerations
+   7.  IANA Considerations
+     7.1.  ASSOCIATION Object Type Indicators
+     7.2.  PCEP TLV Type Indicators
+     7.3.  PCEP Errors
+   8.  Manageability Considerations
+     8.1.  Control of Function and Policy
+     8.2.  Information and Data Models
+     8.3.  Liveness Detection and Monitoring
+     8.4.  Verifying Correct Operations
+     8.5.  Requirements on Other Protocols
+     8.6.  Impact on Network Operations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Example of Policy Parameters
+   Acknowledgments
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a id="ref-RFC5440">RFC5440</a>] describes the Path Computation Element Communication
+   Protocol (PCEP), which enables the communication between a Path
+   Computation Client (PCC) and a Path Control Element (PCE) or between
+   two PCEs based on the PCE architecture [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>].  [<a href="/doc/html/rfc5394" title="&quot;Policy-Enabled Path Computation Framework&quot;">RFC5394</a>] provides
+   additional details on policy within the PCE architecture and also
+   provides context for the support of PCE policy.
+
+   &quot;Path Computation Element Communication Protocol (PCEP) Extensions
+   for Stateful PCE&quot; ([<a href="/doc/html/rfc8231" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Stateful PCE&quot;">RFC8231</a>]) describes a set of extensions to PCEP
+   to enable active control of Multiprotocol Label Switching Traffic
+   Engineering (MPLS-TE) and Generalized MPLS (GMPLS) tunnels.
+   [<a href="/doc/html/rfc8281" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for PCE-Initiated LSP Setup in a Stateful PCE Model&quot;">RFC8281</a>] describes the setup and teardown of PCE-initiated LSPs
+   under the active stateful PCE model without the need for local
+   configuration on the PCC, thus allowing for a dynamic network.
+   Currently, the LSPs can either be signaled via Resource Reservation
+   Protocol Traffic Engineering (RSVP-TE) or segment routed as specified
+   in [<a href="/doc/html/rfc8664" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Segment Routing&quot;">RFC8664</a>].
+
+   [<a id="ref-RFC8697">RFC8697</a>] introduces a generic mechanism to create a grouping of LSPs
+   that can then be used to define associations between a set of LSPs
+   and a set of attributes (such as configuration parameters or
+   behaviors) and is equally applicable to stateful PCE (active and
+   passive modes) and stateless PCE.
+
+   This document specifies a PCEP extension to associate one or more
+   LSPs with policies using the generic association mechanism.
+
+   A PCEP speaker may want to influence the PCEP peer with respect to
+   path selection and other policies.  This document describes a PCEP
+   extension to associate policies by creating a Policy Association
+   Group (PAG) and encoding this association in PCEP messages.  The
+   specification is applicable to both stateful and stateless PCEP
+   sessions.
+
+   Note that the actual policy definition and the associated parameters
+   are out of scope of this document.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The following terminology is used in this document.
+
+   Association parameters:  As described in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>], the combination
+      of the mandatory fields Association Type, Association ID, and
+      Association Source in the ASSOCIATION object uniquely identifies
+      the association group.  If the optional TLVs -- Global Association
+      Source or Extended Association ID -- are included, then they are
+      included in combination with mandatory fields to uniquely identify
+      the association group.
+
+   Association information:  As described in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>], the ASSOCIATION
+      object could include other optional TLVs based on the Association
+      Types that provide &quot;information&quot; related to the association.
+
+   LSR:  Label Switching Router
+
+   MPLS:  Multiprotocol Label Switching
+
+   PAG:  Policy Association Group
+
+   PAT:  Policy Association Type
+
+   PCC:  Path Computation Client; any client application requesting a
+      path computation to be performed by a Path Computation Element.
+
+   PCE:  Path Computation Element; an entity (component, application, or
+      network node) that is capable of computing a network path or route
+      based on a network graph and applying computational constraints.
+
+   PCEP:  Path Computation Element Communication Protocol
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Motivation</span>
+
+   Paths computed using PCE can be subjected to various policies at both
+   the PCE and the PCC.  For example, in a centralized TE scenario,
+   network operators may instantiate LSPs and specify policies for
+   traffic accounting, path monitoring, telemetry, etc., for some LSPs
+   via the stateful PCE.  Similarly, a PCC could request a user-specific
+   or service-specific policy to be applied at the PCE, such as a
+   constraints relaxation policy, to meet optimal QoS and resiliency
+   levels.
+
+   PCEP speakers can use the generic mechanism of [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>] to associate
+   a set of LSPs with a policy, without the need to know the details of
+   such a policy.  This simplifies network operations, avoids frequent
+   software upgrades, and provides the ability to introduce new policies
+   more quickly.
+
+                                                            PAG Y
+                                             {Service-Specific Policy
+                                                       for constraint
+               Monitor LSP                                relaxation}
+                    |                                          |
+                    | PAG X                    PCReq/PCRpt     |
+                    V {Monitor LSP}            {PAG Y}         V
+                 +-----+                   ----------------&gt; +-----+
+      _ _ _ _ _ _| PCE |                  |                  | PCE |
+     |           +-----+                  |      ----------&gt; +-----+
+     | PCInitiate/PCUpd                   |     |    PCReq/PCRpt
+     |{PAG X}                             |     |    {PAG Y}
+     |                                    |     |
+     |              .-----.               |     |         .-----.
+     |             (       )              |  +----+      (       )
+     |         .--(         )--.          |  |PCC1|--.--(         )--.
+     V        (                 )         |  +----+ (                 )
+   +---+     (                   )        |        (                   )
+   |PCC|----(   (G)MPLS network    )   +----+     ( (G)MPLS network   )
+   +---+     (                   )     |PCC2|------(                   )
+   PAG X      (                 )      +----+       (                 )
+   {Monitor    &#x27;--(         )--&#x27;                     &#x27;--(         )--&#x27;
+   LSP}            (       )                             (       )
+                    &#x27;-----&#x27;                               &#x27;-----&#x27;
+
+   Case 1: Policy requested by PCE        Case 2: Policy requested by
+           and enforced by PCC                    PCC and enforced by
+                                                  PCE
+
+         Figure 1: Sample Use Cases for Carrying Policies over PCEP
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Policy-Based Constraints</span>
+
+   In the context of a policy-enabled path computation framework
+   [<a href="/doc/html/rfc5394" title="&quot;Policy-Enabled Path Computation Framework&quot;">RFC5394</a>], path computation policies may be applied at a PCC, a PCE,
+   or both.  A Label Switching Router (LSR) with a policy-enabled PCC
+   can receive:
+
+   *  A service request via signaling, including over a Network-Network
+      Interface (NNI) or User-Network Interface (UNI) reference point.
+
+   *  A configuration request over a management interface to establish a
+      service.
+
+   The PCC may apply user-specific or service-specific policies to
+   decide how the path selection process should be constrained -- that
+   is, which constraints, diversities, optimization criteria, and
+   constraint-relaxation strategies should be applied to increase the
+   likelihood that the service LSP(s) will be successfully established
+   and will provide the necessary QoS and resilience against network
+   failures.  The user-specific or service-specific policies are applied
+   to the PCC and are then passed to the PCE along with the path
+   computation request in the form of constraints [<a href="/doc/html/rfc5394" title="&quot;Policy-Enabled Path Computation Framework&quot;">RFC5394</a>].
+
+   The PCEP speaker can use the generic mechanism as per [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>] to
+   associate a set of LSPs with user-specific or service-specific
+   policies.  This would simplify the path computation message exchanges
+   in PCEP.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Overview</span>
+
+   As per [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>], LSPs are associated with other LSPs with which they
+   interact by adding them to a common association group.  Grouping can
+   also be used to define the association between LSPs and the policies
+   associated with them.  As described in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>], the association
+   group is uniquely identified by the combination of the following
+   fields in the ASSOCIATION object: Association Type, Association ID,
+   Association Source, and (if present) Global Association Source or
+   Extended Association ID.  This document defines a new Association
+   Type called &quot;Policy Association&quot; with value 3 based on the generic
+   ASSOCIATION object.  This new Association Type is called &quot;Policy
+   Association Type&quot; (PAT).
+
+   [<a id="ref-RFC8697">RFC8697</a>] specifies the mechanism for the capability advertisement of
+   the Association Types supported by a PCEP speaker by defining an
+   ASSOC-Type-List TLV to be carried within an OPEN object.  This
+   capability exchange for the PAT MUST be done before using the Policy
+   Association.  Thus, the PCEP speaker MUST include the PAT in the
+   ASSOC-Type-List TLV and MUST receive the same from the PCEP peer
+   before using the PAG in PCEP messages.
+
+   The Policy Association Type (3) is operator configured (as specified
+   in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>]), i.e., the association is created by the operator
+   manually on the PCEP peers, and an LSP belonging to this association
+   is conveyed via PCEP messages to the PCEP peer.  There is no need to
+   convey an explicit Operator-configured Association Range, which could
+   only serve to artificially limit the available Association IDs.
+   Thus, for the Policy Association Type, the Operator-configured
+   Association Range MUST NOT be set and MUST be ignored if received.
+
+   A PAG can have one or more LSPs.  The association parameters
+   including Association Identifier, Policy Association Type (PAT), as
+   well as the Association Source IP address are manually configured by
+   the operator and are used to identify the PAG as described in
+   [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>].  The Global Association Source and Extended Association ID
+   MAY also be included.
+
+   As per the processing rules specified in <a href="/doc/html/rfc8697#section-6.4">Section&nbsp;6.4 of [RFC8697]</a>, if
+   a PCEP speaker does not support this Policy Association Type, it
+   would return a PCEP error (PCErr) message with Error-Type 26
+   &quot;Association Error&quot; and Error-value 1 &quot;Association type is not
+   supported&quot;.  The PAG and the policy MUST be configured on the PCEP
+   peers as per the operator-configured association procedures.  All
+   further processing is as per <a href="/doc/html/rfc8697#section-6.4">Section&nbsp;6.4 of [RFC8697]</a>.  If a PCE
+   speaker receives a PAG in a PCEP message and the Policy Association
+   information is not configured, it MUST return a PCErr message with
+   Error-Type 26 &quot;Association Error&quot; and Error-value 4 &quot;Association
+   unknown&quot;.
+
+   Associating a particular LSP with multiple policy groups is allowed
+   from a protocol perspective; however, there is no assurance that the
+   PCEP speaker will be able to apply multiple policies.  If a PCEP
+   speaker does not support handling of multiple policies for an LSP, it
+   MUST NOT add the LSP into the association group and MUST return a
+   PCErr with Error-Type 26 &quot;Association Error&quot; and Error-value 7
+   &quot;Cannot join the association group&quot;.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Policy Association Group</span>
+
+   Association groups and their memberships are defined using the
+   ASSOCIATION object defined in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>].  Two object types for IPv4
+   and IPv6 are defined.  The ASSOCIATION object includes &quot;Association
+   type&quot; indicating the type of the association group.  This document
+   adds a new Association Type, Policy Association Type (PAT).
+
+   PAG may carry optional TLVs including but not limited to:
+
+   POLICY-PARAMETERS-TLV:
+      Used to communicate opaque information useful to applying the
+      policy, described in <a href="#section-5.1">Section 5.1</a>.
+
+   VENDOR-INFORMATION-TLV:
+      Used to communicate arbitrary vendor-specific behavioral
+      information, described in [<a href="/doc/html/rfc7470" title="&quot;Conveying Vendor-Specific Constraints in the Path Computation Element Communication Protocol&quot;">RFC7470</a>].
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  POLICY-PARAMETERS-TLV</span>
+
+   The ASSOCIATION object (for PAT) can carry an optional POLICY-
+   PARAMETERS-TLV with opaque information that is needed to apply the
+   policy at the PCEP peer.  In some cases, to apply a PCE policy
+   successfully, it is required to also associate some policy parameters
+   that need to be evaluated.  This TLV is used to carry those policy
+   parameters.  The TLV could include one or more policy-related
+   parameters.  The encoding format and the order MUST be known to the
+   PCEP peers; this could be done during the configuration of the policy
+   (and its association parameters) for the PAG.  The TLV format is as
+   per the format of the PCEP TLVs, as defined in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] and shown in
+   Figure 2.  Only one POLICY-PARAMETERS-TLV can be carried, and only
+   the first occurrence is processed.  Any others MUST be ignored.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |         Type=48               |          Length               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      //                     Policy Parameters                       //
+      |                                                               |
+      +---------------------------------------------------------------+
+
+                 Figure 2: The POLICY-PARAMETERS-TLV Format
+
+   The POLICY-PARAMETERS-TLV type is 48, and it has a variable length.
+   The Value field is variable and padded to a 4-byte alignment; padding
+   is not included in the Length field.  The PCEP peer implementation
+   needs to be aware of the encoding format, order, and meaning of the
+   policy parameters well in advance based on the policy.  Note that
+   from the protocol point of view, this data is opaque and can be used
+   to carry parameters in any format understood by the PCEP peers and
+   associated with the policy.  The exact use of this TLV is beyond the
+   scope of this document.  Examples are included for illustration
+   purposes in <a href="#appendix-A">Appendix A</a>.
+
+   If the PCEP peer is unaware of the policy parameters associated with
+   the policy and it receives the POLICY-PARAMETERS-TLV, it MUST reject
+   the PCEP message and send a PCErr message with Error-Type 26
+   &quot;Association Error&quot; and Error-value 12 &quot;Not expecting policy
+   parameters&quot;.  Further, if at least one parameter in the POLICY-
+   PARAMETERS-TLV received by the PCEP speaker is considered
+   unacceptable in the context of the associated policy (e.g., out of
+   range value, badly encoded value, etc.), the PCEP speaker MUST reject
+   the PCEP message and send a PCErr message with Error-Type 26
+   &quot;Association Error&quot; and Error-value 13 &quot;Unacceptable policy
+   parameters&quot;.
+
+   Note that the vendor-specific behavioral information is encoded in
+   the VENDOR-INFORMATION-TLV, which can be used along with this TLV.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   The security considerations described in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>], [<a href="/doc/html/rfc8231" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Stateful PCE&quot;">RFC8231</a>],
+   [<a href="/doc/html/rfc5394" title="&quot;Policy-Enabled Path Computation Framework&quot;">RFC5394</a>], and [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] apply to the extensions described in this
+   document as well.  In particular, a malicious PCEP speaker could be
+   spoofed and used as an attack vector by creating spurious Policy
+   Associations as described in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>].  Further, as described in
+   [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>], a spurious LSP can have policies that are inconsistent
+   with those of the legitimate LSPs of the group and, thus, cause
+   problems in the handling of the policy for the legitimate LSPs.  It
+   should be noted that Policy Association could provide an adversary
+   with the opportunity to eavesdrop on the relationship between the
+   LSPs.  [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>] suggests that the implementations and operators use
+   indirect values as a way to hide any sensitive business
+   relationships.  Thus, securing the PCEP session using Transport Layer
+   Security (TLS) [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>], as per the recommendations and best current
+   practices in <a href="/doc/html/bcp195">BCP 195</a> [<a href="/doc/html/rfc7525" title="&quot;Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)&quot;">RFC7525</a>], is RECOMMENDED.
+
+   Further, extra care needs to be taken by the implementation with
+   respect to the POLICY-PARAMETERS-TLV while decoding, verifying, and
+   applying these policy variables.  This TLV parsing could be exploited
+   by an attacker; thus, extra care must be taken while configuring a
+   Policy Association that uses the POLICY-PARAMETERS-TLV and making
+   sure that the data is easy to parse and verify before use.  Ensuring
+   agreement among all relevant PCEP peers as to the format and layout
+   of the policy parameters information is key for correct operations.
+   Note that the parser for POLICY-PARAMETERS-TLV is particularly
+   sensitive since it is opaque to PCEP and can be used to convey data
+   with many different internal structures/formats.  The choice of
+   decoder is dependent on the additional metadata associated with the
+   policy; thus, additional risk of using a wrong decoder and getting
+   garbage results is incurred.  Using standard and well-known policy
+   formats could help alleviate those risks.
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  ASSOCIATION Object Type Indicators</span>
+
+   This document defines a new Association Type in the subregistry
+   &quot;ASSOCIATION Type Field&quot; of the &quot;Path Computation Element Protocol
+   (PCEP) Numbers&quot; registry that was originally defined in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>].
+
+                +=======+====================+===========+
+                | Value | Name               | Reference |
+                +=======+====================+===========+
+                | 3     | Policy Association | <a href="/doc/html/rfc9005">RFC 9005</a>  |
+                +-------+--------------------+-----------+
+
+                                 Table 1
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  PCEP TLV Type Indicators</span>
+
+   The following TLV Type Indicator value has been registered within the
+   &quot;PCEP TLV Type Indicators&quot; subregistry of the &quot;Path Computation
+   Element Protocol (PCEP) Numbers&quot; registry.
+
+               +=======+=======================+===========+
+               | Value | Description           | Reference |
+               +=======+=======================+===========+
+               | 48    | POLICY-PARAMETERS-TLV | <a href="/doc/html/rfc9005">RFC 9005</a>  |
+               +-------+-----------------------+-----------+
+
+                                  Table 2
+
+<span class="h3"><a class="selflink" id="section-7.3" href="#section-7.3">7.3</a>.  PCEP Errors</span>
+
+   This document defines new Error-values for Error-Type 26 &quot;Association
+   Error&quot; defined in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>].  IANA has allocated new error values
+   within the &quot;PCEP-ERROR Object Error Types and Values&quot; subregistry of
+   the &quot;Path Computation Element Protocol (PCEP) Numbers&quot; registry as
+   follows:
+
+    +============+===================+===================+===========+
+    | Error-Type | Meaning           | Error-value       | Reference |
+    +============+===================+===================+===========+
+    | 26         | Association Error |                   | [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>] |
+    +------------+-------------------+-------------------+-----------+
+    |            |                   | 12: Not expecting | <a href="/doc/html/rfc9005">RFC 9005</a>  |
+    |            |                   | policy parameters |           |
+    +------------+-------------------+-------------------+-----------+
+    |            |                   | 13: Unacceptable  | <a href="/doc/html/rfc9005">RFC 9005</a>  |
+    |            |                   | policy parameters |           |
+    +------------+-------------------+-------------------+-----------+
+
+                                 Table 3
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Manageability Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Control of Function and Policy</span>
+
+   An operator MUST be allowed to configure the Policy Associations at
+   PCEP peers and associate them with the LSPs.  They MAY also allow
+   configuration to related policy parameters and provide information on
+   the encoding format and order to parse the associated POLICY-
+   PARAMETERS-TLV.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Information and Data Models</span>
+
+   [<a id="ref-RFC7420">RFC7420</a>] describes the PCEP MIB; there are no new MIB objects for
+   this document.
+
+   The PCEP YANG module is defined in [<a href="#ref-PCE-PCEP-YANG">PCE-PCEP-YANG</a>].  That module
+   supports associations as defined in [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>]; thus, it supports the
+   Policy Association Groups.
+
+   An implementation SHOULD allow the operator to view the PAG
+   configured.  Further implementation SHOULD allow one to view
+   associations reported by each peer and the current set of LSPs in the
+   PAG.
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  Liveness Detection and Monitoring</span>
+
+   The mechanisms defined in this document do not imply any new liveness
+   detection and monitoring requirements in addition to those already
+   listed in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] and [<a href="/doc/html/rfc8231" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Stateful PCE&quot;">RFC8231</a>].
+
+<span class="h3"><a class="selflink" id="section-8.4" href="#section-8.4">8.4</a>.  Verifying Correct Operations</span>
+
+   Verifying the correct operation of a policy can be performed by
+   monitoring various parameters as described in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] and
+   [<a href="/doc/html/rfc8231" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Stateful PCE&quot;">RFC8231</a>].  A PCEP implementation SHOULD provide information on
+   failed path computation due to applying policy and log error events,
+   e.g., parsing failure for a POLICY-PARAMETERS-TLV.
+
+<span class="h3"><a class="selflink" id="section-8.5" href="#section-8.5">8.5</a>.  Requirements on Other Protocols</span>
+
+   The mechanisms defined in this document do not imply any new
+   requirements on other protocols.
+
+<span class="h3"><a class="selflink" id="section-8.6" href="#section-8.6">8.6</a>.  Impact on Network Operations</span>
+
+   The mechanisms defined in this document do not have any impact on
+   network operations in addition to those already listed in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>],
+   [<a href="/doc/html/rfc8231" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Stateful PCE&quot;">RFC8231</a>], and [<a href="/doc/html/rfc8281" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for PCE-Initiated LSP Setup in a Stateful PCE Model&quot;">RFC8281</a>].
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC5440">RFC5440</a>]  Vasseur, JP., Ed. and JL. Le Roux, Ed., &quot;Path Computation
+              Element (PCE) Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5440">RFC 5440</a>,
+              DOI 10.17487/RFC5440, March 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5440">https://www.rfc-editor.org/info/rfc5440</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8231">RFC8231</a>]  Crabbe, E., Minei, I., Medved, J., and R. Varga, &quot;Path
+              Computation Element Communication Protocol (PCEP)
+              Extensions for Stateful PCE&quot;, <a href="/doc/html/rfc8231">RFC 8231</a>,
+              DOI 10.17487/RFC8231, September 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8231">https://www.rfc-editor.org/info/rfc8231</a>&gt;.
+
+   [<a id="ref-RFC8253">RFC8253</a>]  Lopez, D., Gonzalez de Dios, O., Wu, Q., and D. Dhody,
+              &quot;PCEPS: Usage of TLS to Provide a Secure Transport for the
+              Path Computation Element Communication Protocol (PCEP)&quot;,
+              <a href="/doc/html/rfc8253">RFC 8253</a>, DOI 10.17487/RFC8253, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8253">https://www.rfc-editor.org/info/rfc8253</a>&gt;.
+
+   [<a id="ref-RFC8697">RFC8697</a>]  Minei, I., Crabbe, E., Sivabalan, S., Ananthakrishnan, H.,
+              Dhody, D., and Y. Tanaka, &quot;Path Computation Element
+              Communication Protocol (PCEP) Extensions for Establishing
+              Relationships between Sets of Label Switched Paths
+              (LSPs)&quot;, <a href="/doc/html/rfc8697">RFC 8697</a>, DOI 10.17487/RFC8697, January 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8697">https://www.rfc-editor.org/info/rfc8697</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-PCE-PCEP-YANG">PCE-PCEP-YANG</a>]
+              Dhody, D., Ed., Hardwick, J., Beeram, V., and J. Tantsura,
+              &quot;A YANG Data Model for Path Computation Element
+              Communications Protocol (PCEP)&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-pce-pcep-yang-16">draft-ietf-pce-pcep-yang-16</a>, 22 February
+              2021,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-pce-pcep-yang-16">https://tools.ietf.org/html/draft-ietf-pce-pcep-yang-16</a>&gt;.
+
+   [<a id="ref-RFC4655">RFC4655</a>]  Farrel, A., Vasseur, J.-P., and J. Ash, &quot;A Path
+              Computation Element (PCE)-Based Architecture&quot;, <a href="/doc/html/rfc4655">RFC 4655</a>,
+              DOI 10.17487/RFC4655, August 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4655">https://www.rfc-editor.org/info/rfc4655</a>&gt;.
+
+   [<a id="ref-RFC5394">RFC5394</a>]  Bryskin, I., Papadimitriou, D., Berger, L., and J. Ash,
+              &quot;Policy-Enabled Path Computation Framework&quot;, <a href="/doc/html/rfc5394">RFC 5394</a>,
+              DOI 10.17487/RFC5394, December 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5394">https://www.rfc-editor.org/info/rfc5394</a>&gt;.
+
+   [<a id="ref-RFC5905">RFC5905</a>]  Mills, D., Martin, J., Ed., Burbank, J., and W. Kasch,
+              &quot;Network Time Protocol Version 4: Protocol and Algorithms
+              Specification&quot;, <a href="/doc/html/rfc5905">RFC 5905</a>, DOI 10.17487/RFC5905, June 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5905">https://www.rfc-editor.org/info/rfc5905</a>&gt;.
+
+   [<a id="ref-RFC7420">RFC7420</a>]  Koushik, A., Stephan, E., Zhao, Q., King, D., and J.
+              Hardwick, &quot;Path Computation Element Communication Protocol
+              (PCEP) Management Information Base (MIB) Module&quot;,
+              <a href="/doc/html/rfc7420">RFC 7420</a>, DOI 10.17487/RFC7420, December 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7420">https://www.rfc-editor.org/info/rfc7420</a>&gt;.
+
+   [<a id="ref-RFC7470">RFC7470</a>]  Zhang, F. and A. Farrel, &quot;Conveying Vendor-Specific
+              Constraints in the Path Computation Element Communication
+              Protocol&quot;, <a href="/doc/html/rfc7470">RFC 7470</a>, DOI 10.17487/RFC7470, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7470">https://www.rfc-editor.org/info/rfc7470</a>&gt;.
+
+   [<a id="ref-RFC7525">RFC7525</a>]  Sheffer, Y., Holz, R., and P. Saint-Andre,
+              &quot;Recommendations for Secure Use of Transport Layer
+              Security (TLS) and Datagram Transport Layer Security
+              (DTLS)&quot;, <a href="/doc/html/bcp195">BCP 195</a>, <a href="/doc/html/rfc7525">RFC 7525</a>, DOI 10.17487/RFC7525, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7525">https://www.rfc-editor.org/info/rfc7525</a>&gt;.
+
+   [<a id="ref-RFC8281">RFC8281</a>]  Crabbe, E., Minei, I., Sivabalan, S., and R. Varga, &quot;Path
+              Computation Element Communication Protocol (PCEP)
+              Extensions for PCE-Initiated LSP Setup in a Stateful PCE
+              Model&quot;, <a href="/doc/html/rfc8281">RFC 8281</a>, DOI 10.17487/RFC8281, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8281">https://www.rfc-editor.org/info/rfc8281</a>&gt;.
+
+   [<a id="ref-RFC8664">RFC8664</a>]  Sivabalan, S., Filsfils, C., Tantsura, J., Henderickx, W.,
+              and J. Hardwick, &quot;Path Computation Element Communication
+              Protocol (PCEP) Extensions for Segment Routing&quot;, <a href="/doc/html/rfc8664">RFC 8664</a>,
+              DOI 10.17487/RFC8664, December 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8664">https://www.rfc-editor.org/info/rfc8664</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Example of Policy Parameters</span>
+
+   An example could be a monitoring and telemetry policy, P1, that is
+   dependent on a profile (GOLD/SILVER/BRONZE) as set by the operator.
+   The PCEP peers need to be aware of policy P1 (and its associated
+   characteristics) in advance as well the fact that the policy
+   parameter will encode the profile of a type string in the POLICY-
+   PARAMETERS-TLV.  As an example, LSP1 could encode the PAG with the
+   POLICY-PARAMETERS-TLV using the string &quot;GOLD&quot;.
+
+   The following is another example where the path computation at the
+   PCE could be dependent on when the LSP was configured at the PCC.
+   For such a policy, P2, the timestamp can be encoded in the POLICY-
+   PARAMETERS-TLV, and the exact encoding could be the 64-bit timestamp
+   format as defined in [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>].
+
+   While the above example has a single field in the POLICY-PARAMETERS-
+   TLV, it is possible to include multiple fields, but the exact order,
+   encoding format, and meanings need to be known in advance at the PCEP
+   peers.
+
+Acknowledgments
+
+   We would like to acknowledge and thank Santiago Alvarez, Zafar Ali,
+   Luis Tomotaki, Victor Lopez, Rob Shakir, and Clarence Filsfils for
+   working on earlier draft versions with similar motivation.
+
+   Special thanks to the authors of [<a href="/doc/html/rfc8697" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Establishing Relationships between Sets of Label Switched Paths (LSPs)&quot;">RFC8697</a>].  This document borrowed
+   some of its text.  The authors would like to thank Aijun Wang, Peng
+   Shuping, and Gyan Mishra for their useful comments.
+
+   Thanks to Hariharan Ananthakrishnan for shepherding this document.
+   Thanks to Deborah Brungard for providing comments and being the
+   responsible AD for this document.
+
+   Thanks to Nic Leymann for the RTGDIR review.
+
+   Thanks to Benjamin Kaduk and Murray Kucherawy for their comments
+   during the IESG review.
+
+Contributors
+
+   The following individuals have contributed extensively:
+
+   Mahendra Singh Negi
+   RtBrick Inc
+   N-17L, 18th Cross Rd, HSR Layout
+   Bangalore 560102
+   Karnataka
+   India
+
+   Email: mahend.ietf@gmail.com
+
+
+   Dhruv Dhody
+   Huawei Technologies
+   Divyashree Techno Park, Whitefield
+   Bangalore 560066
+   Karnataka
+   India
+
+   Email: dhruv.ietf@gmail.com
+
+
+   The following individuals have contributed text that was
+   incorporated:
+
+   Qin Wu
+   Huawei Technologies
+   101 Software Avenue, Yuhua District
+   Nanjing
+   Jiangsu, 210012
+   China
+
+   Email: sunseawq@huawei.com
+
+
+   Xian Zhang
+   Huawei Technologies
+   Bantian, Longgang District
+   Shenzhen
+   518129
+   China
+
+   Email: zhang.xian@huawei.com
+
+
+   Udayasree Palle
+
+   Email: udayasreereddy@gmail.com
+
+
+   Mike Koldychev
+   Cisco Systems, Inc.
+   Canada
+
+   Email: mkoldych@cisco.com
+
+
+Authors&#x27; Addresses
+
+   Stephane Litkowski
+   Cisco Systems, Inc.
+   11 Rue Camille Desmoulins
+   92130 Issy-les-Moulineaux
+   France
+
+   Email: slitkows@cisco.com
+
+
+   Siva Sivabalan
+   Ciena
+   385 Terry Fox Drive
+   Kanata Ontario K2K 0L1
+   Canada
+
+   Email: msiva282@gmail.com
+
+
+   Jeff Tantsura
+   Juniper Networks
+
+   Email: jefftant.ietf@gmail.com
+
+
+   Jonathan Hardwick
+   Metaswitch Networks
+   33 Genotin Road
+   Enfield
+   United Kingdom
+
+   Email: Jonathan.Hardwick@metaswitch.com
+
+
+   Cheng Li
+   Huawei Technologies
+   Huawei Campus, No. 156 Beiqing Rd.
+   Beijing
+   100095
+   China
+
+   Email: c.l@huawei.com
+
+   Additional contact information:
+
+      李呈
+      中国
+      100095
+      北京
+      华为北研所
+      华为技术有限公司
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

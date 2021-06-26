@@ -1,0 +1,488 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8954
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-lamps-ocsp-nonce/">
+  <meta name="description" content="Online Certificate Status Protocol (OCSP) Nonce Extension (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8954.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8954.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8954.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8954.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8954/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8954/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/lamps/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-lamps-ocsp-nonce@ietf.org?subject=draft-ietf-lamps-ocsp-nonce" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-lamps-ocsp-nonce-05.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-lamps-ocsp-nonce-05.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-lamps-ocsp-nonce-05.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-lamps-ocsp-nonce-05">draft-ietf-lamps-ocsp-nonce-05</a>                   Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                     M. Sahni, Ed.
+Request for Comments: 8954                            Palo Alto Networks
+Updates: <a href="/doc/html/rfc6960">6960</a>                                              November 2020
+Category: Standards Track
+ISSN: 2070-1721
+
+
+       <span class="h1">Online Certificate Status Protocol (OCSP) Nonce Extension</span>
+
+Abstract
+
+   This document specifies the updated format of the Nonce extension in
+   the Online Certificate Status Protocol (OCSP) request and response
+   messages.  OCSP is used to check the status of a certificate, and the
+   Nonce extension is used to cryptographically bind an OCSP response
+   message to a particular OCSP request message.  This document updates
+   <a href="/doc/html/rfc6960">RFC 6960</a>.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8954">https://www.rfc-editor.org/info/rfc8954</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Terminology
+   2.  OCSP Extensions
+     2.1.  Nonce Extension
+   3.  Security Considerations
+     3.1.  Replay Attack
+     3.2.  Nonce Collision
+   4.  IANA Considerations
+   5.  Changes to <a href="/doc/html/rfc6960#appendix-B">Appendix&nbsp;B of RFC 6960</a>
+     5.1.  Changes to <a href="#appendix-B.1">Appendix B.1</a> OCSP in ASN.1 - 1998 Syntax
+     5.2.  Changes to <a href="#appendix-B.2">Appendix B.2</a> OCSP in ASN.1 - 2008 Syntax
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document updates the usage and format of the Nonce extension in
+   OCSP request and response messages.  This extension was previously
+   defined in <a href="/doc/html/rfc6960#section-4.4.1">Section&nbsp;4.4.1 of [RFC6960]</a>.  [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>] does not mention
+   any minimum or maximum length of the nonce in the Nonce extension.
+   Lacking limits on the length of the nonce in the Nonce extension,
+   OCSP responders that follow [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>] may be vulnerable to various
+   attacks, like Denial-of-Service attacks [<a href="/doc/html/rfc4732" title="&quot;Internet Denial-of-Service Considerations&quot;">RFC4732</a>] or chosen-prefix
+   attacks (to get a desired signature), and possible evasions using the
+   Nonce extension data.  This document specifies a lower limit of 1 and
+   an upper limit of 32 for the length of the nonce in the Nonce
+   extension.  This document updates [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  OCSP Extensions</span>
+
+   The message formats for OCSP requests and responses are defined in
+   [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>].  [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>] also defines the standard extensions for OCSP
+   messages based on the extension model employed in X.509 version 3
+   certificates (see [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>]).  This document only specifies the new
+   format for the Nonce extension and does not change the specifications
+   of any of the other standard extensions defined in [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>].
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Nonce Extension</span>
+
+   This section replaces the entirety of <a href="/doc/html/rfc6960#section-4.4.1">Section&nbsp;4.4.1 of [RFC6960]</a>,
+   which describes the OCSP Nonce extension.
+
+   The nonce cryptographically binds a request and a response to prevent
+   replay attacks.  The nonce is included as one of the
+   requestExtensions in requests; in responses, it would be included as
+   one of the responseExtensions.  In both the request and the response,
+   the nonce will be identified by the object identifier id-pkix-ocsp-
+   nonce, while the extnValue is the value of the nonce.  If the Nonce
+   extension is present, then the length of the nonce MUST be at least 1
+   octet and can be up to 32 octets.
+
+   A server MUST reject any OCSP request that has a nonce in the Nonce
+   extension with a length of either 0 octets or more than 32 octets
+   with the malformedRequest OCSPResponseStatus, as described in
+   <a href="/doc/html/rfc6960#section-4.2.1">Section&nbsp;4.2.1 of [RFC6960]</a>.
+
+   The value of the nonce MUST be generated using a cryptographically
+   strong pseudorandom number generator (see [<a href="/doc/html/rfc4086" title="&quot;Randomness Requirements for Security&quot;">RFC4086</a>]).  The minimum
+   nonce length of 1 octet is defined to provide backward compatibility
+   with older clients that follow [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>].  Newer OCSP clients that
+   support this document MUST use a length of 32 octets for the nonce in
+   the Nonce extension.  OCSP responders MUST accept lengths of at least
+   16 octets and MAY choose to ignore the Nonce extension for requests
+   where the length of the nonce is less than 16 octets.
+
+      id-pkix-ocsp           OBJECT IDENTIFIER ::= { id-ad-ocsp }
+      id-pkix-ocsp-nonce     OBJECT IDENTIFIER ::= { id-pkix-ocsp 2 }
+
+      Nonce ::= OCTET STRING(SIZE(1..32))
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   The security considerations of OCSP, in general, are described in
+   [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>].  During the interval in which the previous OCSP response
+   for a certificate is not expired but the responder has a changed
+   status for that certificate, a copy of that OCSP response can be used
+   to indicate that the status of the certificate is still valid.
+   Including a client&#x27;s nonce value in the OCSP response makes sure that
+   the response is the latest response from the server and not an old
+   copy.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Replay Attack</span>
+
+   The Nonce extension is used to avoid replay attacks.  Since the OCSP
+   responder may choose not to send the Nonce extension in the OCSP
+   response even if the client has sent the Nonce extension in the
+   request [<a href="/doc/html/rfc5019" title="&quot;The Lightweight Online Certificate Status Protocol (OCSP) Profile for High-Volume Environments&quot;">RFC5019</a>], an on-path attacker can intercept the OCSP request
+   and respond with an earlier response from the server without the
+   Nonce extension.  This can be mitigated by configuring the server to
+   use a short time interval between the thisUpdate and nextUpdate
+   fields in the OCSP response.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Nonce Collision</span>
+
+   If the value of the nonce used by a client in the OCSP request is
+   predictable, then an attacker may prefetch responses with the
+   predicted nonce and can replay them, thus defeating the purpose of
+   using the nonce.  Therefore, the value of the Nonce extension in the
+   OCSP request MUST contain cryptographically strong randomness and
+   MUST be freshly generated at the time of the creation of the OCSP
+   request.  Also, if the length of the nonce is too small (e.g., 1
+   octet), then an on-path attacker can prefetch responses with all the
+   possible values of the nonce and replay a matching nonce.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Changes to <a href="/doc/html/rfc6960#appendix-B">Appendix&nbsp;B of RFC 6960</a></span>
+
+   This section updates the ASN.1 definitions of the OCSP Nonce
+   extension in Appendices B.1 and B.2 of [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>].  <a href="#appendix-B.1">Appendix B.1</a>
+   defines OCSP using ASN.1 - 1998 Syntax; <a href="#appendix-B.2">Appendix B.2</a> defines OCSP
+   using ASN.1 - 2008 Syntax.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Changes to <a href="#appendix-B.1">Appendix B.1</a> OCSP in ASN.1 - 1998 Syntax</span>
+
+   OLD Syntax:
+
+   The definition of OCSP Nonce extension is not provided in
+   <a href="/doc/html/rfc6960#appendix-B.1">Appendix&nbsp;B.1 of [RFC6960]</a> for the ASN.1 - 1998 Syntax.
+
+   NEW Syntax:
+
+       Nonce ::= OCTET STRING(SIZE(1..32))
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Changes to <a href="#appendix-B.2">Appendix B.2</a> OCSP in ASN.1 - 2008 Syntax</span>
+
+   OLD Syntax:
+
+       re-ocsp-nonce EXTENSION ::= { SYNTAX OCTET STRING IDENTIFIED
+           BY id-pkix-ocsp-nonce }
+
+   NEW Syntax:
+
+       re-ocsp-nonce EXTENSION ::= { SYNTAX OCTET STRING(SIZE(1..32))
+           IDENTIFIED BY id-pkix-ocsp-nonce }
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC5280">RFC5280</a>]  Cooper, D., Santesson, S., Farrell, S., Boeyen, S.,
+              Housley, R., and W. Polk, &quot;Internet X.509 Public Key
+              Infrastructure Certificate and Certificate Revocation List
+              (CRL) Profile&quot;, <a href="/doc/html/rfc5280">RFC 5280</a>, DOI 10.17487/RFC5280, May 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5280">https://www.rfc-editor.org/info/rfc5280</a>&gt;.
+
+   [<a id="ref-RFC6960">RFC6960</a>]  Santesson, S., Myers, M., Ankney, R., Malpani, A.,
+              Galperin, S., and C. Adams, &quot;X.509 Internet Public Key
+              Infrastructure Online Certificate Status Protocol - OCSP&quot;,
+              <a href="/doc/html/rfc6960">RFC 6960</a>, DOI 10.17487/RFC6960, June 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6960">https://www.rfc-editor.org/info/rfc6960</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4086">RFC4086</a>]  Eastlake 3rd, D., Schiller, J., and S. Crocker,
+              &quot;Randomness Requirements for Security&quot;, <a href="/doc/html/bcp106">BCP 106</a>, <a href="/doc/html/rfc4086">RFC 4086</a>,
+              DOI 10.17487/RFC4086, June 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4086">https://www.rfc-editor.org/info/rfc4086</a>&gt;.
+
+   [<a id="ref-RFC4732">RFC4732</a>]  Handley, M., Ed., Rescorla, E., Ed., and IAB, &quot;Internet
+              Denial-of-Service Considerations&quot;, <a href="/doc/html/rfc4732">RFC 4732</a>,
+              DOI 10.17487/RFC4732, December 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4732">https://www.rfc-editor.org/info/rfc4732</a>&gt;.
+
+   [<a id="ref-RFC5019">RFC5019</a>]  Deacon, A. and R. Hurst, &quot;The Lightweight Online
+              Certificate Status Protocol (OCSP) Profile for High-Volume
+              Environments&quot;, <a href="/doc/html/rfc5019">RFC 5019</a>, DOI 10.17487/RFC5019, September
+              2007, &lt;<a href="https://www.rfc-editor.org/info/rfc5019">https://www.rfc-editor.org/info/rfc5019</a>&gt;.
+
+Author&#x27;s Address
+
+   Mohit Sahni (editor)
+   Palo Alto Networks
+   3000 Tannery Way
+   Santa Clara, CA 95054
+   United States of America
+
+   Email: msahni@paloaltonetworks.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

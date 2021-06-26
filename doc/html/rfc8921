@@ -1,0 +1,2970 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8921
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-boucadair-connectivity-provisioning-protocol/">
+  <meta name="description" content="Dynamic Service Negotiation: The Connectivity Provisioning Negotiation Protocol (CPNP) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8921.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8921.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8921.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8921.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8921/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8921/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-boucadair-connectivity-provisioning-protocol@ietf.org?subject=draft-boucadair-connectivity-provisioning-protocol" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-boucadair-connectivity-provisioning-protocol-22.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-boucadair-connectivity-provisioning-protocol-22.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-boucadair-connectivity-provisioning-protocol-22.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-boucadair-connectivity-provisioning-protocol-22">draft-boucadair-connectivity-provisioning-protocol-22</a>             
+                                                           Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Independent Submission                                 M. Boucadair, Ed.
+Request for Comments: 8921                                  C. Jacquenet
+Category: Informational                                           Orange
+ISSN: 2070-1721                                                 D. Zhang
+                                                     Huawei Technologies
+                                                           P. Georgatsos
+                                                                   CERTH
+                                                            October 2020
+
+
+ <span class="h1">Dynamic Service Negotiation: The Connectivity Provisioning Negotiation</span>
+                            <span class="h1">Protocol (CPNP)</span>
+
+Abstract
+
+   This document defines the Connectivity Provisioning Negotiation
+   Protocol (CPNP), which is designed to facilitate the dynamic
+   negotiation of service parameters.
+
+   CPNP is a generic protocol that can be used for various negotiation
+   purposes that include (but are not necessarily limited to)
+   connectivity provisioning services, storage facilities, Content
+   Delivery Networks, etc.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This is a contribution to the RFC Series, independently of any other
+   RFC stream.  The RFC Editor has chosen to publish this document at
+   its discretion and makes no statement about its value for
+   implementation or deployment.  Documents approved for publication by
+   the RFC Editor are not candidates for any level of Internet Standard;
+   see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8921">https://www.rfc-editor.org/info/rfc8921</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  CPNP Functional Elements
+   4.  Order Processing Models
+   5.  Sample Use Cases
+   6.  CPNP Deployment Models
+   7.  CPNP Negotiation Model
+   8.  Protocol Overview
+     8.1.  Client/Server Communication
+     8.2.  Policy Configuration on the CPNP Server
+     8.3.  CPNP Session Entries
+     8.4.  CPNP Transactions
+     8.5.  CPNP Timers
+     8.6.  CPNP Operations
+     8.7.  Connectivity Provisioning Documents
+     8.8.  Child PQOs
+     8.9.  Multi-Segment Service
+     8.10. Negotiating with Multiple CPNP Servers
+     8.11. State Management
+       8.11.1.  On the Client Side
+       8.11.2.  On the Server Side
+   9.  CPNP Objects
+     9.1.  Attributes
+       9.1.1.  CUSTOMER_ORDER_IDENTIFIER
+       9.1.2.  PROVIDER_ORDER_IDENTIFIER
+       9.1.3.  TRANSACTION_ID
+       9.1.4.  SEQUENCE_NUMBER
+       9.1.5.  NONCE
+       9.1.6.  EXPECTED_RESPONSE_TIME
+       9.1.7.  EXPECTED_OFFER_TIME
+       9.1.8.  VALIDITY_OFFER_TIME
+       9.1.9.  SERVICE_DESCRIPTION
+       9.1.10. CPNP Information Elements
+     9.2.  Operation Messages
+       9.2.1.  QUOTATION
+       9.2.2.  PROCESSING
+       9.2.3.  OFFER
+       9.2.4.  ACCEPT
+       9.2.5.  DECLINE
+       9.2.6.  ACK
+       9.2.7.  CANCEL
+       9.2.8.  WITHDRAW
+       9.2.9.  UPDATE
+       9.2.10. FAIL
+       9.2.11. ACTIVATE
+   10. CPNP Message Validation
+     10.1.  On the Client Side
+     10.2.  On the Server Side
+   11. Theory of Operation
+     11.1.  Client Behavior
+       11.1.1.  Order Negotiation Cycle
+       11.1.2.  Order Withdrawal Cycle
+       11.1.3.  Order Update Cycle
+     11.2.  Server Behavior
+       11.2.1.  Order Processing
+       11.2.2.  Order Withdrawal
+       11.2.3.  Order Update
+     11.3.  Sequence Numbers
+     11.4.  Message Retransmission
+   12. Some Operational Guidelines
+     12.1.  CPNP Server Logging
+     12.2.  Business Guidelines and Objectives
+   13. Security Considerations
+   14. IANA Considerations
+   15. References
+     15.1.  Normative References
+     15.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document defines the Connectivity Provisioning Negotiation
+   Protocol (CPNP) that is meant to dynamically exchange and negotiate
+   connectivity provisioning parameters and other service-specific
+   parameters between a Customer and a Provider.  CPNP is a tool that
+   introduces automation to the service negotiation and activation
+   procedures, thus fostering the overall service provisioning process.
+   CPNP can be seen as a component of the dynamic negotiation metadomain
+   described in <a href="/doc/html/rfc7149#section-2.4">Section&nbsp;2.4 of [RFC7149]</a>.
+
+   CPNP is a generic protocol that can be used for negotiation purposes
+   other than connectivity provisioning.  For example, CPNP can be used
+   to request extra storage resources, to extend the footprint of a
+   Content Delivery Network (CDN), to enable additional features from a
+   cloud Provider, etc.  CPNP can be extended with new Information
+   Elements (IEs).  Sample negotiation use cases are described in
+   <a href="#section-5">Section 5</a>.  <a href="#section-4">Section 4</a> introduces several order processing models and
+   defines those that are targeted by CPNP.  The CPNP negotiation model
+   is then detailed in <a href="#section-7">Section 7</a>.
+
+   [<a id="ref-RFC7297">RFC7297</a>] describes a Connectivity Provisioning Profile (CPP)
+   template to capture connectivity requirements to be met by a
+   transport infrastructure for the delivery of various services such as
+   Voice over IP (VoIP), IPTV, and Virtual Private Network (VPN)
+   services [<a href="/doc/html/rfc4026" title="&quot;Provider Provisioned Virtual Private Network (VPN) Terminology&quot;">RFC4026</a>].  The CPP document defines the set of IP transfer
+   parameters that reflect the guarantees that can be provided by the
+   underlying transport network together with reachability scope and
+   capacity needs.  CPNP uses the CPP template to encode connectivity
+   provisioning clauses that are subject to negotiation.  The accepted
+   CPP will then be passed to other functional elements that are
+   responsible for the actual service activation and provisioning.  For
+   example, Network Configuration Protocol (NETCONF) [<a href="/doc/html/rfc6241" title="&quot;Network Configuration Protocol (NETCONF)&quot;">RFC6241</a>] or
+   RESTCONF [<a href="/doc/html/rfc8040" title="&quot;RESTCONF Protocol&quot;">RFC8040</a>] can be used to activate adequate network features
+   that are required to deliver the accepted service.  How the outcome
+   of CPNP negotiation is translated into service and network
+   provisioning actions is out of scope of this document.
+
+   As a reminder, several proposals have been made in the past by the
+   (research) community (e.g., Common Open Policy Service protocol for
+   supporting Service Level Specification [<a href="#ref-COPS-SLS" title="&quot;COPS Usage for SLS negotiation (COPS-SLS)&quot;">COPS-SLS</a>], Service
+   Negotiation Protocol [<a href="#ref-SrNP" title="&quot;Service Negotiation Protocol (SrNP)&quot;">SrNP</a>], Dynamic Service Negotiation Protocol
+   [<a href="#ref-DSNP" title="&quot;Dynamic Service Negotiation Protocol (DSNP)&quot;">DSNP</a>], Resource Negotiation and Pricing Protocol [<a href="#ref-RNAP" title="&quot;A Resource Negotiation and Pricing Protocol (RNAP)&quot;">RNAP</a>], Service
+   Negotiation and Acquisition Protocol [<a href="#ref-SNAP" title="&quot;SNAP: A Protocol for Negotiating Service Level Agreements and Coordinating Resource Management in Distributed Systems&quot;">SNAP</a>]).  CPNP leverages the
+   authors&#x27; experience with SrNP by separating the negotiation
+   primitives from the service under negotiation.  Moreover, careful
+   examination of the other proposals revealed certain deficiencies that
+   were easier to address through the creation of a new protocol rather
+   than the modification of existing protocols.  For example:
+
+   *  COPS-SLS relies upon the COPS usage for policy provisioning (COPS-
+      PR) [<a href="/doc/html/rfc3084" title="&quot;COPS Usage for Policy Provisioning (COPS-PR)&quot;">RFC3084</a>], which is a Historic RFC.
+
+   *  DSNP is tightly designed with one specific service in mind (QoS)
+      and does not make any distinction between a quotation phase and
+      the actual service-ordering phase.
+
+   One of the primary motivations of this document is to provide a
+   permanent reference to exemplify how service negotiation can be
+   automated.
+
+   Implementation details are out of scope.  An example of required
+   modules and interfaces to implement this specification is sketched in
+   Section 4 of [<a href="#ref-AGAVE" title="&quot;The AGAVE Approach for Network Virtualization: Differentiated Services Delivery&quot;">AGAVE</a>].  This specification builds on that effort.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This document makes use of the following terms:
+
+   Customer:  Is a business role that denotes an entity that is involved
+      in the definition and the possible negotiation of an order,
+      including a Connectivity Provisioning Agreement, with a Provider.
+      A connectivity provisioning document is captured in a dedicated
+      CPP template-based document, which may specify (among other
+      information) the sites to be connected, border nodes, outsourced
+      operations (e.g., routing, traffic steering).
+
+      The right to invoke the subscribed service may be delegated by the
+      Customer to third-party end users or brokering services.
+
+      A Customer can be a Service Provider, an application owner, an
+      enterprise, a user, etc.
+
+   Network Provider (or Provider):  Owns and administers one or many
+      transport domain(s) (typically Autonomous Systems (ASes)) composed
+      of (IP) switching and transmission resources (e.g., routing,
+      switching, forwarding, etc.).  Network Providers are responsible
+      for delivering and operating connectivity services (e.g., offering
+      global or restricted reachability at specific rates).  Offered
+      connectivity services may not necessarily be restricted to IP.
+
+      The policies to be enforced by the connectivity service delivery
+      components can be derived from the technology-specific clauses
+      that might be included in agreements with the Customers.  If no
+      such clauses are included in the agreement, the mapping between
+      the connectivity requirements and the underlying technology-
+      specific policies to be enforced is deployment specific.
+
+   Quotation Order:  Denotes a request made by the Customer to the
+      Provider that includes a set of requirements.  The Customer may
+      express its service-specific requirements by assigning (strictly
+      or loosely defined) values to the information items included in
+      the commonly understood template (e.g., CPP template) describing
+      the offered service.  These requirements constitute the parameters
+      to be mutually agreed upon.
+
+   Offer:  Refers to a response made by the Provider to a Customer&#x27;s
+      quotation order that describes the ability of the Provider to
+      satisfy the order at the time of its receipt.  Offers reflect the
+      capability of the Provider in accommodating received Customer
+      orders beyond monolithic &#x27;yes/no&#x27; answers.
+
+      An offer may fully or partially meet the requirements of the
+      corresponding order.  In the latter case, it may include
+      alternative suggestions that the Customer may take into account by
+      issuing a new order.
+
+   Agreement:  Refers to an order placed by the Customer and accepted by
+      the Provider.  It signals the successful conclusion of a
+      negotiation cycle.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  CPNP Functional Elements</span>
+
+   The following functional elements are defined:
+
+   CPNP client (or client):  Denotes a software instance that sends CPNP
+      requests and receives CPNP responses.  The current operations that
+      can be performed by a CPNP client are listed below:
+
+      1.  Create a quotation order (<a href="#section-9.2.1">Section 9.2.1</a>).
+
+      2.  Cancel an ongoing quotation order under negotiation
+          (<a href="#section-9.2.7">Section 9.2.7</a>).
+
+      3.  Accept an offer made by a server (<a href="#section-9.2.4">Section 9.2.4</a>).
+
+      4.  Withdraw an agreement (<a href="#section-9.2.8">Section 9.2.8</a>).
+
+      5.  Update an agreement (<a href="#section-9.2.9">Section 9.2.9</a>).
+
+   CPNP server (or server):  Denotes a software instance that receives
+      CPNP requests and sends back CPNP responses accordingly.  The CPNP
+      server is responsible for the following operations:
+
+      1.  Process a quotation order (<a href="#section-9.2.2">Section 9.2.2</a>).
+
+      2.  Make an offer (<a href="#section-9.2.3">Section 9.2.3</a>).
+
+      3.  Cancel an ongoing quotation order (<a href="#section-11.2.3">Section 11.2.3</a>).
+
+      4.  Process an order withdrawal (<a href="#section-11.2.3">Section 11.2.3</a>).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Order Processing Models</span>
+
+   For preparing their service orders, Customers may need to be aware of
+   the offered services.  Therefore, Providers should first proceed with
+   the announcement (or the exposure) of the services they can provide.
+   The service announcement process may take place at designated global
+   or Provider-specific service markets or through explicit interactions
+   with the Providers.  The details of this process are outside the
+   scope of this document.
+
+   With or without such service announcement/exposure mechanisms in
+   place, the following order processing models can be distinguished:
+
+   Frozen model:
+      The Customer cannot actually negotiate the parameters of the
+      service(s) offered by a Provider.  After consulting the Provider&#x27;s
+      service portfolio, the Customer selects the service offer to which
+      he or she wants to subscribe and places an order to the Provider.
+      Order handling is quite simple on the Provider side because the
+      service is not customized per Customer&#x27;s requirements, but rather
+      designed to address a Customer base that shares the same
+      requirements (i.e., these Customers share the same Connectivity
+      Provisioning Profile).  This mode can be implemented using
+      existing tools such as [<a href="/doc/html/rfc8309" title="&quot;Service Models Explained&quot;">RFC8309</a>].
+
+   Negotiation-based model:
+      Unlike the frozen model, the Customer documents his/her
+      requirements in a request for a quotation, which is then sent to
+      one or several Providers.  Solicited Providers check whether they
+      can address these requirements or not, and get back to the
+      Customer accordingly, possibly with an offer that may not exactly
+      match the Customer&#x27;s requirements (e.g., a 100 Mbps connection
+      cannot be provisioned given the amount of available resources, but
+      an 80 Mbps connection can be provided).  A negotiation between the
+      Customer and the Provider(s) then follows until both parties reach
+      an agreement (or do not).
+
+   Both frozen and negotiation-based models require the existence of
+   appropriate service templates like a CPP template and their
+   instantiation for expressing specific offerings from Providers and
+   service requirements from Customers, respectively.  CPNP can be used
+   in either model for automating the required Customer-Provider
+   interactions.  The frozen model can be seen as a special case of the
+   negotiation-based model.  This document focuses on the negotiation-
+   based model.  Not only &#x27;yes/no&#x27; answers but also counterproposals may
+   be offered by the Provider in response to Customer orders.
+
+   Order processing management on the Network Provider&#x27;s side usually
+   solicits features supported by the following functional blocks:
+
+   *  Network provisioning (including order activation, Network
+      Planning, etc.)
+
+   *  Authentication, authorization, and accounting (AAA)
+
+   *  Network and service management (performance measurement and
+      assessment, fault detection, etc.)
+
+   *  Sales-related functional blocks (e.g., billing, invoice
+      validation)
+
+   *  Network impact analysis
+
+   CPNP does not assume any specific knowledge about these functional
+   blocks, drawing an explicit line between protocol operation and the
+   logic for handling connectivity provisioning requests.  An order
+   processing logic is typically fed with the information manipulated by
+   the aforementioned functional blocks.  For example, the resources
+   that can be allocated to accommodate the Customer&#x27;s requirements may
+   depend on network availability estimates as calculated by the
+   planning functions and related policies, as well as the number of
+   orders to be processed simultaneously over a given period of time.
+
+   This document does not elaborate on how Customers are identified and
+   subsequently managed by the Provider&#x27;s information system.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Sample Use Cases</span>
+
+   A non-exhaustive list of CPNP use cases is provided below:
+
+   1.   [<a href="/doc/html/rfc4176" title="&quot;Framework for Layer 3 Virtual Private Networks (L3VPN) Operations and Management&quot;">RFC4176</a>] introduces the Layer 3 VPN (L3VPN) Service Order
+        Management functional block, which is responsible for managing
+        the requests initiated by the Customers and tracks the status of
+        the completion of the related operations.  CPNP can be used
+        between the Customer and the Provider to negotiate L3VPN service
+        parameters.
+
+        A CPNP server could therefore be part of the L3VPN Service Order
+        Management functional block discussed in [<a href="/doc/html/rfc4176" title="&quot;Framework for Layer 3 Virtual Private Networks (L3VPN) Operations and Management&quot;">RFC4176</a>].  A L3VPN
+        Service YANG data model (L3SM) is defined in [<a href="/doc/html/rfc8299" title="&quot;YANG Data Model for L3VPN Service Delivery&quot;">RFC8299</a>].  Once an
+        agreement is reached, the service can be provisioned using,
+        e.g., the L3VPN Network YANG data model specified in
+        [<a href="#ref-L3VPN-NETWORK-YANG">L3VPN-NETWORK-YANG</a>].
+
+        Likewise, a CPNP server could be part of the Layer 2 VPN (L2VPN)
+        Service Order Management functional block.  A YANG data model
+        for L2VPN service delivery is defined in [<a href="/doc/html/rfc8466" title="&quot;A YANG Data Model for Layer 2 Virtual Private Network (L2VPN) Service Delivery&quot;">RFC8466</a>].  Once an
+        agreement is reached, the L2VPN service can be provisioned
+        using, e.g., the L2VPN Network YANG data model specified in
+        [<a href="#ref-L2VPN-NETWORK-YANG">L2VPN-NETWORK-YANG</a>].
+
+   2.   CPNP can be used between two adjacent domains to deliver IP
+        interconnection services (e.g., enable, update, disconnect).
+        For example, two Autonomous Systems (ASes) can be connected via
+        several interconnection points.  CPNP can be used between these
+        ASes to upgrade existing links, request additional resources,
+        provision a new interconnection point, etc.
+
+        See, for example, the framework documented in [<a href="#ref-ETICS" title="&quot;Economics and Technologies of Inter-Carrier Services&quot;">ETICS</a>].
+
+   3.   An integrated Provider can use CPNP to rationalize connectivity
+        provisioning needs related to its service portfolio.  A CPNP
+        server function is used by network operations teams.  A CPNP
+        interface to trigger CPNP negotiation cycles is exposed to
+        service management teams.
+
+   4.   Service Providers can use CPNP to initiate connectivity
+        provisioning requests towards a number of Network Providers so
+        as to optimize the cost of delivering their services.  Although
+        multiple CPNP ordering cycles can be initiated by a Service
+        Provider towards multiple Network Providers, a subset of these
+        orders may actually be put into effect.
+
+        For example, a cloud Service Provider can use CPNP to request
+        more resources from Network Providers.
+
+   5.   CPNP can also be used in the context of network slicing
+        [<a href="#ref-NETSLICES-ARCH">NETSLICES-ARCH</a>] to request network resources together with a
+        set of requirements that need to be satisfied by the Provider.
+        Such requirements are not restricted to basic IP forwarding
+        capabilities, but may also include a characterization of a set
+        of service functions that may be invoked.  For the network
+        slicing case, the instances of a CPP template could be derived
+        from the network slice template documented in [<a href="#ref-TEAS-SLICE-NBI">TEAS-SLICE-NBI</a>].
+
+   6.   CPNP can be used in Machine-to-Machine (M2M) environments to
+        dynamically subscribe to M2M services (e.g., access data
+        retrieved by a set of sensors, extend sensor coverage, etc.).
+
+        Also, Internet of Things (IoT) [<a href="/doc/html/rfc6574" title="&quot;Report from the Smart Object Workshop&quot;">RFC6574</a>] domains may rely on
+        CPNP to enable dynamic access to data produced by involved
+        objects, according to their specific policies, to various
+        external stakeholders such as data analytics and business
+        intelligence companies.  Direct CPNP-based interactions between
+        IoT domains and interested parties enable open access to diverse
+        sets of data across the Internet, e.g., from multiple types of
+        sensors, user groups, and/or geographical areas.
+
+   7.   CPNP can be used in the context of Interface to Network Security
+        Functions (I2NSF) [<a href="/doc/html/rfc8329" title="&quot;Framework for Interface to Network Security Functions&quot;">RFC8329</a>] to capture the Customer-driven
+        policies to be enforced by a set of Network Security Functions.
+
+   8.   A Provider offering cloud services can expose a CPNP interface
+        to allow Customers to dynamically negotiate typical data center
+        resources, such as additional storage, processing and networking
+        resources, enhanced security filters, etc.
+
+        Cloud computing Providers typically structure their computation
+        service offerings by bundling CPU, RAM, and storage units as
+        quotas, instances, or flavors that can be consumed in an
+        ephemeral or temporal fashion during the lifetime of the
+        required function.  A similar approach is followed by CPNP (see
+        for example, <a href="#section-9.2.11">Section 9.2.11</a>).
+
+   9.   In the inter-cloud context (also called cloud of clouds or cloud
+        federation), CPNP can be used to reserve computing and
+        networking resources hosted by various cloud infrastructures.
+
+   10.  CDN Providers can use CPNP to extend their footprint by
+        interconnecting their respective CDN infrastructures [<a href="/doc/html/rfc6770" title="&quot;Use Cases for Content Delivery Network Interconnection&quot;">RFC6770</a>]
+        (see Figure 1).
+
+                         ,--,--,--.             ,--,--,--.
+                      ,-&#x27;          `-.       ,-&#x27;          `-.
+                     (CDN Provider &#x27;A&#x27;)=====(CDN Provider &#x27;B&#x27;)
+                      `-.  (CDN-A) ,-&#x27;       `-. (CDN-B)  ,-&#x27;
+                        `--&#x27;--&#x27;--&#x27;             `--&#x27;--&#x27;--&#x27;
+
+                         Figure 1: CDN Interconnection
+
+   11.  Mapping Service Providers (MSPs) [<a href="/doc/html/rfc7215" title="&quot;Locator/Identifier Separation Protocol (LISP) Network Element Deployment Considerations&quot;">RFC7215</a>] can use CPNP to
+        enrich their mapping database by interconnecting their mapping
+        system (see Figure 2).  This interconnection allows the
+        relaxation of the constraints on PxTR (Proxy Ingress/Egress
+        Tunnel Router) in favour of native LISP (Locator/ID Separation
+        Protocol) forwarding [<a href="/doc/html/rfc6830" title="&quot;The Locator/ID Separation Protocol (LISP)&quot;">RFC6830</a>].  Also, it prevents the
+        fragmentation of the LISP mapping database.  A framework is
+        described in [<a href="#ref-LISP-MS-DISCOVERY">LISP-MS-DISCOVERY</a>].
+
+                        ,--,--,--.             ,--,--,--.
+                     ,-&#x27;          `-.       ,-&#x27;          `-.
+                    (Mapping System &#x27;A&#x27;)===(Mapping System &#x27;B&#x27;)
+                     `-.          ,-&#x27;       `-.           ,-&#x27;
+                        `--&#x27;--&#x27;--&#x27;             `--&#x27;--&#x27;--&#x27;
+
+                   Figure 2: LISP Mapping System Interconnect
+
+   12.  CPNP may also be used between SDN (Software-Defined Networking)
+        controllers in contexts where Cooperating Layered Architecture
+        for Software-Defined Networking (CLAS) is enabled [<a href="/doc/html/rfc8597" title="&quot;Cooperating Layered Architecture for Software-Defined Networking (CLAS)&quot;">RFC8597</a>].
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  CPNP Deployment Models</span>
+
+   Several CPNP deployment models can be envisaged.  Two examples are
+   listed below:
+
+   *  The Customer deploys a CPNP client while one or several CPNP
+      servers are deployed by the Provider.  A CPNP client can discover
+      its CPNP servers using a variety of means (static, dynamic, etc.).
+
+   *  The Customer does not enable any CPNP client.  The Provider
+      maintains a Customer Order Management portal.  The Customer can
+      initiate connectivity provisioning quotation orders via the
+      portal; appropriate CPNP messages are then generated and sent to
+      the relevant CPNP server.  In this model, both the CPNP client and
+      CPNP server are under the responsibility of the same
+      administrative entity (i.e., Network Provider).
+
+   Once the negotiation of connectivity provisioning parameters is
+   successfully concluded, that is, an order has been placed by the
+   Customer, the actual network provisioning operations are initiated.
+   The specification of related dynamic resource allocation and policy
+   enforcement schemes, as well as how CPNP servers interact with the
+   network provisioning functional blocks on the Provider side, are out
+   of the scope of this document.
+
+   This document does not make any assumptions about the CPNP deployment
+   model either.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  CPNP Negotiation Model</span>
+
+   CPNP runs between a Customer and a Provider, carrying service orders
+   from the Customer and corresponding responses from the Provider in
+   order to reach a service provisioning agreement.  As the services
+   offered by the Provider are well described, by means of the CPP
+   template for connectivity matters, the negotiation process is
+   essentially a value-settlement process, where an agreement is pursued
+   on the values of the commonly understood information items (service
+   parameters) included in the service description template
+   (<a href="#section-9.1.9">Section 9.1.9</a>).
+
+   The content that CPNP carries and the negotiation logic invoked at
+   Customer and Provider sides to manipulate the content (i.e., the
+   information carried in CPNP messages to proceed with the negotiation)
+   is transparent to the protocol.
+
+   The protocol aims to facilitate the execution of the negotiation
+   logic by providing the required generic communication primitives.
+
+   Since negotiations are initiated and primarily driven by the
+   Customer&#x27;s negotiation logic, it is reasonable to assume that the
+   Customer is the only party that can call for an agreement.  An
+   implicit approach is adopted for not overloading the protocol with
+   additional messages.  In particular, the acceptance of an offer made
+   by the Provider signals a call for agreement from the Customer.  Note
+   that it is almost certain the Provider will accept this call since it
+   refers to an offer that the Provider made.  Of course, at any point
+   the Provider or the Customer may quit the negotiations, each on its
+   own grounds.
+
+   Based on the above, CPNP adopts a quotation order/offer/answer model,
+   which proceeds through the following basic steps (Figure 3):
+
+   1.  The CPNP client specifies its service requirements in a
+       Provisioning Quotation Order (PQO).  The order may include
+       strictly or loosely defined values in the clauses describing
+       service provisioning characteristics.
+
+   2.  The CPNP server declines the PQO, or makes an offer to address
+       the requirements of the PQO, or suggests a counterproposal that
+       partially addresses the requirements of the PQO in case specific
+       requirements cannot be accommodated.
+
+   3.  The CPNP client either accepts or declines the offer.  The
+       acceptance of the offer by the CPNP client implies a call for
+       agreement and, thus, the agreement between both parties and the
+       conclusion of the negotiation.
+
+                   +------+                     +------+
+                   |Client|                     |Server|
+                   +------+                     +------+
+                      |=====Requested Service=====&gt;|
+                      |&lt;=====Offered Service=======|
+                      |=====Accepted Service======&gt;|
+
+                  Figure 3: Simplified Service Negotiation
+
+   Multiple instances of CPNP may run at a Customer&#x27;s or a Provider&#x27;s
+   domains.  A CPNP client may be engaged in multiple, simultaneous
+   negotiations with the same or different CPNP servers (parallel
+   negotiations, see <a href="#section-8.10">Section 8.10</a>), and a CPNP server may need to
+   negotiate with other Provider(s) as part of negotiations that are
+   ongoing with a CPNP client (cascaded negotiations, see <a href="#section-8.8">Section 8.8</a>).
+
+   CPNP relies on various timers to run its operations.  Two types of
+   timers are defined: those that are specific to CPNP message
+   transmission and those that are specific to the negotiation logic.
+   The latter are used to guide the negotiation logic at both CPNP
+   client and CPNP server sides, particularly in cases where the CPNP
+   client is involved in parallel negotiations with several CPNP servers
+   or in cases where the CPNP server is, in turn, involved in
+   negotiations with other Providers for processing a given Customer-
+   originated quotation order.  CPNP allows a CPNP server to request
+   extra time to proceed with the negotiation.  This request may be
+   accepted or rejected by the CPNP client.
+
+   Providers may need to publish available services to the Customers
+   (see <a href="#section-4">Section 4</a>).  CPNP may optionally support this functionality.
+   Dedicated templates can be defined for the purpose of service
+   announcement, which will be used by the CPNP clients to initiate
+   their CPNP negotiation cycles.
+
+   For the sake of simplicity, a single offer/answer stage is assumed
+   within one CPNP negotiation cycle.  Nevertheless, as already stated,
+   multiple CPNP negotiation cycles can be undertaken by a CPNP client
+   (see Figure 4).
+
+   The model is flexible enough to accommodate changing conditions
+   during the lifetime of a service (e.g., the introduction of an
+   additional VPN site).
+
+   +------+                  +------+ +------+                  +------+
+   |Client|                  |Server| |Client|                  |Server|
+   +------+                  +------+ +------+                  +------+
+      |=====Quotation Order=====&gt;|       |=====Quotation Order=====&gt;|
+      |&lt;==========Offer==========|       |&lt;==========Offer==========|
+      |===========Accept========&gt;|       |==========Decline========&gt;|
+
+     1-Step Successful Negotiation         1-Step Failed Negotiation
+               Cycle                               Cycle
+
+   +------+                  +------+ +------+                  +------+
+   |Client|                  |Server| |Client|                  |Server|
+   +------+                  +------+ +------+                  +------+
+      |===Quotation Order(a)====&gt;|       |===Quotation Order(i)====&gt;|
+      |&lt;==========Offer==========|       |&lt;==========Offer==========|
+      |==========Decline========&gt;|       |==========Decline========&gt;|
+      |===Quotation Order(b)====&gt;|       |===Quotation Order(j)====&gt;|
+      |&lt;==========Offer==========|       |&lt;==========Offer==========|
+      |===========Accept========&gt;|       |==========Decline========&gt;|
+                                         |===Quotation Order(k)====&gt;|
+                                         |&lt;==========Offer==========|
+                                         |==========Decline========&gt;|
+                                         |===Quotation Order(l)====&gt;|
+                                         |&lt;==Fail to make an offer==|
+
+       N-Step Negotiation Cycle:         N-Step Negotiation Cycle:
+         Successful Negotiation              Failed Negotiation
+
+                   Figure 4: Overall Negotiation Process
+
+   The means used by a CPNP client to retrieve a list of active/accepted
+   offers are not defined in this document.
+
+   An order can be implicitly or explicitly activated.  <a href="/doc/html/rfc7297#section-3.11">Section&nbsp;3.11 of
+   [RFC7297]</a> specifies a dedicated clause called Activation Means.  Such
+   a clause indicates the required action(s) to be undertaken to
+   activate access to the (IP connectivity) service.  This document
+   defines a dedicated CPNP message that can be used for explicit
+   activation (<a href="#section-9.2.11">Section 9.2.11</a>).
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Protocol Overview</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Client/Server Communication</span>
+
+   CPNP is a client/server protocol that can run over any transport
+   protocol.  The default transport mode is UDP secured with Datagram
+   Transport Layer Security (DTLS) [<a href="/doc/html/rfc6347" title="&quot;Datagram Transport Layer Security Version 1.2&quot;">RFC6347</a>].  No permanent CPNP
+   transport session needs to be maintained between the client and the
+   server.
+
+   The CPNP client can be configured with the CPNP server(s).
+   Typically, the CPNP client is configured with an IP address together
+   with a port number using manual or dynamic configuration means (e.g.,
+   DHCP).  Alternatively, a Provider may advertise the port number
+   (CPNP_PORT) it uses to bind the CPNP service using SRV [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>].
+
+   The CPNP client may be provided with a domain name of the CPNP server
+   for PKIX-based authentication purposes.  CPNP servers should prefer
+   the use of DNS-ID and SRV-ID over CN-ID identifier types in
+   certificate requests (<a href="/doc/html/rfc6125#section-2.3">Section&nbsp;2.3 of [RFC6125]</a>).  URI-IDs should not
+   be used for CPNP server identity verification.
+
+   The client sends CPNP requests using CPNP_PORT as the destination
+   port number.  The same port number used as the source port number of
+   a CPNP request sent to a CPNP server is used by the server to reply
+   to that request.
+
+   CPNP is independent of the IP address family.
+
+   CPNP retransmission for unreliable transports is discussed in
+   <a href="#section-11.4">Section 11.4</a>.
+
+   Considerations related to mutual authentication are discussed in
+   <a href="#section-13">Section 13</a>.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Policy Configuration on the CPNP Server</span>
+
+   As an input to its decision-making process, the CPNP server may be
+   connected to various external modules such as Customer Profiles,
+   Network Topology, Network Resource Management, Order Repositories,
+   AAA, and Network Provisioning Manager (an example is shown in
+   Figure 5).
+
+   These external modules provide inputs to the CPNP server so that it
+   can do the following:
+
+   *  Check whether a Customer is entitled to initiate a provisioning
+      quotation request.
+
+   *  Check whether a Customer is entitled to cancel an ongoing order.
+
+   *  Check whether administrative data (e.g., billing-related
+      information) have been verified before the processing of the
+      request starts.
+
+   *  Check whether network capacity is available or additional capacity
+      is required.
+
+   *  Receive guidelines from network design and sales blocks (e.g.,
+      pricing, network usage levels, thresholds associated with the
+      number of CPP templates that can be processed over a given period
+      of time as a function of the nature of the service to be
+      delivered, etc.).
+
+   *  Transfer completed orders to network provisioning blocks (referred
+      to as &quot;Network Provisioning Manager&quot; in Figure 5).  For example,
+      the outcome of CPNP may be passed to modules such as Application-
+      Based Network Operations (ABNO) [<a href="/doc/html/rfc7491" title="&quot;A PCE-Based Architecture for Application-Based Network Operations&quot;">RFC7491</a>] or network controllers.
+      These controllers will use protocols such as NETCONF [<a href="/doc/html/rfc6241" title="&quot;Network Configuration Protocol (NETCONF)&quot;">RFC6241</a>] to
+      interact with the appropriate network nodes and functions for the
+      sake of proper service activation and delivery.
+
+   The above list of CPNP server operations is not exhaustive.
+
+            . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            .Business &amp; Administrative Management                   .
+            .+------------------------++---------------------------+.
+            .| Business Guidelines    ||    Billing &amp; Charging     |.
+            .+-----------+------------++-----------+---------------+.
+            .            |                         |                .
+            .            +-------------------+     |                .
+            . . . . . . . . . . . . . . . . .|. . .|. . . . . . . . .
+            . . . . . . . . . . . . . . . . .|. . .|. . . . . . . . .
+            .Order Handling Management       |     |                .
+            . +-------------------+  +-------+-----+--------------+ .
+            . |Network Topology DB+--+        CPNP Server         | .
+            . +-------------------+  +-+---+---+---+---+-----+----+ .
+            .                          |   |   |   |   |     |      .
+            . +------------------------+-+ |   |   |   |     |      .
+            . |   Network Dimensioning   | |   |   |   |     |      .
+            . |        &amp; Planning        | |   |   |   |     |      .
+            . +--------------------------+ |   |   |   |     |      .
+            . +----------------------------+-+ |   |   | +---+----+ .
+            . |                              | |   |   | |   AAA  | .
+            . |   Network       +------------+ |   |   | +--------+ .
+            . |  Resource       | +------------+-+ | +-+----------+ .
+            . |  Management     | |   Customer   | | |   Orders   | .
+            . |                 | |   Profiles   | | | Repository | .
+            . +-----------------+ +--------------+ | +------------+ .
+            . . . . . . . . . . . . . . . . . . . .|. . . . . . . . .
+            +--------------------------------------+----------------+
+            |             Network Provisioning Manager              |
+            +-------------------------------------------------------+
+
+       Figure 5: Order Handling Management Functional Block (Focus on
+                            Internal Interfaces)
+
+   The following order-handling modes can also be configured on the
+   server:
+
+   Fully automated mode:  This mode does not require any action from the
+      administrator when receiving a request for a service.  The server
+      can execute its decision-making process related to the orders
+      received and can generate corresponding offers.
+
+   Administrative validation checking:  Some or all of the server&#x27;s
+      operations are subject to administrative validation procedures.
+      This mode requires an action from the administrator for every
+      request received.  To that aim, the CPNP methods that can be
+      automatically handled by the server (or are subject to one or
+      several validation administrative checks) can be configured on the
+      server.
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  CPNP Session Entries</span>
+
+   A CPNP session entry is represented by a tuple defined as follows:
+
+   *  Transport session (typically, the IP address of the CPNP client,
+      the client&#x27;s port number, the IP address of the CPNP server, and
+      the CPNP server&#x27;s port number).
+
+   *  Incremented sequence number (<a href="#section-11.3">Section 11.3</a>).
+
+   *  Customer agreement identifier: This is a unique identifier
+      assigned to the order under negotiation by the CPNP client
+      (<a href="#section-9.1.1">Section 9.1.1</a>).  This identifier is also used by the client to
+      identify the agreement that will result from a successful
+      negotiation.
+
+   *  Provider agreement identifier: This is a unique identifier
+      assigned to the order under negotiation by the CPNP server
+      (<a href="#section-9.1.2">Section 9.1.2</a>).  This identifier is also used by the server to
+      identify the agreement that will result from a successful
+      negotiation.
+
+   *  Transaction-ID (<a href="#section-8.4">Section 8.4</a>).
+
+<span class="h3"><a class="selflink" id="section-8.4" href="#section-8.4">8.4</a>.  CPNP Transactions</span>
+
+   A CPNP transaction occurs between a client and a server for
+   completing, modifying, or withdrawing a service agreement, and
+   comprises all CPNP messages exchanged between the client and the
+   server, from the first request sent by the client to the final
+   response sent by the server.  A CPNP transaction is bound to a CPNP
+   session (<a href="#section-8.3">Section 8.3</a>).
+
+   Because multiple CPNP transactions can be maintained by the CPNP
+   client, the client must assign an identifier to uniquely identify a
+   given transaction.  This identifier is the Transaction-ID.
+
+   The Transaction-ID must be randomly assigned by the CPNP client,
+   according to the best current practice for generating random numbers
+   [<a href="/doc/html/rfc4086" title="&quot;Randomness Requirements for Security&quot;">RFC4086</a>] that cannot be guessed easily.  The Transaction-ID is used
+   for validating CPNP responses received by the client.
+
+   In the context of a transaction, the client needs to select a
+   sequence number randomly and then needs to assign it to the first
+   CPNP message to send.  This number is then incremented for each
+   request message that is subsequently sent within the ongoing CPNP
+   transaction (see <a href="#section-11.3">Section 11.3</a>).
+
+<span class="h3"><a class="selflink" id="section-8.5" href="#section-8.5">8.5</a>.  CPNP Timers</span>
+
+   CPNP adopts a simple retransmission procedure that relies on a
+   retransmission timer represented by RETRANS_TIMER and a maximum retry
+   threshold.  The use of RETRANS_TIMER and a maximum retry threshold
+   are described in <a href="#section-11">Section 11</a>.
+
+   The response timer (EXPECTED_RESPONSE_TIME) is set by the client to
+   denote the time, in seconds, the client will wait to receive a
+   response from the server to a PQO request (see <a href="#section-9.1.6">Section 9.1.6</a>).  If
+   the timer expires, the respective PQO is cancelled by the client, and
+   a CANCEL message is generated accordingly.
+
+   The expected offer timer (EXPECTED_OFFER_TIME) is set by the server
+   to indicate the time by when the CPNP server is expected to make an
+   offer to the CPNP client (see <a href="#section-9.1.7">Section 9.1.7</a>).  If no offer is
+   received by then, the CPNP client will consider the order as
+   rejected.
+
+   An offer expiration timer (VALIDITY_OFFER_TIME) is set by the server
+   to represent the time, in minutes, after which an offer made by the
+   server becomes invalid (see <a href="#section-9.1.8">Section 9.1.8</a>).
+
+<span class="h3"><a class="selflink" id="section-8.6" href="#section-8.6">8.6</a>.  CPNP Operations</span>
+
+   CPNP operations are listed below.  They may be augmented depending on
+   the nature of some transactions or because of security considerations
+   that may necessitate a distinct CPNP client/server authentication
+   phase before negotiation begins.
+
+   QUOTATION (<a href="#section-9.2.1">Section 9.2.1</a>):
+      This operation is used by the client to initiate a PQO.  Upon
+      receipt of a QUOTATION request, the server may respond with a
+      PROCESSING, OFFER, or a FAIL message.  A QUOTATION-initiated
+      transaction can be terminated by a FAIL message.
+
+   PROCESSING (<a href="#section-9.2.2">Section 9.2.2</a>):
+      This operation is used to inform the remote party that its message
+      (the order quotation or the offer) was received and it is being
+      processed.  This message can also be issued by the server to
+      request more time, in which case, the client may reply with an ACK
+      or FAIL message depending on whether extra time can or cannot be
+      granted.
+
+   OFFER (<a href="#section-9.2.3">Section 9.2.3</a>):
+      This operation is used by the server to inform the client about an
+      offer that can best accommodate the requirements indicated in the
+      previously received QUOTATION message.
+
+   ACCEPT (<a href="#section-9.2.4">Section 9.2.4</a>):
+      This operation is used by the client to confirm the acceptance of
+      an offer made by the server.  This message implies a call for
+      agreement.  An agreement is reached when an ACK is subsequently
+      received from the server, which is likely to happen if the message
+      is sent before the offer validity time expires; the server is
+      unlikely to reject an offer that it has already made.
+
+   DECLINE (<a href="#section-9.2.5">Section 9.2.5</a>):
+      This operation is used by the client to reject an offer made by
+      the server.  The ongoing transaction may not be terminated
+      immediately, e.g., the client may issue another order or the
+      server may issue another offer.
+
+   ACK (<a href="#section-9.2.6">Section 9.2.6</a>):
+      This operation is used by the server to acknowledge the receipt of
+      an ACCEPT or WITHDRAW message or by the client to confirm the
+      server&#x27;s request for a time extension (conveyed in a PROCESSING
+      message) in order to process the last received quotation order.
+
+   CANCEL (<a href="#section-9.2.7">Section 9.2.7</a>):
+      This operation is used by the client to cancel (quit) the ongoing
+      transaction.
+
+   WITHDRAW (<a href="#section-9.2.8">Section 9.2.8</a>):
+      This operation is used by the client to withdraw a completed order
+      (i.e., an agreement).
+
+   UPDATE (<a href="#section-9.2.9">Section 9.2.9</a>):
+      This operation is used by the client to update an existing
+      agreement.  For example, this method can be invoked to add a new
+      VPN site.  This method will trigger a new negotiation cycle.
+
+   FAIL (<a href="#section-9.2.10">Section 9.2.10</a>):
+      This operation is used by the server to indicate that it cannot
+      accommodate the requirements documented in the PQO conveyed in the
+      QUOTATION message or to inform the client about an error
+      encountered when processing the received message.  In either case,
+      the message implies that the server is unable to make offers, and,
+      as a consequence, it terminates the ongoing transaction.
+
+      This message is also used by the client to reject a time extension
+      request in a PROCESSING message received from the server.  The
+      message includes a status code that provides explanatory
+      information.
+
+   The above CPNP primitives are service independent.  CPNP messages may
+   transparently carry service-specific objects that are handled by the
+   negotiation logic at either side.
+
+   The document defines the service objects that are required for
+   connectivity provisioning negotiation purposes (see <a href="#section-8.7">Section 8.7</a>).
+   Additional service-specific objects for CPNP messages to accommodate
+   alternative deployment schemes or other service provisioning needs
+   can be defined in the future.
+
+<span class="h3"><a class="selflink" id="section-8.7" href="#section-8.7">8.7</a>.  Connectivity Provisioning Documents</span>
+
+   CPNP makes use of several flavors of Connectivity Provisioning
+   Documents (CPD).  These documents follow the same CPP template
+   described in [<a href="/doc/html/rfc7297" title="&quot;IP Connectivity Provisioning Profile (CPP)&quot;">RFC7297</a>].
+
+   Requested CPD:
+      Refers to the CPD included by a CPNP client in a QUOTATION
+      request.
+
+   Offered CPD:
+      This document is included by a CPNP server in an OFFER message.
+      Its information reflects the proposal of the server to accommodate
+      all or a subset of the clauses depicted in a Requested CPD.  A
+      validity time is associated with the offer made.
+
+   Accepted CPD:
+      If the client accepts an offer made by the server, the Offered CPD
+      is included in an ACCEPT message.  This CPD is also included in an
+      ACK message.  Thus, a three-way handshake procedure is followed
+      for successfully completing the negotiation.
+
+   Figure 6 shows a typical CPNP negotiation cycle and the use of the
+   different types of CPDs.
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |======QUOTATION (Requested CPD)=====&gt;|
+                 |&lt;============PROCESSING==============|
+                 |&lt;========OFFER (Offered CPD)=========|
+                 |=============PROCESSING=============&gt;|
+                 |=======ACCEPT (Accepted CPD)========&gt;|
+                 |&lt;=======ACK (Accepted CPD)===========|
+                 |                                     |
+
+               Figure 6: Connectivity Provisioning Documents
+
+   A CPD can include parameters with fixed values, loosely defined
+   values, or any combination thereof.  A CPD is said to be concrete if
+   all clauses have fixed values.
+
+   A typical evolution of a negotiation cycle would start with a
+   quotation order with loosely defined parameters, and then, as offers
+   are made, it would conclude with a concrete CPD for calling for the
+   agreement.
+
+<span class="h3"><a class="selflink" id="section-8.8" href="#section-8.8">8.8</a>.  Child PQOs</span>
+
+   If the server detects that network resources from another Network
+   Provider need to be allocated in order to accommodate the
+   requirements described in a PQO (e.g., in the context of an inter-
+   domain VPN service, additional Provider Edge (PE) router resources
+   need to be allocated), the server may generate child PQOs to request
+   the appropriate network provisioning operations (see Figure 7).  In
+   such a situation, the server also behaves as a CPNP client.  The
+   server associates the parent order with its child PQOs.  How this is
+   achieved is implementation specific (e.g., this can be typically
+   achieved by locally adding the reference of the child PQO to the
+   parent order).
+
+            +------+            +--------+          +--------+
+            |Client|            |Server A|          |Server B|
+            +------+            +--------+          +--------+
+               |                    |                    |
+               |=====QUOTATION=====&gt;|                    |
+               |&lt;====PROCESSING=====|                    |
+               |                    |=====QUOTATION=====&gt;|
+               |                    |&lt;====PROCESSING=====|
+               |                    |&lt;=======OFFER=======|
+               |                    |=====PROCESSING====&gt;|
+               |                    |=======ACCEPT======&gt;|
+               |                    |&lt;=======ACK=========|
+               |&lt;=======OFFER=======|                    |
+               |=====PROCESSING====&gt;|                    |
+               |=======ACCEPT======&gt;|                    |
+               |&lt;=======ACK=========|                    |
+               |                    |                    |
+
+                     Figure 7: Example of Child Orders
+
+   Note that the server must not activate recursion for an order if the
+   client includes a negotiation option to restrict the negotiation
+   scope to the resources of the server&#x27;s domain (<a href="#section-9.1.10.3">Section 9.1.10.3</a>).
+
+   If recursion is not explicitly disabled, the server may notify the
+   client when appropriate (<a href="#section-9.2.2">Section 9.2.2</a>).  Such notification may
+   depend on the nature of the service and also regulatory
+   considerations.
+
+<span class="h3"><a class="selflink" id="section-8.9" href="#section-8.9">8.9</a>.  Multi-Segment Service</span>
+
+   A composite service (e.g., connectivity) requested by a Customer
+   could imply multi-segment services (e.g., multi-segment connectivity
+   spanning an end-to-end scope), in the sense that one single CPNP
+   request is decomposed into multiple connectivity requests on the
+   Provider&#x27;s side (thereby leading to child orders).  The Provider is
+   in charge of handling the complexity of splitting the generic
+   provisioning order in a multi-segment context.  Such complexity is
+   local to the Provider.
+
+<span class="h3"><a class="selflink" id="section-8.10" href="#section-8.10">8.10</a>.  Negotiating with Multiple CPNP Servers</span>
+
+   A CPNP client may undertake multiple negotiations in parallel with
+   several servers for various reasons, such as cost optimization and
+   fail-safety.  These multiple negotiations may lead to one or many
+   agreements.
+
+   The salient point underlining the parallel negotiation scenarios is
+   that, although the negotiation protocol is strictly between two
+   parties, this may not be the case of the negotiation logic.  The CPNP
+   client negotiation logic may need to collectively drive parallel
+   negotiations, as the negotiation with one server may affect the
+   negotiation with other servers; for example, it may need to use the
+   responses from all servers as an input for determining the messages
+   (and their content) to subsequently send within the course of each
+   individual negotiation.  Therefore, timing is an important aspect on
+   the client&#x27;s side.  The CPNP client needs to have the ability to
+   synchronize the receipt of the responses from the servers.  CPNP
+   takes into account this requirement by allowing clients to specify in
+   the QUOTATION message the time by which the server needs to respond
+   (see <a href="#section-9.1.6">Section 9.1.6</a>).
+
+<span class="h3"><a class="selflink" id="section-8.11" href="#section-8.11">8.11</a>.  State Management</span>
+
+   Both the client and the server maintain repositories to store ongoing
+   orders.  How these repositories are maintained is deployment
+   specific.  It is out of scope of this document to elaborate on such
+   considerations.  Timestamps are also logged to track state change.
+   Tracking may be needed for various reasons, including regulatory or
+   billing ones.
+
+   In order to accommodate failures that may lead to the reboot of the
+   client or the server, the use of permanent storage is recommended,
+   thereby facilitating state recovery.
+
+<span class="h4"><a class="selflink" id="section-8.11.1" href="#section-8.11.1">8.11.1</a>.  On the Client Side</span>
+
+   This is the list of the typical states that can be associated with a
+   given order on the client&#x27;s side:
+
+   Created:  The order has been created.  It is not handled by the
+      client until the administrator allows it to be processed.
+
+   AwaitingProcessing:  The administrator has approved the processing of
+      a created order, but the order has not been handled yet.
+
+   PQOSent:  The order has been sent to the server.
+
+   ServerProcessing:  The server has confirmed the receipt of the order.
+
+   OfferReceived:  An offer has been received from the server.
+
+   OfferProcessing:  A received offer is being processed by the client.
+
+   AcceptSent:  The client has confirmed the offer to the server.
+
+   Completed:  The offer has been acknowledged by the server.
+
+   Cancelled:  The order has failed or was cancelled.
+
+   Sub-states may be defined (e.g., to track failed vs. cancelled
+   orders), but those are not shown in Figure 8.
+
+                 +------------------+
+                 |     Created      |-----------------+
+                 +------------------+                 |
+                         |                            |
+                         v                            |
+                 +------------------+                 |
+                 |AwaitingProcessing|----------------+|
+                 +------------------+                ||
+                         |                           ||
+                    QUOTATION/UPDATE                 ||
+                         v                           ||
+                 +------------------+                ||
+                 |     PQOSent      |---CANCEL------+||
+                 +------------------+               vvv
+                         |                        +-----+
+                     PROCESSING                   |     |
+                         v                        |     |
+                 +------------------+   CANCEL    |  C  |
+                 | ServerProcessing |------------&gt;|  A  |
+                 +------------------+    FAIL     |  N  |
+                         |                        |  C  |
+                         |                        |  E  |
+                       OFFER                      |  L  |
+                         |                        |  L  |
+                         v                        |  E  |
+                 +------------------+             |  D  |
+                 |  OfferReceived   |---CANCEL---&gt;|     |
+                 +------------------+             |     |
+                         | PROCESSING             +-----+
+                         v                          ^^^
+                 +------------------+               |||
+                 |  OfferProcessing |---DECLINE-----+||
+                 +------------------+                ||
+                         | ACCEPT                    ||
+                         v                           ||
+                 +------------------+                ||
+                 |    AcceptSent    |---CANCEL-------+|
+                 +------------------+                 |
+                         | ACK                        |
+                         v                            |
+                 +------------------+                 |
+                 |   Completed      |---WITHDRAW------+
+                 +------------------+
+
+       Figure 8: Example of a CPNP Finite State Machine (Client Side)
+
+<span class="h4"><a class="selflink" id="section-8.11.2" href="#section-8.11.2">8.11.2</a>.  On the Server Side</span>
+
+   The following lists the states on the server&#x27;s side that can be
+   associated with a given order and a corresponding offer:
+
+   PQOReceived:  The order has been received from the client.
+
+   AwaitingProcessing:  The order is being processed by the server.  An
+      action from the server administrator may be needed.
+
+   OfferProposed:  The request has been successfully handled, and an
+      offer has been sent to the client.
+
+   ProcessingReceived:  The server has received a PROCESSING message for
+      an offer sent to the client.
+
+   AcceptReceived:  The server has received a confirmation for the offer
+      from the client.
+
+   Completed:  The server has acknowledged the offer (accepted by
+      client) to the client.  Transitioning to this state assumes that
+      the ACK was received by the client (this can be detected by the
+      server if it receives a retransmitted ACCEPT message from the
+      client).
+
+   Cancelled:  The order cannot be accommodated, or it has been
+      cancelled by the client.  Associated resources must be released in
+      the latter case, if previously reserved.
+
+   ChildCreated:  A child order has been created in cases where
+      resources from another Network Provider are needed.
+
+   ChildPQOSent:  A child order has been sent to the remote server.
+
+   ChildServerProcessing:  A child order is being processed by the
+      remote server.
+
+   ChildOfferReceived:  The remote server has received an offer to a
+      child order.
+
+   ChildOfferProcessing:  A received offer to a child order is being
+      processed.
+
+   ChildAcceptSent:  The child offer (the offer received from the remote
+      server in response to a child order) is confirmed to the remote
+      server.
+
+   ChildCompleted:  The accepted child offer has been acknowledged by
+      the remote server.
+
+   +------------------+           +------------------+
+   |AwaitingProcessing|&lt;----------|    ChildCreated  |
+   +------------------+           +------------------+
+           |                            |      ^
+           v                            |      |
+   +------------------+                 |      |
+   |   ChildPQOSent   |----------------+|      Q
+   +------------------+                ||      U
+           |                           ||      O
+        QUOTATION/UPDATE               ||      T
+           v                           ||      A  +--------------------+
+   +---------------------+   CANCEL    ||      T  |     PQOReceived    |
+   |ChildServerProcessing|------------+||      I  +--------------------+
+   +---------------------+    FAIL    vvv      O       |      |
+           |                        +-----+    N    CANCEL    |
+       PROCESSING                   |     |&lt;---|-------+  PROCESSING
+           v                        |     |    |              v
+   +------------------+             |     |   +------------------------+
+   |ChildOfferReceived|----CANCEL---|  C  |&lt;--|   AwaitingProcessing   |
+   +------------------+             |  A  |   +------------------------+
+           |                        |  N  |       ^          | OFFER
+         OFFER                      |  C  |       | +------------------+
+           |                        |  E  |&lt;DECLINE-|   OfferProposed  |
+           |                        |  L  |       | +------------------+
+           v                        |  L  |       |          |
+   +------------------+             |  E  |       |      PROCESSING
+   |ChildOfferReceived|---CANCEL----|  D  |       |          v
+   +------------------+             |     |       | +------------------+
+           |                        |     |&lt;DECLINE-| Proc&#x27;ingReceived |
+      PROCESSING                    |     |       |+------------------+
+           |                        +-----+       |          | ACCEPT
+           v                         ^^^^^        |          v
+   +------------------+              |||||        | +------------------+
+   |ChildOfferProc&#x27;ing|---DECLINE----+|||+-CANCEL-|-|  AcceptReceived  |
+   +------------------+               |||         | +------------------+
+           |ACCEPT                    |||         |          |ACK
+           v                          |||         |          v
+   +------------------+               |||         | +------------------+
+   |  ChildAcceptSent |---CANCEL------+|+-WITHDRAW|-|    Completed     |
+   +------------------+                |          | +------------------+
+           | ACK                       |          |
+           v                           |          |
+   +------------------+                |          |
+   |  ChildCompleted  |---WITHDRAW-----+          |
+   |                  +---------------------------+
+   +------------------+
+
+             Figure 9: CPNP Finite State Machine (Server Side)
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  CPNP Objects</span>
+
+   This section defines CPNP objects using the Routing Backus-Naur Form
+   (RBNF) format defined in [<a href="/doc/html/rfc5511" title="&quot;Routing Backus-Naur Form (RBNF): A Syntax Used to Form Encoding Rules in Various Routing Protocol Specifications&quot;">RFC5511</a>].  Please also note the following:
+
+      |  Note 1: The formats of CPNP messages are provided using a
+      |  generic format.  Implementors can adapt RBNF definitions to
+      |  their &quot;favorite&quot; message format.  For example, JSON [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>]
+      |  or Concise Binary Object Representation (CBOR) [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] can be
+      |  used.
+
+      |  Note 2: CPNP messages cannot be blindly mapped to RESTCONF
+      |  messages with the target service being modelled as
+      |  configuration data because such data is supposed to be
+      |  manipulated by a RESTCONF client only.  In such a model, the
+      |  RESTCONF server cannot use a value other than the one set by
+      |  the client (e.g., <a href="#section-9.2.3">Section 9.2.3</a>) or remove offers from its own
+      |  initiative (e.g., <a href="#section-9.1.8">Section 9.1.8</a>).  An alternate approach might
+      |  be to map CPNP operations into RESTCONF actions (RPC).
+      |  Assessing the feasibility of such approach is out of scope.
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Attributes</span>
+
+<span class="h4"><a class="selflink" id="section-9.1.1" href="#section-9.1.1">9.1.1</a>.  CUSTOMER_ORDER_IDENTIFIER</span>
+
+   The CUSTOMER_ORDER_IDENTIFIER (Customer Order Identifier) is an
+   identifier that is assigned by a client to identify an agreement.
+   This identifier must be unique to the client.
+
+   Rules for assigning this identifier (including the structure and
+   semantics) are specific to the client (Customer).  The value of
+   CUSTOMER_ORDER_IDENTIFIER is included in all CPNP messages.
+
+   The client (Customer) assigns an identifier to an order under
+   negotiation before an agreement is reached.  This identifier will be
+   used to unambiguously identify the resulting agreement at the client
+   side (Customer).
+
+   The server handles the CUSTOMER_ORDER_IDENTIFIER as an opaque value.
+
+<span class="h4"><a class="selflink" id="section-9.1.2" href="#section-9.1.2">9.1.2</a>.  PROVIDER_ORDER_IDENTIFIER</span>
+
+   The PROVIDER_ORDER_IDENTIFIER (Provider Order Identifier) is an
+   identifier that is assigned by a server to identify an order.  This
+   identifier must be unique to the server.
+
+   Rules for assigning this identifier (including the structure and
+   semantics) are specific to the server (Provider).  The
+   PROVIDER_ORDER_IDENTIFIER is included in all CPNP messages except
+   QUOTATION messages (because the state is only present at the client
+   side).
+
+   The server (Provider) assigns an identifier to an order under
+   negotiation before an agreement is reached.  This identifier will be
+   used to unambiguously identify the resulting agreement at the server
+   side (Provider).
+
+   The client handles the PROVIDER_ORDER_IDENTIFIER as an opaque value.
+
+<span class="h4"><a class="selflink" id="section-9.1.3" href="#section-9.1.3">9.1.3</a>.  TRANSACTION_ID</span>
+
+   This object conveys the Transaction-ID introduced in <a href="#section-8.4">Section 8.4</a>.
+
+<span class="h4"><a class="selflink" id="section-9.1.4" href="#section-9.1.4">9.1.4</a>.  SEQUENCE_NUMBER</span>
+
+   The sequence number is a number that is monotonically incremented in
+   every new CPNP message pertaining to a given CPNP transaction.  This
+   number is used to avoid replay attacks.
+
+   Refer to <a href="#section-11.3">Section 11.3</a>.
+
+<span class="h4"><a class="selflink" id="section-9.1.5" href="#section-9.1.5">9.1.5</a>.  NONCE</span>
+
+   The NONCE is a random value assigned by the CPNP server.  Assigning a
+   unique NONCE value for each order is recommended.
+
+   It is mandatory to then include the NONCE in subsequent CPNP client
+   operations on the associated order (including the resulting
+   agreement) such as withdrawing the order or updating the order.
+
+   If the NONCE validation checks fail, the server rejects the request
+   with a FAIL message that includes the appropriate failure reason
+   code.
+
+<span class="h4"><a class="selflink" id="section-9.1.6" href="#section-9.1.6">9.1.6</a>.  EXPECTED_RESPONSE_TIME</span>
+
+   This attribute indicates the time by when the CPNP client is
+   expecting to receive a response from the CPNP server to a given PQO.
+   If no offer is received by then, the CPNP client will consider the
+   quotation order to be rejected.
+
+   The EXPECTED_RESPONSE_TIME follows the date format specified in
+   [<a href="/doc/html/rfc3339" title="&quot;Date and Time on the Internet: Timestamps&quot;">RFC3339</a>].
+
+<span class="h4"><a class="selflink" id="section-9.1.7" href="#section-9.1.7">9.1.7</a>.  EXPECTED_OFFER_TIME</span>
+
+   This attribute indicates the time by when the CPNP server is
+   expecting to make an offer to the CPNP client.  If no offer is
+   received by then, the CPNP client will consider the order rejected.
+
+   The CPNP server may propose an expected offer time that does not
+   match the expected response time indicated in the quotation order
+   message.  The CPNP client can accept or reject the proposed expected
+   time by when the CPNP server will make an offer.
+
+   The CPNP server can always request extra time for its processing, but
+   this may be accepted or rejected by the CPNP client.
+
+   The EXPECTED_OFFER_TIME follows the date format specified in
+   [<a href="/doc/html/rfc3339" title="&quot;Date and Time on the Internet: Timestamps&quot;">RFC3339</a>].
+
+<span class="h4"><a class="selflink" id="section-9.1.8" href="#section-9.1.8">9.1.8</a>.  VALIDITY_OFFER_TIME</span>
+
+   This attribute indicates the time of validity of an offer made by the
+   CPNP server.  If the offer is not accepted before this time expires,
+   the CPNP server will consider the CPNP client as having rejected the
+   offer; the CPNP server will silently remove this order from its base.
+
+   The VALIDITY_OFFER_TIME follows date format specified in [<a href="/doc/html/rfc3339" title="&quot;Date and Time on the Internet: Timestamps&quot;">RFC3339</a>].
+
+<span class="h4"><a class="selflink" id="section-9.1.9" href="#section-9.1.9">9.1.9</a>.  SERVICE_DESCRIPTION</span>
+
+   This document defines a machinery to negotiate any aspect subject to
+   negotiation.  Service clauses that are under negotiation are conveyed
+   using this attribute.
+
+   The structure of the connectivity provisioning clauses is provided in
+   the following subsection.
+
+<span class="h5"><a class="selflink" id="section-9.1.9.1" href="#section-9.1.9.1">9.1.9.1</a>.  CPD</span>
+
+   The RBNF format of the CPD is shown in Figure 10.
+
+   &lt;CPD&gt; ::=  &lt;Connectivity Provisioning Component&gt; ...
+   &lt;Connectivity Provisioning Component&gt; ::=
+                              &lt;CONNECTIVITY_PROVISIONING_PROFILE&gt; ...
+   &lt;CONNECTIVITY_PROVISIONING_PROFILE&gt; ::=
+                              &lt;Customer Nodes Map&gt;
+                              &lt;SCOPE&gt;
+                              &lt;QoS Guarantees&gt;
+                              &lt;Availability&gt;
+                              &lt;CAPACITY&gt;
+                              &lt;Traffic Isolation&gt;
+                              &lt;Conformance Traffic&gt;
+                              &lt;Flow Identification&gt;
+                              &lt;Overall Traffic Guarantees&gt;
+                              &lt;Routing and Forwarding&gt;
+                              &lt;Activation Means&gt;
+                              &lt;Invocation Means&gt;
+                              &lt;Notifications&gt;
+   &lt;Customer Nodes Map&gt; ::=  &lt;Customer Node&gt; ...
+   &lt;Customer Node&gt; ::=  &lt;IDENTIFIER&gt;
+                        &lt;LINK_IDENTIFIER&gt;
+                        &lt;LOCALIZATION&gt;
+
+                   Figure 10: The RBNF format of the CPD
+
+<span class="h4"><a class="selflink" id="section-9.1.10" href="#section-9.1.10">9.1.10</a>.  CPNP Information Elements</span>
+
+   An Information Element (IE) is an optional object that can be
+   included in a CPNP message.
+
+<span class="h5"><a class="selflink" id="section-9.1.10.1" href="#section-9.1.10.1">9.1.10.1</a>.  Customer Description</span>
+
+   The client may include administrative information such as the
+   following:
+
+   *  Name
+
+   *  Contact Information
+
+   The format of this Information Element is as follows:
+
+   &lt;Customer Description&gt; ::= [&lt;NAME&gt;] [&lt;Contact Information&gt;]
+   &lt;Contact Information&gt; ::=  [&lt;EMAIL_ADDRESS&gt;] [&lt;POSTAL_ADDRESS&gt;]
+                              [&lt;TELEPHONE_NUMBER&gt; ...]
+
+<span class="h5"><a class="selflink" id="section-9.1.10.2" href="#section-9.1.10.2">9.1.10.2</a>.  Provider Description</span>
+
+   The server may include administrative information in an offer such as
+   the following:
+
+   *  Name
+
+   *  AS Number [<a href="/doc/html/rfc6793" title="&quot;BGP Support for Four-Octet Autonomous System (AS) Number Space&quot;">RFC6793</a>]
+
+   *  Contact Information
+
+   The format of this Information Element is as follows:
+
+   &lt;Provider Description&gt; ::= [&lt;NAME&gt;][&lt;Contact Information&gt;]
+                              [&lt;AS_NUMBER&gt;]
+
+<span class="h5"><a class="selflink" id="section-9.1.10.3" href="#section-9.1.10.3">9.1.10.3</a>.  Negotiation Options</span>
+
+   The client may include some negotiation options such as the
+   following:
+
+   Setup purpose:  A client may request the setup of a service (e.g.,
+      connectivity) only for testing purposes during a limited period.
+      The order can be extended to become permanent if the client was
+      satisfied during the test period.  This operation is achieved
+      using the UPDATE method.
+
+   Activation type:  A client may request a permanent or scheduled
+      activation type.  If no activation type clause is included during
+      the negotiation, this means that the order will be immediately
+      activated right after the negotiation ends.
+
+   The format of this Information Element is as follows:
+
+   &lt;Negotiation Options&gt; ::= [&lt;PURPOSE&gt;]
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Operation Messages</span>
+
+   This section defines the RBNF format of CPNP operation messages.  The
+   following operation codes are used:
+
+   +======+===================+================+
+   | Code | Operation Message | Reference      |
+   +======+===================+================+
+   | 1    | QUOTATION         | <a href="#section-9.2.1">Section 9.2.1</a>  |
+   +------+-------------------+----------------+
+   | 2    | PROCESSING        | <a href="#section-9.2.2">Section 9.2.2</a>  |
+   +------+-------------------+----------------+
+   | 3    | OFFER             | <a href="#section-9.2.3">Section 9.2.3</a>  |
+   +------+-------------------+----------------+
+   | 4    | ACCEPT            | <a href="#section-9.2.4">Section 9.2.4</a>  |
+   +------+-------------------+----------------+
+   | 5    | DECLINE           | <a href="#section-9.2.5">Section 9.2.5</a>  |
+   +------+-------------------+----------------+
+   | 6    | ACK               | <a href="#section-9.2.6">Section 9.2.6</a>  |
+   +------+-------------------+----------------+
+   | 7    | CANCEL            | <a href="#section-9.2.7">Section 9.2.7</a>  |
+   +------+-------------------+----------------+
+   | 8    | WITHDRAW          | <a href="#section-9.2.8">Section 9.2.8</a>  |
+   +------+-------------------+----------------+
+   | 9    | UPDATE            | <a href="#section-9.2.9">Section 9.2.9</a>  |
+   +------+-------------------+----------------+
+   | 10   | FAIL              | <a href="#section-9.2.10">Section 9.2.10</a> |
+   +------+-------------------+----------------+
+   | 11   | ACTIVATE          | <a href="#section-9.2.11">Section 9.2.11</a> |
+   +------+-------------------+----------------+
+
+       Table 1: CPNP Operation Message Codes
+
+   These codes are used to unambiguously identify a CPNP operation; the
+   operation code is conveyed in the METHOD_CODE attribute mentioned in
+   the following subsections.
+
+   In the following, VERSION refers to the CPNP version number.  This
+   attribute must be set to 1.
+
+<span class="h4"><a class="selflink" id="section-9.2.1" href="#section-9.2.1">9.2.1</a>.  QUOTATION</span>
+
+   The format of the QUOTATION message is shown below:
+
+   &lt;QUOTATION Message&gt; ::=  &lt;VERSION&gt;
+                            &lt;METHOD_CODE&gt;
+                            &lt;SEQUENCE_NUMBER&gt;
+                            &lt;TRANSACTION_ID&gt;
+                            &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                            [&lt;EXPECTED_RESPONSE_TIME&gt;]
+                            &lt;REQUESTED_CPD&gt;
+                            [&lt;INFORMATION_ELEMENT&gt;...]
+
+   A QUOTATION message must include an order identifier that is
+   generated by the client (CUSTOMER_ORDER_IDENTIFIER).  Because several
+   orders can be issued to several servers, the QUOTATION message must
+   also include a Transaction-ID.
+
+   The message may include an EXPECTED_RESPONSE_TIME, which indicates by
+   when the client expects to receive an offer from the server.  The
+   QUOTATION message must also include a requested service description
+   (that is, a Requested CPD for connectivity services).
+
+   The message may include ACTIVATION_TYPE to request a permanent or
+   scheduled activation type (e.g., using the ACTIVATE method defined in
+   <a href="#section-9.2.11">Section 9.2.11</a>).  If no such clause is included, the default mode is
+   to assume that the order will be active once the accepted activation
+   means are successfully invoked (e.g., <a href="/doc/html/rfc7297#section-3.11">Section&nbsp;3.11 of [RFC7297]</a>).
+
+   When the client sends the QUOTATION message to the server, the state
+   of the order changes to &quot;PQOSent&quot; at the client side.
+
+<span class="h4"><a class="selflink" id="section-9.2.2" href="#section-9.2.2">9.2.2</a>.  PROCESSING</span>
+
+   The format of the PROCESSING message is shown below:
+
+   &lt;PROCESSING Message&gt; ::= &lt;VERSION&gt;
+                            &lt;METHOD_CODE&gt;
+                            &lt;SEQUENCE_NUMBER&gt;
+                            &lt;TRANSACTION_ID&gt;
+                            &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                            &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                            [&lt;EXPECTED_OFFER_TIME&gt;]
+                            [&lt;PROCESSING_SUBCODE&gt;]
+
+   Upon receipt of a QUOTATION message, the server proceeds with the
+   parsing rules (see <a href="#section-10">Section 10</a>).  If no error is encountered, the
+   server generates a PROCESSING response to the client to indicate the
+   PQO has been received and it is being processed.  The server must
+   generate an order identifier that identifies the order in its local
+   order repository.  The server must copy the content of the
+   CUSTOMER_ORDER_IDENTIFIER and TRANSACTION_ID fields as conveyed in
+   the QUOTATION message.  The server may include an EXPECTED_OFFER_TIME
+   by when it expects to make an offer to the client.
+
+   Upon receipt of a PROCESSING message, the client verifies whether it
+   has issued a PQO that contains the CUSTOMER_ORDER_IDENTIFIER and
+   TRANSACTION_ID to that server.  If no such PQO is found, the
+   PROCESSING message must be silently ignored.  If a PQO is found, the
+   client may check whether it accepts the EXPECTED_OFFER_TIME, and then
+   it changes to state of the order to &quot;ServerProcessing&quot;.
+
+   If the server requires more time to process the quotation order, it
+   may send a PROCESSING message that includes a new
+   EXPECTED_OFFER_TIME.  The client can answer with an ACK message if
+   more time is granted (Figure 11) or with a FAIL message if the time
+   extension request is rejected (Figure 12).
+
+   The server may provide more details in the PROCESSING_SUBCODE
+   attribute about the reason for requesting more time to process the
+   request.  The following codes are defined:
+
+   +=========+============================+
+   | Subcode | Description                |
+   +=========+============================+
+   | 1       | Upgrade of local resources |
+   +---------+----------------------------+
+   | 2       | Request external resources |
+   +---------+----------------------------+
+
+      Table 2: PROCESSING_SUBCODE Codes
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |=======QUOTATION(Requested CPD)=====&gt;|
+                 |&lt;========PROCESSING(time1)===========|
+                                   ...
+                 |&lt;========PROCESSING(MoreTime)========|
+                 |============ACK(TimeGranted)========&gt;|
+                                   ...
+                 |&lt;=========OFFER(Offered CPD)=========|
+                 |=============PROCESSING=============&gt;|
+                 |=========ACCEPT(Accepted CPD)=======&gt;|
+                 |&lt;=========ACK(Accepted CPD)==========|
+                 |                                     |
+
+             Figure 11: Request More Negotiation Time: Granted
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |=======QUOTATION(Requested CPD)=====&gt;|
+                 |&lt;========PROCESSING(time1)===========|
+                                   ...
+                 |&lt;========PROCESSING(MoreTime)========|
+                 |=====FAIL(More Time Rejected)=======&gt;|
+
+             Figure 12: Request More Negotiation Time: Rejected
+
+<span class="h4"><a class="selflink" id="section-9.2.3" href="#section-9.2.3">9.2.3</a>.  OFFER</span>
+
+   The format of the OFFER message is shown below:
+
+   &lt;OFFER Message&gt; ::= &lt;VERSION&gt;
+                       &lt;METHOD_CODE&gt;
+                       &lt;SEQUENCE_NUMBER&gt;
+                       &lt;TRANSACTION_ID&gt;
+                       &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                       &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                       &lt;NONCE&gt;
+                       &lt;VALIDITY_OFFER_TIME&gt;
+                       &lt;OFFERED_CPD&gt;
+                       [&lt;INFORMATION_ELEMENT&gt;...]
+
+   The server answers a QUOTATION request received from the client with
+   an OFFER message.  The offer will be considered to be rejected by the
+   client if no confirmation (i.e., an ACCEPT message sent by the
+   client) is received by the server before the expiration of the
+   validity time.
+
+   The server may include ACTIVATION_TYPE to indicate whether the offer
+   is about a permanent or scheduled activation type.  The message may
+   include ACTIVATION_SCHEDULE to indicate when the order is to be
+   activated.  If no such clause is included, the default mode is to
+   assume that the order will be active once the accepted activation
+   means are successfully invoked (e.g., <a href="/doc/html/rfc7297#section-3.11">Section&nbsp;3.11 of [RFC7297]</a> or
+   <a href="#section-9.2.11">Section 9.2.11</a>).
+
+<span class="h4"><a class="selflink" id="section-9.2.4" href="#section-9.2.4">9.2.4</a>.  ACCEPT</span>
+
+   The format of the ACCEPT message is shown below:
+
+   &lt;ACCEPT Message&gt; ::= &lt;VERSION&gt;
+                        &lt;METHOD_CODE&gt;
+                        &lt;SEQUENCE_NUMBER&gt;
+                        &lt;TRANSACTION_ID&gt;
+                        &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                        &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                        &lt;NONCE&gt;
+                        &lt;ACCEPTED_CPD&gt;
+                        [&lt;INFORMATION_ELEMENT&gt;...]
+
+   This message is used by a client to confirm the acceptance of an
+   offer received from a server.  The fields of this message must be
+   copied from the received OFFER message.  This message should not be
+   sent after the validity time of the offer expires, as indicated by
+   the server (<a href="#section-9.2.3">Section 9.2.3</a>).
+
+<span class="h4"><a class="selflink" id="section-9.2.5" href="#section-9.2.5">9.2.5</a>.  DECLINE</span>
+
+   The format of the DECLINE message is shown below:
+
+   &lt;DECLINE Message&gt; ::= &lt;VERSION&gt;
+                         &lt;METHOD_CODE&gt;
+                         &lt;SEQUENCE_NUMBER&gt;
+                         &lt;TRANSACTION_ID&gt;
+                         &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                         &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                         &lt;NONCE&gt;
+                         [&lt;REASON&gt;...]
+
+   The client may issue a DECLINE message to reject an offer.
+   CUSTOMER_ORDER_IDENTIFIER, PROVIDER_ORDER_IDENTIFIER, TRANSACTION_ID,
+   and NONCE are used by the server as keys to find the corresponding
+   order.  If an order matches, the server changes the state of this
+   order to &quot;Cancelled&quot; and then returns an ACK with a copy of the
+   Requested CPD to the requesting client.
+
+   A DECLINE message may include an Information Element to indicate the
+   reason for declining an offer.  The following codes are defined:
+
+   +======+====================================================+
+   | Code | Description                                        |
+   +======+====================================================+
+   | 1    | Unacceptable gap between the request and the offer |
+   +------+----------------------------------------------------+
+   | 2    | Conflict with another offer from another server    |
+   +------+----------------------------------------------------+
+   | 3    | Activation type mismatch                           |
+   +------+----------------------------------------------------+
+
+                   Table 3: DECLINE Message Codes
+
+   If no order is found, the server returns a FAIL message to the
+   requesting client.  In order to prevent DDoS (Distributed Denial of
+   Service) attacks, the server should restrict the number of FAIL
+   messages sent to a requesting client.  It may also rate-limit FAIL
+   messages.
+
+   A flow example is shown in Figure 13.
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |=======QUOTATION(Requested CPD)=====&gt;|
+                 |&lt;============PROCESSING==============|
+                 |&lt;=========OFFER(Offered CPD)=========|
+                 |=============PROCESSING=============&gt;|
+                 |===============DECLINE==============&gt;|
+                 |&lt;================ACK=================|
+                 |                                     |
+
+                      Figure 13: DECLINE Flow Example
+
+<span class="h4"><a class="selflink" id="section-9.2.6" href="#section-9.2.6">9.2.6</a>.  ACK</span>
+
+   The format of the ACK message is shown below:
+
+   &lt;ACK Message&gt; ::= &lt;VERSION&gt;
+                     &lt;METHOD_CODE&gt;
+                     &lt;SEQUENCE_NUMBER&gt;
+                     &lt;TRANSACTION_ID&gt;
+                     &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                     &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                     [&lt;EXPECTED_RESPONSE_TIME&gt;]
+                     [&lt;CPD&gt;]
+                     [&lt;INFORMATION_ELEMENT&gt;...]
+
+   This message is issued by the server to close a CPNP transaction or
+   by a client to grant more negotiation time to the server.
+
+   This message is sent by the server as a response to an ACCEPT,
+   WITHDRAW, DECLINE, or CANCEL message.  In this case, the ACK message
+   must include the copy of the service description (i.e., CPD for
+   connectivity services) as stored by the server.  In particular, the
+   following considerations are taken into account for connectivity
+   provisioning services:
+
+   *  A copy of the Requested/Offered CPD is included by the server if
+      it successfully handled a CANCEL message.
+
+   *  A copy of the Updated CPD is included by the server if it
+      successfully handled an UPDATE message.
+
+   *  A copy of the Offered CPD is included by the server if it
+      successfully handled an ACCEPT message in the context of a
+      QUOTATION transaction (refer to &quot;Accepted CPD&quot; in <a href="#section-8.7">Section 8.7</a>).
+
+   *  An Empty CPD is included by the server if it successfully handled
+      a DECLINE or WITHDRAW message.
+
+   A client may issue an ACK message as a response to a time extension
+   request (conveyed in PROCESSING) received from the server.  In such
+   case, the ACK message must include an EXPECTED_RESPONSE_TIME that is
+   likely to be set to the time extension requested by the server.
+
+<span class="h4"><a class="selflink" id="section-9.2.7" href="#section-9.2.7">9.2.7</a>.  CANCEL</span>
+
+   The format of the CANCEL message is shown below:
+
+   &lt;CANCEL Message&gt; ::= &lt;VERSION&gt;
+                        &lt;METHOD_CODE&gt;
+                        &lt;SEQUENCE_NUMBER&gt;
+                        &lt;TRANSACTION_ID&gt;
+                        &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                        [&lt;CPD&gt;]
+
+   The client can issue a CANCEL message at any stage during the CPNP
+   negotiation process before an agreement is reached.  The
+   CUSTOMER_ORDER_IDENTIFIER and TRANSACTION_ID are used by the server
+   as keys to find the corresponding order.  If a quotation order
+   matches, the server changes the state of this quotation order to
+   &quot;Cancelled&quot; and then returns an ACK with a copy of the Requested CPD
+   to the requesting client.
+
+   If no quotation order is found, the server returns a FAIL message to
+   the requesting client.
+
+<span class="h4"><a class="selflink" id="section-9.2.8" href="#section-9.2.8">9.2.8</a>.  WITHDRAW</span>
+
+   The format of the WITHDRAW message is shown below:
+
+   &lt;WITHDRAW Message&gt; ::= &lt;VERSION&gt;
+                          &lt;METHOD_CODE&gt;
+                          &lt;SEQUENCE_NUMBER&gt;
+                          &lt;TRANSACTION_ID&gt;
+                          &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                          &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                          &lt;NONCE&gt;
+                          [&lt;ACCEPTED_CPD&gt;]
+                          [&lt;INFORMATION_ELEMENT&gt;...]
+
+   This message is used to withdraw an offer already accepted by the
+   Customer.  Figure 14 shows a typical usage of this message.
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |============WITHDRAW(CPD)===========&gt;|
+                 |&lt;============PROCESSING==============|
+                 |&lt;===========ACK(Empty CPD)===========|
+                 |                                     |
+
+                      Figure 14: WITHDRAW Flow Example
+
+   The WITHDRAW message must include the same CUSTOMER_ORDER_IDENTIFIER,
+   PROVIDER_ORDER_IDENTIFIER, and NONCE as those used when creating the
+   order.
+
+   Upon receipt of a WITHDRAW message, the server checks whether an
+   order matching the request is found.  If an order is found, the state
+   of the order is changed to &quot;Cancelled&quot;, and an ACK message including
+   an Empty CPD is returned to the requesting client.  If no order is
+   found, the server returns a FAIL message to the requesting client.
+
+<span class="h4"><a class="selflink" id="section-9.2.9" href="#section-9.2.9">9.2.9</a>.  UPDATE</span>
+
+   The format of the UPDATE message is shown below:
+
+   &lt;UPDATE Message&gt; ::= &lt;VERSION&gt;
+                        &lt;METHOD_CODE&gt;
+                        &lt;SEQUENCE_NUMBER&gt;
+                        &lt;TRANSACTION_ID&gt;
+                        &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                        &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                        &lt;NONCE&gt;
+                        &lt;EXPECTED_RESPONSE_TIME&gt;
+                        &lt;REQUESTED_CPD&gt;
+                        [&lt;INFORMATION_ELEMENT&gt;...]
+
+   This message is sent by the CPNP client to update an existing service
+   agreement (e.g., Accepted CPD).  The UPDATE message must include the
+   same CUSTOMER_ORDER_IDENTIFIER, PROVIDER_ORDER_IDENTIFIER, and NONCE
+   as those used when creating the order.  The CPNP client includes a
+   new service description (e.g., Updated CPD) that integrates the
+   requested modifications.  A new Transaction_ID must be assigned by
+   the client.
+
+   Upon receipt of an UPDATE message, the server checks whether an
+   order, having state &quot;Completed&quot;, matches CUSTOMER_ORDER_IDENTIFIER,
+   PROVIDER_ORDER_IDENTIFIER, and NONCE.
+
+   *  If no order is found, the CPNP server generates a FAIL error with
+      the appropriate error code (<a href="#section-9.2.10">Section 9.2.10</a>).
+
+   *  If an order is found, the server checks whether it can honor the
+      request:
+
+      -  A FAIL message is sent to the client if the server cannot honor
+         the request.  The client may initiate a new PQO negotiation
+         cycle (that is, send a new UPDATE message).
+
+      -  An OFFER message including the updated clauses (e.g., Updated
+         CPD) is sent to the client.  For example, the server maintains
+         an order for provisioning a VPN service that connects sites A,
+         B, and C.  If the client sends an UPDATE message to remove site
+         C, only sites A and B will be included in the OFFER sent by the
+         server to the requesting client.
+
+         Note that the cycle that is triggered by an UPDATE message is
+         also considered to be a negotiation cycle.
+
+   A flow chart that illustrates the use of UPDATE operation is shown in
+   Figure 15.
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |=========UPDATE(Requested CPD)======&gt;|
+                 |&lt;============PROCESSING==============|
+                 |&lt;=========OFFER(Updated CPD)=========|
+                 |=============PROCESSING=============&gt;|
+                 |==========ACCEPT(Updated CPD)=======&gt;|
+                 |&lt;==========ACK(Updated CPD)==========|
+                 |                                     |
+
+                       Figure 15: UPDATE Flow Example
+
+<span class="h4"><a class="selflink" id="section-9.2.10" href="#section-9.2.10">9.2.10</a>.  FAIL</span>
+
+   The format of the FAIL message is shown below:
+
+   &lt;FAIL Message&gt; ::=  &lt;VERSION&gt;
+                       &lt;METHOD_CODE&gt;
+                       &lt;SEQUENCE_NUMBER&gt;
+                       &lt;TRANSACTION_ID&gt;
+                       &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                       &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                       &lt;STATUS_CODE&gt;
+
+   This message is sent in the following cases:
+
+   *  The server cannot honor an order received from the client (i.e.,
+      received in a QUOTATION or UPDATE request).
+
+   *  The server encounters an error when processing a CPNP request
+      received from the client.
+
+   *  The client cannot grant more time to the server.  This is a
+      response to a time extension request carried in a PROCESSING
+      message.
+
+   The status code indicates the error code.  The following codes are
+   supported:
+
+    +========+==================+=====================================+
+    | Status | Error Code       | Description                         |
+    | Code   |                  |                                     |
+    +========+==================+=====================================+
+    | 1      | Message          | The message cannot be validated     |
+    |        | Validation Error | (see <a href="#section-10">Section 10</a>).                   |
+    +--------+------------------+-------------------------------------+
+    | 2      | Authentication   | The request cannot be handled       |
+    |        | Required         | because authentication is required. |
+    +--------+------------------+-------------------------------------+
+    | 3      | Authorization    | The request cannot be handled       |
+    |        | Failed           | because authorization failed.       |
+    +--------+------------------+-------------------------------------+
+    | 4      | Administratively | The request cannot be handled       |
+    |        | prohibited       | because of administrative policies. |
+    +--------+------------------+-------------------------------------+
+    | 5      | Out of Resources | The request cannot be honored       |
+    |        |                  | because resources (e.g., capacity)  |
+    |        |                  | are insufficient.                   |
+    +--------+------------------+-------------------------------------+
+    | 6      | Network Presence | The request cannot be honored       |
+    |        | Error            | because there is no network         |
+    |        |                  | presence.                           |
+    +--------+------------------+-------------------------------------+
+    | 7      | More Time        | The request to extend the time for  |
+    |        | Rejected         | negotiation is rejected by the      |
+    |        |                  | client.                             |
+    +--------+------------------+-------------------------------------+
+    | 8      | Unsupported      | The request cannot be handled       |
+    |        | Activation Type  | because the requested activation    |
+    |        |                  | type is not supported.              |
+    +--------+------------------+-------------------------------------+
+
+                     Table 4: FAIL Message Error Codes
+
+<span class="h4"><a class="selflink" id="section-9.2.11" href="#section-9.2.11">9.2.11</a>.  ACTIVATE</span>
+
+   The format of the ACTIVATE message is shown below:
+
+   &lt;ACTIVATE Message&gt; ::= &lt;VERSION&gt;
+                          &lt;METHOD_CODE&gt;
+                          &lt;SEQUENCE_NUMBER&gt;
+                          &lt;TRANSACTION_ID&gt;
+                          &lt;CUSTOMER_ORDER_IDENTIFIER&gt;
+                          &lt;PROVIDER_ORDER_IDENTIFIER&gt;
+                          &lt;NONCE&gt;
+                          &lt;ACTIVATION_SCHEDULE&gt;
+                          [&lt;INFORMATION_ELEMENT&gt;...]
+
+   This message is sent by the CPNP client to request the activation of
+   an existing service agreement.  The message must include the same
+   CUSTOMER_ORDER_IDENTIFIER, PROVIDER_ORDER_IDENTIFIER, and NONCE as
+   those used when creating the order.  The CPNP client may include a
+   schedule target for activating this order.  A new Transaction_ID must
+   be assigned by the client.
+
+   Upon receipt of an ACTIVATE message, the server checks whether an
+   order, having state &quot;Completed&quot;, matches CUSTOMER_ORDER_IDENTIFIER,
+   PROVIDER_ORDER_IDENTIFIER, and NONCE.
+
+   *  If no completed order is found, the CPNP server generates a FAIL
+      error with the appropriate error code (<a href="#section-9.2.10">Section 9.2.10</a>).
+
+   *  If an order is found, the server checks whether it can honor the
+      request:
+
+      -  A FAIL message is sent to the client if the server cannot honor
+         the request (e.g., out of resources or explicit activation
+         wasn&#x27;t negotiated with this client).
+
+      -  An ACK is sent to the client to confirm that the immediate
+         activation (or deactivation) of the order or its successful
+         scheduling if a non-null ACTIVATION_SCHEDULE was included in
+         the request.  Note that setting ACTIVATION_SCHEDULE to 0 in an
+         ACTIVATE request has a special meaning: it is used to request a
+         deactivation of an accepted order.
+
+   Figure 16 illustrates the use of the ACTIVATE operation.
+
+              +------+                              +------+
+              |Client|                              |Server|
+              +------+                              +------+
+                 |================ACTIVATE()==========&gt;|
+                 |&lt;==============ACK()=================|
+                 |                                     |
+
+                      Figure 16: ACTIVATE Flow Example
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  CPNP Message Validation</span>
+
+   Both the client and the server proceed with CPNP message validation.
+   The following tables summarize the validation checks to be followed.
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  On the Client Side</span>
+
+   +==============+==================================================+
+   | Operation    | Validation Checks                                |
+   +==============+==================================================+
+   | PROCESSING   | {Source IP address, source port number,          |
+   |              | destination IP address, destination port number, |
+   |              | Transaction-ID, Customer Order Identifier} must  |
+   |              | match an existing PQO with a state set to        |
+   |              | &quot;PQOSent&quot;.  The sequence number carried in the   |
+   |              | packet must be larger than the sequence number   |
+   |              | maintained by the client.                        |
+   +--------------+--------------------------------------------------+
+   | OFFER        | {Source IP address, source port number,          |
+   |              | destination IP address, destination port number, |
+   |              | Transaction-ID, Customer Order Identifier} must  |
+   |              | match an existing order with state set to        |
+   |              | &quot;PQOSent&quot;, or {Source IP address, source port    |
+   |              | number, destination IP address, destination port |
+   |              | number, Transaction-ID, Customer Order           |
+   |              | Identifier, Provider Order Identifier} must      |
+   |              | match an existing order with a state set to      |
+   |              | &quot;ServerProcessing&quot;.  The sequence number carried |
+   |              | in the packet must be larger than the sequence   |
+   |              | number maintained by the client.                 |
+   +--------------+--------------------------------------------------+
+   | ACK          | {Source IP address, source port number,          |
+   | (QUOTATION   | destination IP address, destination port number, |
+   | Transaction) | Transaction-ID, Customer Order Identifier,       |
+   |              | Provider Order Identifier, Offered Connectivity  |
+   |              | Provisioning Document} must match an order with  |
+   |              | a state set to &quot;AcceptSent&quot;.  The sequence       |
+   |              | number carried in the packet must be larger than |
+   |              | the sequence number maintained by the client.    |
+   +--------------+--------------------------------------------------+
+   | ACK (UPDATE  | {Source IP address, source port number,          |
+   | Transaction) | destination IP address, destination port number, |
+   |              | Transaction-ID, Customer Order Identifier,       |
+   |              | Provider Order Identifier, Updated Connectivity  |
+   |              | Provisioning Document} must match an order with  |
+   |              | a state set to &quot;AcceptSent&quot;.  The sequence       |
+   |              | number carried in the packet must be larger than |
+   |              | the sequence number maintained by the client.    |
+   +--------------+--------------------------------------------------+
+   | ACK          | {Source IP address, source port number,          |
+   | (WITHDRAW    | destination IP address, destination port number, |
+   | Transaction) | Transaction-ID, Customer Order Identifier,       |
+   |              | Provider Order Identifier, Empty Connectivity    |
+   |              | Provisioning Document} must match an order with  |
+   |              | a state set to &quot;Cancelled&quot;.  The sequence number |
+   |              | carried in the packet must be larger than the    |
+   |              | sequence number maintained by the client.        |
+   +--------------+--------------------------------------------------+
+
+                  Table 5: Client Side Validation Checks
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  On the Server Side</span>
+
+   +============+==================================================+
+   | Method     | Validation Checks                                |
+   +============+==================================================+
+   | QUOTATION  | The source IP address passes existing access     |
+   |            | filters (if any).  The sequence number carried   |
+   |            | in the packet must not be lower than the         |
+   |            | sequence number maintained by the server.        |
+   +------------+--------------------------------------------------+
+   | PROCESSING | The sequence number carried in the packet must   |
+   |            | be greater than the sequence number maintained   |
+   |            | by the server.                                   |
+   +------------+--------------------------------------------------+
+   | CANCEL     | {Source IP address, source port number,          |
+   |            | destination IP address, destination port number, |
+   |            | Transaction-ID, Customer Order Identifier} must  |
+   |            | match an order with state set to &quot;PQOReceived&quot;   |
+   |            | or &quot;OfferProposed&quot; or &quot;ProcessingReceived&quot; or    |
+   |            | &quot;AcceptReceived&quot;.  The sequence number carried   |
+   |            | in the packet must be greater than the sequence  |
+   |            | number maintained by the server.                 |
+   +------------+--------------------------------------------------+
+   | ACCEPT     | {Source IP address, source port number,          |
+   |            | destination IP address, destination port number, |
+   |            | Transaction-ID, Customer Order Identifier,       |
+   |            | Provider Order Identifier, Nonce, Offered        |
+   |            | Connectivity Provisioning Document} must match   |
+   |            | an order with state set to &quot;OfferProposed&quot; or    |
+   |            | &quot;ProcessingReceived&quot;.  The sequence number       |
+   |            | carried in the packet must be greater than the   |
+   |            | sequence number maintained by the server.        |
+   +------------+--------------------------------------------------+
+   | FAIL       | {Source IP address, source port number,          |
+   |            | destination IP address, destination port number, |
+   |            | Transaction-ID, Customer Order Identifier,       |
+   |            | Provider Order Identifier} must match an order   |
+   |            | with state set to &quot;AwaitingProcessing&quot; and for   |
+   |            | which a request to grant more time to process an |
+   |            | offer was requested.  The sequence number        |
+   |            | carried in the packet must be greater than the   |
+   |            | sequence number maintained by the server.        |
+   +------------+--------------------------------------------------+
+   | DECLINE    | {Source IP address, source port number,          |
+   |            | destination IP address, destination port number, |
+   |            | Transaction-ID, Customer Order Identifier,       |
+   |            | Provider Order Identifier, Nonce} must match an  |
+   |            | order with state set to &quot;OfferProposed&quot; or       |
+   |            | &quot;ProcessingReceived&quot;.  The sequence number       |
+   |            | carried in the packet must be greater than the   |
+   |            | sequence number maintained by the server.        |
+   +------------+--------------------------------------------------+
+   | UPDATE     | The source IP address passes existing access     |
+   |            | filters (if any), and {Customer Order            |
+   |            | Identifier, Provider Order Identifier, Nonce}    |
+   |            | must match an existing order with state          |
+   |            | &quot;Completed&quot;.                                     |
+   +------------+--------------------------------------------------+
+   | WITHDRAW   | The source IP address passes existing access     |
+   |            | filters (if any), and {Customer Order            |
+   |            | Identifier, Provider Order Identifier, Nonce}    |
+   |            | must match an existing order with state          |
+   |            | &quot;Completed&quot;.                                     |
+   +------------+--------------------------------------------------+
+   | ACTIVATE   | The source IP address passes existing access     |
+   |            | filters (if any), and {Customer Order            |
+   |            | Identifier, Provider Order Identifier, Nonce}    |
+   |            | must match an existing order with a state of     |
+   |            | &quot;Completed&quot; and its activation procedure set to  |
+   |            | explicit.                                        |
+   +------------+--------------------------------------------------+
+
+                 Table 6: Server Side Validation Checks
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Theory of Operation</span>
+
+   Both the CPNP client and server proceed with message validation
+   checks as specified in <a href="#section-10">Section 10</a>.
+
+<span class="h3"><a class="selflink" id="section-11.1" href="#section-11.1">11.1</a>.  Client Behavior</span>
+
+<span class="h4"><a class="selflink" id="section-11.1.1" href="#section-11.1.1">11.1.1</a>.  Order Negotiation Cycle</span>
+
+   To place a PQO, the client first initiates a local quotation order
+   object identified by a unique identifier assigned by the client
+   (Client Order Identifier).  The state of the quotation order is set
+   to &quot;Created&quot;.  The client then generates a QUOTATION request that
+   includes the assigned identifier, possibly an expected response time,
+   a Transaction-ID, and a requested service (e.g., Requested CPD).  The
+   client may include additional Information Elements such as Customer
+   Description or Negotiation Options.
+
+   The client may be configured to not enforce negotiation checks on
+   EXPECTED_OFFER_TIME; if so, the client should either not include the
+   EXPECTED_RESPONSE_TIME attribute in the PQO or it should set the
+   attribute to infinite.
+
+   Once the request is sent to the server, the state of the request is
+   set to &quot;PQOSent&quot;, and if a response time is included in the quotation
+   order, a timer is set to the expiration time as included in the
+   QUOTATION request.  The client also maintains a copy of the CPNP
+   session entry details used to generate the QUOTATION request.  The
+   CPNP client must listen on the same port number that it used to send
+   the QUOTATION request.
+
+   If no answer is received from the server before the retransmission
+   timer expires (i.e., RETRANS_TIMER, <a href="#section-8.5">Section 8.5</a>), the client
+   retransmits the message until maximum retry is reached (e.g., three
+   times).  The same sequence number is used for retransmitted packets.
+
+   If a FAIL message is received, the client may decide to issue another
+   (corrected) request towards the same server, cancel the local order,
+   or contact another server.  The behavior of the client depends on the
+   error code returned by the server in the FAIL message.
+
+   If a PROCESSING message matching the CPNP session entry (<a href="#section-8.3">Section 8.3</a>)
+   is received, the client updates the CPNP session entry with the
+   PROVIDER_ORDER_IDENTIFIER information.  If the client does not accept
+   the expected offer time that may have been indicated in the
+   PROCESSING message, the client may decide to cancel the quotation
+   order.  If the client accepts the EXPECTED_OFFER_TIME, it changes the
+   state of the order to &quot;ServerProcessing&quot; and sets a timer to the
+   value of EXPECTED_OFFER_TIME.  If no offer is made before the timer
+   expires, the client changes the state of the order to &quot;Cancelled&quot;.
+
+   As a response to a time extension request (conveyed in a PROCESSING
+   message that included a new EXPECTED_OFFER_TIME), the client may
+   either grant this extension by issuing an ACK message or reject the
+   time extension by issuing a FAIL message with a status code set to
+   &quot;More Time Rejected&quot;.
+
+   If an OFFER message matching the CPNP session entry is received, the
+   client checks if a PROCESSING message having the same
+   PROVIDER_ORDER_IDENTIFIER has been received from the server.  If a
+   PROCESSING message was already received for the same order, but the
+   PROVIDER_ORDER_IDENTIFIER does not match the identifier included in
+   the OFFER message, the client silently ignores the message.  If a
+   PROCESSING message with the same PROVIDER_ORDER_IDENTIFIER was
+   already received and matches the CPNP transaction identifier, the
+   client changes the state of the order to &quot;OfferReceived&quot; and sets a
+   timer to the value of VALIDITY_OFFER_TIME indicated in the OFFER
+   message.
+
+   If an offer is received from the server (i.e., as documented in an
+   OFFER message), the client may accept or reject the offer.  The
+   client accepts the offer by generating an ACCEPT message that
+   confirms that the client agrees to subscribe to the offer documented
+   in the OFFER message; the state of the order is passed to
+   &quot;AcceptSent&quot;.  The transaction is terminated if an ACK message is
+   received from the server.  If no ACK is received from the server, the
+   client proceeds with the retransmission of the ACCEPT message until
+   the maximum retry is reached (<a href="#section-11.4">Section 11.4</a>).
+
+   The client may also decide to reject the offer by sending a DECLINE
+   message.  The state of the order is set by the client to &quot;Cancelled&quot;.
+   If an offer is not acceptable to the client, the client may decide to
+   contact a new server or submit another order to the same server.
+   Guidelines to issue an updated order or terminate the negotiation are
+   specific to the client.
+
+   An order can be activated (or deactivated) using the ACTIVATE message
+   or other accepted activation means (<a href="/doc/html/rfc7297#section-3.11">Section&nbsp;3.11 of [RFC7297]</a>).
+
+<span class="h4"><a class="selflink" id="section-11.1.2" href="#section-11.1.2">11.1.2</a>.  Order Withdrawal Cycle</span>
+
+   A client may withdraw a completed order.  This is achieved by issuing
+   a WITHDRAW message.  This message must include the Customer Order
+   Identifier, Provider Order Identifier, and Nonce returned during the
+   order negotiation cycle, as specified in <a href="#section-11.1.1">Section 11.1.1</a>.
+
+   If no ACK is received from the server, the client proceeds with the
+   retransmission of the message.  If no ACK is received after the
+   maximum retry is exhausted, the client should log the information and
+   must send an alarm to the administrator.  If there is no specific
+   instruction from the administrator, the client should schedule
+   another Withdrawal cycle.  The client must not retry this Withdrawal
+   cycle more frequently than every 300 seconds and must not retry more
+   frequently than every 60 seconds.
+
+<span class="h4"><a class="selflink" id="section-11.1.3" href="#section-11.1.3">11.1.3</a>.  Order Update Cycle</span>
+
+   A client may update a completed order.  This is achieved by issuing
+   an UPDATE message.  This message must include the Customer Order
+   Identifier, Provider Order Identifier, and Nonce returned during the
+   order negotiation cycle specified in <a href="#section-11.1.1">Section 11.1.1</a>.  The client must
+   include in the UPDATE message an Updated CPD with the requested
+   changes.
+
+   The subsequent message exchange is similar to what is documented in
+   <a href="#section-11.1.1">Section 11.1.1</a>.
+
+<span class="h3"><a class="selflink" id="section-11.2" href="#section-11.2">11.2</a>.  Server Behavior</span>
+
+<span class="h4"><a class="selflink" id="section-11.2.1" href="#section-11.2.1">11.2.1</a>.  Order Processing</span>
+
+   Upon receipt of a QUOTATION message from a client, the server sets a
+   CPNP session, stores the Transaction-ID, and generates a Provider
+   Order Identifier.  Once preliminary validation checks are completed
+   (<a href="#section-10">Section 10</a>), the server may return a PROCESSING message to inform
+   the client that the quotation order is received and it is under
+   processing; the server may include an expected offer time to notify
+   the client by when an offer will be proposed.  An order with state
+   &quot;AwaitingProcessing&quot; is created by the server.  The server runs its
+   decision-making process to decide which offer it can make to honor
+   the received order.  The offer should be made before the expected
+   offer time expires.
+
+   If the server cannot make an offer, it sends backs a FAIL message
+   with the appropriate error code (<a href="#section-9.2.10">Section 9.2.10</a>).
+
+   If the server requires more negotiation time, it must send a
+   PROCESSING message with a new EXPECTED_OFFER_TIME.  The client may
+   grant this extension by issuing an ACK message or reject the time
+   extension by issuing a FAIL message with the status code set to &quot;More
+   Time Rejected&quot;.  If the client doesn&#x27;t grant more time, the server
+   must answer before the initial expected offer time; otherwise, the
+   client will decline the quotation order.
+
+   If the server can honor the request, or if it can make an offer that
+   meets only some of the requirements, it creates an OFFER message.
+   The server must indicate the Transaction-ID, the Customer Order
+   Identifier as indicated in the QUOTATION message, and the Provider
+   Order Identifier generated for this order.  The server must also
+   include the Nonce and the offered service document (e.g., Offered
+   CPD).  The server includes an offer validity time as well.  Once sent
+   to the client, the server changes the state of the order to
+   &quot;OfferProposed&quot;, and a timer set to the validity time is initiated.
+
+   If the server determines that additional network resources from
+   another Network Provider are needed to accommodate a quotation order,
+   it will create child PQO(s) and will behave as a CPNP client to
+   negotiate child PQO(s) with possible partnering Providers (see
+   Figure 7).
+
+   If no PROCESSING, ACCEPT, or DECLINE message is received before the
+   expiry of the RETRANS_TIMER, the server resends the same offer to the
+   client.  This procedure is repeated until maximum retry is reached.
+
+   If an ACCEPT message is received before the offered validity time
+   expires, the server proceeds with validation checks as specified in
+   <a href="#section-10">Section 10</a>.  The state of the corresponding order is passed to
+   &quot;AcceptReceived&quot;.  The server sends back an ACK message to terminate
+   the order processing cycle.
+
+   If a CANCEL or a DECLINE message is received, the server proceeds
+   with the cancellation of the order.  The state of the order is then
+   passed to &quot;Cancelled&quot;.
+
+<span class="h4"><a class="selflink" id="section-11.2.2" href="#section-11.2.2">11.2.2</a>.  Order Withdrawal</span>
+
+   A client may withdraw a completed order by issuing a WITHDRAW
+   message.  Upon receipt of a WITHDRAW message, the server proceeds
+   with the validation checks, as specified in <a href="#section-10">Section 10</a>:
+
+   *  If the checks fail, a FAIL message is sent back to the client with
+      the appropriate error code (e.g., 1 (Message Validation Error), 2
+      (Authentication Required), or 3 (Authorization Failed)).
+
+   *  If the checks succeed, the server clears the clauses of the CPD,
+      changes the state of the order to &quot;Cancelled&quot;, and sends back an
+      ACK message with an Empty CPD.
+
+<span class="h4"><a class="selflink" id="section-11.2.3" href="#section-11.2.3">11.2.3</a>.  Order Update</span>
+
+   A client may update an order by issuing an UPDATE message.  Upon
+   receipt of an UPDATE message, the server proceeds with the validation
+   checks as specified in <a href="#section-10">Section 10</a>:
+
+   *  If the checks fail, a FAIL message is sent back to the client with
+      the appropriate error code (e.g., 1 (Message Validation Error), 2
+      (Authentication Required), 3 (Authorization Failed), or 6 (Network
+      Presence Error)).
+
+   *  The exchange of subsequent messages is similar to what is
+      specified in <a href="#section-11.1.1">Section 11.1.1</a>.  The server should generate a new
+      Nonce value to be included in the offer made to the client.
+
+<span class="h3"><a class="selflink" id="section-11.3" href="#section-11.3">11.3</a>.  Sequence Numbers</span>
+
+   In each transaction, sequence numbers are used to protect the
+   transaction against replay attacks.  Each communicating partner of
+   the transaction maintains two sequence numbers, one for incoming
+   packets and one for outgoing packets.  When a partner receives a
+   message, it will check whether the sequence number in the message is
+   larger than the incoming sequence number maintained locally.  If not,
+   the message will be discarded.  If the message is proved to be
+   legitimate, the value of the incoming sequence number maintained
+   locally will be replaced by the value of the sequence number in the
+   message.  When a partner sends out a message, it will insert the
+   value of the outgoing sequence number into the message and increase
+   the outgoing sequence number maintained locally by 1.
+
+<span class="h3"><a class="selflink" id="section-11.4" href="#section-11.4">11.4</a>.  Message Retransmission</span>
+
+   If a transaction partner sends out a message and does not receive any
+   expected reply before the retransmission timer expires (i.e.,
+   RETRANS_TIMER), a transaction partner will try to retransmit the
+   message.  The procedure is reiterated until a maximum retry is
+   reached (e.g., three times).  An exception is the last message (e.g.,
+   ACK) sent from the server in a transaction.  After sending this
+   message, the retransmission timer will be disabled since no
+   additional feedback is expected.
+
+   In addition, if the partner receives a retransmission of the last
+   incoming packet it handled, the partner can resend the same answer to
+   the incoming packet with a limited frequency.  If an answer cannot be
+   generated right after the request is received, the partner needs to
+   generate a PROCESSING message as the answer.
+
+   To optimize message retransmission, a partner could also store the
+   last incoming packet and the associated answer.  Note that the times
+   of retransmission could be decided by the local policy, and
+   retransmission will not cause any change of sequence numbers.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  Some Operational Guidelines</span>
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  CPNP Server Logging</span>
+
+   The CPNP server should be configurable to log various events and
+   associated information.  Such information may include the following:
+
+   *  Client&#x27;s IP address
+
+   *  Any event change (e.g., new quotation order, offer sent, order
+      confirmation, order cancellation, order withdrawal, etc.)
+
+   *  Timestamp
+
+   The exact logging details are deployment specific.
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  Business Guidelines and Objectives</span>
+
+   The CPNP server can operate in the following modes:
+
+   Fully automated mode:
+      The CPNP server is provisioned with a set of business guidelines
+      and objectives that will be used as an input to the decision-
+      making process.  The CPNP server will service received orders that
+      fall into these business guidelines; otherwise, requests will be
+      escalated to an administrator that will formally validate or
+      invalidate an order request.  The set of policies to be configured
+      to the CPNP server are specific to each administrative entity
+      managing a CPNP server.
+
+   Administrative-based mode:
+      This mode assumes some or all of the CPNP server&#x27;s operations are
+      subject to a formal administrative validation.  CPNP events will
+      trigger appropriate validation requests that will be forwarded to
+      the contact person(s) or department that is responsible for
+      validating the orders.  Administrative validation messages are
+      relayed using another protocol (e.g., SMTP) or a dedicated tool.
+
+   Business guidelines are local to each administrative entity.  How
+   validation requests are presented to an administrator are out of
+   scope of this document; each administrative entity may decide the
+   appropriate mechanism to enable for that purpose.
+
+<span class="h2"><a class="selflink" id="section-13" href="#section-13">13</a>.  Security Considerations</span>
+
+   Means to defend the server against denial-of-service attacks must be
+   enabled.  For example, access control lists can be enforced on the
+   client, the server, or the network in between to allow a trusted
+   client to communicate with a trusted server.
+
+   The client and the server must be mutually authenticated.
+   Authenticated encryption must be used for data confidentiality and
+   message integrity.
+
+   The protocol does not provide security mechanisms to protect the
+   confidentiality and integrity of the packets transported between the
+   client and the server.  An underlying security protocol such as
+   (e.g., Datagram Transport Layer Security (DTLS) [<a href="/doc/html/rfc6347" title="&quot;Datagram Transport Layer Security Version 1.2&quot;">RFC6347</a>], Transport
+   Layer Security (TLS) [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>]) must be used to protect the integrity
+   and confidentiality of protocol messages.  In this case, if it is
+   possible to provide automated key management (<a href="/doc/html/rfc4107#section-2.1">Section&nbsp;2.1 of
+   [RFC4107]</a>) and associate each transaction with a different key,
+   inter-transaction replay attacks can naturally be addressed.  If the
+   client and the server use a single key, an additional mechanism
+   should be provided to protect against inter-transaction replay
+   attacks between them.  Clients must implement DTLS record replay
+   detection (<a href="/doc/html/rfc6347#section-3.3">Section&nbsp;3.3 of [RFC6347]</a>) or an equivalent mechanism to
+   protect against replay attacks.
+
+   DTLS and TLS with a cipher suite offering confidentiality protection
+   and the guidance given in [<a href="/doc/html/rfc7525" title="&quot;Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)&quot;">RFC7525</a>] must be followed to avoid attacks
+   on (D)TLS.
+
+   The client must silently discard CPNP responses received from unknown
+   CPNP servers.  The use of a randomly generated Transaction-ID makes
+   it hard to forge a response from a server with a spoofed IP address
+   belonging to a legitimate CPNP server.  Furthermore, CPNP demands
+   that messages from the server must include the correct identifiers of
+   the orders.  Two order identifiers are used: one generated by the
+   client and a second one generated by the server.  Both the CPNP
+   client and server maintain the local identifier they assigned and the
+   one assigned by the peer for a given order.  Means to detect swapping
+   of these identifiers (even when such swapping occurs inadvertently at
+   the client or the server) should be enabled by CPNP clients/servers.
+   For example, the CPNP server should not assign a Provider agreement
+   identifier that is equal to a Customer agreement identifier used by
+   the CPNP client.
+
+   The Provider must enforce the means to protect privacy-related
+   information included in the documents (see <a href="#section-8.7">Section 8.7</a>) exchanged in
+   CPNP messages [<a href="/doc/html/rfc6462" title="&quot;Report from the Internet Privacy Workshop&quot;">RFC6462</a>].  In particular, this information must not be
+   revealed to external parties without the consent of Customers.
+   Providers should enforce policies to make Customer fingerprinting
+   difficult to achieve (e.g., in a recursion request).  For more
+   discussion about privacy, refer to [<a href="/doc/html/rfc6462" title="&quot;Report from the Internet Privacy Workshop&quot;">RFC6462</a>] [<a href="/doc/html/rfc6973" title="&quot;Privacy Considerations for Internet Protocols&quot;">RFC6973</a>].
+
+   The Nonce and the Transaction-ID attributes provide sufficient
+   randomness and can effectively tolerate attacks raised by off-path
+   adversaries, who do not have the capability of eavesdropping and
+   intercepting the packets transported between the client and the
+   server.  Only authorized clients must be able to modify accepted CPNP
+   orders.  The use of a randomly generated Nonce by the server makes it
+   hard to modify an agreement on behalf of a malicious third party.
+
+<span class="h2"><a class="selflink" id="section-14" href="#section-14">14</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-15" href="#section-15">15</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-15.1" href="#section-15.1">15.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3339">RFC3339</a>]  Klyne, G. and C. Newman, &quot;Date and Time on the Internet:
+              Timestamps&quot;, <a href="/doc/html/rfc3339">RFC 3339</a>, DOI 10.17487/RFC3339, July 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</a>&gt;.
+
+   [<a id="ref-RFC4086">RFC4086</a>]  Eastlake 3rd, D., Schiller, J., and S. Crocker,
+              &quot;Randomness Requirements for Security&quot;, <a href="/doc/html/bcp106">BCP 106</a>, <a href="/doc/html/rfc4086">RFC 4086</a>,
+              DOI 10.17487/RFC4086, June 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4086">https://www.rfc-editor.org/info/rfc4086</a>&gt;.
+
+   [<a id="ref-RFC5511">RFC5511</a>]  Farrel, A., &quot;Routing Backus-Naur Form (RBNF): A Syntax
+              Used to Form Encoding Rules in Various Routing Protocol
+              Specifications&quot;, <a href="/doc/html/rfc5511">RFC 5511</a>, DOI 10.17487/RFC5511, April
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5511">https://www.rfc-editor.org/info/rfc5511</a>&gt;.
+
+   [<a id="ref-RFC6347">RFC6347</a>]  Rescorla, E. and N. Modadugu, &quot;Datagram Transport Layer
+              Security Version 1.2&quot;, <a href="/doc/html/rfc6347">RFC 6347</a>, DOI 10.17487/RFC6347,
+              January 2012, &lt;<a href="https://www.rfc-editor.org/info/rfc6347">https://www.rfc-editor.org/info/rfc6347</a>&gt;.
+
+   [<a id="ref-RFC7297">RFC7297</a>]  Boucadair, M., Jacquenet, C., and N. Wang, &quot;IP
+              Connectivity Provisioning Profile (CPP)&quot;, <a href="/doc/html/rfc7297">RFC 7297</a>,
+              DOI 10.17487/RFC7297, July 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7297">https://www.rfc-editor.org/info/rfc7297</a>&gt;.
+
+   [<a id="ref-RFC7525">RFC7525</a>]  Sheffer, Y., Holz, R., and P. Saint-Andre,
+              &quot;Recommendations for Secure Use of Transport Layer
+              Security (TLS) and Datagram Transport Layer Security
+              (DTLS)&quot;, <a href="/doc/html/bcp195">BCP 195</a>, <a href="/doc/html/rfc7525">RFC 7525</a>, DOI 10.17487/RFC7525, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7525">https://www.rfc-editor.org/info/rfc7525</a>&gt;.
+
+   [<a id="ref-RFC8446">RFC8446</a>]  Rescorla, E., &quot;The Transport Layer Security (TLS) Protocol
+              Version 1.3&quot;, <a href="/doc/html/rfc8446">RFC 8446</a>, DOI 10.17487/RFC8446, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8446">https://www.rfc-editor.org/info/rfc8446</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-15.2" href="#section-15.2">15.2</a>.  Informative References</span>
+
+   [<a id="ref-AGAVE">AGAVE</a>]    Boucadair, M., Georgatsos, P., Wang, N., Griffin, D.,
+              Pavlou, G., Howarth, M., and A. Elizondo, &quot;The AGAVE
+              Approach for Network Virtualization: Differentiated
+              Services Delivery&quot;, Annals of Telecommunication, Volume
+              64, 277-288, DOI 10.1007/s12243-009-0103-4, April 2009,
+              &lt;<a href="https://rd.springer.com/article/10.1007/s12243-009-0103-4">https://rd.springer.com/article/10.1007/</a>
+              <a href="https://rd.springer.com/article/10.1007/s12243-009-0103-4">s12243-009-0103-4</a>&gt;.
+
+   [<a id="ref-COPS-SLS">COPS-SLS</a>] Nguyen, T., &quot;COPS Usage for SLS negotiation (COPS-SLS)&quot;,
+              Work in Progress, Internet-Draft, <a href="/doc/html/draft-nguyen-rap-cops-sls-03">draft-nguyen-rap-cops-</a>
+              <a href="/doc/html/draft-nguyen-rap-cops-sls-03">sls-03</a>, 5 July 2002, &lt;<a href="https://tools.ietf.org/html/draft-nguyen-rap-cops-sls-03">https://tools.ietf.org/html/draft-</a>
+              <a href="https://tools.ietf.org/html/draft-nguyen-rap-cops-sls-03">nguyen-rap-cops-sls-03</a>&gt;.
+
+   [<a id="ref-DSNP">DSNP</a>]     Chen, J., &quot;Dynamic Service Negotiation Protocol (DSNP)&quot;,
+              Work in Progress, Internet-Draft, <a href="/doc/html/draft-itsumo-dsnp-03">draft-itsumo-dsnp-03</a>, 2
+              March 2006,
+              &lt;<a href="https://tools.ietf.org/html/draft-itsumo-dsnp-03">https://tools.ietf.org/html/draft-itsumo-dsnp-03</a>&gt;.
+
+   [<a id="ref-ETICS">ETICS</a>]    EU FP7 ETICS Project, &quot;Economics and Technologies of
+              Inter-Carrier Services&quot;, January 2014,
+              &lt;<a href="https://cordis.europa.eu/project/id/248567">https://cordis.europa.eu/project/id/248567</a>&gt;.
+
+   [<a id="ref-L2VPN-NETWORK-YANG">L2VPN-NETWORK-YANG</a>]
+              Barguil, S., Dios, O. G. D., Boucadair, M., Munoz, L. A.,
+              Jalil, L., and J. Ma, &quot;A Layer 2 VPN Network YANG Model&quot;,
+              Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-opsawg-l2nm-00">draft-ietf-opsawg-l2nm-</a>
+              <a href="/doc/html/draft-ietf-opsawg-l2nm-00">00</a>, 2 July 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-opsawg-l2nm-00">https://tools.ietf.org/html/draft-ietf-opsawg-l2nm-00</a>&gt;.
+
+   [<a id="ref-L3VPN-NETWORK-YANG">L3VPN-NETWORK-YANG</a>]
+              Barguil, S., Dios, O. G. D., Boucadair, M., Munoz, L. A.,
+              and A. Aguado, &quot;A Layer 3 VPN Network YANG Model&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-ietf-opsawg-l3sm-l3nm-05">draft-ietf-opsawg-l3sm-l3nm-05</a>,
+              16 October 2020, &lt;<a href="https://tools.ietf.org/html/draft-ietf-opsawg-l3sm-l3nm-05">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-opsawg-l3sm-l3nm-05">opsawg-l3sm-l3nm-05</a>&gt;.
+
+   [<a id="ref-LISP-MS-DISCOVERY">LISP-MS-DISCOVERY</a>]
+              Boucadair, M. and C. Jacquenet, &quot;LISP Mapping Service
+              Discovery at Large&quot;, Work in Progress, Internet-Draft,
+              <a href="/doc/html/draft-boucadair-lisp-idr-ms-discovery-01">draft-boucadair-lisp-idr-ms-discovery-01</a>, 9 March 2016,
+              &lt;<a href="https://tools.ietf.org/html/draft-boucadair-lisp-idr-ms-discovery-01">https://tools.ietf.org/html/draft-boucadair-lisp-idr-ms-</a>
+              <a href="https://tools.ietf.org/html/draft-boucadair-lisp-idr-ms-discovery-01">discovery-01</a>&gt;.
+
+   [<a id="ref-NETSLICES-ARCH">NETSLICES-ARCH</a>]
+              Geng, L., Dong, J., Bryant, S., Makhijani, K., Galis, A.,
+              Foy, X. D., and S. Kuklinski, &quot;Network Slicing
+              Architecture&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-geng-netslices-architecture-02">draft-</a>
+              <a href="/doc/html/draft-geng-netslices-architecture-02">geng-netslices-architecture-02</a>, 3 July 2017,
+              &lt;<a href="https://tools.ietf.org/html/draft-geng-netslices-architecture-02">https://tools.ietf.org/html/draft-geng-netslices-</a>
+              <a href="https://tools.ietf.org/html/draft-geng-netslices-architecture-02">architecture-02</a>&gt;.
+
+   [<a id="ref-RFC2782">RFC2782</a>]  Gulbrandsen, A., Vixie, P., and L. Esibov, &quot;A DNS RR for
+              specifying the location of services (DNS SRV)&quot;, <a href="/doc/html/rfc2782">RFC 2782</a>,
+              DOI 10.17487/RFC2782, February 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2782">https://www.rfc-editor.org/info/rfc2782</a>&gt;.
+
+   [<a id="ref-RFC3084">RFC3084</a>]  Chan, K., Seligson, J., Durham, D., Gai, S., McCloghrie,
+              K., Herzog, S., Reichmeyer, F., Yavatkar, R., and A.
+              Smith, &quot;COPS Usage for Policy Provisioning (COPS-PR)&quot;,
+              <a href="/doc/html/rfc3084">RFC 3084</a>, DOI 10.17487/RFC3084, March 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3084">https://www.rfc-editor.org/info/rfc3084</a>&gt;.
+
+   [<a id="ref-RFC4026">RFC4026</a>]  Andersson, L. and T. Madsen, &quot;Provider Provisioned Virtual
+              Private Network (VPN) Terminology&quot;, <a href="/doc/html/rfc4026">RFC 4026</a>,
+              DOI 10.17487/RFC4026, March 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4026">https://www.rfc-editor.org/info/rfc4026</a>&gt;.
+
+   [<a id="ref-RFC4107">RFC4107</a>]  Bellovin, S. and R. Housley, &quot;Guidelines for Cryptographic
+              Key Management&quot;, <a href="/doc/html/bcp107">BCP 107</a>, <a href="/doc/html/rfc4107">RFC 4107</a>, DOI 10.17487/RFC4107,
+              June 2005, &lt;<a href="https://www.rfc-editor.org/info/rfc4107">https://www.rfc-editor.org/info/rfc4107</a>&gt;.
+
+   [<a id="ref-RFC4176">RFC4176</a>]  El Mghazli, Y., Ed., Nadeau, T., Boucadair, M., Chan, K.,
+              and A. Gonguet, &quot;Framework for Layer 3 Virtual Private
+              Networks (L3VPN) Operations and Management&quot;, <a href="/doc/html/rfc4176">RFC 4176</a>,
+              DOI 10.17487/RFC4176, October 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4176">https://www.rfc-editor.org/info/rfc4176</a>&gt;.
+
+   [<a id="ref-RFC6125">RFC6125</a>]  Saint-Andre, P. and J. Hodges, &quot;Representation and
+              Verification of Domain-Based Application Service Identity
+              within Internet Public Key Infrastructure Using X.509
+              (PKIX) Certificates in the Context of Transport Layer
+              Security (TLS)&quot;, <a href="/doc/html/rfc6125">RFC 6125</a>, DOI 10.17487/RFC6125, March
+              2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6125">https://www.rfc-editor.org/info/rfc6125</a>&gt;.
+
+   [<a id="ref-RFC6241">RFC6241</a>]  Enns, R., Ed., Bjorklund, M., Ed., Schoenwaelder, J., Ed.,
+              and A. Bierman, Ed., &quot;Network Configuration Protocol
+              (NETCONF)&quot;, <a href="/doc/html/rfc6241">RFC 6241</a>, DOI 10.17487/RFC6241, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6241">https://www.rfc-editor.org/info/rfc6241</a>&gt;.
+
+   [<a id="ref-RFC6462">RFC6462</a>]  Cooper, A., &quot;Report from the Internet Privacy Workshop&quot;,
+              <a href="/doc/html/rfc6462">RFC 6462</a>, DOI 10.17487/RFC6462, January 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6462">https://www.rfc-editor.org/info/rfc6462</a>&gt;.
+
+   [<a id="ref-RFC6574">RFC6574</a>]  Tschofenig, H. and J. Arkko, &quot;Report from the Smart Object
+              Workshop&quot;, <a href="/doc/html/rfc6574">RFC 6574</a>, DOI 10.17487/RFC6574, April 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6574">https://www.rfc-editor.org/info/rfc6574</a>&gt;.
+
+   [<a id="ref-RFC6770">RFC6770</a>]  Bertrand, G., Ed., Stephan, E., Burbridge, T., Eardley,
+              P., Ma, K., and G. Watson, &quot;Use Cases for Content Delivery
+              Network Interconnection&quot;, <a href="/doc/html/rfc6770">RFC 6770</a>, DOI 10.17487/RFC6770,
+              November 2012, &lt;<a href="https://www.rfc-editor.org/info/rfc6770">https://www.rfc-editor.org/info/rfc6770</a>&gt;.
+
+   [<a id="ref-RFC6793">RFC6793</a>]  Vohra, Q. and E. Chen, &quot;BGP Support for Four-Octet
+              Autonomous System (AS) Number Space&quot;, <a href="/doc/html/rfc6793">RFC 6793</a>,
+              DOI 10.17487/RFC6793, December 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6793">https://www.rfc-editor.org/info/rfc6793</a>&gt;.
+
+   [<a id="ref-RFC6830">RFC6830</a>]  Farinacci, D., Fuller, V., Meyer, D., and D. Lewis, &quot;The
+              Locator/ID Separation Protocol (LISP)&quot;, <a href="/doc/html/rfc6830">RFC 6830</a>,
+              DOI 10.17487/RFC6830, January 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6830">https://www.rfc-editor.org/info/rfc6830</a>&gt;.
+
+   [<a id="ref-RFC6973">RFC6973</a>]  Cooper, A., Tschofenig, H., Aboba, B., Peterson, J.,
+              Morris, J., Hansen, M., and R. Smith, &quot;Privacy
+              Considerations for Internet Protocols&quot;, <a href="/doc/html/rfc6973">RFC 6973</a>,
+              DOI 10.17487/RFC6973, July 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6973">https://www.rfc-editor.org/info/rfc6973</a>&gt;.
+
+   [<a id="ref-RFC7049">RFC7049</a>]  Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, <a href="/doc/html/rfc7049">RFC 7049</a>, DOI 10.17487/RFC7049,
+              October 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7049">https://www.rfc-editor.org/info/rfc7049</a>&gt;.
+
+   [<a id="ref-RFC7149">RFC7149</a>]  Boucadair, M. and C. Jacquenet, &quot;Software-Defined
+              Networking: A Perspective from within a Service Provider
+              Environment&quot;, <a href="/doc/html/rfc7149">RFC 7149</a>, DOI 10.17487/RFC7149, March 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7149">https://www.rfc-editor.org/info/rfc7149</a>&gt;.
+
+   [<a id="ref-RFC7215">RFC7215</a>]  Jakab, L., Cabellos-Aparicio, A., Coras, F., Domingo-
+              Pascual, J., and D. Lewis, &quot;Locator/Identifier Separation
+              Protocol (LISP) Network Element Deployment
+              Considerations&quot;, <a href="/doc/html/rfc7215">RFC 7215</a>, DOI 10.17487/RFC7215, April
+              2014, &lt;<a href="https://www.rfc-editor.org/info/rfc7215">https://www.rfc-editor.org/info/rfc7215</a>&gt;.
+
+   [<a id="ref-RFC7491">RFC7491</a>]  King, D. and A. Farrel, &quot;A PCE-Based Architecture for
+              Application-Based Network Operations&quot;, <a href="/doc/html/rfc7491">RFC 7491</a>,
+              DOI 10.17487/RFC7491, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7491">https://www.rfc-editor.org/info/rfc7491</a>&gt;.
+
+   [<a id="ref-RFC8040">RFC8040</a>]  Bierman, A., Bjorklund, M., and K. Watsen, &quot;RESTCONF
+              Protocol&quot;, <a href="/doc/html/rfc8040">RFC 8040</a>, DOI 10.17487/RFC8040, January 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8040">https://www.rfc-editor.org/info/rfc8040</a>&gt;.
+
+   [<a id="ref-RFC8259">RFC8259</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, STD 90, <a href="/doc/html/rfc8259">RFC 8259</a>,
+              DOI 10.17487/RFC8259, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8259">https://www.rfc-editor.org/info/rfc8259</a>&gt;.
+
+   [<a id="ref-RFC8299">RFC8299</a>]  Wu, Q., Ed., Litkowski, S., Tomotaki, L., and K. Ogaki,
+              &quot;YANG Data Model for L3VPN Service Delivery&quot;, <a href="/doc/html/rfc8299">RFC 8299</a>,
+              DOI 10.17487/RFC8299, January 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8299">https://www.rfc-editor.org/info/rfc8299</a>&gt;.
+
+   [<a id="ref-RFC8309">RFC8309</a>]  Wu, Q., Liu, W., and A. Farrel, &quot;Service Models
+              Explained&quot;, <a href="/doc/html/rfc8309">RFC 8309</a>, DOI 10.17487/RFC8309, January 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8309">https://www.rfc-editor.org/info/rfc8309</a>&gt;.
+
+   [<a id="ref-RFC8329">RFC8329</a>]  Lopez, D., Lopez, E., Dunbar, L., Strassner, J., and R.
+              Kumar, &quot;Framework for Interface to Network Security
+              Functions&quot;, <a href="/doc/html/rfc8329">RFC 8329</a>, DOI 10.17487/RFC8329, February 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8329">https://www.rfc-editor.org/info/rfc8329</a>&gt;.
+
+   [<a id="ref-RFC8466">RFC8466</a>]  Wen, B., Fioccola, G., Ed., Xie, C., and L. Jalil, &quot;A YANG
+              Data Model for Layer 2 Virtual Private Network (L2VPN)
+              Service Delivery&quot;, <a href="/doc/html/rfc8466">RFC 8466</a>, DOI 10.17487/RFC8466, October
+              2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8466">https://www.rfc-editor.org/info/rfc8466</a>&gt;.
+
+   [<a id="ref-RFC8597">RFC8597</a>]  Contreras, LM., Bernardos, CJ., Lopez, D., Boucadair, M.,
+              and P. Iovanna, &quot;Cooperating Layered Architecture for
+              Software-Defined Networking (CLAS)&quot;, <a href="/doc/html/rfc8597">RFC 8597</a>,
+              DOI 10.17487/RFC8597, May 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8597">https://www.rfc-editor.org/info/rfc8597</a>&gt;.
+
+   [<a id="ref-RNAP">RNAP</a>]     Wang, X., &quot;A Resource Negotiation and Pricing Protocol
+              (RNAP)&quot;,
+              &lt;<a href="http://www.cs.columbia.edu/~xinwang/public/projects/protocol.html">http://www.cs.columbia.edu/~xinwang/public/projects/</a>
+              <a href="http://www.cs.columbia.edu/~xinwang/public/projects/protocol.html">protocol.html</a>&gt;.
+
+   [<a id="ref-SNAP">SNAP</a>]     Czajkowski, K., Foster, I., Kesselman, C., Sander, V., and
+              S. Tuecke, &quot;SNAP: A Protocol for Negotiating Service Level
+              Agreements and Coordinating Resource Management in
+              Distributed Systems&quot;, DOI 10.1.1.19.5907, 2002,
+              &lt;<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.5907">http://citeseerx.ist.psu.edu/viewdoc/</a>
+              <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.5907">summary?doi=10.1.1.19.5907</a>&gt;.
+
+   [<a id="ref-SrNP">SrNP</a>]     Georgatsos, P. and G. Giannakopoulos, &quot;Service Negotiation
+              Protocol (SrNP)&quot;, &lt;<a href="https://www.ist-tequila.org/presentations/srnp-pipcm.pdf">https://www.ist-</a>
+              <a href="https://www.ist-tequila.org/presentations/srnp-pipcm.pdf">tequila.org/presentations/srnp-pipcm.pdf</a>&gt;.
+
+   [<a id="ref-TEAS-SLICE-NBI">TEAS-SLICE-NBI</a>]
+              Contreras, L. M., Homma, S., and J. A. Ordonez-Lucena,
+              &quot;Considerations for defining a Transport Slice NBI&quot;, Work
+              in Progress, Internet-Draft, <a href="/doc/html/draft-contreras-teas-slice-nbi-02">draft-contreras-teas-slice-</a>
+              <a href="/doc/html/draft-contreras-teas-slice-nbi-02">nbi-02</a>, 13 July 2020, &lt;<a href="https://tools.ietf.org/html/draft-contreras-teas-slice-nbi-02">https://tools.ietf.org/html/draft-</a>
+              <a href="https://tools.ietf.org/html/draft-contreras-teas-slice-nbi-02">contreras-teas-slice-nbi-02</a>&gt;.
+
+Acknowledgements
+
+   Thanks to Diego R. Lopez, Adrian Farrel, Éric Vyncke, Eric Kline, and
+   Benjamin Kaduk for the comments.
+
+   Thanks to those that reviewed this document for publication in the
+   Independent Stream.
+
+   Special thanks to Luis Miguel Contreras Murillo for the detailed
+   review.
+
+Authors&#x27; Addresses
+
+   Mohamed Boucadair (editor)
+   Orange
+   35000 Rennes
+   France
+
+   Email: mohamed.boucadair@orange.com
+
+
+   Christian Jacquenet
+   Orange
+   35000 Rennes
+   France
+
+   Email: christian.jacquenet@orange.com
+
+
+   Dacheng Zhang
+   Huawei Technologies
+
+   Email: dacheng.zhang@huawei.com
+
+
+   Panos Georgatsos
+   Centre for Research and Innovation Hellas
+   78, Filikis Etairias str.
+   38334 Volos
+   Greece
+
+   Phone: +302421306070
+   Email: pgeorgat@gmail.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+
