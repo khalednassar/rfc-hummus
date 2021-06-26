@@ -58,7 +58,7 @@ let downloadFile (downloadLocation: string) (entry: RFCIndexEntry) =
             let responsePath = response.ResponseUri.AbsolutePath
 
             let filePath =
-                Path.Join(downloadLocation, responsePath)
+                Path.Join(downloadLocation, responsePath + ".html")
 
             let fileInfo = FileInfo(filePath)
             fileInfo.Directory.Create()
