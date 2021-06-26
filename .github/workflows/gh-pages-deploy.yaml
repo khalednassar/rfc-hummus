@@ -9,14 +9,19 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
           submodules: true
 
-      - uses: ./.github/actions/build-rfc-index
+      - name: Build RFC index
+        uses: ./.github/actions/build-rfc-index
         with:
           download-path: ./site/
           index-file-path: ./site/index.json
+
+      - name: List publish dir contents
+        run: ls -la ./site/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
