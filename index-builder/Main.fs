@@ -57,11 +57,17 @@ let downloadFile (downloadLocation: string) (entry: RFCIndexEntry) =
             let! response = request.AsyncGetResponse()
             let responsePath = response.ResponseUri.AbsolutePath
 
-            let filePath = Path.Join(downloadLocation, responsePath)
+            let filePath =
+                Path.Join(downloadLocation, responsePath)
+
+            let fileInfo = FileInfo(filePath)
+            fileInfo.Directory.Create()
 
             use stream = response.GetResponseStream()
 
-            use fstream = new FileStream(filePath, FileMode.Create)
+            use fstream =
+                new FileStream(fileInfo.FullName, FileMode.Create)
+
             stream.CopyTo(fstream)
 
             downloadStatusAgent.Post(Ok(url.ToString()))
@@ -104,7 +110,7 @@ let parseIndex () =
 
                 { id = int (av ("id"))
                   title = av ("title")
-                  url = (Uri(url, av ("href"))).ToString() }
+                  url = (Uri(url, (av "href"))).ToString() }
 
         return
             loadedDocument.CssSelect("a.s")
