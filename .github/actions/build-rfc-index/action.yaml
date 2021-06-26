@@ -4,7 +4,7 @@ inputs:
   download-path:
     description: "Path to download RFC documents to. Optional, will not download if not set."
     required: true
-    default: "./site/doc"
+    default: "./site/"
   index-file-path:
     description: "Path to generated index JSON"
     required: true
@@ -17,5 +17,5 @@ runs:
   using: "docker"
   image: "../../../index-builder.dockerfile"
   args:
-    - ${{ inputs.download-path }}
     - ${{ inputs.index-file-path }}
+    - ${{ inputs.download-path }}
