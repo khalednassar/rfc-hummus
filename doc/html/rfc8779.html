@@ -1,0 +1,2381 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8779
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-pce-gmpls-pcep-extensions/">
+  <meta name="description" content="Path Computation Element Communication Protocol (PCEP) Extensions for GMPLS (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8779.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8779.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8779.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8779.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8779/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8779/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/pce/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-pce-gmpls-pcep-extensions@ietf.org?subject=draft-ietf-pce-gmpls-pcep-extensions" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-pce-gmpls-pcep-extensions-16.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-gmpls-pcep-extensions-16.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-pce-gmpls-pcep-extensions-16.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-pce-gmpls-pcep-extensions-16">draft-ietf-pce-gmpls-pcep-extensions-16</a>          Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                  C. Margaria, Ed.
+Request for Comments: 8779                                       Juniper
+Category: Standards Track                       O. Gonzalez de Dios, Ed.
+ISSN: 2070-1721                    Telefonica Investigacion y Desarrollo
+                                                           F. Zhang, Ed.
+                                                     Huawei Technologies
+                                                               July 2020
+
+
+ <span class="h1">Path Computation Element Communication Protocol (PCEP) Extensions for</span>
+                                 <span class="h1">GMPLS</span>
+
+Abstract
+
+   A Path Computation Element (PCE) provides path computation functions
+   for Multiprotocol Label Switching (MPLS) and Generalized MPLS (GMPLS)
+   networks.  Additional requirements for GMPLS are identified in <a href="/doc/html/rfc7025">RFC</a>
+   <a href="/doc/html/rfc7025">7025</a>.
+
+   This memo provides extensions to the Path Computation Element
+   Communication Protocol (PCEP) for the support of the GMPLS control
+   plane to address those requirements.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8779">https://www.rfc-editor.org/info/rfc8779</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Terminology
+     1.2.  PCEP Requirements for GMPLS
+     1.3.  Requirements Applicability
+       1.3.1.  Requirements on the Path Computation Request
+       1.3.2.  Requirements on the Path Computation Response
+     1.4.  Existing Support and Limitations for GMPLS in Base PCEP
+           Objects
+   2.  PCEP Objects and Extensions
+     2.1.  GMPLS Capability Advertisement
+       2.1.1.  GMPLS Computation TLV in the Existing PCE Discovery
+               Protocol
+       2.1.2.  OPEN Object Extension GMPLS-CAPABILITY TLV
+     2.2.  RP Object Extension
+     2.3.  BANDWIDTH Object Extensions
+     2.4.  LOAD-BALANCING Object Extensions
+     2.5.  END-POINTS Object Extensions
+       2.5.1.  Generalized Endpoint Object Type
+       2.5.2.  END-POINTS TLV Extensions
+     2.6.  IRO Extension
+     2.7.  XRO Extension
+     2.8.  LSPA Extensions
+     2.9.  NO-PATH Object Extension
+       2.9.1.  Extensions to NO-PATH-VECTOR TLV
+   3.  Additional Error-Types and Error-Values Defined
+   4.  Manageability Considerations
+     4.1.  Control of Function through Configuration and Policy
+     4.2.  Information and Data Models
+     4.3.  Liveness Detection and Monitoring
+     4.4.  Verifying Correct Operation
+     4.5.  Requirements on Other Protocols and Functional Components
+     4.6.  Impact on Network Operation
+   5.  IANA Considerations
+     5.1.  PCEP Objects
+     5.2.  Endpoint Type Field in the Generalized END-POINTS Object
+     5.3.  New PCEP TLVs
+     5.4.  RP Object Flag Field
+     5.5.  New PCEP Error Codes
+     5.6.  New Bits in NO-PATH-VECTOR TLV
+     5.7.  New Subobject for the Include Route Object
+     5.8.  New Subobject for the Exclude Route Object
+     5.9.  New GMPLS-CAPABILITY TLV Flag Field
+   6.  Security Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  LOAD-BALANCING Usage for SDH Virtual Concatenation
+   Acknowledgments
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Although the PCE architecture and framework for both MPLS and GMPLS
+   networks are defined in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>], most pre-existing PCEP RFCs, such
+   as [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>], [<a href="/doc/html/rfc5541" title="&quot;Encoding of Objective Functions in the Path Computation Element Communication Protocol (PCEP)&quot;">RFC5541</a>], and [<a href="/doc/html/rfc5520" title="&quot;Preserving Topology Confidentiality in Inter-Domain Path Computation Using a Path-Key-Based Mechanism&quot;">RFC5520</a>], are focused on
+   MPLS networks and do not cover the wide range of GMPLS networks.
+   This document complements these RFCs by addressing the extensions
+   required for GMPLS applications and routing requests, for example,
+   for Optical Transport Networks (OTNs) and Wavelength Switched Optical
+   Networks (WSONs).
+
+   The functional requirements to be addressed by the PCEP extensions to
+   support these applications are fully described in [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>] and
+   [<a href="/doc/html/rfc7449" title="&quot;Path Computation Element Communication Protocol (PCEP) Requirements for Wavelength Switched Optical Network (WSON) Routing and Wavelength Assignment&quot;">RFC7449</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology</span>
+
+   This document uses terminologies from the PCE architecture document
+   [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>]; the PCEP documents including [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>],
+   [<a href="/doc/html/rfc5541" title="&quot;Encoding of Objective Functions in the Path Computation Element Communication Protocol (PCEP)&quot;">RFC5541</a>], [<a href="/doc/html/rfc5520" title="&quot;Preserving Topology Confidentiality in Inter-Domain Path Computation Using a Path-Key-Based Mechanism&quot;">RFC5520</a>], [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>], and [<a href="/doc/html/rfc7449" title="&quot;Path Computation Element Communication Protocol (PCEP) Requirements for Wavelength Switched Optical Network (WSON) Routing and Wavelength Assignment&quot;">RFC7449</a>]; and the GMPLS
+   documents such as [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>], [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>], and so on.  Note that the
+   reader is expected to be familiar with these documents.  The
+   following abbreviations are used in this document:
+
+   ERO:      Explicit Route Object
+
+   IRO:      Include Route Object
+
+   L2SC:     Layer 2 Switch Capable [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>]
+
+   LSC:      Lambda Switch Capable [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>]
+
+   LSP:      Label Switched Path
+
+   LSPA:     LSP Attribute
+
+   MEF:      Metro Ethernet Forum
+
+   MT:       Multiplier [<a href="/doc/html/rfc4328" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Extensions for G.709 Optical Transport Networks Control&quot;">RFC4328</a>] [<a href="/doc/html/rfc4606" title="&quot;Generalized Multi- Protocol Label Switching (GMPLS) Extensions for Synchronous Optical Network (SONET) and Synchronous Digital Hierarchy (SDH) Control&quot;">RFC4606</a>]
+
+   NCC:      Number of Contiguous Components [<a href="/doc/html/rfc4606" title="&quot;Generalized Multi- Protocol Label Switching (GMPLS) Extensions for Synchronous Optical Network (SONET) and Synchronous Digital Hierarchy (SDH) Control&quot;">RFC4606</a>]
+
+   NVC:      Number of Virtual Components [<a href="/doc/html/rfc4328" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Extensions for G.709 Optical Transport Networks Control&quot;">RFC4328</a>] [<a href="/doc/html/rfc4606" title="&quot;Generalized Multi- Protocol Label Switching (GMPLS) Extensions for Synchronous Optical Network (SONET) and Synchronous Digital Hierarchy (SDH) Control&quot;">RFC4606</a>]
+
+   ODU:      Optical Data Unit [<a href="#ref-G.709-v3" title="&quot;Interfaces for the optical transport network&quot;">G.709-v3</a>]
+
+   OTN:      Optical Transport Network [<a href="#ref-G.709-v3" title="&quot;Interfaces for the optical transport network&quot;">G.709-v3</a>]
+
+   P2MP:     Point-to-Multipoint
+
+   PCC:      Path Computation Client
+
+   PCRep:    Path Computation Reply [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]
+
+   PCReq:    Path Computation Request [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]
+
+   RCC:      Requested Contiguous Concatenation [<a href="/doc/html/rfc4606" title="&quot;Generalized Multi- Protocol Label Switching (GMPLS) Extensions for Synchronous Optical Network (SONET) and Synchronous Digital Hierarchy (SDH) Control&quot;">RFC4606</a>]
+
+   RRO:      Record Route Object
+
+   RSVP-TE:  Resource Reservation Protocol - Traffic Engineering
+
+   SDH:      Synchronous Digital Hierarchy
+
+   SONET:    Synchronous Optical Network
+
+   SRLG:     Shared Risk Link Group
+
+   SSON:     Spectrum-Switched Optical Network
+
+   TDM:      Time-Division Multiplex Capable [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>]
+
+   TE-LSP:   Traffic Engineered LSP
+
+   XRO:      Exclude Route Object
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="/doc/html/bcp14">BCP</a>
+   <a href="/doc/html/bcp14">14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  PCEP Requirements for GMPLS</span>
+
+   [<a id="ref-RFC7025">RFC7025</a>] describes the set of PCEP requirements that support GMPLS
+   TE-LSPs.  This document assumes a significant familiarity with
+   [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>] and existing PCEP extensions.  As a short overview, those
+   requirements can be broken down into the following categories.
+
+   *  Which data flow is switched by the LSP: a combination of a
+      switching type (for instance, L2SC or TDM), an LSP encoding type
+      (e.g., Ethernet, SONET/SDH), and sometimes the signal type (e.g.,
+      in case of a TDM or an LSC switching capability).
+
+   *  Data-flow-specific traffic parameters, which are technology
+      specific.  For instance, in SDH/SONET and OTN networks [<a href="#ref-G.709-v3" title="&quot;Interfaces for the optical transport network&quot;">G.709-v3</a>],
+      the concatenation type and the concatenation number have an
+      influence on the switched data and on which link it can be
+      supported.
+
+   *  Support for asymmetric bandwidth requests.
+
+   *  Support for unnumbered interface identifiers, as defined in
+      [<a href="/doc/html/rfc3477" title="&quot;Signalling Unnumbered Links in Resource ReSerVation Protocol - Traffic Engineering (RSVP-TE)&quot;">RFC3477</a>].
+
+   *  Label information and technology-specific label(s) such as
+      wavelength labels as defined in [<a href="/doc/html/rfc6205" title="&quot;Generalized Labels for Lambda-Switch-Capable (LSC) Label Switching Routers&quot;">RFC6205</a>].  A PCC should also be
+      able to specify a label restriction similar to the one supported
+      by RSVP-TE in [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>].
+
+   *  Ability to indicate the requested granularity for the path ERO:
+      node, link, or label.  This is to allow the use of the explicit
+      label control feature of RSVP-TE.
+
+   The requirements of [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>] apply to several objects conveyed by
+   PCEP; this is described in <a href="#section-1.3">Section 1.3</a>.  Some of the requirements of
+   [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>] are already supported in existing documents, as described
+   in <a href="#section-1.4">Section 1.4</a>.
+
+   This document describes a set of PCEP extensions, including new
+   object types, TLVs, encodings, error codes, and procedures, in order
+   to fulfill the aforementioned requirements not covered in existing
+   RFCs.
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Requirements Applicability</span>
+
+   This section follows the organization of <a href="/doc/html/rfc7025#section-3">[RFC7025], Section&nbsp;3</a> and
+   indicates, for each requirement, the affected piece of information
+   carried by PCEP and its scope.
+
+<span class="h4"><a class="selflink" id="section-1.3.1" href="#section-1.3.1">1.3.1</a>.  Requirements on the Path Computation Request</span>
+
+   (1)   Switching capability/type: As described in [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>], this
+         piece of information is used with the encoding type and signal
+         type to fully describe the switching technology and data
+         carried by the TE-LSP.  This is applicable to the TE-LSP itself
+         and also to the TE-LSP endpoint (carried in the END-POINTS
+         object for MPLS networks in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]) when considering
+         multiple network layers.  Inter-layer path computation
+         requirements are addressed in [<a href="/doc/html/rfc8282" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Inter-Layer MPLS and GMPLS Traffic Engineering&quot;">RFC8282</a>], which focuses on the
+         TE-LSP itself but does not address the TE-LSP endpoints.
+
+   (2)   Encoding type: See (1).
+
+   (3)   Signal type: See (1).
+
+   (4)   Concatenation type: This parameter and the concatenation number
+         (see (5)) are specific to some TDM (SDH and ODU) switching
+         technologies.  They MUST be described together and are used to
+         derive the requested resource allocation for the TE-LSP.  It is
+         scoped to the TE-LSP and is related to the BANDWIDTH object
+         [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] in MPLS networks.  See concatenation information in
+         [<a href="/doc/html/rfc4606" title="&quot;Generalized Multi- Protocol Label Switching (GMPLS) Extensions for Synchronous Optical Network (SONET) and Synchronous Digital Hierarchy (SDH) Control&quot;">RFC4606</a>] and [<a href="/doc/html/rfc4328" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Extensions for G.709 Optical Transport Networks Control&quot;">RFC4328</a>].
+
+   (5)   Concatenation number: See (4).
+
+   (6)   Technology-specific label(s): As described in [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>], the
+         GMPLS labels are specific to each switching technology.  They
+         can be specified on each link and also on the TE-LSP endpoints,
+         in WSON networks, for instance, as described in [<a href="/doc/html/rfc6163" title="&quot;Framework for GMPLS and Path Computation Element (PCE) Control of Wavelength Switched Optical Networks (WSONs)&quot;">RFC6163</a>].  The
+         label restriction can apply to endpoints, and on each hop, the
+         related PCEP objects are END-POINTS, IRO, XRO, and RRO.
+
+   (7)   End-to-End (E2E) path protection type: As defined in [<a href="/doc/html/rfc4872" title="&quot;RSVP-TE Extensions in Support of End-to-End Generalized Multi-Protocol Label Switching (GMPLS) Recovery&quot;">RFC4872</a>],
+         this is applicable to the TE-LSP.  In MPLS networks, the
+         related PCEP object is LSPA (carrying local protection
+         information).
+
+   (8)   Administrative group: As defined in [<a href="/doc/html/rfc3630" title="&quot;Traffic Engineering (TE) Extensions to OSPF Version 2&quot;">RFC3630</a>], this information
+         is already carried in the LSPA object.
+
+   (9)   Link protection type: As defined in [<a href="/doc/html/rfc4872" title="&quot;RSVP-TE Extensions in Support of End-to-End Generalized Multi-Protocol Label Switching (GMPLS) Recovery&quot;">RFC4872</a>], this is
+         applicable to the TE-LSP and is carried in association with the
+         E2E path protection type.
+
+   (10)  Support for unnumbered interfaces: As defined in [<a href="/doc/html/rfc3477" title="&quot;Signalling Unnumbered Links in Resource ReSerVation Protocol - Traffic Engineering (RSVP-TE)&quot;">RFC3477</a>].
+         Its scope and related objects are the same as labels.
+
+   (11)  Support for asymmetric bandwidth requests: As defined in
+         [<a href="/doc/html/rfc6387" title="&quot;GMPLS Asymmetric Bandwidth Bidirectional Label Switched Paths (LSPs)&quot;">RFC6387</a>], the scope is similar to (4).
+
+   (12)  Support for explicit label control during the path computation:
+         This affects the TE-LSP and the amount of information returned
+         in the ERO.
+
+   (13)  Support of label restrictions in the requests/responses: This
+         is described in (6).
+
+<span class="h4"><a class="selflink" id="section-1.3.2" href="#section-1.3.2">1.3.2</a>.  Requirements on the Path Computation Response</span>
+
+   (1)  Path computation with concatenation: This is related to the Path
+        Computation request requirement (4).  In addition, there is a
+        specific type of concatenation, called virtual concatenation,
+        that allows different routes to be used between the endpoints.
+        It is similar to the semantic and scope of the LOAD-BALANCING in
+        MPLS networks.
+
+   (2)  Label constraint: The PCE should be able to include labels in
+        the path returned to the PCC; the related object is the ERO
+        object.
+
+   (3)  Roles of the routes: As defined in [<a href="/doc/html/rfc4872" title="&quot;RSVP-TE Extensions in Support of End-to-End Generalized Multi-Protocol Label Switching (GMPLS) Recovery&quot;">RFC4872</a>], this is applicable
+        to the TE-LSP and is carried in association with the E2E path
+        protection type.
+
+<span class="h3"><a class="selflink" id="section-1.4" href="#section-1.4">1.4</a>.  Existing Support and Limitations for GMPLS in Base PCEP Objects</span>
+
+   The support provided by specifications in [<a href="/doc/html/rfc8282" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Inter-Layer MPLS and GMPLS Traffic Engineering&quot;">RFC8282</a>] and [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] for
+   the requirements listed in [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>] is summarized in Tables 1 and 2.
+   In some cases, the support may not be complete, as noted, and
+   additional support needs to be provided as indicated in this
+   specification.
+
+       +======+====================================+===============+
+       | Req. | Name                               | Support       |
+       +======+====================================+===============+
+       | 1    | Switching capability/type          | SWITCH-LAYER  |
+       |      |                                    | (<a href="/doc/html/rfc8282">RFC 8282</a>)    |
+       +------+------------------------------------+---------------+
+       | 2    | Encoding type                      | SWITCH-LAYER  |
+       |      |                                    | (<a href="/doc/html/rfc8282">RFC 8282</a>)    |
+       +------+------------------------------------+---------------+
+       | 3    | Signal type                        | SWITCH-LAYER  |
+       |      |                                    | (<a href="/doc/html/rfc8282">RFC 8282</a>)    |
+       +------+------------------------------------+---------------+
+       | 4    | Concatenation type                 | No            |
+       +------+------------------------------------+---------------+
+       | 5    | Concatenation number               | No            |
+       +------+------------------------------------+---------------+
+       | 6    | Technology-specific label          | (Partial) ERO |
+       |      |                                    | (<a href="/doc/html/rfc5440">RFC 5440</a>)    |
+       +------+------------------------------------+---------------+
+       | 7    | End-to-End (E2E) path protection   | No            |
+       |      | type                               |               |
+       +------+------------------------------------+---------------+
+       | 8    | Administrative group               | LSPA (RFC     |
+       |      |                                    | 5440)         |
+       +------+------------------------------------+---------------+
+       | 9    | Link protection type               | No            |
+       +------+------------------------------------+---------------+
+       | 10   | Support for unnumbered interfaces  | (Partial) ERO |
+       |      |                                    | (<a href="/doc/html/rfc5440">RFC 5440</a>)    |
+       +------+------------------------------------+---------------+
+       | 11   | Support for asymmetric bandwidth   | No            |
+       |      | requests                           |               |
+       +------+------------------------------------+---------------+
+       | 12   | Support for explicit label control | No            |
+       |      | during the path computation        |               |
+       +------+------------------------------------+---------------+
+       | 13   | Support of label restrictions in   | No            |
+       |      | the requests/responses             |               |
+       +------+------------------------------------+---------------+
+
+          Table 1: Requirements Support per <a href="/doc/html/rfc7025#section-3.1">RFC 7025, Section&nbsp;3.1</a>
+
+         +======+=====================================+=========+
+         | Req. | Name                                | Support |
+         +======+=====================================+=========+
+         | 1    | Path computation with concatenation | No      |
+         +------+-------------------------------------+---------+
+         | 2    | Label constraint                    | No      |
+         +------+-------------------------------------+---------+
+         | 3    | Roles of the routes                 | No      |
+         +------+-------------------------------------+---------+
+
+         Table 2: Requirements Support per <a href="/doc/html/rfc7025#section-3.2">RFC 7025, Section&nbsp;3.2</a>
+
+   Per <a href="#section-1.3">Section 1.3</a>, PCEP (as described in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>], and
+   [<a href="/doc/html/rfc8282" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Inter-Layer MPLS and GMPLS Traffic Engineering&quot;">RFC8282</a>]) supports the following objects, included in requests and
+   responses, that are related to the described requirements.
+
+   From [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]:
+
+      END-POINTS:  related to requirements 1, 2, 3, 6, 10, and 13.  The
+         object only supports numbered endpoints.  The context specifies
+         whether they are node identifiers or numbered interfaces.
+
+      BANDWIDTH:  related to requirements 4, 5, and 11.  The data rate
+         is encoded in the BANDWIDTH object (as an IEEE 32-bit float).
+         [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] does not include the ability to convey an encoding
+         proper to all GMPLS-controlled networks.
+
+      ERO:  related to requirements 6, 10, 12, and 13.  The ERO content
+         is defined in RSVP in [<a href="/doc/html/rfc3209" title="&quot;RSVP-TE: Extensions to RSVP for LSP Tunnels&quot;">RFC3209</a>], [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>], [<a href="/doc/html/rfc3477" title="&quot;Signalling Unnumbered Links in Resource ReSerVation Protocol - Traffic Engineering (RSVP-TE)&quot;">RFC3477</a>], and
+         [<a href="/doc/html/rfc7570" title="&quot;Label Switched Path (LSP) Attribute in the Explicit Route Object (ERO)&quot;">RFC7570</a>] and already supports all of the requirements.
+
+      LSPA:  related to requirements 7, 8, and 9.  Requirement 8
+         (Administrative group) is already supported.
+
+   From [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>]:
+
+      XRO:
+
+      -  This object allows excluding (strict or not) resources and is
+         related to requirements 6, 10, and 13.  It also includes the
+         requested diversity (node, link, or SRLG).
+
+      -  When the F bit is set, the request indicates that the existing
+         path has failed, and the resources present in the RRO can be
+         reused.
+
+   From [<a href="/doc/html/rfc8282" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Inter-Layer MPLS and GMPLS Traffic Engineering&quot;">RFC8282</a>]:
+
+      SWITCH-LAYER:  addresses requirements 1, 2, and 3 for the TE-LSP
+         and indicates which layer(s) should be considered.  The object
+         can be used to represent the RSVP-TE Generalized Label Request.
+         It does not address the endpoints case of requirements 1, 2,
+         and 3.
+
+      REQ-ADAP-CAP:  indicates the adaptation capabilities requested; it
+         can also be used for the endpoints in case of mono-layer
+         computation.
+
+   The gaps in functional coverage of the base PCEP objects are:
+
+   *  The BANDWIDTH and LOAD-BALANCING objects do not describe the
+      details of the traffic request (requirements 4 and 5, for example,
+      NVC and multiplier) in the context of GMPLS networks, for
+      instance, in TDM or OTN networks.
+
+   *  The END-POINTS object does not allow specifying an unnumbered
+      interface, nor potential label restrictions on the interface
+      (requirements 6, 10, and 13).  Those parameters are of interest in
+      case of switching constraints.
+
+   *  The IROs/XROs do not allow the inclusion/exclusion of labels
+      (requirements 6, 10, and 13).
+
+   *  Base attributes do not allow expressing the requested link
+      protection level and/or the end-to-end protection attributes.
+
+   As defined later in this document, the PCEP extensions that cover the
+   gaps are:
+
+   *  Two new object types are defined for the BANDWIDTH object
+      (Generalized bandwidth and Generalized bandwidth of an existing
+      TE-LSP for which a reoptimization is requested).
+
+   *  A new object type is defined for the LOAD-BALANCING object
+      (Generalized Load Balancing).
+
+   *  A new object type is defined for the END-POINTS object
+      (Generalized Endpoint).
+
+   *  A new TLV is added to the Open message for capability negotiation.
+
+   *  A new TLV is added to the LSPA object.
+
+   *  The Label subobject is now allowed in the IRO and XRO objects.
+
+   *  In order to indicate the routing granularity used in the response,
+      a new flag is added in the RP object.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  PCEP Objects and Extensions</span>
+
+   This section describes the necessary PCEP objects and extensions.
+   The PCReq and PCRep messages are defined in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].  This document
+   does not change the existing grammar.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  GMPLS Capability Advertisement</span>
+
+<span class="h4"><a class="selflink" id="section-2.1.1" href="#section-2.1.1">2.1.1</a>.  GMPLS Computation TLV in the Existing PCE Discovery Protocol</span>
+
+   IGP-based PCE Discovery (PCED) is defined in [<a href="/doc/html/rfc5088" title="&quot;OSPF Protocol Extensions for Path Computation Element (PCE) Discovery&quot;">RFC5088</a>] and [<a href="/doc/html/rfc5089" title="&quot;IS-IS Protocol Extensions for Path Computation Element (PCE) Discovery&quot;">RFC5089</a>]
+   for the OSPF and IS-IS protocols.  Those documents have defined bit 0
+   in the PCE-CAP-FLAGS Sub-TLV of the PCED TLV as &quot;Path computation
+   with GMPLS link constraints&quot;.  This capability is optional and can be
+   used to detect GMPLS-capable PCEs.  PCEs that set the bit to indicate
+   support of GMPLS path computation MUST follow the procedures in
+   <a href="#section-2.1.2">Section 2.1.2</a> to further qualify the level of support during PCEP
+   session establishment.
+
+<span class="h4"><a class="selflink" id="section-2.1.2" href="#section-2.1.2">2.1.2</a>.  OPEN Object Extension GMPLS-CAPABILITY TLV</span>
+
+   In addition to the IGP advertisement, a PCEP speaker MUST be able to
+   discover the other peer GMPLS capabilities during the Open message
+   exchange.  This capability is also useful to avoid misconfigurations.
+   This document defines a GMPLS-CAPABILITY TLV for use in the OPEN
+   object to negotiate the GMPLS capability.  The inclusion of this TLV
+   in the Open message indicates that the PCEP speaker supports the PCEP
+   extensions defined in the document.  A PCEP speaker that is able to
+   support the GMPLS extensions defined in this document MUST include
+   the GMPLS-CAPABILITY TLV in the Open message.  If one of the PCEP
+   peers does not include the GMPLS-CAPABILITY TLV in the Open message,
+   the peers MUST NOT make use of the objects and TLVs defined in this
+   document.
+
+   If the PCEP speaker supports the extensions of this specification but
+   did not advertise the GMPLS-CAPABILITY capability, upon receipt of a
+   message from the PCE including an extension defined in this document,
+   it MUST generate a PCEP Error (PCErr) with Error-Type=10 (Reception
+   of an invalid object) and Error-value=31 (Missing GMPLS-CAPABILITY
+   TLV), and it SHOULD terminate the PCEP session.
+
+   As documented in <a href="#section-5.3">Section 5.3</a> (&quot;New PCEP TLVs&quot;), IANA has allocated
+   value 45 (GMPLS-CAPABILITY) from the &quot;PCEP TLV Type Indicators&quot; sub-
+   registry.  The format for the GMPLS-CAPABILITY TLV is shown in the
+   following figure.
+
+     0                   1                   2                   3
+     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |               Type=45         |           Length              |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                             Flags                             |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   No flags are defined in this document; they are reserved for future
+   use.  Unassigned flags MUST be set to zero on transmission and MUST
+   be ignored on receipt.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  RP Object Extension</span>
+
+   Explicit Label Control (ELC) is a procedure supported by RSVP-TE,
+   where the outgoing labels are encoded in the ERO.  As a consequence,
+   the PCE can provide such labels directly in the path ERO.  Depending
+   on the policies or switching layer, it might be necessary for the PCC
+   to use explicit label control or explicit link ids; thus, it needs to
+   indicate in the PCReq which granularity it is expecting in the ERO.
+   This corresponds to requirement 12 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of [RFC7025]</a>.  The
+   possible granularities can be node, link, or label.  The
+   granularities are interdependent, in the sense that link granularity
+   implies the presence of node information in the ERO; similarly, a
+   label granularity implies that the ERO contains node, link, and label
+   information.
+
+   A new 2-bit Routing Granularity (RG) flag (bits 15-16) is defined in
+   the RP object.  The values are defined as follows:
+
+      0:  reserved
+
+      1:  node
+
+      2:  link
+
+      3:  label
+
+   The RG flag in the RP object indicates the requested route
+   granularity.  The PCE SHOULD follow this granularity and MAY return a
+   NO-PATH if the requested granularity cannot be provided.  The PCE MAY
+   return any granularity on the route based on its policy.  The PCC can
+   decide if the ERO is acceptable based on its content.
+
+   If a PCE honored the requested routing granularity for a request, it
+   MUST indicate the selected routing granularity in the RP object
+   included in the response.  Otherwise, the PCE MUST use the reserved
+   RG to leave the check of the ERO to the PCC.  The RG flag is backward
+   compatible with [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]: the value sent by an implementation (PCC
+   or PCE) not supporting it will indicate a reserved value.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  BANDWIDTH Object Extensions</span>
+
+   Per [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], the object carrying the requested size for the TE-LSP
+   is the BANDWIDTH object.  Object types 1 and 2 defined in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]
+   do not provide enough information to describe the TE-LSP bandwidth in
+   GMPLS networks.  The BANDWIDTH object encoding has to be extended to
+   allow the object to express the bandwidth as described in [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>].
+   RSVP-TE extensions for GMPLS provide a set of encodings that allow
+   such representation in an unambiguous way; this is encoded in the
+   RSVP-TE Traffic Specification (TSpec) and Flow Specification
+   (FlowSpec) objects.  This document extends the BANDWIDTH object with
+   new object types reusing the RSVP-TE encoding.
+
+   The following possibilities are supported by the extended encoding:
+
+   *  Asymmetric bandwidth (different bandwidth in forward and reverse
+      direction), as described in [<a href="/doc/html/rfc6387" title="&quot;GMPLS Asymmetric Bandwidth Bidirectional Label Switched Paths (LSPs)&quot;">RFC6387</a>].
+
+   *  GMPLS (SDH/SONET, G.709, ATM, MEF, etc.) parameters.
+
+   This corresponds to requirements 3, 4, 5, and 11 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of
+   [RFC7025]</a>.
+
+   This document defines two object types for the BANDWIDTH object:
+
+      3:  Generalized bandwidth
+
+      4:  Generalized bandwidth of an existing TE-LSP for which a
+         reoptimization is requested
+
+   The definitions below apply for object types 3 and 4.  The body is as
+   follows:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |    Bandwidth Spec Length      | Rev. Bandwidth Spec Length    |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Bw Spec Type  |   Reserved                                    |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      ~                     Generalized Bandwidth                     ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      ~            Reverse Generalized Bandwidth (optional)           ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      ~                       Optional TLVs                           ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   BANDWIDTH object types 3 and 4 have a variable length.  The 16-bit
+   Bandwidth Spec Length field indicates the length of the Generalized
+   Bandwidth field.  The Bandwidth Spec Length MUST be strictly greater
+   than 0.  The 16-bit Reverse Bandwidth Spec Length field indicates the
+   length of the Reverse Generalized Bandwidth field.  The Reverse
+   Bandwidth Spec Length MAY be equal to 0.
+
+   The Bw Spec Type field determines which type of bandwidth is
+   represented by the object.
+
+   The Bw Spec Type corresponds to the RSVP-TE SENDER_TSPEC (Object
+   Class 12) C-Types.
+
+   The encoding of the Generalized Bandwidth and Reverse Generalized
+   Bandwidth fields is the same as the traffic parameters carried in
+   RSVP-TE; they can be found in the following references.  Note that
+   the RSVP-TE traffic specification MAY also include TLVs that are
+   different from the PCEP TLVs (e.g., the TLVs defined in [<a href="/doc/html/rfc6003" title="&quot;Ethernet Traffic Parameters&quot;">RFC6003</a>]).
+
+                 +==============+===========+===========+
+                 | Bw Spec Type | Name      | Reference |
+                 +==============+===========+===========+
+                 | 2            | Intserv   | [<a href="/doc/html/rfc2210" title="&quot;The Use of RSVP with IETF Integrated Services&quot;">RFC2210</a>] |
+                 +--------------+-----------+-----------+
+                 | 4            | SONET/SDH | [<a href="/doc/html/rfc4606" title="&quot;Generalized Multi- Protocol Label Switching (GMPLS) Extensions for Synchronous Optical Network (SONET) and Synchronous Digital Hierarchy (SDH) Control&quot;">RFC4606</a>] |
+                 +--------------+-----------+-----------+
+                 | 5            | G.709     | [<a href="/doc/html/rfc4328" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Extensions for G.709 Optical Transport Networks Control&quot;">RFC4328</a>] |
+                 +--------------+-----------+-----------+
+                 | 6            | Ethernet  | [<a href="/doc/html/rfc6003" title="&quot;Ethernet Traffic Parameters&quot;">RFC6003</a>] |
+                 +--------------+-----------+-----------+
+                 | 7            | OTN-TDM   | [<a href="/doc/html/rfc7139" title="&quot;GMPLS Signaling Extensions for Control of Evolving G.709 Optical Transport Networks&quot;">RFC7139</a>] |
+                 +--------------+-----------+-----------+
+                 | 8            | SSON      | [<a href="/doc/html/rfc7792" title="&quot;RSVP-TE Signaling Extensions in Support of Flexi-Grid Dense Wavelength Division Multiplexing (DWDM) Networks&quot;">RFC7792</a>] |
+                 +--------------+-----------+-----------+
+
+                    Table 3: Generalized Bandwidth and
+                   Reverse Generalized Bandwidth Field
+                                 Encoding
+
+   When a PCC requests a bidirectional path with symmetric bandwidth, it
+   SHOULD only specify the Generalized Bandwidth field and set the
+   Reverse Bandwidth Spec Length to 0.  When a PCC needs to request a
+   bidirectional path with asymmetric bandwidth, it SHOULD specify the
+   different bandwidth in the forward and reverse directions with
+   Generalized Bandwidth and Reverse Generalized Bandwidth fields.
+
+   The procedure described in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] for the PCRep is unchanged: a
+   PCE MAY include the BANDWIDTH objects in the response to indicate the
+   BANDWIDTH of the path.
+
+   As specified in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], in the case of the reoptimization of a TE-
+   LSP, the bandwidth of the existing TE-LSP MUST also be included in
+   addition to the requested bandwidth if and only if the two values
+   differ.  The object type 4 MAY be used instead of the previously
+   specified object type 2 to indicate the existing TE-LSP bandwidth,
+   which was originally specified with object type 3.  A PCC that
+   requested a path with a BANDWIDTH object of object type 1 MUST use
+   object type 2 to represent the existing TE-LSP bandwidth.
+
+   Optional TLVs MAY be included within the object body to specify more
+   specific bandwidth requirements.  No TLVs for object types 3 and 4
+   are defined by this document.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  LOAD-BALANCING Object Extensions</span>
+
+   The LOAD-BALANCING object [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] is used to request a set of at
+   most Max-LSP TE-LSPs having in total the bandwidth specified in
+   BANDWIDTH, with each TE-LSP having at least a specified minimum
+   bandwidth.  The LOAD-BALANCING object follows the bandwidth encoding
+   of the BANDWIDTH object; thus, the existing definition from [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]
+   does not describe enough details for the bandwidth specification
+   expected by GMPLS.
+
+   Similar to the BANDWIDTH object, a new object type is defined to
+   allow a PCC to represent the bandwidth types supported by GMPLS
+   networks.
+
+   This document defines object type 2 (Generalized Load Balancing) for
+   the LOAD-BALANCING object.  The Generalized Load Balancing object
+   type has a variable length.
+
+   The format of the Generalized Load Balancing object type is as
+   follows:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |    Bandwidth Spec Length      | Reverse Bandwidth Spec Length |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Bw Spec Type  |  Max-LSP      | Reserved                      |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |        Min Bandwidth Spec                                     |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |        Min Reverse Bandwidth Spec (optional)                  |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      ~                      Optional TLVs                            ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Bandwidth Spec Length (16 bits):  the total length of the Min
+      Bandwidth Spec field.  The length MUST be strictly greater than 0.
+
+   Reverse Bandwidth Spec Length (16 bits):  the total length of the Min
+      Reverse Bandwidth Spec field.  It MAY be equal to 0.
+
+   Bw Spec Type (8 bits):  the bandwidth specification type; it
+      corresponds to RSVP-TE SENDER_TSPEC (Object Class 12) C-Types.
+
+   Max-LSP (8 bits):  the maximum number of TE-LSPs in the set.
+
+   Min Bandwidth Spec (variable):  specifies the minimum bandwidth
+      specification of each element of the TE-LSP set.
+
+   Min Reverse Bandwidth Spec (variable):  specifies the minimum reverse
+      bandwidth specification of each element of the TE-LSP set.
+
+   The encoding of the Min Bandwidth Spec and Min Reverse Bandwidth Spec
+   fields is the same as in the RSVP-TE SENDER_TSPEC object; it can be
+   found in Table 3 in <a href="#section-2.3">Section 2.3</a> of this document.
+
+   When a PCC requests a bidirectional path with symmetric bandwidth
+   while specifying load-balancing constraints, it SHOULD specify the
+   Min Bandwidth Spec field and set the Reverse Bandwidth Spec Length to
+   0.  When a PCC needs to request a bidirectional path with asymmetric
+   bandwidth while specifying load-balancing constraints, it MUST
+   specify the different bandwidth in forward and reverse directions
+   through Min Bandwidth Spec and Min Reverse Bandwidth Spec fields.
+
+   Optional TLVs MAY be included within the object body to specify more
+   specific bandwidth requirements.  No TLVs for the Generalized Load
+   Balancing object type are defined by this document.
+
+   The semantic of the LOAD-BALANCING object is not changed.  If a PCC
+   requests the computation of a set of TE-LSPs with at most N TE-LSPs
+   so that it can carry Generalized bandwidth X, each TE-LSP must at
+   least transport bandwidth B; it inserts a BANDWIDTH object specifying
+   X as the required bandwidth and a LOAD-BALANCING object with the Max-
+   LSP and Min Bandwidth Spec fields set to N and B, respectively.  When
+   the BANDWIDTH and Min Bandwidth Spec can be summarized as scalars,
+   the sum of the bandwidth for all TE-LSPs in the set is greater than
+   X.  The mapping of the X over N path with (at least) bandwidth B is
+   technology and possibly node specific.  Each standard definition of
+   the transport technology is defining those mappings and are not
+   repeated in this document.  A simplified example for SDH is described
+   in <a href="#appendix-A">Appendix A</a>.
+
+   In all other cases, including technologies based on statistical
+   multiplexing (e.g., InterServ and Ethernet), the exact bandwidth
+   management (e.g., the Ethernet&#x27;s Excessive Rate) is left to the PCE&#x27;s
+   policies, according to the operator&#x27;s configuration.  If required,
+   further documents may introduce a new mechanism to finely express
+   complex load-balancing policies within PCEP.
+
+   The BANDWIDTH and LOAD-BALANCING Bw Spec Type can be different
+   depending on the architecture of the endpoint node.  When the PCE is
+   not able to handle those two Bw Spec Types, it MUST return a NO-PATH
+   with the bit &quot;LOAD-BALANCING could not be performed with the
+   bandwidth constraints&quot; set in the NO-PATH-VECTOR TLV.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>.  END-POINTS Object Extensions</span>
+
+   The END-POINTS object is used in a PCEP request message to specify
+   the source and the destination of the path for which a path
+   computation is requested.  Per [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], the source IP address and
+   the destination IP address are used to identify those.  A new object
+   type is defined to address the following possibilities:
+
+   *  Different source and destination endpoint types.
+
+   *  Label restrictions on the endpoint.
+
+   *  Specification of unnumbered endpoints type as seen in GMPLS
+      networks.
+
+   The object encoding is described in the following sections.
+
+   In path computation within a GMPLS context, the endpoints can:
+
+   *  Be unnumbered as described in [<a href="/doc/html/rfc3477" title="&quot;Signalling Unnumbered Links in Resource ReSerVation Protocol - Traffic Engineering (RSVP-TE)&quot;">RFC3477</a>].
+
+   *  Have labels associated to them, specifying a set of constraints on
+      the allocation of labels.
+
+   *  Have different switching capabilities.
+
+   The IPv4 and IPv6 endpoints are used to represent the source and
+   destination IP addresses.  The scope of the IP address (node or
+   numbered link) is not explicitly stated.  It is also possible to
+   request a path between a numbered link and an unnumbered link, or a
+   P2MP path between different types of endpoints.
+
+   This document defines object type 5 (Generalized Endpoint) for the
+   END-POINTS object.  This new type also supports the specification of
+   constraints on the endpoint label to be used.  The PCE might know the
+   interface restrictions, but this is not a requirement.  This
+   corresponds to requirements 6 and 10 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of [RFC7025]</a>.
+
+<span class="h4"><a class="selflink" id="section-2.5.1" href="#section-2.5.1">2.5.1</a>.  Generalized Endpoint Object Type</span>
+
+   The Generalized Endpoint object type format consists of a body and a
+   list of TLVs scoped to this object.  The TLVs give the details of the
+   endpoints and are described in <a href="#section-2.5.2">Section 2.5.2</a>.  For each endpoint
+   type, a different grammar is defined.  The TLVs defined to describe
+   an endpoint are:
+
+   1.  IPV4-ADDRESS
+
+   2.  IPV6-ADDRESS
+
+   3.  UNNUMBERED-ENDPOINT
+
+   4.  LABEL-REQUEST
+
+   5.  LABEL-SET
+
+   The LABEL-SET TLV is used to restrict or suggest the label allocation
+   in the PCE.  This TLV expresses the set of restrictions that may
+   apply to signaling.  Label restriction support can be an explicit or
+   a suggested value (LABEL-SET describing one label, with the L bit
+   cleared or set, respectively), mandatory range restrictions (LABEL-
+   SET with the L bit cleared), and optional range restriction (LABEL-
+   SET with the L bit set).  Endpoints label restriction may not be part
+   of the RRO or IRO.  They can be included when following [<a href="/doc/html/rfc4003" title="&quot;GMPLS Signaling Procedure for Egress Control&quot;">RFC4003</a>] in
+   signaling for the egress endpoint, but ingress endpoint properties
+   can be local to the PCC and not signaled.  To support this case, the
+   LABEL-SET allows indication of which labels are used in case of
+   reoptimization.  The label range restrictions are valid in GMPLS-
+   controlled networks, depending on either the PCC policy or the
+   switching technology used, for instance, on a given Ethernet or ODU
+   equipment having limited hardware capabilities restricting the label
+   range.  Label set restriction also applies to WSON networks where the
+   optical senders and receivers are limited in their frequency
+   tunability ranges, consequently restricting the possible label ranges
+   on the interface in GMPLS.  The END-POINTS object with the
+   Generalized Endpoint object type is encoded as follows:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |      Reserved                                 | Endpoint Type |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      ~                           TLVs                                ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Reserved bits SHOULD be set to 0 when a message is sent and ignored
+   when the message is received.
+
+   The values for the Endpoint Type field are defined as follows:
+
+            +=========+======================================+
+            | Value   | Type                                 |
+            +=========+======================================+
+            | 0       | Point-to-Point                       |
+            +---------+--------------------------------------+
+            | 1       | Point-to-Multipoint with leaf type 1 |
+            +---------+--------------------------------------+
+            | 2       | Point-to-Multipoint with leaf type 2 |
+            +---------+--------------------------------------+
+            | 3       | Point-to-Multipoint with leaf type 3 |
+            +---------+--------------------------------------+
+            | 4       | Point-to-Multipoint with leaf type 4 |
+            +---------+--------------------------------------+
+            | 5-244   | Unassigned                           |
+            +---------+--------------------------------------+
+            | 245-255 | Experimental Use                     |
+            +---------+--------------------------------------+
+
+                   Table 4: Generalized Endpoint Types
+
+   The Endpoint Type field is used to cover both point-to-point and
+   different point-to-multipoint endpoints.  A PCE may only accept
+   endpoint type 0; endpoint types 1-4 apply if the PCE implementation
+   supports P2MP path calculation.  The leaf types for P2MP are as per
+   [<a href="/doc/html/rfc8306" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Point-to-Multipoint Traffic Engineering Label Switched Paths&quot;">RFC8306</a>].  A PCE not supporting a given endpoint type SHOULD respond
+   with a PCErr with Error-Type=4 (Not supported object) and Error-
+   value=7 (Unsupported endpoint type in END-POINTS Generalized Endpoint
+   object type).  As per [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], a PCE unable to process Generalized
+   Endpoints may respond with Error-Type=3 (Unknown Object) and Error-
+   value=2 (Unrecognized object type) or with Error-Type=4 (Not
+   supported object) and Error-value=2 (Not supported object Type).  The
+   TLVs present in the request object body MUST follow the grammar per
+   [<a href="/doc/html/rfc5511" title="&quot;Routing Backus-Naur Form (RBNF): A Syntax Used to Form Encoding Rules in Various Routing Protocol Specifications&quot;">RFC5511</a>]:
+
+     &lt;generalized-endpoint-tlvs&gt;::=
+       &lt;p2p-endpoints&gt; | &lt;p2mp-endpoints&gt;
+
+     &lt;p2p-endpoints&gt; ::=
+       &lt;endpoint&gt; [&lt;endpoint-restriction-list&gt;]
+       &lt;endpoint&gt; [&lt;endpoint-restriction-list&gt;]
+
+     &lt;p2mp-endpoints&gt; ::=
+       &lt;endpoint&gt; [&lt;endpoint-restriction-list&gt;]
+       &lt;endpoint&gt; [&lt;endpoint-restriction-list&gt;]
+       [&lt;endpoint&gt; [&lt;endpoint-restriction-list&gt;]]...
+
+   For endpoint type Point-to-Point, two endpoint TLVs MUST be present
+   in the message.  The first endpoint is the source, and the second is
+   the destination.
+
+   For endpoint type Point-to-Multipoint, several END-POINTS objects MAY
+   be present in the message, and the exact meaning depends on the
+   endpoint type defined for the object.  The first endpoint TLV is the
+   root, and other endpoint TLVs are the leaves.  The root endpoint MUST
+   be the same for all END-POINTS objects for that P2MP tree request.
+   If the root endpoint is not the same for all END-POINTS, a PCErr with
+   Error-Type=17 (P2MP END-POINTS Error) and Error-value=4 (The PCE
+   cannot satisfy the request due to inconsistent END-POINTS) MUST be
+   returned.  The procedure defined in <a href="/doc/html/rfc8306#section-3.10">[RFC8306], Section&nbsp;3.10</a> also
+   applies to the Generalized Endpoint with Point-to-Multipoint endpoint
+   types.
+
+   An endpoint is defined as follows:
+
+    &lt;endpoint&gt;::=&lt;IPV4-ADDRESS&gt;|&lt;IPV6-ADDRESS&gt;|&lt;UNNUMBERED-ENDPOINT&gt;
+    &lt;endpoint-restriction-list&gt; ::= &lt;endpoint-restriction&gt;
+                     [&lt;endpoint-restriction-list&gt;]
+
+    &lt;endpoint-restriction&gt; ::=
+                     [&lt;LABEL-REQUEST&gt;][&lt;label-restriction-list&gt;]
+
+    &lt;label-restriction-list&gt; ::= &lt;label-restriction&gt;
+                                 [&lt;label-restriction-list&gt;]
+    &lt;label-restriction&gt; ::= &lt;LABEL-SET&gt;
+
+   The different TLVs are described in the following sections.  A PCE
+   MAY support any or all of the IPV4-ADDRESS, IPV6-ADDRESS, and
+   UNNUMBERED-ENDPOINT TLVs.  When receiving a PCReq, a PCE unable to
+   resolve the identifier in one of those TLVs MUST respond by using a
+   PCRep with NO-PATH and setting the bit &quot;Unknown destination&quot; or
+   &quot;Unknown source&quot; in the NO-PATH-VECTOR TLV.  The response SHOULD
+   include the END-POINTS object with only the unsupported TLV(s).
+
+   A PCE MAY support either or both of the LABEL-REQUEST and LABEL-SET
+   TLVs.  If a PCE finds a non-supported TLV in the END-POINTS, the PCE
+   MUST respond with a PCErr message with Error-Type=4 (Not supported
+   object) and Error-value=8 (Unsupported TLV present in END-POINTS
+   Generalized Endpoint object type), and the message SHOULD include the
+   END-POINTS object in the response with only the endpoint and endpoint
+   restriction TLV it did not understand.  A PCE supporting those TLVs
+   but not being able to fulfill the label restriction MUST send a
+   response with a NO-PATH object that has the bit &quot;No endpoint label
+   resource&quot; or &quot;No endpoint label resource in range&quot; set in the NO-
+   PATH-VECTOR TLV.  The response SHOULD include an END-POINTS object
+   containing only the TLV(s) related to the constraints the PCE could
+   not meet.
+
+<span class="h4"><a class="selflink" id="section-2.5.2" href="#section-2.5.2">2.5.2</a>.  END-POINTS TLV Extensions</span>
+
+   All endpoint TLVs have the standard PCEP TLV header as defined in
+   <a href="/doc/html/rfc5440#section-7.1">[RFC5440], Section&nbsp;7.1</a>.  For the Generalized Endpoint object type,
+   the TLVs MUST follow the ordering defined in <a href="#section-2.5.1">Section 2.5.1</a>.
+
+<span class="h5"><a class="selflink" id="section-2.5.2.1" href="#section-2.5.2.1">2.5.2.1</a>.  IPV4-ADDRESS TLV</span>
+
+   The IPV4-ADDRESS TLV (Type 39) represents a numbered endpoint using
+   IPv4 numbering.  The format of the TLV value is as follows:
+
+      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |                          IPv4 address                         |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   This TLV MAY be ignored, in which case a PCRep with NO-PATH SHOULD be
+   returned, as described in <a href="#section-2.5.1">Section 2.5.1</a>.
+
+<span class="h5"><a class="selflink" id="section-2.5.2.2" href="#section-2.5.2.2">2.5.2.2</a>.  IPV6-ADDRESS TLV</span>
+
+   The IPv6-ADDRESS TLV (Type 40) represents a numbered endpoint using
+   IPV6 numbering.  The format of the TLV value is as follows:
+
+      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |              IPv6 address (16 bytes)                          |
+     |                                                               |
+     |                                                               |
+     |                                                               |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   This TLV MAY be ignored, in which case a PCRep with NO-PATH SHOULD be
+   returned, as described in <a href="#section-2.5.1">Section 2.5.1</a>.
+
+<span class="h5"><a class="selflink" id="section-2.5.2.3" href="#section-2.5.2.3">2.5.2.3</a>.  UNNUMBERED-ENDPOINT TLV</span>
+
+   The UNNUMBERED-ENDPOINT TLV (Type 41) represents an unnumbered
+   interface.  This TLV has the same semantic as in [<a href="/doc/html/rfc3477" title="&quot;Signalling Unnumbered Links in Resource ReSerVation Protocol - Traffic Engineering (RSVP-TE)&quot;">RFC3477</a>].  The TLV
+   value is encoded as follows:
+
+      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |                          LSR&#x27;s Router ID                      |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |                       Interface ID (32 bits)                  |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   This TLV MAY be ignored, in which case a PCRep with NO-PATH SHOULD be
+   returned, as described in <a href="#section-2.5.1">Section 2.5.1</a>.
+
+<span class="h5"><a class="selflink" id="section-2.5.2.4" href="#section-2.5.2.4">2.5.2.4</a>.  LABEL-REQUEST TLV</span>
+
+   The LABEL-REQUEST TLV (Type 42) indicates the switching capability
+   and encoding type of the following label restriction list for the
+   endpoint.  The value format and encoding is the same as described in
+   <a href="/doc/html/rfc3471#section-3.1">Section&nbsp;3.1 of [RFC3471]</a> for the Generalized Label Request.  The LSP
+   Encoding Type field indicates the encoding type, e.g., SONET, SDH,
+   GigE, etc., of the LSP with which the data is associated.  The
+   Switching Type field indicates the type of switching that is being
+   requested on the endpoint.  The Generalized Protocol Identifier
+   (G-PID) field identifies the payload.  This TLV and the following one
+   are defined to satisfy requirement 13 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of [RFC7025]</a> for
+   the endpoint.  It is not directly related to the TE-LSP label
+   request, which is expressed by the SWITCH-LAYER object.
+
+   On the path calculation request, only the GENERALIZED-BANDWIDTH and
+   SWITCH-LAYER need to be coherent; the endpoint labels could be
+   different (supporting a different LABEL-REQUEST).  Hence, the label
+   restrictions include a Generalized Label Request in order to
+   interpret the labels.  This TLV MAY be ignored, in which case a PCRep
+   with NO-PATH SHOULD be returned, as described in <a href="#section-2.5.1">Section 2.5.1</a>.
+
+<span class="h5"><a class="selflink" id="section-2.5.2.5" href="#section-2.5.2.5">2.5.2.5</a>.  LABEL-SET TLV</span>
+
+   Label or label range restrictions can be specified for the TE-LSP
+   endpoints.  Those are encoded using the LABEL-SET TLV.  The label
+   value needs to be interpreted with a description on the encoding and
+   switching type.  The REQ-ADAP-CAP object [<a href="/doc/html/rfc8282" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Inter-Layer MPLS and GMPLS Traffic Engineering&quot;">RFC8282</a>] can be used in
+   case of a mono-layer request; however, in case of a multi-layer
+   request, it is possible to have more than one object, so it is better
+   to have a dedicated TLV for the label and label request.  These TLVs
+   MAY be ignored, in which case a response with NO-PATH SHOULD be
+   returned, as described in <a href="#section-2.5.1">Section 2.5.1</a>.  Per [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], the LABEL-
+   SET TLV is encoded as follows.  The type of the LABEL-SET TLV is 43.
+   The TLV Length is variable, and the value encoding follows
+   <a href="/doc/html/rfc3471#section-3.5">Section&nbsp;3.5 of [RFC3471]</a>, with the addition of a U bit, O bit, and L
+   bit.  The L bit is used to represent a suggested set of labels,
+   following the semantic of Suggested Label as defined by [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>].
+
+     0                   1                   2                   3
+     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |    Action     |    Reserved |L|O|U|        Label Type         |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                          Subchannel 1                         |
+    |                              ...                              |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    :                               :                               :
+    :                               :                               :
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                          Subchannel N                         |
+    |                              ...                              |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   A LABEL-SET TLV represents a set of possible labels that can be used
+   on an interface.  If the L bit is cleared, the label allocated on the
+   first endpoint MUST be within the label set range.  The Action
+   parameter in the LABEL-SET indicates the type of list provided.
+   These parameters are described by <a href="/doc/html/rfc3471#section-3.5.1">[RFC3471], Section&nbsp;3.5.1</a>.
+
+   The U, O, and L bits are defined as follows:
+
+      U:   Upstream direction.  Set for the upstream (reverse) direction
+           in case of bidirectional LSP.
+
+      O:   Old label.  Set when the TLV represents the old (previously
+           allocated) label in case of reoptimization.  The R bit of the
+           RP object MUST be set to 1.  If the L bit is set, this bit
+           SHOULD be set to 0 and ignored on receipt.  When this bit is
+           set, the Action field MUST be set to 0 (Inclusive List), and
+           the LABEL-SET MUST contain one subchannel.
+
+      L:   Loose label.  Set when the TLV indicates to the PCE that a
+           set of preferred (ordered) labels are to be used.  The PCE
+           MAY use those labels for label allocation.
+
+   Several LABEL_SET TLVs MAY be present with the O bit cleared;
+   LABEL_SET TLVs with the L bit set can be combined with a LABEL_SET
+   TLV with the L bit cleared.  There MUST NOT be more than two
+   LABEL_SET TLVs present with the O bit set.  If there are two
+   LABEL_SET TLVs present, there MUST NOT be more than one with the U
+   bit set, and there MUST NOT be more than one with the U bit cleared.
+   For a given U bit value, if more than one LABEL_SET TLV with the O
+   bit set is present, the first TLV MUST be processed, and the
+   following TLVs that have the same U and O bits MUST be ignored.
+
+   A LABEL-SET TLV with the O and L bits set MUST trigger a PCErr
+   message with Error-Type=10 (Reception of an invalid object) and
+   Error-value=29 (Wrong LABEL-SET TLV present with O and L bits set).
+
+   A LABEL-SET TLV that has the O bit set and an Action field not set to
+   0 (Inclusive List) or that contains more than one subchannel MUST
+   trigger a PCErr message with Error-Type=10 (Reception of an invalid
+   object) and Error-value=30 (Wrong LABEL-SET TLV present with O bit
+   set and wrong format).
+
+   If a LABEL-SET TLV is present with the O bit set, the R bit of the RP
+   object MUST be set; otherwise, a PCErr message MUST be sent with
+   Error-Type=10 (Reception of an invalid object) and Error-value=28
+   (LABEL-SET TLV present with O bit set but without R bit set in RP).
+
+<span class="h3"><a class="selflink" id="section-2.6" href="#section-2.6">2.6</a>.  IRO Extension</span>
+
+   The IRO as defined in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] is used to include specific objects
+   in the path.  RSVP-TE allows the inclusion of a label definition.  In
+   order to fulfill requirement 13 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of [RFC7025]</a>, the IRO
+   needs to support the new subobject type as defined in [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>]:
+
+                           +======+===========+
+                           | Type | Subobject |
+                           +======+===========+
+                           | 10   | Label     |
+                           +------+-----------+
+
+                                 Table 5
+
+   The Label subobject MUST follow a subobject identifying a link,
+   currently an IP address subobject (Type 1 or 2) or an interface ID
+   (Type 4) subobject.  If an IP address subobject is used, then the
+   given IP address MUST be associated with a link.  More than one Label
+   subobject MAY follow each subobject identifying a link.  The
+   procedure associated with this subobject is as follows.
+
+   If the PCE is able to allocate labels (e.g., via explicit label
+   control), the PCE MUST allocate one label from within the set of
+   label values for the given link.  If the PCE does not assign labels,
+   then it sends a response with a NO-PATH object, containing a NO-PATH-
+   VECTOR TLV with the bit &quot;No label resource in range&quot; set.
+
+<span class="h3"><a class="selflink" id="section-2.7" href="#section-2.7">2.7</a>.  XRO Extension</span>
+
+   The XRO as defined in [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>] is used to exclude specific objects
+   in the path.  RSVP-TE allows the exclusion of certain labels
+   [<a href="/doc/html/rfc6001" title="&quot;Generalized MPLS (GMPLS) Protocol Extensions for Multi-Layer and Multi-Region Networks (MLN/ MRN)&quot;">RFC6001</a>].  In order to fulfill requirement 13 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of
+   [RFC7025]</a>, the PCEP&#x27;s XRO needs to support a new subobject to enable
+   label exclusion.
+
+   The encoding of the XRO Label subobject follows the encoding of the
+   ERO Label subobject defined in [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>] and the XRO subobject
+   defined in [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>].  The XRO Label subobject (Type 10) represents
+   one label and is defined as follows:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |X|    Type=10  |    Length     |U|   Reserved  |   C-Type      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                             Label                             |
+   |                              ...                              |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   X (1 bit):  See [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>].  The X bit indicates whether the exclusion
+      is mandatory or desired.  0 indicates that the resource specified
+      MUST be excluded from the path computed by the PCE. 1 indicates
+      that the resource specified SHOULD be excluded from the path
+      computed by the PCE, but it MAY be included subject to the PCE
+      policy and the absence of a viable path that meets the other
+      constraints and excludes the resource.
+
+   Type (7 bits):  The type of the XRO Label subobject is 10.
+
+   Length (8 bits):  See [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>].  The total length of the subobject
+      in bytes (including the Type and Length fields).  The length is
+      always divisible by 4.
+
+   U (1 bit):  See <a href="/doc/html/rfc3471#section-6.1">[RFC3471], Section&nbsp;6.1</a>.
+
+   C-Type (8 bits):  The C-Type of the included Label object as defined
+      in [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>].
+
+   Label:  See [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>].
+
+   The Label subobject MUST follow a subobject identifying a link,
+   currently an IP address subobject (Type 1 or 2) or an interface ID
+   (Type 4) subobject.  If an IP address subobject is used, the given IP
+   address MUST be associated with a link.  More than one label
+   subobject MAY follow a subobject identifying a link.
+
+                           +======+===========+
+                           | Type | Subobject |
+                           +======+===========+
+                           | 10   | Label     |
+                           +------+-----------+
+
+                                 Table 6
+
+<span class="h3"><a class="selflink" id="section-2.8" href="#section-2.8">2.8</a>.  LSPA Extensions</span>
+
+   The LSPA carries the LSP attributes.  In the end-to-end recovery
+   context, this also includes the protection state information.  A new
+   TLV is defined to fulfill requirement 7 in <a href="/doc/html/rfc7025#section-3.1">Section&nbsp;3.1 of [RFC7025]</a>
+   and requirement 3 in <a href="/doc/html/rfc7025#section-3.2">Section&nbsp;3.2 of [RFC7025]</a>.  This TLV contains the
+   information of the PROTECTION object defined by [<a href="/doc/html/rfc4872" title="&quot;RSVP-TE Extensions in Support of End-to-End Generalized Multi-Protocol Label Switching (GMPLS) Recovery&quot;">RFC4872</a>] and can be
+   used as a policy input.  The LSPA object MAY carry a PROTECTION-
+   ATTRIBUTE TLV (Type 44), which is defined as follows:
+
+      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |         Type                  |  Length                       |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |S|P|N|O|  Reserved | LSP Flags |     Reserved      | Link Flags|
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |I|R|   Reserved    | Seg.Flags |           Reserved            |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   The content is as defined in <a href="/doc/html/rfc4872#section-14">[RFC4872], Section&nbsp;14</a> and <a href="/doc/html/rfc4873#section-6.1">[RFC4873],
+   Section&nbsp;6.1</a>.
+
+   The LSP (protection) Flags field or the Link Flags field can be used
+   by a PCE implementation for routing policy input.  The other
+   attributes are only meaningful for a stateful PCE.
+
+   This TLV is OPTIONAL and MAY be ignored by the PCE.  If ignored by
+   the PCE, it MUST NOT include the TLV in the LSPA of the response.
+   When the TLV is used by the PCE, an LSPA object and the PROTECTION-
+   ATTRIBUTE TLV MUST be included in the response.  Fields that were not
+   considered MUST be set to 0.
+
+<span class="h3"><a class="selflink" id="section-2.9" href="#section-2.9">2.9</a>.  NO-PATH Object Extension</span>
+
+   The NO-PATH object is used in PCRep messages in response to an
+   unsuccessful Path Computation Request (the PCE could not find a path
+   satisfying the set of constraints).  In this scenario, the PCE MUST
+   include a NO-PATH object in the PCRep message.  The NO-PATH object
+   MAY carry the NO-PATH-VECTOR TLV that specifies more information on
+   the reasons that led to a negative reply.  In case of GMPLS networks,
+   there could be some additional constraints that led to the failure
+   such as protection mismatch, lack of resources, and so on.  Several
+   new flags have been defined in the 32-bit Flag field of the NO-PATH-
+   VECTOR TLV, but no modifications have been made in the NO-PATH
+   object.
+
+<span class="h4"><a class="selflink" id="section-2.9.1" href="#section-2.9.1">2.9.1</a>.  Extensions to NO-PATH-VECTOR TLV</span>
+
+   The modified NO-PATH-VECTOR TLV carrying the additional information
+   is as follows:
+
+      Bit number 18:  Protection Mismatch (1 bit).  Specifies the
+         mismatch of the protection type in the PROTECTION-ATTRIBUTE TLV
+         in the request.
+
+      Bit number 17:  No Resource (1 bit).  Specifies that the resources
+         are not currently sufficient to provide the path.
+
+      Bit number 16:  Granularity not supported (1 bit).  Specifies that
+         the PCE is not able to provide a path with the requested
+         granularity.
+
+      Bit number 15:  No endpoint label resource (1 bit).  Specifies
+         that the PCE is not able to provide a path because of the
+         endpoint label restriction.
+
+      Bit number 14:  No endpoint label resource in range (1 bit).
+         Specifies that the PCE is not able to provide a path because of
+         the endpoint label set restriction.
+
+      Bit number 13:  No label resource in range (1 bit).  Specifies
+         that the PCE is not able to provide a path because of the label
+         set restriction.
+
+      Bit number 12:  LOAD-BALANCING could not be performed with the
+         bandwidth constraints (1 bit).  Specifies that the PCE is not
+         able to provide a path because it could not map the BANDWIDTH
+         into the parameters specified by the LOAD-BALANCING.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Additional Error-Types and Error-Values Defined</span>
+
+   A PCEP-ERROR object is used to report a PCEP error and is
+   characterized by an Error-Type that specifies the type of error and
+   an Error-value that provides additional information about the error.
+   An additional Error-Type and several Error-values are defined to
+   represent some of the errors related to the newly identified objects,
+   which are related to GMPLS networks.  For each PCEP error, an Error-
+   Type and an Error-value are defined.  Error-Types 1 to 10 are already
+   defined in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].  Additional Error-values are defined for Error-
+   Types 4 and 10.  A new Error-Type 29 (Path computation failure) is
+   defined in this document.
+
+   Error-Type 29 (Path computation failure) is used to reflect
+   constraints not understood by the PCE, for instance, when the PCE is
+   not able to understand the Generalized bandwidth.  If the constraints
+   are understood, but the PCE is unable to find those constraints, NO-
+   PATH is to be used.
+
+       +============+===============+==============================+
+       | Error-Type | Meaning       | Error-value                  |
+       +============+===============+==============================+
+       | 4          | Not supported |                              |
+       |            | object        |                              |
+       +------------+---------------+------------------------------+
+       |            |               | 6: BANDWIDTH object type 3   |
+       |            |               | or 4 not supported           |
+       +------------+---------------+------------------------------+
+       |            |               | 7: Unsupported endpoint type |
+       |            |               | in END-POINTS Generalized    |
+       |            |               | Endpoint object type         |
+       +------------+---------------+------------------------------+
+       |            |               | 8: Unsupported TLV present   |
+       |            |               | in END-POINTS Generalized    |
+       |            |               | Endpoint object type         |
+       +------------+---------------+------------------------------+
+       |            |               | 9: Unsupported granularity   |
+       |            |               | in the RP object flags       |
+       +------------+---------------+------------------------------+
+       | 10         | Reception of  |                              |
+       |            | an invalid    |                              |
+       |            | object        |                              |
+       +------------+---------------+------------------------------+
+       |            |               | 24: Bad BANDWIDTH object     |
+       |            |               | type 3 or 4                  |
+       +------------+---------------+------------------------------+
+       |            |               | 25: Unsupported LSP          |
+       |            |               | Protection Flags in          |
+       |            |               | PROTECTION-ATTRIBUTE TLV     |
+       +------------+---------------+------------------------------+
+       |            |               | 26: Unsupported Secondary    |
+       |            |               | LSP Protection Flags in      |
+       |            |               | PROTECTION-ATTRIBUTE TLV     |
+       +------------+---------------+------------------------------+
+       |            |               | 27: Unsupported Link         |
+       |            |               | Protection Type in           |
+       |            |               | PROTECTION-ATTRIBUTE TLV     |
+       +------------+---------------+------------------------------+
+       |            |               | 28: LABEL-SET TLV present    |
+       |            |               | with O bit set but without R |
+       |            |               | bit set in RP                |
+       +------------+---------------+------------------------------+
+       |            |               | 29: Wrong LABEL-SET TLV      |
+       |            |               | present with O and L bits    |
+       |            |               | set                          |
+       +------------+---------------+------------------------------+
+       |            |               | 30: Wrong LABEL-SET TLV      |
+       |            |               | present with O bit set and   |
+       |            |               | wrong format                 |
+       +------------+---------------+------------------------------+
+       |            |               | 31: Missing GMPLS-CAPABILITY |
+       |            |               | TLV                          |
+       +------------+---------------+------------------------------+
+       | 29         | Path          |                              |
+       |            | computation   |                              |
+       |            | failure       |                              |
+       +------------+---------------+------------------------------+
+       |            |               | 0: Unassigned                |
+       +------------+---------------+------------------------------+
+       |            |               | 1: Unacceptable request      |
+       |            |               | message                      |
+       +------------+---------------+------------------------------+
+       |            |               | 2: Generalized bandwidth     |
+       |            |               | value not supported          |
+       +------------+---------------+------------------------------+
+       |            |               | 3: Label set constraint      |
+       |            |               | could not be met             |
+       +------------+---------------+------------------------------+
+       |            |               | 4: Label constraint could    |
+       |            |               | not be met                   |
+       +------------+---------------+------------------------------+
+
+                                  Table 7
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Manageability Considerations</span>
+
+   This section follows the guidance of [<a href="/doc/html/rfc6123" title="&quot;Inclusion of Manageability Sections in Path Computation Element (PCE) Working Group Drafts&quot;">RFC6123</a>].
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Control of Function through Configuration and Policy</span>
+
+   This document makes no change to the basic operation of PCEP, so the
+   requirements described in <a href="/doc/html/rfc5440#section-8.1">[RFC5440], Section&nbsp;8.1</a> also apply to this
+   document.  In addition to those requirements, a PCEP implementation
+   may allow the configuration of the following parameters:
+
+   *  Accepted RG in the RP object.
+
+   *  Default RG to use (overriding the one present in the PCReq).
+
+   *  Accepted BANDWIDTH object type 3 and 4 parameters in the request
+      and default mapping to use when not specified in the request.
+
+   *  Accepted LOAD-BALANCING object type 2 parameters in request.
+
+   *  Accepted endpoint type and allowed TLVs in object END-POINTS with
+      the object type Generalized Endpoint.
+
+   *  Accepted range for label restrictions in END-POINTS or IRO/XRO
+      objects.
+
+   *  Acceptance and suppression of the PROTECTION-ATTRIBUTE TLV.
+
+   The configuration of the above parameters is applicable to the
+   different sessions as described in <a href="/doc/html/rfc5440#section-8.1">[RFC5440], Section&nbsp;8.1</a> (by
+   default, per PCEP peer, etc.).
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Information and Data Models</span>
+
+   This document makes no change to the basic operation of PCEP, so the
+   requirements described in <a href="/doc/html/rfc5440#section-8.2">[RFC5440], Section&nbsp;8.2</a> also apply to this
+   document.  This document does not introduce any new ERO subobjects;
+   the ERO information model is already covered in [<a href="/doc/html/rfc4802" title="&quot;Generalized Multiprotocol Label Switching (GMPLS) Traffic Engineering Management Information Base&quot;">RFC4802</a>].
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Liveness Detection and Monitoring</span>
+
+   This document makes no change to the basic operation of PCEP, so
+   there are no changes to the requirements for liveness detection and
+   monitoring in [<a href="/doc/html/rfc4657" title="&quot;Path Computation Element (PCE) Communication Protocol Generic Requirements&quot;">RFC4657</a>] and <a href="/doc/html/rfc5440#section-8.3">[RFC5440], Section&nbsp;8.3</a>.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Verifying Correct Operation</span>
+
+   This document makes no change to the basic operations of PCEP and the
+   considerations described in <a href="/doc/html/rfc5440#section-8.4">[RFC5440], Section&nbsp;8.4</a>.  New errors
+   defined by this document should satisfy the requirement to log error
+   events.
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  Requirements on Other Protocols and Functional Components</span>
+
+   No new requirements on other protocols and functional components are
+   made by this document.  This document does not require ERO object
+   extensions.  Any new ERO subobject defined in the TEAS or CCAMP
+   Working Groups can be adopted without modifying the operations
+   defined in this document.
+
+<span class="h3"><a class="selflink" id="section-4.6" href="#section-4.6">4.6</a>.  Impact on Network Operation</span>
+
+   This document makes no change to the basic operations of PCEP and the
+   considerations described in <a href="/doc/html/rfc5440#section-8.6">[RFC5440], Section&nbsp;8.6</a>.  In addition to
+   the limit on the rate of messages sent by a PCEP speaker, a limit MAY
+   be placed on the size of the PCEP messages.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA assigns values to PCEP objects and TLVs.  IANA has made
+   allocations for the newly defined objects and TLVs defined in this
+   document.  In addition, IANA manages the space of flags that have
+   been newly added in the TLVs.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  PCEP Objects</span>
+
+   New object types are defined in Sections <a href="#section-2.3">2.3</a>, <a href="#section-2.4">2.4</a>, and <a href="#section-2.5.1">2.5.1</a>.  IANA
+   has made the following Object-Type allocations in the &quot;PCEP Objects&quot;
+   subregistry.
+
+      +==============+================+=================+===========+
+      | Object-Class | Name           | Object-Type     | Reference |
+      | Value        |                |                 |           |
+      +==============+================+=================+===========+
+      | 5            | BANDWIDTH      | 3: Generalized  | <a href="/doc/html/rfc8779">RFC 8779</a>, |
+      |              |                | bandwidth       | Section   |
+      |              |                |                 | 2.3       |
+      +--------------+----------------+-----------------+-----------+
+      |              |                | 4: Generalized  | <a href="/doc/html/rfc8779">RFC 8779</a>, |
+      |              |                | bandwidth of an | Section   |
+      |              |                | existing TE-LSP | 2.3       |
+      |              |                | for which a     |           |
+      |              |                | reoptimization  |           |
+      |              |                | is requested    |           |
+      +--------------+----------------+-----------------+-----------+
+      | 14           | LOAD-BALANCING | 2: Generalized  | <a href="/doc/html/rfc8779">RFC 8779</a>, |
+      |              |                | Load Balancing  | Section   |
+      |              |                |                 | 2.4       |
+      +--------------+----------------+-----------------+-----------+
+      | 4            | END-POINTS     | 5: Generalized  | <a href="/doc/html/rfc8779">RFC 8779</a>, |
+      |              |                | Endpoint        | Section   |
+      |              |                |                 | 2.5       |
+      +--------------+----------------+-----------------+-----------+
+
+                                  Table 8
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Endpoint Type Field in the Generalized END-POINTS Object</span>
+
+   IANA has created a new &quot;Generalized Endpoint Types&quot; registry to
+   manage the Endpoint Type field of the END-POINTS object, the object
+   type Generalized Endpoint, and the code space.
+
+   New endpoint types in the Unassigned range are assigned by Standards
+   Action [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  Each endpoint type should be tracked with the
+   following attributes:
+
+   *  Value
+
+   *  Type
+
+   *  Defining RFC
+
+   New endpoint types in the Experimental Use range will not be
+   registered with IANA and MUST NOT be mentioned by any RFCs.
+
+   The following values are defined by this document (see Table 4 in
+   <a href="#section-2.5.1">Section 2.5.1</a>):
+
+            +=========+======================================+
+            | Value   | Type                                 |
+            +=========+======================================+
+            | 0       | Point-to-Point                       |
+            +---------+--------------------------------------+
+            | 1       | Point-to-Multipoint with leaf type 1 |
+            +---------+--------------------------------------+
+            | 2       | Point-to-Multipoint with leaf type 2 |
+            +---------+--------------------------------------+
+            | 3       | Point-to-Multipoint with leaf type 3 |
+            +---------+--------------------------------------+
+            | 4       | Point-to-Multipoint with leaf type 4 |
+            +---------+--------------------------------------+
+            | 5-244   | Unassigned                           |
+            +---------+--------------------------------------+
+            | 245-255 | Experimental Use                     |
+            +---------+--------------------------------------+
+
+                                 Table 9
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  New PCEP TLVs</span>
+
+   IANA manages a registry for PCEP TLV code points (see [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]),
+   which is maintained as the &quot;PCEP TLV Type Indicators&quot; subregistry of
+   the &quot;Path Computation Element Protocol (PCEP) Numbers&quot; registry.
+   IANA has allocated the following per this document:
+
+       +=======+======================+===========================+
+       | Value | Meaning              | Reference                 |
+       +=======+======================+===========================+
+       |   39  | IPV4-ADDRESS         | <a href="/doc/html/rfc8779#section-2.5.2.1">RFC 8779, Section&nbsp;2.5.2.1</a> |
+       +-------+----------------------+---------------------------+
+       |   40  | IPV6-ADDRESS         | <a href="/doc/html/rfc8779#section-2.5.2.2">RFC 8779, Section&nbsp;2.5.2.2</a> |
+       +-------+----------------------+---------------------------+
+       |   41  | UNNUMBERED-ENDPOINT  | <a href="/doc/html/rfc8779#section-2.5.2.3">RFC 8779, Section&nbsp;2.5.2.3</a> |
+       +-------+----------------------+---------------------------+
+       |   42  | LABEL-REQUEST        | <a href="/doc/html/rfc8779#section-2.5.2.4">RFC 8779, Section&nbsp;2.5.2.4</a> |
+       +-------+----------------------+---------------------------+
+       |   43  | LABEL-SET            | <a href="/doc/html/rfc8779#section-2.5.2.5">RFC 8779, Section&nbsp;2.5.2.5</a> |
+       +-------+----------------------+---------------------------+
+       |   44  | PROTECTION-ATTRIBUTE | <a href="/doc/html/rfc8779#section-2.8">RFC 8779, Section&nbsp;2.8</a>     |
+       +-------+----------------------+---------------------------+
+       |   45  | GMPLS-CAPABILITY     | <a href="/doc/html/rfc8779#section-2.1.2">RFC 8779, Section&nbsp;2.1.2</a>   |
+       +-------+----------------------+---------------------------+
+
+                                 Table 10
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  RP Object Flag Field</span>
+
+   A new flag is defined in <a href="#section-2.2">Section 2.2</a> for the Flags field of the RP
+   object.  IANA has made the following allocation in the &quot;RP Object
+   Flag Field&quot; subregistry:
+
+       +=======+==========================+=======================+
+       |  Bit  | Description              | Reference             |
+       +=======+==========================+=======================+
+       | 15-16 | Routing Granularity (RG) | <a href="/doc/html/rfc8779#section-2.2">RFC 8779, Section&nbsp;2.2</a> |
+       +-------+--------------------------+-----------------------+
+
+                                 Table 11
+
+<span class="h3"><a class="selflink" id="section-5.5" href="#section-5.5">5.5</a>.  New PCEP Error Codes</span>
+
+   New PCEP Error-Types and Error-values are defined in <a href="#section-3">Section 3</a>.  IANA
+   has made the following allocations in the &quot;PCEP-ERROR Object Error
+   Types and Values&quot; registry:
+
+    +============+=============+==========================+===========+
+    | Error-Type | Meaning     | Error-value              | Reference |
+    +============+=============+==========================+===========+
+    | 4          | Not         |                          | [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] |
+    |            | supported   |                          |           |
+    |            | object      |                          |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 6: BANDWIDTH object type | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | 3 or 4 not supported     |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 7: Unsupported endpoint  | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | type in END-POINTS       |           |
+    |            |             | Generalized Endpoint     |           |
+    |            |             | object type              |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 8: Unsupported TLV       | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | present in END-POINTS    |           |
+    |            |             | Generalized Endpoint     |           |
+    |            |             | object type              |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 9: Unsupported           | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | granularity in the RP    |           |
+    |            |             | object flags             |           |
+    +------------+-------------+--------------------------+-----------+
+    | 10         | Reception   |                          | [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] |
+    |            | of an       |                          |           |
+    |            | invalid     |                          |           |
+    |            | object      |                          |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 24: Bad BANDWIDTH object | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | type 3 or 4              |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 25: Unsupported LSP      | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | Protection Flags in      |           |
+    |            |             | PROTECTION-ATTRIBUTE TLV |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 26: Unsupported          | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | Secondary LSP Protection |           |
+    |            |             | Flags in PROTECTION-     |           |
+    |            |             | ATTRIBUTE TLV            |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 27: Unsupported Link     | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | Protection Type in       |           |
+    |            |             | PROTECTION-ATTRIBUTE TLV |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 28: LABEL-SET TLV        | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | present with O bit set   |           |
+    |            |             | but without R bit set in |           |
+    |            |             | RP                       |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 29: Wrong LABEL-SET TLV  | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | present with O and L     |           |
+    |            |             | bits set                 |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 30: Wrong LABEL-SET TLV  | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | present with O bit set   |           |
+    |            |             | and wrong format         |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 31: Missing GMPLS-       | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | CAPABILITY TLV           |           |
+    +------------+-------------+--------------------------+-----------+
+    | 29         | Path        |                          | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            | computation |                          |           |
+    |            | failure     |                          |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 0: Unassigned            | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 1: Unacceptable request  | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | message                  |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 2: Generalized bandwidth | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | value not supported      |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 3: Label set constraint  | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | could not be met         |           |
+    +------------+-------------+--------------------------+-----------+
+    |            |             | 4: Label constraint      | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+    |            |             | could not be met         |           |
+    +------------+-------------+--------------------------+-----------+
+
+                                  Table 12
+
+<span class="h3"><a class="selflink" id="section-5.6" href="#section-5.6">5.6</a>.  New Bits in NO-PATH-VECTOR TLV</span>
+
+   New NO-PATH-VECTOR TLV bits are defined in <a href="#section-2.9.1">Section 2.9.1</a>.  IANA has
+   made the following allocations in the &quot;NO-PATH-VECTOR TLV Flag Field&quot;
+   subregistry:
+
+        +=====+=======================================+===========+
+        | Bit | Description                           | Reference |
+        +=====+=======================================+===========+
+        | 18  | Protection Mismatch                   | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        +-----+---------------------------------------+-----------+
+        | 17  | No Resource                           | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        +-----+---------------------------------------+-----------+
+        | 16  | Granularity not supported             | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        +-----+---------------------------------------+-----------+
+        | 15  | No endpoint label resource            | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        +-----+---------------------------------------+-----------+
+        | 14  | No endpoint label resource in range   | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        +-----+---------------------------------------+-----------+
+        | 13  | No label resource in range            | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        +-----+---------------------------------------+-----------+
+        | 12  | LOAD-BALANCING could not be performed | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+        |     | with the bandwidth constraints        |           |
+        +-----+---------------------------------------+-----------+
+
+                                  Table 13
+
+<span class="h3"><a class="selflink" id="section-5.7" href="#section-5.7">5.7</a>.  New Subobject for the Include Route Object</span>
+
+   IANA has added a new subobject in the &quot;IRO Subobjects&quot; subregistry of
+   the &quot;Path Computation Element Protocol (PCEP) Numbers&quot; registry.
+
+   IANA has added a new subobject that can be carried in the IRO as
+   follows:
+
+                    +=======+=============+===========+
+                    | Value | Description | Reference |
+                    +=======+=============+===========+
+                    | 10    | Label       | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+                    +-------+-------------+-----------+
+
+                                  Table 14
+
+<span class="h3"><a class="selflink" id="section-5.8" href="#section-5.8">5.8</a>.  New Subobject for the Exclude Route Object</span>
+
+   IANA has added a new subobject in the &quot;XRO Subobjects&quot; subregistry of
+   the &quot;Path Computation Element Protocol (PCEP) Numbers&quot; registry.
+
+   IANA has added a new subobject that can be carried in the XRO as
+   follows:
+
+                    +=======+=============+===========+
+                    | Value | Description | Reference |
+                    +=======+=============+===========+
+                    | 10    | Label       | <a href="/doc/html/rfc8779">RFC 8779</a>  |
+                    +-------+-------------+-----------+
+
+                                  Table 15
+
+<span class="h3"><a class="selflink" id="section-5.9" href="#section-5.9">5.9</a>.  New GMPLS-CAPABILITY TLV Flag Field</span>
+
+   IANA has created a new &quot;GMPLS-CAPABILITY TLV Flag Field&quot; subregistry
+   within the &quot;Path Computation Element Protocol (PCEP) Numbers&quot;
+   registry to manage the Flag field of the GMPLS-CAPABILITY TLV.
+
+   New bit numbers are to be assigned by Standards Action [<a href="/doc/html/rfc8126" title="">RFC8126</a>].
+   Each bit should be tracked with the following qualities:
+
+   *  Bit number (counting from bit 0 as the most significant bit)
+
+   *  Capability description
+
+   *  Defining RFC
+
+   The initial contents of the subregistry are empty, with bits 0-31
+   marked as Unassigned.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   GMPLS controls multiple technologies and types of network elements.
+   The LSPs that are established using GMPLS, whose paths can be
+   computed using the PCEP extensions to support GMPLS described in this
+   document, can carry a high volume of traffic and can be a critical
+   part of a network infrastructure.  The PCE can then play a key role
+   in the use of the resources and in determining the physical paths of
+   the LSPs; thus, it is important to ensure the identity of the PCE and
+   PCC, as well as the communication channel.  In many deployments,
+   there will be a completely isolated network where an external attack
+   is of very low probability.  However, there are other deployment
+   cases in which the PCC-PCE communication can be more exposed, and
+   there could be more security considerations.  There are three main
+   situations in case an attack in the GMPLS PCE context happens:
+
+      PCE Identity theft:  A legitimate PCC could request a path for a
+         GMPLS LSP to a malicious PCE, which poses as a legitimate PCE.
+         The response may be that the LSP traverses some geographical
+         place known to the attacker where confidentiality (sniffing),
+         integrity (traffic modification), or availability (traffic
+         drop) attacks could be performed by use of an attacker-
+         controlled middlebox device.  Also, the resulting LSP can omit
+         constraints given in the requests (e.g., excluding certain
+         fibers and avoiding some SRLGs), which could make the LSP that
+         will be set up later look perfectly fine, but it will be in a
+         risky situation.  Also, the result can lead to the creation of
+         an LSP that does not provide the desired quality and gives less
+         resources than necessary.
+
+      PCC Identity theft:  A malicious PCC, acting as a legitimate PCC,
+         requesting LSP paths to a legitimate PCE can obtain a good
+         knowledge of the physical topology of a critical
+         infrastructure.  It could learn enough details to plan a later
+         physical attack.
+
+      Message inspection:  As in the previous case, knowledge of an
+         infrastructure can be obtained by sniffing PCEP messages.
+
+   The security mechanisms can provide authentication and
+   confidentiality for those scenarios where PCC-PCE communication
+   cannot be completely trusted.  [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>] provides origin
+   verification, message integrity, and replay protection, and it
+   ensures that a third party cannot decipher the contents of a message.
+
+   In order to protect against the malicious PCE case, the PCC SHOULD
+   have policies in place to accept or not accept the path provided by
+   the PCE.  Those policies can verify if the path follows the provided
+   constraints.  In addition, a technology-specific data-plane mechanism
+   can be used (following <a href="/doc/html/rfc5920#section-5.8">[RFC5920], Section&nbsp;5.8</a>) to verify the data-
+   plane connectivity and deviation from constraints.
+
+   The usage of Transport Layer Security (TLS) to enhance PCEP security
+   is described in [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>].  The document describes the initiation of
+   TLS procedures, the TLS handshake mechanisms, the TLS methods for
+   peer authentication, the applicable TLS ciphersuites for data
+   exchange, and the handling of errors in the security checks.  PCE and
+   PCC SHOULD use the mechanism in [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>] to protect against
+   malicious PCC and PCE.
+
+   Finally, as mentioned by [<a href="/doc/html/rfc7025" title="&quot;Requirements for GMPLS Applications of PCE&quot;">RFC7025</a>], the PCEP extensions that support
+   GMPLS should be considered under the same security as current PCE
+   work, and this extension will not change the underlying security
+   issues.  However, given the critical nature of the network
+   infrastructures under control by GMPLS, the security issues described
+   above should be seriously considered when deploying a GMPLS-PCE-based
+   control plane for such networks.  For an overview of the security
+   considerations, not only related to PCE/PCEP, and vulnerabilities of
+   a GMPLS control plane, see [<a href="/doc/html/rfc5920" title="&quot;Security Framework for MPLS and GMPLS Networks&quot;">RFC5920</a>].
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-G.709-v3">G.709-v3</a>] ITU-T, &quot;Interfaces for the optical transport network&quot;,
+              Recommendation G.709/Y.1331, June 2016,
+              &lt;<a href="https://www.itu.int/rec/T-REC-G.709-201606-I/en">https://www.itu.int/rec/T-REC-G.709-201606-I/en</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC2210">RFC2210</a>]  Wroclawski, J., &quot;The Use of RSVP with IETF Integrated
+              Services&quot;, <a href="/doc/html/rfc2210">RFC 2210</a>, DOI 10.17487/RFC2210, September 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2210">https://www.rfc-editor.org/info/rfc2210</a>&gt;.
+
+   [<a id="ref-RFC3209">RFC3209</a>]  Awduche, D., Berger, L., Gan, D., Li, T., Srinivasan, V.,
+              and G. Swallow, &quot;RSVP-TE: Extensions to RSVP for LSP
+              Tunnels&quot;, <a href="/doc/html/rfc3209">RFC 3209</a>, DOI 10.17487/RFC3209, December 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3209">https://www.rfc-editor.org/info/rfc3209</a>&gt;.
+
+   [<a id="ref-RFC3471">RFC3471</a>]  Berger, L., Ed., &quot;Generalized Multi-Protocol Label
+              Switching (GMPLS) Signaling Functional Description&quot;,
+              <a href="/doc/html/rfc3471">RFC 3471</a>, DOI 10.17487/RFC3471, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3471">https://www.rfc-editor.org/info/rfc3471</a>&gt;.
+
+   [<a id="ref-RFC3473">RFC3473</a>]  Berger, L., Ed., &quot;Generalized Multi-Protocol Label
+              Switching (GMPLS) Signaling Resource ReserVation Protocol-
+              Traffic Engineering (RSVP-TE) Extensions&quot;, <a href="/doc/html/rfc3473">RFC 3473</a>,
+              DOI 10.17487/RFC3473, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3473">https://www.rfc-editor.org/info/rfc3473</a>&gt;.
+
+   [<a id="ref-RFC3477">RFC3477</a>]  Kompella, K. and Y. Rekhter, &quot;Signalling Unnumbered Links
+              in Resource ReSerVation Protocol - Traffic Engineering
+              (RSVP-TE)&quot;, <a href="/doc/html/rfc3477">RFC 3477</a>, DOI 10.17487/RFC3477, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3477">https://www.rfc-editor.org/info/rfc3477</a>&gt;.
+
+   [<a id="ref-RFC3630">RFC3630</a>]  Katz, D., Kompella, K., and D. Yeung, &quot;Traffic Engineering
+              (TE) Extensions to OSPF Version 2&quot;, <a href="/doc/html/rfc3630">RFC 3630</a>,
+              DOI 10.17487/RFC3630, September 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3630">https://www.rfc-editor.org/info/rfc3630</a>&gt;.
+
+   [<a id="ref-RFC4003">RFC4003</a>]  Berger, L., &quot;GMPLS Signaling Procedure for Egress
+              Control&quot;, <a href="/doc/html/rfc4003">RFC 4003</a>, DOI 10.17487/RFC4003, February 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4003">https://www.rfc-editor.org/info/rfc4003</a>&gt;.
+
+   [<a id="ref-RFC4328">RFC4328</a>]  Papadimitriou, D., Ed., &quot;Generalized Multi-Protocol Label
+              Switching (GMPLS) Signaling Extensions for G.709 Optical
+              Transport Networks Control&quot;, <a href="/doc/html/rfc4328">RFC 4328</a>,
+              DOI 10.17487/RFC4328, January 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4328">https://www.rfc-editor.org/info/rfc4328</a>&gt;.
+
+   [<a id="ref-RFC4606">RFC4606</a>]  Mannie, E. and D. Papadimitriou, &quot;Generalized Multi-
+              Protocol Label Switching (GMPLS) Extensions for
+              Synchronous Optical Network (SONET) and Synchronous
+              Digital Hierarchy (SDH) Control&quot;, <a href="/doc/html/rfc4606">RFC 4606</a>,
+              DOI 10.17487/RFC4606, August 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4606">https://www.rfc-editor.org/info/rfc4606</a>&gt;.
+
+   [<a id="ref-RFC4802">RFC4802</a>]  Nadeau, T., Ed. and A. Farrel, Ed., &quot;Generalized
+              Multiprotocol Label Switching (GMPLS) Traffic Engineering
+              Management Information Base&quot;, <a href="/doc/html/rfc4802">RFC 4802</a>,
+              DOI 10.17487/RFC4802, February 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4802">https://www.rfc-editor.org/info/rfc4802</a>&gt;.
+
+   [<a id="ref-RFC4872">RFC4872</a>]  Lang, J.P., Ed., Rekhter, Y., Ed., and D. Papadimitriou,
+              Ed., &quot;RSVP-TE Extensions in Support of End-to-End
+              Generalized Multi-Protocol Label Switching (GMPLS)
+              Recovery&quot;, <a href="/doc/html/rfc4872">RFC 4872</a>, DOI 10.17487/RFC4872, May 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4872">https://www.rfc-editor.org/info/rfc4872</a>&gt;.
+
+   [<a id="ref-RFC4873">RFC4873</a>]  Berger, L., Bryskin, I., Papadimitriou, D., and A. Farrel,
+              &quot;GMPLS Segment Recovery&quot;, <a href="/doc/html/rfc4873">RFC 4873</a>, DOI 10.17487/RFC4873,
+              May 2007, &lt;<a href="https://www.rfc-editor.org/info/rfc4873">https://www.rfc-editor.org/info/rfc4873</a>&gt;.
+
+   [<a id="ref-RFC5088">RFC5088</a>]  Le Roux, JL., Ed., Vasseur, JP., Ed., Ikejiri, Y., and R.
+              Zhang, &quot;OSPF Protocol Extensions for Path Computation
+              Element (PCE) Discovery&quot;, <a href="/doc/html/rfc5088">RFC 5088</a>, DOI 10.17487/RFC5088,
+              January 2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5088">https://www.rfc-editor.org/info/rfc5088</a>&gt;.
+
+   [<a id="ref-RFC5089">RFC5089</a>]  Le Roux, JL., Ed., Vasseur, JP., Ed., Ikejiri, Y., and R.
+              Zhang, &quot;IS-IS Protocol Extensions for Path Computation
+              Element (PCE) Discovery&quot;, <a href="/doc/html/rfc5089">RFC 5089</a>, DOI 10.17487/RFC5089,
+              January 2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5089">https://www.rfc-editor.org/info/rfc5089</a>&gt;.
+
+   [<a id="ref-RFC5440">RFC5440</a>]  Vasseur, JP., Ed. and JL. Le Roux, Ed., &quot;Path Computation
+              Element (PCE) Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5440">RFC 5440</a>,
+              DOI 10.17487/RFC5440, March 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5440">https://www.rfc-editor.org/info/rfc5440</a>&gt;.
+
+   [<a id="ref-RFC5511">RFC5511</a>]  Farrel, A., &quot;Routing Backus-Naur Form (RBNF): A Syntax
+              Used to Form Encoding Rules in Various Routing Protocol
+              Specifications&quot;, <a href="/doc/html/rfc5511">RFC 5511</a>, DOI 10.17487/RFC5511, April
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5511">https://www.rfc-editor.org/info/rfc5511</a>&gt;.
+
+   [<a id="ref-RFC5520">RFC5520</a>]  Bradford, R., Ed., Vasseur, JP., and A. Farrel,
+              &quot;Preserving Topology Confidentiality in Inter-Domain Path
+              Computation Using a Path-Key-Based Mechanism&quot;, <a href="/doc/html/rfc5520">RFC 5520</a>,
+              DOI 10.17487/RFC5520, April 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5520">https://www.rfc-editor.org/info/rfc5520</a>&gt;.
+
+   [<a id="ref-RFC5521">RFC5521</a>]  Oki, E., Takeda, T., and A. Farrel, &quot;Extensions to the
+              Path Computation Element Communication Protocol (PCEP) for
+              Route Exclusions&quot;, <a href="/doc/html/rfc5521">RFC 5521</a>, DOI 10.17487/RFC5521, April
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5521">https://www.rfc-editor.org/info/rfc5521</a>&gt;.
+
+   [<a id="ref-RFC5541">RFC5541</a>]  Le Roux, JL., Vasseur, JP., and Y. Lee, &quot;Encoding of
+              Objective Functions in the Path Computation Element
+              Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5541">RFC 5541</a>,
+              DOI 10.17487/RFC5541, June 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5541">https://www.rfc-editor.org/info/rfc5541</a>&gt;.
+
+   [<a id="ref-RFC6001">RFC6001</a>]  Papadimitriou, D., Vigoureux, M., Shiomoto, K., Brungard,
+              D., and JL. Le Roux, &quot;Generalized MPLS (GMPLS) Protocol
+              Extensions for Multi-Layer and Multi-Region Networks (MLN/
+              MRN)&quot;, <a href="/doc/html/rfc6001">RFC 6001</a>, DOI 10.17487/RFC6001, October 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6001">https://www.rfc-editor.org/info/rfc6001</a>&gt;.
+
+   [<a id="ref-RFC6003">RFC6003</a>]  Papadimitriou, D., &quot;Ethernet Traffic Parameters&quot;,
+              <a href="/doc/html/rfc6003">RFC 6003</a>, DOI 10.17487/RFC6003, October 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6003">https://www.rfc-editor.org/info/rfc6003</a>&gt;.
+
+   [<a id="ref-RFC6205">RFC6205</a>]  Otani, T., Ed. and D. Li, Ed., &quot;Generalized Labels for
+              Lambda-Switch-Capable (LSC) Label Switching Routers&quot;,
+              <a href="/doc/html/rfc6205">RFC 6205</a>, DOI 10.17487/RFC6205, March 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6205">https://www.rfc-editor.org/info/rfc6205</a>&gt;.
+
+   [<a id="ref-RFC6387">RFC6387</a>]  Takacs, A., Berger, L., Caviglia, D., Fedyk, D., and J.
+              Meuric, &quot;GMPLS Asymmetric Bandwidth Bidirectional Label
+              Switched Paths (LSPs)&quot;, <a href="/doc/html/rfc6387">RFC 6387</a>, DOI 10.17487/RFC6387,
+              September 2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6387">https://www.rfc-editor.org/info/rfc6387</a>&gt;.
+
+   [<a id="ref-RFC7139">RFC7139</a>]  Zhang, F., Ed., Zhang, G., Belotti, S., Ceccarelli, D.,
+              and K. Pithewan, &quot;GMPLS Signaling Extensions for Control
+              of Evolving G.709 Optical Transport Networks&quot;, <a href="/doc/html/rfc7139">RFC 7139</a>,
+              DOI 10.17487/RFC7139, March 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7139">https://www.rfc-editor.org/info/rfc7139</a>&gt;.
+
+   [<a id="ref-RFC7570">RFC7570</a>]  Margaria, C., Ed., Martinelli, G., Balls, S., and B.
+              Wright, &quot;Label Switched Path (LSP) Attribute in the
+              Explicit Route Object (ERO)&quot;, <a href="/doc/html/rfc7570">RFC 7570</a>,
+              DOI 10.17487/RFC7570, July 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7570">https://www.rfc-editor.org/info/rfc7570</a>&gt;.
+
+   [<a id="ref-RFC7792">RFC7792</a>]  Zhang, F., Zhang, X., Farrel, A., Gonzalez de Dios, O.,
+              and D. Ceccarelli, &quot;RSVP-TE Signaling Extensions in
+              Support of Flexi-Grid Dense Wavelength Division
+              Multiplexing (DWDM) Networks&quot;, <a href="/doc/html/rfc7792">RFC 7792</a>,
+              DOI 10.17487/RFC7792, March 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7792">https://www.rfc-editor.org/info/rfc7792</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8253">RFC8253</a>]  Lopez, D., Gonzalez de Dios, O., Wu, Q., and D. Dhody,
+              &quot;PCEPS: Usage of TLS to Provide a Secure Transport for the
+              Path Computation Element Communication Protocol (PCEP)&quot;,
+              <a href="/doc/html/rfc8253">RFC 8253</a>, DOI 10.17487/RFC8253, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8253">https://www.rfc-editor.org/info/rfc8253</a>&gt;.
+
+   [<a id="ref-RFC8282">RFC8282</a>]  Oki, E., Takeda, T., Farrel, A., and F. Zhang, &quot;Extensions
+              to the Path Computation Element Communication Protocol
+              (PCEP) for Inter-Layer MPLS and GMPLS Traffic
+              Engineering&quot;, <a href="/doc/html/rfc8282">RFC 8282</a>, DOI 10.17487/RFC8282, December
+              2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8282">https://www.rfc-editor.org/info/rfc8282</a>&gt;.
+
+   [<a id="ref-RFC8306">RFC8306</a>]  Zhao, Q., Dhody, D., Ed., Palleti, R., and D. King,
+              &quot;Extensions to the Path Computation Element Communication
+              Protocol (PCEP) for Point-to-Multipoint Traffic
+              Engineering Label Switched Paths&quot;, <a href="/doc/html/rfc8306">RFC 8306</a>,
+              DOI 10.17487/RFC8306, November 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8306">https://www.rfc-editor.org/info/rfc8306</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4655">RFC4655</a>]  Farrel, A., Vasseur, J.-P., and J. Ash, &quot;A Path
+              Computation Element (PCE)-Based Architecture&quot;, <a href="/doc/html/rfc4655">RFC 4655</a>,
+              DOI 10.17487/RFC4655, August 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4655">https://www.rfc-editor.org/info/rfc4655</a>&gt;.
+
+   [<a id="ref-RFC4657">RFC4657</a>]  Ash, J., Ed. and J.L. Le Roux, Ed., &quot;Path Computation
+              Element (PCE) Communication Protocol Generic
+              Requirements&quot;, <a href="/doc/html/rfc4657">RFC 4657</a>, DOI 10.17487/RFC4657, September
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4657">https://www.rfc-editor.org/info/rfc4657</a>&gt;.
+
+   [<a id="ref-RFC5920">RFC5920</a>]  Fang, L., Ed., &quot;Security Framework for MPLS and GMPLS
+              Networks&quot;, <a href="/doc/html/rfc5920">RFC 5920</a>, DOI 10.17487/RFC5920, July 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5920">https://www.rfc-editor.org/info/rfc5920</a>&gt;.
+
+   [<a id="ref-RFC6123">RFC6123</a>]  Farrel, A., &quot;Inclusion of Manageability Sections in Path
+              Computation Element (PCE) Working Group Drafts&quot;, <a href="/doc/html/rfc6123">RFC 6123</a>,
+              DOI 10.17487/RFC6123, February 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6123">https://www.rfc-editor.org/info/rfc6123</a>&gt;.
+
+   [<a id="ref-RFC6163">RFC6163</a>]  Lee, Y., Ed., Bernstein, G., Ed., and W. Imajuku,
+              &quot;Framework for GMPLS and Path Computation Element (PCE)
+              Control of Wavelength Switched Optical Networks (WSONs)&quot;,
+              <a href="/doc/html/rfc6163">RFC 6163</a>, DOI 10.17487/RFC6163, April 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6163">https://www.rfc-editor.org/info/rfc6163</a>&gt;.
+
+   [<a id="ref-RFC7025">RFC7025</a>]  Otani, T., Ogaki, K., Caviglia, D., Zhang, F., and C.
+              Margaria, &quot;Requirements for GMPLS Applications of PCE&quot;,
+              <a href="/doc/html/rfc7025">RFC 7025</a>, DOI 10.17487/RFC7025, September 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7025">https://www.rfc-editor.org/info/rfc7025</a>&gt;.
+
+   [<a id="ref-RFC7449">RFC7449</a>]  Lee, Y., Ed., Bernstein, G., Ed., Martensson, J., Takeda,
+              T., Tsuritani, T., and O. Gonzalez de Dios, &quot;Path
+              Computation Element Communication Protocol (PCEP)
+              Requirements for Wavelength Switched Optical Network
+              (WSON) Routing and Wavelength Assignment&quot;, <a href="/doc/html/rfc7449">RFC 7449</a>,
+              DOI 10.17487/RFC7449, February 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7449">https://www.rfc-editor.org/info/rfc7449</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  LOAD-BALANCING Usage for SDH Virtual Concatenation</span>
+
+   As an example, a request for one co-signaled n x VC-4 TE-LSP will not
+   use LOAD-BALANCING.  In case the VC-4 components can use different
+   paths, the BANDWIDTH with object type 3 will contain the complete n x
+   VC-4 traffic specification, and the LOAD-BALANCING object will
+   contain the minimum co-signaled VC-4.  For an SDH network, a request
+   for a TE-LSP group with 10 VC-4 containers, with each path using at
+   minimum 2 x VC-4 containers, can be represented with a BANDWIDTH
+   object with object type 3, the Bw Spec Type set to 4, and the content
+   of the Generalized Bandwidth field with ST=6, RCC=0, NCC=0, NVC=10,
+   and MT=1.  The LOAD-BALANCING with object type 2 with the Bw Spec
+   Type set to 4 and Max-LSP=5, Min Bandwidth Spec is ST=6, RCC=0,
+   NCC=0, NVC=2, MT=1.  The PCE can respond with a maximum of 5 paths,
+   with each path having a BANDWIDTH object type 3 and a Generalized
+   Bandwidth field matching the Min Bandwidth Spec from the LOAD-
+   BALANCING object of the corresponding request.
+
+Acknowledgments
+
+   The research of Ramon Casellas, Francisco Javier Jimenez Chico, Oscar
+   Gonzalez de Dios, Cyril Margaria, and Franz Rambach that led to the
+   results in this document received funding from the European
+   Community&#x27;s Seventh Framework Program FP7/2007-2013 under grant
+   agreement no. 247674 and no. 317999.
+
+   The authors would like to thank Julien Meuric, Lyndon Ong, Giada
+   Lander, Jonathan Hardwick, Diego Lopez, David Sinicrope, Vincent
+   Roca, Dhruv Dhody, Adrian Farrel, and Tianran Zhou for their review
+   and useful comments.
+
+   Thanks to Alisa Cooper, Benjamin Kaduk, Elwyn Davies, Martin
+   Vigoureux, Roman Danyliw, and Suresh Krishnan for the IESG-related
+   comments.
+
+Contributors
+
+   Elie Sfeir
+   Coriant
+   St. Martin Strasse 76
+   81541 Munich
+   Germany
+
+   Email: elie.sfeir@coriant.com
+
+
+   Franz Rambach
+   Nockherstrasse 2-4
+   81541 Munich
+   Germany
+
+   Phone: +49 178 8855738
+   Email: franz.rambach@cgi.com
+
+
+   Francisco Javier Jimenez Chico
+   Telefonica Investigacion y Desarrollo
+   C/ Emilio Vargas 6
+   28043 Madrid
+   Spain
+
+   Phone: +34 91 3379037
+   Email: fjjc@tid.es
+
+
+   Suresh Babu
+
+   Email: sureshhimnish@gmail.com
+
+
+   Young Lee
+   Samsung Electronics
+
+   Email: younglee.tx@gmail.com
+
+
+   Senthil Kumar S
+
+   Email: ssenthilkumar@gmail.com
+
+
+   Jun Sun
+   Huawei Technologies
+   Shenzhen
+   China
+
+   Email: johnsun@huawei.com
+
+
+   Ramon Casellas
+   CTTC - Centre Tecnologic de Telecomunicacions de Catalunya
+   PMT Ed B4 Av. Carl Friedrich Gauss 7
+   08660 Castelldefels, Barcelona
+   Spain
+
+   Phone: +34 93 6452916
+   Email: ramon.casellas@cttc.e
+
+
+Authors&#x27; Addresses
+
+   Cyril Margaria (editor)
+   Juniper
+
+   Email: cmargaria@juniper.net
+
+
+   Oscar Gonzalez de Dios (editor)
+   Telefonica Investigacion y Desarrollo
+   C/ Ronda de la Comunicacion
+   28050 Madrid
+   Spain
+
+   Phone: +34 91 4833441
+   Email: oscar.gonzalezdedios@telefonica.com
+
+
+   Fatai Zhang (editor)
+   Huawei Technologies
+   F3-5-B R&amp;D Center, Huawei Base
+   Bantian, Longgang District
+   Shenzhen
+   518129
+   China
+
+   Email: zhangfatai@huawei.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

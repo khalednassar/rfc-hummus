@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1051
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1051/">
+  <meta name="description" content="Standard for the transmission of IP datagrams and ARP packets over ARCNET networks (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgbrown"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1051.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1051.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1051.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1051/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1051/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1051@ietf.org?subject=rfc1051" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1051-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1051-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1051-.txt" title="Run an idnits check of this document">Nits</a>]
+
+Obsoleted by: <a href="/doc/html/rfc1201">1201</a>                                              Historic</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                    P. Prindeville
+Request for Comments:  1051                           McGill University
+                                                             March 1988
+
+
+            <span class="h1">A Standard for the Transmission of IP Datagrams</span>
+                  <span class="h1">and ARP Packets over ARCNET Networks</span>
+
+
+Status of this Memo
+
+   This RFC specifies a standard protocol for the Internet community.
+   Distribution of this memo is unlimited.
+
+Introduction
+
+   This RFC specifies a standard method of encapsulating Internet
+   Protocol (IP) [<a href="#ref-1" title="&quot;Internet Protocol&quot;">1</a>] and Address Resolution Protocol (ARP) [<a href="#ref-2" title="&quot;An Ethernet Address Resolution Protocol&quot;">2</a>] datagrams
+   on an ARCNET [<a href="#ref-3" title="&quot;ARCNET Designer&#x27;s Handbook&quot;">3</a>].
+
+Acknowledgements
+
+   The author wishes to express thanks to Robert Craig of the McGill
+   University Computing Centre and Bruce Hughes of Datapoint Corporation
+   for their generous support of facilities and information.  I also
+   extend my gratitude to the readers of the PCIP mailing list for their
+   helpful ideas and comments.
+
+Frame Format
+
+   IP and ARP datagrams are transmitted in standard ARCNET packets.  As
+   required by Datapoint Corporation, the first octet of the data field
+   is reserved for the network layer protocol identification (the
+   &quot;system code&quot; in Datapoint nomenclature), and must contain the value
+   240 (F0 hex) for IP or 241 (F1 hex) for ARP.  The ARP hardware
+   address type for ARCNET is 7 [<a href="#ref-9" title="&quot;Assigned Numbers&quot;">9</a>].
+
+   ARCNET supports packet formats containing 1-253 octets of data
+   (normal format) and 257-508 octets of data (extended format),
+   inclusive of system code.  Note that there exists a range of data
+   lengths (254-256) which are &#x27;forbidden&#x27;.  IP packets within this
+   range should be padded (with octets of zero) to meet the minimum
+   extended packet size of 257 data octets.  This padding is not part of
+   the IP packet and is not included in the total length field of the IP
+   header.
+
+
+
+
+
+
+<span class="grey">Prindeville                                                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1051">RFC 1051</a>                  IP and ARP on ARCNET                March 1988</span>
+
+
+   On networks where some hosts do not support extended packet format,
+   the IP Maximum Transmission Unit (MTU) should be set to 253, though
+   implementors are encouraged to support the extended packet format
+   mode of operation.
+
+   Because the ARCNET maximum packet length is less than the Internet
+   default MTU, implementations are strongly encouraged to support IP
+   level fragmentation and reassembly.  Hosts not supporting this should
+   take steps to discourage others from sending fragmented packets, such
+   as using the TCP Maximum Segment Size option [<a href="#ref-4" title="&quot;The TCP Maximum Segment Size Option and Related Topics&quot;">4</a>].
+
+      The frame format is:
+
+                  Normal Packet               Extended Packet
+                +----------------+          +----------------+
+                |     ALERT*     |          |     ALERT*     |
+                +----------------+          +----------------+
+                |      SOH (1)   |          |      SOH (1)   |
+                +----------------+          +----------------+
+                |      SID       |          |      SID       |
+                +----------------+          +----------------+
+                |                |          |                |
+                +      DID       +          +      DID       +
+                |                |          |                |
+                +----------------+          +----------------+
+                |     COUNT      |          |      NUL (0)   |
+                +----------------+          +                +
+                |  SYSTEM CODE   |          |     COUNT      |
+                +----------------+          +----------------+
+                |                |          |  SYSTEM CODE   |
+                :      DATA      :          +----------------+
+                |                |          |                |
+                +----------------+          :      DATA      :
+                |                |          |                |
+                +       CRC      +          +----------------+
+                |                |          |                |
+                +----------------+          +       CRC      +
+                                            |                |
+                                            +----------------+
+
+      ALERT*:      Six mark bits signifying the beginning of a frame.
+      SID:         Sender&#x27;s node ID.
+      DID:         Receipient&#x27;s node ID (repeated for reliability).
+      COUNT:       Length of data and system code (one&#x27;s complement).
+      SYSTEM CODE: 240 for IP, 241 for ARP (decimal).
+      DATA:        Is either an IP or an ARP packet, padded with NULs so
+                      as to not be between 254 and 256 octets long.
+      CRC:         Cyclic redundancy check (CRC-16).
+
+
+
+<span class="grey">Prindeville                                                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1051">RFC 1051</a>                  IP and ARP on ARCNET                March 1988</span>
+
+
+Address Mappings
+
+   The mappings between 32-bit Internet addresses to 8-bit ARCNET
+   addresses can be done several ways, recommended are:
+
+   Host Number Extraction
+
+      The easiest thing to do is to use the last eight bits of host
+      number part of the Internet address as the host&#x27;s node id.  This
+      has been implemented on Experimental Ethernet [<a href="#ref-5" title="&quot;A Standard for the Transmission of IP Datagrams over Experimental Ethernet Networks&quot;">5</a>] and ProNET-10
+      [<a href="#ref-6" title="&quot;ProNET-10 Model p1300 IBM PC Interface System Installation and Programming Guide&quot;">6</a>].
+
+   Dynamic Discovery
+
+      Mappings between 32-bit Internet addresses and 8-bit ARCNET node
+      ids could be accomplished through ARP.  Internet addresses are
+      assigned arbitrarily on some Internet networks.  All
+      implementations supporting ARP must have a means of disabling ARP
+      and using the above Host Number Extraction method of address
+      mapping so that systems may interoperate.
+
+      The use of ARP is optional.  However, ARP is desirable when using
+      IP implementations that don&#x27;t support subnetting [<a href="#ref-7" title="&quot;Internet Standard Subnetting Procedure&quot;">7</a>], as in the
+      Proxy ARP scenario [<a href="#ref-8" title="&quot;Using ARP to Implement Transparent Subnet Gateways&quot;">8</a>].
+
+Broadcast Address
+
+   The broadcast Internet address (the address on the network with a
+   host part of all binary ones) should be mapped to the broadcast node
+   id 0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Prindeville                                                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1051">RFC 1051</a>                  IP and ARP on ARCNET                March 1988</span>
+
+
+References
+
+   [<a id="ref-1">1</a>] Postel, J., &quot;Internet Protocol&quot;, <a href="/doc/html/rfc791">RFC-791</a>, Network Information
+       Center, SRI, September 1981.
+
+   [<a id="ref-2">2</a>] Plummer, D., &quot;An Ethernet Address Resolution Protocol&quot;, RFC- 826,
+       Network Information Center, SRI, November 1982.
+
+   [<a id="ref-3">3</a>] &quot;ARCNET Designer&#x27;s Handbook&quot;, Order Number 61610, Datapoint
+       Corporation, 1983.
+
+   [<a id="ref-4">4</a>] Postel, J., &quot;The TCP Maximum Segment Size Option and Related
+       Topics&quot;, <a href="/doc/html/rfc879">RFC-879</a>, Network Information Center, SRI, November 1983.
+
+   [<a id="ref-5">5</a>] Postel, J., &quot;A Standard for the Transmission of IP Datagrams over
+       Experimental Ethernet Networks&quot;, <a href="/doc/html/rfc895">RFC-895</a>, Network Information
+       Center, SRI, April 1984.
+
+   [<a id="ref-6">6</a>] &quot;ProNET-10 Model p1300 IBM PC Interface System Installation and
+       Programming Guide&quot;, Version 4.0, Proteon Inc., July 1986.
+
+   [<a id="ref-7">7</a>] Mogul, J. and J. Postel, &quot;Internet Standard Subnetting
+       Procedure&quot;, <a href="/doc/html/rfc950">RFC-950</a>, Network Information Center, SRI, October
+       1984.
+
+   [<a id="ref-8">8</a>] Carl-Mitchell, S. and J.S. Quarterman, &quot;Using ARP to Implement
+       Transparent Subnet Gateways&quot;, <a href="/doc/html/rfc1027">RFC-1027</a>, Network Information
+       Center, SRI, October 1987.
+
+   [<a id="ref-9">9</a>] Reynolds, J., and J. Postel, &quot;Assigned Numbers&quot;, <a href="/doc/html/rfc1010">RFC-1010</a>,
+       Network Information Center, SRI, May 1987.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prindeville                                                     [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

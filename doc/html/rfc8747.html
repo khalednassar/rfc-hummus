@@ -1,0 +1,919 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8747
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ace-cwt-proof-of-possession/">
+  <meta name="description" content="Proof-of-Possession Key Semantics for CBOR Web Tokens (CWTs) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8747.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8747.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8747.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8747.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8747/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8747/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ace/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ace-cwt-proof-of-possession@ietf.org?subject=draft-ietf-ace-cwt-proof-of-possession" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ace-cwt-proof-of-possession-11.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ace-cwt-proof-of-possession-11.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ace-cwt-proof-of-possession-11.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ace-cwt-proof-of-possession-11">draft-ietf-ace-cwt-proof-of-possession-11</a>        Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          M. Jones
+Request for Comments: 8747                                     Microsoft
+Category: Standards Track                                       L. Seitz
+ISSN: 2070-1721                                                Combitech
+                                                             G. Selander
+                                                             Ericsson AB
+                                                              S. Erdtman
+                                                                 Spotify
+                                                           H. Tschofenig
+                                                                Arm Ltd.
+                                                              March 2020
+
+
+      <span class="h1">Proof-of-Possession Key Semantics for CBOR Web Tokens (CWTs)</span>
+
+Abstract
+
+   This specification describes how to declare in a CBOR Web Token (CWT)
+   (which is defined by <a href="/doc/html/rfc8392">RFC 8392</a>) that the presenter of the CWT
+   possesses a particular proof-of-possession key.  Being able to prove
+   possession of a key is also sometimes described as being the holder-
+   of-key.  This specification provides equivalent functionality to
+   &quot;Proof-of-Possession Key Semantics for JSON Web Tokens (JWTs)&quot; (<a href="/doc/html/rfc7800">RFC</a>
+   <a href="/doc/html/rfc7800">7800</a>) but using Concise Binary Object Representation (CBOR) and CWTs
+   rather than JavaScript Object Notation (JSON) and JSON Web Tokens
+   (JWTs).
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8747">https://www.rfc-editor.org/info/rfc8747</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Representations for Proof-of-Possession Keys
+     3.1.  Confirmation Claim
+     3.2.  Representation of an Asymmetric Proof-of-Possession Key
+     3.3.  Representation of an Encrypted Symmetric
+           Proof-of-Possession Key
+     3.4.  Representation of a Key ID for a Proof-of-Possession Key
+     3.5.  Specifics Intentionally Not Specified
+   4.  Security Considerations
+   5.  Privacy Considerations
+   6.  Operational Considerations
+   7.  IANA Considerations
+     7.1.  CBOR Web Token Claims Registration
+       7.1.1.  Registry Contents
+     7.2.  CWT Confirmation Methods Registry
+       7.2.1.  Registration Template
+       7.2.2.  Initial Registry Contents
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This specification describes how a CBOR Web Token (CWT) [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>] can
+   declare that the presenter of the CWT possesses a particular proof-
+   of-possession (PoP) key.  Proof of possession of a key is also
+   sometimes described as being the holder-of-key.  This specification
+   provides equivalent functionality to &quot;Proof-of-Possession Key
+   Semantics for JSON Web Tokens (JWTs)&quot; [<a href="/doc/html/rfc7800" title="&quot;Proof-of- Possession Key Semantics for JSON Web Tokens (JWTs)&quot;">RFC7800</a>] but using Concise
+   Binary Object Representation (CBOR) [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] and CWTs [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>]
+   rather than JavaScript Object Notation (JSON) [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>] and JSON Web
+   Tokens (JWTs) [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   This specification uses terms defined in the CBOR Web Token (CWT)
+   [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>], CBOR Object Signing and Encryption (COSE) [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>], and
+   Concise Binary Object Representation (CBOR) [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] specifications.
+
+   These terms are defined by this specification:
+
+   Issuer
+      Party that creates the CWT and binds the claims about the subject
+      to the proof-of-possession key.
+
+   Presenter
+      Party that proves possession of a private key (for asymmetric key
+      cryptography) or secret key (for symmetric key cryptography) to a
+      recipient of a CWT.
+
+      In the context of OAuth, this party is also called the OAuth
+      Client.
+
+   Recipient
+      Party that receives the CWT containing the proof-of-possession key
+      information from the presenter.
+
+      In the context of OAuth, this party is also called the OAuth
+      Resource Server.
+
+   This specification provides examples in CBOR extended diagnostic
+   notation, as defined in <a href="/doc/html/rfc8610#appendix-G">Appendix&nbsp;G of [RFC8610]</a>.  The examples
+   include line breaks for readability.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Representations for Proof-of-Possession Keys</span>
+
+   By including a &quot;cnf&quot; (confirmation) claim in a CWT, the issuer of the
+   CWT declares that the presenter possesses a particular key and that
+   the recipient can cryptographically confirm that the presenter has
+   possession of that key.  The value of the &quot;cnf&quot; claim is a CBOR map
+   (which is defined in <a href="/doc/html/rfc7049#section-2.1">Section&nbsp;2.1 of [RFC7049]</a>) and the members of
+   that map identify the proof-of-possession key.
+
+   The presenter can be identified in one of several ways by the CWT,
+   depending upon the application requirements.  For instance, some
+   applications may use the CWT &quot;sub&quot; (subject) claim [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>] to
+   identify the presenter.  Other applications may use the &quot;iss&quot;
+   (issuer) claim [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>] to identify the presenter.  In some
+   applications, the subject identifier might be relative to the issuer
+   identified by the &quot;iss&quot; claim.  The actual mechanism used is
+   dependent upon the application.  The case in which the presenter is
+   the subject of the CWT is analogous to Security Assertion Markup
+   Language (SAML) 2.0 [<a href="#ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>] SubjectConfirmation
+   usage.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Confirmation Claim</span>
+
+   The &quot;cnf&quot; claim in the CWT is used to carry confirmation methods.
+   Some of them use proof-of-possession keys, while others do not.  This
+   design is analogous to the SAML 2.0 [<a href="#ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>]
+   SubjectConfirmation element in which a number of different subject
+   confirmation methods can be included (including proof-of-possession
+   key information).
+
+   The set of confirmation members that a CWT must contain to be
+   considered valid is context dependent and is outside the scope of
+   this specification.  Specific applications of CWTs will require
+   implementations to understand and process some confirmation members
+   in particular ways.  However, in the absence of such requirements,
+   all confirmation members that are not understood by implementations
+   MUST be ignored.
+
+   <a href="#section-7.2">Section 7.2</a> establishes the IANA &quot;CWT Confirmation Methods&quot; registry
+   for CWT &quot;cnf&quot; member values and registers the members defined by this
+   specification.  Other specifications can register other members used
+   for confirmation, including other members for conveying proof-of-
+   possession keys using different key representations.
+
+   The &quot;cnf&quot; claim value MUST represent only a single proof-of-
+   possession key.  At most one of the &quot;COSE_Key&quot; and
+   &quot;Encrypted_COSE_Key&quot; confirmation values defined in Table 1 may be
+   present.  Note that if an application needs to represent multiple
+   proof-of-possession keys in the same CWT, one way for it to achieve
+   this is to use other claim names (in addition to &quot;cnf&quot;) to hold the
+   additional proof-of-possession key information.  These claims could
+   use the same syntax and semantics as the &quot;cnf&quot; claim.  Those claims
+   would be defined by applications or other specifications and could be
+   registered in the IANA &quot;CBOR Web Token (CWT) Claims&quot; registry
+   [<a href="#ref-IANA.CWT.Claims">IANA.CWT.Claims</a>].
+
+       +--------------------+-----+-------------------------------+
+       | Name               | Key | Value type                    |
+       +====================+=====+===============================+
+       | COSE_Key           | 1   | COSE_Key                      |
+       +--------------------+-----+-------------------------------+
+       | Encrypted_COSE_Key | 2   | COSE_Encrypt or COSE_Encrypt0 |
+       +--------------------+-----+-------------------------------+
+       | kid                | 3   | binary string                 |
+       +--------------------+-----+-------------------------------+
+
+        Table 1: Summary of the &quot;cnf&quot; Names, Keys, and Value Types
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Representation of an Asymmetric Proof-of-Possession Key</span>
+
+   When the key held by the presenter is an asymmetric private key, the
+   &quot;COSE_Key&quot; member is a COSE_Key [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>] representing the
+   corresponding asymmetric public key.  The following example
+   demonstrates such a declaration in the CWT Claims Set of a CWT:
+
+    {
+    /iss/ 1 : &quot;coaps://server.example.com&quot;,
+    /aud/ 3 : &quot;coaps://client.example.org&quot;,
+    /exp/ 4 : 1879067471,
+    /cnf/ 8 :{
+      /COSE_Key/ 1 :{
+        /kty/ 1 : /EC2/ 2,
+        /crv/ -1 : /P-256/ 1,
+        /x/ -2 : h&#x27;d7cc072de2205bdc1537a543d53c60a6acb62eccd890c7fa27c9
+                   e354089bbe13&#x27;,
+        /y/ -3 : h&#x27;f95e1d4b851a2cc80fff87d8e23f22afb725d535e515d020731e
+                   79a3b4e47120&#x27;
+       }
+     }
+   }
+
+   The COSE_Key MUST contain the required key members for a COSE_Key of
+   that key type and MAY contain other COSE_Key members, including the
+   &quot;kid&quot; (Key ID) member.
+
+   The &quot;COSE_Key&quot; member MAY also be used for a COSE_Key representing a
+   symmetric key, provided that the CWT is encrypted so that the key is
+   not revealed to unintended parties.  The means of encrypting a CWT is
+   explained in [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>].  If the CWT is not encrypted, the symmetric
+   key MUST be encrypted as described in <a href="#section-3.3">Section 3.3</a>.  This procedure is
+   equivalent to the one defined in <a href="/doc/html/rfc7800#section-3.3">Section&nbsp;3.3 of [RFC7800]</a>.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Representation of an Encrypted Symmetric Proof-of-Possession Key</span>
+
+   When the key held by the presenter is a symmetric key, the
+   &quot;Encrypted_COSE_Key&quot; member is an encrypted COSE_Key [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>]
+   representing the symmetric key encrypted to a key known to the
+   recipient using COSE_Encrypt or COSE_Encrypt0.
+
+   The following example illustrates a symmetric key that could
+   subsequently be encrypted for use in the &quot;Encrypted_COSE_Key&quot; member:
+
+   {
+    /kty/ 1 : /Symmetric/ 4,
+    /alg/ 3 : /HMAC 256-256/ 5,
+    /k/ -1 : h&#x27;6684523ab17337f173500e5728c628547cb37df
+               e68449c65f885d1b73b49eae1&#x27;
+   }
+
+   The COSE_Key representation is used as the plaintext when encrypting
+   the key.
+
+   The following example CWT Claims Set of a CWT illustrates the use of
+   an encrypted symmetric key as the &quot;Encrypted_COSE_Key&quot; member value:
+
+   {
+    /iss/ 1 : &quot;coaps://server.example.com&quot;,
+    /sub/ 2 : &quot;24400320&quot;,
+    /aud/ 3: &quot;s6BhdRkqt3&quot;,
+    /exp/ 4 : 1311281970,
+    /iat/ 5 : 1311280970,
+    /cnf/ 8 : {
+    /Encrypted_COSE_Key/ 2 : [
+       /protected header/ h&#x27;A1010A&#x27; /{ \alg\ 1:10 \AES-CCM-16-64-128\}/,
+       /unprotected header/ { / iv / 5: h&#x27;636898994FF0EC7BFCF6D3F95B&#x27;},
+       /ciphertext/  h&#x27;0573318A3573EB983E55A7C2F06CADD0796C9E584F1D0E3E
+                       A8C5B052592A8B2694BE9654F0431F38D5BBC8049FA7F13F&#x27;
+      ]
+     }
+   }
+
+   The example above was generated with the key:
+
+   h&#x27;6162630405060708090a0b0c0d0e0f10&#x27;
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Representation of a Key ID for a Proof-of-Possession Key</span>
+
+   The proof-of-possession key can also be identified using a Key ID
+   instead of communicating the actual key, provided the recipient is
+   able to obtain the identified key using the Key ID.  In this case,
+   the issuer of a CWT declares that the presenter possesses a
+   particular key and that the recipient can cryptographically confirm
+   the presenter&#x27;s proof of possession of the key by including a &quot;cnf&quot;
+   claim in the CWT whose value is a CBOR map containing a &quot;kid&quot; member
+   identifying the key.
+
+   The following example demonstrates such a declaration in the CWT
+   Claims Set of a CWT:
+
+   {
+    /iss/ 1 : &quot;coaps://as.example.com&quot;,
+    /aud/ 3 : &quot;coaps://resource.example.org&quot;,
+    /exp/ 4 : 1361398824,
+    /cnf/ 8 : {
+      /kid/ 3 : h&#x27;dfd1aa976d8d4575a0fe34b96de2bfad&#x27;
+     }
+   }
+
+   The content of the &quot;kid&quot; value is application specific.  For
+   instance, some applications may choose to use a cryptographic hash of
+   the public key value as the &quot;kid&quot; value.
+
+   Note that the use of a Key ID to identify a proof-of-possession key
+   needs to be carefully circumscribed, as described below and in
+   <a href="#section-6">Section 6</a>.  In cases where the Key ID is not a cryptographic value
+   derived from the key or where not all of the parties involved are
+   validating the cryptographic derivation, implementers should expect
+   collisions where different keys are assigned the same Key ID.
+   Recipients of a CWT with a PoP key linked through only a Key ID
+   should be prepared to handle such situations.
+
+   In the world of constrained Internet of Things (IoT) devices, there
+   is frequently a restriction on the size of Key IDs, either because of
+   table constraints or a desire to keep message sizes small.
+
+   Note that the value of a Key ID for a specific key is not necessarily
+   the same for different parties.  When sending a COSE encrypted
+   message with a shared key, the Key ID may be different on both sides
+   of the conversation, with the appropriate one being included in the
+   message based on the recipient of the message.
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a>.  Specifics Intentionally Not Specified</span>
+
+   Proof of possession is often demonstrated by having the presenter
+   sign a value determined by the recipient using the key possessed by
+   the presenter.  This value is sometimes called a &quot;nonce&quot; or a
+   &quot;challenge&quot;.  There are, however, also other means to demonstrate
+   freshness of the exchange and to link the proof-of-possession key to
+   the participating parties, as demonstrated by various authentication
+   and key exchange protocols.
+
+   The means of communicating the nonce and the nature of its contents
+   are intentionally not described in this specification, as different
+   protocols will communicate this information in different ways.
+   Likewise, the means of communicating the signed nonce is also not
+   specified, as this is also protocol specific.
+
+   Note that other means of proving possession of the key exist, which
+   could be used in conjunction with a CWT&#x27;s confirmation key.
+   Applications making use of such alternate means are encouraged to
+   register them in the IANA &quot;CBOR Web Token (CWT) Confirmation Methods&quot;
+   registry established in <a href="#section-7.2">Section 7.2</a>.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   All the security considerations that are discussed in [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>] also
+   apply here.  In addition, proof of possession introduces its own
+   unique security issues.  Possessing a key is only valuable if it is
+   kept secret.  Appropriate means must be used to ensure that
+   unintended parties do not learn private key or symmetric key values.
+
+   Applications utilizing proof of possession SHOULD also utilize
+   audience restriction, as described in <a href="/doc/html/rfc8392#section-3.1.3">Section&nbsp;3.1.3 of [RFC8392]</a>,
+   because it provides additional protections.  Audience restriction can
+   be used by recipients to reject messages intended for different
+   recipients.  (Of course, applications not using proof of possession
+   can also benefit from using audience restriction to reject messages
+   intended for different recipients.)
+
+   CBOR Web Tokens with proof-of-possession keys are used in context of
+   an architecture, such as the ACE OAuth Framework [<a href="#ref-ACE-OAUTH">ACE-OAUTH</a>], in
+   which protocols are used by a presenter to request these tokens and
+   to subsequently use them with recipients.  Proof of possession only
+   provides the intended security gains when the proof is known to be
+   current and not subject to replay attacks; security protocols using
+   mechanisms such as nonces and timestamps can be used to avoid the
+   risk of replay when performing proof of possession for a token.  Note
+   that a discussion of the architecture or specific protocols that CWTs
+   with proof-of-possession keys are used with is beyond the scope of
+   this specification.
+
+   As is the case with other information included in a CWT, it is
+   necessary to apply data origin authentication and integrity
+   protection (via a keyed message digest or a digital signature).  Data
+   origin authentication ensures that the recipient of the CWT learns
+   about the entity that created the CWT, since this will be important
+   for any policy decisions.  Integrity protection prevents an adversary
+   from changing any elements conveyed within the CWT payload.  Special
+   care has to be applied when carrying symmetric keys inside the CWT
+   since those not only require integrity protection but also
+   confidentiality protection.
+
+   As described in <a href="#section-6">Section 6</a> (Key Identification) and <a href="#appendix-D">Appendix D</a> (Notes
+   on Key Selection) of [<a href="#ref-JWS" title="&quot;JSON Web Signature (JWS)&quot;">JWS</a>], it is important to make explicit trust
+   decisions about the keys.  Proof-of-possession signatures made with
+   keys not meeting the application&#x27;s trust criteria MUST NOT be relied
+   upon.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Privacy Considerations</span>
+
+   A proof-of-possession key can be used as a correlation handle if the
+   same key is used on multiple occasions.  Thus, for privacy reasons,
+   it is recommended that different proof-of-possession keys be used
+   when interacting with different parties.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Operational Considerations</span>
+
+   The use of CWTs with proof-of-possession keys requires additional
+   information to be shared between the involved parties in order to
+   ensure correct processing.  The recipient needs to be able to use
+   credentials to verify the authenticity and integrity of the CWT.
+   Furthermore, the recipient may need to be able to decrypt either the
+   whole CWT or the encrypted parts thereof (see <a href="#section-3.3">Section 3.3</a>).  This
+   requires the recipient to know information about the issuer.
+   Likewise, there needs to be agreement between the issuer and the
+   recipient about the claims being used (which is also true of CWTs in
+   general).
+
+   When an issuer creates a CWT containing a Key ID claim, it needs to
+   make sure that it does not issue another CWT with different claims
+   containing the same Key ID within the lifetime of the CWTs, unless
+   intentionally desired.  Failure to do so may allow one party to
+   impersonate another party, with the potential to gain additional
+   privileges.  A case where such reuse of a Key ID would be intentional
+   is when a presenter obtains a CWT with different claims (e.g.,
+   extended scope) for the same recipient but wants to continue using an
+   existing security association (e.g., a DTLS session) bound to the key
+   identified by the Key ID.  Likewise, if PoP keys are used for
+   multiple different kinds of CWTs in an application and the PoP keys
+   are identified by Key IDs, care must be taken to keep the keys for
+   the different kinds of CWTs segregated so that an attacker cannot
+   cause the wrong PoP key to be used by using a valid Key ID for the
+   wrong kind of CWT.  Using an audience restriction for the CWT would
+   be one strategy to mitigate this risk.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+   The following registration procedure is used for all the registries
+   established by this specification.
+
+   Values are registered on a Specification Required [<a href="/doc/html/rfc8126" title="">RFC8126</a>] basis
+   after a three-week review period on the &lt;cwt-reg-review@ietf.org&gt;
+   mailing list, on the advice of one or more designated experts.
+   However, to allow for the allocation of values prior to publication,
+   the designated experts may approve registration once they are
+   satisfied that such a specification will be published.
+
+   Registration requests sent to the mailing list for review should use
+   an appropriate subject (e.g., &quot;Request to Register CWT Confirmation
+   Method: example&quot;).  Registration requests that are undetermined for a
+   period longer than 21 days can be brought directly to IANA&#x27;s
+   attention (using the iana@iana.org mailing list) for resolution.
+
+   Designated experts should determine whether a registration request
+   contains enough information for the registry to be populated with the
+   new values and whether the proposed new functionality already exists.
+   In the case of an incomplete registration or an attempt to register
+   already existing functionality, the designated experts should ask for
+   corrections or reject the registration.
+
+   It is suggested that multiple designated experts be appointed who are
+   able to represent the perspectives of different applications using
+   this specification in order to enable broadly informed review of
+   registration decisions.  In cases where a registration decision could
+   be perceived as creating a conflict of interest for a particular
+   expert, that expert should defer to the judgment of the other
+   experts.
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  CBOR Web Token Claims Registration</span>
+
+   This specification registers the &quot;cnf&quot; claim in the IANA &quot;CBOR Web
+   Token (CWT) Claims&quot; registry [<a href="#ref-IANA.CWT.Claims">IANA.CWT.Claims</a>], established by
+   [<a href="/doc/html/rfc8392" title="&quot;CBOR Web Token (CWT)&quot;">RFC8392</a>].
+
+<span class="h4"><a class="selflink" id="section-7.1.1" href="#section-7.1.1">7.1.1</a>.  Registry Contents</span>
+
+   *  Claim Name: &quot;cnf&quot;
+
+   *  Claim Description: Confirmation
+
+   *  JWT Claim Name: &quot;cnf&quot;
+
+   *  Claim Key: 8
+
+   *  Claim Value Type(s): map
+
+   *  Change Controller: IESG
+
+   *  Specification Document(s): <a href="/doc/html/rfc8747#section-3.1">Section&nbsp;3.1 of RFC 8747</a>
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  CWT Confirmation Methods Registry</span>
+
+   This specification establishes the IANA &quot;CWT Confirmation Methods&quot;
+   registry for CWT &quot;cnf&quot; member values.  The registry records the
+   confirmation method member and a reference to the specification that
+   defines it.
+
+<span class="h4"><a class="selflink" id="section-7.2.1" href="#section-7.2.1">7.2.1</a>.  Registration Template</span>
+
+   Confirmation Method Name:
+      The human-readable name requested (e.g., &quot;kid&quot;).
+
+   Confirmation Method Description:
+      Brief description of the confirmation method (e.g., &quot;Key
+      Identifier&quot;).
+
+   JWT Confirmation Method Name:
+      Claim Name of the equivalent JWT confirmation method value, as
+      registered in the &quot;JSON Web Token Claims&quot; subregistry in the &quot;JSON
+      Web Token (JWT)&quot; registry [<a href="#ref-IANA.JWT" title="&quot;JSON Web Token (JWT)&quot;">IANA.JWT</a>].  CWT claims should normally
+      have a corresponding JWT claim.  If a corresponding JWT claim
+      would not make sense, the designated experts can choose to accept
+      registrations for which the JWT Claim Name is listed as &quot;N/A&quot;.
+
+   Confirmation Key:
+      CBOR map key value for the confirmation method.
+
+   Confirmation Value Type(s):
+      CBOR types that can be used for the confirmation method value.
+
+   Change Controller:
+      For Standards Track RFCs, list the &quot;IESG&quot;.  For others, give the
+      name of the responsible party.
+
+   Specification Document(s):
+      Reference to the document or documents that specify the parameter,
+      preferably including URIs that can be used to retrieve copies of
+      the documents.  An indication of the relevant sections may also be
+      included but is not required.  Note that the designated experts
+      and IANA must be able to obtain copies of the specification
+      document(s) to perform their work.
+
+<span class="h4"><a class="selflink" id="section-7.2.2" href="#section-7.2.2">7.2.2</a>.  Initial Registry Contents</span>
+
+   *  Confirmation Method Name: &quot;COSE_Key&quot;
+   *  Confirmation Method Description: COSE_Key Representing Public Key
+   *  JWT Confirmation Method Name: &quot;jwk&quot;
+   *  Confirmation Key: 1
+   *  Confirmation Value Type(s): COSE_Key structure
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8747#section-3.2">Section&nbsp;3.2 of RFC 8747</a>
+
+   *  Confirmation Method Name: &quot;Encrypted_COSE_Key&quot;
+   *  Confirmation Method Description: Encrypted COSE_Key
+   *  JWT Confirmation Method Name: &quot;jwe&quot;
+   *  Confirmation Key: 2
+   *  Confirmation Value Type(s): COSE_Encrypt or COSE_Encrypt0
+      structure (with an optional corresponding COSE_Encrypt or
+      COSE_Encrypt0 tag)
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8747#section-3.3">Section&nbsp;3.3 of RFC 8747</a>
+
+   *  Confirmation Method Name: &quot;kid&quot;
+   *  Confirmation Method Description: Key Identifier
+   *  JWT Confirmation Method Name: &quot;kid&quot;
+   *  Confirmation Key: 3
+   *  Confirmation Value Type(s): binary string
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8747#section-3.4">Section&nbsp;3.4 of RFC 8747</a>
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-IANA.CWT.Claims">IANA.CWT.Claims</a>]
+              IANA, &quot;CBOR Web Token Claims&quot;,
+              &lt;<a href="https://www.iana.org/assignments/cwt">https://www.iana.org/assignments/cwt</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC7049">RFC7049</a>]  Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, <a href="/doc/html/rfc7049">RFC 7049</a>, DOI 10.17487/RFC7049,
+              October 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7049">https://www.rfc-editor.org/info/rfc7049</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8152">RFC8152</a>]  Schaad, J., &quot;CBOR Object Signing and Encryption (COSE)&quot;,
+              <a href="/doc/html/rfc8152">RFC 8152</a>, DOI 10.17487/RFC8152, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8152">https://www.rfc-editor.org/info/rfc8152</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8392">RFC8392</a>]  Jones, M., Wahlstroem, E., Erdtman, S., and H. Tschofenig,
+              &quot;CBOR Web Token (CWT)&quot;, <a href="/doc/html/rfc8392">RFC 8392</a>, DOI 10.17487/RFC8392,
+              May 2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8392">https://www.rfc-editor.org/info/rfc8392</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-ACE-OAUTH">ACE-OAUTH</a>]
+              Seitz, L., Selander, G., Wahlstroem, E., Erdtman, S., and
+              H. Tschofenig, &quot;Authentication and Authorization for
+              Constrained Environments (ACE) using the OAuth 2.0
+              Framework (ACE-OAuth)&quot;, Work in Progress, Internet-Draft,
+              <a href="/doc/html/draft-ietf-ace-oauth-authz-21">draft-ietf-ace-oauth-authz-21</a>, 14 February 2019,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-21">https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-21">21</a>&gt;.
+
+   [<a id="ref-IANA.JWT">IANA.JWT</a>] IANA, &quot;JSON Web Token (JWT)&quot;,
+              &lt;<a href="https://www.iana.org/assignments/jwt">https://www.iana.org/assignments/jwt</a>&gt;.
+
+   [<a id="ref-JWS">JWS</a>]      Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web
+              Signature (JWS)&quot;, <a href="/doc/html/rfc7515">RFC 7515</a>, DOI 10.17487/RFC7515, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7515">https://www.rfc-editor.org/info/rfc7515</a>&gt;.
+
+   [<a id="ref-JWT">JWT</a>]      Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web Token
+              (JWT)&quot;, <a href="/doc/html/rfc7519">RFC 7519</a>, DOI 10.17487/RFC7519, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7519">https://www.rfc-editor.org/info/rfc7519</a>&gt;.
+
+   [<a id="ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>]
+              Cantor, S., Kemp, J., Philpott, R., and E. Maler,
+              &quot;Assertions and Protocol for the OASIS Security Assertion
+              Markup Language (SAML) V2.0&quot;, OASIS Standard saml-core-
+              2.0-os, March 2005, &lt;<a href="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">https://docs.oasis-</a>
+              <a href="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">open.org/security/saml/v2.0/saml-core-2.0-os.pdf</a>&gt;.
+
+   [<a id="ref-RFC7800">RFC7800</a>]  Jones, M., Bradley, J., and H. Tschofenig, &quot;Proof-of-
+              Possession Key Semantics for JSON Web Tokens (JWTs)&quot;,
+              <a href="/doc/html/rfc7800">RFC 7800</a>, DOI 10.17487/RFC7800, April 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7800">https://www.rfc-editor.org/info/rfc7800</a>&gt;.
+
+   [<a id="ref-RFC8259">RFC8259</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, STD 90, <a href="/doc/html/rfc8259">RFC 8259</a>,
+              DOI 10.17487/RFC8259, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8259">https://www.rfc-editor.org/info/rfc8259</a>&gt;.
+
+   [<a id="ref-RFC8610">RFC8610</a>]  Birkholz, H., Vigano, C., and C. Bormann, &quot;Concise Data
+              Definition Language (CDDL): A Notational Convention to
+              Express Concise Binary Object Representation (CBOR) and
+              JSON Data Structures&quot;, <a href="/doc/html/rfc8610">RFC 8610</a>, DOI 10.17487/RFC8610,
+              June 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8610">https://www.rfc-editor.org/info/rfc8610</a>&gt;.
+
+Acknowledgements
+
+   Thanks to the following people for their reviews of the
+   specification: Roman Danyliw, Christer Holmberg, Benjamin Kaduk,
+   Mirja Kühlewind, Yoav Nir, Michael Richardson, Adam Roach, Éric
+   Vyncke, and Jim Schaad.
+
+   Ludwig Seitz and Göran Selander worked on this document as part of
+   the CelticPlus projects CyberWI and CRITISEC, with funding from
+   Vinnova.
+
+Authors&#x27; Addresses
+
+   Michael B. Jones
+   Microsoft
+
+   Email: mbj@microsoft.com
+   URI:   <a href="https://self-issued.info/">https://self-issued.info/</a>
+
+
+   Ludwig Seitz
+   Combitech
+   Djaeknegatan 31
+   SE-211 35 Malmö
+   Sweden
+
+   Email: ludwig.seitz@combitech.se
+
+
+   Göran Selander
+   Ericsson AB
+   SE-164 80 Kista
+   Sweden
+
+   Email: goran.selander@ericsson.com
+
+
+   Samuel Erdtman
+   Spotify
+
+   Email: erdtman@spotify.com
+
+
+   Hannes Tschofenig
+   Arm Ltd.
+   6060 Hall in Tirol
+   Austria
+
+   Email: Hannes.Tschofenig@arm.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

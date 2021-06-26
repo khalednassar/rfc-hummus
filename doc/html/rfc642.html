@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc642
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc642/">
+  <meta name="description" content="Ready line philosophy and implementation (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc642.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc642.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc642.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc642/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc642/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc642@ietf.org?subject=rfc642" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc642-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc642-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc642-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                    Jerry Burchfiel
+Request for Comments: 642                                            BBN
+NIC: 30872                                                  July 5, 1974
+
+
+                <span class="h1">Ready Line Philosophy and Implementation</span>
+
+<span class="h2"><a class="selflink" id="appendix-I" href="#appendix-I">I</a>.  Introduction</span>
+
+   BBN Report #1822, Specifications for the Interconnection of a Host
+   and an IMP, gives a complete specification of the Host-IMP interface.
+   However, the authors of this document bent over backward to avoid
+   issuing arbitrary dictatorial directives to host interface
+   implementors.  They succeeded admirably in this goal by describing
+   the IMP implementation, and suggesting similar behavior on the part
+   of the host.
+
+   ARPA has appointed a PDP-11 local host interface standardization
+   committee composed of myself, Dave Retz of SCRL, and Yuval Peduel of
+   MIT Lincoln Labs.  During our review of various interfaces designed
+   by the ARPA community, we have found total chaos, confusion and
+   misunderstanding about the recommended host interface implementation.
+
+   This note is an attempt to make explicit the recommendations which
+   are implicit in Report #1822.  It provides a cookbook for interface
+   implementors, including a set of recommended do&#x27;s and don&#x27;t&#x27;s in the
+   common problem areas.  This document has been reviewed and approved
+   by the BBN IMP group.
+
+II.  Ready-line Philosophy
+
+   The following is an attempt to spell out in detail a consistent plan
+   for operation of the IMP ready line and host ready line with the
+   following objectives:
+
+      1.  Reliably resynchronize and resume transmission after a
+          temporary lapse of service and possible loss of state
+          information by either system.
+
+      2.  Make the programming of the host interface as simple as
+          possible.  This will minimize bugs, and make it possible to
+          create a small ROM network-bootstrap loader.
+
+   First, consider the IMP ready line.  When it drops, the IMP has
+   suffered a possible loss of state, so the message in transit from the
+   IMP to the host (if any) is likely to be incomplete.  Similarly, the
+   message in transit from the host to the IMP (if any) is likely to be
+   incomplete.  Both the host and the IMP must recognize this explicitly
+
+
+
+<span class="grey">Burchfiel                                                       [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc642">RFC 642</a>         Ready Line Philosophy and Implementation       July 1974</span>
+
+
+   by sending a message intended to be thrown away* (which may he
+   appended to the current message) and throw away the message currently
+   being received.  (Both the host - IMP message and the IMP - host
+   message).
+
+   The simplest arrangement for the host&#x27;s interface driver is a pair of
+   processes, one sending messages and the other receiving messages.
+   This drop of the IMP&#x27;s ready line must be provided as an error status
+   bit to each process.  However, the two processes will need to clear
+   this condition independently: the simplest implementation is an Input
+   Error flop and an Output Error flop.  Both flops are set by a drop of
+   the IMP&#x27;s ready line, and they are cleared independently under
+   program control.
+
+   When the IMP raises its ready line, each contact bounce will again
+   set the Error flops in the host&#x27;s interface.  To insure that messages
+   are not flowing across the interface at this time, assertions of the
+   signals &quot;there&#x27;s your IMP bit&quot; and &quot;ready for next host bit&quot; have
+   been delayed sufficiently in the IMP to guarantee that the IMP ready
+   line has stabilized.
+
+III.  Programming
+
+   The interface driver processes can be described simply:
+
+   INPUT:  Wait until an input buffer is available
+           Wait until IMP ready
+           Start input
+           Wait until input is complete
+           IF Input Error
+           THEN clear Input Error  // Flush smashed message.  Input
+                                   // buffer will be reused.
+           ELSE queue message on input queue
+           GOTO INPUT
+
+   OUTPUT: Wait until a message is present on output queue
+           Wait until IMP ready
+           Start output
+           Wait until output is complete
+           IF Output Error
+           THEN clear Output Error  // smashed message is flushed
+           ELSE deque message from output queue  // Free up
+                                                 // output buffer
+           GOTO 0UTPUT
+
+   ----------
+   *The standard convention uses the host-IMP NOP message.
+
+
+
+
+<span class="grey">Burchfiel                                                       [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc642">RFC 642</a>         Ready Line Philosophy and Implementation       July 1974</span>
+
+
+   The only initialization required for system startup or restart is
+   clearing the host READY flop, waiting 1/2 second, and setting the
+   host READY flop.  Simply starting (or restarting) the above processes
+   will properly resynchronize host-IMP communication.  As explained in
+   RFC #636, the IMP ready line (and error flops) should only affect the
+   two processes above: this resynchronization should be invisible to
+   the NCP, and should have no effect on the connection data base.  The
+   NCP will be resynchronized or reinitialized by the type 10 IMP-to-
+   host message &quot;interface was reset.&quot;
+
+   Actually, it is possible to share a single Error flop between the
+   input and output processes by implementing Input Error and Output
+   Error as software flags.  A process testing for error must test both
+   the Error flop and its own flag.  An interlock is required (e.g.  a
+   mutual exclusion  semaphore) to guarantee that only one process at a
+   time is testing and modifying the flags.  If the Error flop is set,
+   the process must copy it into the other process&#x27; flag before clearing
+   the flop and its own flag.
+
+IV.  Host Ready Line Implementation
+
+   When the host drops and raises its ready line, the IMP behaves in a
+   fashion symmetric to that outlined above.  Of course, this drop
+   indicates that the state of the host&#x27;s interface driver, as well as
+   the current incoming and outgoing messages, are likely to be lost.
+   The appropriate action is triggered by setting the Error flop or
+   flops in the host interface, and the processes specified above will
+   correctly resynchronize message flow in both directions.  Of course,
+   to guarantee that messages are not flowing across the interface while
+   the host ready line is undergoing contact bounce, the host must delay
+   transmission until its ready line has stabilized.  This may be done
+   in two ways:
+
+      Hardware: an integrating one-shot driven by the host ready line
+           flop is ANDed with &quot;there&#x27;s your host bit&quot; and &quot;ready for
+           next IMP bit&quot; to guarantee that message transfer will not
+           start until the ready flop has been on for 1/2 second.
+
+      Software: the initialization program executes a 1/2 second wait
+           after setting the host ready flop before permitting input or
+           output to begin.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Burchfiel                                                       [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc642">RFC 642</a>         Ready Line Philosophy and Implementation       July 1974</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-V" href="#appendix-V">V</a>.  Summary</span>
+
+   This determines the specification READY line controls for the host&#x27;s
+   interface to the IMP:
+
+      1.  It contains a program settable/clearable host READY flop which
+          drives a relay closure to the IMP.
+
+      2.  It detects the IMP&#x27;s ready signal as a program-readable status
+          condition.  (But not an interrupt condition)
+
+      3.  It contains one or two ERROR flops set when either the host
+          READY flop is off or the IMP ready signal is off.  The flop
+          (flops) is a program-readable and program-clearable status
+          condition.  (But not an interrupt condition).  These status
+          flops must not be cleared by system initialization.
+
+      4.  If hardware stabilization of the host&#x27;s READY line is
+          provided, it is a 1/2 second integrating one-shot driven by
+          the host READY flop.  This signal is ANDed with &quot;there&#x27;s your
+          host bit&quot; and &quot;ready for next IMP bit&quot;.
+
+
+
+
+
+
+
+
+
+
+
+       [ This RFC was put into machine readable form for entry ]
+       [ into the online RFC archives by Alex McKenzie with    ]
+       [ support from GTE, formerly BBN Corp.           2/2000 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Burchfiel                                                       [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

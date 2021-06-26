@@ -1,0 +1,1129 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8877
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ntp-packet-timestamps/">
+  <meta name="description" content="Guidelines for Defining Packet Timestamps (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8877.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8877.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8877.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8877.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8877/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8877/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ntp/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ntp-packet-timestamps@ietf.org?subject=draft-ietf-ntp-packet-timestamps" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ntp-packet-timestamps-09.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ntp-packet-timestamps-09.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ntp-packet-timestamps-09.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ntp-packet-timestamps-09">draft-ietf-ntp-packet-timestamps-09</a>                  Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        T. Mizrahi
+Request for Comments: 8877                                        Huawei
+Category: Informational                                        J. Fabini
+ISSN: 2070-1721                                                  TU Wien
+                                                               A. Morton
+                                                               AT&amp;T Labs
+                                                          September 2020
+
+
+               <span class="h1">Guidelines for Defining Packet Timestamps</span>
+
+Abstract
+
+   Various network protocols make use of binary-encoded timestamps that
+   are incorporated in the protocol packet format, referred to as
+   &quot;packet timestamps&quot; for short.  This document specifies guidelines
+   for defining packet timestamp formats in networking protocols at
+   various layers.  It also presents three recommended timestamp
+   formats.  The target audience of this document includes network
+   protocol designers.  It is expected that a new network protocol that
+   requires a packet timestamp will, in most cases, use one of the
+   recommended timestamp formats.  If none of the recommended formats
+   fits the protocol requirements, the new protocol specification should
+   specify the format of the packet timestamp according to the
+   guidelines in this document.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8877">https://www.rfc-editor.org/info/rfc8877</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Background
+     1.2.  Scope of this Document
+     1.3.  How to Use This Document
+   2.  Terminology
+     2.1.  Requirements Language
+     2.2.  Abbreviations
+     2.3.  Terms Used in This Document
+   3.  Packet Timestamp Specification Template
+   4.  Recommended Timestamp Formats
+     4.1.  Using a Recommended Timestamp Format
+     4.2.  NTP Timestamp Formats
+       4.2.1.  NTP 64-Bit Timestamp Format
+       4.2.2.  NTP 32-Bit Timestamp Format
+     4.3.  The PTP Truncated Timestamp Format
+   5.  Synchronization Aspects
+   6.  Timestamp Use Cases
+     6.1.  Example 1
+     6.2.  Example 2
+   7.  Packet Timestamp Control Field
+     7.1.  High-Level Control Field Requirements
+   8.  IANA Considerations
+   9.  Security Considerations
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Background</span>
+
+   Timestamps are widely used in network protocols for various purposes:
+   for logging or reporting the time of an event, for messages in delay
+   measurement and clock synchronization protocols, and as part of a
+   value that is unlikely to repeat (nonce) in security protocols.
+
+   Timestamps are represented in the RFC series in one of two forms:
+   text-based timestamps and packet timestamps.  Text-based timestamps
+   [<a href="/doc/html/rfc3339" title="&quot;Date and Time on the Internet: Timestamps&quot;">RFC3339</a>] are represented as user-friendly strings and are widely
+   used in the RFC series -- for example, in information objects and
+   data models, e.g., [<a href="/doc/html/rfc5646" title="&quot;Tags for Identifying Languages&quot;">RFC5646</a>], [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>], and [<a href="/doc/html/rfc7493" title="&quot;The I-JSON Message Format&quot;">RFC7493</a>].  Packet
+   timestamps, on the other hand, are represented by a compact binary
+   field that has a fixed size and are not intended to have a human-
+   friendly format.  Packet timestamps are also very common in the RFC
+   series and are used, for example, for measuring delay and for
+   synchronizing clocks, e.g., [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>], [<a href="/doc/html/rfc4656" title="&quot;A One-way Active Measurement Protocol (OWAMP)&quot;">RFC4656</a>], and [<a href="/doc/html/rfc7323" title="&quot;TCP Extensions for High Performance&quot;">RFC7323</a>].
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Scope of this Document</span>
+
+   This document presents guidelines for defining a packet timestamp
+   format in network protocols.  Three recommended timestamp formats are
+   presented.  It is expected that a new network protocol that requires
+   a packet timestamp will, in most cases, use one of these recommended
+   timestamp formats.  In some cases, a network protocol may use more
+   than one of the recommended timestamp formats.  However, if none of
+   the recommended formats fits the protocol requirements, the new
+   protocol specification should specify the format of the packet
+   timestamp according to the guidelines in this document.
+
+   The rationale behind defining a relatively small set of recommended
+   formats is that it enables significant reuse; network protocols can
+   typically reuse the timestamp format of the Network Time Protocol
+   (NTP) [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>] or the Precision Time Protocol (PTP) [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>],
+   allowing a straightforward integration with an NTP- or PTP-based
+   timer.  Moreover, since accurate timestamping mechanisms are often
+   implemented in hardware, a new network protocol that reuses an
+   existing timestamp format can be quickly deployed using existing
+   hardware timestamping capabilities.
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  How to Use This Document</span>
+
+   This document is intended as a reference for network protocol
+   designers.  When defining a network protocol that uses a packet
+   timestamp, the recommended timestamp formats should be considered
+   first (<a href="#section-4">Section 4</a>).  If one of these formats is used, it should be
+   referenced along the lines of the examples in Sections <a href="#section-6.1">6.1</a> and <a href="#section-6.2">6.2</a>.
+   If none of the recommended formats fits the required functionality,
+   then a new timestamp format should be defined using the template in
+   <a href="#section-3">Section 3</a>.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Abbreviations</span>
+
+   NTP     Network Time Protocol [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>]
+
+   PTP     Precision Time Protocol [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>]
+
+   TAI     International Atomic Time
+
+   UTC     Coordinated Universal Time
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Terms Used in This Document</span>
+
+   Timestamp:             A value that represents a point in time,
+                          corresponding to an event that occurred or is
+                          scheduled to occur.
+
+   Timestamp error:       The difference between the timestamp value and
+                          the value of a reference clock at the time of
+                          the event that the timestamp was intended to
+                          indicate.
+
+   Timestamp format:      The specification of a timestamp, which is
+                          represented by a set of attributes that
+                          unambiguously defines the syntax and semantics
+                          of a timestamp.
+
+   Timestamp accuracy:    The mean over an ensemble of measurements of
+                          the timestamp error.
+
+   Timestamp precision:   The variation over an ensemble of measurements
+                          of the timestamp error.
+
+   Timestamp resolution:  The minimal time unit used for representing
+                          the timestamp.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Packet Timestamp Specification Template</span>
+
+   This document recommends using the timestamp formats defined in
+   <a href="#section-4">Section 4</a>.  In cases where these timestamp formats do not satisfy the
+   protocol requirements, the timestamp specification should clearly
+   state the reasons for defining a new format.  Moreover, it is
+   recommended to derive the new timestamp format from an existing
+   timestamp format, either a timestamp format from this document or any
+   other previously defined timestamp format.
+
+   The timestamp specification must unambiguously define the syntax and
+   semantics of the timestamp.  The current section defines the minimum
+   set of attributes, but it should be noted that in some cases,
+   additional attributes or aspects will need to be defined in the
+   timestamp specification.
+
+   This section defines a template for specifying packet timestamps.  A
+   timestamp format specification MUST include at least the following
+   aspects:
+
+   Timestamp syntax:
+      Size:  The number of bits (or octets) used to represent the packet
+         timestamp field.  If the timestamp is comprised of more than
+         one field, the size of each field is specified.  Network order
+         (big endian) is assumed by default; if this is not the case,
+         then this section explicitly specifies the endianity.
+
+   Timestamp semantics:
+      Units:  The units used to represent the timestamp.  If the
+         timestamp is comprised of more than one field, the units of
+         each field are specified.  If a field is limited to a specific
+         range of values, this section specifies the permitted range of
+         values.
+
+      Resolution:  The timestamp resolution; the resolution is equal to
+         the timestamp field unit.  If the timestamp consists of two or
+         more fields using different time units, then the resolution is
+         the smallest time unit.
+
+      Wraparound:  The wraparound period of the timestamp; any further
+         wraparound-related considerations should be described here.
+
+      Epoch:  The origin of the timescale used for the timestamp; the
+         moment in time used as a reference for the timestamp value.
+         For example, the epoch may be based on a standard time scale,
+         such as UTC.  Another example is a relative timestamp, in which
+         the epoch could be the time at which the device using the
+         timestamp was powered up and is not affected by leap seconds
+         (see the next attribute).
+
+      Leap seconds:  This subsection specifies whether the timestamp is
+         affected by leap seconds.  If the timestamp is affected by leap
+         seconds, then it represents the time elapsed since the epoch
+         minus the number of leap seconds that have occurred since the
+         epoch.
+
+   Synchronization aspects:
+      The specification of a network protocol that makes use of a packet
+      timestamp is expected to include the synchronization aspects of
+      using the timestamp.  While the synchronization aspects are not
+      strictly part of the timestamp format specification, these aspects
+      provide the necessary context for using the timestamp within the
+      scope of the protocol.  In some cases, timestamps are used without
+      synchronization, e.g., a timestamp that indicates the number of
+      seconds since power-up.  In such cases, the Synchronization
+      Aspects section will specify that the timestamp does not
+      correspond to a synchronized time reference and may discuss how
+      this affects the usage of the timestamp.  Further details about
+      synchronization aspects are discussed in <a href="#section-5">Section 5</a>.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Recommended Timestamp Formats</span>
+
+   This document defines a set of recommended timestamp formats.
+   Clearly, different network protocols may have different requirements
+   and constraints; consequently, they may use different timestamp
+   formats.  The choice of a specific timestamp format for a given
+   protocol may depend on various factors.  A few examples of factors
+   that may affect the choice of the timestamp format include the
+   following:
+
+   *  Timestamp size: While some network protocols use a large timestamp
+      field, in some cases, there may be constraints with respect to the
+      timestamp size, affecting the choice of the timestamp format.
+
+   *  Resolution: The time resolution is another factor that may
+      directly affect the selected timestamp format.  A potentially
+      important factor in this context is extensibility; it may be
+      desirable to allow a timestamp format to be extensible to a higher
+      resolution by extending the field.  For example, the resolution of
+      the NTP 32-bit timestamp format can be improved by extending it to
+      the NTP 64-bit timestamp format in a straightforward way.
+
+   *  Wraparound period: The length of the time interval in which the
+      timestamp is unique may also be an important factor in choosing
+      the timestamp format.  Along with the timestamp resolution, these
+      two factors determine the required number of bits in the
+      timestamp.
+
+   *  Common format for multiple protocols: If there are two or more
+      network protocols that use timestamps and are often used together
+      in typical systems, using a common timestamp format should be
+      preferred if possible.  For example, if the network protocol that
+      is being defined typically runs on a PC, then an NTP-based
+      timestamp format may allow easier integration with an NTP-
+      synchronized timer.  In contrast, a protocol that is typically
+      deployed on a hardware-based platform may make better use of a
+      PTP-based timestamp, allowing more efficient integration with a
+      PTP-synchronized timer.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Using a Recommended Timestamp Format</span>
+
+   A specification that uses one of the recommended timestamp formats
+   should specify explicitly that this is a recommended timestamp format
+   and point to the relevant section in the current document.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  NTP Timestamp Formats</span>
+
+<span class="h4"><a class="selflink" id="section-4.2.1" href="#section-4.2.1">4.2.1</a>.  NTP 64-Bit Timestamp Format</span>
+
+   The Network Time Protocol (NTP) 64-bit timestamp format is defined in
+   [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>].  This timestamp format is used in several network
+   protocols, including [<a href="/doc/html/rfc6374" title="&quot;Packet Loss and Delay Measurement for MPLS Networks&quot;">RFC6374</a>], [<a href="/doc/html/rfc4656" title="&quot;A One-way Active Measurement Protocol (OWAMP)&quot;">RFC4656</a>], and [<a href="/doc/html/rfc5357" title="&quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC5357</a>].  Since this
+   timestamp format is used in NTP, it should be preferred in network
+   protocols that are typically deployed in concert with NTP.
+
+   The format is presented in this section according to the template
+   defined in <a href="#section-3">Section 3</a>.
+
+        0                   1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                            Seconds                            |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                            Fraction                           |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                   Figure 1: NTP 64-Bit Timestamp Format
+
+   Timestamp field format:
+      Seconds:  Specifies the integer portion of the number of seconds
+         since the epoch.
+
+         Size:  32 bits.
+
+         Units:  Seconds.
+
+      Fraction:  Specifies the fractional portion of the number of
+         seconds since the epoch.
+
+         Size:  32 bits.
+
+         Units:  The unit is 2^(-32) seconds, which is roughly equal to
+            233 picoseconds.
+
+   Epoch:
+      The epoch is 1 January 1900 at 00:00 UTC.
+
+      Note: As pointed out in [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>], strictly speaking, UTC did not
+      exist prior to 1 January 1972, but it is convenient to assume it
+      has existed for all eternity.  The current epoch implies that the
+      timestamp specifies the number of seconds since 1 January 1972 at
+      00:00 UTC plus 2272060800 (which is the number of seconds between
+      1 January 1900 and 1 January 1972).
+
+   Leap seconds:
+      This timestamp format is affected by leap seconds.  The timestamp
+      represents the number of seconds elapsed since the epoch minus the
+      number of leap seconds.  Thus, during and possibly before and/or
+      after the occurrence of a leap second, the value of the timestamp
+      may temporarily be ambiguous, as further discussed in <a href="#section-5">Section 5</a>.
+
+   Resolution:
+      The resolution is 2^(-32) seconds.
+
+   Wraparound:
+      This time format wraps around every 2^(32) seconds, which is
+      roughly 136 years.  The next wraparound will occur in the year
+      2036.
+
+<span class="h4"><a class="selflink" id="section-4.2.2" href="#section-4.2.2">4.2.2</a>.  NTP 32-Bit Timestamp Format</span>
+
+   The Network Time Protocol (NTP) 32-bit timestamp format is defined in
+   [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>].  This timestamp format is used in [<a href="#ref-METRICS" title="&quot;Initial Performance Metrics Registry Entries&quot;">METRICS</a>] and [<a href="#ref-NSHMD" title="&quot;Network Service Header (NSH) MD Type 1: Context Header Allocation (Data Center)&quot;">NSHMD</a>].
+   This timestamp format should be preferred in network protocols that
+   are typically deployed in concert with NTP.  The 32-bit format can be
+   used either when space constraints do not allow the use of the 64-bit
+   format or when the 32-bit format satisfies the resolution and
+   wraparound requirements.
+
+   The format is presented in this section according to the template
+   defined in <a href="#section-3">Section 3</a>.
+
+        0                   1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |          Seconds              |           Fraction            |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                   Figure 2: NTP 32-Bit Timestamp Format
+
+   Timestamp field format:
+      Seconds:  Specifies the integer portion of the number of seconds
+         since the epoch.
+
+         Size:  16 bits.
+
+         Units:  Seconds.
+
+      Fraction:  Specifies the fractional portion of the number of
+         seconds since the epoch.
+
+         Size:  16 bits.
+
+         Units:  The unit is 2^(-16) seconds, which is roughly equal to
+            15.3 microseconds.
+
+   Epoch:
+      The epoch is 1 January 1900 at 00:00 UTC.
+
+      Note: As pointed out in [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>], strictly speaking, UTC did not
+      exist prior to 1 January 1972, but it is convenient to assume it
+      has existed for all eternity.  The current epoch implies that the
+      timestamp specifies the number of seconds since 1 January 1972 at
+      00:00 UTC plus 2272060800 (which is the number of seconds between
+      1 January 1900 and 1 January 1972).
+
+   Leap seconds:
+      This timestamp format is affected by leap seconds.  The timestamp
+      represents the number of seconds elapsed since the epoch minus the
+      number of leap seconds.  Thus, during and possibly before and/or
+      after the occurrence of a leap second, the value of the timestamp
+      may temporarily be ambiguous, as further discussed in <a href="#section-5">Section 5</a>.
+
+   Resolution:
+      The resolution is 2^(-16) seconds.
+
+   Wraparound:
+      This time format wraps around every 2^(16) seconds, which is
+      roughly 18 hours.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  The PTP Truncated Timestamp Format</span>
+
+   The Precision Time Protocol (PTP) [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>] uses an 80-bit timestamp
+   format.  The truncated timestamp format is a 64-bit field, which is
+   the 64 least significant bits of the 80-bit PTP timestamp.  Since
+   this timestamp format is similar to the one used in PTP, this
+   timestamp format should be preferred in network protocols that are
+   typically deployed in PTP-capable devices.
+
+   The PTP truncated timestamp format was defined in [<a href="#ref-IEEE1588v1">IEEE1588v1</a>] and is
+   used in several protocols, such as [<a href="/doc/html/rfc6374" title="&quot;Packet Loss and Delay Measurement for MPLS Networks&quot;">RFC6374</a>], [<a href="/doc/html/rfc7456" title="&quot;Loss and Delay Measurement in Transparent Interconnection of Lots of Links (TRILL)&quot;">RFC7456</a>], [<a href="/doc/html/rfc8186" title="&quot;Support of the IEEE 1588 Timestamp Format in a Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC8186</a>],
+   and [<a href="#ref-ITU-T-Y.1731">ITU-T-Y.1731</a>].
+
+
+        0                   1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                            Seconds                            |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                          Nanoseconds                          |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                  Figure 3: PTP Truncated Timestamp Format
+
+   Timestamp field format:
+      Seconds:  Specifies the integer portion of the number of seconds
+         since the epoch.
+
+         Size:  32 bits.
+
+         Units:  Seconds.
+
+      Nanoseconds:  Specifies the fractional portion of the number of
+         seconds since the epoch.
+
+         Size:  32 bits.
+
+         Units:  Nanoseconds.  The value of this field is in the range 0
+            to (10^(9))-1.
+
+   Epoch:
+      The PTP [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>] epoch is 1 January 1970 00:00:00 TAI.
+
+   Leap seconds:
+      This timestamp format is not affected by leap seconds.
+
+   Resolution:
+      The resolution is 1 nanosecond.
+
+   Wraparound:
+      This time format wraps around every 2^(32) seconds, which is
+      roughly 136 years.  The next wraparound will occur in the year
+      2106.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Synchronization Aspects</span>
+
+   A specification that defines a new timestamp format or uses one of
+   the recommended timestamp formats should include a Synchronization
+   Aspects section.  Note that the recommended timestamp formats defined
+   in this document (<a href="#section-4">Section 4</a>) do not include the synchronization
+   aspects of these timestamp formats, but it is expected that
+   specifications of network protocols that make use of these formats
+   should include the synchronization aspects.  Examples of a
+   Synchronization Aspects section can be found in <a href="#section-6">Section 6</a>.
+
+   The Synchronization Aspects section should specify all the
+   assumptions and requirements related to synchronization.  For
+   example, the synchronization aspects may specify whether nodes
+   populating the timestamps should be synchronized among themselves and
+   whether the timestamp is measured with respect to a central reference
+   clock such as an NTP server.  If time is assumed to be synchronized
+   to a time standard such as UTC or TAI, it should be specified in this
+   section.  Further considerations may be discussed in this section,
+   such as the required timestamp accuracy and precision.
+
+   Another aspect that should be discussed in this section is leap
+   second [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>] considerations.  The timestamp specification
+   template (<a href="#section-3">Section 3</a>) specifies whether the timestamp is affected by
+   leap seconds.  It is often the case that further details about leap
+   seconds will need to be defined in the Synchronization Aspects
+   section.  Generally speaking, a leap second is a one-second
+   adjustment that is occasionally applied to UTC in order to keep it
+   aligned with solar time.  A leap second may be either positive or
+   negative, i.e., the clock may either be shifted one second forward or
+   backward.  All leap seconds that have occurred up to the publication
+   of this document have been in the backward direction, and although
+   forward leap seconds are theoretically possible, the text throughout
+   this document focuses on the common case, which is the backward leap
+   second.  In a timekeeping system that considers leap seconds, the
+   system clock may be affected by a leap second in one of three
+   possible ways:
+
+   *  The clock is turned backwards one second at the end of the leap
+      second.
+
+   *  The clock is frozen during the duration of the leap second.
+
+   *  The clock is slowed down during the leap second and adjacent time
+      intervals until the new time value catches up.  The interval for
+      this process, commonly referred to as &quot;leap smear&quot;, can range from
+      several seconds to several hours before, during, and/or after the
+      occurrence of the leap second.
+
+   The way leap seconds are handled depends on the synchronization
+   protocol and is thus not specified in this document.  However, if a
+   timestamp format is defined with respect to a timescale that is
+   affected by leap seconds, the Synchronization Aspects section should
+   specify how the use of leap seconds affects the timestamp usage.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Timestamp Use Cases</span>
+
+   Packet timestamps are used in various network protocols.  Typical
+   applications of packet timestamps include delay measurement, clock
+   synchronization, and others.  The following table presents a (non-
+   exhaustive) list of protocols that use packet timestamps and the
+   timestamp formats used in each of these protocols.
+
+   +=================+======================================+=======+
+   |                 |         Recommended Formats          | Other |
+   +=================+============+============+============+=======+
+   |     Protocol    | NTP 64-Bit | NTP 32-Bit | PTP Trunc. |       |
+   +=================+============+============+============+=======+
+   |  NTP [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>]  |     +      |            |            |       |
+   +-----------------+------------+------------+------------+-------+
+   | OWAMP [<a href="/doc/html/rfc4656" title="&quot;A One-way Active Measurement Protocol (OWAMP)&quot;">RFC4656</a>] |     +      |            |            |       |
+   +-----------------+------------+------------+------------+-------+
+   | TWAMP [<a href="/doc/html/rfc5357" title="&quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC5357</a>] |     +      |            |            |       |
+   | TWAMP [<a href="/doc/html/rfc8186" title="&quot;Support of the IEEE 1588 Timestamp Format in a Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC8186</a>] |     +      |            |     +      |       |
+   +-----------------+------------+------------+------------+-------+
+   | TRILL [<a href="/doc/html/rfc7456" title="&quot;Loss and Delay Measurement in Transparent Interconnection of Lots of Links (TRILL)&quot;">RFC7456</a>] |            |            |     +      |       |
+   +-----------------+------------+------------+------------+-------+
+   |  MPLS [<a href="/doc/html/rfc6374" title="&quot;Packet Loss and Delay Measurement for MPLS Networks&quot;">RFC6374</a>] |            |            |     +      |       |
+   +-----------------+------------+------------+------------+-------+
+   |  TCP [<a href="/doc/html/rfc7323" title="&quot;TCP Extensions for High Performance&quot;">RFC7323</a>]  |            |            |            |   +   |
+   +-----------------+------------+------------+------------+-------+
+   |  RTP [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]  |     +      |            |            |   +   |
+   +-----------------+------------+------------+------------+-------+
+   | IPFIX [<a href="/doc/html/rfc7011" title="&quot;Specification of the IP Flow Information Export (IPFIX) Protocol for the Exchange of Flow Information&quot;">RFC7011</a>] |            |            |            |   +   |
+   +-----------------+------------+------------+------------+-------+
+   |    BinaryTime   |            |            |            |   +   |
+   |    [<a href="/doc/html/rfc6019" title="&quot;BinaryTime: An Alternate Format for Representing Date and Time in ASN.1&quot;">RFC6019</a>]    |            |            |            |       |
+   +-----------------+------------+------------+------------+-------+
+   |    [<a href="#ref-METRICS" title="&quot;Initial Performance Metrics Registry Entries&quot;">METRICS</a>]    |     +      |     +      |            |       |
+   +-----------------+------------+------------+------------+-------+
+   |     [<a href="#ref-NSHMD" title="&quot;Network Service Header (NSH) MD Type 1: Context Header Allocation (Data Center)&quot;">NSHMD</a>]     |            |     +      |     +      |       |
+   +-----------------+------------+------------+------------+-------+
+
+             Table 1: Protocols That Use Packet Timestamps
+
+   The rest of this section presents two hypothetical examples of
+   network protocol specifications that use one of the recommended
+   timestamp formats.  The examples include the text that specifies the
+   information related to the timestamp format.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Example 1</span>
+
+   Timestamp:
+      The timestamp format used in this specification is the NTP
+      [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>] 64-bit format, as described in Section 4.2.1 of <a href="/doc/html/rfc8877">RFC</a>
+      <a href="/doc/html/rfc8877">8877</a>.
+
+   Synchronization aspects:
+      It is assumed that the nodes that run this protocol are
+      synchronized to UTC using a synchronization mechanism that is
+      outside the scope of this document.  In typical deployments, this
+      protocol will run on a machine that uses NTP [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>] for
+      synchronization.  Thus, the timestamp may be derived from the NTP-
+      synchronized clock, allowing the timestamp to be measured with
+      respect to the clock of an NTP server.  Since the NTP time format
+      is affected by leap seconds, the current timestamp format is
+      similarly affected.  Thus, the value of a timestamp during and
+      possibly before and/or after a leap second may be temporarily
+      inaccurate.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Example 2</span>
+
+   Timestamp:
+      The timestamp format used in this specification is the PTP
+      [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>] truncated format, as described in Section 4.3 of <a href="/doc/html/rfc8877">RFC</a>
+      <a href="/doc/html/rfc8877">8877</a>.
+
+   Synchronization aspects:
+      It is assumed that the nodes that run this protocol are
+      synchronized among themselves.  Nodes may be synchronized to a
+      global reference time.  Note that if PTP [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>] is used for
+      synchronization, the timestamp may be derived from the PTP-
+      synchronized clock, allowing the timestamp to be measured with
+      respect to a PTP grandmaster clock.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Packet Timestamp Control Field</span>
+
+   In some cases, it is desirable to have a control field that describes
+   the structure, format, content, and properties of timestamps.
+   Control information about the timestamp format can be conveyed in
+   some protocols using a dedicated control plane protocol or may be
+   made available at the management plane, for example, using a YANG
+   data model.  An optional control field allows some of the control
+   information to be attached to the timestamp.
+
+   An example of a packet timestamp control field is the Error Estimate
+   field, defined by <a href="/doc/html/rfc4656#section-4.1.2">Section&nbsp;4.1.2 of [RFC4656]</a>, which is used in the
+   One-Way Active Measurement Protocol (OWAMP) [<a href="/doc/html/rfc4656" title="&quot;A One-way Active Measurement Protocol (OWAMP)&quot;">RFC4656</a>] and Two-Way
+   Active Measurement Protocol (TWAMP) [<a href="/doc/html/rfc5357" title="&quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC5357</a>].  The Root Dispersion
+   and Root Delay fields in the NTP header [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>] are two examples of
+   fields that provide information about the timestamp precision.
+   Another example of an auxiliary field is the Correction Field in the
+   PTP header [<a href="#ref-IEEE1588" title="&quot;IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems&quot;">IEEE1588</a>]; its value is used as a correction to the
+   timestamp and may be assigned by the sender of the PTP message and
+   updated by transit nodes (Transparent Clocks) in order to account for
+   the delay along the path.
+
+   This section defines high-level guidelines for defining packet
+   timestamp control fields in network protocols that can benefit from
+   such timestamp-related control information.  The word &quot;requirements&quot;
+   is used in its informal context in this section.
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  High-Level Control Field Requirements</span>
+
+   A control field for packet timestamps must offer an adequate feature
+   set and fulfill a series of requirements to be usable and accepted.
+   The following list captures the main high-level requirements for
+   timestamp fields.
+
+   1.  Extensible Feature Set: Protocols and applications depend on
+       various timestamp characteristics.  A timestamp control field
+       must support a variable number of elements (components) that
+       either describe or quantify timestamp-specific characteristics or
+       parameters.  Examples of potential elements include timestamp
+       size, encoding, accuracy, leap seconds, reference clock
+       identifiers, etc.
+
+   2.  Size: Essential for an efficient use of timestamp control fields
+       is the trade-off between supported features and control field
+       size.  Protocols and applications may select the specific control
+       field elements that are needed for their operation from the set
+       of available elements.
+
+   3.  Composition: Applications may depend on specific control field
+       elements being present in messages.  The status of these elements
+       may be either mandatory, conditional mandatory, or optional,
+       depending on the specific application and context.  A control
+       field specification must support applications in conveying or
+       negotiating (a) the set of control field elements along with (b)
+       the status of any element (i.e., mandatory, conditional
+       mandatory, or optional) by defining appropriate data structures
+       and identity codes.
+
+   4.  Category: Control field elements can characterize either static
+       timestamp information (e.g., timestamp size in bytes and
+       timestamp semantics: NTP 64-bit format) or runtime timestamp
+       information (e.g., estimated timestamp accuracy at the time of
+       sampling: 20 microseconds to UTC).  For efficiency reasons, it
+       may be meaningful to support separation of these two concepts:
+       while the former (static) information is typically valid
+       throughout a protocol session and may be conveyed only once, at
+       session establishment time, the latter (runtime) information
+       augments any timestamp instance and may cause substantial
+       overhead for high-traffic protocols.
+
+   Proposals for timestamp control fields will be defined in separate
+   documents and are out of scope of this document.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Security Considerations</span>
+
+   A network protocol that uses a packet timestamp MUST specify the
+   security considerations that result from using the timestamp.  This
+   section provides an overview of some of the common security
+   considerations of using timestamps.
+
+   Any metadata that is attached to control or data packets, and
+   specifically packet timestamps, can facilitate network
+   reconnaissance; by passively eavesdropping on timestamped packets, an
+   attacker can gather information about the network performance and the
+   level of synchronization between nodes.
+
+   In some cases, timestamps could be spoofed or modified by on-path
+   attackers, thus attacking the application that uses the timestamps.
+   For example, if timestamps are used in a delay measurement protocol,
+   an attacker can modify en route timestamps in a way that manipulates
+   the measurement results.  Integrity protection mechanisms, such as
+   Message Authentication Codes (MACs), can mitigate such attacks.  The
+   specification of an integrity protection mechanism is outside the
+   scope of this document as, typically, integrity protection will be
+   defined on a per-network-protocol basis and not specifically for the
+   timestamp field.
+
+   Another potential threat that can have a similar impact is delay
+   attacks.  An attacker can maliciously delay some or all of the en
+   route messages, with the same harmful implications as described in
+   the previous paragraph.  Mitigating delay attacks is a significant
+   challenge; in contrast to spoofing and modification attacks, the
+   delay attack cannot be prevented by cryptographic integrity
+   protection mechanisms.  In some cases, delay attacks can be mitigated
+   by sending the timestamped information through multiple paths,
+   allowing detection of and resistance to an attacker that has access
+   to one of the paths.
+
+   In many cases, timestamping relies on an underlying synchronization
+   mechanism.  Thus, any attack that compromises the synchronization
+   mechanism can also compromise protocols that use timestamping.
+   Attacks on time protocols are discussed in detail in [<a href="/doc/html/rfc7384" title="&quot;Security Requirements of Time Protocols in Packet Switched Networks&quot;">RFC7384</a>].
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-IEEE1588">IEEE1588</a>] IEEE, &quot;IEEE Standard for a Precision Clock Synchronization
+              Protocol for Networked Measurement and Control Systems&quot;,
+              DOI 10.1109/IEEESTD.2008.4579760, IEEE Std. 1588-2008,
+              July 2008, &lt;<a href="https://doi.org/10.1109/IEEESTD.2008.4579760">https://doi.org/10.1109/IEEESTD.2008.4579760</a>&gt;.
+
+   [<a id="ref-IEEE1588v1">IEEE1588v1</a>]
+              IEEE, &quot;IEEE Standard for a Precision Clock Synchronization
+              Protocol for Networked Measurement and Control Systems&quot;,
+              DOI 10.1109/IEEESTD.2002.94144, IEEE Std. 1588-2002,
+              October 2002,
+              &lt;<a href="https://doi.org/10.1109/IEEESTD.2002.94144">https://doi.org/10.1109/IEEESTD.2002.94144</a>&gt;.
+
+   [<a id="ref-ITU-T-Y.1731">ITU-T-Y.1731</a>]
+              ITU-T, &quot;Operations, administration and maintenance (OAM)
+              functions and mechanisms for Ethernet-based networks&quot;,
+              ITU-T Recommendation G.8013/Y.1731, August 2015.
+
+   [<a id="ref-METRICS">METRICS</a>]  Morton, A., Bagnulo, M., Eardley, P., and K. D&#x27;Souza,
+              &quot;Initial Performance Metrics Registry Entries&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-ietf-ippm-initial-registry-16">draft-ietf-ippm-initial-</a>
+              <a href="/doc/html/draft-ietf-ippm-initial-registry-16">registry-16</a>, 9 March 2020, &lt;<a href="https://tools.ietf.org/html/draft-ietf-ippm-initial-registry-16">https://tools.ietf.org/html/</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-ippm-initial-registry-16">draft-ietf-ippm-initial-registry-16</a>&gt;.
+
+   [<a id="ref-NSHMD">NSHMD</a>]    Guichard, J., Smith, M., Kumar, S., Majee, S., and T.
+              Mizrahi, &quot;Network Service Header (NSH) MD Type 1: Context
+              Header Allocation (Data Center)&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-sfc-nsh-dc-allocation-02">draft-ietf-sfc-nsh-dc-allocation-02</a>, 25
+              September 2018, &lt;<a href="https://tools.ietf.org/html/draft-ietf-sfc-nsh-dc-allocation-02">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-sfc-nsh-dc-allocation-02">sfc-nsh-dc-allocation-02</a>&gt;.
+
+   [<a id="ref-RFC3339">RFC3339</a>]  Klyne, G. and C. Newman, &quot;Date and Time on the Internet:
+              Timestamps&quot;, <a href="/doc/html/rfc3339">RFC 3339</a>, DOI 10.17487/RFC3339, July 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</a>&gt;.
+
+   [<a id="ref-RFC3550">RFC3550</a>]  Schulzrinne, H., Casner, S., Frederick, R., and V.
+              Jacobson, &quot;RTP: A Transport Protocol for Real-Time
+              Applications&quot;, STD 64, <a href="/doc/html/rfc3550">RFC 3550</a>, DOI 10.17487/RFC3550,
+              July 2003, &lt;<a href="https://www.rfc-editor.org/info/rfc3550">https://www.rfc-editor.org/info/rfc3550</a>&gt;.
+
+   [<a id="ref-RFC4656">RFC4656</a>]  Shalunov, S., Teitelbaum, B., Karp, A., Boote, J., and M.
+              Zekauskas, &quot;A One-way Active Measurement Protocol
+              (OWAMP)&quot;, <a href="/doc/html/rfc4656">RFC 4656</a>, DOI 10.17487/RFC4656, September 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4656">https://www.rfc-editor.org/info/rfc4656</a>&gt;.
+
+   [<a id="ref-RFC5357">RFC5357</a>]  Hedayat, K., Krzanowski, R., Morton, A., Yum, K., and J.
+              Babiarz, &quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;,
+              <a href="/doc/html/rfc5357">RFC 5357</a>, DOI 10.17487/RFC5357, October 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5357">https://www.rfc-editor.org/info/rfc5357</a>&gt;.
+
+   [<a id="ref-RFC5646">RFC5646</a>]  Phillips, A., Ed. and M. Davis, Ed., &quot;Tags for Identifying
+              Languages&quot;, <a href="/doc/html/bcp47">BCP 47</a>, <a href="/doc/html/rfc5646">RFC 5646</a>, DOI 10.17487/RFC5646,
+              September 2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5646">https://www.rfc-editor.org/info/rfc5646</a>&gt;.
+
+   [<a id="ref-RFC5905">RFC5905</a>]  Mills, D., Martin, J., Ed., Burbank, J., and W. Kasch,
+              &quot;Network Time Protocol Version 4: Protocol and Algorithms
+              Specification&quot;, <a href="/doc/html/rfc5905">RFC 5905</a>, DOI 10.17487/RFC5905, June 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5905">https://www.rfc-editor.org/info/rfc5905</a>&gt;.
+
+   [<a id="ref-RFC6019">RFC6019</a>]  Housley, R., &quot;BinaryTime: An Alternate Format for
+              Representing Date and Time in ASN.1&quot;, <a href="/doc/html/rfc6019">RFC 6019</a>,
+              DOI 10.17487/RFC6019, September 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6019">https://www.rfc-editor.org/info/rfc6019</a>&gt;.
+
+   [<a id="ref-RFC6374">RFC6374</a>]  Frost, D. and S. Bryant, &quot;Packet Loss and Delay
+              Measurement for MPLS Networks&quot;, <a href="/doc/html/rfc6374">RFC 6374</a>,
+              DOI 10.17487/RFC6374, September 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6374">https://www.rfc-editor.org/info/rfc6374</a>&gt;.
+
+   [<a id="ref-RFC6991">RFC6991</a>]  Schoenwaelder, J., Ed., &quot;Common YANG Data Types&quot;,
+              <a href="/doc/html/rfc6991">RFC 6991</a>, DOI 10.17487/RFC6991, July 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6991">https://www.rfc-editor.org/info/rfc6991</a>&gt;.
+
+   [<a id="ref-RFC7011">RFC7011</a>]  Claise, B., Ed., Trammell, B., Ed., and P. Aitken,
+              &quot;Specification of the IP Flow Information Export (IPFIX)
+              Protocol for the Exchange of Flow Information&quot;, STD 77,
+              <a href="/doc/html/rfc7011">RFC 7011</a>, DOI 10.17487/RFC7011, September 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7011">https://www.rfc-editor.org/info/rfc7011</a>&gt;.
+
+   [<a id="ref-RFC7323">RFC7323</a>]  Borman, D., Braden, B., Jacobson, V., and R.
+              Scheffenegger, Ed., &quot;TCP Extensions for High Performance&quot;,
+              <a href="/doc/html/rfc7323">RFC 7323</a>, DOI 10.17487/RFC7323, September 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7323">https://www.rfc-editor.org/info/rfc7323</a>&gt;.
+
+   [<a id="ref-RFC7384">RFC7384</a>]  Mizrahi, T., &quot;Security Requirements of Time Protocols in
+              Packet Switched Networks&quot;, <a href="/doc/html/rfc7384">RFC 7384</a>, DOI 10.17487/RFC7384,
+              October 2014, &lt;<a href="https://www.rfc-editor.org/info/rfc7384">https://www.rfc-editor.org/info/rfc7384</a>&gt;.
+
+   [<a id="ref-RFC7456">RFC7456</a>]  Mizrahi, T., Senevirathne, T., Salam, S., Kumar, D., and
+              D. Eastlake 3rd, &quot;Loss and Delay Measurement in
+              Transparent Interconnection of Lots of Links (TRILL)&quot;,
+              <a href="/doc/html/rfc7456">RFC 7456</a>, DOI 10.17487/RFC7456, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7456">https://www.rfc-editor.org/info/rfc7456</a>&gt;.
+
+   [<a id="ref-RFC7493">RFC7493</a>]  Bray, T., Ed., &quot;The I-JSON Message Format&quot;, <a href="/doc/html/rfc7493">RFC 7493</a>,
+              DOI 10.17487/RFC7493, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7493">https://www.rfc-editor.org/info/rfc7493</a>&gt;.
+
+   [<a id="ref-RFC8186">RFC8186</a>]  Mirsky, G. and I. Meilik, &quot;Support of the IEEE 1588
+              Timestamp Format in a Two-Way Active Measurement Protocol
+              (TWAMP)&quot;, <a href="/doc/html/rfc8186">RFC 8186</a>, DOI 10.17487/RFC8186, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8186">https://www.rfc-editor.org/info/rfc8186</a>&gt;.
+
+Acknowledgments
+
+   The authors thank Russ Housley, Yaakov Stein, Greg Mirsky, Warner
+   Losh, Rodney Cummings, Miroslav Lichvar, Denis Reilly, Daniel Franke,
+   Éric Vyncke, Ben Kaduk, Ian Swett, Francesca Palombini, Watson Ladd,
+   and other members of the NTP Working Group for their many helpful
+   comments.  The authors gratefully acknowledge Harlan Stenn and the
+   people from the Network Time Foundation for sharing their thoughts
+   and ideas.
+
+Authors&#x27; Addresses
+
+   Tal Mizrahi
+   Huawei
+   8-2 Matam
+   Haifa 3190501
+   Israel
+
+   Email: tal.mizrahi.phd@gmail.com
+
+
+   Joachim Fabini
+   TU Wien
+   Gusshausstrasse 25/E389
+   1040 Vienna
+   Austria
+
+   Phone: +43 1 58801 38813
+   Email: Joachim.Fabini@tuwien.ac.at
+   URI:   <a href="http://www.tc.tuwien.ac.at/about-us/staff/joachim-fabini/">http://www.tc.tuwien.ac.at/about-us/staff/joachim-fabini/</a>
+
+
+   Al Morton
+   AT&amp;T Labs
+   200 Laurel Avenue South
+   Middletown, NJ 07748
+   United States of America
+
+   Phone: +1 732 420 1571
+   Email: acmorton@att.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

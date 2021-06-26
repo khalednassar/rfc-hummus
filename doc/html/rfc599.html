@@ -1,0 +1,769 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc599
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc599/">
+  <meta name="description" content="Update on NETRJS (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgbrown"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc599.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc599.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc599.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc599/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc599/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc599@ietf.org?subject=rfc599" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc599-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc599-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc599-.txt" title="Run an idnits check of this document">Nits</a>]
+
+Obsoleted by: <a href="/doc/html/rfc740">740</a>                                                Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+Network Working Group                                   Robert T. Braden
+NIC #20854                                                      UCLA/CCN
+RFC #599                                               December 13, 1973
+
+                            <span class="h1">UPDATE ON NETRJS</span>
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">A</a>.  INTRODUCTION</span>
+
+   In July 1971, CCN published RFC #189 defining NETRJS, a private
+   protocol for remote job entry.  NETRJS provides a Network interface
+   to CCN&#x27;s rje program called RJS (Remote Job Service).(3)  As noted in
+   an earlier RFC,(6) &quot;RJS&quot; is the proper name of a software package
+   existing ony at CCN, not a generic term for rje.
+
+   For over two years now, CCN has provided rje service to the Network
+   using NETRJS.  We know of the following distinct implementations of
+   NETRJS user porgrams:
+
+      RAND             OS/MVT on 370/158 (originally on 360/65)
+
+      UCLA-NMC         SEX on Sigma 7
+
+      Illinois         ANTS on PDP-11
+
+      Utah             Tenex on PDP-10
+
+      MIT-DMCG         ITS on PDP-10
+
+      Harvard          DEC system on PDP-10
+
+      UCSB             OS/MVT on 360/75
+
+      ISI,BBN,NIC,I4   Tenex on PDP-10
+
+   We apologize to anyone slighted by omission from this list.  Writing
+   a new user process for NETRJS has proved to be a modest and
+   straightforward task.
+
+   During the month of October, 1973, CCN processed 1373 batch jobs via
+   NETRJS.  The complete statistics are:
+
+        1,373          Jobs submitted
+
+        1,105          Jobs &quot;printed&quot;
+
+            0          Jobs &quot;punched&quot;
+
+
+
+
+
+
+Braden                                                          [page 1]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+       49,400          Cards &quot;read&quot;
+
+      822,900          Lines &quot;printed&quot;
+
+       18,907          Pages &quot;printed&quot;
+
+        393.6          Connect hours
+
+   The average job submitted was 360 lines (&quot;cards&quot;), and returned 745
+   lines on 17.1 pages.  These figures are fairly typical.
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">B</a>.  NEW ICP SOCKETS</span>
+
+   At the request of the Socket Czar, Jon Postel, (see RFC #433) we
+   intend to move the NETRJS ICP sockets from 11, 13, and 15 to 71, 73,
+   and 75, respectively.  At present, NETRJS is available from either
+   socket subspace, so system programmers responsible for maintaining
+   NETRJS user processes can switch over at their leisure.  We plan to
+   &quot;decommit&quot; sockets 11, 13, and 15 on July 1, 1974.
+
+   Those hosts which access NETRJS via socket 1 are unaffected.
+
+<span class="h2"><a class="selflink" id="appendix-C" href="#appendix-C">C</a>.  NEW NETRJS</span>
+
+   Last Fall, CCN installed a new implementation of its NETRJS server.
+   An internal NETRJS rewrite was necessitated by other system changes
+   and was timed to coincide with installation on September 5 of the
+   &quot;last release&quot; of OS/360, Release 21.7.  The new version of NETRJS
+   contains a number of internal improvements over the original version
+   written two years ago.  There are also a few external differences, as
+   follows:
+
+      1. No More Squish
+
+         The long-standing &quot;squish&quot; problem in NETRJS has been fixed.
+         This problem arose because of the &quot;squishiness&quot; of Network data
+         transfer, i.e. the variable delay between originator and
+         receiver processes due to NCP buffering.  The result was that a
+         short print output file could be &quot;transmitted&quot; by RJS,
+         dequeued, and discarded at CCN before the first message had
+         actually reached the remote host.  If the remote host crashed
+         or the user tried to cancel (and save) the output stream, it
+         was too late; the output was lost in the &quot;squish&quot;.  We were
+         careless about this in the first version.  Now NETRJS awaits
+         the RFNM from the end-of-data mark before telling RJS to
+         discard the job output.
+
+
+
+
+
+
+Braden                                                          [page 2]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+      2. Timeouts
+
+         The new verson is a little tougher on timeouts, to free CCN
+         resources when users are slow.
+
+            a. Signon Timeout
+
+               If the user, after connecting to NETRJS and receiving the
+               READY message, fails to send a valid SIGNON command
+               within 3 minutes, CCN will close the Telnet connections.
+
+            b. Data Transfer Timeout
+
+               (1)  CCN will abort the READER data transfer connection
+               if the user site leaves the connection open without
+               sending any bits for 5 minutes.
+
+               (2)  CCN will abort the PRINTER or PUNCH data transfer
+               connection if the user site stops accepting bits for 5
+               minutes.
+
+      3. New Messages
+
+         The NETRJS messages to the remote terminal have been revised to
+         better distinguish problems at CCN, at the user site, or in the
+         Network.  See Reference 8 for a complete list.
+
+      4. Subsystem Interrupt
+
+         The user can send a Control-C to terminate his NETRJS session
+         either before or after signon.  Continuation is not possible
+         after the Control-C.
+
+         This provides an escape for a user who for some reason can&#x27;t
+         signon or signoff or close his Telnet connection.  If the user
+         entered via the RJS command in Socket 1, Control C will return
+         him to the Server Telnet command level.
+
+   One other improvement will reduce user frustration:  NETRJS now
+   returns an INVALID SIGNON message if the user enters anything but a
+   valid SIGNON command after initially connecting to the NETRJS server.
+
+
+
+
+
+
+
+
+
+
+
+Braden                                                          [page 3]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+<span class="h2"><a class="selflink" id="appendix-D" href="#appendix-D">D</a>.  CLARIFICATIONS AND AMENDMENTS TO NETRJS PROTOCOL</span>
+
+   Over the past two years, system programmers writing NETRJS user
+   processes have pointed out areas of the protocol which were poorly
+   defined in RFC #189.  In addition a few minor changes have been made,
+   largely as the result of implementation accidents.
+
+      1.  The jobname header of a print file does not have an ASA
+          carriage control byte.  However, it will be encoded in the
+          format (compressed or truncated) selected by a particular
+          VRBT.
+
+      2.  The punch connection sends 81 byte records, the first byte
+          being a blank carriage control character.  This is contrary to
+          RFC #189 and is illogical; it was an implementation bug which
+          we kept for compatibility.
+
+      3.  Page 3 of RFC #189 defined fixed values for the user&#x27;s data
+          transfer sockets relative to his Telnet sockets.  In fact,
+          NETRJS does not enforce these user data transfer sockets but
+          will accept RFC&#x27;s for any user sockets.
+
+      4.  RFC #189 specified a choice of two character mappings for the
+          virtual remote batch terminal:  EBCDIC and ASCII (-68).  An
+          ASCII-63 mapping was later added for the convenience of users
+          with Model 33-like keyboards (RAND, actually).  The ASCII-63
+          mapping is selected by doing an ICP to socket 75 or by
+          entering &quot;TTYRJS&quot; in CN&#x27;s Telnet Server.  figure 1 shows the
+          actual ASCII-63 mapping in use today.  This supercedes the
+          earlier version of the mapping, shown in <a href="/doc/html/rfc338">RFC 338</a>.
+
+      5.  The ASCII-68 mapping specified in <a href="/doc/html/rfc189">RFC 189</a> was also changed to
+          provide unique mappings for all ASCII characters.  The present
+          ASCII-68 mapping used by both NETRJS and TSO at CCN is shown
+          in Figure 1.
+
+<span class="h2"><a class="selflink" id="appendix-E" href="#appendix-E">E</a>.  RJS TERMINAL OPTIONS</span>
+
+   When a new NETRJS virtual terminal is defined, certain options are
+   available; these options are listed below.  If the user does not
+   specify otherwise, CCN will use truncated data format and turn all
+   other options on.
+
+      1. Truncated/Compressed Data Format
+
+         As explained in <a href="/doc/html/rfc189">RFC 189</a>, a virtual remote batch terminal under
+         RJS may use either the turncated data format (default) or the
+
+
+
+
+
+Braden                                                          [page 4]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+         compressed format for printer and punch output.  With the
+         truncated format, CCN merely removes trailing blanks from each
+         output line; if compressed format is specified, CCN will also
+         encode strings of inbedded blanks or other repeated characters.
+         CCN will accept either format in the card reader stream,
+         regardless of the terminal option.  See Reference 9 for
+         discussion of the virtues of compression.
+
+      2. Automatic Coldstart Job Resubmission
+
+         If &quot;R&quot; (Restart) is specified in the accounting field on the
+         JOB card and if this option is chosen, RJS will automatically
+         resubmit the job from the beginning if the CCN operating system
+         should be &quot;coldstarted&quot; before all output from the job is
+         returned.  Otherwise, the job will be lost and must be
+         resubmitted from the remote terminal in case of a coldstart.
+
+      3. Automatic Output RESTART
+
+         With this option, transmission of printer output which is
+         interrupted by a broken connection always starts over at the
+         beginning.  Without this option, the output is backspaced
+         approximately one page when restarted, unless the user forces
+         the output to start over from the beginning with a RESTART
+         command when the printer connection is re-opened and before
+         printing begins.
+
+      4. Password Protection
+
+         This option allows a password to be supplied when a terminal is
+         signed on, preventing unauthorized use of the terminal ID.
+
+      5. Suppression of Punch Separator and Large Letters.
+
+         This option suppresses both separator cards which RJS normally
+         puts in front of each punched output deck, and separator pages
+         on printed output containing the job name in large block
+         letters.  These separators are an operational aid when the
+         ouptut is directed to a real printer or punch, but generally
+         undesirable for an ARPA user who is saving the output in a file
+         for on-line examination.
+
+
+
+
+
+
+
+
+
+
+
+Braden                                                          [page 5]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+<span class="h2"><a class="selflink" id="appendix-F" href="#appendix-F">F</a>.  WARNING ON TENEX NETRJS USER PROCESS (6)</span>
+
+   The Tenex implementation of NETRJS user program is a command normally
+   called &quot;RJS&quot;.  This program has some pitfalls of which users should
+   be aware.
+
+      1.  For strictly historical reasons, the commonly-available
+          version of the Tenex RJS command uses Socket 15, and
+          therefore, the ASCII-63 translation.  We hope to propagate
+          soon a version which uses the ASCII-68 mapping via Socket 73,
+          and stamp out the earlier version.
+
+      2.  The Tenex RJS command fails to recognize the US character
+          sometimes used instead of CR LF as end-of-line.  As noted in
+          <a href="/doc/html/rfc571">RFC 571</a>, the Tenex user FTP program has the same problem.
+
+      3.  The Tenex RJS command truncates without warning card images
+          exceeding 80 characters in length.
+
+<span class="h2"><a class="selflink" id="appendix-G" href="#appendix-G">G</a>.  REFERENCES ON NETRJS</span>
+
+   1. &quot;Interim NETRJS Specifications&quot;, R. T. Braden.  RFC #189:  NIC
+      #7133, July 15, 1971.
+
+      This is the basic system programmer&#x27;s definition document, and is
+      really the final specification.  The proposed changes mentioned on
+      the first page of RFC #189 were never implemented, since the DTP
+      then in vogue became obsolete.
+
+   2. &quot;NETRJS Remote Operator Commands&quot;, R. T. Braden.  NIC #7182,
+      August 9, 1971
+
+      This document together with References 3 and 8 define the remote
+      operator (i.e. user) command language for NETRJS, and form the
+      basic user documentation for NETRJS at CCN.
+
+   3. &quot;Implementation of a Remote Job Service&quot;, V. Martin and T. W.
+      Springer.  NIC #7183, July, 1971.
+
+   4. &quot;Remote Job Entry to CCN via UCLA Sigma 7; A scenario&quot;, UCLA/CCN.
+      NIC #7748, November 15, 1971.
+
+      This document described the first NETRJS user implementation
+      available on a server host.  This program is no longer of general
+      interest.
+
+
+
+
+
+
+
+Braden                                                          [page 6]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+   5. &quot;Using Network Remote Job Entry&quot;, E. F. Harslem.  RFC #307:  NIC
+      #9258, February 24, 1972.
+
+      This document is out of date, but describes generally the Tenex
+      NETRJS user process &quot;RJS&quot;.
+
+   6. &quot;EBCDIC/ASCII Mapping for Network RJS&quot;, R. T. Braden.  RFC #338:
+       NIC #9931, May 17, 1972.
+
+      The ASCII-63 mapping described here is no longer correct, but
+      CCN&#x27;s standard ASCII-68/EBCDIC mapping is described correctly.
+
+   7. &quot;NETRJT--Remote Job Service Protocol for TIP&#x27;s&quot;, R. T. Braden.
+      RFC #283: NIC 38165, December 20, 1971.
+
+      This was an attempt to define an rje protocol to handle TIPs.
+      Although NETRJT was never implemented, many of its features are
+      incorporated in the current Network standard RJE protocol.
+
+   8. &quot;CCN NETRJS Server Messages to Remote User&quot;, R. T. Braden.  NIC
+      #20268, November 26, 1973.
+
+   9. &quot;FTP Data Compression&quot;, R. T. Braden.  RFC #468:  NIC #14742,
+      March 8, 1973.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Braden                                                          [page 7]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+FIGURE 1.  NETRJS CHARACTER MAPPINGS AT UCLA-CCN
+
+   The character set of the VRBT (VIRTUAL Remote Batch Terminal) is
+   determined by the initial connection to RJS, as follows:
+
+      VRBT Character Set  |  ICP Socket    OR    Server Telnet Command
+      ----------------------------------------------------------------
+         EBCDIC           |      71         |          RJS
+         ASCII-68         |      73         |          ARJS
+         ASCII-63(tty)    |      75         |          TTYRJS
+
+   These mappings are as follows:
+
+      ASCII-68 Mapping:
+
+         Corresponding graphics are mapped one-to-one.
+
+         Unmatched graphics are mapped as in the table below.
+
+         ASCII-68 controls are mapped one-to-one onto the matching
+         EBCDIC controls, with DC4(ASCII) mapped onto TM(EBCDIC).
+
+      ASCII-63 Mapping:
+
+         Corresponding graphics are mapped one-to-one.
+
+         ASCII codes X&#x27;61&#x27; - X&#x27;7A&#x27; (the ASCII-68 lower case letters are
+         mapped onto EBCDIC lower case.
+
+         Unmatched graphics are mapped as shown in the table below.
+
+         ASCII-63 controls X&#x27;00&#x27; - X&#x27;1F&#x27; are mapped as for ASCII-68.
+
+         ASCII codes X&#x27;60&#x27; and X&#x27;7B&#x27; - X&#x27;7E&#x27; are mapped as shown in the
+         following table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Braden                                                          [page 8]</pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+                                                               13 Dec 73
+NIC 20854, <a href="/doc/html/rfc599">RFC 599</a>:  Update on NETRJS
+
+
+
+                EBCDIC       |    ASCII-68 VRBT    |    ASCII-63 VRBT
+         ---------------------------------------------------------------
+         vertical bar  X&#x27;4F&#x27; | vertical bar  X&#x27;7C&#x27; | open bracket  X&#x27;5B&#x27;
+         not sign      X&#x27;5F&#x27; | tilde         X&#x27;7E&#x27; | close bracket X&#x27;5D&#x27;
+         cent sign     X&#x27;4A&#x27; | back slash    X&#x27;5C&#x27; | back slash    X&#x27;5C&#x27;
+         underscore    X&#x27;6D&#x27; | underscore    X&#x27;5F&#x27; | left arrow    X&#x27;5F&#x27;
+         .             X&#x27;71&#x27; | up arrow      X&#x27;5E&#x27; | up arrow      X&#x27;5E&#x27;
+         open bracket  X&#x27;AD&#x27; | open bracket  X&#x27;5B&#x27; | .             X&#x27;7C&#x27;
+         close bracket X&#x27;BD&#x27; | close bracket X&#x27;5D&#x27; | .             X&#x27;7E&#x27;
+         .             X&#x27;8B&#x27; | open brace    X&#x27;7B&#x27; | .             X&#x27;7B&#x27;
+         .             X&#x27;9B&#x27; | close brace   X&#x27;7D&#x27; | .             X&#x27;7D&#x27;
+         .             X&#x27;79&#x27; | accent        X&#x27;60&#x27; | .             X&#x27;60&#x27;
+
+         Note : this page is available on-line as HELP RJSCHARS in CCN&#x27;s
+         Telnet Server (Socket 1).  The on-line version is set up to be
+         typed out on an ASCII-68 terminal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Braden                                                          [page 9]</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

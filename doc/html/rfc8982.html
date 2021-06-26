@@ -1,0 +1,764 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8982
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-regext-rdap-partial-response/">
+  <meta name="description" content="Registration Data Access Protocol (RDAP) Partial Response (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8982.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8982.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8982.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8982.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8982/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8982/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/regext/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-regext-rdap-partial-response@ietf.org?subject=draft-ietf-regext-rdap-partial-response" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-regext-rdap-partial-response-16.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-regext-rdap-partial-response-16.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-regext-rdap-partial-response-16.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-regext-rdap-partial-response-16">draft-ietf-regext-rdap-partial-response-16</a>       Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       M. Loffredo
+Request for Comments: 8982                                 M. Martinelli
+Category: Standards Track                            IIT-CNR/Registro.it
+ISSN: 2070-1721                                            February 2021
+
+
+       <span class="h1">Registration Data Access Protocol (RDAP) Partial Response</span>
+
+Abstract
+
+   The Registration Data Access Protocol (RDAP) does not include
+   capabilities to request partial responses.  Servers will only return
+   full responses that include all of the information that a client is
+   authorized to receive.  A partial response capability that limits the
+   amount of information returned, especially in the case of search
+   queries, could bring benefits to both clients and servers.  This
+   document describes an RDAP query extension that allows clients to
+   specify their preference for obtaining a partial response.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8982">https://www.rfc-editor.org/info/rfc8982</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Conventions Used in This Document
+   2.  RDAP Path Segment Specification
+     2.1.  Subsetting Metadata
+       2.1.1.  RDAP Conformance
+       2.1.2.  Representing Subsetting Links
+   3.  Dealing with Relationships
+   4.  Basic Field Sets
+   5.  Negative Answers
+   6.  IANA Considerations
+   7.  Security Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Approaches to Partial Response Implementation
+     A.1.  Specific Issues Raised by RDAP
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The use of partial responses in RESTful API [<a href="#ref-REST" title="&quot;Architectural Styles and the Design of Network-based Software Architectures&quot;">REST</a>] design is very
+   common.  The rationale is quite simple: instead of returning objects
+   in API responses with all data fields, only a subset of the fields in
+   each result object is returned.  The benefit is obvious: less data
+   transferred over the network means less bandwidth usage, faster
+   server responses, less CPU time spent both on the server and the
+   client, and less memory usage on the client.
+
+   Currently, RDAP does not provide a client with any way to request a
+   partial response.  Servers can only provide the client with a full
+   response [<a href="/doc/html/rfc7483" title="&quot;JSON Responses for the Registration Data Access Protocol (RDAP)&quot;">RFC7483</a>].  Servers cannot limit the amount of information
+   returned in a response based on a client&#x27;s preferences, and this
+   creates inefficiencies.
+
+   The protocol described in this specification extends RDAP search
+   capabilities to enable partial responses through the provisioning of
+   predefined sets of fields that clients can submit to an RDAP service
+   by adding a new query parameter.  The service is implemented using
+   the Hypertext Transfer Protocol (HTTP) [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>] and the conventions
+   described in [<a href="/doc/html/rfc7480" title="&quot;HTTP Usage in the Registration Data Access Protocol (RDAP)&quot;">RFC7480</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Conventions Used in This Document</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  RDAP Path Segment Specification</span>
+
+   The path segment defined in this section is an OPTIONAL extension of
+   search path segments defined in [<a href="/doc/html/rfc7482" title="&quot;Registration Data Access Protocol (RDAP) Query Format&quot;">RFC7482</a>].  This document defines an
+   RDAP query parameter, &quot;fieldSet&quot;, whose value is a non-empty string
+   identifying a server-defined set of fields returned in place of the
+   full response.  The field sets supported by a server are usually
+   described in out-of-band documents (e.g., RDAP profile) together with
+   other features.  Moreover, this document defines in <a href="#section-2.1">Section 2.1</a> an
+   in-band mechanism by means of which servers can provide clients with
+   basic information about the supported field sets.
+
+   The following is an example of an RDAP query including the &quot;fieldSet&quot;
+   parameter:
+
+   https://example.com/rdap/domains?name=example*.com&amp;fieldSet=afieldset
+
+   This solution can be implemented by RDAP providers with less effort
+   than field selection and is easily requested by clients.  The
+   considerations that have led to this solution are described in more
+   detail in <a href="#appendix-A">Appendix A</a>.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Subsetting Metadata</span>
+
+   According to most advanced principles in REST design, collectively
+   known as &quot;Hypermedia as the Engine of Application State&quot; (HATEOAS)
+   [<a href="#ref-HATEOAS" title="&quot;HATEOAS - a simple explanation&quot;">HATEOAS</a>], a client entering a REST application through an initial
+   URI should use server-provided links to dynamically discover
+   available actions and access the resources it needs.  In this way,
+   the client is not required to have prior knowledge of the service
+   nor, consequently, to hard-code the URIs of different resources.
+   This allows the server to make URI changes as the API evolves without
+   breaking clients.  Definitively, a REST service should be as self-
+   descriptive as possible.
+
+   Therefore, servers implementing the query parameter described in this
+   specification SHOULD provide additional information in their
+   responses about the available field sets.  Such information is
+   collected in a new JSON data structure named &quot;subsetting_metadata&quot;
+   containing the following properties:
+
+   &quot;currentFieldSet&quot;: &quot;String&quot; (REQUIRED)
+      either the value of the &quot;fieldSet&quot; parameter as specified in the
+      query string, or the field set applied by default.
+
+   &quot;availableFieldSets&quot;: &quot;AvailableFieldSet[]&quot; (OPTIONAL)
+      an array of objects, with each element describing an available
+      field set.  The AvailableFieldSet object includes the following
+      members:
+
+      &quot;name&quot;: &quot;String&quot; (REQUIRED)
+         the field set name.
+
+      &quot;default&quot;: &quot;Boolean&quot; (REQUIRED)
+         indicator of whether the field set is applied by default.  An
+         RDAP server MUST define only one default field set.
+
+      &quot;description&quot;: &quot;String&quot; (OPTIONAL)
+         a human-readable description of the field set.
+
+      &quot;links&quot;: &quot;Link[]&quot; (OPTIONAL)
+         an array of links as described in [<a href="/doc/html/rfc8288" title="&quot;Web Linking&quot;">RFC8288</a>] containing the
+         query string that applies the field set (see <a href="#section-2.1.2">Section 2.1.2</a>).
+
+<span class="h4"><a class="selflink" id="section-2.1.1" href="#section-2.1.1">2.1.1</a>.  RDAP Conformance</span>
+
+   Servers returning the &quot;subsetting_metadata&quot; section in their
+   responses MUST include &quot;subsetting&quot; in the rdapConformance array.
+
+<span class="h4"><a class="selflink" id="section-2.1.2" href="#section-2.1.2">2.1.2</a>.  Representing Subsetting Links</span>
+
+   An RDAP server MAY use the &quot;links&quot; array of the &quot;subsetting_metadata&quot;
+   element to provide ready-made references [<a href="/doc/html/rfc8288" title="&quot;Web Linking&quot;">RFC8288</a>] to the available
+   field sets (Figure 1).  The target URI in each link is the reference
+   to an alternative to the current view of results identified by the
+   context URI.
+
+   The &quot;value&quot;, &quot;rel&quot;, and &quot;href&quot; JSON values MUST be specified.  All
+   other JSON values are OPTIONAL.
+
+   {
+     &quot;rdapConformance&quot;: [
+       &quot;rdap_level_0&quot;,
+       &quot;subsetting&quot;
+     ],
+     ...
+     &quot;subsetting_metadata&quot;: {
+       &quot;currentFieldSet&quot;: &quot;afieldset&quot;,
+       &quot;availableFieldSets&quot;: [
+         {
+         &quot;name&quot;: &quot;anotherfieldset&quot;,
+         &quot;description&quot;: &quot;Contains some fields&quot;,
+         &quot;default&quot;: false,
+         &quot;links&quot;: [
+           {
+           &quot;value&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                     &amp;fieldSet=afieldset&quot;,
+           &quot;rel&quot;: &quot;alternate&quot;,
+           &quot;href&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                    &amp;fieldSet=anotherfieldset&quot;,
+           &quot;title&quot;: &quot;Result Subset Link&quot;,
+           &quot;type&quot;: &quot;application/rdap+json&quot;
+           }
+         ]
+         },
+       ...
+       ]
+     },
+     ...
+     &quot;domainSearchResults&quot;: [
+       ...
+     ]
+   }
+
+           Figure 1: Example of a &quot;subsetting_metadata&quot; Instance
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Dealing with Relationships</span>
+
+   Representation of second-level objects within a field set produces
+   additional considerations.  Since the representation of the topmost
+   returned objects will vary according to the field set in use, the
+   response may contain no relationships (e.g., for an abbreviated field
+   set) or may contain associated objects as in a normal RDAP query
+   response.  Each field set can indicate the format of the additional
+   objects to be returned, in the same manner that the format of the
+   topmost objects is controlled by the field set.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Basic Field Sets</span>
+
+   This section defines three basic field sets that servers MAY
+   implement to facilitate their interaction with clients:
+
+   &quot;id&quot;:  The server provides only the key field; &quot;handle&quot; for entities,
+      and &quot;ldhName&quot; for domains and nameservers.  If a returned domain
+      or nameserver is an Internationalized Domain Name (IDN) [<a href="/doc/html/rfc5890" title="&quot;Internationalized Domain Names for Applications (IDNA): Definitions and Document Framework&quot;">RFC5890</a>],
+      then the &quot;unicodeName&quot; field MUST additionally be included in the
+      response.  This field set could be used when the client wants to
+      obtain a collection of object identifiers (Figure 2).
+
+   &quot;brief&quot;:  The field set contains the fields that can be included in a
+      &quot;short&quot; response.  This field set could be used when the client is
+      asking for a subset of the full response that provides only basic
+      knowledge of each object.
+
+   &quot;full&quot;:  The field set contains all of the information the server can
+      provide for a particular object.
+
+   The &quot;objectClassName&quot; field is implicitly included in each of the
+   above field sets.  RDAP providers SHOULD include a &quot;links&quot; field
+   indicating the &quot;self&quot; link relationship.  RDAP providers MAY also add
+   any property providing service information.
+
+   Fields included in the &quot;brief&quot; and &quot;full&quot; field set responses MUST
+   take into account the user&#x27;s access and authorization levels.
+
+   {
+     &quot;rdapConformance&quot;: [
+       &quot;rdap_level_0&quot;,
+       &quot;subsetting&quot;
+     ],
+     ...
+     &quot;domainSearchResults&quot;: [
+       {
+         &quot;objectClassName&quot;: &quot;domain&quot;,
+         &quot;ldhName&quot;: &quot;example1.com&quot;,
+         &quot;links&quot;: [
+           {
+           &quot;value&quot;: &quot;https://example.com/rdap/domain/example1.com&quot;,
+           &quot;rel&quot;: &quot;self&quot;,
+           &quot;href&quot;: &quot;https://example.com/rdap/domain/example1.com&quot;,
+           &quot;type&quot;: &quot;application/rdap+json&quot;
+           }
+         ]
+       },
+       {
+         &quot;objectClassName&quot;: &quot;domain&quot;,
+         &quot;ldhName&quot;: &quot;example2.com&quot;,
+         &quot;links&quot;: [
+           {
+           &quot;value&quot;: &quot;https://example.com/rdap/domain/example2.com&quot;,
+           &quot;rel&quot;: &quot;self&quot;,
+           &quot;href&quot;: &quot;https://example.com/rdap/domain/example2.com&quot;,
+           &quot;type&quot;: &quot;application/rdap+json&quot;
+           }
+         ]
+       },
+       ...
+     ]
+   }
+
+     Figure 2: Example of RDAP Response According to the &quot;id&quot; Field Set
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Negative Answers</span>
+
+   Each request including an empty or unsupported &quot;fieldSet&quot; value MUST
+   produce an HTTP 400 (Bad Request) response code.  Optionally, the
+   response MAY include additional information regarding the supported
+   field sets in the HTTP entity body (Figure 3).
+
+   {
+       &quot;errorCode&quot;: 400,
+       &quot;title&quot;: &quot;Field set &#x27;unknownfieldset&#x27; is not valid&quot;,
+       &quot;description&quot;: [
+           &quot;Supported field sets are: &#x27;afieldset&#x27;, &#x27;anotherfieldset&#x27;.&quot;
+       ]
+
+   }
+
+      Figure 3: Example of RDAP Error Response Due to an Invalid Field
+                        Set Included in the Request
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+   IANA has registered the following value in the &quot;RDAP Extensions&quot;
+   registry:
+
+   Extension identifier:  subsetting
+   Registry operator:  Any
+   Published specification:  <a href="/doc/html/rfc8982">RFC 8982</a>
+   Contact:  IETF &lt;iesg@ietf.org&gt;
+   Intended usage:  This extension describes a best practice for partial
+      response provisioning.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   A search query typically requires more server resources (such as
+   memory, CPU cycles, and network bandwidth) when compared to a lookup
+   query.  This increases the risk of server resource exhaustion and
+   subsequent denial of service.  This risk can be mitigated by
+   supporting the return of partial responses combined with other
+   strategies (e.g., restricting search functionality, limiting the rate
+   of search requests, and truncating and paging results).
+
+   Support for partial responses gives RDAP operators the ability to
+   implement data access control policies based on the HTTP
+   authentication mechanisms described in [<a href="/doc/html/rfc7481" title="&quot;Security Services for the Registration Data Access Protocol (RDAP)&quot;">RFC7481</a>].  RDAP operators can
+   vary the information returned in RDAP responses based on a client&#x27;s
+   access and authorization levels.  For example:
+
+   *  the list of fields for each set can differ based on the client&#x27;s
+      access and authorization levels;
+
+   *  the set of available field sets could be restricted based on the
+      client&#x27;s access and authorization levels.
+
+   Servers can also define different result limits according to the
+   available field sets, so a more flexible truncation strategy can be
+   implemented.  The new query parameter presented in this document
+   provides RDAP operators with a way to implement a server that reduces
+   inefficiency risks.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC5890">RFC5890</a>]  Klensin, J., &quot;Internationalized Domain Names for
+              Applications (IDNA): Definitions and Document Framework&quot;,
+              <a href="/doc/html/rfc5890">RFC 5890</a>, DOI 10.17487/RFC5890, August 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5890">https://www.rfc-editor.org/info/rfc5890</a>&gt;.
+
+   [<a id="ref-RFC7230">RFC7230</a>]  Fielding, R., Ed. and J. Reschke, Ed., &quot;Hypertext Transfer
+              Protocol (HTTP/1.1): Message Syntax and Routing&quot;,
+              <a href="/doc/html/rfc7230">RFC 7230</a>, DOI 10.17487/RFC7230, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7230">https://www.rfc-editor.org/info/rfc7230</a>&gt;.
+
+   [<a id="ref-RFC7480">RFC7480</a>]  Newton, A., Ellacott, B., and N. Kong, &quot;HTTP Usage in the
+              Registration Data Access Protocol (RDAP)&quot;, <a href="/doc/html/rfc7480">RFC 7480</a>,
+              DOI 10.17487/RFC7480, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7480">https://www.rfc-editor.org/info/rfc7480</a>&gt;.
+
+   [<a id="ref-RFC7481">RFC7481</a>]  Hollenbeck, S. and N. Kong, &quot;Security Services for the
+              Registration Data Access Protocol (RDAP)&quot;, <a href="/doc/html/rfc7481">RFC 7481</a>,
+              DOI 10.17487/RFC7481, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7481">https://www.rfc-editor.org/info/rfc7481</a>&gt;.
+
+   [<a id="ref-RFC7482">RFC7482</a>]  Newton, A. and S. Hollenbeck, &quot;Registration Data Access
+              Protocol (RDAP) Query Format&quot;, <a href="/doc/html/rfc7482">RFC 7482</a>,
+              DOI 10.17487/RFC7482, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7482">https://www.rfc-editor.org/info/rfc7482</a>&gt;.
+
+   [<a id="ref-RFC7483">RFC7483</a>]  Newton, A. and S. Hollenbeck, &quot;JSON Responses for the
+              Registration Data Access Protocol (RDAP)&quot;, <a href="/doc/html/rfc7483">RFC 7483</a>,
+              DOI 10.17487/RFC7483, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7483">https://www.rfc-editor.org/info/rfc7483</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8288">RFC8288</a>]  Nottingham, M., &quot;Web Linking&quot;, <a href="/doc/html/rfc8288">RFC 8288</a>,
+              DOI 10.17487/RFC8288, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8288">https://www.rfc-editor.org/info/rfc8288</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-CQL">CQL</a>]      Whitaker, G., &quot;Catnap Query Language Reference&quot;, commit
+              d4f402c, September 2017,
+              &lt;<a href="https://github.com/gregwhitaker/catnap/wiki/Catnap-Query-Language-Reference">https://github.com/gregwhitaker/catnap/wiki/Catnap-Query-</a>
+              <a href="https://github.com/gregwhitaker/catnap/wiki/Catnap-Query-Language-Reference">Language-Reference</a>&gt;.
+
+   [<a id="ref-HATEOAS">HATEOAS</a>]  Jedrzejewski, B., &quot;HATEOAS - a simple explanation&quot;,
+              February 2018, &lt;<a href="https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/">https://www.e4developer.com/2018/02/16/</a>
+              <a href="https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/">hateoas-simple-explanation/</a>&gt;.
+
+   [<a id="ref-REST">REST</a>]     Fielding, R., &quot;Architectural Styles and the Design of
+              Network-based Software Architectures&quot;, Ph.D. Dissertation,
+              University of California, Irvine, 2000,
+              &lt;<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf">https://www.ics.uci.edu/~fielding/pubs/dissertation/</a>
+              <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf">fielding_dissertation.pdf</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Approaches to Partial Response Implementation</span>
+
+   Looking at the implementation experiences of partial responses
+   offered by data providers on the web, two approaches are observed:
+
+   *  the client explicitly describes the data fields to be returned;
+
+   *  the client describes a name identifying a server-defined set of
+      data fields.
+
+   The former is more flexible than the latter because clients can
+   specify all the data fields they need.  However, it has some
+   drawbacks:
+
+   *  Fields have to be declared according to a given syntax.  This is a
+      simple task when the data structure of the object is flat, but it
+      is much more difficult when the object has a tree structure like
+      that of a JSON object.  The presence of arrays and deep nested
+      objects complicate both the syntax definition of the query and,
+      consequently, the processing required on the server side.
+
+   *  Clients need to recognize the returned data structure to avoid
+      cases when the requested fields are invalid.
+
+   *  The request of some fields might not match the client&#x27;s access and
+      authorization levels.  Clients might request unauthorized fields,
+      and servers have to define a strategy for responding such as
+      always returning an error response or returning a response that
+      ignores the unauthorized fields.
+
+<span class="h3"><a class="selflink" id="appendix-A.1" href="#appendix-A.1">A.1</a>.  Specific Issues Raised by RDAP</span>
+
+   In addition to those listed above, RDAP responses raise some specific
+   issues:
+
+   *  Relevant entity object information is included in a jCard, but
+      such information cannot be easily selected because it is split
+      into the items of a jagged array.
+
+   *  RDAP responses contain some properties providing service
+      information (e.g., rdapConformance, links, notices, remarks,
+      etc.), which are not normally selected but are just as important.
+      They could be returned anyway but, in this case, the server would
+      provide unrequested data.
+
+   It is possible to address these issues.  For example, the Catnap
+   Query Language [<a href="#ref-CQL" title="&quot;Catnap Query Language Reference&quot;">CQL</a>] is a comprehensive expression language that can
+   be used to customize the JSON response of a RESTful web service.
+   Application of CQL to RDAP responses would explicitly identify the
+   output fields that would be acceptable when a few fields are
+   requested but it would become very complicated when processing a
+   larger number of fields.  In the following, two CQL expressions for a
+   domain search query are shown (Figure 4).  In the first, only
+   objectClassName and ldhName are requested.  In the second, the fields
+   of a possible WHOIS-like response are listed.
+
+   https://example.com/rdap/domains?name=example*.com
+           &amp;fields=domainSearchResults(objectClassName,ldhName)
+
+   https://example.com/rdap/domains?name=example*.com
+           &amp;fields=domainSearchResults(objectClassName,ldhName,
+                   unicodeName,
+                   status,
+                   events(eventAction,eventDate),
+                   entities(objectClassName,handle,roles),
+                   nameservers(objectClassName,ldhName))
+
+      Figure 4: Examples of CQL Expressions for a Domain Search Query
+
+   The field set approach seems to facilitate RDAP interoperability.
+   Servers can define basic field sets that, if known to clients, can
+   increase the probability of obtaining a valid response.  The usage of
+   field sets makes the query string less complex.  Moreover, the
+   definition of predefined sets of fields makes it easier to establish
+   result limits.
+
+   Finally, considering that there is no real need for RDAP users to
+   have the maximum flexibility in defining all the possible sets of
+   logically connected fields (e.g., users interested in domains usually
+   need to know the status, the creation date, and the expiry date of
+   each domain), the field set approach is preferred.
+
+Acknowledgements
+
+   The authors would like to acknowledge Scott Hollenbeck, Tom Harrison,
+   Karl Heinz Wolf, Jasdip Singh, Patrick Mevzek, Benjamin Kaduk, Roman
+   Danyliw, Murray Kucherawy, Erik Kline, and Robert Wilton for their
+   contribution to this document.
+
+Authors&#x27; Addresses
+
+   Mario Loffredo
+   IIT-CNR/Registro.it
+   Via Moruzzi,1
+   56124 Pisa
+   Italy
+
+   Email: mario.loffredo@iit.cnr.it
+   URI:   <a href="https://www.iit.cnr.it">https://www.iit.cnr.it</a>
+
+
+   Maurizio Martinelli
+   IIT-CNR/Registro.it
+   Via Moruzzi,1
+   56124 Pisa
+   Italy
+
+   Email: maurizio.martinelli@iit.cnr.it
+   URI:   <a href="https://www.iit.cnr.it">https://www.iit.cnr.it</a>
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

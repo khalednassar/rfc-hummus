@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1675
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-bellovin-ipng-sec-concerns/">
+  <meta name="description" content="Security Concerns for IPng (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1675.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1675.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1675.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1675/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1675/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-bellovin-ipng-sec-concerns@ietf.org?subject=draft-bellovin-ipng-sec-concerns" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-bellovin-ipng-sec-concerns-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-bellovin-ipng-sec-concerns-00">draft-bellovin-ipng-sec-concerns-00</a>                  Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        S. Bellovin
+Request for Comments: 1675                        AT&amp;T Bell Laboratories
+Category: Informational                                      August 1994
+
+
+                       <span class="h1">Security Concerns for IPng</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Abstract
+
+   This document was submitted to the IETF IPng area in response to <a href="/doc/html/rfc1550">RFC</a>
+   <a href="/doc/html/rfc1550">1550</a>.  Publication of this document does not imply acceptance by the
+   IPng area of any ideas expressed within.  Comments should be
+   submitted to the big-internet@munnari.oz.au mailing list.
+
+Overview and Rationale
+
+   A number of the candidates for IPng have some features that are
+   somewhat worrisome from a security perspective.  While it is not
+   necessary that IPng be an improvement over IPv4, it is mandatory that
+   it not make things worse.  Below, I outline a number of areas of
+   concern.  In some cases, there are features that would have a
+   negative impact on security if nothing else is done.  It may be
+   desirable to adopt the features anyway, but in that case, the
+   corrective action is mandatory.
+
+Firewalls
+
+   For better or worse, firewalls are very much a feature of today&#x27;s
+   Internet.  They are not, primarily, a response to network protocol
+   security problems per se.  Rather, they are a means to compensate for
+   failings in software engineering and system administration.  As such,
+   firewalls are not likely to go away any time soon; IPng will do
+   nothing to make host programs any less buggy.  Anything that makes
+   firewalls harder to deploy will make IPng less acceptable in the
+   market.
+
+   Firewalls impose a number of requirements.  First, there must be a
+   hierarchical address space.  Many address-based filters use the
+   structure of IPv4 addresses for access control decisions.
+   Fortunately, this is a requirement for scalable routing as well.
+
+
+
+
+
+<span class="grey">Bellovin                                                        [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1675">RFC 1675</a>               Security Concerns for IPng            August 1994</span>
+
+
+   Routers, though, only need access to the destination address of the
+   packet.  Network-level firewalls often need to check both the source
+   and destination address.  A structure that makes it harder to find
+   the source address is a distinct negative.
+
+   There is also a need for access to the transport-level (i.e., the TCP
+   or UDP) header.  This may be for the port number field, or for access
+   to various flag bits, notably the ACK bit in the TCP header.  This
+   latter field is used to distinguish between incoming and outgoing
+   calls.
+
+   In a different vein, at least one of the possible transition plans
+   uses network-level packet translators [<a href="#ref-1" title="&quot;IPAE: The SIPP Interoperability and Transition Mechanism&quot;">1</a>].  Organizations that use
+   firewalls will need to deploy their own translators to aid in
+   converting their own internal networks.  They cannot rely on
+   centrally-located translators intended to serve the entire Internet
+   community.  It is thus vital that translators be simple, portable to
+   many common platforms, and cheap -- we do not want to impose too high
+   a financial barrier for converts to IPng.
+
+   By the same token, it is desirable that such translation boxes not be
+   usable for network-layer connection-laundering.  It is difficult
+   enough to trace back attacks today; we should not make it harder.
+   (Some brands of terminal servers can be used for laundering.  Most
+   sites with such boxes have learned to configure them so that such
+   activities are impossible.)  Comprehensive logging is a possible
+   alternative.
+
+   IPAE [<a href="#ref-1" title="&quot;IPAE: The SIPP Interoperability and Transition Mechanism&quot;">1</a>] does not have problems with its translation strategy, as
+   address are (insofar as possible) preserved; it is necessary to avoid
+   any alternative strategies, such as circuit-level translators, that
+   might.
+
+Encryption and Authentication
+
+   A number of people are starting to experiment with IP-level
+   encryption and cryptographic authentication.  This trend will (and
+   should) continue.  IPng should not make this harder, either
+   intrinsically or by imposing a substantial perforance barrier.
+
+   Encryption can be done with various different granularities: host to
+   host, host to gateway, and gateway to gateway.  All of these have
+   their uses; IPng must not rule out any of them.  Encapsulation and
+   tunneling strategies are somewhat problematic, as the packet may no
+   longer carry the original source address when it reaches an
+   encrypting gateway.  (This may be seen more as a constraint on
+   network topologies.  So be it, but we should warn people of the
+   limitation.)
+
+
+
+<span class="grey">Bellovin                                                        [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1675">RFC 1675</a>               Security Concerns for IPng            August 1994</span>
+
+
+   Dual-stack approaches, such as in TUBA&#x27;s transition plan [<a href="#ref-2" title="&quot;Transition Plan for TUBA/CLNP&quot;">2</a>], imply
+   multiple addresses for each host.  (IPAE has this feature, too.) The
+   encryption and access control infrastructure needs to know about all
+   addresses for a given host, belonging to whichever stack.  It should
+   not be possible to bypass authentication or encryption by asking for
+   a different address for the same host.
+
+Source Routing and Address-based Authentication
+
+   The dominant form of host authentication in today&#x27;s Internet is
+   address-based.  That is, hosts often decide to trust other hosts
+   based on their IP addresses.  (Actually, it&#x27;s worse than that; much
+   authentication is name-based, which opens up new avenues of attack.
+   But if an attacker can spoof an IP address, there&#x27;s no need to attack
+   the name service.)  To the extent that it does work, address-based
+   authentication relies on the implied accuracy of the return route.
+   That is, though it is easy to inject packets with a false source
+   address, replies will generally follow the usual routing patterns,
+   and be sent to the real host with that address.  This frustrates
+   most, though not all, attempts at impersonation.
+
+   Problems can arise if source-routing is used.  A source route, which
+   must be reversed for reply packets, overrides the usual routing
+   mechanism, and hence destroys the security of address-based
+   authentication.  For this reason, many organizations disable source-
+   routing, at least at their border routers.
+
+   One candidate IPng -- SIPP -- includes source-routing as an important
+   component.  To the extent this is used, it is a breaks address-based
+   authentication.  This may not be bad; in fact, it is probably good.
+   But it is vital that a more secure cryptographic authentication
+   protocol be defined and deployed before any substantial cutover to
+   source routing, if SIPP is adopted.
+
+Accounting
+
+   An significant part of the world wishes to do usage-sensitive
+   accounting.  This may be for billing, or it may simply be to
+   accomodate quality-of-service requests.  Either way, definitive
+   knowledge of the relevant address fields is needed.  To accomodate
+   this, IPng should have a non-intrusive packet authentication
+   mechanism.  By &quot;non-intrusive&quot;, I mean that it should (a) present
+   little or no load to intermediate hops that do not need to do
+   authentication; (b) be deletable (if desired) by the border gateways,
+   and (c) be ignorable by end-systems or billing systems to which it is
+   not relevant.
+
+
+
+
+
+<span class="grey">Bellovin                                                        [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1675">RFC 1675</a>               Security Concerns for IPng            August 1994</span>
+
+
+References
+
+   [<a id="ref-1">1</a>] Gilligan, R., and E. Nordmark, &quot;IPAE: The SIPP Interoperability
+       and Transition Mechanism&quot;, Work in Progress, March 16, 1994.
+
+   [<a id="ref-2">2</a>] Piscitello, D., &quot;Transition Plan for TUBA/CLNP&quot;, Work in
+       Progress, March 4, 1994.
+
+Security Consierations
+
+   This entire memo is about Security Considerations.
+
+Author&#x27;s Address
+
+   Steven M. Bellovin
+   Software Engineering Research Department
+   AT&amp;T Bell Laboratories
+   600 Mountain Avenue
+   Murray Hill, NJ  07974, USA
+
+   Phone: +1 908-582-5886
+   Fax: +1 908-582-3063
+   EMail:  smb@research.att.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bellovin                                                        [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,796 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8443
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-stir-rph/">
+  <meta name="description" content="Personal Assertion Token (PASSporT) Extension for Resource Priority Authorization (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8443.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8443.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc8443.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8443/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8443/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/stir/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-stir-rph@ietf.org?subject=draft-ietf-stir-rph" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-stir-rph-06.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-stir-rph-06.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-stir-rph-06.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-stir-rph-06">draft-ietf-stir-rph-06</a>                           Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          R. Singh
+Request for Comments: 8443                                  Vencore Labs
+Category: Standards Track                                       M. Dolly
+ISSN: 2070-1721                                                     AT&amp;T
+                                                                  S. Das
+                                                            Vencore Labs
+                                                               A. Nguyen
+                                  Office of Emergency Communications/DHS
+                                                             August 2018
+
+
+             <span class="h1">Personal Assertion Token (PASSporT) Extension</span>
+                  <span class="h1">for Resource Priority Authorization</span>
+
+Abstract
+
+   This document extends the Personal Assertion Token (PASSporT)
+   specification defined in <a href="/doc/html/rfc8225">RFC 8225</a> to allow the inclusion of
+   cryptographically signed assertions of authorization for the values
+   populated in the Session Initiation Protocol (SIP) &#x27;Resource-
+   Priority&#x27; header field, which is used for communications resource
+   prioritization.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8443">https://www.rfc-editor.org/info/rfc8443</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2018 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-2">2</a>
+   <a href="#section-2">2</a>.  Terminology . . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+   <a href="#section-3">3</a>.  PASSporT &quot;rph&quot; Claim  . . . . . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+   <a href="#section-4">4</a>.  &quot;rph&quot; in SIP  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+     <a href="#section-4.1">4.1</a>.  Authentication Service Behavior . . . . . . . . . . . . .   <a href="#page-5">5</a>
+     <a href="#section-4.2">4.2</a>.  Verification Service Behavior . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+   5.  Further Information Associated with the SIP
+       &#x27;Resource-Priority&#x27; Header Field  . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+   <a href="#section-6">6</a>.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+     <a href="#section-6.1">6.1</a>.  JSON Web Token Claims . . . . . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+     <a href="#section-6.2">6.2</a>.  PASSporT Types  . . . . . . . . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+   <a href="#section-7">7</a>.  Security Considerations . . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+     <a href="#section-7.1">7.1</a>.  Avoidance of Replay and Cut-and-Paste Attacks . . . . . .   <a href="#page-8">8</a>
+     <a href="#section-7.2">7.2</a>.  Solution Considerations . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+   <a href="#section-8">8</a>.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+     <a href="#section-8.1">8.1</a>.  Normative References  . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+     <a href="#section-8.2">8.2</a>.  Informative References  . . . . . . . . . . . . . . . . .   <a href="#page-9">9</a>
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-10">10</a>
+   Authors&#x27; Addresses  . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-10">10</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   PASSporT [<a href="/doc/html/rfc8225" title="&quot;PASSporT: Personal Assertion Token&quot;">RFC8225</a>] is a token format based on JSON Web Token (JWT)
+   [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>] for conveying cryptographically signed information about
+   the identities involved in personal communications.  PASSporT with
+   Secure Telephone Identity Revisited (STIR) [<a href="/doc/html/rfc8224" title="&quot;Authenticated Identity Management in the Session Initiation Protocol (SIP)&quot;">RFC8224</a>] provides a
+   mechanism by which an authority on the originating side of a call,
+   using a protocol like SIP [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>], can provide a cryptographic
+   assurance of the validity of the calling party telephone number in
+   order to prevent impersonation attacks.
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+   [<a id="ref-RFC4412">RFC4412</a>] defines a mechanism to prioritize access to SIP-signaled
+   resources during periods of communications resource scarcity using
+   the SIP &#x27;Resource-Priority&#x27; header.  As specified in [<a href="/doc/html/rfc4412" title="&quot;Communications Resource Priority for the Session Initiation Protocol (SIP)&quot;">RFC4412</a>], the
+   SIP &#x27;Resource-Priority&#x27; header field may be used by SIP user agents
+   (UAs) [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>] (including Public Switched Telephone Network (PSTN)
+   gateways and SIP proxy servers) to influence prioritization afforded
+   to communication sessions, including PSTN calls (e.g., to manage
+   scarce network resources during network congestion scenarios).
+   However, the SIP &#x27;Resource-Priority&#x27; header field could be spoofed
+   and abused by unauthorized entities, the threat models and use cases
+   of which are described in [<a href="/doc/html/rfc7375" title="&quot;Secure Telephone Identity Threat Model&quot;">RFC7375</a>] and [<a href="/doc/html/rfc7340" title="&quot;Secure Telephone Identity Problem Statement and Requirements&quot;">RFC7340</a>], respectively.
+
+   Compromise of the SIP &#x27;Resource-Priority&#x27; header field [<a href="/doc/html/rfc4412" title="&quot;Communications Resource Priority for the Session Initiation Protocol (SIP)&quot;">RFC4412</a>]
+   could lead to misuse of network resources (i.e., during congestion
+   scenarios), impacting the application services supported using the
+   SIP &#x27;Resource-Priority&#x27; header field.
+
+   [<a id="ref-RFC8225">RFC8225</a>] allows extensions by which an authority on the originating
+   side verifying the authorization of a particular communication for
+   the SIP &#x27;Resource-Priority&#x27; header field can use a PASSPorT claim to
+   cryptographically sign the SIP &#x27;Resource-Priority&#x27; header field and
+   convey assertion of the authorization for the SIP &#x27;Resource-Priority&#x27;
+   header field.  A signed SIP &#x27;Resource-Priority&#x27; header field will
+   allow a receiving entity (including entities located in different
+   network domains/boundaries) to verify the validity of assertions
+   authorizing the SIP &#x27;Resource-Priority&#x27; header field and to act on
+   the information with confidence that the information has not been
+   spoofed or compromised.
+
+   This specification documents an extension to PASSporT and the
+   associated STIR mechanisms to provide a function to cryptographically
+   sign the SIP &#x27;Resource-Priority&#x27; header field.  This PASSporT object
+   is used to provide attestation of a calling-user authorization for
+   priority communications.  This is necessary in addition to the
+   PASSporT object that is used for calling-user telephone-number
+   attestation.  How this extension to PASSporT is used for real-time
+   communications supported using the SIP &#x27;Resource-Priority&#x27; header
+   field is outside the scope of this document.  In addition, the
+   PASSPorT extension defined in this document is intended for use in
+   environments where there are means to verify that the signer of the
+   SIP &#x27;Resource-Priority&#x27; header field is authoritative.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  PASSporT &quot;rph&quot; Claim</span>
+
+   This specification defines a new JSON Web Token claim for &quot;rph&quot; that
+   provides an assertion for information in the SIP &#x27;Resource-Priority&#x27;
+   header field.
+
+   The creator of a PASSporT object adds a &quot;ppt&quot; value of &quot;rph&quot; to the
+   header of a PASSporT object.  The PASSporT claims MUST contain an
+   &quot;rph&quot; claim, and any entities verifying the PASSporT object will be
+   required to understand the &quot;ppt&quot; extension in order to process the
+   PASSporT in question.  A PASSPorT header with the &quot;ppt&quot; included will
+   look as follows:
+
+   {
+   &quot;typ&quot;:&quot;passport&quot;,
+     &quot;ppt&quot;:&quot;rph&quot;,
+     &quot;alg&quot;:&quot;ES256&quot;,
+     &quot;x5u&quot;:&quot;https://www.example.org/cert.cer&quot;
+   }
+
+   The &quot;rph&quot; claim will provide an assertion of authorization, &quot;auth&quot;,
+   for information in the SIP &#x27;Resource-Priority&#x27; header field based on
+   [<a href="/doc/html/rfc4412" title="&quot;Communications Resource Priority for the Session Initiation Protocol (SIP)&quot;">RFC4412</a>].  The syntax is:
+
+   {
+   Resource-Priority = &quot;Resource-Priority&quot; : r-value,
+   r-value = namespace  &quot;.&quot;  r-priority
+   }
+
+   Specifically, the &quot;rph&quot; claim includes an assertion of the priority
+   level of the user to be used for a given communication session.  The
+   value of the &quot;rph&quot; claim is an object with one or more keys.  Each
+   key is associated with a JSON array.  These arrays contain strings
+   that correspond to the r-values indicated in the SIP &#x27;Resource-
+   Priority&#x27; header field.
+
+
+
+
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+   The following is an example &quot;rph&quot; claim for a SIP &#x27;Resource-Priority&#x27;
+   header field with one r-value of &quot;ets.0&quot; and with another r-value of
+   &quot;wps.0&quot;:
+
+    {
+     &quot;orig&quot;:{&quot;tn&quot;:&quot;12155550112&quot;},
+     &quot;dest&quot;:{[&quot;tn&quot;:&quot;12125550113&quot;]},
+     &quot;iat&quot;:1443208345,
+     &quot;rph&quot;:{&quot;auth&quot;:[&quot;ets.0&quot;, &quot;wps.0&quot;]}
+    }
+
+   After the header and claims PASSporT objects have been constructed,
+   their signature is generated normally per the guidance in [<a href="/doc/html/rfc8225" title="&quot;PASSporT: Personal Assertion Token&quot;">RFC8225</a>]
+   using the full form of PASSPorT.  The credentials (i.e., Certificate)
+   used to create the signature must have authority over the namespace
+   of the &quot;rph&quot; claim, and there is only one authority per claim.  The
+   authority MUST use its credentials associated with the specific
+   service supported by the resource priority namespace in the claim.
+   If r-values are added or dropped by the intermediaries along the
+   path, the intermediaries must generate a new &quot;rph&quot; header and sign
+   the claim with their own authority.
+
+   The use of the compact form of PASSporT is not specified in this
+   document.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  &quot;rph&quot; in SIP</span>
+
+   This section specifies SIP-specific usage for the &quot;rph&quot; claim in
+   PASSporT.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Authentication Service Behavior</span>
+
+   The Authentication Service will create the &quot;rph&quot; claim using the
+   values discussed in <a href="#section-3">Section 3</a> of this document that are based on
+   [<a href="/doc/html/rfc4412" title="&quot;Communications Resource Priority for the Session Initiation Protocol (SIP)&quot;">RFC4412</a>].  The construction of the &quot;rph&quot; claim follows the steps
+   described in <a href="/doc/html/rfc8224#section-4.1">Section&nbsp;4.1 of [RFC8224]</a>.
+
+   The resulting Identity header for &quot;rph&quot; might look as follows
+   (backslashes shown for line folding only):
+
+      Identity:eyJhbGciOiJFUzI1NiIsInBwdCI6InJwaCIsInR5cCI6InBhc3Nwb3J0\
+      IiwieDV1IjoiaHR0cHM6Ly93d3cuZXhhbXBsZS5jb20vY2VydC5jZXIifQo.eyJkZ\
+      XN0Ijp7WyJ0biI6IjEyMTI1NTUwMTEzIl19LCJpYXQiOiIxNDQzMjA4MzQ1Iiwib3\
+      JpZyI6eyJ0biI6IjEyMTU1NTUwMTEyIn0sInJwaCI6eyJhdXRoIjpbImV0cy4wIiw\
+      id3BzLjAiXX19Cg.s37S6VC8HM6Dl6YzJeQDsrZcwJ0lizxhUrA7f_98oWBHvo-cl\
+      -n8MIhoCr18vYYFy3blXvs3fslM_oos2P2Dyw;info=&lt;https://www.example.\
+      org/cert.cer&gt;;alg=ES256;ppt=&quot;rph&quot;
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+   A SIP authentication service will derive the value of &quot;rph&quot; from the
+   SIP &#x27;Resource-Priority&#x27; header field based on policy associated with
+   service-specific use of r-values, defined as follows in [<a href="/doc/html/rfc4412" title="&quot;Communications Resource Priority for the Session Initiation Protocol (SIP)&quot;">RFC4412</a>]:
+
+      r-value = namespace &quot;.&quot; r-priority
+
+   The authentication service derives the value of the PASSPorT claim by
+   verifying the authorization for the SIP &#x27;Resource-Priority&#x27; header
+   field (i.e., verifying a calling-user privilege for the SIP
+   &#x27;Resource-Priority&#x27; header field based on its identity).  The
+   authorization might be derived from customer-profile data or access
+   to external services.
+
+   [<a id="ref-RFC4412">RFC4412</a>] allows multiple &quot;namespace &quot;.&quot; priority value&quot; pairs,
+   either in a single SIP &#x27;Resource-Priority&#x27; header field or across
+   multiple SIP &#x27;Resource-Priority&#x27; header fields.  An authority is
+   responsible for signing all the content of a SIP &#x27;Resource-Priority&#x27;
+   header field for which it has the authority.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Verification Service Behavior</span>
+
+   <a href="/doc/html/rfc8224#section-6.2">[RFC8224], Section&nbsp;6.2</a>, Step 5 requires that specifications defining
+   &quot;ppt&quot; values describe any additional verifier behavior.  The behavior
+   specified for the &quot;ppt&quot; values of &quot;rph&quot; is as follows:
+
+   The verification service MUST extract the value associated with the
+   &quot;auth&quot; key in a full-form PASSPorT with a &quot;ppt&quot; value of &quot;rph&quot;.  If
+   the signature validates, then the verification service can use the
+   value of the &quot;rph&quot; claim as validation that the calling party is
+   authorized for SIP &#x27;Resource-Priority&#x27; header fields as indicated in
+   the claim.  This value would, in turn, be used for priority treatment
+   in accordance with local policy for the associated communication
+   service.  If the signature validation fails, the verification service
+   should infer that the calling party is not authorized for SIP
+   &#x27;Resource-Priority&#x27; header fields as indicated in the claim.  In such
+   cases, the priority treatment for the associated communication
+   service is handled as per the local policy of the verifier.  In such
+   scenarios, the SIP &#x27;Resource-Priority&#x27; header field SHOULD be
+   stripped from the SIP request, and the network entities should treat
+   the call as an ordinary call.
+
+   In addition, <a href="/doc/html/rfc8224#section-6.2">[RFC8224], Section&nbsp;6.2</a>, Step 4 requires the &quot;iat&quot; value
+   in &quot;rph&quot; claim to be verified.
+
+
+
+
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+   The behavior of a SIP UA upon receiving an INVITE containing a
+   PASSporT object with an &quot;rph&quot; claim will largely remain a matter of
+   implementation policy for the specific communication service.  In
+   most cases, implementations would act based on confidence in the
+   veracity of this information.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Further Information Associated with the SIP &#x27;Resource-Priority&#x27;</span>
+<span class="h2">    Header Field</span>
+
+   There may be additional information about the calling party or the
+   call that could be relevant to authorization for the SIP &#x27;Resource-
+   Priority&#x27; header field.  This may include information related to the
+   device subscription of the caller, to any institutions that the
+   caller or device is associated with, or even to categories of
+   institutions.  All of these data elements would benefit from the
+   secure attestations provided by the STIR and PASSporT frameworks.
+   The specification of the &quot;rph&quot; claim could entail the optional
+   presence of one or more such additional information fields applicable
+   to the SIP &#x27;Resource-Priority&#x27; header field.
+
+   A new IANA registry has been defined to hold potential values of the
+   &quot;rph&quot; array; see <a href="#section-6.2">Section 6.2</a>.  The definition of the &quot;rph&quot; claim may
+   have one or more such additional information field(s).  Details of
+   how an &quot;rph&quot; claim encompasses other data elements are left for
+   future specifications.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  JSON Web Token Claims</span>
+
+   IANA has added a new claim to the &quot;JSON Web Token Claims&quot; registry as
+   defined in [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>].
+
+   o  Claim Name: &quot;rph&quot;
+
+   o  Claim Description: Resource Priority Header Authorization
+
+   o  Change Controller: IESG
+
+   o  Specification Document(s): <a href="/doc/html/rfc8443#section-3">Section&nbsp;3 of RFC 8443</a>
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  PASSporT Types</span>
+
+   IANA has created a new entry in the &quot;Personal Assertion Token
+   (PASSporT) Extensions&quot; registry for the type &quot;rph&quot;, which is
+   specified in this document.  In addition, the &quot;PASSporT Resource
+   Priority Header (rph) Types&quot; registry has been created in which each
+   entry must contain two fields: the name of the &quot;rph&quot; type and the
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+   specification in which the type is described.  This registry has been
+   initially populated with the single value for &quot;auth&quot;, which is
+   specified in this document.  Registration of new &quot;rph&quot; types shall be
+   under the Specification Required policy[RFC8126].
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   The security considerations discussed in <a href="/doc/html/rfc8224#section-12">[RFC8224], Section&nbsp;12</a>, are
+   applicable here.
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Avoidance of Replay and Cut-and-Paste Attacks</span>
+
+   The PASSporT extension with a &quot;ppt&quot; value of &quot;rph&quot; MUST only be sent
+   with SIP INVITE when the SIP &#x27;Resource-Priority&#x27; header field is used
+   to convey the priority of the communication, as defined in [<a href="/doc/html/rfc4412" title="&quot;Communications Resource Priority for the Session Initiation Protocol (SIP)&quot;">RFC4412</a>].
+   To avoid replay and cut-and-paste attacks, the recommendations
+   provided in <a href="/doc/html/rfc8224#section-12.1">Section&nbsp;12.1 of [RFC8224]</a> MUST be followed.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Solution Considerations</span>
+
+   Using extensions to PASSporT tokens with a &quot;ppt&quot; value of &quot;rph&quot;
+   requires knowledge of the authentication, authorization, and
+   reputation of the signer to attest to the identity being asserted,
+   including validating the digital signature and the associated
+   certificate chain to a trust anchor.  The following considerations
+   should be recognized when using PASSporT extensions with a &quot;ppt&quot;
+   value of &quot;rph&quot;:
+
+   o  A signer is only allowed to sign the content of a SIP &#x27;Resource-
+      Priority&#x27; header field for which it has the proper authorization.
+      Before signing tokens, the signer MUST have a secure method for
+      authentication of the end user or the device being granted a
+      token.
+
+   o  The verification of the signature MUST include means of verifying
+      that the signer is authoritative for the signed content of the
+      resource priority namespace in the PASSporT.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+   [<a id="ref-RFC3261">RFC3261</a>]  Rosenberg, J., Schulzrinne, H., Camarillo, G., Johnston,
+              A., Peterson, J., Sparks, R., Handley, M., and E.
+              Schooler, &quot;SIP: Session Initiation Protocol&quot;, <a href="/doc/html/rfc3261">RFC 3261</a>,
+              DOI 10.17487/RFC3261, June 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3261">https://www.rfc-editor.org/info/rfc3261</a>&gt;.
+
+   [<a id="ref-RFC4412">RFC4412</a>]  Schulzrinne, H. and J. Polk, &quot;Communications Resource
+              Priority for the Session Initiation Protocol (SIP)&quot;,
+              <a href="/doc/html/rfc4412">RFC 4412</a>, DOI 10.17487/RFC4412, February 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4412">https://www.rfc-editor.org/info/rfc4412</a>&gt;.
+
+   [<a id="ref-RFC7519">RFC7519</a>]  Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web Token
+              (JWT)&quot;, <a href="/doc/html/rfc7519">RFC 7519</a>, DOI 10.17487/RFC7519, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7519">https://www.rfc-editor.org/info/rfc7519</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8224">RFC8224</a>]  Peterson, J., Jennings, C., Rescorla, E., and C. Wendt,
+              &quot;Authenticated Identity Management in the Session
+              Initiation Protocol (SIP)&quot;, <a href="/doc/html/rfc8224">RFC 8224</a>,
+              DOI 10.17487/RFC8224, February 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8224">https://www.rfc-editor.org/info/rfc8224</a>&gt;.
+
+   [<a id="ref-RFC8225">RFC8225</a>]  Wendt, C. and J. Peterson, &quot;PASSporT: Personal Assertion
+              Token&quot;, <a href="/doc/html/rfc8225">RFC 8225</a>, DOI 10.17487/RFC8225, February 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8225">https://www.rfc-editor.org/info/rfc8225</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC7340">RFC7340</a>]  Peterson, J., Schulzrinne, H., and H. Tschofenig, &quot;Secure
+              Telephone Identity Problem Statement and Requirements&quot;,
+              <a href="/doc/html/rfc7340">RFC 7340</a>, DOI 10.17487/RFC7340, September 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7340">https://www.rfc-editor.org/info/rfc7340</a>&gt;.
+
+   [<a id="ref-RFC7375">RFC7375</a>]  Peterson, J., &quot;Secure Telephone Identity Threat Model&quot;,
+              <a href="/doc/html/rfc7375">RFC 7375</a>, DOI 10.17487/RFC7375, October 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7375">https://www.rfc-editor.org/info/rfc7375</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+
+
+
+
+
+
+<span class="grey">Singh, et al.                Standards Track                    [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc8443">RFC 8443</a>                      PASSporT-ext                   August 2018</span>
+
+
+Acknowledgements
+
+   We would like to thank STIR Working Group members, the ATIS/SIP Forum
+   Task Force on IPNNI members, and the NS/EP Priority Services
+   community for contributions to this problem statement and
+   specification.  We would also like to thank David Hancock and Ning
+   Zhang for their valuable inputs.
+
+Authors&#x27; Addresses
+
+   Ray P. Singh
+   Vencore Labs
+   150 Mount Airy Road
+   New Jersey, NJ  07920
+   United States of America
+
+   Email: rsingh@vencorelabs.com
+
+
+   Martin Dolly
+   AT&amp;T
+   200 Laurel Avenue
+   Middletown, NJ 07748
+   United States of America
+
+   Email: md3135@att.com
+
+   Subir Das
+   Vencore Labs
+   150 Mount Airy Road
+   New Jersey, NJ  07920
+   United States of America
+
+   Email: sdas@vencorelabs.com
+
+
+   An Nguyen
+   Office of Emergency Communications
+   Department of Homeland Security
+   245 Murray Lane, Building 410
+   Washington, DC 20528
+   United States of America
+
+   Email: an.p.nguyen@HQ.DHS.GOV
+
+
+
+
+
+
+
+Singh, et al.                Standards Track                   [Page 10]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

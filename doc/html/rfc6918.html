@@ -1,0 +1,684 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6918
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-gp-obsolete-icmp-types-iana/">
+  <meta name="description" content="Formally Deprecating Some ICMPv4 Message Types (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6918.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6918.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6918.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6918/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6918/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ops/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-gp-obsolete-icmp-types-iana@ietf.org?subject=draft-gp-obsolete-icmp-types-iana" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-gp-obsolete-icmp-types-iana-01.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-gp-obsolete-icmp-types-iana-01.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-gp-obsolete-icmp-types-iana-01.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-gp-obsolete-icmp-types-iana-01">draft-gp-obsolete-icmp-types-iana-01</a>             Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                           F. Gont
+Request for Comments: 6918                        UTN-FRH / SI6 Networks
+Obsoletes: <a href="/doc/html/rfc1788">1788</a>                                             C. Pignataro
+Updates: <a href="/doc/html/rfc792">792</a>, <a href="/doc/html/rfc950">950</a>                                          Cisco Systems
+Category: Standards Track                                     April 2013
+ISSN: 2070-1721
+
+
+             <span class="h1">Formally Deprecating Some ICMPv4 Message Types</span>
+
+Abstract
+
+   A number of ICMPv4 message types have become obsolete in practice,
+   but have never been formally deprecated.  This document deprecates
+   such ICMPv4 message types, thus cleaning up the corresponding IANA
+   registry.  Additionally, it updates <a href="/doc/html/rfc792">RFC 792</a> and <a href="/doc/html/rfc950">RFC 950</a>, obsoletes
+   <a href="/doc/html/rfc1788">RFC 1788</a>, and requests the RFC Editor to change the status of <a href="/doc/html/rfc1788">RFC</a>
+   <a href="/doc/html/rfc1788">1788</a> to Historic.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6918">http://www.rfc-editor.org/info/rfc6918</a>.
+
+Copyright Notice
+
+   Copyright (c) 2013 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-2">2</a>
+   <a href="#section-2">2</a>.  Discussion of Deprecated ICMPv4 Message Types . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.1">2.1</a>.  Alternate Host Address (Type 6) . . . . . . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.2">2.2</a>.  Information Request (Type 15) . . . . . . . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.3">2.3</a>.  Information Reply (Type 16) . . . . . . . . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.4">2.4</a>.  Address Mask Request (Type 17)  . . . . . . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.5">2.5</a>.  Address Mask Reply (Type 18)  . . . . . . . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.6">2.6</a>.  Traceroute (Type 30)  . . . . . . . . . . . . . . . . . . . <a href="#page-3">3</a>
+     <a href="#section-2.7">2.7</a>.  Datagram Conversion Error (Type 31) . . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.8">2.8</a>.  Mobile Host Redirect (Type 32)  . . . . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.9">2.9</a>.  IPv6 Where-Are-You (Type 33)  . . . . . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.10">2.10</a>. IPv6 I-Am-Here (Type 34)  . . . . . . . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.11">2.11</a>. Mobile Registration Request (Type 35) . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.12">2.12</a>. Mobile Registration Reply (Type 36) . . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.13">2.13</a>. Domain Name Request (Type 37) . . . . . . . . . . . . . . . <a href="#page-4">4</a>
+     <a href="#section-2.14">2.14</a>. Domain Name Reply (Type 38) . . . . . . . . . . . . . . . . <a href="#page-5">5</a>
+     <a href="#section-2.15">2.15</a>. SKIP (Type 39)  . . . . . . . . . . . . . . . . . . . . . . <a href="#page-5">5</a>
+   <a href="#section-3">3</a>.  IANA Considerations . . . . . . . . . . . . . . . . . . . . . . <a href="#page-5">5</a>
+   <a href="#section-4">4</a>.  Changing the Status of <a href="/doc/html/rfc1788">RFC 1788</a> to Historic . . . . . . . . . . <a href="#page-6">6</a>
+   <a href="#section-5">5</a>.  Security Considerations . . . . . . . . . . . . . . . . . . . . <a href="#page-6">6</a>
+   <a href="#section-6">6</a>.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-6">6</a>
+   <a href="#section-7">7</a>.  References  . . . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-6">6</a>
+     <a href="#section-7.1">7.1</a>.  Normative References  . . . . . . . . . . . . . . . . . . . <a href="#page-6">6</a>
+     <a href="#section-7.2">7.2</a>.  Informative References  . . . . . . . . . . . . . . . . . . <a href="#page-6">6</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   A number of ICMPv4 [<a href="/doc/html/rfc0792" title="&quot;Internet Control Message Protocol&quot;">RFC0792</a>] message types have been specified over
+   the years.  A number of these message types have become obsolete in
+   practice, but have never been formally deprecated.  This document
+   deprecates such ICMPv4 message types, &quot;cleaning up&quot; the corresponding
+   IANA registry.  Additionally, it updates <a href="/doc/html/rfc792">RFC 792</a> and <a href="/doc/html/rfc950">RFC 950</a>,
+   obsoletes <a href="/doc/html/rfc1788">RFC 1788</a>, and requests the RFC Editor to change the status
+   of <a href="/doc/html/rfc1788">RFC 1788</a> to Historic.
+
+   <a href="#section-2">Section 2</a> discusses each of the obsoleted ICMPv4 messages.  <a href="#section-4">Section 4</a>
+   requests the RFC Editor to change the status of <a href="/doc/html/rfc1788">RFC 1788</a> to Historic.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Discussion of Deprecated ICMPv4 Message Types</span>
+
+   The following subsections discuss the details of those ICMPv4 message
+   types being deprecated, based on publicly available information
+   and/or information provided by the requester of the corresponding
+   assignment.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Alternate Host Address (Type 6)</span>
+
+   There is no publicly available information about this message type.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Information Request (Type 15)</span>
+
+   This message type is specified in [<a href="/doc/html/rfc0792" title="&quot;Internet Control Message Protocol&quot;">RFC0792</a>].  However, other
+   mechanisms (such as DHCP [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>]) have superseded this message type
+   for the purpose of host configuration.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Information Reply (Type 16)</span>
+
+   This message type is specified in [<a href="/doc/html/rfc0792" title="&quot;Internet Control Message Protocol&quot;">RFC0792</a>].  However, other
+   mechanisms (such as DHCP [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>]) have superseded this message type
+   for the purpose of host configuration.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Address Mask Request (Type 17)</span>
+
+   This message type is specified in [<a href="/doc/html/rfc0950" title="&quot;Internet Standard Subnetting Procedure&quot;">RFC0950</a>] and was meant to provide
+   a means to obtain the subnet mask.  However, other mechanisms (such
+   as DHCP [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>]) have superseded this message type for the purpose
+   of host configuration.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>.  Address Mask Reply (Type 18)</span>
+
+   This message type is specified in [<a href="/doc/html/rfc0950" title="&quot;Internet Standard Subnetting Procedure&quot;">RFC0950</a>] and was meant to provide
+   a means to obtain the subnet mask.  However, other mechanisms (such
+   as DHCP [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>]) have superseded this message type for the purpose
+   of host configuration.
+
+<span class="h3"><a class="selflink" id="section-2.6" href="#section-2.6">2.6</a>.  Traceroute (Type 30)</span>
+
+   This message type is specified in [<a href="/doc/html/rfc1393" title="&quot;Traceroute Using an IP Option&quot;">RFC1393</a>] and was meant to provide
+   an alternative means to discover the path to a destination system.
+   This message type has never been widely deployed.  The status of
+   [<a href="/doc/html/rfc1393" title="&quot;Traceroute Using an IP Option&quot;">RFC1393</a>] has been changed to Historic by [<a href="/doc/html/rfc6814" title="&quot;Formally Deprecating Some IPv4 Options&quot;">RFC6814</a>], and the
+   corresponding option this message type relies on (Traceroute, Type
+   82) has been formally obsoleted by [<a href="/doc/html/rfc6814" title="&quot;Formally Deprecating Some IPv4 Options&quot;">RFC6814</a>].
+
+
+
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.7" href="#section-2.7">2.7</a>.  Datagram Conversion Error (Type 31)</span>
+
+   This message type was originally meant to report conversion errors in
+   the TP/IX [<a href="/doc/html/rfc1475" title="&quot;TP/IX: The Next Internet&quot;">RFC1475</a>] protocol.  However, TP/IX was never widely
+   implemented or deployed, and the status of [<a href="/doc/html/rfc1475" title="&quot;TP/IX: The Next Internet&quot;">RFC1475</a>] is Historic.
+
+<span class="h3"><a class="selflink" id="section-2.8" href="#section-2.8">2.8</a>.  Mobile Host Redirect (Type 32)</span>
+
+   This message type was originally specified as part of an experimental
+   protocol for IP Mobile Hosts [<a href="#ref-CMU-MOBILE" title="&quot;Transparent Internet Routing for IP Mobile Hosts&quot;">CMU-MOBILE</a>].  However, it was never
+   widely implemented or deployed.
+
+<span class="h3"><a class="selflink" id="section-2.9" href="#section-2.9">2.9</a>.  IPv6 Where-Are-You (Type 33)</span>
+
+   This message type was originally specified in [<a href="#ref-SIMPSON-DISCOV">SIMPSON-DISCOV</a>] for
+   the purpose of identification of adjacent IPv6 nodes.  It was never
+   widely deployed or implemented.
+
+<span class="h3"><a class="selflink" id="section-2.10" href="#section-2.10">2.10</a>.  IPv6 I-Am-Here (Type 34)</span>
+
+   This message type was originally specified in [<a href="#ref-SIMPSON-DISCOV">SIMPSON-DISCOV</a>] for
+   the purpose of identification of adjacent IPv6 nodes.  It was never
+   widely deployed or implemented.
+
+<span class="h3"><a class="selflink" id="section-2.11" href="#section-2.11">2.11</a>.  Mobile Registration Request (Type 35)</span>
+
+   This message type was originally meant for transparent routing of
+   IPv6 datagrams to Mobile Nodes [<a href="#ref-SIMPSON-MOBILITY">SIMPSON-MOBILITY</a>].  It was never
+   widely deployed or implemented.
+
+<span class="h3"><a class="selflink" id="section-2.12" href="#section-2.12">2.12</a>.  Mobile Registration Reply (Type 36)</span>
+
+   This message type was originally meant for transparent routing of
+   IPv6 datagrams to Mobile Nodes [<a href="#ref-SIMPSON-MOBILITY">SIMPSON-MOBILITY</a>].  It was never
+   widely deployed or implemented.
+
+<span class="h3"><a class="selflink" id="section-2.13" href="#section-2.13">2.13</a>.  Domain Name Request (Type 37)</span>
+
+   This message type was originally specified in [<a href="/doc/html/rfc1788" title="&quot;ICMP Domain Name Messages&quot;">RFC1788</a>] for the
+   purpose of learning the Fully Qualified Domain Name associated with
+   an IP address.  This message type was never widely deployed or
+   implemented.
+
+
+
+
+
+
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.14" href="#section-2.14">2.14</a>.  Domain Name Reply (Type 38)</span>
+
+   This message type was originally specified in [<a href="/doc/html/rfc1788" title="&quot;ICMP Domain Name Messages&quot;">RFC1788</a>] for the
+   purpose of learning the Fully Qualified Domain Name associated with
+   an IP address.  This message type was never widely deployed or
+   implemented.
+
+<span class="h3"><a class="selflink" id="section-2.15" href="#section-2.15">2.15</a>.  SKIP (Type 39)</span>
+
+   This message type was originally specified in [<a href="#ref-SKIP-ADP" title="&quot;SKIP Algorithm Discovery Protocol&quot;">SKIP-ADP</a>] for
+   informing supported capabilities in the SKIP [<a href="#ref-SKIP" title="&quot;Simple Key-Management For Internet Protocols (SKIP)&quot;">SKIP</a>] protocol.  This
+   message type was never widely deployed or implemented.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  IANA Considerations</span>
+
+   The &quot;Internet Control Message Protocol (ICMP) Parameters&quot; registry
+   [<a href="#ref-IANA-ICMP" title="&quot;Internet Control Message Protocol (ICMP) Parameters&quot;">IANA-ICMP</a>] contains the list of the currently assigned ICMP message
+   Types.
+
+   This document formally deprecates the following ICMP message Types
+   and requests IANA to mark them as such in the corresponding registry
+   [<a href="#ref-IANA-ICMP" title="&quot;Internet Control Message Protocol (ICMP) Parameters&quot;">IANA-ICMP</a>]:
+
+   o  Alternate Host Address (Type 6)
+
+   o  Information Request (Type 15)
+
+   o  Information Reply (Type 16)
+
+   o  Address Mask Request (Type 17)
+
+   o  Address Mask Reply (Type 18)
+
+   o  Traceroute (Type 30)
+
+   o  Datagram Conversion Error (Type 31)
+
+   o  Mobile Host Redirect (Type 32)
+
+   o  IPv6 Where-Are-You (Type 33)
+
+   o  IPv6 I-Am-Here (Type 34)
+
+   o  Mobile Registration Request (Type 35)
+
+   o  Mobile Registration Reply (Type 36)
+
+   o  Domain Name Request (Type 37)
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+   o  Domain Name Reply (Type 38)
+
+   o  SKIP (Type 39)
+
+      The ICMPv4 Source Quench Message (Type 4) has already been
+      deprecated by [<a href="/doc/html/rfc6633" title="&quot;Deprecation of ICMP Source Quench Messages&quot;">RFC6633</a>].
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Changing the Status of <a href="/doc/html/rfc1788">RFC 1788</a> to Historic</span>
+
+   This document requests the RFC Editor to change the status of
+   [<a href="/doc/html/rfc1788" title="&quot;ICMP Domain Name Messages&quot;">RFC1788</a>] to Historic.
+
+      Both [<a href="/doc/html/rfc1385" title="&quot;EIP: The Extended Internet Protocol&quot;">RFC1385</a>] and [<a href="/doc/html/rfc1393" title="&quot;Traceroute Using an IP Option&quot;">RFC1393</a>] already have a status of Historic.
+      The status of other RFCs (such as [<a href="/doc/html/rfc0792" title="&quot;Internet Control Message Protocol&quot;">RFC0792</a>] and [<a href="/doc/html/rfc0950" title="&quot;Internet Standard Subnetting Procedure&quot;">RFC0950</a>]) is not
+      changed since other parts of these documents are still current.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   This document does not modify the security properties of the ICMPv4
+   message types being deprecated.  However, formally deprecating these
+   message types serves as a basis for, e.g., filtering these packets.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Acknowledgments</span>
+
+   The authors would like to thank Ron Bonica and Joel Halpern for their
+   guidance.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC0792">RFC0792</a>]    Postel, J., &quot;Internet Control Message Protocol&quot;, STD 5,
+                <a href="/doc/html/rfc792">RFC 792</a>, September 1981.
+
+   [<a id="ref-RFC6814">RFC6814</a>]    Pignataro, C. and F. Gont, &quot;Formally Deprecating Some
+                IPv4 Options&quot;, <a href="/doc/html/rfc6814">RFC 6814</a>, November 2012.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-CMU-MOBILE">CMU-MOBILE</a>] Johnson, D., &quot;Transparent Internet Routing for IP Mobile
+                Hosts&quot;, Work in Progress, July 1993.
+
+   [<a id="ref-IANA-ICMP">IANA-ICMP</a>]  Internet Assigned Numbers Authority, &quot;Internet Control
+                Message Protocol (ICMP) Parameters&quot;, September 2012,
+                &lt;<a href="http://www.iana.org/assignments/icmp-parameters">http://www.iana.org/assignments/icmp-parameters</a>&gt;.
+
+   [<a id="ref-RFC0950">RFC0950</a>]    Mogul, J. and J. Postel, &quot;Internet Standard Subnetting
+                Procedure&quot;, STD 5, <a href="/doc/html/rfc950">RFC 950</a>, August 1985.
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+   [<a id="ref-RFC1385">RFC1385</a>]    Wang, Z., &quot;EIP: The Extended Internet Protocol&quot;,
+                <a href="/doc/html/rfc1385">RFC 1385</a>, November 1992.
+
+   [<a id="ref-RFC1393">RFC1393</a>]    Malkin, G., &quot;Traceroute Using an IP Option&quot;, <a href="/doc/html/rfc1393">RFC 1393</a>,
+                January 1993.
+
+   [<a id="ref-RFC1475">RFC1475</a>]    Ullmann, R., &quot;TP/IX: The Next Internet&quot;, <a href="/doc/html/rfc1475">RFC 1475</a>,
+                June 1993.
+
+   [<a id="ref-RFC1788">RFC1788</a>]    Simpson, W., &quot;ICMP Domain Name Messages&quot;, <a href="/doc/html/rfc1788">RFC 1788</a>,
+                April 1995.
+
+   [<a id="ref-RFC2131">RFC2131</a>]    Droms, R., &quot;Dynamic Host Configuration Protocol&quot;,
+                <a href="/doc/html/rfc2131">RFC 2131</a>, March 1997.
+
+   [<a id="ref-RFC6633">RFC6633</a>]    Gont, F., &quot;Deprecation of ICMP Source Quench Messages&quot;,
+                <a href="/doc/html/rfc6633">RFC 6633</a>, May 2012.
+
+   [<a id="ref-SIMPSON-DISCOV">SIMPSON-DISCOV</a>]
+                Simpson, W., &quot;IPv6 Neighbor Discovery -- ICMP Message
+                Formats&quot;, Work in Progress, January 1995.
+
+   [<a id="ref-SIMPSON-MOBILITY">SIMPSON-MOBILITY</a>]
+                Simpson, W., &quot;IPv6 Mobility Support&quot;, Work in Progress,
+                November 1994.
+
+   [<a id="ref-SKIP">SKIP</a>]       Aziz, A., Markson, T., and H. Prafullchandra, &quot;Simple
+                Key-Management For Internet Protocols (SKIP)&quot;, Work
+                in Progress, December 1995.
+
+   [<a id="ref-SKIP-ADP">SKIP-ADP</a>]   Aziz, A., Markson, T., and H. Prafullchandra, &quot;SKIP
+                Algorithm Discovery Protocol&quot;, Work in Progress,
+                December 1995.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gont &amp; Pignataro             Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc6918">RFC 6918</a>            Deprecating Some ICMPv4 Messages          April 2013</span>
+
+
+Authors&#x27; Addresses
+
+   Fernando Gont
+   UTN-FRH / SI6 Networks
+   Evaristo Carriego 2644
+   Haedo, Provincia de Buenos Aires  1706
+   Argentina
+
+   Phone: +54 11 4650 8472
+   EMail: fgont@si6networks.com
+   URI:   <a href="http://www.si6networks.com">http://www.si6networks.com</a>
+
+
+   Carlos Pignataro
+   Cisco Systems
+   7200-12 Kit Creek Road
+   Research Triangle Park, NC  27709
+   US
+
+   EMail: cpignata@cisco.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gont &amp; Pignataro             Standards Track                    [Page 8]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

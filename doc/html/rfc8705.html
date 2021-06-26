@@ -1,0 +1,1460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8705
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-oauth-mtls/">
+  <meta name="description" content="OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8705.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8705.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8705.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8705.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8705/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8705/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/oauth/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-oauth-mtls@ietf.org?subject=draft-ietf-oauth-mtls" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-oauth-mtls-17.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-oauth-mtls-17.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-oauth-mtls-17.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-oauth-mtls-17">draft-ietf-oauth-mtls-17</a>                         Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       B. Campbell
+Request for Comments: 8705                                 Ping Identity
+Category: Standards Track                                     J. Bradley
+ISSN: 2070-1721                                                   Yubico
+                                                             N. Sakimura
+                                               Nomura Research Institute
+                                                          T. Lodderstedt
+                                                              YES.com AG
+                                                           February 2020
+
+
+    <span class="h1">OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound</span>
+                             <span class="h1">Access Tokens</span>
+
+Abstract
+
+   This document describes OAuth client authentication and certificate-
+   bound access and refresh tokens using mutual Transport Layer Security
+   (TLS) authentication with X.509 certificates.  OAuth clients are
+   provided a mechanism for authentication to the authorization server
+   using mutual TLS, based on either self-signed certificates or public
+   key infrastructure (PKI).  OAuth authorization servers are provided a
+   mechanism for binding access tokens to a client&#x27;s mutual-TLS
+   certificate, and OAuth protected resources are provided a method for
+   ensuring that such an access token presented to it was issued to the
+   client presenting the token.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8705">https://www.rfc-editor.org/info/rfc8705</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Requirements Notation and Conventions
+     1.2.  Terminology
+   2.  Mutual TLS for OAuth Client Authentication
+     2.1.  PKI Mutual-TLS Method
+       2.1.1.  PKI Method Metadata Value
+       2.1.2.  Client Registration Metadata
+     2.2.  Self-Signed Certificate Mutual-TLS Method
+       2.2.1.  Self-Signed Method Metadata Value
+       2.2.2.  Client Registration Metadata
+   3.  Mutual-TLS Client Certificate-Bound Access Tokens
+     3.1.  JWT Certificate Thumbprint Confirmation Method
+     3.2.  Confirmation Method for Token Introspection
+     3.3.  Authorization Server Metadata
+     3.4.  Client Registration Metadata
+   4.  Public Clients and Certificate-Bound Tokens
+   5.  Metadata for Mutual-TLS Endpoint Aliases
+   6.  Implementation Considerations
+     6.1.  Authorization Server
+     6.2.  Resource Server
+     6.3.  Certificate Expiration and Bound Access Tokens
+     6.4.  Implicit Grant Unsupported
+     6.5.  TLS Termination
+   7.  Security Considerations
+     7.1.  Certificate-Bound Refresh Tokens
+     7.2.  Certificate Thumbprint Binding
+     7.3.  TLS Versions and Best Practices
+     7.4.  X.509 Certificate Spoofing
+     7.5.  X.509 Certificate Parsing and Validation Complexity
+   8.  Privacy Considerations
+   9.  IANA Considerations
+     9.1.  JWT Confirmation Methods Registration
+     9.2.  Authorization Server Metadata Registration
+     9.3.  Token Endpoint Authentication Method Registration
+     9.4.  Token Introspection Response Registration
+     9.5.  Dynamic Client Registration Metadata Registration
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Example &quot;cnf&quot; Claim, Certificate, and JWK
+   <a href="#appendix-B">Appendix B</a>.  Relationship to Token Binding
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The OAuth 2.0 Authorization Framework [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>] enables third-party
+   client applications to obtain delegated access to protected
+   resources.  In the prototypical abstract OAuth flow, illustrated in
+   Figure 1, the client obtains an access token from an entity known as
+   an authorization server and then uses that token when accessing
+   protected resources, such as HTTPS APIs.
+
+     +--------+                                 +---------------+
+     |        |                                 |               |
+     |        |&lt;--(A)-- Get an access token ---&gt;| Authorization |
+     |        |                                 |     Server    |
+     |        |                                 |               |
+     |        |                                 +---------------+
+     |        |                                         ^
+     |        |                                         |
+     |        |
+     |        |                               (C)       |
+     | Client |                           Validate the
+     |        |                           access token  |
+     |        |
+     |        |                                         |
+     |        |                                         v
+     |        |                                 +---------------+
+     |        |                                 |      (C)      |
+     |        |                                 |               |
+     |        |&lt;--(B)-- Use the access token --&gt;|   Protected   |
+     |        |                                 |    Resource   |
+     |        |                                 |               |
+     +--------+                                 +---------------+
+
+                 Figure 1: Abstract OAuth 2.0 Protocol Flow
+
+   The flow illustrated in Figure 1 includes the following steps:
+
+   (A)  The client makes an HTTPS &quot;POST&quot; request to the authorization
+        server and presents a credential representing the authorization
+        grant.  For certain types of clients (those that have been
+        issued or otherwise established a set of client credentials) the
+        request must be authenticated.  In the response, the
+        authorization server issues an access token to the client.
+
+   (B)  The client includes the access token when making a request to
+        access a protected resource.
+
+   (C)  The protected resource validates the access token in order to
+        authorize the request.  In some cases, such as when the token is
+        self-contained and cryptographically secured, the validation can
+        be done locally by the protected resource.  Other cases require
+        that the protected resource call out to the authorization server
+        to determine the state of the token and obtain metainformation
+        about it.
+
+   Layering on the abstract flow above, this document standardizes
+   enhanced security options for OAuth 2.0 utilizing client-certificate-
+   based mutual TLS.  <a href="#section-2">Section 2</a> provides options for authenticating the
+   request in Step (A).  Step (C) is supported with semantics to express
+   the binding of the token to the client certificate for both local and
+   remote processing in Sections <a href="#section-3.1">3.1</a> and <a href="#section-3.2">3.2</a>, respectively.  This
+   ensures that, as described in <a href="#section-3">Section 3</a>, protected resource access in
+   Step (B) is only possible by the legitimate client using a
+   certificate-bound token and holding the private key corresponding to
+   the certificate.
+
+   OAuth 2.0 defines a shared-secret method of client authentication but
+   also allows for defining and using additional client authentication
+   mechanisms when interacting directly with the authorization server.
+   This document describes an additional mechanism of client
+   authentication utilizing mutual-TLS certificate-based authentication
+   that provides better security characteristics than shared secrets.
+   While [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>] documents client authentication for requests to the
+   token endpoint, extensions to OAuth 2.0 (such as Introspection
+   [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>], Revocation [<a href="/doc/html/rfc7009" title="&quot;OAuth 2.0 Token Revocation&quot;">RFC7009</a>], and the Backchannel Authentication
+   Endpoint in [<a href="#ref-OpenID.CIBA">OpenID.CIBA</a>]) define endpoints that also utilize client
+   authentication, and the mutual-TLS methods defined herein are
+   applicable to those endpoints as well.
+
+   Mutual-TLS certificate-bound access tokens ensure that only the party
+   in possession of the private key corresponding to the certificate can
+   utilize the token to access the associated resources.  Such a
+   constraint is sometimes referred to as key confirmation, proof-of-
+   possession, or holder-of-key and is unlike the case of the bearer
+   token described in [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>], where any party in possession of the
+   access token can use it to access the associated resources.  Binding
+   an access token to the client&#x27;s certificate prevents the use of
+   stolen access tokens or replay of access tokens by unauthorized
+   parties.
+
+   Mutual-TLS certificate-bound access tokens and mutual-TLS client
+   authentication are distinct mechanisms that are complementary but
+   don&#x27;t necessarily need to be deployed or used together.
+
+   Additional client metadata parameters are introduced by this document
+   in support of certificate-bound access tokens and mutual-TLS client
+   authentication.  The authorization server can obtain client metadata
+   via the Dynamic Client Registration Protocol [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>], which defines
+   mechanisms for dynamically registering OAuth 2.0 client metadata with
+   authorization servers.  Also the metadata defined by [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>], and
+   registered extensions to it, imply a general data model for clients
+   that is useful for authorization server implementations, even when
+   the Dynamic Client Registration Protocol isn&#x27;t in play.  Such
+   implementations will typically have some sort of user interface
+   available for managing client configuration.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Notation and Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Terminology</span>
+
+   Throughout this document the term &quot;mutual TLS&quot; refers to the process
+   whereby, in addition to the normal TLS server authentication with a
+   certificate, a client presents its X.509 certificate and proves
+   possession of the corresponding private key to a server when
+   negotiating a TLS session.  In contemporary versions of TLS [<a href="/doc/html/rfc5246" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.2&quot;">RFC5246</a>]
+   [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>], this requires that the client send the Certificate and
+   CertificateVerify messages during the handshake and for the server to
+   verify the CertificateVerify and Finished messages.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Mutual TLS for OAuth Client Authentication</span>
+
+   This section defines, as an extension of <a href="#section-2.3">Section 2.3</a> of OAuth 2.0
+   [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>], two distinct methods of using mutual-TLS X.509 client
+   certificates as client credentials.  The requirement of mutual TLS
+   for client authentication is determined by the authorization server,
+   based on policy or configuration for the given client (regardless of
+   whether the client was dynamically registered, statically configured,
+   or otherwise established).
+
+   In order to utilize TLS for OAuth client authentication, the TLS
+   connection between the client and the authorization server MUST have
+   been established or re-established with mutual-TLS X.509 certificate
+   authentication (i.e., the client Certificate and CertificateVerify
+   messages are sent during the TLS handshake).
+
+   For all requests to the authorization server utilizing mutual-TLS
+   client authentication, the client MUST include the &quot;client_id&quot;
+   parameter described in <a href="#section-2.2">Section 2.2</a> of OAuth 2.0 [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].  The
+   presence of the &quot;client_id&quot; parameter enables the authorization
+   server to easily identify the client independently from the content
+   of the certificate.  The authorization server can locate the client
+   configuration using the client identifier and check the certificate
+   presented in the TLS handshake against the expected credentials for
+   that client.  The authorization server MUST enforce the binding
+   between client and certificate, as described in either <a href="#section-2.1">Section 2.1</a> or
+   2.2 below.  If no certificate is presented, or that which is
+   presented doesn&#x27;t match that which is expected for the given
+   &quot;client_id&quot;, the authorization server returns a normal OAuth 2.0
+   error response per <a href="/doc/html/rfc6749#section-5.2">Section&nbsp;5.2 of [RFC6749]</a> with the &quot;invalid_client&quot;
+   error code to indicate failed client authentication.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  PKI Mutual-TLS Method</span>
+
+   The PKI (public key infrastructure) method of mutual-TLS OAuth client
+   authentication adheres to the way in which X.509 certificates are
+   traditionally used for authentication.  It relies on a validated
+   certificate chain [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>] and a single subject distinguished name
+   (DN) or a single subject alternative name (SAN) to authenticate the
+   client.  Only one subject name value of any type is used for each
+   client.  The TLS handshake is utilized to validate the client&#x27;s
+   possession of the private key corresponding to the public key in the
+   certificate and to validate the corresponding certificate chain.  The
+   client is successfully authenticated if the subject information in
+   the certificate matches the single expected subject configured or
+   registered for that particular client (note that a predictable
+   treatment of DN values, such as the distinguishedNameMatch rule from
+   [<a href="/doc/html/rfc4517" title="&quot;Lightweight Directory Access Protocol (LDAP): Syntaxes and Matching Rules&quot;">RFC4517</a>], is needed in comparing the certificate&#x27;s subject DN to the
+   client&#x27;s registered DN).  Revocation checking is possible with the
+   PKI method but if and how to check a certificate&#x27;s revocation status
+   is a deployment decision at the discretion of the authorization
+   server.  Clients can rotate their X.509 certificates without the need
+   to modify the respective authentication data at the authorization
+   server by obtaining a new certificate with the same subject from a
+   trusted certificate authority (CA).
+
+<span class="h4"><a class="selflink" id="section-2.1.1" href="#section-2.1.1">2.1.1</a>.  PKI Method Metadata Value</span>
+
+   For the PKI method of mutual-TLS client authentication, this
+   specification defines and registers the following authentication
+   method metadata value into the &quot;OAuth Token Endpoint Authentication
+   Methods&quot; registry [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>].
+
+   tls_client_auth
+      Indicates that client authentication to the authorization server
+      will occur with mutual TLS utilizing the PKI method of associating
+      a certificate to a client.
+
+<span class="h4"><a class="selflink" id="section-2.1.2" href="#section-2.1.2">2.1.2</a>.  Client Registration Metadata</span>
+
+   In order to convey the expected subject of the certificate, the
+   following metadata parameters are introduced for the OAuth 2.0
+   Dynamic Client Registration Protocol [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>] in support of the PKI
+   method of mutual-TLS client authentication.  A client using the
+   &quot;tls_client_auth&quot; authentication method MUST use exactly one of the
+   below metadata parameters to indicate the certificate subject value
+   that the authorization server is to expect when authenticating the
+   respective client.
+
+   tls_client_auth_subject_dn
+      A string representation -- as defined in [<a href="/doc/html/rfc4514" title="&quot;Lightweight Directory Access Protocol (LDAP): String Representation of Distinguished Names&quot;">RFC4514</a>] -- of the
+      expected subject distinguished name of the certificate that the
+      OAuth client will use in mutual-TLS authentication.
+
+   tls_client_auth_san_dns
+      A string containing the value of an expected dNSName SAN entry in
+      the certificate that the OAuth client will use in mutual-TLS
+      authentication.
+
+   tls_client_auth_san_uri
+      A string containing the value of an expected
+      uniformResourceIdentifier SAN entry in the certificate that the
+      OAuth client will use in mutual-TLS authentication.
+
+   tls_client_auth_san_ip
+      A string representation of an IP address in either dotted decimal
+      notation (for IPv4) or colon-delimited hexadecimal (for IPv6, as
+      defined in [<a href="/doc/html/rfc5952" title="&quot;A Recommendation for IPv6 Address Text Representation&quot;">RFC5952</a>]) that is expected to be present as an
+      iPAddress SAN entry in the certificate that the OAuth client will
+      use in mutual-TLS authentication.  Per <a href="/doc/html/rfc5952#section-8">Section&nbsp;8 of [RFC5952]</a>, the
+      IP address comparison of the value in this parameter and the SAN
+      entry in the certificate is to be done in binary format.
+
+   tls_client_auth_san_email
+      A string containing the value of an expected rfc822Name SAN entry
+      in the certificate that the OAuth client will use in mutual-TLS
+      authentication.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Self-Signed Certificate Mutual-TLS Method</span>
+
+   This method of mutual-TLS OAuth client authentication is intended to
+   support client authentication using self-signed certificates.  As a
+   prerequisite, the client registers its X.509 certificates (using
+   &quot;jwks&quot; defined in [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>]) or a reference to a trusted source for
+   its X.509 certificates (using &quot;jwks_uri&quot; from [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>]) with the
+   authorization server.  During authentication, TLS is utilized to
+   validate the client&#x27;s possession of the private key corresponding to
+   the public key presented within the certificate in the respective TLS
+   handshake.  In contrast to the PKI method, the client&#x27;s certificate
+   chain is not validated by the server in this case.  The client is
+   successfully authenticated if the certificate that it presented
+   during the handshake matches one of the certificates configured or
+   registered for that particular client.  The Self-Signed Certificate
+   method allows the use of mutual TLS to authenticate clients without
+   the need to maintain a PKI.  When used in conjunction with a
+   &quot;jwks_uri&quot; for the client, it also allows the client to rotate its
+   X.509 certificates without the need to change its respective
+   authentication data directly with the authorization server.
+
+<span class="h4"><a class="selflink" id="section-2.2.1" href="#section-2.2.1">2.2.1</a>.  Self-Signed Method Metadata Value</span>
+
+   For the Self-Signed Certificate method of mutual-TLS client
+   authentication, this specification defines and registers the
+   following authentication method metadata value into the &quot;OAuth Token
+   Endpoint Authentication Methods&quot; registry [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>].
+
+   self_signed_tls_client_auth
+      Indicates that client authentication to the authorization server
+      will occur using mutual TLS with the client utilizing a self-
+      signed certificate.
+
+<span class="h4"><a class="selflink" id="section-2.2.2" href="#section-2.2.2">2.2.2</a>.  Client Registration Metadata</span>
+
+   For the Self-Signed Certificate method of binding a certificate with
+   a client using mutual-TLS client authentication, the existing
+   &quot;jwks_uri&quot; or &quot;jwks&quot; metadata parameters from [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>] are used to
+   convey the client&#x27;s certificates via JSON Web Key (JWK) in a JWK Set
+   [<a href="/doc/html/rfc7517" title="&quot;JSON Web Key (JWK)&quot;">RFC7517</a>].  The &quot;jwks&quot; metadata parameter is a JWK Set containing the
+   client&#x27;s public keys as an array of JWKs, while the &quot;jwks_uri&quot;
+   parameter is a URL that references a client&#x27;s JWK Set. A certificate
+   is represented with the &quot;x5c&quot; parameter of an individual JWK within
+   the set.  Note that the members of the JWK representing the public
+   key (e.g., &quot;n&quot; and &quot;e&quot; for RSA, &quot;x&quot; and &quot;y&quot; for Elliptic Curve (EC))
+   are required parameters per [<a href="/doc/html/rfc7518" title="&quot;JSON Web Algorithms (JWA)&quot;">RFC7518</a>] so will be present even though
+   they are not utilized in this context.  Also note that <a href="/doc/html/rfc7517#section-4.7">Section&nbsp;4.7 of
+   [RFC7517]</a> requires that the key in the first certificate of the &quot;x5c&quot;
+   parameter match the public key represented by those other members of
+   the JWK.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Mutual-TLS Client Certificate-Bound Access Tokens</span>
+
+   When mutual TLS is used by the client on the connection to the token
+   endpoint, the authorization server is able to bind the issued access
+   token to the client certificate.  Such a binding is accomplished by
+   associating the certificate with the token in a way that can be
+   accessed by the protected resource, such as embedding the certificate
+   hash in the issued access token directly, using the syntax described
+   in <a href="#section-3.1">Section 3.1</a>, or through token introspection as described in
+   <a href="#section-3.2">Section 3.2</a>.  Binding the access token to the client certificate in
+   that fashion has the benefit of decoupling that binding from the
+   client&#x27;s authentication with the authorization server, which enables
+   mutual TLS during protected resource access to serve purely as a
+   proof-of-possession mechanism.  Other methods of associating a
+   certificate with an access token are possible, per agreement by the
+   authorization server and the protected resource, but are beyond the
+   scope of this specification.
+
+   In order for a resource server to use certificate-bound access
+   tokens, it must have advance knowledge that mutual TLS is to be used
+   for some or all resource accesses.  In particular, the access token
+   itself cannot be used as input to the decision of whether or not to
+   request mutual TLS because (from the TLS perspective) it is
+   &quot;Application Data&quot;, only exchanged after the TLS handshake has been
+   completed, and the initial CertificateRequest occurs during the
+   handshake, before the Application Data is available.  Although
+   subsequent opportunities for a TLS client to present a certificate
+   may be available, e.g., via TLS 1.2 renegotiation [<a href="/doc/html/rfc5246" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.2&quot;">RFC5246</a>] or TLS
+   1.3 post-handshake authentication [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>], this document makes no
+   provision for their usage.  It is expected to be common that a
+   mutual-TLS-using resource server will require mutual TLS for all
+   resources hosted thereupon or will serve mutual-TLS-protected and
+   regular resources on separate hostname and port combinations, though
+   other workflows are possible.  How resource server policy is
+   synchronized with the authorization server (AS) is out of scope for
+   this document.
+
+   Within the scope of a mutual-TLS-protected resource-access flow, the
+   client makes protected resource requests, as described in [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>],
+   however, those requests MUST be made over a mutually authenticated
+   TLS connection using the same certificate that was used for mutual
+   TLS at the token endpoint.
+
+   The protected resource MUST obtain, from its TLS implementation
+   layer, the client certificate used for mutual TLS and MUST verify
+   that the certificate matches the certificate associated with the
+   access token.  If they do not match, the resource access attempt MUST
+   be rejected with an error, per [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>], using an HTTP 401 status
+   code and the &quot;invalid_token&quot; error code.
+
+   Metadata to convey server and client capabilities for mutual-TLS
+   client certificate-bound access tokens is defined in Sections <a href="#section-3.3">3.3</a> and
+   3.4, respectively.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  JWT Certificate Thumbprint Confirmation Method</span>
+
+   When access tokens are represented as JSON Web Tokens (JWT)
+   [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>], the certificate hash information SHOULD be represented
+   using the &quot;x5t#S256&quot; confirmation method member defined herein.
+
+   To represent the hash of a certificate in a JWT, this specification
+   defines the new JWT Confirmation Method [<a href="/doc/html/rfc7800" title="&quot;Proof-of- Possession Key Semantics for JSON Web Tokens (JWTs)&quot;">RFC7800</a>] member &quot;x5t#S256&quot;
+   for the X.509 Certificate SHA-256 Thumbprint.  The value of the
+   &quot;x5t#S256&quot; member is a base64url-encoded [<a href="/doc/html/rfc4648" title="&quot;The Base16, Base32, and Base64 Data Encodings&quot;">RFC4648</a>] SHA-256 [<a href="#ref-SHS" title="&quot;Secure Hash Standard (SHS)&quot;">SHS</a>] hash
+   (a.k.a., thumbprint, fingerprint, or digest) of the DER encoding
+   [<a href="#ref-X690" title="&quot;Information Technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X690</a>] of the X.509 certificate [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>].  The base64url-encoded
+   value MUST omit all trailing pad &#x27;=&#x27; characters and MUST NOT include
+   any line breaks, whitespace, or other additional characters.
+
+   The following is an example of a JWT payload containing an &quot;x5t#S256&quot;
+   certificate thumbprint confirmation method.  The new JWT content
+   introduced by this specification is the &quot;cnf&quot; confirmation method
+   claim at the bottom of the example that has the &quot;x5t#S256&quot;
+   confirmation method member containing the value that is the hash of
+   the client certificate to which the access token is bound.
+
+     {
+       &quot;iss&quot;: &quot;https://server.example.com&quot;,
+       &quot;sub&quot;: &quot;ty.webb@example.com&quot;,
+       &quot;exp&quot;: 1493726400,
+       &quot;nbf&quot;: 1493722800,
+       &quot;cnf&quot;:{
+         &quot;x5t#S256&quot;: &quot;bwcK0esc3ACC3DB2Y5_lESsXE8o9ltc05O89jdN-dg2&quot;
+       }
+     }
+
+   Figure 2: Example JWT Claims Set with an X.509 Certificate Thumbprint
+                            Confirmation Method
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Confirmation Method for Token Introspection</span>
+
+   OAuth 2.0 Token Introspection [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>] defines a method for a
+   protected resource to query an authorization server about the active
+   state of an access token as well as to determine metainformation
+   about the token.
+
+   For a mutual-TLS client certificate-bound access token, the hash of
+   the certificate to which the token is bound is conveyed to the
+   protected resource as metainformation in a token introspection
+   response.  The hash is conveyed using the same &quot;cnf&quot; with &quot;x5t#S256&quot;
+   member structure as the certificate SHA-256 thumbprint confirmation
+   method, described in <a href="#section-3.1">Section 3.1</a>, as a top-level member of the
+   introspection response JSON.  The protected resource compares that
+   certificate hash to a hash of the client certificate used for mutual-
+   TLS authentication and rejects the request if they do not match.
+
+   The following is an example of an introspection response for an
+   active token with an &quot;x5t#S256&quot; certificate thumbprint confirmation
+   method.  The new introspection response content introduced by this
+   specification is the &quot;cnf&quot; confirmation method at the bottom of the
+   example that has the &quot;x5t#S256&quot; confirmation method member containing
+   the value that is the hash of the client certificate to which the
+   access token is bound.
+
+     HTTP/1.1 200 OK
+     Content-Type: application/json
+
+     {
+       &quot;active&quot;: true,
+       &quot;iss&quot;: &quot;https://server.example.com&quot;,
+       &quot;sub&quot;: &quot;ty.webb@example.com&quot;,
+       &quot;exp&quot;: 1493726400,
+       &quot;nbf&quot;: 1493722800,
+       &quot;cnf&quot;:{
+         &quot;x5t#S256&quot;: &quot;bwcK0esc3ACC3DB2Y5_lESsXE8o9ltc05O89jdN-dg2&quot;
+       }
+     }
+
+      Figure 3: Example Introspection Response for a Certificate-Bound
+                                Access Token
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Authorization Server Metadata</span>
+
+   This document introduces the following new authorization server
+   metadata [<a href="/doc/html/rfc8414" title="&quot;OAuth 2.0 Authorization Server Metadata&quot;">RFC8414</a>] parameter to signal the server&#x27;s capability to
+   issue certificate-bound access tokens:
+
+   tls_client_certificate_bound_access_tokens
+      OPTIONAL.  Boolean value indicating server support for mutual-TLS
+      client certificate-bound access tokens.  If omitted, the default
+      value is &quot;false&quot;.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Client Registration Metadata</span>
+
+   The following new client metadata parameter is introduced to convey
+   the client&#x27;s intention to use certificate-bound access tokens:
+
+   tls_client_certificate_bound_access_tokens
+      OPTIONAL.  Boolean value used to indicate the client&#x27;s intention
+      to use mutual-TLS client certificate-bound access tokens.  If
+      omitted, the default value is &quot;false&quot;.
+
+   Note that if a client that has indicated the intention to use mutual-
+   TLS client certificate-bound tokens makes a request to the token
+   endpoint over a non-mutual-TLS connection, it is at the authorization
+   server&#x27;s discretion as to whether to return an error or issue an
+   unbound token.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Public Clients and Certificate-Bound Tokens</span>
+
+   Mutual-TLS OAuth client authentication and certificate-bound access
+   tokens can be used independently of each other.  Use of certificate-
+   bound access tokens without mutual-TLS OAuth client authentication,
+   for example, is possible in support of binding access tokens to a TLS
+   client certificate for public clients (those without authentication
+   credentials associated with the &quot;client_id&quot;).  The authorization
+   server would configure the TLS stack in the same manner as for the
+   Self-Signed Certificate method such that it does not verify that the
+   certificate presented by the client during the handshake is signed by
+   a trusted CA.  Individual instances of a client would create a self-
+   signed certificate for mutual TLS with both the authorization server
+   and resource server.  The authorization server would not use the
+   mutual-TLS certificate to authenticate the client at the OAuth layer
+   but would bind the issued access token to the certificate for which
+   the client has proven possession of the corresponding private key.
+   The access token is then bound to the certificate and can only be
+   used by the client possessing the certificate and corresponding
+   private key and utilizing them to negotiate mutual TLS on connections
+   to the resource server.  When the authorization server issues a
+   refresh token to such a client, it SHOULD also bind the refresh token
+   to the respective certificate and check the binding when the refresh
+   token is presented to get new access tokens.  The implementation
+   details of the binding of the refresh token are at the discretion of
+   the authorization server.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Metadata for Mutual-TLS Endpoint Aliases</span>
+
+   The process of negotiating client certificate-based mutual TLS
+   involves a TLS server requesting a certificate from the TLS client
+   (the client does not provide one unsolicited).  Although a server can
+   be configured such that client certificates are optional, meaning
+   that the connection is allowed to continue when the client does not
+   provide a certificate, the act of a server requesting a certificate
+   can result in undesirable behavior from some clients.  This is
+   particularly true of web browsers as TLS clients, which will
+   typically present the end user with an intrusive certificate
+   selection interface when the server requests a certificate.
+
+   Authorization servers supporting both clients using mutual TLS and
+   conventional clients MAY chose to isolate the server side mutual-TLS
+   behavior to only clients intending to do mutual TLS, thus avoiding
+   any undesirable effects it might have on conventional clients.  The
+   following authorization server metadata parameter is introduced to
+   facilitate such separation:
+
+   mtls_endpoint_aliases
+      OPTIONAL.  A JSON object containing alternative authorization
+      server endpoints that, when present, an OAuth client intending to
+      do mutual TLS uses in preference to the conventional endpoints.
+      The parameter value itself consists of one or more endpoint
+      parameters, such as &quot;token_endpoint&quot;, &quot;revocation_endpoint&quot;,
+      &quot;introspection_endpoint&quot;, etc., conventionally defined for the top
+      level of authorization server metadata.  An OAuth client intending
+      to do mutual TLS (for OAuth client authentication and/or to
+      acquire or use certificate-bound tokens) when making a request
+      directly to the authorization server MUST use the alias URL of the
+      endpoint within the &quot;mtls_endpoint_aliases&quot;, when present, in
+      preference to the endpoint URL of the same name at the top level
+      of metadata.  When an endpoint is not present in
+      &quot;mtls_endpoint_aliases&quot;, then the client uses the conventional
+      endpoint URL defined at the top level of the authorization server
+      metadata.  Metadata parameters within &quot;mtls_endpoint_aliases&quot; that
+      do not define endpoints to which an OAuth client makes a direct
+      request have no meaning and SHOULD be ignored.
+
+   Below is an example of an authorization server metadata document with
+   the &quot;mtls_endpoint_aliases&quot; parameter, which indicates aliases for
+   the token, revocation, and introspection endpoints that an OAuth
+   client intending to do mutual TLS would use in preference to the
+   conventional token, revocation, and introspection endpoints.  Note
+   that the endpoints in &quot;mtls_endpoint_aliases&quot; use a different host
+   than their conventional counterparts, which allows the authorization
+   server (via TLS &quot;server_name&quot; extension [<a href="/doc/html/rfc6066" title="&quot;Transport Layer Security (TLS) Extensions: Extension Definitions&quot;">RFC6066</a>] or actual distinct
+   hosts) to differentiate its TLS behavior as appropriate.
+
+   {
+     &quot;issuer&quot;: &quot;https://server.example.com&quot;,
+     &quot;authorization_endpoint&quot;: &quot;https://server.example.com/authz&quot;,
+     &quot;token_endpoint&quot;: &quot;https://server.example.com/token&quot;,
+     &quot;introspection_endpoint&quot;: &quot;https://server.example.com/introspect&quot;,
+     &quot;revocation_endpoint&quot;: &quot;https://server.example.com/revo&quot;,
+     &quot;jwks_uri&quot;: &quot;https://server.example.com/jwks&quot;,
+     &quot;response_types_supported&quot;: [&quot;code&quot;],
+     &quot;response_modes_supported&quot;: [&quot;fragment&quot;,&quot;query&quot;,&quot;form_post&quot;],
+     &quot;grant_types_supported&quot;: [&quot;authorization_code&quot;, &quot;refresh_token&quot;],
+     &quot;token_endpoint_auth_methods_supported&quot;:
+                     [&quot;tls_client_auth&quot;,&quot;client_secret_basic&quot;,&quot;none&quot;],
+     &quot;tls_client_certificate_bound_access_tokens&quot;: true,
+     &quot;mtls_endpoint_aliases&quot;: {
+       &quot;token_endpoint&quot;: &quot;https://mtls.example.com/token&quot;,
+       &quot;revocation_endpoint&quot;: &quot;https://mtls.example.com/revo&quot;,
+       &quot;introspection_endpoint&quot;: &quot;https://mtls.example.com/introspect&quot;
+     }
+   }
+
+      Figure 4: Example Authorization Server Metadata with Mutual-TLS
+                              Endpoint Aliases
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Implementation Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Authorization Server</span>
+
+   The authorization server needs to set up its TLS configuration
+   appropriately for the OAuth client authentication methods it
+   supports.
+
+   An authorization server that supports mutual-TLS client
+   authentication and other client authentication methods or public
+   clients in parallel would make mutual TLS optional (i.e., allowing a
+   handshake to continue after the server requests a client certificate
+   but the client does not send one).
+
+   In order to support the Self-Signed Certificate method alone, the
+   authorization server would configure the TLS stack in such a way that
+   it does not verify whether the certificate presented by the client
+   during the handshake is signed by a trusted CA certificate.
+
+   As described in <a href="#section-3">Section 3</a>, the authorization server binds the issued
+   access token to the TLS client certificate, which means that it will
+   only issue certificate-bound tokens for a certificate that the client
+   has proven possession of the corresponding private key.
+
+   The authorization server may also consider hosting the token endpoint
+   and other endpoints requiring client authentication on a separate
+   host name or port in order to prevent unintended impact on the TLS
+   behavior of its other endpoints, e.g., the authorization endpoint.
+   As described in <a href="#section-5">Section 5</a>, it may further isolate any potential
+   impact of the server requesting client certificates by offering a
+   distinct set of endpoints on a separate host or port, which are
+   aliases for the originals that a client intending to do mutual TLS
+   will use in preference to the conventional endpoints.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Resource Server</span>
+
+   OAuth divides the roles and responsibilities such that the resource
+   server relies on the authorization server to perform client
+   authentication and obtain resource-owner (end-user) authorization.
+   The resource server makes authorization decisions based on the access
+   token presented by the client but does not directly authenticate the
+   client per se.  The manner in which an access token is bound to the
+   client certificate and how a protected resource verifies the proof-
+   of-possession decouples that from the specific method that the client
+   used to authenticate with the authorization server.  Mutual TLS
+   during protected resource access can, therefore, serve purely as a
+   proof-of-possession mechanism.  As such, it is not necessary for the
+   resource server to validate the trust chain of the client&#x27;s
+   certificate in any of the methods defined in this document.  The
+   resource server would, therefore, configure the TLS stack in a way
+   that it does not verify whether the certificate presented by the
+   client during the handshake is signed by a trusted CA certificate.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Certificate Expiration and Bound Access Tokens</span>
+
+   As described in <a href="#section-3">Section 3</a>, an access token is bound to a specific
+   client certificate, which means that the same certificate must be
+   used for mutual TLS on protected resource access.  It also implies
+   that access tokens are invalidated when a client updates the
+   certificate, which can be handled similarly to expired access tokens
+   where the client requests a new access token (typically with a
+   refresh token) and retries the protected resource request.
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  Implicit Grant Unsupported</span>
+
+   This document describes binding an access token to the client
+   certificate presented on the TLS connection from the client to the
+   authorization server&#x27;s token endpoint, however, such binding of
+   access tokens issued directly from the authorization endpoint via the
+   implicit grant flow is explicitly out of scope.  End users interact
+   directly with the authorization endpoint using a web browser, and the
+   use of client certificates in user&#x27;s browsers bring operational and
+   usability issues that make it undesirable to support certificate-
+   bound access tokens issued in the implicit grant flow.
+   Implementations wanting to employ certificate-bound access tokens
+   should utilize grant types that involve the client making an access
+   token request directly to the token endpoint (e.g., the authorization
+   code and refresh token grant types).
+
+<span class="h3"><a class="selflink" id="section-6.5" href="#section-6.5">6.5</a>.  TLS Termination</span>
+
+   An authorization server or resource server MAY choose to terminate
+   TLS connections at a load balancer, reverse proxy, or other network
+   intermediary.  How the client certificate metadata is securely
+   communicated between the intermediary and the application server, in
+   this case, is out of scope of this specification.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Certificate-Bound Refresh Tokens</span>
+
+   The OAuth 2.0 Authorization Framework [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>] requires that an
+   authorization server (AS) bind refresh tokens to the client to which
+   they were issued and that confidential clients (those having
+   established authentication credentials with the AS) authenticate to
+   the AS when presenting a refresh token.  As a result, refresh tokens
+   are indirectly certificate-bound by way of the client ID and the
+   associated requirement for (certificate-based) authentication to the
+   AS when issued to clients utilizing the &quot;tls_client_auth&quot; or
+   &quot;self_signed_tls_client_auth&quot; methods of client authentication.
+   <a href="#section-4">Section 4</a> describes certificate-bound refresh tokens issued to public
+   clients (those without authentication credentials associated with the
+   &quot;client_id&quot;).
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Certificate Thumbprint Binding</span>
+
+   The binding between the certificate and access token specified in
+   <a href="#section-3.1">Section 3.1</a> uses a cryptographic hash of the certificate.  It relies
+   on the hash function having sufficient second-preimage resistance so
+   as to make it computationally infeasible to find or create another
+   certificate that produces to the same hash output value.  The SHA-256
+   hash function was used because it meets the aforementioned
+   requirement while being widely available.  If, in the future,
+   certificate thumbprints need to be computed using hash function(s)
+   other than SHA-256, it is suggested that, for additional related JWT
+   confirmation methods, members be defined for that purpose and
+   registered in the IANA &quot;JWT Confirmation Methods&quot; registry
+   [<a href="#ref-IANA.JWT.Claims">IANA.JWT.Claims</a>] for JWT &quot;cnf&quot; member values.
+
+   Community knowledge about the strength of various algorithms and
+   feasible attacks can change suddenly, and experience shows that a
+   document about security is a point-in-time statement.  Readers are
+   advised to seek out any errata or updates that apply to this
+   document.
+
+<span class="h3"><a class="selflink" id="section-7.3" href="#section-7.3">7.3</a>.  TLS Versions and Best Practices</span>
+
+   This document is applicable with any TLS version supporting
+   certificate-based client authentication.  Both TLS 1.3 [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>] and
+   TLS 1.2 [<a href="/doc/html/rfc5246" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.2&quot;">RFC5246</a>] are cited herein, because, at the time of writing,
+   1.3 is the newest version, while 1.2 is the most widely deployed.
+   General implementation and security considerations for TLS, including
+   version recommendations, can be found in [<a href="#ref-BCP195" title="&quot;Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)&quot;">BCP195</a>].
+
+   TLS certificate validation (for both client and server certificates)
+   requires a local database of trusted certificate authorities (CAs).
+   Decisions about what CAs to trust and how to make such a
+   determination of trust are out of scope for this document.
+
+<span class="h3"><a class="selflink" id="section-7.4" href="#section-7.4">7.4</a>.  X.509 Certificate Spoofing</span>
+
+   If the PKI method of client authentication is used, an attacker could
+   try to impersonate a client using a certificate with the same subject
+   (DN or SAN) but issued by a different CA that the authorization
+   server trusts.  To cope with that threat, the authorization server
+   SHOULD only accept, as trust anchors, a limited number of CAs whose
+   certificate issuance policy meets its security requirements.  There
+   is an assumption then that the client and server agree out of band on
+   the set of trust anchors that the server uses to create and validate
+   the certificate chain.  Without this assumption the use of a subject
+   to identify the client certificate would open the server up to
+   certificate spoofing attacks.
+
+<span class="h3"><a class="selflink" id="section-7.5" href="#section-7.5">7.5</a>.  X.509 Certificate Parsing and Validation Complexity</span>
+
+   Parsing and validation of X.509 certificates and certificate chains
+   is complex, and implementation mistakes have previously exposed
+   security vulnerabilities.  Complexities of validation include (but
+   are not limited to) [<a href="#ref-CX5P" title="&quot;Common x509 certificate validation/creation pitfalls&quot;">CX5P</a>] [<a href="#ref-DCW" title="&quot;The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software&quot;">DCW</a>] [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>]:
+
+   *  checking of basic constraints, basic and extended key usage
+      constraints, validity periods, and critical extensions;
+
+   *  handling of embedded NUL bytes in ASN.1 counted-length strings and
+      non-canonical or non-normalized string representations in subject
+      names;
+
+   *  handling of wildcard patterns in subject names;
+
+   *  recursive verification of certificate chains and checking
+      certificate revocation.
+
+   For these reasons, implementors SHOULD use an established and well-
+   tested X.509 library (such as one used by an established TLS library)
+   for validation of X.509 certificate chains and SHOULD NOT attempt to
+   write their own X.509 certificate validation procedures.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Privacy Considerations</span>
+
+   In TLS versions prior to 1.3, the client&#x27;s certificate is sent
+   unencrypted in the initial handshake and can potentially be used by
+   third parties to monitor, track, and correlate client activity.  This
+   is likely of little concern for clients that act on behalf of a
+   significant number of end users because individual user activity will
+   not be discernible amidst the client activity as a whole.  However,
+   clients that act on behalf of a single end user, such as a native
+   application on a mobile device, should use TLS version 1.3 whenever
+   possible or consider the potential privacy implications of using
+   mutual TLS on earlier versions.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  JWT Confirmation Methods Registration</span>
+
+   Per this specification, the following value has been registered in
+   the IANA &quot;JWT Confirmation Methods&quot; registry [<a href="#ref-IANA.JWT.Claims">IANA.JWT.Claims</a>] for
+   JWT &quot;cnf&quot; member values established by [<a href="/doc/html/rfc7800" title="&quot;Proof-of- Possession Key Semantics for JSON Web Tokens (JWTs)&quot;">RFC7800</a>].
+
+   Confirmation Method Value:  &quot;x5t#S256&quot;
+   Confirmation Method Description:  X.509 Certificate SHA-256
+      Thumbprint
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-3.1">Section&nbsp;3.1 of RFC 8705</a>
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Authorization Server Metadata Registration</span>
+
+   Per this specification, the following values have been registered in
+   the IANA &quot;OAuth Authorization Server Metadata&quot; registry
+   [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>] established by [<a href="/doc/html/rfc8414" title="&quot;OAuth 2.0 Authorization Server Metadata&quot;">RFC8414</a>].
+
+   Metadata Name:  &quot;tls_client_certificate_bound_access_tokens&quot;
+   Metadata Description:  Indicates authorization server support for
+      mutual-TLS client certificate-bound access tokens.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-3.3">Section&nbsp;3.3 of RFC 8705</a>
+
+   Metadata Name:  &quot;mtls_endpoint_aliases&quot;
+   Metadata Description:  JSON object containing alternative
+      authorization server endpoints, which a client intending to do
+      mutual TLS will use in preference to the conventional endpoints.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-5">Section&nbsp;5 of RFC 8705</a>
+
+<span class="h3"><a class="selflink" id="section-9.3" href="#section-9.3">9.3</a>.  Token Endpoint Authentication Method Registration</span>
+
+   Per this specification, the following values have been registered in
+   the IANA &quot;OAuth Token Endpoint Authentication Methods&quot; registry
+   [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>] established by [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>].
+
+   Token Endpoint Authentication Method Name:  &quot;tls_client_auth&quot;
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.1.1">Section&nbsp;2.1.1 of RFC 8705</a>
+
+   Token Endpoint Authentication Method Name:  &quot;self_signed_tls_client_
+      auth&quot;
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.2.1">Section&nbsp;2.2.1 of RFC 8705</a>
+
+<span class="h3"><a class="selflink" id="section-9.4" href="#section-9.4">9.4</a>.  Token Introspection Response Registration</span>
+
+   &quot;Proof-of-Possession Key Semantics for JSON Web Tokens (JWTs)&quot;
+   [<a href="/doc/html/rfc7800" title="&quot;Proof-of- Possession Key Semantics for JSON Web Tokens (JWTs)&quot;">RFC7800</a>] defined the &quot;cnf&quot; (confirmation) claim that enables
+   confirmation key information to be carried in a JWT.  However, the
+   same proof-of-possession semantics are also useful for introspected
+   access tokens whereby the protected resource obtains the confirmation
+   key data as metainformation of a token introspection response and
+   uses that information in verifying proof-of-possession.  Therefore,
+   this specification defines and registers proof-of-possession
+   semantics for OAuth 2.0 Token Introspection [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>] using the &quot;cnf&quot;
+   structure.  When included as a top-level member of an OAuth token
+   introspection response, &quot;cnf&quot; has the same semantics and format as
+   the claim of the same name defined in [<a href="/doc/html/rfc7800" title="&quot;Proof-of- Possession Key Semantics for JSON Web Tokens (JWTs)&quot;">RFC7800</a>].  While this
+   specification only explicitly uses the &quot;x5t#S256&quot; confirmation method
+   member (see <a href="#section-3.2">Section 3.2</a>), it needs to define and register the higher-
+   level &quot;cnf&quot; structure as an introspection response member in order to
+   define and use the more specific certificate thumbprint confirmation
+   method.
+
+   As such, the following values have been registered in the IANA &quot;OAuth
+   Token Introspection Response&quot; registry [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>]
+   established by [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>].
+
+   Claim Name:  &quot;cnf&quot;
+   Claim Description:  Confirmation
+   Change Controller:  IESG
+   Specification Document(s):  [<a href="/doc/html/rfc7800" title="&quot;Proof-of- Possession Key Semantics for JSON Web Tokens (JWTs)&quot;">RFC7800</a>] and <a href="/doc/html/rfc8705">RFC 8705</a>
+
+<span class="h3"><a class="selflink" id="section-9.5" href="#section-9.5">9.5</a>.  Dynamic Client Registration Metadata Registration</span>
+
+   Per this specification, the following client metadata definitions
+   have been registered in the IANA &quot;OAuth Dynamic Client Registration
+   Metadata&quot; registry [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>] established by [<a href="/doc/html/rfc7591" title="&quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;">RFC7591</a>]:
+
+   Client Metadata Name:  &quot;tls_client_certificate_bound_access_tokens&quot;
+   Client Metadata Description:  Indicates the client&#x27;s intention to use
+      mutual-TLS client certificate-bound access tokens.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-3.4">Section&nbsp;3.4 of RFC 8705</a>
+
+   Client Metadata Name:  &quot;tls_client_auth_subject_dn&quot;
+   Client Metadata Description:  String value specifying the expected
+      subject DN of the client certificate.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.1.2">Section&nbsp;2.1.2 of RFC 8705</a>
+
+   Client Metadata Name:  &quot;tls_client_auth_san_dns&quot;
+   Client Metadata Description:  String value specifying the expected
+      dNSName SAN entry in the client certificate.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.1.2">Section&nbsp;2.1.2 of RFC 8705</a>
+
+   Client Metadata Name:  &quot;tls_client_auth_san_uri&quot;
+   Client Metadata Description:  String value specifying the expected
+      uniformResourceIdentifier SAN entry in the client certificate.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.1.2">Section&nbsp;2.1.2 of RFC 8705</a>
+
+   Client Metadata Name:  &quot;tls_client_auth_san_ip&quot;
+   Client Metadata Description:  String value specifying the expected
+      iPAddress SAN entry in the client certificate.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.1.2">Section&nbsp;2.1.2 of RFC 8705</a>
+
+   Client Metadata Name:  &quot;tls_client_auth_san_email&quot;
+   Client Metadata Description:  String value specifying the expected
+      rfc822Name SAN entry in the client certificate.
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8705#section-2.1.2">Section&nbsp;2.1.2 of RFC 8705</a>
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-BCP195">BCP195</a>]   Sheffer, Y., Holz, R., and P. Saint-Andre,
+              &quot;Recommendations for Secure Use of Transport Layer
+              Security (TLS) and Datagram Transport Layer Security
+              (DTLS)&quot;, <a href="/doc/html/bcp195">BCP 195</a>, <a href="/doc/html/rfc7525">RFC 7525</a>, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/bcp195">https://www.rfc-editor.org/info/bcp195</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC4514">RFC4514</a>]  Zeilenga, K., Ed., &quot;Lightweight Directory Access Protocol
+              (LDAP): String Representation of Distinguished Names&quot;,
+              <a href="/doc/html/rfc4514">RFC 4514</a>, DOI 10.17487/RFC4514, June 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4514">https://www.rfc-editor.org/info/rfc4514</a>&gt;.
+
+   [<a id="ref-RFC4648">RFC4648</a>]  Josefsson, S., &quot;The Base16, Base32, and Base64 Data
+              Encodings&quot;, <a href="/doc/html/rfc4648">RFC 4648</a>, DOI 10.17487/RFC4648, October 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4648">https://www.rfc-editor.org/info/rfc4648</a>&gt;.
+
+   [<a id="ref-RFC5246">RFC5246</a>]  Dierks, T. and E. Rescorla, &quot;The Transport Layer Security
+              (TLS) Protocol Version 1.2&quot;, <a href="/doc/html/rfc5246">RFC 5246</a>,
+              DOI 10.17487/RFC5246, August 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5246">https://www.rfc-editor.org/info/rfc5246</a>&gt;.
+
+   [<a id="ref-RFC5280">RFC5280</a>]  Cooper, D., Santesson, S., Farrell, S., Boeyen, S.,
+              Housley, R., and W. Polk, &quot;Internet X.509 Public Key
+              Infrastructure Certificate and Certificate Revocation List
+              (CRL) Profile&quot;, <a href="/doc/html/rfc5280">RFC 5280</a>, DOI 10.17487/RFC5280, May 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5280">https://www.rfc-editor.org/info/rfc5280</a>&gt;.
+
+   [<a id="ref-RFC6749">RFC6749</a>]  Hardt, D., Ed., &quot;The OAuth 2.0 Authorization Framework&quot;,
+              <a href="/doc/html/rfc6749">RFC 6749</a>, DOI 10.17487/RFC6749, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6749">https://www.rfc-editor.org/info/rfc6749</a>&gt;.
+
+   [<a id="ref-RFC6750">RFC6750</a>]  Jones, M. and D. Hardt, &quot;The OAuth 2.0 Authorization
+              Framework: Bearer Token Usage&quot;, <a href="/doc/html/rfc6750">RFC 6750</a>,
+              DOI 10.17487/RFC6750, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6750">https://www.rfc-editor.org/info/rfc6750</a>&gt;.
+
+   [<a id="ref-RFC7517">RFC7517</a>]  Jones, M., &quot;JSON Web Key (JWK)&quot;, <a href="/doc/html/rfc7517">RFC 7517</a>,
+              DOI 10.17487/RFC7517, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7517">https://www.rfc-editor.org/info/rfc7517</a>&gt;.
+
+   [<a id="ref-RFC7519">RFC7519</a>]  Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web Token
+              (JWT)&quot;, <a href="/doc/html/rfc7519">RFC 7519</a>, DOI 10.17487/RFC7519, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7519">https://www.rfc-editor.org/info/rfc7519</a>&gt;.
+
+   [<a id="ref-RFC7591">RFC7591</a>]  Richer, J., Ed., Jones, M., Bradley, J., Machulak, M., and
+              P. Hunt, &quot;OAuth 2.0 Dynamic Client Registration Protocol&quot;,
+              <a href="/doc/html/rfc7591">RFC 7591</a>, DOI 10.17487/RFC7591, July 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7591">https://www.rfc-editor.org/info/rfc7591</a>&gt;.
+
+   [<a id="ref-RFC7662">RFC7662</a>]  Richer, J., Ed., &quot;OAuth 2.0 Token Introspection&quot;,
+              <a href="/doc/html/rfc7662">RFC 7662</a>, DOI 10.17487/RFC7662, October 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7662">https://www.rfc-editor.org/info/rfc7662</a>&gt;.
+
+   [<a id="ref-RFC7800">RFC7800</a>]  Jones, M., Bradley, J., and H. Tschofenig, &quot;Proof-of-
+              Possession Key Semantics for JSON Web Tokens (JWTs)&quot;,
+              <a href="/doc/html/rfc7800">RFC 7800</a>, DOI 10.17487/RFC7800, April 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7800">https://www.rfc-editor.org/info/rfc7800</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8414">RFC8414</a>]  Jones, M., Sakimura, N., and J. Bradley, &quot;OAuth 2.0
+              Authorization Server Metadata&quot;, <a href="/doc/html/rfc8414">RFC 8414</a>,
+              DOI 10.17487/RFC8414, June 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8414">https://www.rfc-editor.org/info/rfc8414</a>&gt;.
+
+   [<a id="ref-RFC8446">RFC8446</a>]  Rescorla, E., &quot;The Transport Layer Security (TLS) Protocol
+              Version 1.3&quot;, <a href="/doc/html/rfc8446">RFC 8446</a>, DOI 10.17487/RFC8446, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8446">https://www.rfc-editor.org/info/rfc8446</a>&gt;.
+
+   [<a id="ref-SHS">SHS</a>]      National Institute of Standards and Technology (NIST),
+              &quot;Secure Hash Standard (SHS)&quot;, FIPS PUB 180-4,
+              DOI 10.6028/NIST.FIPS.180-4, August 2015,
+              &lt;<a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf">https://nvlpubs.nist.gov/nistpubs/FIPS/</a>
+              <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf">NIST.FIPS.180-4.pdf</a>&gt;.
+
+   [<a id="ref-X690">X690</a>]     ITU-T, &quot;Information Technology - ASN.1 encoding rules:
+              Specification of Basic Encoding Rules (BER), Canonical
+              Encoding Rules (CER) and Distinguished Encoding Rules
+              (DER)&quot;, ITU-T Recommendation X.690, August 2015.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-CX5P">CX5P</a>]     Wong, D., &quot;Common x509 certificate validation/creation
+              pitfalls&quot;, September 2016,
+              &lt;<a href="https://www.cryptologie.net/article/374/common-x509-certificate-validationcreation-pitfalls">https://www.cryptologie.net/article/374/common-x509-</a>
+              <a href="https://www.cryptologie.net/article/374/common-x509-certificate-validationcreation-pitfalls">certificate-validationcreation-pitfalls</a>&gt;.
+
+   [<a id="ref-DCW">DCW</a>]      Georgiev, M., Iyengar, S., Jana, S., Anubhai, R., Boneh,
+              D., and V. Shmatikov, &quot;The Most Dangerous Code in the
+              World: Validating SSL Certificates in Non-Browser
+              Software&quot;, DOI 10.1145/2382196.2382204, October 2012,
+              &lt;<a href="http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf">http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf</a>&gt;.
+
+   [<a id="ref-IANA.JWT.Claims">IANA.JWT.Claims</a>]
+              IANA, &quot;JSON Web Token Claims&quot;,
+              &lt;<a href="https://www.iana.org/assignments/jwt">https://www.iana.org/assignments/jwt</a>&gt;.
+
+   [<a id="ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>]
+              IANA, &quot;OAuth Parameters&quot;,
+              &lt;<a href="https://www.iana.org/assignments/oauth-parameters">https://www.iana.org/assignments/oauth-parameters</a>&gt;.
+
+   [<a id="ref-OpenID.CIBA">OpenID.CIBA</a>]
+              Fernandez, G., Walter, F., Nennker, A., Tonge, D., and B.
+              Campbell, &quot;OpenID Connect Client Initiated Backchannel
+              Authentication Flow - Core 1.0&quot;, 16 January 2019,
+              &lt;<a href="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html">https://openid.net/specs/openid-client-initiated-</a>
+              <a href="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html">backchannel-authentication-core-1_0.html</a>&gt;.
+
+   [<a id="ref-RFC4517">RFC4517</a>]  Legg, S., Ed., &quot;Lightweight Directory Access Protocol
+              (LDAP): Syntaxes and Matching Rules&quot;, <a href="/doc/html/rfc4517">RFC 4517</a>,
+              DOI 10.17487/RFC4517, June 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4517">https://www.rfc-editor.org/info/rfc4517</a>&gt;.
+
+   [<a id="ref-RFC5952">RFC5952</a>]  Kawamura, S. and M. Kawashima, &quot;A Recommendation for IPv6
+              Address Text Representation&quot;, <a href="/doc/html/rfc5952">RFC 5952</a>,
+              DOI 10.17487/RFC5952, August 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5952">https://www.rfc-editor.org/info/rfc5952</a>&gt;.
+
+   [<a id="ref-RFC6066">RFC6066</a>]  Eastlake 3rd, D., &quot;Transport Layer Security (TLS)
+              Extensions: Extension Definitions&quot;, <a href="/doc/html/rfc6066">RFC 6066</a>,
+              DOI 10.17487/RFC6066, January 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6066">https://www.rfc-editor.org/info/rfc6066</a>&gt;.
+
+   [<a id="ref-RFC7009">RFC7009</a>]  Lodderstedt, T., Ed., Dronia, S., and M. Scurtescu, &quot;OAuth
+              2.0 Token Revocation&quot;, <a href="/doc/html/rfc7009">RFC 7009</a>, DOI 10.17487/RFC7009,
+              August 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7009">https://www.rfc-editor.org/info/rfc7009</a>&gt;.
+
+   [<a id="ref-RFC7518">RFC7518</a>]  Jones, M., &quot;JSON Web Algorithms (JWA)&quot;, <a href="/doc/html/rfc7518">RFC 7518</a>,
+              DOI 10.17487/RFC7518, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7518">https://www.rfc-editor.org/info/rfc7518</a>&gt;.
+
+   [<a id="ref-TOKEN">TOKEN</a>]    Jones, M., Campbell, B., Bradley, J., and W. Denniss,
+              &quot;OAuth 2.0 Token Binding&quot;, Work in Progress, Internet-
+              Draft, <a href="/doc/html/draft-ietf-oauth-token-binding-08">draft-ietf-oauth-token-binding-08</a>, 19 October 2018,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-oauth-token-binding-08">https://tools.ietf.org/html/draft-ietf-oauth-token-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-oauth-token-binding-08">binding-08</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Example &quot;cnf&quot; Claim, Certificate, and JWK</span>
+
+   For reference, an &quot;x5t#S256&quot; value and the X.509 certificate from
+   which it was calculated are provided in the following examples,
+   Figures 5 and 6, respectively.  A JWK representation of the
+   certificate&#x27;s public key along with the &quot;x5c&quot; member is also provided
+   in Figure 7.
+
+   &quot;cnf&quot;:{&quot;x5t#S256&quot;:&quot;A4DtL2JmUMhAsvJj5tKyn64SqzmuXbMrJa0n761y5v0&quot;}
+
+                   Figure 5: x5t#S256 Confirmation Claim
+
+   -----BEGIN CERTIFICATE-----
+   MIIBBjCBrAIBAjAKBggqhkjOPQQDAjAPMQ0wCwYDVQQDDARtdGxzMB4XDTE4MTAx
+   ODEyMzcwOVoXDTIyMDUwMjEyMzcwOVowDzENMAsGA1UEAwwEbXRsczBZMBMGByqG
+   SM49AgEGCCqGSM49AwEHA0IABNcnyxwqV6hY8QnhxxzFQ03C7HKW9OylMbnQZjjJ
+   /Au08/coZwxS7LfA4vOLS9WuneIXhbGGWvsDSb0tH6IxLm8wCgYIKoZIzj0EAwID
+   SQAwRgIhAP0RC1E+vwJD/D1AGHGzuri+hlV/PpQEKTWUVeORWz83AiEA5x2eXZOV
+   bUlJSGQgjwD5vaUaKlLR50Q2DmFfQj1L+SY=
+   -----END CERTIFICATE-----
+
+               Figure 6: PEM Encoded Self-Signed Certificate
+
+   {
+    &quot;kty&quot;:&quot;EC&quot;,
+    &quot;x&quot;:&quot;1yfLHCpXqFjxCeHHHMVDTcLscpb07KUxudBmOMn8C7Q&quot;,
+    &quot;y&quot;:&quot;8_coZwxS7LfA4vOLS9WuneIXhbGGWvsDSb0tH6IxLm8&quot;,
+    &quot;crv&quot;:&quot;P-256&quot;,
+    &quot;x5c&quot;:[
+     &quot;MIIBBjCBrAIBAjAKBggqhkjOPQQDAjAPMQ0wCwYDVQQDDARtdGxzMB4XDTE4MTA
+      xODEyMzcwOVoXDTIyMDUwMjEyMzcwOVowDzENMAsGA1UEAwwEbXRsczBZMBMGBy
+      qGSM49AgEGCCqGSM49AwEHA0IABNcnyxwqV6hY8QnhxxzFQ03C7HKW9OylMbnQZ
+      jjJ/Au08/coZwxS7LfA4vOLS9WuneIXhbGGWvsDSb0tH6IxLm8wCgYIKoZIzj0E
+      AwIDSQAwRgIhAP0RC1E+vwJD/D1AGHGzuri+hlV/PpQEKTWUVeORWz83AiEA5x2
+      eXZOVbUlJSGQgjwD5vaUaKlLR50Q2DmFfQj1L+SY=&quot;
+      ]
+    }
+
+                           Figure 7: JSON Web Key
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Relationship to Token Binding</span>
+
+   OAuth 2.0 Token Binding [<a href="#ref-TOKEN" title="&quot;OAuth 2.0 Token Binding&quot;">TOKEN</a>] enables the application of Token
+   Binding to the various artifacts and tokens employed throughout
+   OAuth.  That includes binding of an access token to a Token Binding
+   key, which bears some similarities in motivation and design to the
+   mutual-TLS client certificate-bound access tokens defined in this
+   document.  Both documents define what is often called a proof-of-
+   possession security mechanism for access tokens, whereby a client
+   must demonstrate possession of cryptographic keying material when
+   accessing a protected resource.  The details differ somewhat between
+   the two documents but both have the authorization server bind the
+   access token that it issues to an asymmetric key pair held by the
+   client.  The client then proves possession of the private key from
+   that pair with respect to the TLS connection over which the protected
+   resource is accessed.
+
+   Token Binding uses bare keys that are generated on the client, which
+   avoids many of the difficulties of creating, distributing, and
+   managing certificates used in this specification.  However, at the
+   time of writing, Token Binding is fairly new, and there is relatively
+   little support for it in available application development platforms
+   and tooling.  Until better support for the underlying core Token
+   Binding specifications exists, practical implementations of OAuth 2.0
+   Token Binding are infeasible.  Mutual TLS, on the other hand, has
+   been around for some time and enjoys widespread support in web
+   servers and development platforms.  As a consequence, OAuth 2.0
+   Mutual-TLS Client Authentication and Certificate-Bound Access Tokens
+   can be built and deployed now using existing platforms and tools.  In
+   the future, the two specifications are likely to be deployed in
+   parallel for solving similar problems in different environments.
+   Authorization servers may even support both specifications
+   simultaneously using different proof-of-possession mechanisms for
+   tokens issued to different clients.
+
+Acknowledgements
+
+   Scott &quot;not Tomlinson&quot; Tomilson and Matt Peterson were involved in
+   design and development work on a mutual-TLS OAuth client
+   authentication implementation that predates this document.
+   Experience and learning from that work informed some of the content
+   of this document.
+
+   This specification was developed within the OAuth Working Group under
+   the chairmanship of Hannes Tschofenig and Rifaat Shekh-Yusef with
+   Eric Rescorla, Benjamin Kaduk, and Roman Danyliw serving as Security
+   Area Directors.  Additionally, the following individuals contributed
+   ideas, feedback, and wording that helped shape this specification:
+   Vittorio Bertocci, Sergey Beryozkin, Ralph Bragg, Sophie Bremer,
+   Roman Danyliw, Vladimir Dzhuvinov, Samuel Erdtman, Evan Gilman, Leif
+   Johansson, Michael Jones, Phil Hunt, Benjamin Kaduk, Takahiko
+   Kawasaki, Sean Leonard, Kepeng Li, Neil Madden, James Manger, Jim
+   Manico, Nov Matake, Sascha Preibisch, Eric Rescorla, Justin Richer,
+   Vincent Roca, Filip Skokan, Dave Tonge, and Hannes Tschofenig.
+
+Authors&#x27; Addresses
+
+   Brian Campbell
+   Ping Identity
+
+   Email: brian.d.campbell@gmail.com
+
+
+   John Bradley
+   Yubico
+
+   Email: ve7jtb@ve7jtb.com
+   URI:   <a href="http://www.thread-safe.com/">http://www.thread-safe.com/</a>
+
+
+   Nat Sakimura
+   Nomura Research Institute
+
+   Email: n-sakimura@nri.co.jp
+   URI:   <a href="https://nat.sakimura.org/">https://nat.sakimura.org/</a>
+
+
+   Torsten Lodderstedt
+   YES.com AG
+
+   Email: torsten@lodderstedt.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

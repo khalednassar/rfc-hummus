@@ -1,0 +1,589 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8712
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-iasa2-rfc2031bis/">
+  <meta name="description" content="The IETF-ISOC Relationship (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8712.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8712.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8712.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8712.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8712/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8712/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/iasa2/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-iasa2-rfc2031bis@ietf.org?subject=draft-ietf-iasa2-rfc2031bis" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-iasa2-rfc2031bis-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-iasa2-rfc2031bis-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-iasa2-rfc2031bis-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-iasa2-rfc2031bis-08">draft-ietf-iasa2-rfc2031bis-08</a>                       Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      G. Camarillo
+Request for Comments: 8712                                      Ericsson
+Obsoletes: <a href="/doc/html/rfc2031">2031</a>                                             J. Livingood
+Category: Informational                                          Comcast
+ISSN: 2070-1721                                            February 2020
+
+
+                       <span class="h1">The IETF-ISOC Relationship</span>
+
+Abstract
+
+   This document summarizes the Internet Engineering Task Force (IETF) -
+   Internet Society (ISOC) relationship, following a major revision to
+   the structure of the IETF Administrative Support Activity (IASA) in
+   2018.  The IASA was revised under a new &quot;IASA 2.0&quot; structure by the
+   IASA2 Working Group, which changed the IETF&#x27;s administrative, legal,
+   and financial structure.  As a result, it also changed the
+   relationship between the IETF and ISOC, which made it necessary to
+   revise <a href="/doc/html/rfc2031">RFC 2031</a>.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8712">https://www.rfc-editor.org/info/rfc8712</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction and History
+   2.  Philosophical Relationship with ISOC
+   3.  Main Division of Responsibilities between IETF and ISOC
+   4.  ISOC&#x27;s Role in the IETF Standards Process
+   5.  The IETF&#x27;s Role in ISOC
+   6.  Legal Relationship with ISOC
+   7.  Financial and Administrative Relationship with ISOC
+   8.  IANA Considerations
+   9.  Security Considerations
+   10. Privacy Considerations
+   11. References
+     11.1.  Normative References
+     11.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction and History</span>
+
+   The Internet Society provides a corporate home for the administrative
+   entity that supports the Internet Engineering Task Force (IETF), the
+   Internet Architecture Board (IAB), and the Internet Research Task
+   Force (IRTF), and supports the work of these groups through a variety
+   of programs.
+
+   The Internet Engineering Task Force (IETF) is the body that is
+   responsible for the development and maintenance of the Internet
+   Standards.  The IETF is primarily a volunteer organization.  Its
+   driving force is a group of dedicated, high-quality engineers from
+   all over the world.  In a structure of working groups, these
+   engineers exchange ideas and experience, and through discussion and
+   collaboration (both electronically and face-to-face), they strive to
+   achieve rough consensus and implement the standards through running
+   code.
+
+   The growth of the Internet over several decades has also led to the
+   growth of the IETF.  More and more people, organizations, and
+   companies rely on Internet Standards.  Nontechnical issues, such as
+   legal, administrative, and financial issues had long been an
+   undesirable but unavoidable part of the IETF.  To address these
+   issues, the IETF established the Poised95 Working Group in 1995.  Its
+   goal was to structure and document the IETF processes in order to
+   maximize the flexibility and freedom of IETF engineers so that they
+   could work in the way the IETF had always been most successful and to
+   honor the IETF credo: &quot;Rough consensus and running code&quot;.
+
+   The Poised95 Working Group concluded that the Internet Society
+   (ISOC), which was formed in 1992, was the best organization to handle
+   all of these legal, administrative, and financial tasks on behalf of,
+   and in close cooperation with, the IETF.  This led to documenting
+   things such as the IETF standards process [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>], the IETF
+   organizational structure [<a href="/doc/html/rfc2028" title="&quot;The Organizations Involved in the IETF Standards Process&quot;">RFC2028</a>], the IETF Nominating Committee
+   (NomCom) procedures [<a href="/doc/html/rfc2027" title="&quot;IAB and IESG Selection, Confirmation, and Recall Process: Operation of the Nominating and Recall Committees&quot;">RFC2027</a>], and the IETF-ISOC relationship
+   [<a href="/doc/html/rfc2031" title="&quot;IETF-ISOC relationship&quot;">RFC2031</a>].
+
+   As time passed and operational experience accumulated, additional
+   structure was necessary.  As a result, the Internet Administrative
+   Support Activity (IASA) was defined in 2005 and documented in
+   [<a href="/doc/html/rfc4071" title="&quot;Structure of the IETF Administrative Support Activity (IASA)&quot;">RFC4071</a>] and [<a href="/doc/html/rfc4371" title="&quot;BCP 101 Update for IPR Trust&quot;">RFC4371</a>].
+
+   In 2018, the IASA was revised under a new &quot;IASA 2.0&quot; structure by the
+   IASA2 Working Group, which made significant revisions to the IETF&#x27;s
+   administrative, legal, and financial structure.  One critical outcome
+   was the formation, in close cooperation between the IETF and ISOC, of
+   the IETF Administration Limited Liability Company (IETF LLC) as a
+   subsidiary of ISOC.
+
+   As a result of the IASA 2.0 structure [<a href="/doc/html/rfc8711" title="&quot;Structure of the IETF Administrative Support Activity, Version 2.0&quot;">RFC8711</a>] and formation of the
+   IETF LLC, the relationship between the IETF and ISOC has changed.
+   This document summarizes the current state of the IETF-ISOC
+   relationship at a high level and replaces [<a href="/doc/html/rfc2031" title="&quot;IETF-ISOC relationship&quot;">RFC2031</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Philosophical Relationship with ISOC</span>
+
+   ISOC and the IETF have historically been philosophically aligned.
+   ISOC&#x27;s connection with the IETF community has always played an
+   important role in its policy work, which has not changed.  ISOC has
+   always been and continues to be an advocate for multistakeholder
+   processes, which includes the technical community.  Open standards
+   are an explicit part of one of the focus areas in ISOC&#x27;s mission:
+   advancing the development and application of Internet infrastructure,
+   technologies, and open standards [<a href="#ref-ISOC-Mission">ISOC-Mission</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Main Division of Responsibilities between IETF and ISOC</span>
+
+   The IETF remains responsible for the development and quality of the
+   Internet Standards.  Apart from the roles described below, the IETF
+   and ISOC acknowledge that ISOC as an organization has no direct
+   influence whatsoever on the technical content of Internet Standards
+   (though ISOC employees may independently continue to make technical
+   contributions as individuals).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  ISOC&#x27;s Role in the IETF Standards Process</span>
+
+   ISOC plays a small role in the IETF standards process.  In
+   particular, ISOC assists the standards process by appointing the IETF
+   NomCom chair and by confirming IAB candidates who are put forward by
+   the IETF NomCom, as described in [<a href="/doc/html/rfc8713" title="&quot;IAB, IESG, IETF Trust, and IETF LLC Selection, Confirmation, and Recall Process: Operation of the IETF Nominating and Recall Committees&quot;">RFC8713</a>], and by acting as the last
+   resort in the appeals process, as described in [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>].
+
+   ISOC maintains liaison relationships and memberships in other
+   Standards Development Organizations (SDOs) and related organizations,
+   which directly benefits the IETF.  For example, ISOC is a Sector
+   Member of the ITU-T.  As a result, ISOC delegates are afforded the
+   same rights as other ITU-T Sector Members [<a href="/doc/html/rfc6756" title="&quot;Internet Engineering Task Force and International Telecommunication Union - Telecommunication Standardization Sector Collaboration Guidelines&quot;">RFC6756</a>].
+
+   ISOC also supports the IETF standards process indirectly (e.g., by
+   promoting it in relevant communities) through several programs.  For
+   example, ISOC&#x27;s Policymakers Programme to the IETF (usually referred
+   to simply as ISOC&#x27;s IETF Policy Program) gives policy experts an
+   opportunity to interact directly with the IETF technical community.
+   ISOC also performs technical work using the standards developed in
+   the IETF as its basis.  An example of that is ISOC&#x27;s work in
+   encouraging and supporting the deployment of IETF standards.
+
+   Otherwise, the involvement of ISOC&#x27;s employees in the IETF standards
+   process (e.g., as document editors or in leadership positions) is as
+   individual contributors rather than on institutional grounds.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  The IETF&#x27;s Role in ISOC</span>
+
+   The IETF plays a role in the governance of ISOC.  Per ISOC&#x27;s bylaws,
+   the IETF appoints a set of trustees to the ISOC Board.  The process
+   by which the IETF makes those appointments is defined in [<a href="/doc/html/rfc3677" title="&quot;IETF ISOC Board of Trustee Appointment Procedures&quot;">RFC3677</a>].
+
+   The charter of the IAB (Internet Architecture Board) [<a href="/doc/html/rfc2850" title="&quot;Charter of the Internet Architecture Board (IAB)&quot;">RFC2850</a>] states
+   that &quot;the IAB acts as a source of advice and guidance to the Board of
+   Trustees and Officers of the Internet Society concerning technical,
+   architectural, procedural, and (where appropriate) policy matters
+   pertaining to the Internet and its enabling technologies&quot;.  This
+   connection between the IAB and ISOC ensures that ISOC&#x27;s proposals in
+   the policy area are based on a sound understanding of the relevant
+   technologies and architectures.  ISOC&#x27;s strong connection to the
+   Internet technical community has always been one of its main
+   strengths.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Legal Relationship with ISOC</span>
+
+   The IETF LLC is a disregarded Limited Liability Company (LLC) of the
+   Internet Society that was established to provide a corporate legal
+   framework for facilitating current and future activities related to
+   the IETF, IAB, and IRTF.  It was established by the ISOC / IETF LLC
+   Agreement [<a href="#ref-OpAgreement">OpAgreement</a>] on August 27, 2018, and governs the
+   relationship between the IETF LLC and ISOC.
+
+   The IETF Trust, documented in [<a href="/doc/html/rfc5378" title="&quot;Rights Contributors Provide to the IETF Trust&quot;">RFC5378</a>], and updated in [<a href="/doc/html/rfc8714" title="&quot;Update to the Process for Selection of Trustees for the IETF Trust&quot;">RFC8714</a>] and
+   [<a href="/doc/html/rfc8715" title="&quot;IETF Administrative Support Activity 2.0: Update to the Process for Selection of Trustees for the IETF Trust&quot;">RFC8715</a>], provides legal protection for the RFC Series of documents
+   and other aspects of the IETF.  This includes things such as
+   protection for trademarks, copyrights, and intellectual property
+   rights.  As part of the IETF Trust arrangement, IETF standards
+   documents can be freely downloaded, copied, and distributed without
+   financial or other distribution restrictions, though all rights to
+   change these documents lie with the IETF.  The IETF Trust also
+   provides legal protection in case of disputes over intellectual
+   property rights and other rights.  The creation of the IETF LLC has
+   changed the way that the IETF Trust&#x27;s trustees are selected but did
+   not change the purpose or operation of the Trust.  One of the IETF
+   Trust&#x27;s trustees is appointed by the ISOC&#x27;s Board of Trustees.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Financial and Administrative Relationship with ISOC</span>
+
+   Under the terms of the Operating Agreement [<a href="#ref-OpAgreement">OpAgreement</a>] between ISOC
+   and the IETF, ISOC has agreed to provide significant funding support
+   for the IETF.  In addition, the IETF LLC is responsible for creating
+   and managing an annual operating budget for the IETF; for
+   negotiating, signing, and overseeing contracts; for fundraising; for
+   maintaining bank accounts; and for liability insurance.  The IETF LLC
+   is managed by a Board of Directors, one of whom is appointed by the
+   ISOC&#x27;s Board of Trustees.  The intention is that ISOC and the IETF
+   LLC operate at arm&#x27;s length.
+
+   The IETF LLC establishes contracts with third parties to provide
+   different types of services to the IETF.  Note that it is possible
+   that some of those services may be provided by ISOC or involve ISOC
+   staff.
+
+   Under the new IASA 2.0 structure, the IETF LLC is solely responsible
+   for its administration, including the IETF Trust, IAB, IESG, IETF
+   working groups, and other IETF processes.  A further exploration of
+   this can be found in <a href="/doc/html/rfc8711#section-4">Section&nbsp;4 of [RFC8711]</a>.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Security Considerations</span>
+
+   This document introduces no new security considerations.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Privacy Considerations</span>
+
+   This document introduces no new privacy considerations.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-11.1" href="#section-11.1">11.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC8711">RFC8711</a>]  Haberman, B., Hall, J., and J. Livingood, &quot;Structure of
+              the IETF Administrative Support Activity, Version 2.0&quot;,
+              <a href="/doc/html/bcp101">BCP 101</a>, <a href="/doc/html/rfc8711">RFC 8711</a>, DOI 10.17487/RFC8711, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8711">https://www.rfc-editor.org/info/rfc8711</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-11.2" href="#section-11.2">11.2</a>.  Informative References</span>
+
+   [<a id="ref-ISOC-Mission">ISOC-Mission</a>]
+              Internet Society, &quot;Internet Society Mission&quot;,
+              &lt;<a href="https://www.internetsociety.org/mission/">https://www.internetsociety.org/mission/</a>&gt;.
+
+   [<a id="ref-OpAgreement">OpAgreement</a>]
+              &quot;Limited Liability Company Agreement of IETF
+              Administration LLC&quot;, August 2018,
+              &lt;<a href="https://www.ietf.org/documents/180/IETF-LLC-Agreement.pdf">https://www.ietf.org/documents/180/IETF-LLC-</a>
+              <a href="https://www.ietf.org/documents/180/IETF-LLC-Agreement.pdf">Agreement.pdf</a>&gt;.
+
+   [<a id="ref-RFC2026">RFC2026</a>]  Bradner, S., &quot;The Internet Standards Process -- Revision
+              3&quot;, <a href="/doc/html/bcp9">BCP 9</a>, <a href="/doc/html/rfc2026">RFC 2026</a>, DOI 10.17487/RFC2026, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2026">https://www.rfc-editor.org/info/rfc2026</a>&gt;.
+
+   [<a id="ref-RFC2027">RFC2027</a>]  Galvin, J., &quot;IAB and IESG Selection, Confirmation, and
+              Recall Process: Operation of the Nominating and Recall
+              Committees&quot;, <a href="/doc/html/rfc2027">RFC 2027</a>, DOI 10.17487/RFC2027, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2027">https://www.rfc-editor.org/info/rfc2027</a>&gt;.
+
+   [<a id="ref-RFC2028">RFC2028</a>]  Hovey, R. and S. Bradner, &quot;The Organizations Involved in
+              the IETF Standards Process&quot;, <a href="/doc/html/bcp11">BCP 11</a>, <a href="/doc/html/rfc2028">RFC 2028</a>,
+              DOI 10.17487/RFC2028, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2028">https://www.rfc-editor.org/info/rfc2028</a>&gt;.
+
+   [<a id="ref-RFC2031">RFC2031</a>]  Huizer, E., &quot;IETF-ISOC relationship&quot;, <a href="/doc/html/rfc2031">RFC 2031</a>,
+              DOI 10.17487/RFC2031, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2031">https://www.rfc-editor.org/info/rfc2031</a>&gt;.
+
+   [<a id="ref-RFC2850">RFC2850</a>]  Internet Architecture Board and B. Carpenter, Ed.,
+              &quot;Charter of the Internet Architecture Board (IAB)&quot;,
+              <a href="/doc/html/bcp39">BCP 39</a>, <a href="/doc/html/rfc2850">RFC 2850</a>, DOI 10.17487/RFC2850, May 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2850">https://www.rfc-editor.org/info/rfc2850</a>&gt;.
+
+   [<a id="ref-RFC3677">RFC3677</a>]  Daigle, L., Ed. and Internet Architecture Board, &quot;IETF
+              ISOC Board of Trustee Appointment Procedures&quot;, <a href="/doc/html/bcp77">BCP 77</a>,
+              <a href="/doc/html/rfc3677">RFC 3677</a>, DOI 10.17487/RFC3677, December 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3677">https://www.rfc-editor.org/info/rfc3677</a>&gt;.
+
+   [<a id="ref-RFC4071">RFC4071</a>]  Austein, R., Ed. and B. Wijnen, Ed., &quot;Structure of the
+              IETF Administrative Support Activity (IASA)&quot;, <a href="/doc/html/bcp101">BCP 101</a>,
+              <a href="/doc/html/rfc4071">RFC 4071</a>, DOI 10.17487/RFC4071, April 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4071">https://www.rfc-editor.org/info/rfc4071</a>&gt;.
+
+   [<a id="ref-RFC4371">RFC4371</a>]  Carpenter, B., Ed. and L. Lynch, Ed., &quot;<a href="/doc/html/bcp101">BCP 101</a> Update for
+              IPR Trust&quot;, <a href="/doc/html/bcp101">BCP 101</a>, <a href="/doc/html/rfc4371">RFC 4371</a>, DOI 10.17487/RFC4371,
+              January 2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4371">https://www.rfc-editor.org/info/rfc4371</a>&gt;.
+
+   [<a id="ref-RFC5378">RFC5378</a>]  Bradner, S., Ed. and J. Contreras, Ed., &quot;Rights
+              Contributors Provide to the IETF Trust&quot;, <a href="/doc/html/bcp78">BCP 78</a>, <a href="/doc/html/rfc5378">RFC 5378</a>,
+              DOI 10.17487/RFC5378, November 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5378">https://www.rfc-editor.org/info/rfc5378</a>&gt;.
+
+   [<a id="ref-RFC6756">RFC6756</a>]  Trowbridge, S., Ed., Lear, E., Ed., Fishman, G., Ed., and
+              S. Bradner, Ed., &quot;Internet Engineering Task Force and
+              International Telecommunication Union - Telecommunication
+              Standardization Sector Collaboration Guidelines&quot;,
+              <a href="/doc/html/rfc6756">RFC 6756</a>, DOI 10.17487/RFC6756, September 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6756">https://www.rfc-editor.org/info/rfc6756</a>&gt;.
+
+   [<a id="ref-RFC8713">RFC8713</a>]  Kucherawy, M., Ed., Hinden, R., Ed., and J. Livingood,
+              Ed., &quot;IAB, IESG, IETF Trust, and IETF LLC Selection,
+              Confirmation, and Recall Process: Operation of the IETF
+              Nominating and Recall Committees&quot;, <a href="/doc/html/bcp10">BCP 10</a>, <a href="/doc/html/rfc8713">RFC 8713</a>,
+              DOI 10.17487/RFC8713, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8713">https://www.rfc-editor.org/info/rfc8713</a>&gt;.
+
+   [<a id="ref-RFC8714">RFC8714</a>]  Arkko, J. and T. Hardie, &quot;Update to the Process for
+              Selection of Trustees for the IETF Trust&quot;, <a href="/doc/html/bcp101">BCP 101</a>,
+              <a href="/doc/html/rfc8714">RFC 8714</a>, DOI 10.17487/RFC8714, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8714">https://www.rfc-editor.org/info/rfc8714</a>&gt;.
+
+   [<a id="ref-RFC8715">RFC8715</a>]  Arkko, J., &quot;IETF Administrative Support Activity 2.0:
+              Update to the Process for Selection of Trustees for the
+              IETF Trust&quot;, <a href="/doc/html/rfc8715">RFC 8715</a>, DOI 10.17487/RFC8715, February
+              2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8715">https://www.rfc-editor.org/info/rfc8715</a>&gt;.
+
+Acknowledgements
+
+   The authors would like to thank Erik Huizer for his contribution as
+   the author of [<a href="/doc/html/rfc2031" title="&quot;IETF-ISOC relationship&quot;">RFC2031</a>], which this document replaces.
+
+Authors&#x27; Addresses
+
+   Gonzalo Camarillo
+   Ericsson
+
+   Email: Gonzalo.Camarillo@ericsson.com
+
+
+   Jason Livingood
+   Comcast
+
+   Email: jason_livingood@comcast.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

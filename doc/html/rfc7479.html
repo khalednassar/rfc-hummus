@@ -1,0 +1,461 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc7479
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-moonesamy-sshfp-ed25519/">
+  <meta name="description" content="Using Ed25519 in SSHFP Resource Records (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc7479.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc7479.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc7479.txt.pdf" title="PDF version of this document">pdf</a>|<a href="https://www.rfc-editor.org/rfc/inline-errata/rfc7479.html">with errata</a>|<a href="/doc/rfc7479/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc7479/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sec/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-moonesamy-sshfp-ed25519@ietf.org?subject=draft-moonesamy-sshfp-ed25519" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-moonesamy-sshfp-ed25519-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-moonesamy-sshfp-ed25519-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-moonesamy-sshfp-ed25519-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-moonesamy-sshfp-ed25519-02">draft-moonesamy-sshfp-ed25519-02</a>                     Informational
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=7479&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      S. Moonesamy
+Request for Comments: 7479                                    March 2015
+Category: Informational
+ISSN: 2070-1721
+
+
+                <span class="h1">Using Ed25519 in SSHFP Resource Records</span>
+
+Abstract
+
+   The Ed25519 signature algorithm has been implemented in OpenSSH.
+   This document updates the IANA &quot;SSHFP RR Types for public key
+   algorithms&quot; registry by adding an algorithm number for Ed25519.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are a candidate for any level of Internet
+   Standard; see <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc7479">http://www.rfc-editor.org/info/rfc7479</a>.
+
+Copyright Notice
+
+   Copyright (c) 2015 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc7479">RFC 7479</a>               Using Ed25519 in SSHFP RRs             March 2015</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Ed25519 Public Key with SHA-256 Fingerprint .....................<a href="#page-2">2</a>
+   <a href="#section-3">3</a>. Security Considerations .........................................<a href="#page-3">3</a>
+   <a href="#section-4">4</a>. IANA Considerations .............................................<a href="#page-3">3</a>
+   <a href="#section-5">5</a>. References ......................................................<a href="#page-3">3</a>
+      <a href="#section-5.1">5.1</a>. Normative References .......................................<a href="#page-3">3</a>
+      <a href="#section-5.2">5.2</a>. Informative References .....................................<a href="#page-3">3</a>
+   Acknowledgements ...................................................<a href="#page-4">4</a>
+   Author&#x27;s Address ...................................................<a href="#page-4">4</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Ed25519 [<a href="#ref-Ed25519" title="&quot;High-Speed High-Security Signatures&quot;">Ed25519</a>] signature algorithm, specifically
+   Ed25519-SHA-512, has been implemented in OpenSSH.  <a href="/doc/html/rfc4255">RFC 4255</a> [<a href="/doc/html/rfc4255" title="&quot;Using DNS to Securely Publish Secure Shell (SSH) Key Fingerprints&quot;">RFC4255</a>]
+   defines a DNS resource record, &quot;SSHFP&quot;, which can be used to publish
+   a fingerprint of the SSH server public key in the DNS.  This document
+   updates the IANA &quot;SSHFP RR Types for public key algorithms&quot; registry
+   by adding an algorithm number for Ed25519 [<a href="#ref-Ed25519" title="&quot;High-Speed High-Security Signatures&quot;">Ed25519</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Ed25519 Public Key with SHA-256 Fingerprint</span>
+
+   The encoding of Ed25519 public keys is described in [<a href="#ref-Ed25519" title="&quot;High-Speed High-Security Signatures&quot;">Ed25519</a>].  In
+   brief, an Ed25519 public key is a 32-octet value representing a
+   255-bit y-coordinate of an elliptic curve point, and a sign bit
+   indicating the corresponding x-coordinate.
+
+   The SSHFP Resource Record for the Ed25519 public key with SHA-256
+   fingerprint [<a href="#ref-FIPS180-4" title="&quot;Secure Hash Standard (SHS)&quot;">FIPS180-4</a>] would, for example, be:
+
+      ssh.example.com IN SSHFP 4 2 ( a87f1b687ac0e57d2a081a2f2826723
+                                     34d90ed316d2b818ca9580ea384d924
+                                     01 )
+
+   The following body of the public key file was used as input to
+   generate the above fingerprint:
+
+    ssh-ed25519
+    AAAAC3NzaC1lZDI1NTE5AAAAIGPKSUTyz1HwHReFVvD5obVsALAgJRNarH4TRpNePnAS
+
+   The opaque octet string output produced is placed as is in the RDATA
+   fingerprint field.
+
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc7479">RFC 7479</a>               Using Ed25519 in SSHFP RRs             March 2015</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   The overall security of using SSHFP for SSH host key verification is
+   dependent on the security policies of the SSH host administrator and
+   DNS zone administrator (in transferring the fingerprint), detailed
+   aspects of how verification is done in the SSH implementation, and in
+   the client&#x27;s diligence in accessing the DNS in a secure manner.
+   Please refer to <a href="/doc/html/rfc4255">RFC 4255</a> [<a href="/doc/html/rfc4255" title="&quot;Using DNS to Securely Publish Secure Shell (SSH) Key Fingerprints&quot;">RFC4255</a>] for a discussion of the security
+   considerations.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   IANA has added the following entry to the &quot;SSHFP RR Types for public
+   key algorithms&quot; registry:
+
+      +--------+-------------+------------+
+      | Value  | Description |  Reference |
+      +--------+-------------+------------+
+      |   4    |    Ed25519  | [<a href="/doc/html/rfc7479">RFC7479</a>]  |
+      +--------+-------------+------------+
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Normative References</span>
+
+   [<a id="ref-Ed25519">Ed25519</a>]    Bernstein, D. J., Lange T., Schwabe P., and B-Y. Yang,
+                &quot;High-Speed High-Security Signatures&quot;, Journal of
+                Cryptographic Engineering, Vol. 2, September 26, 2011.
+
+   [<a id="ref-RFC4255">RFC4255</a>]    Schlyter, J. and W. Griffin, &quot;Using DNS to Securely
+                Publish Secure Shell (SSH) Key Fingerprints&quot;, <a href="/doc/html/rfc4255">RFC 4255</a>,
+                January 2006, &lt;<a href="http://www.rfc-editor.org/info/rfc4255">http://www.rfc-editor.org/info/rfc4255</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Informative References</span>
+
+   [<a id="ref-FIPS180-4">FIPS180-4</a>]  National Institute of Standards and Technology, &quot;Secure
+                Hash Standard (SHS)&quot;, FIPS PUB 180-4, March 2012,
+                &lt;<a href="http://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf">http://csrc.nist.gov/publications/fips/fips180-4/</a>
+                <a href="http://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf">fips-180-4.pdf</a>&gt;.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc7479">RFC 7479</a>               Using Ed25519 in SSHFP RRs             March 2015</span>
+
+
+Acknowledgements
+
+   Some of the text in this document was written by Ondrej Sury.  The
+   author would like to thank Richard Barnes, Damien Miller, Yoav Nir,
+   and Paul Wouters for their feedback.  Rene Struik provided advice
+   about the usage of Ed25519.  Stephen Farrell, as Security Area
+   Director, reviewed the code point request.
+
+Author&#x27;s Address
+
+   S. Moonesamy
+   76, Ylang Ylang Avenue
+   Quatres Bornes
+   Mauritius
+
+   EMail: sm+ietf@elandsys.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Moonesamy                     Informational                     [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

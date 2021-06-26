@@ -1,0 +1,964 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6642
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-avtcore-feedback-supression-rtp/">
+  <meta name="description" content="RTP Control Protocol (RTCP) Extension for a Third-Party Loss Report (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6642.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6642.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6642.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6642/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6642/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/avtcore/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-avtcore-feedback-supression-rtp@ietf.org?subject=draft-ietf-avtcore-feedback-supression-rtp" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-avtcore-feedback-supression-rtp-17.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-avtcore-feedback-supression-rtp-17.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-avtcore-feedback-supression-rtp-17.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-avtcore-feedback-supression-rtp-17">draft-ietf-avtcore-feedback-supression-rtp-17</a>    Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        Q. Wu, Ed.
+Request for Comments: 6642                                        F. Xia
+Category: Standards Track                                        R. Even
+ISSN: 2070-1721                                                   Huawei
+                                                               June 2012
+
+
+  <span class="h1">RTP Control Protocol (RTCP) Extension for a Third-Party Loss Report</span>
+
+Abstract
+
+   In a large RTP session using the RTP Control Protocol (RTCP) feedback
+   mechanism defined in <a href="/doc/html/rfc4585">RFC 4585</a>, a feedback target may experience
+   transient overload if some event causes a large number of receivers
+   to send feedback at once.  This overload is usually avoided by
+   ensuring that feedback reports are forwarded to all receivers,
+   allowing them to avoid sending duplicate feedback reports.  However,
+   there are cases where it is not recommended to forward feedback
+   reports, and this may allow feedback implosion.  This memo discusses
+   these cases and defines a new RTCP Third-Party Loss Report that can
+   be used to inform receivers that the feedback target is aware of some
+   loss event, allowing them to suppress feedback.  Associated Session
+   Description Protocol (SDP) signaling is also defined.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6642">http://www.rfc-editor.org/info/rfc6642</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2012 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-3">3</a>
+   <a href="#section-2">2</a>. Terminology .....................................................<a href="#page-3">3</a>
+      <a href="#section-2.1">2.1</a>. Requirements Notation ......................................<a href="#page-3">3</a>
+      <a href="#section-2.2">2.2</a>. Glossary ...................................................<a href="#page-4">4</a>
+   <a href="#section-3">3</a>. Example Use Cases ...............................................<a href="#page-4">4</a>
+      <a href="#section-3.1">3.1</a>. Source-Specific Multicast (SSM) Use Case ...................<a href="#page-4">4</a>
+      3.2. Unicast-Based Rapid Acquisition of Multicast Stream
+           (RAMS) Use Case ............................................<a href="#page-5">5</a>
+      <a href="#section-3.3">3.3</a>. RTP Transport Translator Use Case ..........................<a href="#page-5">5</a>
+      <a href="#section-3.4">3.4</a>. Multipoint Control Unit (MCU) Use Case .....................<a href="#page-6">6</a>
+      <a href="#section-3.5">3.5</a>. Mixer Use Case .............................................<a href="#page-6">6</a>
+   <a href="#section-4">4</a>. Protocol Overview ...............................................<a href="#page-6">6</a>
+   <a href="#section-5">5</a>. Format of RTCP Feedback Messages ................................<a href="#page-7">7</a>
+      <a href="#section-5.1">5.1</a>. Transport-Layer Feedback: Third-Party Loss Report (TPLR) ...<a href="#page-8">8</a>
+      5.2. Payload-Specific Feedback:  Third-Party Loss Report (TPLR) .8
+   <a href="#section-6">6</a>. SDP Signaling ...................................................<a href="#page-9">9</a>
+   <a href="#section-7">7</a>. Security Considerations ........................................<a href="#page-10">10</a>
+   <a href="#section-8">8</a>. IANA Considerations ............................................<a href="#page-11">11</a>
+   <a href="#section-9">9</a>. Acknowledgments ................................................<a href="#page-11">11</a>
+   <a href="#section-10">10</a>. References ....................................................<a href="#page-12">12</a>
+      <a href="#section-10.1">10.1</a>. Normative References .....................................<a href="#page-12">12</a>
+      <a href="#section-10.2">10.2</a>. Informative References ...................................<a href="#page-12">12</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The RTP Control Protocol (RTCP) feedback messages [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] allow the
+   receivers in an RTP session to report events and ask for action from
+   the media source (or a delegated feedback target when using unicast
+   RTCP feedback with Source-Specific Multicast (SSM) [<a href="/doc/html/rfc5760" title="&quot;RTP Control Protocol (RTCP) Extensions for Single-Source Multicast Sessions with Unicast Feedback&quot;">RFC5760</a>]).  There
+   are cases where multiple receivers may initiate the same, or an
+   equivalent, message towards the same media source or the same
+   feedback target.  When the receiver count is large, this behavior may
+   cause transient overload of the media source, the network, or both.
+   This is known as a &quot;feedback storm&quot; or a &quot;NACK storm&quot;.
+
+   One scenario that can cause such feedback storms involves video Fast
+   Update requests.  A storm of these feedback messages can occur in
+   conversational multimedia scenarios like multipoint video switching
+   conference [<a href="/doc/html/rfc4587" title="&quot;RTP Payload Format for H.261 Video Streams&quot;">RFC4587</a>], where many receivers may simultaneously lose
+   synchronization with the video stream when the speaker is changed in
+   the middle of a session.  Receivers that issue Fast Update requests
+   (i.e., Full Intra Request (FIR) described in <a href="/doc/html/rfc5104">RFC 5104</a> [<a href="/doc/html/rfc5104" title="&quot;Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)&quot;">RFC5104</a>]), can
+   cause an implosion of FIR requests from receivers to the same media
+   source since these requests must currently be made blind, without
+   knowledge of requests made by other receivers.
+
+   RTCP feedback storms may cause short-term overload and, in extreme
+   cases, pose a possible risk of increasing network congestion on the
+   control channel (e.g., RTCP feedback), the data channel, or both.  It
+   is therefore desirable to provide a way of suppressing unneeded
+   feedback.  This document specifies a new Third-Party Loss Report for
+   this function.  It supplements the existing use of RTCP NACK packets
+   and is also more precise in the uses where the network is active to
+   suppress feedback.  It tells receivers explicitly that feedback for a
+   particular packet or frame loss is not needed and can provide an
+   early indication before the receiver reacts to the loss and invokes
+   its packet loss repair machinery.  <a href="#section-3">Section 3</a> provides some example
+   use cases of when to send the Third-Party Loss Report message.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Requirements Notation</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in <a href="/doc/html/rfc2119">RFC 2119</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>].
+
+
+
+
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Glossary</span>
+
+   TPLR  - Third-Party Loss Report
+
+   TLLEI - Transport-Layer Third-Party Loss Early Indication
+
+   PSLEI - Payload-Specific Third-Party Loss Early Indication
+
+   PT    - Payload Type
+
+   FMT   - Feedback Message Type
+
+   FCI   - Feedback Control Information [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>]
+
+   AVPF  - Audio-Visual Profile with RTCP-based feedback [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>]
+
+   SSRC  - Synchronization Source
+
+   BRS   - Burst/Retransmission Source [<a href="/doc/html/rfc6285" title="&quot;Unicast-Based Rapid Acquisition of Multicast RTP Sessions&quot;">RFC6285</a>]
+
+   FIR   - Full Intra Request [<a href="/doc/html/rfc5104" title="&quot;Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)&quot;">RFC5104</a>]
+
+   PLI   - Picture Loss Indication [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>]
+
+   SSM   - Source-Specific Multicast [<a href="/doc/html/rfc5760" title="&quot;RTP Control Protocol (RTCP) Extensions for Single-Source Multicast Sessions with Unicast Feedback&quot;">RFC5760</a>]
+
+   RAMS  - Unicast-based Rapid Acquisition of Multicast Stream [<a href="/doc/html/rfc6285" title="&quot;Unicast-Based Rapid Acquisition of Multicast RTP Sessions&quot;">RFC6285</a>]
+
+   MCU   - Multipoint Control Unit [<a href="/doc/html/rfc5117" title="&quot;RTP Topologies&quot;">RFC5117</a>]
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Example Use Cases</span>
+
+   The operation of feedback suppression is similar for all types of RTP
+   sessions and topologies [<a href="/doc/html/rfc5117" title="&quot;RTP Topologies&quot;">RFC5117</a>]; however, the exact messages used
+   and the scenarios in which suppression is employed differ for various
+   use cases.  The following sections outline some of the intended use
+   cases for using the Third-Party Loss Report for feedback suppression
+   and give an overview of each.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Source-Specific Multicast (SSM) Use Case</span>
+
+   In SSM RTP sessions as described in &quot;RTP Control Protocol (RTCP)
+   Extensions for Single-Source Multicast Sessions with Unicast
+   Feedback&quot; [<a href="/doc/html/rfc5760" title="&quot;RTP Control Protocol (RTCP) Extensions for Single-Source Multicast Sessions with Unicast Feedback&quot;">RFC5760</a>], one or more media sources send RTP packets to a
+   distribution source.  The distribution source relays the RTP packets
+   to the receivers using a source-specific multicast group.
+
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+   As outlined in <a href="/doc/html/rfc5760">RFC 5760</a> [<a href="/doc/html/rfc5760" title="&quot;RTP Control Protocol (RTCP) Extensions for Single-Source Multicast Sessions with Unicast Feedback&quot;">RFC5760</a>], there are two Unicast Feedback
+   models that may be used for reporting: the Simple Feedback Model and
+   the Distribution Source Feedback Summary Model.  In the Simple
+   Feedback Model, there&#x27;s no need for the distribution source to create
+   the RTCP TPLRs; instead, RTCP NACKs are reflected by the distribution
+   source to the other receivers.  However, in the Distribution Source
+   Feedback Summary Model, the distribution source will not redistribute
+   the NACK for some reason (e.g., to prevent revealing the identity or
+   existence of a system sending NACK) and may send an RTCP TPLR message
+   to the systems that were unable to receive the NACK and won&#x27;t receive
+   the NACK via other means.  The RTCP TPLR can be generated at the
+   distribution source when downstream loss is reported (e.g.,
+   downstream loss report is received), which indicates to the receivers
+   that they should not transmit feedback messages for the same loss
+   event for a certain time.  Therefore, the distribution source in the
+   Distribution Source Feedback Summary Model can be reasonably certain
+   that it will help the situation (i.e., the distribution source is
+   unable receive the NACK) by sending this RTCP TPLR message to all the
+   relevant receivers impacted by the packet loss.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Unicast-Based Rapid Acquisition of Multicast Stream (RAMS) Use</span>
+<span class="h3">      Case</span>
+
+   The typical RAMS architecture [<a href="/doc/html/rfc6285" title="&quot;Unicast-Based Rapid Acquisition of Multicast RTP Sessions&quot;">RFC6285</a>] may have several Burst/
+   Retransmission Sources (BRSs) behind the multicast source placed at
+   the same level.  These BRSs will receive the primary multicast RTP
+   stream from the media source and cache the most recent packets after
+   joining the multicast session.  If packet loss happens at the
+   upstream of all the BRSs or the downstream of BRSs, one or all of the
+   BRSs may send an RTCP NACK or RTCP TPLR message to the distribution
+   source, where the SSRC in this RTCP NACK or RTCP TPLR message is the
+   BRS that is sending the message.  The distribution source forwards/
+   reflects this message down on the primary SSM.  The details on how
+   the distribution source deals with this message are specified in
+   [<a href="#ref-RETRANS-FOR-SSM">RETRANS-FOR-SSM</a>].
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  RTP Transport Translator Use Case</span>
+
+   A Transport Translator (Topo-Trn-Translator), as defined in <a href="/doc/html/rfc5117">RFC 5117</a>
+   [<a href="/doc/html/rfc5117" title="&quot;RTP Topologies&quot;">RFC5117</a>], is typically forwarding the RTP and RTCP traffic between
+   RTP clients, for example, converting from multicast to unicast for
+   domains that do not support multicast.  The translator may suffer a
+   loss of important video packets.  In this case, the translator may
+   forward an RTCP TPLR message received from upstream in the same way
+   it forwards other RTCP traffic.  If the translator acting as the
+   monitor [<a href="#ref-MONARCH" title="&quot;Monitoring Architectures for RTP&quot;">MONARCH</a>] is aware of packet loss, it may use the SSRC of the
+   monitor as the SSRC of the packet sender to create a NACK message and
+   send it to the receivers that are not aware of packet loss.
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Multipoint Control Unit (MCU) Use Case</span>
+
+   When the speaker is changed in a voice-activated multipoint video
+   switching conference [<a href="/doc/html/rfc4587" title="&quot;RTP Payload Format for H.261 Video Streams&quot;">RFC4587</a>], an RTP mixer can be used to select
+   the available input streams and forward them to each participant.  If
+   the MCU is doing a blind switch without waiting for a synchronization
+   point on the new stream, it can send a FIR to the new video source.
+   In this case, the MCU should send a FIR suppression message to the
+   new receivers.  For example, when the RTP mixer starts to receive FIR
+   from some participants, it can suppress the remaining session
+   participants from sending FIR by sending out an RTCP TPLR message.
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a>.  Mixer Use Case</span>
+
+   A mixer, in accordance with <a href="/doc/html/rfc5117">RFC 5117</a> [<a href="/doc/html/rfc5117" title="&quot;RTP Topologies&quot;">RFC5117</a>], aggregates multiple
+   RTP streams from other session participants and generates a new RTP
+   stream sent to the session participants.  In some cases, the delivery
+   of video frames delivery may get damaged, for example, due to packet
+   loss or delayed delivery, between the media source and the mixer.  In
+   such cases, the mixer needs to check if the packet loss will result
+   in PLI or FIR transmissions from most of the group by analyzing the
+   received video.  If so, the mixer may initiate FIR or PLI towards the
+   media source on behalf of all the session participants and send out
+   an RTCP TPLR message to the session participants that may or are
+   expected to send a PLI or FIR.  Alternatively, when the mixer starts
+   to receive FIR or PLI from some participants and would like to
+   suppress the remaining session participants from sending FIR or PLI,
+   it can just forward the FIR/PLI from one session participant to
+   others.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Protocol Overview</span>
+
+   This document extends the RTCP feedback messages defined in the RTP/
+   AVPF [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] by defining an RTCP Third-Party Loss Report (TPLR)
+   message.  The RTCP TPLR message can be used by the intermediaries to
+   inform the receiver that the sender of the RTCP TPLR has received
+   reports that the indicated packets were lost and ask the receiver not
+   to send feedback to it regarding these packets.  Intermediaries are
+   variously referred to as distribution sources, Burst/Retransmission
+   Sources, MCUs, RTP translators, or RTP mixers, depending on the
+   precise use case described <a href="#section-3">Section 3</a>.
+
+   RTCP TPLR follows a similar message type format as RTCP NACK or Full
+   Intra Request Command.  However, RTCP TPLR is defined as an
+   indication that the sender of the feedback has received reports that
+   the indicated packets were lost, while NACK [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] just indicates
+   that the sender of the NACK observed that these packets were lost.
+   The RTCP TPLR message is generated by an intermediary that may not
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+   have seen the actual packet loss.  It is sent following the same
+   timing rule as sending NACK, defined in <a href="/doc/html/rfc4585">RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>].  The RTCP
+   TPLR message may be sent in a regular full compound RTCP packet or in
+   an early RTCP packet, as per the RTP/AVPF rules.  Intermediaries in
+   the network that receive an RTCP TPLR MUST NOT send their own
+   additional Third-Party Loss Report messages for the same packet
+   sequence numbers.  They SHOULD simply forward the RTCP TPLR message
+   received from upstream to the receiver(s).  Additionally, they may
+   generate their own RTCP TPLR that reports a set of the losses they
+   see, which are different from ones reported in the RTCP TPLR they
+   received.  The RTCP TPLR does not have retransmission request
+   [<a href="/doc/html/rfc4588" title="&quot;RTP Retransmission Payload Format&quot;">RFC4588</a>] semantics.
+
+   When a receiver gets an RTCP TPLR message, it MUST follow the rules
+   for NACK suppression in <a href="/doc/html/rfc4585">RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] and refrain from sending a
+   feedback request (e.g., NACK or FIR) for the missing packets reported
+   in the message, which is dealt with in the same way as receiving a
+   NACK.
+
+   To increase the robustness to the loss of a TPLR, the RTCP TPLR may
+   be retransmitted.  If the additional TPLR arrives at the receiver,
+   the receiver SHOULD deal with the additional TPLR in the same way as
+   receiving the first TPLR for the same packet, and no additional
+   behavior for receiver is required.
+
+   A receiver may have sent a feedback message according to the RTP/AVPF
+   scheduling algorithm of <a href="/doc/html/rfc4585">RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] before receiving an RTCP
+   TPLR message, but further feedback messages for those sequence
+   numbers SHOULD be suppressed after receiving the RTCP TPLR.  Nodes
+   that do not understand the RTCP TPLR message will ignore it and might
+   therefore still send feedback according to the AVPF scheduling
+   algorithm of <a href="/doc/html/rfc4585">RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>].  The media source or intermediate
+   nodes cannot be certain that the use of an RTCP TPLR message actually
+   reduces the amount of feedback they receive.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Format of RTCP Feedback Messages</span>
+
+   This document introduces two new RTCP feedback messages for Third-
+   Party Loss Report.  Applications that are employing one or more loss-
+   repair methods MAY use the RTCP TPLR together with their existing
+   loss-repair methods either for every packet they expect to receive or
+   for an application-specific subset of the RTP packets in a session.
+
+   The following two sections each define an RTCP TPLR message.  Both
+   messages are feedback messages as defined in <a href="/doc/html/rfc4585#section-6.1">Section&nbsp;6.1 of RFC 4585</a>
+   [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] and use the header format defined there.  Each section
+   defines how to populate the PT, FMT, length, SSRC of packet sender,
+   SSRC of media source, and FCI fields in that header.
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Transport-Layer Feedback: Third-Party Loss Report (TPLR)</span>
+
+   This TPLR message is identified by RTCP packet type values PT=RTPFB
+   and FMT=7.
+
+   Within the common packet header for feedback messages (as defined in
+   <a href="/doc/html/rfc4585#section-6.1">Section&nbsp;6.1 of RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>]), the &quot;SSRC of packet sender&quot; field
+   indicates the source of the request, and the &quot;SSRC of media source&quot;
+   field denotes the media sender of the flow for which the indicated
+   losses are being suppressed.
+
+   The FCI field MUST contain one or more entries of Transport-Layer
+   Third-Party Loss Early Indication (TLLEI).  Each entry applies to the
+   same media source identified by the SSRC contained in the &quot;SSRC of
+   media source&quot; field of the Feedback header.  The length field in the
+   TLLEI feedback message MUST be set to N+2, where N is the number of
+   FCI entries.
+
+   The FCI field for TLLEI uses a similar message type format to that
+   defined in the <a href="/doc/html/rfc4585#section-6.2.1">Section&nbsp;6.2.1 of RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>].  The format is
+   shown in Figure 1.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |            PID                |             BLP               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+      Figure 1: Syntax of an FCI Entry in the TLLEI Feedback Message
+
+   Packet ID (PID): 16 bits
+
+      The PID field is used to specify a lost packet.  The PID field
+      refers to the RTP sequence number of the lost packet.
+
+   bitmask of lost packets (BLP): 16 bits
+
+      The BLP allows for reporting losses of any of the 16 RTP packets
+      immediately following the RTP packet indicated by the PID.  The
+      BLP&#x27;s definition is identical to that given in <a href="/doc/html/rfc4585#section-6.2.1">Section&nbsp;6.2.1 of
+      [RFC4585]</a>.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Payload-Specific Feedback:  </span>Third-Party Loss Report (TPLR)
+
+   This TPLR message is identified by RTCP packet type values PT=PSFB
+   and FMT=8, which are used to suppress FIR [<a href="/doc/html/rfc5104" title="&quot;Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)&quot;">RFC5104</a>] and PLI
+   [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>].
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+   Within the common packet header for feedback messages (as defined in
+   <a href="/doc/html/rfc4585#section-6.1">Section&nbsp;6.1 of RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>]), the &quot;SSRC of packet sender&quot; field
+   indicates the source of the request, and the &quot;SSRC of media source&quot;
+   is not used and SHALL be set to 0.  The SSRCs of the media senders to
+   which this message apply are in the corresponding FCI entries.
+
+   The FCI field for a Payload-Specific Third-Party Loss Early
+   Indication (PSLEI) consists one or more FCI entries.  Each entry
+   applies to a different media source, identified by its SSRC, the
+   content of which is depicted in Figure 2.  The length field in the
+   PSLEI feedback message MUST be set to N+2, where N is the number of
+   FCI entries.
+
+   The format is shown in Figure 2.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                              SSRC                             |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+      Figure 2: Syntax of an FCI Entry in the PSLEI Feedback Message
+
+   Synchronization source (SSRC): 32 bits
+
+      The SSRC value of the media source that is already aware, or in
+      the process of being made aware, that some receiver lost
+      synchronization with the media stream and for which the PSLEI
+      receiver&#x27;s own response to any such error is suppressed.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  SDP Signaling</span>
+
+   The Session Description Protocol (SDP) [<a href="/doc/html/rfc4566" title="&quot;SDP: Session Description Protocol&quot;">RFC4566</a>] attribute, rtcp-fb,
+   is defined in <a href="/doc/html/rfc4585#section-4">Section&nbsp;4 of RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] and may be used to
+   negotiate the capability to handle specific AVPF commands and
+   indications.  The ABNF for rtcp-fb is described in Section 4.2 of <a href="/doc/html/rfc4585">RFC</a>
+   <a href="/doc/html/rfc4585">4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>].  In this section, we extend the rtcp-fb attribute to
+   include the commands and indications that are described for Third-
+   Party Loss Reports in the present document.
+
+   In the ABNF [<a href="/doc/html/rfc5234" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">RFC5234</a>] for rtcp-fb-val defined in <a href="/doc/html/rfc4585">RFC 4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>],
+   the feedback type &quot;nack&quot;, without parameters, indicates use of the
+   Generic NACK feedback format as defined in <a href="/doc/html/rfc4585#section-6.2.1">Section&nbsp;6.2.1 of RFC 4585</a>
+   [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>].  In this document, we define two parameters that indicate
+   the third-party loss supported for use with &quot;nack&quot;, namely:
+
+   o  &quot;tllei&quot; denotes support of Transport-Layer Third-Party Loss Early
+      Indication.
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                    [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+   o  &quot;pslei&quot; denotes support of Payload-Specific Third-Party Loss Early
+      Indication.
+
+   The ABNF for these two parameters for use with &quot;nack&quot; is defined here
+   (please refer to <a href="/doc/html/rfc4585#section-4.2">Section&nbsp;4.2 of RFC4585</a> [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] for complete ABNF
+   syntax).
+
+           rtcp-fb-val        =/ &quot;nack&quot; rtcp-fb-nack-param
+           rtcp-fb-nack-param = SP &quot;tllei&quot;
+                                   ;Transport-Layer Third-Party
+                                   ; Loss Early Indication
+                               / SP &quot;pslei&quot;
+                                   ;Payload-Specific Third-Party
+                                   ; Loss Early Indication
+                               / SP token [SP byte-string]
+                                   ; for future commands/indications
+           token =     &lt;as defined in <a href="/doc/html/rfc4566#section-9">Section&nbsp;9 of [RFC4566]</a>&gt;
+           byte-string = &lt;as defined in <a href="/doc/html/rfc4566#section-9">Section&nbsp;9 of [RFC4566]</a>&gt;
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   The security considerations documented in [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] are also
+   applicable for the TPLR messages defined in this document.
+
+   More specifically, spoofed or maliciously created TPLR feedback
+   messages cause missing RTP packets to not be repaired in a timely
+   fashion and add risk of (undesired) feedback suppression at RTCP
+   receivers that accept such TPLR messages.  Any packet loss detected
+   by a receiver that also receives a TPLR message for the same missing
+   packet(s) will negatively impact the application that relies on the
+   (timely) RTP retransmission capabilities.
+
+   A solution to prevent such attack with maliciously sent TPLR messages
+   is to apply an authentication and integrity protection framework for
+   the feedback messages.  This can be accomplished using the RTP
+   profile that combines Secure RTP [<a href="/doc/html/rfc3711" title="&quot;The Secure Real-time Transport Protocol (SRTP)&quot;">RFC3711</a>] and AVPF into SAVPF
+   [<a href="/doc/html/rfc5124" title="&quot;Extended Secure RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/SAVPF)&quot;">RFC5124</a>].
+
+   Note that intermediaries that are not visible at the RTP layer that
+   wish to send the Third-Party Loss Reports on behalf of the media
+   source can only do so if they spoof the SSRC of the media source.
+   This is difficult if SRTP is in use.  If the intermediary is visible
+   at the RTP layer, this is not an issue, provided the intermediary is
+   part of the security context for the session.
+
+
+
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                   [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IANA Considerations</span>
+
+   Per this document, IANA has added two values to the &#x27;&quot;ack&quot; and &quot;nack&quot;
+   Attribute Values&#x27; sub-registry [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>] of the &#x27;Session Description
+   Protocol (SDP) Parameters&#x27; registry.
+
+   The value registration for the attribute value &quot;nack&quot;:
+
+      Value name:     tllei
+      Long name:      Transport-Layer Third-Party Loss Early Indication
+      Usable with:    nack
+      Reference:      <a href="/doc/html/rfc6642">RFC 6642</a>
+
+      Value name:     pslei
+      Long name:      Payload-Specific Third-Party Loss Early Indication
+      Usable with:    nack
+      Reference:      <a href="/doc/html/rfc6642">RFC 6642</a>
+
+   The following value has been registered as one FMT value in the &quot;FMT
+   Values for RTPFB Payload Types&quot; registry
+   (<a href="http://www.iana.org/assignments/rtp-parameters">http://www.iana.org/assignments/rtp-parameters</a>).
+
+     RTPFB range
+     Name           Long Name                         Value  Reference
+     -------------- --------------------------------- -----  ---------
+     TLLEI          Transport-Layer Third-Party         7    [<a href="/doc/html/rfc6642">RFC6642</a>]
+                    Loss Early Indication
+
+   The following value has been registered as one FMT value in the &quot;FMT
+   Values for PSFB Payload Types&quot; registry
+   (<a href="http://www.iana.org/assignments/rtp-parameters">http://www.iana.org/assignments/rtp-parameters</a>).
+
+     PSFB range
+     Name            Long Name                        Value  Reference
+     -------------- --------------------------------- -----  ---------
+     PSLEI          Payload-Specific Third-Party        8    [<a href="/doc/html/rfc6642">RFC6642</a>]
+                    Loss Early Indication
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Acknowledgments</span>
+
+   The authors would like to thank David R. Oran, Magnus Westerlund,
+   Colin Perkins, Ali C. Begen, Tom Van Caenegem, Francis Dupont,
+   Ingemar Johansson, Bill Ver Steeg, Jonathan Lennox, and WeeSan Lee
+   for their valuable comments and suggestions on this document.
+
+
+
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                   [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC4585">RFC4585</a>]  Ott, J., Wenger, S., Sato, N., Burmeister, C., and J. Rey,
+              &quot;Extended RTP Profile for Real-time Transport Control
+              Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;, <a href="/doc/html/rfc4585">RFC 4585</a>,
+              July 2006.
+
+   [<a id="ref-RFC4588">RFC4588</a>]  Rey, J., Leon, D., Miyazaki, A., Varsa, V., and R.
+              Hakenberg, &quot;RTP Retransmission Payload Format&quot;, <a href="/doc/html/rfc4588">RFC 4588</a>,
+              July 2006.
+
+   [<a id="ref-RFC4566">RFC4566</a>]  Handley, M., Jacobson, V., and C. Perkins, &quot;SDP: Session
+              Description Protocol&quot;, <a href="/doc/html/rfc4566">RFC 4566</a>, July 2006.
+
+   [<a id="ref-RFC5234">RFC5234</a>]  Crocker, D. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>, January 2008.
+
+   [<a id="ref-RFC5104">RFC5104</a>]  Wenger, S., Chandra, U., Westerlund, M., and B. Burman,
+              &quot;Codec Control Messages in the RTP Audio-Visual Profile
+              with Feedback (AVPF)&quot;, <a href="/doc/html/rfc5104">RFC 5104</a>, February 2008.
+
+   [<a id="ref-RFC3711">RFC3711</a>]  Baugher, M., McGrew, D., Naslund, M., Carrara, E., and K.
+              Norrman, &quot;The Secure Real-time Transport Protocol (SRTP)&quot;,
+              <a href="/doc/html/rfc3711">RFC 3711</a>, March 2004.
+
+   [<a id="ref-RFC5124">RFC5124</a>]  Ott, J. and E. Carrara, &quot;Extended Secure RTP Profile for
+              Real-time Transport Control Protocol (RTCP)-Based Feedback
+              (RTP/SAVPF)&quot;, <a href="/doc/html/rfc5124">RFC 5124</a>, February 2008.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC6285">RFC6285</a>]  Ver Steeg, B., Begen, A., Van Caenegem, T., and Z. Vax,
+              &quot;Unicast-Based Rapid Acquisition of Multicast RTP
+              Sessions&quot;, <a href="/doc/html/rfc6285">RFC 6285</a>, June 2011.
+
+   [<a id="ref-MONARCH">MONARCH</a>]  Wu, Q., Hunt, G., and P. Arden, &quot;Monitoring Architectures
+              for RTP&quot;, Work in Progress, May 2012.
+
+   [<a id="ref-RETRANS-FOR-SSM">RETRANS-FOR-SSM</a>]
+              Van Caenegem, T., Ver Steeg, B., and A. Begen,
+              &quot;Retransmission for Source-Specific Multicast (SSM)
+              Sessions&quot;, Work in Progress, May 2011.
+
+
+
+
+<span class="grey">Wu, et al.                   Standards Track                   [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc6642">RFC 6642</a>                 Third-Party Loss Report               June 2012</span>
+
+
+   [<a id="ref-RFC5117">RFC5117</a>]  Westerlund, M. and S. Wenger, &quot;RTP Topologies&quot;, <a href="/doc/html/rfc5117">RFC 5117</a>,
+              January 2008.
+
+   [<a id="ref-RFC4587">RFC4587</a>]  Even, R., &quot;RTP Payload Format for H.261 Video Streams&quot;,
+              <a href="/doc/html/rfc4587">RFC 4587</a>, August 2006.
+
+   [<a id="ref-RFC5760">RFC5760</a>]  Ott, J., Chesterfield, J., and E. Schooler, &quot;RTP Control
+              Protocol (RTCP) Extensions for Single-Source Multicast
+              Sessions with Unicast Feedback&quot;, <a href="/doc/html/rfc5760">RFC 5760</a>, February 2010.
+
+Authors&#x27; Addresses
+
+   Qin Wu (editor)
+   Huawei
+   101 Software Avenue, Yuhua District
+   Nanjing, Jiangsu  210012
+   China
+
+   EMail: sunseawq@huawei.com
+
+
+   Frank Xia
+   Huawei
+   1700 Alma Dr., Suite 500
+   Plano, TX 75075
+   USA
+
+   Phone: +1 972-509-5599
+   EMail: xiayangsong@huawei.com
+
+
+   Roni Even
+   Huawei
+   14 David Hamelech
+   Tel Aviv 64953
+   Israel
+
+   EMail: even.roni@huawei.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+Wu, et al.                   Standards Track                   [Page 13]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

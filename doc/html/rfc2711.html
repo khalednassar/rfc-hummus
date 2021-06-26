@@ -1,0 +1,573 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2711
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ipngwg-ipv6router-alert/">
+  <meta name="description" content="IPv6 Router Alert Option (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2711.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2711.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2711.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2711/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2711/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ipngwg/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ipngwg-ipv6router-alert@ietf.org?subject=draft-ietf-ipngwg-ipv6router-alert" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ipngwg-ipv6router-alert-06.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ipngwg-ipv6router-alert-06.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ipngwg-ipv6router-alert-06.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ipngwg-ipv6router-alert-06">draft-ietf-ipngwg-ipv6router-alert-06</a>            Proposed Standard
+Updated by: <a href="/doc/html/rfc6398">6398</a>                                                        </pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                      C. Partridge
+Request for Comments: 2711                                          BBN
+Category: Standards Track                                    A. Jackson
+                                                                    BBN
+                                                           October 1999
+
+
+                        <span class="h1">IPv6 Router Alert Option</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+Abstract
+
+   This memo describes a new IPv6 Hop-by-Hop Option type that alerts
+   transit routers to more closely examine the contents of an IP
+   datagram.  This option is useful for situations where a datagram
+   addressed to a particular destination contains information that may
+   require special processing by routers along the path.
+
+<span class="h3"><a class="selflink" id="section-1.0" href="#section-1.0">1.0</a>  Introduction</span>
+
+   New protocols, such as RSVP, use control datagrams which, while
+   addressed to a particular destination, contain information that needs
+   to be examined, and in some case updated, by routers along the path
+   between the source and destination.  It is desirable to forward
+   regular datagrams as rapidly as possible, while ensuring that the
+   router processes these special control datagrams appropriately.
+   Currently, however, the only way for a router to determine if it
+   needs to examine a datagram is to at least partially parse upper
+   layer data in all datagrams.  This parsing is expensive and slow.
+   This situation is undesirable.
+
+   This document defines a new option within the IPv6 Hop-by-Hop Header.
+   The presence of this option in an IPv6 datagram informs the router
+   that the contents of this datagram is of interest to the router and
+   to handle any control data accordingly.  The absence of this option
+   in an IPv6 datagram informs the router that the datagram does not
+   contain information needed by the router and hence can be safely
+
+
+
+<span class="grey">Partridge &amp; Jackson         Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2711">RFC 2711</a>                IPv6 Router Alert Option            October 1999</span>
+
+
+   routed without further datagram parsing.  Hosts originating IPv6
+   datagrams are required to include this option in certain
+   circumstances.
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFC&#x27;s to Indicate Requirement Levels&quot;">RFC-2119</a>].
+
+<span class="h3"><a class="selflink" id="section-2.0" href="#section-2.0">2.0</a>  Approach</span>
+
+   The goal is to provide an efficient mechanism whereby routers can
+   know when to intercept datagrams not addressed to them without having
+   to extensively examine every datagram.  The described solution is to
+   define a new IPv6 Hop-by-Hop Header option having the semantic
+   &quot;routers should examine this datagram more closely&quot; and require
+   protocols such as RSVP to use this option.  This approach incurs
+   little or no performance penalty on the forwarding of normal
+   datagrams.  Not including this option tells the router that there is
+   no need to closely examine the contents of the datagram.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>  Syntax</span>
+
+   The router alert option has the following format:
+
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |0 0 0|0 0 1 0 1|0 0 0 0 0 0 1 0|        Value (2 octets)       |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                      length = 2
+
+      The first three bits of the first byte are zero and the value 5 in
+      the remaining five bits is the Hop-by-Hop Option Type number.
+      [<a href="/doc/html/rfc2460" title="&quot;Internet Protocol, Version 6 (IPv6) Specification&quot;">RFC-2460</a>] specifies the meaning of the first three bits.  By
+      zeroing all three, this specification requires that nodes not
+      recognizing this option type should skip over this option and
+      continue processing the header and that the option must not change
+      en route.
+
+      There MUST only be one option of this type, regardless of value,
+      per Hop-by-Hop header.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Partridge &amp; Jackson         Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2711">RFC 2711</a>                IPv6 Router Alert Option            October 1999</span>
+
+
+      Value:  A 2 octet code in network byte order with the following
+      values:
+
+         0        Datagram contains a Multicast Listener Discovery
+                  message [<a href="/doc/html/rfc2710" title="&quot;Multicast Listener Discovery (MLD) for IPv6&quot;">RFC-2710</a>].
+         1        Datagram contains RSVP message.
+         2        Datagram contains an Active Networks message.
+         3-65535  Reserved to IANA for future use.
+
+      Alignment requirement: 2n+0
+
+      Values are registered and maintained by the IANA.  See <a href="#section-5.0">section 5.0</a>
+      for more details.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>  Semantics</span>
+
+   The option indicates that the contents of the datagram may be
+   interesting to the router.  The router&#x27;s interest and the actions
+   taken by employing Router Alert MUST be specified in the RFC of the
+   protocol that mandates or allows the use of Router Alert.
+
+   The final destination of the IPv6 datagram MUST ignore this option
+   upon receipt to prevent multiple evaluations of the datagram.
+   Unrecognized value fields MUST be silently ignored and the processing
+   of the header continued.
+
+   Routers that recognize the option will examine datagrams carrying it
+   more closely to determine whether or not further processing is
+   necessary.  The router only needs to parse the packet in sufficient
+   detail to decide whether the packet contains something of interest.
+   The value field can be used by an implementation to speed processing
+   of the datagram within the transit router.
+
+   Observe that further processing can involve protocol layers above
+   IPv6.  E.g., for RSVP messages, the datagram will have to undergo UDP
+   and RSVP protocol processing.  Once the datagram leaves the IPv6
+   layer, there is considerable ambiguity about whether the router is
+   acting as an IPv6 host or an IPv6 router.  Precisely how the router
+   handles the contents is value-field specific.  However, if the
+   processing required for the datagram involves examining the payload
+   of the IPv6 datagram, then the interim router is performing a host
+   function and SHOULD interpret the data as a host.
+
+
+
+
+
+
+
+
+
+<span class="grey">Partridge &amp; Jackson         Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc2711">RFC 2711</a>                IPv6 Router Alert Option            October 1999</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.0" href="#section-3.0">3.0</a>  Impact on Other Protocols</span>
+
+   For this option to be effective, its use MUST be mandated in
+   protocols that expect routers to perform significant processing on
+   datagrams not directly addressed to them.  Routers are not required
+   to examine the datagrams not addressed to them unless the datagrams
+   include the router alert option.
+
+   All IPv6 datagrams containing an RSVP message MUST contain this
+   option within the IPv6 Hop-by-Hop Options Header of such datagrams.
+
+<span class="h3"><a class="selflink" id="section-4.0" href="#section-4.0">4.0</a>  Security Considerations</span>
+
+   Gratuitous use of this option can cause performance problems in
+   routers.  A more severe attack is possible in which the router is
+   flooded by bogus datagrams containing router alert options.
+
+   The use of the option, if supported in a router, MAY therefore be
+   limited by rate or other means by the transit router.
+
+<span class="h3"><a class="selflink" id="section-5.0" href="#section-5.0">5.0</a> IANA Considerations</span>
+
+   The value field described in <a href="#section-2.1">Section 2.1</a> is registered and maintained
+   by IANA. New values are to be assigned via IETF Consensus as defined
+   in <a href="/doc/html/rfc2434">RFC 2434</a> [<a href="/doc/html/rfc2434" title="">RFC-2434</a>].
+
+<span class="h3"><a class="selflink" id="section-6.0" href="#section-6.0">6.0</a>  Notice on Intellectual Property</span>
+
+   The IETF takes no position regarding the validity or scope of any
+   intellectual property or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; neither does it represent that it
+   has made any effort to identify any such rights.  Information on the
+   IETF&#x27;s procedures with respect to rights in standards-track and
+   standards-related documentation can be found in <a href="/doc/html/bcp11">BCP-11</a>.  Copies of
+   claims of rights made available for publication and any assurances of
+   licenses to be made available, or the result of an attempt made to
+   obtain a general license or permission for the use of such
+   proprietary rights by implementors or users of this specification can
+   be obtained from the IETF Secretariat.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights which may cover technology that may be required to practice
+   this standard.  Please address the information to the IETF Executive
+   Director.
+
+
+
+
+<span class="grey">Partridge &amp; Jackson         Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc2711">RFC 2711</a>                IPv6 Router Alert Option            October 1999</span>
+
+
+<span class="h3"><a class="selflink" id="section-7.0" href="#section-7.0">7.0</a>  References</span>
+
+   [<a id="ref-RFC-2119">RFC-2119</a>] Bradner, S., &quot;Key words for use in RFC&#x27;s to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1977.
+
+   [<a id="ref-RFC-2205">RFC-2205</a>] Braden, B. (ed.), Zhang, L., Berson, S., Herzog, S. and S.
+              Jamin, &quot;Resource ReSerVation Protocol (RSVP)&quot;, <a href="/doc/html/rfc2205">RFC 2205</a>,
+              September 1997.
+
+   [<a id="ref-RFC-2434">RFC-2434</a>] Narten, T. and H. Alvestrand, &quot;Guidelines for Writing an
+              IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>, <a href="/doc/html/rfc2434">RFC 2434</a>,
+              October 1998.
+
+   [<a id="ref-RFC-2460">RFC-2460</a>] Deering, S. and R. Hinden, &quot;Internet Protocol, Version 6
+              (IPv6) Specification&quot;, <a href="/doc/html/rfc2460">RFC 2460</a>, December 1998.
+
+   [<a id="ref-RFC-2710">RFC-2710</a>] Deering, S., Fenner, W. and B. Haberman, &quot;Multicast
+              Listener Discovery (MLD) for IPv6&quot;, <a href="/doc/html/rfc2710">RFC 2710</a>, October
+              1999.
+
+<span class="h3"><a class="selflink" id="section-6.0" href="#section-6.0">6.0</a>  Authors&#x27; Addresses</span>
+
+   Craig Partridge
+   BBN Technologies
+   10 Moulton Street
+   Cambridge, MA 02138
+   USA
+
+   Phone: +1 (617) 873-3000
+   EMail: craig@bbn.com
+
+
+   Alden Jackson
+   BBN Technologies
+   10 Moulton Street
+   Cambridge, MA 02138
+   USA
+
+   Phone: +1 (617) 873-3000
+   EMail: awjacks@bbn.com
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Partridge &amp; Jackson         Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc2711">RFC 2711</a>                IPv6 Router Alert Option            October 1999</span>
+
+
+<span class="h3"><a class="selflink" id="section-7.0" href="#section-7.0">7.0</a>  Full Copyright Statement</span>
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partridge &amp; Jackson         Standards Track                     [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

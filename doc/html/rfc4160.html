@@ -1,0 +1,964 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc4160
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-fax-gateway-protocol/">
+  <meta name="description" content="Internet Fax Gateway Requirements (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc4160.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc4160.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc4160.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc4160/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc4160/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/fax/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-fax-gateway-protocol@ietf.org?subject=draft-ietf-fax-gateway-protocol" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-fax-gateway-protocol-13.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-fax-gateway-protocol-13.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-fax-gateway-protocol-13.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-fax-gateway-protocol-13">draft-ietf-fax-gateway-protocol-13</a>                   Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                          K. Mimura
+Request for Comments: 4160                                   K. Yokoyama
+Category: Informational                                         T. Satoh
+                                                              C. Kanaide
+                                            TOYO Communication Equipment
+                                                            C. Allocchio
+                                                         Consortium GARR
+                                                             August 2005
+
+
+                   <span class="h1">Internet Fax Gateway Requirements</span>
+
+Status of This Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2005).
+
+Abstract
+
+   To allow connectivity between the General Switched Telephone Network
+   facsimile service (GSTN fax) and the e-mail-based Internet Fax
+   service (i-fax) an &quot;Internet Fax Gateway&quot; is required.  This document
+   provides recommendations for the functionality of Internet Fax
+   Gateways.  In this context, an &quot;offramp gateway&quot; provides facsimile
+   data transmission from i-fax to GSTN fax; vice versa, an &quot;onramp
+   gateway&quot; provides data transmission form GSTN fax to i-fax.  The
+   recommendations in this document apply to the integrated service
+   including Internet Fax terminals, computers with i-fax software on
+   the Internet, and GSTN Fax terminals on the GSTN.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   An Internet Fax Gateway provides connectivity and translation between
+   the General Switched Telephone Network facsimile service (GSTN fax)
+   and the e-mail-based Internet Fax service (i-fax).  This document
+   defines the recommended behavior of an Internet Fax Gateway.  An
+   Internet Fax Gateway can be classified as &quot;onramp&quot;, when a facsimile
+   is transferred from GSTN fax to the Internet Fax, and as &quot;offramp&quot;,
+   when a facsimile is transferred from Internet Fax to GSTN fax.  For a
+   more detailed definition of &quot;onramp&quot; and &quot;offramp&quot; within i-fax
+   service, see [<a href="#ref-1" title="&quot;Terminology and Goals for Internet Fax&quot;">1</a>].
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   This document provides recommendations only for the specific case
+   hereunder:
+
+   1) the operational mode of the Internet Fax is &quot;store and forward&quot;,
+      as defined in Section 2.5 of [<a href="#ref-1" title="&quot;Terminology and Goals for Internet Fax&quot;">1</a>].
+
+   2) The format of image data is the data format defined by &quot;simple
+      mode&quot; in [<a href="#ref-4" title="&quot;A Simple Mode of Facsimile Using Internet Mail&quot;">4</a>].
+
+   This document does not apply to the gateway functions for &quot;real-time
+   Internet Fax&quot;, as described and defined in [<a href="#ref-3" title="&quot;Procedures for real-time Group 3 facsimile communication over IP networks&quot;">3</a>].  Additional
+   recommendations for optional functionality are described in [<a href="#ref-24" title="&quot;Guidelines for Optional Services for Internet Fax Gateways&quot;">24</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Key Words</span>
+
+   The key words &quot;MUST&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, and &quot;MAY&quot; in this
+   document are to be interpreted as described in [<a href="#ref-5" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">5</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Internet Fax Gateway Operations</span>
+
+   An onramp gateway receives a facsimile from a GSTN fax device (which
+   may include an offramp gateway itself), and generates an Internet Fax
+   over the Internet, which is sent to any Internet Fax device.
+
+   An offramp gateway receives an Internet Fax over the Internet from
+   any Internet Fax-capable device (which may include an onramp gateway
+   or a PC), and generates a GSTN fax, which is sent to any GSTN fax
+   device.
+
+   In both of these cases, the Internet side of the gateway acts as an
+   Internet Fax device, as described in [<a href="#ref-4" title="&quot;A Simple Mode of Facsimile Using Internet Mail&quot;">4</a>], while the GSTN side of the
+   gateway acts as a GSTN fax device, as described in [<a href="#ref-6" title="&quot;Procedures for document facsimile transmission in the general switched telephone network&quot;">6</a>].
+
+   In this document we will only thus recommend the actions that occur
+   while
+
+   1) the onramp gateway converts a fax received from GSTN and forwards
+      it to the Internet Fax service;
+
+   2) the offramp gateway converts a fax received from the Internet and
+      forwards it to the GSTN fax service.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  The Offramp Gateway Operations</span>
+
+   An offramp gateway MUST, as a minimal requirement, perform the
+   following functions:
+
+      - address translation/mapping,
+      - image format conversion, and
+      - error/return notification handling
+
+   and MAY also perform
+
+      - user authorization.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  User Authorization</span>
+
+   An offramp gateway MAY have a user authorization function to confirm
+   that a user is allowed to transmit its Internet Fax to the GSTN fax
+   service.
+
+   Because an Internet Fax is sent as a MIME e-mail message to the
+   offramp gateway, digital signatures can be used to authenticate and
+   authorize the user.  S/MIME is one example of a protocol that
+   includes digital signature services.  S/MIME is described in
+   [<a href="#ref-9" title="&quot;Cryptographic Message Syntax (CMS)&quot;">9</a>][10][<a href="#ref-11" title="&quot;Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.1 Certificate Handling&quot;">11</a>][12][<a href="#ref-13" title="&quot;Enhanced Security Services for S/MIME&quot;">13</a>].  Other methods of adding a digital signature to
+   a mail message (such as OpenPGP [<a href="#ref-17" title="&quot;OpenPGP Message Format&quot;">17</a>] [<a href="#ref-25" title="&quot;MIME Security with OpenPGP&quot;">25</a>]) MAY also be used to
+   authenticate and authorize the user.
+
+   The agent sending the Internet Fax (which may include an onramp
+   gateway) sends the digitally-signed S/MIME or OpenPGP Fax message to
+   the offramp gateway.  The offramp gateway then compares the
+   credentials of the user to determine if he/she is authorized to send
+   faxes to the GSTN fax service.  If the authorization process fails,
+   then the offramp gateway MUST generate an error delivery notification
+   for the sender of the Internet Fax.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Addressing</span>
+
+   An Internet Fax may contain multiple e-mail addresses, both as
+   originators, and as recipients.  For its forwarding function to GSTN
+   fax service, an offramp gateway MUST only consider those addresses
+   which are explicitly itself, i.e., those where the right-hand side of
+   the e-mail address corresponds to the offramp gateway.
+
+   Because addresses on the Internet Fax service are e-mail addresses,
+   in order to reach a destination in the GSTN fax service, the offramp
+   gateway MUST convert e-mail addresses into GSTN addresses.
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   The GSTN destination address SHOULD normally be encoded inside the
+   left-hand side of the e-mail address, according to [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>].  However, an
+   offramp gateway MAY use locally implemented translation rules to map
+   left-hand side strings into GSTN addresses.
+
+   In any case, the offramp gateway MUST process the resultant GSTN
+   address and convert it to a &quot;local-phone&quot;, in accordance with local
+   dialing rules.
+
+   &quot;Global-phone&quot; is defined in Section 2 of [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>].  &quot;Local-phone&quot; is
+   defined in Section 2 of [<a href="#ref-8" title="&quot;GSTN Address Element Extensions in E-mail Services&quot;">8</a>].  &quot;Exit-code&quot; is defined in <a href="#section-2.1">Section 2.1</a>
+   of [<a href="#ref-8" title="&quot;GSTN Address Element Extensions in E-mail Services&quot;">8</a>].
+
+   The offramp gateway SHOULD also have a function to apply translation
+   to originator addresses and other addresses referred to into the
+   Internet Fax, in order to ensure a possible return path from GSTN fax
+   service to Internet Fax destinations, including other offramp
+   gateways.  These functions MUST be compliant with the address
+   handling of onramp gateways that is described in <a href="#section-4.2">Section 4.2</a> of this
+   document.
+
+<span class="h4"><a class="selflink" id="section-3.2.1" href="#section-3.2.1">3.2.1</a>.  Examples of Local Dialing Rules Applied to GSTN Destination</span>
+<span class="h4">        Addresses</span>
+
+   The first example shows how an offramp gateway converts a &quot;global-
+   phone&quot; to a &quot;local-phone&quot; by removing the &quot;+&quot; and &quot;44&quot; (recognizing
+   the international country code is local), and then knowing it can
+   dial directly without an exit-code:
+
+      global-phone:  +441164960348
+
+   resulting in:
+
+      local-phone:   1164960348
+
+   The next example shows how an offramp gateway converts a &quot;global-
+   phone&quot; to a &quot;local-phone&quot; by removing the &quot;+&quot; and &quot;44&quot; (recognizing
+   the international country code is local), and then adding the exit-
+   code &quot;0&quot; in front of the string:
+
+      global-phone:   +441164960348
+
+   resulting in:
+
+      local-phone:   01164960348
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   The next example shows how an offramp gateway converts a &quot;global-
+   phone&quot; to &quot;local-phone&quot; by removing the &quot;+&quot; and &quot;44&quot; (recognizing the
+   international country code is local), and then adding the long
+   distance &quot;0&quot; in front of the string:
+
+      global-phone:   +441164960348
+
+   resulting in:
+
+      local-phone:    01164960348
+
+   The last example shows how an offramp gateway converts a &quot;global-
+   phone&quot; to a &quot;local-phone&quot; by removing the &quot;+&quot;, recognizing the
+   international country code is non-local, and adding the local
+   international dialing prefix &quot;00&quot; in front of the string:
+
+      global-phone:   +441164960348
+
+   resulting in:
+
+      local-phone:   00441164960348
+
+<span class="h4"><a class="selflink" id="section-3.2.2" href="#section-3.2.2">3.2.2</a>.  Support for Subaddress</span>
+
+   An offramp gateway SHOULD support the subaddress.  If a subaddress is
+   encoded into the left-hand side of the e-mail address [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>], then it
+   MUST be used by the offramp gateway, as specified in T.33 [<a href="#ref-15" title="&quot;Facsimile routing utilizing the subaddress&quot;">15</a>], to
+   reach the final GSTN fax recipient.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Image Format Conversion</span>
+
+   An offramp gateway MUST convert the file format from TIFF Profile-S
+   for Internet Fax (defined in [<a href="#ref-16" title="&quot;File Format for Internet Fax&quot;">16</a>]) into the GSTN fax image format.
+   Other Internet Fax file formats are not considered in this document.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Error/Return Notification Handling</span>
+
+   An offramp gateway SHOULD have a function that allows it to send a
+   return notice to the originator Internet Fax device (defined in [<a href="#ref-4" title="&quot;A Simple Mode of Facsimile Using Internet Mail&quot;">4</a>])
+   when a transmission error occurs over the GSTN fax service and the
+   facsimile is not delivered to the destination.  The return notice
+   MUST be in Message Delivery Notification (MDN) format and delivered
+   by the offramp gateway over the Internet e-mail transport service
+   used by Internet Fax.  The MDN disposition-type MUST be set as
+   &quot;processed&quot;, and the disposition-modifier MUST be set as an &quot;error&quot;.
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   If the offramp gateway fails to transmit the MDN, the error
+   information MAY be recorded to a log, and processing MAY end, or the
+   administrator of the gateway system MAY be notified of these errors
+   through a specific method (for example, by an e-mail message).
+
+   The more complex case of Delivery Status Notification (DSN) requests
+   handling is not considered in this document.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  The Onramp Gateway Operations</span>
+
+   An onramp gateway MUST, as minimal requirement, perform the following
+   functions:
+
+   - address translation/mapping,
+   - image format conversion, and
+   - error/return notification handling,
+
+   and MAY also perform
+
+   - user authorization.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  User Authorization</span>
+
+   An onramp gateway MAY have a user authorization function to confirm
+   that the user is authorized to transmit a facsimile to the Internet
+   fax service.  For example, user authorization may be accomplished by
+   getting a user-ID and password received by Dual Tone Multi-Frequency
+   (DTMF), or via a local authorization table based on the GSTN caller-
+   ID.
+
+   If the authorization process fails, then the onramp gateway MUST
+   generate an error message/code for the sender of the GSTN Fax.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Address Translation/Mapping</span>
+
+   Addresses on Internet Fax service are e-mail addresses, thus a
+   recipient of an Internet Fax might be either an e-mail user, an
+   Internet Fax device with its own recipients/users, or an offramp
+   gateway.  The onramp gateway SHOULD have a functionality in order to
+   receive from GSTN (via DTMF) destination addresses.  However, there
+   are two categories of destination addresses:
+
+      - e-mail users and Internet Fax recipient/users
+      - real GSTN addresses reached via an offramp gateway
+
+   We define &quot;indirect address mapping&quot; as the functionality for the
+   first category, and &quot;direct address mapping&quot; as the functionality for
+   the second category.
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+<span class="h4"><a class="selflink" id="section-4.2.1" href="#section-4.2.1">4.2.1</a>.  Indirect Address Mapping</span>
+
+   The onramp gateway MAY implement local address mapping mechanisms
+   (via a table, directory lookup, or something similar) that permit
+   translation from addresses (called &quot;indirect address numbers&quot;)
+   received from the GSTN fax sending device into e-mail addresses.  A
+   single e-mail address or a list of e-mail addresses MAY correspond to
+   a single indirect address number.
+
+   Here is one mapping example:
+
+   (1) An onramp gateway receives the indirect address number &quot;1234&quot;
+       from the source GSTN facsimile by DTMF.
+
+            1234
+
+   (2) The destination address is looked up in the address mapping
+       table.
+
+            address mapping table
+            1234 : ifax@example.com
+
+   (3) An Internet Fax is sent to the address (&quot;addr-spec&quot;)
+
+            ifax@example.com
+
+   &quot;Addr-spec&quot; is defined in Section 3.4.1 of [<a href="#ref-14" title="&quot;Internet Message Format&quot;">14</a>].
+
+   If the address mapping lookup fails, an error MUST be reported to the
+   originating GSTN fax device.
+
+<span class="h4"><a class="selflink" id="section-4.2.2" href="#section-4.2.2">4.2.2</a>.  Direct Address Mapping</span>
+
+   If the indirect address mapping specified in 4.2.1 is not
+   implemented, then only &quot;direct address mapping&quot; can be used.  The
+   GSTN sending device SHOULD send the full numeric destination address
+   to the onramp gateway via DTMF.  Direct address mapping can also be
+   used if indirect address mapping is implemented.
+
+   An example:
+
+   (1) An onramp gateway receives the destination telephone number
+       &quot;441164960348&quot; from the source facsimile by DTMF.
+
+            441164960348
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   (2) The destination number is encoded as a &quot;global-phone&quot;, so &quot;+&quot; is
+       added to the head of the string.
+
+            +441164960348
+
+   (3) &quot;FAX=&quot; is added in order to build the &quot;fax-mbox&quot; address item
+
+            FAX=+441164960348
+
+   (4) The destination address is completed, adding the specification of
+       the appropriate offramp gateway, which is supposed to handle the
+       delivery of the fax message to a global-phone address.
+
+            FAX=+441164960348@example.com
+
+   The procedure for choosing the domain name of an offramp gateway is
+   defined in <a href="#section-4.3">Section 4.3</a> (&quot;Relay Function&quot;).
+
+   &quot;Global-phone&quot;, &quot;fax-mbox&quot;, and &quot;fax-address&quot; are defined in <a href="#section-2">Section</a>
+   <a href="#section-2">2</a> of [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>].  &quot;Mta-I-fax&quot; is defined in Section 3 of [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>].  &quot;Fax-email&quot;
+   is defined in Section 4 of [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>].
+
+<span class="h4"><a class="selflink" id="section-4.2.3" href="#section-4.2.3">4.2.3</a>.  Sender Address Handling</span>
+
+   The onramp gateway SHOULD gather information about the GSTN fax
+   sender address (for example, via Caller-ID, if available) and encode
+   it as the sender of the Internet Fax, using the direct address
+   mapping (see <a href="#section-4.2.2">Section 4.2.2</a> of this document).  The sender address
+   SHOULD be completed using the onramp gateway address, unless the
+   onramp gateway has additional information with which to specify a
+   different return path.
+
+   If the onramp gateway does not have any sender address information,
+   the Internet Fax sender address SHOULD be set to either a &quot;no-reply&quot;
+   address or an appropriate default mailbox.
+
+<span class="h4"><a class="selflink" id="section-4.2.4" href="#section-4.2.4">4.2.4</a>.  Support for Subaddress</span>
+
+   An onramp gateway SHOULD support the subaddress.  In the case of
+   direct address mapping, the subaddress is specified using the T.33
+   [<a href="#ref-15" title="&quot;Facsimile routing utilizing the subaddress&quot;">15</a>] specification, and encoded as given in [<a href="#ref-7" title="&quot;Minimal FAX address format in Internet Mail&quot;">7</a>].  In the case of
+   indirect address mapping, the subaddress MAY be contained inside the
+   address mapping table.
+
+
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Relay Function</span>
+
+   The onramp gateway SHOULD provide functionality for choosing the
+   destination offramp gateway by analyzing a destination fax number.  A
+   possible method to expand or acquire information from the onramp
+   gateway about offramp gateways MAY include keeping cached information
+   about sender addresses that was sent by other onramp gateways.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  File Format Conversion</span>
+
+   An onramp gateway MUST convert the file format from a facsimile over
+   the GSTN to the file format TIFF Profile-S for Internet Fax, as
+   defined in [<a href="#ref-16" title="&quot;File Format for Internet Fax&quot;">16</a>].
+
+<span class="h3"><a class="selflink" id="section-4.6" href="#section-4.6">4.6</a>.  Return Notice Handling</span>
+
+   When an onramp gateway receives and analyzes a return notice from the
+   Internet Fax destination, it MAY have the functionality to send the
+   delivery status to a suitable facsimile device on the GSTN through an
+   appropriate offramp gateway.  The generated notice sent via GSTN fax
+   SHOULD contain both the human-readable notice information, and the
+   original delivery codes.
+
+   If the onramp gateway fails in the transmission of the return notice
+   back to GSTN fax service, the information MAY be recorded into a log,
+   and processing MAY end.  As an alternate, the administrator of the
+   gateway system MAY be notified of this notice with a specific method
+   (for example, by sending an e-mail message to a mailbox).
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   Refer to <a href="#section-3.1">Section 3.1</a> (&quot;User Authorization&quot;) for authentication for an
+   offramp gateway.  OpenPGP [<a href="#ref-17" title="&quot;OpenPGP Message Format&quot;">17</a>] [<a href="#ref-25" title="&quot;MIME Security with OpenPGP&quot;">25</a>] can be used to provide
+   authorization services instead of S/MIME.  Refer to <a href="#section-4.1">Section 4.1</a>
+   (&quot;User Authorization&quot;) for authentication for an onramp gateway.
+
+   S/MIME and OpenPGP can also be used to encrypt a message.  A signed
+   or encrypted message is protected while transported along the
+   network; however, when a message reaches an Internet Fax Gateway,
+   either onramp or offramp, this kind of protection cannot be applied
+   anymore.  Here, security must rely on trusted operations of the
+   gateway itself.  A gateway might have its own certificate/key to
+   improve security operations when sending Internet Faxes, but, as with
+   any gateway, it breaks the end-to-end security pattern of both S/MIME
+   and PGP.
+
+   Other security mechanisms, like IPsec [<a href="#ref-18" title="&quot;Security Architecture for the Internet Protocol&quot;">18</a>][19][<a href="#ref-20" title="&quot;The Addition of Explicit Congestion Notification (ECN) to IP&quot;">20</a>][21][<a href="#ref-2" title="&quot;IP Security Document Roadmap&quot;">2</a>] or TLS [<a href="#ref-23" title="&quot;Transport Layer Security (TLS) Extensions&quot;">23</a>]
+   also do not ensure a secure gateway operation.
+
+
+
+<span class="grey">Mimura, et al.               Informational                      [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   Denial-of-service attacks are beyond the scope of this document.
+   Host compromise caused by flaws in the implementation is beyond the
+   scope of this document.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Informative References</span>
+
+   [<a id="ref-1">1</a>]  Masinter, L., &quot;Terminology and Goals for Internet Fax&quot;, <a href="/doc/html/rfc2542">RFC</a>
+        <a href="/doc/html/rfc2542">2542</a>, March 1999.
+
+   [<a id="ref-2">2</a>]  Thayer, R., Doraswamy, N., and R. Glenn, &quot;IP Security Document
+        Roadmap&quot;, <a href="/doc/html/rfc2411">RFC 2411</a>, November 1998.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Normative References</span>
+
+   [<a id="ref-3">3</a>]  &quot;Procedures for real-time Group 3 facsimile communication over
+        IP networks&quot;, ITU-T Recommendation T.38, June 1998.
+
+   [<a id="ref-4">4</a>]  Toyoda, K., Ohno, H., Murai, J., and D. Wing, &quot;A Simple Mode of
+        Facsimile Using Internet Mail&quot;, <a href="/doc/html/rfc3965">RFC 3965</a>, December 2004.
+
+   [<a id="ref-5">5</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate Requirement
+        Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-6">6</a>] &quot;Procedures for document facsimile transmission in the general
+        switched telephone network&quot;, ITU-T Recommendation T.30, April
+        1999.
+
+   [<a id="ref-7">7</a>]  Allocchio, C., &quot;Minimal FAX address format in Internet Mail&quot;,
+        <a href="/doc/html/rfc3192">RFC 3192</a>, October 2001.
+
+   [<a id="ref-8">8</a>]  Allocchio, C., &quot;GSTN Address Element Extensions in E-mail
+        Services&quot;, <a href="/doc/html/rfc2846">RFC 2846</a>, June 2000.
+
+   [<a id="ref-9">9</a>]  Housley, R., &quot;Cryptographic Message Syntax (CMS)&quot;, <a href="/doc/html/rfc3852">RFC 3852</a>,
+        July 2004.
+
+   [<a id="ref-10">10</a>] Rescorla, E., &quot;Diffie-Hellman Key Agreement Method&quot;, <a href="/doc/html/rfc2631">RFC 2631</a>,
+        June 1999.
+
+   [<a id="ref-11">11</a>] Ramsdell, B., &quot;Secure/Multipurpose Internet Mail Extensions
+        (S/MIME) Version 3.1 Certificate Handling&quot;, <a href="/doc/html/rfc3850">RFC 3850</a>, July 2004.
+
+   [<a id="ref-12">12</a>] Ramsdell, B., &quot;Secure/Multipurpose Internet Mail Extensions
+        (S/MIME) Version 3.1 Message Specification&quot;, <a href="/doc/html/rfc3851">RFC 3851</a>, July
+        2004.
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                     [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+   [<a id="ref-13">13</a>] Hoffman, P., &quot;Enhanced Security Services for S/MIME&quot;, <a href="/doc/html/rfc2634">RFC 2634</a>,
+        June 1999.
+
+   [<a id="ref-14">14</a>] Resnick, P., &quot;Internet Message Format&quot;, <a href="/doc/html/rfc2822">RFC 2822</a>, April 2001.
+
+   [<a id="ref-15">15</a>] &quot;Facsimile routing utilizing the subaddress&quot;, ITU recommendation
+        T.33, July 1996.
+
+   [<a id="ref-16">16</a>] Buckley, R., Venable, D., McIntyre, L., Parsons, G., and J.
+        Rafferty, &quot;File Format for Internet Fax&quot;, <a href="/doc/html/rfc3949">RFC 3949</a>, February
+        2005.
+
+   [<a id="ref-17">17</a>] Callas, J., Donnerhacke, L., Finney, H., and R. Thayer, &quot;OpenPGP
+        Message Format&quot;, <a href="/doc/html/rfc2440">RFC 2440</a>, November 1998.
+
+   [<a id="ref-18">18</a>] Kent, S. and R. Atkinson, &quot;Security Architecture for the
+        Internet Protocol&quot;, <a href="/doc/html/rfc2401">RFC 2401</a>, November 1998.
+
+   [<a id="ref-19">19</a>] Kent, S. and R. Atkinson, &quot;IP Authentication Header&quot;, <a href="/doc/html/rfc2402">RFC 2402</a>,
+        November 1998.
+
+   [<a id="ref-20">20</a>] Ramakrishnan, K., Floyd, S., and D. Black, &quot;The Addition of
+        Explicit Congestion Notification (ECN) to IP&quot;, <a href="/doc/html/rfc3168">RFC 3168</a>,
+        September 2001.
+
+   [<a id="ref-21">21</a>] Piper, D., &quot;The Internet IP Security Domain of Interpretation
+        for ISAKMP&quot;, <a href="/doc/html/rfc2407">RFC 2407</a>, November 1998.
+
+   [<a id="ref-23">23</a>] Blake-Wilson, S., Nystrom, M., Hopwood, D., Mikkelsen, J., and
+        T. Wright, &quot;Transport Layer Security (TLS) Extensions&quot;, <a href="/doc/html/rfc3546">RFC</a>
+        <a href="/doc/html/rfc3546">3546</a>, June 2003.
+
+   [<a id="ref-24">24</a>] Mimura, K., Yokoyama, K., Satoh, T., Watanabe, K., and C.
+        Kanaide, &quot;Guidelines for Optional Services for Internet Fax
+        Gateways&quot;, <a href="/doc/html/rfc4161">RFC 4161</a>, August 2005.
+
+   [<a id="ref-25">25</a>] Elkins, M., Del Torto, D., Levien, R., and T. Roessler, &quot;MIME
+        Security with OpenPGP&quot;, <a href="/doc/html/rfc3156">RFC 3156</a>, August 2001.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                     [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+Authors&#x27; Addresses
+
+   Katsuhiko Mimura
+   TOYO Communication Equipment CO., LTD.
+   2-1-1 Koyato, Samukawa-machi, Koza-gun
+   Kanagawa, Japan
+
+   Fax: +81 467 74 5743
+   EMail: mimu@miyabi-labo.net
+
+
+   Keiichi Yokoyama
+   TOYO Communication Equipment CO., LTD.
+   2-1-1 Koyato, Samukawa-machi, Koza-gun
+   Kanagawa, Japan
+
+   Fax: +81 467 74 5743
+   EMail: keiyoko@msn.com
+
+
+   Takahisa Satoh
+   TOYO Communication Equipment CO., LTD.
+   2-1-1 Koyato, Samukawa-machi, Koza-gun
+   Kanagawa, Japan
+
+   Fax: +81 467 74 5743
+   EMail: zsatou@t-ns.co.jp
+
+
+   Chie Kanaide
+   TOYO Communication Equipment CO., LTD.
+   2-1-1 Koyato, Samukawa-machi, Koza-gun
+   Kanagawa, Japan
+
+   Fax: +81 467 74 5743
+   EMail: icemilk77@yahoo.co.jp
+
+
+   Claudio Allocchio
+   Consortium GARR
+   Viale Palmiro Togliatti 1625
+   00155 Roma, Italy
+
+   Fax: +39 040 3758565
+   EMail: Claudio.Allocchio@garr.it
+
+
+
+
+
+
+<span class="grey">Mimura, et al.               Informational                     [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc4160">RFC 4160</a>           Internet Fax Gateway Requirements         August 2005</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2005).
+
+   This document is subject to the rights, licenses and restrictions
+   contained in <a href="/doc/html/bcp78">BCP 78</a>, and except as set forth therein, the authors
+   retain all their rights.
+
+   This document and the information contained herein are provided on an
+   &quot;AS IS&quot; basis and THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS
+   OR IS SPONSORED BY (IF ANY), THE INTERNET SOCIETY AND THE INTERNET
+   ENGINEERING TASK FORCE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE
+   INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+   WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   Intellectual Property Rights or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; nor does it represent that it has
+   made any independent effort to identify any such rights.  Information
+   on the procedures with respect to rights in RFC documents can be
+   found in <a href="/doc/html/bcp78">BCP 78</a> and <a href="/doc/html/bcp79">BCP 79</a>.
+
+   Copies of IPR disclosures made to the IETF Secretariat and any
+   assurances of licenses to be made available, or the result of an
+   attempt made to obtain a general license or permission for the use of
+   such proprietary rights by implementers or users of this
+   specification can be obtained from the IETF on-line IPR repository at
+   <a href="http://www.ietf.org/ipr">http://www.ietf.org/ipr</a>.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights that may cover technology that may be required to implement
+   this standard.  Please address the information to the IETF at ietf-
+   ipr@ietf.org.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+Mimura, et al.               Informational                     [Page 13]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

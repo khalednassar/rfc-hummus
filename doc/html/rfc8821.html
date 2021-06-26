@@ -1,0 +1,837 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8821
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-teas-pce-native-ip/">
+  <meta name="description" content="PCE-Based Traffic Engineering (TE) in Native IP Networks (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8821.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8821.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8821.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8821.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8821/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8821/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/teas/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-teas-pce-native-ip@ietf.org?subject=draft-ietf-teas-pce-native-ip" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-teas-pce-native-ip-17.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-teas-pce-native-ip-17.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-teas-pce-native-ip-17.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-teas-pce-native-ip-17">draft-ietf-teas-pce-native-ip-17</a>                     Informational
+                                                        <a class="text-warning" href="/ipr/search/?submit=draft&amp;id=draft-ietf-teas-pce-native-ip">IPR declarations</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                           A. Wang
+Request for Comments: 8821                                 China Telecom
+Category: Informational                                      B. Khasanov
+ISSN: 2070-1721                                               Yandex LLC
+                                                                 Q. Zhao
+                                                        Etheric Networks
+                                                                 H. Chen
+                                                               Futurewei
+                                                              April 2021
+
+
+        <span class="h1">PCE-Based Traffic Engineering (TE) in Native IP Networks</span>
+
+Abstract
+
+   This document defines an architecture for providing traffic
+   engineering in a native IP network using multiple BGP sessions and a
+   Path Computation Element (PCE)-based central control mechanism.  It
+   defines the Centralized Control Dynamic Routing (CCDR) procedures and
+   identifies needed extensions for the Path Computation Element
+   Communication Protocol (PCEP).
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8821">https://www.rfc-editor.org/info/rfc8821</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  CCDR Architecture in a Simple Topology
+   4.  CCDR Architecture in a Large-Scale Topology
+   5.  CCDR Multiple BGP Sessions Strategy
+   6.  PCEP Extension for Critical Parameters Delivery
+   7.  Deployment Considerations
+     7.1.  Scalability
+     7.2.  High Availability
+     7.3.  Incremental Deployment
+     7.4.  Loop Avoidance
+     7.5.  E2E Path Performance Monitoring
+   8.  Security Considerations
+   9.  IANA Considerations
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a href="/doc/html/rfc8283" title="&quot;An Architecture for Use of PCE and the PCE Communication Protocol (PCEP) in a Network with Central Control&quot;">RFC8283</a>], based on an extension of the PCE architecture described in
+   [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>], introduced a broader use applicability for a PCE as a
+   central controller.  PCEP continues to be used as the protocol
+   between the PCE and the Path Computation Client (PCC).  Building on
+   that work, this document describes a solution of using a PCE for
+   centralized control in a native IP network to provide end-to-end
+   (E2E) performance assurance and QoS for traffic.  The solution
+   combines the use of distributed routing protocols and a centralized
+   controller, referred to as Centralized Control Dynamic Routing
+   (CCDR).
+
+   [<a id="ref-RFC8735">RFC8735</a>] describes the scenarios and simulation results for traffic
+   engineering in a native IP network based on use of a CCDR
+   architecture.  Per [<a href="/doc/html/rfc8735" title="&quot;Scenarios and Simulation Results of PCE in a Native IP Network&quot;">RFC8735</a>], the architecture for traffic
+   engineering in a native IP network should meet the following
+   criteria:
+
+   *  Same solution for native IPv4 and IPv6 traffic.
+
+   *  Support for intra-domain and inter-domain scenarios.
+
+   *  Achieve E2E traffic assurance, with determined QoS behavior, for
+      traffic requiring a service assurance (prioritized traffic).
+
+   *  No changes in a router&#x27;s forwarding behavior.
+
+   *  Based on centralized control through a distributed network control
+      plane.
+
+   *  Support different network requirements such as high traffic volume
+      and prefix scaling.
+
+   *  Ability to adjust the optimal path dynamically upon the changes of
+      network status.  No need for reserving resources for physical
+      links in advance.
+
+   Building on the above documents, this document defines an
+   architecture meeting these requirements by using a strategy of
+   multiple BGP sessions and a PCE as the centralized controller.  The
+   architecture depends on the central control element (PCE) to compute
+   the optimal path and utilizes the dynamic routing behavior of IGP and
+   BGP for forwarding the traffic.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This document uses the following terms defined in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]:
+
+   PCE:  Path Computation Element
+
+   PCEP:  PCE Protocol
+
+   PCC:  Path Computation Client
+
+   Other terms are used in this document:
+
+   CCDR:  Centralized Control Dynamic Routing
+
+   E2E:  End to End
+
+   ECMP:  Equal-Cost Multipath
+
+   RR:  Route Reflector
+
+   SDN:  Software-Defined Network
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  CCDR Architecture in a Simple Topology</span>
+
+   Figure 1 illustrates the CCDR architecture for traffic engineering in
+   a simple topology.  The topology is composed of four devices, which
+   are SW1, SW2, R1, and R2.  There are multiple physical links between
+   R1 and R2.  Traffic between prefix PF11 (on SW1) and prefix PF21 (on
+   SW2) is normal traffic; traffic between prefix PF12 (on SW1) and
+   prefix PF22 (on SW2) is priority traffic that should be treated
+   accordingly.
+
+                                  +-----+
+                       +----------+ PCE +--------+
+                       |          +-----+        |
+                       |                         |
+                       | BGP Session 1(lo11/lo21)|
+                       +-------------------------+
+                       |                         |
+                       | BGP Session 2(lo12/lo22)|
+                       +-------------------------+
+   PF12                |                         |                 PF22
+   PF11                |                         |                 PF21
+   +---+         +-----+-----+             +-----+-----+           +---+
+   |SW1+---------+(lo11/lo12)+-------------+(lo21/lo22)+-----------+SW2|
+   +---+         |    R1     +-------------+    R2     |           +---+
+                 +-----------+             +-----------+
+
+              Figure 1: CCDR Architecture in a Simple Topology
+
+   In the intra-domain scenario, IGP and BGP combined with a PCE are
+   deployed between R1 and R2.  In the inter-domain scenario, only
+   native BGP is deployed.  The traffic between each address pair may
+   change in real time and the corresponding source/destination
+   addresses of the traffic may also change dynamically.
+
+   The key ideas of the CCDR architecture for this simple topology are
+   the following:
+
+   *  Build two BGP sessions between R1 and R2 via the different
+      loopback addresses on these routers (lo11 and lo12 are the
+      loopback addresses of R1, and lo21 and lo22 are the loopback
+      addresses of R2).
+
+   *  Using the PCE, set the explicit peer route on R1 and R2 for BGP
+      next hop to different physical link addresses between R1 and R2.
+      The explicit peer route can be set in the format of a static
+      route, which is different from the route learned from IGP.
+
+   *  Send different prefixes via the established BGP sessions.  For
+      example, send PF11/PF21 via the BGP session 1 and PF12/PF22 via
+      the BGP session 2.
+
+   After the above actions, the bidirectional traffic between the PF11
+   and PF21, and the bidirectional traffic between PF12 and PF22, will
+   go through different physical links between R1 and R2.
+
+   If there is more traffic between PF12 and PF22 that needs assured
+   transport, one can add more physical links between R1 and R2 to reach
+   the next hop for BGP session 2.  In this case, the prefixes that are
+   advertised by the BGP peers need not be changed.
+
+   If, for example, there is bidirectional priority traffic from another
+   address pair (for example, prefix PF13/PF23), and the total volume of
+   priority traffic does not exceed the capacity of the previously
+   provisioned physical links, one need only advertise the newly added
+   source/destination prefixes via the BGP session 2.  The bidirectional
+   traffic between PF13/PF23 will go through the same assigned,
+   dedicated physical links as the traffic between PF12/PF22.
+
+   Such a decoupling philosophy of the IGP/BGP traffic link and the
+   physical link achieves a flexible control capability for the network
+   traffic, satisfying the needed QoS assurance to meet the
+   application&#x27;s requirement.  The router needs only to support native
+   IP and multiple BGP sessions set up via different loopback addresses.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  CCDR Architecture in a Large-Scale Topology</span>
+
+   When the priority traffic spans a large-scale network, such as that
+   illustrated in Figure 2, the multiple BGP sessions cannot be
+   established hop by hop within one autonomous system.  For such a
+   scenario, we propose using a Route Reflector (RR) [<a href="/doc/html/rfc4456" title="&quot;BGP Route Reflection: An Alternative to Full Mesh Internal BGP (IBGP)&quot;">RFC4456</a>] to
+   achieve a similar effect.  Every edge router will establish two BGP
+   sessions with the RR via different loopback addresses respectively.
+   The other steps for traffic differentiation are the same as that
+   described in the CCDR architecture for the simple topology.
+
+   As shown in Figure 2, if we select R3 as the RR, every edge router
+   (R1 and R7 in this example) will build two BGP sessions with the RR.
+   If the PCE selects the dedicated path as R1-R2-R4-R7, then the
+   operator should set the explicit peer routes via PCEP on these
+   routers respectively, pointing to the BGP next hop (loopback
+   addresses of R1 and R7, which are used to send the prefix of the
+   priority traffic) to the selected forwarding address.
+
+                                 +-----+
+                +----------------+ PCE +------------------+
+                |                +--+--+                  |
+                |                   |                     |
+                |                   |                     |
+                |                +--+---+                 |
+                +----------------+R3(RR)+-----------------+
+   PF12         |                +--+---+                 |         PF22
+   PF11         |                                         |         PF21
+   +---+       ++-+          +--+          +--+         +-++       +---+
+   |SW1+-------+R1+----------+R5+----------+R6+---------+R7+-------+SW2|
+   +---+       ++-+          +--+          +--+         +-++       +---+
+                |                                         |
+                |                                         |
+                |            +--+          +--+           |
+                +------------+R2+----------+R4+-----------+
+                             +--+          +--+
+
+            Figure 2: CCDR Architecture in a Large-Scale Network
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  CCDR Multiple BGP Sessions Strategy</span>
+
+   Generally, different applications may require different QoS criteria,
+   which may include:
+
+   *  Traffic that requires low latency and is not sensitive to packet
+      loss.
+
+   *  Traffic that requires low packet loss and can endure higher
+      latency.
+
+   *  Traffic that requires low jitter.
+
+   These different traffic requirements are summarized in Table 1.
+
+          +================+=========+=============+============+
+          | Prefix Set No. | Latency | Packet Loss | Jitter     |
+          +================+=========+=============+============+
+          |       1        | Low     | Normal      | Don&#x27;t care |
+          +----------------+---------+-------------+------------+
+          |       2        | Normal  | Low         | Don&#x27;t care |
+          +----------------+---------+-------------+------------+
+          |       3        | Normal  | Normal      | Low        |
+          +----------------+---------+-------------+------------+
+
+                   Table 1: Traffic Requirement Criteria
+
+   For Prefix Set No.1, we can select the shortest distance path to
+   carry the traffic; for Prefix Set No.2, we can select the path that
+   has E2E under-loaded links; for Prefix Set No.3, we can let traffic
+   pass over a determined single path, as no ECMP distribution on the
+   parallel links is desired.
+
+   It is almost impossible to provide an E2E path efficiently with
+   latency, jitter, and packet loss constraints to meet the above
+   requirements in a large-scale, IP-based network only using a
+   distributed routing protocol, but these requirements can be met with
+   the assistance of PCE, as described in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>] and [<a href="/doc/html/rfc8283" title="&quot;An Architecture for Use of PCE and the PCE Communication Protocol (PCEP) in a Network with Central Control&quot;">RFC8283</a>].  The
+   PCE will have the overall network view, ability to collect the real-
+   time network topology, and the network performance information about
+   the underlying network.  The PCE can select the appropriate path to
+   meet the various network performance requirements for different
+   traffic.
+
+   The architecture to implement the CCDR multiple BGP sessions strategy
+   is as follows:
+
+   The PCE will be responsible for the optimal path computation for the
+   different priority classes of traffic:
+
+   *  PCE collects topology information via BGP-LS [<a href="/doc/html/rfc7752" title="&quot;North-Bound Distribution of Link-State and Traffic Engineering (TE) Information Using BGP&quot;">RFC7752</a>] and link
+      utilization information via the existing Network Monitoring System
+      (NMS) from the underlying network.
+
+   *  PCE calculates the appropriate path based upon the application&#x27;s
+      requirements and sends the key parameters to edge/RR routers (R1,
+      R7, and R3 in Figure 3) to establish multiple BGP sessions.  The
+      loopback addresses used for the BGP sessions should be planned in
+      advance and distributed in the domain.
+
+   *  PCE sends the route information to the routers (R1, R2, R4, and R7
+      in Figure 3) on the forwarding path via PCEP to build the path to
+      the BGP next hop of the advertised prefixes.  The path to these
+      BGP next hops will also be learned via IGP, but the route from the
+      PCEP has the higher preference.  Such a design can assure the IGP
+      path to the BGP next hop can be used to protect the path assigned
+      by PCE.
+
+   *  PCE sends the prefix information to the PCC (edge routers that
+      have established BGP sessions) for advertising different prefixes
+      via the specified BGP session.
+
+   *  The priority traffic may share some links or nodes if the path the
+      shared links or nodes can meet the requirement of application.
+      When the priority traffic prefixes are changed, but the total
+      volume of priority traffic does not exceed the physical capacity
+      of the previous E2E path, the PCE needs only change the prefixes
+      advertised via the edge routers (R1 and R7 in Figure 3).
+
+   *  If the volume of priority traffic exceeds the capacity of the
+      previous calculated path, the PCE can recalculate and add the
+      appropriate paths to accommodate the exceeding traffic.  After
+      that, the PCE needs to update the on-path routers to build the
+      forwarding path hop by hop.
+
+                             +------------+
+                             | Application|
+                             +------+-----+
+                                    |
+                           +--------+---------+
+                +----------+SDN Controller/PCE+-----------+
+                |          +--------^---------+           |
+                |                   |                     |
+                |                   |                     |
+           PCEP |             BGP-LS|PCEP                 | PCEP
+                |                   |                     |
+                |                +--v---+                 |
+                +----------------+R3(RR)+-----------------+
+    PF12        |                +------+                 |         PF22
+    PF11        |                                         |         PF21
+   +---+       +v-+          +--+          +--+         +-v+       +---+
+   |SW1+-------+R1+----------+R5+----------+R6+---------+R7+-------+SW2|
+   +---+       ++-+          +--+          +--+         +-++       +---+
+                |                                         |
+                |                                         |
+                |            +--+          +--+           |
+                +------------+R2+----------+R4+-----------+
+                             +--+          +--+
+
+       Figure 3: CCDR Architecture for Multi-BGP Sessions Deployment
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  PCEP Extension for Critical Parameters Delivery</span>
+
+   PCEP needs to be extended to transfer the following critical
+   parameters:
+
+   *  Peer information that is used to build the BGP session.
+
+   *  Explicit route information for BGP next hop of advertised
+      prefixes.
+
+   *  Advertised prefixes and their associated BGP session.
+
+   Once the router receives such information, it should establish the
+   BGP session with the peer appointed in the PCEP message, build the
+   E2E dedicated path hop by hop, and advertise the prefixes that are
+   contained in the corresponding PCEP message.
+
+   The dedicated path is preferred by making sure that the explicit
+   route created by PCE has the higher priority (lower route preference)
+   than the route information created by other dynamic protocols.
+
+   All of the above dynamically created states (BGP sessions, explicit
+   routes, and advertised prefixes) will be cleared on the expiration of
+   the state timeout interval, which is based on the existing stateful
+   PCE [<a href="/doc/html/rfc8231" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for Stateful PCE&quot;">RFC8231</a>] and PCE as a Central Controller (PCECC) [<a href="/doc/html/rfc8283" title="&quot;An Architecture for Use of PCE and the PCE Communication Protocol (PCEP) in a Network with Central Control&quot;">RFC8283</a>]
+   mechanism.
+
+   Regarding the BGP session, it is not different from that configured
+   manually or via Network Configuration Protocol (NETCONF) and YANG.
+   Different BGP sessions are used mainly for the clarification of the
+   network prefixes, which can be differentiated via the different BGP
+   next hop.  Based on this strategy, if we manipulate the path to the
+   BGP next hop, then the path to the prefixes that were advertised with
+   the BGP sessions will be changed accordingly.  Details of
+   communications between PCEP and BGP subsystems in the router&#x27;s
+   control plane are out of scope of this document.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Deployment Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Scalability</span>
+
+   In the CCDR architecture, only the edge routers that connect with the
+   PCE are responsible for the prefix advertisement via the multiple BGP
+   sessions deployment.  The route information for these prefixes within
+   the on-path routers is distributed via BGP.
+
+   For multiple domain deployment, the PCE, or the pool of PCEs
+   responsible for these domains, needs only to control the edge router
+   to build the multiple External BGP (EBGP) sessions; all other
+   procedures are the same as within one domain.
+
+   The on-path router needs only to keep the specific policy routes for
+   the BGP next hop of the differentiated prefixes, not the specific
+   routes to the prefixes themselves.  This lessens the burden of the
+   table size of policy-based routes for the on-path routers; and has
+   more expandability compared with BGP Flowspec or OpenFlow solutions.
+   For example, if we want to differentiate 1,000 prefixes from the
+   normal traffic, CCDR needs only one explicit peer route in every on-
+   path router, whereas the BGP Flowspec or OpenFlow solutions need
+   1,000 policy routes on them.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  High Availability</span>
+
+   The CCDR architecture is based on the use of native IP.  If the PCE
+   fails, the forwarding plane will not be impacted, as the BGP sessions
+   between all the devices will not flap, and the forwarding table
+   remains unchanged.
+
+   If one node on the optimal path fails, the priority traffic will fall
+   over to the best-effort forwarding path.  One can even design several
+   paths to load balance or to create a hot standby of the priority
+   traffic to meet a path failure situation.
+
+   For ensuring high availability of a PCE/SDN-controllers architecture,
+   an operator should rely on existing high availability solutions for
+   SDN controllers, such as clustering technology and deployment.
+
+<span class="h3"><a class="selflink" id="section-7.3" href="#section-7.3">7.3</a>.  Incremental Deployment</span>
+
+   Not every router within the network needs to support the necessary
+   PCEP extension.  For such situations, routers on the edge of a domain
+   can be upgraded first, and then the traffic can be prioritized
+   between different domains.  Within each domain, the traffic will be
+   forwarded along the best-effort path.  A service provider can
+   selectively upgrade the routers on each domain in sequence.
+
+<span class="h3"><a class="selflink" id="section-7.4" href="#section-7.4">7.4</a>.  Loop Avoidance</span>
+
+   A PCE needs to assure calculation of the E2E path based on the status
+   of network and the service requirements in real-time.
+
+   The PCE needs to consider the explicit route deployment order (for
+   example, from tail router to head router) to eliminate any possible
+   transient traffic loop.
+
+<span class="h3"><a class="selflink" id="section-7.5" href="#section-7.5">7.5</a>.  E2E Path Performance Monitoring</span>
+
+   It is necessary to deploy the corresponding E2E path performance
+   monitoring mechanism to assure that the delay, jitter, or packet loss
+   index meets the original path performance aim.  The performance
+   monitoring results should provide feedback to the PCE in order for it
+   to accomplish the re-optimization process and send the update control
+   message to the related PCC if necessary.  Traditional OAM methods
+   (ping, trace) can be used.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   The setup of BGP sessions, prefix advertisement, and explicit peer
+   route establishment are all controlled by the PCE.  See [<a href="/doc/html/rfc4271" title="&quot;A Border Gateway Protocol 4 (BGP-4)&quot;">RFC4271</a>] and
+   [<a href="/doc/html/rfc4272" title="&quot;BGP Security Vulnerabilities Analysis&quot;">RFC4272</a>] for BGP security considerations.  The Security
+   Considerations found in <a href="/doc/html/rfc5440#section-10">Section&nbsp;10 of [RFC5440]</a> and <a href="/doc/html/rfc8231#section-10">Section&nbsp;10 of
+   [RFC8231]</a> should be considered.  To prevent a bogus PCE sending
+   harmful messages to the network nodes, the network devices should
+   authenticate the validity of the PCE and ensure a secure
+   communication channel between them.  Mechanisms described in
+   [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>] should be used.
+
+   The CCDR architecture does not require changes to the forwarding
+   behavior of the underlay devices.  There are no additional security
+   impacts on these devices.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC4271">RFC4271</a>]  Rekhter, Y., Ed., Li, T., Ed., and S. Hares, Ed., &quot;A
+              Border Gateway Protocol 4 (BGP-4)&quot;, <a href="/doc/html/rfc4271">RFC 4271</a>,
+              DOI 10.17487/RFC4271, January 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4271">https://www.rfc-editor.org/info/rfc4271</a>&gt;.
+
+   [<a id="ref-RFC4272">RFC4272</a>]  Murphy, S., &quot;BGP Security Vulnerabilities Analysis&quot;,
+              <a href="/doc/html/rfc4272">RFC 4272</a>, DOI 10.17487/RFC4272, January 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4272">https://www.rfc-editor.org/info/rfc4272</a>&gt;.
+
+   [<a id="ref-RFC4456">RFC4456</a>]  Bates, T., Chen, E., and R. Chandra, &quot;BGP Route
+              Reflection: An Alternative to Full Mesh Internal BGP
+              (IBGP)&quot;, <a href="/doc/html/rfc4456">RFC 4456</a>, DOI 10.17487/RFC4456, April 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4456">https://www.rfc-editor.org/info/rfc4456</a>&gt;.
+
+   [<a id="ref-RFC5440">RFC5440</a>]  Vasseur, JP., Ed. and JL. Le Roux, Ed., &quot;Path Computation
+              Element (PCE) Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5440">RFC 5440</a>,
+              DOI 10.17487/RFC5440, March 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5440">https://www.rfc-editor.org/info/rfc5440</a>&gt;.
+
+   [<a id="ref-RFC7752">RFC7752</a>]  Gredler, H., Ed., Medved, J., Previdi, S., Farrel, A., and
+              S. Ray, &quot;North-Bound Distribution of Link-State and
+              Traffic Engineering (TE) Information Using BGP&quot;, <a href="/doc/html/rfc7752">RFC 7752</a>,
+              DOI 10.17487/RFC7752, March 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7752">https://www.rfc-editor.org/info/rfc7752</a>&gt;.
+
+   [<a id="ref-RFC8231">RFC8231</a>]  Crabbe, E., Minei, I., Medved, J., and R. Varga, &quot;Path
+              Computation Element Communication Protocol (PCEP)
+              Extensions for Stateful PCE&quot;, <a href="/doc/html/rfc8231">RFC 8231</a>,
+              DOI 10.17487/RFC8231, September 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8231">https://www.rfc-editor.org/info/rfc8231</a>&gt;.
+
+   [<a id="ref-RFC8253">RFC8253</a>]  Lopez, D., Gonzalez de Dios, O., Wu, Q., and D. Dhody,
+              &quot;PCEPS: Usage of TLS to Provide a Secure Transport for the
+              Path Computation Element Communication Protocol (PCEP)&quot;,
+              <a href="/doc/html/rfc8253">RFC 8253</a>, DOI 10.17487/RFC8253, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8253">https://www.rfc-editor.org/info/rfc8253</a>&gt;.
+
+   [<a id="ref-RFC8283">RFC8283</a>]  Farrel, A., Ed., Zhao, Q., Ed., Li, Z., and C. Zhou, &quot;An
+              Architecture for Use of PCE and the PCE Communication
+              Protocol (PCEP) in a Network with Central Control&quot;,
+              <a href="/doc/html/rfc8283">RFC 8283</a>, DOI 10.17487/RFC8283, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8283">https://www.rfc-editor.org/info/rfc8283</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4655">RFC4655</a>]  Farrel, A., Vasseur, J.-P., and J. Ash, &quot;A Path
+              Computation Element (PCE)-Based Architecture&quot;, <a href="/doc/html/rfc4655">RFC 4655</a>,
+              DOI 10.17487/RFC4655, August 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4655">https://www.rfc-editor.org/info/rfc4655</a>&gt;.
+
+   [<a id="ref-RFC8735">RFC8735</a>]  Wang, A., Huang, X., Kou, C., Li, Z., and P. Mi,
+              &quot;Scenarios and Simulation Results of PCE in a Native IP
+              Network&quot;, <a href="/doc/html/rfc8735">RFC 8735</a>, DOI 10.17487/RFC8735, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8735">https://www.rfc-editor.org/info/rfc8735</a>&gt;.
+
+Acknowledgments
+
+   The author would like to thank Deborah Brungard, Adrian Farrel,
+   Vishnu Beeram, Lou Berger, Dhruv Dhody, Raghavendra Mallya, Mike
+   Koldychev, Haomian Zheng, Penghui Mi, Shaofu Peng, Donald Eastlake,
+   Alvaro Retana, Martin Duke, Magnus Westerlund, Benjamin Kaduk, Roman
+   Danyliw, Éric Vyncke, Murray Kucherawy, Erik Kline, and Jessica Chen
+   for their supports and comments on this document.
+
+Authors&#x27; Addresses
+
+   Aijun Wang
+   China Telecom
+   Changping District
+   Beiqijia Town
+   Beijing
+   102209
+   China
+
+   Email: wangaj3@chinatelecom.cn
+
+
+   Boris Khasanov
+   Yandex LLC
+   Ulitsa Lva Tolstogo 16
+   Moscow
+   Russian Federation
+
+   Email: bhassanov@yahoo.com
+
+
+   Quintin Zhao
+   Etheric Networks
+   1009 S Claremont St
+   San Mateo, CA 94402
+   United States of America
+
+   Email: qzhao@ethericnetworks.com
+
+
+   Huaimo Chen
+   Futurewei
+   Boston, MA
+   United States of America
+
+   Email: huaimo.chen@futurewei.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

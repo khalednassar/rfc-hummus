@@ -1,0 +1,516 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc5431
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-sun-dime-itu-t-rw/">
+  <meta name="description" content="Diameter ITU-T Rw Policy Enforcement Interface Application (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc5431.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc5431.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc5431.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc5431/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc5431/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ops/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-sun-dime-itu-t-rw@ietf.org?subject=draft-sun-dime-itu-t-rw" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-sun-dime-itu-t-rw-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-sun-dime-itu-t-rw-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-sun-dime-itu-t-rw-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-sun-dime-itu-t-rw-02">draft-sun-dime-itu-t-rw-02</a>                           Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                             D. Sun
+Request for Comments: 5431                                Alcatel-Lucent
+Category: Informational                                       March 2009
+
+
+       <span class="h1">Diameter ITU-T Rw Policy Enforcement Interface Application</span>
+
+Status of This Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.
+
+Copyright Notice
+
+   Copyright (c) 2009 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents in effect on the date of
+   publication of this document (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>).
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+Abstract
+
+   This document describes the need for a new pair of IANA Diameter
+   Command Codes to be used in a vendor-specific new application, namely
+   for the ITU-T Rec. Q.3303.3 - Rw interface used to send a request/
+   response for authorizing network Quality of Service (QoS) resources
+   and policy enforcement in a network element, as one of the
+   recommendations of the International Telecommunication Union -
+   Telecommunication Standardization Sector (ITU-T).
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Terminology .....................................................<a href="#page-2">2</a>
+   <a href="#section-3">3</a>. Diameter ITU-T Rw Policy Enforcement Interface ..................<a href="#page-3">3</a>
+   <a href="#section-4">4</a>. IANA Considerations .............................................<a href="#page-3">3</a>
+      <a href="#section-4.1">4.1</a>. Application Identifier .....................................<a href="#page-3">3</a>
+      <a href="#section-4.2">4.2</a>. Command Codes ..............................................<a href="#page-4">4</a>
+      <a href="#section-4.3">4.3</a>. AVP Codes ..................................................<a href="#page-4">4</a>
+   <a href="#section-5">5</a>. Security Considerations .........................................<a href="#page-4">4</a>
+   <a href="#section-6">6</a>. Acknowledgements ................................................<a href="#page-4">4</a>
+   <a href="#section-7">7</a>. References ......................................................<a href="#page-5">5</a>
+      <a href="#section-7.1">7.1</a>. Normative References .......................................<a href="#page-5">5</a>
+      <a href="#section-7.2">7.2</a>. Informative References .....................................<a href="#page-5">5</a>
+
+
+
+<span class="grey">Sun                          Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc5431">RFC 5431</a>                   ITU-T Rw Interface                 March 2009</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document summarizes the use of Diameter codes in a newly defined
+   realization of a specification for authorizing network QoS resources
+   and policy enforcement [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>].  A new pair of Command Codes have
+   been assigned by IANA.  This document summarizes the uses of newly
+   defined Diameter codes (Command Codes, AVP, vendor-specific
+   application id).  When combined with the Diameter Base protocol, this
+   application&#x27;s specification [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>] satisfies the requirements of
+   [<a href="#ref-Y.2111" title="&quot;Resource and admission control functions in Next Generation Networks&quot;">Y.2111</a>] of the International Telecommunication Union -
+   Telecommunication Standardization Sector (ITU-T) to send a request
+   and receive a response for controlling the policy enforcement.
+
+   The Diameter realization of this application assumes the use of the
+   Diameter Base protocol, as per <a href="/doc/html/rfc3588">RFC 3588</a>, and extends it only for a
+   specific application using a vendor-id (ITU-T), a vendor-specific
+   application ID (16777256), a new Command Code (315), and new
+   attribute-value pairs (AVPs), which are defined in the vendor-
+   specific namespace.
+
+   This application is used to authorize network QoS resources and
+   policy enforcement (including the amount of bandwidth, QoS class, and
+   traffic flow processing) as an extension of the Diameter application
+   [<a href="/doc/html/rfc4006" title="&quot;Diameter Credit-Control Application&quot;">RFC4006</a>].  The request is based on the Diameter extensibility
+   discussions in the DIME WG that led to the conclusion that it is
+   better to define new Command Codes whenever the ABNF of a command is
+   modified by adding, removing, or semantically changing a required AVP
+   in order to avoid interoperability problems.  The document is
+   utilizing authorization and accounting functionality, and the entire
+   exchange is related to users utilizing applications that require QoS
+   treatment.  This approach is consistent with the practice and
+   experience gained since the publication of [<a href="/doc/html/rfc3588" title="&quot;Diameter Base Protocol&quot;">RFC3588</a>] (see for example
+   [<a href="/doc/html/rfc5224" title="&quot;Diameter Policy Processing Application&quot;">RFC5224</a>]), which is now under revision by the DIME Working Group who
+   will provide a revised set of recommendations and procedures for IANA
+   considerations [<a href="#ref-DIME" title="&quot;Diameter Base Protocol&quot;">DIME</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   In the base Diameter specification <a href="/doc/html/rfc3588#section-1.4">[RFC3588], Section&nbsp;1.4</a> defines
+   most of the terminology used in this document.  Additionally, the
+   terms and acronyms defined in <a href="#section-3">Section 3</a> and Section 4 of [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>]
+   are used in this document.
+
+
+
+
+
+
+
+
+
+<span class="grey">Sun                          Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc5431">RFC 5431</a>                   ITU-T Rw Interface                 March 2009</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Diameter ITU-T Rw Policy Enforcement Interface</span>
+
+   The Rw interface is used for information exchange to apply policy
+   decisions between the Policy Decision Point (PDP, i.e., in the ITU-T
+   term, Policy Decision Functional Entity (PD-FE)) and the Policy
+   Enforcement Point (PEP, i.e., in the ITU-T term, Policy Enforcement
+   Functional Entity (PE-FE)).
+
+   The interface allows the PDP to push the authorized admission
+   decisions to the PEP.  It also allows the PEP to request the
+   authorization of admission decisions from the PDP when path-coupled
+   resource reservation mechanisms are in use.  The main information
+   conveyed by the Rw interface is:
+
+   o  Resources reservation and/or allocation requests for media flows;
+
+   o  QoS handling requests such as packet marking and policing;
+
+   o  Gate control (opening/closing) requests for a media flow;
+
+   o  NAPT and NAT traversal requests for the necessary address mapping
+      information;
+
+   o  Resource usage information requests and reports for media flows.
+
+   The detailed descriptions of the Diameter Policy Enforcement
+   interface ITU-T Rw can be found in Section 5 of [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>].
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   This section provides guidance to the Internet Assigned Numbers
+   Authority (IANA) regarding registration of values related to the
+   Diameter protocol, in accordance with <a href="/doc/html/bcp26">BCP 26</a> [<a href="/doc/html/rfc5226" title="">RFC5226</a>].
+
+   This document defines values in the namespaces that have been created
+   and defined in [<a href="/doc/html/rfc3588" title="&quot;Diameter Base Protocol&quot;">RFC3588</a>].  The IANA Considerations section of that
+   document details the assignment criteria.  Values assigned in this
+   document, or by future IANA action, must be coordinated within this
+   shared namespace.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Application Identifier</span>
+
+   A vendor-specific application ID (16777256) for the application of
+   [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>] has been assigned by the IANA.
+
+
+
+
+
+
+
+<span class="grey">Sun                          Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc5431">RFC 5431</a>                   ITU-T Rw Interface                 March 2009</span>
+
+
+   Registry:
+   ID values            Name          Reference
+   ----------------------------------------------------------
+   16777256           ITU-T Rw       7.2.1 of ITU-T Q.3303.3
+
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Command Codes</span>
+
+   IANA has allocated Command Code values for the following commands
+   defined in Section 7.4 of [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>] from the Command Code namespace
+   defined in [<a href="/doc/html/rfc3588" title="&quot;Diameter Base Protocol&quot;">RFC3588</a>].
+
+   Registry:
+   Code Value     Name                        Reference
+   ------------------------------------------------------------------
+   315            Policy-Install-Request(PIR) 7.4.1 of ITU-T Q.3303.3
+   315            Policy-Install-Answer (PIA) 7.4.2 of ITU-T Q.3303.3
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  AVP Codes</span>
+
+   The values 1010~1018 are assigned by the ITU-T to the following AVPs
+   within the ITU-T vendor-ID 11502 namespace: PI-Request-Type AVP, PI-
+   Request-Number AVP, Traffic-Descriptor-UL AVP, Traffic-Descriptor-DL
+   AVP, Maximum-Burst-Size AVP, Committed-Data-Rate AVP, Committed-
+   Burst-Size AVP, Excess-Burst-Size, Removal-Cause AVP.
+
+   See Table 1/Q.3303.3 in Section 7.3.1 of [<a href="#ref-Q.3303.3" title="&quot;Resource control protocol no. 3 (rcp3): Protocol at the Rw interface between the Policy Decision Physical Entity (PD-PE) and the Policy Enforcement Physical Entity (PE-PE): Diameter&quot;">Q.3303.3</a>] for detailed
+   information on AVP codes, value types, and flag rules.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   This document describes the Diameter Policy Enforcement Application.
+   It builds on top of the Diameter Base protocol and the same security
+   considerations described in [<a href="/doc/html/rfc3588" title="&quot;Diameter Base Protocol&quot;">RFC3588</a>] are applicable to this
+   document.  No further extensions are required beyond the security
+   mechanisms offered by [<a href="/doc/html/rfc3588" title="&quot;Diameter Base Protocol&quot;">RFC3588</a>].
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Acknowledgements</span>
+
+   The author would like to thank Dan Romascanu, Hannes Tschofenig, and
+   Tina Tsou for their help and support.  Finally, the author would like
+   to thank Alcatel-Lucent, as most of the effort put into this document
+   was done while he was in their employ.
+
+
+
+
+
+
+
+
+<span class="grey">Sun                          Informational                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc5431">RFC 5431</a>                   ITU-T Rw Interface                 March 2009</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-Q.3303.3">Q.3303.3</a>]  ITU-T Recommendation Q.3303.3, &quot;Resource control protocol
+               no. 3 (rcp3): Protocol at the Rw interface between the
+               Policy Decision Physical Entity (PD-PE) and the Policy
+               Enforcement Physical Entity (PE-PE): Diameter&quot;, 2008.
+
+   [<a id="ref-RFC3588">RFC3588</a>]   Calhoun, P., Loughney, J., Guttman, E., Zorn, G., and J.
+               Arkko, &quot;Diameter Base Protocol&quot;, <a href="/doc/html/rfc3588">RFC 3588</a>,
+               September 2003.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-DIME">DIME</a>]      Fajardo, V., Arkko, J., Loughney, J., and G. Zorn,
+               &quot;Diameter Base Protocol&quot;, Work in Progress,
+               November 2008.
+
+   [<a id="ref-RFC4006">RFC4006</a>]   Hakala, H., Mattila, L., Koskinen, J-P., Stura, M., and
+               J. Loughney, &quot;Diameter Credit-Control Application&quot;,
+               <a href="/doc/html/rfc4006">RFC 4006</a>, August 2005.
+
+   [<a id="ref-RFC5224">RFC5224</a>]   Brenner, M., &quot;Diameter Policy Processing Application&quot;,
+               <a href="/doc/html/rfc5224">RFC 5224</a>, March 2008.
+
+   [<a id="ref-RFC5226">RFC5226</a>]   Narten, T. and H. Alvestrand, &quot;Guidelines for Writing an
+               IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>, <a href="/doc/html/rfc5226">RFC 5226</a>,
+               May 2008.
+
+   [<a id="ref-Y.2111">Y.2111</a>]    ITU-T Recommedation Y.2111, &quot;Resource and admission
+               control functions in Next Generation Networks&quot;,
+               September 2006.
+
+Author&#x27;s Address
+
+   Dong Sun
+   Alcatel-Lucent
+   600 Mountain Ave
+   Murray Hill, NJ  07974
+   USA
+
+   Phone: +1 908 582 2617
+   EMail: dongsun@alcatel-lucent.com
+
+
+
+
+
+
+
+Sun                          Informational                      [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,1479 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8977
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-regext-rdap-sorting-and-paging/">
+  <meta name="description" content="Registration Data Access Protocol (RDAP) Query Parameters for Result Sorting and Paging (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8977.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8977.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8977.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8977.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8977/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8977/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/regext/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-regext-rdap-sorting-and-paging@ietf.org?subject=draft-ietf-regext-rdap-sorting-and-paging" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-regext-rdap-sorting-and-paging-20.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-regext-rdap-sorting-and-paging-20.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-regext-rdap-sorting-and-paging-20.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-regext-rdap-sorting-and-paging-20">draft-ietf-regext-rdap-sorting-and-paging-20</a>     Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       M. Loffredo
+Request for Comments: 8977                                 M. Martinelli
+Category: Standards Track                            IIT-CNR/Registro.it
+ISSN: 2070-1721                                            S. Hollenbeck
+                                                           Verisign Labs
+                                                            January 2021
+
+
+  <span class="h1">Registration Data Access Protocol (RDAP) Query Parameters for Result</span>
+                           <span class="h1">Sorting and Paging</span>
+
+Abstract
+
+   The Registration Data Access Protocol (RDAP) does not include core
+   functionality for clients to provide sorting and paging parameters
+   for control of large result sets.  This omission can lead to
+   unpredictable server processing of queries and client processing of
+   responses.  This unpredictability can be greatly reduced if clients
+   can provide servers with their preferences for managing large
+   responses.  This document describes RDAP query extensions that allow
+   clients to specify their preferences for sorting and paging result
+   sets.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8977">https://www.rfc-editor.org/info/rfc8977</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Conventions Used in This Document
+   2.  RDAP Query Parameter Specification
+     2.1.  Sorting and Paging Metadata
+       2.1.1.  RDAP Conformance
+     2.2.  &quot;count&quot; Parameter
+     2.3.  &quot;sort&quot; Parameter
+       2.3.1.  Sorting Properties Declaration
+       2.3.2.  Representing Sorting Links
+     2.4.  &quot;cursor&quot; Parameter
+       2.4.1.  Representing Paging Links
+   3.  Negative Answers
+   4.  Implementation Considerations
+   5.  IANA Considerations
+   6.  Security Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  JSONPath Operators
+   <a href="#appendix-B">Appendix B</a>.  Approaches to Result Pagination
+     B.1.  Specific Issues Raised by RDAP
+   <a href="#appendix-C">Appendix C</a>.  Implementation Notes
+     C.1.  Sorting
+     C.2.  Counting
+     C.3.  Paging
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The availability of functionality for result sorting and paging
+   provides benefits to both clients and servers in the implementation
+   of RESTful services [<a href="#ref-REST" title="&quot;Architectural Styles and the Design of Network-based Software Architectures&quot;">REST</a>].  These benefits include:
+
+   *  reducing the server response bandwidth requirements
+
+   *  improving server response time
+
+   *  improving query precision and, consequently, obtaining more
+      relevant results
+
+   *  decreasing server query processing load
+
+   *  reducing client response processing time
+
+   Approaches to implementing features for result sorting and paging can
+   be grouped into two main categories:
+
+   1.  Sorting and paging are implemented through the introduction of
+       additional parameters in the query string (e.g., the Open Data
+       Protocol (ODATA) [<a href="#ref-ODATA-PART1">ODATA-PART1</a>]).
+
+   2.  Information related to the number of results and the specific
+       portion of the result set to be returned, in addition to a set of
+       ready-made links for the result set scrolling, are inserted in
+       the HTTP header of the request/response [<a href="/doc/html/rfc7231" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content&quot;">RFC7231</a>].
+
+   However, there are some drawbacks associated with the use of the HTTP
+   header.  First, the header properties cannot be set directly from a
+   web browser.  Moreover, in an HTTP session, the information on the
+   status (i.e., the session identifier) is usually inserted in the
+   header or a cookie, while the information on the resource
+   identification or the search type is included in the query string.
+   Finally, providing custom information through HTTP headers assumes
+   the client has prior knowledge of the server implementation, which is
+   widely considered a Representational State Transfer (REST) design
+   anti-pattern.  As a result, this document describes a specification
+   based on the use of query parameters.
+
+   Currently, RDAP [<a href="/doc/html/rfc7482" title="&quot;Registration Data Access Protocol (RDAP) Query Format&quot;">RFC7482</a>] defines two query types:
+
+   lookup:  the server returns only one object
+
+   search:  the server returns a collection of objects
+
+   While the lookup query does not raise issues regarding response size
+   management, the search query can potentially generate a large result
+   set that is often truncated according to server limits.  Besides, it
+   is not possible to obtain the total number of objects found that
+   might be returned in a search query response [<a href="/doc/html/rfc7483" title="&quot;JSON Responses for the Registration Data Access Protocol (RDAP)&quot;">RFC7483</a>].  Lastly,
+   there is no way to specify sort criteria to return the most relevant
+   objects at the beginning of the result set.  Therefore, the client
+   might traverse the whole result set to find the relevant objects or,
+   due to truncation, might not find them at all.
+
+   The specification described in this document extends RDAP query
+   capabilities to enable result sorting and paging by adding new query
+   parameters that can be applied to RDAP search path segments.  The
+   service is implemented using the Hypertext Transfer Protocol (HTTP)
+   [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>] and the conventions described in [<a href="/doc/html/rfc7480" title="&quot;HTTP Usage in the Registration Data Access Protocol (RDAP)&quot;">RFC7480</a>].
+
+   The implementation of the new parameters is technically feasible, as
+   operators for counting, sorting, and paging rows are currently
+   supported by the major relational database management systems.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Conventions Used in This Document</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  RDAP Query Parameter Specification</span>
+
+   The new query parameters are OPTIONAL extensions of path segments
+   defined in [<a href="/doc/html/rfc7482" title="&quot;Registration Data Access Protocol (RDAP) Query Format&quot;">RFC7482</a>].  They are as follows:
+
+   &quot;count&quot;:  a boolean value that allows a client to request the return
+      of the total number of objects found
+
+   &quot;sort&quot;:  a string value that allows a client to request a specific
+      sort order for the result set
+
+   &quot;cursor&quot;:  a string value representing a pointer to a specific fixed-
+      size portion of the result set
+
+   Augmented Backus-Naur Form (ABNF) [<a href="/doc/html/rfc5234" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">RFC5234</a>] is used in the following
+   sections to describe the formal syntax of these new parameters.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Sorting and Paging Metadata</span>
+
+   According to most advanced principles in REST design, collectively
+   known as HATEOAS (Hypermedia as the Engine of Application State)
+   [<a href="#ref-HATEOAS" title="&quot;HATEOAS - a simple explanation&quot;">HATEOAS</a>], a client entering a REST application through an initial
+   URI should use server-provided links to dynamically discover
+   available actions and access the resources it needs.  In this way,
+   the client is neither required to have prior knowledge of the service
+   nor, consequently, to hard code the URIs of different resources.
+   This allows the server to make URI changes as the API evolves without
+   breaking clients.  Definitively, a REST service should be as self-
+   descriptive as possible.
+
+   Therefore, servers implementing the query parameters described in
+   this specification SHOULD provide additional information in their
+   responses about both the available sorting criteria and possible
+   pagination.  Such information is collected in two OPTIONAL response
+   elements named &quot;sorting_metadata&quot; and &quot;paging_metadata&quot;.
+
+   The &quot;sorting_metadata&quot; element contains the following properties:
+
+   &quot;currentSort&quot;: &quot;String&quot; (OPTIONAL)
+      Either the value of the &quot;sort&quot; parameter as specified in the query
+      string or the sort applied by default, if any.
+
+   &quot;availableSorts&quot;: &quot;AvailableSort[]&quot; (OPTIONAL)
+      An array of objects, with each element describing an available
+      sort criterion.  The AvailableSort object includes the following
+      members:
+
+      &quot;property&quot;: &quot;String&quot; (REQUIRED)
+         The name that can be used by the client to request the sort
+         criterion.
+
+      &quot;default&quot;: &quot;Boolean&quot; (REQUIRED)
+         Indicator of whether the sort criterion is applied by default.
+         An RDAP server MUST define only one default sorting property
+         for each object class.
+
+      &quot;jsonPath&quot;: &quot;String&quot; (OPTIONAL)
+         The JSONPath expression of the RDAP field corresponding to the
+         property.
+
+      &quot;links&quot;: &quot;Link[]&quot; (OPTIONAL)
+         An array of links as described in [<a href="/doc/html/rfc8288" title="&quot;Web Linking&quot;">RFC8288</a>] containing the
+         query string that applies the sort criterion.
+
+   At least one of the &quot;currentSort&quot; and &quot;availableSorts&quot; properties
+   MUST be present.
+
+   The &quot;paging_metadata&quot; element contains the following fields:
+
+   &quot;totalCount&quot;: &quot;Numeric&quot; (OPTIONAL)
+      A numeric value representing the total number of objects found.
+      It MUST be provided if and only if the query string contains the
+      &quot;count&quot; parameter.
+
+   &quot;pageSize&quot;: &quot;Numeric&quot; (OPTIONAL)
+      A numeric value representing the number of objects that should
+      have been returned in the current page.  It MUST be provided if
+      and only if the total number of objects exceeds the page size.
+      This property is redundant for RDAP clients because the page size
+      can be derived from the length of the search results array, but it
+      can be helpful if the end user interacts with the server through a
+      web browser.
+
+   &quot;pageNumber&quot;: &quot;Numeric&quot; (OPTIONAL)
+      A numeric value representing the number of the current page in the
+      result set.  It MUST be provided if and only if the total number
+      of objects found exceeds the page size.
+
+   &quot;links&quot;: &quot;Link[]&quot; (OPTIONAL)
+      An array of links as described in [<a href="/doc/html/rfc8288" title="&quot;Web Linking&quot;">RFC8288</a>] containing the
+      reference to the next page.  In this specification, only forward
+      pagination is described because it is all that is necessary to
+      traverse the result set.
+
+<span class="h4"><a class="selflink" id="section-2.1.1" href="#section-2.1.1">2.1.1</a>.  RDAP Conformance</span>
+
+   Servers returning the &quot;paging_metadata&quot; element in their response
+   MUST include the string literal &quot;paging&quot; in the rdapConformance
+   array.  Servers returning the &quot;sorting_metadata&quot; element MUST include
+   the string literal &quot;sorting&quot;.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  &quot;count&quot; Parameter</span>
+
+   Currently, RDAP does not allow a client to determine the total number
+   of results in a query response when the result set is truncated.
+   This is inefficient because the user cannot determine if the result
+   set is complete.
+
+   The &quot;count&quot; parameter provides additional functionality that allows a
+   client to request information from the server that specifies the
+   total number of objects matching the search pattern.
+
+   The following is an example of an RDAP query including the &quot;count&quot;
+   parameter:
+
+   https://example.com/rdap/domains?name=example*.com&amp;count=true
+
+   The ABNF syntax is the following:
+
+      count = &quot;count=&quot; ( trueValue / falseValue )
+      trueValue = (&quot;true&quot; / &quot;yes&quot; / &quot;1&quot;)
+      falseValue = (&quot;false&quot; / &quot;no&quot; / &quot;0&quot;)
+
+   A trueValue means that the server MUST provide the total number of
+   objects in the &quot;totalCount&quot; field of the &quot;paging_metadata&quot; element
+   (Figure 1).  A falseValue means that the server MUST NOT provide this
+   number.
+
+   {
+     &quot;rdapConformance&quot;: [
+           &quot;rdap_level_0&quot;,
+           &quot;paging&quot;
+     ],
+     ...
+     &quot;paging_metadata&quot;: {
+       &quot;totalCount&quot;: 43
+     },
+     &quot;domainSearchResults&quot;: [
+       ...
+     ]
+   }
+
+     Figure 1: Example of RDAP Response with &quot;paging_metadata&quot; Element
+                     Containing the &quot;totalCount&quot; Field
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  &quot;sort&quot; Parameter</span>
+
+   RDAP does not provide any capability to specify the result set sort
+   criteria.  A server could implement a default sorting scheme
+   according to the object class, but this feature is not mandatory and
+   might not meet user requirements.  Sorting can be addressed by the
+   client, but this solution is rather inefficient.  Sorting features
+   provided by the RDAP server could help avoid truncation of relevant
+   results.
+
+   The &quot;sort&quot; parameter allows the client to ask the server to sort the
+   results according to the values of one or more properties and
+   according to the sort direction of each property.  The ABNF syntax is
+   the following:
+
+      sort = &quot;sort=&quot; sortItem *( &quot;,&quot; sortItem )
+      sortItem = property-ref [&quot;:&quot; ( &quot;a&quot; / &quot;d&quot; ) ]
+      property-ref = ALPHA *( ALPHA / DIGIT / &quot;_&quot; )
+
+   &quot;a&quot; means that an ascending sort MUST be applied; &quot;d&quot; means that a
+   descending sort MUST be applied.  If the sort direction is absent, an
+   ascending sort MUST be applied.
+
+   The following are examples of RDAP queries that include the &quot;sort&quot;
+   parameter:
+
+   https://example.com/rdap/domains?name=example*.com&amp;sort=name
+
+   https://example.com/rdap/
+   domains?name=example*.com&amp;sort=registrationDate:d
+
+   https://example.com/rdap/
+   domains?name=example*.com&amp;sort=lockedDate,name
+
+   Except for sorting IP addresses and values denoting dates and times,
+   servers MUST implement sorting according to the JSON value type of
+   the RDAP field the sorting property refers to.  That is, JSON strings
+   MUST be sorted lexicographically, and JSON numbers MUST be sorted
+   numerically.  Values denoting dates and times MUST be sorted in
+   chronological order.  If IP addresses are represented as JSON
+   strings, they MUST be sorted based on their numeric conversion.
+
+   The conversion of an IPv4 address to a number is possible since each
+   dotted format IPv4 address is a representation of a number written in
+   a 256-based manner; for example, 192.168.0.1 means 1*256^0 + 0*256^1
+   + 168*256^2 + 192*256^3 = 3232235521.  Similarly, an IPv6 address can
+   be converted into a number by applying the base 65536.  Therefore,
+   the numerical representation of the IPv6 address
+   2001:0db8:85a3:0:0:8a2e:0370:7334 is
+   42540766452641154071740215577757643572.  Built-in functions and
+   libraries for converting IP addresses into numbers are available in
+   most known programming languages and relational database management
+   systems.
+
+   If the &quot;sort&quot; parameter presents an allowed sorting property, it MUST
+   be provided in the &quot;currentSort&quot; field of the &quot;sorting_metadata&quot;
+   element.
+
+<span class="h4"><a class="selflink" id="section-2.3.1" href="#section-2.3.1">2.3.1</a>.  Sorting Properties Declaration</span>
+
+   In the &quot;sort&quot; parameter ABNF syntax, the element named &quot;property-ref&quot;
+   represents a reference to a property of an RDAP object.  Such a
+   reference could be expressed by using a JSONPath expression (named
+   &quot;jsonpath&quot; in the following).
+
+   JSONPath is a syntax, originally based on the XML XPath notation
+   [<a href="#ref-W3C.CR-xpath-31-20170321">W3C.CR-xpath-31-20170321</a>], which represents a path to select an
+   element (or a set of elements) in a JSON document [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>].  For
+   example, the jsonpath to select the value of the ASCII name inside an
+   RDAP domain lookup response is &quot;$.ldhName&quot;, where $ identifies the
+   root of the document object model (DOM).  Another way to select a
+   value inside a JSON document is the JSON Pointer [<a href="/doc/html/rfc6901" title="&quot;JavaScript Object Notation (JSON) Pointer&quot;">RFC6901</a>].
+
+   While JSONPath and JSON Pointer are both commonly adopted notations
+   to select any value inside JSON data, neither is particularly concise
+   and easy to use (e.g., &quot;$.domainSearchResults[*].events[?(@.eventActi
+   on=&#x27;registration&#x27;)].eventDate&quot; is the jsonpath of the registration
+   date in an RDAP domain search response).
+
+   Therefore, this specification defines the &quot;property-ref&quot; element in
+   terms of names identifying RDAP properties.  However, not all the
+   RDAP properties are suitable to be used in sort criteria.  These
+   properties include:
+
+   *  properties providing service information (e.g., links, notices,
+      and remarks)
+
+   *  multivalued properties (e.g., status, roles, and variants)
+
+   *  properties representing relationships to other objects (e.g.,
+      entities)
+
+   On the contrary, properties expressed as values of other properties
+   (e.g., registration date) could be used in such a context.
+
+   A list of properties an RDAP server MAY implement is defined.  The
+   properties are divided into two groups: object-common properties and
+   object-specific properties.
+
+   *  Object-common properties.  Object-common properties are derived
+      from merging the &quot;eventAction&quot; and the &quot;eventDate&quot; properties.
+      The following values of the &quot;sort&quot; parameter are defined:
+
+      -  registrationDate
+
+      -  reregistrationDate
+
+      -  lastChangedDate
+
+      -  expirationDate
+
+      -  deletionDate
+
+      -  reinstantiationDate
+
+      -  transferDate
+
+      -  lockedDate
+
+      -  unlockedDate
+
+   *  Object-specific properties.  Note that some of these properties
+      are also defined as query path segments.  These properties
+      include:
+
+      -  Domain: name
+
+      -  Nameserver: name, ipv4, ipv6
+
+      -  Entity: fn, handle, org, email, voice, country, cc, city
+
+   The correspondence between these sorting properties and the RDAP
+   object classes is shown in Table 1.  Some of the sorting properties
+   defined for the RDAP entity class are related to jCard elements
+   [<a href="/doc/html/rfc7095" title="&quot;jCard: The JSON Format for vCard&quot;">RFC7095</a>], but because jCard is the JSON format for vCard, the
+   corresponding definitions are included in the vCard specification
+   [<a href="/doc/html/rfc6350" title="&quot;vCard Format Specification&quot;">RFC6350</a>].
+
+   An RDAP server MUST NOT use the defined sorting properties with a
+   meaning other than that described in Table 1.
+
+    +============+============+=================+======+=======+======+
+    | Object     | Sorting    | RDAP property   | RFC  | RFC   | RFC  |
+    | class      | property   |                 | 7483 | 6350  | 8605 |
+    +============+============+=================+======+=======+======+
+    | Searchable | Common     | eventAction     | 4.5  |       |      |
+    | objects    | properties | values suffixed |      |       |      |
+    |            |            | by &quot;Date&quot;       |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    | Domain     | name       | unicodeName/    | 5.3  |       |      |
+    |            |            | ldhName         |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    | Nameserver | name       | unicodeName/    | 5.2  |       |      |
+    |            |            | ldhName         |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | ipv4       | v4 ipAddress    | 5.2  |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | ipv6       | v6 ipAddress    | 5.2  |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    | Entity     | handle     | handle          | 5.1  |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | fn         | jCard fn        | 5.1  | 6.2.1 |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | org        | jCard org       | 5.1  | 6.6.4 |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | voice      | jCard tel with  | 5.1  | 6.4.1 |      |
+    |            |            | type=&quot;voice&quot;    |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | email      | jCard email     | 5.1  | 6.4.2 |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | country    | country name in | 5.1  | 6.3.1 |      |
+    |            |            | jCard adr       |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | cc         | country code in | 5.1  |       | 3.1  |
+    |            |            | jCard adr       |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+    |            | city       | locality in     | 5.1  | 6.3.1 |      |
+    |            |            | jCard adr       |      |       |      |
+    +------------+------------+-----------------+------+-------+------+
+
+                 Table 1: Definitions of Sorting Properties
+
+   Regarding the definitions in Table 1, some further considerations are
+   needed to disambiguate some cases:
+
+   *  Since the response to a search on either domains or nameservers
+      might include both A-labels and U-labels [<a href="/doc/html/rfc5890" title="&quot;Internationalized Domain Names for Applications (IDNA): Definitions and Document Framework&quot;">RFC5890</a>] in general, a
+      consistent sorting policy MUST treat the unicodeName and ldhName
+      as two representations of the same value.  The unicodeName value
+      MUST be used while sorting if it is present; when the unicodeName
+      is unavailable, the value of the ldhName MUST be used instead.
+
+   *  The jCard &quot;sort-as&quot; parameter MUST be ignored for the sorting
+      capability described in this document.
+
+   *  Even if a nameserver can have multiple IPv4 and IPv6 addresses,
+      the most common configuration includes one address for each IP
+      version.  Therefore, this specification makes the assumption that
+      nameservers have a single IPv4 and/or IPv6 value.  When more than
+      one address per IP version is presented, sorting MUST be applied
+      to the first value.
+
+   *  Multiple events with a given action on an object might be
+      returned.  If this occurs, sorting MUST be applied to the most
+      recent event.
+
+   *  Except for handle values, all the sorting properties defined for
+      entity objects can be multivalued according to the definition of
+      vCard as given in [<a href="/doc/html/rfc6350" title="&quot;vCard Format Specification&quot;">RFC6350</a>].  When more than one value is
+      presented, sorting MUST be applied to the preferred value
+      identified by the parameter pref=&quot;1&quot;.  If the &quot;pref&quot; parameter is
+      missing, sorting MUST be applied to the first value.
+
+   The &quot;jsonPath&quot; field in the &quot;sorting_metadata&quot; element is used to
+   clarify the RDAP response field the sorting property refers to.  The
+   mapping between the sorting properties and the jsonpaths of the RDAP
+   response fields is shown below.  The JSONPath operators used herein
+   are described in <a href="#appendix-A">Appendix A</a>.
+
+   *  Searchable objects
+
+      registrationDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;registration&quot;
+         )].eventDate
+
+      reregistrationDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;reregistratio
+         n&quot;)].eventDate
+
+      lastChangedDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;last
+         changed&quot;)].eventDate
+
+      expirationDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;expiration&quot;)]
+         .eventDate
+
+      deletionDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;deletion&quot;)].e
+         ventDate
+
+      reinstantiationDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;reinstantiati
+         on&quot;)].eventDate
+
+      transferDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;transfer&quot;)].e
+         ventDate
+
+      lockedDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;locked&quot;)].eve
+         ntDate
+
+      unlockedDate
+         $.domainSearchResults[*].events[?(@.eventAction==&quot;unlocked&quot;)].e
+         ventDate
+
+   *  Domain
+
+      name
+         $.domainSearchResults[*].[unicodeName,ldhName]
+
+   *  Nameserver
+
+      name
+         $.nameserverSearchResults[*].[unicodeName,ldhName]
+
+      ipv4
+         $.nameserverSearchResults[*].ipAddresses.v4[0]
+
+      ipv6
+         $.nameserverSearchResults[*].ipAddresses.v6[0]
+
+   *  Entity
+
+      handle
+         $.entitySearchResults[*].handle
+
+      fn
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;fn&quot;)][3]
+
+      org
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;org&quot;)][3]
+
+      voice
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;tel&quot; &amp;&amp;
+         @[1].type==&quot;voice&quot;)][3]
+
+      email
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;email&quot;)][3]
+
+      country
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;adr&quot;)][3][6]
+
+      cc
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;adr&quot;)][1].cc
+
+      city
+         $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;adr&quot;)][3][3]
+
+   Additional notes on the provided jsonpaths:
+
+   *  Those related to the event dates are defined only for the &quot;domain&quot;
+      object.  To obtain the equivalent jsonpaths for &quot;entity&quot; and
+      &quot;nameserver&quot;, the path segment &quot;domainSearchResults&quot; must be
+      replaced with &quot;entitySearchResults&quot; and &quot;nameserverSearchResults&quot;,
+      respectively.
+
+   *  Those related to jCard elements are specified without taking into
+      account the &quot;pref&quot; parameter.  Servers that sort those values
+      identified by the &quot;pref&quot; parameter SHOULD update a jsonpath by
+      adding an appropriate filter.  For example, if the email values
+      identified by pref=&quot;1&quot; are considered for sorting, the jsonpath of
+      the &quot;email&quot; sorting property should be
+      $.entitySearchResults[*].vcardArray[1][?(@[0]==&quot;email&quot; &amp;&amp;
+      @[1].pref==&quot;1&quot;)][3].
+
+<span class="h4"><a class="selflink" id="section-2.3.2" href="#section-2.3.2">2.3.2</a>.  Representing Sorting Links</span>
+
+   An RDAP server MAY use the &quot;links&quot; array of the &quot;sorting_metadata&quot;
+   element to provide ready-made references [<a href="/doc/html/rfc8288" title="&quot;Web Linking&quot;">RFC8288</a>] to the available
+   sort criteria (Figure 2).  Each link represents a reference to an
+   alternate view of the results.
+
+   The &quot;value&quot;, &quot;rel&quot;, and &quot;href&quot; JSON values MUST be specified.  All
+   other JSON values are OPTIONAL.
+
+   {
+     &quot;rdapConformance&quot;: [
+       &quot;rdap_level_0&quot;,
+       &quot;sorting&quot;
+     ],
+     ...
+     &quot;sorting_metadata&quot;: {
+        &quot;currentSort&quot;: &quot;name&quot;,
+        &quot;availableSorts&quot;: [
+          {
+          &quot;property&quot;: &quot;registrationDate&quot;,
+          &quot;jsonPath&quot;: &quot;$.domainSearchResults[*]
+             .events[?(@.eventAction==\&quot;registration\&quot;)].eventDate&quot;,
+          &quot;default&quot;: false,
+          &quot;links&quot;: [
+            {
+            &quot;value&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                      &amp;sort=name&quot;,
+            &quot;rel&quot;: &quot;alternate&quot;,
+            &quot;href&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                     &amp;sort=registrationDate&quot;,
+            &quot;title&quot;: &quot;Result Ascending Sort Link&quot;,
+            &quot;type&quot;: &quot;application/rdap+json&quot;
+            },
+            {
+            &quot;value&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                      &amp;sort=name&quot;,
+            &quot;rel&quot;: &quot;alternate&quot;,
+            &quot;href&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                     &amp;sort=registrationDate:d&quot;,
+            &quot;title&quot;: &quot;Result Descending Sort Link&quot;,
+            &quot;type&quot;: &quot;application/rdap+json&quot;
+            }
+          ]
+          },
+          ...
+        ]
+     },
+     &quot;domainSearchResults&quot;: [
+       ...
+     ]
+   }
+
+      Figure 2: Example of a &quot;sorting_metadata&quot; Instance to Implement
+                               Result Sorting
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  &quot;cursor&quot; Parameter</span>
+
+   The &quot;cursor&quot; parameter defined in this specification can be used to
+   encode information about any pagination method.  For example, in the
+   case of a simple implementation of the &quot;cursor&quot; parameter to
+   represent offset pagination information, the &quot;cursor&quot; value
+   &quot;b2Zmc2V0PTEwMCxsaW1pdD01MA==&quot; is the base64 encoding of
+   &quot;offset=100,limit=50&quot;.  Likewise, in a simple implementation to
+   represent keyset pagination information, the &quot;cursor&quot; value
+   &quot;ZXhhbXBsZS1OLmNvbQ==&quot; represents the base64 encoding of
+   &quot;key=example-N.com&quot; whereby the key value identifies the last row of
+   the current page.
+
+   Note that this specification uses a base64 encoding for cursor
+   obfuscation just for example.  RDAP servers are NOT RECOMMENDED to
+   obfuscate the &quot;cursor&quot; value through a mere base64 encoding.
+
+   This solution lets RDAP providers implement a pagination method
+   according to their needs, a user&#x27;s access level, and the submitted
+   query.  Besides, servers can change the method over time without
+   announcing anything to clients.  The considerations that have led to
+   this solution are described in more detail in <a href="#appendix-B">Appendix B</a>.
+
+   The ABNF syntax of the &quot;cursor&quot; parameter is the following:
+
+      cursor = &quot;cursor=&quot; 1*( ALPHA / DIGIT / &quot;/&quot; / &quot;=&quot; / &quot;-&quot; / &quot;_&quot; )
+
+   The following is an example of an RDAP query including the &quot;cursor&quot;
+   parameter:
+
+   https://example.com/rdap/domains?name=example*.com
+   &amp;cursor=wJlCDLIl6KTWypN7T6vc6nWEmEYe99Hjf1XY1xmqV-M=
+
+<span class="h4"><a class="selflink" id="section-2.4.1" href="#section-2.4.1">2.4.1</a>.  Representing Paging Links</span>
+
+   An RDAP server SHOULD use the &quot;links&quot; array of the &quot;paging_metadata&quot;
+   element to provide a ready-made reference [<a href="/doc/html/rfc8288" title="&quot;Web Linking&quot;">RFC8288</a>] to the next page
+   of the result set (Figure 3).  Examples of additional &quot;rel&quot; values a
+   server MAY implement are &quot;first&quot;, &quot;last&quot;, and &quot;prev&quot;.
+
+   {
+     &quot;rdapConformance&quot;: [
+       &quot;rdap_level_0&quot;,
+       &quot;paging&quot;
+     ],
+     ...
+     &quot;notices&quot;: [
+       {
+         &quot;title&quot;: &quot;Search query limits&quot;,
+         &quot;type&quot;: &quot;result set truncated due to excessive load&quot;,
+         &quot;description&quot;: [
+         &quot;search results for domains are limited to 50&quot;
+         ]
+       }
+     ],
+     &quot;paging_metadata&quot;: {
+       &quot;totalCount&quot;: 73,
+       &quot;pageSize&quot;: 50,
+       &quot;pageNumber&quot;: 1,
+       &quot;links&quot;: [
+         {
+         &quot;value&quot;: &quot;https://example.com/rdap/domains?name=example*.com&quot;,
+         &quot;rel&quot;: &quot;next&quot;,
+         &quot;href&quot;: &quot;https://example.com/rdap/domains?name=example*.com
+                 &amp;cursor=wJlCDLIl6KTWypN7T6vc6nWEmEYe99Hjf1XY1xmqV-M=&quot;,
+         &quot;title&quot;: &quot;Result Pagination Link&quot;,
+         &quot;type&quot;: &quot;application/rdap+json&quot;
+         }
+       ]
+     },
+     &quot;domainSearchResults&quot;: [
+       ...
+     ]
+   }
+
+   Figure 3: Example of a &quot;paging_metadata&quot; Instance to Implement Cursor
+                                 Pagination
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Negative Answers</span>
+
+   The constraints for the values of parameters are defined by their
+   ABNF syntax.  Therefore, each request that includes an invalid value
+   for a parameter SHOULD produce an HTTP 400 (Bad Request) response
+   code.  The same response SHOULD be returned in the following cases:
+
+   *  if sorting by either single or multiple properties, the client
+      provides an unsupported value for the &quot;sort&quot; parameter, as well as
+      a value related to an object property not included in the response
+
+   *  if the client submits an invalid value for the &quot;cursor&quot; parameter
+
+   Optionally, the response MAY include additional information regarding
+   either the supported sorting properties or the correct &quot;cursor&quot; value
+   in the HTTP entity body (Figure 4).
+
+   {
+       &quot;errorCode&quot;: 400,
+       &quot;title&quot;: &quot;Domain sorting property &#x27;unknown&#x27; is not valid&quot;,
+       &quot;description&quot;: [
+           &quot;Supported domain sorting properties are:&quot;
+           &quot;&#x27;aproperty&#x27;, &#x27;anotherproperty&#x27;&quot;
+       ]
+
+   }
+
+     Figure 4: Example of RDAP Error Response Due to an Invalid Domain
+                  Sorting Property Included in the Request
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Implementation Considerations</span>
+
+   Implementation of the new parameters is technically feasible, as
+   operators for counting, sorting, and paging are currently supported
+   by the major relational database management systems.  Similar
+   operators are completely or partially supported by the most well-
+   known NoSQL databases (e.g., MongoDB, CouchDB, HBase, Cassandra,
+   Hadoop, etc.).  Additional implementation notes are included in
+   <a href="#appendix-C">Appendix C</a>.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA has registered the following values in the &quot;RDAP Extensions&quot;
+   registry:
+
+   Extension identifier:  paging
+   Registry operator:  Any
+   Published specification:  <a href="/doc/html/rfc8977">RFC 8977</a>
+   Contact:  IETF &lt;iesg@ietf.org&gt;
+   Intended usage:  This extension describes a best practice for result
+      set paging.
+
+   Extension identifier:  sorting
+   Registry operator:  Any
+   Published specification:  <a href="/doc/html/rfc8977">RFC 8977</a>
+   Contact:  IETF &lt;iesg@ietf.org&gt;
+   Intended usage:  This extension describes a best practice for result
+      set sorting.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   Security services for the operations specified in this document are
+   described in [<a href="/doc/html/rfc7481" title="&quot;Security Services for the Registration Data Access Protocol (RDAP)&quot;">RFC7481</a>].
+
+   A search query typically requires more server resources (such as
+   memory, CPU cycles, and network bandwidth) when compared to a lookup
+   query.  This increases the risk of server resource exhaustion and
+   subsequent denial of service.  This risk can be mitigated by either
+   restricting search functionality or limiting the rate of search
+   requests.  Servers can also reduce their load by truncating the
+   results in a response.  However, this last security policy can result
+   in a higher inefficiency or risk due to acting on incomplete
+   information if the RDAP server does not provide any functionality to
+   return the truncated results.
+
+   The new parameters presented in this document provide RDAP operators
+   with a way to implement a server that reduces inefficiency risks.
+   The &quot;count&quot; parameter gives the client the ability to evaluate the
+   completeness of a response.  The &quot;sort&quot; parameter allows the client
+   to obtain the most relevant information at the beginning of the
+   result set.  This can reduce the number of unnecessary search
+   requests.  Finally, the &quot;cursor&quot; parameter enables the user to scroll
+   the result set by submitting a sequence of sustainable queries within
+   server-acceptable limits.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC5234">RFC5234</a>]  Crocker, D., Ed. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>,
+              DOI 10.17487/RFC5234, January 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5234">https://www.rfc-editor.org/info/rfc5234</a>&gt;.
+
+   [<a id="ref-RFC5890">RFC5890</a>]  Klensin, J., &quot;Internationalized Domain Names for
+              Applications (IDNA): Definitions and Document Framework&quot;,
+              <a href="/doc/html/rfc5890">RFC 5890</a>, DOI 10.17487/RFC5890, August 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5890">https://www.rfc-editor.org/info/rfc5890</a>&gt;.
+
+   [<a id="ref-RFC6350">RFC6350</a>]  Perreault, S., &quot;vCard Format Specification&quot;, <a href="/doc/html/rfc6350">RFC 6350</a>,
+              DOI 10.17487/RFC6350, August 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6350">https://www.rfc-editor.org/info/rfc6350</a>&gt;.
+
+   [<a id="ref-RFC7095">RFC7095</a>]  Kewisch, P., &quot;jCard: The JSON Format for vCard&quot;, <a href="/doc/html/rfc7095">RFC 7095</a>,
+              DOI 10.17487/RFC7095, January 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7095">https://www.rfc-editor.org/info/rfc7095</a>&gt;.
+
+   [<a id="ref-RFC7230">RFC7230</a>]  Fielding, R., Ed. and J. Reschke, Ed., &quot;Hypertext Transfer
+              Protocol (HTTP/1.1): Message Syntax and Routing&quot;,
+              <a href="/doc/html/rfc7230">RFC 7230</a>, DOI 10.17487/RFC7230, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7230">https://www.rfc-editor.org/info/rfc7230</a>&gt;.
+
+   [<a id="ref-RFC7231">RFC7231</a>]  Fielding, R., Ed. and J. Reschke, Ed., &quot;Hypertext Transfer
+              Protocol (HTTP/1.1): Semantics and Content&quot;, <a href="/doc/html/rfc7231">RFC 7231</a>,
+              DOI 10.17487/RFC7231, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7231">https://www.rfc-editor.org/info/rfc7231</a>&gt;.
+
+   [<a id="ref-RFC7480">RFC7480</a>]  Newton, A., Ellacott, B., and N. Kong, &quot;HTTP Usage in the
+              Registration Data Access Protocol (RDAP)&quot;, <a href="/doc/html/rfc7480">RFC 7480</a>,
+              DOI 10.17487/RFC7480, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7480">https://www.rfc-editor.org/info/rfc7480</a>&gt;.
+
+   [<a id="ref-RFC7481">RFC7481</a>]  Hollenbeck, S. and N. Kong, &quot;Security Services for the
+              Registration Data Access Protocol (RDAP)&quot;, <a href="/doc/html/rfc7481">RFC 7481</a>,
+              DOI 10.17487/RFC7481, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7481">https://www.rfc-editor.org/info/rfc7481</a>&gt;.
+
+   [<a id="ref-RFC7482">RFC7482</a>]  Newton, A. and S. Hollenbeck, &quot;Registration Data Access
+              Protocol (RDAP) Query Format&quot;, <a href="/doc/html/rfc7482">RFC 7482</a>,
+              DOI 10.17487/RFC7482, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7482">https://www.rfc-editor.org/info/rfc7482</a>&gt;.
+
+   [<a id="ref-RFC7483">RFC7483</a>]  Newton, A. and S. Hollenbeck, &quot;JSON Responses for the
+              Registration Data Access Protocol (RDAP)&quot;, <a href="/doc/html/rfc7483">RFC 7483</a>,
+              DOI 10.17487/RFC7483, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7483">https://www.rfc-editor.org/info/rfc7483</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8259">RFC8259</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, STD 90, <a href="/doc/html/rfc8259">RFC 8259</a>,
+              DOI 10.17487/RFC8259, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8259">https://www.rfc-editor.org/info/rfc8259</a>&gt;.
+
+   [<a id="ref-RFC8288">RFC8288</a>]  Nottingham, M., &quot;Web Linking&quot;, <a href="/doc/html/rfc8288">RFC 8288</a>,
+              DOI 10.17487/RFC8288, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8288">https://www.rfc-editor.org/info/rfc8288</a>&gt;.
+
+   [<a id="ref-RFC8605">RFC8605</a>]  Hollenbeck, S. and R. Carney, &quot;vCard Format Extensions:
+              ICANN Extensions for the Registration Data Access Protocol
+              (RDAP)&quot;, <a href="/doc/html/rfc8605">RFC 8605</a>, DOI 10.17487/RFC8605, May 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8605">https://www.rfc-editor.org/info/rfc8605</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-CURSOR">CURSOR</a>]   Nimesh, R., &quot;Paginating Real-Time Data with Cursor Based
+              Pagination&quot;, July 2014, &lt;<a href="https://www.sitepoint.com/paginating-real-time-data-cursor-based-pagination/">https://www.sitepoint.com/</a>
+              <a href="https://www.sitepoint.com/paginating-real-time-data-cursor-based-pagination/">paginating-real-time-data-cursor-based-pagination/</a>&gt;.
+
+   [<a id="ref-CURSOR-API1">CURSOR-API1</a>]
+              Facebook, &quot;Facebook for Developers -- Using the Graph
+              API&quot;, &lt;<a href="https://developers.facebook.com/docs/graph-api/using-graph-api">https://developers.facebook.com/docs/graph-api/</a>
+              <a href="https://developers.facebook.com/docs/graph-api/using-graph-api">using-graph-api</a>&gt;.
+
+   [<a id="ref-CURSOR-API2">CURSOR-API2</a>]
+              Twitter, &quot;Twitter Ads API&quot;,
+              &lt;<a href="https://developer.twitter.com/en/docs/twitter-ads-api">https://developer.twitter.com/en/docs/twitter-ads-api</a>&gt;.
+
+   [<a id="ref-GOESSNER-JSON-PATH">GOESSNER-JSON-PATH</a>]
+              Goessner, S., &quot;JSONPath - XPath for JSON&quot;, February 2007,
+              &lt;<a href="https://goessner.net/articles/JsonPath/">https://goessner.net/articles/JsonPath/</a>&gt;.
+
+   [<a id="ref-HATEOAS">HATEOAS</a>]  Jedrzejewski, B., &quot;HATEOAS - a simple explanation&quot;,
+              February 2018, &lt;<a href="https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/">https://www.e4developer.com/2018/02/16/</a>
+              <a href="https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/">hateoas-simple-explanation/</a>&gt;.
+
+   [<a id="ref-JSONPATH-COMPARISON">JSONPATH-COMPARISON</a>]
+              &quot;JSONPath Comparison&quot;,
+              &lt;<a href="https://cburgmer.github.io/json-path-comparison/">https://cburgmer.github.io/json-path-comparison/</a>&gt;.
+
+   [<a id="ref-JSONPATH-WG">JSONPATH-WG</a>]
+              IETF, &quot;JSON Path (jsonpath)&quot;,
+              &lt;<a href="https://datatracker.ietf.org/wg/jsonpath/about/">https://datatracker.ietf.org/wg/jsonpath/about/</a>&gt;.
+
+   [<a id="ref-ODATA-PART1">ODATA-PART1</a>]
+              Pizzo, M., Handl, R., and M. Zurmuehl, &quot;OData Version 4.0.
+              Part 1: Protocol Plus Errata 03&quot;, June 2016,
+              &lt;<a href="https://docs.oasis-">https://docs.oasis-</a>
+              open.org/odata/odata/v4.0/errata03/os/complete/part1-
+              protocol/odata-v4.0-errata03-os-part1-protocol-
+              complete.pdf&gt;.
+
+   [<a id="ref-REST">REST</a>]     Fielding, R., &quot;Architectural Styles and the Design of
+              Network-based Software Architectures&quot;, 2000,
+              &lt;<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf">https://www.ics.uci.edu/~fielding/pubs/dissertation/</a>
+              <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf">fielding_dissertation.pdf</a>&gt;.
+
+   [<a id="ref-RFC6901">RFC6901</a>]  Bryan, P., Ed., Zyp, K., and M. Nottingham, Ed.,
+              &quot;JavaScript Object Notation (JSON) Pointer&quot;, <a href="/doc/html/rfc6901">RFC 6901</a>,
+              DOI 10.17487/RFC6901, April 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6901">https://www.rfc-editor.org/info/rfc6901</a>&gt;.
+
+   [<a id="ref-SEEK">SEEK</a>]     EverSQL, &quot;Faster Pagination in Mysql - Why Order By With
+              Limit and Offset is Slow?&quot;, July 2017,
+              &lt;<a href="https://www.eversql.com/faster-pagination-in-mysql-why-order-by-with-limit-and-offset-is-slow/">https://www.eversql.com/faster-pagination-in-mysql-why-</a>
+              <a href="https://www.eversql.com/faster-pagination-in-mysql-why-order-by-with-limit-and-offset-is-slow/">order-by-with-limit-and-offset-is-slow/</a>&gt;.
+
+   [<a id="ref-W3C.CR-xpath-31-20170321">W3C.CR-xpath-31-20170321</a>]
+              Robie, J., Dyck, M., and J. Spiegel, &quot;XML Path Language
+              (XPath) 3.1&quot;, World Wide Web Consortium Recommendation
+              REC-xpath-31-20170321, March 2017,
+              &lt;<a href="https://www.w3.org/TR/2017/REC-xpath-31-20170321/">https://www.w3.org/TR/2017/REC-xpath-31-20170321/</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  JSONPath Operators</span>
+
+   The jsonpaths used in this document are provided according to the
+   Goessner proposal [<a href="#ref-GOESSNER-JSON-PATH">GOESSNER-JSON-PATH</a>].
+
+   Such specification requires that implementations support a set of
+   &quot;basic operators&quot;.  These operators are used to access the elements
+   of a JSON structure like objects and arrays, as well as their
+   subelements (object members and array items, respectively).  No
+   operations are defined for retrieving parent or sibling elements of a
+   given element.  The root element is always referred to as $
+   regardless of it being an object or array.
+
+   Additionally, the specification permits implementations to support
+   arbitrary script expressions.  These can be used to index into an
+   object or array, or to filter elements from an array.  While script
+   expression behavior is implementation-defined, most implementations
+   support the basic relational and logical operators as well as both
+   object member and array item access, sufficiently similar for the
+   purpose of this document.  Commonly supported operators/functions
+   divided into &quot;top-level operators&quot; and &quot;filter operators&quot; are
+   documented in Tables 2 and 3, respectively.
+
+   For more information on implementation interoperability issues, see
+   [<a href="#ref-JSONPATH-COMPARISON">JSONPATH-COMPARISON</a>].  At the time of writing, work is beginning on
+   a standardization effort too (see [<a href="#ref-JSONPATH-WG">JSONPATH-WG</a>]).
+
+      +===================+=========================================+
+      | Operator          | Description                             |
+      +===================+=========================================+
+      | $                 | Root element                            |
+      +-------------------+-----------------------------------------+
+      | .&lt;name&gt;           | Object member access (dot-notation)     |
+      +-------------------+-----------------------------------------+
+      | [&#x27;&lt;name&gt;&#x27;]        | Object member access (bracket-notation) |
+      +-------------------+-----------------------------------------+
+      | [&lt;number&gt;]        | Array item access                       |
+      +-------------------+-----------------------------------------+
+      | *                 | All elements within the specified scope |
+      +-------------------+-----------------------------------------+
+      | [?(&lt;expression&gt;)] | Filter expression                       |
+      +-------------------+-----------------------------------------+
+
+                   Table 2: JSONPath Top-Level Operators
+
+      +====================+========================================+
+      | Operator           | Description                            |
+      +====================+========================================+
+      | @                  | Current element being processed        |
+      +--------------------+----------------------------------------+
+      | .&lt;name&gt;            | Object member access                   |
+      +--------------------+----------------------------------------+
+      | .[&lt;name1&gt;,&lt;name2&gt;] | Union of object members                |
+      +--------------------+----------------------------------------+
+      | [&lt;number&gt;]         | Array item access                      |
+      +--------------------+----------------------------------------+
+      | ==                 | Left is equal to right                 |
+      +--------------------+----------------------------------------+
+      | !=                 | Left is not equal to right             |
+      +--------------------+----------------------------------------+
+      | &lt;                  | Left is less than right                |
+      +--------------------+----------------------------------------+
+      | &lt;=                 | Left is less than or equal to right    |
+      +--------------------+----------------------------------------+
+      | &gt;                  | Left is greater than right             |
+      +--------------------+----------------------------------------+
+      | &gt;=                 | Left is greater than or equal to right |
+      +--------------------+----------------------------------------+
+      | &amp;&amp;                 | Logical conjunction                    |
+      +--------------------+----------------------------------------+
+      | ||                 | Logical disjunction                    |
+      +--------------------+----------------------------------------+
+
+                     Table 3: JSONPath Filter Operators
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Approaches to Result Pagination</span>
+
+   An RDAP query could return a response with hundreds, even thousands,
+   of objects, especially when partial matching is used.  For this
+   reason, the &quot;cursor&quot; parameter addressing result pagination is
+   defined to make responses easier to handle.
+
+   Presently, the most popular methods to implement pagination in a REST
+   API include offset pagination and keyset pagination.  Neither
+   pagination method requires the server to handle the result set in a
+   storage area across multiple requests since a new result set is
+   generated each time a request is submitted.  Therefore, they are
+   preferred to any other method requiring the management of a REST
+   session.
+
+   Using limit and offset operators represents the traditionally used
+   method to implement result pagination.  Both of them can be used
+   individually:
+
+   &quot;limit=N&quot;:  means that the server returns the first N objects of the
+      result set
+
+   &quot;offset=N&quot;:  means that the server skips the first N objects and
+      returns objects starting from position N+1
+
+   When limit and offset are used together, they provide the ability to
+   identify a specific portion of the result set.  For example, the pair
+   &quot;offset=100,limit=50&quot; returns the first 50 objects starting from
+   position 101 of the result set.
+
+   Though easy to implement, offset pagination also includes drawbacks:
+
+   *  When offset has a very high value, scrolling the result set could
+      take some time.
+
+   *  It always requires fetching all rows before dropping as many rows
+      as specified by offset.
+
+   *  It may return inconsistent pages when data are frequently updated
+      (i.e., real-time data).
+
+   Keyset pagination [<a href="#ref-SEEK" title="&quot;Faster Pagination in Mysql - Why Order By With Limit and Offset is Slow?&quot;">SEEK</a>] adds a query condition that enables the
+   selection of the only data not yet returned.  This method has been
+   taken as the basis for the implementation of a &quot;cursor&quot; parameter
+   [<a href="#ref-CURSOR" title="&quot;Paginating Real-Time Data with Cursor Based Pagination&quot;">CURSOR</a>] by some REST API providers [<a href="#ref-CURSOR-API1">CURSOR-API1</a>] [<a href="#ref-CURSOR-API2">CURSOR-API2</a>].  The
+   cursor is a URL-safe string opaque to the client and representing a
+   logical pointer to the first result of the next page.
+
+   Nevertheless, even keyset pagination can be troublesome:
+
+   *  It needs at least one key field.
+
+   *  It does not allow sorting simply by any field because the sorting
+      criterion must contain a key.
+
+   *  It works best with full composite values supported by database
+      management systems (i.e., [x,y]&gt;[a,b]); emulation is possible but
+      inelegant and less efficient.
+
+   *  It does not allow direct navigation to arbitrary pages because the
+      result set must be scrolled in sequential order starting from the
+      initial page.
+
+   *  Implementing bidirectional navigation is tedious because all
+      comparison and sort operations have to be reversed.
+
+<span class="h3"><a class="selflink" id="appendix-B.1" href="#appendix-B.1">B.1</a>.  Specific Issues Raised by RDAP</span>
+
+   Some additional considerations can be made in the RDAP context:
+
+   *  An RDAP object is a conceptual aggregation of information
+      generally collected from more than one data structure (e.g.,
+      table), and this makes it even harder to implement keyset
+      pagination, a task that is already quite difficult.  For example,
+      the entity object can include information from different data
+      structures (registrars, registrants, contacts, resellers), each
+      one with its key field mapping the RDAP entity handle.
+
+   *  Depending on the number of page results as well as the number and
+      the complexity of the properties of each RDAP object in the
+      response, the time required by offset pagination to skip the
+      previous pages could be much faster than the processing time
+      needed to build the current page.  In fact, RDAP objects are
+      usually formed by information belonging to multiple data
+      structures and containing multivalued properties (i.e., arrays);
+      therefore, data selection might be a time-consuming process.  This
+      situation occurs even though the selection is supported by
+      indexes.
+
+   *  Depending on the access levels defined by each RDAP operator, the
+      increase in complexity and the decrease in flexibility of keyset
+      pagination in comparison to offset pagination could be considered
+      impractical.
+
+   Ultimately, both pagination methods have benefits and drawbacks.
+
+<span class="h2"><a class="selflink" id="appendix-C" href="#appendix-C">Appendix C</a>.  Implementation Notes</span>
+
+   This section contains an overview of the main choices made during the
+   implementation of the capabilities defined in this document in the
+   RDAP public test server of Registro.it at the Institute of
+   Informatics and Telematics of the National Research Council (IIT-
+   CNR).  The content of this section can represent guidance for
+   implementers who plan to provide RDAP users with those capabilities.
+   The RDAP public test server can be accessed at
+   &lt;<a href="https://rdap.pubtest.nic.it/">https://rdap.pubtest.nic.it/</a>&gt;.  Further documentation about the
+   server features is available at &lt;<a href="https://rdap.pubtest.nic.it/doc/README.html">https://rdap.pubtest.nic.it/doc/</a>
+   <a href="https://rdap.pubtest.nic.it/doc/README.html">README.html</a>&gt;.
+
+<span class="h3"><a class="selflink" id="appendix-C.1" href="#appendix-C.1">C.1</a>.  Sorting</span>
+
+   If no sort criterion is specified in the query string, the results
+   are sorted by a default property: &quot;name&quot; for domains and nameservers,
+   and &quot;handle&quot; for entities.  The server supports multiple property
+   sorting but the &quot;sorting_metadata&quot; object includes only the links to
+   alternative result set views sorted by a single property just to show
+   the list of sorting properties allowed for each searchable object.
+   The server supports all the object-specific sorting properties
+   described in the specification except for nameserver sorting based on
+   unicodeName, that is, the &quot;name&quot; sorting property is mapped onto the
+   &quot;ldhName&quot; response field.  Regarding the object-common properties,
+   sorting by registrationDate, expirationDate, lastChangedDate, and
+   transferDate is supported.
+
+<span class="h3"><a class="selflink" id="appendix-C.2" href="#appendix-C.2">C.2</a>.  Counting</span>
+
+   The counting operation is implemented through a separate query.  Some
+   relational database management systems support custom operators to
+   get the total count together with the rows, but the resulting query
+   can be considerably more expensive than that performed without the
+   total count.  Therefore, as &quot;totalCount&quot; is an optional response
+   information, always fetching the total number of rows has been
+   considered an inefficient solution.  Furthermore, to avoid the
+   processing of unnecessary queries, when the &quot;count&quot; parameter is
+   included in the submitted query, it is not also repeated in the query
+   strings of the &quot;links&quot; array provided in both &quot;paging_metadata&quot; and
+   &quot;sorting_metadata&quot; objects.
+
+<span class="h3"><a class="selflink" id="appendix-C.3" href="#appendix-C.3">C.3</a>.  Paging</span>
+
+   The server implements the cursor pagination through the keyset
+   pagination when sorting by a unique property is requested or the
+   default sort is applied.  Otherwise, it implements the cursor
+   pagination through the offset pagination.  As most relational
+   database management systems don&#x27;t support the comparison of full
+   composite values natively, the implementation of full keyset
+   pagination seem to be troublesome so, at least initially, a selective
+   applicability of keyset pagination is advisable.  Moreover, the
+   &quot;cursor&quot; value encodes not only information about pagination but also
+   about the search pattern and the other query parameters in order to
+   check the consistency of the entire query string.  If the &quot;cursor&quot;
+   value is inconsistent with the rest of the query string, the server
+   returns an error response.
+
+Acknowledgements
+
+   The authors would like to acknowledge Brian Mountford, Tom Harrison,
+   Karl Heinz Wolf, Jasdip Singh, Erik Kline, Éric Vyncke, Benjamin
+   Kaduk, and Roman Danyliw for their contributions to the development
+   of this document.
+
+Authors&#x27; Addresses
+
+   Mario Loffredo
+   IIT-CNR/Registro.it
+   Via Moruzzi,1
+   56124 Pisa
+   Italy
+
+   Email: mario.loffredo@iit.cnr.it
+   URI:   <a href="https://www.iit.cnr.it">https://www.iit.cnr.it</a>
+
+
+   Maurizio Martinelli
+   IIT-CNR/Registro.it
+   Via Moruzzi,1
+   56124 Pisa
+   Italy
+
+   Email: maurizio.martinelli@iit.cnr.it
+   URI:   <a href="https://www.iit.cnr.it">https://www.iit.cnr.it</a>
+
+
+   Scott Hollenbeck
+   Verisign Labs
+   12061 Bluemont Way
+   Reston, VA 20190
+   United States of America
+
+   Email: shollenbeck@verisign.com
+   URI:   <a href="https://www.verisignlabs.com/">https://www.verisignlabs.com/</a>
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

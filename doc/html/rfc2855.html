@@ -1,0 +1,516 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2855
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ip1394-dhcp/">
+  <meta name="description" content="DHCP for IEEE 1394 (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2855.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2855.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2855.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2855/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2855/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ip1394/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ip1394-dhcp@ietf.org?subject=draft-ietf-ip1394-dhcp" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ip1394-dhcp-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ip1394-dhcp-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ip1394-dhcp-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ip1394-dhcp-03">draft-ietf-ip1394-dhcp-03</a>                        Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        K. Fujisawa
+Request for Comments: 2855                              Sony Corporation
+Category: Standards Track                                      June 2000
+
+
+                           <span class="h1">DHCP for IEEE 1394</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2000).  All Rights Reserved.
+
+Abstract
+
+   IEEE Std 1394-1995 is a standard for a High Performance Serial Bus.
+   Since 1394 uses a different link-layer addressing method than
+   conventional IEEE802/Ethernet, the usage of some fields must be
+   clarified to achieve interoperability.  This memo describes the 1394
+   specific usage of some fields of DHCP messages.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   IEEE Std 1394-1995 is a standard for a High Performance Serial Bus.
+   IETF IP1394 Working Group specified the method to carry IPv4
+   datagrams and 1394 ARP packets over an IEEE1394 network [<a href="/doc/html/rfc2734">RFC2734</a>].
+
+   The Dynamic Host Configuration Protocol (DHCP) [<a href="/doc/html/rfc2131">RFC2131</a>] provides a
+   framework for passing configuration information to hosts on a TCP/IP
+   network.
+
+   Since 1394 uses a different link-layer addressing method than
+   conventional IEEE802/Ethernet, the usage of some fields must be
+   clarified to achieve interoperability.  This memo describes the 1394
+   specific usage of some fields of DHCP.  See [<a href="/doc/html/rfc2131">RFC2131</a>] for the
+   mechanism of DHCP and the explanations of each field.
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;,  &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in <a href="/doc/html/rfc2119">RFC 2119</a> [<a href="/doc/html/rfc2119">RFC2119</a>].
+
+
+
+
+
+<span class="grey">Fujisawa                    Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2855">RFC 2855</a>                   DHCP for IEEE 1394                  June 2000</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. Issues related to 1394 link address</span>
+
+   With conventional link-layer protocols, such as an Ethernet, the
+   &#x27;chaddr&#x27; (client hardware address) field may be used to return a
+   reply message from a DHCP server (or relay-agent) to a client.  Since
+   a 1394 link address (node_ID) is transient and will not be consistent
+   across the 1394 bridge, we have chosen not to put it in the &#x27;chaddr&#x27;
+   field.  A DHCP client should request that the server sends a
+   broadcast reply by setting the BROADCAST flag when 1394 ARP is not
+   possible yet.
+
+      Note: In general, the use of a broadcast reply is discouraged, but
+      we consider the impact in a 1394 network as a non issue.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>. 1394 specific usage of DHCP message fields</span>
+
+   Following rules should be used when a DHCP client is connected to an
+   IEEE1394 network.
+
+   &#x27;htype&#x27; (hardware address type) MUST be 24 [<a href="#ref-ARPPARAM">ARPPARAM</a>].
+
+   &#x27;hlen&#x27; (hardware address length) MUST be 0.
+
+   The &#x27;chaddr&#x27; (client hardware address) field is reserved.  The sender
+   MUST set this field to zero, and the recipient and the relay agent
+   MUST ignore its value on receipt.
+
+   A DHCP client on 1394 SHOULD set a BROADCAST flag in DHCPDISCOVER and
+   DHCPREQUEST messages (and set &#x27;ciaddr&#x27; to zero) to ensure that the
+   server (or the relay agent) broadcasts its reply to the client.
+
+      Note: As described in [<a href="/doc/html/rfc2131">RFC2131</a>], &#x27;ciaddr&#x27; MUST be filled in with
+      client&#x27;s IP address during BOUND, RENEWING or REBINDING state,
+      therefore, the BROADCAST flag MUST NOT be set.  In these cases,
+      the DHCP server unicasts DHCPACK message to the address in
+      &#x27;ciaddr&#x27;. The link address will be resolved by 1394 ARP.
+
+   &#x27;client identifier&#x27; option MUST be used in DHCP messages from the
+   client to the server due to the lack of the &#x27;chaddr&#x27;.  &#x27;client
+   identifier&#x27; option may consist of any data.  Because every IP over
+   1394 node has an EUI-64 (node unique ID), the EUI-64 makes an obvious
+   &#x27;client identifier&#x27;.  1394 clients SHOULD include an EUI-64
+   identifier in the &#x27;client identifier&#x27; option. The type value for the
+   EUI-64 is 27 [<a href="#ref-ARPPARAM">ARPPARAM</a>], and the format is illustrated as follows.
+
+
+
+
+
+
+
+<span class="grey">Fujisawa                    Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2855">RFC 2855</a>                   DHCP for IEEE 1394                  June 2000</span>
+
+
+    Code  Len   Type  Client-Identifier
+   +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+   |  61 |  9  | 27  |           EUI-64 (node unique ID)             |
+   +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+   Note that the use of other &#x27;client identifier&#x27; type, such as a fully
+   qualified domain name (FQDN), is not precluded by this memo.
+
+   For more details, see &quot;9.14. Client-identifier&quot; in [<a href="/doc/html/rfc2132">RFC2132</a>].
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>. Security Considerations</span>
+
+   DHCP currently provides no authentication or security mechanisms.
+   Potential exposures to attack are discussed in <a href="#section-7">section 7</a> of the DHCP
+   protocol specification [<a href="/doc/html/rfc2131">RFC2131</a>].
+
+   A malicious client can falsify its EUI-64 identifier, thus
+   masquerading as another client.
+
+Acknowledgments
+
+   The author appreciates the members of the Dynamic Host Configuration
+   Working Group for their review and valuable comments.
+
+References
+
+   [<a id="ref-RFC2734">RFC2734</a>]  Johansson, P., &quot;IPv4 over IEEE 1394&quot;, <a href="/doc/html/rfc2734">RFC 2734</a>, December
+              1999.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC2131">RFC2131</a>]  Droms, R., &quot;Dynamic Host Configuration Protocol&quot;, <a href="/doc/html/rfc2131">RFC</a>
+              <a href="/doc/html/rfc2131">2131</a>, March 1997.
+
+   [<a id="ref-RFC2132">RFC2132</a>]  Alexander, S. and R. Droms, &quot;DHCP Options and BOOTP Vendor
+              Extensions&quot;, <a href="/doc/html/rfc2132">RFC 2132</a>, March 1997.
+
+   [<a id="ref-ARPPARAM">ARPPARAM</a>] <a href="http://www.iana.org/numbers.html">http://www.iana.org/numbers.html</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Fujisawa                    Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc2855">RFC 2855</a>                   DHCP for IEEE 1394                  June 2000</span>
+
+
+Author&#x27;s Address
+
+   Kenji Fujisawa
+   Sony Corporation
+   6-7-35, Kitashinagawa,
+   Shinagawa-ku, Tokyo, 141-0001 Japan
+
+   Phone: +81-3-5448-8507
+   EMail: fujisawa@sm.sony.co.jp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Fujisawa                    Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc2855">RFC 2855</a>                   DHCP for IEEE 1394                  June 2000</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2000).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fujisawa                    Standards Track                     [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

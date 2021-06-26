@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1873
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-mimesgml-access-cid/">
+  <meta name="description" content="Message/External-Body Content-ID Access Type (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgyellow"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1873.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1873.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1873.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1873/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1873/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/mimesgml/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-mimesgml-access-cid@ietf.org?subject=draft-ietf-mimesgml-access-cid" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-mimesgml-access-cid-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-mimesgml-access-cid-00">draft-ietf-mimesgml-access-cid-00</a>                     Experimental</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        E. Levinson
+Request for Comments: 1873            Accurate Information Systems, Inc.
+Category: Experimental                                          J. Clark
+                                                           December 1995
+
+
+              <span class="h1">Message/External-Body Content-ID Access Type</span>
+
+Status of this Memo
+
+   This memo defines an Experimental Protocol for the Internet
+   community.  This memo does not specify an Internet standard of any
+   kind.  Discussion and suggestions for improvement are requested.
+   Distribution of this memo is unlimited.
+
+Abstract
+
+   When using MIME [<a href="#ref-MIME" title="&quot;MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies&quot;">MIME</a>] to encapsulate a structured object that
+   consist of many elements, for example an SGML [<a href="#ref-SGML">SGML</a>] document, a
+   single element may occur several times.  An encapsulation normally
+   maps each of the structured objects elements to a MIME entity.  It is
+   useful to include elements that occur multiple time exactly once.  To
+   accomplish that and to preserve the object structure it is desirable
+   to unambiguously refer to another body part of the same message.
+
+   The existing MIME Content-Type Message/External-Body access-types
+   allow a MIME entity (body-part) to refer to an object that is not in
+   the message by specifying how to access that object.  The Content-ID
+   access method described in this document provides the capability to
+   refer to an object within the message.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   Consider a MIME multipart entity several of whose body parts contain
+   the same data (body) but different parameters or Content-* headers.
+   Representing those body parts without duplicating the data in each
+   one promotes efficient use of resources (bandwidth and storage
+   space).  To achieve these benefits an access-type is defined that
+   permits one message part to refer to another one in the same message.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Levinson &amp; Clark              Experimental                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1873">RFC 1873</a>                Access Type Content-ID             December 1995</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. The Content-ID Access Type</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a> Registration Information</span>
+
+       MIME access-type name:   content-id
+
+       Required parameters:     none
+
+       Optional parameters:     none
+
+       Published specification: this document
+
+       Person &amp; email address
+       to contact for further
+       information:             Ed Levinson &lt;ELevinson@accurate.com&gt;
+
+       Additional requirements:
+
+       The content-id header of the access-type=content-id MIME
+       entity must match (be identical to) exactly one content-id
+       in the same message, excluding other access-type=content-id
+       entities.  Thus, the content-id access type can only occur
+       within a multipart message and can refer to another body
+       part anywhere in the same message.
+
+       A MIME User Agent (MUA) constructs the resultant MIME body
+       part as described below.  We call the access-type=content-id
+       MIME entity the referring body part and the MIME body part
+       to which it refers, the one with the matching content-id,
+       the referenced body part.  The MIME entity that results from
+       content-id access type consists of:
+
+   (a) the referenced body part&#x27;s content-type header,
+
+   (b) the referring body part&#x27;s headers except its content-type
+       header,
+
+   (c) any headers in the referenced body part not in the referring
+       one,
+
+   (d)  the line separating the headers from the body, and
+
+   (e)  the referenced body part&#x27;s body.
+
+
+
+
+
+
+
+
+<span class="grey">Levinson &amp; Clark              Experimental                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1873">RFC 1873</a>                Access Type Content-ID             December 1995</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a> Example Usage</span>
+
+   The following example shows a message that consists of two identical
+   images.
+
+            MIME-Version: 1.0
+            Content-Type: Multipart/Mixed;
+               boundary=tiger-lily
+
+            --tiger-lily
+            Content-Type: image/jpeg
+            Content-ID: &lt;950323.1552@XIson.com&gt;
+
+            AAAcdb...
+            --tiger-lily
+            Content-type: Message/External-Body;
+               access-type=content-id
+            Content-ID: &lt;950323.1552@XIson.com&gt;
+            Content-Description:
+               This body part is duplicated by reference
+
+            --tiger-lily--
+
+       The equivalent MIME entity for the second body part is:
+
+            --tiger-lily
+            Content-Type: image/jpeg
+            Content-ID: &lt;950323.1552@XIson.com&gt;
+            Content-Description:
+               This body part is duplicated by reference
+
+            AAAcdb...
+            --tiger-lily
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>. Security Considerations</span>
+
+   The content-id access-type does not impact the security of messages
+   or systems.  The referenced MIME entity may have security
+   implications.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Levinson &amp; Clark              Experimental                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1873">RFC 1873</a>                Access Type Content-ID             December 1995</span>
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>. References</span>
+
+
+   [<a id="ref-822">822</a>]       Crocker, D., &quot;Standard for the Format of ARPA Internet
+               Text Messages&quot;, STD 11, <a href="/doc/html/rfc822">RFC 822</a>, UDEL, August 1982.
+
+   [<a id="ref-SGML">SGML</a>]      ISO 8879:1988, Information processing -- Text and office
+               systems -- Standard Generalized Markup Language (SGML).
+
+   [<a id="ref-MIME">MIME</a>]      Borenstein, N., and N. Freed, &quot;MIME  (Multipurpose
+               Internet Mail Extensions) Part One: Mechanisms for
+               Specifying and Describing the Format of Internet
+               Message Bodies&quot;, <a href="/doc/html/rfc1521">RFC 1521</a>, Bellcore, Innosoft,
+               September 1993.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>. Authors&#x27; Addresses</span>
+
+Edward Levinson
+Accurate Information Systems, Inc.
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a> Industrial Way</span>
+Eatontown, NJ  07724-2265
+USA
+
+Phone: +1 908 389 5550
+EMail: &lt;ELevinson@Accurate.com&gt;
+
+
+James Clark
+<span class="h2"><a class="selflink" id="section-90" href="#section-90">90</a> Clarendon Road</span>
+London W11 2HR
+UK
+
+EMail: &lt;jjc@jclark.com&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Levinson &amp; Clark              Experimental                      [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

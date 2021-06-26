@@ -1,0 +1,1611 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8792
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-netmod-artwork-folding/">
+  <meta name="description" content="Handling Long Lines in Content of Internet-Drafts and RFCs (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8792.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8792.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8792.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8792.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8792/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8792/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/netmod/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-netmod-artwork-folding@ietf.org?subject=draft-ietf-netmod-artwork-folding" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-netmod-artwork-folding-12.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-netmod-artwork-folding-12.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-netmod-artwork-folding-12.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-netmod-artwork-folding-12">draft-ietf-netmod-artwork-folding-12</a>                 Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         K. Watsen
+Request for Comments: 8792                               Watsen Networks
+Category: Informational                                     E. Auerswald
+ISSN: 2070-1721                                   Individual Contributor
+                                                               A. Farrel
+                                                      Old Dog Consulting
+                                                                   Q. Wu
+                                                     Huawei Technologies
+                                                               June 2020
+
+
+       <span class="h1">Handling Long Lines in Content of Internet-Drafts and RFCs</span>
+
+Abstract
+
+   This document defines two strategies for handling long lines in
+   width-bounded text content.  One strategy, called the &quot;single
+   backslash&quot; strategy, is based on the historical use of a single
+   backslash (&#x27;\&#x27;) character to indicate where line-folding has
+   occurred, with the continuation occurring with the first character
+   that is not a space character (&#x27; &#x27;) on the next line.  The second
+   strategy, called the &quot;double backslash&quot; strategy, extends the first
+   strategy by adding a second backslash character to identify where the
+   continuation begins and is thereby able to handle cases not supported
+   by the first strategy.  Both strategies use a self-describing header
+   enabling automated reconstitution of the original content.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8792">https://www.rfc-editor.org/info/rfc8792</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Applicability Statement
+   3.  Requirements Language
+   4.  Goals
+     4.1.  Automated Folding of Long Lines in Text Content
+     4.2.  Automated Reconstitution of the Original Text Content
+   5.  Limitations
+     5.1.  Not Recommended for Graphical Artwork
+     5.2.  Doesn&#x27;t Work as Well as Format-Specific Options
+   6.  Two Folding Strategies
+     6.1.  Comparison
+     6.2.  Recommendation
+   7.  The Single Backslash Strategy (&#x27;\&#x27;)
+     7.1.  Folded Structure
+       7.1.1.  Header
+       7.1.2.  Body
+     7.2.  Algorithm
+       7.2.1.  Folding
+       7.2.2.  Unfolding
+   8.  The Double Backslash Strategy (&#x27;\\&#x27;)
+     8.1.  Folded Structure
+       8.1.1.  Header
+       8.1.2.  Body
+     8.2.  Algorithm
+       8.2.1.  Folding
+       8.2.2.  Unfolding
+   9.  Examples
+     9.1.  Example Showing Boundary Conditions
+       9.1.1.  Using &#x27;\&#x27;
+       9.1.2.  Using &#x27;\\&#x27;
+     9.2.  Example Showing Multiple Wraps of a Single Line
+       9.2.1.  Using &#x27;\&#x27;
+       9.2.2.  Using &#x27;\\&#x27;
+     9.3.  Example Showing &quot;Smart&quot; Folding
+       9.3.1.  Using &#x27;\&#x27;
+       9.3.2.  Using &#x27;\\&#x27;
+     9.4.  Example Showing &quot;Forced&quot; Folding
+       9.4.1.  Using &#x27;\&#x27;
+       9.4.2.  Using &#x27;\\&#x27;
+   10. Security Considerations
+   11. IANA Considerations
+   12. References
+     12.1.  Normative References
+     12.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Bash Shell Script: rfcfold
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a id="ref-RFC7994">RFC7994</a>] sets out the requirements for plain-text RFCs and states
+   that each line of an RFC (and hence of an Internet-Draft) must be
+   limited to 72 characters followed by the character sequence that
+   denotes an end-of-line (EOL).
+
+   Internet-Drafts and RFCs often include example text or code
+   fragments.  Many times, the example text or code exceeds the
+   72-character line-length limit.  The &#x27;xml2rfc&#x27; utility [<a href="#ref-xml2rfc" title="&quot;xml2rfc&quot;">xml2rfc</a>], at
+   the time of this document&#x27;s publication, does not attempt to wrap the
+   content of such inclusions, simply issuing a warning whenever lines
+   exceed 69 characters.  Historically, there has been no convention
+   recommended by the RFC Editor in place for how to handle long lines
+   in such inclusions, other than advising authors to clearly indicate
+   what manipulation has occurred.
+
+   This document defines two strategies for handling long lines in
+   width-bounded text content.  One strategy, called the &quot;single
+   backslash&quot; strategy, is based on the historical use of a single
+   backslash (&#x27;\&#x27;) character to indicate where line-folding has
+   occurred, with the continuation occurring with the first character
+   that is not a space character (&#x27; &#x27;) on the next line.  The second
+   strategy, called the &quot;double backslash&quot; strategy, extends the first
+   strategy by adding a second backslash character to identify where the
+   continuation begins and is thereby able to handle cases not supported
+   by the first strategy.  Both strategies use a self-describing header
+   enabling automated reconstitution of the original content.
+
+   The strategies defined in this document work on any text content but
+   are primarily intended for a structured sequence of lines, such as
+   would be referenced by the &lt;sourcecode&gt; element defined in
+   <a href="/doc/html/rfc7991#section-2.48">Section&nbsp;2.48 of [RFC7991]</a>, rather than for two-dimensional imagery,
+   such as would be referenced by the &lt;artwork&gt; element defined in
+   <a href="/doc/html/rfc7991#section-2.5">Section&nbsp;2.5 of [RFC7991]</a>.
+
+   Note that text files are represented as lines having their first
+   character in column 1, and a line length of N where the last
+   character is in the Nth column and is immediately followed by an end-
+   of-line character sequence.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Applicability Statement</span>
+
+   The formats and algorithms defined in this document may be used in
+   any context, whether for IETF documents or in other situations where
+   structured folding is desired.
+
+   Within the IETF, this work primarily targets the xml2rfc v3
+   &lt;sourcecode&gt; element (<a href="/doc/html/rfc7991#section-2.48">Section&nbsp;2.48 of [RFC7991]</a>) and the xml2rfc v2
+   &lt;artwork&gt; element (<a href="/doc/html/rfc7749#section-2.5">Section&nbsp;2.5 of [RFC7749]</a>), which, for lack of a
+   better option, is used in xml2rfc v2 for both source code and
+   artwork.  This work may also be used for the xml2rfc v3 &lt;artwork&gt;
+   element (<a href="/doc/html/rfc7991#section-2.5">Section&nbsp;2.5 of [RFC7991]</a>), but as described in <a href="#section-5.1">Section 5.1</a>,
+   it is generally not recommended.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Goals</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Automated Folding of Long Lines in Text Content</span>
+
+   Automated folding of long lines is needed in order to support
+   documents that are dynamically compiled to include content with
+   potentially unconstrained line lengths.  For instance, the build
+   process may wish to include content from other local files or content
+   that is dynamically generated by some external process.  Both of
+   these cases are discussed next.
+
+   Many documents need to include the content from local files (e.g.,
+   XML, JSON, ABNF, ASN.1).  Prior to including a file&#x27;s content, the
+   build process SHOULD first validate these source files using format-
+   specific validators.  In order for such tooling to be able to process
+   the files, the files must be in their original/natural state, which
+   may entail them having some long lines.  Thus, these source files
+   need to be folded before inclusion into the XML document, in order to
+   satisfy &#x27;xml2rfc&#x27; line-length limits.
+
+   Similarly, documents sometimes contain dynamically generated output,
+   typically from an external process operating on the same source files
+   discussed in the previous paragraph.  For instance, such processes
+   may translate the input format to another format, or they may render
+   a report on, or a view of, the input file.  In some cases, the
+   dynamically generated output may contain lines exceeding the
+   &#x27;xml2rfc&#x27; line-length limits.
+
+   In both cases, folding is required and SHOULD be automated to reduce
+   effort and errors resulting from manual processing.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Automated Reconstitution of the Original Text Content</span>
+
+   Automated reconstitution of the exact original text content is needed
+   to support validation of text-based content extracted from documents.
+
+   For instance, YANG modules [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>] are already extracted from
+   Internet-Drafts and validated as part of the submission process.
+   Additionally, the desire to validate instance examples (i.e., XML/
+   JSON documents) contained within Internet-Drafts has been discussed
+   [<a href="#ref-yang-doctors-thread">yang-doctors-thread</a>].
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Limitations</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Not Recommended for Graphical Artwork</span>
+
+   While the solution presented in this document works on any kind of
+   text-based content, it is most useful on content that represents
+   source code (XML, JSON, etc.) or, more generally, on content that has
+   not been laid out in two dimensions (e.g., diagrams).
+
+   Fundamentally, the issue is whether the text content remains readable
+   once folded.  Text content that is unpredictable is especially
+   susceptible to looking bad when folded; falling into this category
+   are most Unified Modeling Language (UML) diagrams, YANG tree
+   diagrams, and ASCII art in general.
+
+   It is NOT RECOMMENDED to use the solution presented in this document
+   on graphical artwork.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Doesn&#x27;t Work as Well as Format-Specific Options</span>
+
+   The solution presented in this document works generically for all
+   text-based content, as it only views content as plain text.  However,
+   various formats sometimes have built-in mechanisms that are better
+   suited to prevent long lines.
+
+   For instance, both the &#x27;pyang&#x27; and &#x27;yanglint&#x27; utilities [<a href="#ref-pyang" title="&quot;pyang&quot;">pyang</a>]
+   [<a href="#ref-yanglint" title="&quot;yanglint&quot;">yanglint</a>] have the command-line option &quot;tree-line-length&quot;, which can
+   be used to indicate a desired maximum line length when generating
+   YANG tree diagrams [<a href="/doc/html/rfc8340" title="&quot;YANG Tree Diagrams&quot;">RFC8340</a>].
+
+   In another example, some source formats (e.g., YANG [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>]) allow
+   any quoted string to be broken up into substrings separated by a
+   concatenation character (e.g., &#x27;+&#x27;), any of which can be on a
+   different line.
+
+   It is RECOMMENDED that authors do as much as possible within the
+   selected format to avoid long lines.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Two Folding Strategies</span>
+
+   This document defines two nearly identical strategies for folding
+   text-based content.
+
+   The Single Backslash Strategy (&#x27;\&#x27;):
+      Uses a backslash (&#x27;\&#x27;) character at the end of the line where
+      folding occurs, and assumes that the continuation begins at the
+      first character that is not a space character (&#x27; &#x27;) on the
+      following line.
+
+   The Double Backslash Strategy (&#x27;\\&#x27;):
+      Uses a backslash (&#x27;\&#x27;) character at the end of the line where
+      folding occurs, and assumes that the continuation begins after a
+      second backslash (&#x27;\&#x27;) character on the following line.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Comparison</span>
+
+   The first strategy produces output that is more readable.  However,
+   (1) it is significantly more likely to encounter unfoldable input
+   (e.g., a long line containing only space characters), and (2) for
+   long lines that can be folded, automation implementations may
+   encounter scenarios that, without special care, will produce errors.
+
+   The second strategy produces output that is less readable, but it is
+   unlikely to encounter unfoldable input, there are no long lines that
+   cannot be folded, and no special care is required when folding a long
+   line.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Recommendation</span>
+
+   It is RECOMMENDED that implementations first attempt to fold content
+   using the single backslash strategy and, only in the unlikely event
+   that it cannot fold the input or the folding logic is unable to cope
+   with a contingency occurring on the desired folding column, then fall
+   back to the double backslash strategy.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  The Single Backslash Strategy (&#x27;\&#x27;)</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Folded Structure</span>
+
+   Text content that has been folded as specified by this strategy MUST
+   adhere to the following structure.
+
+<span class="h4"><a class="selflink" id="section-7.1.1" href="#section-7.1.1">7.1.1</a>.  Header</span>
+
+   The header is two lines long.
+
+   The first line is the following 36-character string; this string MAY
+   be surrounded by any number of printable characters.  This first line
+   cannot itself be folded.
+
+   NOTE: &#x27;\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>
+
+   The second line is an empty line, containing only the end-of-line
+   character sequence.  This line provides visual separation for
+   readability.
+
+<span class="h4"><a class="selflink" id="section-7.1.2" href="#section-7.1.2">7.1.2</a>.  Body</span>
+
+   The character encoding is the same as the encoding described in
+   <a href="/doc/html/rfc7994#section-2">Section&nbsp;2 of [RFC7994]</a>, except that, per [<a href="/doc/html/rfc7991" title="&quot;The &quot;">RFC7991</a>], tab characters
+   are prohibited.
+
+   Lines that have a backslash (&#x27;\&#x27;) occurring as the last character in
+   a line are considered &quot;folded&quot;.
+
+   Exceptionally long lines MAY be folded multiple times.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Algorithm</span>
+
+   This section describes a process for folding and unfolding long lines
+   when they are encountered in text content.
+
+   The steps are complete, but implementations MAY achieve the same
+   result in other ways.
+
+   When a larger document contains multiple instances of text content
+   that may need to be folded or unfolded, another process must
+   insert/extract the individual text content instances to/from the
+   larger document prior to utilizing the algorithms described in this
+   section.  For example, the &#x27;xiax&#x27; utility [<a href="#ref-xiax" title="&quot;The &#x27;xiax&#x27; Python Package&quot;">xiax</a>] does this.
+
+<span class="h4"><a class="selflink" id="section-7.2.1" href="#section-7.2.1">7.2.1</a>.  Folding</span>
+
+   Determine the desired maximum line length from input to the line-
+   wrapping process, such as from a command-line parameter.  If no value
+   is explicitly specified, the value &quot;69&quot; SHOULD be used.
+
+   Ensure that the desired maximum line length is not less than the
+   minimum header, which is 36 characters.  If the desired maximum line
+   length is less than this minimum, exit (this text-based content
+   cannot be folded).
+
+   Scan the text content for horizontal tab characters.  If any
+   horizontal tab characters appear, either resolve them to space
+   characters or exit, forcing the input provider to convert them to
+   space characters themselves first.
+
+   Scan the text content to ensure that at least one line exceeds the
+   desired maximum.  If no line exceeds the desired maximum, exit (this
+   text content does not need to be folded).
+
+   Scan the text content to ensure that no existing lines already end
+   with a backslash (&#x27;\&#x27;) character, as this could lead to an ambiguous
+   result.  If such a line is found, and its width is less than the
+   desired maximum, then it SHOULD be flagged for &quot;forced&quot; folding
+   (folding even though unnecessary).  If the folding implementation
+   doesn&#x27;t support forced foldings, it MUST exit.
+
+   If this text content needs to, and can, be folded, insert the header
+   described in <a href="#section-7.1.1">Section 7.1.1</a>, ensuring that any additional printable
+   characters surrounding the header do not result in a line exceeding
+   the desired maximum.
+
+   For each line in the text content, from top to bottom, if the line
+   exceeds the desired maximum or requires a forced folding, then fold
+   the line by performing the following steps:
+
+   1.  Determine where the fold will occur.  This location MUST be
+       before or at the desired maximum column and MUST NOT be chosen
+       such that the character immediately after the fold is a space
+       (&#x27; &#x27;) character.  For forced foldings, the location is between
+       the &#x27;\&#x27; and the end-of-line sequence.  If no such location can be
+       found, then exit (this text content cannot be folded).
+
+   2.  At the location where the fold is to occur, insert a backslash
+       (&#x27;\&#x27;) character followed by the end-of-line character sequence.
+
+   3.  On the following line, insert any number of space (&#x27; &#x27;)
+       characters, provided that the resulting line does not exceed the
+       desired maximum.
+
+   The result of the previous operation is that the next line starts
+   with an arbitrary number of space (&#x27; &#x27;) characters, followed by the
+   character that was previously occupying the position where the fold
+   occurred.
+
+   Continue in this manner until reaching the end of the text content.
+   Note that this algorithm naturally addresses the case where the
+   remainder of a folded line is still longer than the desired maximum
+   and, hence, needs to be folded again, ad infinitum.
+
+   The process described in this section is illustrated by the
+   &quot;fold_it_1()&quot; function in <a href="#appendix-A">Appendix A</a>.
+
+<span class="h4"><a class="selflink" id="section-7.2.2" href="#section-7.2.2">7.2.2</a>.  Unfolding</span>
+
+   Scan the beginning of the text content for the header described in
+   <a href="#section-7.1.1">Section 7.1.1</a>.  If the header is not present, exit (this text content
+   does not need to be unfolded).
+
+   Remove the two-line header from the text content.
+
+   For each line in the text content, from top to bottom, if the line
+   has a backslash (&#x27;\&#x27;) character immediately followed by the end-of-
+   line character sequence, then the line can be unfolded.  Remove the
+   backslash (&#x27;\&#x27;) character, the end-of-line character sequence, and
+   any leading space (&#x27; &#x27;) characters, which will bring up the next
+   line.  Then continue to scan each line in the text content starting
+   with the current line (in case it was multiply folded).
+
+   Continue in this manner until reaching the end of the text content.
+
+   The process described in this section is illustrated by the
+   &quot;unfold_it_1()&quot; function in <a href="#appendix-A">Appendix A</a>.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  The Double Backslash Strategy (&#x27;\\&#x27;)</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Folded Structure</span>
+
+   Text content that has been folded as specified by this strategy MUST
+   adhere to the following structure.
+
+<span class="h4"><a class="selflink" id="section-8.1.1" href="#section-8.1.1">8.1.1</a>.  Header</span>
+
+   The header is two lines long.
+
+   The first line is the following 37-character string; this string MAY
+   be surrounded by any number of printable characters.  This first line
+   cannot itself be folded.
+
+   NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>
+
+   The second line is an empty line, containing only the end-of-line
+   character sequence.  This line provides visual separation for
+   readability.
+
+<span class="h4"><a class="selflink" id="section-8.1.2" href="#section-8.1.2">8.1.2</a>.  Body</span>
+
+   The character encoding is the same as the encoding described in
+   <a href="/doc/html/rfc7994#section-2">Section&nbsp;2 of [RFC7994]</a>, except that, per [<a href="/doc/html/rfc7991" title="&quot;The &quot;">RFC7991</a>], tab characters
+   are prohibited.
+
+   Lines that have a backslash (&#x27;\&#x27;) occurring as the last character in
+   a line immediately followed by the end-of-line character sequence,
+   when the subsequent line starts with a backslash (&#x27;\&#x27;) as the first
+   character that is not a space character (&#x27; &#x27;), are considered
+   &quot;folded&quot;.
+
+   Exceptionally long lines MAY be folded multiple times.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Algorithm</span>
+
+   This section describes a process for folding and unfolding long lines
+   when they are encountered in text content.
+
+   The steps are complete, but implementations MAY achieve the same
+   result in other ways.
+
+   When a larger document contains multiple instances of text content
+   that may need to be folded or unfolded, another process must
+   insert/extract the individual text content instances to/from the
+   larger document prior to utilizing the algorithms described in this
+   section.  For example, the &#x27;xiax&#x27; utility [<a href="#ref-xiax" title="&quot;The &#x27;xiax&#x27; Python Package&quot;">xiax</a>] does this.
+
+<span class="h4"><a class="selflink" id="section-8.2.1" href="#section-8.2.1">8.2.1</a>.  Folding</span>
+
+   Determine the desired maximum line length from input to the line-
+   wrapping process, such as from a command-line parameter.  If no value
+   is explicitly specified, the value &quot;69&quot; SHOULD be used.
+
+   Ensure that the desired maximum line length is not less than the
+   minimum header, which is 37 characters.  If the desired maximum line
+   length is less than this minimum, exit (this text-based content
+   cannot be folded).
+
+   Scan the text content for horizontal tab characters.  If any
+   horizontal tab characters appear, either resolve them to space
+   characters or exit, forcing the input provider to convert them to
+   space characters themselves first.
+
+   Scan the text content to see if any line exceeds the desired maximum.
+   If no line exceeds the desired maximum, exit (this text content does
+   not need to be folded).
+
+   Scan the text content to ensure that no existing lines already end
+   with a backslash (&#x27;\&#x27;) character while the subsequent line starts
+   with a backslash (&#x27;\&#x27;) character as the first character that is not a
+   space character (&#x27; &#x27;), as this could lead to an ambiguous result.  If
+   such a line is found and its width is less than the desired maximum,
+   then it SHOULD be flagged for forced folding (folding even though
+   unnecessary).  If the folding implementation doesn&#x27;t support forced
+   foldings, it MUST exit.
+
+   If this text content needs to, and can, be folded, insert the header
+   described in <a href="#section-8.1.1">Section 8.1.1</a>, ensuring that any additional printable
+   characters surrounding the header do not result in a line exceeding
+   the desired maximum.
+
+   For each line in the text content, from top to bottom, if the line
+   exceeds the desired maximum or requires a forced folding, then fold
+   the line by performing the following steps:
+
+   1.  Determine where the fold will occur.  This location MUST be
+       before or at the desired maximum column.  For forced foldings,
+       the location is between the &#x27;\&#x27; and the end-of-line sequence on
+       the first line.
+
+   2.  At the location where the fold is to occur, insert a first
+       backslash (&#x27;\&#x27;) character followed by the end-of-line character
+       sequence.
+
+   3.  On the following line, insert any number of space (&#x27; &#x27;)
+       characters, provided that the resulting line does not exceed the
+       desired maximum, followed by a second backslash (&#x27;\&#x27;) character.
+
+   The result of the previous operation is that the next line starts
+   with an arbitrary number of space (&#x27; &#x27;) characters, followed by a
+   backslash (&#x27;\&#x27;) character, immediately followed by the character that
+   was previously occupying the position where the fold occurred.
+
+   Continue in this manner until reaching the end of the text content.
+   Note that this algorithm naturally addresses the case where the
+   remainder of a folded line is still longer than the desired maximum
+   and, hence, needs to be folded again, ad infinitum.
+
+   The process described in this section is illustrated by the
+   &quot;fold_it_2()&quot; function in <a href="#appendix-A">Appendix A</a>.
+
+<span class="h4"><a class="selflink" id="section-8.2.2" href="#section-8.2.2">8.2.2</a>.  Unfolding</span>
+
+   Scan the beginning of the text content for the header described in
+   <a href="#section-8.1.1">Section 8.1.1</a>.  If the header is not present, exit (this text content
+   does not need to be unfolded).
+
+   Remove the two-line header from the text content.
+
+   For each line in the text content, from top to bottom, if the line
+   has a backslash (&#x27;\&#x27;) character immediately followed by the end-of-
+   line character sequence and if the next line has a backslash (&#x27;\&#x27;)
+   character as the first character that is not a space character (&#x27; &#x27;),
+   then the lines can be unfolded.  Remove the first backslash (&#x27;\&#x27;)
+   character, the end-of-line character sequence, any leading space
+   (&#x27; &#x27;) characters, and the second backslash (&#x27;\&#x27;) character, which
+   will bring up the next line.  Then, continue to scan each line in the
+   text content starting with the current line (in case it was multiply
+   folded).
+
+   Continue in this manner until reaching the end of the text content.
+
+   The process described in this section is illustrated by the
+   &quot;unfold_it_2()&quot; function in <a href="#appendix-A">Appendix A</a>.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Examples</span>
+
+   The following self-documenting examples illustrate folded text-based
+   content.
+
+   The source text content cannot be presented here, as it would again
+   be folded.  Alas, only the results can be provided.
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Example Showing Boundary Conditions</span>
+
+   This example illustrates boundary conditions.  The input contains
+   seven lines, each line one character longer than the previous line.
+   Numbers are used for counting purposes.  The default desired maximum
+   column value &quot;69&quot; is used.
+
+<span class="h4"><a class="selflink" id="section-9.1.1" href="#section-9.1.1">9.1.1</a>.  Using &#x27;\&#x27;</span>
+
+   ========== NOTE: &#x27;\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a> ===========
+
+   123456789012345678901234567890123456789012345678901234567890123456
+   1234567890123456789012345678901234567890123456789012345678901234567
+   12345678901234567890123456789012345678901234567890123456789012345678
+   123456789012345678901234567890123456789012345678901234567890123456789
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   90
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   901
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   9012
+
+<span class="h4"><a class="selflink" id="section-9.1.2" href="#section-9.1.2">9.1.2</a>.  Using &#x27;\\&#x27;</span>
+
+   ========== NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a> ==========
+
+   123456789012345678901234567890123456789012345678901234567890123456
+   1234567890123456789012345678901234567890123456789012345678901234567
+   12345678901234567890123456789012345678901234567890123456789012345678
+   123456789012345678901234567890123456789012345678901234567890123456789
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   \90
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   \901
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   \9012
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Example Showing Multiple Wraps of a Single Line</span>
+
+   This example illustrates what happens when a very long line needs to
+   be folded multiple times.  The input contains one line containing 280
+   characters.  Numbers are used for counting purposes.  The default
+   desired maximum column value &quot;69&quot; is used.
+
+<span class="h4"><a class="selflink" id="section-9.2.1" href="#section-9.2.1">9.2.1</a>.  Using &#x27;\&#x27;</span>
+
+   ========== NOTE: &#x27;\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a> ===========
+
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   90123456789012345678901234567890123456789012345678901234567890123456\
+   78901234567890123456789012345678901234567890123456789012345678901234\
+   56789012345678901234567890123456789012345678901234567890123456789012\
+   34567890
+
+<span class="h4"><a class="selflink" id="section-9.2.2" href="#section-9.2.2">9.2.2</a>.  Using &#x27;\\&#x27;</span>
+
+   ========== NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a> ==========
+
+   12345678901234567890123456789012345678901234567890123456789012345678\
+   \9012345678901234567890123456789012345678901234567890123456789012345\
+   \6789012345678901234567890123456789012345678901234567890123456789012\
+   \3456789012345678901234567890123456789012345678901234567890123456789\
+   \01234567890
+
+<span class="h3"><a class="selflink" id="section-9.3" href="#section-9.3">9.3</a>.  Example Showing &quot;Smart&quot; Folding</span>
+
+   This example illustrates how readability can be improved via &quot;smart&quot;
+   folding, whereby folding occurs at format-specific locations and
+   format-specific indentations are used.
+
+   The text content was manually folded, since the script in <a href="#appendix-A">Appendix A</a>
+   does not implement smart folding.
+
+   Note that the headers are surrounded by different printable
+   characters than those shown in the script-generated examples.
+
+<span class="h4"><a class="selflink" id="section-9.3.1" href="#section-9.3.1">9.3.1</a>.  Using &#x27;\&#x27;</span>
+
+   [NOTE: &#x27;\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>]
+
+   &lt;yang-library
+       xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-yang-library&quot;
+       xmlns:ds=&quot;urn:ietf:params:xml:ns:yang:ietf-datastores&quot;&gt;
+
+     &lt;module-set&gt;
+       &lt;name&gt;config-modules&lt;/name&gt;
+       &lt;module&gt;
+         &lt;name&gt;ietf-interfaces&lt;/name&gt;
+         &lt;revision&gt;2018-02-20&lt;/revision&gt;
+         &lt;namespace&gt;\
+           urn:ietf:params:xml:ns:yang:ietf-interfaces\
+         &lt;/namespace&gt;
+       &lt;/module&gt;
+       ...
+     &lt;/module-set&gt;
+     ...
+   &lt;/yang-library&gt;
+
+   Below is the equivalent of the above, but it was folded using the
+   script in <a href="#appendix-A">Appendix A</a>.
+
+   ========== NOTE: &#x27;\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a> ===========
+
+   &lt;yang-library
+       xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-yang-library&quot;
+       xmlns:ds=&quot;urn:ietf:params:xml:ns:yang:ietf-datastores&quot;&gt;
+
+     &lt;module-set&gt;
+       &lt;name&gt;config-modules&lt;/name&gt;
+       &lt;module&gt;
+         &lt;name&gt;ietf-interfaces&lt;/name&gt;
+         &lt;revision&gt;2018-02-20&lt;/revision&gt;
+         &lt;namespace&gt;urn:ietf:params:xml:ns:yang:ietf-interfaces&lt;/namesp\
+   ace&gt;
+       &lt;/module&gt;
+       ...
+     &lt;/module-set&gt;
+     ...
+   &lt;/yang-library&gt;
+
+<span class="h4"><a class="selflink" id="section-9.3.2" href="#section-9.3.2">9.3.2</a>.  Using &#x27;\\&#x27;</span>
+
+   [NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>]
+
+   &lt;yang-library
+       xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-yang-library&quot;
+       xmlns:ds=&quot;urn:ietf:params:xml:ns:yang:ietf-datastores&quot;&gt;
+
+     &lt;module-set&gt;
+       &lt;name&gt;config-modules&lt;/name&gt;
+       &lt;module&gt;
+         &lt;name&gt;ietf-interfaces&lt;/name&gt;
+         &lt;revision&gt;2018-02-20&lt;/revision&gt;
+         &lt;namespace&gt;\
+           \urn:ietf:params:xml:ns:yang:ietf-interfaces\
+         \&lt;/namespace&gt;
+       &lt;/module&gt;
+       ...
+     &lt;/module-set&gt;
+     ...
+   &lt;/yang-library&gt;
+
+   Below is the equivalent of the above, but it was folded using the
+   script in <a href="#appendix-A">Appendix A</a>.
+
+   ========== NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a> ==========
+
+   &lt;yang-library
+       xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-yang-library&quot;
+       xmlns:ds=&quot;urn:ietf:params:xml:ns:yang:ietf-datastores&quot;&gt;
+
+     &lt;module-set&gt;
+       &lt;name&gt;config-modules&lt;/name&gt;
+       &lt;module&gt;
+         &lt;name&gt;ietf-interfaces&lt;/name&gt;
+         &lt;revision&gt;2018-02-20&lt;/revision&gt;
+         &lt;namespace&gt;urn:ietf:params:xml:ns:yang:ietf-interfaces&lt;/namesp\
+   \ace&gt;
+       &lt;/module&gt;
+       ...
+     &lt;/module-set&gt;
+     ...
+   &lt;/yang-library&gt;
+
+<span class="h3"><a class="selflink" id="section-9.4" href="#section-9.4">9.4</a>.  Example Showing &quot;Forced&quot; Folding</span>
+
+   This example illustrates how invalid sequences in lines that do not
+   have to be folded can be handled via forced folding, whereby the
+   folding occurs even though unnecessary.
+
+   The following line exceeds a 68-char max and, thus, demands folding:
+   123456789012345678901234567890123456789012345678901234567890123456789
+
+   This line ends with a backslash \
+
+   This line ends with a backslash \
+   \ This line begins with a backslash
+
+   The following is an indented 3x3 block of backslashes:
+      \\\
+      \\\
+      \\\
+
+   The samples below were manually folded, since the script in the
+   appendix does not implement forced folding.
+
+   Note that the headers are prefixed by a pound (&#x27;#&#x27;) character, rather
+   than surrounded by &#x27;equals&#x27; (&#x27;=&#x27;) characters as shown in the script-
+   generated examples.
+
+<span class="h4"><a class="selflink" id="section-9.4.1" href="#section-9.4.1">9.4.1</a>.  Using &#x27;\&#x27;</span>
+
+   # NOTE: &#x27;\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>
+
+   The following line exceeds a 68-char max and, thus, demands folding:
+   1234567890123456789012345678901234567890123456789012345678901234567\
+   89
+
+   This line ends with a backslash \\
+
+
+   This line ends with a backslash \\
+
+   \ This line begins with a backslash
+
+   The following is an indented 3x3 block of backslashes:
+      \\\\
+
+      \\\\
+
+      \\\
+
+<span class="h4"><a class="selflink" id="section-9.4.2" href="#section-9.4.2">9.4.2</a>.  Using &#x27;\\&#x27;</span>
+
+   # NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>
+
+   The following line exceeds a 68-char max and, thus, demands folding:
+   1234567890123456789012345678901234567890123456789012345678901234567\
+   \89
+
+   This line ends with a backslash \
+
+   This line ends with a backslash \\
+   \
+   \ This line begins with a backslash
+
+   The following is an indented 3x3 block of backslashes:
+      \\\\
+      \
+      \\\\
+      \
+      \\\
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Security Considerations</span>
+
+   This document has no security considerations.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC7991">RFC7991</a>]  Hoffman, P., &quot;The &quot;xml2rfc&quot; Version 3 Vocabulary&quot;,
+              <a href="/doc/html/rfc7991">RFC 7991</a>, DOI 10.17487/RFC7991, December 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7991">https://www.rfc-editor.org/info/rfc7991</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  Informative References</span>
+
+   [<a id="ref-bash">bash</a>]     &quot;GNU Bash Manual&quot;,
+              &lt;<a href="https://www.gnu.org/software/bash/manual">https://www.gnu.org/software/bash/manual</a>&gt;.
+
+   [<a id="ref-pyang">pyang</a>]    &quot;pyang&quot;, &lt;<a href="https://pypi.org/project/pyang/">https://pypi.org/project/pyang/</a>&gt;.
+
+   [<a id="ref-RFC7749">RFC7749</a>]  Reschke, J., &quot;The &quot;xml2rfc&quot; Version 2 Vocabulary&quot;,
+              <a href="/doc/html/rfc7749">RFC 7749</a>, DOI 10.17487/RFC7749, February 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7749">https://www.rfc-editor.org/info/rfc7749</a>&gt;.
+
+   [<a id="ref-RFC7950">RFC7950</a>]  Bjorklund, M., Ed., &quot;The YANG 1.1 Data Modeling Language&quot;,
+              <a href="/doc/html/rfc7950">RFC 7950</a>, DOI 10.17487/RFC7950, August 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7950">https://www.rfc-editor.org/info/rfc7950</a>&gt;.
+
+   [<a id="ref-RFC7994">RFC7994</a>]  Flanagan, H., &quot;Requirements for Plain-Text RFCs&quot;,
+              <a href="/doc/html/rfc7994">RFC 7994</a>, DOI 10.17487/RFC7994, December 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7994">https://www.rfc-editor.org/info/rfc7994</a>&gt;.
+
+   [<a id="ref-RFC8340">RFC8340</a>]  Bjorklund, M. and L. Berger, Ed., &quot;YANG Tree Diagrams&quot;,
+              <a href="/doc/html/bcp215">BCP 215</a>, <a href="/doc/html/rfc8340">RFC 8340</a>, DOI 10.17487/RFC8340, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8340">https://www.rfc-editor.org/info/rfc8340</a>&gt;.
+
+   [<a id="ref-xiax">xiax</a>]     &quot;The &#x27;xiax&#x27; Python Package&quot;,
+              &lt;<a href="https://pypi.org/project/xiax/">https://pypi.org/project/xiax/</a>&gt;.
+
+   [<a id="ref-xml2rfc">xml2rfc</a>]  &quot;xml2rfc&quot;, &lt;<a href="https://pypi.org/project/xml2rfc/">https://pypi.org/project/xml2rfc/</a>&gt;.
+
+   [<a id="ref-yang-doctors-thread">yang-doctors-thread</a>]
+              Watsen, K., &quot;[yang-doctors] automating yang doctor
+              reviews&quot;, message to the yang-doctors mailing list, 18
+              April 2018, &lt;<a href="https://mailarchive.ietf.org/arch/msg/yang-doctors/DCfBqgfZPAD7afzeDFlQ1Xm2X3g">https://mailarchive.ietf.org/arch/msg/yang-</a>
+              <a href="https://mailarchive.ietf.org/arch/msg/yang-doctors/DCfBqgfZPAD7afzeDFlQ1Xm2X3g">doctors/DCfBqgfZPAD7afzeDFlQ1Xm2X3g</a>&gt;.
+
+   [<a id="ref-yanglint">yanglint</a>] &quot;yanglint&quot;, commit 1b7d73d, February 2020,
+              &lt;<a href="https://github.com/CESNET/libyang#yanglint">https://github.com/CESNET/libyang#yanglint</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Bash Shell Script: rfcfold</span>
+
+   This non-normative appendix includes a Bash shell script [<a href="#ref-bash" title="&quot;GNU Bash Manual&quot;">bash</a>] that
+   can both fold and unfold text content using both the single and
+   double backslash strategies described in Sections <a href="#section-7">7</a> and <a href="#section-8">8</a>,
+   respectively.  This shell script, called &#x27;rfcfold&#x27;, is maintained at
+   &lt;<a href="https://github.com/ietf-tools/rfcfold">https://github.com/ietf-tools/rfcfold</a>&gt;.
+
+   This script is intended to be applied to a single text content
+   instance.  If it is desired to fold or unfold text content instances
+   within a larger document (e.g., an Internet-Draft or RFC), then
+   another tool must be used to extract the content from the larger
+   document before utilizing this script.
+
+   For readability purposes, this script forces the minimum supported
+   line length to be eight characters longer than the raw header text
+   defined in Sections <a href="#section-7.1.1">7.1.1</a> and <a href="#section-8.1.1">8.1.1</a> so as to ensure that the header
+   can be wrapped by a space (&#x27; &#x27;) character and three &#x27;equals&#x27; (&#x27;=&#x27;)
+   characters on each side of the raw header text.
+
+   When a tab character is detected in the input file, this script exits
+   with the following error message:
+
+      Error: infile contains a tab character, which is not allowed.
+
+   This script tests for the availability of GNU awk (gawk), in order to
+   test for ASCII-based control characters and non-ASCII characters in
+   the input file (see below).  Note that testing revealed flaws in the
+   default version of &#x27;awk&#x27; on some platforms.  As this script uses
+   &#x27;gawk&#x27; only to issue warning messages, if &#x27;gawk&#x27; is not found, this
+   script issues the following debug message:
+
+      Debug: no GNU awk; skipping checks for special characters.
+
+   When &#x27;gawk&#x27; is available (see above) and ASCII-based control
+   characters are detected in the input file, this script issues the
+   following warning message:
+
+      Warning: infile contains ASCII control characters (unsupported).
+
+   When &#x27;gawk&#x27; is available (see above) and non-ASCII characters are
+   detected in the input file, this script issues the following warning
+   message:
+
+      Warning: infile contains non-ASCII characters (unsupported).
+
+   This script does not implement the whitespace-avoidance logic
+   described in <a href="#section-7.2.1">Section 7.2.1</a>.  In such a case, the script will exit
+   with the following error message:
+
+      Error: infile has a space character occurring on the folding
+      column.  This file cannot be folded using the &#x27;\&#x27; strategy.
+
+   While this script can unfold input that contains forced foldings, it
+   is unable to fold files that would require forced foldings.  Forced
+   folding is described in Sections <a href="#section-7.2.1">7.2.1</a> and <a href="#section-8.2.1">8.2.1</a>.  When being asked
+   to fold a file that would require forced folding, the script will
+   instead exit with one of the following error messages:
+
+   For &#x27;\&#x27;:
+
+      Error: infile has a line ending with a &#x27;\&#x27; character.  This file
+      cannot be folded using the &#x27;\&#x27; strategy without there being false
+      positives produced in the unfolding (i.e., this script does not
+      force-fold such lines, as described in <a href="/doc/html/rfc8792">RFC 8792</a>).
+
+   For &#x27;\\&#x27;:
+
+      Error: infile has a line ending with a &#x27;\&#x27; character followed by a
+      &#x27;\&#x27; character as the first non-space character on the next line.
+      This script cannot fold this file using the &#x27;\\&#x27; strategy without
+      there being false positives produced in the unfolding (i.e., this
+      script does not force-fold such lines, as described in <a href="/doc/html/rfc8792">RFC 8792</a>).
+
+   Shell-level end-of-line backslash (&#x27;\&#x27;) characters have been
+   purposely added to the script so as to ensure that the script is
+   itself not folded in this document, thus simplifying the ability to
+   copy/paste the script for local use.  As should be evident by the
+   lack of the mandatory header described in <a href="#section-7.1.1">Section 7.1.1</a>, these
+   backslashes do not designate a folded line (e.g., as described in
+   <a href="#section-7">Section 7</a>).
+
+   &lt;CODE BEGINS&gt; file &quot;rfcfold&quot;
+   #!/bin/bash --posix
+
+   # This script may need some adjustments to work on a given system.
+   # For instance, the utility &#x27;gsed&#x27; may need to be installed.
+   # Also, please be advised that &#x27;bash&#x27; (not &#x27;sh&#x27;) must be used.
+
+   # Copyright (c) 2020 IETF Trust, Kent Watsen, and Erik Auerswald.
+   # All rights reserved.
+   #
+   # Redistribution and use in source and binary forms, with or without
+   # modification, are permitted provided that the following conditions
+   # are met:
+   #
+   #   * Redistributions of source code must retain the above copyright
+   #     notice, this list of conditions and the following disclaimer.
+   #
+   #   * Redistributions in binary form must reproduce the above
+   #     copyright notice, this list of conditions and the following
+   #     disclaimer in the documentation and/or other materials
+   #     provided with the distribution.
+   #
+   #   * Neither the name of Internet Society, IETF or IETF Trust, nor
+   #     the names of specific contributors, may be used to endorse or
+   #     promote products derived from this software without specific
+   #     prior written permission.
+   #
+   # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+   # &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+   # LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+   # FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE
+   # COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+   # INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+   # (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+   # SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   # HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+   # STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+   # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+   # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+   print_usage() {
+     printf &quot;\n&quot;
+     printf &quot;Folds or unfolds the input text file according to&quot;
+     printf &quot; <a href="/doc/html/rfc8792">RFC 8792</a>.\n&quot;
+     printf &quot;\n&quot;
+     printf &quot;Usage: rfcfold [-h] [-d] [-q] [-s &lt;strategy&gt;] [-c &lt;col&gt;]&quot;
+     printf &quot; [-r] -i &lt;infile&gt; -o &lt;outfile&gt;\n&quot;
+     printf &quot;\n&quot;
+     printf &quot;  -s: strategy to use, &#x27;1&#x27; or &#x27;2&#x27; (default: try 1,&quot;
+     printf &quot; else 2)\n&quot;
+     printf &quot;  -c: column to fold on (default: 69)\n&quot;
+     printf &quot;  -r: reverses the operation\n&quot;
+     printf &quot;  -i: the input filename\n&quot;
+     printf &quot;  -o: the output filename\n&quot;
+     printf &quot;  -d: show debug messages (unless -q is given)\n&quot;
+     printf &quot;  -q: quiet (suppress error and debug messages)\n&quot;
+     printf &quot;  -h: show this message\n&quot;
+     printf &quot;\n&quot;
+     printf &quot;Exit status code: 1 on error, 0 on success, 255 on no-op.&quot;
+     printf &quot;\n\n&quot;
+   }
+
+   # global vars, do not edit
+   strategy=0 # auto
+   debug=0
+   quiet=0
+   reversed=0
+   infile=&quot;&quot;
+   outfile=&quot;&quot;
+   maxcol=69  # default, may be overridden by param
+   col_gvn=0  # maxcol overridden?
+   hdr_txt_1=&quot;NOTE: &#x27;\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>&quot;
+   hdr_txt_2=&quot;NOTE: &#x27;\\\\&#x27; line wrapping per <a href="/doc/html/rfc8792">RFC 8792</a>&quot;
+   equal_chars=&quot;=======================================================&quot;
+   space_chars=&quot;                                                       &quot;
+   temp_dir=&quot;&quot;
+   prog_name=&#x27;rfcfold&#x27;
+
+   # functions for diagnostic messages
+   prog_msg() {
+     if [[ &quot;$quiet&quot; -eq 0 ]]; then
+       format_string=&quot;${prog_name}: $1: %s\n&quot;
+       shift
+       printf -- &quot;$format_string&quot; &quot;$*&quot; &gt;&amp;2
+     fi
+   }
+
+   err() {
+     prog_msg &#x27;Error&#x27; &quot;$@&quot;
+   }
+
+   warn() {
+     prog_msg &#x27;Warning&#x27; &quot;$@&quot;
+   }
+
+   dbg() {
+     if [[ &quot;$debug&quot; -eq 1 ]]; then
+       prog_msg &#x27;Debug&#x27; &quot;$@&quot;
+     fi
+   }
+
+   # determine name of [g]sed binary
+   type gsed &gt; /dev/null 2&gt;&amp;1 &amp;&amp; SED=gsed || SED=sed
+
+   # warn if a non-GNU sed utility is used
+   &quot;$SED&quot; --version &lt; /dev/null 2&gt; /dev/null | grep -q GNU || \
+   warn &#x27;not using GNU `sed` (likely cause if an error occurs).&#x27;
+
+   cleanup() {
+     rm -rf &quot;$temp_dir&quot;
+   }
+   trap &#x27;cleanup&#x27; EXIT
+
+   fold_it_1() {
+     # ensure input file doesn&#x27;t contain the fold-sequence already
+     if [[ -n &quot;$(&quot;$SED&quot; -n &#x27;/\\$/p&#x27; &quot;$infile&quot;)&quot; ]]; then
+       err &quot;infile &#x27;$infile&#x27; has a line ending with a &#x27;\\&#x27; character.&quot;\
+           &quot;This script cannot fold this file using the &#x27;\\&#x27; strategy&quot;\
+           &quot;without there being false positives produced in the&quot;\
+           &quot;unfolding.&quot;
+       return 1
+     fi
+
+     # where to fold
+     foldcol=$(expr &quot;$maxcol&quot; - 1) # for the inserted &#x27;\&#x27; char
+
+     # ensure input file doesn&#x27;t contain whitespace on the fold column
+     grep -q &quot;^\(.\{$foldcol\}\)\{1,\} &quot; &quot;$infile&quot;
+     if [[ $? -eq 0 ]]; then
+       err &quot;infile &#x27;$infile&#x27; has a space character occurring on the&quot;\
+           &quot;folding column.  This file cannot be folded using the&quot;\
+           &quot;&#x27;\\&#x27; strategy.&quot;
+       return 1
+     fi
+
+     # center header text
+     length=$(expr ${#hdr_txt_1} + 2)
+     left_sp=$(expr \( &quot;$maxcol&quot; - &quot;$length&quot; \) / 2)
+     right_sp=$(expr &quot;$maxcol&quot; - &quot;$length&quot; - &quot;$left_sp&quot;)
+     header=$(printf &quot;%.*s %s %.*s&quot; &quot;$left_sp&quot; &quot;$equal_chars&quot;\
+                      &quot;$hdr_txt_1&quot; &quot;$right_sp&quot; &quot;$equal_chars&quot;)
+
+     # generate outfile
+     echo &quot;$header&quot; &gt; &quot;$outfile&quot;
+     echo &quot;&quot; &gt;&gt; &quot;$outfile&quot;
+     &quot;$SED&quot; &#x27;s/\(.\{&#x27;&quot;$foldcol&quot;&#x27;\}\)\(..\)/\1\\\n\2/;t M;b;:M;P;D;&#x27;\
+       &lt; &quot;$infile&quot; &gt;&gt; &quot;$outfile&quot; 2&gt; /dev/null
+     if [[ $? -ne 0 ]]; then
+       return 1
+     fi
+     return 0
+   }
+
+   fold_it_2() {
+     # where to fold
+     foldcol=$(expr &quot;$maxcol&quot; - 1) # for the inserted &#x27;\&#x27; char
+
+     # ensure input file doesn&#x27;t contain the fold-sequence already
+     if [[ -n &quot;$(&quot;$SED&quot; -n &#x27;/\\$/{N;s/\\\n[ ]*\\/&amp;/p;D}&#x27; &quot;$infile&quot;)&quot; ]]
+     then
+       err &quot;infile &#x27;$infile&#x27; has a line ending with a &#x27;\\&#x27; character&quot;\
+           &quot;followed by a &#x27;\\&#x27; character as the first non-space&quot;\
+           &quot;character on the next line.  This script cannot fold&quot;\
+           &quot;this file using the &#x27;\\\\&#x27; strategy without there being&quot;\
+           &quot;false positives produced in the unfolding.&quot;
+       return 1
+     fi
+
+     # center header text
+     length=$(expr ${#hdr_txt_2} + 2)
+     left_sp=$(expr \( &quot;$maxcol&quot; - &quot;$length&quot; \) / 2)
+     right_sp=$(expr &quot;$maxcol&quot; - &quot;$length&quot; - &quot;$left_sp&quot;)
+     header=$(printf &quot;%.*s %s %.*s&quot; &quot;$left_sp&quot; &quot;$equal_chars&quot;\
+                      &quot;$hdr_txt_2&quot; &quot;$right_sp&quot; &quot;$equal_chars&quot;)
+
+     # generate outfile
+     echo &quot;$header&quot; &gt; &quot;$outfile&quot;
+     echo &quot;&quot; &gt;&gt; &quot;$outfile&quot;
+     &quot;$SED&quot; &#x27;s/\(.\{&#x27;&quot;$foldcol&quot;&#x27;\}\)\(..\)/\1\\\n\\\2/;t M;b;:M;P;D;&#x27;\
+       &lt; &quot;$infile&quot; &gt;&gt; &quot;$outfile&quot; 2&gt; /dev/null
+     if [[ $? -ne 0 ]]; then
+       return 1
+     fi
+     return 0
+   }
+
+   fold_it() {
+     # ensure input file doesn&#x27;t contain a tab
+     grep -q $&#x27;\t&#x27; &quot;$infile&quot;
+     if [[ $? -eq 0 ]]; then
+       err &quot;infile &#x27;$infile&#x27; contains a tab character, which is not&quot;\
+           &quot;allowed.&quot;
+       return 1
+     fi
+
+     # folding of input containing ASCII control or non-ASCII characters
+     # may result in a wrong folding column and is not supported
+     if type gawk &gt; /dev/null 2&gt;&amp;1; then
+       env LC_ALL=C gawk &#x27;/[\000-\014\016-\037\177]/{exit 1}&#x27; &quot;$infile&quot;\
+       || warn &quot;infile &#x27;$infile&#x27; contains ASCII control characters&quot;\
+               &quot;(unsupported).&quot;
+       env LC_ALL=C gawk &#x27;/[^\000-\177]/{exit 1}&#x27; &quot;$infile&quot;\
+       || warn &quot;infile &#x27;$infile&#x27; contains non-ASCII characters&quot;\
+               &quot;(unsupported).&quot;
+     else
+       dbg &quot;no GNU awk; skipping checks for special characters.&quot;
+     fi
+
+     # check if file needs folding
+     testcol=$(expr &quot;$maxcol&quot; + 1)
+     grep -q &quot;.\{$testcol\}&quot; &quot;$infile&quot;
+     if [[ $? -ne 0 ]]; then
+       dbg &quot;nothing to do; copying infile to outfile.&quot;
+       cp &quot;$infile&quot; &quot;$outfile&quot;
+       return 255
+     fi
+
+     if [[ &quot;$strategy&quot; -eq 1 ]]; then
+       fold_it_1
+       return $?
+     fi
+     if [[ &quot;$strategy&quot; -eq 2 ]]; then
+       fold_it_2
+       return $?
+     fi
+     quiet_sav=&quot;$quiet&quot;
+     quiet=1
+     fold_it_1
+     result=$?
+     quiet=&quot;$quiet_sav&quot;
+     if [[ &quot;$result&quot; -ne 0 ]]; then
+       dbg &quot;Folding strategy &#x27;1&#x27; didn&#x27;t succeed; trying strategy &#x27;2&#x27;...&quot;
+       fold_it_2
+       return $?
+     fi
+     return 0
+   }
+
+   unfold_it_1() {
+     temp_dir=$(mktemp -d)
+
+     # output all but the first two lines (the header) to wip file
+     awk &quot;NR&gt;2&quot; &quot;$infile&quot; &gt; &quot;$temp_dir/wip&quot;
+
+     # unfold wip file
+     &quot;$SED&quot; &#x27;{H;$!d};x;s/^\n//;s/\\\n *//g&#x27; &quot;$temp_dir/wip&quot; &gt; &quot;$outfile&quot;
+
+     return 0
+   }
+
+   unfold_it_2() {
+     temp_dir=$(mktemp -d)
+
+     # output all but the first two lines (the header) to wip file
+     awk &quot;NR&gt;2&quot; &quot;$infile&quot; &gt; &quot;$temp_dir/wip&quot;
+
+     # unfold wip file
+     &quot;$SED&quot; &#x27;{H;$!d};x;s/^\n//;s/\\\n *\\//g&#x27; &quot;$temp_dir/wip&quot;\
+       &gt; &quot;$outfile&quot;
+
+     return 0
+   }
+
+   unfold_it() {
+     # check if file needs unfolding
+     line=$(head -n 1 &quot;$infile&quot;)
+     line2=$(&quot;$SED&quot; -n &#x27;2p&#x27; &quot;$infile&quot;)
+     result=$(echo &quot;$line&quot; | fgrep &quot;$hdr_txt_1&quot;)
+     if [[ $? -eq 0 ]]; then
+       if [[ -n &quot;$line2&quot; ]]; then
+         err &quot;the second line in &#x27;$infile&#x27; is not empty.&quot;
+         return 1
+       fi
+       unfold_it_1
+       return $?
+     fi
+     result=$(echo &quot;$line&quot; | fgrep &quot;$hdr_txt_2&quot;)
+     if [[ $? -eq 0 ]]; then
+       if [[ -n &quot;$line2&quot; ]]; then
+         err &quot;the second line in &#x27;$infile&#x27; is not empty.&quot;
+         return 1
+       fi
+       unfold_it_2
+       return $?
+     fi
+     dbg &quot;nothing to do; copying infile to outfile.&quot;
+     cp &quot;$infile&quot; &quot;$outfile&quot;
+     return 255
+   }
+
+   process_input() {
+     while [[ &quot;$1&quot; != &quot;&quot; ]]; do
+       if [[ &quot;$1&quot; == &quot;-h&quot; ]] || [[ &quot;$1&quot; == &quot;--help&quot; ]]; then
+         print_usage
+         exit 0
+       elif [[ &quot;$1&quot; == &quot;-d&quot; ]]; then
+         debug=1
+       elif [[ &quot;$1&quot; == &quot;-q&quot; ]]; then
+         quiet=1
+       elif [[ &quot;$1&quot; == &quot;-s&quot; ]]; then
+         if [[ &quot;$#&quot; -eq &quot;1&quot; ]]; then
+           err &quot;option &#x27;-s&#x27; needs an argument (use -h for help).&quot;
+           exit 1
+         fi
+         strategy=&quot;$2&quot;
+         shift
+       elif [[ &quot;$1&quot; == &quot;-c&quot; ]]; then
+         if [[ &quot;$#&quot; -eq &quot;1&quot; ]]; then
+           err &quot;option &#x27;-c&#x27; needs an argument (use -h for help).&quot;
+           exit 1
+         fi
+         col_gvn=1
+         maxcol=&quot;$2&quot;
+         shift
+       elif [[ &quot;$1&quot; == &quot;-r&quot; ]]; then
+         reversed=1
+       elif [[ &quot;$1&quot; == &quot;-i&quot; ]]; then
+         if [[ &quot;$#&quot; -eq &quot;1&quot; ]]; then
+           err &quot;option &#x27;-i&#x27; needs an argument (use -h for help).&quot;
+           exit 1
+         fi
+         infile=&quot;$2&quot;
+         shift
+       elif [[ &quot;$1&quot; == &quot;-o&quot; ]]; then
+         if [[ &quot;$#&quot; -eq &quot;1&quot; ]]; then
+           err &quot;option &#x27;-o&#x27; needs an argument (use -h for help).&quot;
+           exit 1
+         fi
+         outfile=&quot;$2&quot;
+         shift
+       else
+         warn &quot;ignoring unknown option &#x27;$1&#x27;.&quot;
+       fi
+       shift
+     done
+
+     if [[ -z &quot;$infile&quot; ]]; then
+       err &quot;infile parameter missing (use -h for help).&quot;
+       exit 1
+     fi
+
+     if [[ -z &quot;$outfile&quot; ]]; then
+       err &quot;outfile parameter missing (use -h for help).&quot;
+       exit 1
+     fi
+
+     if [[ ! -f &quot;$infile&quot; ]]; then
+       err &quot;specified file &#x27;$infile&#x27; does not exist.&quot;
+       exit 1
+     fi
+
+     if [[ &quot;$col_gvn&quot; -eq 1 ]] &amp;&amp; [[ &quot;$reversed&quot; -eq 1 ]]; then
+       warn &quot;&#x27;-c&#x27; option ignored when unfolding (option &#x27;-r&#x27;).&quot;
+     fi
+
+     if [[ &quot;$strategy&quot; -eq 0 ]] || [[ &quot;$strategy&quot; -eq 2 ]]; then
+       min_supported=$(expr ${#hdr_txt_2} + 8)
+     else
+       min_supported=$(expr ${#hdr_txt_1} + 8)
+     fi
+     if [[ &quot;$maxcol&quot; -lt &quot;$min_supported&quot; ]]; then
+       err &quot;the folding column cannot be less than $min_supported.&quot;
+       exit 1
+     fi
+
+     # this is only because the code otherwise runs out of equal_chars
+     max_supported=$(expr ${#equal_chars} + 1 + ${#hdr_txt_1} + 1\
+          + ${#equal_chars})
+     if [[ &quot;$maxcol&quot; -gt &quot;$max_supported&quot; ]]; then
+       err &quot;the folding column cannot be more than $max_supported.&quot;
+       exit 1
+     fi
+   }
+
+   main() {
+     if [[ &quot;$#&quot; -eq &quot;0&quot; ]]; then
+        print_usage
+        exit 1
+     fi
+
+     process_input &quot;$@&quot;
+
+     if [[ &quot;$reversed&quot; -eq 0 ]]; then
+       fold_it
+       code=$?
+     else
+       unfold_it
+       code=$?
+     fi
+     exit &quot;$code&quot;
+   }
+
+   main &quot;$@&quot;
+   &lt;CODE ENDS&gt;
+
+Acknowledgements
+
+   The authors thank the RFC Editor for confirming that there was
+   previously no set convention, at the time of this document&#x27;s
+   publication, for handling long lines in source code inclusions, thus
+   instigating this work.
+
+   The authors thank the following folks for their various contributions
+   while producing this document (sorted by first name): Ben Kaduk,
+   Benoit Claise, Gianmarco Bruno, Italo Busi, Joel Jaeggli, Jonathan
+   Hansford, Lou Berger, Martin Bjorklund, and Rob Wilton.
+
+Authors&#x27; Addresses
+
+   Kent Watsen
+   Watsen Networks
+
+   Email: kent+ietf@watsen.net
+
+
+   Erik Auerswald
+   Individual Contributor
+
+   Email: auerswal@unix-ag.uni-kl.de
+
+
+   Adrian Farrel
+   Old Dog Consulting
+
+   Email: adrian@olddog.co.uk
+
+
+   Qin Wu
+   Huawei Technologies
+
+   Email: bill.wu@huawei.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

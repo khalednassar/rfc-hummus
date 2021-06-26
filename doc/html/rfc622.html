@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc622
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc622/">
+  <meta name="description" content="Scheduling IMP/TIP down time (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc622.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc622.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc622.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc622/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc622/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc622@ietf.org?subject=rfc622" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc622-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc622-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc622-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                     Alex McKenzie
+RFC # 622                                                 BBN-NET
+NIC # 21995                                               March 13, 1974
+
+
+                      <span class="h1">Scheduling IMP/TIP Down Time</span>
+
+
+From time to time it is necessary for an IMP or TIP to be taken down
+other than during its scheduled Preventive Maintenance period.  Examples
+of such cases are retrofit programs and the off-line diagnosis and
+repair of intermittent problems. In the past we have scheduled these
+downs with our &quot;primary site contact&quot; at the affected site; in our view
+this individual was responsible for representing all of the hosts (and
+TIP users) connected to that IMP/TIP. Although this policy has worked
+well in the past, the recent proliferation of Very Distant Hosts,
+together with complaints from representatives of other (local or
+distant) Hosts, has caused us to review our procedures.
+
+This note announces a modification of the previous policy. We will
+continue to schedule IMP/TIP downs with our &quot;primary site contact.&quot;  We
+will continue to consider this individual a representative of all Hosts
+connected to that IMP/TIP, with the following exception. Any Host
+organization wishing to be notified by telephone that down time has been
+scheduled for their IMP/TIP may nominate some individual as a &quot;secondary
+contact.&quot;  The name of the secondary contact, together with a telephone
+number where he/she can be reached, should be submitted to me by any of
+the following methods:
+
+    US mail
+
+        Network Control Center
+        Bolt, Beranek and Newman Inc.
+        50 Moulton Street
+        Cambridge, Mass. 02138
+        ATTN: Alexander McKenzie
+
+    Journal system
+
+        Ident = AAM
+
+    Network mail
+
+        MCKENZIE at BBN-TENEX
+
+The NCC operators will notify the secondary contact by telephone after
+scheduling down time with the primary contact.
+
+
+
+
+<span class="grey">McKenzie                                                        [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc622">RFC 622</a>               Scheduling IMP/TIP Down Time            March 1974</span>
+
+
+Following is the current list of &quot;primary site contacts&quot; (and backup
+&quot;primary&quot; contacts):
+
+    UCLA - Anita Coley (Dave Crocker, Lou Nelson)
+    SRI - Jim White (Don Wallace)
+    UCSB - Ron Stoughton (Bob Ploger)
+    Utah - Dennis Ting
+    BBN (IMP) - Steve Chipman
+    MIT-MAC - Al Vezza (Abhay Bhushan)
+    RAND - Roy Yashimura
+    SDC - Ken Brandon (Doug Pintar)
+    Harvard - Bob Nickerson
+    Lincoln - John Laynor
+    Stanford - Ted Panofsky (Lester Earnest)
+    Illinois - Jack Bouknight (Gary Grossman)
+    Case - Dave Reide (Alan Rosenfeld)
+    Carnegie - Bill Broadley
+    AMES IMP - John McConnell (Paul Zima, Dick Brown)
+    AMES TIP  - Bob Linebarger (Toby Gonzales, Glen Holtzer)
+    MITRE -   Jean Iseli (Susan Poh)
+    RADC - Tom Lawrence (Grant Strength)
+    NBS - Tom Pyke (Bob Rosenthal)
+    ETAC - Capt. Petregal (John Smith)
+    LLL - Robert Abbott (Bob Sherwood)
+    ISI - Tom Boynton (Jerry Pipes)
+    USC - James Pepin
+    GWC - Capt. Goldsmith (Peggy Irving)
+    DOCB - Dave Lillie (Sky Stevenson)
+    SDAC - Buz Owen (Vernon Bruffey, Rick Perez, Bill Whyte)
+    Belvoir - Ken Gibson (Larry Wright)
+    ARPA - Steve Crocker (Pam Cutler)
+    Aberdeen - Melvin Wrublewski
+    CCA - Phil Peterson (Hal Murray)
+    Xerox - Robert Taylor (Bob Metcalfe)
+    FNWC -  R. Mottencamper (Merrill Peterson)
+    LBL - Bob Fink (Jose Alvarez)
+    UCSD - Jim Madden (Grant Rostad)
+    Hawaii - John Davidson
+    RML - Mike Young
+    NORSAR - Per Tveitane (Oddnund Hansen)
+    London - Peter Kirstein (Hugh Gamble)
+    Tymshare - Mike Marrah (Robert Martinez)
+    MIT-IPG - Leo J. Ryan (Mike Padlipsky)
+    Moffett - Ed Mortenson (Gene Lichner)
+    Rutgers - Tom Webb (Jeff Broido)
+    Wright-Patterson - Capt. Woodward (Fred Pitts)
+
+
+
+
+
+<span class="grey">McKenzie                                                        [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc622">RFC 622</a>               Scheduling IMP/TIP Down Time            March 1974</span>
+
+
+Please let me know if the &quot;primary&quot; contact for your site should be
+changed.
+
+
+
+
+
+
+
+
+
+
+       [ This RFC was put into machine readable form for entry ]
+       [ into the online RFC archives by Alex McKenzie with    ]
+       [ support from GTE, formerly BBN Corp.            10/99 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+McKenzie                                                        [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,901 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8746
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-cbor-array-tags/">
+  <meta name="description" content="Concise Binary Object Representation (CBOR) Tags for Typed Arrays (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8746.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8746.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8746.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8746.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8746/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8746/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/cbor/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-cbor-array-tags@ietf.org?subject=draft-ietf-cbor-array-tags" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-cbor-array-tags-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-cbor-array-tags-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-cbor-array-tags-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-cbor-array-tags-08">draft-ietf-cbor-array-tags-08</a>                    Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                   C. Bormann, Ed.
+Request for Comments: 8746                        Universität Bremen TZI
+Category: Standards Track                                  February 2020
+ISSN: 2070-1721
+
+
+   <span class="h1">Concise Binary Object Representation (CBOR) Tags for Typed Arrays</span>
+
+Abstract
+
+   The Concise Binary Object Representation (CBOR), as defined in <a href="/doc/html/rfc7049">RFC</a>
+   <a href="/doc/html/rfc7049">7049</a>, is a data format whose design goals include the possibility of
+   extremely small code size, fairly small message size, and
+   extensibility without the need for version negotiation.
+
+   This document makes use of this extensibility to define a number of
+   CBOR tags for typed arrays of numeric data, as well as additional
+   tags for multi-dimensional and homogeneous arrays.  It is intended as
+   the reference document for the IANA registration of the CBOR tags
+   defined.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8746">https://www.rfc-editor.org/info/rfc8746</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Terminology
+   2.  Typed Arrays
+     2.1.  Types of Numbers
+   3.  Additional Array Tags
+     3.1.  Multi-dimensional Array
+       3.1.1.  Row-Major Order
+       3.1.2.  Column-Major Order
+     3.2.  Homogeneous Array
+   4.  Discussion
+   5.  CDDL Typenames
+   6.  IANA Considerations
+   7.  Security Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   Acknowledgements
+   Contributors
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Concise Binary Object Representation (CBOR) [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] provides
+   for the interchange of structured data without a requirement for a
+   pre-agreed schema.  [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] defines a basic set of data types as
+   well as a tagging mechanism that enables extending the set of data
+   types supported via an IANA registry.
+
+   Recently, a simple form of typed arrays of numeric data has received
+   interest both in the Web graphics community [<a href="#ref-TypedArray">TypedArray</a>] and in the
+   JavaScript specification (see <a href="#section-22.2">Section 22.2</a> (<a href="https://www.ecma-international.org/ecma-262/10.0/index.html#sec-typedarray-objects">https://www.ecma-</a>
+   <a href="https://www.ecma-international.org/ecma-262/10.0/index.html#sec-typedarray-objects">international.org/ecma-262/10.0/index.html#sec-typedarray-objects</a>) of
+   [<a href="#ref-ECMA-ES10">ECMA-ES10</a>]) as well as in corresponding implementations
+   [<a href="#ref-ArrayBuffer">ArrayBuffer</a>].
+
+   Since these typed arrays may carry significant amounts of data, there
+   is interest in interchanging them in CBOR without the need of lengthy
+   conversion of each number in the array.  This can also save space
+   overhead with encoding a type for each element of an array.
+
+   This document defines a number of interrelated CBOR tags that cover
+   these typed arrays, as well as additional tags for multi-dimensional
+   and homogeneous arrays.  It is intended as the reference document for
+   the IANA registration of the tags defined.
+
+   Note that an application that generates CBOR with these tags has
+   considerable freedom in choosing variants (e.g., with respect to
+   endianness, embedded type (signed vs. unsigned), and number of bits
+   per element) or whether a tag defined in this specification is used
+   at all instead of more basic CBOR.  In contrast to representation
+   variants of single CBOR numbers, there is no representation that
+   could be identified as &quot;preferred&quot;.  If deterministic encoding is
+   desired in a CBOR-based protocol making use of these tags, the
+   protocol has to define which of the encoding variants are used for
+   each individual case.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   The term &quot;byte&quot; is used in its now-customary sense as a synonym for
+   &quot;octet&quot;.  Where bit arithmetic is explained, this document uses
+   familiar notation from the programming language C [<a href="#ref-C" title="&quot;Information technology - Programming languages - C&quot;">C</a>] (including
+   C++14&#x27;s 0bnnn binary literals [<a href="#ref-CPlusPlus">CPlusPlus</a>]) with the exception of the
+   operator &quot;**&quot;, which stands for exponentiation.
+
+   The term &quot;array&quot; is used in a general sense in this document unless
+   further specified.  The term &quot;classical CBOR array&quot; describes an
+   array represented with CBOR major type 4.  A &quot;homogeneous array&quot; is
+   an array of elements that are all the same type (the term is neutral
+   as to whether that is a representation type or an application data
+   model type).
+
+   The terms &quot;big endian&quot; and &quot;little endian&quot; are used to indicate a
+   most significant byte first (MSB first) representation of integers
+   and a least significant byte first (LSB first) representation,
+   respectively.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Typed Arrays</span>
+
+   Typed arrays are homogeneous arrays of numbers, all of which are
+   encoded in a single form of binary representation.  The concatenation
+   of these representations is encoded as a single CBOR byte string
+   (major type 2), enclosed by a single tag indicating the type and
+   encoding of all the numbers represented in the byte string.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Types of Numbers</span>
+
+   Three classes of numbers are of interest: unsigned integers (uint),
+   signed integers (two&#x27;s complement, sint), and IEEE 754 binary
+   floating point numbers (which are always signed).  For each of these
+   classes, there are multiple representation lengths in active use:
+
+                +-----------+--------+--------+-----------+
+                | Length ll | uint   | sint   | float     |
+                +===========+========+========+===========+
+                | 0         | uint8  | sint8  | binary16  |
+                +-----------+--------+--------+-----------+
+                | 1         | uint16 | sint16 | binary32  |
+                +-----------+--------+--------+-----------+
+                | 2         | uint32 | sint32 | binary64  |
+                +-----------+--------+--------+-----------+
+                | 3         | uint64 | sint64 | binary128 |
+                +-----------+--------+--------+-----------+
+
+                           Table 1: Length Values
+
+   Here, sintN stands for a signed integer of exactly N bits (for
+   instance, sint16), and uintN stands for an unsigned integer of
+   exactly N bits (for instance, uint32).  The name binaryN stands for
+   the number form of the same name defined in IEEE 754 [<a href="#ref-IEEE754" title="&quot;IEEE Standard for Floating-Point Arithmetic&quot;">IEEE754</a>].
+
+   Since one objective of these tags is to be able to directly ship the
+   ArrayBuffers underlying the Typed Arrays without re-encoding them,
+   and these may be either in big-endian (network byte order) or in
+   little-endian form, we need to define tags for both variants.
+
+   In total, this leads to 24 variants.  In the tag, we need to express
+   the choice between integer and floating point, the signedness (for
+   integers), the endianness, and one of the four length values.
+
+   In order to simplify implementation, a range of tags is being
+   allocated that allows retrieving all this information from the bits
+   of the tag: tag values from 64 to 87.
+
+   The value is split up into 5 bit fields: 0b010, f, s, e, and ll as
+   detailed in Table 2.
+
+     +-------+-------------------------------------------------------+
+     | Field | Use                                                   |
+     +=======+=======================================================+
+     | 0b010 | the constant bits 0, 1, 0                             |
+     +-------+-------------------------------------------------------+
+     | f     | 0 for integer, 1 for float                            |
+     +-------+-------------------------------------------------------+
+     | s     | 0 for float or unsigned integer, 1 for signed integer |
+     +-------+-------------------------------------------------------+
+     | e     | 0 for big endian, 1 for little endian                 |
+     +-------+-------------------------------------------------------+
+     | ll    | A number for the length (Table 1).                    |
+     +-------+-------------------------------------------------------+
+
+              Table 2: Bit Fields in the Low 8 Bits of the Tag
+
+   The number of bytes in each array element can then be calculated by
+   &quot;2**(f + ll)&quot; (or &quot;1 &lt;&lt; (f + ll)&quot; in a typical programming language).
+   (Notice that 0f and ll are the two least significant bits,
+   respectively, of each 4-bit nibble in the byte.)
+
+   In the CBOR representation, the total number of elements in the array
+   is not expressed explicitly but is implied from the length of the
+   byte string and the length of each representation.  It can be
+   computed from the length, in bytes, of the byte string comprising the
+   representation of the array by inverting the previous formula:
+   &quot;bytelength &gt;&gt; (f + ll)&quot;.
+
+   For the uint8/sint8 values, the endianness is redundant.  Only the
+   tag for the big-endian variant is used and assigned as such.  The tag
+   that would signify the little-endian variant of sint8 MUST NOT be
+   used; its tag number is marked as reserved.  As a special case, the
+   tag that would signify the little-endian variant of uint8 is instead
+   assigned to signify that the numbers in the array are using clamped
+   conversion from integers, as described in more detail in
+   <a href="#section-7.1.11">Section 7.1.11</a> (<a href="http://www.ecma-international.org/ecma-262/6.0/#sec-touint8clamp">http://www.ecma-international.org/ecma-262/6.0/#sec-</a>
+   <a href="http://www.ecma-international.org/ecma-262/6.0/#sec-touint8clamp">touint8clamp</a>) of the ES10 JavaScript specification (&quot;ToUint8Clamp&quot;)
+   [<a href="#ref-ECMA-ES10">ECMA-ES10</a>]; the assumption here is that a program-internal
+   representation of this array after decoding would be marked this way
+   for further processing providing &quot;roundtripping&quot; of JavaScript-typed
+   arrays through CBOR.
+
+   IEEE 754 binary floating numbers are always signed.  Therefore, for
+   the float variants (&quot;f&quot; == 1), there is no need to distinguish
+   between signed and unsigned variants; the &quot;s&quot; bit is always zero.
+   The tag numbers where &quot;s&quot; would be one (which would have tag values
+   88 to 95) remain free to use by other specifications.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Additional Array Tags</span>
+
+   This specification defines three additional array tags.  The Multi-
+   dimensional Array tags can be combined with classical CBOR arrays as
+   well as with Typed Arrays in order to build multi-dimensional arrays
+   with constant numbers of elements in the sub-arrays.  The Homogeneous
+   Array tag can be used as a signal by an application to identify a
+   classical CBOR array as a homogeneous array, even when a Typed Array
+   does not apply.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Multi-dimensional Array</span>
+
+   A multi-dimensional array is represented as a tagged array that
+   contains two (one-dimensional) arrays.  The first array defines the
+   dimensions of the multi-dimensional array (in the sequence of outer
+   dimensions towards inner dimensions) while the second array
+   represents the contents of the multi-dimensional array.  If the
+   second array is itself tagged as a Typed Array, then the element type
+   of the multi-dimensional array is known to be the same type as that
+   of the Typed Array.
+
+   Two tags are defined by this document: one for elements arranged in
+   row-major order and another for column-major order [<a href="#ref-RowColMajor">RowColMajor</a>].
+
+<span class="h4"><a class="selflink" id="section-3.1.1" href="#section-3.1.1">3.1.1</a>.  Row-Major Order</span>
+
+   Tag:  40
+
+   Data Item:  Array (major type 4) of two arrays: one array (major type
+      4) of dimensions, which are unsigned integers distinct from zero;
+      and one array (any one of a CBOR array of major type 4, a Typed
+      Array, or a Homogeneous Array) of elements.
+
+   Data in the second array consists of consecutive values where the
+   last dimension is considered contiguous (row-major order).
+
+   Figure 1 shows a declaration of a two-dimensional array in the C
+   language, a representation of that in CBOR using both a multi-
+   dimensional array tag and a typed array tag.
+
+   uint16_t a[2][3] = {
+     {2, 4, 8},   /* row 0 */
+     {4, 16, 256},
+   };
+
+   &lt;Tag 40&gt; # multi-dimensional array tag
+      82       # array(2)
+        82      # array(2)
+          02     # unsigned(2) 1st Dimension
+          03     # unsigned(3) 2nd Dimension
+        &lt;Tag 65&gt; # uint16 array
+          4c     # byte string(12)
+            0002 # unsigned(2)
+            0004 # unsigned(4)
+            0008 # unsigned(8)
+            0004 # unsigned(4)
+            0010 # unsigned(16)
+            0100 # unsigned(256)
+
+              Figure 1: Multi-dimensional Array in C and CBOR
+
+   Figure 2 shows the same two-dimensional array using the multi-
+   dimensional array tag in conjunction with a basic CBOR array (which,
+   with the small numbers chosen for the example, happens to be
+   shorter).
+
+   &lt;Tag 40&gt; # multi-dimensional array tag
+      82       # array(2)
+        82      # array(2)
+          02     # unsigned(2) 1st Dimension
+          03     # unsigned(3) 2nd Dimension
+        86     # array(6)
+          02      # unsigned(2)
+          04      # unsigned(4)
+          08      # unsigned(8)
+          04      # unsigned(4)
+          10      # unsigned(16)
+          19 0100 # unsigned(256)
+
+          Figure 2: Multi-dimensional Array Using Basic CBOR Array
+
+<span class="h4"><a class="selflink" id="section-3.1.2" href="#section-3.1.2">3.1.2</a>.  Column-Major Order</span>
+
+   The multi-dimensional arrays specified in the previous sub-subsection
+   are in &quot;row major&quot; order, which is the preferred order for the
+   purposes of this specification.  An analogous representation that
+   uses &quot;column major&quot; order arrays is provided in this subsection under
+   the tag 1040, as illustrated in Figure 3.
+
+   Tag:  1040
+
+   Data Item:  The same as tag 40, except the data in the second array
+      consists of consecutive values where the first dimension is
+      considered contiguous (column-major order).
+
+   &lt;Tag 1040&gt; # multi-dimensional array tag, column-major order
+      82       # array(2)
+        82      # array(2)
+          02     # unsigned(2) 1st Dimension
+          03     # unsigned(3) 2nd Dimension
+        86     # array(6)
+          02      # unsigned(2)
+          04      # unsigned(4)
+          04      # unsigned(4)
+          10      # unsigned(16)
+          08      # unsigned(8)
+          19 0100 # unsigned(256)
+
+     Figure 3: Multi-dimensional Array Using Basic CBOR Array, Column-
+                                Major Order
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Homogeneous Array</span>
+
+   Tag:  41
+
+   Data Item:  Array (major type 4)
+
+   This tag identifies the classical CBOR array (a one-dimensional
+   array) tagged by it as a homogeneous array, that is, it has elements
+   that are all of the same application model data type.  The element
+   type of the array is therefore determined by the application model
+   data type of the first array element.
+
+   This can be used in application data models that apply specific
+   semantics to homogeneous arrays.  Also, in certain cases,
+   implementations in strongly typed languages may be able to create
+   native homogeneous arrays of specific types instead of ordered lists
+   while decoding.  Which CBOR data items constitute elements of the
+   same application type is specific to the application.
+
+   Figure 4 shows an example for a homogeneous array of booleans in C++
+   [<a href="#ref-CPlusPlus">CPlusPlus</a>] and CBOR.
+
+   bool boolArray[2] = { true, false };
+
+   &lt;Tag 41&gt;  # Homogeneous Array Tag
+      82           #array(2)
+         F5        # true
+         F4        # false
+
+                Figure 4: Homogeneous Array in C++ and CBOR
+
+   Figure 5 extends the example with a more complex structure.
+
+   typedef struct {
+     bool active;
+     int value;
+   } foo;
+   foo myArray[2] = { {true, 3}, {true, -4} };
+
+   &lt;Tag 41&gt;
+       82  # array(2)
+          82  #  array(2)
+                F5  # true
+                03  # 3
+          82 # array(2)
+                F5  # true
+                23  # -4
+
+                Figure 5: Homogeneous Array in C++ and CBOR
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Discussion</span>
+
+   Support for both little- and big-endian representation may seem out
+   of character with CBOR, which is otherwise fully big endian.  This
+   support is in line with the intended use of the typed arrays and the
+   objective not to require conversion of each array element.
+
+   This specification allocates a sizable chunk out of the single-byte
+   tag space.  This use of code point space is justified by the wide use
+   of typed arrays in data interchange.
+
+   Providing a column-major order variant of the multi-dimensional array
+   may seem superfluous to some and useful to others.  It is cheap to
+   define the additional tag so that it is available when actually
+   needed.  Allocating it out of a different number space makes the
+   preference for row-major evident.
+
+   Applying a Homogeneous Array tag to a Typed Array would usually be
+   redundant and is therefore not provided by the present specification.
+
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  CDDL Typenames</span>
+
+   For use with CDDL [<a href="/doc/html/rfc8610" title="&quot;Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures&quot;">RFC8610</a>], the typenames defined in Figure 6 are
+   recommended:
+
+   ta-uint8 = #6.64(bstr)
+   ta-uint16be = #6.65(bstr)
+   ta-uint32be = #6.66(bstr)
+   ta-uint64be = #6.67(bstr)
+   ta-uint8-clamped = #6.68(bstr)
+   ta-uint16le = #6.69(bstr)
+   ta-uint32le = #6.70(bstr)
+   ta-uint64le = #6.71(bstr)
+   ta-sint8 = #6.72(bstr)
+   ta-sint16be = #6.73(bstr)
+   ta-sint32be = #6.74(bstr)
+   ta-sint64be = #6.75(bstr)
+   ; reserved: #6.76(bstr)
+   ta-sint16le = #6.77(bstr)
+   ta-sint32le = #6.78(bstr)
+   ta-sint64le = #6.79(bstr)
+   ta-float16be = #6.80(bstr)
+   ta-float32be = #6.81(bstr)
+   ta-float64be = #6.82(bstr)
+   ta-float128be = #6.83(bstr)
+   ta-float16le = #6.84(bstr)
+   ta-float32le = #6.85(bstr)
+   ta-float64le = #6.86(bstr)
+   ta-float128le = #6.87(bstr)
+   homogeneous&lt;array&gt; = #6.41(array)
+   multi-dim&lt;dim, array&gt; = #6.40([dim, array])
+   multi-dim-column-major&lt;dim, array&gt; = #6.1040([dim, array])
+
+                  Figure 6: Recommended Typenames for CDDL
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+   IANA has allocated the tags in Table 3 using this document as the
+   specification reference.  (The reserved value is for a future
+   revision of typed array tags.)
+
+   The allocations were assigned from the &quot;specification required&quot; space
+   (24..255) with the exception of 1040, which was assigned from the
+   &quot;first come first served&quot; space (256..).
+
+       +------+----------------------+----------------------------+
+       |  Tag | Data Item            | Semantics                  |
+       +======+======================+============================+
+       |   40 | array of two arrays* | Multi-dimensional Array,   |
+       |      |                      | row-major order            |
+       +------+----------------------+----------------------------+
+       |   41 | array                | Homogeneous Array          |
+       +------+----------------------+----------------------------+
+       |   64 | byte string          | uint8 Typed Array          |
+       +------+----------------------+----------------------------+
+       |   65 | byte string          | uint16, big endian, Typed  |
+       |      |                      | Array                      |
+       +------+----------------------+----------------------------+
+       |   66 | byte string          | uint32, big endian, Typed  |
+       |      |                      | Array                      |
+       +------+----------------------+----------------------------+
+       |   67 | byte string          | uint64, big endian, Typed  |
+       |      |                      | Array                      |
+       +------+----------------------+----------------------------+
+       |   68 | byte string          | uint8 Typed Array, clamped |
+       |      |                      | arithmetic                 |
+       +------+----------------------+----------------------------+
+       |   69 | byte string          | uint16, little endian,     |
+       |      |                      | Typed Array                |
+       +------+----------------------+----------------------------+
+       |   70 | byte string          | uint32, little endian,     |
+       |      |                      | Typed Array                |
+       +------+----------------------+----------------------------+
+       |   71 | byte string          | uint64, little endian,     |
+       |      |                      | Typed Array                |
+       +------+----------------------+----------------------------+
+       |   72 | byte string          | sint8 Typed Array          |
+       +------+----------------------+----------------------------+
+       |   73 | byte string          | sint16, big endian, Typed  |
+       |      |                      | Array                      |
+       +------+----------------------+----------------------------+
+       |   74 | byte string          | sint32, big endian, Typed  |
+       |      |                      | Array                      |
+       +------+----------------------+----------------------------+
+       |   75 | byte string          | sint64, big endian, Typed  |
+       |      |                      | Array                      |
+       +------+----------------------+----------------------------+
+       |   76 | byte string          | (reserved)                 |
+       +------+----------------------+----------------------------+
+       |   77 | byte string          | sint16, little endian,     |
+       |      |                      | Typed Array                |
+       +------+----------------------+----------------------------+
+       |   78 | byte string          | sint32, little endian,     |
+       |      |                      | Typed Array                |
+       +------+----------------------+----------------------------+
+       |   79 | byte string          | sint64, little endian,     |
+       |      |                      | Typed Array                |
+       +------+----------------------+----------------------------+
+       |   80 | byte string          | IEEE 754 binary16, big     |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   81 | byte string          | IEEE 754 binary32, big     |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   82 | byte string          | IEEE 754 binary64, big     |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   83 | byte string          | IEEE 754 binary128, big    |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   84 | byte string          | IEEE 754 binary16, little  |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   85 | byte string          | IEEE 754 binary32, little  |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   86 | byte string          | IEEE 754 binary64, little  |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       |   87 | byte string          | IEEE 754 binary128, little |
+       |      |                      | endian, Typed Array        |
+       +------+----------------------+----------------------------+
+       | 1040 | array of two arrays* | Multi-dimensional Array,   |
+       |      |                      | column-major order         |
+       +------+----------------------+----------------------------+
+
+                         Table 3: Values for Tags
+
+   *40 or 1040 data item: The second element of the outer array in the
+   data item is a native CBOR array (major type 4) or Typed Array (one
+   of tag 64..87)
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   The security considerations of [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] apply; special attention is
+   drawn to the second paragraph of <a href="/doc/html/rfc7049#section-8">Section&nbsp;8 of [RFC7049]</a>.
+
+   The tag for homogeneous arrays makes a promise about its tagged data
+   item, which a maliciously constructed CBOR input can then choose to
+   ignore.  As always, the decoder therefore has to ensure that it is
+   not driven into an undefined state by array elements that do not
+   fulfill the promise, and that it does continue to fulfill its API
+   contract in this case as well.
+
+   As with all formats that are used for data interchange, an attacker
+   may have control over the shape of the data delivered as input to the
+   application, which therefore needs to validate that shape before it
+   makes it the basis of its further processing.  One unique aspect that
+   typed arrays add to this is that an attacker might substitute a
+   Uint8ClampedArray for where the application expects a Uint8Array, or
+   vice versa, potentially leading to very different (and unexpected)
+   processing semantics of the in-memory data structures constructed.
+   Applications that could be affected by this will therefore need to be
+   careful about making this distinction in their input validation.
+
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-C">C</a>]        International Organization for Standardization,
+              &quot;Information technology - Programming languages - C&quot;, ISO/
+              IEC 9899:2018, Fourth Edition, June 2018.
+
+   [<a id="ref-CPlusPlus">CPlusPlus</a>]
+              International Organization for Standardization,
+              &quot;Programming languages - C++&quot;, ISO/IEC 14882:2017, Fifth
+              Edition, December 2017.
+
+   [<a id="ref-ECMA-ES10">ECMA-ES10</a>]
+              ECMA International, &quot;ECMAScript 2019 Language
+              Specification&quot;, Standard ECMA-262 10th Edition, June 2019,
+              &lt;<a href="https://www.ecma-international.org/ecma-262/10.0/index.html">https://www.ecma-international.org/ecma-262/10.0/</a>
+              <a href="https://www.ecma-international.org/ecma-262/10.0/index.html">index.html</a>&gt;.
+
+   [<a id="ref-IEEE754">IEEE754</a>]  IEEE, &quot;IEEE Standard for Floating-Point Arithmetic&quot;,
+              IEEE 754-2019, DOI 10.1109/IEEESTD.2019.8766229,
+              &lt;<a href="https://ieeexplore.ieee.org/document/8766229">https://ieeexplore.ieee.org/document/8766229</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC7049">RFC7049</a>]  Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, <a href="/doc/html/rfc7049">RFC 7049</a>, DOI 10.17487/RFC7049,
+              October 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7049">https://www.rfc-editor.org/info/rfc7049</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8610">RFC8610</a>]  Birkholz, H., Vigano, C., and C. Bormann, &quot;Concise Data
+              Definition Language (CDDL): A Notational Convention to
+              Express Concise Binary Object Representation (CBOR) and
+              JSON Data Structures&quot;, <a href="/doc/html/rfc8610">RFC 8610</a>, DOI 10.17487/RFC8610,
+              June 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8610">https://www.rfc-editor.org/info/rfc8610</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-ArrayBuffer">ArrayBuffer</a>]
+              Mozilla Developer Network, &quot;JavaScript typed arrays&quot;, June
+              2010, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">https://developer.mozilla.org/en-</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">US/docs/Web/JavaScript/Typed_arrays</a>&gt;.
+
+   [<a id="ref-RowColMajor">RowColMajor</a>]
+              Wikipedia, &quot;Row- and column-major order&quot;, September 2019,
+              &lt;<a href="https://en.wikipedia.org/w/index.php?title=Row-_and_column-major_order&amp;oldid=917905325">https://en.wikipedia.org/w/index.php?title=Row-</a>
+              <a href="https://en.wikipedia.org/w/index.php?title=Row-_and_column-major_order&amp;oldid=917905325">_and_column-major_order&amp;oldid=917905325</a>&gt;.
+
+   [<a id="ref-TypedArray">TypedArray</a>]
+              Vukicevic, V. and K. Russell, &quot;Typed Array Specification&quot;,
+              February 2011,
+              &lt;<a href="https://web.archive.org/web/20110207024413/">https://web.archive.org/web/20110207024413/</a>
+              <a href="http://www.khronos.org/registry/typedarray/specs/latest/">http://www.khronos.org/registry/typedarray/specs/latest/</a>&gt;.
+
+Acknowledgements
+
+   Jim Schaad provided helpful comments and reminded us that column-
+   major order still is in use.  Jeffrey Yaskin helped improve the
+   definition of homogeneous arrays.  IANA helped correct an error in a
+   previous draft version.  Francesca Palombini acted as Shepherd, and
+   Alexey Melnikov as responsible Area Director.  Elwyn Davies as Gen-
+   ART reviewer and IESG members Martin Vigoureux, Adam Roach, Roman
+   Danyliw, and Benjamin Kaduk helped in finding further improvements to
+   the text; thanks also to the other reviewers.
+
+Contributors
+
+   The initial draft version of this specification was written by
+   Johnathan Roatch &lt;roatch@gmail.com&gt;.  Many thanks for getting this
+   ball rolling.
+
+   Glenn Engel suggested the tags for multi-dimensional arrays and
+   homogeneous arrays.
+
+Author&#x27;s Address
+
+   Carsten Bormann (editor)
+   Universität Bremen TZI
+   Postfach 330440
+   D-28359 Bremen
+   Germany
+
+   Phone: +49-421-218-63921
+   Email: cabo@tzi.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

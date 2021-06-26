@@ -1,0 +1,769 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8812
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-cose-webauthn-algorithms/">
+  <meta name="description" content="CBOR Object Signing and Encryption (COSE) and JSON Object Signing and Encryption (JOSE) Registrations for Web Authentication (WebAuthn) Algorithms (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8812.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8812.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8812.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8812.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8812/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8812/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/cose/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-cose-webauthn-algorithms@ietf.org?subject=draft-ietf-cose-webauthn-algorithms" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-cose-webauthn-algorithms-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-cose-webauthn-algorithms-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-cose-webauthn-algorithms-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-cose-webauthn-algorithms-08">draft-ietf-cose-webauthn-algorithms-08</a>           Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          M. Jones
+Request for Comments: 8812                                     Microsoft
+Category: Standards Track                                    August 2020
+ISSN: 2070-1721
+
+
+ <span class="h1">CBOR Object Signing and Encryption (COSE) and JSON Object Signing and</span>
+   <span class="h1">Encryption (JOSE) Registrations for Web Authentication (WebAuthn)</span>
+                               <span class="h1">Algorithms</span>
+
+Abstract
+
+   The W3C Web Authentication (WebAuthn) specification and the FIDO
+   Alliance FIDO2 Client to Authenticator Protocol (CTAP) specification
+   use CBOR Object Signing and Encryption (COSE) algorithm identifiers.
+   This specification registers the following algorithms (which are used
+   by WebAuthn and CTAP implementations) in the IANA &quot;COSE Algorithms&quot;
+   registry: RSASSA-PKCS1-v1_5 using SHA-256, SHA-384, SHA-512, and SHA-
+   1; and Elliptic Curve Digital Signature Algorithm (ECDSA) using the
+   secp256k1 curve and SHA-256.  It registers the secp256k1 elliptic
+   curve in the IANA &quot;COSE Elliptic Curves&quot; registry.  Also, for use
+   with JSON Object Signing and Encryption (JOSE), it registers the
+   algorithm ECDSA using the secp256k1 curve and SHA-256 in the IANA
+   &quot;JSON Web Signature and Encryption Algorithms&quot; registry and the
+   secp256k1 elliptic curve in the IANA &quot;JSON Web Key Elliptic Curve&quot;
+   registry.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8812">https://www.rfc-editor.org/info/rfc8812</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Requirements Notation and Conventions
+   2.  RSASSA-PKCS1-v1_5 Signature Algorithm
+   3.  Using secp256k1 with JOSE and COSE
+     3.1.  JOSE and COSE secp256k1 Curve Key Representations
+     3.2.  ECDSA Signature with secp256k1 Curve
+     3.3.  Other Uses of the secp256k1 Elliptic Curve
+   4.  IANA Considerations
+     4.1.  COSE Algorithms Registrations
+     4.2.  COSE Elliptic Curves Registrations
+     4.3.  JOSE Algorithms Registrations
+     4.4.  JSON Web Key Elliptic Curves Registrations
+   5.  Security Considerations
+     5.1.  RSA Key Size Security Considerations
+     5.2.  RSASSA-PKCS1-v1_5 with SHA-2 Security Considerations
+     5.3.  RSASSA-PKCS1-v1_5 with SHA-1 Security Considerations
+     5.4.  secp256k1 Security Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgements
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This specification defines how to use several algorithms with CBOR
+   Object Signing and Encryption (COSE) [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>] that are used by
+   implementations of the W3C Web Authentication (WebAuthn) [<a href="#ref-WebAuthn" title="&quot;Web Authentication: An API for accessing Public Key Credentials - Level 1&quot;">WebAuthn</a>]
+   and FIDO Alliance FIDO2 Client to Authenticator Protocol (CTAP)
+   [<a href="#ref-CTAP" title="&quot;Client to Authenticator Protocol (CTAP)&quot;">CTAP</a>] specifications.  This specification registers these algorithms
+   in the IANA &quot;COSE Algorithms&quot; registry [<a href="#ref-IANA.COSE.Algorithms">IANA.COSE.Algorithms</a>] and
+   registers an elliptic curve in the IANA &quot;COSE Elliptic Curves&quot;
+   registry [<a href="#ref-IANA.COSE.Curves">IANA.COSE.Curves</a>].  This specification also registers a
+   corresponding algorithm for use with JSON Object Signing and
+   Encryption (JOSE) [<a href="/doc/html/rfc7515" title="&quot;JSON Web Signature (JWS)&quot;">RFC7515</a>] in the IANA &quot;JSON Web Signature and
+   Encryption Algorithms&quot; registry [<a href="#ref-IANA.JOSE.Algorithms">IANA.JOSE.Algorithms</a>] and registers
+   an elliptic curve in the IANA &quot;JSON Web Key Elliptic Curve&quot; registry
+   [<a href="#ref-IANA.JOSE.Curves">IANA.JOSE.Curves</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Notation and Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  RSASSA-PKCS1-v1_5 Signature Algorithm</span>
+
+   The RSASSA-PKCS1-v1_5 signature algorithm is defined in [<a href="/doc/html/rfc8017" title="&quot;PKCS #1: RSA Cryptography Specifications Version 2.2&quot;">RFC8017</a>].
+   The RSASSA-PKCS1-v1_5 signature algorithm is parameterized with a
+   hash function (h).
+
+   A key of size 2048 bits or larger MUST be used with these algorithms.
+   Implementations need to check that the key type is &#x27;RSA&#x27; when
+   creating or verifying a signature.
+
+   The RSASSA-PKCS1-v1_5 algorithms specified in this document are in
+   the following table.
+
+      +=======+========+=========+===================+=============+
+      | Name  | Value  | Hash    | Description       | Recommended |
+      +=======+========+=========+===================+=============+
+      | RS256 | -257   | SHA-256 | RSASSA-PKCS1-v1_5 | No          |
+      |       |        |         | using SHA-256     |             |
+      +-------+--------+---------+-------------------+-------------+
+      | RS384 | -258   | SHA-384 | RSASSA-PKCS1-v1_5 | No          |
+      |       |        |         | using SHA-384     |             |
+      +-------+--------+---------+-------------------+-------------+
+      | RS512 | -259   | SHA-512 | RSASSA-PKCS1-v1_5 | No          |
+      |       |        |         | using SHA-512     |             |
+      +-------+--------+---------+-------------------+-------------+
+      | RS1   | -65535 | SHA-1   | RSASSA-PKCS1-v1_5 | Deprecated  |
+      |       |        |         | using SHA-1       |             |
+      +-------+--------+---------+-------------------+-------------+
+
+               Table 1: RSASSA-PKCS1-v1_5 Algorithm Values
+
+   Security considerations for use of the first three algorithms are in
+   <a href="#section-5.2">Section 5.2</a>.  Security considerations for use of the last algorithm
+   are in <a href="#section-5.3">Section 5.3</a>.
+
+   Note that these algorithms are already present in the IANA &quot;JSON Web
+   Signature and Encryption Algorithms&quot; registry [<a href="#ref-IANA.JOSE.Algorithms">IANA.JOSE.Algorithms</a>],
+   and so these registrations are only for the IANA &quot;COSE Algorithms&quot;
+   registry [<a href="#ref-IANA.COSE.Algorithms">IANA.COSE.Algorithms</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Using secp256k1 with JOSE and COSE</span>
+
+   This section defines algorithm encodings and representations enabling
+   the Standards for Efficient Cryptography Group (SECG) elliptic curve
+   secp256k1 [<a href="#ref-SEC2" title="&quot;SEC 2: Recommended Elliptic Curve Domain Parameters&quot;">SEC2</a>] to be used for JOSE [<a href="/doc/html/rfc7515" title="&quot;JSON Web Signature (JWS)&quot;">RFC7515</a>] and COSE [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>]
+   messages.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  JOSE and COSE secp256k1 Curve Key Representations</span>
+
+   The SECG elliptic curve secp256k1 [<a href="#ref-SEC2" title="&quot;SEC 2: Recommended Elliptic Curve Domain Parameters&quot;">SEC2</a>] is represented in a JSON Web
+   Key (JWK) [<a href="/doc/html/rfc7517" title="&quot;JSON Web Key (JWK)&quot;">RFC7517</a>] using these values:
+
+   *  &quot;kty&quot;: &quot;EC&quot;
+   *  &quot;crv&quot;: &quot;secp256k1&quot;
+
+   plus the values needed to represent the curve point, as defined in
+   <a href="/doc/html/rfc7518#section-6.2.1">Section&nbsp;6.2.1 of [RFC7518]</a>.  As a compressed point encoding
+   representation is not defined for JWK elliptic curve points, the
+   uncompressed point encoding defined there MUST be used.  The &quot;x&quot; and
+   &quot;y&quot; values represented MUST both be exactly 256 bits, with any
+   leading zeros preserved.  Other optional values such as &quot;alg&quot; MAY
+   also be present.
+
+   It is represented in a COSE_Key [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>] using these values:
+
+   *  &quot;kty&quot; (1): &quot;EC2&quot; (2)
+   *  &quot;crv&quot; (-1): &quot;secp256k1&quot; (8)
+
+   plus the values needed to represent the curve point, as defined in
+   <a href="/doc/html/rfc8152#section-13.1.1">Section&nbsp;13.1.1 of [RFC8152]</a>.  Either the uncompressed or compressed
+   point encoding representations defined there can be used.  The &quot;x&quot;
+   value represented MUST be exactly 256 bits, with any leading zeros
+   preserved.  If the uncompressed representation is used, the &quot;y&quot; value
+   represented MUST likewise be exactly 256 bits, with any leading zeros
+   preserved; if the compressed representation is used, the &quot;y&quot; value is
+   a boolean value, as specified in <a href="/doc/html/rfc8152#section-13.1.1">Section&nbsp;13.1.1 of [RFC8152]</a>.  Other
+   optional values such as &quot;alg&quot; (3) MAY also be present.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  ECDSA Signature with secp256k1 Curve</span>
+
+   The ECDSA signature algorithm is defined in [<a href="#ref-DSS" title="&quot;Digital Signature Standard (DSS)&quot;">DSS</a>].  This
+   specification defines the &quot;ES256K&quot; algorithm identifier, which is
+   used to specify the use of ECDSA with the secp256k1 curve and the
+   SHA-256 [<a href="#ref-DSS" title="&quot;Digital Signature Standard (DSS)&quot;">DSS</a>] cryptographic hash function.  Implementations need to
+   check that the key type is &quot;EC&quot; for JOSE or &quot;EC2&quot; (2) for COSE and
+   that the curve of the key is secp256k1 when creating or verifying a
+   signature.
+
+   The ECDSA secp256k1 SHA-256 digital signature is generated as
+   follows:
+
+   1.  Generate a digital signature of the JWS Signing Input or the COSE
+       Sig_structure using ECDSA secp256k1 SHA-256 with the desired
+       private key.  The output will be the pair (R, S), where R and S
+       are 256-bit unsigned integers.
+
+   2.  Turn R and S into octet sequences in big-endian order, with each
+       array being 32 octets long.  The octet sequence representations
+       MUST NOT be shortened to omit any leading zero octets contained
+       in the values.
+
+   3.  Concatenate the two octet sequences in the order R and then S.
+       (Note that many ECDSA implementations will directly produce this
+       concatenation as their output.)
+
+   4.  The resulting 64-octet sequence is the JWS Signature or COSE
+       signature value.
+
+   Implementations SHOULD use a deterministic algorithm to generate the
+   ECDSA nonce, k, such as the algorithm defined in [<a href="/doc/html/rfc6979" title="&quot;Deterministic Usage of the Digital Signature Algorithm (DSA) and Elliptic Curve Digital Signature Algorithm (ECDSA)&quot;">RFC6979</a>].  However,
+   in situations where devices are vulnerable to physical attacks,
+   deterministic ECDSA has been shown to be susceptible to fault
+   injection attacks [<a href="#ref-KUDELSKI17">KUDELSKI17</a>] [<a href="#ref-EURO-SP18">EURO-SP18</a>].  Where this is a
+   possibility, implementations SHOULD implement appropriate
+   countermeasures.  Where there are specific certification requirements
+   (such as FIPS approval), implementors should check whether
+   deterministic ECDSA is an approved nonce generation method.
+
+   The ECDSA secp256k1 SHA-256 algorithm specified in this document uses
+   these identifiers:
+
+         +========+=======+=======================+=============+
+         | Name   | Value | Description           | Recommended |
+         +========+=======+=======================+=============+
+         | ES256K | -47   | ECDSA using secp256k1 | No          |
+         |        |       | curve and SHA-256     |             |
+         +--------+-------+-----------------------+-------------+
+
+                     Table 2: ECDSA Algorithm Values
+
+   When using a JWK or COSE_Key for this algorithm, the following checks
+   are made:
+
+   *  The &quot;kty&quot; field MUST be present, and it MUST be &quot;EC&quot; for JOSE or
+      &quot;EC2&quot; for COSE.
+
+   *  The &quot;crv&quot; field MUST be present, and it MUST represent the
+      &quot;secp256k1&quot; elliptic curve.
+
+   *  If the &quot;alg&quot; field is present, it MUST represent the &quot;ES256K&quot;
+      algorithm.
+
+   *  If the &quot;key_ops&quot; field is present, it MUST include &quot;sign&quot; when
+      creating an ECDSA signature.
+
+   *  If the &quot;key_ops&quot; field is present, it MUST include &quot;verify&quot; when
+      verifying an ECDSA signature.
+
+   *  If the JWK &quot;use&quot; field is present, its value MUST be &quot;sig&quot;.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Other Uses of the secp256k1 Elliptic Curve</span>
+
+   This specification defines how to use the secp256k1 curve for ECDSA
+   signatures for both JOSE and COSE implementations.  While in theory
+   the curve could also be used for ECDH-ES key agreement, it is beyond
+   the scope of this specification to state whether this is or is not
+   advisable.  Thus, whether or not to recommend its use with ECDH-ES is
+   left for experts to decide in future specifications.
+
+   When used for ECDSA, the secp256k1 curve MUST be used only with the
+   &quot;ES256K&quot; algorithm identifier and not any others, including not with
+   the COSE &quot;ES256&quot; identifier.  Note that the &quot;ES256K&quot; algorithm
+   identifier needed to be introduced for JOSE to sign with the
+   secp256k1 curve because the JOSE &quot;ES256&quot; algorithm is defined to be
+   used only with the P-256 curve.  The COSE treatment of how to sign
+   with secp256k1 is intentionally parallel to that for JOSE, where the
+   secp256k1 curve MUST be used with the &quot;ES256K&quot; algorithm identifier.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  COSE Algorithms Registrations</span>
+
+   IANA has registered the following values in the &quot;COSE Algorithms&quot;
+   registry [<a href="#ref-IANA.COSE.Algorithms">IANA.COSE.Algorithms</a>].
+
+   Name:  RS256
+   Value:  -257
+   Description:  RSASSA-PKCS1-v1_5 using SHA-256
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-2">Section&nbsp;2 of RFC 8812</a>
+   Recommended:  No
+
+   Name:  RS384
+   Value:  -258
+   Description:  RSASSA-PKCS1-v1_5 using SHA-384
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-2">Section&nbsp;2 of RFC 8812</a>
+   Recommended:  No
+
+   Name:  RS512
+   Value:  -259
+   Description:  RSASSA-PKCS1-v1_5 using SHA-512
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-2">Section&nbsp;2 of RFC 8812</a>
+   Recommended:  No
+
+   Name:  RS1
+   Value:  -65535
+   Description:  RSASSA-PKCS1-v1_5 using SHA-1
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-2">Section&nbsp;2 of RFC 8812</a>
+   Recommended:  Deprecated
+
+   Name:  ES256K
+   Value:  -47
+   Description:  ECDSA using secp256k1 curve and SHA-256
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-3.2">Section&nbsp;3.2 of RFC 8812</a>
+   Recommended:  No
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  COSE Elliptic Curves Registrations</span>
+
+   IANA has registered the following value in the &quot;COSE Elliptic Curves&quot;
+   registry [<a href="#ref-IANA.COSE.Curves">IANA.COSE.Curves</a>].
+
+   Name:  secp256k1
+   Value:  8
+   Key Type:  EC2
+   Description:  SECG secp256k1 curve
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-3.1">Section&nbsp;3.1 of RFC 8812</a>
+   Recommended:  No
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  JOSE Algorithms Registrations</span>
+
+   IANA has registered the following value in the &quot;JSON Web Signature
+   and Encryption Algorithms&quot; registry [<a href="#ref-IANA.JOSE.Algorithms">IANA.JOSE.Algorithms</a>].
+
+   Algorithm Name:  ES256K
+   Algorithm Description:  ECDSA using secp256k1 curve and SHA-256
+   Algorithm Usage Location(s):  alg
+   JOSE Implementation Requirements:  Optional
+   Change Controller:  IESG
+   Reference:  <a href="/doc/html/rfc8812#section-3.2">Section&nbsp;3.2 of RFC 8812</a>
+   Algorithm Analysis Document(s):  [<a href="#ref-SEC2" title="&quot;SEC 2: Recommended Elliptic Curve Domain Parameters&quot;">SEC2</a>]
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  JSON Web Key Elliptic Curves Registrations</span>
+
+   IANA has registered the following value in the &quot;JSON Web Key Elliptic
+   Curve&quot; registry [<a href="#ref-IANA.JOSE.Curves">IANA.JOSE.Curves</a>].
+
+   Curve Name:  secp256k1
+   Curve Description:  SECG secp256k1 curve
+   JOSE Implementation Requirements:  Optional
+   Change Controller:  IESG
+   Specification Document(s):  <a href="/doc/html/rfc8812#section-3.1">Section&nbsp;3.1 of RFC 8812</a>
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  RSA Key Size Security Considerations</span>
+
+   The security considerations on key sizes for RSA algorithms from
+   <a href="/doc/html/rfc8230#section-6.1">Section&nbsp;6.1 of [RFC8230]</a> also apply to the RSA algorithms in this
+   specification.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  RSASSA-PKCS1-v1_5 with SHA-2 Security Considerations</span>
+
+   The security considerations on the use of RSASSA-PKCS1-v1_5 with
+   SHA-2 hash functions (SHA-256, SHA-384, and SHA-512) from <a href="/doc/html/rfc7518#section-8.3">Section&nbsp;8.3
+   of [RFC7518]</a> also apply to their use in this specification.  For that
+   reason, these algorithms are registered as being &quot;Not Recommended&quot;.
+   Likewise, the exponent restrictions described in <a href="/doc/html/rfc7518#section-8.3">Section&nbsp;8.3 of
+   [RFC7518]</a> also apply.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  RSASSA-PKCS1-v1_5 with SHA-1 Security Considerations</span>
+
+   The security considerations on the use of the SHA-1 hash function
+   from [<a href="/doc/html/rfc6194" title="&quot;Security Considerations for the SHA-0 and SHA-1 Message-Digest Algorithms&quot;">RFC6194</a>] apply in this specification.  For that reason, the
+   &quot;RS1&quot; algorithm is registered as &quot;Deprecated&quot;.  Likewise, the
+   exponent restrictions described in <a href="/doc/html/rfc7518#section-8.3">Section&nbsp;8.3 of [RFC7518]</a> also
+   apply.
+
+   A COSE algorithm identifier for this algorithm is nonetheless being
+   registered because deployed Trusted Platform Modules (TPMs) continue
+   to use it; therefore, WebAuthn implementations need a COSE algorithm
+   identifier for &quot;RS1&quot; when TPM attestations using this algorithm are
+   being represented.  New COSE applications and protocols MUST NOT use
+   this algorithm.
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  secp256k1 Security Considerations</span>
+
+   Care should be taken that a secp256k1 key is not mistaken for a P-256
+   [<a href="/doc/html/rfc7518" title="&quot;JSON Web Algorithms (JWA)&quot;">RFC7518</a>] key, given that their representations are the same except
+   for the &quot;crv&quot; value.  As described in <a href="/doc/html/rfc8152#section-8.1.1">Section&nbsp;8.1.1 of [RFC8152]</a>, we
+   currently do not have any way to deal with this attack except to
+   restrict the set of curves that can be used.
+
+   The procedures and security considerations described in the [<a href="#ref-SEC1" title="&quot;SEC 1: Elliptic Curve Cryptography&quot;">SEC1</a>],
+   [<a href="#ref-SEC2" title="&quot;SEC 2: Recommended Elliptic Curve Domain Parameters&quot;">SEC2</a>], and [<a href="#ref-DSS" title="&quot;Digital Signature Standard (DSS)&quot;">DSS</a>] specifications apply to implementations of this
+   specification.
+
+   Timing side-channel attacks are possible if the implementation of
+   scalar multiplication over the curve does not execute in constant
+   time.
+
+   There are theoretical weaknesses with this curve that could result in
+   future attacks.  While these potential weaknesses are not unique to
+   this curve, they are the reason that this curve is registered as
+   &quot;Recommended: No&quot;.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-DSS">DSS</a>]      National Institute of Standards and Technology (NIST),
+              &quot;Digital Signature Standard (DSS)&quot;, FIPS PUB 186-4,
+              DOI 10.6028/NIST.FIPS.186-4, July 2013,
+              &lt;<a href="https://doi.org/10.6028/NIST.FIPS.186-4">https://doi.org/10.6028/NIST.FIPS.186-4</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC6194">RFC6194</a>]  Polk, T., Chen, L., Turner, S., and P. Hoffman, &quot;Security
+              Considerations for the SHA-0 and SHA-1 Message-Digest
+              Algorithms&quot;, <a href="/doc/html/rfc6194">RFC 6194</a>, DOI 10.17487/RFC6194, March 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6194">https://www.rfc-editor.org/info/rfc6194</a>&gt;.
+
+   [<a id="ref-RFC7515">RFC7515</a>]  Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web
+              Signature (JWS)&quot;, <a href="/doc/html/rfc7515">RFC 7515</a>, DOI 10.17487/RFC7515, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7515">https://www.rfc-editor.org/info/rfc7515</a>&gt;.
+
+   [<a id="ref-RFC7517">RFC7517</a>]  Jones, M., &quot;JSON Web Key (JWK)&quot;, <a href="/doc/html/rfc7517">RFC 7517</a>,
+              DOI 10.17487/RFC7517, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7517">https://www.rfc-editor.org/info/rfc7517</a>&gt;.
+
+   [<a id="ref-RFC7518">RFC7518</a>]  Jones, M., &quot;JSON Web Algorithms (JWA)&quot;, <a href="/doc/html/rfc7518">RFC 7518</a>,
+              DOI 10.17487/RFC7518, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7518">https://www.rfc-editor.org/info/rfc7518</a>&gt;.
+
+   [<a id="ref-RFC8017">RFC8017</a>]  Moriarty, K., Ed., Kaliski, B., Jonsson, J., and A. Rusch,
+              &quot;PKCS #1: RSA Cryptography Specifications Version 2.2&quot;,
+              <a href="/doc/html/rfc8017">RFC 8017</a>, DOI 10.17487/RFC8017, November 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8017">https://www.rfc-editor.org/info/rfc8017</a>&gt;.
+
+   [<a id="ref-RFC8152">RFC8152</a>]  Schaad, J., &quot;CBOR Object Signing and Encryption (COSE)&quot;,
+              <a href="/doc/html/rfc8152">RFC 8152</a>, DOI 10.17487/RFC8152, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8152">https://www.rfc-editor.org/info/rfc8152</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8230">RFC8230</a>]  Jones, M., &quot;Using RSA Algorithms with CBOR Object Signing
+              and Encryption (COSE) Messages&quot;, <a href="/doc/html/rfc8230">RFC 8230</a>,
+              DOI 10.17487/RFC8230, September 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8230">https://www.rfc-editor.org/info/rfc8230</a>&gt;.
+
+   [<a id="ref-SEC1">SEC1</a>]     Standards for Efficient Cryptography Group, &quot;SEC 1:
+              Elliptic Curve Cryptography&quot;, Version 2.0, May 2009,
+              &lt;<a href="https://www.secg.org/sec1-v2.pdf">https://www.secg.org/sec1-v2.pdf</a>&gt;.
+
+   [<a id="ref-SEC2">SEC2</a>]     Standards for Efficient Cryptography Group, &quot;SEC 2:
+              Recommended Elliptic Curve Domain Parameters&quot;,
+              Version 2.0, January 2010,
+              &lt;<a href="https://www.secg.org/sec2-v2.pdf">https://www.secg.org/sec2-v2.pdf</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-CTAP">CTAP</a>]     Brand, C., Czeskis, A., Ehrensvärd, J., Jones, M., Kumar,
+              A., Lindemann, R., Powers, A., and J. Verrept, &quot;Client to
+              Authenticator Protocol (CTAP)&quot;, FIDO Alliance Proposed
+              Standard, January 2019, &lt;<a href="https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html">https://fidoalliance.org/specs/</a>
+              <a href="https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html">fido-v2.0-ps-20190130/fido-client-to-authenticator-</a>
+              <a href="https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html">protocol-v2.0-ps-20190130.html</a>&gt;.
+
+   [<a id="ref-EURO-SP18">EURO-SP18</a>]
+              Poddebniak, D., Somorovsky, J., Schinzel, S., Lochter, M.,
+              and P. Rösler, &quot;Attacking Deterministic Signature Schemes
+              using Fault Attacks&quot;, 2018 IEEE European Symposium on
+              Security and Privacy (EuroS&amp;P),
+              DOI 10.1109/EuroSP.2018.00031, April 2018,
+              &lt;<a href="https://ieeexplore.ieee.org/document/8406609">https://ieeexplore.ieee.org/document/8406609</a>&gt;.
+
+   [<a id="ref-IANA.COSE.Algorithms">IANA.COSE.Algorithms</a>]
+              IANA, &quot;COSE Algorithms&quot;,
+              &lt;<a href="https://www.iana.org/assignments/cose">https://www.iana.org/assignments/cose</a>&gt;.
+
+   [<a id="ref-IANA.COSE.Curves">IANA.COSE.Curves</a>]
+              IANA, &quot;COSE Elliptic Curves&quot;,
+              &lt;<a href="https://www.iana.org/assignments/cose">https://www.iana.org/assignments/cose</a>&gt;.
+
+   [<a id="ref-IANA.JOSE.Algorithms">IANA.JOSE.Algorithms</a>]
+              IANA, &quot;JSON Web Signature and Encryption Algorithms&quot;,
+              &lt;<a href="https://www.iana.org/assignments/jose">https://www.iana.org/assignments/jose</a>&gt;.
+
+   [<a id="ref-IANA.JOSE.Curves">IANA.JOSE.Curves</a>]
+              IANA, &quot;JSON Web Key Elliptic Curve&quot;,
+              &lt;<a href="https://www.iana.org/assignments/jose">https://www.iana.org/assignments/jose</a>&gt;.
+
+   [<a id="ref-KUDELSKI17">KUDELSKI17</a>]
+              Romailler, Y., &quot;How to Defeat Ed25519 and EdDSA Using
+              Faults&quot;, Kudelski Security Research, October 2017,
+              &lt;<a href="https://research.kudelskisecurity.com/2017/10/04/defeating-eddsa-with-faults/">https://research.kudelskisecurity.com/2017/10/04/</a>
+              <a href="https://research.kudelskisecurity.com/2017/10/04/defeating-eddsa-with-faults/">defeating-eddsa-with-faults/</a>&gt;.
+
+   [<a id="ref-RFC6979">RFC6979</a>]  Pornin, T., &quot;Deterministic Usage of the Digital Signature
+              Algorithm (DSA) and Elliptic Curve Digital Signature
+              Algorithm (ECDSA)&quot;, <a href="/doc/html/rfc6979">RFC 6979</a>, DOI 10.17487/RFC6979, August
+              2013, &lt;<a href="https://www.rfc-editor.org/info/rfc6979">https://www.rfc-editor.org/info/rfc6979</a>&gt;.
+
+   [<a id="ref-WebAuthn">WebAuthn</a>] Balfanz, D., Czeskis, A., Hodges, J., Jones, J.C., Jones,
+              M., Kumar, A., Liao, A., Lindemann, R., and E. Lundberg,
+              &quot;Web Authentication: An API for accessing Public Key
+              Credentials - Level 1&quot;, W3C Recommendation, March 2019,
+              &lt;<a href="https://www.w3.org/TR/2019/REC-webauthn-1-20190304/">https://www.w3.org/TR/2019/REC-webauthn-1-20190304/</a>&gt;.
+
+Acknowledgements
+
+   Thanks to Roman Danyliw, Linda Dunbar, Stephen Farrell, John Fontana,
+   Jeff Hodges, Kevin Jacobs, J.C. Jones, Benjamin Kaduk, Murray
+   Kucherawy, Neil Madden, John Mattsson, Matthew Miller, Tony Nadalin,
+   Matt Palmer, Eric Rescorla, Rich Salz, Jim Schaad, Goeran Selander,
+   Wendy Seltzer, Sean Turner, and Samuel Weiler for their roles in
+   registering these algorithm identifiers.
+
+Author&#x27;s Address
+
+   Michael B. Jones
+   Microsoft
+
+   Email: mbj@microsoft.com
+   URI:   <a href="https://self-issued.info/">https://self-issued.info/</a>
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

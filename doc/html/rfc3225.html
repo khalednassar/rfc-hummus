@@ -1,0 +1,573 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc3225
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-dnsext-dnssec-okbit/">
+  <meta name="description" content="Indicating Resolver Support of DNSSEC (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc3225.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc3225.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc3225.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc3225/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc3225/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/dnsext/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-dnsext-dnssec-okbit@ietf.org?subject=draft-ietf-dnsext-dnssec-okbit" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-dnsext-dnssec-okbit-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dnsext-dnssec-okbit-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-dnsext-dnssec-okbit-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-dnsext-dnssec-okbit-03">draft-ietf-dnsext-dnssec-okbit-03</a>                Proposed Standard
+Updated by: <a href="/doc/html/rfc4033">4033</a>, <a href="/doc/html/rfc4034">4034</a>, <a href="/doc/html/rfc4035">4035</a>                                            </pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                          D. Conrad
+Request for Comments: 3225                                 Nominum, Inc.
+Category: Standards Track                                  December 2001
+
+
+                 <span class="h1">Indicating Resolver Support of DNSSEC</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+Abstract
+
+   In order to deploy DNSSEC (Domain Name System Security Extensions)
+   operationally, DNSSEC aware servers should only perform automatic
+   inclusion of DNSSEC RRs when there is an explicit indication that the
+   resolver can understand those RRs.  This document proposes the use of
+   a bit in the EDNS0 header to provide that explicit indication and
+   describes the necessary protocol changes to implement that
+   notification.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   DNSSEC [<a href="/doc/html/rfc2535">RFC2535</a>] has been specified to provide data integrity and
+   authentication to security aware resolvers and applications through
+   the use of cryptographic digital signatures.  However, as DNSSEC is
+   deployed, non-DNSSEC-aware clients will likely query DNSSEC-aware
+   servers.  In such situations, the DNSSEC-aware server (responding to
+   a request for data in a signed zone) will respond with SIG, KEY,
+   and/or NXT records.  For reasons described in the subsequent section,
+   such responses can have significant negative operational impacts for
+   the DNS infrastructure.
+
+   This document discusses a method to avoid these negative impacts,
+   namely DNSSEC-aware servers should only respond with SIG, KEY, and/or
+   NXT RRs when there is an explicit indication from the resolver that
+   it can understand those RRs.
+
+   For the purposes of this document, &quot;DNSSEC security RRs&quot; are
+   considered RRs of type SIG, KEY, or NXT.
+
+
+
+<span class="grey">Conrad                      Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc3225">RFC 3225</a>         Indicating Resolver Support of DNSSEC     December 2001</span>
+
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="/doc/html/rfc2119">RFC2119</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. Rationale</span>
+
+   Initially, as DNSSEC is deployed, the vast majority of queries will
+   be from resolvers that are not DNSSEC aware and thus do not
+   understand or support the DNSSEC security RRs.  When a query from
+   such a resolver is received for a DNSSEC signed zone, the DNSSEC
+   specification indicates the nameserver must respond with the
+   appropriate DNSSEC security RRs.  As DNS UDP datagrams are limited to
+   512 bytes [<a href="/doc/html/rfc1035">RFC1035</a>], responses including DNSSEC security RRs have a
+   high probability of resulting in a truncated response being returned
+   and the resolver retrying the query using TCP.
+
+   TCP DNS queries result in significant overhead due to connection
+   setup and teardown.  Operationally, the impact of these TCP queries
+   will likely be quite detrimental in terms of increased network
+   traffic (typically five packets for a single query/response instead
+   of two), increased latency resulting from the additional round trip
+   times, increased incidences of queries failing due to timeouts, and
+   significantly increased load on nameservers.
+
+   In addition, in preliminary and experimental deployment of DNSSEC,
+   there have been reports of non-DNSSEC aware resolvers being unable to
+   handle responses which contain DNSSEC security RRs, resulting in the
+   resolver failing (in the worst case) or entire responses being
+   ignored (in the better case).
+
+   Given these operational implications, explicitly notifying the
+   nameserver that the client is prepared to receive (if not understand)
+   DNSSEC security RRs would be prudent.
+
+   Client-side support of DNSSEC is assumed to be binary -- either the
+   client is willing to receive all DNSSEC security RRs or it is not
+   willing to accept any.  As such, a single bit is sufficient to
+   indicate client-side DNSSEC support.  As effective use of DNSSEC
+   implies the need of EDNS0 [<a href="/doc/html/rfc2671">RFC2671</a>], bits in the &quot;classic&quot; (non-EDNS
+   enhanced DNS header) are scarce, and there may be situations in which
+   non-compliant caching or forwarding servers inappropriately copy data
+   from classic headers as queries are passed on to authoritative
+   servers, the use of a bit from the EDNS0 header is proposed.
+
+   An alternative approach would be to use the existence of an EDNS0
+   header as an implicit indication of client-side support of DNSSEC.
+   This approach was not chosen as there may be applications in which
+   EDNS0 is supported but in which the use of DNSSEC is inappropriate.
+
+
+
+<span class="grey">Conrad                      Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc3225">RFC 3225</a>         Indicating Resolver Support of DNSSEC     December 2001</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>. Protocol Changes</span>
+
+   The mechanism chosen for the explicit notification of the ability of
+   the client to accept (if not understand) DNSSEC security RRs is using
+   the most significant bit of the Z field on the EDNS0 OPT header in
+   the query.  This bit is referred to as the &quot;DNSSEC OK&quot; (DO) bit.  In
+   the context of the EDNS0 OPT meta-RR, the DO bit is the first bit of
+   the third and fourth bytes of the &quot;extended RCODE and flags&quot; portion
+   of the EDNS0 OPT meta-RR, structured as follows:
+
+                +0 (MSB)                +1 (LSB)
+         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+      0: |   EXTENDED-RCODE      |       VERSION         |
+         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+      2: |DO|                    Z                       |
+         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+
+   Setting the DO bit to one in a query indicates to the server that the
+   resolver is able to accept DNSSEC security RRs.  The DO bit cleared
+   (set to zero) indicates the resolver is unprepared to handle DNSSEC
+   security RRs and those RRs MUST NOT be returned in the response
+   (unless DNSSEC security RRs are explicitly queried for).  The DO bit
+   of the query MUST be copied in the response.
+
+   More explicitly, DNSSEC-aware nameservers MUST NOT insert SIG, KEY,
+   or NXT RRs to authenticate a response as specified in [<a href="/doc/html/rfc2535">RFC2535</a>]
+   unless the DO bit was set on the request.  Security records that
+   match an explicit SIG, KEY, NXT, or ANY query, or are part of the
+   zone data for an AXFR or IXFR query, are included whether or not the
+   DO bit was set.
+
+   A recursive DNSSEC-aware server MUST set the DO bit on recursive
+   requests, regardless of the status of the DO bit on the initiating
+   resolver request.  If the initiating resolver request does not have
+   the DO bit set, the recursive DNSSEC-aware server MUST remove DNSSEC
+   security RRs before returning the data to the client, however cached
+   data MUST NOT be modified.
+
+   In the event a server returns a NOTIMP, FORMERR or SERVFAIL response
+   to a query that has the DO bit set, the resolver SHOULD NOT expect
+   DNSSEC security RRs and SHOULD retry the query without EDNS0 in
+   accordance with <a href="/doc/html/rfc2671#section-5.3">section&nbsp;5.3 of [RFC2671]</a>.
+
+
+
+
+
+
+
+
+
+<span class="grey">Conrad                      Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc3225">RFC 3225</a>         Indicating Resolver Support of DNSSEC     December 2001</span>
+
+
+Security Considerations
+
+   The absence of DNSSEC data in response to a query with the DO bit set
+   MUST NOT be taken to mean no security information is available for
+   that zone as the response may be forged or a non-forged response of
+   an altered (DO bit cleared) query.
+
+IANA Considerations
+
+   EDNS0 [<a href="/doc/html/rfc2671">RFC2671</a>] defines 16 bits as extended flags in the OPT record,
+   these bits are encoded into the TTL field of the OPT record (<a href="/doc/html/rfc2671#section-4.6">RFC2671
+   section&nbsp;4.6</a>).
+
+   This document reserves one of these bits as the OK bit.  It is
+   requested that the left most bit be allocated.  Thus the USE of the
+   OPT record TTL field would look like
+
+                +0 (MSB)                +1 (LSB)
+         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+      0: |   EXTENDED-RCODE      |       VERSION         |
+         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+      2: |DO|                    Z                       |
+         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+
+Acknowledgements
+
+   This document is based on a rough draft by Bob Halley with input from
+   Olafur Gudmundsson, Andreas Gustafsson, Brian Wellington, Randy Bush,
+   Rob Austein, Steve Bellovin, and Erik Nordmark.
+
+References
+
+   [<a id="ref-RFC1034">RFC1034</a>] Mockapetris, P., &quot;Domain Names - Concepts and Facilities&quot;,
+             STD 13, <a href="/doc/html/rfc1034">RFC 1034</a>, November 1987.
+
+   [<a id="ref-RFC1035">RFC1035</a>] Mockapetris, P., &quot;Domain Names - Implementation and
+             Specifications&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, November 1987.
+
+   [<a id="ref-RFC2119">RFC2119</a>] Bradner, S., &quot;Key words for use in RFCs to Indicate
+             Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC2535">RFC2535</a>] Eastlake, D., &quot;Domain Name System Security Extensions&quot;, <a href="/doc/html/rfc2535">RFC</a>
+             <a href="/doc/html/rfc2535">2535</a>, March 1999.
+
+   [<a id="ref-RFC2671">RFC2671</a>] Vixie, P., &quot;Extension Mechanisms for DNS (EDNS0)&quot;, <a href="/doc/html/rfc2671">RFC</a>
+             <a href="/doc/html/rfc2671">2671</a>, August 1999.
+
+
+
+
+
+<span class="grey">Conrad                      Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc3225">RFC 3225</a>         Indicating Resolver Support of DNSSEC     December 2001</span>
+
+
+Author&#x27;s Address
+
+   David Conrad
+   Nominum Inc.
+   950 Charter Street
+   Redwood City, CA 94063
+   USA
+
+   Phone: +1 650 381 6003
+   EMail: david.conrad@nominum.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Conrad                      Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc3225">RFC 3225</a>         Indicating Resolver Support of DNSSEC     December 2001</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conrad                      Standards Track                     [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

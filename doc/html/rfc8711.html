@@ -1,0 +1,1354 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8711
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-iasa2-rfc4071bis/">
+  <meta name="description" content="Structure of the IETF Administrative Support Activity, Version 2.0 (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgmagenta"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8711.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8711.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8711.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8711.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8711/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8711/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/iasa2/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-iasa2-rfc4071bis@ietf.org?subject=draft-ietf-iasa2-rfc4071bis" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-iasa2-rfc4071bis-11.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-iasa2-rfc4071bis-11.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-iasa2-rfc4071bis-11.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-iasa2-rfc4071bis-11">draft-ietf-iasa2-rfc4071bis-11</a>               Best Current Practice</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       B. Haberman
+Request for Comments: 8711                      Johns Hopkins University
+BCP: 101                                                         J. Hall
+Obsoletes: <a href="/doc/html/rfc4071">4071</a>, <a href="/doc/html/rfc4333">4333</a>, <a href="/doc/html/rfc7691">7691</a>                             Internet Society
+Category: Best Current Practice                             J. Livingood
+ISSN: 2070-1721                                                  Comcast
+                                                           February 2020
+
+
+   <span class="h1">Structure of the IETF Administrative Support Activity, Version 2.0</span>
+
+Abstract
+
+   The IETF Administrative Support Activity (IASA) was originally
+   established in 2005.  In the years since then, the needs of the IETF
+   evolved in ways that required changes to its administrative
+   structure.  The purpose of this RFC is to document and describe the
+   IETF Administrative Support Activity, version 2.0 (IASA 2.0).  It
+   defines the roles and responsibilities of the IETF Administration LLC
+   Board (IETF LLC Board), the IETF Executive Director, and the Internet
+   Society in the fiscal and administrative support of the IETF
+   standards process.  It also defines the membership and selection
+   rules for the IETF LLC Board.
+
+   This document obsoletes <a href="/doc/html/rfc4071">RFC 4071</a>, <a href="/doc/html/rfc4333">RFC 4333</a>, and <a href="/doc/html/rfc7691">RFC 7691</a>.
+
+Status of This Memo
+
+   This memo documents an Internet Best Current Practice.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   BCPs is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8711">https://www.rfc-editor.org/info/rfc8711</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Scope Limitation
+   3.  LLC Agreement with the Internet Society
+   4.  Definitions and Principles
+     4.1.  Terminology
+     4.2.  Key Differences from the Old IASA Structure to IASA 2.0
+     4.3.  General IETF LLC Responsibilities
+     4.4.  IETF LLC Working Principles
+     4.5.  Principles of the IETF and ISOC Relationship
+     4.6.  Relationship of the IETF LLC Board to the IETF Leadership
+     4.7.  Review of IETF Executive Director and IETF LLC Board
+           Decisions
+     4.8.  Termination and Change
+   5.  Structure of IASA 2.0
+     5.1.  IETF Executive Director and Staff Responsibilities
+     5.2.  IETF LLC Board Responsibilities
+     5.3.  Board Design Goals
+   6.  IETF LLC Board Membership, Selection, and Accountability
+     6.1.  Board Composition
+     6.2.  IETF LLC-Appointed Directors
+     6.3.  Recruiting IETF LLC Board Directors
+     6.4.  IETF LLC Board Director Term Length
+     6.5.  IETF LLC Board Director Limit
+     6.6.  Staggered Terms
+     6.7.  IETF LLC Board Director Removal
+     6.8.  Filling an IETF LLC Board Director Vacancy
+     6.9.  Quorum
+     6.10. Board Voting
+     6.11. Interim Board
+     6.12. Board Positions
+   7.  IETF LLC Funding
+     7.1.  Financial Statements
+     7.2.  Bank and Investment Accounts
+     7.3.  Financial Audits
+     7.4.  ISOC Financial Support
+     7.5.  IETF Meeting Revenues
+     7.6.  Sponsorships and Donations to the IETF LLC
+     7.7.  Focus of Funding Support
+     7.8.  Charitable Fundraising Practices
+     7.9.  Operating Reserve
+     7.10. Annual Budget Process
+   8.  IETF LLC Policies
+     8.1.  Conflict of Interest Policy
+     8.2.  Other Policies
+     8.3.  Compliance
+   9.  Three-Year Assessment
+   10. Security Considerations
+   11. IANA Considerations
+   12. References
+     12.1.  Normative References
+     12.2.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The IETF Administrative Support Activity (IASA) was originally
+   established in 2005.  In the years since then, the needs of the IETF
+   evolved in ways that required changes to its administrative
+   structure.  The purpose of this document is to document and describe
+   the IASA 2.0 structure.
+
+   Under IASA 2.0, the work of the IETF&#x27;s administrative and fundraising
+   tasks is conducted by an administrative organization, the IETF
+   Administration LLC (IETF LLC).  Under this structure, the IETF
+   Administrative Oversight Committee (IAOC) is eliminated, and its
+   oversight and advising functions transferred to the IETF LLC Board.
+
+   The IETF LLC provides the corporate legal home for the IETF, the
+   Internet Architecture Board (IAB), and the Internet Research Task
+   Force (IRTF), and financial support for the operation of the RFC
+   Editor.
+
+   [<a id="ref-IASA2RECS">IASA2RECS</a>] discusses the challenges facing the original IASA
+   structure as well as several options for reorganizing the IETF&#x27;s
+   administration under different legal structures.  This document
+   outlines how the chosen option is structured and describes how the
+   organization fits together with existing and new IETF community
+   structures.
+
+   Under IASA 2.0, most of the responsibilities that [<a href="/doc/html/rfc4071" title="&quot;Structure of the IETF Administrative Support Activity (IASA)&quot;">RFC4071</a>] assigned
+   to the IETF Administrative Director (IAD) and the Internet Society
+   (ISOC) were transferred to the IETF LLC and IETF Administration LLC
+   Executive Director (IETF Executive Director).  It is the job of the
+   IETF LLC to meet the administrative needs of the IETF and to ensure
+   that the IETF LLC meets the needs of the IETF community.
+
+   Eliminating the IAOC meant that changes were required in how trustees
+   could be appointed to the IETF Trust.  The details of how this is
+   done are outside the scope of this document but are covered in
+   [<a href="/doc/html/rfc8714" title="&quot;Update to the Process for Selection of Trustees for the IETF Trust&quot;">RFC8714</a>].
+
+   This document obsoletes [<a href="/doc/html/rfc4071" title="&quot;Structure of the IETF Administrative Support Activity (IASA)&quot;">RFC4071</a>], which specified the original IASA,
+   [<a href="/doc/html/rfc4333" title="&quot;The IETF Administrative Oversight Committee (IAOC) Member Selection Guidelines and Process&quot;">RFC4333</a>], which specified the selection guidelines and process for
+   IAOC members, and [<a href="/doc/html/rfc7691" title="&quot;Updating the Term Dates of IETF Administrative Oversight Committee (IAOC) Members&quot;">RFC7691</a>], which specified terms for IAOC members.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Scope Limitation</span>
+
+   The document does not propose any changes related to the standards
+   process as currently conducted by the Internet Engineering Steering
+   Group (IESG) and Internet Architecture Board (IAB) (see <a href="/doc/html/bcp9">BCP 9</a>
+   [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>] and <a href="/doc/html/bcp39">BCP 39</a> [<a href="/doc/html/rfc2850" title="&quot;Charter of the Internet Architecture Board (IAB)&quot;">RFC2850</a>]).  In addition, no changes are made to
+   the appeals chain, the process for making and confirming IETF and IAB
+   appointments (see <a href="/doc/html/bcp10">BCP 10</a> [<a href="/doc/html/rfc8713" title="&quot;IAB, IESG, IETF Trust, and IETF LLC Selection, Confirmation, and Recall Process: Operation of the IETF Nominating and Recall Committees&quot;">RFC8713</a>]), the technical work of the
+   Internet Research Task Force (IRTF) (see [<a href="/doc/html/rfc2014" title="&quot;IRTF Research Group Guidelines and Procedures&quot;">RFC2014</a>]), or to ISOC&#x27;s
+   membership in or support of other organizations.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  LLC Agreement with the Internet Society</span>
+
+   The LLC Agreement between the IETF LLC and ISOC is available at
+   [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>].  This IASA 2.0 structure, and thus this document,
+   depends on the LLC Agreement and will refer to it to help explain
+   certain aspects of the legal relationship between the IETF LLC and
+   ISOC.
+
+   The LLC Agreement was developed between legal representatives of the
+   IETF and ISOC and includes all critical terms of the relationship,
+   while still enabling maximum unilateral flexibility for the IETF LLC
+   Board.  The LLC Agreement includes only basic details about how the
+   Board manages itself or manages IETF LLC staff, so that the Board has
+   flexibility to make changes without amending the agreement.  The
+   Board can independently develop policy or procedures documents that
+   fill gaps.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Definitions and Principles</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Terminology</span>
+
+   Although most of the terms, abbreviations, and acronyms used in this
+   document are reasonably well known, first-time readers may find some
+   terminology confusing.  This section therefore attempts to provide a
+   quick summary.
+
+   IAB:  Internet Architecture Board (see [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>] and [<a href="/doc/html/rfc2850" title="&quot;Charter of the Internet Architecture Board (IAB)&quot;">RFC2850</a>]).
+
+   IAD:  IETF Administrative Director, a role obsoleted by this document
+      and the ISOC / IETF LLC Agreement (see [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>]) and replaced
+      by the IETF LLC Executive Director.
+
+   IAOC:  IETF Administrative Oversight Committee, a committee that
+      oversaw IETF administrative activity.  The IAOC is obsoleted by
+      this document and replaced by the IETF LLC Board.  The IETF Trust
+      was formerly populated by IAOC members.  Its membership is now
+      distinct from that of the IETF LLC Board (see [<a href="/doc/html/rfc8714" title="&quot;Update to the Process for Selection of Trustees for the IETF Trust&quot;">RFC8714</a>]).
+
+   IASA:  The IETF Administrative Support Activity, consists of the IETF
+      LLC Board, employees, and contractors.  Uses of the term &#x27;IASA&#x27; as
+      a proper noun may imply a subset of these roles, or all of them.
+
+   IASA 2.0:  The IETF Administrative Support Activity, version 2.0
+      (defined by this document).
+
+   IESG:  Internet Engineering Steering Group (see [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>] and
+      [<a href="/doc/html/rfc3710" title="&quot;An IESG charter&quot;">RFC3710</a>]).
+
+   IETF:  Internet Engineering Task Force (see [<a href="/doc/html/rfc3233" title="&quot;Defining the IETF&quot;">RFC3233</a>]).
+
+   IETF Administration LLC:  The legal entity - a disregarded Limited
+      Liability Company (LLC) of The Internet Society - established to
+      provide a corporate legal framework for facilitating current and
+      future activities related to the IETF, IAB, and IRTF.  It was
+      established by the ISOC / IETF LLC Agreement (see [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>])
+      and is referred to as &quot;IETF LLC&quot;.
+
+   IETF LLC Executive Director:  the Executive Director for the IETF
+      LLC, responsible for day-to-day administrative and operational
+      direction (see <a href="#section-5.1">Section 5.1</a>).  Also referred to as &quot;IETF Executive
+      Director&quot;.
+
+   IETF LLC Board:  The Board of Directors of the IETF LLC.  The IETF
+      LLC Board is formally a multi-member &quot;manager&quot; of the IETF LLC on
+      behalf of ISOC (see <a href="#section-5.2">Section 5.2</a>).
+
+   ISOC:  Internet Society (see [<a href="/doc/html/rfc8712" title="&quot;The IETF-ISOC Relationship&quot;">RFC8712</a>] and [<a href="#ref-ISOC" title="&quot;Amended and restated By-Laws of the Internet Society&quot;">ISOC</a>]).
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Key Differences from the Old IASA Structure to IASA 2.0</span>
+
+   *  The IAOC and IAD roles defined in <a href="/doc/html/rfc4071">RFC 4071</a> are eliminated.
+
+   *  The former ISOC and IAD responsibilities are assigned to a new
+      organization, IETF Administration LLC.
+
+   *  The Board of Directors of the IETF LLC -- formally a multi-member
+      &quot;manager&quot; of the IETF LLC on behalf of ISOC -- assumes the
+      oversight responsibilities from the IAOC.
+
+   *  The Board of the IETF LLC is more focused on strategy and
+      oversight than the IAOC was, with the IETF Executive Director and
+      their team in charge of day-to-day operations.
+
+   *  The IAD role is replaced with the IETF Executive Director role.
+
+   *  The role that was previously referred to as &quot;IETF Executive
+      Director&quot; in older documents such as [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>] is now &quot;Managing
+      Director, IETF Secretariat&quot;.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  General IETF LLC Responsibilities</span>
+
+   The IETF LLC is established to provide administrative support to the
+   IETF.  It has no authority over the standards development activities
+   of the IETF.
+
+   The responsibilities of the IETF LLC are:
+
+   *  Operations.  The IETF LLC is responsible for supporting the
+      ongoing operations of the IETF, including meetings and non-meeting
+      activities.
+
+   *  Finances.  The IETF LLC is responsible for managing the IETF&#x27;s
+      finances and budget.
+
+   *  Fundraising.  The IETF LLC is responsible for raising money on
+      behalf of the IETF.
+
+   *  Compliance.  The IETF LLC is responsible for establishing and
+      enforcing policies to ensure compliance with applicable laws,
+      regulations, and rules.
+
+   The manner by which these responsibilities under the IETF LLC are
+   organized is intended to address the problems described in Sections
+   3.1.1, 3.1.2, and 3.1.3 of [<a href="#ref-IASA2RECS">IASA2RECS</a>].  Specifically, this is
+   intended to bring greater clarity around roles, responsibilities,
+   representation, decision-making, and authority.
+
+   In addition, by having the IETF LLC manage the IETF&#x27;s finances and
+   conduct the IETF&#x27;s fundraising, confusion about who is responsible
+   for representing the IETF to sponsors and who directs the uses of
+   sponsorship funds should be eliminated.  Finally, having the IETF LLC
+   reside in a defined, distinct legal entity, and taking responsibility
+   for operations, enables the organization to execute its own contracts
+   without the need for review and approval by ISOC.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  IETF LLC Working Principles</span>
+
+   The IETF LLC is expected to conduct its work according to the
+   following principles:
+
+   *  Transparency.  The IETF LLC is expected to keep the IETF community
+      informed about its work, subject to reasonable confidentiality
+      concerns, and to engage with the community to obtain consensus-
+      based community input on key issues and otherwise as needed.  The
+      IETF community expects complete visibility into the financial and
+      legal structure of the IETF LLC.  This includes information about
+      the IETF LLC annual budget and associated regular financial
+      reports, results of financial and any other independent audits,
+      tax filings, significant contracts, or other significant long-term
+      financial commitments that bind the IETF LLC.  Whatever doesn&#x27;t
+      have a specific justification for being kept confidential is
+      expected to be made public.  The Board is expected to develop and
+      maintain a public list of confidential items, describing the
+      nature of the information and the reason for confidentiality.  The
+      Board will also publish its operating procedures.
+
+   *  Responsiveness to the community.  The IETF LLC is expected to act
+      consistently with the documented consensus of the IETF community,
+      to be responsive to the community&#x27;s needs, and to adapt its
+      decisions in response to consensus-based community feedback.
+
+   *  Diligence.  The IETF LLC is expected to act responsibly so as to
+      minimize risks to IETF participants and to the future of the IETF
+      as a whole, such as financial risks.
+
+   *  Unification: The IETF LLC provides the corporate legal home for
+      the IETF, the Internet Architecture Board (IAB), and the Internet
+      Research Task Force (IRTF), and financial support for the
+      operation of the RFC Editor.
+
+   *  Transfer or Dissolution: Consistent with [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>], the IETF
+      LLC subsidiary may be transferred from ISOC to another
+      organization, at the request of either party.  Similarly, the IETF
+      LLC may be dissolved if necessary.  Should either event occur, the
+      IETF community should be closely involved in any decisions and
+      plans.  Any transfer, transition, or dissolution should be
+      conducted carefully and with minimal potential disruption to the
+      IETF.
+
+   The transparency and responsiveness principles are designed to
+   address the concern outlined in Section 3.3 of [<a href="#ref-IASA2RECS">IASA2RECS</a>] about the
+   need for improved timeliness of sharing of information and decisions
+   and seeking community comments.  The issue of increased transparency
+   was important throughout the IASA 2.0 process, with little to no
+   dissent.  It was recognized that there will naturally be
+   confidentiality requirements about some aspects of contracting,
+   personnel matters, and other narrow areas.
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  Principles of the IETF and ISOC Relationship</span>
+
+   The principles of the relationship between the IETF and ISOC are
+   outlined in [<a href="/doc/html/rfc8712" title="&quot;The IETF-ISOC Relationship&quot;">RFC8712</a>].  In short, the IETF is responsible for the
+   development of the Internet Standards and ISOC aids the IETF by
+   providing it a legal entity within which the IETF LLC exists, as well
+   as with financial support.
+
+<span class="h3"><a class="selflink" id="section-4.6" href="#section-4.6">4.6</a>.  Relationship of the IETF LLC Board to the IETF Leadership</span>
+
+   The IETF LLC Board is directly accountable to the IETF community for
+   the performance of the IASA 2.0.  However, the nature of the Board&#x27;s
+   work involves treating the IESG, IRTF, and IAB as major internal
+   customers of the administrative support services.  The Board and the
+   IETF Executive Director should not consider their work successful
+   unless the IESG, IRTF, and IAB are also satisfied with the
+   administrative support that the IETF is receiving.
+
+<span class="h3"><a class="selflink" id="section-4.7" href="#section-4.7">4.7</a>.  Review of IETF Executive Director and IETF LLC Board Decisions</span>
+
+   The IETF LLC Board is directly accountable to the IETF community for
+   the performance of the IASA 2.0, including hiring and managing the
+   IETF Executive Director.  In extreme cases of dissatisfaction with
+   the IETF LLC, the IETF community can utilize the recall process as
+   noted in <a href="#section-6.7">Section 6.7</a>.
+
+   Anyone in the community of IETF participants may ask the Board for a
+   formal review of a decision or action by the IETF Executive Director
+   or Board if they believe this was not undertaken in accordance with
+   IETF BCPs or IETF LLC Board policies and procedures.
+
+   A formal request for review must be addressed to the IETF LLC Board
+   chair and must include a description of the decision or action to be
+   reviewed, an explanation of how, in the requestor&#x27;s opinion, the
+   decision or action violates the BCPs or IASA 2.0 operational
+   guidelines, and a suggestion for how the situation could be
+   rectified.
+
+   The IETF LLC shall respond to such requests within a reasonable
+   period, typically within 90 days, and shall publicly publish
+   information about the request and the corresponding response and/or
+   result.
+
+<span class="h3"><a class="selflink" id="section-4.8" href="#section-4.8">4.8</a>.  Termination and Change</span>
+
+   Any major change to the IASA 2.0 arrangements shall require community
+   consensus and deliberation and shall be reflected by a subsequent
+   Best Current Practice (BCP) document.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Structure of IASA 2.0</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  IETF Executive Director and Staff Responsibilities</span>
+
+   The IETF LLC is led by an IETF Executive Director chosen by the
+   Board.  The IETF Executive Director is responsible for managing the
+   day-to-day operations of the IETF LLC, including hiring staff to
+   perform various operational functions.  The IETF Executive Director
+   and any staff may be employees or independent contractors.
+
+   Allowing for the division of responsibilities among multiple staff
+   members and contractors is designed to address some of the concerns
+   raised in <a href="#section-3.2">Section 3.2</a> (Lack of Resources) and <a href="#section-3.4">Section 3.4</a> (Funding/
+   Operating Model Mismatch and Rising Costs) of [<a href="#ref-IASA2RECS">IASA2RECS</a>].
+
+   Based on the amount of work previously undertaken by the IAD and
+   others involved in the IETF administration, the design of the IETF
+   LLC anticipated that the IETF Executive Director may need to hire
+   multiple additional staff members.  For example, resources to manage
+   fundraising, to manage the various contractors that are engaged to
+   fulfill the IETF&#x27;s administrative needs, and to support outreach and
+   communications were envisioned.
+
+   The IETF has historically benefited from the use of contractors for
+   accounting, finance, meeting planning, administrative assistance,
+   legal counsel, tools, and web site support, as well as other services
+   related to the standards process (e.g., RFC Editor and IANA).  Prior
+   to making the transition from IASA to IASA 2.0, the IETF budget
+   reflected specific support from ISOC for communications and
+   fundraising as well as some general support for accounting, finance,
+   legal, and other services.  The division of responsibilities between
+   staff and contractors is at the discretion of the IETF Executive
+   Director and their staff.
+
+   The IETF has a long history of community involvement in the execution
+   of certain administrative functions, in particular development of
+   IETF tools, the operation of the meeting network by the Network
+   Operations Center (NOC), and some outreach and communications
+   activities conducted by the Education and Mentoring Directorate.  The
+   IETF LLC staff is expected to respect the IETF community&#x27;s wishes
+   about community involvement in these and other functions going
+   forward as long as the staff feels that they can meet the otherwise-
+   stated needs of the community.  Establishing the framework to allow
+   the IETF LLC to staff each administrative function as appropriate may
+   require the IETF community to document its consensus expectations in
+   areas where no documentation currently exists.
+
+   In summary, the IETF Executive Director, with support from the team
+   that they alone direct and lead, is responsible for:
+
+   *  Developing and refining an annual budget and other strategic
+      financial planning documents at the direction of the Board.
+
+   *  Executing on the annual budget, including reporting to the Board
+      regularly with forecasts and actual performance to budget.
+
+   *  Hiring and/or contracting the necessary resources to meet their
+      goals, within the defined limits of the IETF Executive Director&#x27;s
+      authority and within the approved budget.  This includes managing
+      and leading any such resources, including performing regular
+      performance reviews.
+
+   *  Following the pre-approval guidelines set forth by the Board for
+      contracts or other decisions that have financial costs that exceed
+      a certain threshold of significance.  Such thresholds are expected
+      to be set reasonably high so that the need for such approvals is
+      infrequent and only occurs when something is truly significant or
+      otherwise exceptional.  It is expected that the IETF Executive
+      Director is sufficiently empowered to perform the job on a day-to-
+      day basis, being held accountable for meeting high-level goals
+      rather than being micromanaged.
+
+   *  Regularly updating the Board on operations and other notable
+      issues as reasonable and appropriate.
+
+   *  Ensuring that all staff and/or other resources comply with any
+      applicable policies established or approved by the Board, such as
+      ethics guidelines and/or a code of conduct.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  IETF LLC Board Responsibilities</span>
+
+   This section is intended to provide a summary of key IETF LLC Board
+   responsibilities, but the precise and legally binding
+   responsibilities are defined in the LLC Agreement [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>] and
+   applicable law.  If there are unintentional differences or other
+   confusion, the LLC Agreement and applicable law are authoritative.
+
+   Board members have fiduciary obligations imposed by the LLC Agreement
+   and applicable law, including duties of loyalty, care, and good
+   faith.  The Board is responsible for setting broad strategic
+   direction for the LLC, adopting an annual budget, hiring or
+   terminating an IETF Executive Director (or amending the terms of
+   their engagement), adopting any employee benefit plans, consulting
+   the relevant IETF communities on matters related to the LLC as
+   appropriate, approving any changes to the LLC governance structure,
+   incurring any debt, and approving entering into agreements that meet
+   a significant materiality threshold to be determined by the Board.
+   The IETF LLC Board is expected to delegate management of day-to-day
+   activities and related decision-making to staff.
+
+   Per <a href="#section-5">Section 5</a>(d) of the LLC Agreement and as also described in
+   <a href="#section-4.4">Section 4.4</a> of this document, the Board shall, as appropriate, act
+   transparently and provide the IETF community with an opportunity to
+   review and discuss any proposed changes to the IETF LLC structure
+   prior to their adoption.
+
+   The role of the Board is to ensure that the strategy and conduct of
+   the IETF LLC is consistent with the IETF&#x27;s needs -- both its concrete
+   needs and its needs for transparency and accountability.  The Board
+   is not intended to directly define the IETF&#x27;s needs; to the extent
+   that is required, the IETF community should document its needs in
+   consensus-based RFCs (e.g., as the community did in [<a href="/doc/html/rfc8718" title="&quot;IETF Plenary Meeting Venue Selection Process&quot;">RFC8718</a>]) and
+   provide more detailed input via consultations with the Board (such as
+   takes place on email discussion lists or at IETF meetings).
+
+   Key IETF LLC Board responsibilities include:
+
+   *  Setting broad strategic direction for the LLC.
+
+   *  Hiring or terminating an IETF Executive Director (or amending the
+      terms of their engagement).
+
+   *  Delegating management of day-to-day activities and related
+      decision-making to staff.
+
+   *  Adopting any employee benefit plans.
+
+   *  Consulting the relevant IETF communities on matters related to the
+      LLC, as appropriate.
+
+   *  Approving any changes to the LLC governance structure.
+
+   *  Adopting an annual budget and, as necessary, incur any debt.
+
+   *  Preparing accurate and timely financial statements for ISOC, in
+      accordance with generally accepted accounting principles.
+
+   *  Providing assistance to help facilitate ISOC&#x27;s tax compliance,
+      including but not limited to assistance related to preparing the
+      Form 990 and responding to any United States Internal Revenue
+      Service (IRS) questions and audits.
+
+   *  Approving entering into agreements that meet a significant
+      materiality threshold to be determined by the Board.
+
+   *  Limiting its activities to the purposes as set forth in <a href="#section-4">Section 4</a>
+      of the LLC Agreement, in a manner consistent with ISOC&#x27;s
+      charitable purposes.
+
+   *  Establishing an investment policy.
+
+   *  Using best efforts to conduct all of its activities in strict
+      compliance with the LLC Agreement and all applicable laws, rules,
+      and regulations.
+
+   *  Ensuring that IETF LLC is run in a manner that is transparent and
+      accountable to the IETF community.
+
+   *  Developing policies, including those noted in <a href="#section-8">Section 8</a>,
+      procedures, and a compliance program.
+
+   *  Obtaining Commercial General Liability and other appropriate
+      insurance policies, with agreed-upon coverage limits.
+
+   *  Recruiting new Directors for consideration in all of the various
+      appointment processes.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  Board Design Goals</span>
+
+   A goal of this Board composition is to balance the need for the IETF
+   LLC to be accountable to the IETF community with the need for this
+   Board to have the expertise necessary to oversee a small non-profit
+   company.  The Board is smaller than the previous IAOC and the other
+   leadership bodies of the IETF, in part to keep the Board focused on
+   its rather limited set of strategic responsibilities as noted in
+   <a href="#section-5.2">Section 5.2</a>.
+
+   This board structure, with limited strategic responsibilities noted
+   in <a href="#section-5.2">Section 5.2</a> and limited size, together with the staff
+   responsibilities noted in <a href="#section-5.1">Section 5.1</a>, is designed to overcome the
+   challenges described in Section 3.1.4 of [<a href="#ref-IASA2RECS">IASA2RECS</a>] concerning
+   oversight.  This establishes a clear line of oversight over staff
+   performance: the IETF LLC Board oversees the IETF Executive
+   Director&#x27;s performance and has actual legal authority to remove a
+   non-performing IETF Executive Director.  The IETF Executive Director
+   is responsible for the day-to-day operation of the IETF LLC.
+
+   Finally, the Board is expected to operate transparently, to further
+   address the concern raised in Section 3.3 of [<a href="#ref-IASA2RECS">IASA2RECS</a>].  The
+   default transparency rule arrived at during the IASA 2.0 design
+   process is detailed in <a href="#section-4.4">Section 4.4</a>.  The Board will need to establish
+   how it will meet that commitment.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IETF LLC Board Membership, Selection, and Accountability</span>
+
+   The section outlines the composition of the IETF LLC Board, selection
+   of IETF LLC Board Directors, and related details.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Board Composition</span>
+
+   There is a minimum of 5 directors, which is expandable to 6 or 7.
+   The IETF LLC Board is comprised of the following:
+
+   *  1 IETF Chair or delegate selected by the IESG
+
+   *  1 Appointed by the ISOC Board of Trustees
+
+   *  3 Selected by the IETF Nominating Committee (NomCom), confirmed by
+      the IESG
+
+   *  Up to 2 Appointed by the IETF LLC Board itself, on an as-needed
+      basis, confirmed by the IESG
+
+   For the first slot listed above, the presumption is that the IETF
+   Chair will serve on the board.  At the IESG&#x27;s discretion, another
+   area director may serve instead, or exceptionally the IESG may run a
+   selection process to appoint a director.  The goal of having this
+   slot on the board is to maintain coordination and communication
+   between the board and the IESG.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  IETF LLC-Appointed Directors</span>
+
+   As noted above, a maximum of two Directors may be appointed by the
+   IETF LLC Board.  They can obviously choose to appoint none, one, or
+   two.  These appointments need not be on an exceptional basis; they
+   can be routine, and may occur at any time of the year since it is on
+   an as-needed basis.
+
+   The appointment of a Board-appointed Director requires a two-thirds
+   majority vote of the Directors then in office, and the appointee
+   shall take office immediately upon appointment and IESG confirmation.
+   The term of each appointment is designated by the Board, with the
+   maximum term being three years, or until their earlier resignation,
+   removal, or death.  The Board may decide on a case-by-case basis how
+   long each term shall be, factoring in the restriction for consecutive
+   terms in <a href="#section-6.5">Section 6.5</a>.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Recruiting IETF LLC Board Directors</span>
+
+   The Board itself is expected to take an active role in recruiting
+   potential new Directors, regardless of the process that may be used
+   to appoint them.  In particular, the NomCom is primarily focused on
+   considering requirements expressed by the Board and others, reviewing
+   community feedback on candidates, conducting candidate interviews,
+   and ultimately appointing Directors.  The Board and others can
+   recruit potential Directors and get them into the consideration
+   process of the NomCom or into open consideration processes of the
+   other appointing bodies if those bodies choose to use such processes.
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  IETF LLC Board Director Term Length</span>
+
+   The term length for a Director is three years.  The exceptions to
+   this guideline are:
+
+   *  The terms for some Directors during the first full formation of
+      the IETF LLC Board in order to establish staggered terms and for
+      any appointments to fill a vacancy.
+
+   *  The Director slot occupied by the IETF Chair ex officio or a
+      delegate selected by the IESG will serve a two-year term.  This
+      applies regardless of whether the appointed individual is on the
+      IESG, rotates off the IESG during the two-year term, or is not on
+      the IESG.  This makes the term length for this slot the same as
+      the term lengths established in <a href="/doc/html/rfc8713#section-3.4">[RFC8713], Section&nbsp;3.4</a>.
+
+<span class="h3"><a class="selflink" id="section-6.5" href="#section-6.5">6.5</a>.  IETF LLC Board Director Limit</span>
+
+   A director may serve no more than two consecutive terms.  A director
+   cannot serve a third term until three years have passed since their
+   second consecutive term.  An exception is if a Director role is
+   occupied by the IETF Chair ex officio, since that person&#x27;s service is
+   governed instead by the term lengths established in <a href="/doc/html/rfc8713#section-3.4">[RFC8713],
+   Section&nbsp;3.4</a>.
+
+   The term limits specified above apply to an individual, even if that
+   individual is appointed in different ways over time.  For example, an
+   individual appointed to two terms by the ISOC Board of Trustees may
+   not immediately be appointed to a third term by the IETF NomCom.  A
+   Director appointed by the IETF LLC itself may only serve for one term
+   by that appointment method, and any subsequent terms would have to be
+   via other methods; in any case, the term limits above apply to that
+   individual.
+
+   Lastly, partial terms of less than three years for the initial
+   appointments to the first full Board, for which some Directors will
+   have terms of one or two years, do not count against the term limit.
+
+   The limit on consecutive terms supports the healthy regular
+   introduction of new ideas and energy into the Board and mitigates
+   potential long-term risk of ossification or conflict, without
+   adversely impacting the potential pool of director candidates over
+   time.
+
+<span class="h3"><a class="selflink" id="section-6.6" href="#section-6.6">6.6</a>.  Staggered Terms</span>
+
+   The Internet Society Board of Trustees, the IESG, the Nominating
+   Committee, and the IETF LLC Board are expected to coordinate with
+   each other to ensure that collectively their appointment or selection
+   processes provide for no more than three Directors&#x27; terms concluding
+   in the same year.
+
+<span class="h3"><a class="selflink" id="section-6.7" href="#section-6.7">6.7</a>.  IETF LLC Board Director Removal</span>
+
+   NomCom-appointed and IESG-appointed Directors may be removed with or
+   without cause.  A vote in favor of removal must be no fewer than the
+   number of Directors less two.  So for example, if there are seven
+   directors, then five votes are required.  Directors may also be
+   removed via the IETF recall process defined in <a href="/doc/html/rfc8713#section-7">[RFC8713], Section&nbsp;7</a>.
+
+<span class="h3"><a class="selflink" id="section-6.8" href="#section-6.8">6.8</a>.  Filling an IETF LLC Board Director Vacancy</span>
+
+   It shall be the responsibility of each respective body that appointed
+   or selected a Director that vacates the Board to appoint a new
+   Director to fill the vacancy.  For example, if a Director selected by
+   the NomCom departs the Board prior to the end of their term for
+   whatever reason, then it is the responsibility of the NomCom (using
+   its mid-term rules, as specified in <a href="/doc/html/rfc8713#section-3.5">[RFC8713], Section&nbsp;3.5</a>) as the
+   original appointing body to designate a replacement that will serve
+   out the remainder of the term of the departed Director.  However,
+   this obligation will not apply to vacancies in Board-appointed
+   positions.
+
+<span class="h3"><a class="selflink" id="section-6.9" href="#section-6.9">6.9</a>.  Quorum</span>
+
+   At all meetings of the Board, two-thirds of the Directors then in
+   office shall constitute a quorum for the transaction of business.
+   Unless a greater affirmative vote is expressly required for an action
+   under applicable law, the LLC Agreement, or an applicable Board
+   policy, the affirmative vote of two-thirds of the Directors then in
+   office shall be an act of the Board.
+
+<span class="h3"><a class="selflink" id="section-6.10" href="#section-6.10">6.10</a>.  Board Voting</span>
+
+   Board decisions may be made either by vote communicated in a meeting
+   of the Board (including telephonic and video), or via an asynchronous
+   written (including electronic) process.  Absentee voting and voting
+   by proxy shall not be permitted.  If a quorum is not present at any
+   meeting of the Board, the Directors present may adjourn the meeting
+   without notice, other than announcement at the meeting, until a
+   quorum is present.  Voting thresholds for Director removal are
+   described in <a href="#section-6.7">Section 6.7</a>.
+
+<span class="h3"><a class="selflink" id="section-6.11" href="#section-6.11">6.11</a>.  Interim Board</span>
+
+   An initial interim Board was necessary in order to legally form and
+   bootstrap the IETF LLC.  As a result, an Interim Board was formed on
+   a temporary basis until the first full Board was constituted.
+
+   The interim Board was comprised of:
+
+   *  The IETF chair, ex officio
+
+   *  The IAOC chair, ex officio
+
+   *  The IAB chair, ex officio
+
+   *  One ISOC trustee, selected by the ISOC Board of Trustees
+
+<span class="h3"><a class="selflink" id="section-6.12" href="#section-6.12">6.12</a>.  Board Positions</span>
+
+   Following the formation of the first permanent Board, and annually
+   thereafter, the Directors shall elect a Director to serve as Board
+   Chair by majority vote.  The IETF, IAB, and IRTF chairs, and the
+   chair of ISOC&#x27;s Board, will be ineligible for this Board Chair role.
+   The Board may also form committees of the Board and/or define other
+   roles for Board Directors as necessary.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IETF LLC Funding</span>
+
+   The IETF LLC must function within a budget of costs balanced against
+   limited revenues.  The IETF community expects the IETF LLC to work to
+   attain that goal, in order to maintain a viable support function that
+   provides the environment within which the work of the IETF, IAB,
+   IRTF, and RFC Editor can remain vibrant and productive.
+
+   The IETF LLC was generating income from a few key sources at the time
+   that this document was written, as enumerated below.  Additional
+   sources of income may be developed in the future, within the general
+   bounds noted in <a href="#section-7.8">Section 7.8</a>, and some of these may decline in
+   relevance or go away.  As a result, this list is subject to change
+   over time and is merely an example of the primary sources of income
+   for the IETF LLC at the time of this writing:
+
+   1.  ISOC support
+
+   2.  IETF meeting revenues
+
+   3.  Sponsorships (monetary and/or in-kind)
+
+   4.  Donations (monetary and/or in-kind)
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Financial Statements</span>
+
+   As noted in <a href="#section-5.2">Section 5.2</a>, the IETF LLC must comply with relevant tax
+   laws, such as filing an annual IRS Form 990.  Other official
+   financial statements may also be required.
+
+   In addition to these official financial statements and forms, the
+   IETF LLC is also expected to report on a regular basis to the IETF
+   community on the current and future annual budget, budget forecasts
+   vs. actuals over the course of a fiscal year, and on other
+   significant projects as needed.  This regular reporting to the IETF
+   community is expected to be reported in the form of standard
+   financial statements that reflect the income, expenses, assets, and
+   liabilities of the IETF LLC.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Bank and Investment Accounts</span>
+
+   The IETF LLC maintains its own bank account, separate and distinct
+   from ISOC.  The IETF LLC may at its discretion create additional
+   accounts as needed.  Similarly, the IETF LLC may as needed create
+   investment accounts in support of its financial goals and objectives.
+
+<span class="h3"><a class="selflink" id="section-7.3" href="#section-7.3">7.3</a>.  Financial Audits</span>
+
+   The IETF LLC is expected to retain and work with an independent
+   auditor.  Reports from the auditor are expected to be shared with the
+   IETF community and other groups and organizations as needed or as
+   required by law.
+
+<span class="h3"><a class="selflink" id="section-7.4" href="#section-7.4">7.4</a>.  ISOC Financial Support</span>
+
+   ISOC currently provides significant financial support to the IETF
+   LLC.  Exhibit B of the [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>] summarizes the financial support
+   from ISOC for the foreseeable future.  It is expected that this
+   support will be periodically reviewed and revised, via a cooperative
+   assessment process between ISOC and the IETF LLC.
+
+<span class="h3"><a class="selflink" id="section-7.5" href="#section-7.5">7.5</a>.  IETF Meeting Revenues</span>
+
+   Meeting revenues are another important source of funding that
+   supports the IETF, coming mainly from the fees paid by IETF meeting
+   participants.  The IETF Executive Director sets those meeting fees,
+   in consultation with other IETF LLC staff and the IETF community,
+   with approval by the IETF LLC Board.  Setting these fees and
+   projecting the number of participants at future meetings is a key
+   part of the annual budget process.
+
+<span class="h3"><a class="selflink" id="section-7.6" href="#section-7.6">7.6</a>.  Sponsorships and Donations to the IETF LLC</span>
+
+   Sponsorships and donations are an essential component of the
+   financial support for the IETF.  Within the general bounds noted in
+   <a href="#section-7.8">Section 7.8</a>, the IETF LLC is responsible for fundraising activities
+   in order to establish, maintain, and grow a strong foundation of
+   donation revenues.  This can and does include both direct financial
+   contributions as well as in-kind contributions, such as equipment,
+   software licenses, and services.
+
+   Sponsorships and donations to the IETF LLC do not (and must not)
+   convey to sponsors and donors any special oversight or direct
+   influence over the IETF&#x27;s technical work or other activities of the
+   IETF or IETF LLC.  This helps ensure that no undue influence may be
+   ascribed to those from whom funds are raised, and so helps to
+   maintain an open and consensus-based IETF standards process.
+
+   To the extent that the IETF LLC needs to undertake any significant
+   special projects for the IETF, the IETF LLC may need to fundraise
+   distinctly for those special projects.  As a result, the IETF LLC may
+   conduct fundraising to support the IETF in general as well as one or
+   more special fundraising efforts (which may also be accounted for
+   distinctly and be held in a separate bank account or investment, as
+   needed).
+
+<span class="h3"><a class="selflink" id="section-7.7" href="#section-7.7">7.7</a>.  Focus of Funding Support</span>
+
+   The IETF LLC exists to support the IETF, IAB, and IRTF.  Therefore,
+   the IETF LLC&#x27;s funding and all revenues, in-kind contributions, and
+   other income that comprise that funding shall be used solely to
+   support activities related to the IETF, IAB, IRTF, and RFC Editor,
+   and for no other purposes.
+
+<span class="h3"><a class="selflink" id="section-7.8" href="#section-7.8">7.8</a>.  Charitable Fundraising Practices</span>
+
+   When the IETF LLC conducts fundraising, it substantiates charitable
+   contributions on behalf of ISOC -- meaning that according to United
+   States tax law, the IETF LLC must send a written acknowledgment of
+   contributions to donors.  The IETF LLC evaluates and facilitates
+   state, federal, and other applicable law and regulatory compliance
+   for ISOC and/or the LLC with respect to such fundraising activities.
+   In addition, the IETF LLC ensures that all fundraising activities are
+   conducted in compliance with any policies developed by the IETF LLC,
+   including but not limited to those noted in <a href="#section-8">Section 8</a>.
+
+<span class="h3"><a class="selflink" id="section-7.9" href="#section-7.9">7.9</a>.  Operating Reserve</span>
+
+   An initial target operating reserve has been specified in Exhibit B
+   of the [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>].  It says that the IETF LLC should maintain an
+   operating reserve equal to the IETF LLC&#x27;s budgeted Net Loss for 2019
+   multiplied times three.  The IETF LLC, in cooperation with ISOC, may
+   regularly review the financial target for this reserve fund, as noted
+   in the [<a href="#ref-IETF-LLC-A">IETF-LLC-A</a>] or as otherwise necessary.
+
+   Should the IETF LLC generate an annual budget surplus, it may choose
+   to direct all or part of the surplus towards the growth of the
+   operating reserve.
+
+<span class="h3"><a class="selflink" id="section-7.10" href="#section-7.10">7.10</a>.  Annual Budget Process</span>
+
+   As noted in <a href="#section-4.3">Section 4.3</a>, the IETF LLC is responsible for managing the
+   IETF&#x27;s finances and budget.  A key part of this responsibility is
+   establishing, maintaining, and successfully meeting an annual budget.
+   This is essential to the continued operation and vibrancy of the
+   IETF&#x27;s technical activities and establishes trust with ISOC,
+   sponsors, and donors that funds are being appropriately spent, and
+   that financial oversight is being conducted properly.  This is also
+   essential to the IETF LLC meeting applicable legal and tax
+   requirements and is a core part of the Board&#x27;s fiduciary
+   responsibilities.
+
+   As explained in <a href="#section-5.1">Section 5.1</a>, the IETF Executive Director is expected
+   to develop, execute, and report on the annual budget.  Regular
+   reporting is expected to include forecast vs. budget statements,
+   including updated projections of income and expenses for the full
+   fiscal year.
+
+   The Board, as explained in <a href="#section-5.2">Section 5.2</a>, is expected to review and
+   approve the budget, as well as to provide ongoing oversight of the
+   budget and of any other significant financial matters.
+
+   The annual budget is expected to be developed in an open,
+   transparent, and collaborative manner, in accordance with
+   <a href="#section-4.4">Section 4.4</a>.  The specific timeline for the development, review, and
+   approval of the IETF LLC annual budget is established by the Board
+   and may be revised as needed.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IETF LLC Policies</span>
+
+   The Board is expected to maintain policies as necessary to achieve
+   the goals of the IETF LLC, meet transparency expectations of the
+   community, comply with applicable laws or regulations, or for other
+   reasons as appropriate.  All policies are expected to be developed
+   with input from the IETF community.  Some policies provided by ISOC
+   and past policies developed by the previous IAOC may provide a useful
+   starting point for the Board to consider.
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Conflict of Interest Policy</span>
+
+   The Board is expected to maintain a Conflict of Interest policy for
+   the IETF LLC.  While the details are determined by the Board, at a
+   minimum such policy is expected to include the following:
+
+   *  The IETF, ISOC Board, IAB, or IRTF chair cannot be chair of the
+      IETF LLC Board, though they may serve as a Director.
+
+   *  A Director cannot be a paid consultant or employee of the IETF
+      Executive Director or their sub-contractors, nor a paid consultant
+      or employee of ISOC.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Other Policies</span>
+
+   The Board is expected to maintain additional policies for the IETF
+   LLC as necessary, covering Directors, employees, and contractors,
+   concerning issues such as:
+
+   *  Acceptance of gifts and other non-cash compensation
+
+   *  Travel and expense reimbursement
+
+   *  Anti-bribery
+
+   *  Code of conduct
+
+   *  Anti-harassment
+
+   *  Non-discrimination
+
+   *  Whistleblower
+
+   *  Document retention
+
+   *  Export controls
+
+   *  Anti-terrorism sanctions
+
+   *  Data protection and privacy
+
+   *  Social media
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  Compliance</span>
+
+   The IETF LLC is expected to implement a compliance program to ensure
+   its compliance with all applicable laws, rules, and regulations,
+   including without limitation laws governing bribery, anti-terrorism
+   sanctions, export controls, data protection/privacy, as well as other
+   applicable policies noted in <a href="#section-8">Section 8</a>.  In addition, actions and
+   activities of the IETF LLC must be consistent with 501(c)(3)
+   purposes.
+
+   The IETF LLC is expected to report to ISOC and the IETF community on
+   the implementation of its compliance plan on an annual basis.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Three-Year Assessment</span>
+
+   The IETF LLC, with the involvement of the community, shall conduct
+   and complete an assessment of the structure, processes, and operation
+   of IASA 2.0 and the IETF LLC.  This should be presented to the
+   community after a period of roughly three years of operation.  The
+   assessment may potentially include recommendations for improvements
+   or changes to the IASA 2.0 and/or IETF LLC.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Security Considerations</span>
+
+   This document describes the structure of IASA 2.0.  It introduces no
+   security considerations for the Internet.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  IANA Considerations</span>
+
+   This document has no IANA considerations in the traditional sense.
+   However, some of the information in this document may affect how the
+   IETF standards process interfaces with the IANA, so the IANA may be
+   interested in the contents.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  Normative References</span>
+
+   [<a id="ref-IETF-LLC-A">IETF-LLC-A</a>]
+              &quot;Limited Liability Company Agreement of IETF
+              Administration LLC&quot;, August 2018,
+              &lt;<a href="https://www.ietf.org/documents/180/IETF-LLC-Agreement.pdf">https://www.ietf.org/documents/180/IETF-LLC-</a>
+              <a href="https://www.ietf.org/documents/180/IETF-LLC-Agreement.pdf">Agreement.pdf</a>&gt;.
+
+   [<a id="ref-RFC8712">RFC8712</a>]  Camarillo, G. and J. Livingood, &quot;The IETF-ISOC
+              Relationship&quot;, <a href="/doc/html/rfc8712">RFC 8712</a>, DOI 10.17487/RFC8712, February
+              2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8712">https://www.rfc-editor.org/info/rfc8712</a>&gt;.
+
+   [<a id="ref-RFC8713">RFC8713</a>]  Kucherawy, M., Ed., Hinden, R., Ed., and J. Livingood,
+              Ed., &quot;IAB, IESG, IETF Trust, and IETF LLC Selection,
+              Confirmation, and Recall Process: Operation of the IETF
+              Nominating and Recall Committees&quot;, <a href="/doc/html/bcp10">BCP 10</a>, <a href="/doc/html/rfc8713">RFC 8713</a>,
+              DOI 10.17487/RFC8713, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8713">https://www.rfc-editor.org/info/rfc8713</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  Informative References</span>
+
+   [<a id="ref-IASA2RECS">IASA2RECS</a>]
+              Haberman, B., Arkko, J., Daigle, L., Livingood, J., Hall,
+              J., and E. Rescorla, &quot;IASA 2.0 Design Team
+              Recommendations&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-haberman-iasa20dt-recs-03">draft-</a>
+              <a href="/doc/html/draft-haberman-iasa20dt-recs-03">haberman-iasa20dt-recs-03</a>, 27 November 2018,
+              &lt;<a href="https://tools.ietf.org/html/draft-haberman-iasa20dt-recs-03">https://tools.ietf.org/html/draft-haberman-iasa20dt-recs-</a>
+              <a href="https://tools.ietf.org/html/draft-haberman-iasa20dt-recs-03">03</a>&gt;.
+
+   [<a id="ref-ISOC">ISOC</a>]     The Internet Society, &quot;Amended and restated By-Laws of the
+              Internet Society&quot;, October 2019,
+              &lt;<a href="https://www.internetsociety.org/about-internet-society/governance-policies/by-laws/">https://www.internetsociety.org/about-internet-society/</a>
+              <a href="https://www.internetsociety.org/about-internet-society/governance-policies/by-laws/">governance-policies/by-laws/</a>&gt;.
+
+   [<a id="ref-RFC2014">RFC2014</a>]  Weinrib, A. and J. Postel, &quot;IRTF Research Group Guidelines
+              and Procedures&quot;, <a href="/doc/html/bcp8">BCP 8</a>, <a href="/doc/html/rfc2014">RFC 2014</a>, DOI 10.17487/RFC2014,
+              October 1996, &lt;<a href="https://www.rfc-editor.org/info/rfc2014">https://www.rfc-editor.org/info/rfc2014</a>&gt;.
+
+   [<a id="ref-RFC2026">RFC2026</a>]  Bradner, S., &quot;The Internet Standards Process -- Revision
+              3&quot;, <a href="/doc/html/bcp9">BCP 9</a>, <a href="/doc/html/rfc2026">RFC 2026</a>, DOI 10.17487/RFC2026, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2026">https://www.rfc-editor.org/info/rfc2026</a>&gt;.
+
+   [<a id="ref-RFC2850">RFC2850</a>]  Internet Architecture Board and B. Carpenter, Ed.,
+              &quot;Charter of the Internet Architecture Board (IAB)&quot;,
+              <a href="/doc/html/bcp39">BCP 39</a>, <a href="/doc/html/rfc2850">RFC 2850</a>, DOI 10.17487/RFC2850, May 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2850">https://www.rfc-editor.org/info/rfc2850</a>&gt;.
+
+   [<a id="ref-RFC3233">RFC3233</a>]  Hoffman, P. and S. Bradner, &quot;Defining the IETF&quot;, <a href="/doc/html/bcp58">BCP 58</a>,
+              <a href="/doc/html/rfc3233">RFC 3233</a>, DOI 10.17487/RFC3233, February 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3233">https://www.rfc-editor.org/info/rfc3233</a>&gt;.
+
+   [<a id="ref-RFC3710">RFC3710</a>]  Alvestrand, H., &quot;An IESG charter&quot;, <a href="/doc/html/rfc3710">RFC 3710</a>,
+              DOI 10.17487/RFC3710, February 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3710">https://www.rfc-editor.org/info/rfc3710</a>&gt;.
+
+   [<a id="ref-RFC4071">RFC4071</a>]  Austein, R., Ed. and B. Wijnen, Ed., &quot;Structure of the
+              IETF Administrative Support Activity (IASA)&quot;, <a href="/doc/html/bcp101">BCP 101</a>,
+              <a href="/doc/html/rfc4071">RFC 4071</a>, DOI 10.17487/RFC4071, April 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4071">https://www.rfc-editor.org/info/rfc4071</a>&gt;.
+
+   [<a id="ref-RFC4333">RFC4333</a>]  Huston, G., Ed. and B. Wijnen, Ed., &quot;The IETF
+              Administrative Oversight Committee (IAOC) Member Selection
+              Guidelines and Process&quot;, <a href="/doc/html/bcp113">BCP 113</a>, <a href="/doc/html/rfc4333">RFC 4333</a>,
+              DOI 10.17487/RFC4333, December 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4333">https://www.rfc-editor.org/info/rfc4333</a>&gt;.
+
+   [<a id="ref-RFC7691">RFC7691</a>]  Bradner, S., Ed., &quot;Updating the Term Dates of IETF
+              Administrative Oversight Committee (IAOC) Members&quot;,
+              <a href="/doc/html/bcp101">BCP 101</a>, <a href="/doc/html/rfc7691">RFC 7691</a>, DOI 10.17487/RFC7691, November 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7691">https://www.rfc-editor.org/info/rfc7691</a>&gt;.
+
+   [<a id="ref-RFC8714">RFC8714</a>]  Arkko, J. and T. Hardie, &quot;Update to the Process for
+              Selection of Trustees for the IETF Trust&quot;, <a href="/doc/html/bcp101">BCP 101</a>,
+              <a href="/doc/html/rfc8714">RFC 8714</a>, DOI 10.17487/RFC8714, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8714">https://www.rfc-editor.org/info/rfc8714</a>&gt;.
+
+   [<a id="ref-RFC8718">RFC8718</a>]  Lear, E., Ed., &quot;IETF Plenary Meeting Venue Selection
+              Process&quot;, <a href="/doc/html/bcp226">BCP 226</a>, <a href="/doc/html/rfc8718">RFC 8718</a>, DOI 10.17487/RFC8718,
+              February 2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8718">https://www.rfc-editor.org/info/rfc8718</a>&gt;.
+
+Acknowledgments
+
+   Thanks to Jari Arkko, Richard Barnes, Brian E. Carpenter, Alissa
+   Cooper, John C. Klensin, Bob Hinden, Jon Peterson, Sean Turner, and
+   the IASA2 Working Group for discussions of possible structures, and
+   to the attorneys of Morgan Lewis and Brad Biddle for legal advice.
+
+   Coauthor Hall performed work on this document before employment at
+   the Internet Society, and his affiliation listed in this document is
+   for identification purposes only.
+
+Authors&#x27; Addresses
+
+   Brian Haberman
+   Johns Hopkins University
+
+   Email: brian@innovationslab.net
+
+
+   Joseph Lorenzo Hall
+   Internet Society
+
+   Email: hall@isoc.org
+
+
+   Jason Livingood
+   Comcast
+
+   Email: jason_livingood@comcast.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

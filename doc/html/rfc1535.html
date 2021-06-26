@@ -1,0 +1,517 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1535
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1535/">
+  <meta name="description" content="A Security Problem and Proposed Correction With Widely Deployed DNS Software (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1535.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1535.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1535.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1535/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1535/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1535@ietf.org?subject=rfc1535" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1535-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1535-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1535-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                           Informational
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=1535&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                          E. Gavron
+Request for Comments: 1535                            ACES Research Inc.
+Category: Informational                                     October 1993
+
+
+              <span class="h1">A Security Problem and Proposed Correction</span>
+                   <span class="h1">With Widely Deployed DNS Software</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard.  Distribution of this memo is
+   unlimited.
+
+Abstract
+
+   This document discusses a flaw in some of the currently distributed
+   name resolver clients.  The flaw exposes a security weakness related
+   to the search heuristic invoked by these same resolvers when users
+   provide a partial domain name, and which is easy to exploit (although
+   not by the masses).  This document points out the flaw, a case in
+   point, and a solution.
+
+Background
+
+   Current Domain Name Server clients are designed to ease the burden of
+   remembering IP dotted quad addresses.  As such they translate human-
+   readable names into addresses and other resource records.  Part of
+   the translation process includes understanding and dealing with
+   hostnames that are not fully qualified domain names (FQDNs).
+
+   An absolute &quot;rooted&quot; FQDN is of the format {name}{.} A non &quot;rooted&quot;
+   domain name is of the format {name}
+
+   A domain name may have many parts and typically these include the
+   host, domain, and type.  Example:  foobar.company.com or
+   fooschool.university.edu.
+
+Flaw
+
+   The problem with most widely distributed resolvers based on the BSD
+   BIND resolver is that they attempt to resolve a partial name by
+   processing a search list of partial domains to be added to portions
+   of the specified host name until a DNS record is found.  This
+   &quot;feature&quot; is disabled by default in the official BIND 4.9.2 release.
+
+   Example: A TELNET attempt by    User@Machine.Tech.ACES.COM
+                             to    UnivHost.University.EDU
+
+
+
+<span class="grey">Gavron                                                          [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1535">RFC 1535</a>               DNS Software Enhancements            October 1993</span>
+
+
+   The resolver client will realize that since &quot;UnivHost.University.EDU&quot;
+   does not end with a &quot;.&quot;, it is not an absolute &quot;rooted&quot; FQDN.  It
+   will then try the following combinations until a resource record is
+   found:
+
+                UnivHost.University.EDU.Tech.ACES.COM.
+                UnivHost.University.EDU.ACES.COM.
+                UnivHost.University.EDU.COM.
+                UnivHost.University.EDU.
+
+Security Issue
+
+   After registering the EDU.COM domain, it was discovered that an
+   unliberal application of one wildcard CNAME record would cause *all*
+   connects from any .COM site to any .EDU site to terminate at one
+   target machine in the private edu.com sub-domain.
+
+   Further, discussion reveals that specific hostnames registered in
+   this private subdomain, or any similarly named subdomain may be used
+   to spoof a host.
+
+        Example:        harvard.edu.com.        CNAME   targethost
+
+   Thus all connects to Harvard.edu from all .com sites would end up at
+   targthost, a machine which could provide a Harvard.edu login banner.
+
+   This is clearly unacceptable.  Further, it could only be made worse
+   with domains like COM.EDU, MIL.GOV, GOV.COM, etc.
+
+Public vs. Local Name Space Administration
+
+   The specification of the Domain Name System and the software that
+   implements it provides an undifferentiated hierarchy which permits
+   delegation of administration for subordinate portions of the name
+   space.  Actual administration of the name space is divided between
+   &quot;public&quot; and &quot;local&quot; portions.  Public administration pertains to all
+   top-level domains, such as .COM and .EDU.  For some domains, it also
+   pertains to some number of sub-domain levels.  The multi-level nature
+   of the public administration is most evident for top-level domains
+   for countries.  For example in the Fully Qualified Domain Name,
+   dbc.mtview.ca.us., the portion &quot;mtview.ca.us&quot; represents three levels
+   of public administration.  Only the left-most portion is subject to
+   local administration.
+
+
+
+
+
+
+
+
+<span class="grey">Gavron                                                          [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1535">RFC 1535</a>               DNS Software Enhancements            October 1993</span>
+
+
+   The danger of the heuristic search common in current practise is that
+   it it is possible to &quot;intercept&quot; the search by matching against an
+   unintended value while walking up the search list.  While this is
+   potentially dangerous at any level, it is entirely unacceptable when
+   the error impacts users outside of a local administration.
+
+   When attempting to resolve a partial domain name, DNS resolvers use
+   the Domain Name of the searching host for deriving the search list.
+   Existing DNS resolvers do not distinguish the portion of that name
+   which is in the locally administered scope from the part that is
+   publically administered.
+
+Solution(s)
+
+   At a minimum, DNS resolvers must honor the BOUNDARY between local and
+   public administration, by limiting any search lists to locally-
+   administered portions of the Domain Name space.  This requires a
+   parameter which shows the scope of the name space controlled by the
+   local administrator.
+
+   This would permit progressive searches from the most qualified to
+   less qualified up through the locally controlled domain, but not
+   beyond.
+
+   For example, if the local user were trying to reach:
+
+        User@chief.admin.DESERTU.EDU from
+        starburst,astro.DESERTU.EDU,
+
+   it is reasonable to permit the user to enter just chief.admin, and
+   for the search to cover:
+
+        chief.admin.astro.DESERTU.EDU
+        chief.admin.DESERTU.EDU
+
+   but not
+
+        chief.admin.EDU
+
+   In this case, the value of &quot;search&quot; should be set to &quot;DESERTU.EDU&quot;
+   because that&#x27;s the scope of the name space controlled by the local
+   DNS administrator.
+
+   This is more than a mere optimization hack.  The local administrator
+   has control over the assignment of names within the locally
+   administered domain, so the administrator can make sure that
+   abbreviations result in the right thing.  Outside of the local
+   control, users are necessarily at risk.
+
+
+
+<span class="grey">Gavron                                                          [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1535">RFC 1535</a>               DNS Software Enhancements            October 1993</span>
+
+
+   A more stringent mechanism is implemented in BIND 4.9.2, to respond
+   to this problem:
+
+   The DNS Name resolver clients narrows its IMPLICIT search list IF ANY
+   to only try the first and the last of the examples shown.
+
+   Any additional search alternatives must be configured into the
+   resolver EXPLICITLY.
+
+   DNS Name resolver software SHOULD NOT use implicit search lists in
+   attempts to resolve partial names into absolute FQDNs other than the
+   hosts&#x27;s immediate parent domain.
+
+   Resolvers which continue to use implicit search lists MUST limit
+   their scope to locally administered sub-domains.
+
+   DNS Name resolver software SHOULD NOT come pre-configured with
+   explicit search lists that perpetuate this problem.
+
+   Further, in any event where a &quot;.&quot; exists in a specified name it
+   should be assumed to be a fully qualified domain name (FQDN) and
+   SHOULD be tried as a rooted name first.
+
+   Example:  Given  user@a.b.c.d connecting to e.f.g.h  only two tries
+             should be attempted as a result of using an implicit
+             search list:
+
+                e.f.g.h.  and e.f.g.h.b.c.d.
+
+             Given user@a.b.c.d. connecting to host those same two
+             tries would appear as:
+
+                x.b.c.d.  and x.
+
+   Some organizations make regular use of multi-part, partially
+   qualified Domain Names.  For example, host foo.loc1.org.city.state.us
+   might be used to making references to bar.loc2, or mumble.loc3, all
+   of which refer to whatever.locN.org.city.state.us
+
+   The stringent implicit search rules for BIND 4.9.2 will now cause
+   these searches to fail.  To return the ability for them to succeed,
+   configuration of the client resolvers must be changed to include an
+   explicit search rule for org.city.state.us.  That is, it must contain
+   an explicit rule for any -- and each -- portion of the locally-
+   administered sub-domain that it wishes to have as part of the search
+   list.
+
+
+
+
+
+<span class="grey">Gavron                                                          [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc1535">RFC 1535</a>               DNS Software Enhancements            October 1993</span>
+
+
+References
+
+   [<a id="ref-1">1</a>] Mockapetris, P., &quot;Domain Names Concepts and Facilities&quot;, STD 13,
+       <a href="/doc/html/rfc1034">RFC 1034</a>, USC/Information Sciences Institute, November 1987.
+
+   [<a id="ref-2">2</a>] Mockapetris, P., &quot;Domain Names Implementation and Specification&quot;,
+       STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, USC/Information Sciences Institute, November
+       1987.
+
+   [<a id="ref-3">3</a>] Partridge, C., &quot;Mail Routing and the Domain System&quot;, STD 14, <a href="/doc/html/rfc974">RFC</a>
+       <a href="/doc/html/rfc974">974</a>, CSNET CIC BBN, January 1986.
+
+   [<a id="ref-4">4</a>] Kumar, A., Postel, J., Neuman, C., Danzig, P., and S. Miller,
+       &quot;Common DNS Implementation Errors and Suggested Fixes&quot;, <a href="/doc/html/rfc1536">RFC 1536</a>,
+       USC/Information Sciences Institute, USC, October 1993.
+
+   [<a id="ref-5">5</a>] Beertema, P., &quot;Common DNS Data File Configuration Errors&quot;, <a href="/doc/html/rfc1537">RFC</a>
+       <a href="/doc/html/rfc1537">1537</a>, CWI, October 1993.
+
+Security Considerations
+
+   This memo indicates vulnerabilities with all too-forgiving DNS
+   clients.  It points out a correction that would eliminate the future
+   potential of the problem.
+
+Author&#x27;s Address
+
+   Ehud Gavron
+   ACES Research Inc.
+   PO Box 14546
+   Tucson, AZ 85711
+
+   Phone: (602) 743-9841
+   EMail: gavron@aces.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gavron                                                          [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

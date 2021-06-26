@@ -1,0 +1,349 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1141
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1141/">
+  <meta name="description" content="Incremental updating of the Internet checksum (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1141.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1141.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1141.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1141/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1141/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1141@ietf.org?subject=rfc1141" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1141-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1141-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1141-.txt" title="Run an idnits check of this document">Nits</a>]
+
+Updated by: <a href="/doc/html/rfc1624">1624</a>                                           Informational
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=1141&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                         T. Mallory
+Request for Comments: 1141                                   A. Kullberg
+Obsoletes: RFC <a href="/doc/html/rfc1071">1071</a>                                   BBN Communications
+                                                            January 1990
+
+
+             <span class="h1">Incremental Updating of the Internet Checksum</span>
+
+Status of this Memo
+
+   This memo correctly describes the incremental update procedure for
+   use with the standard Internet checksum.  It is intended to replace
+   the description of Incremental Update in <a href="/doc/html/rfc1071">RFC 1071</a>.  This is not a
+   standard but rather, an implementation technique.  Distribution of
+   this memo is unlimited.
+
+Description
+
+   In <a href="/doc/html/rfc1071">RFC 1071</a> on pages 4 and 5, there is a description of a method to
+   update the IP checksum in the IP header without having to completely
+   recompute the checksum.  In particular, the RFC recommends the
+   following equation for computing the update checksum C&#x27; from the
+   original checksum C, and the old and new values of byte m:
+
+         C&#x27; = C + (-m) + m&#x27; = C + (m&#x27; - m)
+
+   While the equation above is correct, it is not very useful for
+   incremental updates since the equation above updates the checksum C,
+   rather than the 1&#x27;s complement of the checksum, ~C, which is the
+   value stored in the checksum field.  In addition, it suffers because
+   the notation does not clearly specify that all arithmetic, including
+   the unary negation, must be performed one&#x27;s complement, and so is
+   difficult to use to build working code.  The useful calculation for
+   2&#x27;s complement machines is:
+
+         ~C&#x27; = ~(C + (-m) + m&#x27;) = ~C + (m - m&#x27;) = ~C + m + ~m&#x27;
+
+   In the oft-mentioned case of updating the IP TTL field, subtracting
+   one from the TTL means ADDING 1 or 256 as appropriate to the checksum
+   field in the packet, using one&#x27;s complement addition.  One big-endian
+   non-portable implementation in C looks like:
+
+      unsigned long sum;
+      ipptr-&gt;ttl--;                  /* decrement ttl */
+      sum = ipptr-&gt;Checksum + 0x100;  /* increment checksum high byte*/
+      ipptr-&gt;Checksum = (sum + (sum&gt;&gt;16)) /* add carry */
+
+   This special case can be optimized in many ways: for instance, you
+
+
+
+<span class="grey">Mallory &amp; Kullberg                                              [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1141">RFC 1141</a>                  Incremental Updating              January 1990</span>
+
+
+   can bundle updating and checking the ttl.  Compiler mileage may vary.
+   Here is a more general and possibly more helpful example which
+   updates the ttl by n seconds:
+
+      UpdateTTL(iph,n)
+      struct ip_hdr *ipptr;
+      unsigned char n;
+      {
+          unsigned long sum;
+          unsigned short old;
+
+          old = ntohs(*(unsigned short *)&amp;ipptr-&gt;ttl);
+          ipptr-&gt;ttl -= n;
+          sum = old + (~ntohs(*(unsigned short *)&amp;ipptr-&gt;ttl) &amp; 0xffff);
+          sum += ntohs(ipptr-&gt;Checksum);
+          sum = (sum &amp; 0xffff) + (sum&gt;&gt;16);
+          ipptr-&gt;Checksum = htons(sum + (sum&gt;&gt;16));
+      }
+
+Security Considerations
+
+   Security issues are not addressed in this memo.
+
+Authors&#x27; Addresses
+
+   Tracy Mallory
+   BBN Communications Corporation
+   50 Moulton Street
+   Cambridge, MA 02238
+
+   Phone: (617) 873-3193
+
+   EMail: tmallory@CCV.BBN.COM
+
+
+   A. Kullberg
+   BBN Communications Corporation
+   50 Moulton Street
+   Cambridge, MA 02238
+
+   Phone: (617) 873-4000
+
+   EMail:  akullberg@BBN.COM
+
+
+
+
+
+
+
+
+Mallory &amp; Kullberg                                              [Page 2]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

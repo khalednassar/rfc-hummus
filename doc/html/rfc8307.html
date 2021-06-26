@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8307
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-bormann-hybi-ws-wk/">
+  <meta name="description" content="Well-Known URIs for the WebSocket Protocol (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8307.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8307.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc8307.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8307/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8307/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/art/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-bormann-hybi-ws-wk@ietf.org?subject=draft-bormann-hybi-ws-wk" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-bormann-hybi-ws-wk-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-bormann-hybi-ws-wk-00">draft-bormann-hybi-ws-wk-00</a>                      Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        C. Bormann
+Request for Comments: 8307                       Universitaet Bremen TZI
+Updates: <a href="/doc/html/rfc6455">6455</a>                                               January 2018
+Category: Standards Track
+ISSN: 2070-1721
+
+
+               <span class="h1">Well-Known URIs for the WebSocket Protocol</span>
+
+Abstract
+
+   <a href="/doc/html/rfc5785">RFC 5785</a> defines a path prefix, &quot;/.well-known/&quot;, that can be used by
+   well-known URIs.  It was specifically defined for the &quot;http&quot; and
+   &quot;https&quot; URI schemes.  The present memo formally updates <a href="/doc/html/rfc6455">RFC 6455</a>,
+   which defines the URI schemes defined for the WebSocket Protocol, to
+   extend the use of these well-known URIs to those URI schemes.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8307">https://www.rfc-editor.org/info/rfc8307</a>.
+
+Copyright Notice
+
+   Copyright (c) 2018 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+<span class="grey">Bormann                      Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc8307">RFC 8307</a>       Well-Known URIs for the WebSocket Protocol   January 2018</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-2">2</a>
+   <a href="#section-2">2</a>.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   <a href="#page-2">2</a>
+   <a href="#section-3">3</a>.  Security Considerations . . . . . . . . . . . . . . . . . . .   <a href="#page-2">2</a>
+   <a href="#section-4">4</a>.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-3">3</a>
+     <a href="#section-4.1">4.1</a>.  Normative References  . . . . . . . . . . . . . . . . . .   <a href="#page-3">3</a>
+     <a href="#section-4.2">4.2</a>.  Informative References  . . . . . . . . . . . . . . . . .   <a href="#page-3">3</a>
+   Author&#x27;s Address  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-3">3</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a id="ref-RFC5785">RFC5785</a>] defines a path prefix, &quot;/.well-known&quot;, that can be used by
+   well-known URIs.  It also contains an IANA registry for URI suffixes
+   to be used with this path prefix for forming well-known URIs.
+
+   In [<a href="/doc/html/rfc5785" title="&quot;Defining Well-Known Uniform Resource Identifiers (URIs)&quot;">RFC5785</a>], this mechanism is specifically defined for the &quot;http&quot;
+   and &quot;https&quot; URI schemes (now defined in [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>]).  Other URI
+   schemes such as &quot;coap&quot; and &quot;coaps&quot; [<a href="/doc/html/rfc7252" title="&quot;The Constrained Application Protocol (CoAP)&quot;">RFC7252</a>] have since picked up
+   this mechanism, sharing the registry of URI suffixes with that for
+   HTTP(S).
+
+   [<a href="/doc/html/rfc6455" title="&quot;The WebSocket Protocol&quot;">RFC6455</a>], which defines the URI schemes defined for the WebSocket
+   Protocol, &quot;ws&quot; and &quot;wss&quot;, does not define the use of well-known URIs
+   for these URI schemes.
+
+   The present memo formally updates [<a href="/doc/html/rfc6455" title="&quot;The WebSocket Protocol&quot;">RFC6455</a>] to extend the use of
+   [<a href="/doc/html/rfc5785" title="&quot;Defining Well-Known Uniform Resource Identifiers (URIs)&quot;">RFC5785</a>] well-known URIs to the URI schemes &quot;ws&quot; and &quot;wss&quot;.
+
+   Well-known URIs for &quot;ws&quot; and &quot;wss&quot; share the registry for URI
+   suffixes established by [<a href="/doc/html/rfc5785" title="&quot;Defining Well-Known Uniform Resource Identifiers (URIs)&quot;">RFC5785</a>]; no change is necessitated by the
+   present memo in the registry or its IANA considerations.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  IANA Considerations</span>
+
+   This document does not require any IANA actions.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   The Security Considerations of [<a href="/doc/html/rfc5785" title="&quot;Defining Well-Known Uniform Resource Identifiers (URIs)&quot;">RFC5785</a>] apply and need to be
+   considered for all well-known URIs.
+
+   It has always been possible to form &quot;ws&quot; and &quot;wss&quot; URIs in such a way
+   that they map to well-known HTTP(S) URIs when using the procedure in
+   <a href="/doc/html/rfc6455#section-4">Section&nbsp;4 of [RFC6455]</a>; no new security considerations are created by
+   now formally making the well-known URI mechanism available for &quot;ws&quot;
+   and &quot;wss&quot;.
+
+
+
+
+<span class="grey">Bormann                      Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc8307">RFC 8307</a>       Well-Known URIs for the WebSocket Protocol   January 2018</span>
+
+
+   However, with well-known URIs becoming available for the WebSocket
+   Protocol, applications that want to define well-known URI suffixes
+   specifically for WebSocket use also need to consider whether the
+   resources becoming available under the equivalent HTTP(S) URI formed
+   by <a href="/doc/html/rfc6455#section-4">Section&nbsp;4 of [RFC6455]</a> pose any information disclosure or other
+   security considerations.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC5785">RFC5785</a>]  Nottingham, M. and E. Hammer-Lahav, &quot;Defining Well-Known
+              Uniform Resource Identifiers (URIs)&quot;, <a href="/doc/html/rfc5785">RFC 5785</a>,
+              DOI 10.17487/RFC5785, April 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5785">https://www.rfc-editor.org/info/rfc5785</a>&gt;.
+
+   [<a id="ref-RFC6455">RFC6455</a>]  Fette, I. and A. Melnikov, &quot;The WebSocket Protocol&quot;,
+              <a href="/doc/html/rfc6455">RFC 6455</a>, DOI 10.17487/RFC6455, December 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6455">https://www.rfc-editor.org/info/rfc6455</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC7230">RFC7230</a>]  Fielding, R., Ed. and J. Reschke, Ed., &quot;Hypertext Transfer
+              Protocol (HTTP/1.1): Message Syntax and Routing&quot;,
+              <a href="/doc/html/rfc7230">RFC 7230</a>, DOI 10.17487/RFC7230, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7230">https://www.rfc-editor.org/info/rfc7230</a>&gt;.
+
+   [<a id="ref-RFC7252">RFC7252</a>]  Shelby, Z., Hartke, K., and C. Bormann, &quot;The Constrained
+              Application Protocol (CoAP)&quot;, <a href="/doc/html/rfc7252">RFC 7252</a>,
+              DOI 10.17487/RFC7252, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7252">https://www.rfc-editor.org/info/rfc7252</a>&gt;.
+
+Author&#x27;s Address
+
+   Carsten Bormann
+   Universitaet Bremen TZI
+   Postfach 330440
+   Bremen  D-28359
+   Germany
+
+   Phone: +49-421-218-63921
+   Email: cabo@tzi.org
+
+
+
+
+
+
+
+
+
+Bormann                      Standards Track                    [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

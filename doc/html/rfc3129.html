@@ -1,0 +1,572 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc3129
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-kink-reqmt/">
+  <meta name="description" content="Requirements for Kerberized Internet Negotiation of Keys (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc3129.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc3129.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc3129.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc3129/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc3129/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/kink/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-kink-reqmt@ietf.org?subject=draft-ietf-kink-reqmt" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-kink-reqmt-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-kink-reqmt-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-kink-reqmt-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-kink-reqmt-03">draft-ietf-kink-reqmt-03</a>                             Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                          M. Thomas
+Request for Comments: 3129                                 Cisco Systems
+Category: Informational                                        June 2001
+
+
+        <span class="h1">Requirements for Kerberized Internet Negotiation of Keys</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+Abstract
+
+   The goal of this document is to produce a streamlined, fast, easily
+   managed, and cryptographically sound protocol without requiring
+   public key.
+
+Motivation
+
+   The IPsec working group has defined a number of protocols which
+   provide the ability to create and maintain cryptographically secure
+   security associations at layer three (i.e., the IP layer).  This
+   effort has produced two distinct protocols:
+
+   1) a mechanism to encrypt and authenticate IP datagram payloads which
+      assumes a shared secret between the sender and receiver
+
+   2) a mechanism for IPsec peers to perform mutual authentication and
+      exchange keying material
+
+   The IPsec working group has defined a peer to peer authentication and
+   keying mechanism, IKE (<a href="/doc/html/rfc2409">RFC 2409</a>).  One of the drawbacks of a peer to
+   peer protocol is that each peer must know and implement a site&#x27;s
+   security policy which in practice can be quite complex.  In addition,
+   the lack of a trusted third party requires the use of Diffie Hellman
+   (DH) to establish a shared secret.  DH, unfortunately, is
+   computationally quite expensive and prone to denial of service
+   attacks.  IKE also relies on X.509 certificates to realize scalable
+   authentication of peers.  Digital signatures are also computationally
+   expensive and certificate based trust models are difficult to deploy
+
+
+
+
+
+<span class="grey">Thomas                       Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc3129">RFC 3129</a>                 Requirements for KINK                 June 2001</span>
+
+
+   in practice.  While IKE does allow for pre-shared symmetric keys, key
+   distribution is required between all peers -- an O(n^2) problem --
+   which is problematic for large deployments.
+
+   Kerberos (<a href="/doc/html/rfc1510">RFC 1510</a>) provides a mechanism for trusted third party
+   authentication for clients and servers.  Clients authenticate to a
+   centralized server -- the Key Distribution Center -- which in turn
+   issues tickets that servers can decrypt thus proving that the client
+   is who it claims to be.  One of the elements of a Kerberos ticket is
+   a session key which is generated by the KDC which may be used by the
+   client and server to share a secret.  Kerberos also allows for both
+   symmetric key authentication, as well as certificate based public key
+   authentication (PKinit).  Since the authentication phase of Kerberos
+   is performed by the KDC, there is no need to perform expensive DH or
+   X.509 certificate signatures/verification operations on servers.
+   While clients may authenticate using X.509 certificates, the
+   authentication phase can be amortized over the lifetime of the
+   credentials.  This allows a single DH and certificate exchange to be
+   used to key security associations with many servers in a
+   computationally economic way.  Kerberos also support clients with
+   symmetric keys but unlike IKE, the symmetric keys are stored in the
+   KDC making the number of keys an O(n) problem rather than O(n^2).
+   Kerberos also allows security policy to be managed in a more
+   centralized fashion, rather than expecting each potentially
+   untrustworthy peer to abide by stated security policies of an
+   organization.
+
+   The KINK working group takes these basic features of Kerberos and
+   uses them to its advantage to create a protocol which can establish
+   and maintain IPsec security associations (<a href="/doc/html/rfc2401">RFC 2401</a>).  It should be
+   noted that KINK is not a replacement for IKE.  IKE has one property
+   which KINK cannot reproduce:  the ability for two peers to mutually
+   authenticate and exchange keys without the need for an actively
+   participating third party.  However, there are many situations where
+   a trusted third party which proxies authentication is viable, and in
+   fact desirable.
+
+   While Kerberos specifies a standard protocol between the client and
+   the KDC to get tickets, the actual ticket exchange between client and
+   server is application specific.  KINK is intended to be an
+   alternative to requiring each application having its own method of
+   transporting and validating service tickets using a protocol which is
+   efficient and tailored to the specific needs of Kerberos and the
+   applications for which it provides keying and parameter negotiation.
+
+   Given the above, a new general keying protocol which leverages the
+   scalability of Kerberos is desirable.  The working group&#x27;s first task
+   is to define this protocol and define an domain of interpretation for
+
+
+
+<span class="grey">Thomas                       Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc3129">RFC 3129</a>                 Requirements for KINK                 June 2001</span>
+
+
+   IPsec to establish and maintain IPsec security associations.  The
+   protocol must be able to take full advantage of the features of <a href="/doc/html/rfc2401">RFC</a>
+   <a href="/doc/html/rfc2401">2401</a> but in the context of a centralized keying authority.
+
+Requirements
+
+   KINK must meet the following requirements at a minimum:
+
+   -     The protocol must use the session keys found in Kerberos
+         tickets as the basis of the keying material used for IPsec
+         security association keys.
+
+   -     The protocol must be able to integrate into security
+         architecture of IPsec (<a href="/doc/html/rfc2401">RFC 2401</a>).
+
+   -     The protocol must be able to start up SA&#x27;s regardless of any
+         client/server disposition in the keying protocol.  In other
+         words, either IPsec peer can be the initiator or responder,
+         regardless of whether it&#x27;s a Kerberos &#x27;client&#x27; (TGT-only) or
+         Kerberos &#x27;server&#x27;(has a keytab).
+
+   -     The protocol must support Kerberos using either secret key, or
+         public key (PKINIT) initial authentication.
+
+   -     The protocol must support Kerberos User-to-User mode for cases
+         in which the initiator cannot obtain an AP_REQ for the
+         responder (i.e.  the responder is a PKINIT client) or the
+         responder cannot decrypt and AP_REQ from the initiator (i.e.,
+         the responder doesn&#x27;t have a Kerberos Keytab, just a TGT).
+
+   -     The protocol must be able to allow a peer to authenticate and
+         participate in many realms.
+
+   -     The protocol must handle absolute time skew gracefully.
+
+   -     The protocol must be able to create, modify, rekey, and delete
+         security associations.
+
+   -     The protocol must be capable of setting up both transport and
+         tunnel modes of IPsec.
+
+   -     The protocol must be capable of setting up both AH and ESP
+         security associations.
+
+   -     The protocol must be capable of negotiating cipher suites.
+
+   -     The protocol must be capable of setting up IPsec flow
+         selectors.
+
+
+
+<span class="grey">Thomas                       Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc3129">RFC 3129</a>                 Requirements for KINK                 June 2001</span>
+
+
+   -     The protocol must be capable of rekeying without the assistance
+         of the KDC if the Kerberos session ticket is still valid.
+
+   -     The protocol must make an effort to mitigate third party Denial
+         of Service attacks (aka Zombies attacks).
+
+   -     The protocol must be able to be used for more than IPsec
+         keying.
+
+   -     The protocol must support both IPv4 and IPv6.
+
+Security Considerations
+
+   These requirements lay out input to define a protocol which allows
+   the keying of IPsec security associations using Kerberos as the key
+   distribution mechanism.  As such, the security associations that will
+   be created by the new protocol will inherit the union of IPsec and
+   Kerberos&#x27;s existing security weaknesses.  There is no requirement to
+   address those weaknesses unless in combination they produce a new
+   weakness which is not inherent in other keying protocols.
+
+Acknowledgments
+
+   The original KINK Kabal was:
+
+      Michael Thomas (Cisco)
+      David McGrew (Cisco)
+      Jan Vilhuber (Cisco)
+      Jonathan Trostle (Cisco)
+      Matt Hur (Cybersafe)
+      Mike Froh (Cybersafe)
+      Sasha Medvinsky (GI)
+      Derek Atkins (Telcordia)
+
+   It must also be acknowledged that the Packetcable Security
+   specification PKT-SP-SEC-I01-991201 provided the raw fodder for this
+   effort in its Kerberized IPsec section, and all of the focus team
+   members who played a part in the spec.  We must also acknowledge
+   Nancy Davoust of Cablelabs for keeping order in our normally
+   disorderly proceedings.
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Thomas                       Informational                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc3129">RFC 3129</a>                 Requirements for KINK                 June 2001</span>
+
+
+References
+
+   [<a id="ref-1">1</a>]  Kohl, J. and C. Neuman, &quot;The Kerberos Network
+        Authentication Service (V5)&quot;, <a href="/doc/html/rfc1510">RFC 1510</a>, September 1993.
+
+   [<a id="ref-2">2</a>]  Kent, S. and R. Atkinson, &quot;Security Architecture for the
+        Internet Protocol&quot;, <a href="/doc/html/rfc2401">RFC 2401</a>, November 1998.
+
+   [<a id="ref-3">3</a>]  Harkins, D. and D. Carrel, &quot;The Internet Key
+        Exchange (IKE)&quot;, <a href="/doc/html/rfc2409">RFC 2409</a>, November 1998.
+
+Author&#x27;s Address
+
+   Michael Thomas
+   Cisco Systems
+   375 E Tasman Rd
+   San Jose, Ca, 95134, USA
+
+   Phone: +1 408-525-5386
+   EMail: mat@cisco.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Thomas                       Informational                      [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc3129">RFC 3129</a>                 Requirements for KINK                 June 2001</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Thomas                       Informational                      [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2081
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-rip-ripng-applic/">
+  <meta name="description" content="RIPng Protocol Applicability Statement (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2081.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2081.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2081.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2081/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2081/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/rip/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-rip-ripng-applic@ietf.org?subject=draft-ietf-rip-ripng-applic" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-rip-ripng-applic-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-rip-ripng-applic-00">draft-ietf-rip-ripng-applic-00</a>                       Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                          G. Malkin
+Request for Comments: 2081                                      Xylogics
+Category: Informational                                     January 1997
+
+
+                 <span class="h1">RIPng Protocol Applicability Statement</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Abstract
+
+   As required by Routing Protocol Criteria (<a href="/doc/html/rfc1264">RFC 1264</a>), this report
+   defines the applicability of the RIPng protocol within the Internet.
+   This report is a prerequisite to advancing RIPng on the standards
+   track.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Protocol Documents</span>
+
+   The RIPng protocol description is defined in <a href="/doc/html/rfc2080">RFC 2080</a>.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Introduction</span>
+
+   This report describes how RIPng may be useful within the new IPv6
+   Internet.  In essence, the environments in which RIPng is the IGP of
+   choice is comparable to the environments in which RIP-2 (<a href="/doc/html/rfc1723">RFC 1723</a>) is
+   used in the IPv4 Internet.  It is important to remember that RIPng is
+   a simple extrapolation of RIP-2; RIPng has nothing conceptually new.
+   Thus, the operational aspects of distance-vector routing protocols,
+   and RIP-2 in particular, within an autonomous system are well
+   understood.
+
+   It should be noted that RIPng is not intended to be a substitute for
+   OSPFng in large autonomous systems; the restrictions on AS diameter
+   and complexity which applied to RIP-2 also apply to RIPng.  Rather,
+   RIPng allows the smaller, simpler, distance-vector protocol to be
+   used in environments which require authentication or the use of
+   variable length subnet masks, but are not of a size or complexity
+   which require the use of the larger, more complex, link-state
+   protocol.
+
+   The remainder of this report describes how each of the features of
+   RIPng is useful within IPv6.
+
+
+
+
+
+<span class="grey">Malkin                       Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2081">RFC 2081</a>                  RIP-2 Applicability               January 1997</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Applicability</span>
+
+   A goal in developing RIPng was to make the minimum necessary change
+   to RIP-2 to produce RIPng.  In essence, the IPv4 address was expanded
+   into an IPv6 address, the IPv4 subnet mask was replaced with an IPv6
+   prefix length, the next-hop field was eliminated but the
+   functionality has been preserved, and authentication was removed.
+   The route tag field has been preserved.  The maximum diameter of the
+   network (the maximum metric value) is 15; 16 still means infinity
+   (unreachable).
+
+   The basic RIP header is unchanged.  However, the size of a routing
+   packet is no longer arbitrarily limited.  Because routing updates are
+   never forwarded, the routing packet size is now determined by the
+   physical media and the sizes of the headers which precede the routing
+   data (i.e., media MTU minus the combined header lengths).  The number
+   routes which may be included in a routing update is the routing data
+   length divided by the size of a routing entry.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a> Prefix</span>
+
+   The address field of a routing entry is 128 bits in length, expanded
+   from the 32 bits available in RIP-2.  This allows the RIP entry to
+   carry an IPv6 prefix.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a> Prefix Length</span>
+
+   The 32-bit RIP-2 subnet mask field is replaced by an 8-bit prefix
+   length field.  It allows the specification of the number of bits in
+   the prefix which form the actual prefix.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a> Next Hop</span>
+
+   The ability to specify the next hop, rather than simply allowing the
+   recipient of the update to set the next hop to the sender of the
+   update, allows for the elimination of unnecessary hops through
+   routers which are running multiple routing protocols.  Consider
+   following example topology:
+
+         -----   -----         -----   -----
+         |IR1|   |IR2|         |XR1|   |XR2|
+         --+--   --+--         --+--   --+--
+           |       |             |       |
+         --+-------+-------------+-------+--
+           |--------RIPng--------|
+
+
+
+
+
+
+<span class="grey">Malkin                       Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2081">RFC 2081</a>                  RIP-2 Applicability               January 1997</span>
+
+
+   The Internal Routers (IR1 and IR2) are only running RIPng.  The
+   External Routers (XR1 and XR2) are both running BGP, for example;
+   however, only XR1 is running BGP and RIPng.  Since XR2 is not running
+   RIPng, the IRs will not know of its existance and will never use it
+   as a next hop, even if it is a better next hop than XR1.  Of course,
+   XR1 knows this and can indicate, via the Next Hop mechanism, that XR2
+   is the better next hop for some routes.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a> Authentication</span>
+
+   Authentication, which was added to RIP-2 because RIP-1 did not have
+   it, has been dropped from RIPng.  This is safe to do because IPv6,
+   which carries the RIPng packets, has build in security which IPv4 did
+   not have.
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a> Packet Length</span>
+
+   By allowing RIPng routing update packets to be as big as possible,
+   the number of packets which must be sent for a complete update is
+   greatly reduced.  This in no way affects the operation of the
+   distance-vector protocol; it is merely a performance enhancement.
+
+<span class="h3"><a class="selflink" id="section-3.6" href="#section-3.6">3.6</a> Diameter and Complexity</span>
+
+   The limit of 15 cost-1 hops is a function of the distance-vector
+   protocol, which depends on counting to infinity to resolve some
+   routing loops.  If infinity is too high, the time it would take to
+   resolve, not to mention the number of routing updates which would be
+   sent, would be prohibitive.  If the infinity is too small, the
+   protocol becomes useless in a reasonably sized network.  The choice
+   of 16 for infinity was made in the earliest of RIP implementations
+   and experience has shown it to be a good compromise value.
+
+   RIPng will efficiently support networks of moderate complexity.  That
+   is, topologies without too many multi-hop loops.  RIPng also
+   effeciently supports topologies which change frequently because
+   routing table changes are made incrementally and do not require the
+   computation which link-state protocols require to rebuild their maps.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Conclusion</span>
+
+   Because the basic protocol is unchanged, RIPng is as correct a
+   routing protocol as RIP-2.  RIPng serves the same niche for IPv6 as
+   RIP-2 does for IPv4.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   RIPng security is discussed in <a href="#section-3.4">section 3.4</a>.
+
+
+
+<span class="grey">Malkin                       Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc2081">RFC 2081</a>                  RIP-2 Applicability               January 1997</span>
+
+
+Author&#x27;s Address
+
+   Gary Scott Malkin
+   Xylogics/Bay Networks
+   53 Third Avenue
+   Burlington, MA 01803
+
+   Phone:  (617) 238-6237
+   EMail:  gmalkin@xylogics.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Malkin                       Informational                      [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

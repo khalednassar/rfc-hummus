@@ -1,0 +1,1076 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8553
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-dnsop-attrleaf-fix/">
+  <meta name="description" content="DNS Attrleaf Changes: Fixing Specifications That Use Underscored Node Names (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgmagenta"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8553.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8553.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc8553.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8553/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8553/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/dnsop/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-dnsop-attrleaf-fix@ietf.org?subject=draft-ietf-dnsop-attrleaf-fix" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-dnsop-attrleaf-fix-07.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dnsop-attrleaf-fix-07.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-dnsop-attrleaf-fix-07.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-dnsop-attrleaf-fix-07">draft-ietf-dnsop-attrleaf-fix-07</a>             Best Current Practice</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        D. Crocker
+Request for Comments: 8553                   Brandenburg InternetWorking
+BCP: 222                                                      March 2019
+Updates: <a href="/doc/html/rfc2782">2782</a>, <a href="/doc/html/rfc3263">3263</a>, <a href="/doc/html/rfc3529">3529</a>, <a href="/doc/html/rfc3620">3620</a>, <a href="/doc/html/rfc3832">3832</a>,
+         <a href="/doc/html/rfc3887">3887</a>, <a href="/doc/html/rfc3958">3958</a>, <a href="/doc/html/rfc4120">4120</a>, <a href="/doc/html/rfc4227">4227</a>, <a href="/doc/html/rfc4386">4386</a>,
+         4387, 4976, 5026, 5328, 5389,
+         5415, 5518, 5555, 5617, 5679,
+         5766, 5780, 5804, 5864, 5928,
+         6120, 6186, 6376, 6733, 6763,
+         7208, 7489, 8145
+Category: Best Current Practice
+ISSN: 2070-1721
+
+
+                         <span class="h1">DNS AttrLeaf Changes:</span>
+         <span class="h1">Fixing Specifications That Use Underscored Node Names</span>
+
+Abstract
+
+   Using an underscore for a prefix creates a space for constrained
+   interoperation of resource records.  Original uses of an underscore
+   character as a domain node name prefix were specified without the
+   benefit of an IANA registry.  This produced an entirely uncoordinated
+   set of name-creation activities, all drawing from the same namespace.
+   A registry for these names has now been defined by <a href="/doc/html/rfc8552">RFC 8552</a>.
+   However, the existing specifications that use underscored naming need
+   to be modified in order to be in line with the new registry.  This
+   document specifies those changes.  The changes preserve existing
+   software and operational practice, while adapting the specifications
+   for those practices to the newer underscore registry model.
+
+Status of This Memo
+
+   This memo documents an Internet Best Current Practice.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   BCPs is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8553">https://www.rfc-editor.org/info/rfc8553</a>.
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-2">2</a>
+   <a href="#section-2">2</a>.  Underscored RRset Use in Specifications . . . . . . . . . . .   <a href="#page-3">3</a>
+     <a href="#section-2.1">2.1</a>.  TXT RRset . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+     <a href="#section-2.2">2.2</a>.  SRV RRset . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+     <a href="#section-2.3">2.3</a>.  URI RRset . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+   <a href="#section-3">3</a>.  Underscored Template Specifications . . . . . . . . . . . . .   <a href="#page-7">7</a>
+     <a href="#section-3.1">3.1</a>.  SRV Specification Changes . . . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+     <a href="#section-3.2">3.2</a>.  URI Specification Changes . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+     <a href="#section-3.3">3.3</a>.  DNSSEC Signaling Specification Changes  . . . . . . . . .  <a href="#page-10">10</a>
+   <a href="#section-4">4</a>.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  <a href="#page-11">11</a>
+   <a href="#section-5">5</a>.  Security Considerations . . . . . . . . . . . . . . . . . . .  <a href="#page-11">11</a>
+   <a href="#section-6">6</a>.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-11">11</a>
+     <a href="#section-6.1">6.1</a>.  Normative References  . . . . . . . . . . . . . . . . . .  <a href="#page-11">11</a>
+     <a href="#section-6.2">6.2</a>.  Informative References  . . . . . . . . . . . . . . . . .  <a href="#page-12">12</a>
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-15">15</a>
+   Author&#x27;s Address  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-15">15</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Original uses of an underscore character as a domain node name
+   [<a href="/doc/html/rfc1035" title="&quot;Domain names - implementation and specification&quot;">RFC1035</a>] prefix, which creates a space for constrained
+   interpretation of resource records, were specified without the
+   benefit of an IANA registry [<a href="#ref-IANA-reg">IANA-reg</a>].  This produced an entirely
+   uncoordinated set of name-creation activities, all drawing from the
+   same namespace.  A registry has now been defined (see <a href="/doc/html/rfc8552#section-4">Section&nbsp;4 of
+   [RFC8552]</a>); the RFC that defined it discusses the background for the
+   use of underscored domain names [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+   The basic model for underscored name registration, as specified in
+   [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>], is to have each registry entry be unique in terms of the
+   combination of a resource record type and a &quot;global&quot; (highest-level)
+   underscored node name; that is, the node name beginning with an
+   underscore that is the closest to the DNS root.
+
+   The specifications describing the existing uses of underscored naming
+   do not reflect the existence of this integrated registry.  For the
+   new reader or the new editor of one of those documents, there is
+   currently nothing signaling that the underscored name(s) defined in
+   the document are now processed through an IANA registry.  This
+   document remedies that, by marking such a published document with an
+   update that indicates the nature of the change.
+
+   Further, the documents that define the SRV [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>] and URI
+   [<a href="/doc/html/rfc7553" title="&quot;The Uniform Resource Identifier (URI) DNS Resource Record&quot;">RFC7553</a>] DNS resource records provide a meta-template for
+   underscored name assignments, partially based on separate registries
+   [<a href="/doc/html/rfc6335" title="&quot;Internet Assigned Numbers Authority (IANA) Procedures for the Management of the Service Name and Transport Protocol Port Number Registry&quot;">RFC6335</a>].  For the portion that selects the global (highest-level)
+   underscored node name, this perpetuates uncoordinated assignment
+   activities by separate technical specifications, out of the same
+   namespace.  This document remedies that by providing detail for
+   revisions to the SRV and URI specifications to bring their use in
+   line with the single, integrated &quot;Underscored and Globally Scoped DNS
+   Node Names&quot; registry.
+
+   The result of these changes preserves existing software and
+   operations practices while adapting the technical specifications to
+   the newer underscore registry model.
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Underscored RRset Use in Specifications</span>
+
+   The use of underscored node names is specific to each RR TYPE that is
+   being scoped.  Each name defines a place but does not define the
+   rules for what appears underneath that place, either as additional
+   underscored naming or as a leaf node with resource records.  Details
+   for those rules are provided by specifications for individual RR
+   TYPEs.  The sections below describe the way that existing underscored
+   names are used with the RR TYPEs that they name.
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  TXT RRset</span>
+
+
+
+      NOTE -  Documents falling into this category include: [<a href="/doc/html/rfc5518" title="&quot;Vouch By Reference&quot;">RFC5518</a>],
+         [<a href="/doc/html/rfc5617" title="&quot;DomainKeys Identified Mail (DKIM) Author Domain Signing Practices (ADSP)&quot;">RFC5617</a>], [<a href="/doc/html/rfc6120" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Core&quot;">RFC6120</a>], [<a href="/doc/html/rfc6376" title="&quot;DomainKeys Identified Mail (DKIM) Signatures&quot;">RFC6376</a>], [<a href="/doc/html/rfc6763" title="&quot;DNS-Based Service Discovery&quot;">RFC6763</a>], [<a href="/doc/html/rfc7208" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in Email, Version 1&quot;">RFC7208</a>], and
+         [<a href="/doc/html/rfc7489" title="&quot;Domain-based Message Authentication, Reporting, and Conformance (DMARC)&quot;">RFC7489</a>].
+
+   This section provides a generic approach for changes to existing
+   specifications that define straightforward use of underscored node
+   names when scoping the use of a TXT RRset.  The approach provides the
+   information needed for adapting such specifications to the use of the
+   IANA &quot;Underscored and Globally Scoped DNS Node Names&quot; registry
+   [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].  Hence, the approach is meant both as an update to these
+   existing specifications and as guidance for changes when those
+   documents are revised.
+
+   For any document that specifies the use of a TXT RRset under one or
+   more underscored names, the global node name is expected to be
+   registered in the IANA &quot;Underscored and Globally Scoped DNS Node
+   Names&quot; registry [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].  An effort has been made to locate
+   existing documents that do this, to register the global underscored
+   node names, and to list them in the initial set of names added to the
+   registry.
+
+   If a public specification defines use of a TXT RRset and calls for
+   the use of an underscored node name, here is a template of suggested
+   text for registering the global underscored node name -- the one
+   closest to the root -- that can be used through the IANA
+   Considerations section of the specification:
+
+      &quot;Per [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>], please add the following entry to the &quot;Underscored
+      and Globally Scoped DNS Node Names&quot; registry:&quot;
+
+   +--------+----------------+-----------------------------------------+
+   | RR     | _NODE NAME     | Reference                               |
+   | Type   |                |                                         |
+   +--------+----------------+-----------------------------------------+
+   | TXT    | _{DNS node     | {citation for the document making the   |
+   |        | name}          | addition}                               |
+   +--------+----------------+-----------------------------------------+
+
+        Table 1: Entry for the &quot;Underscored and Globally Scoped DNS
+                    Node Names&quot; Registry for TXT RR Use
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  SRV RRset</span>
+
+      NOTE -  Documents falling into this category include:
+
+         [<a href="/doc/html/rfc3263" title="&quot;Session Initiation Protocol (SIP): Locating SIP Servers&quot;">RFC3263</a>], [<a href="/doc/html/rfc3529" title="&quot;Using Extensible Markup Language-Remote Procedure Calling (XML-RPC) in Blocks Extensible Exchange Protocol (BEEP)&quot;">RFC3529</a>], [<a href="/doc/html/rfc3620" title="&quot;The TUNNEL Profile&quot;">RFC3620</a>], [<a href="/doc/html/rfc3832" title="&quot;Remote Service Discovery in the Service Location Protocol (SLP) via DNS SRV&quot;">RFC3832</a>], [<a href="/doc/html/rfc3887" title="&quot;Message Tracking Query Protocol&quot;">RFC3887</a>],
+         [<a href="/doc/html/rfc3958" title="&quot;Domain-Based Application Service Location Using SRV RRs and the Dynamic Delegation Discovery Service (DDDS)&quot;">RFC3958</a>], [<a href="/doc/html/rfc4120" title="&quot;The Kerberos Network Authentication Service (V5)&quot;">RFC4120</a>], [<a href="/doc/html/rfc4227" title="&quot;Using the Simple Object Access Protocol (SOAP) in Blocks Extensible Exchange Protocol (BEEP)&quot;">RFC4227</a>], [<a href="/doc/html/rfc4386" title="&quot;Internet X.509 Public Key Infrastructure Repository Locator Service&quot;">RFC4386</a>], [<a href="/doc/html/rfc4387" title="&quot;Internet X.509 Public Key Infrastructure Operational Protocols: Certificate Store Access via HTTP&quot;">RFC4387</a>],
+         [<a href="/doc/html/rfc4976" title="&quot;Relay Extensions for the Message Sessions Relay Protocol (MSRP)&quot;">RFC4976</a>], [<a href="/doc/html/rfc5026" title="&quot;Mobile IPv6 Bootstrapping in Split Scenario&quot;">RFC5026</a>], [<a href="/doc/html/rfc5328" title="&quot;A Uniform Resource Name (URN) Namespace for the Digital Video Broadcasting Project (DVB)&quot;">RFC5328</a>], [<a href="/doc/html/rfc5389" title="&quot;Session Traversal Utilities for NAT (STUN)&quot;">RFC5389</a>], [<a href="/doc/html/rfc5415" title="&quot;Control And Provisioning of Wireless Access Points (CAPWAP) Protocol Specification&quot;">RFC5415</a>],
+         [<a href="/doc/html/rfc5555" title="&quot;Mobile IPv6 Support for Dual Stack Hosts and Routers&quot;">RFC5555</a>], [<a href="/doc/html/rfc5679" title="&quot;Locating IEEE 802.21 Mobility Services Using DNS&quot;">RFC5679</a>], [<a href="/doc/html/rfc5766" title="&quot;Traversal Using Relays around NAT (TURN): Relay Extensions to Session Traversal Utilities for NAT (STUN)&quot;">RFC5766</a>], [<a href="/doc/html/rfc5780" title="&quot;NAT Behavior Discovery Using Session Traversal Utilities for NAT (STUN)&quot;">RFC5780</a>], [<a href="/doc/html/rfc5804" title="&quot;A Protocol for Remotely Managing Sieve Scripts&quot;">RFC5804</a>],
+         [<a href="/doc/html/rfc5864" title="&quot;DNS SRV Resource Records for AFS&quot;">RFC5864</a>], [<a href="/doc/html/rfc5928" title="&quot;Traversal Using Relays around NAT (TURN) Resolution Mechanism&quot;">RFC5928</a>], and [<a href="/doc/html/rfc6186" title="&quot;Use of SRV Records for Locating Email Submission/Access Services&quot;">RFC6186</a>].
+
+   Specification of the SRV resource record [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>] provides a
+   template for use of underscored node names.  The global node name is
+   characterized as referencing the &#x27;protocol&#x27; that is associated with
+   SRV RRset usage.
+
+   This section provides a generic approach for changes to existing
+   specifications that define the use of an SRV RRset.  The approach
+   provides the information needed for adapting such specifications to
+   the use of the IANA &quot;Underscored and Globally Scoped DNS Node Names&quot;
+   registry [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].  Hence, the approach is meant both as an update
+   to these existing specifications and as guidance for changes when
+   those documents are revised.
+
+   For any document that specifies the use of an SRV RRset, the global
+   (&#x27;protocol&#x27;) underscored node name is expected to be registered in
+   the IANA &quot;Underscored and Globally Scoped DNS Node Names&quot; registry
+   [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].  An effort has been made to locate existing documents that
+   do this, to register the global underscored node names, and to list
+   them in the initial set of names added to the registry.
+
+   If a public specification defines use of an SRV RRset and calls for
+   the use of an underscored node name, here is a template of suggested
+   text for registering the global underscored node name -- the one
+   closest to the root -- that can be used through the IANA
+   Considerations section of the specification:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+      &quot;Per [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>], please add the following entry to the &quot;Underscored
+      and Globally Scoped DNS Node Names&quot; registry:
+
+   +--------+----------------------+-----------------------------------+
+   | RR     | _NODE NAME           | Reference                         |
+   | Type   |                      |                                   |
+   +--------+----------------------+-----------------------------------+
+   | SRV    | _{DNS &#x27;protocol&#x27;     | {citation for the document making |
+   |        | node name}           | the addition}                     |
+   +--------+----------------------+-----------------------------------+
+
+     Table 2: Entry for the &quot;Underscored and Globally Scoped DNS Node
+                      Names&quot; Registry for SRV RR Use
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  URI RRset</span>
+
+   Specification of the URI resource record [<a href="/doc/html/rfc7553" title="&quot;The Uniform Resource Identifier (URI) DNS Resource Record&quot;">RFC7553</a>] provides a
+   template for use of underscored node names.  The global node name is
+   characterized as naming the &#x27;protocol&#x27; that is associated with URI RR
+   usage or by reversing an Enumservice sequence [<a href="/doc/html/rfc6117" title="&quot;IANA Registration of Enumservices: Guide, Template, and IANA Considerations&quot;">RFC6117</a>].
+
+   This section provides a generic approach for changes to existing
+   specifications that define use of a URI RRset.  The approach provides
+   the information needed for adapting such specifications to the use of
+   the IANA &quot;Underscored and Globally Scoped DNS Node Names&quot; registry
+   [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].  Hence, the approach is meant both as an update to these
+   existing specifications and as guidance for changes when those
+   documents are revised.
+
+   For any document that specifies the use of a URI RRset, the global
+   (&#x27;protocol&#x27; or highest-level Enumservice) underscored node name is
+   expected to be registered in the IANA &quot;Underscored and Globally
+   Scoped DNS Node Names&quot; registry [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].  An effort has been made
+   to locate existing documents that do this, to register the global
+   underscored node names, and to list them in the initial set of names
+   added to the registry.
+
+   If a public specification defines use of a URI RRset and calls for
+   the use of an underscored node name, here is a template of suggested
+   text for registering the global underscored node name -- the one
+   closest to the root -- that can be used through the IANA
+   Considerations section of the specification:
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+      &quot;Per [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>], please add the following entry to the &quot;Underscored
+      and Globally Scoped DNS Node Names&quot; registry:
+
+   +-------+----------------------------+------------------------------+
+   | RR    | _NODE NAME                 | Reference                    |
+   | Type  |                            |                              |
+   +-------+----------------------------+------------------------------+
+   | URI   | _{DNS &#x27;protocol&#x27; or        | {citation for the document   |
+   |       | Enumservice node name}     | making the addition}         |
+   +-------+----------------------------+------------------------------+
+
+     Table 3: Entry for the &quot;Underscored and Globally Scoped DNS Node
+                      Names&quot; Registry for URI RR Use
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Underscored Template Specifications</span>
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  SRV Specification Changes</span>
+
+   The specification for a domain name, under which an SRV resource
+   record [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>] appears, provides a template for use of underscored
+   node names.  The global underscored node name is characterized as
+   indicating the &#x27;protocol&#x27; that is associated with SRV RR usage.
+
+   The text of [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>] is changed as described below.  In addition,
+   note that a normative reference to <a href="/doc/html/rfc8552">RFC 8552</a> is added to the
+   References section of <a href="/doc/html/rfc2782">RFC 2782</a>.
+
+      OLD:
+
+   The format of the SRV RR
+
+    Here is the format of the SRV RR, whose DNS type code is 33:
+          _Service._Proto.Name TTL Class SRV Priority Weight Port Target
+    ...
+    Proto
+         The symbolic name of the desired protocol, with an underscore
+         (_) prepended to prevent collisions with DNS labels that occur
+         in nature.  _TCP and _UDP are at present the most useful values
+         for this field, though any name defined by Assigned Numbers or
+         locally may be used (as for Service).  The Proto is case
+         insensitive.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+      NEW:
+
+         The format of the SRV RR
+
+         Here is the format of the SRV RR, whose DNS type code is 33:
+
+            &quot;_Service._Proto.Name TTL Class SRV Priority Weight Port
+            Target&quot;
+
+            _..._
+
+         Proto
+
+            The symbolic name of the desired protocol with an underscore
+            (e.g., &quot;_name&quot;) prepended to prevent collisions with DNS
+            labels that occur in nature. _TCP and _UDP are at present
+            the most useful values for this field.  The Proto is case
+            insensitive.
+
+            The SRV RRset &#x27;protocol&#x27; (global) underscored node name
+            SHOULD be registered in the IANA &quot;Underscored and Globally
+            Scoped DNS Node Names&quot; registry [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  URI Specification Changes</span>
+
+   Specification for the domain name (under which a URI resource record
+   [<a href="/doc/html/rfc7553" title="&quot;The Uniform Resource Identifier (URI) DNS Resource Record&quot;">RFC7553</a>] occurs) is similar to that for the SRV resource record
+   [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>], although the text refers only to &#x27;service&#x27; name, rather
+   than distinguishing &#x27;service&#x27; from &#x27;protocol&#x27;.  Further, the URI RR
+   specification permits alternative underscored naming schemes:
+
+      One matches what is used for SRV, with the global underscored node
+      name called &#x27;protocol&#x27;.
+
+      The other is based on a reversing of an Enumservice [<a href="/doc/html/rfc6117" title="&quot;IANA Registration of Enumservices: Guide, Template, and IANA Considerations&quot;">RFC6117</a>]
+      sequence.
+
+   Text of [<a href="/doc/html/rfc7553" title="&quot;The Uniform Resource Identifier (URI) DNS Resource Record&quot;">RFC7553</a>] is changed as described below.  In addition, a
+   normative reference to <a href="/doc/html/rfc8552">RFC 8552</a> is added to the References section of
+   <a href="/doc/html/rfc7553">RFC 7553</a>.
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+      OLD:
+
+   4.1.  Owner Name, Class, and Type
+
+   The URI owner name is subject to special conventions.
+
+   Just like the SRV RR [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>], the URI RR has service information
+   encoded in its owner name.  In order to encode the service for a
+   specific owner name, one uses service parameters.  Valid service
+   parameters are those registered by IANA in the &quot;Service Name and
+   Transport Protocol Port Number Registry&quot; [<a href="/doc/html/rfc6335" title="&quot;Internet Assigned Numbers Authority (IANA) Procedures for the Management of the Service Name and Transport Protocol Port Number Registry&quot;">RFC6335</a>] or as &quot;Enumservice
+   ---
+   Registrations [<a href="/doc/html/rfc6117" title="&quot;IANA Registration of Enumservices: Guide, Template, and IANA Considerations&quot;">RFC6117</a>].  The Enumservice Registration parameters are
+   reversed (i.e., subtype(s) before type), prepended with an underscore
+   (_), and prepended to the owner name in separate labels.  The
+   underscore is prepended to the service parameters to avoid collisions
+   with DNS labels that occur in nature, and the order is reversed to
+   make it possible to do delegations, if needed, to different zones
+   (and therefore providers of DNS).
+
+   For example, suppose we are looking for the URI for a service with
+   ENUM Service Parameter &quot;A:B:C&quot; for host example.com.  Then we would
+   query for (QNAME,QTYPE)=(&quot;_C._B._A.example.com&quot;,&quot;URI&quot;).
+
+   As another example, suppose we are looking for the URI for a service
+   with Service Name &quot;A&quot; and Transport Protocol &quot;B&quot; for host
+   example.com.  Then we would query for
+   (QNAME,QTYPE)=(&quot;_A._B.example.com&quot;,&quot;URI&quot;).
+
+      NEW:
+
+         4.1.  Owner Name, Class, and Type
+
+         The URI owner name is subject to special conventions.
+
+         As for the SRV RRset [<a href="/doc/html/rfc2782" title="&quot;A DNS RR for specifying the location of services (DNS SRV)&quot;">RFC2782</a>], the URI RRset global (highest-
+         level) underscored node name SHOULD be registered in the IANA
+         &quot;Underscored and Globally Scoped DNS Node Names&quot; registry
+         [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>].
+
+         Just like the SRV RRset, the URI RRset has service information
+         encoded in its owner name.  In order to encode the service for
+         a specific owner name, one uses service parameters.  Valid
+         service parameters are:
+
+         +  Those registered by IANA in the &quot;Service Name and Transport
+            Protocol Port Number Registry&quot; [<a href="/doc/html/rfc6335" title="&quot;Internet Assigned Numbers Authority (IANA) Procedures for the Management of the Service Name and Transport Protocol Port Number Registry&quot;">RFC6335</a>].  The underscore is
+            prepended to the service parameters to avoid collisions with
+
+
+
+<span class="grey">Crocker                   Best Current Practice                 [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+            DNS labels that occur in nature, and the order is reversed
+            to make it possible to do delegations, if needed, to
+            different zones (and therefore providers of DNS).
+
+         +  Those listed in &quot;Enumservice Registrations&quot; [<a href="/doc/html/rfc6117" title="&quot;IANA Registration of Enumservices: Guide, Template, and IANA Considerations&quot;">RFC6117</a>].  The
+            Enumservice Registration parameters are reversed (i.e.,
+            subtype(s) before type), prepended with an underscore (e.g.,
+            &quot;_name&quot;), and prepended to the owner name in separate
+            labels.  The highest-level (global) underscored Enumservice
+            name becomes the global name per <a href="/doc/html/rfc8552">RFC 8552</a> to register.
+
+         For example, suppose we are looking for the URI for a service
+         with ENUM Service Parameter &quot;A:B:C&quot; for host example.com.  Then
+         we would query for
+         (QNAME,QTYPE)=(&quot;_C._B._A.example.com&quot;,&quot;URI&quot;).
+
+         As another example, suppose we are looking for the URI for a
+         service with Service Name &quot;A&quot; and Transport Protocol &quot;B&quot; for
+         host example.com.  Then we would query for
+         (QNAME,QTYPE)=(&quot;_A._B.example.com&quot;,&quot;URI&quot;).
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  DNSSEC Signaling Specification Changes</span>
+
+   &quot;Signaling Trust Anchor Knowledge in DNS Security Extensions
+   (DNSSEC)&quot; [<a href="/doc/html/rfc8145" title="&quot;Signaling Trust Anchor Knowledge in DNS Security Extensions (DNSSEC)&quot;">RFC8145</a>] defines a use of DNS node names that effectively
+   consumes all names beginning with the string &quot;_ta-&quot; when using the
+   NULL RR in the query.
+
+   Text of <a href="#section-5.1">Section 5.1</a>, &quot;Query Format&quot;, of <a href="/doc/html/rfc8145">RFC 8145</a> is changed as
+   described below.  In addition, a normative reference to <a href="/doc/html/rfc8552">RFC 8552</a> is
+   added to the References section of <a href="/doc/html/rfc8145">RFC 8145</a>.
+
+      OLD:
+
+   For example, a validating DNS resolver ...
+                              QNAME=_ta-4444.
+
+      NEW:
+
+         For example, a validating DNS resolver ...  &quot;QNAME=_ta-4444&quot;.
+
+         Under the NULL RR, an entry is registered in the IANA
+         &quot;Underscored and Globally Scoped DNS Node Names&quot; registry
+         [<a href="/doc/html/rfc8552" title="&quot;Scoped Interpretation of DNS Resource Records through &quot;">RFC8552</a>] for all node names beginning with &quot;_ta-&quot;.
+
+
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   Although this document makes reference to IANA registries, it
+   introduces no new IANA registries or procedures.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   This memo raises no security issues.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC6117">RFC6117</a>]  Hoeneisen, B., Mayrhofer, A., and J. Livingood, &quot;IANA
+              Registration of Enumservices: Guide, Template, and IANA
+              Considerations&quot;, <a href="/doc/html/rfc6117">RFC 6117</a>, DOI 10.17487/RFC6117, March
+              2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6117">https://www.rfc-editor.org/info/rfc6117</a>&gt;.
+
+   [<a id="ref-RFC6335">RFC6335</a>]  Cotton, M., Eggert, L., Touch, J., Westerlund, M., and S.
+              Cheshire, &quot;Internet Assigned Numbers Authority (IANA)
+              Procedures for the Management of the Service Name and
+              Transport Protocol Port Number Registry&quot;, <a href="/doc/html/bcp165">BCP 165</a>,
+              <a href="/doc/html/rfc6335">RFC 6335</a>, DOI 10.17487/RFC6335, August 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6335">https://www.rfc-editor.org/info/rfc6335</a>&gt;.
+
+   [<a id="ref-RFC7553">RFC7553</a>]  Faltstrom, P. and O. Kolkman, &quot;The Uniform Resource
+              Identifier (URI) DNS Resource Record&quot;, <a href="/doc/html/rfc7553">RFC 7553</a>,
+              DOI 10.17487/RFC7553, June 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7553">https://www.rfc-editor.org/info/rfc7553</a>&gt;.
+
+   [<a id="ref-RFC8145">RFC8145</a>]  Wessels, D., Kumari, W., and P. Hoffman, &quot;Signaling Trust
+              Anchor Knowledge in DNS Security Extensions (DNSSEC)&quot;,
+              <a href="/doc/html/rfc8145">RFC 8145</a>, DOI 10.17487/RFC8145, April 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8145">https://www.rfc-editor.org/info/rfc8145</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8552">RFC8552</a>]  Crocker, D., &quot;Scoped Interpretation of DNS Resource
+              Records through &quot;Underscored&quot; Naming of Attribute Leaves&quot;,
+              <a href="/doc/html/rfc8552">RFC 8552</a>, DOI 10.17487/RFC8552, March 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8552">https://www.rfc-editor.org/info/rfc8552</a>&gt;.
+
+
+
+<span class="grey">Crocker                   Best Current Practice                [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-IANA-reg">IANA-reg</a>]
+              IANA, &quot;Protocol Registries&quot;,
+              &lt;<a href="https://www.iana.org/protocols">https://www.iana.org/protocols</a>&gt;.
+
+   [<a id="ref-RFC1035">RFC1035</a>]  Mockapetris, P., &quot;Domain names - implementation and
+              specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, DOI 10.17487/RFC1035,
+              November 1987, &lt;<a href="https://www.rfc-editor.org/info/rfc1035">https://www.rfc-editor.org/info/rfc1035</a>&gt;.
+
+   [<a id="ref-RFC2782">RFC2782</a>]  Gulbrandsen, A., Vixie, P., and L. Esibov, &quot;A DNS RR for
+              specifying the location of services (DNS SRV)&quot;, <a href="/doc/html/rfc2782">RFC 2782</a>,
+              DOI 10.17487/RFC2782, February 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2782">https://www.rfc-editor.org/info/rfc2782</a>&gt;.
+
+   [<a id="ref-RFC3263">RFC3263</a>]  Rosenberg, J. and H. Schulzrinne, &quot;Session Initiation
+              Protocol (SIP): Locating SIP Servers&quot;, <a href="/doc/html/rfc3263">RFC 3263</a>,
+              DOI 10.17487/RFC3263, June 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3263">https://www.rfc-editor.org/info/rfc3263</a>&gt;.
+
+   [<a id="ref-RFC3529">RFC3529</a>]  Harold, W., &quot;Using Extensible Markup Language-Remote
+              Procedure Calling (XML-RPC) in Blocks Extensible Exchange
+              Protocol (BEEP)&quot;, <a href="/doc/html/rfc3529">RFC 3529</a>, DOI 10.17487/RFC3529, April
+              2003, &lt;<a href="https://www.rfc-editor.org/info/rfc3529">https://www.rfc-editor.org/info/rfc3529</a>&gt;.
+
+   [<a id="ref-RFC3620">RFC3620</a>]  New, D., &quot;The TUNNEL Profile&quot;, <a href="/doc/html/rfc3620">RFC 3620</a>,
+              DOI 10.17487/RFC3620, October 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3620">https://www.rfc-editor.org/info/rfc3620</a>&gt;.
+
+   [<a id="ref-RFC3832">RFC3832</a>]  Zhao, W., Schulzrinne, H., Guttman, E., Bisdikian, C., and
+              W. Jerome, &quot;Remote Service Discovery in the Service
+              Location Protocol (SLP) via DNS SRV&quot;, <a href="/doc/html/rfc3832">RFC 3832</a>,
+              DOI 10.17487/RFC3832, July 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3832">https://www.rfc-editor.org/info/rfc3832</a>&gt;.
+
+   [<a id="ref-RFC3887">RFC3887</a>]  Hansen, T., &quot;Message Tracking Query Protocol&quot;, <a href="/doc/html/rfc3887">RFC 3887</a>,
+              DOI 10.17487/RFC3887, September 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3887">https://www.rfc-editor.org/info/rfc3887</a>&gt;.
+
+   [<a id="ref-RFC3958">RFC3958</a>]  Daigle, L. and A. Newton, &quot;Domain-Based Application
+              Service Location Using SRV RRs and the Dynamic Delegation
+              Discovery Service (DDDS)&quot;, <a href="/doc/html/rfc3958">RFC 3958</a>, DOI 10.17487/RFC3958,
+              January 2005, &lt;<a href="https://www.rfc-editor.org/info/rfc3958">https://www.rfc-editor.org/info/rfc3958</a>&gt;.
+
+   [<a id="ref-RFC4120">RFC4120</a>]  Neuman, C., Yu, T., Hartman, S., and K. Raeburn, &quot;The
+              Kerberos Network Authentication Service (V5)&quot;, <a href="/doc/html/rfc4120">RFC 4120</a>,
+              DOI 10.17487/RFC4120, July 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4120">https://www.rfc-editor.org/info/rfc4120</a>&gt;.
+
+
+
+<span class="grey">Crocker                   Best Current Practice                [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+   [<a id="ref-RFC4227">RFC4227</a>]  O&#x27;Tuathail, E. and M. Rose, &quot;Using the Simple Object
+              Access Protocol (SOAP) in Blocks Extensible Exchange
+              Protocol (BEEP)&quot;, <a href="/doc/html/rfc4227">RFC 4227</a>, DOI 10.17487/RFC4227, January
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4227">https://www.rfc-editor.org/info/rfc4227</a>&gt;.
+
+   [<a id="ref-RFC4386">RFC4386</a>]  Boeyen, S. and P. Hallam-Baker, &quot;Internet X.509 Public Key
+              Infrastructure Repository Locator Service&quot;, <a href="/doc/html/rfc4386">RFC 4386</a>,
+              DOI 10.17487/RFC4386, February 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4386">https://www.rfc-editor.org/info/rfc4386</a>&gt;.
+
+   [<a id="ref-RFC4387">RFC4387</a>]  Gutmann, P., Ed., &quot;Internet X.509 Public Key
+              Infrastructure Operational Protocols: Certificate Store
+              Access via HTTP&quot;, <a href="/doc/html/rfc4387">RFC 4387</a>, DOI 10.17487/RFC4387, February
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4387">https://www.rfc-editor.org/info/rfc4387</a>&gt;.
+
+   [<a id="ref-RFC4976">RFC4976</a>]  Jennings, C., Mahy, R., and A. Roach, &quot;Relay Extensions
+              for the Message Sessions Relay Protocol (MSRP)&quot;, <a href="/doc/html/rfc4976">RFC 4976</a>,
+              DOI 10.17487/RFC4976, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4976">https://www.rfc-editor.org/info/rfc4976</a>&gt;.
+
+   [<a id="ref-RFC5026">RFC5026</a>]  Giaretta, G., Ed., Kempf, J., and V. Devarapalli, Ed.,
+              &quot;Mobile IPv6 Bootstrapping in Split Scenario&quot;, <a href="/doc/html/rfc5026">RFC 5026</a>,
+              DOI 10.17487/RFC5026, October 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5026">https://www.rfc-editor.org/info/rfc5026</a>&gt;.
+
+   [<a id="ref-RFC5328">RFC5328</a>]  Adolf, A. and P. MacAvock, &quot;A Uniform Resource Name (URN)
+              Namespace for the Digital Video Broadcasting Project
+              (DVB)&quot;, <a href="/doc/html/rfc5328">RFC 5328</a>, DOI 10.17487/RFC5328, September 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5328">https://www.rfc-editor.org/info/rfc5328</a>&gt;.
+
+   [<a id="ref-RFC5389">RFC5389</a>]  Rosenberg, J., Mahy, R., Matthews, P., and D. Wing,
+              &quot;Session Traversal Utilities for NAT (STUN)&quot;, <a href="/doc/html/rfc5389">RFC 5389</a>,
+              DOI 10.17487/RFC5389, October 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5389">https://www.rfc-editor.org/info/rfc5389</a>&gt;.
+
+   [<a id="ref-RFC5415">RFC5415</a>]  Calhoun, P., Ed., Montemurro, M., Ed., and D. Stanley,
+              Ed., &quot;Control And Provisioning of Wireless Access Points
+              (CAPWAP) Protocol Specification&quot;, <a href="/doc/html/rfc5415">RFC 5415</a>,
+              DOI 10.17487/RFC5415, March 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5415">https://www.rfc-editor.org/info/rfc5415</a>&gt;.
+
+   [<a id="ref-RFC5518">RFC5518</a>]  Hoffman, P., Levine, J., and A. Hathcock, &quot;Vouch By
+              Reference&quot;, <a href="/doc/html/rfc5518">RFC 5518</a>, DOI 10.17487/RFC5518, April 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5518">https://www.rfc-editor.org/info/rfc5518</a>&gt;.
+
+   [<a id="ref-RFC5555">RFC5555</a>]  Soliman, H., Ed., &quot;Mobile IPv6 Support for Dual Stack
+              Hosts and Routers&quot;, <a href="/doc/html/rfc5555">RFC 5555</a>, DOI 10.17487/RFC5555, June
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5555">https://www.rfc-editor.org/info/rfc5555</a>&gt;.
+
+
+
+<span class="grey">Crocker                   Best Current Practice                [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+   [<a id="ref-RFC5617">RFC5617</a>]  Allman, E., Fenton, J., Delany, M., and J. Levine,
+              &quot;DomainKeys Identified Mail (DKIM) Author Domain Signing
+              Practices (ADSP)&quot;, <a href="/doc/html/rfc5617">RFC 5617</a>, DOI 10.17487/RFC5617, August
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5617">https://www.rfc-editor.org/info/rfc5617</a>&gt;.
+
+   [<a id="ref-RFC5679">RFC5679</a>]  Bajko, G., &quot;Locating IEEE 802.21 Mobility Services Using
+              DNS&quot;, <a href="/doc/html/rfc5679">RFC 5679</a>, DOI 10.17487/RFC5679, December 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5679">https://www.rfc-editor.org/info/rfc5679</a>&gt;.
+
+   [<a id="ref-RFC5766">RFC5766</a>]  Mahy, R., Matthews, P., and J. Rosenberg, &quot;Traversal Using
+              Relays around NAT (TURN): Relay Extensions to Session
+              Traversal Utilities for NAT (STUN)&quot;, <a href="/doc/html/rfc5766">RFC 5766</a>,
+              DOI 10.17487/RFC5766, April 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5766">https://www.rfc-editor.org/info/rfc5766</a>&gt;.
+
+   [<a id="ref-RFC5780">RFC5780</a>]  MacDonald, D. and B. Lowekamp, &quot;NAT Behavior Discovery
+              Using Session Traversal Utilities for NAT (STUN)&quot;,
+              <a href="/doc/html/rfc5780">RFC 5780</a>, DOI 10.17487/RFC5780, May 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5780">https://www.rfc-editor.org/info/rfc5780</a>&gt;.
+
+   [<a id="ref-RFC5804">RFC5804</a>]  Melnikov, A., Ed. and T. Martin, &quot;A Protocol for Remotely
+              Managing Sieve Scripts&quot;, <a href="/doc/html/rfc5804">RFC 5804</a>, DOI 10.17487/RFC5804,
+              July 2010, &lt;<a href="https://www.rfc-editor.org/info/rfc5804">https://www.rfc-editor.org/info/rfc5804</a>&gt;.
+
+   [<a id="ref-RFC5864">RFC5864</a>]  Allbery, R., &quot;DNS SRV Resource Records for AFS&quot;, <a href="/doc/html/rfc5864">RFC 5864</a>,
+              DOI 10.17487/RFC5864, April 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5864">https://www.rfc-editor.org/info/rfc5864</a>&gt;.
+
+   [<a id="ref-RFC5928">RFC5928</a>]  Petit-Huguenin, M., &quot;Traversal Using Relays around NAT
+              (TURN) Resolution Mechanism&quot;, <a href="/doc/html/rfc5928">RFC 5928</a>,
+              DOI 10.17487/RFC5928, August 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5928">https://www.rfc-editor.org/info/rfc5928</a>&gt;.
+
+   [<a id="ref-RFC6120">RFC6120</a>]  Saint-Andre, P., &quot;Extensible Messaging and Presence
+              Protocol (XMPP): Core&quot;, <a href="/doc/html/rfc6120">RFC 6120</a>, DOI 10.17487/RFC6120,
+              March 2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6120">https://www.rfc-editor.org/info/rfc6120</a>&gt;.
+
+   [<a id="ref-RFC6186">RFC6186</a>]  Daboo, C., &quot;Use of SRV Records for Locating Email
+              Submission/Access Services&quot;, <a href="/doc/html/rfc6186">RFC 6186</a>,
+              DOI 10.17487/RFC6186, March 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6186">https://www.rfc-editor.org/info/rfc6186</a>&gt;.
+
+   [<a id="ref-RFC6376">RFC6376</a>]  Crocker, D., Ed., Hansen, T., Ed., and M. Kucherawy, Ed.,
+              &quot;DomainKeys Identified Mail (DKIM) Signatures&quot;, STD 76,
+              <a href="/doc/html/rfc6376">RFC 6376</a>, DOI 10.17487/RFC6376, September 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6376">https://www.rfc-editor.org/info/rfc6376</a>&gt;.
+
+
+
+
+
+<span class="grey">Crocker                   Best Current Practice                [Page 14]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-15" ></span>
+<span class="grey"><a href="/doc/html/rfc8553">RFC 8553</a>                    DNS AttrLeaf Fix                  March 2019</span>
+
+
+   [<a id="ref-RFC6763">RFC6763</a>]  Cheshire, S. and M. Krochmal, &quot;DNS-Based Service
+              Discovery&quot;, <a href="/doc/html/rfc6763">RFC 6763</a>, DOI 10.17487/RFC6763, February 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6763">https://www.rfc-editor.org/info/rfc6763</a>&gt;.
+
+   [<a id="ref-RFC7208">RFC7208</a>]  Kitterman, S., &quot;Sender Policy Framework (SPF) for
+              Authorizing Use of Domains in Email, Version 1&quot;, <a href="/doc/html/rfc7208">RFC 7208</a>,
+              DOI 10.17487/RFC7208, April 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7208">https://www.rfc-editor.org/info/rfc7208</a>&gt;.
+
+   [<a id="ref-RFC7489">RFC7489</a>]  Kucherawy, M., Ed. and E. Zwicky, Ed., &quot;Domain-based
+              Message Authentication, Reporting, and Conformance
+              (DMARC)&quot;, <a href="/doc/html/rfc7489">RFC 7489</a>, DOI 10.17487/RFC7489, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7489">https://www.rfc-editor.org/info/rfc7489</a>&gt;.
+
+Acknowledgements
+
+   Thanks go to Bill Fenner, Dick Franks, Tony Hansen, Peter Koch, Olaf
+   Kolkman, and Andrew Sullivan for diligent review of the (much)
+   earlier draft versions.  For the later enhancements, thanks to Tim
+   Wicinski, John Levine, Bob Harold, Joel Jaeggli, Ondrej Sury, and
+   Paul Wouters.
+
+   Special thanks to Ray Bellis for his persistent encouragement to
+   continue this effort, as well as the suggestion for an essential
+   simplification to the registration model.
+
+Author&#x27;s Address
+
+   Dave Crocker
+   Brandenburg InternetWorking
+   675 Spruce Dr.
+   Sunnyvale, CA  94086
+   United States of America
+
+   Phone: +1.408.246.8253
+   Email: dcrocker@bbiw.net
+   URI:   <a href="http://bbiw.net/">http://bbiw.net/</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Crocker                   Best Current Practice                [Page 15]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

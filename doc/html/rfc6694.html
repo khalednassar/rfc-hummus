@@ -1,0 +1,628 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6694
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-appsawg-about-uri-scheme/">
+  <meta name="description" content="The &quot;about&quot; URI Scheme (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6694.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6694.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6694.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6694/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6694/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/appsawg/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-appsawg-about-uri-scheme@ietf.org?subject=draft-ietf-appsawg-about-uri-scheme" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-appsawg-about-uri-scheme-07.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-appsawg-about-uri-scheme-07.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-appsawg-about-uri-scheme-07.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-appsawg-about-uri-scheme-07">draft-ietf-appsawg-about-uri-scheme-07</a>               Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                 S. Moonesamy, Ed.
+Request for Comments: 6694                                   August 2012
+Category: Informational
+ISSN: 2070-1721
+
+
+                         <span class="h1">The &quot;about&quot; URI Scheme</span>
+
+Abstract
+
+   This document describes the &quot;about&quot; URI scheme, which is widely used
+   by Web browsers and some other applications to designate access to
+   their internal resources, such as settings, application information,
+   hidden built-in functionality, and so on.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are a candidate for any level of Internet
+   Standard; see <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6694">http://www.rfc-editor.org/info/rfc6694</a>.
+
+Copyright Notice
+
+   Copyright (c) 2012 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6694">RFC 6694</a>                 The &quot;about&quot; URI Scheme              August 2012</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. URI Scheme Specification ........................................<a href="#page-2">2</a>
+      <a href="#section-2.1">2.1</a>. URI Scheme Syntax ..........................................<a href="#page-2">2</a>
+      <a href="#section-2.2">2.2</a>. URI Scheme Semantics .......................................<a href="#page-3">3</a>
+           <a href="#section-2.2.1">2.2.1</a>. Well-Known &quot;about&quot; URIs .............................<a href="#page-3">3</a>
+      <a href="#section-2.3">2.3</a>. Encoding Considerations ....................................<a href="#page-3">3</a>
+   <a href="#section-3">3</a>. &quot;about:blank&quot; ...................................................<a href="#page-3">3</a>
+   <a href="#section-4">4</a>. Security Considerations .........................................<a href="#page-3">3</a>
+   <a href="#section-5">5</a>. IANA Considerations .............................................<a href="#page-4">4</a>
+      <a href="#section-5.1">5.1</a>. URI Scheme Registration ....................................<a href="#page-4">4</a>
+      <a href="#section-5.2">5.2</a>. A Registry for Well-Known Tokens ...........................<a href="#page-5">5</a>
+           <a href="#section-5.2.1">5.2.1</a>. Registration Procedure ..............................<a href="#page-5">5</a>
+   <a href="#section-6">6</a>. References ......................................................<a href="#page-6">6</a>
+      <a href="#section-6.1">6.1</a>. Normative References .......................................<a href="#page-6">6</a>
+      <a href="#section-6.2">6.2</a>. Informative References .....................................<a href="#page-6">6</a>
+   <a href="#appendix-A">Appendix A</a>. Acknowledgments ........................................<a href="#page-7">7</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document describes the &quot;about&quot; Uniform Resource Identifier (URI)
+   scheme.  The &quot;about&quot; URI scheme is currently widely used by Web
+   browsers to designate access to their internal resources, such as
+   settings, application information, and so-called &quot;Easter eggs&quot; (i.e.,
+   a hidden feature or joke in an application).
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  URI Scheme Specification</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  URI Scheme Syntax</span>
+
+   The &quot;about&quot; URI syntactically conforms to the &lt;about-uri&gt; rule below,
+   expressed using the Augmented Backus-Naur Form (ABNF) [<a href="/doc/html/rfc5234" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">RFC5234</a>]:
+
+     about-uri = &quot;about:&quot; about-token [ about-query ] [ about-fragment ]
+     about-token = *pchar
+     about-query = &quot;?&quot; query
+     about-fragment = &quot;#&quot; fragment
+     pchar     = &lt;as specified in <a href="/doc/html/rfc3986#appendix-A">RFC 3986, Appendix&nbsp;A</a>&gt;
+     query     = &lt;as specified in <a href="/doc/html/rfc3986#appendix-A">RFC 3986, Appendix&nbsp;A</a>&gt;
+     fragment  = &lt;as specified in <a href="/doc/html/rfc3986#appendix-A">RFC 3986, Appendix&nbsp;A</a>&gt;
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6694">RFC 6694</a>                 The &quot;about&quot; URI Scheme              August 2012</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  URI Scheme Semantics</span>
+
+   The resource that is referenced by a particular &quot;about&quot; URI is
+   denoted by the &lt;about-token&gt; part of the URI.  It is not a
+   hierarchical element for a naming authority.  The &lt;about-query&gt; part
+   specifies additional information about its handling and/or the
+   information that should be returned by the resource referenced by
+   the URI.
+
+   It is impossible to specify a binding between all the possible tokens
+   and the semantics of &quot;about&quot; URIs that would contain such tokens.
+   Therefore, the resource referenced by the URI is generally considered
+   to be specific to a Web browser implementation.
+
+<span class="h4"><a class="selflink" id="section-2.2.1" href="#section-2.2.1">2.2.1</a>.  Well-Known &quot;about&quot; URIs</span>
+
+   Some &lt;about-token&gt;s have been reserved, as the behavior of the
+   resource that is referenced is well-known (well-known tokens).
+
+   A well-known &quot;about&quot; URI is a URI that has a well-known token as its
+   &lt;about-token&gt; part.  It is recommended that such URIs be handled in
+   accordance with the specification referenced in the &quot;about&quot; URI
+   Tokens registry (see <a href="#section-5.2">Section 5.2</a>).
+
+   Well-known &quot;about&quot; URIs are intended to be registered when there is a
+   need to codify the behavior of a particular &lt;about-token&gt;.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Encoding Considerations</span>
+
+   &quot;about&quot; URIs are subject to encoding rules as defined in <a href="/doc/html/rfc3986">RFC 3986</a>
+   [<a href="/doc/html/rfc3986" title="&quot;Uniform Resource Identifier (URI): Generic Syntax&quot;">RFC3986</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  &quot;about:blank&quot;</span>
+
+   This document defines one well-known token: &quot;blank&quot;.  The
+   &quot;about:blank&quot; URI refers to a resource represented in the browser by
+   a blank page.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   Security considerations for URIs are discussed in <a href="/doc/html/rfc3986#section-7">Section&nbsp;7 of
+   RFC 3986</a> [<a href="/doc/html/rfc3986" title="&quot;Uniform Resource Identifier (URI): Generic Syntax&quot;">RFC3986</a>].  However, most of those provisions do not apply
+   to the &quot;about&quot; URI scheme, as they are mainly scoped to schemes used
+   in the Internet.
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6694">RFC 6694</a>                 The &quot;about&quot; URI Scheme              August 2012</span>
+
+
+   &quot;about&quot; URIs can sometimes refer to sensitive information, such as
+   user passwords stored in a cache, or parameters that, if changed,
+   could affect a user&#x27;s data.  The application therefore needs to
+   ensure that the user&#x27;s data is secured and no threats are imposed by
+   &quot;about&quot; URIs.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  URI Scheme Registration</span>
+
+   The &quot;about&quot; URI scheme has been registered in the &quot;Permanent URI
+   Schemes&quot; registry.  The information below is provided according to
+   the guidelines from <a href="/doc/html/rfc4395">RFC 4395</a> [<a href="/doc/html/rfc4395" title="&quot;Guidelines and Registration Procedures for New URI Schemes&quot;">RFC4395</a>]:
+
+      URI scheme name: about
+
+      Status: Permanent
+
+      URI scheme syntax: See <a href="/doc/html/rfc6694#section-2.1">Section&nbsp;2.1 of RFC 6694</a>.
+
+      URI scheme semantics: See <a href="/doc/html/rfc6694#section-2.2">Section&nbsp;2.2 of RFC 6694</a>.
+
+      URI scheme encoding considerations: See <a href="/doc/html/rfc6694#section-2.3">Section&nbsp;2.3 of RFC 6694</a>.
+
+      Applications that use the scheme: &quot;about&quot; URIs are predominantly
+         used by Web browsers.
+
+      Security considerations: See <a href="/doc/html/rfc6694#section-4">Section&nbsp;4 of RFC 6694</a>.
+
+      Contact: IETF Applications Area Directors
+         &lt;app-ads@tools.ietf.org&gt;
+
+      Author/Change controller: IESG &lt;iesg@ietf.org&gt; (on behalf of the
+         IETF)
+
+      References: See <a href="/doc/html/rfc6694#section-6">Section&nbsp;6 of RFC 6694</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6694">RFC 6694</a>                 The &quot;about&quot; URI Scheme              August 2012</span>
+
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  A Registry for Well-Known Tokens</span>
+
+   This document creates the &#x27;&quot;about&quot; URI Tokens&#x27; registry.
+
+   The registry entries consist of three fields: Token, Description, and
+   Reference.  The Token field has to conform to &lt;about-token&gt;
+   production as defined in <a href="#section-2.1">Section 2.1</a>.  The initial assignment is as
+   follows:
+
+   +--------------+------------------------------------+-------------+
+   | Token        | Description                        | Reference   |
+   +--------------+------------------------------------+-------------+
+   | blank        | The about:blank URI references a   | <a href="/doc/html/rfc6694">RFC 6694</a>    |
+   |              | blank page.                        |             |
+   +--------------+------------------------------------+-------------+
+
+<span class="h4"><a class="selflink" id="section-5.2.1" href="#section-5.2.1">5.2.1</a>.  Registration Procedure</span>
+
+   The registration policy for this registry is &quot;First Come First
+   Served&quot;, as described in <a href="/doc/html/rfc5226">RFC 5226</a> [<a href="/doc/html/rfc5226" title="">RFC5226</a>].  The registrant of the
+   token should provide the information mentioned in the following
+   registration template:
+
+   o  Registered token:  The desired well-known token to be used in
+      &quot;about&quot; URIs.
+
+   o  Intended usage:  A short description of how &quot;about&quot; URIs with the
+      registered token are handled, including information about the
+      referenced resource.
+
+   o  Contact/change controller:  Person (including contact information)
+      authorized to change this registration.
+
+   o  Specification:  A stable reference to a document that specifies
+      the registered &quot;about&quot; URI.  The question of interoperability does
+      not arise.  The key motivation is to have a reference to a
+      specification documenting well-known behavior of the &quot;about&quot; URI
+      in Web browsers.  As a rule of thumb, if the behavior is common to
+      two or more Web browser implementations, it can be considered
+      well-known.  An existing assignment may be duplicated if the
+      registered token is used in more than one Web browser
+      implementation.
+
+
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6694">RFC 6694</a>                 The &quot;about&quot; URI Scheme              August 2012</span>
+
+
+   The following is a template for the &quot;blank&quot; token:
+
+   o  Registered token:  blank
+
+   o  Intended usage:  The about:blank URI references a blank page.
+
+   o  Contact/change controller:  IESG &lt;iesg@ietf.org&gt; (on behalf of the
+      IETF).
+
+   o  Specification:  <a href="/doc/html/rfc6694">RFC 6694</a>
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3986">RFC3986</a>]   Berners-Lee, T., Fielding, R., and L. Masinter, &quot;Uniform
+               Resource Identifier (URI): Generic Syntax&quot;, STD 66,
+               <a href="/doc/html/rfc3986">RFC 3986</a>, January 2005.
+
+   [<a id="ref-RFC5226">RFC5226</a>]   Narten, T. and H. Alvestrand, &quot;Guidelines for Writing an
+               IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>, <a href="/doc/html/rfc5226">RFC 5226</a>,
+               May 2008.
+
+   [<a id="ref-RFC5234">RFC5234</a>]   Crocker, D., Ed., and P. Overell, &quot;Augmented BNF for
+               Syntax Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>,
+               January 2008.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4395">RFC4395</a>]   Hansen, T., Hardie, T., and L. Masinter, &quot;Guidelines and
+               Registration Procedures for New URI Schemes&quot;, <a href="/doc/html/bcp35">BCP 35</a>,
+               <a href="/doc/html/rfc4395">RFC 4395</a>, February 2006.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Moonesamy                     Informational                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6694">RFC 6694</a>                 The &quot;about&quot; URI Scheme              August 2012</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Acknowledgments</span>
+
+   This document was formed from a previous draft document initially
+   authored by Lachlan Hunt and Joseph Holsten.  Additionally, the
+   contributions of Frank Ellermann and Alexey Melnikov are gratefully
+   acknowledged.  Barry Leiba and Murray Kucherawy deserve special
+   credit for providing a great amount of text that was used in this
+   document.
+
+   Lachlan Hunt and Mykyta Yevstifeyev edited previous versions of this
+   document.  Tim Bray and John Klensin provided suggestions about how
+   to improve the document.
+
+Author&#x27;s Address
+
+   S. Moonesamy (editor)
+   76 Ylang Ylang Avenue
+   Quatre Bornes
+   Mauritius
+
+   EMail: sm+ietf@elandsys.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Moonesamy                     Informational                     [Page 7]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1089
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1089/">
+  <meta name="description" content="SNMP over Ethernet (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgbrown"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1089.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1089.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1089.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1089/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1089/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1089@ietf.org?subject=rfc1089" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1089-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1089-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1089-.txt" title="Run an idnits check of this document">Nits</a>]
+
+Obsoleted by: <a href="/doc/html/rfc4789">4789</a>                                               Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                  M. Schoffstall
+Request for Comments: 1089           Rensselaer Polytechnic Institute
+                                                             C. Davin
+                                  MIT Laboratory for Computer Science
+                                                             M. Fedor
+                                                       NYSERNet, Inc.
+                                                              J. Case
+                                 University of Tennessee at Knoxville
+                                                        February 1989
+
+
+                           <span class="h1">SNMP over Ethernet</span>
+
+Status of This Memo
+
+   This memo describes an experimental method by which the Simple
+   Network Management Protocol (SNMP) as specified in [<a href="#ref-1" title="&quot;A Simple Network Management Protocol&quot;">1</a>] can be used
+   over Ethernet MAC layer framing [<a href="#ref-2" title="&quot;The Ethernet - A Local Area Network&quot;">2</a>] instead of the Internet UDP/IP
+   protocol stack.  This specification is useful for LAN based network
+   elements that support no higher layer protocols beyond the MAC sub-
+   layer.  Distribution of this memo is unlimited.
+
+Overview and Rational
+
+   SNMP has been successful in managing Internet capable network
+   elements which support the protocol stack at least through UDP the
+   connectionless Internet transport layer protocol.  As originally
+   designed, SNMP is capable of running over any reasonable transport
+   mechanism (not necessarily a transport protocol) that supports bi-
+   directional flow and addressability.
+
+   Many non-Internet capable network elements are present in local
+   networks; for example, repeaters and wiring concentrators.  They
+   include both addressability, and programmable intelligence.  These
+   devices are widely used and increasingly important yet, for the most
+   part, invisible except through proprietary mechanisms.
+
+Specification
+
+   Almost all Internet capable network elements use the same mechanism
+   for encapsulation of the Internet protocol stack regardless of
+   conformity with the physical characteristics of Ethernet or 802.3,
+   this mechanism is specified in [<a href="#ref-3" title="&quot;A Standard for the Transmission of IP Datagrams over Ethernet Networks&quot;">3</a>] and [<a href="#ref-4" title="&quot;A Standard for the Transmission of IP Datagrams over IEEE 802 Networks&quot;">4</a>].  This specification
+   continues that style with the assignment (by XEROX) of 33100
+   (hexadecimal 814C) to the Ethernet Type field for SNMP.  The data
+   portion of the Ethernet frame would then be a standard SNMP message
+   as specified in [<a href="#ref-1" title="&quot;A Simple Network Management Protocol&quot;">1</a>].
+
+
+
+
+<span class="grey">Schoffstall, Davin, Fedor &amp; Case                                [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1089">RFC 1089</a>                   SNMP over Ethernet              February 1989</span>
+
+
+References
+
+     [<a id="ref-1">1</a>]  Case, J., Fedor, M., Schoffstall, M., and J. Davin, &quot;A Simple
+          Network Management Protocol&quot;, <a href="/doc/html/rfc1067">RFC-1067</a>, University of
+          Tennessee at Knoxville, NYSERNet, Inc., Rensselaer Polytechnic
+          Institute, and Proteon, Inc., August 1988.
+
+     [<a id="ref-2">2</a>]  DEC, &quot;The Ethernet - A Local Area Network&quot;, Version 2.0,
+          Digital Equipment Corporation, Intel Corporation, Xerox
+          Corporation.
+
+     [<a id="ref-3">3</a>]  Hornig, C., &quot;A Standard for the Transmission of IP Datagrams
+          over Ethernet Networks&quot;, <a href="/doc/html/rfc894">RFC-894</a>, Symbolics, April 1984.
+
+     [<a id="ref-4">4</a>]  Postel, J., and J. Reynolds, &quot;A Standard for the Transmission
+          of IP Datagrams over IEEE 802 Networks&quot;, <a href="/doc/html/rfc1042">RFC-1042</a>, USC
+          Information Sciences Institute, February 1988.
+
+Authors&#x27; Addresses
+
+   Marty Schoffstall
+   NYSERNET Inc.
+   Rensselaer Technology Park
+   165 Jordan Road
+   Troy, NY 12180
+
+   Phone: (518) 276-2654
+
+   EMail: schoff@stonewall.nyser.net
+
+
+   Chuck Davin
+   MIT Laboratory for Computer Science, NE43-507
+   545 Technology Square
+   Cambridge, MA 02139
+
+   Phone: (617) 253-6020
+
+   EMail: jrd@ptt.lcs.mit.edu
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Schoffstall, Davin, Fedor &amp; Case                                [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1089">RFC 1089</a>                   SNMP over Ethernet              February 1989</span>
+
+
+   Mark Fedor
+   Nysernet, Inc.
+   Rensselaer Technology Park
+   125 Jordan Road
+   Troy, NY 12180
+   (518) 283-8860
+
+   Phone: (518) 283-8860
+
+   EMail: fedor@patton.NYSER.NET
+
+
+   Jeff Case
+   University of Tennessee Computing Center
+   Associate Director
+   200 Stokely Management Center
+   Knoxville, TN 37996-0520
+
+   Phone: (615) 974-6721
+
+   EMail: case@UTKUX1.UTK.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Schoffstall, Davin, Fedor &amp; Case                                [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

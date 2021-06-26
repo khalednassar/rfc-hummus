@@ -1,0 +1,1027 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8675
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-softwire-iftunnel/">
+  <meta name="description" content="A YANG Data Model for Tunnel Interface Types (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8675.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8675.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8675.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8675.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8675/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8675/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/softwire/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-softwire-iftunnel@ietf.org?subject=draft-ietf-softwire-iftunnel" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-softwire-iftunnel-07.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-softwire-iftunnel-07.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-softwire-iftunnel-07.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-softwire-iftunnel-07">draft-ietf-softwire-iftunnel-07</a>                  Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      M. Boucadair
+Request for Comments: 8675                                        Orange
+Category: Standards Track                                      I. Farrer
+ISSN: 2070-1721                                      Deutsche Telekom AG
+                                                                R. Asati
+                                                     Cisco Systems, Inc.
+                                                           November 2019
+
+
+              <span class="h1">A YANG Data Model for Tunnel Interface Types</span>
+
+Abstract
+
+   This document specifies the initial version of a YANG module &quot;iana-
+   tunnel-type&quot;, which contains a collection of IANA-maintained YANG
+   identities used as interface types for tunnel interfaces.  The module
+   reflects the &quot;tunnelType&quot; registry maintained by IANA.  The latest
+   revision of this YANG module can be obtained from the IANA website.
+
+   Tunnel type values are not directly added to the Tunnel Interface
+   Types YANG module; they must instead be added to the &quot;tunnelType&quot;
+   IANA registry.  Once a new tunnel type registration is made by IANA
+   for a new tunneling scheme or even an existing one that is not
+   already listed in the current registry (e.g., LISP, NSH), IANA will
+   update the Tunnel Interface Types YANG module accordingly.
+
+   Some of the IETF-defined tunneling techniques are not listed in the
+   current IANA registry.  It is not the intent of this document to
+   update the existing IANA registry with a comprehensive list of tunnel
+   technologies.  Registrants must follow the IETF registration
+   procedure for interface types whenever a new tunnel type is needed.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8675">https://www.rfc-editor.org/info/rfc8675</a>.
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  IANA Tunnel Type YANG Module
+   3.  Security Considerations
+   4.  IANA Considerations
+     4.1.  YANG Module
+     4.2.  Updates to the IANA tunnelType Table
+   5.  References
+     5.1.  Normative References
+     5.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Example Usage
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document specifies the initial version of the iana-tunnel-type
+   YANG module containing a collection of IANA-maintained YANG
+   identities identifying tunnel interface types.  The module reflects
+   IANA&#x27;s tunnelType registry under the SMI Numbers registry
+   [<a href="#ref-TUNNELTYPE-IANA-REGISTRY">TUNNELTYPE-IANA-REGISTRY</a>].  The latest revision of this module can
+   be obtained from the IANA website.
+
+   Tunnel-specific extensions may be added to the Interface module
+   [<a href="/doc/html/rfc8343" title="&quot;A YANG Data Model for Interface Management&quot;">RFC8343</a>] as a function of the tunnel type.  An example of this is
+   provided in <a href="#appendix-A">Appendix A</a>.  It is not the intention of this document to
+   define tunnel-specific extensions for every tunnel encapsulation
+   technology; those are discussed in dedicated documents such as
+   [<a href="/doc/html/rfc8676" title="&quot;YANG Modules for IPv4-in-IPv6 Address plus Port (A+P) Softwires&quot;">RFC8676</a>].  Likewise, it is out of the scope of this document to
+   update the existing IANA tunnelType registry
+   [<a href="#ref-TUNNELTYPE-IANA-REGISTRY">TUNNELTYPE-IANA-REGISTRY</a>] with a comprehensive list of tunnel
+   technologies.  Guidelines and registration procedures for interface
+   types and sub-types are discussed in [<a href="#ref-IFTYPE-REG">IFTYPE-REG</a>].
+
+   This document uses the common YANG types defined in [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>] and
+   adopts the Network Management Datastore Architecture (NMDA
+   [<a href="/doc/html/rfc8342" title="&quot;Network Management Datastore Architecture (NMDA)&quot;">RFC8342</a>]).
+
+   The terminology for describing YANG modules is defined in [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>].
+   The meanings of the symbols used in the tree diagram are defined in
+   [<a href="/doc/html/rfc8340" title="&quot;YANG Tree Diagrams&quot;">RFC8340</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  IANA Tunnel Type YANG Module</span>
+
+   The iana-tunnel-type module imports the &#x27;iana-if-type&#x27; module defined
+   in [<a href="/doc/html/rfc7224" title="&quot;IANA Interface Type YANG Module&quot;">RFC7224</a>].
+
+   The initial version of the module includes tunnel types defined in
+   [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>], [<a href="/doc/html/rfc7856" title="&quot;Softwire Mesh Management Information Base (MIB)&quot;">RFC7856</a>], [<a href="/doc/html/rfc7870" title="&quot;Dual-Stack Lite (DS-Lite) Management Information Base (MIB) for Address Family Transition Routers (AFTRs)&quot;">RFC7870</a>], and [<a href="/doc/html/rfc6346" title="&quot;The Address plus Port (A+P) Approach to the IPv4 Address Shortage&quot;">RFC6346</a>].
+
+   &lt;CODE BEGINS&gt; file &quot;iana-tunnel-type@2019-11-16.yang&quot;
+   module iana-tunnel-type {
+     yang-version 1.1;
+     namespace &quot;urn:ietf:params:xml:ns:yang:iana-tunnel-type&quot;;
+     prefix iana-tunnel-type;
+
+     import iana-if-type {
+       prefix ift;
+       reference
+         &quot;<a href="/doc/html/rfc7224">RFC 7224</a>: IANA Interface Type YANG Module&quot;;
+     }
+
+     organization
+       &quot;IANA&quot;;
+     contact
+       &quot;Internet Assigned Numbers Authority
+
+        Postal: ICANN
+             12025 Waterfront Drive, Suite 300
+             Los Angeles, CA  90094-2536
+             United States of America
+        Tel:    +1 310 301 5800
+        &lt;mailto:iana@iana.org&gt;&quot;;
+     description
+       &quot;This module contains a collection of YANG identities defined
+        by IANA and used as interface types for tunnel interfaces.
+
+        Copyright (c) 2019 IETF Trust and the persons identified as
+        authors of the code.  All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD License
+        set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+        Relating to IETF Documents
+        (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>).
+
+        This version of this YANG module is part of <a href="/doc/html/rfc8675">RFC 8675</a>; see
+        the RFC itself for full legal notices.&quot;;
+
+     revision 2019-11-16 {
+       description
+         &quot;Initial revision.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8675">RFC 8675</a>: A YANG Data Model for Tunnel Interface Types&quot;;
+     }
+
+     identity other {
+       base ift:tunnel;
+       description
+         &quot;None of the following values.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc4087">RFC 4087</a>: IP Tunnel MIB&quot;;
+     }
+
+     identity direct {
+       base ift:tunnel;
+       description
+         &quot;No intermediate header.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2003">RFC 2003</a>: IP Encapsulation within IP
+          <a href="/doc/html/rfc4213">RFC 4213</a>: Basic Transition Mechanisms for IPv6 Hosts
+                    and Routers&quot;;
+     }
+
+     identity gre {
+       base ift:tunnel;
+       description
+         &quot;GRE encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc1701">RFC 1701</a>: Generic Routing Encapsulation (GRE)
+          <a href="/doc/html/rfc1702">RFC 1702</a>: Generic Routing Encapsulation over IPv4 networks
+          <a href="/doc/html/rfc7676">RFC 7676</a>: IPv6 Support for Generic Routing Encapsulation
+                    (GRE)&quot;;
+     }
+
+     identity minimal {
+       base ift:tunnel;
+       description
+         &quot;Minimal encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2004">RFC 2004</a>: Minimal Encapsulation within IP&quot;;
+     }
+
+     identity l2tp {
+       base ift:tunnel;
+       description
+         &quot;L2TP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2661">RFC 2661</a>: Layer Two Tunneling Protocol &#x27;L2TP&#x27;&quot;;
+     }
+
+     identity pptp {
+       base ift:tunnel;
+       description
+         &quot;PPTP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2637">RFC 2637</a>: Point-to-Point Tunneling Protocol (PPTP)&quot;;
+     }
+
+     identity l2f {
+       base ift:tunnel;
+       description
+         &quot;L2F encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2341">RFC 2341</a>: Cisco Layer Two Forwarding (Protocol) &#x27;L2F&#x27;&quot;;
+     }
+
+     identity udp {
+       base ift:tunnel;
+       description
+         &quot;UDP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc1234">RFC 1234</a>: Tunneling IPX Traffic through IP Networks,
+          <a href="/doc/html/rfc8085">RFC 8085</a>: UDP Usage Guidelines, <a href="#section-3.1.11">Section 3.1.11</a>&quot;;
+     }
+
+     identity atmp {
+       base ift:tunnel;
+       description
+         &quot;ATMP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2107">RFC 2107</a>: Ascend Tunnel Management Protocol - ATMP&quot;;
+     }
+
+     identity msdp {
+       base ift:tunnel;
+       description
+         &quot;MSDP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc3618">RFC 3618</a>: Multicast Source Discovery Protocol (MSDP)&quot;;
+     }
+
+     identity sixtofour {
+       base ift:tunnel;
+       description
+         &quot;6to4 encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc3056">RFC 3056</a>: Connection of IPv6 Domains via IPv4 Clouds&quot;;
+     }
+
+     identity sixoverfour {
+       base ift:tunnel;
+       description
+         &quot;6over4 encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc2529">RFC 2529</a>: Transmission of IPv6 over IPv4 Domains without
+                    Explicit Tunnels&quot;;
+     }
+
+     identity isatap {
+       base ift:tunnel;
+       description
+         &quot;ISATAP encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc5214">RFC 5214</a>:  Intra-Site Automatic Tunnel Addressing Protocol
+                    (ISATAP)&quot;;
+     }
+
+     identity teredo {
+       base ift:tunnel;
+       description
+         &quot;Teredo encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc4380">RFC 4380</a>: Teredo: Tunneling IPv6 over UDP through
+                    Network Address Translations (NATs)&quot;;
+     }
+
+     identity iphttps {
+       base ift:tunnel;
+       description
+         &quot;IP over HTTPS (IP-HTTPS) Tunneling Protocol.&quot;;
+       reference
+         &quot;Microsoft Corporation, IP over HTTPS (IP-HTTPS) Tunneling
+          Protocol Specification,
+          <a href="https://msdn.microsoft.com/en-us/library/dd358571">https://msdn.microsoft.com/en-us/library/dd358571</a>.aspx&quot;;
+     }
+
+     identity softwiremesh {
+       base ift:tunnel;
+       description
+         &quot;softwire mesh tunnel.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc5565">RFC 5565</a>: Softwire Mesh Framework&quot;;
+     }
+
+     identity dslite {
+       base ift:tunnel;
+       description
+         &quot;DS-Lite tunnel.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc6333">RFC 6333</a>: Dual-Stack Lite Broadband Deployments Following
+                    IPv4 Exhaustion&quot;;
+     }
+
+     identity aplusp {
+       base ift:tunnel;
+       description
+         &quot;A+P encapsulation.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc6346">RFC 6346</a>: The Address plus Port (A+P) Approach to the IPv4
+                    Address Shortage&quot;;
+     }
+   }
+   &lt;CODE ENDS&gt;
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   The YANG module specified in this document defines a schema for data
+   that is designed to be accessed via network management protocols such
+   as NETCONF [<a href="/doc/html/rfc6241" title="&quot;Network Configuration Protocol (NETCONF)&quot;">RFC6241</a>] or RESTCONF [<a href="/doc/html/rfc8040" title="&quot;RESTCONF Protocol&quot;">RFC8040</a>].  The lowest NETCONF layer
+   is the secure transport layer, and the mandatory-to-implement secure
+   transport is Secure Shell (SSH) [<a href="/doc/html/rfc6242" title="&quot;Using the NETCONF Protocol over Secure Shell (SSH)&quot;">RFC6242</a>].  The lowest RESTCONF layer
+   is HTTPS, and the mandatory-to-implement secure transport is TLS
+   [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>].
+
+   The Network Configuration Access Control Model (NACM) [<a href="/doc/html/rfc8341" title="&quot;Network Configuration Access Control Model&quot;">RFC8341</a>]
+   provides the means to restrict access for particular NETCONF or
+   RESTCONF users to a preconfigured subset of all available NETCONF or
+   RESTCONF protocol operations and content.
+
+   The module defined in this document defines YANG identities for the
+   iana-tunnel-types registry.  These identities are intended to be
+   referenced by other YANG modules, and by themselves do not expose any
+   nodes which are writable, contain read-only state, or RPCs.  As such,
+   there are no additional security issues to be considered relating to
+   the module defined in this document.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  YANG Module</span>
+
+   IANA has registered the following URI in the &quot;ns&quot; subregistry within
+   the &quot;IETF XML Registry&quot; [<a href="/doc/html/rfc3688" title="&quot;The IETF XML Registry&quot;">RFC3688</a>]:
+
+   URI:  urn:ietf:params:xml:ns:yang:iana-tunnel-type
+   Registrant Contact:  IANA
+   XML:  N/A; the requested URI is an XML namespace.
+
+   IANA registered the following YANG module in the &quot;YANG Module Names&quot;
+   subregistry [<a href="/doc/html/rfc7950" title="&quot;The YANG 1.1 Data Modeling Language&quot;">RFC7950</a>] within the &quot;YANG Parameters&quot; registry.
+
+   Name:  iana-tunnel-type
+   Namespace:  urn:ietf:params:xml:ns:yang:iana-tunnel-type
+   Prefix:  iana-tunnel-type
+   Reference:  <a href="/doc/html/rfc8675">RFC 8675</a>
+
+   This document defines the initial version of the IANA-maintained
+   iana-tunnel-type YANG module.  IANA has added this note to the
+   registry:
+
+      Tunnel type values must not be directly added to the iana-tunnel-
+      type YANG module.  They must instead be added to the &quot;tunnelType&quot;
+      subregistry (under the &quot;ifType definitions&quot; registry) at [IANA
+      registry smi-numbers].
+
+   When a tunnel type is added to the &quot;tunnelType&quot; subregistry, a new
+   &quot;identity&quot; statement must be added to the iana-tunnel-type YANG
+   module.  The name of the &quot;identity&quot; is the lower-case of the
+   corresponding enumeration in the IANAifType-MIB (i.e.,
+   IANAtunnelType).  The &quot;identity&quot; statement should have the following
+   sub-statements defined:
+
+   &quot;base&quot;:        Contains &#x27;ift:tunnel&#x27;.
+
+   &quot;description&quot;:  Replicates the description from the registry.
+
+   &quot;reference&quot;:   Replicates the reference from the registry and adds
+                  the title of the document.
+
+   Unassigned or reserved values are not present in the module.
+
+   When the iana-tunnel-type YANG module is updated, a new &quot;revision&quot;
+   statement must be added in front of the existing revision statements.
+
+   IANA has added the following note to &quot;tunnelType&quot; subregistry:
+
+      When this registry is modified, the YANG module iana-tunnel-type
+      must be updated as defined in <a href="/doc/html/rfc8675">RFC 8675</a>.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Updates to the IANA tunnelType Table</span>
+
+   IANA has updated the following entries in the tunnelType registry
+   under the SMI Numbers registry [<a href="#ref-TUNNELTYPE-IANA-REGISTRY">TUNNELTYPE-IANA-REGISTRY</a>].
+
+   OLD:
+
+     +---------+--------------+------------------------+------------+
+     | Decimal | Name         | Description            | References |
+     +=========+==============+========================+============+
+     | 2       | direct       | no intermediate header | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 3       | gre          | GRE encapsulation      | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 4       | minimal      | Minimal encapsulation  | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 5       | l2tp         | L2TP encapsulation     | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 6       | pptp         | PPTP encapsulation     | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 7       | l2f          | L2F encapsulation      | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 8       | udp          | UDP encapsulation      | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 9       | atmp         | ATMP encapsulation     | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 10      | msdp         | MSDP encapsulation     | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 11      | sixToFour    | 6to4 encapsulation     | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 12      | sixOverFour  | 6over4 encapsulation   | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 13      | isatap       | ISATAP encapsulation   | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 14      | teredo       | Teredo encapsulation   | [<a href="/doc/html/rfc4087" title="&quot;IP Tunnel MIB&quot;">RFC4087</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 16      | softwireMesh | softwire mesh tunnel   | [<a href="/doc/html/rfc7856" title="&quot;Softwire Mesh Management Information Base (MIB)&quot;">RFC7856</a>]  |
+     +---------+--------------+------------------------+------------+
+     | 17      | dsLite       | DS-Lite tunnel         | [<a href="/doc/html/rfc7870" title="&quot;Dual-Stack Lite (DS-Lite) Management Information Base (MIB) for Address Family Transition Routers (AFTRs)&quot;">RFC7870</a>]  |
+     +---------+--------------+------------------------+------------+
+
+                                 Table 1
+
+   NEW:
+
+   +-------+-------------+---------------+-----------------------------+
+   |Decimal| Name        | Description   | References                  |
+   +=======+=============+===============+=============================+
+   | 2     | direct      |no intermediate| [<a href="/doc/html/rfc2003" title="&quot;IP Encapsulation within IP&quot;">RFC2003</a>][RFC4213]          |
+   |       |             | header        |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 3     | gre         | GRE           | [<a href="/doc/html/rfc1701" title="&quot;Generic Routing Encapsulation (GRE)&quot;">RFC1701</a>][RFC1702][<a href="/doc/html/rfc7676" title="&quot;IPv6 Support for Generic Routing Encapsulation (GRE)&quot;">RFC7676</a>] |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 4     | minimal     | Minimal       | [<a href="/doc/html/rfc2004" title="&quot;Minimal Encapsulation within IP&quot;">RFC2004</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 5     | l2tp        | L2TP          | [<a href="/doc/html/rfc2661" title="&quot;Layer Two Tunneling Protocol &quot;">RFC2661</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 6     | pptp        | PPTP          | [<a href="/doc/html/rfc2637" title="&quot;Point-to-Point Tunneling Protocol (PPTP)&quot;">RFC2637</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 7     | l2f         | L2F           | [<a href="/doc/html/rfc2341" title="&quot;Cisco Layer Two Forwarding (Protocol) &quot;">RFC2341</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 8     | udp         | UDP           | [<a href="/doc/html/rfc8085" title="&quot;UDP Usage Guidelines&quot;">RFC8085</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 9     | atmp        | ATMP          | [<a href="/doc/html/rfc2107" title="&quot;Ascend Tunnel Management Protocol - ATMP&quot;">RFC2107</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 10    | msdp        | MSDP          | [<a href="/doc/html/rfc3618" title="&quot;Multicast Source Discovery Protocol (MSDP)&quot;">RFC3618</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 11    | sixToFour   | 6to4          | [<a href="/doc/html/rfc3056" title="&quot;Connection of IPv6 Domains via IPv4 Clouds&quot;">RFC3056</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 12    | sixOverFour | 6over4        | [<a href="/doc/html/rfc2529" title="&quot;Transmission of IPv6 over IPv4 Domains without Explicit Tunnels&quot;">RFC2529</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 13    | isatap      | ISATAP        | [<a href="/doc/html/rfc5214" title="&quot;Intra-Site Automatic Tunnel Addressing Protocol (ISATAP)&quot;">RFC5214</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 14    | teredo      | Teredo        | [<a href="/doc/html/rfc4380" title="&quot;Teredo: Tunneling IPv6 over UDP through Network Address Translations (NATs)&quot;">RFC4380</a>]                   |
+   |       |             | encapsulation |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 16    |softwireMesh | softwire mesh | [<a href="/doc/html/rfc5565" title="&quot;Softwire Mesh Framework&quot;">RFC5565</a>]                   |
+   |       |             | tunnel        |                             |
+   +-------+-------------+---------------+-----------------------------+
+   | 17    | dsLite      |DS-Lite tunnel | [<a href="/doc/html/rfc6333" title="&quot;Dual- Stack Lite Broadband Deployments Following IPv4 Exhaustion&quot;">RFC6333</a>]                   |
+   +-------+-------------+---------------+-----------------------------+
+
+                                  Table 2
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3688">RFC3688</a>]  Mealling, M., &quot;The IETF XML Registry&quot;, <a href="/doc/html/bcp81">BCP 81</a>, <a href="/doc/html/rfc3688">RFC 3688</a>,
+              DOI 10.17487/RFC3688, January 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3688">https://www.rfc-editor.org/info/rfc3688</a>&gt;.
+
+   [<a id="ref-RFC6241">RFC6241</a>]  Enns, R., Ed., Bjorklund, M., Ed., Schoenwaelder, J., Ed.,
+              and A. Bierman, Ed., &quot;Network Configuration Protocol
+              (NETCONF)&quot;, <a href="/doc/html/rfc6241">RFC 6241</a>, DOI 10.17487/RFC6241, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6241">https://www.rfc-editor.org/info/rfc6241</a>&gt;.
+
+   [<a id="ref-RFC6242">RFC6242</a>]  Wasserman, M., &quot;Using the NETCONF Protocol over Secure
+              Shell (SSH)&quot;, <a href="/doc/html/rfc6242">RFC 6242</a>, DOI 10.17487/RFC6242, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6242">https://www.rfc-editor.org/info/rfc6242</a>&gt;.
+
+   [<a id="ref-RFC6991">RFC6991</a>]  Schoenwaelder, J., Ed., &quot;Common YANG Data Types&quot;,
+              <a href="/doc/html/rfc6991">RFC 6991</a>, DOI 10.17487/RFC6991, July 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6991">https://www.rfc-editor.org/info/rfc6991</a>&gt;.
+
+   [<a id="ref-RFC7224">RFC7224</a>]  Bjorklund, M., &quot;IANA Interface Type YANG Module&quot;,
+              <a href="/doc/html/rfc7224">RFC 7224</a>, DOI 10.17487/RFC7224, May 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7224">https://www.rfc-editor.org/info/rfc7224</a>&gt;.
+
+   [<a id="ref-RFC7950">RFC7950</a>]  Bjorklund, M., Ed., &quot;The YANG 1.1 Data Modeling Language&quot;,
+              <a href="/doc/html/rfc7950">RFC 7950</a>, DOI 10.17487/RFC7950, August 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7950">https://www.rfc-editor.org/info/rfc7950</a>&gt;.
+
+   [<a id="ref-RFC8040">RFC8040</a>]  Bierman, A., Bjorklund, M., and K. Watsen, &quot;RESTCONF
+              Protocol&quot;, <a href="/doc/html/rfc8040">RFC 8040</a>, DOI 10.17487/RFC8040, January 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8040">https://www.rfc-editor.org/info/rfc8040</a>&gt;.
+
+   [<a id="ref-RFC8341">RFC8341</a>]  Bierman, A. and M. Bjorklund, &quot;Network Configuration
+              Access Control Model&quot;, STD 91, <a href="/doc/html/rfc8341">RFC 8341</a>,
+              DOI 10.17487/RFC8341, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8341">https://www.rfc-editor.org/info/rfc8341</a>&gt;.
+
+   [<a id="ref-RFC8342">RFC8342</a>]  Bjorklund, M., Schoenwaelder, J., Shafer, P., Watsen, K.,
+              and R. Wilton, &quot;Network Management Datastore Architecture
+              (NMDA)&quot;, <a href="/doc/html/rfc8342">RFC 8342</a>, DOI 10.17487/RFC8342, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8342">https://www.rfc-editor.org/info/rfc8342</a>&gt;.
+
+   [<a id="ref-RFC8446">RFC8446</a>]  Rescorla, E., &quot;The Transport Layer Security (TLS) Protocol
+              Version 1.3&quot;, <a href="/doc/html/rfc8446">RFC 8446</a>, DOI 10.17487/RFC8446, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8446">https://www.rfc-editor.org/info/rfc8446</a>&gt;.
+
+   [<a id="ref-TUNNELTYPE-IANA-REGISTRY">TUNNELTYPE-IANA-REGISTRY</a>]
+              IANA, &quot;Structure of Management Information (SMI) Numbers
+              (MIB Module Registrations)&quot;,
+              &lt;<a href="https://www.iana.org/assignments/smi-numbers">https://www.iana.org/assignments/smi-numbers</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Informative References</span>
+
+   [<a id="ref-IFTYPE-REG">IFTYPE-REG</a>]
+              Thaler, D. and D. Romascanu, &quot;Guidelines and Registration
+              Procedures for Interface Types and Tunnel Types&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-thaler-iftype-reg-06">draft-thaler-iftype-reg-06</a>, 2
+              November 2019,
+              &lt;<a href="https://tools.ietf.org/html/draft-thaler-iftype-reg-06">https://tools.ietf.org/html/draft-thaler-iftype-reg-06</a>&gt;.
+
+   [<a id="ref-RFC1701">RFC1701</a>]  Hanks, S., Li, T., Farinacci, D., and P. Traina, &quot;Generic
+              Routing Encapsulation (GRE)&quot;, <a href="/doc/html/rfc1701">RFC 1701</a>,
+              DOI 10.17487/RFC1701, October 1994,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1701">https://www.rfc-editor.org/info/rfc1701</a>&gt;.
+
+   [<a id="ref-RFC1702">RFC1702</a>]  Hanks, S., Li, T., Farinacci, D., and P. Traina, &quot;Generic
+              Routing Encapsulation over IPv4 networks&quot;, <a href="/doc/html/rfc1702">RFC 1702</a>,
+              DOI 10.17487/RFC1702, October 1994,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1702">https://www.rfc-editor.org/info/rfc1702</a>&gt;.
+
+   [<a id="ref-RFC2003">RFC2003</a>]  Perkins, C., &quot;IP Encapsulation within IP&quot;, <a href="/doc/html/rfc2003">RFC 2003</a>,
+              DOI 10.17487/RFC2003, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2003">https://www.rfc-editor.org/info/rfc2003</a>&gt;.
+
+   [<a id="ref-RFC2004">RFC2004</a>]  Perkins, C., &quot;Minimal Encapsulation within IP&quot;, <a href="/doc/html/rfc2004">RFC 2004</a>,
+              DOI 10.17487/RFC2004, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2004">https://www.rfc-editor.org/info/rfc2004</a>&gt;.
+
+   [<a id="ref-RFC2107">RFC2107</a>]  Hamzeh, K., &quot;Ascend Tunnel Management Protocol - ATMP&quot;,
+              <a href="/doc/html/rfc2107">RFC 2107</a>, DOI 10.17487/RFC2107, February 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2107">https://www.rfc-editor.org/info/rfc2107</a>&gt;.
+
+   [<a id="ref-RFC2341">RFC2341</a>]  Valencia, A., Littlewood, M., and T. Kolar, &quot;Cisco Layer
+              Two Forwarding (Protocol) &quot;L2F&quot;&quot;, <a href="/doc/html/rfc2341">RFC 2341</a>,
+              DOI 10.17487/RFC2341, May 1998,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2341">https://www.rfc-editor.org/info/rfc2341</a>&gt;.
+
+   [<a id="ref-RFC2529">RFC2529</a>]  Carpenter, B. and C. Jung, &quot;Transmission of IPv6 over IPv4
+              Domains without Explicit Tunnels&quot;, <a href="/doc/html/rfc2529">RFC 2529</a>,
+              DOI 10.17487/RFC2529, March 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2529">https://www.rfc-editor.org/info/rfc2529</a>&gt;.
+
+   [<a id="ref-RFC2637">RFC2637</a>]  Hamzeh, K., Pall, G., Verthein, W., Taarud, J., Little,
+              W., and G. Zorn, &quot;Point-to-Point Tunneling Protocol
+              (PPTP)&quot;, <a href="/doc/html/rfc2637">RFC 2637</a>, DOI 10.17487/RFC2637, July 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2637">https://www.rfc-editor.org/info/rfc2637</a>&gt;.
+
+   [<a id="ref-RFC2661">RFC2661</a>]  Townsley, W., Valencia, A., Rubens, A., Pall, G., Zorn,
+              G., and B. Palter, &quot;Layer Two Tunneling Protocol &quot;L2TP&quot;&quot;,
+              <a href="/doc/html/rfc2661">RFC 2661</a>, DOI 10.17487/RFC2661, August 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2661">https://www.rfc-editor.org/info/rfc2661</a>&gt;.
+
+   [<a id="ref-RFC3056">RFC3056</a>]  Carpenter, B. and K. Moore, &quot;Connection of IPv6 Domains
+              via IPv4 Clouds&quot;, <a href="/doc/html/rfc3056">RFC 3056</a>, DOI 10.17487/RFC3056, February
+              2001, &lt;<a href="https://www.rfc-editor.org/info/rfc3056">https://www.rfc-editor.org/info/rfc3056</a>&gt;.
+
+   [<a id="ref-RFC3618">RFC3618</a>]  Fenner, B., Ed. and D. Meyer, Ed., &quot;Multicast Source
+              Discovery Protocol (MSDP)&quot;, <a href="/doc/html/rfc3618">RFC 3618</a>,
+              DOI 10.17487/RFC3618, October 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3618">https://www.rfc-editor.org/info/rfc3618</a>&gt;.
+
+   [<a id="ref-RFC4087">RFC4087</a>]  Thaler, D., &quot;IP Tunnel MIB&quot;, <a href="/doc/html/rfc4087">RFC 4087</a>,
+              DOI 10.17487/RFC4087, June 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4087">https://www.rfc-editor.org/info/rfc4087</a>&gt;.
+
+   [<a id="ref-RFC4213">RFC4213</a>]  Nordmark, E. and R. Gilligan, &quot;Basic Transition Mechanisms
+              for IPv6 Hosts and Routers&quot;, <a href="/doc/html/rfc4213">RFC 4213</a>,
+              DOI 10.17487/RFC4213, October 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4213">https://www.rfc-editor.org/info/rfc4213</a>&gt;.
+
+   [<a id="ref-RFC4380">RFC4380</a>]  Huitema, C., &quot;Teredo: Tunneling IPv6 over UDP through
+              Network Address Translations (NATs)&quot;, <a href="/doc/html/rfc4380">RFC 4380</a>,
+              DOI 10.17487/RFC4380, February 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4380">https://www.rfc-editor.org/info/rfc4380</a>&gt;.
+
+   [<a id="ref-RFC5214">RFC5214</a>]  Templin, F., Gleeson, T., and D. Thaler, &quot;Intra-Site
+              Automatic Tunnel Addressing Protocol (ISATAP)&quot;, <a href="/doc/html/rfc5214">RFC 5214</a>,
+              DOI 10.17487/RFC5214, March 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5214">https://www.rfc-editor.org/info/rfc5214</a>&gt;.
+
+   [<a id="ref-RFC5565">RFC5565</a>]  Wu, J., Cui, Y., Metz, C., and E. Rosen, &quot;Softwire Mesh
+              Framework&quot;, <a href="/doc/html/rfc5565">RFC 5565</a>, DOI 10.17487/RFC5565, June 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5565">https://www.rfc-editor.org/info/rfc5565</a>&gt;.
+
+   [<a id="ref-RFC6333">RFC6333</a>]  Durand, A., Droms, R., Woodyatt, J., and Y. Lee, &quot;Dual-
+              Stack Lite Broadband Deployments Following IPv4
+              Exhaustion&quot;, <a href="/doc/html/rfc6333">RFC 6333</a>, DOI 10.17487/RFC6333, August 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6333">https://www.rfc-editor.org/info/rfc6333</a>&gt;.
+
+   [<a id="ref-RFC6346">RFC6346</a>]  Bush, R., Ed., &quot;The Address plus Port (A+P) Approach to
+              the IPv4 Address Shortage&quot;, <a href="/doc/html/rfc6346">RFC 6346</a>,
+              DOI 10.17487/RFC6346, August 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6346">https://www.rfc-editor.org/info/rfc6346</a>&gt;.
+
+   [<a id="ref-RFC7676">RFC7676</a>]  Pignataro, C., Bonica, R., and S. Krishnan, &quot;IPv6 Support
+              for Generic Routing Encapsulation (GRE)&quot;, <a href="/doc/html/rfc7676">RFC 7676</a>,
+              DOI 10.17487/RFC7676, October 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7676">https://www.rfc-editor.org/info/rfc7676</a>&gt;.
+
+   [<a id="ref-RFC7856">RFC7856</a>]  Cui, Y., Dong, J., Wu, P., Xu, M., and A. Yla-Jaaski,
+              &quot;Softwire Mesh Management Information Base (MIB)&quot;,
+              <a href="/doc/html/rfc7856">RFC 7856</a>, DOI 10.17487/RFC7856, May 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7856">https://www.rfc-editor.org/info/rfc7856</a>&gt;.
+
+   [<a id="ref-RFC7870">RFC7870</a>]  Fu, Y., Jiang, S., Dong, J., and Y. Chen, &quot;Dual-Stack Lite
+              (DS-Lite) Management Information Base (MIB) for Address
+              Family Transition Routers (AFTRs)&quot;, <a href="/doc/html/rfc7870">RFC 7870</a>,
+              DOI 10.17487/RFC7870, June 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7870">https://www.rfc-editor.org/info/rfc7870</a>&gt;.
+
+   [<a id="ref-RFC8085">RFC8085</a>]  Eggert, L., Fairhurst, G., and G. Shepherd, &quot;UDP Usage
+              Guidelines&quot;, <a href="/doc/html/bcp145">BCP 145</a>, <a href="/doc/html/rfc8085">RFC 8085</a>, DOI 10.17487/RFC8085,
+              March 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8085">https://www.rfc-editor.org/info/rfc8085</a>&gt;.
+
+   [<a id="ref-RFC8340">RFC8340</a>]  Bjorklund, M. and L. Berger, Ed., &quot;YANG Tree Diagrams&quot;,
+              <a href="/doc/html/bcp215">BCP 215</a>, <a href="/doc/html/rfc8340">RFC 8340</a>, DOI 10.17487/RFC8340, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8340">https://www.rfc-editor.org/info/rfc8340</a>&gt;.
+
+   [<a id="ref-RFC8343">RFC8343</a>]  Bjorklund, M., &quot;A YANG Data Model for Interface
+              Management&quot;, <a href="/doc/html/rfc8343">RFC 8343</a>, DOI 10.17487/RFC8343, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8343">https://www.rfc-editor.org/info/rfc8343</a>&gt;.
+
+   [<a id="ref-RFC8676">RFC8676</a>]  Farrer, I., Ed. and M. Boucadair, Ed., &quot;YANG Modules for
+              IPv4-in-IPv6 Address plus Port (A+P) Softwires&quot;, <a href="/doc/html/rfc8676">RFC 8676</a>,
+              DOI 10.17487/RFC8676, November 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8676">https://www.rfc-editor.org/info/rfc8676</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Example Usage</span>
+
+   The following example illustrates how the Interface YANG module can
+   be augmented with tunnel-specific parameters.  In this example, the
+   module is augmented with a &#x27;remote-endpoint&#x27; for the tunnel.  A tree
+   structure is provided below:
+
+   module: example-iftunnel-extension
+     augment /if:interfaces/if:interface:
+       +--rw remote-endpoint?   inet:ipv6-address
+
+   The &#x27;example-iftunnel-extension&#x27; module imports the modules defined
+   in [<a href="/doc/html/rfc6991" title="&quot;Common YANG Data Types&quot;">RFC6991</a>] and [<a href="/doc/html/rfc8343" title="&quot;A YANG Data Model for Interface Management&quot;">RFC8343</a>] in addition to the &quot;iana-tunnel-type&quot;
+   module defined in this document.
+
+   module example-iftunnel-extension {
+     yang-version 1.1;
+
+     namespace &quot;urn:ietf:params:xml:ns:yang:example-iftunnel-extension&quot;;
+     prefix example;
+
+     import ietf-inet-types {
+       prefix inet;
+       reference
+         &quot;<a href="/doc/html/rfc6991">RFC 6991</a>: Common YANG Data Types, <a href="#section-4">Section 4</a>&quot;;
+     }
+
+     import ietf-interfaces {
+       prefix if;
+       reference
+         &quot;<a href="/doc/html/rfc8343">RFC 8343</a>: A YANG Data Model for Interface Management&quot;;
+     }
+
+     import iana-tunnel-type  {
+       prefix iana-tunnel-type;
+       reference
+         &quot;<a href="/doc/html/rfc8675">RFC 8675</a>:  A Tunnel Extension to the Interface Management
+                     YANG Module&quot;;
+     }
+
+     organization &quot;IETF Softwire Working Group&quot;;
+
+     contact
+
+       &quot;WG Web:   &lt;<a href="https://datatracker.ietf.org/wg/softwire/">https://datatracker.ietf.org/wg/softwire/</a>&gt;
+        WG List:  &lt;mailto:softwire@ietf.org&gt;
+
+        Author:  Mohamed Boucadair
+                 &lt;mailto:mohamed.boucadair@orange.com&gt;&quot;;
+
+      description
+         &quot;This is an example YANG module to extend the Interface YANG
+          module with tunnel-specific parameters.
+
+         Copyright (c) 2019 IETF Trust and the persons identified as
+         authors of the code.  All rights reserved.
+
+         Redistribution and use in source and binary forms, with or
+         without modification, is permitted pursuant to, and subject
+         to the license terms contained in, the Simplified BSD License
+         set forth in <a href="#section-4">Section 4</a>.c of the IETF Trust&#x27;s Legal Provisions
+         Relating to IETF Documents
+         (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>).
+
+         This version of this YANG module is part of <a href="/doc/html/rfc8675">RFC 8675</a>; see
+         the RFC itself for full legal notices.&quot;;
+
+     revision 2019-10-21 {
+       description
+         &quot;Initial revision.&quot;;
+       reference
+         &quot;<a href="/doc/html/rfc8675">RFC 8675</a>:  Tunnel Interface Types YANG Module&quot;;
+     }
+
+     augment &quot;/if:interfaces/if:interface&quot; {
+       when &quot;derived-from(if:type, &#x27;iana-tunnel-type:gre&#x27;)&quot;;
+       description
+         &quot;Augments Interface module with specific tunnel parameters.&quot;;
+
+       leaf remote-endpoint {
+         type inet:ipv6-address;
+         description
+           &quot;IPv6 address of the remote GRE endpoint.&quot;;
+       }
+     }
+   }
+
+Acknowledgements
+
+   Special thanks to Tom Petch and Martin Bjorklund for the detailed
+   review and suggestions.
+
+   Thanks to Andy Bierman for the Yangdoctors review.
+
+   Thanks to Dale Worley, David Black, and Yaron Sheffer for the review.
+
+Authors&#x27; Addresses
+
+   Mohamed Boucadair
+   Orange
+   35000 Rennes
+   France
+
+   Email: mohamed.boucadair@orange.com
+
+
+   Ian Farrer
+   Deutsche Telekom AG
+   CTO-ATI, Landgrabenweg 151
+   53227 Bonn
+   Germany
+
+   Email: ian.farrer@telekom.de
+
+
+   Rajiv Asati
+   Cisco Systems, Inc.
+   7025 Kit Creek Rd.
+   RTP, NC 27709
+   United States of America
+
+   Email: Rajiva@cisco.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

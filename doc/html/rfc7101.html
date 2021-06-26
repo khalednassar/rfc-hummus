@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc7101
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-rfced-rfcxx00-retired/">
+  <meta name="description" content="List of Internet Official Protocol Standards: Replaced by a Web Page (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc7101.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc7101.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc7101.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc7101/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc7101/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-rfced-rfcxx00-retired@ietf.org?subject=draft-rfced-rfcxx00-retired" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-rfced-rfcxx00-retired-06.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-rfced-rfcxx00-retired-06.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-rfced-rfcxx00-retired-06.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-rfced-rfcxx00-retired-06">draft-rfced-rfcxx00-retired-06</a>                       Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Architecture Board (IAB)                              S. Ginoza
+Request for Comments: 7101                                           AMS
+Category: Informational                                    December 2013
+ISSN: 2070-1721
+
+
+             <span class="h1">List of Internet Official Protocol Standards:</span>
+                         <span class="h1">Replaced by a Web Page</span>
+
+Abstract
+
+   At one time, the RFC Editor published snapshots of the &quot;Internet
+   Official Protocol Standards&quot;.  These documents were known as xx00
+   documents, the last of which was published in May 2008.  These
+   snapshots have been replaced by a web page, so the RFC Editor will no
+   longer be publishing these snapshots as RFCs.  As a result, the RFC
+   Editor will classify unpublished RFC xx00 numbers through 7000 as
+   never issued.  Starting with the RFC number 7100, xx00 numbers will
+   be available for assignment.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Architecture Board (IAB)
+   and represents information that the IAB has deemed valuable to
+   provide for permanent record.  It represents the consensus of the
+   Internet Architecture Board (IAB).  Documents approved for
+   publication by the IAB are not a candidate for any level of Internet
+   Standard; see <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc7101">http://www.rfc-editor.org/info/rfc7101</a>.
+
+Copyright Notice
+
+   Copyright (c) 2013 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+
+
+
+<span class="grey">Ginoza                        Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc7101">RFC 7101</a>               Official Protocol Standards         December 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a href="/doc/html/rfc1083" title="&quot;IAB official protocol standards&quot;">RFC1083</a>], published in December 1988, was the first document
+   published in the RFC series that detailed a &quot;list of documents that
+   define the standards for the Internet protocol suite&quot; and any ongoing
+   experiments.  Snapshots were published from time to time.  [<a href="/doc/html/rfc1280" title="&quot;IAB Official Protocol Standards&quot;">RFC1280</a>]
+   was the first of these publications to be published as STD 1.
+   Starting with [<a href="/doc/html/rfc2200" title="&quot;Internet Official Protocol Standards&quot;">RFC2200</a>], RFC numbers ending with 00 were reserved for
+   snapshots of the Official Protocol Standards.  [<a href="/doc/html/rfc5000" title="&quot;Internet Official Protocol Standards&quot;">RFC5000</a>], published
+   in May 2008, was the last snapshot documented in an RFC.  This
+   document notes that the xx00 documents are being replaced by the
+   online resource provided by the RFC Editor, and the tradition of
+   publishing snapshots is being discontinued.  RFC numbers typically
+   reserved for these documents (i.e., those numbers ending with 00)
+   will be available for assignment to other RFCs-to-be.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Online List of Official Internet Protocol Standards</span>
+
+   In the past, publishing a snapshot of the current list of Standards
+   Track and Experimental documents was helpful to the Internet
+   community, as the information was not available otherwise.  In 1996,
+   [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>] documented the IETF&#x27;s desire for the periodic publication
+   of the &quot;Internet Official Protocol Standards&quot;.  However, in 2000, the
+   RFC Editor produced an online list that is dynamically updated and
+   available to individuals with access to the public Internet
+   [<a href="#ref-STDS-TRK" title="&quot;Official Internet Protocol Standards&quot;">STDS-TRK</a>].  As the list has been online for over 10 years, and the
+   IETF has indicated that they no longer see a need for the snapshot
+   document to be maintained [<a href="/doc/html/rfc7100" title="&quot;Retirement of the &quot;">RFC7100</a>], the official list of Standards
+   Track documents will now be provided by the online list.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  STD 1</span>
+
+   STD 1 has been in an abnormal state since <a href="/doc/html/rfc5000">RFC 5000</a> was published.
+   After consultation with the IAB, <a href="/doc/html/rfc5000">RFC 5000</a> was published as an
+   Informational document, but it was still identified as STD 1 in the
+   document header.  The status was listed as Informational because the
+   document does not describe an implementable Standard.  However, it
+   was associated with STD 1 to keep the document consistent with its
+   historic connection to the subseries identifier.
+
+   The IETF has decided to move <a href="/doc/html/rfc5000">RFC 5000</a> (and therefore STD 1) to
+   Historic status [<a href="/doc/html/rfc7100" title="&quot;Retirement of the &quot;">RFC7100</a>].  Marking STD 1 as Historic will result in
+   the identifier STD 1 not being available for future use.
+
+
+
+
+
+
+
+
+<span class="grey">Ginoza                        Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc7101">RFC 7101</a>               Official Protocol Standards         December 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Cleaning Up RFC Editor Data</span>
+
+   As part of the cleanup related to ending the series of RFC xx00
+   documents titled &quot;Internet Official Protocol Standards&quot;, the RFC
+   Editor will mark a number of unused numbers ending in 00 through <a href="/doc/html/rfc7000">RFC</a>
+   <a href="/doc/html/rfc7000">7000</a> &quot;never issued&quot;.  All RFC numbers ending in 00 from 7100 upwards
+   will now be available to be assigned for any RFC.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   This document does not impact the security of the Internet.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Informative References</span>
+
+   [<a id="ref-RFC1083">RFC1083</a>]  Defense Advanced Research Projects Agency and Internet
+              Activities Board, &quot;IAB official protocol standards&quot;, <a href="/doc/html/rfc1083">RFC</a>
+              <a href="/doc/html/rfc1083">1083</a>, December 1988.
+
+   [<a id="ref-RFC1280">RFC1280</a>]  Postel, J., &quot;IAB Official Protocol Standards&quot;, <a href="/doc/html/rfc1280">RFC 1280</a>,
+              March 1992.
+
+   [<a id="ref-RFC2026">RFC2026</a>]  Bradner, S., &quot;The Internet Standards Process -- Revision
+              3&quot;, <a href="/doc/html/bcp9">BCP 9</a>, <a href="/doc/html/rfc2026">RFC 2026</a>, October 1996.
+
+   [<a id="ref-RFC2200">RFC2200</a>]  Postel, J., &quot;Internet Official Protocol Standards&quot;, <a href="/doc/html/rfc2200">RFC</a>
+              <a href="/doc/html/rfc2200">2200</a>, June 1997.
+
+   [<a id="ref-RFC5000">RFC5000</a>]  RFC Editor, &quot;Internet Official Protocol Standards&quot;, STD 1,
+              <a href="/doc/html/rfc5000">RFC 5000</a>, May 2008.
+
+   [<a id="ref-RFC7100">RFC7100</a>]  Resnick, P., &quot;Retirement of the &quot;Internet Official
+              Protocol Standards&quot; Summary Document&quot;, <a href="/doc/html/bcp9">BCP 9</a>, <a href="/doc/html/rfc7100">RFC 7100</a>,
+              December 2013.
+
+   [<a id="ref-STDS-TRK">STDS-TRK</a>] RFC Editor, &quot;Official Internet Protocol Standards&quot;,
+              &lt;<a href="http://www.rfc-editor.org/rfcxx00.html">http://www.rfc-editor.org/rfcxx00.html</a>&gt;.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Acknowledgements</span>
+
+   We would like to thank Nevil Brownlee, Brian Carpenter, Heather
+   Flanagan, and Alice Russo for their review and input on this
+   document.  We would also like to thank Dongjin Son and Bob Braden for
+   their efforts in writing the scripts that produce the &quot;Official
+   Internet Protocol Standards&quot; page.
+
+
+
+
+
+
+
+<span class="grey">Ginoza                        Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc7101">RFC 7101</a>               Official Protocol Standards         December 2013</span>
+
+
+Author&#x27;s Address
+
+   Sandy Ginoza
+   Association Management Solutions
+   48377 Fremont Blvd., Suite 117
+   Fremont, CA 94538
+   United States
+
+   Phone: +1 (510) 492-4000
+   EMail: sginoza@amsl.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ginoza                        Informational                     [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

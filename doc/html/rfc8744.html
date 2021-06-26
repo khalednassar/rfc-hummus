@@ -1,0 +1,900 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8744
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-tls-sni-encryption/">
+  <meta name="description" content="Issues and Requirements for Server Name Identification (SNI) Encryption in TLS (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8744.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8744.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8744.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8744.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8744/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8744/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/tls/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-tls-sni-encryption@ietf.org?subject=draft-ietf-tls-sni-encryption" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-tls-sni-encryption-09.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-tls-sni-encryption-09.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-tls-sni-encryption-09.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-tls-sni-encryption-09">draft-ietf-tls-sni-encryption-09</a>                     Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        C. Huitema
+Request for Comments: 8744                          Private Octopus Inc.
+Category: Informational                                        July 2020
+ISSN: 2070-1721
+
+
+Issues and Requirements for Server Name Identification (SNI) Encryption
+                                 in TLS
+
+Abstract
+
+   This document describes the general problem of encrypting the Server
+   Name Identification (SNI) TLS parameter.  The proposed solutions hide
+   a hidden service behind a fronting service, only disclosing the SNI
+   of the fronting service to external observers.  This document lists
+   known attacks against SNI encryption, discusses the current &quot;HTTP co-
+   tenancy&quot; solution, and presents requirements for future TLS-layer
+   solutions.
+
+   In practice, it may well be that no solution can meet every
+   requirement and that practical solutions will have to make some
+   compromises.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8744">https://www.rfc-editor.org/info/rfc8744</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  History of the TLS SNI Extension
+     2.1.  Unanticipated Usage of SNI Information
+     2.2.  SNI Encryption Timeliness
+     2.3.  End-to-End Alternatives
+   3.  Security and Privacy Requirements for SNI Encryption
+     3.1.  Mitigate Cut-and-Paste Attacks
+     3.2.  Avoid Widely Shared Secrets
+     3.3.  Prevent SNI-Based Denial-of-Service Attacks
+     3.4.  Do Not Stick Out
+     3.5.  Maintain Forward Secrecy
+     3.6.  Enable Multi-party Security Contexts
+     3.7.  Support Multiple Protocols
+       3.7.1.  Hiding the Application-Layer Protocol Negotiation
+       3.7.2.  Supporting Other Transports than TCP
+   4.  HTTP Co-tenancy Fronting
+     4.1.  HTTPS Tunnels
+     4.2.  Delegation Control
+     4.3.  Related Work
+   5.  Security Considerations
+   6.  IANA Considerations
+   7.  Informative References
+   Acknowledgements
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Historically, adversaries have been able to monitor the use of web
+   services through three primary channels: looking at DNS requests,
+   looking at IP addresses in packet headers, and looking at the data
+   stream between user and services.  These channels are getting
+   progressively closed.  A growing fraction of Internet communication
+   is encrypted, mostly using Transport Layer Security (TLS) [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>].
+   Progressive deployment of solutions like DNS over TLS [<a href="/doc/html/rfc7858" title="&quot;Specification for DNS over Transport Layer Security (TLS)&quot;">RFC7858</a>] and
+   DNS over HTTPS [<a href="/doc/html/rfc8484" title="&quot;DNS Queries over HTTPS (DoH)&quot;">RFC8484</a>] mitigates the disclosure of DNS information.
+   More and more services are colocated on multiplexed servers,
+   loosening the relation between IP address and web service.  For
+   example, in virtual hosting solutions, multiple services can be
+   hosted as co-tenants on the same server, and the IP address and port
+   do not uniquely identify a service.  In cloud or Content Delivery
+   Network (CDN) solutions, a given platform hosts the services or
+   servers of a lot of organizations, and looking up what netblock an IP
+   address belongs to reveals little.  However, multiplexed servers rely
+   on the Server Name Information (SNI) TLS extension [<a href="/doc/html/rfc6066" title="&quot;Transport Layer Security (TLS) Extensions: Extension Definitions&quot;">RFC6066</a>] to
+   direct connections to the appropriate service implementation.  This
+   protocol element is transmitted in cleartext.  As the other methods
+   of monitoring get blocked, monitoring focuses on the cleartext SNI.
+   The purpose of SNI encryption is to prevent that and aid privacy.
+
+   Replacing cleartext SNI transmission by an encrypted variant will
+   improve the privacy and reliability of TLS connections, but the
+   design of proper SNI encryption solutions is difficult.  In the past,
+   there have been multiple attempts at defining SNI encryption.  These
+   attempts have generally floundered, because the simple designs fail
+   to mitigate several of the attacks listed in <a href="#section-3">Section 3</a>.  In the
+   absence of a TLS-level solution, the most popular approach to SNI
+   privacy for web services is HTTP-level fronting, which we discuss in
+   <a href="#section-4">Section 4</a>.
+
+   This document does not present the design of a solution but provides
+   guidelines for evaluating proposed solutions.  (The review of HTTP-
+   level solutions in <a href="#section-4">Section 4</a> is not an endorsement of these
+   solutions.)  The need for related work on the encryption of the
+   Application-Layer Protocol Negotiation (ALPN) parameters of TLS is
+   discussed in <a href="#section-3.7.1">Section 3.7.1</a>.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  History of the TLS SNI Extension</span>
+
+   The SNI extension was specified in 2003 in [<a href="/doc/html/rfc3546" title="&quot;Transport Layer Security (TLS) Extensions&quot;">RFC3546</a>] to facilitate
+   management of &quot;colocation servers&quot;, in which multiple services shared
+   the same IP address.  A typical example would be multiple websites
+   served by the same web server.  The SNI extension carries the name of
+   a specific server, enabling the TLS connection to be established with
+   the desired server context.  The current SNI extension specification
+   can be found in [<a href="/doc/html/rfc6066" title="&quot;Transport Layer Security (TLS) Extensions: Extension Definitions&quot;">RFC6066</a>].
+
+   The SNI specification allowed for different types of server names,
+   though only the &quot;hostname&quot; variant was specified and deployed.  In
+   that variant, the SNI extension carries the domain name of the target
+   server.  The SNI extension is carried in cleartext in the TLS
+   &quot;ClientHello&quot; message.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Unanticipated Usage of SNI Information</span>
+
+   The SNI was defined to facilitate management of servers, but the
+   developers of middleboxes found out that they could take advantage of
+   the information.  Many examples of such usage are reviewed in
+   [<a href="/doc/html/rfc8404" title="&quot;Effects of Pervasive Encryption on Operators&quot;">RFC8404</a>].  Other examples came out during discussions of this
+   document.  They include:
+
+   *  Filtering or censoring specific services for a variety of reasons
+
+   *  Content filtering by network operators or ISPs blocking specific
+      websites, for example, to implement parental controls or to
+      prevent access to phishing or other fraudulent websites
+
+   *  ISP assigning different QoS profiles to target services
+
+   *  Firewalls within enterprise networks blocking websites not deemed
+      appropriate for work
+
+   *  Firewalls within enterprise networks exempting specific websites
+      from man-in-the-middle (MITM) inspection, such as healthcare or
+      financial sites for which inspection would intrude on the privacy
+      of employees
+
+   The SNI is probably also included in the general collection of
+   metadata by pervasive surveillance actors [<a href="/doc/html/rfc7258" title="&quot;Pervasive Monitoring Is an Attack&quot;">RFC7258</a>], for example, to
+   identify services used by surveillance targets.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  SNI Encryption Timeliness</span>
+
+   The cleartext transmission of the SNI was not flagged as a problem in
+   the Security Considerations sections of [<a href="/doc/html/rfc3546" title="&quot;Transport Layer Security (TLS) Extensions&quot;">RFC3546</a>], [<a href="/doc/html/rfc4366" title="&quot;Transport Layer Security (TLS) Extensions&quot;">RFC4366</a>], or
+   [<a href="/doc/html/rfc6066" title="&quot;Transport Layer Security (TLS) Extensions: Extension Definitions&quot;">RFC6066</a>].  These specifications did not anticipate the alternative
+   usage described in <a href="#section-2.1">Section 2.1</a>.  One reason may be that, when these
+   RFCs were written, the SNI information was available through a
+   variety of other means, such as tracking IP addresses, DNS names, or
+   server certificates.
+
+   Many deployments still allocate different IP addresses to different
+   services, so that different services can be identified by their IP
+   addresses.  However, CDNs commonly serve a large number of services
+   through a comparatively small number of addresses.
+
+   The SNI carries the domain name of the server, which is also sent as
+   part of the DNS queries.  Most of the SNI usage described in
+   <a href="#section-2.1">Section 2.1</a> could also be implemented by monitoring DNS traffic or
+   controlling DNS usage.  But this is changing with the advent of DNS
+   resolvers providing services like DNS over TLS [<a href="/doc/html/rfc7858" title="&quot;Specification for DNS over Transport Layer Security (TLS)&quot;">RFC7858</a>] or DNS over
+   HTTPS [<a href="/doc/html/rfc8484" title="&quot;DNS Queries over HTTPS (DoH)&quot;">RFC8484</a>].
+
+   The subjectAltName extension of type dNSName of the server
+   certificate (or in its absence, the common name component) exposes
+   the same name as the SNI.  In TLS versions 1.0 [<a href="/doc/html/rfc2246" title="&quot;The TLS Protocol Version 1.0&quot;">RFC2246</a>], 1.1
+   [<a href="/doc/html/rfc4346" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.1&quot;">RFC4346</a>], and 1.2 [<a href="/doc/html/rfc5246" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.2&quot;">RFC5246</a>], servers send certificates in cleartext,
+   ensuring that there would be limited benefits in hiding the SNI.
+   However, in TLS 1.3 [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>], server certificates are encrypted in
+   transit.  Note that encryption alone is insufficient to protect
+   server certificates; see <a href="#section-3.1">Section 3.1</a> for details.
+
+   The decoupling of IP addresses and server names, deployment of DNS
+   privacy, and protection of server certificate transmissions all
+   contribute to user privacy in the face of an <a href="/doc/html/rfc7258">RFC 7258</a>-style adversary
+   [<a href="/doc/html/rfc7258" title="&quot;Pervasive Monitoring Is an Attack&quot;">RFC7258</a>].  Encrypting the SNI complements this push for privacy and
+   makes it harder to censor or otherwise provide differential treatment
+   to specific Internet services.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  End-to-End Alternatives</span>
+
+   Deploying SNI encryption helps thwart most of the unanticipated SNI
+   usages, including censorship and pervasive surveillance, but it also
+   will break or reduce the efficacy of the operational practices and
+   techniques implemented in middleboxes, as described in <a href="#section-2.1">Section 2.1</a>.
+   Most of these functions can, however, be realized by other means.
+   For example, some DNS service providers offer customers the provision
+   to &quot;opt in&quot; to filtering services for parental control and phishing
+   protection.  Per-stream QoS could be provided by a combination of
+   packet marking and end-to-end agreements.  As SNI encryption becomes
+   common, we can expect more deployment of such &quot;end-to-end&quot; solutions.
+
+   At the time of this writing, enterprises have the option of
+   installing a firewall performing SNI filtering to prevent connections
+   to certain websites.  With SNI encryption, this becomes ineffective.
+   Obviously, managers could block usage of SNI encryption in enterprise
+   computers, but this wide-scale blocking would diminish the privacy
+   protection of traffic leaving the enterprise, which may not be
+   desirable.  Enterprise managers could rely instead on filtering
+   software and management software deployed on the enterprise&#x27;s
+   computers.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security and Privacy Requirements for SNI Encryption</span>
+
+   Over the past years, there have been multiple proposals to add an SNI
+   encryption option in TLS.  A review of the TLS mailing list archives
+   shows that many of these proposals appeared promising but were
+   rejected after security reviews identified plausible attacks.  In
+   this section, we collect a list of these known attacks.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Mitigate Cut-and-Paste Attacks</span>
+
+   The simplest SNI encryption designs replace the cleartext SNI in the
+   initial TLS exchange with an encrypted value, using a key known to
+   the multiplexed server.  Regardless of the encryption used, these
+   designs can be broken by a simple cut-and-paste attack, which works
+   as follows:
+
+   1.  The user starts a TLS connection to the multiplexed server,
+       including an encrypted SNI value.
+
+   2.  The adversary observes the exchange and copies the encrypted SNI
+       parameter.
+
+   3.  The adversary starts its own connection to the multiplexed
+       server, including in its connection parameters the encrypted SNI
+       copied from the observed exchange.
+
+   4.  The multiplexed server establishes the connection to the
+       protected service, which sends its certificate, thus revealing
+       the identity of the service.
+
+   One of the goals of SNI encryption is to prevent adversaries from
+   knowing which hidden service the client is using.  Successful cut-
+   and-paste attacks break that goal by allowing adversaries to discover
+   that service.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Avoid Widely Shared Secrets</span>
+
+   It is easy to think of simple schemes in which the SNI is encrypted
+   or hashed using a shared secret.  This symmetric key must be known by
+   the multiplexed server and by every user of the protected services.
+   Such schemes are thus very fragile, since the compromise of a single
+   user would compromise the entire set of users and protected services.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Prevent SNI-Based Denial-of-Service Attacks</span>
+
+   Encrypting the SNI may create extra load for the multiplexed server.
+   Adversaries may mount denial-of-service (DoS) attacks by generating
+   random encrypted SNI values and forcing the multiplexed server to
+   spend resources in useless decryption attempts.
+
+   It may be argued that this is not an important avenue for DoS
+   attacks, as regular TLS connection attempts also require the server
+   to perform a number of cryptographic operations.  However, in many
+   cases, the SNI decryption will have to be performed by a front-end
+   component with limited resources, while the TLS operations are
+   performed by the component dedicated to their respective services.
+   SNI-based DoS attacks could target the front-end component.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Do Not Stick Out</span>
+
+   In some designs, handshakes using SNI encryption can be easily
+   differentiated from &quot;regular&quot; handshakes.  For example, some designs
+   require specific extensions in the ClientHello packets or specific
+   values of the cleartext SNI parameter.  If adversaries can easily
+   detect the use of SNI encryption, they could block it, or they could
+   flag the users of SNI encryption for special treatment.
+
+   In the future, it might be possible to assume that a large fraction
+   of TLS handshakes use SNI encryption.  If that were the case, the
+   detection of SNI encryption would be a lesser concern.  However, we
+   have to assume that, in the near future, only a small fraction of TLS
+   connections will use SNI encryption.
+
+   This requirement to not stick out may be difficult to meet in
+   practice, as noted in <a href="#section-5">Section 5</a>.
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a>.  Maintain Forward Secrecy</span>
+
+   TLS 1.3 [<a href="/doc/html/rfc8446" title="&quot;The Transport Layer Security (TLS) Protocol Version 1.3&quot;">RFC8446</a>] is designed to provide forward secrecy, so that
+   (for example) keys used in past sessions will not be compromised even
+   if the private key of the server is compromised.  The general
+   concerns about forward secrecy apply to SNI encryption as well.  For
+   example, some proposed designs rely on a public key of the
+   multiplexed server to define the SNI encryption key.  If the
+   corresponding private key should be compromised, the adversaries
+   would be able to process archival records of past connections and
+   retrieve the protected SNI used in these connections.  These designs
+   fail to maintain forward secrecy of SNI encryption.
+
+<span class="h3"><a class="selflink" id="section-3.6" href="#section-3.6">3.6</a>.  Enable Multi-party Security Contexts</span>
+
+   We can design solutions in which a fronting service acts as a relay
+   to reach the protected service.  Some of those solutions involve just
+   one TLS handshake between the client and the fronting service.  The
+   master secret is verified by verifying a certificate provided by the
+   fronting service but not by the protected service.  These solutions
+   expose the client to a MITM attack by the fronting service.  Even if
+   the client has some reasonable trust in this service, the possibility
+   of a MITM attack is troubling.
+
+   There are other classes of solutions in which the master secret is
+   verified by verifying a certificate provided by the protected
+   service.  These solutions offer more protection against a MITM attack
+   by the fronting service.  The downside is that the client will not
+   verify the identity of the fronting service, which enables fronting
+   server spoofing attacks, such as the &quot;honeypot&quot; attack discussed
+   below.  Overall, end-to-end TLS to the protected service is
+   preferable, but it is important to also provide a way to authenticate
+   the fronting service.
+
+   The fronting service could be pressured by adversaries.  By design,
+   it could be forced to deny access to the protected service or to
+   divulge which client accessed it.  But if a MITM attack is possible,
+   the adversaries would also be able to pressure the fronting service
+   into intercepting or spoofing the communications between client and
+   protected service.
+
+   Adversaries could also mount an attack by spoofing the fronting
+   service.  A spoofed fronting service could act as a &quot;honeypot&quot; for
+   users of hidden services.  At a minimum, the fake server could record
+   the IP addresses of these users.  If the SNI encryption solution
+   places too much trust on the fronting server, the fake server could
+   also serve fake content of its own choosing, including various forms
+   of malware.
+
+   There are two main channels by which adversaries can conduct this
+   attack.  Adversaries can simply try to mislead users into believing
+   that the honeypot is a valid fronting server, especially if that
+   information is carried by word of mouth or in unprotected DNS
+   records.  Adversaries can also attempt to hijack the traffic to the
+   regular fronting server, using, for example, spoofed DNS responses or
+   spoofed IP-level routing, combined with a spoofed certificate.
+
+<span class="h3"><a class="selflink" id="section-3.7" href="#section-3.7">3.7</a>.  Support Multiple Protocols</span>
+
+   The SNI encryption requirement does not stop with HTTP over TLS.
+   Multiple other applications currently use TLS, including, for
+   example, SMTP [<a href="/doc/html/rfc3207" title="&quot;SMTP Service Extension for Secure SMTP over Transport Layer Security&quot;">RFC3207</a>], DNS [<a href="/doc/html/rfc7858" title="&quot;Specification for DNS over Transport Layer Security (TLS)&quot;">RFC7858</a>], IMAP [<a href="/doc/html/rfc8314" title="&quot;Cleartext Considered Obsolete: Use of Transport Layer Security (TLS) for Email Submission and Access&quot;">RFC8314</a>], and the
+   Extensible Messaging and Presence Protocol (XMPP) [<a href="/doc/html/rfc7590" title="&quot;Use of Transport Layer Security (TLS) in the Extensible Messaging and Presence Protocol (XMPP)&quot;">RFC7590</a>].  These
+   applications, too, will benefit from SNI encryption.  HTTP-only
+   methods, like those described in <a href="#section-4.1">Section 4.1</a>, would not apply there.
+   In fact, even for the HTTPS case, the HTTPS tunneling service
+   described in <a href="#section-4.1">Section 4.1</a> is compatible with HTTP 1.0 and HTTP 1.1 but
+   interacts awkwardly with the multiple streams feature of HTTP/2
+   [<a href="/doc/html/rfc7540" title="&quot;Hypertext Transfer Protocol Version 2 (HTTP/2)&quot;">RFC7540</a>].  This points to the need for an application-agnostic
+   solution, which would be implemented fully in the TLS layer.
+
+<span class="h4"><a class="selflink" id="section-3.7.1" href="#section-3.7.1">3.7.1</a>.  Hiding the Application-Layer Protocol Negotiation</span>
+
+   The Application-Layer Protocol Negotiation (ALPN) parameters of TLS
+   allow implementations to negotiate the application-layer protocol
+   used on a given connection.  TLS provides the ALPN values in
+   cleartext during the initial handshake.  While exposing the ALPN does
+   not create the same privacy issues as exposing the SNI, there is
+   still a risk.  For example, some networks may attempt to block
+   applications that they do not understand or that they wish users
+   would not use.
+
+   In a sense, ALPN filtering could be very similar to the filtering of
+   specific port numbers exposed in some networks.  This filtering by
+   ports has given rise to evasion tactics in which various protocols
+   are tunneled over HTTP in order to use open ports 80 or 443.
+   Filtering by ALPN would probably beget the same responses, in which
+   the applications just move over HTTP and only the HTTP ALPN values
+   are used.  Applications would not need to do that if the ALPN were
+   hidden in the same way as the SNI.
+
+   In addition to hiding the SNI, it is thus desirable to also hide the
+   ALPN.  Of course, this implies engineering trade-offs.  Using the
+   same technique for hiding the ALPN and encrypting the SNI may result
+   in excess complexity.  It might be preferable to encrypt these
+   independently.
+
+<span class="h4"><a class="selflink" id="section-3.7.2" href="#section-3.7.2">3.7.2</a>.  Supporting Other Transports than TCP</span>
+
+   The TLS handshake is also used over other transports, such as UDP
+   with both DTLS [<a href="#ref-DTLS-1.3" title="&quot;The Datagram Transport Layer Security (DTLS) Protocol Version 1.3&quot;">DTLS-1.3</a>] and QUIC [<a href="#ref-QUIC" title="&quot;Using TLS to Secure QUIC&quot;">QUIC</a>].  The requirement to
+   encrypt the SNI applies just as well for these transports as for TLS
+   over TCP.
+
+   This points to a requirement for SNI encryption mechanisms to also be
+   applicable to non-TCP transports such as DTLS or QUIC.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  HTTP Co-tenancy Fronting</span>
+
+   In the absence of TLS-level SNI encryption, many sites rely on an
+   &quot;HTTP co-tenancy&quot; solution, often referred to as &quot;domain fronting&quot;
+   [<a href="#ref-DOMFRONT" title="&quot;Blocking-resistant communication through domain fronting&quot;">DOMFRONT</a>].  The TLS connection is established with the fronting
+   server, and HTTP requests are then sent over that connection to the
+   hidden service.  For example, the TLS SNI could be set to
+   &quot;fronting.example.com&quot; (the fronting server), and HTTP requests sent
+   over that connection could be directed to &quot;hidden.example.com&quot;
+   (accessing the hidden service).  This solution works well in practice
+   when the fronting server and the hidden server are &quot;co-tenants&quot; of
+   the same multiplexed server.
+
+   The HTTP domain fronting solution can be deployed without
+   modification to the TLS protocol and does not require using any
+   specific version of TLS.  There are, however, a few issues regarding
+   discovery, client implementations, trust, and applicability:
+
+   *  The client has to discover that the hidden service can be accessed
+      through the fronting server.
+
+   *  The client&#x27;s browser has to be directed to access the hidden
+      service through the fronting service.
+
+   *  Since the TLS connection is established with the fronting service,
+      the client has no cryptographic proof that the content does, in
+      fact, come from the hidden service.  Thus, the solution does not
+      mitigate the context sharing issues described in <a href="#section-3.6">Section 3.6</a>.
+      Note that this is already the case for co-tenanted sites.
+
+   *  Since this is an HTTP-level solution, it does not protect non-HTTP
+      protocols, as discussed in <a href="#section-3.7">Section 3.7</a>.
+
+   The discovery issue is common to most SNI encryption solutions.  The
+   browser issue was solved in [<a href="#ref-DOMFRONT" title="&quot;Blocking-resistant communication through domain fronting&quot;">DOMFRONT</a>] by implementing domain
+   fronting as a pluggable transport for the Tor browser.  The multi-
+   protocol issue can be mitigated by implementing other applications
+   over HTTP, for example, DNS over HTTPS [<a href="/doc/html/rfc8484" title="&quot;DNS Queries over HTTPS (DoH)&quot;">RFC8484</a>].  The trust issue,
+   however, requires specific developments.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  HTTPS Tunnels</span>
+
+   The HTTP domain fronting solution places a lot of trust in the
+   fronting server.  This required trust can be reduced by tunneling
+   HTTPS in HTTPS, which effectively treats the fronting server as an
+   HTTP proxy.  In this solution, the client establishes a TLS
+   connection to the fronting server and then issues an HTTP connect
+   request to the hidden server.  This will establish an end-to-end
+   HTTPS-over-TLS connection between the client and the hidden server,
+   mitigating the issues described in <a href="#section-3.6">Section 3.6</a>.
+
+   The HTTPS-in-HTTPS solution requires double encryption of every
+   packet.  It also requires that the fronting server decrypt and relay
+   messages to the hidden server.  Both of these requirements make the
+   implementation onerous.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Delegation Control</span>
+
+   Clients would see their privacy compromised if they contacted the
+   wrong fronting server to access the hidden service, since this wrong
+   server could disclose their access to adversaries.  This requires a
+   controlled way to indicate which fronting server is acceptable by the
+   hidden service.
+
+   This problem is similar to the &quot;word of mouth&quot; variant of the
+   &quot;fronting server spoofing&quot; attack described in <a href="#section-3.6">Section 3.6</a>.  The
+   spoofing would be performed by distributing fake advice, such as &quot;to
+   reach hidden.example.com, use fake.example.com as a fronting server&quot;,
+   when &quot;fake.example.com&quot; is under the control of an adversary.
+
+   In practice, this attack is well mitigated when the hidden service is
+   accessed through a specialized application.  The name of the fronting
+   server can then be programmed in the code of the application.  But
+   the attack is harder to mitigate when the hidden service has to be
+   accessed through general-purpose web browsers.
+
+   There are several proposed solutions to this problem, such as
+   creating a special form of certificate to codify the relation between
+   the fronting and hidden server or obtaining the relation between the
+   hidden and fronting service through the DNS, possibly using DNSSEC,
+   to avoid spoofing.  The experiment described in [<a href="#ref-DOMFRONT" title="&quot;Blocking-resistant communication through domain fronting&quot;">DOMFRONT</a>] solved the
+   issue by integrating with the Lantern Internet circumvention tool.
+
+   We can observe that CDNs have a similar requirement.  They need to
+   convince the client that &quot;www.example.com&quot; can be accessed through
+   the seemingly unrelated &quot;cdn-node-xyz.example.net&quot;.  Most CDNs have
+   deployed DNS-based solutions to this problem.  However, the CDN often
+   holds the authoritative certificate of the origin.  There is,
+   simultaneously, verification of a relationship between the origin and
+   the CDN (through the certificate) and a risk that the CDN can spoof
+   the content from the origin.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Related Work</span>
+
+   The ORIGIN frame defined for HTTP/2 [<a href="/doc/html/rfc8336" title="&quot;The ORIGIN HTTP/2 Frame&quot;">RFC8336</a>] can be used to flag
+   content provided by the hidden server.  Secondary certificate
+   authentication [<a href="#ref-HTTP2-SEC-CERTS">HTTP2-SEC-CERTS</a>] can be used to manage authentication
+   of hidden server content or to perform client authentication before
+   accessing hidden content.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   This document lists a number of attacks against SNI encryption in
+   Sections <a href="#section-3">3</a> and <a href="#section-4.2">4.2</a> and presents a list of requirements to mitigate
+   these attacks.  Current HTTP-based solutions described in <a href="#section-4">Section 4</a>
+   only meet some of these requirements.  In practice, it may well be
+   that no solution can meet every requirement and that practical
+   solutions will have to make some compromises.
+
+   In particular, the requirement to not stick out, presented in
+   <a href="#section-3.4">Section 3.4</a>, may have to be lifted, especially for proposed solutions
+   that could quickly reach large-scale deployments.
+
+   Replacing cleartext SNI transmission by an encrypted variant will
+   break or reduce the efficacy of the operational practices and
+   techniques implemented in middleboxes, as described in <a href="#section-2.1">Section 2.1</a>.
+   As explained in <a href="#section-2.3">Section 2.3</a>, alternative solutions will have to be
+   developed.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Informative References</span>
+
+   [<a id="ref-DOMFRONT">DOMFRONT</a>] Fifield, D., Lan, C., Hynes, R., Wegmann, P., and V.
+              Paxson, &quot;Blocking-resistant communication through domain
+              fronting&quot;, DOI 10.1515/popets-2015-0009, 2015,
+              &lt;<a href="https://www.bamsoftware.com/papers/fronting/">https://www.bamsoftware.com/papers/fronting/</a>&gt;.
+
+   [<a id="ref-DTLS-1.3">DTLS-1.3</a>] Rescorla, E., Tschofenig, H., and N. Modadugu, &quot;The
+              Datagram Transport Layer Security (DTLS) Protocol Version
+              1.3&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-tls-dtls13-38">draft-ietf-tls-</a>
+              <a href="/doc/html/draft-ietf-tls-dtls13-38">dtls13-38</a>, 29 May 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-tls-dtls13-38">https://tools.ietf.org/html/draft-ietf-tls-dtls13-38</a>&gt;.
+
+   [<a id="ref-HTTP2-SEC-CERTS">HTTP2-SEC-CERTS</a>]
+              Bishop, M., Sullivan, N., and M. Thomson, &quot;Secondary
+              Certificate Authentication in HTTP/2&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-httpbis-http2-secondary-certs-06">draft-ietf-httpbis-http2-secondary-certs-</a>
+              <a href="/doc/html/draft-ietf-httpbis-http2-secondary-certs-06">06</a>, 14 May 2020, &lt;<a href="https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs-06">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs-06">httpbis-http2-secondary-certs-06</a>&gt;.
+
+   [<a id="ref-QUIC">QUIC</a>]     Thomson, M. and S. Turner, &quot;Using TLS to Secure QUIC&quot;,
+              Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-quic-tls-29">draft-ietf-quic-tls-29</a>,
+              9 June 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-quic-tls-29">https://tools.ietf.org/html/draft-ietf-quic-tls-29</a>&gt;.
+
+   [<a id="ref-RFC2246">RFC2246</a>]  Dierks, T. and C. Allen, &quot;The TLS Protocol Version 1.0&quot;,
+              <a href="/doc/html/rfc2246">RFC 2246</a>, DOI 10.17487/RFC2246, January 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2246">https://www.rfc-editor.org/info/rfc2246</a>&gt;.
+
+   [<a id="ref-RFC3207">RFC3207</a>]  Hoffman, P., &quot;SMTP Service Extension for Secure SMTP over
+              Transport Layer Security&quot;, <a href="/doc/html/rfc3207">RFC 3207</a>, DOI 10.17487/RFC3207,
+              February 2002, &lt;<a href="https://www.rfc-editor.org/info/rfc3207">https://www.rfc-editor.org/info/rfc3207</a>&gt;.
+
+   [<a id="ref-RFC3546">RFC3546</a>]  Blake-Wilson, S., Nystrom, M., Hopwood, D., Mikkelsen, J.,
+              and T. Wright, &quot;Transport Layer Security (TLS)
+              Extensions&quot;, <a href="/doc/html/rfc3546">RFC 3546</a>, DOI 10.17487/RFC3546, June 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3546">https://www.rfc-editor.org/info/rfc3546</a>&gt;.
+
+   [<a id="ref-RFC4346">RFC4346</a>]  Dierks, T. and E. Rescorla, &quot;The Transport Layer Security
+              (TLS) Protocol Version 1.1&quot;, <a href="/doc/html/rfc4346">RFC 4346</a>,
+              DOI 10.17487/RFC4346, April 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4346">https://www.rfc-editor.org/info/rfc4346</a>&gt;.
+
+   [<a id="ref-RFC4366">RFC4366</a>]  Blake-Wilson, S., Nystrom, M., Hopwood, D., Mikkelsen, J.,
+              and T. Wright, &quot;Transport Layer Security (TLS)
+              Extensions&quot;, <a href="/doc/html/rfc4366">RFC 4366</a>, DOI 10.17487/RFC4366, April 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4366">https://www.rfc-editor.org/info/rfc4366</a>&gt;.
+
+   [<a id="ref-RFC5246">RFC5246</a>]  Dierks, T. and E. Rescorla, &quot;The Transport Layer Security
+              (TLS) Protocol Version 1.2&quot;, <a href="/doc/html/rfc5246">RFC 5246</a>,
+              DOI 10.17487/RFC5246, August 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5246">https://www.rfc-editor.org/info/rfc5246</a>&gt;.
+
+   [<a id="ref-RFC6066">RFC6066</a>]  Eastlake 3rd, D., &quot;Transport Layer Security (TLS)
+              Extensions: Extension Definitions&quot;, <a href="/doc/html/rfc6066">RFC 6066</a>,
+              DOI 10.17487/RFC6066, January 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6066">https://www.rfc-editor.org/info/rfc6066</a>&gt;.
+
+   [<a id="ref-RFC7258">RFC7258</a>]  Farrell, S. and H. Tschofenig, &quot;Pervasive Monitoring Is an
+              Attack&quot;, <a href="/doc/html/bcp188">BCP 188</a>, <a href="/doc/html/rfc7258">RFC 7258</a>, DOI 10.17487/RFC7258, May
+              2014, &lt;<a href="https://www.rfc-editor.org/info/rfc7258">https://www.rfc-editor.org/info/rfc7258</a>&gt;.
+
+   [<a id="ref-RFC7540">RFC7540</a>]  Belshe, M., Peon, R., and M. Thomson, Ed., &quot;Hypertext
+              Transfer Protocol Version 2 (HTTP/2)&quot;, <a href="/doc/html/rfc7540">RFC 7540</a>,
+              DOI 10.17487/RFC7540, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7540">https://www.rfc-editor.org/info/rfc7540</a>&gt;.
+
+   [<a id="ref-RFC7590">RFC7590</a>]  Saint-Andre, P. and T. Alkemade, &quot;Use of Transport Layer
+              Security (TLS) in the Extensible Messaging and Presence
+              Protocol (XMPP)&quot;, <a href="/doc/html/rfc7590">RFC 7590</a>, DOI 10.17487/RFC7590, June
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7590">https://www.rfc-editor.org/info/rfc7590</a>&gt;.
+
+   [<a id="ref-RFC7858">RFC7858</a>]  Hu, Z., Zhu, L., Heidemann, J., Mankin, A., Wessels, D.,
+              and P. Hoffman, &quot;Specification for DNS over Transport
+              Layer Security (TLS)&quot;, <a href="/doc/html/rfc7858">RFC 7858</a>, DOI 10.17487/RFC7858, May
+              2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7858">https://www.rfc-editor.org/info/rfc7858</a>&gt;.
+
+   [<a id="ref-RFC8314">RFC8314</a>]  Moore, K. and C. Newman, &quot;Cleartext Considered Obsolete:
+              Use of Transport Layer Security (TLS) for Email Submission
+              and Access&quot;, <a href="/doc/html/rfc8314">RFC 8314</a>, DOI 10.17487/RFC8314, January 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8314">https://www.rfc-editor.org/info/rfc8314</a>&gt;.
+
+   [<a id="ref-RFC8336">RFC8336</a>]  Nottingham, M. and E. Nygren, &quot;The ORIGIN HTTP/2 Frame&quot;,
+              <a href="/doc/html/rfc8336">RFC 8336</a>, DOI 10.17487/RFC8336, March 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8336">https://www.rfc-editor.org/info/rfc8336</a>&gt;.
+
+   [<a id="ref-RFC8404">RFC8404</a>]  Moriarty, K., Ed. and A. Morton, Ed., &quot;Effects of
+              Pervasive Encryption on Operators&quot;, <a href="/doc/html/rfc8404">RFC 8404</a>,
+              DOI 10.17487/RFC8404, July 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8404">https://www.rfc-editor.org/info/rfc8404</a>&gt;.
+
+   [<a id="ref-RFC8446">RFC8446</a>]  Rescorla, E., &quot;The Transport Layer Security (TLS) Protocol
+              Version 1.3&quot;, <a href="/doc/html/rfc8446">RFC 8446</a>, DOI 10.17487/RFC8446, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8446">https://www.rfc-editor.org/info/rfc8446</a>&gt;.
+
+   [<a id="ref-RFC8484">RFC8484</a>]  Hoffman, P. and P. McManus, &quot;DNS Queries over HTTPS
+              (DoH)&quot;, <a href="/doc/html/rfc8484">RFC 8484</a>, DOI 10.17487/RFC8484, October 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8484">https://www.rfc-editor.org/info/rfc8484</a>&gt;.
+
+Acknowledgements
+
+   A large part of this document originated in discussion of SNI
+   encryption on the TLS WG mailing list, including comments after the
+   tunneling approach was first proposed in a message to that list:
+   &lt;<a href="https://mailarchive.ietf.org/arch/msg/tls/tXvdcqnogZgqmdfCugrV8M90Ftw">https://mailarchive.ietf.org/arch/msg/tls/</a>
+   <a href="https://mailarchive.ietf.org/arch/msg/tls/tXvdcqnogZgqmdfCugrV8M90Ftw">tXvdcqnogZgqmdfCugrV8M90Ftw</a>&gt;.
+
+   Thanks to Eric Rescorla for his multiple suggestions, reviews, and
+   edits to the successive draft versions of this document.
+
+   Thanks to Daniel Kahn Gillmor for a pretty detailed review of the
+   initial draft of this document.  Thanks to Bernard Aboba, Mike
+   Bishop, Alissa Cooper, Roman Danyliw, Stephen Farrell, Warren Kumari,
+   Mirja Kuelewind, Barry Leiba, Martin Rex, Adam Roach, Meral
+   Shirazipour, Martin Thomson, Eric Vyncke, and employees of the UK
+   National Cyber Security Centre for their reviews.  Thanks to Chris
+   Wood, Ben Kaduk, and Sean Turner for helping move this document
+   toward publication.
+
+Author&#x27;s Address
+
+   Christian Huitema
+   Private Octopus Inc.
+   Friday Harbor, WA 98250
+   United States of America
+
+   Email: huitema@huitema.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

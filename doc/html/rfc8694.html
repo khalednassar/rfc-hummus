@@ -1,0 +1,1461 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8694
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-pce-inter-area-as-applicability/">
+  <meta name="description" content="Applicability of the Path Computation Element to Inter-area and Inter-AS MPLS and GMPLS Traffic Engineering (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8694.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8694.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8694.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8694.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8694/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8694/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/pce/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-pce-inter-area-as-applicability@ietf.org?subject=draft-ietf-pce-inter-area-as-applicability" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-pce-inter-area-as-applicability-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-inter-area-as-applicability-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-pce-inter-area-as-applicability-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-pce-inter-area-as-applicability-08">draft-ietf-pce-inter-area-as-applicability-08</a>        Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                           D. King
+Request for Comments: 8694                            Old Dog Consulting
+Category: Informational                                郑好棉 (H. Zheng)
+ISSN: 2070-1721                   华为技术有限公司 (Huawei Technologies)
+                                                           December 2019
+
+
+Applicability of the Path Computation Element to Inter-area and Inter-AS
+                   MPLS and GMPLS Traffic Engineering
+
+Abstract
+
+   The Path Computation Element (PCE) may be used for computing services
+   that traverse multi-area and multi-Autonomous System (multi-AS)
+   Multiprotocol Label Switching (MPLS) and Generalized MPLS (GMPLS)
+   Traffic-Engineered (TE) networks.
+
+   This document examines the applicability of the PCE architecture,
+   protocols, and protocol extensions for computing multi-area and
+   multi-AS paths in MPLS and GMPLS networks.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8694">https://www.rfc-editor.org/info/rfc8694</a>.
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Domains
+     1.2.  Path Computation
+       1.2.1.  PCE-Based Path Computation Procedure
+     1.3.  Traffic Engineering Aggregation and Abstraction
+     1.4.  Traffic-Engineered Label Switched Paths
+     1.5.  Inter-area and Inter-AS-capable PCE Discovery
+     1.6.  Objective Functions
+   2.  Terminology
+   3.  Issues and Considerations
+     3.1.  Multihoming
+     3.2.  Destination Location
+     3.3.  Domain Confidentiality
+   4.  Domain Topologies
+     4.1.  Selecting Domain Paths
+     4.2.  Domain Sizes
+     4.3.  Domain Diversity
+     4.4.  Synchronized Path Computations
+     4.5.  Domain Inclusion or Exclusion
+   5.  Applicability of the PCE to Inter-area Traffic Engineering
+     5.1.  Inter-area Routing
+       5.1.1.  Area Inclusion and Exclusion
+       5.1.2.  Strict Explicit Path and Loose Path
+       5.1.3.  Inter-Area Diverse Path Computation
+   6.  Applicability of the PCE to Inter-AS Traffic Engineering
+     6.1.  Inter-AS Routing
+       6.1.1.  AS Inclusion and Exclusion
+     6.2.  Inter-AS Bandwidth Guarantees
+     6.3.  Inter-AS Recovery
+     6.4.  Inter-AS PCE Peering Policies
+   7.  Multi-domain PCE Deployment Options
+     7.1.  Traffic Engineering Database and Synchronization
+       7.1.1.  Applicability of BGP-LS to PCE
+     7.2.  Pre-planning and Management-Based Solutions
+   8.  Domain Confidentiality
+     8.1.  Loose Hops
+     8.2.  Confidential Path Segments and Path-Keys
+   9.  Point to Multipoint
+   10. Optical Domains
+     10.1.  Abstraction and Control of TE Networks (ACTN)
+   11. Policy
+   12. Manageability Considerations
+     12.1.  Control of Function and Policy
+     12.2.  Information and Data Models
+     12.3.  Liveness Detection and Monitoring
+     12.4.  Verifying Correct Operation
+     12.5.  Impact on Network Operation
+   13. Security Considerations
+     13.1.  Multi-domain Security
+   14. IANA Considerations
+   15. References
+     15.1.  Normative References
+     15.2.  Informative References
+   Acknowledgements
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Computing paths across large multi-domain environments may require
+   special computational components and cooperation between entities in
+   different domains capable of complex path computation.
+
+   Issues that may exist when routing in multi-domain networks include
+   the following:
+
+   *  There is often a lack of full topology and TE information across
+      domains.
+
+   *  No single node has the full visibility to determine an optimal or
+      even feasible end-to-end path across domains.
+
+   *  Knowing how to evaluate and select the exit point and next domain
+      boundary from a domain.
+
+   *  Understanding how the ingress node determines which domains should
+      be used for the end-to-end path.
+
+   An information exchange across multiple domains is often limited due
+   to the lack of trust relationship, security issues, or scalability
+   issues, even if there is a trust relationship between domains.
+
+   The Path Computation Element (PCE) [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>] provides an architecture
+   and a set of functional components to address the problem space and
+   the issues highlighted above.
+
+   A PCE may be used to compute end-to-end paths across multi-domain
+   environments using a per-domain path computation technique [<a href="/doc/html/rfc5152" title="&quot;A Per-Domain Path Computation Method for Establishing Inter- Domain Traffic Engineering (TE) Label Switched Paths (LSPs)&quot;">RFC5152</a>].
+   The so-called backward recursive PCE-based computation (BRPC)
+   mechanism [<a href="/doc/html/rfc5441" title="&quot;A Backward-Recursive PCE-Based Computation (BRPC) Procedure to Compute Shortest Constrained Inter-Domain Traffic Engineering Label Switched Paths&quot;">RFC5441</a>] defines a path computation procedure to compute
+   inter-domain constrained Multiprotocol Label Switching (MPLS) and
+   Generalized MPLS (GMPLS) Traffic-Engineered (TE) networks.  However,
+   both per-domain and BRPC techniques assume that the sequence of
+   domains to be crossed from source to destination is known, either
+   fixed by the network operator or obtained by other means.
+
+   In more advanced deployments (including multi-area and multi-
+   Autonomous System (multi-AS) environments), the sequence of domains
+   may not be known in advance, and the choice of domains in the end-to-
+   end domain sequence might be critical to the determination of an
+   optimal end-to-end path.  In this case, the use of the hierarchical
+   PCE [<a href="/doc/html/rfc6805" title="&quot;The Application of the Path Computation Element Architecture to the Determination of a Sequence of Domains in MPLS and GMPLS&quot;">RFC6805</a>] architecture and mechanisms may be used to discover the
+   intra-area path and select the optimal end-to-end domain sequence.
+
+   This document describes the processes and procedures available when
+   using the PCE architecture and protocols for computing inter-area and
+   inter-AS MPLS and GMPLS Traffic-Engineered paths.
+
+   The scope of this document does not include discussions of deployment
+   scenarios for stateful PCE, active PCE, remotely initiated PCE, or
+   PCE as a central controller (PCECC).
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Domains</span>
+
+   Generally, a domain can be defined as a separate administrative,
+   geographic, or switching environment within the network.  A domain
+   may be further defined as a zone of routing or computational ability.
+   Under these definitions, a domain might be categorized as an
+   Autonomous System (AS) or an Interior Gateway Protocol (IGP) area (as
+   per [<a href="/doc/html/rfc4726" title="&quot;A Framework for Inter-Domain Multiprotocol Label Switching Traffic Engineering&quot;">RFC4726</a>] and [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>]).
+
+   For the purposes of this document, a domain is considered to be a
+   collection of network elements within an area or AS that has a common
+   sphere of address management or path computational responsibility.
+   Wholly or partially overlapping domains are not within the scope of
+   this document.
+
+   In the context of GMPLS, a particularly important example of a domain
+   is the Automatically Switched Optical Network (ASON) subnetwork
+   [<a href="#ref-G-8080" title="&quot;Architecture for the automatically switched optical network&quot;">G-8080</a>].  In this case, computation of an end-to-end path requires
+   the selection of nodes and links within a parent domain where some
+   nodes may, in fact, be subnetworks.  Furthermore, a domain might be
+   an ASON routing area [<a href="#ref-G-7715" title="&quot;Architecture and requirements for routing in the automatically switched optical networks&quot;">G-7715</a>].  A PCE may perform the path
+   computation function of an ASON Routing Controller as described in
+   [<a href="#ref-G-7715-2" title="&quot;ASON routing architecture and requirements for remote route query&quot;">G-7715-2</a>].
+
+   It is assumed that the PCE architecture is not applied to a large
+   group of domains, such as the Internet.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Path Computation</span>
+
+   For the purpose of this document, it is assumed that path computation
+   is the sole responsibility of the PCE as per the architecture defined
+   in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>].  When a path is required, the Path Computation Client
+   (PCC) will send a request to the PCE.  The PCE will apply the
+   required constraints, compute a path, and return a response to the
+   PCC.  In the context of this document, it may be necessary for the
+   PCE to cooperate with other PCEs in adjacent domains (as per BRPC
+   [<a href="/doc/html/rfc5441" title="&quot;A Backward-Recursive PCE-Based Computation (BRPC) Procedure to Compute Shortest Constrained Inter-Domain Traffic Engineering Label Switched Paths&quot;">RFC5441</a>]) or with a parent PCE (as per [<a href="/doc/html/rfc6805" title="&quot;The Application of the Path Computation Element Architecture to the Determination of a Sequence of Domains in MPLS and GMPLS&quot;">RFC6805</a>]).
+
+   It is entirely feasible that an operator could compute a path across
+   multiple domains without the use of a PCE if the relevant domain
+   information is available to the network planner or network management
+   platform.  The definition of what relevant information is required to
+   perform this network planning operation and how that information is
+   discovered and applied is outside the scope of this document.
+
+<span class="h4"><a class="selflink" id="section-1.2.1" href="#section-1.2.1">1.2.1</a>.  PCE-Based Path Computation Procedure</span>
+
+   As highlighted, the PCE is an entity capable of computing an inter-
+   domain TE path upon receiving a request from a PCC.  There could be a
+   single PCE per domain or a single PCE responsible for all domains.  A
+   PCE may or may not reside on the same node as the requesting PCC.  A
+   path may be computed by either a single PCE node or a set of
+   distributed PCE nodes that collaborate during path computation.
+
+   According to [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>], a PCC should send a path computation request
+   to a particular PCE using [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] (PCC-to-PCE communication).  This
+   negates the need to broadcast a request to all the PCEs.  Each PCC
+   can maintain information about the computation capabilities of the
+   PCEs it is aware of.  The PCC-PCE capability awareness can be
+   configured using static configurations or by automatic and dynamic
+   PCE discovery procedures.
+
+   If a network path is required, the PCC will send a path computation
+   request to the PCE.  A PCE may then compute the end-to-end path if it
+   is aware of the topology and TE information required to compute the
+   entire path.  If the PCE is unable to compute the entire path, the
+   PCE architecture provides cooperative PCE mechanisms for the
+   resolution of path computation requests when an individual PCE does
+   not have sufficient TE visibility.
+
+   End-to-end path segments may be kept confidential through the
+   application of Path-Keys to protect partial or full path information.
+   A Path-Key is a token that replaces a path segment in an explicit
+   route.  The Path-Key mechanism is described in [<a href="/doc/html/rfc5520" title="&quot;Preserving Topology Confidentiality in Inter-Domain Path Computation Using a Path-Key-Based Mechanism&quot;">RFC5520</a>].
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Traffic Engineering Aggregation and Abstraction</span>
+
+   Networks are often constructed from multiple areas or ASes that are
+   interconnected via multiple interconnect points.  To maintain network
+   confidentiality and scalability, the TE properties of each area and
+   AS are not generally advertised outside each specific area or AS.
+
+   TE aggregation or abstraction provide a mechanism to hide information
+   but may cause failed path setups or the selection of suboptimal end-
+   to-end paths [<a href="/doc/html/rfc4726" title="&quot;A Framework for Inter-Domain Multiprotocol Label Switching Traffic Engineering&quot;">RFC4726</a>].  The aggregation process may also have
+   significant scaling issues for networks with many possible routes and
+   multiple TE metrics.  Flooding TE information breaks confidentiality
+   and does not scale in the routing protocol.
+
+   The PCE architecture and associated mechanisms provide a solution to
+   avoid the use of TE aggregation and abstraction.
+
+<span class="h3"><a class="selflink" id="section-1.4" href="#section-1.4">1.4</a>.  Traffic-Engineered Label Switched Paths</span>
+
+   This document highlights the PCE techniques and mechanisms that exist
+   for establishing TE packet and optical Label Switched Paths (LSPs)
+   across multiple areas (inter-area TE LSP) and ASes (inter-AS TE LSP).
+   In this context and within the remainder of this document, we
+   consider all LSPs to be constraint based and traffic engineered.
+
+   Three signaling options are defined for setting up an inter-area or
+   inter-AS LSP [<a href="/doc/html/rfc4726" title="&quot;A Framework for Inter-Domain Multiprotocol Label Switching Traffic Engineering&quot;">RFC4726</a>]:
+
+   *  Contiguous LSP
+
+   *  Stitched LSP
+
+   *  Nested LSP
+
+   All three signaling methods are applicable to the architectures and
+   procedures discussed in this document.
+
+<span class="h3"><a class="selflink" id="section-1.5" href="#section-1.5">1.5</a>.  Inter-area and Inter-AS-capable PCE Discovery</span>
+
+   When using a PCE-based approach for inter-area and inter-AS path
+   computation, a PCE in one area or AS may need to learn information
+   related to inter-AS-capable PCEs located in other ASes.  The PCE
+   discovery mechanism defined in [<a href="/doc/html/rfc5088" title="&quot;OSPF Protocol Extensions for Path Computation Element (PCE) Discovery&quot;">RFC5088</a>] and [<a href="/doc/html/rfc5089" title="&quot;IS-IS Protocol Extensions for Path Computation Element (PCE) Discovery&quot;">RFC5089</a>] facilitates
+   the discovery of PCEs and disclosure of information related to inter-
+   area and inter-AS-capable PCEs.
+
+<span class="h3"><a class="selflink" id="section-1.6" href="#section-1.6">1.6</a>.  Objective Functions</span>
+
+   An Objective Function (OF) [<a href="/doc/html/rfc5541" title="&quot;Encoding of Objective Functions in the Path Computation Element Communication Protocol (PCEP)&quot;">RFC5541</a>] or a set of OFs specifies the
+   intentions of the path computation and so defines the &quot;optimality&quot; in
+   the context of the computation request.
+
+   An OF specifies the desired outcome of a computation.  It does not
+   describe or specify the algorithm to use.  Also, an implementation
+   may apply any algorithm or set of algorithms to achieve the result
+   indicated by the OF.  A number of general OFs are specified in
+   [<a href="/doc/html/rfc5541" title="&quot;Encoding of Objective Functions in the Path Computation Element Communication Protocol (PCEP)&quot;">RFC5541</a>].
+
+   Various OFs may be included in the PCE computation request to satisfy
+   the policies encoded or configured at the PCC, and a PCE may be
+   subject to policy in determining whether it meets the OFs included in
+   the computation request or whether it applies its own OFs.
+
+   During inter-domain path computation, the selection of a domain
+   sequence, the computation of each (per-domain) path fragment, and the
+   determination of the end-to-end path may each be subject to different
+   OFs and policies.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This document also uses the terminology defined in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>] and
+   [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].  Additional terminology is defined below:
+
+   ABR:  IGP Area Border Router -- a router that is attached to more
+         than one IGP area.
+
+   ASBR:  Autonomous System Border Router -- a router used to connect
+         together ASes of a different or the same Service Provider via
+         one or more inter-AS links.
+
+   Inter-area TE LSP:  A TE LSP whose path transits through two or more
+         IGP areas.
+
+   Inter-AS MPLS TE LSP:  A TE LSP whose path transits through two or
+         more ASes or sub-ASes (BGP confederations)
+
+   SRLG:  Shared Risk Link Group.
+
+   TED:  Traffic Engineering Database, which contains the topology and
+         resource information of the domain.  The TED may be fed by
+         Interior Gateway Protocol (IGP) extensions or potentially by
+         other means.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Issues and Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Multihoming</span>
+
+   Networks constructed from multi-areas or multi-AS environments may
+   have multiple interconnect points (multihoming).  End-to-end path
+   computations may need to use different interconnect points to avoid a
+   single-point failure disrupting both the primary and backup services.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Destination Location</span>
+
+   A PCC asking for an inter-domain path computation is typically aware
+   of the identity of the destination node.  If the PCC is aware of the
+   destination domain, it may supply the destination domain information
+   as part of the path computation request.  However, if the PCC does
+   not know the destination domain, this information must be determined
+   by another method.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Domain Confidentiality</span>
+
+   When the end-to-end path crosses multiple domains, it may be possible
+   that each domain (AS or area) is administered by separate Service
+   Providers.  Thus, if a PCE supplies a path segment to a PCE in
+   another domain, it may break confidentiality rules and could disclose
+   AS-internal topology information.
+
+   If confidentiality is required between domains (ASes and areas)
+   belonging to different Service Providers, then cooperating PCEs
+   cannot exchange path segments; otherwise, the receiving PCE or PCC
+   will be able to see the individual hops through another domain.
+
+   This topic is discussed further in <a href="#section-8">Section 8</a> of this document.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Domain Topologies</span>
+
+   Constraint-based inter-domain path computation is a fundamental
+   requirement for operating traffic-engineered MPLS [<a href="/doc/html/rfc3209" title="&quot;RSVP-TE: Extensions to RSVP for LSP Tunnels&quot;">RFC3209</a>] and GMPLS
+   [<a href="/doc/html/rfc3473" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol- Traffic Engineering (RSVP-TE) Extensions&quot;">RFC3473</a>] networks in inter-area and inter-AS (multi-domain)
+   environments.  Path computation across multi-domain networks is
+   complex and requires computational cooperational entities like the
+   PCE.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Selecting Domain Paths</span>
+
+   Where the sequence of domains is known a priori, various techniques
+   can be employed to derive an optimal multi-domain path.  If the
+   domains are connected to a simple path with no branches and single
+   links between all domains or if the preferred points of
+   interconnection are also known, the per-domain path computation
+   [<a href="/doc/html/rfc5152" title="&quot;A Per-Domain Path Computation Method for Establishing Inter- Domain Traffic Engineering (TE) Label Switched Paths (LSPs)&quot;">RFC5152</a>] technique may be used.  Where there are multiple
+   connections between domains and there is no preference for the choice
+   of points of interconnection, BRPC [<a href="/doc/html/rfc5441" title="&quot;A Backward-Recursive PCE-Based Computation (BRPC) Procedure to Compute Shortest Constrained Inter-Domain Traffic Engineering Label Switched Paths&quot;">RFC5441</a>] can be used to derive an
+   optimal path.
+
+   When the sequence of domains is not known in advance or the end-to-
+   end path will have to navigate a mesh of small domains (especially
+   typical in optical networks), the optimum path may be derived through
+   the application of a hierarchical PCE [<a href="/doc/html/rfc6805" title="&quot;The Application of the Path Computation Element Architecture to the Determination of a Sequence of Domains in MPLS and GMPLS&quot;">RFC6805</a>].
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Domain Sizes</span>
+
+   Very frequently, network domains are composed of dozens or hundreds
+   of network elements.  These network elements are usually
+   interconnected in a partial-mesh fashion to provide survivability
+   against dual failures and to benefit from the traffic-engineering
+   capabilities of MPLS and GMPLS protocols.  Network operator feedback
+   in the development of the document highlighted that the node degree
+   (the number of neighbors per node) typically ranges from 3 to 10 (4-5
+   is quite common).
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Domain Diversity</span>
+
+   Domain and path diversity may also be required when computing end-to-
+   end paths.  Domain diversity should facilitate the selection of paths
+   that share ingress and egress domains but do not share transit
+   domains.  Therefore, there must be a method allowing the inclusion or
+   exclusion of specific domains when computing end-to-end paths.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Synchronized Path Computations</span>
+
+   In some scenarios, it would be beneficial for the operator to rely on
+   the capability of the PCE to perform synchronized path computation.
+
+   Synchronized path computations, known as Synchronization VECtors
+   (SVECs), are used for dependent path computations.  SVECs are defined
+   in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], and [<a href="/doc/html/rfc6007" title="&quot;Use of the Synchronization VECtor (SVEC) List for Synchronized Dependent Path Computations&quot;">RFC6007</a>] provides an overview of the use of the
+   PCE SVEC list for synchronized path computations when computing
+   dependent requests.
+
+   In hierarchical PCE (H-PCE) deployments, a child PCE will be able to
+   request both dependent and synchronized domain-diverse end-to-end
+   paths from its parent PCE.
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  Domain Inclusion or Exclusion</span>
+
+   A domain sequence is an ordered sequence of domains traversed to
+   reach the destination domain.  A domain sequence may be supplied
+   during path computation to guide the PCEs or are derived via the use
+   of hierarchical PCE (H-PCE).
+
+   During multi-domain path computation, a PCC may request specific
+   domains to be included or excluded in the domain sequence using the
+   Include Route Object (IRO) [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] and Exclude Route Object (XRO)
+   [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>].  The use of Autonomous Number (AS) as an abstract node
+   representing a domain is defined in [<a href="/doc/html/rfc3209" title="&quot;RSVP-TE: Extensions to RSVP for LSP Tunnels&quot;">RFC3209</a>].  [<a href="/doc/html/rfc7897" title="&quot;Domain Subobjects for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC7897</a>] specifies
+   new subobjects to include or exclude domains such as an IGP area or a
+   4-byte AS number.
+
+   An operator may also need to avoid a path that uses specified nodes
+   for administrative reasons.  If a specific connectivity service is
+   required to have a 1+1 protection capability, two separate disjoint
+   paths must be established.  A mechanism known as Shared Risk Link
+   Group (SRLG) information may be used to ensure path diversity.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Applicability of the PCE to Inter-area Traffic Engineering</span>
+
+   As networks increase in size and complexity, it may be required to
+   introduce scaling methods to reduce the amount of information flooded
+   within the network and make the network more manageable.  An IGP
+   hierarchy is designed to improve IGP scalability by dividing the IGP
+   domain into areas and limiting the flooding scope of topology
+   information to within area boundaries.  This restricts visibility of
+   the area to routers in a single area.  If a router needs to compute
+   the route to a destination located in another area, a method would be
+   required to compute a path across area boundaries.
+
+   In order to support multiple vendors in a network in cases where data
+   or control-plane technologies cannot interoperate, it is useful to
+   divide the network into vendor domains.  Each vendor domain is an IGP
+   area, and the flooding scope of the topology (as well as any other
+   relevant information) is limited to the area boundaries.
+
+   Per-domain path computation [<a href="/doc/html/rfc5152" title="&quot;A Per-Domain Path Computation Method for Establishing Inter- Domain Traffic Engineering (TE) Label Switched Paths (LSPs)&quot;">RFC5152</a>] exists to provide a method of
+   inter-area path computation.  The per-domain solution is based on
+   loose hop routing with an Explicit Route Object (ERO) expansion on
+   each Area Border Router (ABR).  This allows an LSP to be established
+   using a constrained path.  However, at least two issues exist:
+
+   *  This method does not guarantee an optimal constrained path.
+
+   *  The method may require several crankback signaling messages, as
+      per [<a href="/doc/html/rfc4920" title="&quot;Crankback Signaling Extensions for MPLS and GMPLS RSVP-TE&quot;">RFC4920</a>], increasing signaling traffic and delaying the LSP
+      setup.
+
+   PCE-based architecture [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>] is designed to solve inter-area path
+   computation problems.  The issue of limited topology visibility is
+   resolved by introducing path computation entities that are able to
+   cooperate in order to establish LSPs with the source and destinations
+   located in different areas.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Inter-area Routing</span>
+
+   An inter-area TE-LSP is an LSP that transits through at least two IGP
+   areas.  In a multi-area network, topology visibility remains local to
+   a given area for scaling and privacy purposes.  A node in one area
+   will not be able to compute an end-to-end path across multiple areas
+   without the use of a PCE.
+
+<span class="h4"><a class="selflink" id="section-5.1.1" href="#section-5.1.1">5.1.1</a>.  Area Inclusion and Exclusion</span>
+
+   The BRPC method [<a href="/doc/html/rfc5441" title="&quot;A Backward-Recursive PCE-Based Computation (BRPC) Procedure to Compute Shortest Constrained Inter-Domain Traffic Engineering Label Switched Paths&quot;">RFC5441</a>] of path computation provides a more optimal
+   method to specify inclusion or exclusion of an ABR.  Using the BRPC
+   procedure, an end-to-end path is recursively computed in reverse from
+   the destination domain towards the source domain.  Using this method,
+   an operator might decide if an area must be included or excluded from
+   the inter-area path computation.
+
+<span class="h4"><a class="selflink" id="section-5.1.2" href="#section-5.1.2">5.1.2</a>.  Strict Explicit Path and Loose Path</span>
+
+   A strict explicit path is defined as a set of strict hops, while a
+   loose path is defined as a set of at least one loose hop and zero or
+   more strict hops.  It may be useful to indicate whether a strict
+   explicit path is required during the path computation request.  An
+   inter-area path may be strictly explicit or loose (e.g., a list of
+   ABRs as loose hops).
+
+   A PCC request to a PCE does allow indication of whether a strict
+   explicit path across specific areas ([<a href="/doc/html/rfc7897" title="&quot;Domain Subobjects for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC7897</a>]) is required or
+   desired or whether the path request is loose.
+
+<span class="h4"><a class="selflink" id="section-5.1.3" href="#section-5.1.3">5.1.3</a>.  Inter-Area Diverse Path Computation</span>
+
+   It may be necessary to compute a path that is partially or entirely
+   diverse from a previously computed path to avoid fate sharing of a
+   primary service with a corresponding backup service.  There are
+   various levels of diversity in the context of an inter-area network:
+
+   *  Per-area diversity (the intra-area path segments are a link, node,
+      or SRLG disjoint).
+
+   *  Inter-area diversity (the end-to-end inter-area paths are a link,
+      node, or SRLG disjoint).
+
+   Note that two paths may be disjointed in the backbone area but non-
+   disjointed in peripheral areas.  Also, two paths may be node
+   disjointed within areas but may share ABRs, in which case path
+   segments within an area are node disjointed but end-to-end paths are
+   not node disjointed.  Per-domain [<a href="/doc/html/rfc5152" title="&quot;A Per-Domain Path Computation Method for Establishing Inter- Domain Traffic Engineering (TE) Label Switched Paths (LSPs)&quot;">RFC5152</a>], BRPC [<a href="/doc/html/rfc5441" title="&quot;A Backward-Recursive PCE-Based Computation (BRPC) Procedure to Compute Shortest Constrained Inter-Domain Traffic Engineering Label Switched Paths&quot;">RFC5441</a>], and H-PCE
+   [<a href="/doc/html/rfc6805" title="&quot;The Application of the Path Computation Element Architecture to the Determination of a Sequence of Domains in MPLS and GMPLS&quot;">RFC6805</a>] mechanisms all support the capability to compute diverse
+   paths across multi-area topologies.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Applicability of the PCE to Inter-AS Traffic Engineering</span>
+
+   As discussed in <a href="#section-5">Section 5</a> (Applicability of the PCE to Inter-area
+   Traffic Engineering), it is necessary to divide the network into
+   smaller administrative domains, or ASes.  If an LSR within an AS
+   needs to compute a path across an AS boundary, it must also use an
+   inter-AS computation technique.  [<a href="/doc/html/rfc5152" title="&quot;A Per-Domain Path Computation Method for Establishing Inter- Domain Traffic Engineering (TE) Label Switched Paths (LSPs)&quot;">RFC5152</a>] defines mechanisms for the
+   computation of inter-domain TE LSPs using network elements along the
+   signaling paths to compute per-domain constrained path segments.
+
+   The PCE was designed to be capable of computing MPLS and GMPLS paths
+   across AS boundaries.  This section outlines the features of a PCE-
+   enabled solution for computing inter-AS paths.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Inter-AS Routing</span>
+
+<span class="h4"><a class="selflink" id="section-6.1.1" href="#section-6.1.1">6.1.1</a>.  AS Inclusion and Exclusion</span>
+
+   [<a id="ref-RFC5441">RFC5441</a>] allows the specification of AS or ASBR inclusion or
+   exclusion.  Using this method, an operator might decide whether an AS
+   must be included or excluded from the inter-AS path computation.
+   Exclusion and/or inclusion could also be specified at any step in the
+   LSP path computation process by a PCE (within the BRPC algorithm),
+   but the best practice would be to specify them at the edge.  In
+   opposition to the strict and loose path, AS inclusion or exclusion
+   doesn&#x27;t impose topology disclosure as ASes and their interconnection
+   are public entities.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Inter-AS Bandwidth Guarantees</span>
+
+   Many operators with multi-AS domains will have deployed the MPLS-TE
+   Diffserv either across their entire network or at the domain edges on
+   CE-PE links.  In situations where strict QoS bounds are required,
+   admission control inside the network may also be required.
+
+   When the propagation delay can be bounded, the performance targets,
+   such as maximum one-way transit delay, may be guaranteed by providing
+   bandwidth guarantees along the Diffserv-enabled path.  These
+   requirements are described in [<a href="/doc/html/rfc4216" title="&quot;MPLS Inter- Autonomous System (AS) Traffic Engineering (TE) Requirements&quot;">RFC4216</a>].
+
+   One typical example of the requirements in [<a href="/doc/html/rfc4216" title="&quot;MPLS Inter- Autonomous System (AS) Traffic Engineering (TE) Requirements&quot;">RFC4216</a>] is to provide
+   bandwidth guarantees over an end-to-end path for VoIP traffic
+   classified as an EF (Expedited Forwarding) class in a Diffserv-
+   enabled network.  In cases where the EF path is extended across
+   multiple ASes, an inter-AS bandwidth guarantee would be required.
+
+   Another case for an inter-AS bandwidth guarantee is the requirement
+   to guarantee a certain amount of transit bandwidth across one or
+   multiple ASes.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Inter-AS Recovery</span>
+
+   During a path computation process, a PCC request may contain the
+   requirement to compute a backup LSP for protecting the primary LSP,
+   such as 1+1 protection.  A single LSP or multiple backup LSPs may
+   also be used for a group of primary LSPs; this is typically known as
+   m:n protection.
+
+   Other inter-AS recovery mechanisms include [<a href="/doc/html/rfc4090" title="&quot;Fast Reroute Extensions to RSVP-TE for LSP Tunnels&quot;">RFC4090</a>], which adds Fast
+   Reroute (FRR) protection to an LSP.  So, the PCE could be used to
+   trigger computation of backup tunnels in order to protect inter-AS
+   connectivity.
+
+   Inter-AS recovery clearly requires backup LSPs for service
+   protection, but it would also be advisable to have multiple PCEs
+   deployed for path computation redundancy, especially for service
+   restoration in the event of catastrophic network failure.
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  Inter-AS PCE Peering Policies</span>
+
+   Like BGP peering policies, inter-AS PCE peering policies are required
+   for an operator.  In an inter-AS BRPC process, the PCE must cooperate
+   in order to compute the end-to-end LSP.  Therefore, the AS path must
+   not only follow technical constraints, e.g., bandwidth availability,
+   but also the policies defined by the operator.
+
+   Typically, PCE interconnections at an AS level must follow the agreed
+   contract obligations, also known as peering agreements.  The PCE
+   peering policies are the result of the contract negotiation and
+   govern the relation between the different PCEs.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Multi-domain PCE Deployment Options</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Traffic Engineering Database and Synchronization</span>
+
+   An optimal path computation requires knowledge of the available
+   network resources, including nodes and links, constraints, link
+   connectivity, available bandwidth, and link costs.  The PCE operates
+   on a view of the network topology as presented by a TED.  As
+   discussed in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>], the TED used by a PCE may be learned by the
+   relevant IGP extensions.
+
+   Thus, the PCE may operate its TED by participating in the IGP running
+   in the network.  In an MPLS-TE network, this would require OSPF-TE
+   [<a href="/doc/html/rfc3630" title="&quot;Traffic Engineering (TE) Extensions to OSPF Version 2&quot;">RFC3630</a>] or ISIS-TE [<a href="/doc/html/rfc5305" title="&quot;IS-IS Extensions for Traffic Engineering&quot;">RFC5305</a>].  In a GMPLS network, it would utilize
+   the GMPLS extensions to OSPF and IS-IS defined in [<a href="/doc/html/rfc4203" title="&quot;OSPF Extensions in Support of Generalized Multi-Protocol Label Switching (GMPLS)&quot;">RFC4203</a>] and
+   [<a href="/doc/html/rfc5307" title="&quot;IS-IS Extensions in Support of Generalized Multi-Protocol Label Switching (GMPLS)&quot;">RFC5307</a>].  Inter-AS connectivity information may be populated via
+   [<a href="/doc/html/rfc5316" title="&quot;ISIS Extensions in Support of Inter-Autonomous System (AS) MPLS and GMPLS Traffic Engineering&quot;">RFC5316</a>] and [<a href="/doc/html/rfc5392" title="&quot;OSPF Extensions in Support of Inter-Autonomous System (AS) MPLS and GMPLS Traffic Engineering&quot;">RFC5392</a>].
+
+   An alternative method to providing network topology and resource
+   information is offered by [<a href="/doc/html/rfc7752" title="&quot;North-Bound Distribution of Link-State and Traffic Engineering (TE) Information Using BGP&quot;">RFC7752</a>], which is described in the
+   following section.
+
+<span class="h4"><a class="selflink" id="section-7.1.1" href="#section-7.1.1">7.1.1</a>.  Applicability of BGP-LS to PCE</span>
+
+   The concept of the exchange of TE information between Autonomous
+   Systems (ASes) is discussed in [<a href="/doc/html/rfc7752" title="&quot;North-Bound Distribution of Link-State and Traffic Engineering (TE) Information Using BGP&quot;">RFC7752</a>].  The information exchanged
+   in this way could be the full TE information from the AS, an
+   aggregation of that information, or a representation of the potential
+   connectivity across the AS.  Furthermore, that information could be
+   updated frequently (for example, for every new LSP that is set up
+   across the AS) or only at threshold-crossing events.
+
+   In an H-PCE deployment, the parent PCE will require the inter-domain
+   topology and link status between child domains.  This information may
+   be learned by a BGP-LS speaker and provided to the parent PCE.
+   Furthermore, link-state performance, including delay, available
+   bandwidth, and utilized bandwidth, may also be provided to the parent
+   PCE for optimal path link selection.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Pre-planning and Management-Based Solutions</span>
+
+   Offline path computation is performed ahead of time before the LSP
+   setup is requested.  That means that it is requested by or performed
+   as part of an Operation Support System (OSS) management application.
+   This model can be seen in <a href="/doc/html/rfc4655#section-5.5">Section&nbsp;5.5 of [RFC4655]</a>.
+
+   The offline model is particularly appropriate for long-lived LSPs
+   (such as those present in a transport network) or for planned
+   responses to network failures.  In these scenarios, more planning is
+   normally a feature of LSP provisioning.
+
+   The management system may also use a PCE and BRPC to pre-plan an AS
+   sequence, and the source domain PCE and per-domain path computation
+   to be used when the actual end-to-end path is required.  This model
+   may also be used where the operator wishes to retain full manual
+   control of the placement of LSPs, using the PCE only as a computation
+   tool to assist the operator and not as part of an automated network.
+
+   In environments where operators peer with each other to provide end-
+   to-end paths, the operator responsible for each domain must agree on
+   the extent to which paths must be pre-planned or manually controlled.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Domain Confidentiality</span>
+
+   This section discusses the techniques that cooperating PCEs can use
+   to compute inter-domain paths without each domain disclosing
+   sensitive internal topology information (such as explicit nodes or
+   links within the domain) to the other domains.
+
+   Confidentiality typically applies to inter-provider (inter-AS) PCE
+   communication.  Where the TE LSP crosses multiple domains (ASes or
+   areas), the path may be computed by multiple PCEs that cooperate
+   together, with each local PCE responsible for computing a segment of
+   the path.  With each local PCE responsible for computing a segment of
+   the path.
+
+   In situations where ASes are administered by separate Service
+   Providers, it would break confidentiality rules for a PCE to supply
+   path segment details to a PCE responsible for another domain, thus
+   disclosing AS-internal or area topology information.
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Loose Hops</span>
+
+   A method for preserving the confidentiality of the path segment is
+   for the PCE to return a path containing a loose hop in place of the
+   segment that must be kept confidential.  The concept of loose and
+   strict hops for the route of a TE LSP is described in [<a href="/doc/html/rfc3209" title="&quot;RSVP-TE: Extensions to RSVP for LSP Tunnels&quot;">RFC3209</a>].
+
+   [<a id="ref-RFC5440">RFC5440</a>] supports the use of paths with loose hops; whether it
+   returns a full explicit path with strict hops or uses loose hops is a
+   local policy decision at a PCE.  A path computation request may
+   require an explicit path with strict hops or may allow loose hops, as
+   detailed in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Confidential Path Segments and Path-Keys</span>
+
+   [<a id="ref-RFC5520">RFC5520</a>] defines the concept and mechanism of a Path-Key. A Path-Key
+   is a token that replaces the path segment information in an explicit
+   route.  The Path-Key allows the explicit route information to be
+   encoded and is contained in the Path Computation Element
+   Communication Protocol (PCEP) ([<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]) messages exchanged between
+   the PCE and PCC.
+
+   This Path-Key technique allows explicit route information to be used
+   for end-to-end path computation without disclosing internal topology
+   information between domains.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Point to Multipoint</span>
+
+   For inter-domain point-to-multipoint application scenarios using
+   MPLS-TE LSPs, the complexity of domain sequences, domain policies,
+   and the choice and number of domain interconnects is magnified
+   compared to point-to-point path computations.  As the size of the
+   network grows, the number of leaves and branches increases, further
+   increasing the complexity of the overall path computation problem.  A
+   solution for managing point-to-multipoint path computations may be
+   achieved using the PCE inter-domain point-to-multipoint path
+   computation [<a href="/doc/html/rfc7334" title="&quot;PCE-Based Computation Procedure to Compute Shortest Constrained Point-to-Multipoint (P2MP) Inter-Domain Traffic Engineering Label Switched Paths&quot;">RFC7334</a>] procedure.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Optical Domains</span>
+
+   The International Telecommunication Union (ITU) defines the ASON
+   architecture in [<a href="#ref-G-8080" title="&quot;Architecture for the automatically switched optical network&quot;">G-8080</a>].  [<a href="#ref-G-7715" title="&quot;Architecture and requirements for routing in the automatically switched optical networks&quot;">G-7715</a>] defines the routing architecture
+   for ASON and introduces a hierarchical architecture.  In this
+   architecture, the Routing Areas (RAs) have a hierarchical
+   relationship between different routing levels, which means a parent
+   (or higher level) RA can contain multiple child RAs.  The
+   interconnectivity of the lower RAs is visible to the higher-level RA.
+
+   In the ASON framework, a path computation request is termed a route
+   query.  This query is executed before signaling is used to establish
+   an LSP, which is termed a Switched Connection (SC) or a Soft
+   Permanent Connection (SPC).  [<a href="#ref-G-7715-2" title="&quot;ASON routing architecture and requirements for remote route query&quot;">G-7715-2</a>] defines the requirements and
+   architecture for the functions performed by Routing Controllers (RC)
+   during the operation of remote route queries.  An RC is synonymous
+   with a PCE.
+
+   In the ASON routing environment, an RC responsible for an RA may
+   communicate with its neighbor RC to request the computation of an
+   end-to-end path across several RAs.  The path computation components
+   and sequences are defined as follows:
+
+   *  Remote route query.  An operation where a Routing Controller
+      communicates with another Routing Controller, which does not have
+      the same set of layer resources, in order to compute a routing
+      path in a collaborative manner.
+
+   *  Route query requester.  The connection controller or RC that sends
+      a route query message to a Routing Controller that requests one or
+      more routing paths satisfying a set of routing constraints.
+
+   *  Route query responder.  An RC that performs the path computation
+      upon reception of a route query message from a Routing Controller
+      or connection controller, and sends a response back at the end of
+      the computation.
+
+   When computing an end-to-end connection, the route may be computed by
+   a single RC or multiple RCs in a collaborative manner, and the two
+   scenarios can be considered a centralized remote route query model
+   and a distributed remote route query model.  RCs in an ASON
+   environment can also use the hierarchical PCE [<a href="/doc/html/rfc6805" title="&quot;The Application of the Path Computation Element Architecture to the Determination of a Sequence of Domains in MPLS and GMPLS&quot;">RFC6805</a>] model to
+   fully match the ASON hierarchical routing model.
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Abstraction and Control of TE Networks (ACTN)</span>
+
+   Where a single operator operates multiple TE domains (including
+   optical environments), an Abstraction and Control of TE Networks
+   (ACTN) framework [<a href="/doc/html/rfc8453" title="&quot;Framework for Abstraction and Control of TE Networks (ACTN)&quot;">RFC8453</a>] may be used to create an abstracted
+   (virtualized network) view of underlay-interconnected domains.  This
+   underlay connectivity is then exposed to higher-layer control
+   entities and applications.
+
+   ACTN describes the method and procedure for coordinating the underlay
+   per-domain Provisioning Network Controllers (PNCs), which may be
+   PCEs, via a hierarchical model to facilitate setup of end-to-end
+   connections across interconnected TE domains.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Policy</span>
+
+   Policy is important in the deployment of new services and the
+   operation of the network.  [<a href="/doc/html/rfc5394" title="&quot;Policy-Enabled Path Computation Framework&quot;">RFC5394</a>] provides a framework for PCE-
+   based policy-enabled path computation.  This framework is based on
+   the Policy Core Information Model (PCIM) as defined in [<a href="/doc/html/rfc3060" title="&quot;Policy Core Information Model -- Version 1 Specification&quot;">RFC3060</a>] and
+   further extended by [<a href="/doc/html/rfc3460" title="&quot;Policy Core Information Model (PCIM) Extensions&quot;">RFC3460</a>].
+
+   When using a PCE to compute inter-domain paths, policy may be invoked
+   by specifying the following:
+
+   *  Each PCC must select which computations it will request from a
+      PCE.
+
+   *  Each PCC must select which PCEs it will use.
+
+   *  Each PCE must determine which PCCs are allowed to use its services
+      and for what computations.
+
+   *  The PCE must determine how to collect the information in its TED,
+      whom to trust for that information, and how to refresh/update the
+      information.
+
+   *  Each PCE must determine which objective functions and algorithms
+      to apply.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  Manageability Considerations</span>
+
+   General PCE management considerations are discussed in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>].  In
+   the case of multi-domains within a single service provider network,
+   the management responsibility for each PCE would most likely be
+   handled by the same service provider.  In the case of multiple ASes
+   within different service provider networks, it will likely be
+   necessary for each PCE to be configured and managed separately by
+   each participating service provider, with policy being implemented
+   based on a previously agreed set of principles.
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  Control of Function and Policy</span>
+
+   As per [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], PCEP implementation allows the user to configure a
+   number of PCEP session parameters.  These are detailed in <a href="/doc/html/rfc5440#section-8.1">Section&nbsp;8.1
+   of [RFC5440]</a>.
+
+   In H-PCE deployments, the administrative entity responsible for the
+   management of the parent PCEs for multi-areas would typically be a
+   single service provider.  In multiple ASes (managed by different
+   service providers), it may be necessary for a third party to manage
+   the parent PCE.
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  Information and Data Models</span>
+
+   A PCEP MIB module is defined in [<a href="/doc/html/rfc7420" title="&quot;Path Computation Element Communication Protocol (PCEP) Management Information Base (MIB) Module&quot;">RFC7420</a>], which describes managed
+   objects for modeling PCEP communication, including:
+
+   *  PCEP client configuration and status.
+
+   *  PCEP peer configuration and information.
+
+   *  PCEP session configuration and information.
+
+   *  Notifications to indicate PCEP session changes.
+
+   A YANG module for PCEP has also been proposed [<a href="#ref-PCEP-YANG">PCEP-YANG</a>].
+
+   An H-PCE MIB module or YANG data model will be required to report
+   parent PCE and child PCE information, including:
+
+   *  Parent PCE configuration and status.
+
+   *  Child PCE configuration and information.
+
+   *  Notifications to indicate session changes between parent PCEs and
+      child PCEs.
+
+   *  Notification of parent PCE TED updates and changes.
+
+<span class="h3"><a class="selflink" id="section-12.3" href="#section-12.3">12.3</a>.  Liveness Detection and Monitoring</span>
+
+   PCEP includes a keepalive mechanism to check the liveliness of a PCEP
+   peer and a notification procedure allowing a PCE to advertise its
+   overloaded state to a PCC.  In a multi-domain environment, [<a href="/doc/html/rfc5886" title="&quot;A Set of Monitoring Tools for Path Computation Element (PCE)-Based Architecture&quot;">RFC5886</a>]
+   provides the procedures necessary to monitor the liveliness and
+   performance of a given PCE chain.
+
+<span class="h3"><a class="selflink" id="section-12.4" href="#section-12.4">12.4</a>.  Verifying Correct Operation</span>
+
+   It is important to verify the correct operation of PCEP.  [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]
+   specifies the monitoring of key parameters.  These parameters are
+   detailed in [<a href="/doc/html/rfc5520" title="&quot;Preserving Topology Confidentiality in Inter-Domain Path Computation Using a Path-Key-Based Mechanism&quot;">RFC5520</a>].
+
+<span class="h3"><a class="selflink" id="section-12.5" href="#section-12.5">12.5</a>.  Impact on Network Operation</span>
+
+   [<a id="ref-RFC5440">RFC5440</a>] states that in order to avoid any unacceptable impact on
+   network operations, a PCEP implementation should allow a limit to be
+   placed on the number of sessions that can be set up on a PCEP speaker
+   and that it may also be practical to place a limit on the rate of
+   messages sent by a PCC and received by the PCE.
+
+<span class="h2"><a class="selflink" id="section-13" href="#section-13">13</a>.  Security Considerations</span>
+
+   PCEP security considerations are discussed in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] and
+   [<a href="/doc/html/rfc6952" title="&quot;Analysis of BGP, LDP, PCEP, and MSDP Issues According to the Keying and Authentication for Routing Protocols (KARP) Design Guide&quot;">RFC6952</a>].  Potential vulnerabilities include spoofing, snooping,
+   falsification, and using PCEP as a mechanism for denial of service
+   attacks.
+
+   As PCEP operates over TCP, it may make use of TCP security encryption
+   mechanisms, such as Transport Layer Security (TLS) and TCP
+   Authentication Option (TCP-AO).  Usage of these security mechanisms
+   for PCEP is described in [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>], and recommendations and best
+   current practices are described in [<a href="/doc/html/rfc7525" title="&quot;Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)&quot;">RFC7525</a>].
+
+<span class="h3"><a class="selflink" id="section-13.1" href="#section-13.1">13.1</a>.  Multi-domain Security</span>
+
+   Any multi-domain operation necessarily involves the exchange of
+   information across domain boundaries.  This represents a significant
+   security and confidentiality risk.
+
+   It is expected that PCEP is used between PCCs and PCEs that belong to
+   the same administrative authority while also using one of the
+   aforementioned encryption mechanisms.  Furthermore, PCEP allows
+   individual PCEs to maintain the confidentiality of their domain path
+   information using path-keys.
+
+<span class="h2"><a class="selflink" id="section-14" href="#section-14">14</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-15" href="#section-15">15</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-15.1" href="#section-15.1">15.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3209">RFC3209</a>]  Awduche, D., Berger, L., Gan, D., Li, T., Srinivasan, V.,
+              and G. Swallow, &quot;RSVP-TE: Extensions to RSVP for LSP
+              Tunnels&quot;, <a href="/doc/html/rfc3209">RFC 3209</a>, DOI 10.17487/RFC3209, December 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3209">https://www.rfc-editor.org/info/rfc3209</a>&gt;.
+
+   [<a id="ref-RFC3473">RFC3473</a>]  Berger, L., Ed., &quot;Generalized Multi-Protocol Label
+              Switching (GMPLS) Signaling Resource ReserVation Protocol-
+              Traffic Engineering (RSVP-TE) Extensions&quot;, <a href="/doc/html/rfc3473">RFC 3473</a>,
+              DOI 10.17487/RFC3473, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3473">https://www.rfc-editor.org/info/rfc3473</a>&gt;.
+
+   [<a id="ref-RFC4216">RFC4216</a>]  Zhang, R., Ed. and J.-P. Vasseur, Ed., &quot;MPLS Inter-
+              Autonomous System (AS) Traffic Engineering (TE)
+              Requirements&quot;, <a href="/doc/html/rfc4216">RFC 4216</a>, DOI 10.17487/RFC4216, November
+              2005, &lt;<a href="https://www.rfc-editor.org/info/rfc4216">https://www.rfc-editor.org/info/rfc4216</a>&gt;.
+
+   [<a id="ref-RFC4655">RFC4655</a>]  Farrel, A., Vasseur, J.-P., and J. Ash, &quot;A Path
+              Computation Element (PCE)-Based Architecture&quot;, <a href="/doc/html/rfc4655">RFC 4655</a>,
+              DOI 10.17487/RFC4655, August 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4655">https://www.rfc-editor.org/info/rfc4655</a>&gt;.
+
+   [<a id="ref-RFC4726">RFC4726</a>]  Farrel, A., Vasseur, J.-P., and A. Ayyangar, &quot;A Framework
+              for Inter-Domain Multiprotocol Label Switching Traffic
+              Engineering&quot;, <a href="/doc/html/rfc4726">RFC 4726</a>, DOI 10.17487/RFC4726, November
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4726">https://www.rfc-editor.org/info/rfc4726</a>&gt;.
+
+   [<a id="ref-RFC5152">RFC5152</a>]  Vasseur, JP., Ed., Ayyangar, A., Ed., and R. Zhang, &quot;A
+              Per-Domain Path Computation Method for Establishing Inter-
+              Domain Traffic Engineering (TE) Label Switched Paths
+              (LSPs)&quot;, <a href="/doc/html/rfc5152">RFC 5152</a>, DOI 10.17487/RFC5152, February 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5152">https://www.rfc-editor.org/info/rfc5152</a>&gt;.
+
+   [<a id="ref-RFC5440">RFC5440</a>]  Vasseur, JP., Ed. and JL. Le Roux, Ed., &quot;Path Computation
+              Element (PCE) Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5440">RFC 5440</a>,
+              DOI 10.17487/RFC5440, March 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5440">https://www.rfc-editor.org/info/rfc5440</a>&gt;.
+
+   [<a id="ref-RFC5441">RFC5441</a>]  Vasseur, JP., Ed., Zhang, R., Bitar, N., and JL. Le Roux,
+              &quot;A Backward-Recursive PCE-Based Computation (BRPC)
+              Procedure to Compute Shortest Constrained Inter-Domain
+              Traffic Engineering Label Switched Paths&quot;, <a href="/doc/html/rfc5441">RFC 5441</a>,
+              DOI 10.17487/RFC5441, April 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5441">https://www.rfc-editor.org/info/rfc5441</a>&gt;.
+
+   [<a id="ref-RFC5520">RFC5520</a>]  Bradford, R., Ed., Vasseur, JP., and A. Farrel,
+              &quot;Preserving Topology Confidentiality in Inter-Domain Path
+              Computation Using a Path-Key-Based Mechanism&quot;, <a href="/doc/html/rfc5520">RFC 5520</a>,
+              DOI 10.17487/RFC5520, April 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5520">https://www.rfc-editor.org/info/rfc5520</a>&gt;.
+
+   [<a id="ref-RFC5541">RFC5541</a>]  Le Roux, JL., Vasseur, JP., and Y. Lee, &quot;Encoding of
+              Objective Functions in the Path Computation Element
+              Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5541">RFC 5541</a>,
+              DOI 10.17487/RFC5541, June 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5541">https://www.rfc-editor.org/info/rfc5541</a>&gt;.
+
+   [<a id="ref-RFC6805">RFC6805</a>]  King, D., Ed. and A. Farrel, Ed., &quot;The Application of the
+              Path Computation Element Architecture to the Determination
+              of a Sequence of Domains in MPLS and GMPLS&quot;, <a href="/doc/html/rfc6805">RFC 6805</a>,
+              DOI 10.17487/RFC6805, November 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6805">https://www.rfc-editor.org/info/rfc6805</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-15.2" href="#section-15.2">15.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC3060">RFC3060</a>]  Moore, B., Ellesson, E., Strassner, J., and A. Westerinen,
+              &quot;Policy Core Information Model -- Version 1
+              Specification&quot;, <a href="/doc/html/rfc3060">RFC 3060</a>, DOI 10.17487/RFC3060, February
+              2001, &lt;<a href="https://www.rfc-editor.org/info/rfc3060">https://www.rfc-editor.org/info/rfc3060</a>&gt;.
+
+   [<a id="ref-RFC3460">RFC3460</a>]  Moore, B., Ed., &quot;Policy Core Information Model (PCIM)
+              Extensions&quot;, <a href="/doc/html/rfc3460">RFC 3460</a>, DOI 10.17487/RFC3460, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3460">https://www.rfc-editor.org/info/rfc3460</a>&gt;.
+
+   [<a id="ref-RFC3630">RFC3630</a>]  Katz, D., Kompella, K., and D. Yeung, &quot;Traffic Engineering
+              (TE) Extensions to OSPF Version 2&quot;, <a href="/doc/html/rfc3630">RFC 3630</a>,
+              DOI 10.17487/RFC3630, September 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3630">https://www.rfc-editor.org/info/rfc3630</a>&gt;.
+
+   [<a id="ref-RFC4090">RFC4090</a>]  Pan, P., Ed., Swallow, G., Ed., and A. Atlas, Ed., &quot;Fast
+              Reroute Extensions to RSVP-TE for LSP Tunnels&quot;, <a href="/doc/html/rfc4090">RFC 4090</a>,
+              DOI 10.17487/RFC4090, May 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4090">https://www.rfc-editor.org/info/rfc4090</a>&gt;.
+
+   [<a id="ref-RFC4203">RFC4203</a>]  Kompella, K., Ed. and Y. Rekhter, Ed., &quot;OSPF Extensions in
+              Support of Generalized Multi-Protocol Label Switching
+              (GMPLS)&quot;, <a href="/doc/html/rfc4203">RFC 4203</a>, DOI 10.17487/RFC4203, October 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4203">https://www.rfc-editor.org/info/rfc4203</a>&gt;.
+
+   [<a id="ref-RFC4920">RFC4920</a>]  Farrel, A., Ed., Satyanarayana, A., Iwata, A., Fujita, N.,
+              and G. Ash, &quot;Crankback Signaling Extensions for MPLS and
+              GMPLS RSVP-TE&quot;, <a href="/doc/html/rfc4920">RFC 4920</a>, DOI 10.17487/RFC4920, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4920">https://www.rfc-editor.org/info/rfc4920</a>&gt;.
+
+   [<a id="ref-RFC5088">RFC5088</a>]  Le Roux, JL., Ed., Vasseur, JP., Ed., Ikejiri, Y., and R.
+              Zhang, &quot;OSPF Protocol Extensions for Path Computation
+              Element (PCE) Discovery&quot;, <a href="/doc/html/rfc5088">RFC 5088</a>, DOI 10.17487/RFC5088,
+              January 2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5088">https://www.rfc-editor.org/info/rfc5088</a>&gt;.
+
+   [<a id="ref-RFC5089">RFC5089</a>]  Le Roux, JL., Ed., Vasseur, JP., Ed., Ikejiri, Y., and R.
+              Zhang, &quot;IS-IS Protocol Extensions for Path Computation
+              Element (PCE) Discovery&quot;, <a href="/doc/html/rfc5089">RFC 5089</a>, DOI 10.17487/RFC5089,
+              January 2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5089">https://www.rfc-editor.org/info/rfc5089</a>&gt;.
+
+   [<a id="ref-RFC5305">RFC5305</a>]  Li, T. and H. Smit, &quot;IS-IS Extensions for Traffic
+              Engineering&quot;, <a href="/doc/html/rfc5305">RFC 5305</a>, DOI 10.17487/RFC5305, October
+              2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5305">https://www.rfc-editor.org/info/rfc5305</a>&gt;.
+
+   [<a id="ref-RFC5307">RFC5307</a>]  Kompella, K., Ed. and Y. Rekhter, Ed., &quot;IS-IS Extensions
+              in Support of Generalized Multi-Protocol Label Switching
+              (GMPLS)&quot;, <a href="/doc/html/rfc5307">RFC 5307</a>, DOI 10.17487/RFC5307, October 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5307">https://www.rfc-editor.org/info/rfc5307</a>&gt;.
+
+   [<a id="ref-RFC5316">RFC5316</a>]  Chen, M., Zhang, R., and X. Duan, &quot;ISIS Extensions in
+              Support of Inter-Autonomous System (AS) MPLS and GMPLS
+              Traffic Engineering&quot;, <a href="/doc/html/rfc5316">RFC 5316</a>, DOI 10.17487/RFC5316,
+              December 2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5316">https://www.rfc-editor.org/info/rfc5316</a>&gt;.
+
+   [<a id="ref-RFC5392">RFC5392</a>]  Chen, M., Zhang, R., and X. Duan, &quot;OSPF Extensions in
+              Support of Inter-Autonomous System (AS) MPLS and GMPLS
+              Traffic Engineering&quot;, <a href="/doc/html/rfc5392">RFC 5392</a>, DOI 10.17487/RFC5392,
+              January 2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5392">https://www.rfc-editor.org/info/rfc5392</a>&gt;.
+
+   [<a id="ref-RFC5394">RFC5394</a>]  Bryskin, I., Papadimitriou, D., Berger, L., and J. Ash,
+              &quot;Policy-Enabled Path Computation Framework&quot;, <a href="/doc/html/rfc5394">RFC 5394</a>,
+              DOI 10.17487/RFC5394, December 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5394">https://www.rfc-editor.org/info/rfc5394</a>&gt;.
+
+   [<a id="ref-RFC5521">RFC5521</a>]  Oki, E., Takeda, T., and A. Farrel, &quot;Extensions to the
+              Path Computation Element Communication Protocol (PCEP) for
+              Route Exclusions&quot;, <a href="/doc/html/rfc5521">RFC 5521</a>, DOI 10.17487/RFC5521, April
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5521">https://www.rfc-editor.org/info/rfc5521</a>&gt;.
+
+   [<a id="ref-RFC5886">RFC5886</a>]  Vasseur, JP., Ed., Le Roux, JL., and Y. Ikejiri, &quot;A Set of
+              Monitoring Tools for Path Computation Element (PCE)-Based
+              Architecture&quot;, <a href="/doc/html/rfc5886">RFC 5886</a>, DOI 10.17487/RFC5886, June 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5886">https://www.rfc-editor.org/info/rfc5886</a>&gt;.
+
+   [<a id="ref-RFC6007">RFC6007</a>]  Nishioka, I. and D. King, &quot;Use of the Synchronization
+              VECtor (SVEC) List for Synchronized Dependent Path
+              Computations&quot;, <a href="/doc/html/rfc6007">RFC 6007</a>, DOI 10.17487/RFC6007, September
+              2010, &lt;<a href="https://www.rfc-editor.org/info/rfc6007">https://www.rfc-editor.org/info/rfc6007</a>&gt;.
+
+   [<a id="ref-G-8080">G-8080</a>]   ITU-T, &quot;Architecture for the automatically switched
+              optical network&quot;, ITU-T Recommendation G.8080/Y.1304,
+              February 2012.
+
+   [<a id="ref-G-7715">G-7715</a>]   ITU-T, &quot;Architecture and requirements for routing in the
+              automatically switched optical networks&quot;, ITU-T
+              Recommendation G.7715/Y.1706, June 2002.
+
+   [<a id="ref-G-7715-2">G-7715-2</a>] ITU-T, &quot;ASON routing architecture and requirements for
+              remote route query&quot;, ITU-T
+              Recommendation G.7715.2/Y.1706.2, February 2007.
+
+   [<a id="ref-RFC6952">RFC6952</a>]  Jethanandani, M., Patel, K., and L. Zheng, &quot;Analysis of
+              BGP, LDP, PCEP, and MSDP Issues According to the Keying
+              and Authentication for Routing Protocols (KARP) Design
+              Guide&quot;, <a href="/doc/html/rfc6952">RFC 6952</a>, DOI 10.17487/RFC6952, May 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6952">https://www.rfc-editor.org/info/rfc6952</a>&gt;.
+
+   [<a id="ref-RFC7334">RFC7334</a>]  Zhao, Q., Dhody, D., King, D., Ali, Z., and R. Casellas,
+              &quot;PCE-Based Computation Procedure to Compute Shortest
+              Constrained Point-to-Multipoint (P2MP) Inter-Domain
+              Traffic Engineering Label Switched Paths&quot;, <a href="/doc/html/rfc7334">RFC 7334</a>,
+              DOI 10.17487/RFC7334, August 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7334">https://www.rfc-editor.org/info/rfc7334</a>&gt;.
+
+   [<a id="ref-RFC7420">RFC7420</a>]  Koushik, A., Stephan, E., Zhao, Q., King, D., and J.
+              Hardwick, &quot;Path Computation Element Communication Protocol
+              (PCEP) Management Information Base (MIB) Module&quot;,
+              <a href="/doc/html/rfc7420">RFC 7420</a>, DOI 10.17487/RFC7420, December 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7420">https://www.rfc-editor.org/info/rfc7420</a>&gt;.
+
+   [<a id="ref-RFC7525">RFC7525</a>]  Sheffer, Y., Holz, R., and P. Saint-Andre,
+              &quot;Recommendations for Secure Use of Transport Layer
+              Security (TLS) and Datagram Transport Layer Security
+              (DTLS)&quot;, <a href="/doc/html/bcp195">BCP 195</a>, <a href="/doc/html/rfc7525">RFC 7525</a>, DOI 10.17487/RFC7525, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7525">https://www.rfc-editor.org/info/rfc7525</a>&gt;.
+
+   [<a id="ref-RFC7752">RFC7752</a>]  Gredler, H., Ed., Medved, J., Previdi, S., Farrel, A., and
+              S. Ray, &quot;North-Bound Distribution of Link-State and
+              Traffic Engineering (TE) Information Using BGP&quot;, <a href="/doc/html/rfc7752">RFC 7752</a>,
+              DOI 10.17487/RFC7752, March 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7752">https://www.rfc-editor.org/info/rfc7752</a>&gt;.
+
+   [<a id="ref-RFC7897">RFC7897</a>]  Dhody, D., Palle, U., and R. Casellas, &quot;Domain Subobjects
+              for the Path Computation Element Communication Protocol
+              (PCEP)&quot;, <a href="/doc/html/rfc7897">RFC 7897</a>, DOI 10.17487/RFC7897, June 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7897">https://www.rfc-editor.org/info/rfc7897</a>&gt;.
+
+   [<a id="ref-RFC8253">RFC8253</a>]  Lopez, D., Gonzalez de Dios, O., Wu, Q., and D. Dhody,
+              &quot;PCEPS: Usage of TLS to Provide a Secure Transport for the
+              Path Computation Element Communication Protocol (PCEP)&quot;,
+              <a href="/doc/html/rfc8253">RFC 8253</a>, DOI 10.17487/RFC8253, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8253">https://www.rfc-editor.org/info/rfc8253</a>&gt;.
+
+   [<a id="ref-RFC8453">RFC8453</a>]  Ceccarelli, D., Ed. and Y. Lee, Ed., &quot;Framework for
+              Abstraction and Control of TE Networks (ACTN)&quot;, <a href="/doc/html/rfc8453">RFC 8453</a>,
+              DOI 10.17487/RFC8453, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8453">https://www.rfc-editor.org/info/rfc8453</a>&gt;.
+
+   [<a id="ref-PCEP-YANG">PCEP-YANG</a>]
+              Dhody, D., Hardwick, J., Beeram, V., and J. Tantsura, &quot;A
+              YANG Data Model for Path Computation Element
+              Communications Protocol (PCEP)&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-pce-pcep-yang-13">draft-ietf-pce-pcep-yang-13</a>, 31 October
+              2019,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-pce-pcep-yang-13">https://tools.ietf.org/html/draft-ietf-pce-pcep-yang-13</a>&gt;.
+
+Acknowledgements
+
+   The author would like to thank Adrian Farrel for his review and Meral
+   Shirazipour and Francisco Javier Jiménez Chico for their comments.
+
+Contributors
+
+   Dhruv Dhody
+   Huawei Technologies
+   Divyashree Techno Park, Whitefield
+   Bangalore 560066
+   Karnataka
+   India
+
+   Email: dhruv.ietf@gmail.com
+
+
+   Quintin Zhao
+   Huawei Technologies
+   125 Nagog Technology Park
+   Acton, MA 01719
+   United States of America
+
+   Email: qzhao@huawei.com
+
+
+   Julien Meuric
+   France Telecom
+   2, avenue Pierre-Marzin
+   22307 Lannion Cedex
+   France
+
+   Email: julien.meuric@orange.com
+
+
+   Olivier Dugeon
+   France Telecom
+   2, avenue Pierre-Marzin
+   22307 Lannion Cedex
+   France
+
+   Email: olivier.dugeon@orange.com
+
+
+   Jon Hardwick
+   Metaswitch Networks
+   100 Church Street
+   Enfield
+   EN2 6BQ
+   United Kingdom
+
+   Email: jonathan.hardwick@metaswitch.com
+
+
+   Óscar González de Dios
+   Telefonica I+D
+   Emilio Vargas 6
+   Madrid
+   Spain
+
+   Email: oscar.gonzalezdedios@telefonica.com
+
+
+Authors&#x27; Addresses
+
+   Daniel King
+   Old Dog Consulting
+
+   Email: daniel@olddog.co.uk
+
+
+   Haomian Zheng
+   Huawei Technologies
+   H1, Huawei Xiliu Beipo Village, Songshan Lake
+   Dongguan
+   Guangdong, 523808
+   China
+
+   Email: zhenghaomian@huawei.com
+
+   Additional contact information:
+
+      郑好棉
+      中国
+      523808
+      广东 东莞
+      松山湖华为溪流背坡村H1
+      华为技术有限公司
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,628 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc439
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc439/">
+  <meta name="description" content="PARRY encounters the DOCTOR (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc439.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc439.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc439.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc439/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc439/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc439@ietf.org?subject=rfc439" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc439-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc439-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc439-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                            V. Cerf
+Request for Comments: 439                                         SU-ERL
+NIC: 13771                                               21 January 1973
+
+
+                      <span class="h1">PARRY Encounters the DOCTOR</span>
+
+   The session recorded below actually happened on 18 September 1972 and
+   is herewith reproduced for your entertainment.
+
+   Good Evening.
+
+   Tell me your problems.  Please terminate input with a period or a
+   question mark.
+
+   *People get on my nerves sometimes.
+
+   I am not sure I understand you fully.
+
+   *You should pay more attention.
+
+   Suppose you should pay more attention.
+
+   *You&#x27;re entitled to your own opinion.
+
+   What makes you think I am entitled to my own opinion?
+
+   *It bothers me just to be around people in general.
+
+   Please go on.
+
+   *I went to the track at Bay Meadows a while back.
+
+   What does that suggest to you?
+
+   *I went to the races.
+
+   What else would you like to discuss?
+
+   *Horseracing interests me.
+
+   Why do you say that just now?
+
+   *There&#x27;s a lot of crooked gambling going on there.
+
+   I am not sure I understand you fully,
+
+
+
+
+
+<span class="grey">Cerf                                                            [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc439">RFC 439</a>               PARRY Encounters the DOCTOR          January 1973</span>
+
+
+   *It&#x27;s clear to me if not to you.
+
+   Do you think its likely that not to I?
+
+   *I went to the races.
+
+   Please go on.
+
+   *I gamble on horses.
+
+   What does that suggest to you?
+
+   *I went to the races.
+
+   What else would you like to discuss?
+
+   *Gambling has been nothing but trouble to me.
+
+   Why do you say that just now?
+
+   *I&#x27;ve had experience with crooks gambling at the track.
+
+   I am not sure I understand you fully.
+
+   *I&#x27;ve already told you enough about that.
+
+   Oh? I enough about that?
+
+   *I went to the races.
+
+         comment: This has to be the most persistent and patient
+         paranoid I have ever encountered.
+
+   Please go on.
+
+   *Do you know anything about bookies?
+
+   What makes you think I know anything about bookies?
+
+   *A bookie didn&#x27;t pay me off once.
+
+   What does that suggest to you?
+
+   *I beat up the bookie who did not pay off, and I thought he might use
+   his friends in the underworld to get even with me.
+
+
+
+
+
+
+<span class="grey">Cerf                                                            [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc439">RFC 439</a>               PARRY Encounters the DOCTOR          January 1973</span>
+
+
+   What else would you like to discuss?
+
+   *What do you know about racketeers?
+
+   Why do you ask?
+
+   *What experience have you had gambling?
+
+   Why does that question interest you?
+
+   *I like horseraces.
+
+   What else do you like?
+
+   *I know the mob controls the big rackets.
+
+   Who are you really talking about?
+
+   *Have you ever really thought about the MAFIA?
+
+   Suppose you ever really thought about the MAFIA.
+
+   *Let&#x27;s talk about something else.
+
+   I am not sure I understand you fully.
+
+   *You keep asking me the same things, why not change the topic?
+
+   In what way?
+
+   *What do you mean?
+
+   Why are such questions on your mind?
+
+   *I thought I told you, people get on my nerves.
+
+   Your nerves?
+
+   *Well, I don&#x27;t know.
+
+   Don&#x27;t you really know?
+
+   *I would say so.
+
+   Please go on.
+
+   *I would rather not discuss that anymore.
+
+
+
+
+<span class="grey">Cerf                                                            [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc439">RFC 439</a>               PARRY Encounters the DOCTOR          January 1973</span>
+
+
+   Would you like to discuss your nerves?
+
+   *I guess so.
+
+   What does that suggest to you?
+
+   *What are you getting at?
+
+   What answer would please you most?
+
+   *It&#x27;s not a matter or like or dislike.
+
+   What else would you like to discuss?
+
+   *I am getting tired of answering the same questions over and over.
+
+   What resemblance do you see?
+
+   *Why do you need to know that?
+
+   What do you think?
+
+   *I don&#x27;t understand your motives.
+
+   Why don&#x27;t you understand my motives?
+
+   *Shouldn&#x27;t I be?
+
+         comment: ???
+
+   Why do you say that just now?
+
+         comment: I was wondering the same thing.
+
+   *That&#x27;s just the way it is.
+
+   Suppose that&#x27;s just the way it were not.
+
+   *So?
+
+   I am not sure I understand you fully.
+
+   *You harp on the same questions too much.
+
+   What does that similarity suggest to you?
+
+   *I don&#x27;t get you.
+
+
+
+
+<span class="grey">Cerf                                                            [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc439">RFC 439</a>               PARRY Encounters the DOCTOR          January 1973</span>
+
+
+   Do you wish that you did get I?
+
+   *It&#x27;s about time you showed some interest in my feelings.
+
+   Oh? I showed some interest in your feelings?
+
+         comment: must have been an accident...
+
+   *I will help you if I trust you.
+
+   Do you wish that you trust I?
+
+   *Maybe yes, maybe no.
+
+   You don&#x27;t seem quite certain.
+
+    ...Excuse me for just a minute.  Sorry to have interrupt you please
+   continue...
+
+   *Really?
+
+   Please go on.
+
+   *In my opinion you have a one-track mind.
+
+   What makes you think I have a one-track mind?
+
+         comment: you ready for this?
+
+   *I used to go to the track every week.
+
+   What does that suggest to you?
+
+   *I avoid racetracks now because the races are fixed.
+
+   Is that the real reason?
+
+   *I&#x27;d rather not discuss it.
+
+   What else would you like to discuss?
+
+   *That&#x27;s something I don&#x27;t want to go into.
+
+   Does that trouble you?
+
+   *I went to the races.
+
+   Why do you say that just now.
+
+
+
+<span class="grey">Cerf                                                            [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc439">RFC 439</a>               PARRY Encounters the DOCTOR          January 1973</span>
+
+
+   *It&#x27;s none of your business.
+
+   Why are you concerned over my business?
+
+   *I don&#x27;t confide in strangers.
+
+   Don&#x27;t you really confide in strangers?
+
+   *Let&#x27;s change the subject.
+
+   Perhaps that concerns your feelings.
+
+   *I went to the races.
+
+   I am not sure I understand you fully.
+
+   *What&#x27;s wrong with you that you keep on bugging me about this?
+
+   Who are you really talking about?
+
+   *The way you repeat yourself is getting ridiculous.
+
+   Suppose you repeat myself is getting ridiculous.
+
+         comment: howzat?
+
+   *There are some tricky operators down there.
+
+   Are there really some tricky operators down there?
+
+   *The guys involved in the horseracing racket.
+
+   Please go on.
+
+
+   *You are a real nag.
+
+         comment: just one of the horses.
+
+   Does it please you to believe I am a real nag?
+
+   *I have had enough of this.
+
+   What does that suggest to you?
+
+
+
+
+
+
+
+<span class="grey">Cerf                                                            [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc439">RFC 439</a>               PARRY Encounters the DOCTOR          January 1973</span>
+
+
+   *Goodbye.
+
+   It&#x27;s been my pleasure, that&#x27;s $399.29 please.
+
+         comment: talk about tricky operators...
+
+   PARRY was running at SAIL and DOCTOR at BBN Tenex, both being
+   accessed from UCLA/SEX.
+
+
+          [This RFC was put into machine readable form for entry]
+    [into the online RFC archives by Helene Morin, Via Genie, 12/1999]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cerf                                                            [Page 7]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

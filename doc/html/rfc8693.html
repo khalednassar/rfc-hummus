@@ -1,0 +1,1643 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8693
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-oauth-token-exchange/">
+  <meta name="description" content="OAuth 2.0 Token Exchange (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8693.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8693.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8693.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8693.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8693/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8693/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/oauth/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-oauth-token-exchange@ietf.org?subject=draft-ietf-oauth-token-exchange" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-oauth-token-exchange-19.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-oauth-token-exchange-19.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-oauth-token-exchange-19.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-oauth-token-exchange-19">draft-ietf-oauth-token-exchange-19</a>               Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          M. Jones
+Request for Comments: 8693                                    A. Nadalin
+Category: Standards Track                                      Microsoft
+ISSN: 2070-1721                                         B. Campbell, Ed.
+                                                           Ping Identity
+                                                              J. Bradley
+                                                                  Yubico
+                                                            C. Mortimore
+                                                                    Visa
+                                                            January 2020
+
+
+                        <span class="h1">OAuth 2.0 Token Exchange</span>
+
+Abstract
+
+   This specification defines a protocol for an HTTP- and JSON-based
+   Security Token Service (STS) by defining how to request and obtain
+   security tokens from OAuth 2.0 authorization servers, including
+   security tokens employing impersonation and delegation.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8693">https://www.rfc-editor.org/info/rfc8693</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Delegation vs. Impersonation Semantics
+     1.2.  Requirements Notation and Conventions
+     1.3.  Terminology
+   2.  Token Exchange Request and Response
+     2.1.  Request
+       2.1.1.  Relationship between Resource, Audience, and Scope
+     2.2.  Response
+       2.2.1.  Successful Response
+       2.2.2.  Error Response
+     2.3.  Example Token Exchange
+   3.  Token Type Identifiers
+   4.  JSON Web Token Claims and Introspection Response Parameters
+     4.1.  &quot;act&quot; (Actor) Claim
+     4.2.  &quot;scope&quot; (Scopes) Claim
+     4.3.  &quot;client_id&quot; (Client Identifier) Claim
+     4.4.  &quot;may_act&quot; (Authorized Actor) Claim
+   5.  Security Considerations
+   6.  Privacy Considerations
+   7.  IANA Considerations
+     7.1.  OAuth URI Registration
+     7.2.  OAuth Parameters Registration
+     7.3.  OAuth Access Token Type Registration
+     7.4.  JSON Web Token Claims Registration
+     7.5.  OAuth Token Introspection Response Registration
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Additional Token Exchange Examples
+     A.1.  Impersonation Token Exchange Example
+       A.1.1.  Token Exchange Request
+       A.1.2.  Subject Token Claims
+       A.1.3.  Token Exchange Response
+       A.1.4.  Issued Token Claims
+     A.2.  Delegation Token Exchange Example
+       A.2.1.  Token Exchange Request
+       A.2.2.  Subject Token Claims
+       A.2.3.  Actor Token Claims
+       A.2.4.  Token Exchange Response
+       A.2.5.  Issued Token Claims
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   A security token is a set of information that facilitates the sharing
+   of identity and security information in heterogeneous environments or
+   across security domains.  Examples of security tokens include JSON
+   Web Tokens (JWTs) [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>] and Security Assertion Markup Language (SAML)
+   2.0 assertions [<a href="#ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>].  Security tokens are
+   typically signed to achieve integrity and sometimes also encrypted to
+   achieve confidentiality.  Security tokens are also sometimes
+   described as assertions, such as in [<a href="/doc/html/rfc7521" title="&quot;Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants&quot;">RFC7521</a>].
+
+   A Security Token Service (STS) is a service capable of validating
+   security tokens provided to it and issuing new security tokens in
+   response, which enables clients to obtain appropriate access
+   credentials for resources in heterogeneous environments or across
+   security domains.  Web Service clients have used WS-Trust [<a href="#ref-WS-Trust" title="&quot;WS-Trust 1.4&quot;">WS-Trust</a>]
+   as the protocol to interact with an STS for token exchange.  While
+   WS-Trust uses XML and SOAP, the trend in modern Web development has
+   been towards RESTful (Representational State Transfer) patterns and
+   JSON.  The OAuth 2.0 Authorization Framework [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>] and OAuth 2.0
+   Bearer Tokens [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>] have emerged as popular standards for
+   authorizing third-party applications&#x27; access to HTTP and RESTful
+   resources.  The conventional OAuth 2.0 interaction involves the
+   exchange of some representation of resource owner authorization for
+   an access token, which has proven to be an extremely useful pattern
+   in practice.  However, its input and output are somewhat too
+   constrained as is to fully accommodate a security token exchange
+   framework.
+
+   This specification defines a protocol extending OAuth 2.0 that
+   enables clients to request and obtain security tokens from
+   authorization servers acting in the role of an STS.  Similar to OAuth
+   2.0, this specification focuses on client developer simplicity and
+   requires only an HTTP client and JSON parser, which are nearly
+   universally available in modern development environments.  The STS
+   protocol defined in this specification is not itself RESTful (an STS
+   doesn&#x27;t lend itself particularly well to a REST approach) but does
+   utilize communication patterns and data formats that should be
+   familiar to developers accustomed to working with RESTful systems.
+
+   A new grant type for a token exchange request and the associated
+   specific parameters for such a request to the token endpoint are
+   defined by this specification.  A token exchange response is a normal
+   OAuth 2.0 response from the token endpoint with a few additional
+   parameters defined herein to provide information to the client.
+
+   The entity that makes the request to exchange tokens is considered
+   the client in the context of the token exchange interaction.
+   However, that does not restrict usage of this profile to traditional
+   OAuth clients.  An OAuth resource server, for example, might assume
+   the role of the client during token exchange in order to trade an
+   access token that it received in a protected resource request for a
+   new token that is appropriate to include in a call to a backend
+   service.  The new token might be an access token that is more
+   narrowly scoped for the downstream service or it could be an entirely
+   different kind of token.
+
+   The scope of this specification is limited to the definition of a
+   basic request-and-response protocol for an STS-style token exchange
+   utilizing OAuth 2.0.  Although a few new JWT claims are defined that
+   enable delegation semantics to be expressed, the specific syntax,
+   semantics, and security characteristics of the tokens themselves
+   (both those presented to the authorization server and those obtained
+   by the client) are explicitly out of scope, and no requirements are
+   placed on the trust model in which an implementation might be
+   deployed.  Additional profiles may provide more detailed requirements
+   around the specific nature of the parties and trust involved, such as
+   whether signing and/or encryption of tokens is needed or if proof-of-
+   possession-style tokens will be required or issued.  However, such
+   details will often be policy decisions made with respect to the
+   specific needs of individual deployments and will be configured or
+   implemented accordingly.
+
+   The security tokens obtained may be used in a number of contexts, the
+   specifics of which are also beyond the scope of this specification.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Delegation vs. Impersonation Semantics</span>
+
+   One common use case for an STS (as alluded to in the previous
+   section) is to allow a resource server A to make calls to a backend
+   service C on behalf of the requesting user B.  Depending on the local
+   site policy and authorization infrastructure, it may be desirable for
+   A to use its own credentials to access C along with an annotation of
+   some form that A is acting on behalf of B (&quot;delegation&quot;) or for A to
+   be granted a limited access credential to C but that continues to
+   identify B as the authorized entity (&quot;impersonation&quot;).  Delegation
+   and impersonation can be useful concepts in other scenarios involving
+   multiple participants as well.
+
+   When principal A impersonates principal B, A is given all the rights
+   that B has within some defined rights context and is
+   indistinguishable from B in that context.  Thus, when principal A
+   impersonates principal B, then insofar as any entity receiving such a
+   token is concerned, they are actually dealing with B.  It is true
+   that some members of the identity system might have awareness that
+   impersonation is going on, but it is not a requirement.  For all
+   intents and purposes, when A is impersonating B, A is B within the
+   context of the rights authorized by the token.  A&#x27;s ability to
+   impersonate B could be limited in scope or time, or even with a one-
+   time-use restriction, whether via the contents of the token or an
+   out-of-band mechanism.
+
+   Delegation semantics are different than impersonation semantics,
+   though the two are closely related.  With delegation semantics,
+   principal A still has its own identity separate from B, and it is
+   explicitly understood that while B may have delegated some of its
+   rights to A, any actions taken are being taken by A representing B.
+   In a sense, A is an agent for B.
+
+   Delegation and impersonation are not inclusive of all situations.
+   When a principal is acting directly on its own behalf, for example,
+   neither delegation nor impersonation are in play.  They are, however,
+   the more common semantics operating for token exchange and, as such,
+   are given more direct treatment in this specification.
+
+   Delegation semantics are typically expressed in a token by including
+   information about both the primary subject of the token as well as
+   the actor to whom that subject has delegated some of its rights.
+   Such a token is sometimes referred to as a composite token because it
+   is composed of information about multiple subjects.  Typically, in
+   the request, the &quot;subject_token&quot; represents the identity of the party
+   on behalf of whom the token is being requested while the
+   &quot;actor_token&quot; represents the identity of the party to whom the access
+   rights of the issued token are being delegated.  A composite token
+   issued by the authorization server will contain information about
+   both parties.  When and if a composite token is issued is at the
+   discretion of the authorization server and applicable policy and
+   configuration.
+
+   The specifics of representing a composite token and even whether or
+   not such a token will be issued depend on the details of the
+   implementation and the kind of token.  The representations of
+   composite tokens that are not JWTs are beyond the scope of this
+   specification.  The &quot;actor_token&quot; request parameter, however, does
+   provide a means for providing information about the desired actor,
+   and the JWT &quot;act&quot; claim can provide a representation of a chain of
+   delegation.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Requirements Notation and Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Terminology</span>
+
+   This specification uses the terms &quot;access token type&quot;, &quot;authorization
+   server&quot;, &quot;client&quot;, &quot;client identifier&quot;, &quot;resource server&quot;, &quot;token
+   endpoint&quot;, &quot;token request&quot;, and &quot;token response&quot; defined by OAuth 2.0
+   [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>], and the terms &quot;Base64url Encoding&quot;, &quot;Claim&quot;, and &quot;JWT
+   Claims Set&quot; defined by JSON Web Token (JWT) [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Token Exchange Request and Response</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Request</span>
+
+   A client requests a security token by making a token request to the
+   authorization server&#x27;s token endpoint using the extension grant type
+   mechanism defined in <a href="/doc/html/rfc6749#section-4.5">Section&nbsp;4.5 of [RFC6749]</a>.
+
+   Client authentication to the authorization server is done using the
+   normal mechanisms provided by OAuth 2.0.  <a href="/doc/html/rfc6749#section-2.3.1">Section&nbsp;2.3.1 of [RFC6749]</a>
+   defines password-based authentication of the client, however, client
+   authentication is extensible and other mechanisms are possible.  For
+   example, [<a href="/doc/html/rfc7523" title="&quot;JSON Web Token (JWT) Profile for OAuth 2.0 Client Authentication and Authorization Grants&quot;">RFC7523</a>] defines client authentication using bearer JSON
+   Web Tokens (JWTs) [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>].  The supported methods of client
+   authentication and whether or not to allow unauthenticated or
+   unidentified clients are deployment decisions that are at the
+   discretion of the authorization server.  Note that omitting client
+   authentication allows for a compromised token to be leveraged via an
+   STS into other tokens by anyone possessing the compromised token.
+   Thus, client authentication allows for additional authorization
+   checks by the STS as to which entities are permitted to impersonate
+   or receive delegations from other entities.
+
+   The client makes a token exchange request to the token endpoint with
+   an extension grant type using the HTTP &quot;POST&quot; method.  The following
+   parameters are included in the HTTP request entity-body using the
+   &quot;application/x-www-form-urlencoded&quot; format with a character encoding
+   of UTF-8 as described in <a href="/doc/html/rfc6749#appendix-B">Appendix&nbsp;B of [RFC6749]</a>.
+
+   grant_type
+      REQUIRED.  The value &quot;urn:ietf:params:oauth:grant-type:token-
+      exchange&quot; indicates that a token exchange is being performed.
+
+   resource
+      OPTIONAL.  A URI that indicates the target service or resource
+      where the client intends to use the requested security token.
+      This enables the authorization server to apply policy as
+      appropriate for the target, such as determining the type and
+      content of the token to be issued or if and how the token is to be
+      encrypted.  In many cases, a client will not have knowledge of the
+      logical organization of the systems with which it interacts and
+      will only know a URI of the service where it intends to use the
+      token.  The &quot;resource&quot; parameter allows the client to indicate to
+      the authorization server where it intends to use the issued token
+      by providing the location, typically as an https URL, in the token
+      exchange request in the same form that will be used to access that
+      resource.  The authorization server will typically have the
+      capability to map from a resource URI value to an appropriate
+      policy.  The value of the &quot;resource&quot; parameter MUST be an absolute
+      URI, as specified by <a href="/doc/html/rfc3986#section-4.3">Section&nbsp;4.3 of [RFC3986]</a>, that MAY include a
+      query component and MUST NOT include a fragment component.
+      Multiple &quot;resource&quot; parameters may be used to indicate that the
+      issued token is intended to be used at the multiple resources
+      listed.  See [<a href="#ref-OAUTH-RESOURCE">OAUTH-RESOURCE</a>] for additional background and uses
+      of the &quot;resource&quot; parameter.
+
+   audience
+      OPTIONAL.  The logical name of the target service where the client
+      intends to use the requested security token.  This serves a
+      purpose similar to the &quot;resource&quot; parameter but with the client
+      providing a logical name for the target service.  Interpretation
+      of the name requires that the value be something that both the
+      client and the authorization server understand.  An OAuth client
+      identifier, a SAML entity identifier [<a href="#ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>], and
+      an OpenID Connect Issuer Identifier [<a href="#ref-OpenID.Core">OpenID.Core</a>] are examples of
+      things that might be used as &quot;audience&quot; parameter values.
+      However, &quot;audience&quot; values used with a given authorization server
+      must be unique within that server to ensure that they are properly
+      interpreted as the intended type of value.  Multiple &quot;audience&quot;
+      parameters may be used to indicate that the issued token is
+      intended to be used at the multiple audiences listed.  The
+      &quot;audience&quot; and &quot;resource&quot; parameters may be used together to
+      indicate multiple target services with a mix of logical names and
+      resource URIs.
+
+   scope
+      OPTIONAL.  A list of space-delimited, case-sensitive strings, as
+      defined in <a href="/doc/html/rfc6749#section-3.3">Section&nbsp;3.3 of [RFC6749]</a>, that allow the client to
+      specify the desired scope of the requested security token in the
+      context of the service or resource where the token will be used.
+      The values and associated semantics of scope are service specific
+      and expected to be described in the relevant service
+      documentation.
+
+   requested_token_type
+      OPTIONAL.  An identifier, as described in <a href="#section-3">Section 3</a>, for the type
+      of the requested security token.  If the requested type is
+      unspecified, the issued token type is at the discretion of the
+      authorization server and may be dictated by knowledge of the
+      requirements of the service or resource indicated by the
+      &quot;resource&quot; or &quot;audience&quot; parameter.
+
+   subject_token
+      REQUIRED.  A security token that represents the identity of the
+      party on behalf of whom the request is being made.  Typically, the
+      subject of this token will be the subject of the security token
+      issued in response to the request.
+
+   subject_token_type
+      REQUIRED.  An identifier, as described in <a href="#section-3">Section 3</a>, that
+      indicates the type of the security token in the &quot;subject_token&quot;
+      parameter.
+
+   actor_token
+      OPTIONAL.  A security token that represents the identity of the
+      acting party.  Typically, this will be the party that is
+      authorized to use the requested security token and act on behalf
+      of the subject.
+
+   actor_token_type
+      An identifier, as described in <a href="#section-3">Section 3</a>, that indicates the type
+      of the security token in the &quot;actor_token&quot; parameter.  This is
+      REQUIRED when the &quot;actor_token&quot; parameter is present in the
+      request but MUST NOT be included otherwise.
+
+   In processing the request, the authorization server MUST perform the
+   appropriate validation procedures for the indicated token type and,
+   if the actor token is present, also perform the appropriate
+   validation procedures for its indicated token type.  The validity
+   criteria and details of any particular token are beyond the scope of
+   this document and are specific to the respective type of token and
+   its content.
+
+   In the absence of one-time-use or other semantics specific to the
+   token type, the act of performing a token exchange has no impact on
+   the validity of the subject token or actor token.  Furthermore, the
+   exchange is a one-time event and does not create a tight linkage
+   between the input and output tokens, so that (for example) while the
+   expiration time of the output token may be influenced by that of the
+   input token, renewal or extension of the input token is not expected
+   to be reflected in the output token&#x27;s properties.  It may still be
+   appropriate or desirable to propagate token-revocation events.
+   However, doing so is not a general property of the STS protocol and
+   would be specific to a particular implementation, token type, or
+   deployment.
+
+<span class="h4"><a class="selflink" id="section-2.1.1" href="#section-2.1.1">2.1.1</a>.  Relationship between Resource, Audience, and Scope</span>
+
+   When requesting a token, the client can indicate the desired target
+   service(s) where it intends to use that token by way of the
+   &quot;audience&quot; and &quot;resource&quot; parameters as well as indicate the desired
+   scope of the requested token using the &quot;scope&quot; parameter.  The
+   semantics of such a request are that the client is asking for a token
+   with the requested scope that is usable at all the requested target
+   services.  Effectively, the requested access rights of the token are
+   the Cartesian product of all the scopes at all the target services.
+
+   An authorization server may be unwilling or unable to fulfill any
+   token request, but the likelihood of an unfulfillable request is
+   significantly higher when very broad access rights are being
+   solicited.  As such, in the absence of specific knowledge about the
+   relationship of systems in a deployment, clients should exercise
+   discretion in the breadth of the access requested, particularly the
+   number of target services.  An authorization server can use the
+   &quot;invalid_target&quot; error code, defined in <a href="#section-2.2.2">Section 2.2.2</a>, to inform a
+   client that it requested access to too many target services
+   simultaneously.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Response</span>
+
+   The authorization server responds to a token exchange request with a
+   normal OAuth 2.0 response from the token endpoint, as specified in
+   <a href="/doc/html/rfc6749#section-5">Section&nbsp;5 of [RFC6749]</a>.  Additional details and explanation are
+   provided in the following subsections.
+
+<span class="h4"><a class="selflink" id="section-2.2.1" href="#section-2.2.1">2.2.1</a>.  Successful Response</span>
+
+   If the request is valid and meets all policy and other criteria of
+   the authorization server, a successful token response is constructed
+   by adding the following parameters to the entity-body of the HTTP
+   response using the &quot;application/json&quot; media type, as specified by
+   [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>], and an HTTP 200 status code.  The parameters are
+   serialized into a JavaScript Object Notation (JSON) structure by
+   adding each parameter at the top level.  Parameter names and string
+   values are included as JSON strings.  Numerical values are included
+   as JSON numbers.  The order of parameters does not matter and can
+   vary.
+
+   access_token
+      REQUIRED.  The security token issued by the authorization server
+      in response to the token exchange request.  The &quot;access_token&quot;
+      parameter from <a href="/doc/html/rfc6749#section-5.1">Section&nbsp;5.1 of [RFC6749]</a> is used here to carry the
+      requested token, which allows this token exchange protocol to use
+      the existing OAuth 2.0 request and response constructs defined for
+      the token endpoint.  The identifier &quot;access_token&quot; is used for
+      historical reasons and the issued token need not be an OAuth
+      access token.
+
+   issued_token_type
+      REQUIRED.  An identifier, as described in <a href="#section-3">Section 3</a>, for the
+      representation of the issued security token.
+
+   token_type
+      REQUIRED.  A case-insensitive value specifying the method of using
+      the access token issued, as specified in <a href="/doc/html/rfc6749#section-7.1">Section&nbsp;7.1 of [RFC6749]</a>.
+      It provides the client with information about how to utilize the
+      access token to access protected resources.  For example, a value
+      of &quot;Bearer&quot;, as specified in [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>], indicates that the issued
+      security token is a bearer token and the client can simply present
+      it as is without any additional proof of eligibility beyond the
+      contents of the token itself.  Note that the meaning of this
+      parameter is different from the meaning of the &quot;issued_token_type&quot;
+      parameter, which declares the representation of the issued
+      security token; the term &quot;token type&quot; is more typically used to
+      mean the structural or syntactical representation of the security
+      token, as it is in all &quot;*_token_type&quot; parameters in this
+      specification.  If the issued token is not an access token or
+      usable as an access token, then the &quot;token_type&quot; value &quot;N_A&quot; is
+      used to indicate that an OAuth 2.0 &quot;token_type&quot; identifier is not
+      applicable in that context.
+
+   expires_in
+      RECOMMENDED.  The validity lifetime, in seconds, of the token
+      issued by the authorization server.  Oftentimes, the client will
+      not have the inclination or capability to inspect the content of
+      the token, and this parameter provides a consistent and token-
+      type-agnostic indication of how long the token can be expected to
+      be valid.  For example, the value 1800 denotes that the token will
+      expire in thirty minutes from the time the response was generated.
+
+   scope
+      OPTIONAL if the scope of the issued security token is identical to
+      the scope requested by the client; otherwise, it is REQUIRED.
+
+   refresh_token
+      OPTIONAL.  A refresh token will typically not be issued when the
+      exchange is of one temporary credential (the subject_token) for a
+      different temporary credential (the issued token) for use in some
+      other context.  A refresh token can be issued in cases where the
+      client of the token exchange needs the ability to access a
+      resource even when the original credential is no longer valid
+      (e.g., user-not-present or offline scenarios where there is no
+      longer any user entertaining an active session with the client).
+      Profiles or deployments of this specification should clearly
+      document the conditions under which a client should expect a
+      refresh token in response to &quot;urn:ietf:params:oauth:grant-
+      type:token-exchange&quot; grant type requests.
+
+<span class="h4"><a class="selflink" id="section-2.2.2" href="#section-2.2.2">2.2.2</a>.  Error Response</span>
+
+   If the request itself is not valid or if either the &quot;subject_token&quot;
+   or &quot;actor_token&quot; are invalid for any reason, or are unacceptable
+   based on policy, the authorization server MUST construct an error
+   response, as specified in <a href="/doc/html/rfc6749#section-5.2">Section&nbsp;5.2 of [RFC6749]</a>.  The value of the
+   &quot;error&quot; parameter MUST be the &quot;invalid_request&quot; error code.
+
+   If the authorization server is unwilling or unable to issue a token
+   for any target service indicated by the &quot;resource&quot; or &quot;audience&quot;
+   parameters, the &quot;invalid_target&quot; error code SHOULD be used in the
+   error response.
+
+   The authorization server MAY include additional information regarding
+   the reasons for the error using the &quot;error_description&quot; as discussed
+   in <a href="/doc/html/rfc6749#section-5.2">Section&nbsp;5.2 of [RFC6749]</a>.
+
+   Other error codes may also be used, as appropriate.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Example Token Exchange</span>
+
+   The following example demonstrates a hypothetical token exchange in
+   which an OAuth resource server assumes the role of the client during
+   the exchange.  It trades an access token, which it received in a
+   protected resource request, for a new token that it will use to call
+   to a backend service (extra line breaks and indentation in the
+   examples are for display purposes only).
+
+   Figure 1 shows the resource server receiving a protected resource
+   request containing an OAuth access token in the Authorization header,
+   as specified in <a href="/doc/html/rfc6750#section-2.1">Section&nbsp;2.1 of [RFC6750]</a>.
+
+    GET /resource HTTP/1.1
+    Host: frontend.example.com
+    Authorization: Bearer accVkjcJyb4BWCxGsndESCJQbdFMogUC5PbRDqceLTC
+
+                    Figure 1: Protected Resource Request
+
+   In Figure 2, the resource server assumes the role of client for the
+   token exchange, and the access token from the request in Figure 1 is
+   sent to the authorization server using a request as specified in
+   <a href="#section-2.1">Section 2.1</a>.  The value of the &quot;subject_token&quot; parameter carries the
+   access token, and the value of the &quot;subject_token_type&quot; parameter
+   indicates that it is an OAuth 2.0 access token.  The resource server,
+   acting in the role of the client, uses its identifier and secret to
+   authenticate to the authorization server using the HTTP Basic
+   authentication scheme.  The &quot;resource&quot; parameter indicates the
+   location of the backend service, &lt;https://backend.example.com/api&gt;,
+   where the issued token will be used.
+
+    POST /as/token.oauth2 HTTP/1.1
+    Host: as.example.com
+    Authorization: Basic cnMwODpsb25nLXNlY3VyZS1yYW5kb20tc2VjcmV0
+    Content-Type: application/x-www-form-urlencoded
+
+    grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Atoken-exchange
+    &amp;resource=https%3A%2F%2Fbackend.example.com%2Fapi
+    &amp;subject_token=accVkjcJyb4BWCxGsndESCJQbdFMogUC5PbRDqceLTC
+    &amp;subject_token_type=
+     urn%3Aietf%3Aparams%3Aoauth%3Atoken-type%3Aaccess_token
+
+                      Figure 2: Token Exchange Request
+
+   The authorization server validates the client credentials and the
+   &quot;subject_token&quot; presented in the token exchange request.  From the
+   &quot;resource&quot; parameter, the authorization server is able to determine
+   the appropriate policy to apply to the request and issues a token
+   suitable for use at &lt;https://backend.example.com&gt;.  The
+   &quot;access_token&quot; parameter of the response shown in Figure 3 contains
+   the new token, which is itself a bearer OAuth access token that is
+   valid for one minute.  The token happens to be a JWT; however, its
+   structure and format are opaque to the client, so the
+   &quot;issued_token_type&quot; indicates only that it is an access token.
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    Cache-Control: no-cache, no-store
+
+    {
+     &quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6IjllciJ9.eyJhdWQiOiJo
+       dHRwczovL2JhY2tlbmQuZXhhbXBsZS5jb20iLCJpc3MiOiJodHRwczovL2FzLmV
+       4YW1wbGUuY29tIiwiZXhwIjoxNDQxOTE3NTkzLCJpYXQiOjE0NDE5MTc1MzMsIn
+       N1YiI6ImJkY0BleGFtcGxlLmNvbSIsInNjb3BlIjoiYXBpIn0.40y3ZgQedw6rx
+       f59WlwHDD9jryFOr0_Wh3CGozQBihNBhnXEQgU85AI9x3KmsPottVMLPIWvmDCM
+       y5-kdXjwhw&quot;,
+     &quot;issued_token_type&quot;:
+         &quot;urn:ietf:params:oauth:token-type:access_token&quot;,
+     &quot;token_type&quot;:&quot;Bearer&quot;,
+     &quot;expires_in&quot;:60
+    }
+
+                     Figure 3: Token Exchange Response
+
+   The resource server can then use the newly acquired access token in
+   making a request to the backend server as illustrated in Figure 4.
+
+    GET /api HTTP/1.1
+    Host: backend.example.com
+    Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6IjllciJ9.eyJhdWQ
+       iOiJodHRwczovL2JhY2tlbmQuZXhhbXBsZS5jb20iLCJpc3MiOiJodHRwczovL2
+       FzLmV4YW1wbGUuY29tIiwiZXhwIjoxNDQxOTE3NTkzLCJpYXQiOjE0NDE5MTc1M
+       zMsInN1YiI6ImJkY0BleGFtcGxlLmNvbSIsInNjb3BlIjoiYXBpIn0.40y3ZgQe
+       dw6rxf59WlwHDD9jryFOr0_Wh3CGozQBihNBhnXEQgU85AI9x3KmsPottVMLPIW
+       vmDCMy5-kdXjwhw
+
+                Figure 4: Backend Protected Resource Request
+
+   Additional examples can be found in <a href="#appendix-A">Appendix A</a>.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Token Type Identifiers</span>
+
+   Several parameters in this specification utilize an identifier as the
+   value to describe the token in question.  Specifically, they are the
+   &quot;requested_token_type&quot;, &quot;subject_token_type&quot;, and &quot;actor_token_type&quot;
+   parameters of the request and the &quot;issued_token_type&quot; member of the
+   response.  Token type identifiers are URIs.  Token exchange can work
+   with both tokens issued by other parties and tokens from the given
+   authorization server.  For the former, the token type identifier
+   indicates the syntax (e.g., JWT or SAML 2.0) so the authorization
+   server can parse it; for the latter, it indicates what the given
+   authorization server issued it for (e.g., &quot;access_token&quot; or
+   &quot;refresh_token&quot;).
+
+   The following token type identifiers are defined by this
+   specification.  Other URIs MAY be used to indicate other token types.
+
+   urn:ietf:params:oauth:token-type:access_token
+      Indicates that the token is an OAuth 2.0 access token issued by
+      the given authorization server.
+
+   urn:ietf:params:oauth:token-type:refresh_token
+      Indicates that the token is an OAuth 2.0 refresh token issued by
+      the given authorization server.
+
+   urn:ietf:params:oauth:token-type:id_token
+      Indicates that the token is an ID Token as defined in Section 2 of
+      [<a href="#ref-OpenID.Core">OpenID.Core</a>].
+
+   urn:ietf:params:oauth:token-type:saml1
+      Indicates that the token is a base64url-encoded SAML 1.1
+      [<a href="#ref-OASIS.saml-core-1.1">OASIS.saml-core-1.1</a>] assertion.
+
+   urn:ietf:params:oauth:token-type:saml2
+      Indicates that the token is a base64url-encoded SAML 2.0
+      [<a href="#ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>] assertion.
+
+   The value &quot;urn:ietf:params:oauth:token-type:jwt&quot;, which is defined in
+   Section 9 of [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>], indicates that the token is a JWT.
+
+   The distinction between an access token and a JWT is subtle.  An
+   access token represents a delegated authorization decision, whereas
+   JWT is a token format.  An access token can be formatted as a JWT but
+   doesn&#x27;t necessarily have to be.  And a JWT might well be an access
+   token, but not all JWTs are access tokens.  The intent of this
+   specification is that &quot;urn:ietf:params:oauth:token-type:access_token&quot;
+   be an indicator that the token is a typical OAuth access token issued
+   by the authorization server in question, opaque to the client, and
+   usable the same manner as any other access token obtained from that
+   authorization server.  (It could well be a JWT, but the client isn&#x27;t
+   and needn&#x27;t be aware of that fact.)  Whereas,
+   &quot;urn:ietf:params:oauth:token-type:jwt&quot; is to indicate specifically
+   that a JWT is being requested or sent (perhaps in a cross-domain use
+   case where the JWT is used as an authorization grant to obtain an
+   access token from a different authorization server as is facilitated
+   by [<a href="/doc/html/rfc7523" title="&quot;JSON Web Token (JWT) Profile for OAuth 2.0 Client Authentication and Authorization Grants&quot;">RFC7523</a>]).
+
+   Note that for tokens that are binary in nature, the URI used for
+   conveying them needs to be associated with the semantics of a base64
+   or other encoding suitable for usage with HTTP and OAuth.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  JSON Web Token Claims and Introspection Response Parameters</span>
+
+   It is useful to have defined mechanisms to express delegation within
+   a token as well as to express authorization to delegate or
+   impersonate.  Although the token exchange protocol described herein
+   can be used with any type of token, this section defines claims to
+   express such semantics specifically for JWTs and in an OAuth 2.0
+   Token Introspection [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>] response.  Similar definitions for
+   other types of tokens are possible but beyond the scope of this
+   specification.
+
+   Note that the claims not established herein but used in examples and
+   descriptions, such as &quot;iss&quot;, &quot;sub&quot;, &quot;exp&quot;, etc., are defined by
+   [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>].
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  &quot;act&quot; (Actor) Claim</span>
+
+   The &quot;act&quot; (actor) claim provides a means within a JWT to express that
+   delegation has occurred and identify the acting party to whom
+   authority has been delegated.  The &quot;act&quot; claim value is a JSON
+   object, and members in the JSON object are claims that identify the
+   actor.  The claims that make up the &quot;act&quot; claim identify and possibly
+   provide additional information about the actor.  For example, the
+   combination of the two claims &quot;iss&quot; and &quot;sub&quot; might be necessary to
+   uniquely identify an actor.
+
+   However, claims within the &quot;act&quot; claim pertain only to the identity
+   of the actor and are not relevant to the validity of the containing
+   JWT in the same manner as the top-level claims.  Consequently, non-
+   identity claims (e.g., &quot;exp&quot;, &quot;nbf&quot;, and &quot;aud&quot;) are not meaningful
+   when used within an &quot;act&quot; claim and are therefore not used.
+
+   Figure 5 illustrates the &quot;act&quot; (actor) claim within a JWT Claims Set.
+   The claims of the token itself are about user@example.com while the
+   &quot;act&quot; claim indicates that admin@example.com is the current actor.
+
+    {
+      &quot;aud&quot;:&quot;https://consumer.example.com&quot;,
+      &quot;iss&quot;:&quot;https://issuer.example.com&quot;,
+      &quot;exp&quot;:1443904177,
+      &quot;nbf&quot;:1443904077,
+      &quot;sub&quot;:&quot;user@example.com&quot;,
+      &quot;act&quot;:
+      {
+        &quot;sub&quot;:&quot;admin@example.com&quot;
+      }
+    }
+
+                           Figure 5: Actor Claim
+
+   A chain of delegation can be expressed by nesting one &quot;act&quot; claim
+   within another.  The outermost &quot;act&quot; claim represents the current
+   actor while nested &quot;act&quot; claims represent prior actors.  The least
+   recent actor is the most deeply nested.  The nested &quot;act&quot; claims
+   serve as a history trail that connects the initial request and
+   subject through the various delegation steps undertaken before
+   reaching the current actor.  In this sense, the current actor is
+   considered to include the entire authorization/delegation history,
+   leading naturally to the nested structure described here.
+
+   For the purpose of applying access control policy, the consumer of a
+   token MUST only consider the token&#x27;s top-level claims and the party
+   identified as the current actor by the &quot;act&quot; claim.  Prior actors
+   identified by any nested &quot;act&quot; claims are informational only and are
+   not to be considered in access control decisions.
+
+   The following example in Figure 6 illustrates nested &quot;act&quot; (actor)
+   claims within a JWT Claims Set.  The claims of the token itself are
+   about user@example.com while the &quot;act&quot; claim indicates that the
+   system &lt;https://service16.example.com&gt; is the current actor and
+   &lt;https://service77.example.com&gt; was a prior actor.  Such a token
+   might come about as the result of service16 receiving a token in a
+   call from service77 and exchanging it for a token suitable to call
+   service26 while the authorization server notes the situation in the
+   newly issued token.
+
+    {
+      &quot;aud&quot;:&quot;https://service26.example.com&quot;,
+      &quot;iss&quot;:&quot;https://issuer.example.com&quot;,
+      &quot;exp&quot;:1443904100,
+      &quot;nbf&quot;:1443904000,
+      &quot;sub&quot;:&quot;user@example.com&quot;,
+      &quot;act&quot;:
+      {
+        &quot;sub&quot;:&quot;https://service16.example.com&quot;,
+        &quot;act&quot;:
+        {
+          &quot;sub&quot;:&quot;https://service77.example.com&quot;
+        }
+      }
+    }
+
+                        Figure 6: Nested Actor Claim
+
+   When included as a top-level member of an OAuth token introspection
+   response, &quot;act&quot; has the same semantics and format as the claim of the
+   same name.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  &quot;scope&quot; (Scopes) Claim</span>
+
+   The value of the &quot;scope&quot; claim is a JSON string containing a space-
+   separated list of scopes associated with the token, in the format
+   described in <a href="/doc/html/rfc6749#section-3.3">Section&nbsp;3.3 of [RFC6749]</a>.
+
+   Figure 7 illustrates the &quot;scope&quot; claim within a JWT Claims Set.
+
+    {
+      &quot;aud&quot;:&quot;https://consumer.example.com&quot;,
+      &quot;iss&quot;:&quot;https://issuer.example.com&quot;,
+      &quot;exp&quot;:1443904177,
+      &quot;nbf&quot;:1443904077,
+      &quot;sub&quot;:&quot;dgaf4mvfs75Fci_FL3heQA&quot;,
+      &quot;scope&quot;:&quot;email profile phone address&quot;
+    }
+
+                           Figure 7: Scopes Claim
+
+   OAuth 2.0 Token Introspection [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>] already defines the &quot;scope&quot;
+   parameter to convey the scopes associated with the token.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  &quot;client_id&quot; (Client Identifier) Claim</span>
+
+   The &quot;client_id&quot; claim carries the client identifier of the OAuth 2.0
+   [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>] client that requested the token.
+
+   The following example in Figure 8 illustrates the &quot;client_id&quot; claim
+   within a JWT Claims Set indicating an OAuth 2.0 client with
+   &quot;s6BhdRkqt3&quot; as its identifier.
+
+    {
+      &quot;aud&quot;:&quot;https://consumer.example.com&quot;,
+      &quot;iss&quot;:&quot;https://issuer.example.com&quot;,
+      &quot;exp&quot;:1443904177,
+      &quot;sub&quot;:&quot;user@example.com&quot;,
+      &quot;client_id&quot;:&quot;s6BhdRkqt3&quot;
+    }
+
+                     Figure 8: Client Identifier Claim
+
+   OAuth 2.0 Token Introspection [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>] already defines the
+   &quot;client_id&quot; parameter as the client identifier for the OAuth 2.0
+   client that requested the token.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  &quot;may_act&quot; (Authorized Actor) Claim</span>
+
+   The &quot;may_act&quot; claim makes a statement that one party is authorized to
+   become the actor and act on behalf of another party.  The claim might
+   be used, for example, when a &quot;subject_token&quot; is presented to the
+   token endpoint in a token exchange request and &quot;may_act&quot; claim in the
+   subject token can be used by the authorization server to determine
+   whether the client (or party identified in the &quot;actor_token&quot;) is
+   authorized to engage in the requested delegation or impersonation.
+   The claim value is a JSON object, and members in the JSON object are
+   claims that identify the party that is asserted as being eligible to
+   act for the party identified by the JWT containing the claim.  The
+   claims that make up the &quot;may_act&quot; claim identify and possibly provide
+   additional information about the authorized actor.  For example, the
+   combination of the two claims &quot;iss&quot; and &quot;sub&quot; are sometimes necessary
+   to uniquely identify an authorized actor, while the &quot;email&quot; claim
+   might be used to provide additional useful information about that
+   party.
+
+   However, claims within the &quot;may_act&quot; claim pertain only to the
+   identity of that party and are not relevant to the validity of the
+   containing JWT in the same manner as top-level claims.  Consequently,
+   claims such as &quot;exp&quot;, &quot;nbf&quot;, and &quot;aud&quot; are not meaningful when used
+   within a &quot;may_act&quot; claim and are therefore not used.
+
+   Figure 9 illustrates the &quot;may_act&quot; claim within a JWT Claims Set.
+   The claims of the token itself are about user@example.com while the
+   &quot;may_act&quot; claim indicates that admin@example.com is authorized to act
+   on behalf of user@example.com.
+
+    {
+      &quot;aud&quot;:&quot;https://consumer.example.com&quot;,
+      &quot;iss&quot;:&quot;https://issuer.example.com&quot;,
+      &quot;exp&quot;:1443904177,
+      &quot;nbf&quot;:1443904077,
+      &quot;sub&quot;:&quot;user@example.com&quot;,
+      &quot;may_act&quot;:
+      {
+        &quot;sub&quot;:&quot;admin@example.com&quot;
+      }
+    }
+
+                      Figure 9: Authorized Actor Claim
+
+   When included as a top-level member of an OAuth token introspection
+   response, &quot;may_act&quot; has the same semantics and format as the claim of
+   the same name.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   Much of the guidance from <a href="/doc/html/rfc6749#section-10">Section&nbsp;10 of [RFC6749]</a>, the Security
+   Considerations in The OAuth 2.0 Authorization Framework, is also
+   applicable here.  Furthermore, [<a href="/doc/html/rfc6819" title="&quot;OAuth 2.0 Threat Model and Security Considerations&quot;">RFC6819</a>] provides additional security
+   considerations for OAuth, and [<a href="#ref-OAUTH-SECURITY">OAUTH-SECURITY</a>] has updated security
+   guidance based on deployment experience and new threats that have
+   emerged since OAuth 2.0 was originally published.
+
+   All of the normal security issues that are discussed in [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>],
+   especially in relationship to comparing URIs and dealing with
+   unrecognized values, also apply here.
+
+   In addition, both delegation and impersonation introduce unique
+   security issues.  Any time one principal is delegated the rights of
+   another principal, the potential for abuse is a concern.  The use of
+   the &quot;scope&quot; claim (in addition to other typical constraints such as a
+   limited token lifetime) is suggested to mitigate potential for such
+   abuse, as it restricts the contexts in which the delegated rights can
+   be exercised.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Privacy Considerations</span>
+
+   Tokens employed in the context of the functionality described herein
+   may contain privacy-sensitive information and, to prevent disclosure
+   of such information to unintended parties, MUST only be transmitted
+   over encrypted channels, such as Transport Layer Security (TLS).  In
+   cases where it is desirable to prevent disclosure of certain
+   information to the client, the token MUST be encrypted to its
+   intended recipient.  Deployments SHOULD determine the minimally
+   necessary amount of data and only include such information in issued
+   tokens.  In some cases, data minimization may include representing
+   only an anonymous or pseudonymous user.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  OAuth URI Registration</span>
+
+   IANA has registered the following values in the &quot;OAuth URI&quot;
+   subregistry of the &quot;OAuth Parameters&quot; registry
+   [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>].  The &quot;OAuth URI&quot; subregistry was established
+   by [<a href="/doc/html/rfc6755" title="&quot;An IETF URN Sub-Namespace for OAuth&quot;">RFC6755</a>].
+
+   *  URN: urn:ietf:params:oauth:grant-type:token-exchange
+   *  Common Name: Token exchange grant type for OAuth 2.0
+   *  Change Controller: IESG
+   *  Specification Document: <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  URN: urn:ietf:params:oauth:token-type:access_token
+   *  Common Name: Token type URI for an OAuth 2.0 access token
+   *  Change Controller: IESG
+   *  Specification Document: <a href="/doc/html/rfc8693#section-3">Section&nbsp;3 of RFC 8693</a>
+
+   *  URN: urn:ietf:params:oauth:token-type:refresh_token
+   *  Common Name: Token type URI for an OAuth 2.0 refresh token
+   *  Change Controller: IESG
+   *  Specification Document: <a href="/doc/html/rfc8693#section-3">Section&nbsp;3 of RFC 8693</a>
+
+   *  URN: urn:ietf:params:oauth:token-type:id_token
+   *  Common Name: Token type URI for an ID Token
+   *  Change Controller: IESG
+   *  Specification Document: <a href="/doc/html/rfc8693#section-3">Section&nbsp;3 of RFC 8693</a>
+
+   *  URN: urn:ietf:params:oauth:token-type:saml1
+   *  Common Name: Token type URI for a base64url-encoded SAML 1.1
+      assertion
+   *  Change Controller: IESG
+   *  Specification Document: <a href="/doc/html/rfc8693#section-3">Section&nbsp;3 of RFC 8693</a>
+
+   *  URN: urn:ietf:params:oauth:token-type:saml2
+   *  Common Name: Token type URI for a base64url-encoded SAML 2.0
+      assertion
+   *  Change Controller: IESG
+   *  Specification Document: <a href="/doc/html/rfc8693#section-3">Section&nbsp;3 of RFC 8693</a>
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  OAuth Parameters Registration</span>
+
+   IANA has registered the following values in the &quot;OAuth Parameters&quot;
+   subregistry of the &quot;OAuth Parameters&quot; registry
+   [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>].  The &quot;OAuth Parameters&quot; subregistry was
+   established by [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+
+   *  Parameter name: audience
+   *  Parameter usage location: token request
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  Parameter name: requested_token_type
+   *  Parameter usage location: token request
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  Parameter name: subject_token
+   *  Parameter usage location: token request
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  Parameter name: subject_token_type
+   *  Parameter usage location: token request
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  Parameter name: actor_token
+   *  Parameter usage location: token request
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  Parameter name: actor_token_type
+   *  Parameter usage location: token request
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.1">Section&nbsp;2.1 of RFC 8693</a>
+
+   *  Parameter name: issued_token_type
+   *  Parameter usage location: token response
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.2.1">Section&nbsp;2.2.1 of RFC 8693</a>
+
+<span class="h3"><a class="selflink" id="section-7.3" href="#section-7.3">7.3</a>.  OAuth Access Token Type Registration</span>
+
+   IANA has registered the following access token type in the &quot;OAuth
+   Access Token Types&quot; subregistry of the &quot;OAuth Parameters&quot; registry
+   [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>].  The &quot;OAuth Access Token Types&quot; subregistry
+   was established by [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+
+   *  Type name: N_A
+   *  Additional Token Endpoint Response Parameters: none
+   *  HTTP Authentication Scheme(s): none
+   *  Change controller: IESG
+   *  Specification document(s): <a href="/doc/html/rfc8693#section-2.2.1">Section&nbsp;2.2.1 of RFC 8693</a>
+
+<span class="h3"><a class="selflink" id="section-7.4" href="#section-7.4">7.4</a>.  JSON Web Token Claims Registration</span>
+
+   IANA has registered the following Claims in the &quot;JSON Web Token
+   Claims&quot; subregistry of the &quot;JSON Web Token (JWT)&quot; registry
+   [<a href="#ref-IANA.JWT" title="&quot;JSON Web Token (JWT)&quot;">IANA.JWT</a>].  The &quot;JSON Web Token Claims&quot; subregistry was established
+   by [<a href="#ref-JWT" title="&quot;JSON Web Token (JWT)&quot;">JWT</a>].
+
+   *  Claim Name: act
+   *  Claim Description: Actor
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8693#section-4.1">Section&nbsp;4.1 of RFC 8693</a>
+
+   *  Claim Name: scope
+   *  Claim Description: Scope Values
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8693#section-4.2">Section&nbsp;4.2 of RFC 8693</a>
+
+   *  Claim Name: client_id
+   *  Claim Description: Client Identifier
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8693#section-4.3">Section&nbsp;4.3 of RFC 8693</a>
+
+   *  Claim Name: may_act
+   *  Claim Description: Authorized Actor - the party that is authorized
+      to become the actor
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8693#section-4.4">Section&nbsp;4.4 of RFC 8693</a>
+
+<span class="h3"><a class="selflink" id="section-7.5" href="#section-7.5">7.5</a>.  OAuth Token Introspection Response Registration</span>
+
+   IANA has registered the following values in the &quot;OAuth Token
+   Introspection Response&quot; registry of the &quot;OAuth Parameters&quot; registry
+   [<a href="#ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>].  The &quot;OAuth Token Introspection Response&quot;
+   registry was established by [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>].
+
+   *  Name: act
+   *  Description: Actor
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8693#section-4.1">Section&nbsp;4.1 of RFC 8693</a>
+
+   *  Name: may_act
+   *  Description: Authorized Actor - the party that is authorized to
+      become the actor
+   *  Change Controller: IESG
+   *  Specification Document(s): <a href="/doc/html/rfc8693#section-4.4">Section&nbsp;4.4 of RFC 8693</a>
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-IANA.JWT">IANA.JWT</a>] IANA, &quot;JSON Web Token (JWT)&quot;,
+              &lt;<a href="https://www.iana.org/assignments/jwt">https://www.iana.org/assignments/jwt</a>&gt;.
+
+   [<a id="ref-IANA.OAuth.Parameters">IANA.OAuth.Parameters</a>]
+              IANA, &quot;OAuth Parameters&quot;,
+              &lt;<a href="https://www.iana.org/assignments/oauth-parameters">https://www.iana.org/assignments/oauth-parameters</a>&gt;.
+
+   [<a id="ref-JWT">JWT</a>]      Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web Token
+              (JWT)&quot;, <a href="/doc/html/rfc7519">RFC 7519</a>, DOI 10.17487/RFC7519, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7519">https://www.rfc-editor.org/info/rfc7519</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3986">RFC3986</a>]  Berners-Lee, T., Fielding, R., and L. Masinter, &quot;Uniform
+              Resource Identifier (URI): Generic Syntax&quot;, STD 66,
+              <a href="/doc/html/rfc3986">RFC 3986</a>, DOI 10.17487/RFC3986, January 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3986">https://www.rfc-editor.org/info/rfc3986</a>&gt;.
+
+   [<a id="ref-RFC6749">RFC6749</a>]  Hardt, D., Ed., &quot;The OAuth 2.0 Authorization Framework&quot;,
+              <a href="/doc/html/rfc6749">RFC 6749</a>, DOI 10.17487/RFC6749, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6749">https://www.rfc-editor.org/info/rfc6749</a>&gt;.
+
+   [<a id="ref-RFC7662">RFC7662</a>]  Richer, J., Ed., &quot;OAuth 2.0 Token Introspection&quot;,
+              <a href="/doc/html/rfc7662">RFC 7662</a>, DOI 10.17487/RFC7662, October 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7662">https://www.rfc-editor.org/info/rfc7662</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8259">RFC8259</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, STD 90, <a href="/doc/html/rfc8259">RFC 8259</a>,
+              DOI 10.17487/RFC8259, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8259">https://www.rfc-editor.org/info/rfc8259</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-OASIS.saml-core-1.1">OASIS.saml-core-1.1</a>]
+              Maler, E., Mishra, P., and R. Philpott, &quot;Assertions and
+              Protocol for the OASIS Security Assertion Markup Language
+              (SAML) V1.1&quot;, OASIS Standard oasis-sstc-saml-core-1.1,
+              September 2003, &lt;<a href="https://www.oasis-open.org/committees/download.php/3406/oasis-sstc-saml-core-1.1.pdf">https://www.oasis-</a>
+              <a href="https://www.oasis-open.org/committees/download.php/3406/oasis-sstc-saml-core-1.1.pdf">open.org/committees/download.php/3406/oasis-sstc-saml-</a>
+              <a href="https://www.oasis-open.org/committees/download.php/3406/oasis-sstc-saml-core-1.1.pdf">core-1.1.pdf</a>&gt;.
+
+   [<a id="ref-OASIS.saml-core-2.0-os">OASIS.saml-core-2.0-os</a>]
+              Cantor, S., Kemp, J., Philpott, R., and E. Maler,
+              &quot;Assertions and Protocol for the OASIS Security Assertion
+              Markup Language (SAML) V2.0&quot;, OASIS Standard saml-core-
+              2.0-os, March 2005, &lt;<a href="http://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">http://docs.oasis-</a>
+              <a href="http://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">open.org/security/saml/v2.0/saml-core-2.0-os.pdf</a>&gt;.
+
+   [<a id="ref-OAUTH-RESOURCE">OAUTH-RESOURCE</a>]
+              Campbell, B., Bradley, J., and H. Tschofenig, &quot;Resource
+              Indicators for OAuth 2.0&quot;, Work in Progress, Internet-
+              Draft, <a href="/doc/html/draft-ietf-oauth-resource-indicators-08">draft-ietf-oauth-resource-indicators-08</a>, 11
+              September 2019, &lt;<a href="https://tools.ietf.org/html/draft-ietf-oauth-resource-indicators-08">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-oauth-resource-indicators-08">oauth-resource-indicators-08</a>&gt;.
+
+   [<a id="ref-OAUTH-SECURITY">OAUTH-SECURITY</a>]
+              Lodderstedt, T., Bradley, J., Labunets, A., and D. Fett,
+              &quot;OAuth 2.0 Security Best Current Practice&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-ietf-oauth-security-topics-13">draft-ietf-oauth-security-</a>
+              <a href="/doc/html/draft-ietf-oauth-security-topics-13">topics-13</a>, 8 July 2019, &lt;<a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-13">https://tools.ietf.org/html/</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-13">draft-ietf-oauth-security-topics-13</a>&gt;.
+
+   [<a id="ref-OpenID.Core">OpenID.Core</a>]
+              Sakimura, N., Bradley, J., Jones, M., de Medeiros, B., and
+              C. Mortimore, &quot;OpenID Connect Core 1.0&quot;, November 2014,
+              &lt;<a href="https://openid.net/specs/openid-connect-core-1_0.html">https://openid.net/specs/openid-connect-core-1_0.html</a>&gt;.
+
+   [<a id="ref-RFC6750">RFC6750</a>]  Jones, M. and D. Hardt, &quot;The OAuth 2.0 Authorization
+              Framework: Bearer Token Usage&quot;, <a href="/doc/html/rfc6750">RFC 6750</a>,
+              DOI 10.17487/RFC6750, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6750">https://www.rfc-editor.org/info/rfc6750</a>&gt;.
+
+   [<a id="ref-RFC6755">RFC6755</a>]  Campbell, B. and H. Tschofenig, &quot;An IETF URN Sub-Namespace
+              for OAuth&quot;, <a href="/doc/html/rfc6755">RFC 6755</a>, DOI 10.17487/RFC6755, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6755">https://www.rfc-editor.org/info/rfc6755</a>&gt;.
+
+   [<a id="ref-RFC6819">RFC6819</a>]  Lodderstedt, T., Ed., McGloin, M., and P. Hunt, &quot;OAuth 2.0
+              Threat Model and Security Considerations&quot;, <a href="/doc/html/rfc6819">RFC 6819</a>,
+              DOI 10.17487/RFC6819, January 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6819">https://www.rfc-editor.org/info/rfc6819</a>&gt;.
+
+   [<a id="ref-RFC7521">RFC7521</a>]  Campbell, B., Mortimore, C., Jones, M., and Y. Goland,
+              &quot;Assertion Framework for OAuth 2.0 Client Authentication
+              and Authorization Grants&quot;, <a href="/doc/html/rfc7521">RFC 7521</a>, DOI 10.17487/RFC7521,
+              May 2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7521">https://www.rfc-editor.org/info/rfc7521</a>&gt;.
+
+   [<a id="ref-RFC7523">RFC7523</a>]  Jones, M., Campbell, B., and C. Mortimore, &quot;JSON Web Token
+              (JWT) Profile for OAuth 2.0 Client Authentication and
+              Authorization Grants&quot;, <a href="/doc/html/rfc7523">RFC 7523</a>, DOI 10.17487/RFC7523, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7523">https://www.rfc-editor.org/info/rfc7523</a>&gt;.
+
+   [<a id="ref-WS-Trust">WS-Trust</a>] Nadalin, A., Ed., Goodner, M., Ed., Gudgin, M., Ed.,
+              Barbir, A., Ed., and H. Granqvist, Ed., &quot;WS-Trust 1.4&quot;,
+              February 2012, &lt;<a href="https://docs.oasis-open.org/ws-sx/ws-trust/v1.4/ws-trust.html">https://docs.oasis-open.org/ws-sx/ws-</a>
+              <a href="https://docs.oasis-open.org/ws-sx/ws-trust/v1.4/ws-trust.html">trust/v1.4/ws-trust.html</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Additional Token Exchange Examples</span>
+
+   Two example token exchanges are provided in the following sections
+   illustrating impersonation and delegation, respectively (with extra
+   line breaks and indentation for display purposes only).
+
+<span class="h3"><a class="selflink" id="appendix-A.1" href="#appendix-A.1">A.1</a>.  Impersonation Token Exchange Example</span>
+
+<span class="h4"><a class="selflink" id="appendix-A.1.1" href="#appendix-A.1.1">A.1.1</a>.  Token Exchange Request</span>
+
+   In the following token exchange request, a client is requesting a
+   token with impersonation semantics (delegation is impossible with
+   only a &quot;subject_token&quot; and no &quot;actor_token&quot;).  The client tells the
+   authorization server that it needs a token for use at the target
+   service with the logical name &quot;urn:example:cooperation-context&quot;.
+
+    POST /as/token.oauth2 HTTP/1.1
+    Host: as.example.com
+    Content-Type: application/x-www-form-urlencoded
+
+    grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Atoken-exchange
+    &amp;audience=urn%3Aexample%3Acooperation-context
+    &amp;subject_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjE2In0.eyJhdWQiOiJodHRwc
+      zovL2FzLmV4YW1wbGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9vcmlnaW5hbC1pc3N1ZXI
+      uZXhhbXBsZS5uZXQiLCJleHAiOjE0NDE5MTA2MDAsIm5iZiI6MTQ0MTkwOTAwMCwic
+      3ViIjoiYmRjQGV4YW1wbGUubmV0Iiwic2NvcGUiOiJvcmRlcnMgcHJvZmlsZSBoaXN
+      0b3J5In0.PRBg-jXn4cJuj1gmYXFiGkZzRuzbXZ_sDxdE98ddW44ufsbWLKd3JJ1VZ
+      hF64pbTtfjy4VXFVBDaQpKjn5JzAw
+    &amp;subject_token_type=urn%3Aietf%3Aparams%3Aoauth%3Atoken-type%3Ajwt
+
+                     Figure 10: Token Exchange Request
+
+<span class="h4"><a class="selflink" id="appendix-A.1.2" href="#appendix-A.1.2">A.1.2</a>.  Subject Token Claims</span>
+
+   The &quot;subject_token&quot; in the prior request is a JWT, and the decoded
+   JWT Claims Set is shown here.  The JWT is intended for consumption by
+   the authorization server within a specific time window.  The subject
+   of the JWT (&quot;bdc@example.net&quot;) is the party on behalf of whom the new
+   token is being requested.
+
+     {
+       &quot;aud&quot;:&quot;https://as.example.com&quot;,
+       &quot;iss&quot;:&quot;https://original-issuer.example.net&quot;,
+       &quot;exp&quot;:1441910600,
+       &quot;nbf&quot;:1441909000,
+       &quot;sub&quot;:&quot;bdc@example.net&quot;,
+       &quot;scope&quot;:&quot;orders profile history&quot;
+     }
+
+                      Figure 11: Subject Token Claims
+
+<span class="h4"><a class="selflink" id="appendix-A.1.3" href="#appendix-A.1.3">A.1.3</a>.  Token Exchange Response</span>
+
+   The &quot;access_token&quot; parameter of the token exchange response shown
+   below contains the new token that the client requested.  The other
+   parameters of the response indicate that the token is a bearer access
+   token that expires in an hour.
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    Cache-Control: no-cache, no-store
+
+    {
+     &quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6IjcyIn0.eyJhdWQiOiJ1cm4
+       6ZXhhbXBsZTpjb29wZXJhdGlvbi1jb250ZXh0IiwiaXNzIjoiaHR0cHM6Ly9hcy5l
+       eGFtcGxlLmNvbSIsImV4cCI6MTQ0MTkxMzYxMCwic3ViIjoiYmRjQGV4YW1wbGUub
+       mV0Iiwic2NvcGUiOiJvcmRlcnMgcHJvZmlsZSBoaXN0b3J5In0.rMdWpSGNACTvnF
+       uOL74sYZ6MVuld2Z2WkGLmQeR9ztj6w2OXraQlkJmGjyiCq24kcB7AI2VqVxl3wSW
+       nVKh85A&quot;,
+     &quot;issued_token_type&quot;:
+       &quot;urn:ietf:params:oauth:token-type:access_token&quot;,
+     &quot;token_type&quot;:&quot;Bearer&quot;,
+     &quot;expires_in&quot;:3600
+    }
+
+                     Figure 12: Token Exchange Response
+
+<span class="h4"><a class="selflink" id="appendix-A.1.4" href="#appendix-A.1.4">A.1.4</a>.  Issued Token Claims</span>
+
+   The decoded JWT Claims Set of the issued token is shown below.  The
+   new JWT is issued by the authorization server and intended for
+   consumption by a system entity known by the logical name
+   &quot;urn:example:cooperation-context&quot; any time before its expiration.
+   The subject (&quot;sub&quot;) of the JWT is the same as the subject the token
+   used to make the request, which effectively enables the client to
+   impersonate that subject at the system entity known by the logical
+   name of &quot;urn:example:cooperation-context&quot; by using the token.
+
+     {
+       &quot;aud&quot;:&quot;urn:example:cooperation-context&quot;,
+       &quot;iss&quot;:&quot;https://as.example.com&quot;,
+       &quot;exp&quot;:1441913610,
+       &quot;sub&quot;:&quot;bdc@example.net&quot;,
+       &quot;scope&quot;:&quot;orders profile history&quot;
+     }
+
+                       Figure 13: Issued Token Claims
+
+<span class="h3"><a class="selflink" id="appendix-A.2" href="#appendix-A.2">A.2</a>.  Delegation Token Exchange Example</span>
+
+<span class="h4"><a class="selflink" id="appendix-A.2.1" href="#appendix-A.2.1">A.2.1</a>.  Token Exchange Request</span>
+
+   In the following token exchange request, a client is requesting a
+   token and providing both a &quot;subject_token&quot; and an &quot;actor_token&quot;.  The
+   client tells the authorization server that it needs a token for use
+   at the target service with the logical name &quot;urn:example:cooperation-
+   context&quot;.  Policy at the authorization server dictates that the
+   issued token be a composite.
+
+    POST /as/token.oauth2 HTTP/1.1
+    Host: as.example.com
+    Content-Type: application/x-www-form-urlencoded
+
+    grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Atoken-exchange
+    &amp;audience=urn%3Aexample%3Acooperation-context
+    &amp;subject_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjE2In0.eyJhdWQiOiJodHRwc
+      zovL2FzLmV4YW1wbGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9vcmlnaW5hbC1pc3N1ZXI
+      uZXhhbXBsZS5uZXQiLCJleHAiOjE0NDE5MTAwNjAsInNjb3BlIjoic3RhdHVzIGZlZ
+      WQiLCJzdWIiOiJ1c2VyQGV4YW1wbGUubmV0IiwibWF5X2FjdCI6eyJzdWIiOiJhZG1
+      pbkBleGFtcGxlLm5ldCJ9fQ.4rPRSWihQbpMIgAmAoqaJojAxj-p2X8_fAtAGTXrvM
+      xU-eEZHnXqY0_AOZgLdxw5DyLzua8H_I10MCcckF-Q_g
+    &amp;subject_token_type=urn%3Aietf%3Aparams%3Aoauth%3Atoken-type%3Ajwt
+    &amp;actor_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjE2In0.eyJhdWQiOiJodHRwczo
+      vL2FzLmV4YW1wbGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9vcmlnaW5hbC1pc3N1ZXIuZ
+      XhhbXBsZS5uZXQiLCJleHAiOjE0NDE5MTAwNjAsInN1YiI6ImFkbWluQGV4YW1wbGU
+      ubmV0In0.7YQ-3zPfhUvzje5oqw8COCvN5uP6NsKik9CVV6cAOf4QKgM-tKfiOwcgZ
+      oUuDL2tEs6tqPlcBlMjiSzEjm3yBg
+    &amp;actor_token_type=urn%3Aietf%3Aparams%3Aoauth%3Atoken-type%3Ajwt
+
+                     Figure 14: Token Exchange Request
+
+<span class="h4"><a class="selflink" id="appendix-A.2.2" href="#appendix-A.2.2">A.2.2</a>.  Subject Token Claims</span>
+
+   The &quot;subject_token&quot; in the prior request is a JWT, and the decoded
+   JWT Claims Set is shown here.  The JWT is intended for consumption by
+   the authorization server before a specific expiration time.  The
+   subject of the JWT (&quot;user@example.net&quot;) is the party on behalf of
+   whom the new token is being requested.
+
+     {
+       &quot;aud&quot;:&quot;https://as.example.com&quot;,
+       &quot;iss&quot;:&quot;https://original-issuer.example.net&quot;,
+       &quot;exp&quot;:1441910060,
+       &quot;scope&quot;:&quot;status feed&quot;,
+       &quot;sub&quot;:&quot;user@example.net&quot;,
+       &quot;may_act&quot;:
+       {
+         &quot;sub&quot;:&quot;admin@example.net&quot;
+       }
+     }
+
+                      Figure 15: Subject Token Claims
+
+<span class="h4"><a class="selflink" id="appendix-A.2.3" href="#appendix-A.2.3">A.2.3</a>.  Actor Token Claims</span>
+
+   The &quot;actor_token&quot; in the prior request is a JWT, and the decoded JWT
+   Claims Set is shown here.  This JWT is also intended for consumption
+   by the authorization server before a specific expiration time.  The
+   subject of the JWT (&quot;admin@example.net&quot;) is the actor that will wield
+   the security token being requested.
+
+     {
+       &quot;aud&quot;:&quot;https://as.example.com&quot;,
+       &quot;iss&quot;:&quot;https://original-issuer.example.net&quot;,
+       &quot;exp&quot;:1441910060,
+       &quot;sub&quot;:&quot;admin@example.net&quot;
+     }
+
+                       Figure 16: Actor Token Claims
+
+<span class="h4"><a class="selflink" id="appendix-A.2.4" href="#appendix-A.2.4">A.2.4</a>.  Token Exchange Response</span>
+
+   The &quot;access_token&quot; parameter of the token exchange response shown
+   below contains the new token that the client requested.  The other
+   parameters of the response indicate that the token is a JWT that
+   expires in an hour and that the access token type is not applicable
+   since the issued token is not an access token.
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    Cache-Control: no-cache, no-store
+
+    {
+     &quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6IjcyIn0.eyJhdWQiOiJ1cm4
+       6ZXhhbXBsZTpjb29wZXJhdGlvbi1jb250ZXh0IiwiaXNzIjoiaHR0cHM6Ly9hcy5l
+       eGFtcGxlLmNvbSIsImV4cCI6MTQ0MTkxMzYxMCwic2NvcGUiOiJzdGF0dXMgZmVlZ
+       CIsInN1YiI6InVzZXJAZXhhbXBsZS5uZXQiLCJhY3QiOnsic3ViIjoiYWRtaW5AZX
+       hhbXBsZS5uZXQifX0.3paKl9UySKYB5ng6_cUtQ2qlO8Rc_y7Mea7IwEXTcYbNdwG
+       9-G1EKCFe5fW3H0hwX-MSZ49Wpcb1SiAZaOQBtw&quot;,
+     &quot;issued_token_type&quot;:&quot;urn:ietf:params:oauth:token-type:jwt&quot;,
+     &quot;token_type&quot;:&quot;N_A&quot;,
+     &quot;expires_in&quot;:3600
+    }
+
+                     Figure 17: Token Exchange Response
+
+<span class="h4"><a class="selflink" id="appendix-A.2.5" href="#appendix-A.2.5">A.2.5</a>.  Issued Token Claims</span>
+
+   The decoded JWT Claims Set of the issued token is shown below.  The
+   new JWT is issued by the authorization server and intended for
+   consumption by a system entity known by the logical name
+   &quot;urn:example:cooperation-context&quot; any time before its expiration.
+   The subject (&quot;sub&quot;) of the JWT is the same as the subject of the
+   &quot;subject_token&quot; used to make the request.  The actor (&quot;act&quot;) of the
+   JWT is the same as the subject of the &quot;actor_token&quot; used to make the
+   request.  This indicates delegation and identifies
+   &quot;admin@example.net&quot; as the current actor to whom authority has been
+   delegated to act on behalf of &quot;user@example.net&quot;.
+
+     {
+       &quot;aud&quot;:&quot;urn:example:cooperation-context&quot;,
+       &quot;iss&quot;:&quot;https://as.example.com&quot;,
+       &quot;exp&quot;:1441913610,
+       &quot;scope&quot;:&quot;status feed&quot;,
+       &quot;sub&quot;:&quot;user@example.net&quot;,
+       &quot;act&quot;:
+       {
+         &quot;sub&quot;:&quot;admin@example.net&quot;
+       }
+     }
+
+                       Figure 18: Issued Token Claims
+
+Acknowledgements
+
+   This specification was developed within the OAuth Working Group,
+   which includes dozens of active and dedicated participants.  It was
+   produced under the chairmanship of Hannes Tschofenig, Derek Atkins,
+   and Rifaat Shekh-Yusef, with Kathleen Moriarty, Stephen Farrell, Eric
+   Rescorla, Roman Danyliw, and Benjamin Kaduk serving as Security Area
+   Directors.
+
+   The following individuals contributed ideas, feedback, and wording to
+   this specification: Caleb Baker, Vittorio Bertocci, Mike Brown,
+   Thomas Broyer, Roman Danyliw, William Denniss, Vladimir Dzhuvinov,
+   Eric Fazendin, Phil Hunt, Benjamin Kaduk, Jason Keglovitz, Torsten
+   Lodderstedt, Barry Leiba, Adam Lewis, James Manger, Nov Matake, Matt
+   Miller, Hilarie Orman, Matthew Perry, Eric Rescorla, Justin Richer,
+   Adam Roach, Rifaat Shekh-Yusef, Scott Tomilson, and Hannes
+   Tschofenig.
+
+Authors&#x27; Addresses
+
+   Michael B. Jones
+   Microsoft
+
+   Email: mbj@microsoft.com
+   URI:   <a href="https://self-issued.info/">https://self-issued.info/</a>
+
+
+   Anthony Nadalin
+   Microsoft
+
+   Email: tonynad@microsoft.com
+
+
+   Brian Campbell (editor)
+   Ping Identity
+
+   Email: brian.d.campbell@gmail.com
+
+
+   John Bradley
+   Yubico
+
+   Email: ve7jtb@ve7jtb.com
+
+
+   Chuck Mortimore
+   Visa
+
+   Email: chuck.mortimore@visa.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

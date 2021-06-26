@@ -1,0 +1,348 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc65
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc65/">
+  <meta name="description" content="Comments on Host/Host Protocol document #1 (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc65.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc65.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc65.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc65/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc65/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc65@ietf.org?subject=rfc65" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc65-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc65-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc65-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        Dave Walden
+Request for Comments: 65                       A/S Norsk Data-Elektonikk
+                                                         August 29, 1970
+
+
+  <span class="h1">Comments on Host-Host Protocol Document No. 1 (S. Crocker - 8/3/70)</span>
+
+   Page 3.   Eliminate marking.  Instead, make all regular messages into
+   two message: The first containing just the leader and indicating that
+   the data follows in the second (next) message.  Do this both from the
+   source Host to its IMP and from the destination IMP to its Host.
+   Thus, no more hunting for the beginning of the data is necessary.
+   Once this adjustment is made, an additional simplification is
+   available.  If the maximum message length is a common multiple of the
+   word sizes of all the computers in the network (perhaps 2880*2 bits),
+   successive messages of long files can be dropped in place without
+   shifting.
+
+   Page 4.   Control messages should be sent to and from the _control
+   socket_  -- not over the control link.  The concept of the control
+   link causes a great big, unnecessary special case.
+
+   Page 5.   Assigning sockets permanently to certain network resources
+   should be encouraged and a directory of the socket/resource
+   associations should be available somewhere in the network, perhaps in
+   physical book form at each site.
+
+   Page 6.  Links have no Host-Host purpose other than identifying a
+   connection so that socket numbers don&#x27;t have to be included in all
+   messages and to simplify table look-ups in the NCPs.  However, since
+   there are possibly 512 links* with the same number, links don&#x27;t aid
+   table look-ups very much.  Also finding the next available link to a
+   particular destination is very ugly .  Therefore, I suggest limiting
+   the number of links to a total of n (where n = 32, 64, or 256 or some
+   other good number) for all destinations.  In other words, a
+   particular link is only in use to one destination at a time(actually
+   from one destination at a time since the receiver picks the link to
+   be used for a connection).  This change makes picking the next
+   available link very simple and,I feel,is a worthwhile change if only
+   for this reason.  The question of simplifying table look-ups is a
+   little more complex.  It is easy to use the link directly as an index
+   into tables in the receive portion of the NCP since the receiver
+   picks the link.  But a hash table or linear search or something is
+   still necessary in the send portion of the NCP.  This too can be
+   fixed with the following changes.  Add to STR a _pseudo link_  chosen
+   by the sender. This link is sent in all non-control messages in the 8
+   --------------------------------------
+   *A destination number is 9 bits.
+
+
+
+<span class="grey">Walden                                                          [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc65">RFC 65</a>               Comments on Host-Host Protocol          August 1970</span>
+
+
+   bits to the right of the link in the leader.  The IMP must preserve
+   these bits and return them with RFNMs and the receiver must use the
+   pseudo link instead of the link in RET and INR.  The extra memory
+   necessary to store the pseudo link in the NCP receive tables (which
+   are indexed by link) and the link in the NCP send tables (which are
+   indexed by pseudo link) is certainly less than the overhead necessary
+   to maintain associative tables.
+
+   Page 8.   The allocate mechanism seems very inconvenient for the
+   receive portion of the NCP to use.  The receiver wants the allocation
+   to be used up in units of the receiver&#x27;s buffer size not in units of
+   sender messages which may be variable length.  Otherwise the receiver
+   has a memory compaction problem.
+
+   Page 9.   The new irregular message to make the &quot;cease&quot; mechanism
+   work are unnecessary, I think.  The sender can keep track (probably
+   with a one bit counter) of ALLs and GVBs and ignore GVB 0s for which
+   resume ALLs have already arrived.   This the receiver need not know
+   whether the cease has been sent or not.
+
+   Page 15.  If I implemented an NCP, all ERRs would be treated like
+   NOP.  As an error control mechanism ERR is complicated and
+   insufficient.  Who wants to debug a complicated mechanism which only
+   catches bugs due to the primary mechanism being undebugged.  The one
+   error control mechanism I would provide is a receive process to send
+   process acknowledgment on every message.  If this is not received for
+   too long, the send process can send the message again if it has been
+   saving it.  This acknowledgment catches errors causing message loss
+   at the process/NCP, NCP/NCP, Host/IMP, IMP/IMP, etc.  levels.
+   Currently the Host/IMP interface is particularly lacking in useful
+   error controls.  I wouldn&#x27;t worry about kinds of errors check-sums
+   are designed to pick up.  If dropped and picked up bits ever become a
+   problem either add hardware to more interfaces or let the receive
+   process not send the process to process acknowledgment if a software
+   checksum does not check.
+
+   The page 3 and page 6 comments involve a change to the IMP program.
+   I feel a tiny bit guilty suggesting changes I don&#x27;t have to implement
+   any more.  However, I trust Crowther and Cosell will, as always,
+   resist bad changes while making sensible ones.  The page 9 comment is
+   aimed at avoiding a change in the IMP program.
+
+
+         [ This RFC was put into machine readable form for entry ]
+           [ into the online RFC archives by Luke Hollins 8/99]
+
+
+
+
+
+
+Walden                                                          [Page 2]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,1412 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8973
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-dots-server-discovery/">
+  <meta name="description" content="DDoS Open Threat Signaling (DOTS) Agent Discovery (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8973.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8973.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8973.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8973.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8973/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8973/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/dots/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-dots-server-discovery@ietf.org?subject=draft-ietf-dots-server-discovery" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-dots-server-discovery-15.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dots-server-discovery-15.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-dots-server-discovery-15.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-dots-server-discovery-15">draft-ietf-dots-server-discovery-15</a>              Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      M. Boucadair
+Request for Comments: 8973                                        Orange
+Category: Standards Track                                     T. Reddy.K
+ISSN: 2070-1721                                                   McAfee
+                                                            January 2021
+
+
+           <span class="h1">DDoS Open Threat Signaling (DOTS) Agent Discovery</span>
+
+Abstract
+
+   This document specifies mechanisms to configure DDoS Open Threat
+   Signaling (DOTS) clients with their DOTS servers.  The discovery
+   procedure also covers the DOTS signal channel Call Home.  It can be
+   useful to know the appropriate DOTS server for a given location in
+   order to engage mitigation actions.  This is true even in cases where
+   the DOTS client cannot localize the attack: cases where it only knows
+   that some resources are under attack and that help is needed.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8973">https://www.rfc-editor.org/info/rfc8973</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Why Multiple Discovery Mechanisms?
+   4.  DOTS Discovery Procedure
+   5.  DHCP Options for DOTS Agent Discovery
+     5.1.  DHCPv6 DOTS Options
+       5.1.1.  Format of DOTS Reference Identifier Option
+       5.1.2.  Format of DOTS Address Option
+       5.1.3.  DHCPv6 Client Behavior
+     5.2.  DHCPv4 DOTS Options
+       5.2.1.  Format of DOTS Reference Identifier Option
+       5.2.2.  Format of DOTS Address Option
+       5.2.3.  DHCPv4 Client Behavior
+   6.  Discovery Using Service Resolution
+   7.  DNS Service Discovery
+   8.  Security Considerations
+     8.1.  DHCP
+     8.2.  Service Resolution
+     8.3.  DNS Service Discovery
+   9.  IANA Considerations
+     9.1.  Service Name and Transport Protocol Port Number Registry
+     9.2.  DHCPv6 Options
+     9.3.  DHCPv4 Options
+     9.4.  Application Service &amp; Application Protocol Tags
+       9.4.1.  DOTS Application Service Tag Registration
+       9.4.2.  DOTS Call Home Application Service Tag Registration
+       9.4.3.  signal.udp Application Protocol Tag Registration
+       9.4.4.  signal.tcp Application Protocol Tag Registration
+       9.4.5.  data.tcp Application Protocol Tag Registration
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
+   Acknowledgements
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   DDoS Open Threat Signaling (DOTS) [<a href="/doc/html/rfc8811" title="&quot;DDoS Open Threat Signaling (DOTS) Architecture&quot;">RFC8811</a>] specifies an architecture
+   in which a DOTS client can inform a DOTS server that the network is
+   under a potential attack and that appropriate mitigation actions are
+   required.  Indeed, because the lack of a common method to coordinate
+   a real-time response among involved actors and network domains
+   inhibits the effectiveness of DDoS attack mitigation, the DOTS signal
+   channel protocol [<a href="/doc/html/rfc8782" title="&quot;Distributed Denial-of- Service Open Threat Signaling (DOTS) Signal Channel Specification&quot;">RFC8782</a>] is meant to carry requests for DDoS attack
+   mitigation.  With this approach, DOTS can reduce the impact of an
+   attack and lead to more efficient defensive actions in various
+   deployment scenarios, such as those discussed in [<a href="#ref-DOTS-USE-CASES">DOTS-USE-CASES</a>].
+   Moreover, DOTS clients can instruct a DOTS server to install named
+   filtering rules by means of the DOTS data channel protocol [<a href="/doc/html/rfc8783" title="&quot;Distributed Denial-of-Service Open Threat Signaling (DOTS) Data Channel Specification&quot;">RFC8783</a>].
+
+   The basic high-level DOTS architecture is illustrated in Figure 1.
+
+                 +-----------+            +-------------+
+                 | Mitigator | ~~~~~~~~~~ | DOTS Server |
+                 +-----------+            +------+------+
+                                                 |
+                                                 |
+                                                 |
+                 +---------------+        +------+------+
+                 | Attack Target | ~~~~~~ | DOTS Client |
+                 +---------------+        +-------------+
+
+                     Figure 1: Basic DOTS Architecture
+
+   [<a id="ref-RFC8811">RFC8811</a>] specifies that the DOTS client may be provided with a list
+   of DOTS servers, each associated with one or more IP addresses.
+   These addresses may or may not be of the same address family.  The
+   DOTS client establishes one or more DOTS sessions by connecting to
+   the provided DOTS server addresses.
+
+   This document specifies methods for DOTS clients to discover their
+   DOTS server(s).  The rationale for specifying multiple discovery
+   mechanisms is discussed in <a href="#section-3">Section 3</a>.
+
+   The discovery methods can also be used by a DOTS server to locate a
+   DOTS client in the context of DOTS signal channel Call Home
+   [<a href="#ref-DOTS-SIG-CALL-HOME">DOTS-SIG-CALL-HOME</a>].  The basic high-level DOTS Call Home
+   architecture is illustrated in Figure 2.
+
+                 +---------------+        +-------------+
+                 | Alert         | ~~~~~~ |  Call Home  |
+                 |               |        | DOTS Client |
+                 +---------------+        +------+------+
+                                                 |
+                                                 |
+                                                 |
+                 +---------------+        +------+------+
+                 |    Attack     | ~~~~~~ |  Call Home  |
+                 |   Source(s)   |        | DOTS Server |
+                 +---------------+        +-------------+
+
+   Figure 2: Basic DOTS Signal Channel Call Home Functional Architecture
+
+   A DOTS agent may be used to establish base DOTS channels, DOTS Call
+   Home, or both.  This specification accommodates all these deployment
+   cases.
+
+   Considerations for the selection of DOTS server(s) by multihomed DOTS
+   clients are out of this document&#x27;s scope; readers should refer to
+   [<a href="#ref-DOTS-MULTIHOMING">DOTS-MULTIHOMING</a>] for more details.
+
+   This document assumes that security credentials to authenticate DOTS
+   server(s) are pre-provisioned to a DOTS client using a mechanism such
+   as (but not limited to) those discussed in [<a href="/doc/html/rfc8572" title="&quot;Secure Zero Touch Provisioning (SZTP)&quot;">RFC8572</a>] or
+   [<a href="#ref-BTSRP-KEYINFR">BTSRP-KEYINFR</a>].  DOTS clients use those credentials for
+   authentication purposes following the rules documented in [<a href="/doc/html/rfc8782" title="&quot;Distributed Denial-of- Service Open Threat Signaling (DOTS) Signal Channel Specification&quot;">RFC8782</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   The reader should be familiar with the terms defined in [<a href="/doc/html/rfc3958" title="&quot;Domain-Based Application Service Location Using SRV RRs and the Dynamic Delegation Discovery Service (DDDS)&quot;">RFC3958</a>].
+
+   This document makes use of the following terms:
+
+   DHCP:  refers to both DHCPv4 [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>] and DHCPv6 [<a href="/doc/html/rfc8415" title="&quot;Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;">RFC8415</a>].
+
+   DOTS client:  refers to a DOTS-aware software module responsible for
+      requesting attack response coordination with other DOTS-aware
+      elements.
+
+   DOTS server:  is a DOTS-aware software module handling and responding
+      to messages from DOTS clients.  The DOTS server enables mitigation
+      on behalf of the DOTS client, if requested, by communicating the
+      DOTS client&#x27;s request to the mitigator and returning selected
+      mitigator feedback to the requesting DOTS client.
+
+   Call Home DOTS client or server:  refers to a DOTS client or server
+      deployed in a Call Home scenario (Figure 2).
+
+   DOTS agent:  is any DOTS-aware software module capable of
+      participating in a DOTS channel.
+
+   Peer DOTS agent:  refers to the peer DOTS server (base DOTS
+      operation) or to a peer Call Home DOTS client (for DOTS signal
+      channel Call Home).
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Why Multiple Discovery Mechanisms?</span>
+
+   Analysis of the various use cases sketched in [<a href="#ref-DOTS-USE-CASES">DOTS-USE-CASES</a>]
+   reveals that it is unlikely that one single discovery method can be
+   suitable for all the sample deployments.  Concretely:
+
+   *  Many of the use cases discussed in [<a href="#ref-DOTS-USE-CASES">DOTS-USE-CASES</a>] do involve
+      Customer Premises Equipment (CPE).  Multiple CPEs connected to
+      distinct network providers may even be considered.  It is
+      intuitive to leverage existing mechanisms, such as discovery using
+      service resolution or DHCP, to provision the CPE acting as a DOTS
+      client with the DOTS server(s).
+
+   *  Resolving a DOTS server domain name offered by an upstream transit
+      provider provisioned to a DOTS client into IP address(es) requires
+      the use of the appropriate DNS resolvers; otherwise, resolving
+      those names will fail.  The use of protocols, such as DHCP, does
+      allow associating provisioned DOTS server domain names with a list
+      of DNS servers to be used for name resolution.  Furthermore, DHCP
+      allows for directly providing IP addresses, therefore, avoiding
+      the need for extra lookup delays.
+
+   *  Some of the use cases may allow DOTS clients to have direct
+      communications with upstream DOTS servers, that is, no DOTS
+      gateway is involved.  Leveraging existing protocol behaviors that
+      do not require specific features on the node embedding the DOTS
+      client may ease DOTS deployment.  Typically, the use of
+      Straightforward-Naming Authority Pointer (S-NAPTR) lookups
+      [<a href="/doc/html/rfc3958" title="&quot;Domain-Based Application Service Location Using SRV RRs and the Dynamic Delegation Discovery Service (DDDS)&quot;">RFC3958</a>] allows the DOTS server administrators to provision the
+      preferred DOTS transport protocol between the DOTS client and the
+      DOTS server and allows the DOTS client to discover this
+      preference.
+
+   *  The upstream network provider is not the DDoS mitigation provider
+      for some of these use cases.  It is safe to assume that, for such
+      deployments, the DOTS server(s) domain name is provided during the
+      service subscription (i.e., manual/local configuration).
+
+   *  Multiple DOTS clients may be enabled within a network (e.g., an
+      enterprise network).  Dynamic discovery needs to be deterministic
+      from an operational standpoint.
+
+   *  Some of the use cases may involve a DOTS gateway that is
+      responsible for selecting the appropriate DOTS server(s) to relay
+      requests received from DOTS clients.
+
+   Consequently, this document describes a unified discovery logic
+   (<a href="#section-4">Section 4</a>) that involves the following mechanisms:
+
+   *  dynamic discovery using DHCP (<a href="#section-5">Section 5</a>)
+
+   *  a resolution mechanism based on S-NAPTR resource records in the
+      DNS (<a href="#section-6">Section 6</a>)
+
+   *  DNS Service Discovery (<a href="#section-7">Section 7</a>)
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  DOTS Discovery Procedure</span>
+
+   Operators will need a consistent set of ways in which DOTS clients
+   can discover this information and a consistent priority among these
+   options.  If some devices prefer manual configuration over dynamic
+   discovery while others prefer dynamic discovery over manual
+   configuration, the result will be a process where the operator must
+   find devices that are using the wrong DOTS server(s), determine how
+   to ensure the devices are configured properly, and then reconfigure
+   the device through the preferred method.
+
+   All DOTS clients MUST support at least one of the three mechanisms
+   below to determine a DOTS server list.  All DOTS clients SHOULD
+   implement all three, or as many as are practical for any specific
+   device, of the following ways to discover DOTS servers in order to
+   facilitate the deployment of DOTS in large-scale environments.  For
+   example, a CPE will support the first two mechanisms, a host within a
+   LAN will support the last two mechanisms, or an application server
+   will support a local configuration.  More examples are discussed in
+   <a href="#section-3">Section 3</a>.  DOTS clients will prefer information received from the
+   discovery methods in the order listed below.
+
+   1.  Explicit Configuration:
+
+       Local/Manual Configuration:  A DOTS client will learn the DOTS
+          server(s) by means of local or manual DOTS configuration
+          (i.e., DOTS servers configured at the system level).
+          Configuration discovered from a DOTS client application is
+          considered a local configuration.
+
+          An implementation may give the user an opportunity (e.g., by
+          means of configuration file options or menu items) to specify
+          DOTS server(s) for each address family.  These may be
+          specified either as a list of IP addresses or the DNS name of
+          a DOTS server.  When only DOTS server IP addresses are
+          configured, a reference identifier must also be configured for
+          authentication purposes.
+
+       Automatic Configuration (e.g., DHCP):  The DOTS client attempts
+          to discover DOTS server(s) names and/or addresses from DHCP,
+          as described in <a href="#section-5">Section 5</a>.
+
+   2.  Service Resolution: The DOTS client attempts to discover DOTS
+       server name(s) using service resolution, as specified in
+       <a href="#section-6">Section 6</a>.
+
+   3.  DNS-SD: DNS-based Service Discovery.  The DOTS client attempts to
+       discover DOTS server name(s) using DNS service discovery, as
+       specified in <a href="#section-7">Section 7</a>.
+
+   Some of these mechanisms imply the use of DNS to resolve the IP
+   address(es) of the DOTS server, while others imply an IP address of
+   the relevant DOTS server is obtained directly.  Implementation
+   options may vary on a per-device basis, as some devices may not have
+   DNS capabilities and/or suitable DNS configuration.
+
+   On hosts with more than one interface or address family (IPv4/IPv6),
+   the DOTS server discovery procedure has to be performed for each
+   interface-/address-family combination.  A DOTS client may choose to
+   perform the discovery procedure only for a desired interface/address
+   combination if the client does not wish to discover a DOTS server for
+   all interface-/address-family combinations.
+
+   This procedure is also followed by a Call Home DOTS server to
+   discover its Call Home DOTS client in the context of
+   [<a href="#ref-DOTS-SIG-CALL-HOME">DOTS-SIG-CALL-HOME</a>].
+
+   The discovery method is performed upon the bootstrapping of a DOTS
+   agent and is reiterated by the DOTS agent upon the following events:
+
+   *  expiry of a validity timer (e.g., DHCP lease, DHCP information
+      refresh time, or DNS TTL) associated with a discovered DOTS agent
+
+   *  expiry of the certificate of a peer DOTS agent currently in use
+
+   *  attachment to a new network
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  DHCP Options for DOTS Agent Discovery</span>
+
+   As reported in <a href="/doc/html/rfc6125#section-1.7.2">Section&nbsp;1.7.2 of [RFC6125]</a>:
+
+   |  Some certification authorities issue server certificates based on
+   |  IP addresses, but preliminary evidence indicates that such
+   |  certificates are a very small percentage (less than 1%) of issued
+   |  certificates.
+
+   In order to allow for PKIX-based authentication between a DOTS client
+   and server while accommodating the current best practices for issuing
+   certificates, this document allows DOTS agents to retrieve the names
+   of their peer DOTS agents.  These names can be used for two purposes:
+   (1) to retrieve the list of IP addresses of a peer DOTS agent or (2)
+   to be presented as a reference identifier for authentication
+   purposes.
+
+   Defining the option to include a list of IP addresses would avoid
+   depending on an underlying name resolution, but that design requires
+   also supplying a name for PKIX-based authentication purposes.
+
+   Given that DOTS gateways can be involved in a DOTS session, a peer
+   DOTS agent can be reachable using a link-local address.  Such
+   addresses can also be discovered using the options defined in
+   <a href="#section-5.1">Section 5.1</a>.
+
+   The list of the IP addresses returned by DHCP servers is typically
+   used to feed the DOTS server selection procedure, including when DOTS
+   agents are provided with primary and backup IP addresses of their
+   peer DOTS agents.  An example of the DOTS server selection procedure
+   is specified in <a href="/doc/html/rfc8782#section-4.3">Section&nbsp;4.3 of [RFC8782]</a>.
+
+   The design assumes that the same peer DOTS agent is used for
+   establishing both signal and data channels.  For more customized
+   configurations (e.g., transport-specific configuration and distinct
+   DOTS servers for the signal and data channels), an operator can
+   supply only a DOTS reference identifier that will be then passed to
+   the procedure described in <a href="#section-6">Section 6</a>.
+
+   The design allows terminating the base DOTS channels and DOTS Call
+   Home on the same or distinct peer DOTS agents.  If distinct peer DOTS
+   agents are deployed, the DHCP option can return, for example, a list
+   of IP addresses to a requesting DOTS agent.  This list includes the
+   IP address to be used for the base DOTS channels and the IP address
+   for the DOTS Call Home.  The DOTS client (or Call Home DOTS server)
+   will then use the address selection procedure specified in
+   <a href="/doc/html/rfc8782#section-4.3">Section&nbsp;4.3 of [RFC8782]</a> to identify the IP address of the peer DOTS
+   server (or Call Home DOTS client).
+
+   For example, let&#x27;s consider that the DOTS server is reachable at
+   2001:db8:122:300::1, while the Call Home DOTS client is reachable at
+   2001:db8:122:300::2.  The DHCP server will then return one DOTS
+   reference identifier and a list that includes both
+   2001:db8:122:300::1 and 2001:db8:122:300::2 to a requesting DHCP
+   client.  That list is passed to the DOTS client (or Call Home DOTS
+   server), which will try to establish connections to the addresses of
+   that list and destination port number 4646 (or the Call Home port
+   number).  As a result, the DOTS client (or Call Home DOTS server)
+   will select 2001:db8:122:300::1 (or 2001:db8:122:300::2) as a DOTS
+   server (or Call Home DOTS client).
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  DHCPv6 DOTS Options</span>
+
+<span class="h4"><a class="selflink" id="section-5.1.1" href="#section-5.1.1">5.1.1</a>.  Format of DOTS Reference Identifier Option</span>
+
+   The DHCPv6 DOTS Reference Identifier option is used to configure the
+   name of the DOTS server (or the name of the Call Home DOTS client).
+   The format of this option is shown in Figure 3.
+
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     OPTION_V6_DOTS_RI         |         Option-length         |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   |                      dots-agent-name (FQDN)                   |
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+             Figure 3: DHCPv6 DOTS Reference Identifier Option
+
+   The fields of the option shown in Figure 3 are as follows:
+
+   Option-code:  OPTION_V6_DOTS_RI (141, see <a href="#section-9.2">Section 9.2</a>).
+   Option-length:  Length of the dots-agent-name field in octets.
+   dots-agent-name:  A fully qualified domain name of the peer DOTS
+      agent.  This field is formatted as specified in <a href="/doc/html/rfc8415#section-10">Section&nbsp;10 of
+      [RFC8415]</a>.
+
+   An example of the dots-agent-name encoding is shown in Figure 4.
+   This example conveys the FQDN &quot;dots.example.com&quot;, and the resulting
+   Option-length field is 18.
+
+   +------+------+------+------+------+------+------+------+------+
+   | 0x04 |   d  |   o  |   t  |  s   | 0x07 |   e  |   x  |   a  |
+   +------+------+------+------+------+------+------+------+------+
+   |   m  |   p  |   l  |   e  | 0x03 |   c  |   o  |   m  | 0x00 |
+   +------+------+------+------+------+------+------+------+------+
+
+            Figure 4: An Example of the dots-agent-name Encoding
+
+
+<span class="h4"><a class="selflink" id="section-5.1.2" href="#section-5.1.2">5.1.2</a>.  Format of DOTS Address Option</span>
+
+   The DHCPv6 DOTS Address option can be used to configure a list of
+   IPv6 addresses of a DOTS server (or a Call Home DOTS client).  The
+   format of this option is shown in Figure 5.
+
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  OPTION_V6_DOTS_ADDRESS       |         Option-length         |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   |                    DOTS ipv6-address                          |
+   |                                                               |
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   |                    DOTS ipv6-address                          |
+   |                                                               |
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                              ...                              |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                    Figure 5: DHCPv6 DOTS Address Option
+
+   The fields of the option shown in Figure 5 are as follows:
+
+   Option-code:  OPTION_V6_DOTS_ADDRESS (142, see <a href="#section-9.2">Section 9.2</a>).
+   Option-length:  Length of the DOTS ipv6-address fields in octets.
+      This MUST be a multiple of 16.
+   DOTS ipv6-address:  Includes one or more IPv6 addresses [<a href="/doc/html/rfc4291" title="&quot;IP Version 6 Addressing Architecture&quot;">RFC4291</a>] of
+      the peer DOTS agent to be used by a DOTS agent for establishing a
+      DOTS session.  The addresses are listed in the order of preference
+      for use by the DOTS agent.
+
+   Note that IPv4-mapped IPv6 addresses (<a href="/doc/html/rfc4291#section-2.5.5.2">Section&nbsp;2.5.5.2 of [RFC4291]</a>)
+   may be included in this option when there is no DHCPv4 server able to
+   advertise the DHCPv4 DOTS options (<a href="#section-5.2">Section 5.2</a>) and when only IPv4
+   connectivity is possible to the peer DOTS agent.
+
+
+<span class="h4"><a class="selflink" id="section-5.1.3" href="#section-5.1.3">5.1.3</a>.  DHCPv6 Client Behavior</span>
+
+   DHCP clients MAY request options OPTION_V6_DOTS_RI and
+   OPTION_V6_DOTS_ADDRESS, as defined in Sections <a href="#section-18.2.1">18.2.1</a>, <a href="#section-18.2.2">18.2.2</a>,
+   18.2.4, 18.2.5, 18.2.6, and 21.7 of [<a href="/doc/html/rfc8415" title="&quot;Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;">RFC8415</a>].  As a convenience to
+   the reader, it is mentioned here that the DHCP client includes the
+   requested option codes in the Option Request option.
+
+   If the DHCP client receives more than one instance of option
+   OPTION_V6_DOTS_RI (or OPTION_V6_DOTS_ADDRESS), it MUST use only the
+   first instance of that option.
+
+   The DHCP client MUST silently discard multicast and host loopback
+   addresses [<a href="/doc/html/rfc6890" title="&quot;Special-Purpose IP Address Registries&quot;">RFC6890</a>] conveyed in OPTION_V6_DOTS_ADDRESS.
+
+   If the DHCP client receives and validates both OPTION_V6_DOTS_RI and
+   OPTION_V6_DOTS_ADDRESS, the content of OPTION_V6_DOTS_RI is used as
+   the reference identifier for authentication purposes (e.g., PKIX
+   [<a href="/doc/html/rfc6125" title="&quot;Representation and Verification of Domain-Based Application Service Identity within Internet Public Key Infrastructure Using X.509 (PKIX) Certificates in the Context of Transport Layer Security (TLS)&quot;">RFC6125</a>]), while the valid addresses included in
+   OPTION_V6_DOTS_ADDRESS are used to reach the peer DOTS agent.  In
+   other words, the name conveyed in OPTION_V6_DOTS_RI MUST NOT be
+   passed to an underlying resolution library in the presence of a valid
+   OPTION_V6_DOTS_ADDRESS in a response.
+
+   If the DHCP client receives OPTION_V6_DOTS_RI only, but
+   OPTION_V6_DOTS_RI contains more than one name, the DHCP client MUST
+   use only the first name.  Once the name is validated (<a href="/doc/html/rfc8415#section-10">Section&nbsp;10 of
+   [RFC8415]</a>), the name is passed to a name resolution library.
+   Moreover, that name is also used as a reference identifier for
+   authentication purposes.
+
+   If the DHCP client receives OPTION_V6_DOTS_ADDRESS only, the
+   address(es) included in OPTION_V6_DOTS_ADDRESS are used to reach the
+   peer DOTS agent.  In addition, these addresses can be used as
+   identifiers for authentication.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  DHCPv4 DOTS Options</span>
+
+<span class="h4"><a class="selflink" id="section-5.2.1" href="#section-5.2.1">5.2.1</a>.  Format of DOTS Reference Identifier Option</span>
+
+   The DHCPv4 [<a href="/doc/html/rfc2132" title="&quot;DHCP Options and BOOTP Vendor Extensions&quot;">RFC2132</a>] DOTS Reference Identifier option is used to
+   configure a name of the peer DOTS agent.  The format of this option
+   is illustrated in Figure 6.
+
+    Code  Length   Peer DOTS agent name
+   +-----+-----+-----+-----+-----+-----+-----+--
+   | 147 |  n  |  s1 |  s2 |  s3 |  s4 | s5  |  ...
+   +-----+-----+-----+-----+-----+-----+-----+--
+
+             Figure 6: DHCPv4 DOTS Reference Identifier Option
+
+   The values s1, s2, s3, etc. represent the domain name labels in the
+   domain name encoding.
+
+   The fields of the option shown in Figure 6 are as follows:
+
+   Code:  OPTION_V4_DOTS_RI (147, see <a href="#section-9.3">Section 9.3</a>).
+   Length:  Includes the length of the &quot;Peer DOTS agent name&quot; field in
+      octets.
+   Peer DOTS agent name:  The domain name of the peer DOTS agent.  This
+      field is formatted as specified in <a href="/doc/html/rfc8415#section-10">Section&nbsp;10 of [RFC8415]</a>.
+
+<span class="h4"><a class="selflink" id="section-5.2.2" href="#section-5.2.2">5.2.2</a>.  Format of DOTS Address Option</span>
+
+   The DHCPv4 DOTS Address option can be used to configure a list of
+   IPv4 addresses of a peer DOTS agent.  The format of this option is
+   illustrated in Figure 7.
+
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Code=148     |     Length    |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                               |
+   |       DOTS IPv4 Address       |
+   |                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  ---
+   |                               |   |
+   |       DOTS IPv4 Address       |   |
+   |                               | optional
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+   |
+   .             ...               .   |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  ---
+
+                    Figure 7: DHCPv4 DOTS Address Option
+
+   The fields of the option shown in Figure 7 are as follows:
+
+   Code:  OPTION_V4_DOTS_ADDRESS (148, see <a href="#section-9.3">Section 9.3</a>).
+   Length:  Set to 4*N, where N is the number of IPv4 addresses included
+      in the option.
+   DOTS IPv4 Address(es):  Contains one or more IPv4 addresses of the
+      peer DOTS agent to be used by a DOTS agent.  The addresses are
+      listed in the order of preference for use by the DOTS agent.
+
+   OPTION_V4_DOTS_ADDRESS is a concatenation-requiring option.  As such,
+   the mechanism specified in [<a href="/doc/html/rfc3396" title="&quot;Encoding Long Options in the Dynamic Host Configuration Protocol (DHCPv4)&quot;">RFC3396</a>] MUST be used if
+   OPTION_V4_DOTS_ADDRESS exceeds the maximum DHCPv4 option size of 255
+   octets.
+
+<span class="h4"><a class="selflink" id="section-5.2.3" href="#section-5.2.3">5.2.3</a>.  DHCPv4 Client Behavior</span>
+
+   To discover a peer DOTS agent, the DHCPv4 client MUST include both
+   OPTION_V4_DOTS_RI and OPTION_V4_DOTS_ADDRESS in a Parameter Request
+   List option [<a href="/doc/html/rfc2132" title="&quot;DHCP Options and BOOTP Vendor Extensions&quot;">RFC2132</a>].
+
+   If the DHCP client receives more than one instance of
+   OPTION_V4_DOTS_RI option, it MUST use only the first instance of that
+   option.
+
+   The DHCP client MUST silently discard multicast and host loopback
+   addresses [<a href="/doc/html/rfc6890" title="&quot;Special-Purpose IP Address Registries&quot;">RFC6890</a>] conveyed in OPTION_V4_DOTS_ADDRESS.
+
+   If the DHCP client receives and validates both OPTION_V4_DOTS_RI and
+   OPTION_V4_DOTS_ADDRESS, the content of OPTION_V4_DOTS_RI is used as
+   the reference identifier for authentication purposes (e.g., PKIX
+   [<a href="/doc/html/rfc6125" title="&quot;Representation and Verification of Domain-Based Application Service Identity within Internet Public Key Infrastructure Using X.509 (PKIX) Certificates in the Context of Transport Layer Security (TLS)&quot;">RFC6125</a>]), while the valid addresses included in
+   OPTION_V4_DOTS_ADDRESS are used to reach the peer DOTS agent.  In
+   other words, the name conveyed in OPTION_V4_DOTS_RI MUST NOT be
+   passed to an underlying resolution library in the presence of valid
+   OPTION_V4_DOTS_ADDRESS in a response.
+
+   If the DHCP client receives OPTION_V4_DOTS_RI only, but
+   OPTION_V4_DOTS_RI option contains more than one name, as
+   distinguished by the presence of multiple root labels, the DHCP
+   client MUST use only the first name.  Once the name is validated
+   (<a href="/doc/html/rfc8415#section-10">Section&nbsp;10 of [RFC8415]</a>), the name is passed to a name resolution
+   library.  Moreover, that name is also used as a reference identifier
+   for authentication purposes.
+
+   If the DHCP client receives OPTION_V4_DOTS_ADDRESS only, the
+   address(es) included in OPTION_V4_DOTS_ADDRESS are used to reach the
+   peer DOTS server.  In addition, these addresses can be used as
+   identifiers for authentication.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Discovery Using Service Resolution</span>
+
+   This mechanism is performed in two steps:
+
+   1.  A DNS domain name is retrieved for each combination of interface
+       and address family.  A DOTS agent has to determine the domain in
+       which it is located relying on dynamic means, such as DHCP
+       (<a href="#section-5">Section 5</a>).  Implementations may allow the user to specify a
+       default name that is used if no specific name has been
+       configured.
+
+   2.  Retrieved DNS domain names are then used for S-NAPTR lookups
+       [<a href="/doc/html/rfc3958" title="&quot;Domain-Based Application Service Location Using SRV RRs and the Dynamic Delegation Discovery Service (DDDS)&quot;">RFC3958</a>].  Further DNS lookups may be necessary to determine the
+       peer DOTS agent IP address(es).
+
+   Once the DOTS agent has retrieved its DNS domain or discovered the
+   peer DOTS agent name that needs to be resolved, an S-NAPTR lookup
+   with the appropriate application service and the desired protocol tag
+   is made to obtain information necessary to connect to the
+   authoritative peer DOTS agent within the given domain.
+
+   This specification defines &quot;DOTS&quot; and &quot;DOTS-CALL-HOME&quot; as application
+   service tags (Sections <a href="#section-9.4.1">9.4.1</a> and <a href="#section-9.4.2">9.4.2</a>).  It also defines
+   &quot;signal.udp&quot; (<a href="#section-9.4.3">Section 9.4.3</a>), &quot;signal.tcp&quot; (<a href="#section-9.4.4">Section 9.4.4</a>), and
+   &quot;data.tcp&quot; (<a href="#section-9.4.5">Section 9.4.5</a>) as application protocol tags.  An example
+   is provided in Figure 8.
+
+   In the example below, for domain &quot;example.net&quot;, the resolution
+   algorithm will result in IP address, port, tag, and protocol tuples
+   listed in Table 1.
+
+   example.net.
+   IN NAPTR 100 10 &quot;&quot; DOTS:signal.udp &quot;&quot; signal.example.net.
+   IN NAPTR 200 10 &quot;&quot; DOTS:signal.tcp &quot;&quot; signal.example.net.
+   IN NAPTR 300 10 &quot;&quot; DOTS:data.tcp &quot;&quot; data.example.net.
+
+   signal.example.net.
+   IN NAPTR 100 10 &quot;s&quot; DOTS:signal.udp &quot;&quot; _dots-signal._udp.example.net.
+   IN NAPTR 200 10 &quot;s&quot; DOTS:signal.tcp &quot;&quot; _dots-signal._tcp.example.net.
+
+   data.example.net.
+   IN NAPTR 100 10 &quot;s&quot; DOTS:data.tcp &quot;&quot; _dots-data._tcp.example.net.
+   IN NAPTR 200 10 &quot;a&quot; DOTS:data.tcp &quot;&quot; b.example.net.
+
+   _dots-signal._udp.example.net.
+   IN SRV   0 0 5000 a.example.net.
+
+   _dots-signal._tcp.example.net.
+   IN SRV   0 0 5001 a.example.net.
+
+   _dots-data._tcp.example.net.
+   IN SRV   0 0 5002 a.example.net.
+
+   a.example.net.
+   IN AAAA  2001:db8::1
+
+   b.example.net.
+   IN AAAA  2001:db8::2
+
+        Figure 8: Example of Discovery of DOTS Servers Using Service
+                                 Resolution
+
+            +=======+==========+=============+======+========+
+            | Order | Protocol | IP address  | Port | Tag    |
+            +=======+==========+=============+======+========+
+            | 1     | UDP      | 2001:db8::1 | 5000 | Signal |
+            +-------+----------+-------------+------+--------+
+            | 2     | TCP      | 2001:db8::1 | 5001 | Signal |
+            +-------+----------+-------------+------+--------+
+            | 3     | TCP      | 2001:db8::1 | 5002 | Data   |
+            +-------+----------+-------------+------+--------+
+            | 4     | TCP      | 2001:db8::2 | 443  | Data   |
+            +-------+----------+-------------+------+--------+
+
+                       Table 1: Resolution Results
+
+   An example is provided in Figure 9 for the Call Home case.  In this
+   example, the resolution algorithm will result in IP address, port,
+   and protocol tuples listed in Table 2 for domain &quot;example.net&quot;.
+
+   example.net.
+   IN NAPTR 100 10 &quot;&quot; DOTS-CALL-HOME:signal.udp &quot;&quot; signal.example.net.
+   IN NAPTR 200 10 &quot;&quot; DOTS-CALL-HOME:signal.tcp &quot;&quot; signal.example.net.
+
+   signal.example.net.
+   IN NAPTR 100 10 &quot;s&quot; DOTS-CALL-HOME:signal.udp &quot;&quot;
+               _dots-call-home._udp.example.net.
+   IN NAPTR 200 10 &quot;s&quot; DOTS-CALL-HOME:signal.tcp &quot;&quot;
+               _dots-call-home._tcp.example.net.
+
+   _dots-call-home._udp.example.net.
+   IN SRV   0 0 6000 b.example.net.
+
+   _dots-call-home._tcp.example.net.
+   IN SRV   0 0 6001 b.example.net.
+
+   b.example.net.
+   IN AAAA  2001:db8::2
+
+   Figure 9: Example of Discovery of DOTS Call Home Client Using Service
+                                 Resolution
+
+                 +=======+==========+=============+======+
+                 | Order | Protocol | IP address  | Port |
+                 +=======+==========+=============+======+
+                 | 1     | UDP      | 2001:db8::2 | 6000 |
+                 +-------+----------+-------------+------+
+                 | 2     | TCP      | 2001:db8::2 | 6001 |
+                 +-------+----------+-------------+------+
+
+                  Table 2: Resolution Results (Call Home)
+
+   Note that customized port numbers are used for the DOTS signal
+   channel, DOTS data channel, and DOTS signal channel Call Home in the
+   examples shown in Figures 8 and 9 for illustration purposes.  If
+   default port numbers are used in a deployment, the discovery
+   procedure will return 4646 (DOTS signal channel) and 443 (DOTS data
+   channel) as DOTS service port numbers.
+
+   If no DOTS-specific S-NAPTR records can be retrieved, the discovery
+   procedure fails for this domain name (and the corresponding interface
+   and IP protocol version).  If more domain names are known, the
+   discovery procedure MAY perform the corresponding S-NAPTR lookups
+   immediately.  However, before retrying a lookup that has failed, a
+   DOTS client MUST wait a time period that is appropriate for the
+   encountered error (e.g., NXDOMAIN, timeout, etc.).
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  DNS Service Discovery</span>
+
+   DNS-based Service Discovery (DNS-SD) [<a href="/doc/html/rfc6763" title="&quot;DNS-Based Service Discovery&quot;">RFC6763</a>] provides generic
+   solutions for discovering services.  DNS-SD defines a set of naming
+   rules for certain DNS record types that they use for advertising and
+   discovering services.
+
+   <a href="/doc/html/rfc6763#section-4.1">Section&nbsp;4.1 of [RFC6763]</a> specifies that a service instance name in
+   DNS-SD has the following structure:
+
+   &lt;Instance&gt; . &lt;Service&gt; . &lt;Domain&gt;
+
+   The &lt;Domain&gt; portion specifies the DNS subdomain where the service
+   instance is registered.  It is a conventional domain name, such as
+   &quot;example.com&quot;.
+
+   The &lt;Service&gt; portion of the DOTS service instance name MUST be
+   &quot;_dots-signal._udp&quot;, &quot;_dots-signal._tcp&quot;, &quot;_dots-data._tcp&quot;, &quot;_dots-
+   call-home._udp&quot;, or &quot;_dots-call-home._tcp&quot;.
+
+   This document does not define any keys; the TXT record of a DNS-SD
+   service is thus empty (<a href="/doc/html/rfc6763#section-6">Section&nbsp;6 of [RFC6763]</a>).
+
+   Figure 10 depicts an excerpt of the DNS zone configuration file
+   listing record examples to discover two DOTS signal channel servers.
+   In this example, only UDP is supported as transport for the
+   establishment of the DOTS signal channel.
+
+   _dots-signal._udp.example.net. PTR  a._dots-signal._udp.example.net.
+   _dots-signal._udp.example.net. PTR  b._dots-signal._udp.example.net.
+   a._dots-signal._udp.example.net. SRV 0 0 4646 a.example.net.
+   b._dots-signal._udp.example.net. SRV 0 0 4646 b.example.net.
+   a._dots-signal._udp.example.net. TXT &quot;&quot;
+   b._dots-signal._udp.example.net. TXT &quot;&quot;
+
+      Figure 10: An Example of DNS-SD Records for the UDP DOTS Signal
+            Channel Involving Two Servers with the Same Priority
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   DOTS-related security considerations are discussed in <a href="/doc/html/rfc8811#section-5">Section&nbsp;5 of
+   [RFC8811]</a>.  As a reminder, DOTS agents must authenticate each other
+   using (D)TLS before a DOTS session is considered valid according to
+   the [<a href="/doc/html/rfc8782" title="&quot;Distributed Denial-of- Service Open Threat Signaling (DOTS) Signal Channel Specification&quot;">RFC8782</a>].
+
+   An attacker may block some protocol messages (e.g., DHCP) to force
+   the client to use a discovery mechanism with a lower priority.  The
+   security implications of such attack are those inherent to the
+   fallback discovery mechanism discussed in the following subsections.
+
+   The results of the discovery procedure are a function of the
+   interface/address family.  Contacting a discovered DOTS server via an
+   interface to which it is not bound may exacerbate the delay required
+   to establish a DOTS channel.  Moreover, such behavior may reveal that
+   a DOTS service is enabled by a DOTS client domain and exposes the
+   identity of the DOTS service provider (which can be inferred from the
+   name and the destination IP address) to external networks.
+
+   Security considerations related to how security credentials to
+   authenticate DOTS server(s) are provisioned to a DOTS client are
+   those inherent to the mechanism used for that purpose (for example,
+   see [<a href="/doc/html/rfc8572" title="&quot;Secure Zero Touch Provisioning (SZTP)&quot;">RFC8572</a>]).
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  DHCP</span>
+
+   The security considerations in [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>] and [<a href="/doc/html/rfc8415" title="&quot;Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;">RFC8415</a>] are to be
+   considered.  In particular, issues related to rogue DHCP servers and
+   means to mitigate many of these attacks are discussed in <a href="/doc/html/rfc8415#section-22">Section&nbsp;22
+   of [RFC8415]</a>.
+
+   An attacker can get a domain name, get a domain-validated public
+   certificate from a certification authority (CA), and host a DOTS
+   agent.  An active attacker can then spoof DHCP responses to include
+   the attacker&#x27;s DOTS agent.  Such an attacker can also launch other
+   attacks, as discussed in <a href="/doc/html/rfc8415#section-22">Section&nbsp;22 of [RFC8415]</a>.  In addition to the
+   mitigations listed in <a href="/doc/html/rfc8415#section-22">Section&nbsp;22 of [RFC8415]</a>, a DOTS agent may be
+   preconfigured with a list of trusted DOTS domain names.  If such a
+   list is preconfigured, a DOTS agent will accept a DHCP-discovered
+   name if it matches a name in that list.  Also, the DOTS agent has to
+   check that the &quot;DNS-ID&quot; identifier type within subjectAltName in the
+   server certificate matches a preconfigured name.  If the DOTS agent
+   is instructed to trust subdomains of the names in that list as well
+   (e.g., &quot;*.example.com&quot;), a DOTS agent will accept a DHCP-discovered
+   name that matches a name in the preconfigured list (e.g., &quot;dots-
+   1.example.com&quot; or &quot;dots-2.example.com&quot;).
+
+   Relying on an underlying resolution library to resolve a supplied
+   reference identifier has similar security issues as those discussed
+   in <a href="#section-8.2">Section 8.2</a> (e.g., an active attacker may modify DNS messages used
+   to resolve the supplied reference identifier and point the client to
+   an attacker server).
+
+   Supplying both an IP address and the reference identifier makes it
+   easier to use a mis-issued certificate.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Service Resolution</span>
+
+   The primary attack against the methods described in <a href="#section-6">Section 6</a> is one
+   that would lead to impersonation of a peer DOTS agent.  An attacker
+   could attempt to compromise the S-NAPTR resolution.
+
+   The DOTS client (or a Call Home DOTS server) constructs one reference
+   identifier for the DOTS server (or a Call Home DOTS client) based on
+   the domain name that is used for S-NAPTR lookup: DNS-ID.  If the
+   reference identifier is found (as described in <a href="/doc/html/rfc6125#section-6">Section&nbsp;6 of
+   [RFC6125]</a>) in the PKIX certificate&#x27;s subjectAltName extension, the
+   DOTS client should accept the certificate for the server.
+
+   DNS Security Extensions (DNSSEC) [<a href="/doc/html/rfc4033" title="&quot;DNS Security Introduction and Requirements&quot;">RFC4033</a>] uses cryptographic keys
+   and digital signatures to provide authentication of DNS data.  The
+   information that is retrieved from the S-NAPTR lookup and that is
+   validated using DNSSEC is thereby proved to be the authoritative
+   data.
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  DNS Service Discovery</span>
+
+   Since DNS-SD is a specification for how to name and use records in
+   the existing DNS system, it has no specific additional security
+   requirements over and above those that already apply to DNS queries
+   and DNS updates.  For DNS queries, DNSSEC SHOULD be used where the
+   authenticity of information is important.  For DNS updates, secure
+   updates [<a href="/doc/html/rfc2136" title="&quot;Dynamic Updates in the Domain Name System (DNS UPDATE)&quot;">RFC2136</a>] [<a href="/doc/html/rfc3007" title="&quot;Secure Domain Name System (DNS) Dynamic Update&quot;">RFC3007</a>] SHOULD generally be used to control which
+   clients have permission to update DNS records.
+
+   Note that means such as DNS over TLS (DoT) [<a href="/doc/html/rfc7858" title="&quot;Specification for DNS over Transport Layer Security (TLS)&quot;">RFC7858</a>] or DNS over
+   HTTPS (DoH) [<a href="/doc/html/rfc8484" title="&quot;DNS Queries over HTTPS (DoH)&quot;">RFC8484</a>] can be used to prevent eavesdroppers from
+   accessing DNS messages.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Service Name and Transport Protocol Port Number Registry</span>
+
+   IANA has allocated the following service names from the registry
+   available at: &lt;<a href="https://www.iana.org/assignments/service-names-port-numbers/">https://www.iana.org/assignments/service-names-port-</a>
+   <a href="https://www.iana.org/assignments/service-names-port-numbers/">numbers/</a>&gt;.
+
+   Service Name:            dots-data
+   Port Number:             N/A
+   Transport Protocol(s):   TCP
+   Description:             DOTS Data Channel Protocol.  The service
+                            name is used to construct the SRV service
+                            name &quot;_dots-data._tcp&quot; for discovering DOTS
+                            servers used to establish DOTS data channel.
+   Assignee:                IESG: iesg@ietf.org
+   Contact:                 IETF Chair: chair@ietf.org
+   Reference:               [<a href="/doc/html/rfc8973">RFC8973</a>]
+
+   Service Name:            dots-call-home
+   Transport Protocol(s):   TCP/UDP
+   Description:             DOTS Signal Channel Call Home Protocol.  The
+                            service name is used to construct the SRV
+                            service names &quot;_dots-call-home._udp&quot; and
+                            &quot;_dots-call-home._tcp&quot; for discovering Call
+                            Home DOTS clients used to establish DOTS
+                            signal channel Call Home.
+   Assignee:                IESG: iesg@ietf.org
+   Contact:                 IETF Chair: chair@ietf.org
+   Reference:               [<a href="/doc/html/rfc8973">RFC8973</a>]
+
+   IANA has updated the following entry from the registry available at:
+   &lt;<a href="https://www.iana.org/assignments/service-names-port-numbers/">https://www.iana.org/assignments/service-names-port-numbers/</a>&gt;.
+
+   Port Number:             4646
+   Transport Protocol(s):   TCP/UDP
+   Description:             DOTS Signal Channel Protocol.  The service
+                            name is used to construct the SRV service
+                            names &quot;_dots-signal._udp&quot; and &quot;_dots-
+                            signal._tcp&quot; for discovering DOTS servers
+                            used to establish DOTS signal channel.
+   Assignee:                IESG: iesg@ietf.org
+   Contact:                 IETF Chair: chair@ietf.org
+   Reference:               [<a href="/doc/html/rfc8782" title="&quot;Distributed Denial-of- Service Open Threat Signaling (DOTS) Signal Channel Specification&quot;">RFC8782</a>][RFC8973]
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  DHCPv6 Options</span>
+
+   IANA has assigned the following new DHCPv6 Option Codes in the
+   registry maintained in &lt;<a href="https://www.iana.org/assignments/dhcpv6-parameters/">https://www.iana.org/assignments/</a>
+   <a href="https://www.iana.org/assignments/dhcpv6-parameters/">dhcpv6-parameters/</a>&gt;.
+
+    +=======+========================+============+==================+
+    | Value | Description            | Client ORO | Singleton Option |
+    +=======+========================+============+==================+
+    | 141   | OPTION_V6_DOTS_RI      | Yes        | Yes              |
+    +-------+------------------------+------------+------------------+
+    | 142   | OPTION_V6_DOTS_ADDRESS | Yes        | Yes              |
+    +-------+------------------------+------------+------------------+
+
+                         Table 3: DHCPv6 Options
+
+<span class="h3"><a class="selflink" id="section-9.3" href="#section-9.3">9.3</a>.  DHCPv4 Options</span>
+
+   IANA has assigned the following new DHCPv4 Option Codes in the
+   registry maintained in &lt;<a href="https://www.iana.org/assignments/bootp-dhcp-parameters/">https://www.iana.org/assignments/bootp-dhcp-</a>
+   <a href="https://www.iana.org/assignments/bootp-dhcp-parameters/">parameters/</a>&gt;.
+
+   +========================+=====+=========+==============+===========+
+   |                   Name | Tag | Data    | Meaning      | Reference |
+   |                        |     | Length  |              |           |
+   +========================+=====+=========+==============+===========+
+   |      OPTION_V4_DOTS_RI | 147 | N       | The name     | [<a href="/doc/html/rfc8973">RFC8973</a>] |
+   |                        |     |         | of the       |           |
+   |                        |     |         | peer DOTS    |           |
+   |                        |     |         | agent.       |           |
+   +------------------------+-----+---------+--------------+-----------+
+   | OPTION_V4_DOTS_ADDRESS | 148 | N (the  | N/4 IPv4     | [<a href="/doc/html/rfc8973">RFC8973</a>] |
+   |                        |     | minimal | addresses    |           |
+   |                        |     | length  | of peer      |           |
+   |                        |     | is 4)   | DOTS         |           |
+   |                        |     |         | agent(s).    |           |
+   +------------------------+-----+---------+--------------+-----------+
+
+                          Table 4: DHCPv4 Options
+
+
+<span class="h3"><a class="selflink" id="section-9.4" href="#section-9.4">9.4</a>.  Application Service &amp; Application Protocol Tags</span>
+
+   IANA has made the following allocations from the registries available
+   at &lt;<a href="https://www.iana.org/assignments/s-naptr-parameters/">https://www.iana.org/assignments/s-naptr-parameters/</a>&gt; for
+   application service tags and application protocol tags.
+
+<span class="h4"><a class="selflink" id="section-9.4.1" href="#section-9.4.1">9.4.1</a>.  DOTS Application Service Tag Registration</span>
+
+   Application Service Tag:           DOTS
+   Intended Usage:                    See <a href="#section-6">Section 6</a>
+   Security Considerations:           See <a href="#section-8">Section 8</a>
+   Interoperability Considerations:   None
+   Relevant Publications:             <a href="/doc/html/rfc8973">RFC 8973</a>
+
+<span class="h4"><a class="selflink" id="section-9.4.2" href="#section-9.4.2">9.4.2</a>.  DOTS Call Home Application Service Tag Registration</span>
+
+   Application Service Tag:           DOTS-CALL-HOME
+   Intended Usage:                    See <a href="#section-6">Section 6</a>
+   Security Considerations:           See <a href="#section-8">Section 8</a>
+   Interoperability Considerations:   None
+   Relevant Publications:             <a href="/doc/html/rfc8973">RFC 8973</a>
+
+<span class="h4"><a class="selflink" id="section-9.4.3" href="#section-9.4.3">9.4.3</a>.  signal.udp Application Protocol Tag Registration</span>
+
+   Application Protocol Tag:          signal.udp
+   Intended Usage:                    See <a href="#section-6">Section 6</a>
+   Security Considerations:           See <a href="#section-8">Section 8</a>
+   Interoperability Considerations:   None
+   Relevant Publications:             <a href="/doc/html/rfc8973">RFC 8973</a>
+
+<span class="h4"><a class="selflink" id="section-9.4.4" href="#section-9.4.4">9.4.4</a>.  signal.tcp Application Protocol Tag Registration</span>
+
+   Application Protocol Tag:          signal.tcp
+   Intended Usage:                    See <a href="#section-6">Section 6</a>
+   Security Considerations:           See <a href="#section-8">Section 8</a>
+   Interoperability Considerations:   None
+   Relevant Publications:             <a href="/doc/html/rfc8973">RFC 8973</a>
+
+<span class="h4"><a class="selflink" id="section-9.4.5" href="#section-9.4.5">9.4.5</a>.  data.tcp Application Protocol Tag Registration</span>
+
+   Application Protocol Tag:          data.tcp
+   Intended Usage:                    See <a href="#section-6">Section 6</a>
+   Security Considerations:           See <a href="#section-8">Section 8</a>
+   Interoperability Considerations:   None
+   Relevant Publications:             <a href="/doc/html/rfc8973">RFC 8973</a>
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC2131">RFC2131</a>]  Droms, R., &quot;Dynamic Host Configuration Protocol&quot;,
+              <a href="/doc/html/rfc2131">RFC 2131</a>, DOI 10.17487/RFC2131, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2131">https://www.rfc-editor.org/info/rfc2131</a>&gt;.
+
+   [<a id="ref-RFC2132">RFC2132</a>]  Alexander, S. and R. Droms, &quot;DHCP Options and BOOTP Vendor
+              Extensions&quot;, <a href="/doc/html/rfc2132">RFC 2132</a>, DOI 10.17487/RFC2132, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2132">https://www.rfc-editor.org/info/rfc2132</a>&gt;.
+
+   [<a id="ref-RFC3396">RFC3396</a>]  Lemon, T. and S. Cheshire, &quot;Encoding Long Options in the
+              Dynamic Host Configuration Protocol (DHCPv4)&quot;, <a href="/doc/html/rfc3396">RFC 3396</a>,
+              DOI 10.17487/RFC3396, November 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3396">https://www.rfc-editor.org/info/rfc3396</a>&gt;.
+
+   [<a id="ref-RFC3958">RFC3958</a>]  Daigle, L. and A. Newton, &quot;Domain-Based Application
+              Service Location Using SRV RRs and the Dynamic Delegation
+              Discovery Service (DDDS)&quot;, <a href="/doc/html/rfc3958">RFC 3958</a>, DOI 10.17487/RFC3958,
+              January 2005, &lt;<a href="https://www.rfc-editor.org/info/rfc3958">https://www.rfc-editor.org/info/rfc3958</a>&gt;.
+
+   [<a id="ref-RFC4291">RFC4291</a>]  Hinden, R. and S. Deering, &quot;IP Version 6 Addressing
+              Architecture&quot;, <a href="/doc/html/rfc4291">RFC 4291</a>, DOI 10.17487/RFC4291, February
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4291">https://www.rfc-editor.org/info/rfc4291</a>&gt;.
+
+   [<a id="ref-RFC6763">RFC6763</a>]  Cheshire, S. and M. Krochmal, &quot;DNS-Based Service
+              Discovery&quot;, <a href="/doc/html/rfc6763">RFC 6763</a>, DOI 10.17487/RFC6763, February 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6763">https://www.rfc-editor.org/info/rfc6763</a>&gt;.
+
+   [<a id="ref-RFC6890">RFC6890</a>]  Cotton, M., Vegoda, L., Bonica, R., Ed., and B. Haberman,
+              &quot;Special-Purpose IP Address Registries&quot;, <a href="/doc/html/bcp153">BCP 153</a>,
+              <a href="/doc/html/rfc6890">RFC 6890</a>, DOI 10.17487/RFC6890, April 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6890">https://www.rfc-editor.org/info/rfc6890</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8415">RFC8415</a>]  Mrugalski, T., Siodelski, M., Volz, B., Yourtchenko, A.,
+              Richardson, M., Jiang, S., Lemon, T., and T. Winters,
+              &quot;Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;,
+              <a href="/doc/html/rfc8415">RFC 8415</a>, DOI 10.17487/RFC8415, November 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8415">https://www.rfc-editor.org/info/rfc8415</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-BTSRP-KEYINFR">BTSRP-KEYINFR</a>]
+              Pritikin, M., Richardson, M. C., Eckert, T., Behringer, M.
+              H., and K. Watsen, &quot;Bootstrapping Remote Secure Key
+              Infrastructures (BRSKI)&quot;, Work in Progress, Internet-
+              Draft, <a href="/doc/html/draft-ietf-anima-bootstrapping-keyinfra-45">draft-ietf-anima-bootstrapping-keyinfra-45</a>, 11
+              November 2020, &lt;<a href="https://tools.ietf.org/html/draft-ietf-anima-bootstrapping-keyinfra-45">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-anima-bootstrapping-keyinfra-45">anima-bootstrapping-keyinfra-45</a>&gt;.
+
+   [<a id="ref-DOTS-MULTIHOMING">DOTS-MULTIHOMING</a>]
+              Boucadair, M., Reddy, T., and W. Pan, &quot;Multi-homing
+              Deployment Considerations for Distributed-Denial-of-
+              Service Open Threat Signaling (DOTS)&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-dots-multihoming-05">draft-ietf-dots-multihoming-05</a>, 23
+              November 2020, &lt;<a href="https://tools.ietf.org/html/draft-ietf-dots-multihoming-05">https://tools.ietf.org/html/draft-ietf-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-dots-multihoming-05">dots-multihoming-05</a>&gt;.
+
+   [<a id="ref-DOTS-SIG-CALL-HOME">DOTS-SIG-CALL-HOME</a>]
+              Reddy, T., Boucadair, M., and J. Shallow, &quot;Distributed
+              Denial-of-Service Open Threat Signaling (DOTS) Signal
+              Channel Call Home&quot;, Work in Progress, Internet-Draft,
+              <a href="/doc/html/draft-ietf-dots-signal-call-home-13">draft-ietf-dots-signal-call-home-13</a>, 11 January 2021,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-dots-signal-call-home-13">https://tools.ietf.org/html/draft-ietf-dots-signal-call-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-dots-signal-call-home-13">home-13</a>&gt;.
+
+   [<a id="ref-DOTS-USE-CASES">DOTS-USE-CASES</a>]
+              Dobbins, R., Migault, D., Moskowitz, R., Teague, N., Xia,
+              L., and K. Nishizuka, &quot;Use cases for DDoS Open Threat
+              Signaling&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-dots-use-cases-25">draft-ietf-</a>
+              <a href="/doc/html/draft-ietf-dots-use-cases-25">dots-use-cases-25</a>, 5 July 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-dots-use-cases-25">https://tools.ietf.org/html/draft-ietf-dots-use-cases-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-dots-use-cases-25">25</a>&gt;.
+
+   [<a id="ref-RFC2136">RFC2136</a>]  Vixie, P., Ed., Thomson, S., Rekhter, Y., and J. Bound,
+              &quot;Dynamic Updates in the Domain Name System (DNS UPDATE)&quot;,
+              <a href="/doc/html/rfc2136">RFC 2136</a>, DOI 10.17487/RFC2136, April 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2136">https://www.rfc-editor.org/info/rfc2136</a>&gt;.
+
+   [<a id="ref-RFC3007">RFC3007</a>]  Wellington, B., &quot;Secure Domain Name System (DNS) Dynamic
+              Update&quot;, <a href="/doc/html/rfc3007">RFC 3007</a>, DOI 10.17487/RFC3007, November 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3007">https://www.rfc-editor.org/info/rfc3007</a>&gt;.
+
+   [<a id="ref-RFC4033">RFC4033</a>]  Arends, R., Austein, R., Larson, M., Massey, D., and S.
+              Rose, &quot;DNS Security Introduction and Requirements&quot;,
+              <a href="/doc/html/rfc4033">RFC 4033</a>, DOI 10.17487/RFC4033, March 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4033">https://www.rfc-editor.org/info/rfc4033</a>&gt;.
+
+   [<a id="ref-RFC6125">RFC6125</a>]  Saint-Andre, P. and J. Hodges, &quot;Representation and
+              Verification of Domain-Based Application Service Identity
+              within Internet Public Key Infrastructure Using X.509
+              (PKIX) Certificates in the Context of Transport Layer
+              Security (TLS)&quot;, <a href="/doc/html/rfc6125">RFC 6125</a>, DOI 10.17487/RFC6125, March
+              2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6125">https://www.rfc-editor.org/info/rfc6125</a>&gt;.
+
+   [<a id="ref-RFC7858">RFC7858</a>]  Hu, Z., Zhu, L., Heidemann, J., Mankin, A., Wessels, D.,
+              and P. Hoffman, &quot;Specification for DNS over Transport
+              Layer Security (TLS)&quot;, <a href="/doc/html/rfc7858">RFC 7858</a>, DOI 10.17487/RFC7858, May
+              2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7858">https://www.rfc-editor.org/info/rfc7858</a>&gt;.
+
+   [<a id="ref-RFC8484">RFC8484</a>]  Hoffman, P. and P. McManus, &quot;DNS Queries over HTTPS
+              (DoH)&quot;, <a href="/doc/html/rfc8484">RFC 8484</a>, DOI 10.17487/RFC8484, October 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8484">https://www.rfc-editor.org/info/rfc8484</a>&gt;.
+
+   [<a id="ref-RFC8572">RFC8572</a>]  Watsen, K., Farrer, I., and M. Abrahamsson, &quot;Secure Zero
+              Touch Provisioning (SZTP)&quot;, <a href="/doc/html/rfc8572">RFC 8572</a>,
+              DOI 10.17487/RFC8572, April 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8572">https://www.rfc-editor.org/info/rfc8572</a>&gt;.
+
+   [<a id="ref-RFC8782">RFC8782</a>]  Reddy.K, T., Ed., Boucadair, M., Ed., Patil, P.,
+              Mortensen, A., and N. Teague, &quot;Distributed Denial-of-
+              Service Open Threat Signaling (DOTS) Signal Channel
+              Specification&quot;, <a href="/doc/html/rfc8782">RFC 8782</a>, DOI 10.17487/RFC8782, May 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8782">https://www.rfc-editor.org/info/rfc8782</a>&gt;.
+
+   [<a id="ref-RFC8783">RFC8783</a>]  Boucadair, M., Ed. and T. Reddy.K, Ed., &quot;Distributed
+              Denial-of-Service Open Threat Signaling (DOTS) Data
+              Channel Specification&quot;, <a href="/doc/html/rfc8783">RFC 8783</a>, DOI 10.17487/RFC8783,
+              May 2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8783">https://www.rfc-editor.org/info/rfc8783</a>&gt;.
+
+   [<a id="ref-RFC8811">RFC8811</a>]  Mortensen, A., Ed., Reddy.K, T., Ed., Andreasen, F.,
+              Teague, N., and R. Compton, &quot;DDoS Open Threat Signaling
+              (DOTS) Architecture&quot;, <a href="/doc/html/rfc8811">RFC 8811</a>, DOI 10.17487/RFC8811,
+              August 2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8811">https://www.rfc-editor.org/info/rfc8811</a>&gt;.
+
+Acknowledgements
+
+   Thanks to Brian Carpenter for the review of the Bootstrapping Remote
+   Secure Key Infrastructure (BRSKI) text used in previous draft
+   versions of the specification.
+
+   Many thanks to Russ White for the review, comments, and text
+   contribution.
+
+   Thanks to Dan Wing, Pei Wei, Valery Smyslov, and Jon Shallow for the
+   review and comments.
+
+   Thanks to Bernie Volz for the review of the DHCP section.
+
+   Many thanks to Benjamin Kaduk for the detailed AD review.
+
+   Thanks to Zhen Cao, Kyle Rose, Nagendra Nainar, and Peter Yee for the
+   directorate reviews.
+
+   Thanks to Barry Leiba, Martin Duke, Roman Danyliw, Éric Vyncke, and
+   Magnus Westerlund for the IESG review.
+
+Contributors
+
+   Prashanth Patil
+   Cisco Systems, Inc.
+
+   Email: praspati@cisco.com
+
+
+Authors&#x27; Addresses
+
+   Mohamed Boucadair
+   Orange
+   35000 Rennes
+   France
+
+   Email: mohamed.boucadair@orange.com
+
+
+   Tirumaleswar Reddy.K
+   McAfee, Inc.
+   Embassy Golf Link Business Park
+   Bangalore 560071
+   Karnataka
+   India
+
+   Email: TirumaleswarReddy_Konda@McAfee.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

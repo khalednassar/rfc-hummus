@@ -1,0 +1,348 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1481
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1481/">
+  <meta name="description" content="IAB Recommendation for an Intermediate Strategy to Address the Issue of Scaling (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bggrey"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1481.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1481.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1481.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1481/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1481/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1481@ietf.org?subject=rfc1481" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1481-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1481-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1481-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                Historic</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                 C. Huitema, Chair
+Request for Comments: 1481                  Internet Architecture Board
+                                                              July 1993
+
+
+           <span class="h1">IAB Recommendation for an Intermediate Strategy to</span>
+                     <span class="h1">Address the Issue of Scaling</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard.  Distribution of this memo is
+   unlimited.
+
+Recommendation
+
+   Classless Inter-Domain Routing (CIDR) proposes strategies for address
+   assignment of the existing IP address space with a view to conserve
+   the address space and stem the explosive growth of routing tables in
+   default-route-free routers run by transit routing domain providers
+   [<a href="#ref-1" title="&quot;Supernetting: an Address Assignment and Aggregation Strategy&quot;">1</a>].  CIDR is proposed as an immediate term strategy to extend the
+   life of the current 32 bit IP address space.  This strategy presumes
+   that a suitable long term solution is being addressed within the
+   Internet technical community.
+
+   The basic components of the CIDR plan are: management of the
+   allocation of Internet address space and provision of a mechanism for
+   aggregation of routing information.  The IP community has published
+   several RFCs and Internet-Drafts which describe the architecture for
+   IP address assignment and routing protocols which will promote the
+   deployment of CIDR.  These documents have led to changes in the way
+   network address are allocated and have prompted enhancements to the
+   inter-domain and intra-domain routing protocols.
+
+   With the CIDR prompted changes in the management of the allocation of
+   the Internet address space, allocation of blocks of Class C numbers
+   leads to an explosion of the routing tables.  So, it is important
+   that the techniques for aggregating information in the routing
+   protocols keep pace with the change in the allocation of IP numbers.
+
+   The IAB endorses the CIDR architecture and its implementation.  In
+   addition, the IAB supports the actions taken by the IANA and
+   InterNIC, the router vendors, and the network operators to implement
+   CIDR to address the scaling problem that we are facing with the
+   growth of the Internet.
+
+
+
+
+
+
+<span class="grey">IAB                                                             [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1481">RFC 1481</a>                      IAB on CIDR                      July 1993</span>
+
+
+References
+
+   [<a id="ref-1">1</a>] Fuller, V., Li, T., Yu, J., and K. Varadhan, &quot;Supernetting: an
+       Address Assignment and Aggregation Strategy&quot;, <a href="/doc/html/rfc1338">RFC 1338</a>, BARRNet,
+       cisco, Merit, OARnet, June 1992.
+
+   [<a id="ref-2">2</a>] Gerich, E., &quot;Guidelines for management of IP Address Space&quot;, <a href="/doc/html/rfc1466">RFC</a>
+       <a href="/doc/html/rfc1466">1466</a>, Merit, May 1993.
+
+   [<a id="ref-3">3</a>] Topolcic, C., &quot;Schedule for IP Address Space Management
+       Guidelines&quot;, <a href="/doc/html/rfc1367">RFC 1367</a>, CNRI, October 1992.
+
+   [<a id="ref-4">4</a>] Rekhter, Y., and T. Li, &quot;An Architecture for IP Address
+       Allocation with CIDR&quot;, Work in Progress, January 1993.
+
+   [<a id="ref-5">5</a>] Rekhter, Y., and C. Topolcic, &quot;Exchanging Routing Information
+       across Provider/Subscriber Boundaries in CIDR environment&quot;, Work
+       in Progress, February 1993.
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Author&#x27;s Address
+
+   Christian Huitema
+   INRIA, Sophia-Antipolis
+   2004 Route des Lucioles
+   BP 109
+   F-06561 Valbonne Cedex
+   France
+
+   Phone: +33 93 65 77 15
+   EMail: Christian.Huitema@MIRSA.INRIA.FR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IAB                                                             [Page 2]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

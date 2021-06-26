@@ -1,0 +1,1747 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8801
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-intarea-provisioning-domains/">
+  <meta name="description" content="Discovering Provisioning Domain Names and Data (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8801.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8801.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8801.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8801.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8801/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8801/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/intarea/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-intarea-provisioning-domains@ietf.org?subject=draft-ietf-intarea-provisioning-domains" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-intarea-provisioning-domains-11.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-intarea-provisioning-domains-11.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-intarea-provisioning-domains-11.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-intarea-provisioning-domains-11">draft-ietf-intarea-provisioning-domains-11</a>       Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        P. Pfister
+Request for Comments: 8801                                     É. Vyncke
+Category: Standards Track                                          Cisco
+ISSN: 2070-1721                                                 T. Pauly
+                                                              Apple Inc.
+                                                             D. Schinazi
+                                                              Google LLC
+                                                                 W. Shao
+                                                                   Cisco
+                                                               July 2020
+
+
+             <span class="h1">Discovering Provisioning Domain Names and Data</span>
+
+Abstract
+
+   Provisioning Domains (PvDs) are defined as consistent sets of network
+   configuration information.  PvDs allows hosts to manage connections
+   to multiple networks and interfaces simultaneously, such as when a
+   home router provides connectivity through both a broadband and
+   cellular network provider.
+
+   This document defines a mechanism for explicitly identifying PvDs
+   through a Router Advertisement (RA) option.  This RA option announces
+   a PvD identifier, which hosts can compare to differentiate between
+   PvDs.  The option can directly carry some information about a PvD and
+   can optionally point to PvD Additional Information that can be
+   retrieved using HTTP over TLS.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8801">https://www.rfc-editor.org/info/rfc8801</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Specification of Requirements
+   2.  Terminology
+   3.  Provisioning Domain Identification Using Router Advertisements
+     3.1.  PvD Option for Router Advertisements
+     3.2.  Router Behavior
+     3.3.  Non-PvD-Aware Host Behavior
+     3.4.  PvD-Aware Host Behavior
+       3.4.1.  DHCPv6 Configuration Association
+       3.4.2.  DHCPv4 Configuration Association
+       3.4.3.  Connection Sharing by the Host
+       3.4.4.  Usage of DNS Servers
+   4.  Provisioning Domain Additional Information
+     4.1.  Retrieving the PvD Additional Information
+     4.2.  Operational Consideration to Providing the PvD Additional
+           Information
+     4.3.  PvD Additional Information Format
+       4.3.1.  Example
+     4.4.  Detecting Misconfiguration and Misuse
+   5.  Operational Considerations
+     5.1.  Exposing Extra RA Options to PvD-Aware Hosts
+     5.2.  Different RAs for PvD-Aware and Non-PvD-Aware Hosts
+     5.3.  Enabling Multihoming for PvD-Aware Hosts
+     5.4.  Providing Additional Information to PvD-Aware Hosts
+   6.  Security Considerations
+   7.  Privacy Considerations
+   8.  IANA Considerations
+     8.1.  Change to IPv6 Neighbor Discovery Option Formats Registry
+     8.2.  New Entry in the Well-Known URIs Registry
+     8.3.  New Additional Information PvD Keys Registry
+     8.4.  New PvD Option Flags Registry
+     8.5.  PvD JSON Media Type Registration
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Provisioning Domains (PvDs) are defined in [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>] as consistent
+   sets of network configuration information.  This information includes
+   properties that are traditionally associated with a single networking
+   interface, such as source addresses, DNS configuration, proxy
+   configuration, and gateway addresses.
+
+   Clients that are aware of PvDs can take advantage of multiple network
+   interfaces simultaneously.  This enables using two PvDs in parallel
+   for separate connections or for multi-path transports.
+
+   While most PvDs today are discovered implicitly (such as by receiving
+   information via Router Advertisements from a router on a network that
+   a client host directly connects to), [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>] also defines the
+   notion of Explicit PvDs.  IPsec Virtual Private Networks are
+   considered Explicit PvDs, but Explicit PvDs can also be discovered
+   via the local network router.  Discovering Explicit PvDs allows two
+   key advancements in managing multiple PvDs:
+
+   1.  The ability to discover and use multiple PvDs on a single
+       interface, such as when a local router can provide connectivity
+       to two different Internet Service Providers.
+
+   2.  The ability to associate Additional Information about PvDs to
+       describe the properties of the network.
+
+   While [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>] defines the concept of Explicit PvDs, it does not
+   define the mechanism for discovering multiple Explicit PvDs on a
+   single network and their Additional Information.
+
+   This document specifies a way to identify PvDs with Fully Qualified
+   Domain Names (FQDNs), called PvD IDs.  Those identifiers are
+   advertised in a new Router Advertisement (RA) [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>] option called
+   the PvD Option, which, when present, associates the PvD ID with all
+   the information present in the Router Advertisement as well as any
+   configuration object, such as addresses, derived from it.  The PvD
+   Option may also contain a set of other RA options, along with an
+   optional inner Router Advertisement message header.  These options
+   and optional inner header are only visible to &#x27;PvD-aware&#x27; hosts,
+   allowing such hosts to have a specialized view of the network
+   configuration.
+
+   Since PvD IDs are used to identify different ways to access the
+   Internet, multiple PvDs (with different PvD IDs) can be provisioned
+   on a single host interface.  Similarly, the same PvD ID could be used
+   on different interfaces of a host in order to inform that those PvDs
+   ultimately provide equivalent services.
+
+   This document also introduces a mechanism for hosts to retrieve
+   optional Additional Information related to a specific PvD by means of
+   an HTTP-over-TLS query using a URI derived from the PvD ID.  The
+   retrieved JSON object contains Additional Information that would
+   typically be considered too large to be directly included in the
+   Router Advertisement but might be considered useful to the
+   applications, or even sometimes users, when choosing which PvD should
+   be used.
+
+   For example, if Alice has both a cellular network provider and a
+   broadband provider in her home, her PvD-aware devices and
+   applications would be aware of both available uplinks.  These
+   applications could fail-over between these networks or run
+   connections over both (potentially using multi-path transports).
+   Applications could also select specific uplinks based on the
+   properties of the network; for example, if the cellular network
+   provides free high-quality video streaming, a video-streaming
+   application could select that network while most of the other traffic
+   on Alice&#x27;s device uses the broadband provider.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Specification of Requirements</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This document uses the following terminology:
+
+   Provisioning Domain (PvD):  A set of network configuration
+      information; for more information, see [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>].
+
+   PvD ID:  A Fully Qualified Domain Name (FQDN) used to identify a PvD.
+
+   Explicit PvD:  A PvD uniquely identified with a PvD ID.  For more
+      information, see [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>].
+
+   Implicit PvD:  A PvD that, in the absence of a PvD ID, is identified
+      by the host interface to which it is attached and the address of
+      the advertising router.  See also [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>].
+
+   PvD-aware host:  A host that supports the association of network
+      configuration information into PvDs and the use of these PvDs as
+      described in this document.  Also named &quot;PvD-aware node&quot; in
+      [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Provisioning Domain Identification Using Router Advertisements</span>
+
+   Explicit PvDs are identified by a PvD ID.  The PvD ID is a Fully
+   Qualified Domain Name (FQDN) that identifies the network operator.
+   Network operators MUST use names that they own or manage to avoid
+   naming conflicts.  The same PvD ID MAY be used in several access
+   networks when they ultimately provide identical services (e.g., in
+   all home networks subscribed to the same service); else, the PvD ID
+   MUST be different to follow <a href="/doc/html/rfc7556#section-2.4">Section&nbsp;2.4 of [RFC7556]</a>.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  PvD Option for Router Advertisements</span>
+
+   This document introduces a Router Advertisement (RA) option called
+   the PvD Option.  It is used to convey the FQDN identifying a given
+   PvD (see Figure 1), bind the PvD ID with configuration information
+   received over DHCPv4 (see <a href="#section-3.4.2">Section 3.4.2</a>), enable the use of HTTP over
+   TLS to retrieve the PvD Additional Information JSON object (see
+   <a href="#section-4">Section 4</a>), as well as contain any other RA options that would
+   otherwise be valid in the RA.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Type      |    Length     |H|L|R|     Reserved    | Delay |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |       Sequence Number         |                             ...
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                             ...
+   ...                         PvD ID FQDN                       ...
+   ...             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   ...             |                  Padding                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                             ...
+   ...            Router Advertisement message header            ...
+   ...             (Only present when R-flag is set)             ...
+   ...                                                             |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |   Options ...
+   +-+-+-+-+-+-+-+-+-+-+-+-
+
+                        Figure 1: PvD Option Format
+
+   Type:  (8 bits) Set to 21.
+
+   Length:  (8 bits) The length of the option in units of 8 octets,
+      including the Type and Length fields, the Router Advertisement
+      message header, if any, as well as the RA options that are
+      included within the PvD Option.
+
+   H-flag:  (1 bit) &#x27;HTTP&#x27; flag stating whether some PvD Additional
+      Information is made available through HTTP over TLS, as described
+      in <a href="#section-4">Section 4</a>.
+
+   L-flag:  (1 bit) &#x27;Legacy&#x27; flag stating whether the PvD is associated
+      with IPv4 information assigned using DHCPv4 (see <a href="#section-3.4.2">Section 3.4.2</a>).
+
+   R-flag:  (1 bit) &#x27;Router Advertisement&#x27; flag stating whether the PvD
+      Option header is followed (right after padding to the next 64-bit
+      boundary) by a Router Advertisement message header (see
+      <a href="/doc/html/rfc4861#section-4.2">Section&nbsp;4.2 of [RFC4861]</a>).  The usage of the inner message header
+      is described in <a href="#section-3.4">Section 3.4</a>.
+
+   Reserved:  (9 bits) Reserved for later use.  It MUST be set to zero
+      by the sender and ignored by the receiver.
+
+   Delay:  (4 bits) Unsigned integer used to delay HTTP GET queries from
+      hosts by a randomized backoff (see <a href="#section-4.1">Section 4.1</a>).  If the H-flag is
+      not set, senders SHOULD set the delay to zero, and receivers
+      SHOULD ignore the value.
+
+   Sequence Number:  (16 bits) Sequence number for the PvD Additional
+      Information, as described in <a href="#section-4">Section 4</a>.  If the H-flag is not set,
+      senders SHOULD set the Sequence Number to zero, and receivers
+      SHOULD ignore the value.
+
+   PvD ID FQDN:  The FQDN used as PvD ID encoded in DNS format, as
+      described in <a href="/doc/html/rfc1035#section-3.1">Section&nbsp;3.1 of [RFC1035]</a>.  Domain name compression as
+      described in <a href="/doc/html/rfc1035#section-4.1.4">Section&nbsp;4.1.4 of [RFC1035]</a> MUST NOT be used.
+
+   Padding:  Zero or more padding octets to the next 8-octet boundary
+      (see <a href="/doc/html/rfc4861#section-4.6">Section&nbsp;4.6 of [RFC4861]</a>).  It MUST be set to zero by the
+      sender and ignored by the receiver.
+
+   RA message header:  (16 octets) When the R-flag is set, a full Router
+      Advertisement message header as specified in [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>].  The
+      sender MUST set the Type field to 134 (the value for &quot;Router
+      Advertisement&quot;) and set the Code field to 0.  Receivers MUST
+      ignore both of these fields.  The Checksum field MUST be set to 0
+      by the sender; non-zero checksums MUST be ignored by the receiver
+      without causing the processing of the message to fail.  All other
+      fields are to be set and parsed as specified in [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>] or any
+      updating documents.
+
+   Options:  Zero or more RA options that would otherwise be valid as
+      part of the Router Advertisement main body but are instead
+      included in the PvD Option so as to be ignored by hosts that are
+      not PvD aware.
+
+   Figure 2 shows an example of a PvD Option with &quot;example.org&quot; as the
+   PvD ID FQDN and includes both a Recursive DNS Server (RDNSS) option
+   and a Prefix Information Option.  It has a Sequence Number of 123 and
+   indicates the presence of PvD Additional Information that is expected
+   to be fetched with a delay factor of 1.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +---------------+-----------------------------------------------+
+   | Type: 21      |  Length: 12   |1|0|0|     Reserved    |Delay:1|
+   +---------------+-------------------------------+---------------+
+   |       Seq number: 123         |      7        |       e       |
+   +---------------+-----------------------------------------------+
+   |      x        |       a       |      m        |       p       |
+   +---------------------------------------------------------------+
+   |      l        |       e       |      3        |       o       |
+   +---------------------------------------------------------------+
+   |      r        |       g       |      0        |   0 (padding) |
+   +---------------------------------------------------------------+
+   |   0 (padding) |  0 (padding)  |   0 (padding) |   0 (padding) |
+   +---------------+---------------+---------------+---------------+
+   |  RDNSS option (<a href="/doc/html/rfc8106">RFC 8106</a>) length: 5                          ...
+   ...                                                           ...
+   ...                                                             |
+   +---------------------------------------------------------------+
+   | Prefix Information Option (<a href="/doc/html/rfc4861">RFC 4861</a>) length: 4              ...
+   ...                                                             |
+   ...                                                             |
+   +---------------------------------------------------------------+
+
+                        Figure 2: Example PvD Option
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Router Behavior</span>
+
+   A router MAY send RAs containing one PvD Option but MUST NOT include
+   more than one PvD Option in each RA.  The PvD Option MUST NOT contain
+   further PvD Options.
+
+   The PvD Option MAY contain zero, one, or more RA options that would
+   otherwise be valid as part of the same RA.  Such options are
+   processed by PvD-aware hosts and ignored by other hosts as per
+   <a href="/doc/html/rfc4861#section-4.2">Section&nbsp;4.2 of [RFC4861]</a>.
+
+   In order to provide multiple different PvDs, a router MUST send
+   multiple RAs.  RAs sent from different link-local source addresses
+   establish distinct Implicit PvDs in the absence of a PvD Option.
+   Explicit PvDs MAY share link-local source addresses with an Implicit
+   PvD and any number of other Explicit PvDs.
+
+   In other words, different Explicit PvDs MAY be advertised with RAs
+   using the same link-local source address, but different Implicit
+   PvDs, advertised by different RAs, MUST use different link-local
+   addresses because these Implicit PvDs are identified by the source
+   addresses of the RAs.  If a link-local address on the router is
+   changed, then any new RA will be interpreted as a different Implicit
+   PvD by PvD-aware hosts.
+
+   As specified in [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>] and [<a href="/doc/html/rfc6980" title="&quot;Security Implications of IPv6 Fragmentation with IPv6 Neighbor Discovery&quot;">RFC6980</a>], when the set of options
+   causes the size of an advertisement to exceed the link MTU, multiple
+   router advertisements MUST be sent to avoid fragmentation, each
+   containing a subset of the options.  In such cases, the PvD Option
+   header (i.e., all fields except the Options field) MUST be repeated
+   in all the transmitted RAs.  The options within the Options field MAY
+   be transmitted only once, included in one of the transmitted PvD
+   Options.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Non-PvD-Aware Host Behavior</span>
+
+   As the PvD Option has a new option code, non-PvD-aware hosts will
+   simply ignore the PvD Option and all the options it contains (see
+   <a href="/doc/html/rfc4861#section-4.2">Section&nbsp;4.2 of [RFC4861]</a>).  This ensures the backward compatibility
+   required in <a href="/doc/html/rfc7556#section-3.3">Section&nbsp;3.3 of [RFC7556]</a>.  This behavior allows for a
+   mixed-mode network where a mix of PvD-aware and non-PvD-aware hosts
+   coexist.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  PvD-Aware Host Behavior</span>
+
+   Hosts MUST associate received RAs and included configuration
+   information (e.g., Router Valid Lifetime, Prefix Information
+   [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>], Recursive DNS Server [<a href="/doc/html/rfc8106" title="&quot;IPv6 Router Advertisement Options for DNS Configuration&quot;">RFC8106</a>], and Routing Information
+   [<a href="/doc/html/rfc4191" title="&quot;Default Router Preferences and More-Specific Routes&quot;">RFC4191</a>] options) with the Explicit PvD identified by the first PvD
+   Option present in the received RA, if any, or with the Implicit PvD
+   identified by the host interface and the source address of the
+   received RA otherwise.  If an RA message header is present both
+   within the PvD Option and outside it, the header within the PvD
+   Option takes precedence.
+
+   In case multiple PvD Options are found in a given RA, hosts MUST
+   ignore all but the first PvD Option.
+
+   If a host receives PvD Options flags that it does not recognize
+   (currently in the Reserved field), it MUST ignore these flags.
+
+   Similarly, hosts MUST associate all network configuration objects
+   (e.g., default routers, addresses, more specific routes, and DNS
+   Recursive Resolvers) with the PvD associated with the RA that
+   provisioned the object.  For example, addresses that are generated
+   using a received Prefix Information Option (PIO) are associated with
+   the PvD of the last received RA that included the given PIO.
+
+   PvD IDs MUST be compared in a case-insensitive manner as defined by
+   [<a href="/doc/html/rfc4343" title="&quot;Domain Name System (DNS) Case Insensitivity Clarification&quot;">RFC4343</a>].  For example, &quot;pvd.example.com.&quot; or &quot;PvD.Example.coM.&quot;
+   would refer to the same PvD.
+
+   While performing PvD-specific operations such as resolving names,
+   executing the default address selection algorithm [<a href="/doc/html/rfc6724" title="&quot;Default Address Selection for Internet Protocol Version 6 (IPv6)&quot;">RFC6724</a>], or
+   executing the default router selection algorithm when forwarding
+   packets [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>] [<a href="/doc/html/rfc4191" title="&quot;Default Router Preferences and More-Specific Routes&quot;">RFC4191</a>] [<a href="/doc/html/rfc8028" title="&quot;First-Hop Router Selection by Hosts in a Multi-Prefix Network&quot;">RFC8028</a>], hosts and applications MAY
+   consider only the configuration associated with any non-empty subset
+   of PvDs.  For example, a host MAY associate a given process with a
+   specific PvD, or a specific set of PvDs, while associating another
+   process with another PvD.  A PvD-aware application might also be able
+   to select, on a per-connection basis, which PvDs should be used.  In
+   particular, constrained devices such as small battery-operated
+   devices (e.g., Internet of Things (IoT)) or devices with limited CPU
+   or memory resources may purposefully use a single PvD while ignoring
+   some received RAs containing different PvD IDs.
+
+   The way an application expresses its desire to use a given PvD, or a
+   set of PvDs, and the way this selection is enforced are out of the
+   scope of this document.  Useful insights about these considerations
+   can be found in [<a href="#ref-MPVD-API" title="&quot;Multiple Provisioning Domains API Requirements&quot;">MPVD-API</a>].
+
+<span class="h4"><a class="selflink" id="section-3.4.1" href="#section-3.4.1">3.4.1</a>.  DHCPv6 Configuration Association</span>
+
+   When a host retrieves stateless configuration elements using DHCPv6
+   (e.g., DNS recursive resolvers or DNS domain search lists [<a href="/doc/html/rfc3646" title="&quot;DNS Configuration options for Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;">RFC3646</a>]),
+   they MUST be associated with all the Explicit and Implicit PvDs
+   received on the same interface and contained in an RA with the O-flag
+   set [<a href="/doc/html/rfc4861" title="&quot;Neighbor Discovery for IP version 6 (IPv6)&quot;">RFC4861</a>].
+
+   When a host retrieves stateful assignments using DHCPv6, such
+   assignments MUST be associated with the received PvD that was
+   received with RAs with the M-flag set and including a matching PIO.
+   A PIO is considered to match a DHCPv6 assignment when the IPv6 prefix
+   from the PIO includes the assignment from DHCPv6.  For example, if a
+   PvD&#x27;s associated PIO defines the prefix &quot;2001:db8:cafe::/64&quot;, a
+   DHCPv6 IA_NA message that assigns the address
+   &quot;2001:db8:cafe::1234:4567&quot; would be considered to match.
+
+   In cases where an address would be assigned by DHCPv6 and no matching
+   PvD could be found, hosts MAY associate the assigned address with any
+   Implicit PvD received on the same interface or to multiple Implicit
+   PvDs received on the same interface.  This is intended to resolve
+   backward-compatibility issues with rare deployments choosing to
+   assign addresses with DHCPv6 while not sending any matching PIO.
+   Implementations are suggested to flag or log such scenarios as errors
+   to help detect misconfigurations.
+
+<span class="h4"><a class="selflink" id="section-3.4.2" href="#section-3.4.2">3.4.2</a>.  DHCPv4 Configuration Association</span>
+
+   Associating DHCPv4 [<a href="/doc/html/rfc2131" title="&quot;Dynamic Host Configuration Protocol&quot;">RFC2131</a>] configuration elements with Explicit
+   PvDs allows hosts to treat a set of IPv4 and IPv6 configurations as a
+   single PvD with shared properties.  For example, consider a router
+   that provides two different uplinks.  One could be a broadband
+   network that has data rate and streaming properties described in PvD
+   Additional Information and that provides both IPv4 and IPv6 network
+   access.  The other could be a cellular network that provides only
+   IPv6 network access and uses NAT64 [<a href="/doc/html/rfc6146" title="&quot;Stateful NAT64: Network Address and Protocol Translation from IPv6 Clients to IPv4 Servers&quot;">RFC6146</a>].  The broadband network
+   can be represented by an Explicit PvD that points to the Additional
+   Information and also marks association with DHCPv4 information.  The
+   cellular network can be represented by a different Explicit PvD that
+   is not associated with DHCPv4.
+
+   When a PvD-aware host retrieves configuration elements from DHCPv4,
+   the information is associated either with a single Explicit PvD on
+   that interface or else with all Implicit PvDs on the same interface.
+
+   An Explicit PvD indicates its association with DHCPv4 information by
+   setting the L-flag in the PvD Option.  If there is exactly one
+   Explicit PvD that sets this flag, hosts MUST associate the DHCPv4
+   information with that PvD.  Multiple Explicit PvDs on the same
+   interface marking this flag is a misconfiguration, and hosts SHOULD
+   NOT associate the DHCPv4 information with any Explicit PvD in this
+   case.
+
+   If no single Explicit PvD claims association with DHCPv4, the
+   configuration elements coming from DHCPv4 MUST be associated with all
+   Implicit PvDs identified by the interface on which the DHCPv4
+   transaction happened.  This maintains existing host behavior.
+
+<span class="h4"><a class="selflink" id="section-3.4.3" href="#section-3.4.3">3.4.3</a>.  Connection Sharing by the Host</span>
+
+   The situation in which a host shares connectivity from an upstream
+   interface (e.g., cellular) to a downstream interface (e.g., Wi-Fi) is
+   known as &#x27;tethering&#x27;.  Techniques such as ND Proxy [<a href="/doc/html/rfc4389" title="&quot;Neighbor Discovery Proxies (ND Proxy)&quot;">RFC4389</a>], 64share
+   [<a href="/doc/html/rfc7278" title="&quot;Extending an IPv6 /64 Prefix from a Third Generation Partnership Project (3GPP) Mobile Interface to a LAN Link&quot;">RFC7278</a>], or prefix delegation (e.g., using DHCPv6-PD [<a href="/doc/html/rfc8415" title="&quot;Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;">RFC8415</a>]) may
+   be used for that purpose.
+
+   Whenever the RAs received from the upstream interface contain a PvD
+   Option, hosts that are sharing connectivity SHOULD include a PvD
+   Option within the RAs sent downstream with:
+
+   *  The same PvD ID FQDN
+
+   *  The same H-flag, Delay, and Sequence Number values
+
+   *  The L-flag set whenever the host is sharing IPv4 connectivity
+      received from the same upstream interface
+
+   *  The bits in the Reserved field set to 0
+
+   The values of the R-flag, Router Advertisement message header, and
+   Options field depend on whether or not the connectivity should be
+   shared only with PvD-aware hosts (see <a href="#section-3.2">Section 3.2</a>).  In particular,
+   all options received within the upstream PvD Option and included in
+   the downstream RA SHOULD be included in the downstream PvD Option.
+
+<span class="h4"><a class="selflink" id="section-3.4.4" href="#section-3.4.4">3.4.4</a>.  Usage of DNS Servers</span>
+
+   PvD-aware hosts can be provisioned with recursive DNS servers via RA
+   options passed within an Explicit PvD, via RA options associated with
+   an Implicit PvD, via DHCPv6 or DHCPv4, or from some other
+   provisioning mechanism that creates an Explicit PvD (such as a VPN).
+   In all of these cases, the recursive DNS server addresses SHOULD be
+   associated with the corresponding PvD.  Specifically, queries sent to
+   a configured recursive DNS server SHOULD be sent from a local IP
+   address that was provisioned for the PvD via RA or DHCP.  Answers
+   received from the DNS server SHOULD only be used on the same PvD.
+
+   PvD-aware applications will be able to select which PvD(s) to use for
+   DNS resolution and connections, which allows them to effectively use
+   multiple Explicit PvDs.  In order to support non-PvD-aware
+   applications, however, PvD-aware hosts SHOULD ensure that non-PvD-
+   aware name resolution APIs like &quot;getaddrinfo&quot; only use resolvers from
+   a single PvD for a given query.  Handling DNS across PvDs is
+   discussed in <a href="/doc/html/rfc7556#section-5.2.1">Section&nbsp;5.2.1 of [RFC7556]</a>, and PvD APIs are discussed
+   in <a href="/doc/html/rfc7556#section-6">Section&nbsp;6 of [RFC7556]</a>.
+
+   Maintaining the correct usage of DNS within PvDs avoids various
+   practical errors such as:
+
+   *  A PvD associated with a VPN or otherwise private network may
+      provide DNS answers that contain addresses inaccessible over
+      another PvD.  This includes the DNS queries to retrieve PvD
+      Additional Information, which could otherwise send identifying
+      information to the recursive DNS system (see <a href="#section-4.1">Section 4.1</a>).
+
+   *  A PvD that uses a NAT64 [<a href="/doc/html/rfc6146" title="&quot;Stateful NAT64: Network Address and Protocol Translation from IPv6 Clients to IPv4 Servers&quot;">RFC6146</a>] and DNS64 [<a href="/doc/html/rfc6147" title="&quot;DNS64: DNS Extensions for Network Address Translation from IPv6 Clients to IPv4 Servers&quot;">RFC6147</a>] will
+      synthesize IPv6 addresses in DNS answers that are not globally
+      routable and would be invalid on other PvDs.  Conversely, an IPv4
+      address resolved via DNS on another PvD cannot be directly used on
+      a NAT64 network.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Provisioning Domain Additional Information</span>
+
+   Additional information about the network characteristics can be
+   retrieved based on the PvD ID.  This set of information is called PvD
+   Additional Information and is encoded as a JSON object [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>].
+   This JSON object is restricted to the Internet JSON (I-JSON) profile,
+   as defined in [<a href="/doc/html/rfc7493" title="&quot;The I-JSON Message Format&quot;">RFC7493</a>].
+
+   The purpose of this JSON object is to provide Additional Information
+   to applications on a client host about the connectivity that is
+   provided using a given interface and source address.  It typically
+   includes data that would be considered too large, or not critical
+   enough, to be provided within an RA option.  The information
+   contained in this object MAY be used by the operating system, network
+   libraries, applications, or users in order to decide which set of
+   PvDs should be used for which connection, as described in
+   <a href="#section-3.4">Section 3.4</a>.
+
+   The Additional Information related to a PvD is specifically intended
+   to be optional and is targeted at optimizing or informing the
+   behavior of user-facing hosts.  This information can be extended to
+   provide hints for host system behavior (such as captive portal or
+   walled-garden PvD detection) or application behavior (describing
+   application-specific services offered on a given PvD).  This content
+   may not be appropriate for light-weight IoT devices.  IoT devices
+   might need only a subset of the information and would in some cases
+   prefer a smaller representation like Concise Binary Object
+   Representation (CBOR) [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>].  Delivering a reduced version of the
+   PvD Additional Information designed for such devices is not defined
+   in this document.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Retrieving the PvD Additional Information</span>
+
+   When the H-flag of the PvD Option is set, hosts MAY attempt to
+   retrieve the PvD Additional Information associated with a given PvD
+   by performing an HTTP-over-TLS [<a href="/doc/html/rfc2818" title="&quot;HTTP Over TLS&quot;">RFC2818</a>] GET query to &quot;https://&lt;PvD-
+   ID&gt;/.well-known/pvd&quot;.  Inversely, hosts MUST NOT do so whenever the
+   H-flag is not set.
+
+   Recommendations for how to use TLS securely can be found in
+   [<a href="/doc/html/rfc7525" title="&quot;Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)&quot;">RFC7525</a>].
+
+   When a host retrieves the PvD Additional Information, it MUST verify
+   that the TLS server certificate is valid for the performed request,
+   specifically, that a DNS-ID [<a href="/doc/html/rfc6125" title="&quot;Representation and Verification of Domain-Based Application Service Identity within Internet Public Key Infrastructure Using X.509 (PKIX) Certificates in the Context of Transport Layer Security (TLS)&quot;">RFC6125</a>] on the certificate is equal to
+   the PvD ID expressed as an FQDN.  This validation indicates that the
+   owner of the FQDN authorizes its use with the prefix advertised by
+   the router.  If this validation fails, hosts MUST close the
+   connection and treat the PvD as if it has no Additional Information.
+
+   HTTP requests and responses for PvD Additional Information use the
+   &quot;application/pvd+json&quot; media type (see <a href="#section-8.5">Section 8.5</a>).  Clients SHOULD
+   include this media type as an Accept header field in their GET
+   requests, and servers MUST mark this media type as their Content-Type
+   header field in responses.
+
+   Note that the DNS name resolution of the PvD ID, any connections made
+   for certificate validation (such as Online Certificate Status
+   Protocol (OCSP) [<a href="/doc/html/rfc6960" title="&quot;X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP&quot;">RFC6960</a>]), and the HTTP request itself MUST be
+   performed using the considered PvD.  In other words, the name
+   resolution, PKI checks, source address selection, as well as the
+   next-hop router selection MUST be performed while exclusively using
+   the set of configuration information attached with the PvD, as
+   defined in <a href="#section-3.4">Section 3.4</a>.  In some cases, it may therefore be necessary
+   to wait for an address to be available for use (e.g., once the
+   Duplicate Address Detection or DHCPv6 processes are complete) before
+   initiating the HTTP-over-TLS query.  In order to address privacy
+   concerns around linkability of the PvD HTTP connection with future
+   user-initiated connections, if the host has a temporary address per
+   [<a href="/doc/html/rfc4941" title="&quot;Privacy Extensions for Stateless Address Autoconfiguration in IPv6&quot;">RFC4941</a>] in this PvD, then it SHOULD use a temporary address to
+   fetch the PvD Additional Information and MAY deprecate the used
+   temporary address and generate a new temporary address afterward.
+
+   If the HTTP status of the answer is greater than or equal to 400, the
+   host MUST close its connection and consider that there is no PvD
+   Additional Information.  If the HTTP status of the answer is between
+   300 and 399, inclusive, it MUST follow the redirection(s).  If the
+   HTTP status of the answer is between 200 and 299, inclusive, the
+   response is expected to be a single JSON object.
+
+   After retrieval of the PvD Additional Information, hosts MUST
+   remember the last Sequence Number value received in an RA including
+   the same PvD ID.  Whenever a new RA for the same PvD is received with
+   a different Sequence Number value, or whenever the expiry date for
+   the additional information is reached, hosts MUST deprecate the
+   Additional Information and stop using it.
+
+   Hosts retrieving a new PvD Additional Information object MUST check
+   for the presence and validity of the mandatory fields specified in
+   <a href="#section-4.3">Section 4.3</a>.  A retrieved object including an expiration time that is
+   already past or missing a mandatory element MUST be ignored.
+
+   In order to avoid synchronized queries toward the server hosting the
+   PvD Additional Information when an object expires, object updates are
+   delayed by a randomized backoff time.
+
+   *  When a host performs a JSON object update after it detected a
+      change in the PvD Option Sequence Number, it MUST add a delay
+      before sending the query.  The target time for the delay is
+      calculated as a random time between zero and 2^((10 + Delay))
+      milliseconds, where &#x27;Delay&#x27; corresponds to the 4-bit unsigned
+      integer in the last received PvD Option.
+
+   *  When a host last retrieved a JSON object at time A that includes
+      an expiry time B using the &quot;expires&quot; key, and the host is
+      configured to keep the PvD Additional Information up to date, it
+      MUST add some randomness into its calculation of the time to fetch
+      the update.  The target time for fetching the updated object is
+      calculated as a uniformly random time in the interval [(B-A)/2,B].
+
+   In the example in Figure 2, the Delay field value is 1; this means
+   that the host calculates its delay by choosing a uniformly random
+   time between 0 and 2^((10 + 1)) milliseconds, i.e., between 0 and
+   2048 milliseconds.
+
+   Since the Delay value is directly within the PvD Option rather than
+   the object itself, an operator may perform a push-based update by
+   incrementing the Sequence Number value while changing the Delay value
+   depending on the criticality of the update and the capacity of its
+   PvD Additional Information servers.
+
+   In addition to adding a random delay when fetching Additional
+   Information, hosts MUST enforce a minimum time between requesting
+   Additional Information for a given PvD on the same network.  This
+   minimum time is RECOMMENDED to be 10 seconds, in order to avoid hosts
+   causing a denial-of-service on the PvD server.  Hosts also MUST limit
+   the number of requests that are made to different PvD Additional
+   Information servers on the same network within a short period of
+   time.  A RECOMMENDED value is to issue no more than five PvD
+   Additional Information requests in total on a given network within 10
+   seconds.  For more discussion, see <a href="#section-6">Section 6</a>.
+
+   The PvD Additional Information object includes a set of IPv6 prefixes
+   (under the key &quot;prefixes&quot;) that MUST be checked against all the
+   Prefix Information Options advertised in the RA.  If any of the
+   prefixes included in any associated PIO is not covered by at least
+   one of the listed prefixes, the PvD Additional Information MUST be
+   considered to be a misconfiguration and MUST NOT be used by the host.
+   See <a href="#section-4.4">Section 4.4</a> for more discussion on handling such
+   misconfigurations.
+
+   If the request for PvD Additional Information fails due to a TLS
+   certificate validation error, an HTTP error, or because the retrieved
+   file does not contain valid PvD JSON, hosts MUST close any connection
+   used to fetch the PvD Additional Information and MUST NOT request the
+   information for that PvD ID again for the duration of the local
+   network attachment.  If a host detects 10 or more such failures to
+   fetch PvD Additional Information, the local network is assumed to be
+   misconfigured or under attack and the host MUST NOT make any further
+   requests for any PvD Additional Information, belonging to any PvD ID,
+   for the duration of the local network attachment.  For more
+   discussion, see <a href="#section-6">Section 6</a>.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Operational Consideration to Providing the PvD Additional</span>
+<span class="h3">      Information</span>
+
+   Whenever the H-flag is set in the PvD Option, a valid PvD Additional
+   Information object MUST be made available to all hosts receiving the
+   RA by the network operator.  In particular, when a captive portal is
+   present, hosts MUST still be allowed to perform DNS, certificate
+   validation, and HTTP-over-TLS operations related to the retrieval of
+   the object, even before logging into the captive portal.
+
+   Routers SHOULD increment the PvD Option Sequence Number by one
+   whenever a new PvD Additional Information object is available and
+   should be retrieved by hosts.  If the value exceeds what can be
+   stored in the Sequence Number field, it MUST wrap back to zero.
+
+   The server providing the JSON files SHOULD also check whether the
+   client address is contained by the prefixes listed in the Additional
+   Information and SHOULD return a 403 response code if there is no
+   match.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  PvD Additional Information Format</span>
+
+   The PvD Additional Information is a JSON object.
+
+   The following table presents the mandatory keys, which MUST be
+   included in the object:
+
+    +============+===============+===========+========================+
+    | JSON key   | Description   | Type      | Example                |
+    +============+===============+===========+========================+
+    | identifier | PvD ID FQDN   | String    | &quot;pvd.example.com.&quot;     |
+    +------------+---------------+-----------+------------------------+
+    | expires    | Date after    | [<a href="/doc/html/rfc3339" title="&quot;Date and Time on the Internet: Timestamps&quot;">RFC3339</a>] | &quot;2020-05-23T06:00:00Z&quot; |
+    |            | which this    | Date      |                        |
+    |            | object is no  |           |                        |
+    |            | longer valid  |           |                        |
+    +------------+---------------+-----------+------------------------+
+    | prefixes   | Array of IPv6 | Array of  | [&quot;2001:db8:1::/48&quot;,    |
+    |            | prefixes      | strings   | &quot;2001:db8:4::/48&quot;]     |
+    |            | valid for     |           |                        |
+    |            | this PvD      |           |                        |
+    +------------+---------------+-----------+------------------------+
+
+                                  Table 1
+
+   A retrieved object that does not include all three of these keys at
+   the root of the JSON object MUST be ignored.  All three keys need to
+   be validated; otherwise, the object MUST be ignored.  The value
+   stored for &quot;identifier&quot; MUST be matched against the PvD ID FQDN
+   presented in the PvD Option using the comparison mechanism described
+   in <a href="#section-3.4">Section 3.4</a>.  The value stored for &quot;expires&quot; MUST be a valid date
+   in the future.  If the PIO of the received RA is not covered by at
+   least one of the &quot;prefixes&quot; key, the retrieved object SHOULD be
+   ignored.
+
+   The following table presents some optional keys that MAY be included
+   in the object.
+
+   +============+======================+==========+====================+
+   | JSON key   | Description          | Type     | Example            |
+   +============+======================+==========+====================+
+   | dnsZones   | DNS zones searchable | Array    | [&quot;example.com&quot;,    |
+   |            | and accessible       | of       | &quot;sub.example.com&quot;] |
+   |            |                      | strings  |                    |
+   +------------+----------------------+----------+--------------------+
+   | noInternet | No Internet; set to  | Boolean  | true               |
+   |            | &quot;true&quot; when the PvD  |          |                    |
+   |            | is restricted        |          |                    |
+   +------------+----------------------+----------+--------------------+
+
+                                  Table 2
+
+   It is worth noting that the JSON format allows for extensions.
+   Whenever an unknown key is encountered, it MUST be ignored along with
+   its associated elements.
+
+   Private-use or experimental keys MAY be used in the JSON dictionary.
+   In order to avoid such keys colliding with the keys registered by
+   IANA, implementers or vendors defining private-use or experimental
+   keys MUST create sub-dictionaries.  If a set of PvD Additional
+   Information keys are defined by an organization that has a formal URN
+   namespace [<a href="#ref-IANA-URN" title="&quot;Uniform Resource Names (URN) Namespaces&quot;">IANA-URN</a>], the URN namespace SHOULD be used as the top-
+   level JSON key for the sub-dictionary.  For other private uses, the
+   sub-dictionary key SHOULD follow the format of &quot;vendor-*&quot;, where the
+   &quot;*&quot; is replaced by the implementer&#x27;s or vendor&#x27;s identifier.  For
+   example, keys specific to the FooBar organization could use &quot;vendor-
+   foobar&quot;.  If a host receives a sub-dictionary with an unknown key,
+   the host MUST ignore the contents of the sub-dictionary.
+
+<span class="h4"><a class="selflink" id="section-4.3.1" href="#section-4.3.1">4.3.1</a>.  Example</span>
+
+   The following two examples show how the JSON keys defined in this
+   document can be used:
+
+   {
+     &quot;identifier&quot;: &quot;cafe.example.com.&quot;,
+     &quot;expires&quot;: &quot;2020-05-23T06:00:00Z&quot;,
+     &quot;prefixes&quot;: [&quot;2001:db8:1::/48&quot;, &quot;2001:db8:4::/48&quot;],
+   }
+
+   {
+     &quot;identifier&quot;: &quot;company.foo.example.com.&quot;,
+     &quot;expires&quot;: &quot;2020-05-23T06:00:00Z&quot;,
+     &quot;prefixes&quot;: [&quot;2001:db8:1::/48&quot;, &quot;2001:db8:4::/48&quot;],
+     &quot;vendor-foo&quot;:
+       {
+           &quot;private-key&quot;: &quot;private-value&quot;,
+       },
+   }
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Detecting Misconfiguration and Misuse</span>
+
+   Hosts MUST validate the TLS server certificate when retrieving PvD
+   Additional Information, as detailed in <a href="#section-4.1">Section 4.1</a>.
+
+   Hosts MUST verify that all prefixes in all the RA PIOs are covered by
+   a prefix from the PvD Additional Information.  An adversarial router
+   attempting to spoof the definition of an Explicit PvD, without the
+   ability to modify the PvD Additional Information, would need to
+   perform IPv6-to-IPv6 Network Prefix Translation (NPTv6) [<a href="/doc/html/rfc6296" title="&quot;IPv6-to-IPv6 Network Prefix Translation&quot;">RFC6296</a>] in
+   order to circumvent this check.  Thus, this check cannot prevent all
+   spoofing, but it can detect misconfiguration or mismatched routers
+   that are not adding a NAT.
+
+   If NPTv6 is being added in order to spoof PvD ownership, the HTTPS
+   server for Additional Information can detect this misconfiguration.
+   The HTTPS server SHOULD validate the source addresses of incoming
+   connections (see <a href="#section-4.1">Section 4.1</a>).  This check gives reasonable assurance
+   that NPTv6 was not used and restricts the information to the valid
+   network users.If the PvD does not provision IPv4 (it does not include
+   the L-flag in the RA), the server cannot validate the source
+   addresses of connections using IPv4.  Thus, the PvD ID FQDN for such
+   PvDs SHOULD NOT have a DNS A record.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Operational Considerations</span>
+
+   This section describes some example use cases of PvDs.  For the sake
+   of simplicity, the RA messages will not be described in the usual
+   ASCII art but rather in an indented list.  Values in the PvD Option
+   header that are not included in the example are assumed to be zero or
+   false (such as the H-flag, Sequence Number, and Delay fields).
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Exposing Extra RA Options to PvD-Aware Hosts</span>
+
+   In this example, there is one RA message sent by the router.  This
+   message contains some options applicable to all hosts on the network
+   and also a PvD Option that also contains other options only visible
+   to PvD-aware hosts.
+
+   *  RA Header: router lifetime = 6000
+
+   *  Prefix Information Option: length = 4, prefix = 2001:db8:cafe::/64
+
+   *  PvD Option header: length = 3 + 5 + 4, PvD ID FQDN = example.org.,
+      R-flag = 0 (actual length of the header with padding 24 bytes = 3
+      * 8 bytes)
+
+      -  Recursive DNS Server: length = 5, addresses =
+         [2001:db8:cafe::53, 2001:db8:f00d::53]
+
+      -  Prefix Information Option: length = 4, prefix =
+         2001:db8:f00d::/64
+
+   Note that a PvD-aware host will receive two different prefixes,
+   &quot;2001:db8:cafe::/64&quot; and &quot;2001:db8:f00d::/64&quot;, both associated with
+   the same PvD (identified by &quot;example.org.&quot;).  A non-PvD-aware host
+   will only receive one prefix, &quot;2001:db8:cafe::/64&quot;.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Different RAs for PvD-Aware and Non-PvD-Aware Hosts</span>
+
+   It is expected that for some years, networks will have a mixed
+   environment of PvD-aware hosts and non-PvD-aware hosts.  If there is
+   a need to give specific information to PvD-aware hosts only, then it
+   is RECOMMENDED to send two RA messages, one for each class of hosts.
+   This approach allows for two distinct sets of configuration
+   information to be sent in a way that will not disrupt non-PvD-aware
+   hosts.  It also lowers the risk that a single RA message will
+   approach its MTU limit due to duplicated information.
+
+   If two RA messages are sent for this reason, they MUST be sent from
+   two different link-local source addresses (<a href="#section-3.2">Section 3.2</a>).  For
+   example, here is the RA sent for non-PvD-aware hosts:
+
+   *  RA Header: router lifetime = 6000 (non-PvD-aware hosts will use
+      this router as a default router)
+
+   *  Prefix Information Option: length = 4, prefix = 2001:db8:cafe::/64
+
+   *  Recursive DNS Server Option: length = 3, addresses =
+      [2001:db8:cafe::53]
+
+   *  PvD Option header: length = 3 + 2, PvD ID FQDN = foo.example.org.,
+      R-flag = 1 (actual length of the header 24 bytes = 3 * 8 bytes)
+
+      -  RA Header: router lifetime = 0 (PvD-aware hosts will not use
+         this router as a default router), implicit length = 2
+
+   And here is the RA sent for PvD-aware hosts:
+
+   *  RA Header: router lifetime = 0 (non-PvD-aware hosts will not use
+      this router as a default router)
+
+   *  PvD Option header: length = 3 + 2 + 4 + 3, PvD ID FQDN =
+      bar.example.org., R-flag = 1 (actual length of the header 24 bytes
+      = 3 * 8 bytes)
+
+      -  RA Header: router lifetime = 1600 (PvD-aware hosts will use
+         this router as a default router), implicit length = 2
+
+      -  Prefix Information Option: length = 4, prefix =
+         2001:db8:f00d::/64
+
+      -  Recursive DNS Server Option: length = 3, addresses =
+         [2001:db8:f00d::53]
+
+   In the above example, non-PvD-aware hosts will only use the first
+   listed RA sent by their default router and use the
+   &quot;2001:db8:cafe::/64&quot; prefix.  PvD-aware hosts will autonomously
+   configure addresses from both PIOs but will only use the source
+   address in &quot;2001:db8:f00d::/64&quot; to communicate past the first-hop
+   router since only the router sending the second RA will be used as
+   the default router; similarly, they will use the DNS server
+   &quot;2001:db8:f00d::53&quot; when communicating from this address.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  Enabling Multihoming for PvD-Aware Hosts</span>
+
+   In this example, the goal is to have one prefix from one RA be usable
+   by both non-PvD-aware and PvD-aware hosts and to have another prefix
+   usable only by PvD-aware hosts.  This allows PvD-aware hosts to be
+   able to effectively multihome on the network.
+
+   The first RA is usable by all hosts.  The only difference for PvD-
+   aware hosts is that they can explicitly identify the PvD ID
+   associated with the RA.  PvD-aware hosts will also use this prefix to
+   communicate with non-PvD-aware hosts on the same network.
+
+   *  RA Header: router lifetime = 6000 (non-PvD-aware hosts will use
+      this router as a default router)
+
+   *  Prefix Information Option: length = 4, prefix = 2001:db8:cafe::/64
+
+   *  Recursive DNS Server Option: length = 3, addresses =
+      [2001:db8:cafe::53]
+
+   *  PvD Option header: length = 3, PvD ID FQDN = foo.example.org.,
+      R-flag = 0 (actual length of the header 24 bytes = 3 * 8 bytes)
+
+   The second RA contains a prefix usable only by PvD-aware hosts.  Non-
+   PvD-aware hosts will ignore this RA; hence, only the PvD-aware hosts
+   will be multihomed.
+
+   *  RA Header: router lifetime = 0 (non-PvD-aware hosts will not use
+      this router as a default router)
+
+   *  PvD Option header: length = 3 + 2 + 4 + 3, PvD ID FQDN =
+      bar.example.org., R-flag = 1 (actual length of the header 24 bytes
+      = 3 * 8 bytes)
+
+      -  RA Header: router lifetime = 1600 (PvD-aware hosts will use
+         this router as a default router), implicit length = 2
+
+      -  Prefix Information Option: length = 4, prefix =
+         2001:db8:f00d::/64
+
+      -  Recursive DNS Server Option: length = 3, addresses =
+         [2001:db8:f00d::53]
+
+   Note: the above examples assume that the router has received its PvD
+   IDs from upstream routers or via some other configuration mechanism.
+   Another document could define ways for the router to generate its own
+   PvD IDs to allow the above scenario in the absence of PvD ID
+   provisioning.
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  Providing Additional Information to PvD-Aware Hosts</span>
+
+   In this example, the router indicates that it provides Additional
+   Information using the H-flag.  The Sequence Number on the PvD Option
+   is set to 7 in this example.
+
+   *  RA Header: router lifetime = 6000
+
+   *  Prefix Information Option: length = 4, prefix = 2001:db8:cafe::/64
+
+   *  Recursive DNS Server Option: length = 3, addresses =
+      [2001:db8:cafe::53]
+
+   *  PvD Option header: length = 3, PvD ID FQDN = cafe.example.com.,
+      Sequence Number = 7, R-flag = 0, H-flag = 1 (actual length of the
+      header with padding 24 bytes = 3 * 8 bytes)
+
+   A PvD-aware host will fetch &lt;https://cafe.example.com/.well-known/
+   pvd&gt; to get the additional information.  The following example shows
+   a GET request that the host sends, in HTTP/2 syntax [<a href="/doc/html/rfc7540" title="&quot;Hypertext Transfer Protocol Version 2 (HTTP/2)&quot;">RFC7540</a>]:
+
+   :method = GET
+   :scheme = https
+   :authority = cafe.example.com
+   :path = /.well-known/pvd
+   accept = application/pvd+json
+
+   The HTTP server will respond with the JSON Additional Information:
+
+   :status = 200
+   content-type = application/pvd+json
+   content-length = 116
+
+   {
+     &quot;identifier&quot;: &quot;cafe.example.com.&quot;,
+     &quot;expires&quot;: &quot;2020-05-23T06:00:00Z&quot;,
+     &quot;prefixes&quot;: [&quot;2001:db8:cafe::/48&quot;],
+   }
+
+   At this point, the host has the PvD Additional Information and knows
+   the expiry time.  When either the expiry time passes or a new
+   Sequence Number is provided in an RA, the host will re-fetch the
+   Additional Information.
+
+   For example, if the router sends a new RA with the Sequence Number
+   set to 8, the host will re-fetch the Additional Information:
+
+   *  PvD Option header: length = 3 + 5 + 4 , PvD ID FQDN =
+      cafe.example.com., Sequence Number = 8, R-flag = 0, H-flag = 1
+      (actual length of the header with padding 24 bytes = 3 * 8 bytes)
+
+   However, if the router sends a new RA, but the Sequence Number has
+   not changed, the host would not re-fetch the Additional Information
+   (until and unless the expiry time of the Additional Information has
+   passed).
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   Since the PvD Option can contain an RA header and other RA options,
+   any security considerations that apply for specific RA options
+   continue to apply when used within a PvD Option.
+
+   Although some solutions such as IPsec or SEcure Neighbor Discovery
+   (SeND) [<a href="/doc/html/rfc3971" title="&quot;SEcure Neighbor Discovery (SEND)&quot;">RFC3971</a>] can be used in order to secure the IPv6 Neighbor
+   Discovery Protocol, in practice, actual deployments largely rely on
+   link-layer or physical-layer security mechanisms (e.g., 802.1x
+   [<a href="#ref-IEEE8021X">IEEE8021X</a>]) in conjunction with RA-Guard [<a href="/doc/html/rfc6105" title="&quot;IPv6 Router Advertisement Guard&quot;">RFC6105</a>].
+
+   If multiple RAs are sent for a single PvD to avoid fragmentation,
+   dropping packets can lead to processing only part of a PvD Option,
+   which could lead to hosts receiving only part of the contained
+   options.  As discussed in <a href="#section-3.2">Section 3.2</a>, routers MUST include the PvD
+   Option in all fragments generated.
+
+   This specification does not improve the Neighbor Discovery Protocol
+   security model but simply validates that the owner of the PvD FQDN
+   authorizes its use with the prefix advertised by the router.  In
+   combination with implicit trust in the local router (if present),
+   this gives the host some level of assurance that the PvD is
+   authorized for use in this environment.  However, when the local
+   router cannot be trusted, no such guarantee is available.
+
+   It must be noted that <a href="#section-4.4">Section 4.4</a> of this document only provides
+   reasonable assurance against misconfiguration but does not prevent a
+   hostile network access provider from advertising incorrect
+   information that could lead applications or hosts to select a hostile
+   PvD.  However, a host that correctly implements the multiple PvD
+   architecture [<a href="/doc/html/rfc7556" title="&quot;Multiple Provisioning Domain Architecture&quot;">RFC7556</a>] using the mechanism described in this document
+   will be less susceptible to some attacks than a host that does not by
+   being able to check for the various misconfigurations or
+   inconsistencies described in this document.
+
+   Since expiration times provided in PvD Additional Information use
+   absolute time, these values can be skewed due to clock skew or for
+   hosts without an accurate time base.  Such time values MUST NOT be
+   used for security-sensitive functionality or decisions.
+
+   An attacker generating RAs on a local network can use the H-flag and
+   the PvD ID to cause hosts on the network to make requests for PvD
+   Additional Information from servers.  This can become a denial-of-
+   service attack, in which an attacker can amplify its attack by
+   triggering TLS connections to arbitrary servers in response to
+   sending UDP packets containing RA messages.  To mitigate this attack,
+   hosts MUST:
+
+   *  limit the rate at which they fetch a particular PvD&#x27;s Additional
+      Information;
+
+   *  limit the rate at which they fetch any PvD Additional Information
+      on a given local network;
+
+   *  stop making requests for a PvD ID that does not respond with valid
+      JSON; and
+
+   *  stop making requests for all PvD IDs once a certain number of
+      failures is reached on a particular network.
+
+   Details are provided in <a href="#section-4.1">Section 4.1</a>.  This attack can be targeted at
+   generic web servers, in which case the host behavior of stopping
+   requesting for any server that doesn&#x27;t behave like a PvD Additional
+   Information server is critical.  Limiting requests for a specific PvD
+   ID might not be sufficient if the attacker changes the PvD ID values
+   quickly, so hosts also need to stop requesting if they detect
+   consistent failure when on a network that is under attack.  For cases
+   in which an attacker is pointing hosts at a valid PvD Additional
+   Information server (but one that is not actually associated with the
+   local network), the server SHOULD reject any requests that do not
+   originate from the expected IPv6 prefix as described in <a href="#section-4.2">Section 4.2</a>.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Privacy Considerations</span>
+
+   Retrieval of the PvD Additional Information over HTTPS requires early
+   communications between the connecting host and a server that may be
+   located further than the first-hop router.  Although this server is
+   likely to be located within the same administrative domain as the
+   default router, this property can&#x27;t be ensured.  To minimize the
+   leakage of identity information while retrieving the PvD Additional
+   Information, hosts SHOULD make use of an IPv6 temporary address and
+   SHOULD NOT include any privacy-sensitive data, such as a User-Agent
+   header field or an HTTP cookie.
+
+   Hosts might not always fetch PvD Additional Information, depending on
+   whether or not they expect to use the information.  However, if a
+   host allows requesting Additional Information for certain PvD IDs, an
+   attacker could send various PvD IDs in RAs to detect which PvD IDs
+   are allowed by the client.  To avoid this, hosts SHOULD either fetch
+   Additional Information for all eligible PvD IDs on a given local
+   network or fetch the information for none of them.
+
+   From a user privacy perspective, retrieving the PvD Additional
+   Information is not different from establishing a first connection to
+   a remote server or even performing a single DNS lookup.  For example,
+   most operating systems already perform early queries to static web
+   sites, such as &lt;http://captive.example.com/hotspot-detect.html&gt;, in
+   order to detect the presence of a captive portal.
+
+   The DNS queries associated with the PvD Additional Information MUST
+   use the DNS servers indicated by the associated PvD, as described in
+   <a href="#section-4.1">Section 4.1</a>.  This ensures the name of the PvD Additional Information
+   server is not unintentionally sent on another network, thus leaking
+   identifying information about the networks with which the client is
+   associated.
+
+   There may be some cases where hosts, for privacy reasons, should
+   refrain from accessing servers that are located outside a certain
+   network boundary.  In practice, this could be implemented as an
+   allowed list of &#x27;trusted&#x27; FQDNs and/or IP prefixes that the host is
+   allowed to communicate with.  In such scenarios, the host SHOULD
+   check that the provided PvD ID, as well as the IP address that it
+   resolves into, are part of the allowed list.
+
+   Network operators SHOULD restrict access to PvD Additional
+   Information to only expose it to hosts that are connected to the
+   local network, especially if the Additional Information would provide
+   information about local network configuration to attackers.  This can
+   be implemented by allowing access from the addresses and prefixes
+   that the router provides for the PvD, which will match the prefixes
+   contained in the PvD Additional Information.  This technique is
+   described in <a href="#section-4.2">Section 4.2</a>.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Change to IPv6 Neighbor Discovery Option Formats Registry</span>
+
+   IANA has removed the &#x27;reclaimable&#x27; tag for value 21 for the PvD
+   Option in the &quot;IPv6 Neighbor Discovery Option Formats&quot; registry.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  New Entry in the Well-Known URIs Registry</span>
+
+   IANA has added a new entry in the &quot;Well-Known URIs&quot; registry
+   [<a href="/doc/html/rfc8615" title="&quot;Well-Known Uniform Resource Identifiers (URIs)&quot;">RFC8615</a>] with the following information:
+
+   URI suffix: pvd
+
+   Change controller: IETF
+
+   Specification document: <a href="/doc/html/rfc8801">RFC 8801</a>
+
+   Status: permanent
+
+   Related information: N/A
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  New Additional Information PvD Keys Registry</span>
+
+   IANA has created and will maintain a new registry called &quot;Additional
+   Information PvD Keys&quot;, which reserves JSON keys for use in PvD
+   Additional Information.  The initial contents of this registry are
+   given in <a href="#section-4.3">Section 4.3</a> (both the table of mandatory keys and the table
+   of optional keys).
+
+   The status of a key as mandatory or optional is intentionally not
+   denoted in the table to allow for flexibility in future use cases.
+   Any new assignments of keys will be considered as optional for the
+   purpose of the mechanism described in this document.
+
+   New assignments in the &quot;Additional Information PvD Keys&quot; registry
+   will be administered by IANA through Expert Review [<a href="/doc/html/rfc8126" title="">RFC8126</a>].
+   Experts are requested to ensure that defined keys do not overlap in
+   names or semantics and that they represent non-vendor-specific use
+   cases.  Vendor-specific keys SHOULD use sub-dictionaries, as
+   described in <a href="#section-4.3">Section 4.3</a>.
+
+   IANA has placed the &quot;Additional Information PvD Keys&quot; registry within
+   a new registry entitled &quot;Provisioning Domains (PvDs)&quot;.
+
+<span class="h3"><a class="selflink" id="section-8.4" href="#section-8.4">8.4</a>.  New PvD Option Flags Registry</span>
+
+   IANA has also created and will maintain a new registry entitled &quot;PvD
+   Option Flags&quot;.  This new registry reserves bit positions from 0 to 11
+   to be used in the PvD Option bitmask.  This document assigns bit
+   positions 0, 1, and 2 as shown in the table below.  Future
+   assignments require Standards Action [<a href="/doc/html/rfc8126" title="">RFC8126</a>].
+
+                     +======+============+===========+
+                     | Bit  | Name       | Reference |
+                     +======+============+===========+
+                     | 0    | H-flag     | <a href="/doc/html/rfc8801">RFC 8801</a>  |
+                     +------+------------+-----------+
+                     | 1    | L-flag     | <a href="/doc/html/rfc8801">RFC 8801</a>  |
+                     +------+------------+-----------+
+                     | 2    | R-flag     | <a href="/doc/html/rfc8801">RFC 8801</a>  |
+                     +------+------------+-----------+
+                     | 3-11 | Unassigned |           |
+                     +------+------------+-----------+
+
+                                  Table 3
+
+   Since these flags apply to an IPv6 Router Advertisement Option, IANA
+   has placed this registry under the existing &quot;Internet Control Message
+   Protocol version 6 (ICMPv6) Parameters&quot; registry and provided a link
+   on the new &quot;Provisioning Domains (PvDs)&quot; registry.
+
+<span class="h3"><a class="selflink" id="section-8.5" href="#section-8.5">8.5</a>.  PvD JSON Media Type Registration</span>
+
+   This document registers the media type for PvD JSON text,
+   &quot;application/pvd+json&quot;.
+
+   Type name:  application
+
+   Subtype name:  pvd+json
+
+   Required parameters:  N/A
+
+   Optional parameters:  N/A
+
+   Encoding considerations:  Encoding considerations are identical to
+      those specified for the &quot;application/json&quot; media type.
+
+   Security considerations:  See <a href="/doc/html/rfc8801#section-6">Section&nbsp;6 of RFC 8801</a>.
+
+   Interoperability considerations:  This document specifies the format
+      of conforming messages and the interpretation thereof.
+
+   Published specification:  <a href="/doc/html/rfc8801">RFC 8801</a>
+
+   Applications that use this media type:  This media type is intended
+      to be used by networks advertising additional Provisioning Domain
+      information and clients looking up such information.
+
+   Fragment identifier considerations:  N/A
+
+   Additional information:  N/A
+
+   Person &amp; email address to contact for further information:  See
+      Authors&#x27; Addresses section
+
+   Intended usage:  COMMON
+
+   Restrictions on usage:  N/A
+
+   Author:  IETF
+
+   Change controller:  IETF
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC1035">RFC1035</a>]  Mockapetris, P., &quot;Domain names - implementation and
+              specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, DOI 10.17487/RFC1035,
+              November 1987, &lt;<a href="https://www.rfc-editor.org/info/rfc1035">https://www.rfc-editor.org/info/rfc1035</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC2818">RFC2818</a>]  Rescorla, E., &quot;HTTP Over TLS&quot;, <a href="/doc/html/rfc2818">RFC 2818</a>,
+              DOI 10.17487/RFC2818, May 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2818">https://www.rfc-editor.org/info/rfc2818</a>&gt;.
+
+   [<a id="ref-RFC3339">RFC3339</a>]  Klyne, G. and C. Newman, &quot;Date and Time on the Internet:
+              Timestamps&quot;, <a href="/doc/html/rfc3339">RFC 3339</a>, DOI 10.17487/RFC3339, July 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</a>&gt;.
+
+   [<a id="ref-RFC4191">RFC4191</a>]  Draves, R. and D. Thaler, &quot;Default Router Preferences and
+              More-Specific Routes&quot;, <a href="/doc/html/rfc4191">RFC 4191</a>, DOI 10.17487/RFC4191,
+              November 2005, &lt;<a href="https://www.rfc-editor.org/info/rfc4191">https://www.rfc-editor.org/info/rfc4191</a>&gt;.
+
+   [<a id="ref-RFC4343">RFC4343</a>]  Eastlake 3rd, D., &quot;Domain Name System (DNS) Case
+              Insensitivity Clarification&quot;, <a href="/doc/html/rfc4343">RFC 4343</a>,
+              DOI 10.17487/RFC4343, January 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4343">https://www.rfc-editor.org/info/rfc4343</a>&gt;.
+
+   [<a id="ref-RFC4861">RFC4861</a>]  Narten, T., Nordmark, E., Simpson, W., and H. Soliman,
+              &quot;Neighbor Discovery for IP version 6 (IPv6)&quot;, <a href="/doc/html/rfc4861">RFC 4861</a>,
+              DOI 10.17487/RFC4861, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4861">https://www.rfc-editor.org/info/rfc4861</a>&gt;.
+
+   [<a id="ref-RFC4941">RFC4941</a>]  Narten, T., Draves, R., and S. Krishnan, &quot;Privacy
+              Extensions for Stateless Address Autoconfiguration in
+              IPv6&quot;, <a href="/doc/html/rfc4941">RFC 4941</a>, DOI 10.17487/RFC4941, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4941">https://www.rfc-editor.org/info/rfc4941</a>&gt;.
+
+   [<a id="ref-RFC6724">RFC6724</a>]  Thaler, D., Ed., Draves, R., Matsumoto, A., and T. Chown,
+              &quot;Default Address Selection for Internet Protocol Version 6
+              (IPv6)&quot;, <a href="/doc/html/rfc6724">RFC 6724</a>, DOI 10.17487/RFC6724, September 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6724">https://www.rfc-editor.org/info/rfc6724</a>&gt;.
+
+   [<a id="ref-RFC6980">RFC6980</a>]  Gont, F., &quot;Security Implications of IPv6 Fragmentation
+              with IPv6 Neighbor Discovery&quot;, <a href="/doc/html/rfc6980">RFC 6980</a>,
+              DOI 10.17487/RFC6980, August 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6980">https://www.rfc-editor.org/info/rfc6980</a>&gt;.
+
+   [<a id="ref-RFC7493">RFC7493</a>]  Bray, T., Ed., &quot;The I-JSON Message Format&quot;, <a href="/doc/html/rfc7493">RFC 7493</a>,
+              DOI 10.17487/RFC7493, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7493">https://www.rfc-editor.org/info/rfc7493</a>&gt;.
+
+   [<a id="ref-RFC7525">RFC7525</a>]  Sheffer, Y., Holz, R., and P. Saint-Andre,
+              &quot;Recommendations for Secure Use of Transport Layer
+              Security (TLS) and Datagram Transport Layer Security
+              (DTLS)&quot;, <a href="/doc/html/bcp195">BCP 195</a>, <a href="/doc/html/rfc7525">RFC 7525</a>, DOI 10.17487/RFC7525, May
+              2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7525">https://www.rfc-editor.org/info/rfc7525</a>&gt;.
+
+   [<a id="ref-RFC7556">RFC7556</a>]  Anipko, D., Ed., &quot;Multiple Provisioning Domain
+              Architecture&quot;, <a href="/doc/html/rfc7556">RFC 7556</a>, DOI 10.17487/RFC7556, June 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7556">https://www.rfc-editor.org/info/rfc7556</a>&gt;.
+
+   [<a id="ref-RFC8028">RFC8028</a>]  Baker, F. and B. Carpenter, &quot;First-Hop Router Selection by
+              Hosts in a Multi-Prefix Network&quot;, <a href="/doc/html/rfc8028">RFC 8028</a>,
+              DOI 10.17487/RFC8028, November 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8028">https://www.rfc-editor.org/info/rfc8028</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8259">RFC8259</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, STD 90, <a href="/doc/html/rfc8259">RFC 8259</a>,
+              DOI 10.17487/RFC8259, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8259">https://www.rfc-editor.org/info/rfc8259</a>&gt;.
+
+   [<a id="ref-RFC8615">RFC8615</a>]  Nottingham, M., &quot;Well-Known Uniform Resource Identifiers
+              (URIs)&quot;, <a href="/doc/html/rfc8615">RFC 8615</a>, DOI 10.17487/RFC8615, May 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8615">https://www.rfc-editor.org/info/rfc8615</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-IANA-URN">IANA-URN</a>] IANA, &quot;Uniform Resource Names (URN) Namespaces&quot;,
+              &lt;<a href="https://www.iana.org/assignments/urn-namespaces/">https://www.iana.org/assignments/urn-namespaces/</a>&gt;.
+
+   [<a id="ref-IEEE8021X">IEEE8021X</a>]
+              IEEE, &quot;IEEE Standard for Local and Metropolitan Area
+              Networks -- Port-Based Network Access Control&quot;, IEEE
+              802.1X-2020, DOI 10.1109/IEEESTD.2020.9018454,
+              &lt;<a href="https://ieeexplore.ieee.org/document/9018454">https://ieeexplore.ieee.org/document/9018454</a>&gt;.
+
+   [<a id="ref-MPVD-API">MPVD-API</a>] Kline, E., &quot;Multiple Provisioning Domains API
+              Requirements&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-kline-mif-mpvd-api-reqs-00">draft-</a>
+              <a href="/doc/html/draft-kline-mif-mpvd-api-reqs-00">kline-mif-mpvd-api-reqs-00</a>, 1 November 2015,
+              &lt;<a href="https://tools.ietf.org/html/draft-kline-mif-mpvd-api-reqs-00">https://tools.ietf.org/html/draft-kline-mif-mpvd-api-</a>
+              <a href="https://tools.ietf.org/html/draft-kline-mif-mpvd-api-reqs-00">reqs-00</a>&gt;.
+
+   [<a id="ref-MPVD-DNS">MPVD-DNS</a>] Stenberg, M. and S. Barth, &quot;Multiple Provisioning Domains
+              using Domain Name System&quot;, Work in Progress, Internet-
+              Draft, <a href="/doc/html/draft-stenberg-mif-mpvd-dns-00">draft-stenberg-mif-mpvd-dns-00</a>, 15 October 2015,
+              &lt;<a href="https://tools.ietf.org/html/draft-stenberg-mif-mpvd-dns-00">https://tools.ietf.org/html/draft-stenberg-mif-mpvd-dns-</a>
+              <a href="https://tools.ietf.org/html/draft-stenberg-mif-mpvd-dns-00">00</a>&gt;.
+
+   [<a id="ref-RFC2131">RFC2131</a>]  Droms, R., &quot;Dynamic Host Configuration Protocol&quot;,
+              <a href="/doc/html/rfc2131">RFC 2131</a>, DOI 10.17487/RFC2131, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2131">https://www.rfc-editor.org/info/rfc2131</a>&gt;.
+
+   [<a id="ref-RFC3646">RFC3646</a>]  Droms, R., Ed., &quot;DNS Configuration options for Dynamic
+              Host Configuration Protocol for IPv6 (DHCPv6)&quot;, <a href="/doc/html/rfc3646">RFC 3646</a>,
+              DOI 10.17487/RFC3646, December 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3646">https://www.rfc-editor.org/info/rfc3646</a>&gt;.
+
+   [<a id="ref-RFC3971">RFC3971</a>]  Arkko, J., Ed., Kempf, J., Zill, B., and P. Nikander,
+              &quot;SEcure Neighbor Discovery (SEND)&quot;, <a href="/doc/html/rfc3971">RFC 3971</a>,
+              DOI 10.17487/RFC3971, March 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3971">https://www.rfc-editor.org/info/rfc3971</a>&gt;.
+
+   [<a id="ref-RFC4389">RFC4389</a>]  Thaler, D., Talwar, M., and C. Patel, &quot;Neighbor Discovery
+              Proxies (ND Proxy)&quot;, <a href="/doc/html/rfc4389">RFC 4389</a>, DOI 10.17487/RFC4389, April
+              2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4389">https://www.rfc-editor.org/info/rfc4389</a>&gt;.
+
+   [<a id="ref-RFC6105">RFC6105</a>]  Levy-Abegnoli, E., Van de Velde, G., Popoviciu, C., and J.
+              Mohacsi, &quot;IPv6 Router Advertisement Guard&quot;, <a href="/doc/html/rfc6105">RFC 6105</a>,
+              DOI 10.17487/RFC6105, February 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6105">https://www.rfc-editor.org/info/rfc6105</a>&gt;.
+
+   [<a id="ref-RFC6125">RFC6125</a>]  Saint-Andre, P. and J. Hodges, &quot;Representation and
+              Verification of Domain-Based Application Service Identity
+              within Internet Public Key Infrastructure Using X.509
+              (PKIX) Certificates in the Context of Transport Layer
+              Security (TLS)&quot;, <a href="/doc/html/rfc6125">RFC 6125</a>, DOI 10.17487/RFC6125, March
+              2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6125">https://www.rfc-editor.org/info/rfc6125</a>&gt;.
+
+   [<a id="ref-RFC6146">RFC6146</a>]  Bagnulo, M., Matthews, P., and I. van Beijnum, &quot;Stateful
+              NAT64: Network Address and Protocol Translation from IPv6
+              Clients to IPv4 Servers&quot;, <a href="/doc/html/rfc6146">RFC 6146</a>, DOI 10.17487/RFC6146,
+              April 2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6146">https://www.rfc-editor.org/info/rfc6146</a>&gt;.
+
+   [<a id="ref-RFC6147">RFC6147</a>]  Bagnulo, M., Sullivan, A., Matthews, P., and I. van
+              Beijnum, &quot;DNS64: DNS Extensions for Network Address
+              Translation from IPv6 Clients to IPv4 Servers&quot;, <a href="/doc/html/rfc6147">RFC 6147</a>,
+              DOI 10.17487/RFC6147, April 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6147">https://www.rfc-editor.org/info/rfc6147</a>&gt;.
+
+   [<a id="ref-RFC6296">RFC6296</a>]  Wasserman, M. and F. Baker, &quot;IPv6-to-IPv6 Network Prefix
+              Translation&quot;, <a href="/doc/html/rfc6296">RFC 6296</a>, DOI 10.17487/RFC6296, June 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6296">https://www.rfc-editor.org/info/rfc6296</a>&gt;.
+
+   [<a id="ref-RFC6960">RFC6960</a>]  Santesson, S., Myers, M., Ankney, R., Malpani, A.,
+              Galperin, S., and C. Adams, &quot;X.509 Internet Public Key
+              Infrastructure Online Certificate Status Protocol - OCSP&quot;,
+              <a href="/doc/html/rfc6960">RFC 6960</a>, DOI 10.17487/RFC6960, June 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6960">https://www.rfc-editor.org/info/rfc6960</a>&gt;.
+
+   [<a id="ref-RFC7049">RFC7049</a>]  Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, <a href="/doc/html/rfc7049">RFC 7049</a>, DOI 10.17487/RFC7049,
+              October 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7049">https://www.rfc-editor.org/info/rfc7049</a>&gt;.
+
+   [<a id="ref-RFC7278">RFC7278</a>]  Byrne, C., Drown, D., and A. Vizdal, &quot;Extending an IPv6
+              /64 Prefix from a Third Generation Partnership Project
+              (3GPP) Mobile Interface to a LAN Link&quot;, <a href="/doc/html/rfc7278">RFC 7278</a>,
+              DOI 10.17487/RFC7278, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7278">https://www.rfc-editor.org/info/rfc7278</a>&gt;.
+
+   [<a id="ref-RFC7540">RFC7540</a>]  Belshe, M., Peon, R., and M. Thomson, Ed., &quot;Hypertext
+              Transfer Protocol Version 2 (HTTP/2)&quot;, <a href="/doc/html/rfc7540">RFC 7540</a>,
+              DOI 10.17487/RFC7540, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7540">https://www.rfc-editor.org/info/rfc7540</a>&gt;.
+
+   [<a id="ref-RFC8106">RFC8106</a>]  Jeong, J., Park, S., Beloeil, L., and S. Madanapalli,
+              &quot;IPv6 Router Advertisement Options for DNS Configuration&quot;,
+              <a href="/doc/html/rfc8106">RFC 8106</a>, DOI 10.17487/RFC8106, March 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8106">https://www.rfc-editor.org/info/rfc8106</a>&gt;.
+
+   [<a id="ref-RFC8415">RFC8415</a>]  Mrugalski, T., Siodelski, M., Volz, B., Yourtchenko, A.,
+              Richardson, M., Jiang, S., Lemon, T., and T. Winters,
+              &quot;Dynamic Host Configuration Protocol for IPv6 (DHCPv6)&quot;,
+              <a href="/doc/html/rfc8415">RFC 8415</a>, DOI 10.17487/RFC8415, November 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8415">https://www.rfc-editor.org/info/rfc8415</a>&gt;.
+
+Acknowledgments
+
+   Many thanks to Markus Stenberg and Steven Barth for their earlier
+   work on [<a href="#ref-MPVD-DNS" title="&quot;Multiple Provisioning Domains using Domain Name System&quot;">MPVD-DNS</a>], as well as to Basile Bruneau, who was author of
+   an early draft version of this document.
+
+   Thanks also to Marcus Keane, Mikael Abrahamsson, Ray Bellis, Zhen
+   Cao, Tim Chown, Lorenzo Colitti, Michael Di Bartolomeo, Ian Farrer,
+   Phillip Hallam-Baker, Bob Hinden, Tatuya Jinmei, Erik Kline, Ted
+   Lemon, Paul Hoffman, Dave Thaler, Suresh Krishnan, Gorry Fairhurst,
+   Jen Lenkova, Veronika McKillop, Mark Townsley, and James Woodyatt for
+   useful and interesting discussions and reviews.
+
+   Finally, special thanks to Thierry Danis for his valuable input and
+   implementation efforts, Tom Jones for his integration effort into the
+   NEAT project, and Rigil Salim for his implementation work.
+
+Authors&#x27; Addresses
+
+   Pierre Pfister
+   Cisco
+   11 Rue Camille Desmoulins
+   92130 Issy-les-Moulineaux
+   France
+
+   Email: ppfister@cisco.com
+
+
+   Éric Vyncke
+   Cisco
+   De Kleetlaan, 6
+   1831 Diegem
+   Belgium
+
+   Email: evyncke@cisco.com
+
+
+   Tommy Pauly
+   Apple Inc.
+   One Apple Park Way
+   Cupertino, California 95014
+   United States of America
+
+   Email: tpauly@apple.com
+
+
+   David Schinazi
+   Google LLC
+   1600 Amphitheatre Parkway
+   Mountain
+          View, California 94043
+   United States of America
+
+   Email: dschinazi.ietf@gmail.com
+
+
+   Wenqin Shao
+   Cisco
+   11 Rue Camille Desmoulins
+   92130 Issy-les-Moulineaux
+   France
+
+   Email: wenshao@cisco.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

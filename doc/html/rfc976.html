@@ -1,0 +1,899 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc976
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc976/">
+  <meta name="description" content="UUCP mail interchange format standard (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc976.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc976.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc976.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc976/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc976/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc976@ietf.org?subject=rfc976" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc976-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc976-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc976-.txt" title="Run an idnits check of this document">Nits</a>]
+
+Updated by: <a href="/doc/html/rfc1137">1137</a>                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                    Mark. R. Horton
+Request for Comments: 976                              Bell Laboratories
+                                                           February 1986
+
+                 <span class="h1">UUCP Mail Interchange Format Standard</span>
+
+
+Status of This Memo
+
+   In response to the need for maintenance of current information about
+   the status and progress of various projects in the ARPA-Internet
+   community, this RFC is issued for the benefit of community members.
+   The information contained in this document is accurate as of the date
+   of publication, but is subject to change. Subsequent RFCs will
+   reflect such changes.
+
+   This document defines the standard format for the transmission of
+   mail messages between machines in the UUCP Project.  It does not
+   address the format for storage of messages on one machine, nor the
+   lower level transport mechanisms used to get the data from one
+   machine to the next.  It represents a standard for conformance by
+   hosts in the UUCP zone.  Distribution of this memo is unlimited.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document is intended to define the standard format for the
+   transmission of mail messages between machines in the UUCP Project.
+   It does not address the format for storage of messages on one
+   machine, nor the lower level transport mechanisms used to get the
+   data from one machine to the next.  We assume remote execution of the
+   rmail command (or equivalent) as the UUCP network primitive
+   operation.
+
+   The general philosophy is that, if we were to invent a new standard,
+   we would make ourselves incompatible with existing systems.  There
+   are already too many (incompatible) standards in the world, resulting
+   in ambiguities such as a!b@c.d which is parsed a!(b@c.d) in the old
+   UUCP world, and (a!b)@c.d in the Internet world.  (Neither standard
+   allows parentheses, and in adding them we would be compatible with
+   neither.  There would also be serious problems with the shell and
+   with the UUCP transport mechanism.)
+
+   Having an established, well documented, and extensible family of
+   standards already defined by the ARPA community, we choose to adopt
+   these standards for the UUCP zone as well.  (The UUCP zone is that
+   subset of the community connected by UUCP which chooses to register
+   with the UUCP project.  It represents an administrative entity.)
+   While the actual transport mechanism is up to the two hosts to
+   arrange, and might include UUCP, SMTP, MMDF, or some other facility,
+   we adopt <a href="/doc/html/rfc920">RFC-920</a> (domains) and <a href="/doc/html/rfc822">RFC-822</a> (mail format) as UUCP zone
+   standards.  All mail transmitted between systems should conform to
+
+
+<span class="grey">Horton                                                          [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+   those two standards.  In addition, should the ARPA community change
+   these standards at a later time, we intend to change our standards to
+   remain compatible with theirs, given a reasonable time to upgrade
+   software.
+
+   This document specifies an interpretation of <a href="/doc/html/rfc822">RFC-822</a> and <a href="/doc/html/rfc920">RFC-920</a> in
+   the UUCP world.  It shows how the envelope should be encoded, and how
+   UUCP routing is accomplished in an environment of mixed
+   implementations.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Basics</span>
+
+   Messages can be divided into two parts: the envelope and the message.
+   The envelope contains information needed by the mail transport
+   services, and the message contains information useful to the sender
+   and receiver.  The message is divided into the header and the body.
+   Sometimes an intermediate host will add to the message (e.g. a
+   Received line) but, except in the case of a gateway which must
+   translate formats, it is not expected that intermediate hosts will
+   change the message itself.  In the UUCP world, the envelope consists
+   of the &quot;destination addresses&quot; (normally represented as the argument
+   or arguments to the rmail command) and the &quot;source path&quot; (normally
+   represented in one or more lines at the beginning of the message
+   beginning either &quot;From &quot; or &quot;&gt;From &quot;, sometimes called &quot;From_
+   lines&quot;.)  The <a href="/doc/html/rfc822">RFC-822</a> header lines (including &quot;From:&quot; and &quot;To:&quot;) are
+   part of the message, as is the text of the message body itself.
+
+   UUCP uses short host names, such as &quot;ucbvax&quot;, at and below the
+   transport layer.  We refer to these names as &quot;6 letter names&quot;,
+   because all implementations of UUCP consider at least the first 6
+   letters significant.  (Some consider the first 7 or the first 14
+   significant, but we must use the lowest common denominator.) UUCP
+   names may be longer than 6 characters, but all such names much be
+   unique in their first 6 letters.  <a href="/doc/html/rfc920">RFC-920</a> domain names, such as
+   &quot;ucbvax.Berkeley.EDU&quot;, are called &quot;domain names.&quot; The two names are
+   different.  Upper and lower case are usually considered different in
+   6 letter names, but are considered equivalent in domain names.  Names
+   such as &quot;ucbvax.UUCP&quot;, consisting of a 6 letter name followed by
+   &quot;.UUCP&quot;, previously were domain style references to a host with a
+   given 6 letter name.  Such names are being phased out in favor of
+   organizational domain names such as &quot;ucbvax.Berkeley.EDU&quot;
+
+
+
+
+
+
+
+
+<span class="grey">Horton                                                          [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>  Hybrid Addresses</span>
+
+   There are (among others) two major kinds of mailing address syntax
+   used in the UUCP world.  The a!b!c!user (&quot;bang paths&quot;) is used by
+   older UUCP software to explicitly route mail to the destination.  The
+   user@domain (&quot;domain&quot;) syntax is used in conformance to <a href="/doc/html/rfc822">RFC-822</a>.
+   Under most circumstances, it is possible to look at a given address
+   and determine which sort of address it is.  However, a hybrid address
+   with a ! to the left of an @, such as a!b@c, is ambiguous: it could
+   be interpreted as (a!b)@c.d or a!(b@c.d).  Both interpretations can
+   be useful.  The first interpretation is required by <a href="/doc/html/rfc822">RFC-822</a>, the
+   second is a de-facto standard in the UUCP software.
+
+   Because of the confusion surrounding hybrid addresses, we recommend
+   that all transport layer software avoid the use of hybrid addresses
+   at all times.  A pure bang syntax can be used to disambiguate, being
+   written c.d!a!b in the first case above, and a!c.d!b in the second.
+   We recommend that all implementations use this &quot;bang domain&quot; syntax
+   unless they are sure of what is running on the next machine.
+
+   In conformance with <a href="/doc/html/rfc822">RFC-822</a> and the AT&amp;T Message Transfer
+   Architecture, we recommand that any host that accepts hybrid
+   addresses apply the (a!b)@c.d interpretation.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>  Transport</span>
+
+   Since SMTP is not available to much of the UUCP domain, we define the
+   method to be used for &quot;remote execution&quot; based transport mechanisms.
+   The command to be &quot;remotely executed&quot; should read
+
+      rmail user@domain ...
+
+   with the message on the standard input of the command.  The
+   &quot;user@domain&quot; argument must conform to <a href="/doc/html/rfc920">RFC-920</a> and <a href="/doc/html/rfc822">RFC-822</a>.  More
+   than one address argument is allowed, in order to save transmission
+   costs for multiple recipients of the same message.
+
+   An alternative form that may be used is
+
+      rmail domain!user
+
+   where &quot;domain&quot; contains at least one period and no !&#x27;s.  This is to
+   be interpreted exactly the same as user@domain, and can be used to
+   transport a message across old UUCP hosts without fear that they
+   might change the address.  The &quot;user&quot; string can contain any
+   characters except &quot;@&quot;.  This character is forbidden because it is
+   unknown what an intermediate host might do to it. (It is also
+
+
+<span class="grey">Horton                                                          [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+   recommended that the &quot;%&quot; character be avoided, since some hosts treat
+   &quot;%&quot; as a synonym for &quot;@&quot;.) However, to route across hosts that don&#x27;t
+   understand domains, the following is possible
+
+      rmail a!b!c!domain!user
+
+   A &quot;domain&quot; can be distinguished from a 6 letter UUCP site name
+   because a domain will contain at least one period.  (In the case of
+   single level domains with no periods, a period should be added to the
+   end, e.g. Mark.Horton@att becomes &quot;att.!Mark.Horton&quot;.  A translator
+   from ! to @ format should remove a trailing dot at the end of the
+   domain, if one is present.) We don&#x27;t expect this to happen, except
+   for local networks using addresses like &quot;user@host&quot;.
+
+   A simple implementation can always generate domain!user syntax
+   (rather than user@domain) since it is safe to assume that gateways
+   are class 3 (Classes are explained in <a href="#section-3.5">section 3.5</a>).
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>  Batch SMTP</span>
+
+   Standard conforming implementations may optionally support a protocol
+   called &quot;Batch SMTP&quot;.  SMTP (Simple Mail Transfer Protocol) is the
+   ARPA community standard mail transfer protocol (<a href="/doc/html/rfc821">RFC-821</a>). It is also
+   used on BITNET and Mailnet.  While SMTP was designed to be
+   interactive, it is possible to batch up a series of commands and send
+   them off to a remote machine for batch execution.  This is used on
+   BITNET, and is appropriate for UUCP.  One advantage to BSMTP is that
+   the UNIX shell does not get involved in the interpretation of
+   messages, so it becomes possible to include special characters such
+   as space and parentheses in electronic messages.  (Such characters
+   are expected to be popular in X.400 addresses.)
+
+   To support BSMTP on UNIX, a conforming host should arrange that mail
+   to the user &quot;b-smtp&quot; is interpreted as Batch SMTP commands.  (We use
+   b-smtp instead of bsmtp because bsmtp might conflict with a login
+   name.) Since many mail systems treat lines consisting of a single
+   period as an &quot;end of file&quot; flag, and since SMTP uses the period as a
+   required end of file flag, and to strip off headers, we put an extra
+   &quot;#&quot; at the beginning of each BSMTP line.  On a sendmail system, an
+   easy way to implement this is to include the alias
+
+      b-smtp: &quot;|egrep &#x27;^#&#x27; | sed &#x27;s/^#//&#x27; | /usr/lib/sendmail -bs&quot;
+
+   which will feed the commands to an SMTP interpreter.  A better
+   solution would appropriately check for errors and send back an error
+   message to the sender.
+
+
+
+<span class="grey">Horton                                                          [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+   An example BSMTP message from seismo.CSS.GOV to cbosgd.ATT.COM is
+   shown here.  This sample is the file shipped over the UUCP link for
+   in put to the command &quot;rmail b-smtp&quot;.  Note that the RFC- 822 message
+   is between the DATA line and the period line.  The envelope
+   information is passed in the MAIL FROM and RCPT TO lines.  The name
+   of the sending system is in the HELO line.  The actual envelope
+   information (above the # lines) is ignored and need not be present.
+
+      From foo!bar Sun Jan 12 23:59:00 1986 remote from seismo Date:
+      Tue, 18 Feb 86 13:07:36 EST
+      From: mark@ucbvax.Berkeley.EDU
+      Message-Id: &lt;8602181807.AA10228@mark@ucbvax.Berkeley.EDU&gt; To:
+      b-smtp@cbosgd.ATT.COM
+
+      #HELO seismo.CSS.GOV
+      #MAIL FROM:&lt;mark@ucbvax.Berkeley.EDU&gt;
+      #RCPT TO:&lt;mark@cbosgd.ATT.COM&gt;
+      #DATA
+      #Date: Tue, 18 Feb 86 13:07:36 EST
+      #From: mark@ucbvax.Berkeley.EDU
+      #Message-Id: &lt;8602181807.AA10228@mark@ucbvax.Berkeley.EDU&gt; #To:
+      mark@cbosgd.ATT.COM
+      #
+      #This is a sample message.
+      #.
+      #QUIT
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>  Envelope</span>
+
+   The standard input of the command should begin with a single line
+
+      From domain!user date remote from system
+
+   followed immediately by the <a href="/doc/html/rfc822">RFC-822</a> format headers and body of the
+   message.  It is possible that there will be additional From_ lines
+   preceding this line - these lines may be added, one line for each
+   system the message passes through.  It is also possible that the
+   &quot;system&quot; fields will be stacked into a single line, with many !&#x27;s in
+   the &quot;user&quot; string.  The &quot;&gt;&quot; character may precede the &quot;From&quot;.  In
+   general, this is the &quot;envelope&quot; information, and should follow the
+   same conventions that previous UUCP mail has followed.  The primary
+   difference is that, when the system names are stacked up, if
+   previously the result would have been a!b!c!mysys!me, the new result
+   will be a!b!c!mysys!domain!me, where domain will contain at least one
+   period, and &quot;mysys&quot; is often the 6 letter UUCP name for the same
+
+
+
+
+<span class="grey">Horton                                                          [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+   system named by &quot;domain&quot;.  If the &quot;domain!&quot; is redundant, it may be
+   omitted from the envelope, either in the source path or in the
+   destination address.
+
+   The receiving system may discard extra &quot;From_&quot; lines if it folds the
+   information into a a single From_ line. It passes the
+   path!domain!user along as the &quot;envelope&quot; information containing the
+   address of the sender of the message, and possibly preserves the
+   forwarding date and system in a newly generated header line, such as
+   Received or Sent-By.  (Adding Received using this information is
+   discouraged, since the line appears to have been added on a different
+   system than the one actually adding it.  That other system may have
+   actually included a Received line too! The Sent-By line is similar to
+   Received, but the date need not be converted into <a href="/doc/html/rfc822">RFC-822</a> format, and
+   the line is not claimed to have been added by the system whose name
+   is mentioned.)
+
+   If the receiving system passes the message along to another system,
+   it will add a &quot;From_&quot; line to the front, giving the same user@domain
+   address for the sender, and its own name for the system.  If the
+   receiving system stores the message in a local mailbox, it is
+   recommended that a single &quot;From_&quot; line be generated at the front of
+   the message, keeping the date (in the same format, since certain mail
+   reading programs are sensitive to this format), and not using the
+   &quot;remote from system&quot; syntax.
+
+   Note - if an intermediate system adds text such as &quot;system!&quot; to the
+   front of a &quot;user@domain&quot; syntax address, either in the envelope or
+   the body, this is a violation of this standard and of <a href="/doc/html/rfc822">RFC-822</a>.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>  Routing</span>
+
+   In order to properly route mail, it is sometimes necessary to know
+   what software a destination or intermediate machine is running, or
+   what conventions it follows.  We have tried to minimize the amount of
+   this information that is necessary, but the support of subdomains may
+   require that different methods are used in different situations.  For
+   purposes of predicting the behavior of other hosts, we divide hosts
+   into three classes. These classes are:
+
+   Class 1   old-style UUCP ! routing only.  We assume that the host
+             understands local user names:
+
+                  rmail user
+
+
+
+
+
+<span class="grey">Horton                                                          [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+             and bang paths
+
+                  rmail host1!host2!user
+
+             but we assume nothing more about the host.  If we have
+             no information about a host, we can treat it as class 1
+             with no problems, since we make no assumptions about
+             how it will handle hybrid addresses.
+
+   Class 2   Old style UUCP ! routing, and 4.2BSD style domain
+             parsing.  We assume the capabilities of class 1, plus
+             the ability to understand
+
+                  rmail user@domain
+
+             if the &quot;domain&quot; is one outside the UUCP zone which
+             the host knows about.  Class 2 hosts do not necessarily
+             understand domain!user or have routers.  Hosts in non-
+
+             UUCP <a href="/doc/html/rfc920">RFC-920</a> domains are considered class 2, even though
+             they may not understand host!user.
+
+   Class 3   All class 1 and 2 features are present.  In addition,
+             class 3 hosts must be able to route UUCP mail for hosts
+             that are not immediately adjacent and also understand
+             the syntax
+
+                  rmail domain!user
+
+             as described above.  All gateways into UUCP must be
+             class 3.
+
+   This document describes what class 3 hosts must be able to process.
+   Classes 1 and 2 already exist, and will continue to exist for a long
+   time, but are viewed as &quot;older systems&quot; that may eventually be
+   upgraded to class 3 status.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Algorithm</span>
+
+   The algorithm for delivering a message to an address &quot;user@domain&quot;
+   over UUCP links can be summarized as follows:
+
+      a.  If the address is actually of the form @domain1:user@domain2,
+          the &quot;domain&quot; used for the remainder should be &quot;domain1&quot;
+          instead of &quot;domain2&quot;, and the bang form reads
+          domain1!domain2!user.
+
+
+
+<span class="grey">Horton                                                          [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+      b.  Determine d: the most specific part of &quot;domain&quot; that is
+          recognized locally.  This part will be a suffix of &quot;domain&quot;.
+          This can be done by scanning through a table with entries that
+          go from specific to general, comparing entries with &quot;domain&quot;
+          to see if the entries are at the tail of &quot;domain&quot;.  For
+          example, with the address &quot;mark@osgd.cb.att.com&quot;, if the local
+          host recognizes &quot;uucp&quot; and &quot;att.com&quot;, d would be &quot;att.com&quot;.
+          The final entry in the table will be the null string, matching
+          any completely unrecognized domain.
+
+      c.  Look in the found table entry for g: the name of the
+          &quot;gateway&quot;, and for r: a UUCP !-style route to reach g.  G is
+          not necessarily directly connected to the local host, but
+          should be viewed as a gateway into the d domain.  (The values
+          of g and r for a given d may be different on different hosts,
+          although g will often be the same.)
+
+      d.  Look at the beginning of r to find the &quot;next hop&quot; host n. N
+          will always be directly connected to the local host.
+
+      e.  Determine, if possible, the class of g and n.
+
+      f.  Create an appropriate destination string s to be interpreted
+          by n.  (See below.)
+
+      g.  Pass the message off to n with destination information s.
+
+      In an environment with other types of networks that do not use
+      UUCP !  parsing, the table will probably contain additional
+      information, such as which type of link to use.  The path
+      information may be replaced in other environments by information
+      specific to the network.
+
+      The first entries in the table mentioned in part (b) are normally
+      very specific, and allow well known routes to be constructed
+      directly instead of routing through the domain tree.  The domain
+      tree should be reserved for cases where no better information is
+      available, or where traffic is very light, or where the default
+      route is the best available.  If a better route is available, that
+      information can be put in the table.  If a host has any
+      significant amount of traffic sent to a second host, it is
+      normally expected that the two hosts will set up a direct UUCP
+      link and make an entry in their tables to send mail directly, even
+      if they are in separate domains.  Routing tables should be
+      constructed to try to keep paths short and inexpensive for as much
+      traffic as possible.
+
+
+
+<span class="grey">Horton                                                          [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+      Here are some hints for the construction of the destination string
+      n (step f above.) The &quot;envelope recipient&quot; information (the
+      argument(s) to rmail) may be in either domain ! form
+      (host.com!user) or domain @ form (user@host.com) as long as the
+      sending site is sure the next hop is class 3.  If the next hop is
+      not class 3, or the sending site is not sure, the ! form should be
+      used, if possible, since it is hard to predict what the next hop
+      would do with a hybrid address.
+
+      If the gateway is known to be class 3, domain ! form may be used,
+      but if the sending site is not sure, and the entire destination
+      string was matched in the lookup (rather than some parent domain),
+      the 6 letter ! form should be used: r!user, for example:
+      dumbhost!host!user.  If the gateway appears to actually be a
+      gateway for a subdomain, e.g. because a parent domain was matched,
+      (such as the address user@host.gateway.com, where host.gateway.com
+      was not found but gateway.com was) it can be assumed to be at
+      class 3.  This allows routes such as
+      dumbhost!domain!host.domain.com!user to be used with a reasonable
+      degree of safety.  If a direct link exists to the destination
+      host, the user@domain syntax or the domain!user syntax may be
+      used.
+
+      All hosts conforming to this standard are class 3, and all
+      subdomain gateways must be class 3 hosts.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Example</span>
+
+   Suppose host A.D.COM sends mail to host C.D.COM.  Let&#x27;s suppose that
+   the 6 letter names for these hosts are aname and dname, and that the
+   intermediate host to be routed through has name bname.
+
+   The user on A types
+
+      mail user@c.d.com
+
+   The user interface creates a file such as
+
+      Date:  9 Jan 1985   8:39 EST
+      From: myname@A.D.COM (My Name)
+      Subject: sample message
+      To: user@c.d.com
+
+      This is a sample message
+
+   and passes it to the transport mechanism with a command such as
+
+
+
+<span class="grey">Horton                                                          [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+      sendmail user@c.d.com &lt; file
+
+   The transport mechanism looks up a route to c.d.com.  It does not
+   find c.d.com in its database, so it looks up d.com, and finds that
+   the path is bname!dname!%s, and that c.d.com is a class 3 host.
+   Plugging in c.d.com!user, it gets the path bname!dname!c.d.com!user.
+   (If it had found c.d.com with path bname!cname!%s, it would have
+   omitted the domain from the resulting path: bname!cname!user, since
+   it is not sure whether the destination host is class 1, 2, or 3.)
+
+   It prepends a From_ line and passes it to uux:
+
+      uux - bname!rmail dname!c.d.com!user &lt; file2
+
+   where file2 contains
+
+      From A.D.COM!user Wed Jan  9 12:43:35 1985 remote from aname Date:
+      9 Jan 1985   8:39 EST
+      From: myname@A.D.COM (My Name)
+      Subject: sample message
+      To: user@c.d.com
+
+      This is a sample message
+
+   (Note the blank line at the end of the message - at least one blank
+   line is required.) This results in the command
+
+      rmail dname!c.d.com!user
+
+   running on B.  B prepends its own from line and passes the mail
+   along:
+
+      uux - dname!rmail c.d.com!user &lt; file3
+
+   where file3 contains
+
+      From nuucp Wed Jan  9 12:43:35 1985 remote from bname &gt;From
+      A.D.COM!user Wed Jan  9 11:21:48 1985 remote from aname Date:  9
+      Jan 1985   8:39 EST
+      From: myname@A.D.COM (My Name)
+      Subject: sample message
+      To: user@c.d.com
+
+      This is a sample message
+
+
+
+
+
+<span class="grey">Horton                                                         [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+   The command
+
+      rmail c.d.com!user
+
+   is run on C, which stacks the From_ lines
+
+      From bname!aname!A.D.COM!user Wed Jan  9 12:43:35 1985 Date:  9
+      Jan 1985   8:39 EST
+      From: myname@A.D.COM (My Name)
+      Subject: sample message
+      To: user@c.d.com
+
+      This is a sample message
+
+   and stores the message locally, probably in this same format.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Summary</span>
+
+   Hosts conforming to this standard should accept all of the following
+   forms:
+
+      rmail localuser               (no !%@ in user)
+      rmail hosta!hostb!user        (no !%@ in user)
+      rmail user@domain             (only . in domain)
+      rmail domain!user             (at least 1 . in domain)
+      rmail domain.!user            (in case domain has no dots)
+
+   The &quot;envelope&quot; portion of the message (&quot;From_&quot; lines) should conform
+   to existing conventions, using ! routing.  The &quot;heading&quot; portion of
+   the message (the Word: lines such as Date:, From:, To:, and Subject:)
+   must conform to <a href="/doc/html/rfc822">RFC-822</a>.  All header addresses must be in the @ form.
+   The originating site should ensure that the addresses conform to
+   <a href="/doc/html/rfc822">RFC-822</a>, since no requirement is placed on forwarding sites or
+   gateways to transform addresses into legal <a href="/doc/html/rfc822">RFC-822</a> format.  (Such
+   forwarding sites and gateways should NOT, however, change a legal
+   <a href="/doc/html/rfc822">RFC-822</a> address such as user@domain into an illegal <a href="/doc/html/rfc822">RFC-822</a> address
+   such as gateway!user@domain, even if forwarding to a class 1 UUCP
+   host.)
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+   [<a id="ref-1">1</a>]  Postel, J., &quot;Simple Mail Transfer Protocol&quot;, <a href="/doc/html/rfc821">RFC-821</a>,
+        USC/Information Sciences Institute, August, 1982.
+
+   [<a id="ref-2">2</a>]  Crocker, D., &quot;Standard for the Format of ARPA Internet Text
+        Messages&quot;, <a href="/doc/html/rfc822">RFC-822</a>, Department of Electrical Engineering,
+        University of Delaware, August, 1982.
+
+
+<span class="grey">Horton                                                         [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc976">RFC 976</a>                                                    February 1986</span>
+UUCP Mail Interchange Format Standard
+
+
+   [<a id="ref-3">3</a>]  Postel, J., and J. K. Reynolds, &quot;Domain Requirements&quot;, <a href="/doc/html/rfc920">RFC-920</a>,
+        USC/Information Sciences Institute, October, 1984.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Horton                                                         [Page 12]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

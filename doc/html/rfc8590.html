@@ -1,0 +1,1356 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8590
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-regext-change-poll/">
+  <meta name="description" content="Change Poll Extension for the Extensible Provisioning Protocol (EPP) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8590.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8590.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc8590.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8590/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8590/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/regext/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-regext-change-poll@ietf.org?subject=draft-ietf-regext-change-poll" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-regext-change-poll-12.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-regext-change-poll-12.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-regext-change-poll-12.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-regext-change-poll-12">draft-ietf-regext-change-poll-12</a>                 Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          J. Gould
+Request for Comments: 8590                                VeriSign, Inc.
+Category: Standards Track                                       K. Feher
+ISSN: 2070-1721                                                  Neustar
+                                                                May 2019
+
+
+  <span class="h1">Change Poll Extension for the Extensible Provisioning Protocol (EPP)</span>
+
+Abstract
+
+   This document describes an Extensible Provisioning Protocol (EPP)
+   extension for notifying clients of operations on client-sponsored
+   objects that were not initiated by the client through EPP.  These
+   operations may include contractual or policy requirements including,
+   but not limited to, regular batch processes, customer support
+   actions, Uniform Domain-Name Dispute-Resolution Policy (UDRP) or
+   Uniform Rapid Suspension (URS) actions, court-directed actions, and
+   bulk updates based on customer requests.  Since the client is not
+   directly involved or knowledgable of these operations, the extension
+   is used along with an EPP object mapping to provide the resulting
+   state of the postoperation object, and optionally a preoperation
+   object, with the operation metadata of what, when, who, and why.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8590">https://www.rfc-editor.org/info/rfc8590</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-3">3</a>
+     <a href="#section-1.1">1.1</a>.  Conventions Used in This Document . . . . . . . . . . . .   <a href="#page-3">3</a>
+   <a href="#section-2">2</a>.  Object Attributes . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+     <a href="#section-2.1">2.1</a>.  Operation . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+     <a href="#section-2.2">2.2</a>.  State . . . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+     <a href="#section-2.3">2.3</a>.  Who . . . . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+     <a href="#section-2.4">2.4</a>.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+   <a href="#section-3">3</a>.  EPP Command Mapping . . . . . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+     <a href="#section-3.1">3.1</a>.  EPP Query Commands  . . . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+       <a href="#section-3.1.1">3.1.1</a>.  EPP &lt;check&gt; Command . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+       <a href="#section-3.1.2">3.1.2</a>.  EPP &lt;info&gt; Command  . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+       <a href="#section-3.1.3">3.1.3</a>.  EPP &lt;transfer&gt; Command  . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+     <a href="#section-3.2">3.2</a>.  EPP Transform Commands  . . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+       <a href="#section-3.2.1">3.2.1</a>.  EPP &lt;create&gt; Command  . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+       <a href="#section-3.2.2">3.2.2</a>.  EPP &lt;delete&gt; Command  . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+       <a href="#section-3.2.3">3.2.3</a>.  EPP &lt;renew&gt; Command . . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+       <a href="#section-3.2.4">3.2.4</a>.  EPP &lt;transfer&gt; Command  . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+       <a href="#section-3.2.5">3.2.5</a>.  EPP &lt;update&gt; Command  . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+   <a href="#section-4">4</a>.  Formal Syntax . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-15">15</a>
+     <a href="#section-4.1">4.1</a>.  Change Poll Extension Schema  . . . . . . . . . . . . . .  <a href="#page-15">15</a>
+   <a href="#section-5">5</a>.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+     <a href="#section-5.1">5.1</a>.  XML Namespace . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+     <a href="#section-5.2">5.2</a>.  EPP Extension Registry  . . . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+   <a href="#section-6">6</a>.  Security Considerations . . . . . . . . . . . . . . . . . . .  <a href="#page-19">19</a>
+   <a href="#section-7">7</a>.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-19">19</a>
+     <a href="#section-7.1">7.1</a>.  Normative References  . . . . . . . . . . . . . . . . . .  <a href="#page-19">19</a>
+     <a href="#section-7.2">7.2</a>.  Informative References  . . . . . . . . . . . . . . . . .  <a href="#page-20">20</a>
+   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-20">20</a>
+   Authors&#x27; Addresses  . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-20">20</a>
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document describes an extension mapping for version 1.0 of the
+   Extensible Provisioning Protocol (EPP) [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].  This mapping, an
+   extension to EPP object mappings like the EPP domain name mapping
+   [<a href="/doc/html/rfc5731" title="&quot;Extensible Provisioning Protocol (EPP) Domain Name Mapping&quot;">RFC5731</a>], is used to notify clients of operations they are not
+   directly involved in, on objects that the client sponsors.  It is up
+   to server policy to determine what transform operations and clients
+   to notify.  Using this extension, clients can more easily keep their
+   systems in sync with the objects stored in the server.  When a change
+   occurs that a client needs to be notified of, a poll message can be
+   inserted by the server for consumption by the client using the EPP
+   &lt;poll&gt; command and response defined in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].  The extension
+   supports including a &quot;before&quot; operation poll message and an &quot;after&quot;
+   operation poll message.  The extension only extends the EPP &lt;poll&gt;
+   response in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>] and does not extend the EPP &lt;poll&gt; command.
+   Please refer to [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>] for information and examples of the EPP
+   &lt;poll&gt; command.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Conventions Used in This Document</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   XML is case sensitive.  Unless stated otherwise, XML specifications
+   and examples provided in this document MUST be interpreted in the
+   character case presented in order to develop a conforming
+   implementation.
+
+   In examples, &quot;C:&quot; represents lines sent by a protocol client, and
+   &quot;S:&quot; represents lines returned by a protocol server.  Indentation and
+   white space in examples are provided only to illustrate element
+   relationships and are not a REQUIRED feature of this protocol.
+
+   The XML namespace prefix &quot;changePoll&quot; is used for the namespace
+   &quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;, but implementations MUST NOT
+   depend on it; instead, they should employ a proper namespace-aware
+   XML parser and serializer to interpret and output the XML documents.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Object Attributes</span>
+
+   This extension adds additional elements to EPP object mappings like
+   the EPP domain name mapping [<a href="/doc/html/rfc5731" title="&quot;Extensible Provisioning Protocol (EPP) Domain Name Mapping&quot;">RFC5731</a>].  Only those new elements are
+   described here.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Operation</span>
+
+   An operation consists of any transform operation that impacts objects
+   that the client sponsors and should be notified of.  The
+   &lt;changePoll:operation&gt; element defines the operation.  The OPTIONAL
+   &quot;op&quot; attribute is an identifier, represented in the 7-bit US-ASCII
+   character set defined in [<a href="/doc/html/rfc20" title="&quot;ASCII format for network interchange&quot;">RFC20</a>], that is used to define a sub-
+   operation or the name of a &quot;custom&quot; operation.  The enumerated list
+   of &lt;changePoll:operation&gt; values is:
+
+   &quot;create&quot;:  Create operation as defined in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+   &quot;delete&quot;:  Delete operation as defined in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].  If the delete
+       operation results in an immediate purge of the object, then the
+       &quot;op&quot; attribute MUST be set to &quot;purge&quot;.
+
+   &quot;renew&quot;:  Renew operation as defined in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+   &quot;transfer&quot;:  Transfer operation as defined in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>] that MUST set
+       the &quot;op&quot; attribute with one of the possible transfer-type values;
+       these include &quot;request&quot;, &quot;approve&quot;, &quot;cancel&quot;, or &quot;reject&quot;.
+
+   &quot;update&quot;:  Update operation as defined in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+   &quot;restore&quot;:  Restore operation as defined in [<a href="/doc/html/rfc3915" title="&quot;Domain Registry Grace Period Mapping for the Extensible Provisioning Protocol (EPP)&quot;">RFC3915</a>] that MUST set
+       the &quot;op&quot; attribute with one of the possible restore-type values;
+       these include &quot;request&quot; or &quot;report&quot;.
+
+   &quot;autoRenew&quot;:  Auto renew operation executed by the server.
+
+   &quot;autoDelete&quot;:  Auto delete operation executed by the server.  If the
+       &quot;autoDelete&quot; operation results in an immediate purge of the
+       object, then the &quot;op&quot; attribute MUST be set to &quot;purge&quot;.
+
+   &quot;autoPurge&quot;:  Auto purge operation executed by the server when
+       removing the object after it has had the status &quot;pendingDelete&quot;.
+
+   &quot;custom&quot;:  Custom operation that MUST set the &quot;op&quot; attribute with the
+       custom operation name.  The custom operations supported are up to
+       server policy.
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  State</span>
+
+   The state attribute reflects the state of the object &quot;before&quot; or
+   &quot;after&quot; the operation.  The state is defined using the OPTIONAL
+   &quot;state&quot; attribute of the &lt;changePoll:changeData&gt; element, with the
+   possible values &quot;before&quot; or &quot;after&quot; and a default value of &quot;after&quot;.
+   The server MAY support both the &quot;before&quot; state and the &quot;after&quot; state
+   of the operation by using one poll message for the &quot;before&quot; state and
+   one poll message for the &quot;after&quot; state.  The &quot;before&quot; state poll
+   message MUST be inserted into the message queue prior to the &quot;after&quot;
+   state poll message.
+
+   For operations in <a href="#section-2.1">Section 2.1</a> that don&#x27;t have an &quot;after&quot; state, the
+   server MUST use the &quot;before&quot; state poll message.  For example, for
+   the &quot;delete&quot; operation with the &quot;op&quot; attribute set to &quot;purge&quot;, or the
+   &quot;autoPurge&quot; operation, the server includes the state of the object
+   prior to being purged in the &quot;before&quot; state poll message.
+
+   For operations in <a href="#section-2.1">Section 2.1</a> that don&#x27;t have a &quot;before&quot; state, the
+   server MUST use the &quot;after&quot; state poll message.  For example, for the
+   &quot;create&quot; operation, the server includes the state of the object after
+   creation in the &quot;after&quot; state poll message.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Who</span>
+
+   The &lt;changePoll:who&gt; element defines who executed the operation, for
+   audit purposes.  It is a free-form value that is meant strictly for
+   audit purposes and not to drive client-side logic.  The scheme used
+   for the possible set of &lt;changePoll:who&gt; element values is up to
+   server policy.  The server MAY identify the &lt;changePoll:who&gt; element
+   value based on:
+
+   &quot;Identifier&quot;:  Unique user identifier of the user that executed the
+       operation.  An example is &quot;ClientX&quot;.
+
+   &quot;Name&quot;:  Name of the user that executed the operation.  An example is
+       &quot;John Doe&quot;.
+
+   &quot;Role&quot;:  Role of the user that executed operation.  An example is
+       &quot;CSR&quot; for a Customer Support Representative or &quot;Batch&quot; for a
+       server batch.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Dates and Times</span>
+
+   Date and time attribute values MUST be represented in Universal
+   Coordinated Time (UTC) using the Gregorian calendar.  The extended
+   date-time form using uppercase &quot;T&quot; and &quot;Z&quot; characters defined in
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   [<a id="ref-W3C.REC-xmlschema-2-20041028">W3C.REC-xmlschema-2-20041028</a>] MUST be used to represent date-time
+   values, as XML Schema does not support truncated date-time forms or
+   lowercase &quot;T&quot; and &quot;Z&quot; characters.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  EPP Command Mapping</span>
+
+   A detailed description of the EPP syntax and semantics can be found
+   in the EPP core protocol specification [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  EPP Query Commands</span>
+
+   EPP provides three commands to retrieve object information: &lt;check&gt;
+   to determine if an object is known to the server, &lt;info&gt; to retrieve
+   detailed information associated with an object, and &lt;transfer&gt; to
+   retrieve object-transfer status information.
+
+<span class="h4"><a class="selflink" id="section-3.1.1" href="#section-3.1.1">3.1.1</a>.  EPP &lt;check&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;check&gt; command
+   or &lt;check&gt; response described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h4"><a class="selflink" id="section-3.1.2" href="#section-3.1.2">3.1.2</a>.  EPP &lt;info&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;info&gt; command
+   described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+   This extension adds operational detail of EPP object-mapping
+   operations (<a href="#section-2.1">Section 2.1</a>) to an EPP poll response, as described in
+   [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].  It is an extension of the EPP object-mapping info
+   response.  Any transform operation to an object defined in an EPP
+   object mapping by a client other than the sponsoring client MAY
+   result in extending the &lt;info&gt; response of the object for inserting
+   an EPP poll message with the operation detail.  The sponsoring client
+   will then receive the state of the object with operation detail like
+   what, who, when, and why the object was changed.  The
+   &lt;changePoll:changeData&gt; element contains the operation detail along
+   with an indication of whether the object reflects the state before or
+   after the operation as defined in <a href="#section-2.2">Section 2.2</a>.  The
+   &lt;changePoll:changeData&gt; element includes the operation detail with
+   the following child elements:
+
+   &lt;changePoll:operation&gt;:  Transform operation executed on the object,
+       as defined in <a href="#section-2.1">Section 2.1</a>.
+
+   &lt;changePoll:date&gt;:  Date and time when the operation was executed.
+
+   &lt;changePoll:svTRID&gt;:  Server transaction identifier of the operation.
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   &lt;changePoll:who&gt;:  Who executed the operation, as defined in
+       <a href="#section-2.3">Section 2.3</a>.
+
+   &lt;changePoll:caseId&gt;:  OPTIONAL case identifier associated with the
+       operation.  The required &quot;type&quot; attribute defines the type of
+       case.  The OPTIONAL &quot;name&quot; attribute is an identifier,
+       represented in the 7-bit US-ASCII character set defined in
+       [<a href="/doc/html/rfc20" title="&quot;ASCII format for network interchange&quot;">RFC20</a>], that is used to define the name of the &quot;custom&quot; case
+       type.  The enumerated list of case types is:
+
+       udrp:  A Uniform Domain-Name Dispute-Resolution Policy (UDRP)
+          case.
+
+       urs:  A Uniform Rapid Suspension (URS) case.
+
+       custom:  A custom case that is defined using the &quot;name&quot;
+          attribute.
+
+   &lt;changePoll:reason&gt;:  OPTIONAL reason for executing the operation.
+       If present, this element contains the server-specific text to
+       help explain the reason the operation was executed.  This text
+       MUST be represented in the response language previously
+       negotiated with the client; an OPTIONAL &quot;lang&quot; attribute MAY be
+       present to identify the language if the negotiated value is
+       something other than the default value of &quot;en&quot; (English).
+
+   The following is an example poll &lt;info&gt; response with the
+   &lt;changePoll:changeData&gt; extension for a URS lock transaction on the
+   domain.example domain name, with the &quot;before&quot; state.  The &quot;before&quot;
+   state is reflected in the &lt;resData&gt; block:
+
+   S:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   S:&lt;epp xmlns=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;&gt;
+   S:   &lt;response&gt;
+   S:      &lt;result code=&quot;1301&quot;&gt;
+   S:         &lt;msg lang=&quot;en-US&quot;&gt;
+   S:       Command completed successfully; ack to dequeue&lt;/msg&gt;
+   S:      &lt;/result&gt;
+   S:      &lt;msgQ id=&quot;201&quot; count=&quot;1&quot;&gt;
+   S:         &lt;qDate&gt;2013-10-22T14:25:57.0Z&lt;/qDate&gt;
+   S:         &lt;msg&gt;Registry initiated update of domain.&lt;/msg&gt;
+   S:      &lt;/msgQ&gt;
+   S:    &lt;resData&gt;
+   S:      &lt;domain:infData
+   S:       xmlns:domain=&quot;urn:ietf:params:xml:ns:domain-1.0&quot;&gt;
+   S:        &lt;domain:name&gt;domain.example&lt;/domain:name&gt;
+   S:        &lt;domain:roid&gt;EXAMPLE1-REP&lt;/domain:roid&gt;
+   S:        &lt;domain:status s=&quot;ok&quot;/&gt;
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   S:        &lt;domain:registrant&gt;jd1234&lt;/domain:registrant&gt;
+   S:        &lt;domain:contact type=&quot;admin&quot;&gt;sh8013&lt;/domain:contact&gt;
+   S:        &lt;domain:contact type=&quot;tech&quot;&gt;sh8013&lt;/domain:contact&gt;
+   S:        &lt;domain:clID&gt;ClientX&lt;/domain:clID&gt;
+   S:        &lt;domain:crID&gt;ClientY&lt;/domain:crID&gt;
+   S:        &lt;domain:crDate&gt;2012-04-03T22:00:00.0Z&lt;/domain:crDate&gt;
+   S:        &lt;domain:exDate&gt;2014-04-03T22:00:00.0Z&lt;/domain:exDate&gt;
+   S:      &lt;/domain:infData&gt;
+   S:    &lt;/resData&gt;
+   S:    &lt;extension&gt;
+   S:      &lt;changePoll:changeData
+   S:        xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;
+   S:        state=&quot;before&quot;&gt;
+   S:        &lt;changePoll:operation&gt;update&lt;/changePoll:operation&gt;
+   S:        &lt;changePoll:date&gt;2013-10-22T14:25:57.0Z&lt;/changePoll:date&gt;
+   S:        &lt;changePoll:svTRID&gt;12345-XYZ&lt;/changePoll:svTRID&gt;
+   S:        &lt;changePoll:who&gt;URS Admin&lt;/changePoll:who&gt;
+   S:        &lt;changePoll:caseId type=&quot;urs&quot;&gt;urs123&lt;/changePoll:caseId&gt;
+   S:        &lt;changePoll:reason&gt;URS Lock&lt;/changePoll:reason&gt;
+   S:      &lt;/changePoll:changeData&gt;
+   S:    &lt;/extension&gt;
+   S:    &lt;trID&gt;
+   S:      &lt;clTRID&gt;ABC-12345&lt;/clTRID&gt;
+   S:      &lt;svTRID&gt;54321-XYZ&lt;/svTRID&gt;
+   S:    &lt;/trID&gt;
+   S:   &lt;/response&gt;
+   S:&lt;/epp&gt;
+
+   The following is an example poll &lt;info&gt; response with the
+   &lt;changePoll:changeData&gt; extension for a URS lock transaction on the
+   domain.example domain name, with the &quot;after&quot; state.  The &quot;after&quot;
+   state is reflected in the &lt;resData&gt; block:
+
+   S:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   S:&lt;epp xmlns=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;&gt;
+   S:   &lt;response&gt;
+   S:      &lt;result code=&quot;1301&quot;&gt;
+   S:         &lt;msg lang=&quot;en-US&quot;&gt;
+   S:       Command completed successfully; ack to dequeue&lt;/msg&gt;
+   S:      &lt;/result&gt;
+   S:      &lt;msgQ id=&quot;202&quot; count=&quot;1&quot;&gt;
+   S:         &lt;qDate&gt;2013-10-22T14:25:57.0Z&lt;/qDate&gt;
+   S:         &lt;msg&gt;Registry initiated update of domain.&lt;/msg&gt;
+   S:      &lt;/msgQ&gt;
+   S:    &lt;resData&gt;
+   S:      &lt;domain:infData
+   S:       xmlns:domain=&quot;urn:ietf:params:xml:ns:domain-1.0&quot;&gt;
+   S:        &lt;domain:name&gt;domain.example&lt;/domain:name&gt;
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   S:        &lt;domain:roid&gt;EXAMPLE1-REP&lt;/domain:roid&gt;
+   S:        &lt;domain:status s=&quot;serverUpdateProhibited&quot;/&gt;
+   S:        &lt;domain:status s=&quot;serverDeleteProhibited&quot;/&gt;
+   S:        &lt;domain:status s=&quot;serverTransferProhibited&quot;/&gt;
+   S:        &lt;domain:registrant&gt;jd1234&lt;/domain:registrant&gt;
+   S:        &lt;domain:contact type=&quot;admin&quot;&gt;sh8013&lt;/domain:contact&gt;
+   S:        &lt;domain:contact type=&quot;tech&quot;&gt;sh8013&lt;/domain:contact&gt;
+   S:        &lt;domain:clID&gt;ClientX&lt;/domain:clID&gt;
+   S:        &lt;domain:crID&gt;ClientY&lt;/domain:crID&gt;
+   S:        &lt;domain:crDate&gt;2012-04-03T22:00:00.0Z&lt;/domain:crDate&gt;
+   S:        &lt;domain:upID&gt;ClientZ&lt;/domain:upID&gt;
+   S:        &lt;domain:upDate&gt;2013-10-22T14:25:57.0Z&lt;/domain:upDate&gt;
+   S:        &lt;domain:exDate&gt;2014-04-03T22:00:00.0Z&lt;/domain:exDate&gt;
+   S:      &lt;/domain:infData&gt;
+   S:    &lt;/resData&gt;
+   S:    &lt;extension&gt;
+   S:      &lt;changePoll:changeData
+   S:        xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;
+   S:        state=&quot;after&quot;&gt;
+   S:        &lt;changePoll:operation&gt;update&lt;/changePoll:operation&gt;
+   S:        &lt;changePoll:date&gt;2013-10-22T14:25:57.0Z&lt;/changePoll:date&gt;
+   S:        &lt;changePoll:svTRID&gt;12345-XYZ&lt;/changePoll:svTRID&gt;
+   S:        &lt;changePoll:who&gt;URS Admin&lt;/changePoll:who&gt;
+   S:        &lt;changePoll:caseId type=&quot;urs&quot;&gt;urs123&lt;/changePoll:caseId&gt;
+   S:        &lt;changePoll:reason&gt;URS Lock&lt;/changePoll:reason&gt;
+   S:      &lt;/changePoll:changeData&gt;
+   S:    &lt;/extension&gt;
+   S:    &lt;trID&gt;
+   S:      &lt;clTRID&gt;ABC-12345&lt;/clTRID&gt;
+   S:      &lt;svTRID&gt;54321-XYZ&lt;/svTRID&gt;
+   S:    &lt;/trID&gt;
+   S:   &lt;/response&gt;
+   S:&lt;/epp&gt;
+
+   The following is an example poll &lt;info&gt; response with the
+   &lt;changePoll:changeData&gt; extension for a custom &quot;sync&quot; operation on
+   the domain.example domain name, with the default &quot;after&quot; state.  The
+   &quot;after&quot; state is reflected in the &lt;resData&gt; block:
+
+   S:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   S:&lt;epp xmlns=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;&gt;
+   S:   &lt;response&gt;
+   S:      &lt;result code=&quot;1301&quot;&gt;
+   S:         &lt;msg&gt;Command completed successfully; ack to dequeue&lt;/msg&gt;
+   S:      &lt;/result&gt;
+   S:      &lt;msgQ id=&quot;201&quot; count=&quot;1&quot;&gt;
+   S:         &lt;qDate&gt;2013-10-22T14:25:57.0Z&lt;/qDate&gt;
+   S:    &lt;msg&gt;Registry initiated Sync of Domain Expiration Date&lt;/msg&gt;
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                    [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   S:      &lt;/msgQ&gt;
+   S:    &lt;resData&gt;
+   S:      &lt;domain:infData
+   S:       xmlns:domain=&quot;urn:ietf:params:xml:ns:domain-1.0&quot;&gt;
+   S:        &lt;domain:name&gt;domain.example&lt;/domain:name&gt;
+   S:        &lt;domain:roid&gt;EXAMPLE1-REP&lt;/domain:roid&gt;
+   S:        &lt;domain:status s=&quot;ok&quot;/&gt;
+   S:        &lt;domain:registrant&gt;jd1234&lt;/domain:registrant&gt;
+   S:        &lt;domain:contact type=&quot;admin&quot;&gt;sh8013&lt;/domain:contact&gt;
+   S:        &lt;domain:contact type=&quot;tech&quot;&gt;sh8013&lt;/domain:contact&gt;
+   S:        &lt;domain:clID&gt;ClientX&lt;/domain:clID&gt;
+   S:        &lt;domain:crID&gt;ClientY&lt;/domain:crID&gt;
+   S:        &lt;domain:crDate&gt;2012-04-03T22:00:00.0Z&lt;/domain:crDate&gt;
+   S:        &lt;domain:upID&gt;ClientZ&lt;/domain:upID&gt;
+   S:        &lt;domain:upDate&gt;2013-10-22T14:25:57.0Z&lt;/domain:upDate&gt;
+   S:        &lt;domain:exDate&gt;2014-04-03T22:00:00.0Z&lt;/domain:exDate&gt;
+   S:      &lt;/domain:infData&gt;
+   S:    &lt;/resData&gt;
+   S:    &lt;extension&gt;
+   S:      &lt;changePoll:changeData
+   S:        xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;&gt;
+   S:        &lt;changePoll:operation op=&quot;sync&quot;&gt;custom
+   S:        &lt;/changePoll:operation&gt;
+   S:        &lt;changePoll:date&gt;2013-10-22T14:25:57.0Z&lt;/changePoll:date&gt;
+   S:        &lt;changePoll:svTRID&gt;12345-XYZ&lt;/changePoll:svTRID&gt;
+   S:        &lt;changePoll:who&gt;CSR&lt;/changePoll:who&gt;
+   S:        &lt;changePoll:reason lang=&quot;en&quot;&gt;Customer sync request
+   S:        &lt;/changePoll:reason&gt;
+   S:      &lt;/changePoll:changeData&gt;
+   S:    &lt;/extension&gt;
+   S:    &lt;trID&gt;
+   S:      &lt;clTRID&gt;ABC-12345&lt;/clTRID&gt;
+   S:      &lt;svTRID&gt;54321-XYZ&lt;/svTRID&gt;
+   S:    &lt;/trID&gt;
+   S:   &lt;/response&gt;
+   S:&lt;/epp&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   The following is an example poll &lt;info&gt; response with the
+   &lt;changePoll:changeData&gt; extension for a &quot;delete&quot; operation on the
+   domain.example domain name that is immediately purged, with the
+   &quot;before&quot; state.  The &quot;before&quot; state is reflected in the &lt;resData&gt;
+   block:
+
+   S:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   S:&lt;epp xmlns=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;&gt;
+   S:  &lt;response&gt;
+   S:    &lt;result code=&quot;1301&quot;&gt;
+   S:      &lt;msg&gt;Command completed successfully; ack to dequeue&lt;/msg&gt;
+   S:    &lt;/result&gt;
+   S:    &lt;msgQ id=&quot;200&quot; count=&quot;1&quot;&gt;
+   S:      &lt;qDate&gt;2013-10-22T14:25:57.0Z&lt;/qDate&gt;
+   S:      &lt;msg&gt;Registry initiated delete of
+   S:         domain resulting in immediate purge.&lt;/msg&gt;
+   S:    &lt;/msgQ&gt;
+   S:    &lt;resData&gt;
+   S:      &lt;domain:infData
+   S:        xmlns:domain=&quot;urn:ietf:params:xml:ns:domain-1.0&quot;&gt;
+   S:        &lt;domain:name&gt;domain.example&lt;/domain:name&gt;
+   S:        &lt;domain:roid&gt;EXAMPLE1-REP&lt;/domain:roid&gt;
+   S:        &lt;domain:clID&gt;ClientX&lt;/domain:clID&gt;
+   S:      &lt;/domain:infData&gt;
+   S:    &lt;/resData&gt;
+   S:    &lt;extension&gt;
+   S:      &lt;changePoll:changeData
+   S:        xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;
+   S:        state=&quot;before&quot;&gt;
+   S:        &lt;changePoll:operation op=&quot;purge&quot;&gt;delete
+   S:        &lt;/changePoll:operation&gt;
+   S:        &lt;changePoll:date&gt;2013-10-22T14:25:57.0Z
+   S:        &lt;/changePoll:date&gt;
+   S:        &lt;changePoll:svTRID&gt;12345-XYZ
+   S:        &lt;/changePoll:svTRID&gt;
+   S:        &lt;changePoll:who&gt;ClientZ
+   S:        &lt;/changePoll:who&gt;
+   S:        &lt;changePoll:reason&gt;Court order
+   S:        &lt;/changePoll:reason&gt;
+   S:      &lt;/changePoll:changeData&gt;
+   S:    &lt;/extension&gt;
+   S:    &lt;trID&gt;
+   S:      &lt;clTRID&gt;ABC-12345&lt;/clTRID&gt;
+   S:      &lt;svTRID&gt;54321-XYZ&lt;/svTRID&gt;
+   S:    &lt;/trID&gt;
+   S:  &lt;/response&gt;
+   S:&lt;/epp&gt;
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   The following is an example poll &lt;info&gt; response with the
+   &lt;changePoll:changeData&gt; extension for an &quot;autoPurge&quot; operation on the
+   domain.example domain name that previously had the &quot;pendingDelete&quot;
+   status, with the &quot;before&quot; state.  The &quot;before&quot; state is reflected in
+   the &lt;resData&gt; block:
+
+   S:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   S:&lt;epp xmlns=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;&gt;
+   S:  &lt;response&gt;
+   S:    &lt;result code=&quot;1301&quot;&gt;
+   S:      &lt;msg&gt;Command completed successfully; ack to dequeue
+   S:      &lt;/msg&gt;
+   S:    &lt;/result&gt;
+   S:    &lt;msgQ id=&quot;200&quot; count=&quot;1&quot;&gt;
+   S:      &lt;qDate&gt;2013-10-22T14:25:57.0Z&lt;/qDate&gt;
+   S:      &lt;msg&gt;Registry purged domain with pendingDelete status.
+   S:      &lt;/msg&gt;
+   S:    &lt;/msgQ&gt;
+   S:    &lt;resData&gt;
+   S:      &lt;domain:infData
+   S:        xmlns:domain=&quot;urn:ietf:params:xml:ns:domain-1.0&quot;&gt;
+   S:        &lt;domain:name&gt;domain.example&lt;/domain:name&gt;
+   S:        &lt;domain:roid&gt;EXAMPLE1-REP&lt;/domain:roid&gt;
+   S:        &lt;domain:status s=&quot;pendingDelete&quot;/&gt;
+   S:        &lt;domain:clID&gt;ClientX&lt;/domain:clID&gt;
+   S:      &lt;/domain:infData&gt;
+   S:    &lt;/resData&gt;
+   S:    &lt;extension&gt;
+   S:      &lt;changePoll:changeData
+   S:        xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;
+   S:        state=&quot;before&quot;&gt;
+   S:        &lt;changePoll:operation&gt;autoPurge
+   S:        &lt;/changePoll:operation&gt;
+   S:        &lt;changePoll:date&gt;2013-10-22T14:25:57.0Z
+   S:        &lt;/changePoll:date&gt;
+   S:        &lt;changePoll:svTRID&gt;12345-XYZ
+   S:        &lt;/changePoll:svTRID&gt;
+   S:        &lt;changePoll:who&gt;Batch
+   S:        &lt;/changePoll:who&gt;
+   S:        &lt;changePoll:reason&gt;Past pendingDelete 5 day period
+   S:        &lt;/changePoll:reason&gt;
+   S:      &lt;/changePoll:changeData&gt;
+   S:    &lt;/extension&gt;
+   S:    &lt;trID&gt;
+   S:      &lt;clTRID&gt;ABC-12345&lt;/clTRID&gt;
+   S:      &lt;svTRID&gt;54321-XYZ&lt;/svTRID&gt;
+   S:    &lt;/trID&gt;
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   S:  &lt;/response&gt;
+   S:&lt;/epp&gt;
+
+   The following is an example poll &lt;info&gt; response with the
+   &lt;changePoll:changeData&gt; extension for an &quot;update&quot; operation on the
+   ns1.domain.example host, with the default &quot;after&quot; state.  The &quot;after&quot;
+   state is reflected in the &lt;resData&gt; block:
+
+   S:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   S:&lt;epp xmlns=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;&gt;
+   S:   &lt;response&gt;
+   S:      &lt;result code=&quot;1301&quot;&gt;
+   S:         &lt;msg&gt;Command completed successfully; ack to dequeue&lt;/msg&gt;
+   S:      &lt;/result&gt;
+   S:      &lt;msgQ id=&quot;201&quot; count=&quot;1&quot;&gt;
+   S:         &lt;qDate&gt;2013-10-22T14:25:57.0Z&lt;/qDate&gt;
+   S:         &lt;msg&gt;Registry initiated update of host.&lt;/msg&gt;
+   S:      &lt;/msgQ&gt;
+   S:    &lt;resData&gt;
+   S:      &lt;host:infData
+   S:       xmlns:host=&quot;urn:ietf:params:xml:ns:host-1.0&quot;&gt;
+   S:        &lt;host:name&gt;ns1.domain.example&lt;/host:name&gt;
+   S:        &lt;host:roid&gt;NS1_EXAMPLE1-REP&lt;/host:roid&gt;
+   S:        &lt;host:status s=&quot;linked&quot;/&gt;
+   S:        &lt;host:status s=&quot;serverUpdateProhibited&quot;/&gt;
+   S:        &lt;host:status s=&quot;serverDeleteProhibited&quot;/&gt;
+   S:        &lt;host:addr ip=&quot;v4&quot;&gt;192.0.2.2&lt;/host:addr&gt;
+   S:        &lt;host:addr ip=&quot;v6&quot;&gt;2001:db8:0:0:1:0:0:1&lt;/host:addr&gt;
+   S:        &lt;host:clID&gt;ClientX&lt;/host:clID&gt;
+   S:        &lt;host:crID&gt;ClientY&lt;/host:crID&gt;
+   S:        &lt;host:crDate&gt;2012-04-03T22:00:00.0Z&lt;/host:crDate&gt;
+   S:        &lt;host:upID&gt;ClientY&lt;/host:upID&gt;
+   S:        &lt;host:upDate&gt;2013-10-22T14:25:57.0Z&lt;/host:upDate&gt;
+   S:      &lt;/host:infData&gt;
+   S:    &lt;/resData&gt;
+   S:    &lt;extension&gt;
+   S:      &lt;changePoll:changeData
+   S:        xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;&gt;
+   S:        &lt;changePoll:operation&gt;update&lt;/changePoll:operation&gt;
+   S:        &lt;changePoll:date&gt;2013-10-22T14:25:57.0Z&lt;/changePoll:date&gt;
+   S:        &lt;changePoll:svTRID&gt;12345-XYZ&lt;/changePoll:svTRID&gt;
+   S:        &lt;changePoll:who&gt;ClientZ&lt;/changePoll:who&gt;
+   S:        &lt;changePoll:reason&gt;Host Lock&lt;/changePoll:reason&gt;
+   S:      &lt;/changePoll:changeData&gt;
+   S:    &lt;/extension&gt;
+   S:    &lt;trID&gt;
+   S:      &lt;clTRID&gt;ABC-12345&lt;/clTRID&gt;
+   S:      &lt;svTRID&gt;54321-XYZ&lt;/svTRID&gt;
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+   S:    &lt;/trID&gt;
+   S:   &lt;/response&gt;
+   S:&lt;/epp&gt;
+
+<span class="h4"><a class="selflink" id="section-3.1.3" href="#section-3.1.3">3.1.3</a>.  EPP &lt;transfer&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;transfer&gt; query
+   command or &lt;transfer&gt; response described in the [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  EPP Transform Commands</span>
+
+   EPP provides five commands to transform objects: &lt;create&gt; to create
+   an instance of an object, &lt;delete&gt; to delete an instance of an
+   object, &lt;renew&gt; to extend the validity period of an object,
+   &lt;transfer&gt; to manage object-sponsorship changes, and &lt;update&gt; to
+   change information associated with an object.
+
+<span class="h4"><a class="selflink" id="section-3.2.1" href="#section-3.2.1">3.2.1</a>.  EPP &lt;create&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;create&gt; command
+   or &lt;create&gt; response described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h4"><a class="selflink" id="section-3.2.2" href="#section-3.2.2">3.2.2</a>.  EPP &lt;delete&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;delete&gt; command
+   or &lt;delete&gt; response described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h4"><a class="selflink" id="section-3.2.3" href="#section-3.2.3">3.2.3</a>.  EPP &lt;renew&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;renew&gt; command
+   or &lt;renew&gt; response described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h4"><a class="selflink" id="section-3.2.4" href="#section-3.2.4">3.2.4</a>.  EPP &lt;transfer&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;transfer&gt;
+   command or &lt;transfer&gt; response described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+<span class="h4"><a class="selflink" id="section-3.2.5" href="#section-3.2.5">3.2.5</a>.  EPP &lt;update&gt; Command</span>
+
+   This extension does not add any elements to the EPP &lt;update&gt; command
+   or &lt;update&gt; response described in [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>].
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 14]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-15" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Formal Syntax</span>
+
+   One schema is presented here: the EPP Change Poll Extension schema.
+
+   The formal syntax presented here is a complete schema representation
+   of the object mapping suitable for automated validation of EPP XML
+   instances.  The BEGIN and END tags are not part of the schema; they
+   are used to note the beginning and ending of the schema for URI
+   registration purposes.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Change Poll Extension Schema</span>
+
+   BEGIN
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    &lt;schema targetNamespace=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;
+            xmlns:eppcom=&quot;urn:ietf:params:xml:ns:eppcom-1.0&quot;
+            xmlns:epp=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;
+            xmlns:changePoll=&quot;urn:ietf:params:xml:ns:changePoll-1.0&quot;
+            xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot;
+            elementFormDefault=&quot;qualified&quot;&gt;
+
+     &lt;!--
+     Import common element types.
+     --&gt;
+     &lt;import namespace=&quot;urn:ietf:params:xml:ns:eppcom-1.0&quot;/&gt;
+     &lt;import namespace=&quot;urn:ietf:params:xml:ns:epp-1.0&quot;/&gt;
+
+
+      &lt;annotation&gt;
+        &lt;documentation&gt;
+          Extensible Provisioning Protocol v1.0
+          Change Poll Mapping Schema.
+        &lt;/documentation&gt;
+      &lt;/annotation&gt;
+
+      &lt;!--
+       Change element.
+      --&gt;
+      &lt;element name=&quot;changeData&quot; type=&quot;changePoll:changeDataType&quot;/&gt;
+
+      &lt;!--
+       Attributes associated with the change.
+      --&gt;
+      &lt;complexType name=&quot;changeDataType&quot;&gt;
+        &lt;sequence&gt;
+          &lt;element name=&quot;operation&quot; type=&quot;changePoll:operationType&quot;/&gt;
+          &lt;element name=&quot;date&quot; type=&quot;dateTime&quot;/&gt;
+          &lt;element name=&quot;svTRID&quot; type=&quot;epp:trIDStringType&quot;/&gt;
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 15]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-16" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+          &lt;element name=&quot;who&quot; type=&quot;changePoll:whoType&quot;/&gt;
+          &lt;element name=&quot;caseId&quot; type=&quot;changePoll:caseIdType&quot;
+            minOccurs=&quot;0&quot;/&gt;
+          &lt;element name=&quot;reason&quot; type=&quot;eppcom:reasonType&quot;
+            minOccurs=&quot;0&quot;/&gt;
+        &lt;/sequence&gt;
+       &lt;attribute name=&quot;state&quot; type=&quot;changePoll:stateType&quot;
+         default=&quot;after&quot;/&gt;
+      &lt;/complexType&gt;
+
+      &lt;!--
+       Enumerated list of operations, with extensibility via &quot;custom&quot;.
+      --&gt;
+      &lt;simpleType name=&quot;operationEnum&quot;&gt;
+        &lt;restriction base=&quot;token&quot;&gt;
+          &lt;enumeration value=&quot;create&quot;/&gt;
+          &lt;enumeration value=&quot;delete&quot;/&gt;
+          &lt;enumeration value=&quot;renew&quot;/&gt;
+          &lt;enumeration value=&quot;transfer&quot;/&gt;
+          &lt;enumeration value=&quot;update&quot;/&gt;
+          &lt;enumeration value=&quot;restore&quot;/&gt;
+          &lt;enumeration value=&quot;autoRenew&quot;/&gt;
+          &lt;enumeration value=&quot;autoDelete&quot;/&gt;
+          &lt;enumeration value=&quot;autoPurge&quot;/&gt;
+          &lt;enumeration value=&quot;custom&quot;/&gt;
+        &lt;/restriction&gt;
+      &lt;/simpleType&gt;
+
+      &lt;!--
+       Enumerated state of the object in the poll message.
+      --&gt;
+      &lt;simpleType name=&quot;stateType&quot;&gt;
+        &lt;restriction base=&quot;token&quot;&gt;
+          &lt;enumeration value=&quot;before&quot;/&gt;
+          &lt;enumeration value=&quot;after&quot;/&gt;
+        &lt;/restriction&gt;
+      &lt;/simpleType&gt;
+
+      &lt;!--
+       Transform operation type
+      --&gt;
+     &lt;complexType name=&quot;operationType&quot;&gt;
+       &lt;simpleContent&gt;
+         &lt;extension base=&quot;changePoll:operationEnum&quot;&gt;
+           &lt;attribute name=&quot;op&quot; type=&quot;token&quot;/&gt;
+         &lt;/extension&gt;
+       &lt;/simpleContent&gt;
+     &lt;/complexType&gt;
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 16]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-17" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+      &lt;!--
+       Case identifier type
+      --&gt;
+     &lt;complexType name=&quot;caseIdType&quot;&gt;
+       &lt;simpleContent&gt;
+         &lt;extension base=&quot;token&quot;&gt;
+           &lt;attribute name=&quot;type&quot; type=&quot;changePoll:caseTypeEnum&quot;
+             use=&quot;required&quot;/&gt;
+           &lt;attribute name=&quot;name&quot; type=&quot;token&quot;
+             use=&quot;optional&quot;/&gt;
+         &lt;/extension&gt;
+       &lt;/simpleContent&gt;
+     &lt;/complexType&gt;
+
+      &lt;!--
+       Enumerated list of case identifier types
+      --&gt;
+      &lt;simpleType name=&quot;caseTypeEnum&quot;&gt;
+        &lt;restriction base=&quot;token&quot;&gt;
+          &lt;enumeration value=&quot;udrp&quot;/&gt;
+          &lt;enumeration value=&quot;urs&quot;/&gt;
+          &lt;enumeration value=&quot;custom&quot;/&gt;
+        &lt;/restriction&gt;
+      &lt;/simpleType&gt;
+
+      &lt;!--
+       Who type
+      --&gt;
+     &lt;simpleType name=&quot;whoType&quot;&gt;
+       &lt;restriction base=&quot;normalizedString&quot;&gt;
+         &lt;minLength value=&quot;1&quot;/&gt;
+         &lt;maxLength value=&quot;255&quot;/&gt;
+       &lt;/restriction&gt;
+     &lt;/simpleType&gt;
+
+    &lt;!--
+    End of schema.
+    --&gt;
+    &lt;/schema&gt;
+   END
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 17]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-18" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  XML Namespace</span>
+
+   This document uses URNs to describe XML namespaces and XML schemas
+   conforming to a registry mechanism described in [<a href="/doc/html/rfc3688" title="&quot;The IETF XML Registry&quot;">RFC3688</a>].  The
+   following URI assignment has been made by IANA:
+
+   Registration for the changePoll namespace:
+
+      URI: urn:ietf:params:xml:ns:changePoll-1.0
+
+      Registrant Contact: IESG
+
+      XML: None.  Namespace URIs do not represent an XML specification.
+
+   Registration for the changePoll XML schema:
+
+      URI: urn:ietf:params:xml:ns:changePoll-1.0
+
+      Registrant Contact: IESG
+
+      XML: See the &quot;Formal Syntax&quot; section of this document.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  EPP Extension Registry</span>
+
+   The EPP extension described in this document has been registered by
+   the IANA in the Extensions for the &quot;Extensible Provisioning Protocol
+   (EPP)&quot; registry described in [<a href="/doc/html/rfc7451" title="&quot;Extension Registry for the Extensible Provisioning Protocol&quot;">RFC7451</a>].  The details of the
+   registration are as follows:
+
+   Name of Extension: Change Poll Extension for the Extensible
+   Provisioning Protocol (EPP)
+
+   Document Status: Standards Track
+
+   Reference: <a href="/doc/html/rfc8590">RFC 8590</a>
+
+   Registrant Name and Email Address: IESG &lt;iesg@ietf.org&gt;
+
+   TLDs: Any
+
+   IPR Disclosure: None
+
+   Status: Active
+
+   Notes: None
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 18]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-19" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   The mapping extensions described in this document do not provide any
+   security services beyond those described by EPP [<a href="/doc/html/rfc5730" title="&quot;Extensible Provisioning Protocol (EPP)&quot;">RFC5730</a>] and
+   protocol layers used by EPP.  The security considerations described
+   in these other specifications apply to this specification as well.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC20">RFC20</a>]    Cerf, V., &quot;ASCII format for network interchange&quot;, STD 80,
+              <a href="/doc/html/rfc20">RFC 20</a>, DOI 10.17487/RFC0020, October 1969,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc20">https://www.rfc-editor.org/info/rfc20</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3688">RFC3688</a>]  Mealling, M., &quot;The IETF XML Registry&quot;, <a href="/doc/html/bcp81">BCP 81</a>, <a href="/doc/html/rfc3688">RFC 3688</a>,
+              DOI 10.17487/RFC3688, January 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3688">https://www.rfc-editor.org/info/rfc3688</a>&gt;.
+
+   [<a id="ref-RFC3915">RFC3915</a>]  Hollenbeck, S., &quot;Domain Registry Grace Period Mapping for
+              the Extensible Provisioning Protocol (EPP)&quot;, <a href="/doc/html/rfc3915">RFC 3915</a>,
+              DOI 10.17487/RFC3915, September 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3915">https://www.rfc-editor.org/info/rfc3915</a>&gt;.
+
+   [<a id="ref-RFC5730">RFC5730</a>]  Hollenbeck, S., &quot;Extensible Provisioning Protocol (EPP)&quot;,
+              STD 69, <a href="/doc/html/rfc5730">RFC 5730</a>, DOI 10.17487/RFC5730, August 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5730">https://www.rfc-editor.org/info/rfc5730</a>&gt;.
+
+   [<a id="ref-RFC5731">RFC5731</a>]  Hollenbeck, S., &quot;Extensible Provisioning Protocol (EPP)
+              Domain Name Mapping&quot;, STD 69, <a href="/doc/html/rfc5731">RFC 5731</a>,
+              DOI 10.17487/RFC5731, August 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5731">https://www.rfc-editor.org/info/rfc5731</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-W3C.REC-xmlschema-2-20041028">W3C.REC-xmlschema-2-20041028</a>]
+              Biron, P. and A. Malhotra, &quot;XML Schema Part 2: Datatypes
+              Second Edition&quot;, World Wide Web Consortium Recommendation
+              REC-xmlschema-2-20041028, October 2004,
+              &lt;<a href="http://www.w3.org/TR/2004/REC-xmlschema-2-20041028">http://www.w3.org/TR/2004/REC-xmlschema-2-20041028</a>&gt;.
+
+
+
+
+<span class="grey">Gould &amp; Feher                Standards Track                   [Page 19]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-20" ></span>
+<span class="grey"><a href="/doc/html/rfc8590">RFC 8590</a>                       changePoll                       May 2019</span>
+
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC7451">RFC7451</a>]  Hollenbeck, S., &quot;Extension Registry for the Extensible
+              Provisioning Protocol&quot;, <a href="/doc/html/rfc7451">RFC 7451</a>, DOI 10.17487/RFC7451,
+              February 2015, &lt;<a href="https://www.rfc-editor.org/info/rfc7451">https://www.rfc-editor.org/info/rfc7451</a>&gt;.
+
+Acknowledgments
+
+   The authors wish to acknowledge the original concept for this
+   document and the efforts in the initial versions of this document by
+   Trung Tran and Sharon Wodjenski.
+
+   Special suggestions that have been incorporated into this document
+   were provided by Scott Hollenbeck, Michael Holloway, and Patrick
+   Mevzek.
+
+Authors&#x27; Addresses
+
+   James Gould
+   VeriSign, Inc.
+   12061 Bluemont Way
+   Reston, VA  20190
+   United States of America
+
+   Email: jgould@verisign.com
+   URI:   <a href="http://www.verisign.com">http://www.verisign.com</a>
+
+
+   Kal Feher
+   Neustar
+   lvl 8/10 Queens Road
+   Melbourne, VIC  3004
+   Australia
+
+   Email: ietf@feherfamily.org
+   URI:   <a href="http://www.neustar.biz">http://www.neustar.biz</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gould &amp; Feher                Standards Track                   [Page 20]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

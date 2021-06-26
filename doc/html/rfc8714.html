@@ -1,0 +1,448 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8714
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-iasa2-trust-update/">
+  <meta name="description" content="Update to the Process for Selection of Trustees for the IETF Trust (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgmagenta"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8714.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8714.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8714.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8714.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8714/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8714/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/iasa2/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-iasa2-trust-update@ietf.org?subject=draft-ietf-iasa2-trust-update" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-iasa2-trust-update-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-iasa2-trust-update-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-iasa2-trust-update-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-iasa2-trust-update-03">draft-ietf-iasa2-trust-update-03</a>             Best Current Practice</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          J. Arkko
+Request for Comments: 8714                                      Ericsson
+BCP: 101                                                       T. Hardie
+Obsoletes: <a href="/doc/html/rfc4371">4371</a>                                            February 2020
+Category: Best Current Practice
+ISSN: 2070-1721
+
+
+   <span class="h1">Update to the Process for Selection of Trustees for the IETF Trust</span>
+
+Abstract
+
+   This memo updates the process for selection of Trustees for the IETF
+   Trust.  Previously, the IETF Administrative Oversight Committee
+   (IAOC) members also acted as Trustees, but the IAOC has been
+   eliminated as part of an update to the structure of the IETF
+   Administrative Support Activity (IASA).  This memo specifies that the
+   Trustees shall be selected separately.
+
+   This memo obsoletes <a href="/doc/html/rfc4371">RFC 4371</a>.  The changes relate only to the
+   selection of Trustees.  All other aspects of the IETF Trust remain as
+   they are today.
+
+Status of This Memo
+
+   This memo documents an Internet Best Current Practice.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   BCPs is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8714">https://www.rfc-editor.org/info/rfc8714</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  IETF Trust
+   3.  Selection of Trustees
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This memo updates the process for selection of Trustees for the IETF
+   Trust.  Previously, the IETF Administrative Oversight Committee
+   (IAOC) members also acted as Trustees, but the IAOC has been
+   eliminated as part of an update to the structure of the IETF
+   Administrative Support Activity (IASA).  This memo specifies that the
+   Trustees shall be selected separately.  See <a href="#section-3">Section 3</a>.
+
+   This memo obsoletes [<a href="/doc/html/rfc4371" title="&quot;BCP 101 Update for IPR Trust&quot;">RFC4371</a>].  The changes relate only to the
+   selection of Trustees.  All other aspects of the IETF Trust remain as
+   they are today.  <a href="#section-2">Section 2</a> copies the definition as it was in
+   [<a href="/doc/html/rfc4371" title="&quot;BCP 101 Update for IPR Trust&quot;">RFC4371</a>], only leaving out the part about Trustee selection and
+   adding a reference to the IETF Trust website.
+
+   For a discussion of why this change is needed and a rationale for
+   these specific changes, see [<a href="/doc/html/rfc8715" title="&quot;IETF Administrative Support Activity 2.0: Update to the Process for Selection of Trustees for the IETF Trust&quot;">RFC8715</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  IETF Trust</span>
+
+   A Trust (&quot;the IETF Trust&quot;) has been formed for the purpose of
+   acquiring, holding, maintaining, and licensing certain existing and
+   future intellectual property and other property used in connection
+   with the administration of the IETF.  The Trust was formed by the
+   signatures of its Settlors and initial Trustees.  The Settlors, who
+   contributed initial intellectual property to the Trust, were ISOC and
+   the Corporation for National Research Initiatives.  The Beneficiary
+   of the IETF Trust is the IETF as a whole.
+
+   Further details of the IETF Trust may be found at the IETF Trust&#x27;s
+   website, &lt;<a href="https://trustee.ietf.org/">https://trustee.ietf.org/</a>&gt;.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Selection of Trustees</span>
+
+   This document revises the original Trustee selection procedures
+   defined in [<a href="/doc/html/rfc4071" title="&quot;Structure of the IETF Administrative Support Activity (IASA)&quot;">RFC4071</a>] and [<a href="/doc/html/rfc4371" title="&quot;BCP 101 Update for IPR Trust&quot;">RFC4371</a>] to eliminate the requirement that
+   Trustees be drawn from the members of the IAOC.
+
+   In this newly revised IETF Trust structure, there will be five
+   Trustees.  Three shall be appointed by the IETF Nominating Committee
+   (NomCom) and confirmed by the Internet Engineering Steering Group
+   (IESG), one shall be appointed by the IESG, and one shall be
+   appointed by the Internet Society (ISOC) Board of Trustees.  The
+   appointments by the IESG and the ISOC Board of Trustees do not
+   require confirmation.
+
+   The IETF Trust Chair informs the nominating committee of the Trustee
+   positions to be reviewed.  The IETF Trust will provide a summary of
+   the expertise desired of the Trustee candidates to each appointing
+   body.
+
+   A change to the Trust Agreement is required to put this change into
+   effect, and this document requests that the current Trustees make
+   this change at the earliest convenient time and no later than the end
+   of the 104th IETF meeting in March 2019.
+
+   The terms of the appointed Trustees from the IETF NomCom shall be
+   three years.  The initial selection shall be one, two, and three year
+   terms in order to initially stagger the terms.  The other
+   appointments by the IESG and the ISOC Board of Trustees shall be two
+   year terms, with the initial terms being one and two years,
+   respectively.  The goal of the staggered initial terms is to minimize
+   potential Trustee turnover in any single year.  To maintain the
+   staggered terms, each appointing body may, at its discretion, appoint
+   Trustees for shorter terms as needed in exceptional situations, e.g.,
+   for mid-term vacancies or when an appointment is not ready by the
+   time of the first IETF meeting of the year.
+
+   Once the initial Trustee selections according to the procedures in
+   this document are complete, and at each subsequent annual meeting of
+   the IETF Trust (once new Trustees are seated), the Trustees shall
+   elect one Trustee to serve as IETF Trust Chair by a majority vote of
+   the IETF Trust.
+
+   Trustees appointed by the IETF NomCom may be recalled according to
+   the recall process described in [<a href="#ref-BCP10" title="&quot;IAB, IESG, IETF Trust, and IETF LLC Selection, Confirmation, and Recall Process: Operation of the IETF Nominating and Recall Committees&quot;">BCP10</a>].  Trustees appointed by the
+   IESG or by the ISOC Board of Directors may be recalled by the
+   appointing body.  For appointments made by the IESG, the IESG is
+   expected to run an open selection process and to consider the
+   necessary skill set and conflicts of interest as part of that
+   process.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   This memo has no security implications for the Internet.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-BCP10">BCP10</a>]    Kucherawy, M., Ed., Hinden, R., Ed., and J. Livingood,
+              Ed., &quot;IAB, IESG, IETF Trust, and IETF LLC Selection,
+              Confirmation, and Recall Process: Operation of the IETF
+              Nominating and Recall Committees&quot;, <a href="/doc/html/bcp10">BCP 10</a>, <a href="/doc/html/rfc8713">RFC 8713</a>,
+              February 2020, &lt;<a href="https://www.rfc-editor.org/info/bcp10">https://www.rfc-editor.org/info/bcp10</a>&gt;.
+
+   [<a id="ref-RFC4071">RFC4071</a>]  Austein, R., Ed. and B. Wijnen, Ed., &quot;Structure of the
+              IETF Administrative Support Activity (IASA)&quot;, <a href="/doc/html/bcp101">BCP 101</a>,
+              <a href="/doc/html/rfc4071">RFC 4071</a>, DOI 10.17487/RFC4071, April 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4071">https://www.rfc-editor.org/info/rfc4071</a>&gt;.
+
+   [<a id="ref-RFC4371">RFC4371</a>]  Carpenter, B., Ed. and L. Lynch, Ed., &quot;<a href="/doc/html/bcp101">BCP 101</a> Update for
+              IPR Trust&quot;, <a href="/doc/html/bcp101">BCP 101</a>, <a href="/doc/html/rfc4371">RFC 4371</a>, DOI 10.17487/RFC4371,
+              January 2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4371">https://www.rfc-editor.org/info/rfc4371</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC8715">RFC8715</a>]  Arkko, J., &quot;IETF Administrative Support Activity 2.0:
+              Update to the Process for Selection of Trustees for the
+              IETF Trust&quot;, <a href="/doc/html/rfc8715">RFC 8715</a>, DOI 10.17487/RFC8715, February
+              2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8715">https://www.rfc-editor.org/info/rfc8715</a>&gt;.
+
+Acknowledgements
+
+   The authors would like to thank members of the earlier IASA 2.0
+   design team: Brian Haberman, Eric Rescorla, Jari Arkko, Jason
+   Livingood, Joe Hall, and Leslie Daigle.  The authors would also like
+   to thank Alissa Cooper, Andrew Sullivan, Brian Carpenter, Lucy Lynch,
+   and John Levine for interesting discussions in this problem space.
+   The authors would also like to thank Russ Housley, Bob Hinden, Scott
+   Mansfield, Alexey Melnikov, Suresh Krishnan, Mirja Kühlewind, Ben
+   Campbell, Spencer Dawkins, Martin Vigoreux, Benjamin Kaduk, and
+   Adrian Farrel for careful review.  Finally, the authors would like to
+   thank the authors of [<a href="/doc/html/rfc4371" title="&quot;BCP 101 Update for IPR Trust&quot;">RFC4371</a>], as the text from that RFC remains in
+   this document.
+
+Authors&#x27; Addresses
+
+   Jari Arkko
+   Ericsson
+   FI-02700 Kauniainen
+   Finland
+
+   Email: jari.arkko@piuha.net
+
+
+   Ted Hardie
+
+   Email: ted.ietf@gmail.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

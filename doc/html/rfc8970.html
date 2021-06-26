@@ -1,0 +1,687 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8970
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-extra-imap-fetch-preview/">
+  <meta name="description" content="IMAP4 Extension: Message Preview Generation (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8970.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8970.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8970.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8970.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8970/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8970/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/extra/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-extra-imap-fetch-preview@ietf.org?subject=draft-ietf-extra-imap-fetch-preview" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-extra-imap-fetch-preview-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-extra-imap-fetch-preview-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-extra-imap-fetch-preview-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-extra-imap-fetch-preview-10">draft-ietf-extra-imap-fetch-preview-10</a>           Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        M. Slusarz
+Request for Comments: 8970                             Open-Xchange Inc.
+Category: Standards Track                                  December 2020
+ISSN: 2070-1721
+
+
+              <span class="h1">IMAP4 Extension: Message Preview Generation</span>
+
+Abstract
+
+   This document specifies an Internet Message Access Protocol (IMAP)
+   protocol extension that allows a client to request a server-generated
+   abbreviated text representation of message data that is useful as a
+   contextual preview of the entire message.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8970">https://www.rfc-editor.org/info/rfc8970</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions Used in This Document
+   3.  FETCH Data Item
+     3.1.  Command
+     3.2.  Response
+     3.3.  Preview Text Format
+   4.  LAZY Priority Modifier
+     4.1.  LAZY
+     4.2.  Client Implementation Advice
+   5.  Examples
+   6.  Formal Syntax
+   7.  IANA Considerations
+   8.  Security Considerations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgments
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Many modern mail clients display small extracts of the body text as
+   an aid to allow a user to quickly decide whether they are interested
+   in viewing the full message contents.  Mail clients implementing the
+   Internet Message Access Protocol [<a href="/doc/html/rfc3501" title="&quot;INTERNET MESSAGE ACCESS PROTOCOL - VERSION 4rev1&quot;">RFC3501</a>] would benefit from a
+   standardized, consistent way to generate these brief textual previews
+   of messages.
+
+   Generation of a preview on the server has several benefits.  First,
+   it allows consistent representation of previews across all clients.
+   While different clients might generate quite different preview text,
+   having common preview text generated by the server can give a more
+   consistent user experience to those who use multiple clients.
+
+   Second, server-side preview generation is more efficient.  A client-
+   based algorithm needs to issue, at a minimum, a FETCH BODYSTRUCTURE
+   command in order to determine which MIME [<a href="/doc/html/rfc2045" title="&quot;Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies&quot;">RFC2045</a>] body part(s)
+   should be represented in the preview.  Subsequently, at least one
+   FETCH BODY command may be needed to retrieve body data used in
+   preview generation.  These FETCH commands cannot be pipelined since
+   the BODYSTRUCTURE query must be parsed on the client before the list
+   of parts to be retrieved via the BODY command(s) can be determined.
+
+   Additionally, it may be difficult to predict the amount of body data
+   that must be retrieved to adequately represent the part via a
+   preview, therefore requiring inefficient fetching of excessive data
+   in order to account for this uncertainty.  For example, a preview
+   algorithm to display data contained in a text/html [<a href="/doc/html/rfc2854" title="&quot;The &#x27;text/html&#x27; Media Type&quot;">RFC2854</a>] part
+   will likely strip the markup tags to obtain textual content.
+   However, without fetching the entire content of the part, there is no
+   way to guarantee that sufficient non-tag content will exist unless
+   either 1) the entire part is retrieved or 2) an additional partial
+   FETCH is executed when the client determines that it does not possess
+   sufficient data from a previous partial FETCH to display an adequate
+   representation of the preview.
+
+   Finally, server generation allows caching in a centralized location.
+   Using server-generated previews allows global generation once per
+   message, and that preview can be cached for the retention period of
+   the source message.  Retrieval of message data may be expensive
+   within a server, for example, so a server can be configured to reduce
+   its storage retrieval load by pre-generating preview data.
+
+   A server indicates support for this extension via the &quot;PREVIEW&quot;
+   capability name.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Conventions Used in This Document</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   &quot;User&quot; is used to refer to a human user, whereas &quot;client&quot; refers to
+   the software being run by the user.
+
+   In examples, &quot;C:&quot; and &quot;S:&quot; indicate lines sent by the client and
+   server, respectively.  If a single &quot;C:&quot; or &quot;S:&quot; label applies to
+   multiple lines, then the line breaks between those lines are for
+   editorial clarity only and are not part of the actual protocol
+   exchange.
+
+   As with all IMAP extension documents, the case used in writing IMAP
+   protocol elements herein is chosen for editorial clarity, and
+   implementations must pay attention to the numbered rules at the
+   beginning of <a href="/doc/html/rfc3501#section-9">Section&nbsp;9 of [RFC3501]</a>.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  FETCH Data Item</span>
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Command</span>
+
+   To retrieve a preview for a message, the PREVIEW FETCH attribute is
+   used when issuing a FETCH command.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Response</span>
+
+   The server returns a variable-length string that is the generated
+   preview for that message.  This string is intended to be viewed by
+   the user as a contextual preview of the entire message and is not
+   intended to be interpreted in any way by the client software.
+
+   Example: Retrieving preview information in a SELECTed mailbox.
+
+     C: A1 FETCH 1 (PREVIEW)
+     S: * 1 FETCH (PREVIEW &quot;Preview text!&quot;)
+     S: A1 OK FETCH complete.
+
+   A server SHOULD strive to generate the same string for a given
+   message for each request.  However, since previews are understood to
+   be an approximation of the message data and not a canonical view of
+   its contents, a client MUST NOT assume that a message preview is
+   immutable for a given message.  This relaxed requirement permits a
+   server to offer previews as an option without requiring potentially
+   burdensome storage and/or processing requirements to guarantee
+   immutability for a use case that does not require this strictness.
+   For example, the underlying IMAP server may change due to a system
+   software upgrade; an account&#x27;s state information may be retained in
+   the migration, but the new server may generate different preview text
+   than the old server.
+
+   It is possible that the server has determined that no meaningful
+   preview text can be generated for a particular message.  Examples of
+   this involve encrypted messages, content types the server does not
+   support previews of, and other situations where the server is not
+   able to extract information for a preview.  In such cases, the server
+   MUST return a zero-length string.  Clients SHOULD NOT send another
+   FETCH for a preview for such messages.  (As discussed previously,
+   preview data is not immutable, so there is chance that at some point
+   in the future the server would be able to generate meaningful text.
+   However, this scenario is expected to be rare, so a client should not
+   continually send out requests to try to detect this infrequent
+   occurrence.)
+
+   If the LAZY modifier (<a href="#section-4.1">Section 4.1</a>) is used, the server MAY return NIL
+   for the preview response, indicating that preview generation could
+   not be completed without causing undue delay.  A server MUST NOT
+   return NIL to a FETCH PREVIEW request made without the LAZY modifier.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Preview Text Format</span>
+
+   The generated preview text MUST be treated as text/plain [<a href="/doc/html/rfc2046" title="&quot;Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types&quot;">RFC2046</a>]
+   media type data by the client.
+
+   The generated string MUST NOT be content transfer encoded and MUST be
+   encoded in UTF-8 [<a href="/doc/html/rfc3629" title="&quot;UTF-8, a transformation format of ISO 10646&quot;">RFC3629</a>].  The server SHOULD remove any formatting
+   markup and do whatever processing might be useful in rendering the
+   preview as plain text.
+
+   For purposes of this section, a &quot;preview character&quot; is defined as a
+   single Universal Character Set (UCS) character encoded in UTF-8.
+   Note: a single preview character may comprise multiple octets, so any
+   buffers implemented to conform to the string limitations identified
+   in this document should be sized to prevent possible overflow errors.
+
+   The server SHOULD limit the length of the preview text to 200 preview
+   characters.  This length should provide sufficient data to generally
+   support both various languages (and their different average word
+   lengths) and diverse client display size requirements.
+
+   The server MUST NOT output preview text longer than 256 preview
+   characters.
+
+   If the preview is not generated based on the body content of the
+   message, and the LANGUAGE extension [<a href="/doc/html/rfc5255" title="&quot;Internet Message Access Protocol Internationalization&quot;">RFC5255</a>] is supported by the
+   server, the preview text SHOULD be generated according to the
+   language rules that apply to human-readable text.  For example, a
+   message that consists of a single image MIME part has no human-
+   readable text from which to generate preview information.  Instead,
+   the server may wish to output a description that the message contains
+   an image and describe some attributes of the image, such as image
+   format, size, and filename.  This descriptive text is not a product
+   of the message body itself but is rather auto-generated data by the
+   server; it should thus use the rules defined for human-readable text
+   described in the LANGUAGE extension (if supported on the server).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  LAZY Priority Modifier</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  LAZY</span>
+
+   The LAZY modifier directs the server to return the preview
+   representation only if that data can be returned without undue delay
+   to the client.
+
+   If this modifier is used, and the server is unable to return preview
+   data without undue delay, the server MUST return NIL as the preview
+   response.
+
+   The LAZY modifier MUST be implemented by any server that supports the
+   PREVIEW extension.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Client Implementation Advice</span>
+
+   Upon opening a mailbox, a client generally performs a FETCH of
+   message details in order to create a listing to present to the user
+   (e.g., ENVELOPE data).  Using this extension, a client may want to
+   additionally display preview information as part of this listing.
+   Quickly providing the base mailbox listing with basic message details
+   is the primary goal of this command as this is required to allow the
+   user to begin interacting with the mailbox.  Preview data is likely
+   to be of secondary importance; it provides useful context, but it is
+   not necessary to perform message actions.  A client can load
+   unavailable previews in the background and display them
+   asynchronously to the user as the preview data is provided by the
+   server.
+
+   In this scenario, the client would add the PREVIEW data item, with
+   the LAZY modifier, to the list of FETCH items needed to generate the
+   mailbox listing.  This allows the server to advantageously return
+   preview data without blocking the primary goal of quickly returning
+   the basic message details used to generate the mailbox listing.
+
+   Once this initial FETCH is complete, the client can then issue FETCH
+   requests, without the LAZY modifier, to load the PREVIEW data item
+   for the messages in which preview data was not returned.  It is
+   RECOMMENDED that these FETCH requests be issued in small batches,
+   e.g., 50 messages per FETCH command, since preview generation may be
+   expensive and a single large request may exceed server resource
+   limits.
+
+   See Example 2 in <a href="#section-5">Section 5</a> for an implementation of this strategy.
+
+   A client SHOULD NOT continually issue FETCH PREVIEW requests with the
+   LAZY modifier in a selected mailbox as the server is under no
+   requirement to return preview information for this command, which
+   could lead to an unnecessary waste of system and network resources.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Examples</span>
+
+   Example 1: Requesting preview without LAZY modifier.
+
+     C: A1 CAPABILITY
+     S: * CAPABILITY IMAP4rev1 PREVIEW
+     S: A1 OK Capability command completed.
+     [...a mailbox is SELECTed...]
+     C: A2 FETCH 1 (<a href="/doc/html/rfc822">RFC822</a>.SIZE PREVIEW)
+     S: * 1 FETCH (<a href="/doc/html/rfc822">RFC822</a>.SIZE 5647 PREVIEW {200}
+     S: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     S: Curabitur aliquam turpis et ante dictum, et pulvinar dui congue.
+     S: Maecenas hendrerit, lorem non imperdiet pellentesque, nulla
+     S: ligula nullam
+     S: )
+     S: A2 OK FETCH complete.
+
+   Example 2: Requesting preview with LAZY modifier, to obtain previews
+   during initial mailbox listing if readily available; otherwise, load
+   previews in background.
+
+     C: B1 FETCH 1:4 (ENVELOPE PREVIEW (LAZY))
+     S: * 1 FETCH (ENVELOPE (&quot;Wed, 23 Sep 2020 15:03:11 +0000&quot; [...])
+        PREVIEW &quot;Preview text for message 1.&quot;)
+     S: * 2 FETCH (PREVIEW &quot;&quot; ENVELOPE
+        (&quot;Thu, 24 Sep 2020 12:17:23 +0000&quot; [...]))
+     S: * 3 FETCH (ENVELOPE (&quot;Fri, 25 Sep 2020 09:13:45 +0000&quot; [...])
+        PREVIEW NIL)
+     S: * 4 FETCH (ENVELOPE (&quot;Sat, 26 Sep 2020 07:11:18 +0000&quot; [...])
+        PREVIEW NIL)
+     S: B1 OK FETCH completed.
+     [...Client has preview for message 1 and knows that message 2 has
+         a preview that is empty; only need to request preview of
+         messages 3 &amp; 4 (e.g., in background)...]
+     C: B2 FETCH 3:4 (PREVIEW)
+     S: * 3 FETCH (PREVIEW {30}
+     S: Message data from message 3.
+     S: )
+     S: * 4 FETCH (PREVIEW &quot;Message 4 preview&quot;)
+     S: B2 OK Fetch completed.
+
+   Example 3: Requesting preview for search results within a single
+   mailbox.  Use the SEARCHRES extension [<a href="/doc/html/rfc5182" title="&quot;IMAP Extension for Referencing the Last SEARCH Result&quot;">RFC5182</a>] to save a round-trip.
+
+     C: C1 CAPABILITY
+     S: * CAPABILITY IMAP4rev1 PREVIEW SEARCHRES
+     S: C1 OK Capability command completed.
+     [...a mailbox is SELECTed...]
+     C: C2 SEARCH RETURN (SAVE) FROM &quot;FOO&quot;
+     C: C3 FETCH $ (UID PREVIEW (LAZY))
+     S: C2 OK SEARCH completed.
+     S: * 5 FETCH (UID 13 PREVIEW &quot;Preview!&quot;)
+     S: * 9 FETCH (UID 23 PREVIEW NIL)
+     S: C3 OK FETCH completed.
+     [...Retrieve message 9 preview in background...]
+     C: C4 UID FETCH 23 (PREVIEW)
+     S: * 9 FETCH (UID 23 PREVIEW &quot;Another preview!&quot;)
+     S: C4 OK FETCH completed.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Formal Syntax</span>
+
+   The following syntax specification uses the Augmented Backus-Naur
+   Form (ABNF) as described in [<a href="/doc/html/rfc5234" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">RFC5234</a>].  It includes definitions from
+   IMAP [<a href="/doc/html/rfc3501" title="&quot;INTERNET MESSAGE ACCESS PROTOCOL - VERSION 4rev1&quot;">RFC3501</a>].
+
+     capability        =/ &quot;PREVIEW&quot;
+
+     fetch-att         =/ &quot;PREVIEW&quot; [SP &quot;(&quot; preview-mod *(SP
+                          preview-mod) &quot;)&quot;]
+
+     msg-att-dynamic   =/ &quot;PREVIEW&quot; SP nstring
+
+     preview-mod       =  &quot;LAZY&quot;
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+   IMAP [<a href="/doc/html/rfc3501" title="&quot;INTERNET MESSAGE ACCESS PROTOCOL - VERSION 4rev1&quot;">RFC3501</a>] capabilities are registered by publishing a Standards
+   Track or IESG-approved Experimental RFC in the &quot;IMAP Capabilities&quot;
+   registry located at &lt;<a href="http://www.iana.org/assignments/imap-capabilities">http://www.iana.org/assignments/imap-</a>
+   <a href="http://www.iana.org/assignments/imap-capabilities">capabilities</a>&gt;.
+
+   IANA has added the &quot;PREVIEW&quot; capability to this registry.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   Implementation of this extension might enable denial-of-service
+   attacks against server resources, due to excessive memory or CPU
+   usage during preview generation or increased storage usage if preview
+   results are stored on the server after generation.  In order to
+   mitigate such attacks, servers SHOULD log the client authentication
+   identity on FETCH PREVIEW operations in order to facilitate tracking
+   of abusive clients.
+
+   Servers MAY limit the resources that preview generation uses.  Such
+   resource limitations might, in an extreme example, cause a server to
+   return a preview that is the empty string for a message that
+   otherwise would have had a non-empty preview.  However, it is
+   recommended that at least some preview text be provided in this
+   situation, even if the quality of the preview is degraded.
+
+   Just as the messages they summarize, preview data may contain
+   sensitive information.  If generated preview data is stored on the
+   server, e.g., for caching purposes, these previews MUST be protected
+   with equivalent authorization and confidentiality controls as the
+   source message.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2046">RFC2046</a>]  Freed, N. and N. Borenstein, &quot;Multipurpose Internet Mail
+              Extensions (MIME) Part Two: Media Types&quot;, <a href="/doc/html/rfc2046">RFC 2046</a>,
+              DOI 10.17487/RFC2046, November 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2046">https://www.rfc-editor.org/info/rfc2046</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3501">RFC3501</a>]  Crispin, M., &quot;INTERNET MESSAGE ACCESS PROTOCOL - VERSION
+              4rev1&quot;, <a href="/doc/html/rfc3501">RFC 3501</a>, DOI 10.17487/RFC3501, March 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3501">https://www.rfc-editor.org/info/rfc3501</a>&gt;.
+
+   [<a id="ref-RFC3629">RFC3629</a>]  Yergeau, F., &quot;UTF-8, a transformation format of ISO
+              10646&quot;, STD 63, <a href="/doc/html/rfc3629">RFC 3629</a>, DOI 10.17487/RFC3629, November
+              2003, &lt;<a href="https://www.rfc-editor.org/info/rfc3629">https://www.rfc-editor.org/info/rfc3629</a>&gt;.
+
+   [<a id="ref-RFC5234">RFC5234</a>]  Crocker, D., Ed. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>,
+              DOI 10.17487/RFC5234, January 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5234">https://www.rfc-editor.org/info/rfc5234</a>&gt;.
+
+   [<a id="ref-RFC5255">RFC5255</a>]  Newman, C., Gulbrandsen, A., and A. Melnikov, &quot;Internet
+              Message Access Protocol Internationalization&quot;, <a href="/doc/html/rfc5255">RFC 5255</a>,
+              DOI 10.17487/RFC5255, June 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5255">https://www.rfc-editor.org/info/rfc5255</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC2045">RFC2045</a>]  Freed, N. and N. Borenstein, &quot;Multipurpose Internet Mail
+              Extensions (MIME) Part One: Format of Internet Message
+              Bodies&quot;, <a href="/doc/html/rfc2045">RFC 2045</a>, DOI 10.17487/RFC2045, November 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2045">https://www.rfc-editor.org/info/rfc2045</a>&gt;.
+
+   [<a id="ref-RFC2854">RFC2854</a>]  Connolly, D. and L. Masinter, &quot;The &#x27;text/html&#x27; Media
+              Type&quot;, <a href="/doc/html/rfc2854">RFC 2854</a>, DOI 10.17487/RFC2854, June 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2854">https://www.rfc-editor.org/info/rfc2854</a>&gt;.
+
+   [<a id="ref-RFC5182">RFC5182</a>]  Melnikov, A., &quot;IMAP Extension for Referencing the Last
+              SEARCH Result&quot;, <a href="/doc/html/rfc5182">RFC 5182</a>, DOI 10.17487/RFC5182, March
+              2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5182">https://www.rfc-editor.org/info/rfc5182</a>&gt;.
+
+Acknowledgments
+
+   The author would like to thank the following people for their
+   comments and contributions to this document: Stephan Bosch, Bron
+   Gondwana, Teemu Huovila, Neil Jenkins, Steffen Lehmann, Barry Leiba,
+   Alexey Melnikov, Chris Newman, Pete Resnick, Jeff Sipek, Timo
+   Sirainen, Steffen Templin, and Aki Tuomi.
+
+Author&#x27;s Address
+
+   Michael M. Slusarz
+   Open-Xchange Inc.
+   530 Lytton Avenue
+   Palo Alto, California 94301
+   United States of America
+
+   Email: michael.slusarz@open-xchange.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

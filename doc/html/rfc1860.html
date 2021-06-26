@@ -1,0 +1,405 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1860
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-rfced-info-varilength-table/">
+  <meta name="description" content="Variable Length Subnet Table For IPv4 (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgbrown"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1860.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1860.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1860.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1860/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1860/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-rfced-info-varilength-table@ietf.org?subject=draft-rfced-info-varilength-table" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-rfced-info-varilength-table-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-rfced-info-varilength-table-00">draft-rfced-info-varilength-table-00</a>                 Informational
+Obsoleted by: <a href="/doc/html/rfc1878">1878</a>                                                      </pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                         T. Pummill
+Request for Comments: 1860                                       Alantec
+Category: Informational                                       B. Manning
+                                                                     ISI
+                                                            October 1995
+
+
+                 <span class="h1">Variable Length Subnet Table For IPv4</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Abstract
+
+   This document itemizes the potential values for IPv4 subnets.
+   Additional information is provided for Hex and Decmial values,
+   classfull equivalents, and number of addresses available within the
+   indicated block. We appreciate inputs from Bruce Pinsky (cisco) and
+   Daniel Karrenberg (RIPE).
+
+Table
+
+   The following table lists the variable length subnets from 1 to 32,
+   the CIDR representation form and the Decmial equivalents.
+
+   Mask value:
+   Hex            CIDR   Decimal           #of add    Classfull
+   80.00.00.00    /1     128.0.0.0         2048 M     128 A
+   C0.00.00.00    /2     192.0.0.0         1024 M      64 A
+   E0.00.00.00    /3     224.0.0.0          512 M      32 A
+   F0.00.00.00    /4     240.0.0.0          256 M      16 A
+   F8.00.00.00    /5     248.0.0.0          128 M       8 A
+   FC.00.00.00    /6     252.0.0.0           64 M       4 A
+   FE.00.00.00    /7     254.0.0.0           32 M       2 A
+   FF.00.00.00    /8     255.0.0.0           16 M       1 A
+   FF.80.00.00    /9     255.128.0.0          8 M     128 B
+   FF.C0.00.00   /10     255.192.0.0          4 M      64 B
+   FF.E0.00.00   /11     255.224.0.0          2 M      32 B
+   FF.F0.00.00   /12     255.240.0.0       1024 K      16 B
+   FF.F8.00.00   /13     255.248.0.0        512 K       8 B
+   FF.FC.00.00   /14     255.252.0.0        256 K       4 B
+   FF.FE.00.00   /15     255.254.0.0        128 K       2 B
+   FF.FF.00.00   /16     255.255.0.0         64 K       1 B
+   FF.FF.80.00   /17     255.255.128.0       32 K     128 C
+   FF.FF.C0.00   /18     255.255.192.0       16 K      64 C
+
+
+
+<span class="grey">Pummill &amp; Manning            Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1860">RFC 1860</a>                      Subnet Table                  October 1995</span>
+
+
+   FF.FF.E0.00   /19     255.255.224.0        8 K      32 C
+   FF.FF.F0.00   /20     255.255.240.0        4 K      16 C
+   FF.FF.F8.00   /21     255.255.248.0        2 K       8 C
+   FF.FF.FC.00   /22     255.255.252.0        1 K       4 C
+   FF.FF.FE.00   /23     255.255.254.0      512         2 C
+   FF.FF.FF.00   /24     255.255.255.0      256         1 C
+   FF.FF.FF.80   /25     255.255.255.128    128
+   FF.FF.FF.C0   /26     255.255.255.192     64
+   FF.FF.FF.E0   /27     255.255.255.224     32
+   FF.FF.FF.F0   /28     255.255.255.240     16
+   FF.FF.FF.F8   /29     255.255.255.248      8
+   FF.FF.FF.FC   /30     255.255.255.252      4
+   FF.FF.FF.FE   /31     255.255.255.254   This space is not usable
+   FF.FF.FF.FF   /32     255.255.255.255   This is a single host route
+
+Examples
+
+   The following tables illistrate some options for subnet/host partions
+   within selected block sizes.
+
+From a /16 block
+
+   # bits          Mask            Effective Subnets     Effective Hosts
+   ========        =====           =================     ===============
+   2               255.255.192.0   2                       16382
+   3               255.255.224.0   6                       8190
+   4               255.255.240.0   14                      4094
+   5               255.255.248.0   30                      2046
+   6               255.255.252.0   62                      1022
+   7               255.255.254.0   126                     510
+   8               255.255.255.0   254                     254
+   9               255.255.255.128 510                     126
+   10              255.255.255.192 1022                    62
+   11              255.255.255.224 2046                    30
+   12              255.255.255.240 4094                    14
+   13              255.255.255.248 8190                    6
+   14              255.255.255.252 16382                   2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Pummill &amp; Manning            Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1860">RFC 1860</a>                      Subnet Table                  October 1995</span>
+
+
+From a /24 block
+
+   # bits          Mask            Effective Subnets     Effective Hosts
+   ========        =====           =================     ===============
+   2               255.255.255.192 2                       62
+   3               255.255.255.224 6                       30
+   4               255.255.255.240 14                      14
+   5               255.255.255.248 30                      6
+   6               255.255.255.252 62                      2
+
+   *Subnet all zeroes and all ones excluded.
+   *Host all zeroes and all ones excluded.
+
+References
+
+   [<a id="ref-1">1</a>] Fuller, V., Li, T., Yu, J., and K. Varadhan, &quot;Classless Inter-
+       Domain Routing (CIDR): an Address Assignment and Aggregation
+       Strategy&quot;, <a href="/doc/html/rfc1519">RFC 1519</a>, BARRNet, cicso, Merit, OARnet, September
+       1993.
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Authors&#x27; Addresses
+
+   Troy Pummill
+
+   EMail: trop@alantec.com
+
+
+   Bill Manning
+   Information Sciences Institute
+   University of Southern California
+   4676 Admiralty Way
+   Marina del Rey, CA 90292-6695
+   USA
+
+   Phone: +1 310-822-1511 x387
+   Fax:   +1 310-823-6714
+   EMail: bmanning@isi.edu
+
+
+
+
+
+
+
+
+
+
+Pummill &amp; Manning            Informational                      [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

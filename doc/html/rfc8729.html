@@ -1,0 +1,1122 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8729
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-iasa2-rfc4844-bis/">
+  <meta name="description" content="The RFC Series and RFC Editor (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8729.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8729.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8729.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8729.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8729/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8729/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-ietf-iasa2-rfc4844-bis@ietf.org?subject=draft-ietf-iasa2-rfc4844-bis" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-iasa2-rfc4844-bis-05.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-iasa2-rfc4844-bis-05.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-iasa2-rfc4844-bis-05.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-iasa2-rfc4844-bis-05">draft-ietf-iasa2-rfc4844-bis-05</a>                      Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Architecture Board (IAB)                        R. Housley, Ed.
+Request for Comments: 8729
+Obsoletes: <a href="/doc/html/rfc4844">4844</a>                                           L. Daigle, Ed.
+Category: Informational                                    February 2020
+ISSN: 2070-1721
+
+
+                     <span class="h1">The RFC Series and RFC Editor</span>
+
+Abstract
+
+   This document describes the framework for an RFC Series and an RFC
+   Editor function that incorporate the principles of organized
+   community involvement and accountability that has become necessary as
+   the Internet technical community has grown, thereby enabling the RFC
+   Series to continue to fulfill its mandate.  This document obsoletes
+   <a href="/doc/html/rfc4844">RFC 4844</a>.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Architecture Board (IAB)
+   and represents information that the IAB has deemed valuable to
+   provide for permanent record.  It represents the consensus of the
+   Internet Architecture Board (IAB).  Documents approved for
+   publication by the IAB are not candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8729">https://www.rfc-editor.org/info/rfc8729</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Table of Contents
+
+   1.  Introduction
+   2.  RFC Series Mission
+   3.  Roles and Responsibilities
+     3.1.  RFC Editor
+     3.2.  IAB
+     3.3.  Operational Oversight
+     3.4.  Policy Oversight
+   4.  Framework
+     4.1.  Document Approval
+       4.1.1.  Definition
+       4.1.2.  Operational Implementation
+       4.1.3.  Process Change
+       4.1.4.  Existing Approval Process Documents
+     4.2.  Editing, Processing, and Publication of Documents
+       4.2.1.  Definition
+       4.2.2.  Operational Implementation
+       4.2.3.  Process Change
+       4.2.4.  Existing Process Documents
+     4.3.  Archiving, Indexing, and Accessibility
+       4.3.1.  Definition
+       4.3.2.  Operational Implementation
+       4.3.3.  Process Change
+       4.3.4.  Existing Process Documents
+     4.4.  Series-Wide Guidelines and Rules
+       4.4.1.  Definition
+       4.4.2.  Operational Implementation
+       4.4.3.  Process Change
+       4.4.4.  Existing Process Documents
+   5.  RFC Streams
+     5.1.  RFC Approval Processes
+       5.1.1.  IETF Document Stream
+       5.1.2.  IAB Document Stream
+       5.1.3.  IRTF Document Stream
+       5.1.4.  Independent Submission Stream
+     5.2.  RFC Technical Publication Requirements
+       5.2.1.  IETF Documents
+       5.2.2.  IAB Documents
+       5.2.3.  IRTF Documents
+       5.2.4.  Independent Submissions
+   6.  Security Considerations
+   7.  Changes Since <a href="/doc/html/rfc4844">RFC 4844</a>
+   8.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  A Retrospective of IAB Charters and RFC Editor
+     A.1.  1992
+     A.2.  1994
+     A.3.  2000
+   IAB Members at the Time of Approval
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The first Request for Comments (RFC) document was published in April
+   of 1969 as part of the effort to design and build what we now know of
+   as the Internet.  Since then, the RFC Series has been the archival
+   series dedicated to documenting Internet technical specifications,
+   including both general contributions from the Internet research and
+   engineering community as well as standards documents.
+
+   As described in the history of the first 30 years of RFCs
+   ([<a href="/doc/html/rfc2555" title="&quot;30 Years of RFCs&quot;">RFC2555</a>]), the RFC Series was created for the purpose of capturing
+   the research and engineering thought that underlie the design of
+   (what we now know of as) the Internet.  As the Internet Engineering
+   Task Force (IETF) was formalized to carry out the discussion and
+   documentation of Internet standards, IETF documents have become a
+   large part (but not the entirety) of the RFC Series.
+
+   As the IETF has grown up and celebrated its own 30 years of history,
+   its requirements for archival publication of its output have changed
+   and become more rigorous.  Perhaps most significantly, the IETF must
+   be able to define (based on its own open consensus discussion
+   processes and leadership directions) and implement adjustments to its
+   publication processes.
+
+   At the same time, the Internet engineering and research community as
+   a whole has grown and come to require more openness and
+   accountability in all organizations supporting it.  More than ever,
+   this community needs an RFC Series that is supported (operationally
+   and in terms of its principles) such that there is a balance of:
+
+   *  expert implementation;
+
+   *  clear management and direction -- for operations and evolution
+      across the whole RFC Series (whether originating in the IETF or
+      not); and
+
+   *  appropriate community input into and review of activities.
+
+   In the past, there has been confusion and therefore sometimes tension
+   over where and how to address RFC issues that are particular to
+   contributing groups (e.g., the IETF, the Internet Architecture Board
+   (IAB), or independent individuals).  It was not always clear where
+   there should be community involvement versus RFC Editor control;
+   depending on the issue, there might be more or less involvement from
+   the IAB, the Internet Engineering Steering Group (IESG), or the
+   community at large.  There are similar issues with handling RFC
+   Series-wide issues -- where to discuss and resolve them in a way that
+   is balanced across the whole series.
+
+   For example, there have been discussions about Intellectual Property
+   Rights (IPR) for IETF-generated documents, but it&#x27;s not clear when or
+   how to abstract the portions of those discussions that are relevant
+   to the rest of the RFC Series.  Discussions of labeling (of RFCs in
+   general, IETF documents in particular, or some combination thereof)
+   generally must be applied to the whole RFC Series or not at all.
+   Without an agreed-on framework for managing the RFC Series, it is
+   difficult to have those discussions in a non-polarized fashion --
+   either the IETF dictating the reality of the rest of the RFC Series,
+   or the RFC Series imposing undue restrictions on documents from the
+   IETF.
+
+   As part of its charter (see <a href="#appendix-A">Appendix A</a>), the IAB has a responsibility
+   for the RFC Editor.  Acknowledging the IETF&#x27;s needs and the general
+   Internet engineering and research community&#x27;s evolving needs, the IAB
+   supports a future for the RFC Series that continues to meet its
+   original mandate of providing the archival series for the technical
+   research and engineering documentation that describes the Internet.
+
+   With this document, the IAB provides the framework for the RFC Series
+   and an RFC Editor function with the specific purpose of ensuring that
+   the RFC Series is maintained and supported in ways that are
+   consistent with the stated purpose of the RFC Series and the
+   realities of today&#x27;s Internet research and engineering community.
+   The framework describes the existing &quot;streams&quot; of RFCs, draws a
+   roadmap of existing process documents already defining the
+   implementation, and provides clear direction of how to evolve this
+   framework and its supporting pieces through discussion and future
+   document revision.
+
+   Specifically, this document provides a brief charter for the RFC
+   Series, describes the role of the RFC Editor, the IAB, and the IETF
+   Administrative Support Activity (IASA) in a framework for managing
+   the RFC Series, and discusses the streams of input to the RFC Series
+   from the various constituencies it serves.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  RFC Series Mission</span>
+
+   The RFC Series is the archival series dedicated to documenting
+   Internet technical specifications, including general contributions
+   from the Internet research and engineering community as well as
+   standards documents.
+
+   RFCs are available free of charge to anyone via the Internet.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Roles and Responsibilities</span>
+
+   As this document sets out the framework for supporting the RFC Series
+   mission, this section reviews the updated roles and responsibilities
+   of the entities that have had, and will have, involvement in
+   continued support of the mission.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  RFC Editor</span>
+
+   Originally, there was a single person acting as editor of the RFC
+   Series (the RFC Editor).  The task has grown, and the work now
+   requires the organized activity of several experts, so there are RFC
+   Editors, or an RFC Editor organization.  In time, there may be
+   multiple organizations working together to undertake the work
+   required by the RFC Series.  For simplicity&#x27;s sake, and without
+   attempting to predict how the role might be subdivided among them,
+   this document refers to this collection of experts and organizations
+   as the &quot;RFC Editor&quot;.
+
+   The RFC Editor is an expert technical editor and series editor,
+   acting to support the mission of the RFC Series.  As such, the RFC
+   Editor is the implementer handling the editorial management of the
+   RFC Series, in accordance with the defined processes.  In addition,
+   the RFC Editor is expected to be the expert and prime mover in
+   discussions about policies for editing, publishing, and archiving
+   RFCs.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  IAB</span>
+
+   In this model, the role of the IAB is to ensure that the RFC Series
+   mission is being appropriately fulfilled for the whole community for
+   which it was created.  The IAB does not, organizationally, have
+   comprehensive publishing or editorial expertise.  Therefore, the role
+   of the IAB is focused on ensuring that principles are met, the
+   appropriate bodies and communities are duly informed and consulted,
+   and the RFC Editor has what it needs in order to execute on the
+   material that is in their mandate.
+
+   It is the responsibility of the IAB to approve the appointment of the
+   RFC Editor and to approve the general policy followed by the RFC
+   Editor.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Operational Oversight</span>
+
+   The IETF Administration Limited Liability Company (IETF LLC), as part
+   of the IETF Administrative Support Activity (IASA), is responsible
+   for administrative and financial matters for the IETF, the IAB, and
+   the Internet Research Task Force (IRTF) [<a href="/doc/html/rfc8711" title="&quot;Structure of the IETF Administrative Support Activity, Version 2.0&quot;">RFC8711</a>].  The IASA is
+   tasked with providing the funding for the RFC Editor.  The IASA,
+   through the IETF Executive Director, provides contractual and
+   financial oversight of the RFC Editor.  Additionally, as described in
+   <a href="/doc/html/rfc8728#section-3.1">Section&nbsp;3.1 of [RFC8728]</a>, the RFC Series Oversight Committee (RSOC),
+   acting with authority delegated from the IAB, is responsible for
+   ensuring that the RFC Series is run in a transparent and accountable
+   manner, including design and execution of the RFC Series Editor
+   selection process.
+
+   The IETF Executive Director works with the IAB to identify suitable
+   persons or entities to fulfill the mandate of the RFC Production
+   Center and the RFC Publisher roles as defined in [<a href="/doc/html/rfc8728" title="&quot;RFC Editor Model (Version 2)&quot;">RFC8728</a>].
+
+   The IETF Executive Director establishes appropriate contractual
+   agreements with the selected persons or entities to carry out the
+   work that will satisfy the technical publication requirements defined
+   for the various RFC input streams (see <a href="#section-5.2">Section 5.2</a>).  The IETF
+   Executive Director may define additional operational requirements and
+   policies for management purposes to meet the requirements defined by
+   the various communities.
+
+   The IETF Administration LLC Board approves a budget for operation of
+   the RFC Editor activity, and the IETF Executive Director establishes
+   and manages the necessary operational agreements for the RFC Editor
+   activity.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Policy Oversight</span>
+
+   The IAB monitors the effectiveness of the policies in force and their
+   implementation to ensure that the RFC Editor activity meets the
+   editorial management and document publication needs as referenced in
+   this document.  In the event of serious non-conformance, the IAB,
+   either on its own initiative or at the request of the IETF
+   Administration LLC Board, may require the IETF Executive Director to
+   vary or terminate and renegotiate the arrangements for the RFC Editor
+   activity.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Framework</span>
+
+   With the RFC Series mission outlined above, this document describes a
+   framework for supporting
+
+   *  the operational implementation of the RFC Series,
+
+   based on
+
+   *  public process and definition documents,
+
+   for which there are
+
+   *  clear responsibilities and mechanisms for update and change.
+
+   Generally speaking, the RFC Editor is responsible for the operational
+   implementation of the RFC Series.  As outlined in <a href="#section-3.3">Section 3.3</a>, the
+   IETF Executive Director provides the oversight of this operational
+   role.
+
+   The process and definition documents are detailed below, including
+   responsibility for the individual process documents (maintenance and
+   update).  The RFC Editor works with the appropriate community to
+   ensure that the process documents reflect current requirements.  The
+   IAB is charged with the role of verifying that appropriate community
+   input has been sought and that any changes appropriately account for
+   community requirements.
+
+   There are three categories of activity, and a fourth category of
+   series-wide rules and guidelines, described for implementing the RFC
+   Series to support its mission:
+
+   *  Approval of documents.
+
+   *  Editing, processing, and publication of documents.
+
+   *  Archiving and indexing the documents and making them accessible.
+
+   *  Series rules and guidelines.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Document Approval</span>
+
+   The RFC Series mission implicitly requires that documents be reviewed
+   and approved for acceptance into the series.
+
+<span class="h4"><a class="selflink" id="section-4.1.1" href="#section-4.1.1">4.1.1</a>.  Definition</span>
+
+   <a href="#section-5.1">Section 5.1</a> describes the different streams of documents that are put
+   to the RFC Editor for publication as RFCs today.  While there may be
+   general policies for approval of documents as RFCs (to ensure the
+   coherence of the RFC Series), there are also policies defined for the
+   approval of documents in each stream.  Generally speaking, there is a
+   different approving body for each stream.  The current definitions
+   are catalogued in <a href="#section-5.1">Section 5.1</a>.
+
+<span class="h4"><a class="selflink" id="section-4.1.2" href="#section-4.1.2">4.1.2</a>.  Operational Implementation</span>
+
+   Each stream has its own documented approval process.  The RFC Editor
+   is responsible for the approval of documents in one of the streams
+   (Independent Submission stream, see <a href="#section-5.1.4">Section 5.1.4</a>) and works with the
+   other approving bodies to ensure smooth passage of approved documents
+   into the next phases, ultimately to publication and archiving as an
+   RFC.
+
+<span class="h4"><a class="selflink" id="section-4.1.3" href="#section-4.1.3">4.1.3</a>.  Process Change</span>
+
+   From time to time, it may be necessary to change the approval
+   processes for any given stream, or even add or remove streams.  This
+   may occur when the RFC Editor, the IAB, the body responsible for a
+   given stream of documents, or the community determines that there are
+   issues to be resolved in general for RFC approval or for per-stream
+   approval processes.
+
+   In this framework, the general approach is that the IAB will work
+   with the RFC Editor and other parties to get community input, and it
+   will verify that any changes appropriately account for community
+   requirements.
+
+<span class="h4"><a class="selflink" id="section-4.1.4" href="#section-4.1.4">4.1.4</a>.  Existing Approval Process Documents</span>
+
+   The existing documents describing the approval processes for each
+   stream are detailed in <a href="#section-5.1">Section 5.1</a>.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Editing, Processing, and Publication of Documents</span>
+
+   Producing and maintaining a coherent, well-edited document series
+   requires specialized skills and subject matter expertise.  This is
+   the domain of the RFC Editor.  Nevertheless, the community served by
+   the RFC Series and the communities served by the individual streams
+   of RFCs have requirements that help define the nature of the series.
+
+<span class="h4"><a class="selflink" id="section-4.2.1" href="#section-4.2.1">4.2.1</a>.  Definition</span>
+
+   General and stream-specific requirements for the RFC Series are
+   documented in community-approved documents (catalogued in <a href="#section-5.2">Section 5.2</a>
+   below).
+
+   Any specific interfaces, numbers, or concrete values required to make
+   the requirements operational are the subject of agreements between
+   the IASA and the RFC Editor (e.g., contracts, statements of work,
+   service level agreements, etc).
+
+<span class="h4"><a class="selflink" id="section-4.2.2" href="#section-4.2.2">4.2.2</a>.  Operational Implementation</span>
+
+   The RFC Editor is responsible for ensuring that editing, processing,
+   and publication of RFCs are carried out in a way that is consistent
+   with the requirements laid out in the appropriate documents.  The RFC
+   Editor works with the IASA to provide regular reporting and feedback
+   on these operations.
+
+<span class="h4"><a class="selflink" id="section-4.2.3" href="#section-4.2.3">4.2.3</a>.  Process Change</span>
+
+   From time to time, it may be necessary to change the requirements for
+   any given stream, or the RFC Series in general.  This may occur when
+   the RFC Editor, the IAB, the approval body for a given stream of
+   documents, or the community determines that there are issues to be
+   resolved in general for RFCs or for per-stream requirements.
+
+   In this model, the general approach is that the IAB will work with
+   the RFC Editor to get community input, and it will approve changes by
+   validating appropriate consideration of community requirements.
+
+<span class="h4"><a class="selflink" id="section-4.2.4" href="#section-4.2.4">4.2.4</a>.  Existing Process Documents</span>
+
+   Documents describing existing requirements for the streams are
+   detailed in <a href="#section-5.2">Section 5.2</a>.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Archiving, Indexing, and Accessibility</span>
+
+   The activities of archiving, indexing, and making accessible the RFC
+   Series can be informed by specific subject matter expertise in
+   general document series editing.  It is also important that they are
+   informed by requirements from the whole community.  As long as the
+   RFC Series is to remain coherent, there should be uniform archiving
+   and indexing of RFCs across all streams and a common method of
+   accessing the resulting documents.
+
+<span class="h4"><a class="selflink" id="section-4.3.1" href="#section-4.3.1">4.3.1</a>.  Definition</span>
+
+   In principle, there should be a community consensus document
+   describing the archiving, indexing, and accessibility requirements
+   for the RFC Series.  In practice, we continue with the archive as
+   built by the capable RFC Editors since the series&#x27; inception.
+
+   Any specific concrete requirements for the archive, index, and
+   accessibility operations are the subject of agreements between the
+   IASA and the RFC Editor (e.g., contracts, statements of work, service
+   level agreements, etc).
+
+<span class="h4"><a class="selflink" id="section-4.3.2" href="#section-4.3.2">4.3.2</a>.  Operational Implementation</span>
+
+   The RFC Editor is responsible for ensuring that the RFC archive and
+   index are maintained appropriately and that the resulting documents
+   are made available to anybody wishing to access them via the
+   Internet.  The RFC Editor works with the IASA for regular reporting
+   and feedback.
+
+<span class="h4"><a class="selflink" id="section-4.3.3" href="#section-4.3.3">4.3.3</a>.  Process Change</span>
+
+   Should there be a community move to propose changes to the
+   requirements for the RFC archive and index or accessibility, the IAB
+   will work with the RFC Editor to get community input, and it will
+   approve changes by validating appropriate consideration of community
+   requirements.
+
+<span class="h4"><a class="selflink" id="section-4.3.4" href="#section-4.3.4">4.3.4</a>.  Existing Process Documents</span>
+
+   There are no applicable process documents.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Series-Wide Guidelines and Rules</span>
+
+   The RFC Series style and content can be shaped by subject matter
+   expertise in document series editing.  They are also informed by
+   requirements by the using community.  As long as the RFC Series is to
+   remain coherent, there should be uniform style and content for RFCs
+   across all streams.  This includes, but is not limited to, acceptable
+   language, use of references, and copyright rules.
+
+<span class="h4"><a class="selflink" id="section-4.4.1" href="#section-4.4.1">4.4.1</a>.  Definition</span>
+
+   In principle, there should be a community consensus document (or set
+   of documents) describing the content requirements for the RFC Series.
+   In practice, some do exist, though some need reviewing and more may
+   be needed over time.
+
+<span class="h4"><a class="selflink" id="section-4.4.2" href="#section-4.4.2">4.4.2</a>.  Operational Implementation</span>
+
+   The RFC Editor is responsible for ensuring that the RFC Series
+   guidelines are upheld within the RFC Series.
+
+<span class="h4"><a class="selflink" id="section-4.4.3" href="#section-4.4.3">4.4.3</a>.  Process Change</span>
+
+   When additions or changes are needed to series-wide definitions, the
+   IAB will work with the RFC Editor and stream stakeholders to get
+   community input and review.  The IAB will approve changes by
+   validating appropriate consideration of community requirements.
+
+<span class="h4"><a class="selflink" id="section-4.4.4" href="#section-4.4.4">4.4.4</a>.  Existing Process Documents</span>
+
+   Existing series-wide rules and guidelines documents include:
+
+   *  RFC Style Guide [<a href="/doc/html/rfc7322" title="&quot;RFC Style Guide&quot;">RFC7322</a>],
+
+   *  The Use of Non-ASCII Characters in RFCs [<a href="/doc/html/rfc7997" title="&quot;The Use of Non-ASCII Characters in RFCs&quot;">RFC7997</a>],
+
+   *  Copyright and intellectual property rules [<a href="/doc/html/rfc5378" title="&quot;Rights Contributors Provide to the IETF Trust&quot;">RFC5378</a>],
+
+   *  Normative references [<a href="/doc/html/rfc3967" title="&quot;Clarifying when Standards Track Documents may Refer Normatively to Documents at a Lower Level&quot;">RFC3967</a>] [<a href="/doc/html/rfc4897" title="&quot;Handling Normative References to Standards-Track Documents&quot;">RFC4897</a>], [<a href="/doc/html/rfc8067" title="&quot;Updating When Standards Track Documents May Refer Normatively to Documents at a Lower Level&quot;">RFC8067</a>].
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  RFC Streams</span>
+
+   Various contributors provide input to the RFC Series.  These
+   contributors come from several different communities, each with its
+   own defined process for approving documents that will be published by
+   the RFC Editor.  This is nothing new; however, over time the various
+   communities and document requirements have grown and separated.  In
+   order to promote harmony in discussing the collective set of
+   requirements, it is useful to recognize each in their own space --
+   and they are referred to here as &quot;streams&quot;.
+
+   Note that by identifying separate streams, there is no intention of
+   dividing them or undermining their management as one series.  Rather,
+   the opposite is true -- by clarifying the constituent parts, it is
+   easier to make them work together without the friction that sometimes
+   arises when discussing various requirements.
+
+   The subsections below identify the streams that exist today.  There
+   is no immediate expectation of new streams being created, and it is
+   preferable that new streams NOT be created.  Creation of streams and
+   all policies surrounding general changes to the RFC Series are
+   discussed above in <a href="#section-4">Section 4</a>.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  RFC Approval Processes</span>
+
+   Processes for approval of documents (or requirements) for each stream
+   are defined by the community that defines the stream.  The IAB is
+   charged with the role of verifying that appropriate community input
+   has been sought and that the changes are consistent with the RFC
+   Series mission and this overall framework.
+
+   The RFC Editor is expected to publish all documents passed to it
+   after appropriate review and approval in one of the identified
+   streams.
+
+<span class="h4"><a class="selflink" id="section-5.1.1" href="#section-5.1.1">5.1.1</a>.  IETF Document Stream</span>
+
+   The IETF document stream includes IETF WG documents as well as
+   &quot;individual submissions&quot; sponsored by an IESG area director.  Any
+   document being published as part of the IETF standards process must
+   follow this stream -- no other stream can approve Standards-Track
+   RFCs or Best Current Practice (BCP) RFCs.
+
+   Approval of documents in the IETF stream is defined by
+
+   *  the IETF standards process [<a href="/doc/html/rfc2026" title="&quot;The Internet Standards Process -- Revision 3&quot;">RFC2026</a>] (and its successors).
+
+   *  the IESG process for sponsoring individual submissions [<a href="#ref-SPONSOR" title="&quot;Guidance on Area Director Sponsoring of Documents&quot;">SPONSOR</a>].
+
+   Changes to the approval process for this stream are made by updating
+   the IETF standards process documents.
+
+<span class="h4"><a class="selflink" id="section-5.1.2" href="#section-5.1.2">5.1.2</a>.  IAB Document Stream</span>
+
+   The IAB defines the processes by which it approves documents in its
+   stream.  Consistent with the above, any documents that the IAB wishes
+   to publish as part of the IETF Standards Track (Standards or BCPs)
+   are subject to the approval processes referred to in <a href="#section-5.1.1">Section 5.1.1</a>.
+
+   The review and approval process for documents in the IAB stream is
+   described in
+
+   *  the IAB process for review and approval of its documents
+      [<a href="/doc/html/rfc4845" title="&quot;Process for Publication of IAB RFCs&quot;">RFC4845</a>].
+
+<span class="h4"><a class="selflink" id="section-5.1.3" href="#section-5.1.3">5.1.3</a>.  IRTF Document Stream</span>
+
+   The IRTF is chartered as an activity of the IAB.  With the approval
+   of the IAB, the IRTF may publish and update a process for publication
+   of its own, non-IETF Standards-Track, documents.
+
+   The review and approval process for documents in the IRTF stream is
+   described in
+
+   *  IRTF Research Group RFCs [<a href="/doc/html/rfc5743" title="&quot;Definition of an Internet Research Task Force (IRTF) Document Stream&quot;">RFC5743</a>].
+
+<span class="h4"><a class="selflink" id="section-5.1.4" href="#section-5.1.4">5.1.4</a>.  Independent Submission Stream</span>
+
+   The RFC Series has always served a broader Internet technical
+   community than the IETF.  The &quot;Independent Submission&quot; stream is
+   defined to provide review and (possible) approval of documents that
+   are outside the scope of the streams identified above.
+
+   Generally speaking, approval of documents in this stream falls under
+   the purview of the RFC Editor, and the RFC Editor seeks input to its
+   review from the IESG.
+
+   The process for reviewing and approving documents in the Independent
+   Submission stream is defined by
+
+   *  Procedures for Rights Handling in the RFC Independent Submission
+      Stream [<a href="/doc/html/rfc5744" title="&quot;Procedures for Rights Handling in the RFC Independent Submission Stream&quot;">RFC5744</a>],
+
+   *  Independent Submission Editor Model [<a href="/doc/html/rfc8730" title="&quot;Independent Submission Editor Model&quot;">RFC8730</a>],
+
+   *  Independent Submissions to the RFC Editor [<a href="/doc/html/rfc4846" title="&quot;Independent Submissions to the RFC Editor&quot;">RFC4846</a>],
+
+   *  The IESG and RFC Editor Documents: Procedures [<a href="/doc/html/rfc5742" title="&quot;IESG Procedures for Handling of Independent and IRTF Stream Submissions&quot;">RFC5742</a>].
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  RFC Technical Publication Requirements</span>
+
+   The Internet engineering and research community has not only grown,
+   it has become more diverse, and sometimes more demanding.  The IETF,
+   as a standards-developing organization, has publication requirements
+   that extend beyond those of an academic journal.  The IAB does not
+   have the same interdependence with IANA assignments as the IETF
+   stream does.  Therefore, there is the need to both codify the
+   publishing requirements of each stream, and endeavor to harmonize
+   them to the extent that is reasonable.
+
+   Therefore, it is expected that the community of effort behind each
+   document stream will outline their technical publication
+   requirements.
+
+   As part of the RFC Editor oversight, the IAB must agree that the
+   requirements are consistent with and implementable as part of the RFC
+   Editor activity.
+
+<span class="h4"><a class="selflink" id="section-5.2.1" href="#section-5.2.1">5.2.1</a>.  IETF Documents</span>
+
+   The requirements for this stream are defined in [<a href="/doc/html/rfc4714" title="&quot;Requirements for IETF Technical Publication Service&quot;">RFC4714</a>].
+
+<span class="h4"><a class="selflink" id="section-5.2.2" href="#section-5.2.2">5.2.2</a>.  IAB Documents</span>
+
+   Although they were developed for the IETF standards process, the IAB
+   has identified applicable requirements in [<a href="/doc/html/rfc4714" title="&quot;Requirements for IETF Technical Publication Service&quot;">RFC4714</a>] for its stream.
+   In addition, procedures related to IPR for the IAB stream are
+   captured in [<a href="/doc/html/rfc5745" title="&quot;Procedures for Rights Handling in the RFC IAB Stream&quot;">RFC5745</a>].
+
+   If the IAB elects to define other requirements, they should deviate
+   minimally from those (in an effort to keep the collective technical
+   publication requirements reasonably managed by one technical
+   publisher).
+
+<span class="h4"><a class="selflink" id="section-5.2.3" href="#section-5.2.3">5.2.3</a>.  IRTF Documents</span>
+
+   The IRTF has identified applicable requirements in [<a href="/doc/html/rfc5743" title="&quot;Definition of an Internet Research Task Force (IRTF) Document Stream&quot;">RFC5743</a>] for its
+   stream.
+
+   If the IRTF elects to define other requirements, they should deviate
+   minimally from those (in an effort to keep the collective technical
+   publication requirements reasonably managed by one technical
+   publisher).
+
+<span class="h4"><a class="selflink" id="section-5.2.4" href="#section-5.2.4">5.2.4</a>.  Independent Submissions</span>
+
+   Procedures and processes for the Independent Stream are described in
+   [<a href="/doc/html/rfc4846" title="&quot;Independent Submissions to the RFC Editor&quot;">RFC4846</a>] and [<a href="/doc/html/rfc8730" title="&quot;Independent Submission Editor Model&quot;">RFC8730</a>].
+
+   Although they were developed for the IETF standards process, the RFC
+   Editor has identified applicable requirements in [<a href="/doc/html/rfc4714" title="&quot;Requirements for IETF Technical Publication Service&quot;">RFC4714</a>] for the
+   Independent Submissions stream.  In addition, procedures related to
+   IPR for the independent submissions stream are captured in [<a href="/doc/html/rfc5744" title="&quot;Procedures for Rights Handling in the RFC Independent Submission Stream&quot;">RFC5744</a>].
+
+   If the RFC Editor elects to define other requirements, they should
+   deviate minimally from those (in an effort to keep the collective
+   technical publication requirements reasonably managed by one
+   technical publisher).
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   The processes for the publication of documents must prevent the
+   introduction of unapproved changes.  Since the RFC Editor maintains
+   the index of publications, sufficient security must be in place to
+   prevent these published documents from being changed by external
+   parties.  The archive of RFC documents, any source documents needed
+   to recreate the RFC documents, and any associated original documents
+   (such as lists of errata, tools, and, for some early items, non-
+   machine readable originals) need to be secured against failure of the
+   storage medium and other similar disasters.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Changes Since <a href="/doc/html/rfc4844">RFC 4844</a></span>
+
+   Sections <a href="#section-3.3">3.3</a>, <a href="#section-3.4">3.4</a>, and <a href="#section-4">4</a> have been updated to align with the
+   restructuring of the IETF Administrative Support Activity (IASA).
+   Under the new structure, the IETF LLC performs the tasks related to
+   IASA that were previously assigned to the IETF Administrative
+   Director and to the Internet Society.
+
+   Many references were updated to point to the most recent documents.
+
+   Minor editorial changes were made to reflect 10 years of using the
+   framework provided in <a href="/doc/html/rfc4884">RFC 4884</a>.  For example, <a href="/doc/html/rfc4844">RFC 4844</a> said, &quot;...
+   this document sets out a revised framework ...&quot;, and it is now more
+   appropriate to say, &quot;... this document sets out the framework ...&quot;.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Informative References</span>
+
+   [<a id="ref-RFC1358">RFC1358</a>]  Chapin, L., &quot;Charter of the Internet Architecture Board
+              (IAB)&quot;, <a href="/doc/html/rfc1358">RFC 1358</a>, DOI 10.17487/RFC1358, August 1992,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1358">https://www.rfc-editor.org/info/rfc1358</a>&gt;.
+
+   [<a id="ref-RFC1601">RFC1601</a>]  Huitema, C., &quot;Charter of the Internet Architecture Board
+              (IAB)&quot;, <a href="/doc/html/rfc1601">RFC 1601</a>, DOI 10.17487/RFC1601, March 1994,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1601">https://www.rfc-editor.org/info/rfc1601</a>&gt;.
+
+   [<a id="ref-RFC2026">RFC2026</a>]  Bradner, S., &quot;The Internet Standards Process -- Revision
+              3&quot;, <a href="/doc/html/bcp9">BCP 9</a>, <a href="/doc/html/rfc2026">RFC 2026</a>, DOI 10.17487/RFC2026, October 1996,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2026">https://www.rfc-editor.org/info/rfc2026</a>&gt;.
+
+   [<a id="ref-RFC2555">RFC2555</a>]  Editor, RFC. and et. al., &quot;30 Years of RFCs&quot;, <a href="/doc/html/rfc2555">RFC 2555</a>,
+              DOI 10.17487/RFC2555, April 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2555">https://www.rfc-editor.org/info/rfc2555</a>&gt;.
+
+   [<a id="ref-RFC2850">RFC2850</a>]  Internet Architecture Board and B. Carpenter, Ed.,
+              &quot;Charter of the Internet Architecture Board (IAB)&quot;,
+              <a href="/doc/html/bcp39">BCP 39</a>, <a href="/doc/html/rfc2850">RFC 2850</a>, DOI 10.17487/RFC2850, May 2000,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2850">https://www.rfc-editor.org/info/rfc2850</a>&gt;.
+
+   [<a id="ref-RFC3967">RFC3967</a>]  Bush, R. and T. Narten, &quot;Clarifying when Standards Track
+              Documents may Refer Normatively to Documents at a Lower
+              Level&quot;, <a href="/doc/html/bcp97">BCP 97</a>, <a href="/doc/html/rfc3967">RFC 3967</a>, DOI 10.17487/RFC3967, December
+              2004, &lt;<a href="https://www.rfc-editor.org/info/rfc3967">https://www.rfc-editor.org/info/rfc3967</a>&gt;.
+
+   [<a id="ref-RFC4714">RFC4714</a>]  Mankin, A. and S. Hayes, &quot;Requirements for IETF Technical
+              Publication Service&quot;, <a href="/doc/html/rfc4714">RFC 4714</a>, DOI 10.17487/RFC4714,
+              October 2006, &lt;<a href="https://www.rfc-editor.org/info/rfc4714">https://www.rfc-editor.org/info/rfc4714</a>&gt;.
+
+   [<a id="ref-RFC4845">RFC4845</a>]  Daigle, L., Ed. and Internet Architecture Board, &quot;Process
+              for Publication of IAB RFCs&quot;, <a href="/doc/html/rfc4845">RFC 4845</a>,
+              DOI 10.17487/RFC4845, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4845">https://www.rfc-editor.org/info/rfc4845</a>&gt;.
+
+   [<a id="ref-RFC4846">RFC4846</a>]  Klensin, J., Ed. and D. Thaler, Ed., &quot;Independent
+              Submissions to the RFC Editor&quot;, <a href="/doc/html/rfc4846">RFC 4846</a>,
+              DOI 10.17487/RFC4846, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4846">https://www.rfc-editor.org/info/rfc4846</a>&gt;.
+
+   [<a id="ref-RFC4897">RFC4897</a>]  Klensin, J. and S. Hartman, &quot;Handling Normative References
+              to Standards-Track Documents&quot;, <a href="/doc/html/bcp97">BCP 97</a>, <a href="/doc/html/rfc4897">RFC 4897</a>,
+              DOI 10.17487/RFC4897, June 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4897">https://www.rfc-editor.org/info/rfc4897</a>&gt;.
+
+   [<a id="ref-RFC5378">RFC5378</a>]  Bradner, S., Ed. and J. Contreras, Ed., &quot;Rights
+              Contributors Provide to the IETF Trust&quot;, <a href="/doc/html/bcp78">BCP 78</a>, <a href="/doc/html/rfc5378">RFC 5378</a>,
+              DOI 10.17487/RFC5378, November 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5378">https://www.rfc-editor.org/info/rfc5378</a>&gt;.
+
+   [<a id="ref-RFC5742">RFC5742</a>]  Alvestrand, H. and R. Housley, &quot;IESG Procedures for
+              Handling of Independent and IRTF Stream Submissions&quot;,
+              <a href="/doc/html/bcp92">BCP 92</a>, <a href="/doc/html/rfc5742">RFC 5742</a>, DOI 10.17487/RFC5742, December 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5742">https://www.rfc-editor.org/info/rfc5742</a>&gt;.
+
+   [<a id="ref-RFC5743">RFC5743</a>]  Falk, A., &quot;Definition of an Internet Research Task Force
+              (IRTF) Document Stream&quot;, <a href="/doc/html/rfc5743">RFC 5743</a>, DOI 10.17487/RFC5743,
+              December 2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5743">https://www.rfc-editor.org/info/rfc5743</a>&gt;.
+
+   [<a id="ref-RFC5744">RFC5744</a>]  Braden, R. and J. Halpern, &quot;Procedures for Rights Handling
+              in the RFC Independent Submission Stream&quot;, <a href="/doc/html/rfc5744">RFC 5744</a>,
+              DOI 10.17487/RFC5744, December 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5744">https://www.rfc-editor.org/info/rfc5744</a>&gt;.
+
+   [<a id="ref-RFC5745">RFC5745</a>]  Malis, A., Ed. and IAB, &quot;Procedures for Rights Handling in
+              the RFC IAB Stream&quot;, <a href="/doc/html/rfc5745">RFC 5745</a>, DOI 10.17487/RFC5745,
+              December 2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5745">https://www.rfc-editor.org/info/rfc5745</a>&gt;.
+
+   [<a id="ref-RFC7322">RFC7322</a>]  Flanagan, H. and S. Ginoza, &quot;RFC Style Guide&quot;, <a href="/doc/html/rfc7322">RFC 7322</a>,
+              DOI 10.17487/RFC7322, September 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7322">https://www.rfc-editor.org/info/rfc7322</a>&gt;.
+
+   [<a id="ref-RFC7997">RFC7997</a>]  Flanagan, H., Ed., &quot;The Use of Non-ASCII Characters in
+              RFCs&quot;, <a href="/doc/html/rfc7997">RFC 7997</a>, DOI 10.17487/RFC7997, December 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7997">https://www.rfc-editor.org/info/rfc7997</a>&gt;.
+
+   [<a id="ref-RFC8067">RFC8067</a>]  Leiba, B., &quot;Updating When Standards Track Documents May
+              Refer Normatively to Documents at a Lower Level&quot;, <a href="/doc/html/bcp97">BCP 97</a>,
+              <a href="/doc/html/rfc8067">RFC 8067</a>, DOI 10.17487/RFC8067, January 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8067">https://www.rfc-editor.org/info/rfc8067</a>&gt;.
+
+   [<a id="ref-RFC8711">RFC8711</a>]  Haberman, B., Hall, J., and J. Livingood, &quot;Structure of
+              the IETF Administrative Support Activity, Version 2.0&quot;,
+              <a href="/doc/html/bcp101">BCP 101</a>, <a href="/doc/html/rfc8711">RFC 8711</a>, DOI 10.17487/RFC8711, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8711">https://www.rfc-editor.org/info/rfc8711</a>&gt;.
+
+   [<a id="ref-RFC8728">RFC8728</a>]  Kolkman, O., Ed., Halpern, J., Ed., and R. Hinden, Ed.,
+              &quot;RFC Editor Model (Version 2)&quot;, <a href="/doc/html/rfc8728">RFC 8728</a>,
+              DOI 10.17487/RFC8728, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8728">https://www.rfc-editor.org/info/rfc8728</a>&gt;.
+
+   [<a id="ref-RFC8730">RFC8730</a>]  Brownlee, N., Ed. and R. Hinden, Ed., &quot;Independent
+              Submission Editor Model&quot;, <a href="/doc/html/rfc8730">RFC 8730</a>, DOI 10.17487/RFC8730,
+              February 2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8730">https://www.rfc-editor.org/info/rfc8730</a>&gt;.
+
+   [<a id="ref-SPONSOR">SPONSOR</a>]  IESG, &quot;Guidance on Area Director Sponsoring of Documents&quot;,
+              IESG Statement, March 2007,
+              &lt;<a href="http://www.ietf.org/iesg/statement/ad-sponsoring-docs.html">http://www.ietf.org/iesg/statement/ad-sponsoring-</a>
+              <a href="http://www.ietf.org/iesg/statement/ad-sponsoring-docs.html">docs.html</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  A Retrospective of IAB Charters and RFC Editor</span>
+
+   With this document, the IAB&#x27;s role with respect to the RFC Series and
+   the RFC Editor is being adjusted to work more directly with the RFC
+   Editor and provide oversight to ensure the RFC Series mission
+   principles and communities&#x27; input are addressed appropriately.
+
+   This section provides an overview of the role of the IAB with respect
+   to the RFC Editor as it has been presented in IAB Charter RFCs dating
+   back to 1992.  The point of this section is that the IAB&#x27;s role has
+   historically been substantive -- whether it is supposed to be
+   directly responsible for the RFC Series&#x27; editorial management (circa
+   1992, <a href="#appendix-A.1">Appendix A.1</a>), or appointment of the RFC Editor organization
+   and approval of general policy (circa 2000, <a href="#appendix-A.3">Appendix A.3</a>).
+
+<span class="h3"><a class="selflink" id="appendix-A.1" href="#appendix-A.1">A.1</a>.  1992</span>
+
+   [<a id="ref-RFC1358">RFC1358</a>] says:
+
+   |  [The IAB&#x27;s] responsibilities shall include:
+   |  [...]
+   |      (2)  The editorial management and publication of the Request
+   |           for Comments (RFC) document series, which constitutes the
+   |           archival publication series for Internet Standards and
+   |           related contributions by the Internet research and
+   |           engineering community.
+
+<span class="h3"><a class="selflink" id="appendix-A.2" href="#appendix-A.2">A.2</a>.  1994</span>
+
+   [<a id="ref-RFC1601">RFC1601</a>] says:
+
+   |  [The IAB&#x27;s] responsibilities under this charter include:
+   |
+   |  (d) RFC Series and IANA
+   |
+   |     The IAB is responsible for editorial management and publication
+   |     of the Request for Comments (RFC) document series, and for
+   |     administration of the various Internet assigned numbers.
+
+   Which it elaborates as:
+
+   |   2.4 RFC Series and Assigned Numbers
+   |
+   |      The RFC Series constitutes the archival publication channel
+   |      for Internet Standards and for other contributions by the
+   |      Internet research and engineering community.  The IAB
+   |      shall select an RFC Editor, who shall be responsible for
+   |      the editorial management and publication of the RFC Series.
+
+<span class="h3"><a class="selflink" id="appendix-A.3" href="#appendix-A.3">A.3</a>.  2000</span>
+
+   The most recent IAB Charter [<a href="/doc/html/rfc2850" title="&quot;Charter of the Internet Architecture Board (IAB)&quot;">RFC2850</a>] says:
+
+   |  (d) RFC Series and IANA
+   |
+   |  The RFC Editor executes editorial management and publication of
+   |  the IETF &quot;Request for Comment&quot; (RFC) document series, which is
+   |  the permanent document repository of the IETF.  The RFC Series
+   |  constitutes the archival publication channel for Internet
+   |  Standards and for other contributions by the Internet research
+   |  and engineering community.  RFCs are available free of charge to
+   |  anyone via the Internet.  The IAB must approve the appointment
+   |  of an organization to act as RFC Editor and the general policy
+   |  followed by the RFC Editor.
+
+IAB Members at the Time of Approval
+
+   The IAB members at the time of approval of <a href="/doc/html/rfc4844">RFC 4844</a> were:
+
+      Bernard Aboba
+      Loa Andersson
+      Brian Carpenter
+      Leslie Daigle
+      Elwyn Davies
+      Kevin Fall
+      Olaf Kolkman
+      Kurtis Lindqvist
+      David Meyer
+      David Oran
+      Eric Rescorla
+      Dave Thaler
+      Lixia Zhang
+
+   The IAB members at the time of approval of this document were:
+
+      Jari Arkko
+      Alissa Cooper
+      Stephen Farrell
+      Wes Hardaker
+      Ted Hardie
+      Christian Huitema
+      Zhenbin Li
+      Erik Nordmark
+      Mark Nottingham
+      Melinda Shore
+      Jeff Tantsura
+      Martin Thomson
+      Brian Trammell
+
+Authors&#x27; Addresses
+
+   Russ Housley (editor)
+
+   Email: housley@vigilsec.com
+
+
+   Leslie L. Daigle (editor)
+
+   Email: ldaigle@thinkingcat.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

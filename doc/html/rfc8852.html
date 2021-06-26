@@ -1,0 +1,618 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8852
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-avtext-rid/">
+  <meta name="description" content="RTP Stream Identifier Source Description (SDES) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8852.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8852.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8852.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8852.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8852/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8852/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/avtext/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-avtext-rid@ietf.org?subject=draft-ietf-avtext-rid" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-avtext-rid-09.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-avtext-rid-09.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-avtext-rid-09.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-avtext-rid-09">draft-ietf-avtext-rid-09</a>                         Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        A.B. Roach
+Request for Comments: 8852                                       Mozilla
+Category: Standards Track                                  S. Nandakumar
+ISSN: 2070-1721                                            Cisco Systems
+                                                             P. Thatcher
+                                                                  Google
+                                                            January 2021
+
+
+            <span class="h1">RTP Stream Identifier Source Description (SDES)</span>
+
+Abstract
+
+   This document defines and registers two new Real-time Transport
+   Control Protocol (RTCP) Stream Identifier Source Description (SDES)
+   items.  One, named RtpStreamId, is used for unique identification of
+   RTP streams.  The other, RepairedRtpStreamId, can be used to identify
+   which stream is to be repaired using a redundancy RTP stream.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8852">https://www.rfc-editor.org/info/rfc8852</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Usage of RtpStreamId and RepairedRtpStreamId in RTP and RTCP
+     3.1.  RTCP &quot;RtpStreamId&quot; SDES Extension
+     3.2.  RTCP &quot;RepairedRtpStreamId&quot; SDES Extension
+     3.3.  RTP &quot;RtpStreamId&quot; and &quot;RepairedRtpStreamId&quot; Header
+           Extensions
+   4.  IANA Considerations
+     4.1.  New RtpStreamId SDES Item
+     4.2.  New RepairRtpStreamId SDES Item
+     4.3.  New RtpStreamId Header Extension URI
+     4.4.  New RepairRtpStreamId Header Extension URI
+   5.  Security Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   RTP sessions frequently consist of multiple streams, each of which is
+   identified at any given time by its synchronization source (SSRC);
+   however, the SSRC associated with a stream is not guaranteed to be
+   stable over its lifetime.  Within a session, these streams can be
+   tagged with a number of identifiers, including CNAMEs and MediaStream
+   Identification (MSID) [<a href="/doc/html/rfc8830" title="&quot;WebRTC MediaStream Identification in the Session Description Protocol&quot;">RFC8830</a>].  Unfortunately, none of these have
+   the proper ordinality to refer to an individual stream; all such
+   identifiers can appear in more than one stream at a time.  While
+   approaches that use unique payload types (PTs) per stream have been
+   used in some applications, this is a semantic overloading of that
+   field, and one for which its size is inadequate: in moderately
+   complex systems that use PT to uniquely identify every potential
+   combination of codec configuration and unique stream, it is possible
+   to simply run out of values.
+
+   To address this situation, we define a new RTCP Stream Identifier
+   Source Description (SDES) identifier, RtpStreamId, that uniquely
+   identifies a single RTP stream.  A key motivator for defining this
+   identifier is the ability to differentiate among different encodings
+   of a single source stream that are sent simultaneously (i.e.,
+   simulcast).  This need for unique identification extends to dependent
+   streams (e.g., where layers used by a layered codec are transmitted
+   on separate streams).
+
+   At the same time, when redundancy RTP streams are in use, we also
+   need an identifier that connects such streams to the RTP stream for
+   which they are providing redundancy.  For this purpose, we define an
+   additional SDES identifier, RepairedRtpStreamId.  This identifier can
+   appear only in packets associated with a redundancy RTP stream.  They
+   carry the same value as the RtpStreamId of the RTP stream that the
+   redundant RTP stream is correcting.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   In this document, the terms &quot;source stream&quot;, &quot;RTP stream&quot;, &quot;source
+   RTP stream&quot;, &quot;dependent stream&quot;, &quot;received RTP stream&quot;, and
+   &quot;redundancy RTP stream&quot; are used as defined in [<a href="/doc/html/rfc7656" title="&quot;A Taxonomy of Semantics and Mechanisms for Real-Time Transport Protocol (RTP) Sources&quot;">RFC7656</a>].
+
+   The following acronyms are also used:
+
+   *  CNAME: Canonical Endpoint Identifier, defined in [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]
+
+   *  MID: Media Identification, defined in [<a href="/doc/html/rfc8843" title="&quot;Negotiating Media Multiplexing Using the Session Description Protocol (SDP)&quot;">RFC8843</a>]
+
+   *  MSID: MediaStream Identification, defined in [<a href="/doc/html/rfc8830" title="&quot;WebRTC MediaStream Identification in the Session Description Protocol&quot;">RFC8830</a>]
+
+   *  RTCP: Real-time Transport Control Protocol, defined in [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]
+
+   *  RTP: Real-time Transport Protocol, defined in [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]
+
+   *  SDES: Source Description, defined in [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]
+
+   *  SSRC: Synchronization Source, defined in [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Usage of RtpStreamId and RepairedRtpStreamId in RTP and RTCP</span>
+
+   The RTP fixed header includes the payload type number and the SSRC
+   values of the RTP stream.  RTP defines how to demultiplex streams
+   within an RTP session; however, in some use cases, applications need
+   further identifiers in order to effectively map the individual RTP
+   streams to their equivalent payload configurations in the SDP.
+
+   This specification defines two new RTCP SDES items [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>].  The
+   first item is &quot;RtpStreamId&quot;, which is used to carry RTP stream
+   identifiers within RTCP SDES packets.  This makes it possible for a
+   receiver to associate received RTP packets (identifying the RTP
+   stream) with a media description having the format constraint
+   specified.  The second is &quot;RepairedRtpStreamId&quot;, which can be used in
+   redundancy RTP streams to indicate the RTP stream repaired by a
+   redundancy RTP stream.
+
+   To be clear: the value carried in a RepairedRtpStreamId will always
+   match the RtpStreamId value from another RTP stream in the same
+   session.  For example, if a source RTP stream is identified by
+   RtpStreamId &quot;A&quot;, then any redundancy RTP stream that repairs that
+   source RTP stream will contain a RepairedRtpStreamId of &quot;A&quot; (if this
+   mechanism is being used to perform such correlation).  These
+   redundant RTP streams may also contain their own unique RtpStreamId.
+
+   This specification also uses the RTP header extension for RTCP SDES
+   items [<a href="/doc/html/rfc7941" title="&quot;RTP Header Extension for the RTP Control Protocol (RTCP) Source Description Items&quot;">RFC7941</a>] to allow carrying RtpStreamId and RepairedRtpStreamId
+   values in RTP packets.  This allows correlation at stream startup, or
+   after stream changes where the use of RTCP may not be sufficiently
+   responsive.  This speed of response is necessary since, in many
+   cases, the stream cannot be properly processed until it can be
+   identified.
+
+   RtpStreamId and RepairedRtpStreamId values are scoped by source
+   identifier (e.g., CNAME) and by media session.  When the media is
+   multiplexed using the BUNDLE extension [<a href="/doc/html/rfc8843" title="&quot;Negotiating Media Multiplexing Using the Session Description Protocol (SDP)&quot;">RFC8843</a>], these values are
+   further scoped by their associated MID values.  For example: an
+   RtpStreamId of &quot;1&quot; may be present in the stream identified with a
+   CNAME of &quot;1234@example.com&quot; and may also be present in a stream with
+   a CNAME of &quot;5678@example.org&quot;, and these would refer to different
+   streams.  Similarly, an RtpStreamId of &quot;1&quot; may be present with an MID
+   of &quot;A&quot;, and again with a MID of &quot;B&quot;, and also refer to two different
+   streams.
+
+   Note that the RepairedRtpStreamId mechanism is limited to indicating
+   one repaired stream per redundancy stream.  If systems require
+   correlation for schemes in which a redundancy stream contains
+   information used to repair more than one stream, they will have to
+   use a more complex mechanism than the one defined in this
+   specification.
+
+   As with all SDES items, RtpStreamId and RepairedRtpStreamId are
+   limited to a total of 255 octets in length.  RtpStreamId and
+   RepairedRtpStreamId are constrained to contain only alphanumeric
+   characters.  For avoidance of doubt, the only allowed byte values for
+   these IDs are decimal 48 through 57, 65 through 90, and 97 through
+   122.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  RTCP &quot;RtpStreamId&quot; SDES Extension</span>
+
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |RtpStreamId=12 |     length    | RtpStreamId                 ...
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   The RtpStreamId payload is ASCII encoded and is not null terminated.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  RTCP &quot;RepairedRtpStreamId&quot; SDES Extension</span>
+
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |Repaired...=13 |     length    | RepairRtpStreamId           ...
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   The RepairedRtpStreamId payload is ASCII encoded and is not null
+   terminated.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  RTP &quot;RtpStreamId&quot; and &quot;RepairedRtpStreamId&quot; Header Extensions</span>
+
+   Because recipients of RTP packets will typically need to know which
+   streams they correspond to immediately upon receipt, this
+   specification also defines a means of carrying RtpStreamId and
+   RepairedRtpStreamId identifiers in RTP extension headers, using the
+   technique described in [<a href="/doc/html/rfc7941" title="&quot;RTP Header Extension for the RTP Control Protocol (RTCP) Source Description Items&quot;">RFC7941</a>].
+
+   As described in that document, the header extension element can be
+   encoded using either the one-byte or two-byte header, and the
+   identification-tag payload is ASCII encoded.
+
+   As the identifier is included in an RTP header extension, there
+   should be some consideration given to the packet expansion caused by
+   the identifier.  To avoid Maximum Transmission Unit (MTU) issues for
+   the RTP packets, the header extension&#x27;s size needs to be taken into
+   account when encoding media.  Note that the set of header extensions
+   included in the packet needs to be padded to the next 32-bit boundary
+   [<a href="/doc/html/rfc8285" title="&quot;A General Mechanism for RTP Header Extensions&quot;">RFC8285</a>].
+
+   In many cases, a one-byte identifier will be sufficient to
+   distinguish streams in a session; implementations are strongly
+   encouraged to use the shortest identifier that fits their purposes.
+   Implementors are warned, in particular, not to include any
+   information in the identifier that is derived from potentially user-
+   identifying information, such as user ID or IP address.  To avoid
+   identification of specific implementations based on their pattern of
+   tag generation, implementations are encouraged to use a simple scheme
+   that starts with the ASCII digit &quot;1&quot;, and increments by one for each
+   subsequent identifier.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  New RtpStreamId SDES Item</span>
+
+   This document adds the RtpStreamId SDES item to the IANA &quot;RTP SDES
+   Item Types&quot; registry as follows:
+
+   Value:      12
+   Abbrev.:    RtpStreamId
+   Name:       RTP Stream Identifier
+   Reference:  <a href="/doc/html/rfc8852">RFC 8852</a>
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  New RepairRtpStreamId SDES Item</span>
+
+   This document adds the RepairedRtpStreamId SDES item to the IANA &quot;RTP
+   SDES Item Types&quot; registry as follows:
+
+   Value:      13
+   Abbrev.:    RepairedRtpStreamId
+   Name:       Repaired RTP Stream Identifier
+   Reference:  <a href="/doc/html/rfc8852">RFC 8852</a>
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  New RtpStreamId Header Extension URI</span>
+
+   This document defines a new extension URI in the &quot;RTP SDES Compact
+   Header Extensions&quot; subregistry of the &quot;RTP Compact Header Extensions&quot;
+   subregistry, as follows:
+
+   Extension URI:  urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+   Description:  RTP Stream Identifier
+   Contact:  Adam Roach &lt;adam@nostrum.com&gt;
+   Reference:  <a href="/doc/html/rfc8852">RFC 8852</a>
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  New RepairRtpStreamId Header Extension URI</span>
+
+   This document defines a new extension URI in the &quot;RTP SDES Compact
+   Header Extensions&quot; subregistry of the &quot;RTP Compact Header Extensions&quot;
+   subregistry, as follows:
+
+   Extension URI:  urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-
+      id
+   Description:  RTP Repaired Stream Identifier
+   Contact:  Adam Roach &lt;adam@nostrum.com&gt;
+   Reference:  <a href="/doc/html/rfc8852">RFC 8852</a>
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   Although the identifiers defined in this document are limited to be
+   strictly alphanumeric, SDES items have the potential to carry any
+   string.  As a consequence, there exists a risk that they might carry
+   privacy-sensitive information.  Implementations need to take care
+   when generating identifiers so that they do not contain information
+   that can identify the user or allow for long-term tracking of the
+   device.  Following the generation recommendations in <a href="#section-3.3">Section 3.3</a> will
+   result in non-instance-specific labels, with only minor
+   fingerprinting possibilities in the total number of used RtpStreamIds
+   and RepairedRtpStreamIds.
+
+   Even if the SDES items are generated to convey as little information
+   as possible, implementors are strongly encouraged to encrypt SDES
+   items -- both in RTCP and RTP header extensions -- so as to preserve
+   privacy against third parties.
+
+   As the SDES items are used for identification of the RTP streams for
+   different application purposes, it is important that the intended
+   values are received.  An attacker, either a third party or malicious
+   RTP middlebox, that removes or changes the values for these SDES
+   items can severely impact the application.  The impact can include
+   failure to decode or display the media content of the RTP stream.  It
+   can also result in incorrectly attributing media content to
+   identifiers of the media source, such as incorrectly identifying the
+   speaker.  To prevent this from occurring due to third-party attacks,
+   integrity and source authentication is needed.
+
+   &quot;Options for Securing RTP Sessions&quot; [<a href="/doc/html/rfc7201" title="&quot;Options for Securing RTP Sessions&quot;">RFC7201</a>] discusses options for
+   how encryption, integrity, and source authentication can be
+   accomplished.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3550">RFC3550</a>]  Schulzrinne, H., Casner, S., Frederick, R., and V.
+              Jacobson, &quot;RTP: A Transport Protocol for Real-Time
+              Applications&quot;, STD 64, <a href="/doc/html/rfc3550">RFC 3550</a>, DOI 10.17487/RFC3550,
+              July 2003, &lt;<a href="https://www.rfc-editor.org/info/rfc3550">https://www.rfc-editor.org/info/rfc3550</a>&gt;.
+
+   [<a id="ref-RFC7656">RFC7656</a>]  Lennox, J., Gross, K., Nandakumar, S., Salgueiro, G., and
+              B. Burman, Ed., &quot;A Taxonomy of Semantics and Mechanisms
+              for Real-Time Transport Protocol (RTP) Sources&quot;, <a href="/doc/html/rfc7656">RFC 7656</a>,
+              DOI 10.17487/RFC7656, November 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7656">https://www.rfc-editor.org/info/rfc7656</a>&gt;.
+
+   [<a id="ref-RFC7941">RFC7941</a>]  Westerlund, M., Burman, B., Even, R., and M. Zanaty, &quot;RTP
+              Header Extension for the RTP Control Protocol (RTCP)
+              Source Description Items&quot;, <a href="/doc/html/rfc7941">RFC 7941</a>, DOI 10.17487/RFC7941,
+              August 2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7941">https://www.rfc-editor.org/info/rfc7941</a>&gt;.
+
+   [<a id="ref-RFC8285">RFC8285</a>]  Singer, D., Desineni, H., and R. Even, Ed., &quot;A General
+              Mechanism for RTP Header Extensions&quot;, <a href="/doc/html/rfc8285">RFC 8285</a>,
+              DOI 10.17487/RFC8285, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8285">https://www.rfc-editor.org/info/rfc8285</a>&gt;.
+
+   [<a id="ref-RFC8843">RFC8843</a>]  Holmberg, C., Alvestrand, H., and C. Jennings,
+              &quot;Negotiating Media Multiplexing Using the Session
+              Description Protocol (SDP)&quot;, <a href="/doc/html/rfc8843">RFC 8843</a>,
+              DOI 10.17487/RFC8843, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8843">https://www.rfc-editor.org/info/rfc8843</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC7201">RFC7201</a>]  Westerlund, M. and C. Perkins, &quot;Options for Securing RTP
+              Sessions&quot;, <a href="/doc/html/rfc7201">RFC 7201</a>, DOI 10.17487/RFC7201, April 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7201">https://www.rfc-editor.org/info/rfc7201</a>&gt;.
+
+   [<a id="ref-RFC8830">RFC8830</a>]  Alvestrand, H., &quot;WebRTC MediaStream Identification in the
+              Session Description Protocol&quot;, <a href="/doc/html/rfc8830">RFC 8830</a>,
+              DOI 10.17487/RFC8830, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8830">https://www.rfc-editor.org/info/rfc8830</a>&gt;.
+
+Acknowledgements
+
+   Many thanks to Cullen Jennings, Magnus Westerlund, Colin Perkins,
+   Jonathan Lennox, and Paul Kyzivat for review and input.  Magnus
+   Westerlund provided nearly all of the Security Considerations
+   section.
+
+Authors&#x27; Addresses
+
+   Adam Roach
+   Mozilla
+
+   Email: adam@nostrum.com
+
+
+   Suhas Nandakumar
+   Cisco Systems
+
+   Email: snandaku@cisco.com
+
+
+   Peter Thatcher
+   Google
+
+   Email: pthatcher@google.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

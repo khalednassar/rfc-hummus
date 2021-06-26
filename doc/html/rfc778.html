@@ -1,0 +1,465 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc778
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc778/">
+  <meta name="description" content="DCNET Internet Clock Service (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bggrey"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc778.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc778.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc778.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc778/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc778/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc778@ietf.org?subject=rfc778" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc778-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc778-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc778-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                Historic</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>RFC 778
+
+
+
+                DCNET Internet Clock Service
+              D.L. Mills, COMSAT Laboratories
+                       18 April 1981
+
+
+Introduction
+
+     Following  is  a  description  of  the  Internet  Clock
+Service  (ICS)  provided  by  all DCNET hosts.  The service,
+intended primarily for  clock  synchronization  and  one-way
+delay  measurements  with  cooperating  internet  hosts,  is
+provided using the Timestamp and Timestamp Reply messages of
+the  proposed  Internet Control Message Protocol (ICMP).  In
+addition, in order to maintain  compatability  with  present
+systems,  this  service  will be provided for a limited time
+using  the   Echo   and   Echo   Reply   messages   of   the
+Gateway-Gateway Protocol (GGP).
+     It should be understood that ICMP and GGP datagrams are
+normally  considered  tightly bound to the Internet Protocol
+(IP) itself and not directly accessable to  the  user  on  a
+TOPS-20  system,  for  example.  These datagrams are treated
+somewhat differently from user  datagrams  in  gateways  and
+DCNET hosts in that certain internal queueing mechanisms are
+bypassed.  Thus, they can be a useful tool in providing  the
+most   accurate   and  stable  time  reference.   The  prime
+motivation for this note is to promote  the  development  of
+this  service  in  other internet hosts and gateways so that
+the feasibility for its use thoughout the community  can  be
+assessed.
+
+ICS Datagrams and Timestamps
+
+     At present, the ICS is provided using  either  ICMP  or
+GGP  datagrams.   The  only difference between these is that
+ICMP uses protocol number 1 and GGP uses protocol number  3.
+In the following these will be referred to interchangably as
+ICS datagrams.  ICS datagrams  include  an  internet  header
+followed by an ICS header in the following format:
+
+DCNET Internet Clock Service                        PAGE   2
+
+
+
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|      Type     |     Code      |            Sequence           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                      Originate Timestamp                      |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                       Receive Timestamp                       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                       Transmit Timestamp                      |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                       ICS Datagram Format
+
+     The originator fills in all three timestamp fields just
+before  the datagram is forwarded to the net.  Each of these
+fields contain the local time at origination.  Although  the
+last   two   are   redundant,  they  allow  roundtrip  delay
+measurements  to  be  made  using   remote   hosts   without
+timestamping  facilities.   The &quot;Type&quot; field can be either 8
+(GGP Echo) or 13 (ICMP Timestamp).  The &quot;Code&quot; field  should
+be zero.  The &quot;Sequence&quot; field can contain either zero or an
+optional sequence number provided by the user.   The  length
+of  the datagram is thus 36 octets inclusive of the 20-octet
+internet header and exclusive of the local-network leader.
+
+     The host or gateway receiving an ICS datagram fills  in
+the  &quot;Receive  Timestamp&quot;  field  just  as  the  datagram is
+received from the net and the &quot;Transmit Timestamp&quot;  just  as
+it is forwarded back to the sender.  It also sets the &quot;Type&quot;
+field to 0 (GGP Echo Reply), if the original value was 8, or
+<span class="h2"><a class="selflink" id="section-14" href="#section-14">14</a>  (ICMP  </span>Timestamp  Reply),  if  it was 13.  The remaining
+fields are unchanged.
+
+     The timestamp values are in milliseconds from  midnight
+UT and are stored right-justified in the 32-bit fields shown
+above.  Ordinarily,  all  time  calculations  are  performed
+modulo-24 hours in milliseconds.  This provides a convenient
+match to those operating systems  which  maintain  a  system
+clock  in ticks past midnight.  The specified timestamp unit
+of milliseconds is consistent with the accuracy of  existing
+radio  clocks  and  the  errors expected in the timestamping
+process itself.
+
+Delay Measurements
+
+     Delay measurements can be made with any DCNET  host  by
+simply sending an ICS datagram in the above format to it and
+processing the reply.  Let t1, t2 and t3 represent the three
+timestamp  fields  of  the reply in order and t4 the time of
+arrival at the original sender.  Then the delays,  exclusive
+of  internal  processing  within  the DCNET host, are simply
+(t2 - t1) to the DCNET host, (t4 - t3) for  the  return  and
+
+DCNET Internet Clock Service                        PAGE   3
+
+
+
+(t2 - t1) + (t4 - t3)  for the roundtrip.  Note that, in the
+case of the roundtrip, the clock offsets between the sending
+host and DCNET host cancel.
+
+     Although ICS datagrams are returned by all DCNET  hosts
+regardless  of  other connections that may be in use by that
+host at any given time, the most useful host  will  probably
+be   the   COMSAT-WWV   virtual  host  at  internet  address
+[29,0,9,2], which is also the  internet  echo  virtual  host
+formerly  called  COMSAT-ECH.  This virtual host is resident
+in  the  COMSAT-GAT  physical  host  at   internet   address
+[29,0,1,2], which is connected to the ARPANET via the COMSAT
+Gateway, Clarksburg SIMP and a 4800-bps line to  IMP  71  at
+BBN.    The  roundtrip  delay  via  this  path  between  the
+COMSAT-GAT  host  and  the  BBN  Gateway  is  typically  550
+milliseconds as the ICS datagram flies.
+
+     As in the case of all DCNET hosts,  if  the  COMSAT-WWV
+virtual  host  is  down  (in  this case possible only if the
+Spectracom radio clock is down or misbehaving) a  &quot;host  not
+reachable&quot;   GGP   datagram   is   returned.    In   unusual
+circumstances a &quot;net not reachable&quot; or &quot;source  quench&quot;  GGP
+datagram  could  be  returned.   Note that the references to
+&quot;GGP&quot; here will be read &quot;ICMP&quot; at  some  appropriate  future
+time.
+
+Local Offset Corrections
+
+     All DCNET timestamps are  referenced  to  a  designated
+virtual  host  called  COMSAT-WWV (what else?) with internet
+address [29,0,9,2].  This host is equipped with a Spectracom
+radio  clock  which  normally provides WWVB time and date to
+within a millisecond.  The clock  synchronization  mechanism
+provides  offset  and  drift  corrections  for  other  hosts
+relative to this host; however, offsets up to an appreciable
+fraction  of  a second routinely occur due to the difficulty
+of tracking with power-line  clocks  in  some  machines.   A
+table  of  the  current  offsets  can  be obtained using the
+following procedure.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Connect  </span>to  COMSAT-GAT   host   at   internet   address
+    [29,0,1,2] using TELNET and local echo.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Send the command SET HOST HOST.  </span>A table with  one  line
+    per DCNET host should be returned.  Note the entry under
+    the &quot;Offset&quot; column for the WWV host.  This contains the
+    offset  in  milliseconds  that  should  be  added to all
+    timestamps  generated  by  either  the   COMSAT-GAT   or
+    COMSAT-WWV  hosts to yield the correct time as broadcast
+    by WWVB.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Send the command SET WWV SHOW.  </span>A  summary  of  datagram
+    traffic  is  returned  along with an entry labelled &quot;NBS
+
+DCNET Internet Clock Service                        PAGE   4
+
+
+
+    time.&quot; The string  following  this  is  the  last  reply
+    received from the Spectracom unit in the format:
+
+                  &lt;code&gt;  DDD HH:MM:SS  TZ=00
+
+    where &lt;code&gt; is normally &lt;SP&gt; in case the WWVB signal is
+    being  received  correctly  or ? in case it is not.  The
+    DDD represents the day of the year and HH:MM:SS the time
+    past   UT   midnight.   The  two  digits  following  TZ=
+    represent the time zone, here 00 for UT.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Close the connection (please!).</span>
+
+
+REFERENCES
+
+[<a id="ref-1">1</a>]  ICMP
+
+   Postel, J., &quot;Internet Control Message Protocol&quot;, <a href="/doc/html/rfc777">RFC 777</a>,
+   USC/Information Sciences Institute, April 1981.
+
+[<a id="ref-2">2</a>]  GGP
+
+   Strazisar, V., &quot;How to Build a Gateway&quot;, IEN 109, Bolt
+   Beranek and Newman, August 1979.
+
+DCNET Internet Clock Service                        PAGE   5
+
+
+
+Following is a specification of  the  ICS  header  in  PDP11
+code:
+
+;
+; GGP/ICMP Header
+;
+ .       =       0
+GH.TYP:  .BLKB   1               ;Message type
+GC.RPY   =       0               ;Echo reply
+GC.UPD   =       1               ;Routing update
+GC.ACK   =       2               ;Positive acknowledgment
+GC.DNR   =       3               ;Destination unreachable
+GC.SQN   =       4               ;Source quench
+GC.RDR   =       5               ;Redirect
+GC.ECH   =       10              ;Echo
+GC.STA   =       11              ;Net interface status
+GC.NAK   =       12              ;Negative acknowledgment
+GC.TIM   =       15              ;Timestamp
+GC.TRP   =       16              ;Timestamp Reply
+GH.COD:  .BLKB   1               ;Message code
+GH.SEQ:  .BLKW   1               ;Sequence number
+GH.HDR   =       .               ;Beginning of original
+                                 ;internet header
+GH.ORG:  .BLKW   2               ;Originating timestamp
+GH.REC:  .BLKW   2               ;Received timestamp
+GH.XMT:  .BLKW   2               ;Transmitted timestamp
+GH.LEN   =       .               ;End of timestamp header
+
+     Note that all  PDP11  word  fields  (.BLKW  above)  are
+&quot;byte-swapped,&quot;  that  is, the order of byte transmission is
+the high-order byte followed by the low-order  byte  of  the
+PDP11 word.
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

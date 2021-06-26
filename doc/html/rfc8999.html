@@ -1,0 +1,677 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8999
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-quic-invariants/">
+  <meta name="description" content="Version-Independent Properties of QUIC (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8999.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8999.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8999.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8999.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8999/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8999/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/quic/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-quic-invariants@ietf.org?subject=draft-ietf-quic-invariants" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-quic-invariants-13.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-quic-invariants-13.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-quic-invariants-13.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-quic-invariants-13">draft-ietf-quic-invariants-13</a>                    Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        M. Thomson
+Request for Comments: 8999                                       Mozilla
+Category: Standards Track                                       May 2021
+ISSN: 2070-1721
+
+
+                 <span class="h1">Version-Independent Properties of QUIC</span>
+
+Abstract
+
+   This document defines the properties of the QUIC transport protocol
+   that are common to all versions of the protocol.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8999">https://www.rfc-editor.org/info/rfc8999</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  An Extremely Abstract Description of QUIC
+   2.  Fixed Properties of All QUIC Versions
+   3.  Conventions and Definitions
+   4.  Notational Conventions
+   5.  QUIC Packets
+     5.1.  Long Header
+     5.2.  Short Header
+     5.3.  Connection ID
+     5.4.  Version
+   6.  Version Negotiation
+   7.  Security and Privacy Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   <a href="#appendix-A">Appendix A</a>.  Incorrect Assumptions
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  An Extremely Abstract Description of QUIC</span>
+
+   QUIC is a connection-oriented protocol between two endpoints.  Those
+   endpoints exchange UDP datagrams.  These UDP datagrams contain QUIC
+   packets.  QUIC endpoints use QUIC packets to establish a QUIC
+   connection, which is shared protocol state between those endpoints.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Fixed Properties of All QUIC Versions</span>
+
+   In addition to providing secure, multiplexed transport, QUIC
+   [<a href="#ref-QUIC-TRANSPORT">QUIC-TRANSPORT</a>] allows for the option to negotiate a version.  This
+   allows the protocol to change over time in response to new
+   requirements.  Many characteristics of the protocol could change
+   between versions.
+
+   This document describes the subset of QUIC that is intended to remain
+   stable as new versions are developed and deployed.  All of these
+   invariants are independent of the IP version.
+
+   The primary goal of this document is to ensure that it is possible to
+   deploy new versions of QUIC.  By documenting the properties that
+   cannot change, this document aims to preserve the ability for QUIC
+   endpoints to negotiate changes to any other aspect of the protocol.
+   As a consequence, this also guarantees a minimal amount of
+   information that is made available to entities other than endpoints.
+   Unless specifically prohibited in this document, any aspect of the
+   protocol can change between different versions.
+
+   <a href="#appendix-A">Appendix A</a> contains a non-exhaustive list of some incorrect
+   assumptions that might be made based on knowledge of QUIC version 1;
+   these do not apply to every version of QUIC.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Conventions and Definitions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="/doc/html/bcp14">BCP</a>
+   <a href="/doc/html/bcp14">14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   This document defines requirements on future QUIC versions, even
+   where normative language is not used.
+
+   This document uses terms and notational conventions from
+   [<a href="#ref-QUIC-TRANSPORT">QUIC-TRANSPORT</a>].
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Notational Conventions</span>
+
+   The format of packets is described using the notation defined in this
+   section.  This notation is the same as that used in [<a href="#ref-QUIC-TRANSPORT">QUIC-TRANSPORT</a>].
+
+   Complex fields are named and then followed by a list of fields
+   surrounded by a pair of matching braces.  Each field in this list is
+   separated by commas.
+
+   Individual fields include length information, plus indications about
+   fixed value, optionality, or repetitions.  Individual fields use the
+   following notational conventions, with all lengths in bits:
+
+   x (A):  Indicates that x is A bits long
+
+   x (A..B):  Indicates that x can be any length from A to B; A can be
+      omitted to indicate a minimum of zero bits, and B can be omitted
+      to indicate no set upper limit; values in this format always end
+      on a byte boundary
+
+   x (L) = C:  Indicates that x has a fixed value of C; the length of x
+      is described by L, which can use any of the length forms above
+
+   x (L) ...:  Indicates that x is repeated zero or more times and that
+      each instance has a length of L
+
+   This document uses network byte order (that is, big endian) values.
+   Fields are placed starting from the high-order bits of each byte.
+
+   Figure 1 shows an example structure:
+
+   Example Structure {
+     One-bit Field (1),
+     7-bit Field with Fixed Value (7) = 61,
+     Arbitrary-Length Field (..),
+     Variable-Length Field (8..24),
+     Repeated Field (8) ...,
+   }
+
+                          Figure 1: Example Format
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  QUIC Packets</span>
+
+   QUIC endpoints exchange UDP datagrams that contain one or more QUIC
+   packets.  This section describes the invariant characteristics of a
+   QUIC packet.  A version of QUIC could permit multiple QUIC packets in
+   a single UDP datagram, but the invariant properties only describe the
+   first packet in a datagram.
+
+   QUIC defines two types of packet headers: long and short.  Packets
+   with a long header are identified by the most significant bit of the
+   first byte being set; packets with a short header have that bit
+   cleared.
+
+   QUIC packets might be integrity protected, including the header.
+   However, QUIC Version Negotiation packets are not integrity
+   protected; see <a href="#section-6">Section 6</a>.
+
+   Aside from the values described here, the payload of QUIC packets is
+   version specific and of arbitrary length.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Long Header</span>
+
+   Long headers take the form described in Figure 2.
+
+   Long Header Packet {
+     Header Form (1) = 1,
+     Version-Specific Bits (7),
+     Version (32),
+     Destination Connection ID Length (8),
+     Destination Connection ID (0..2040),
+     Source Connection ID Length (8),
+     Source Connection ID (0..2040),
+     Version-Specific Data (..),
+   }
+
+                         Figure 2: QUIC Long Header
+
+   A QUIC packet with a long header has the high bit of the first byte
+   set to 1.  All other bits in that byte are version specific.
+
+   The next four bytes include a 32-bit Version field.  Versions are
+   described in <a href="#section-5.4">Section 5.4</a>.
+
+   The next byte contains the length in bytes of the Destination
+   Connection ID field that follows it.  This length is encoded as an
+   8-bit unsigned integer.  The Destination Connection ID field follows
+   the Destination Connection ID Length field and is between 0 and 255
+   bytes in length.  Connection IDs are described in <a href="#section-5.3">Section 5.3</a>.
+
+   The next byte contains the length in bytes of the Source Connection
+   ID field that follows it.  This length is encoded as an 8-bit
+   unsigned integer.  The Source Connection ID field follows the Source
+   Connection ID Length field and is between 0 and 255 bytes in length.
+
+   The remainder of the packet contains version-specific content.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Short Header</span>
+
+   Short headers take the form described in Figure 3.
+
+   Short Header Packet {
+     Header Form (1) = 0,
+     Version-Specific Bits (7),
+     Destination Connection ID (..),
+     Version-Specific Data (..),
+   }
+
+                        Figure 3: QUIC Short Header
+
+   A QUIC packet with a short header has the high bit of the first byte
+   set to 0.
+
+   A QUIC packet with a short header includes a Destination Connection
+   ID immediately following the first byte.  The short header does not
+   include the Destination Connection ID Length, Source Connection ID
+   Length, Source Connection ID, or Version fields.  The length of the
+   Destination Connection ID is not encoded in packets with a short
+   header and is not constrained by this specification.
+
+   The remainder of the packet has version-specific semantics.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  Connection ID</span>
+
+   A connection ID is an opaque field of arbitrary length.
+
+   The primary function of a connection ID is to ensure that changes in
+   addressing at lower protocol layers (UDP, IP, and below) do not cause
+   packets for a QUIC connection to be delivered to the wrong QUIC
+   endpoint.  The connection ID is used by endpoints and the
+   intermediaries that support them to ensure that each QUIC packet can
+   be delivered to the correct instance of an endpoint.  At the
+   endpoint, the connection ID is used to identify the QUIC connection
+   for which the packet is intended.
+
+   The connection ID is chosen by each endpoint using version-specific
+   methods.  Packets for the same QUIC connection might use different
+   connection ID values.
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  Version</span>
+
+   The Version field contains a 4-byte identifier.  This value can be
+   used by endpoints to identify a QUIC version.  A Version field with a
+   value of 0x00000000 is reserved for version negotiation; see
+   <a href="#section-6">Section 6</a>.  All other values are potentially valid.
+
+   The properties described in this document apply to all versions of
+   QUIC.  A protocol that does not conform to the properties described
+   in this document is not QUIC.  Future documents might describe
+   additional properties that apply to a specific QUIC version or to a
+   range of QUIC versions.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Version Negotiation</span>
+
+   A QUIC endpoint that receives a packet with a long header and a
+   version it either does not understand or does not support might send
+   a Version Negotiation packet in response.  Packets with a short
+   header do not trigger version negotiation.
+
+   A Version Negotiation packet sets the high bit of the first byte, and
+   thus it conforms with the format of a packet with a long header as
+   defined in <a href="#section-5.1">Section 5.1</a>.  A Version Negotiation packet is identifiable
+   as such by the Version field, which is set to 0x00000000.
+
+   Version Negotiation Packet {
+     Header Form (1) = 1,
+     Unused (7),
+     Version (32) = 0,
+     Destination Connection ID Length (8),
+     Destination Connection ID (0..2040),
+     Source Connection ID Length (8),
+     Source Connection ID (0..2040),
+     Supported Version (32) ...,
+   }
+
+                    Figure 4: Version Negotiation Packet
+
+   Only the most significant bit of the first byte of a Version
+   Negotiation packet has any defined value.  The remaining 7 bits,
+   labeled &quot;Unused&quot;, can be set to any value when sending and MUST be
+   ignored on receipt.
+
+   After the Source Connection ID field, the Version Negotiation packet
+   contains a list of Supported Version fields, each identifying a
+   version that the endpoint sending the packet supports.  A Version
+   Negotiation packet contains no other fields.  An endpoint MUST ignore
+   a packet that contains no Supported Version fields or contains a
+   truncated Supported Version value.
+
+   Version Negotiation packets do not use integrity or confidentiality
+   protection.  Specific QUIC versions might include protocol elements
+   that allow endpoints to detect modification or corruption in the set
+   of supported versions.
+
+   An endpoint MUST include the value from the Source Connection ID
+   field of the packet it receives in the Destination Connection ID
+   field.  The value for the Source Connection ID field MUST be copied
+   from the Destination Connection ID field of the received packet,
+   which is initially randomly selected by a client.  Echoing both
+   connection IDs gives clients some assurance that the server received
+   the packet and that the Version Negotiation packet was not generated
+   by an attacker that is unable to observe packets.
+
+   An endpoint that receives a Version Negotiation packet might change
+   the version that it decides to use for subsequent packets.  The
+   conditions under which an endpoint changes its QUIC version will
+   depend on the version of QUIC that it chooses.
+
+   See [<a href="#ref-QUIC-TRANSPORT">QUIC-TRANSPORT</a>] for a more thorough description of how an
+   endpoint that supports QUIC version 1 generates and consumes a
+   Version Negotiation packet.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security and Privacy Considerations</span>
+
+   It is possible that middleboxes could observe traits of a specific
+   version of QUIC and assume that when other versions of QUIC exhibit
+   similar traits the same underlying semantic is being expressed.
+   There are potentially many such traits; see <a href="#appendix-A">Appendix A</a>.  Some effort
+   has been made to either eliminate or obscure some observable traits
+   in QUIC version 1, but many of these remain.  Other QUIC versions
+   might make different design decisions and so exhibit different
+   traits.
+
+   The QUIC version number does not appear in all QUIC packets, which
+   means that reliably extracting information from a flow based on
+   version-specific traits requires that middleboxes retain state for
+   every connection ID they see.
+
+   The Version Negotiation packet described in this document is not
+   integrity protected; it only has modest protection against insertion
+   by attackers.  An endpoint MUST authenticate the semantic content of
+   a Version Negotiation packet if it attempts a different QUIC version
+   as a result.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-QUIC-TLS">QUIC-TLS</a>] Thomson, M., Ed. and S. Turner, Ed., &quot;Using TLS to Secure
+              QUIC&quot;, <a href="/doc/html/rfc9001">RFC 9001</a>, DOI 10.17487/RFC9001, May 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc9001">https://www.rfc-editor.org/info/rfc9001</a>&gt;.
+
+   [<a id="ref-QUIC-TRANSPORT">QUIC-TRANSPORT</a>]
+              Iyengar, J., Ed. and M. Thomson, Ed., &quot;QUIC: A UDP-Based
+              Multiplexed and Secure Transport&quot;, <a href="/doc/html/rfc9000">RFC 9000</a>,
+              DOI 10.17487/RFC9000, May 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc9000">https://www.rfc-editor.org/info/rfc9000</a>&gt;.
+
+   [<a id="ref-RFC5116">RFC5116</a>]  McGrew, D., &quot;An Interface and Algorithms for Authenticated
+              Encryption&quot;, <a href="/doc/html/rfc5116">RFC 5116</a>, DOI 10.17487/RFC5116, January 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5116">https://www.rfc-editor.org/info/rfc5116</a>&gt;.
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Incorrect Assumptions</span>
+
+   There are several traits of QUIC version 1 [<a href="#ref-QUIC-TRANSPORT">QUIC-TRANSPORT</a>] that are
+   not protected from observation but are nonetheless considered to be
+   changeable when a new version is deployed.
+
+   This section lists a sampling of incorrect assumptions that might be
+   made about QUIC based on knowledge of QUIC version 1.  Some of these
+   statements are not even true for QUIC version 1.  This is not an
+   exhaustive list; it is intended to be illustrative only.
+
+   *Any and all of the following statements can be false for a given
+   QUIC version:*
+
+   *  QUIC uses TLS [<a href="#ref-QUIC-TLS" title="&quot;Using TLS to Secure QUIC&quot;">QUIC-TLS</a>], and some TLS messages are visible on the
+      wire.
+
+   *  QUIC long headers are only exchanged during connection
+      establishment.
+
+   *  Every flow on a given 5-tuple will include a connection
+      establishment phase.
+
+   *  The first packets exchanged on a flow use the long header.
+
+   *  The last packet before a long period of quiescence might be
+      assumed to contain only an acknowledgment.
+
+   *  QUIC uses an Authenticated Encryption with Associated Data (AEAD)
+      function (AEAD_AES_128_GCM; see [<a href="/doc/html/rfc5116" title="&quot;An Interface and Algorithms for Authenticated Encryption&quot;">RFC5116</a>]) to protect the packets
+      it exchanges during connection establishment.
+
+   *  QUIC packet numbers are encrypted and appear as the first
+      encrypted bytes.
+
+   *  QUIC packet numbers increase by one for every packet sent.
+
+   *  QUIC has a minimum size for the first handshake packet sent by a
+      client.
+
+   *  QUIC stipulates that a client speak first.
+
+   *  QUIC packets always have the second bit of the first byte (0x40)
+      set.
+
+   *  A QUIC Version Negotiation packet is only sent by a server.
+
+   *  A QUIC connection ID changes infrequently.
+
+   *  QUIC endpoints change the version they speak if they are sent a
+      Version Negotiation packet.
+
+   *  The Version field in a QUIC long header is the same in both
+      directions.
+
+   *  A QUIC packet with a particular value in the Version field means
+      that the corresponding version of QUIC is in use.
+
+   *  Only one connection at a time is established between any pair of
+      QUIC endpoints.
+
+Author&#x27;s Address
+
+   Martin Thomson
+   Mozilla
+
+   Email: mt@lowentropy.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

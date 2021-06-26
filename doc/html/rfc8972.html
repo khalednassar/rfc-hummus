@@ -1,0 +1,1748 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8972
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ippm-stamp-option-tlv/">
+  <meta name="description" content="Simple Two-Way Active Measurement Protocol Optional Extensions (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8972.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8972.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8972.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8972.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8972/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8972/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ippm/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ippm-stamp-option-tlv@ietf.org?subject=draft-ietf-ippm-stamp-option-tlv" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ippm-stamp-option-tlv-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ippm-stamp-option-tlv-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ippm-stamp-option-tlv-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ippm-stamp-option-tlv-10">draft-ietf-ippm-stamp-option-tlv-10</a>              Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         G. Mirsky
+Request for Comments: 8972                                        X. Min
+Updates: <a href="/doc/html/rfc8762">8762</a>                                                  ZTE Corp.
+Category: Standards Track                                      H. Nydell
+ISSN: 2070-1721                                        Accedian Networks
+                                                                R. Foote
+                                                                   Nokia
+                                                             A. Masputra
+                                                              Apple Inc.
+                                                              E. Ruffini
+                                                                  OutSys
+                                                            January 2021
+
+
+     <span class="h1">Simple Two-Way Active Measurement Protocol Optional Extensions</span>
+
+Abstract
+
+   This document describes optional extensions to Simple Two-way Active
+   Measurement Protocol (STAMP) that enable measurement of performance
+   metrics.  The document also defines a STAMP Test Session Identifier
+   and thus updates <a href="/doc/html/rfc8762">RFC 8762</a>.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8972">https://www.rfc-editor.org/info/rfc8972</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions Used in This Document
+     2.1.  Acronyms
+     2.2.  Requirements Language
+   3.  STAMP Test Session Identifier
+   4.  TLV Extensions to STAMP
+     4.1.  Extra Padding TLV
+     4.2.  Location TLV
+       4.2.1.  Location Sub-TLVs
+       4.2.2.  Theory of Operation of Location TLV
+     4.3.  Timestamp Information TLV
+     4.4.  Class of Service TLV
+     4.5.  Direct Measurement TLV
+     4.6.  Access Report TLV
+     4.7.  Follow-Up Telemetry TLV
+     4.8.  HMAC TLV
+   5.  IANA Considerations
+     5.1.  STAMP TLV Types Subregistry
+     5.2.  STAMP TLV Flags Subregistry
+     5.3.  STAMP Sub-TLV Types Subregistry
+     5.4.  STAMP Synchronization Sources Subregistry
+     5.5.  STAMP Timestamping Methods Subregistry
+     5.6.  STAMP Return Codes Subregistry
+   6.  Security Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   Acknowledgments
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Simple Two-way Active Measurement Protocol (STAMP) [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>]
+   defines the STAMP base functionalities.  This document specifies the
+   use of optional extensions that use Type-Length-Value (TLV) encoding.
+   Such extensions enhance the STAMP base functions, such as measurement
+   of one-way and round-trip delay, latency, packet loss, packet
+   duplication, and out-of-order delivery of test packets.  This
+   specification defines optional STAMP extensions, their formats, and
+   the theory of operation.  Also, a STAMP Test Session Identifier is
+   defined as an update of the base STAMP specification [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Conventions Used in This Document</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Acronyms</span>
+
+   BDS         BeiDou Navigation Satellite System
+
+   BITS        Building Integrated Timing Supply
+
+   CoS         Class of Service
+
+   DSCP        Differentiated Services Code Point
+
+   ECN         Explicit Congestion Notification
+
+   GLONASS     Global Orbiting Navigation Satellite System
+
+   GPS         Global Positioning System [<a href="#ref-GPS" title="&quot;Global Positioning System (GPS) Standard Positioning Service (SPS) Performance Standard&quot;">GPS</a>]
+
+   HMAC        Hashed Message Authentication Code
+
+   LORAN-C     Long Range Navigation System Version C
+
+   MBZ         Must Be Zero
+
+   NTP         Network Time Protocol [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>]
+
+   PMF         Performance Measurement Function
+
+   PTP         Precision Time Protocol [<a href="#ref-IEEE.1588.2008">IEEE.1588.2008</a>]
+
+   RP          Reverse Path
+
+   SMI         Structure of Management Information
+
+   SSID        STAMP Session Identifier
+
+   SSU         Synchronization Supply Unit
+
+   STAMP       Simple Two-way Active Measurement Protocol
+
+   TLV         Type-Length-Value
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  STAMP Test Session Identifier</span>
+
+   The STAMP Session-Sender transmits test packets to the STAMP Session-
+   Reflector.  The STAMP Session-Reflector receives the Session-Sender&#x27;s
+   packet and acts according to the configuration and optional control
+   information communicated in the Session-Sender&#x27;s test packet.  STAMP
+   defines two different test packet formats: one for packets
+   transmitted by the STAMP Session-Sender and one for packets
+   transmitted by the STAMP Session-Reflector.  STAMP supports two
+   modes: unauthenticated and authenticated.  Unauthenticated STAMP test
+   packets are compatible on the wire with unauthenticated TWAMP-Test
+   [<a href="/doc/html/rfc5357" title="&quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC5357</a>] packets.
+
+   By default, STAMP uses symmetrical packets, i.e., the size of the
+   packet transmitted by the Session-Reflector equals the size of the
+   packet received by the Session-Reflector.
+
+   A STAMP Session is identified by the 4-tuple (source and destination
+   IP addresses, source and destination UDP port numbers).  A STAMP
+   Session-Sender MAY generate a locally unique STAMP Session Identifier
+   (SSID).  The SSID is a two-octet, non-zero unsigned integer.  The
+   SSID generation policy is implementation specific.  [<a href="#ref-NUM-IDS-GEN">NUM-IDS-GEN</a>]
+   thoroughly analyzes common algorithms for identifier generation and
+   their vulnerabilities.  For example, an implementation can use the
+   algorithms described in Section 7.1 of [<a href="#ref-NUM-IDS-GEN">NUM-IDS-GEN</a>].  An
+   implementation MUST NOT assign the same identifier to different STAMP
+   test sessions.  A Session-Sender MAY use the SSID to identify a STAMP
+   test session.  If the SSID is used, it MUST be present in each test
+   packet of the given test session.  In the unauthenticated mode, the
+   SSID is located as displayed in Figure 1.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        Sequence Number                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                          Timestamp                            |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |         Error Estimate        |             SSID              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      |                                                               |
+      |                         MBZ (28 octets)                       |
+      |                                                               |
+      |                                                               |
+      |                                                               |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      ~                            TLVs                               ~
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+       Figure 1: The Format of an Extended STAMP Session-Sender Test
+                       Packet in Unauthenticated Mode
+
+   An implementation of the STAMP Session-Reflector that supports this
+   specification MUST identify a STAMP Session using the SSID in
+   combination with elements of the usual 4-tuple for the session.
+   Before a test session commences, a Session-Reflector MUST be
+   provisioned with all the elements that identify the STAMP Session.  A
+   STAMP Session-Reflector MUST discard non-matching STAMP test packets.
+   The means of provisioning the STAMP Session identification is outside
+   the scope of this specification.  A conforming implementation of a
+   STAMP Session-Reflector MUST copy the SSID value from the received
+   test packet and put it into the reflected packet, as displayed in
+   Figure 2.
+
+     0                   1                   2                   3
+     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                        Sequence Number                        |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                          Timestamp                            |
+    |                                                               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |         Error Estimate        |           SSID                |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                          Receive Timestamp                    |
+    |                                                               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                 Session-Sender Sequence Number                |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                  Session-Sender Timestamp                     |
+    |                                                               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    | Session-Sender Error Estimate |           MBZ                 |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |Ses-Sender TTL |                   MBZ                         |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    ~                            TLVs                               ~
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+      Figure 2: The Format of an Extended STAMP Session-Reflector Test
+                       Packet in Unauthenticated Mode
+
+   A STAMP Session-Reflector that does not support this specification
+   will return the zeroed SSID field in the reflected STAMP test packet.
+   The Session-Sender MAY stop the session if it receives a zeroed SSID
+   field.  An implementation of a Session-Sender MUST support control of
+   its behavior in such a scenario.  If the test session is not stopped,
+   the Session-Sender can, for example, send a base STAMP packet
+   [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>] or continue transmitting STAMP test packets with the SSID.
+
+   The location of the SSID field in the authenticated mode is shown in
+   Figures 3 and 4.
+
+     0                   1                   2                   3
+     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                      Sequence Number                          |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                                                               |
+    |                      MBZ (12 octets)                          |
+    |                                                               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                        Timestamp                              |
+    |                                                               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |        Error Estimate         |            SSID               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    ~                                                               ~
+    |                         MBZ (68 octets)                       |
+    ~                                                               ~
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |                                                               |
+    |                       HMAC (16 octets)                        |
+    |                                                               |
+    |                                                               |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    ~                            TLVs                               ~
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+       Figure 3: The Format of an Extended STAMP Session-Sender Test
+                        Packet in Authenticated Mode
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        Sequence Number                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        MBZ (12 octets)                        |
+      |                                                               |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                          Timestamp                            |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |         Error Estimate        |            SSID               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        MBZ (4 octets)                         |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        Receive Timestamp                      |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        MBZ (8 octets)                         |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                 Session-Sender Sequence Number                |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        MBZ (12 octets)                        |
+      |                                                               |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                 Session-Sender Timestamp                      |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Session-Sender Error Estimate |                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                               +
+      |                        MBZ (6 octets)                         |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |Ses-Sender TTL |                                               |
+      +-+-+-+-+-+-+-+-+                                               +
+      |                                                               |
+      |                        MBZ (15 octets)                        |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        HMAC (16 octets)                       |
+      |                                                               |
+      |                                                               |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      ~                            TLVs                               ~
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+      Figure 4: The Format of an Extended STAMP Session-Reflector Test
+                        Packet in Authenticated Mode
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  TLV Extensions to STAMP</span>
+
+   The Type-Length-Value (TLV) encoding scheme provides a flexible
+   extension mechanism for optional informational elements.  TLV is an
+   optional field in the STAMP test packet.  Multiple TLVs MAY be placed
+   in a STAMP test packet.  Additional TLVs may be enclosed within a
+   given TLV, subject to the semantics of the (outer) TLV in question.
+   TLVs have a one-octet STAMP TLV Flags field, a one-octet Type field,
+   and a two-octet Length field that is equal to the length of the Value
+   field in octets.  If a Type value for a TLV or sub-TLV is in the
+   range for Private Use [<a href="/doc/html/rfc8126" title="">RFC8126</a>], the length MUST be at least 4, and
+   the first four octets MUST be that vendor&#x27;s Structure of Management
+   Information (SMI) Private Enterprise Code, as recorded in IANA&#x27;s &quot;SMI
+   Network Management Private Enterprise Codes&quot; subregistry, in network
+   octet order.  The rest of the Value field is private to the vendor.
+   The following sections describe the use of TLVs for STAMP that extend
+   the STAMP capability beyond its base specification.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|     Type      |           Length              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      ~                            Value                              ~
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+              Figure 5: TLV Format in a STAMP Extended Packet
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  The detailed format and
+      interpretation of flags defined in this specification are below.
+
+   Type:  A one-octet field that characterizes the interpretation of the
+      Value field.  It is allocated by IANA, as specified in
+      <a href="#section-5.1">Section 5.1</a>.
+
+   Length:  A two-octet field equal to the length of the Value field in
+      octets.
+
+   Value:  A variable-length field.  Its interpretation and encoding are
+      determined by the value of the Type field.
+
+   All multi-byte fields in TLVs defined in this specification are in
+   network byte order.
+
+   The format of the STAMP TLV Flags is displayed in Figure 6, and the
+   location of flags is defined in <a href="#section-5.2">Section 5.2</a>.
+
+       0 1 2 3 4 5 6 7
+      +-+-+-+-+-+-+-+-+
+      |U|M|I|R|R|R|R|R|
+      +-+-+-+-+-+-+-+-+
+
+                      Figure 6: STAMP TLV Flags Format
+
+   The fields are defined as follows:
+
+   U (Unrecognized):  A one-bit flag.  A Session-Sender MUST set the U
+      flag to 1 before transmitting an extended STAMP test packet.  A
+      Session-Reflector MUST set the U flag to 1 if the Session-
+      Reflector has not understood the TLV.  Otherwise, the Session-
+      Reflector MUST set the U flag in the reflected packet to 0.
+
+   M (Malformed):  A one-bit flag.  A Session-Sender MUST set the M flag
+      to 0 before transmitting an extended STAMP test packet.  A
+      Session-Reflector MUST set the M flag to 1 if the Session-
+      Reflector determined the TLV is malformed, i.e., the Length field
+      value is not valid for the particular type, or the remaining
+      length of the extended STAMP packet is less than the size of the
+      TLV.  Otherwise, the Session-Reflector MUST set the M flag in the
+      reflected packet to 0.
+
+   I (Integrity):  A one-bit flag.  A Session-Sender MUST set the I flag
+      to 0 before transmitting an extended STAMP test packet.  A
+      Session-Reflector MUST set the I flag to 1 if the STAMP extensions
+      have failed HMAC verification (<a href="#section-4.8">Section 4.8</a>).  Otherwise, the
+      Session-Reflector MUST set the I flag in the reflected packet to
+      0.
+
+   R:  Reserved flags for future use.  These flags MUST be zeroed on
+      transmit and ignored on receipt.
+
+   A STAMP node, whether Session-Sender or Session-Reflector, receiving
+   a test packet MUST determine whether the packet is a base STAMP
+   packet or whether it includes one or more TLVs.  The node MUST
+   compare the value in the Length field of the UDP header and the
+   length of the base STAMP test packet in the mode, unauthenticated or
+   authenticated, based on the configuration of the particular STAMP
+   test session.  If the difference between the two values is greater
+   than the length of the UDP header, then the test packet includes one
+   or more STAMP TLVs that immediately follow the base STAMP test
+   packet.  A Session-Reflector that does not support STAMP extensions
+   will not process but copy them into the reflected packet, as defined
+   in <a href="/doc/html/rfc8762#section-4.3">Section&nbsp;4.3 of [RFC8762]</a>.  A Session-Reflector that supports TLVs
+   will indicate specific TLVs that it did not process by setting the U
+   flag to 1 in those TLVs.
+
+   A STAMP Session-Sender that has received a reflected STAMP test
+   packet with extension TLVs MUST validate each TLV:
+
+   *  If the U flag is set, the STAMP system MUST skip the processing of
+      the TLV.
+
+   *  If the M flag is set, the STAMP system MUST stop processing the
+      remainder of the extended STAMP packet.
+
+   *  If the I flag is set, the STAMP system MUST discard all TLVs and
+      MUST stop processing the remainder of the extended STAMP packet.
+
+   *  If an implementation of a Session-Reflector does not recognize the
+      Type field value, it MUST include a copy of the TLV in the
+      reflected STAMP packet.  The Session-Reflector MUST set the U flag
+      to 1.  The Session-Reflector MUST skip the processing of the
+      unrecognized TLV.
+
+   *  If a TLV is malformed, the processing of extension TLVs MUST be
+      stopped.  The Session-Reflector MUST copy the remainder of the
+      received extended STAMP packet into the reflected STAMP packet.
+      The Session-Reflector MUST set the M flag to 1.
+
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Extra Padding TLV</span>
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|      Type     |           Length              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      ~                         Extra Padding                         ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                        Figure 7: Extra Padding TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 1 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field equal to the length of the Extra Padding
+      field in octets.
+
+   Extra Padding:  This field SHOULD be filled by a sequence of
+      pseudorandom numbers.  The field MAY be filled with all zeros.  An
+      implementation MUST control the content of the Extra Padding
+      field.
+
+   The Extra Padding TLV is similar to the Packet Padding field in a
+   TWAMP-Test packet [<a href="/doc/html/rfc5357" title="&quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;">RFC5357</a>].  The use of the Extra Padding TLV is
+   RECOMMENDED to perform a STAMP test using test packets that are
+   larger than the base STAMP packet [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>].  The length of the base
+   STAMP packet is 44 octets in the unauthenticated mode or 112 octets
+   in the authenticated mode.  The Extra Padding TLV MAY be present more
+   than one time in an extended STAMP test packet.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Location TLV</span>
+
+   STAMP Session-Senders MAY include the variable-size Location TLV to
+   query location information from the Session-Reflector.  The Session-
+   Sender MUST NOT fill any information fields except for the STAMP TLV
+   Flags, Type, and Length fields.  The Session-Reflector MUST verify
+   that the TLV is well formed.  If it is not, the Session-Reflector
+   follows the procedure defined in <a href="#section-4">Section 4</a> for a malformed TLV.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|      Type     |           Length              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |        Destination Port       |          Source Port          |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      ~                         Sub-TLVs                              ~
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                           Figure 8: Location TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 2 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field equal to the length of the Value field in
+      octets.
+
+   Destination Port:  A two-octet UDP destination port number of the
+      received STAMP packet.
+
+   Source Port:  A two-octet UDP source port number of the received
+      STAMP packet.
+
+   Sub-TLVs:  A sequence of sub-TLVs, as defined further in this
+      section.  The sub-TLVs are used by the Session-Sender to request
+      location information with generic sub-TLV types, and the Session-
+      Reflector responds with the corresponding more-specific sub-TLVs
+      for the type of address (e.g., IPv4 or IPv6) used at the Session-
+      Reflector.
+
+   Note that all fields not filled by either a Session-Sender or
+   Session-Reflector are transmitted with all bits set to zero.
+
+<span class="h4"><a class="selflink" id="section-4.2.1" href="#section-4.2.1">4.2.1</a>.  Location Sub-TLVs</span>
+
+   A sub-TLV in the Location TLV uses the format displayed in Figure 5.
+   Handling of the U and M flags in the sub-TLV is as defined in
+   <a href="#section-4">Section 4</a>.  The I flag MUST be set by a Session-Sender and Session-
+   Reflector to 0 before transmission and its value ignored on receipt.
+   The following types of sub-TLVs for the Location TLV are defined in
+   this specification (Table 5 lists the Type values):
+
+   Source MAC Address sub-TLV:  A 12-octet sub-TLV.  The Type value is
+      1.  The value of the Length field MUST be equal to 8.  The Value
+      field is an 8-octet MBZ field that MUST be zeroed on transmission
+      and ignored on receipt.
+
+   Source EUI-48 Address sub-TLV:  A 12-octet sub-TLV that includes the
+      EUI-48 source MAC address.  The Type value is 2.  The value of the
+      Length field MUST be equal to 8.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                        EUI-48  Address                        |
+      +                               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                               |            MBZ                |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+        Figure 9: The Value Field of the Source EUI-48 Address Sub-TLV
+
+      The Value field consists of the following fields (Figure 9):
+
+      EUI-48 Address:  A six-octet field.
+
+      MBZ:  A two-octet field.  It MUST be zeroed on transmission and
+         ignored on receipt.
+
+   Source EUI-64 Address sub-TLV:  A 12-octet sub-TLV that includes the
+      EUI-64 source MAC address.  The Type value is 3.  The value of the
+      Length field MUST be equal to 8.  The Value field consists of an
+      eight-octet EUI-64 field.
+
+   Destination IP Address sub-TLV:  A 20-octet sub-TLV.  The Type value
+      is 4.  The value of the Length field MUST be equal to 16.  The
+      Value field consists of a 16-octet MBZ field that MUST be zeroed
+      on transmit and ignored on receipt.
+
+   Destination IPv4 Address sub-TLV:  A 20-octet sub-TLV that includes
+      the IPv4 destination address.  The Type value is 5.  The value of
+      the Length field MUST be equal to 16.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                         IPv4 Address                          |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      ~                        MBZ (12 octets)                        ~
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+              Figure 10: IPv4 Address in a Sub-TLV&#x27;s Value Field
+
+      The Value field consists of the following fields (Figure 10):
+
+      IPv4 Address:  A four-octet field.
+
+      MBZ:  A 12-octet field.  It MUST be zeroed on transmit and ignored
+         on receipt.
+
+   Destination IPv6 Address sub-TLV:  A 20-octet sub-TLV that includes
+      the IPv6 destination address.  The Type value is 6.  The value of
+      the Length field MUST be equal to 16.  The Value field is a
+      16-octet IPv6 Address field.
+
+   Source IP Address sub-TLV:  A 20-octet sub-TLV.  The Type value is 7.
+      The value of the Length field MUST be equal to 16.  The Value
+      field is a 16-octet MBZ field that MUST be zeroed on transmit and
+      ignored on receipt.
+
+   Source IPv4 Address sub-TLV:  A 20-octet sub-TLV that includes the
+      IPv4 source address.  The Type value is 8.  The value of the
+      Length field MUST be equal to 16.  The Value field consists of the
+      following fields (Figure 10):
+
+      IPv4 Address:  A four-octet field.
+
+      MBZ:  A 12-octet field.  It MUST be zeroed on transmit and ignored
+         on receipt.
+
+   Source IPv6 Address sub-TLV:  A 20-octet sub-TLV that includes the
+      IPv6 source address.  The Type value is 9.  The value of the
+      Length field MUST be equal to 16.  The Value field is a 16-octet
+      IPv6 Address field.
+
+<span class="h4"><a class="selflink" id="section-4.2.2" href="#section-4.2.2">4.2.2</a>.  Theory of Operation of Location TLV</span>
+
+   The Session-Reflector that received an extended STAMP packet with the
+   Location TLV MUST include in the reflected packet the Location TLV
+   with a length equal to the Location TLV length in the received
+   packet.  Based on the local policy, the Session-Reflector MAY leave
+   some fields unreported by filling them with zeroes.  An
+   implementation of the stateful Session-Reflector MUST provide control
+   for managing such policies.
+
+   A Session-Sender MAY include the Source MAC Address sub-TLV in the
+   Location TLV.  If the Session-Reflector receives the Location TLV
+   that includes the Source MAC Address sub-TLV, it MUST include the
+   Source EUI-48 Address sub-TLV if the source MAC address of the
+   received extended test packet is in EUI-48 format.  And the Session-
+   Reflector MUST copy the value of the source MAC address in the EUI-48
+   field.  Otherwise, the Session-Reflector MUST use the Source EUI-64
+   Address sub-TLV and MUST copy the value of the Source MAC Address
+   from the received packet into the EUI-64 field.  If the received
+   extended STAMP test packet does not have the Source MAC Address, the
+   Session-Reflector MUST zero the EUI-64 field before transmitting the
+   reflected packet.
+
+   A Session-Sender MAY include the Destination IP Address sub-TLV in
+   the Location TLV.  If the Session-Reflector receives the Location TLV
+   that includes the Destination IP Address sub-TLV, it MUST include the
+   Destination IPv4 Address sub-TLV if the source IP address of the
+   received extended test packet is of the IPv4 address family.  And the
+   Session-Reflector MUST copy the value of the destination IP address
+   in the IPv4 Address field.  Otherwise, the Session-Reflector MUST use
+   the Destination IPv6 Address sub-TLV and MUST copy the value of the
+   destination IP address from the received packet into the IPv6 Address
+   field.
+
+   A Session-Sender MAY include the Source IP Address sub-TLV in the
+   Location TLV.  If the Session-Reflector receives the Location TLV
+   that includes the Source IP Address sub-TLV, it MUST include the
+   Source IPv4 Address sub-TLV if the source IP address of the received
+   extended test packet is of the IPv4 address family.  And the Session-
+   Reflector MUST copy the value of the source IP address in the IPv4
+   Address field.  Otherwise, the Session-Reflector MUST use the Source
+   IPv6 Address sub-TLV and MUST copy the value of the source IP address
+   from the received packet into the IPv6 Address field.
+
+   The Location TLV MAY be used to determine the last-hop IP addresses,
+   ports, and last-hop MAC address for STAMP packets.  The MAC address
+   can indicate a path switch on the last hop.  The IP addresses and UDP
+   ports will indicate if there is a NAT router on the path.  It allows
+   the Session-Sender to identify the IP address of the Session-
+   Reflector behind the NAT and detect changes in the NAT mapping that
+   could result in sending the STAMP packets to the wrong Session-
+   Reflector.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Timestamp Information TLV</span>
+
+   The STAMP Session-Sender MAY include the Timestamp Information TLV to
+   request information from the Session-Reflector.  The Session-Sender
+   MUST NOT fill any information fields except for STAMP TLV Flags,
+   Type, and Length.  All other fields MUST be filled with zeroes.  The
+   Session-Reflector MUST validate the Length value of the TLV.  If the
+   value of the Length field is invalid, the Session-Reflector follows
+   the procedure defined in <a href="#section-4">Section 4</a> for a malformed TLV.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|      Type     |           Length              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |  Sync Src In  | Timestamp In  | Sync Src Out  | Timestamp Out |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      ~                    Optional sub-TLVs                          ~
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                    Figure 11: Timestamp Information TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 3 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field, set equal to the length of the Value
+      field in octets (Figure 5).
+
+   Sync Src In:  A one-octet field that characterizes the source of
+      clock synchronization at the ingress of a Session-Reflector.
+      There are several methods for synchronizing the clock, e.g., the
+      Network Time Protocol (NTP) [<a href="/doc/html/rfc5905" title="&quot;Network Time Protocol Version 4: Protocol and Algorithms Specification&quot;">RFC5905</a>].  Table 7 lists the possible
+      values.
+
+   Timestamp In:  A one-octet field that characterizes the method by
+      which the ingress of the Session-Reflector obtained the timestamp
+      T2.  A timestamp may be obtained with hardware assistance via a
+      software API from a local wall clock or from a remote clock (the
+      latter is referred to as a &quot;control plane&quot;).  Table 9 lists the
+      possible values.
+
+   Sync Src Out:  A one-octet field that characterizes the source of
+      clock synchronization at the egress of the Session-Reflector.
+      Table 7 lists the possible values.
+
+   Timestamp Out:  A one-octet field that characterizes the method by
+      which the egress of the Session-Reflector obtained the timestamp
+      T3.  Table 9 lists the possible values.
+
+   Optional sub-TLVs:  An optional variable-length field.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Class of Service TLV</span>
+
+   The STAMP Session-Sender MAY include a Class of Service (CoS) TLV in
+   the STAMP test packet.  The format of the CoS TLV is presented in
+   Figure 12.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|      Type     |           Length              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |   DSCP1   |   DSCP2   |ECN| RP|          Reserved             |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                      Figure 12: Class of Service TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 4 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field, set equal to the value 4.
+
+   DSCP1:  The Differentiated Services Code Point (DSCP) intended by the
+      Session-Sender to be used as the DSCP value of the reflected test
+      packet.
+
+   DSCP2:  The received value in the DSCP field at the ingress of the
+      Session-Reflector.
+
+   ECN:  The received value in the ECN field at the ingress of the
+      Session-Reflector.
+
+   RP (Reverse Path):  A two-bit field.  A Session-Sender MUST set the
+      value of the RP field to 0 on transmission.
+
+   Reserved:  A 16-bit field that MUST be zeroed on transmission and
+      ignored on receipt.
+
+   A STAMP Session-Reflector that receives a test packet with the CoS
+   TLV MUST include the CoS TLV in the reflected test packet.  Also, the
+   Session-Reflector MUST copy the value of the DSCP and ECN fields of
+   the IP header of the received STAMP test packet into the DSCP2 field
+   in the reflected test packet.  Finally, the Session-Reflector MUST
+   use the local policy to verify whether the CoS corresponding to the
+   value of the DSCP1 field is permitted in the domain.  If it is, the
+   Session-Reflector MUST set the DSCP field&#x27;s value in the IP header of
+   the reflected test packet equal to the value of the DSCP1 field of
+   the received test packet.  Otherwise, the Session-Reflector MUST use
+   the DSCP value of the received STAMP packet and set the value of the
+   RP field to 1.  Upon receiving the reflected packet, if the value of
+   the RP field is 0, the Session-Sender will save the DSCP and ECN
+   values for analysis of the CoS in the reverse direction.  If the
+   value of the RP field in the received reflected packet is 1, only CoS
+   in the forward direction can be analyzed.
+
+   Re-mapping of CoS can be used to provide multiple services (e.g., 2G,
+   3G, LTE in mobile backhaul networks) over the same network.  But if
+   it is misconfigured, then it is often difficult to diagnose the root
+   cause of excessive packet drops of higher-level service while packet
+   drops for lower service packets are at a normal level.  Using a CoS
+   TLV in STAMP testing helps to troubleshoot the existing problem and
+   also verify whether Diffserv policies are processing CoS as required
+   by the configuration.
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  Direct Measurement TLV</span>
+
+   The Direct Measurement TLV enables collection of the number of in-
+   profile packets, i.e., packets that form a specific data flow, that
+   had been transmitted and received by the Session-Sender and Session-
+   Reflector, respectively.  The definition of &quot;in-profile packet&quot; is
+   outside the scope of this document and is left to the test operators
+   to determine.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|      Type     |           Length              |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |              Session-Sender Tx counter  (S_TxC)               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |             Session-Reflector Rx counter  (R_RxC)             |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |             Session-Reflector Tx counter  (R_TxC)             |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                     Figure 13: Direct Measurement TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 5 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field equal to the length of the Value field in
+      octets.  The Length field value MUST equal 12 octets.
+
+   Session-Sender Tx counter (S_TxC):  A four-octet field.  The Session-
+      Sender MUST set its value equal to the number of the transmitted
+      in-profile packets.
+
+   Session-Reflector Rx counter (R_RxC):  A four-octet field.  It MUST
+      be zeroed by the Session-Sender on transmit and ignored by the
+      Session-Reflector on receipt.  The Session-Reflector MUST fill it
+      with the value of in-profile packets received.
+
+   Session-Reflector Tx counter (R_TxC):  A four-octet field.  It MUST
+      be zeroed by the Session-Sender and ignored by the Session-
+      Reflector on receipt.  The Session-Reflector MUST fill it with the
+      value of the transmitted in-profile packets.
+
+   A Session-Sender MAY include the Direct Measurement TLV in a STAMP
+   test packet.  If the received STAMP test packet includes the Direct
+   Measurement TLV, the Session-Reflector MUST include it in the
+   reflected test packet.  The Session-Reflector MUST copy the value
+   from the S_TxC field of the received test packet into the same field
+   of the reflected packet before its transmission.
+
+<span class="h3"><a class="selflink" id="section-4.6" href="#section-4.6">4.6</a>.  Access Report TLV</span>
+
+   A STAMP Session-Sender MAY include an Access Report TLV (Figure 14)
+   to indicate changes to the access network status to the Session-
+   Reflector.  The definition of an access network is outside the scope
+   of this document.
+
+        0                   1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |STAMP TLV Flags|     Type      |           Length              |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |   ID  |  Resv |  Return Code  |          Reserved             |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                        Figure 14: Access Report TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 6 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field, set equal to the value 4.
+
+   ID (Access ID):  A four-bit field that identifies the access network,
+      e.g., 3GPP (Radio Access Technologies specified by 3GPP) or non-
+      3GPP (accesses that are not specified by 3GPP) [<a href="#ref-TS23501" title="&quot;Technical Specification Group Services and System Aspects; System Architecture for the 5G System (5GS); Stage 2 (Release 16)&quot;">TS23501</a>].  The
+      value is one of the following:
+
+      1:  3GPP Network
+
+      2:  Non-3GPP Network
+
+      All other values are invalid; a TLV that contains values other
+      than &#x27;1&#x27; or &#x27;2&#x27; MUST be discarded.
+
+   Resv:  A four-bit field that MUST be zeroed on transmission and
+      ignored on receipt.
+
+   Return Code:  A one-octet field that identifies the report signal,
+      e.g., available or unavailable.  The value is supplied to the
+      STAMP endpoint through some mechanism that is outside the scope of
+      this document.  <a href="#section-5.6">Section 5.6</a> lists the possible values.
+
+   Reserved:  A two-octet field that MUST be zeroed on transmission and
+      ignored on receipt.
+
+   The STAMP Session-Sender that includes the Access Report TLV sets the
+   value of the Access ID field according to the type of access network
+   it reports on.  Also, the Session-Sender sets the value of the Return
+   Code field to reflect the operational state of the access network.
+   The mechanism to determine the state of the access network is outside
+   the scope of this specification.  A STAMP Session-Reflector that
+   received the test packet with the Access Report TLV MUST include the
+   Access Report TLV in the reflected test packet.  The Session-
+   Reflector MUST set the value of the Access ID and Return Code fields
+   equal to the values of the corresponding fields from the test packet
+   it has received.
+
+   The Session-Sender MUST also arm a retransmission timer after sending
+   a test packet that includes the Access Report TLV.  This timer MUST
+   be disarmed upon reception of the reflected STAMP test packet that
+   includes the Access Report TLV.  In the event the timer expires
+   before such a packet is received, the Session-Sender MUST retransmit
+   the STAMP test packet that contains the Access Report TLV.  This
+   retransmission SHOULD be repeated up to four times before the
+   procedure is aborted.  Setting the value for the retransmission timer
+   is based on local policies and the network environment.  The default
+   value of the retransmission timer for the Access Report TLV SHOULD be
+   three seconds.  An implementation MUST provide control of the
+   retransmission timer value and the number of retransmissions.
+
+   The Access Report TLV is used by the Performance Measurement Function
+   (PMF) components of the Access Steering, Switching, and Splitting
+   feature for 5G networks [<a href="#ref-TS23501" title="&quot;Technical Specification Group Services and System Aspects; System Architecture for the 5G System (5GS); Stage 2 (Release 16)&quot;">TS23501</a>].  The PMF component in the User
+   Equipment acts as the STAMP Session-Sender, and the PMF component in
+   the User Plane Function acts as the STAMP Session-Reflector.
+
+<span class="h3"><a class="selflink" id="section-4.7" href="#section-4.7">4.7</a>.  Follow-Up Telemetry TLV</span>
+
+   A Session-Reflector might be able to put only an &quot;SW Local&quot; (see
+   Table 9) timestamp in the Follow-Up Timestamp field.  But the hosting
+   system might provide a timestamp closer to the start of the actual
+   packet transmission even though it is not possible to deliver the
+   information to the Session-Sender in time for the packet itself.
+   This timestamp might nevertheless be important for the Session-
+   Sender, as it improves the accuracy of network delay measurement by
+   minimizing the impact of egress queuing delays on the measurement.
+
+   A STAMP Session-Sender MAY include the Follow-Up Telemetry TLV to
+   request information from the Session-Reflector.  The Session-Sender
+   MUST set the Follow-Up Telemetry Type and Length fields to their
+   appropriate values.  The Sequence Number and Follow-Up Timestamp
+   fields MUST be zeroed on transmission by the Session-Sender and
+   ignored by the Session-Reflector upon receipt of the STAMP test
+   packet that includes the Follow-Up Telemetry TLV.  The Session-
+   Reflector MUST validate the Length value of the STAMP test packet.
+   If the value of the Length field is invalid, the Session-Reflector
+   MUST zero the Sequence Number and Follow-Up Timestamp fields and set
+   the M flag in the STAMP TLV Flags field in the reflected packet.  If
+   the Session-Reflector is in the stateless mode (defined in
+   <a href="/doc/html/rfc8762#section-4.2">Section&nbsp;4.2 of [RFC8762]</a>), it MUST zero the Sequence Number and
+   Follow-Up Timestamp fields.
+
+        0                   1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |STAMP TLV Flags|      Type     |           Length              |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                        Sequence Number                        |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                      Follow-Up Timestamp                      |
+       |                                                               |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |  Timestamp M  |                     Reserved                  |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                     Figure 15: Follow-Up Telemetry TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 7 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field, set equal to the value 16 octets.
+
+   Sequence Number:  A four-octet field indicating the sequence number
+      of the last packet reflected in the same STAMP test session.
+      Since the Session-Reflector runs in the stateful mode (defined in
+      <a href="/doc/html/rfc8762#section-4.2">Section&nbsp;4.2 of [RFC8762]</a>), it is the Session-Reflector&#x27;s Sequence
+      Number of the previous reflected packet.
+
+   Follow-Up Timestamp:  An eight-octet field, with the format indicated
+      by the Z flag of the Error Estimate field of the STAMP base
+      packet, which is contained in this reflected test packet
+      transmitted by a Session-Reflector, as described in <a href="/doc/html/rfc8762#section-4.2.1">Section&nbsp;4.2.1
+      of [RFC8762]</a>.  It carries the timestamp when the reflected packet
+      with the specified sequence number was sent.
+
+   Timestamp M(ode):  A one-octet field that characterizes the method by
+      which the entity that transmits a reflected STAMP packet obtained
+      the Follow-Up Timestamp.  Table 9 lists the possible values.
+
+   Reserved:  A three-octet field.  Its value MUST be zeroed on
+      transmission and ignored on receipt.
+
+<span class="h3"><a class="selflink" id="section-4.8" href="#section-4.8">4.8</a>.  HMAC TLV</span>
+
+   The STAMP authenticated mode protects the integrity of data collected
+   in the STAMP base packet.  STAMP extensions are designed to provide
+   valuable information about the condition of a network, and protecting
+   the integrity of that data is also essential.  All authenticated
+   STAMP base packets (per Sections <a href="#section-4.2.2">4.2.2</a> and <a href="#section-4.3.2">4.3.2</a> of [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>])
+   compatible with this specification MUST additionally authenticate the
+   optional TLVs by including the keyed Hashed Message Authentication
+   Code (HMAC) TLV, with the sole exception of when there is only one
+   TLV present and it is the Extended Padding TLV.  The HMAC TLV MUST
+   follow all TLVs included in a STAMP test packet except for the Extra
+   Padding TLV.  If the HMAC TLV appears in any other position in a
+   STAMP extended test packet, then the situation MUST be processed as
+   HMAC verification failure, as defined below in this section.  The
+   HMAC TLV MAY be used to protect the integrity of STAMP extensions in
+   the STAMP unauthenticated mode.  An implementation of STAMP
+   extensions MUST provide controls to enable the integrity protection
+   of STAMP extensions in the STAMP unauthenticated mode.
+
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |STAMP TLV Flags|      Type     |             Length            |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                                                               |
+      |                              HMAC                             |
+      |                                                               |
+      |                                                               |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                            Figure 16: HMAC TLV
+
+   The fields are defined as follows:
+
+   STAMP TLV Flags:  An eight-bit field.  Its format is presented in
+      Figure 6.
+
+   Type:  A one-octet field.  Value 8 has been allocated by IANA
+      (<a href="#section-5.1">Section 5.1</a>).
+
+   Length:  A two-octet field, set equal to the value 16 octets.
+
+   HMAC:  A 16-octet field that carries the HMAC digest of the text of
+      all preceding TLVs.
+
+   As defined in [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>], STAMP uses HMAC-SHA-256 truncated to 128
+   bits (see [<a href="/doc/html/rfc4868" title="&quot;Using HMAC-SHA-256, HMAC-SHA- 384, and HMAC-SHA-512 with IPsec&quot;">RFC4868</a>]).  All considerations regarding using the key
+   listed in <a href="/doc/html/rfc8762#section-4.4">Section&nbsp;4.4 of [RFC8762]</a> are fully applicable to the use of
+   the HMAC TLV.  Key management and the mechanisms to distribute the
+   HMAC key are outside the scope of this specification.  The HMAC TLV
+   is anticipated to track updates in the base STAMP protocol [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>],
+   including the use of more advanced cryptographic algorithms.  HMAC is
+   calculated as defined in [<a href="/doc/html/rfc2104" title="&quot;HMAC: Keyed- Hashing for Message Authentication&quot;">RFC2104</a>] over text as the concatenation of
+   the Sequence Number field of the base STAMP packet and all preceding
+   TLVs.  The digest then MUST be truncated to 128 bits and written into
+   the HMAC field.  If the HMAC TLV is present in the extended STAMP
+   test packet, e.g., in the authenticated mode, HMAC MUST be verified
+   before using any data in the included STAMP TLVs.  If HMAC
+   verification by the Session-Reflector fails, then the Session-
+   Reflector MUST stop processing the received extended STAMP test
+   packet.  The Session-Reflector MUST copy the TLVs from the received
+   STAMP test packet into the reflected packet.  The Session-Reflector
+   MUST set the I flag in each TLV copied over into the reflected packet
+   to 1 before transmitting the reflected test packet.  If the Session-
+   Sender receives the extended STAMP test packet with I flag set to 1,
+   then the Session-Sender MUST stop processing TLVs in the reflected
+   test packet.  If HMAC verification by the Session-Sender fails, then
+   the Session-Sender MUST stop processing TLVs in the reflected
+   extended STAMP packet.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA has created the following subregistries under the &quot;Simple Two-
+   way Active Measurement Protocol (STAMP) TLV Types&quot; registry.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  STAMP TLV Types Subregistry</span>
+
+   IANA has created the &quot;STAMP TLV Types&quot; subregistry.  The code points
+   in this registry are allocated according to the registration
+   procedures [<a href="/doc/html/rfc8126" title="">RFC8126</a>] described in Table 1.
+
+                  +===========+=========================+
+                  | Range     | Registration Procedures |
+                  +===========+=========================+
+                  | 1 - 175   |       IETF Review       |
+                  +-----------+-------------------------+
+                  | 176 - 239 | First Come First Served |
+                  +-----------+-------------------------+
+                  | 240 - 251 |     Experimental Use    |
+                  +-----------+-------------------------+
+                  | 252 - 254 |       Private Use       |
+                  +-----------+-------------------------+
+
+                      Table 1: Registration Procedures
+                    for the STAMP TLV Types Subregistry
+
+   Per this document, IANA has allocated the following values in the
+   &quot;STAMP TLV Types&quot; subregistry:
+
+               +=======+=======================+===========+
+               | Value |      Description      | Reference |
+               +=======+=======================+===========+
+               | 0     |        Reserved       | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 1     |     Extra Padding     | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 2     |        Location       | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 3     | Timestamp Information | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 4     |    Class of Service   | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 5     |   Direct Measurement  | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 6     |     Access Report     | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 7     |  Follow-Up Telemetry  | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 8     |          HMAC         | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+               | 255   |        Reserved       | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+               +-------+-----------------------+-----------+
+
+                          Table 2: STAMP TLV Types
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  STAMP TLV Flags Subregistry</span>
+
+   IANA has created the &quot;STAMP TLV Flags&quot; subregistry.  The registration
+   procedure is &quot;IETF Review&quot; [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  The flags are 8 bits.  Per
+   this document, IANA has allocated the following bit positions in the
+   &quot;STAMP TLV Flags&quot; subregistry.
+
+      +==============+========+========================+===========+
+      | Bit position | Symbol |      Description       | Reference |
+      +==============+========+========================+===========+
+      |      0       |   U    |    Unrecognized TLV    |  <a href="/doc/html/rfc8972">RFC 8972</a> |
+      +--------------+--------+------------------------+-----------+
+      |      1       |   M    |     Malformed TLV      |  <a href="/doc/html/rfc8972">RFC 8972</a> |
+      +--------------+--------+------------------------+-----------+
+      |      2       |   I    | Integrity check failed |  <a href="/doc/html/rfc8972">RFC 8972</a> |
+      +--------------+--------+------------------------+-----------+
+
+                         Table 3: STAMP TLV Flags
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  STAMP Sub-TLV Types Subregistry</span>
+
+   IANA has created the &quot;STAMP Sub-TLV Types&quot; subregistry.  The code
+   points in this registry are allocated according to the registration
+   procedures [<a href="/doc/html/rfc8126" title="">RFC8126</a>] described in Table 4.
+
+                  +===========+=========================+
+                  |   Range   | Registration Procedures |
+                  +===========+=========================+
+                  | 1 - 175   |       IETF Review       |
+                  +-----------+-------------------------+
+                  | 176 - 239 | First Come First Served |
+                  +-----------+-------------------------+
+                  | 240 - 251 |     Experimental Use    |
+                  +-----------+-------------------------+
+                  | 252 - 254 |       Private Use       |
+                  +-----------+-------------------------+
+
+                      Table 4: Registration Procedures
+                        for the STAMP Sub-TLV Types
+                                Subregistry
+
+   Per this document, IANA has allocated the following values in the
+   &quot;STAMP Sub-TLV Types&quot; subregistry:
+
+        +=======+==========================+==========+===========+
+        | Value |       Description        | TLV Used | Reference |
+        +=======+==========================+==========+===========+
+        | 0     |         Reserved         |          | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 1     |    Source MAC Address    | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 2     |  Source EUI-48 Address   | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 3     |  Source EUI-64 Address   | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 4     |  Destination IP Address  | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 5     | Destination IPv4 Address | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 6     | Destination IPv6 Address | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 7     |    Source IP Address     | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 8     |   Source IPv4 Address    | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 9     |   Source IPv6 Address    | Location | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+        | 255   |         Reserved         |          | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+        +-------+--------------------------+----------+-----------+
+
+                        Table 5: STAMP Sub-TLV Types
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  STAMP Synchronization Sources Subregistry</span>
+
+   IANA has created the &quot;STAMP Synchronization Sources&quot; subregistry.
+   The code points in this registry are allocated according to the
+   registration procedures [<a href="/doc/html/rfc8126" title="">RFC8126</a>] described in Table 6.
+
+                  +===========+=========================+
+                  | Range     | Registration Procedures |
+                  +===========+=========================+
+                  | 1 - 127   |       IETF Review       |
+                  +-----------+-------------------------+
+                  | 128 - 239 | First Come First Served |
+                  +-----------+-------------------------+
+                  | 240 - 249 |     Experimental Use    |
+                  +-----------+-------------------------+
+                  | 250 - 254 |       Private Use       |
+                  +-----------+-------------------------+
+
+                      Table 6: Registration Procedures
+                       for the STAMP Synchronization
+                            Sources Subregistry
+
+   Per this document, IANA has allocated the following values in the
+   &quot;STAMP Synchronization Sources&quot; subregistry:
+
+          +=======+=================================+===========+
+          | Value |           Description           | Reference |
+          +=======+=================================+===========+
+          | 0     |             Reserved            | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+          | 1     |               NTP               | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+          | 2     |               PTP               | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+          | 3     |             SSU/BITS            | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+          | 4     | GPS/GLONASS/LORAN-C/BDS/Galileo | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+          | 5     |        Local free-running       | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+          | 255   |             Reserved            | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+          +-------+---------------------------------+-----------+
+
+                   Table 7: STAMP Synchronization Sources
+
+<span class="h3"><a class="selflink" id="section-5.5" href="#section-5.5">5.5</a>.  STAMP Timestamping Methods Subregistry</span>
+
+   IANA has created the &quot;STAMP Timestamping Methods&quot; subregistry.  The
+   code points in this registry are allocated according to the
+   registration procedures [<a href="/doc/html/rfc8126" title="">RFC8126</a>] described in Table 8.
+
+                  +===========+=========================+
+                  | Range     | Registration Procedures |
+                  +===========+=========================+
+                  | 1 - 127   |       IETF Review       |
+                  +-----------+-------------------------+
+                  | 128 - 239 | First Come First Served |
+                  +-----------+-------------------------+
+                  | 240 - 249 |     Experimental Use    |
+                  +-----------+-------------------------+
+                  | 250 - 254 |       Private Use       |
+                  +-----------+-------------------------+
+
+                      Table 8: Registration Procedures
+                     for the STAMP Timestamping Methods
+                                Subregistry
+
+   Per this document, IANA has allocated the following values in the
+   &quot;STAMP Timestamping Methods&quot; subregistry:
+
+                   +=======+===============+===========+
+                   | Value |  Description  | Reference |
+                   +=======+===============+===========+
+                   | 0     |    Reserved   | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                   +-------+---------------+-----------+
+                   | 1     |   HW Assist   | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                   +-------+---------------+-----------+
+                   | 2     |    SW Local   | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                   +-------+---------------+-----------+
+                   | 3     | Control Plane | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                   +-------+---------------+-----------+
+                   | 255   |    Reserved   | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                   +-------+---------------+-----------+
+
+                    Table 9: STAMP Timestamping Methods
+
+<span class="h3"><a class="selflink" id="section-5.6" href="#section-5.6">5.6</a>.  STAMP Return Codes Subregistry</span>
+
+   IANA has created the &quot;STAMP Return Codes&quot; subregistry.  The code
+   points in this registry are allocated according to the registration
+   procedures [<a href="/doc/html/rfc8126" title="">RFC8126</a>] described in Table 10.
+
+                  +===========+=========================+
+                  | Range     | Registration Procedures |
+                  +===========+=========================+
+                  | 1 - 127   |       IETF Review       |
+                  +-----------+-------------------------+
+                  | 128 - 239 | First Come First Served |
+                  +-----------+-------------------------+
+                  | 240 - 249 |     Experimental Use    |
+                  +-----------+-------------------------+
+                  | 250 - 254 |       Private Use       |
+                  +-----------+-------------------------+
+
+                     Table 10: Registration Procedures
+                         for the STAMP Return Codes
+                                Subregistry
+
+   Per this document, IANA has allocated the following values in the
+   &quot;STAMP Return Codes&quot; subregistry:
+
+                +=======+=====================+===========+
+                | Value |     Description     | Reference |
+                +=======+=====================+===========+
+                | 0     |       Reserved      | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                +-------+---------------------+-----------+
+                | 1     |  Network available  | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                +-------+---------------------+-----------+
+                | 2     | Network unavailable | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                +-------+---------------------+-----------+
+                | 255   |       Reserved      | <a href="/doc/html/rfc8972">RFC 8972</a>  |
+                +-------+---------------------+-----------+
+
+                        Table 11: STAMP Return Codes
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   This document defines extensions to STAMP [<a href="/doc/html/rfc8762" title="&quot;Simple Two-Way Active Measurement Protocol&quot;">RFC8762</a>] and inherits all
+   the security considerations applicable to the base protocol.
+   Additionally, the HMAC TLV is defined in this document.  Though the
+   HMAC TLV protects the integrity of STAMP extensions, it does not
+   protect against a replay attack.  The use of the HMAC TLV is
+   discussed in detail in <a href="#section-4.8">Section 4.8</a>.
+
+   To protect against a malformed TLV, an implementation of a Session-
+   Sender and Session-Reflector MUST:
+
+   *  check the setting of the M flag and
+
+   *  validate the Length field value.
+
+   As this specification defines the mechanism to test DSCP mapping,
+   this document inherits all the security considerations discussed in
+   [<a href="/doc/html/rfc2474" title="&quot;Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers&quot;">RFC2474</a>].  Monitoring and optional control of DSCP using the CoS TLV
+   may be used across the Internet so that the Session-Sender and the
+   Session-Reflector are located in domains that use different CoS
+   profiles.  Thus, it is essential that an operator verify the set of
+   CoS values that is used in the Session-Reflector&#x27;s domain.  Also, an
+   implementation of a Session-Reflector SHOULD support a local policy
+   to confirm whether the value sent by the Session-Sender can be used
+   as the value of the DSCP field.  <a href="#section-4.4">Section 4.4</a> defines the use of that
+   local policy.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2104">RFC2104</a>]  Krawczyk, H., Bellare, M., and R. Canetti, &quot;HMAC: Keyed-
+              Hashing for Message Authentication&quot;, <a href="/doc/html/rfc2104">RFC 2104</a>,
+              DOI 10.17487/RFC2104, February 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2104">https://www.rfc-editor.org/info/rfc2104</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8762">RFC8762</a>]  Mirsky, G., Jun, G., Nydell, H., and R. Foote, &quot;Simple
+              Two-Way Active Measurement Protocol&quot;, <a href="/doc/html/rfc8762">RFC 8762</a>,
+              DOI 10.17487/RFC8762, March 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8762">https://www.rfc-editor.org/info/rfc8762</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-GPS">GPS</a>]      &quot;Global Positioning System (GPS) Standard Positioning
+              Service (SPS) Performance Standard&quot;, GPS SPS 5th Edition,
+              April 2020.
+
+   [<a id="ref-IEEE.1588.2008">IEEE.1588.2008</a>]
+              &quot;IEEE Standard for a Precision Clock Synchronization
+              Protocol for Networked Measurement and Control Systems&quot;,
+              IEEE Std. 1588-2008, DOI 10.1109/IEEESTD.2008.4579760,
+              July 2008, &lt;<a href="https://doi.org/10.1109/IEEESTD.2008.4579760">https://doi.org/10.1109/IEEESTD.2008.4579760</a>&gt;.
+
+   [<a id="ref-NUM-IDS-GEN">NUM-IDS-GEN</a>]
+              Gont, F. and I. Arce, &quot;On the Generation of Transient
+              Numeric Identifiers&quot;, Work in Progress, Internet-Draft,
+              <a href="/doc/html/draft-irtf-pearg-numeric-ids-generation-06">draft-irtf-pearg-numeric-ids-generation-06</a>, 13 January
+              2021, &lt;<a href="https://tools.ietf.org/html/draft-irtf-pearg-numeric-ids-generation-06">https://tools.ietf.org/html/draft-irtf-pearg-</a>
+              <a href="https://tools.ietf.org/html/draft-irtf-pearg-numeric-ids-generation-06">numeric-ids-generation-06</a>&gt;.
+
+   [<a id="ref-RFC2474">RFC2474</a>]  Nichols, K., Blake, S., Baker, F., and D. Black,
+              &quot;Definition of the Differentiated Services Field (DS
+              Field) in the IPv4 and IPv6 Headers&quot;, <a href="/doc/html/rfc2474">RFC 2474</a>,
+              DOI 10.17487/RFC2474, December 1998,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2474">https://www.rfc-editor.org/info/rfc2474</a>&gt;.
+
+   [<a id="ref-RFC4868">RFC4868</a>]  Kelly, S. and S. Frankel, &quot;Using HMAC-SHA-256, HMAC-SHA-
+              384, and HMAC-SHA-512 with IPsec&quot;, <a href="/doc/html/rfc4868">RFC 4868</a>,
+              DOI 10.17487/RFC4868, May 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4868">https://www.rfc-editor.org/info/rfc4868</a>&gt;.
+
+   [<a id="ref-RFC5357">RFC5357</a>]  Hedayat, K., Krzanowski, R., Morton, A., Yum, K., and J.
+              Babiarz, &quot;A Two-Way Active Measurement Protocol (TWAMP)&quot;,
+              <a href="/doc/html/rfc5357">RFC 5357</a>, DOI 10.17487/RFC5357, October 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5357">https://www.rfc-editor.org/info/rfc5357</a>&gt;.
+
+   [<a id="ref-RFC5905">RFC5905</a>]  Mills, D., Martin, J., Ed., Burbank, J., and W. Kasch,
+              &quot;Network Time Protocol Version 4: Protocol and Algorithms
+              Specification&quot;, <a href="/doc/html/rfc5905">RFC 5905</a>, DOI 10.17487/RFC5905, June 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5905">https://www.rfc-editor.org/info/rfc5905</a>&gt;.
+
+   [<a id="ref-TS23501">TS23501</a>]  3GPP, &quot;Technical Specification Group Services and System
+              Aspects; System Architecture for the 5G System (5GS);
+              Stage 2 (Release 16)&quot;, 3GPP TS 23.501, 2019.
+
+Acknowledgments
+
+   The authors very much appreciate the thorough review and thoughtful
+   comments received from Tianran Zhou, Rakesh Gandhi, Yuezhong Song,
+   and Yali Wang.  The authors express their gratitude to Al Morton for
+   his comments and valuable suggestions.  The authors greatly
+   appreciate the comments and thoughtful suggestions received from
+   Martin Duke.
+
+Contributors
+
+   The following individual contributed text to this document:
+
+   Guo Jun
+   ZTE Corporation
+   68# Zijinghua Road
+   Nanjing
+   Jiangsu, 210012
+   China
+
+   Phone: +86 18105183663
+   Email: guo.jun2@zte.com.cn
+
+
+Authors&#x27; Addresses
+
+   Greg Mirsky
+   ZTE Corp.
+
+   Email: gregimirsky@gmail.com
+
+
+   Xiao Min
+   ZTE Corp.
+
+   Email: xiao.min2@zte.com.cn
+
+
+   Henrik Nydell
+   Accedian Networks
+
+   Email: hnydell@accedian.com
+
+
+   Richard Foote
+   Nokia
+
+   Email: footer.foote@nokia.com
+
+
+   Adi Masputra
+   Apple Inc.
+   One Apple Park Way
+   Cupertino, CA 95014
+   United States of America
+
+   Email: adi@apple.com
+
+
+   Ernesto Ruffini
+   OutSys
+   via Caracciolo, 65
+   20155 Milan
+   Italy
+
+   Email: eruffini@outsys.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

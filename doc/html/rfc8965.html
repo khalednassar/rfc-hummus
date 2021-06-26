@@ -1,0 +1,759 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8965
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-babel-applicability/">
+  <meta name="description" content="Applicability of the Babel Routing Protocol (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8965.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8965.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8965.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8965.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8965/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8965/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/babel/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-babel-applicability@ietf.org?subject=draft-ietf-babel-applicability" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-babel-applicability-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-babel-applicability-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-babel-applicability-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-babel-applicability-10">draft-ietf-babel-applicability-10</a>                    Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                     J. Chroboczek
+Request for Comments: 8965             IRIF, University of Paris-Diderot
+Category: Informational                                     January 2021
+ISSN: 2070-1721
+
+
+              <span class="h1">Applicability of the Babel Routing Protocol</span>
+
+Abstract
+
+   Babel is a routing protocol based on the distance-vector algorithm
+   augmented with mechanisms for loop avoidance and starvation
+   avoidance.  This document describes a number of niches where Babel
+   has been found to be useful and that are arguably not adequately
+   served by more mature protocols.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8965">https://www.rfc-editor.org/info/rfc8965</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction and Background
+     1.1.  Technical Overview of the Babel Protocol
+   2.  Properties of the Babel Protocol
+     2.1.  Simplicity and Implementability
+     2.2.  Robustness
+     2.3.  Extensibility
+     2.4.  Limitations
+   3.  Successful Deployments of Babel
+     3.1.  Heterogeneous Networks
+     3.2.  Large-Scale Overlay Networks
+     3.3.  Pure Mesh Networks
+     3.4.  Small Unmanaged Networks
+   4.  Security Considerations
+   5.  References
+     5.1.  Normative References
+     5.2.  Informative References
+   Acknowledgments
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction and Background</span>
+
+   Babel [<a href="/doc/html/rfc8966" title="&quot;The Babel Routing Protocol&quot;">RFC8966</a>] is a routing protocol based on the familiar distance-
+   vector algorithm (sometimes known as distributed Bellman-Ford)
+   augmented with mechanisms for loop avoidance (there is no &quot;counting
+   to infinity&quot;) and starvation avoidance.  This document describes a
+   number of niches where Babel is useful and that are arguably not
+   adequately served by more mature protocols such as OSPF [<a href="/doc/html/rfc5340" title="&quot;OSPF for IPv6&quot;">RFC5340</a>] and
+   IS-IS [<a href="/doc/html/rfc1195" title="&quot;Use of OSI IS-IS for routing in TCP/IP and dual environments&quot;">RFC1195</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Technical Overview of the Babel Protocol</span>
+
+   At its core, Babel is a distance-vector protocol based on the
+   distributed Bellman-Ford algorithm, similar in principle to RIP
+   [<a href="/doc/html/rfc2453" title="&quot;RIP Version 2&quot;">RFC2453</a>] but with two important extensions: provisions for sensing
+   of neighbour reachability, bidirectional reachability, and link
+   quality, and support for multiple address families (e.g., IPv6 and
+   IPv4) in a single protocol instance.
+
+   Algorithms of this class are simple to understand and simple to
+   implement, but unfortunately they do not work very well -- they
+   suffer from &quot;counting to infinity&quot;, a case of pathologically slow
+   convergence in some topologies after a link failure.  Babel uses a
+   mechanism pioneered by the Enhanced Interior Gateway Routing Protocol
+   (EIGRP) [<a href="#ref-DUAL" title="&quot;Loop-Free Routing Using Diffusing Computations&quot;">DUAL</a>] [<a href="/doc/html/rfc7868" title="&quot;Cisco&#x27;s Enhanced Interior Gateway Routing Protocol (EIGRP)&quot;">RFC7868</a>], known as &quot;feasibility&quot;, which avoids
+   routing loops and therefore makes counting to infinity impossible.
+
+   Feasibility is a conservative mechanism, one that not only avoids all
+   looping routes but also rejects some loop-free routes.  Thus, it can
+   lead to a situation known as &quot;starvation&quot;, where a router rejects all
+   routes to a given destination, even those that are loop-free.  In
+   order to recover from starvation, Babel uses a mechanism pioneered by
+   the Destination-Sequenced Distance-Vector Routing Protocol (DSDV)
+   [<a href="#ref-DSDV" title="&quot;Highly Dynamic Destination- Sequenced Distance-Vector Routing (DSDV) for Mobile Computers&quot;">DSDV</a>] and known as &quot;sequenced routes&quot;.  In Babel, this mechanism is
+   generalised to deal with prefixes of arbitrary length and routes
+   announced at multiple points in a single routing domain (DSDV was a
+   pure mesh protocol, and only carried host routes).
+
+   In DSDV, the sequenced routes algorithm is slow to react to a
+   starvation episode.  In Babel, starvation recovery is accelerated by
+   using explicit requests (known as &quot;seqno requests&quot; in the protocol)
+   that signal a starvation episode and cause a new sequenced route to
+   be propagated in a timely manner.  In the absence of packet loss,
+   this mechanism is provably complete and clears the starvation in time
+   proportional to the diameter of the network, at the cost of some
+   additional signalling traffic.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Properties of the Babel Protocol</span>
+
+   This section describes the properties of the Babel protocol as well
+   as its known limitations.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Simplicity and Implementability</span>
+
+   Babel is a conceptually simple protocol.  It consists of a familiar
+   algorithm (distributed Bellman-Ford) augmented with three simple and
+   well-defined mechanisms (feasibility, sequenced routes, and explicit
+   requests).  Given a sufficiently friendly audience, the principles
+   behind Babel can be explained in 15 minutes, and a full description
+   of the protocol can be done in 52 minutes (one microcentury).
+
+   An important consequence is that Babel is easy to implement.  At the
+   time of writing, there exist four independent, interoperable
+   implementations, including one that was reportedly written and
+   debugged in just two nights.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Robustness</span>
+
+   The fairly strong properties of the Babel protocol (convergence, loop
+   avoidance, and starvation avoidance) rely on some reasonably weak
+   properties of the network and the metric being used.  The most
+   significant are:
+
+      causality:  the &quot;happens-before&quot; relation is acyclic (intuitively,
+         a control message is not received before it has been sent);
+
+      strict monotonicity of the metric:  for any metric M and link
+         cost C, M &lt; C + M (intuitively, this implies that cycles have a
+         strictly positive metric);
+
+      left-distributivity of the metric:  for any metrics M and M&#x27; and
+         cost C, if M &lt;= M&#x27;, then C + M &lt;= C + M&#x27; (intuitively, this
+         implies that a good choice made by a neighbour B of a node A is
+         also a good choice for A).
+
+   See [<a href="#ref-METAROUTING">METAROUTING</a>] for more information about these properties and
+   their consequences.
+
+   In particular, Babel does not assume a reliable transport, it does
+   not assume ordered delivery, it does not assume that communication is
+   transitive, and it does not require that the metric be discrete
+   (continuous metrics are possible, for example, reflecting packet loss
+   rates).  This is in contrast to link-state routing protocols such as
+   OSPF [<a href="/doc/html/rfc5340" title="&quot;OSPF for IPv6&quot;">RFC5340</a>] or IS-IS [<a href="/doc/html/rfc1195" title="&quot;Use of OSI IS-IS for routing in TCP/IP and dual environments&quot;">RFC1195</a>], which incorporate a reliable
+   flooding algorithm and make stronger requirements on the underlying
+   network and metric.
+
+   These weak requirements make Babel a robust protocol:
+
+      robust with respect to unusual networks:  an unusual network (non-
+         transitive links, unstable link costs, etc.) is likely not to
+         violate the assumptions of the protocol;
+
+      robust with respect to novel metrics:  an unusual metric
+         (continuous, constantly fluctuating, etc.) is likely not to
+         violate the assumptions of the protocol.
+
+   <a href="#section-3">Section 3</a> gives examples of successful deployments of Babel that
+   illustrate these properties.
+
+   These robustness properties have important consequences for the
+   applicability of the protocol: Babel works (more or less efficiently)
+   in a range of circumstances where traditional routing protocols don&#x27;t
+   work well (or at all).
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Extensibility</span>
+
+   Babel&#x27;s packet format has a number of features that make the protocol
+   extensible (see <a href="/doc/html/rfc8966#appendix-D">Appendix&nbsp;D of [RFC8966]</a>), and a number of extensions
+   have been designed to make Babel work better in situations that were
+   not envisioned when the protocol was initially designed.  The ease of
+   extensibility is not an accident, but a consequence of the design of
+   the protocol: it is reasonably easy to check whether a given
+   extension violates the assumptions on which Babel relies.
+
+   All of the extensions designed to date interoperate with the base
+   protocol and with each other.  This, again, is a consequence of the
+   protocol design: in order to check that two extensions to the Babel
+   protocol are interoperable, it is enough to verify that the
+   interaction of the two does not violate the base protocol&#x27;s
+   assumptions.
+
+   Notable extensions deployed to date include:
+
+   *  source-specific routing (also known as Source-Address Dependent
+      Routing, SADR) [<a href="#ref-BABEL-SS" title="&quot;Source-Specific Routing in Babel&quot;">BABEL-SS</a>] allows forwarding to take a packet&#x27;s
+      source address into account, thus enabling a cheap form of
+      multihoming [<a href="#ref-SS-ROUTING">SS-ROUTING</a>];
+
+   *  RTT-based routing [<a href="#ref-BABEL-RTT">BABEL-RTT</a>] minimises link delay, which is
+      useful in overlay network (where both hop count and packet loss
+      are poor metrics).
+
+   Some other extensions have been designed but have not seen deployment
+   in production (and their usefulness is yet to be demonstrated):
+
+   *  frequency-aware routing [<a href="#ref-BABEL-Z" title="&quot;Diversity Routing for the Babel Routing Protocol&quot;">BABEL-Z</a>] aims to minimise radio
+      interference in wireless networks;
+
+   *  ToS-aware routing [<a href="#ref-BABEL-TOS">BABEL-TOS</a>] allows routing to take a packet&#x27;s
+      Type of Service (ToS) marking into account for selected routes
+      without incurring the full cost of a multi-topology routing
+      protocol.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Limitations</span>
+
+   Babel has some undesirable properties that make it suboptimal or even
+   unusable in some deployments.
+
+<span class="h4"><a class="selflink" id="section-2.4.1" href="#section-2.4.1">2.4.1</a>.  Periodic Updates</span>
+
+   The main mechanisms used by Babel to reconverge after a topology
+   change are reactive: triggered updates, triggered retractions and
+   explicit requests.  However, Babel relies on periodic updates to
+   clear pathologies after a mobility event or in the presence of heavy
+   packet loss.  The use of periodic updates makes Babel unsuitable in
+   at least two kinds of environments:
+
+      large, stable networks:  since Babel sends periodic updates even
+         in the absence of topology changes, in well-managed, large,
+         stable networks the amount of control traffic will be reduced
+         by using a protocol that uses a reliable transport (such as
+         OSPF, IS-IS, or EIGRP);
+
+      low-power networks:  the periodic updates use up battery power
+         even when there are no topology changes and no user traffic,
+         which makes Babel wasteful in low-power networks.
+
+<span class="h4"><a class="selflink" id="section-2.4.2" href="#section-2.4.2">2.4.2</a>.  Full Routing Table</span>
+
+   While there exist techniques that allow a Babel speaker to function
+   with a partial routing table (e.g., by learning just a default route
+   or, more generally, performing route aggregation), Babel is designed
+   around the assumption that every router has a full routing table.  In
+   networks where some nodes are too constrained to hold a full routing
+   table, it might be preferable to use a protocol that was designed
+   from the outset to work with a partial routing table (such as the Ad
+   hoc On-Demand Distance Vector (AODV) routing protocol [<a href="/doc/html/rfc3561" title="&quot;Ad hoc On- Demand Distance Vector (AODV) Routing&quot;">RFC3561</a>], the
+   IPv6 Routing Protocol for Low-Power and Lossy Networks (RPL)
+   [<a href="/doc/html/rfc6550" title="&quot;RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks&quot;">RFC6550</a>], or the Lightweight On-demand Ad hoc Distance-vector
+   Routing Protocol - Next Generation (LOADng) [<a href="#ref-LOADng" title="&quot;The Lightweight On-demand Ad hoc Distance- vector Routing Protocol - Next Generation (LOADng)&quot;">LOADng</a>]).
+
+<span class="h4"><a class="selflink" id="section-2.4.3" href="#section-2.4.3">2.4.3</a>.  Slow Aggregation</span>
+
+   Babel&#x27;s loop-avoidance mechanism relies on making a route unreachable
+   after a retraction until all neighbours have been guaranteed to have
+   acted upon the retraction, even in the presence of packet loss.
+   Unless the second algorithm described in <a href="/doc/html/rfc8966#section-3.5.5">Section&nbsp;3.5.5 of [RFC8966]</a>
+   is implemented, this entails that a node is unreachable for a few
+   minutes after the most specific route to it has been retracted.  This
+   delay makes Babel slow to recover from a topology change in networks
+   that perform automatic route aggregation.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Successful Deployments of Babel</span>
+
+   This section gives a few examples of environments where Babel has
+   been successfully deployed.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Heterogeneous Networks</span>
+
+   Babel is able to deal with both classical, prefix-based (&quot;Internet-
+   style&quot;) routing and flat (&quot;mesh-style&quot;) routing over non-transitive
+   link technologies.  Just like traditional distance-vector protocols,
+   Babel is able to carry prefixes of arbitrary length, to suppress
+   redundant announcements by applying the split-horizon optimisation
+   where applicable, and can be configured to filter out redundant
+   announcements (manual aggregation).  Just like specialised mesh
+   protocols, Babel doesn&#x27;t by default assume that links are transitive
+   or symmetric, can dynamically compute metrics based on an estimation
+   of link quality, and carries large numbers of host routes efficiently
+   by omitting common prefixes.
+
+   Because of these properties, Babel has seen a number of successful
+   deployments in medium-sized heterogeneous networks, networks that
+   combine a wired, aggregated backbone with meshy wireless bits at the
+   edges.
+
+   Efficient operation in heterogeneous networks requires the
+   implementation to distinguish between wired and wireless links, and
+   to perform link quality estimation on wireless links.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Large-Scale Overlay Networks</span>
+
+   The algorithms used by Babel (loop avoidance, hysteresis, delayed
+   updates) allow it to remain stable in the presence of unstable
+   metrics, even in the presence of a feedback loop.  For this reason,
+   it has been successfully deployed in large-scale overlay networks,
+   built out of thousands of tunnels spanning continents, where it is
+   used with a metric computed from links&#x27; latencies.
+
+   This particular application depends on the extension for RTT-
+   sensitive routing [<a href="#ref-DELAY-BASED">DELAY-BASED</a>].
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Pure Mesh Networks</span>
+
+   While Babel is a general-purpose routing protocol, it has been shown
+   to be competitive with dedicated routing protocols for wireless mesh
+   networks [<a href="#ref-REAL-WORLD">REAL-WORLD</a>] [<a href="#ref-BRIDGING-LAYERS">BRIDGING-LAYERS</a>].  Although this particular
+   niche is already served by a number of mature protocols, notably the
+   Optimized Link State Routing Protocol with Expected Transmission
+   Count (OLSR-ETX) and OLSRv2 (OLSR Version 2) [<a href="/doc/html/rfc7181" title="&quot;The Optimized Link State Routing Protocol Version 2&quot;">RFC7181</a>] (equipped
+   e.g., with the Directional Airtime (DAT) metric [<a href="/doc/html/rfc7779" title="&quot;Directional Airtime Metric Based on Packet Sequence Numbers for Optimized Link State Routing Version 2 (OLSRv2)&quot;">RFC7779</a>]), Babel has
+   seen a moderate amount of successful deployment in pure mesh
+   networks.
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Small Unmanaged Networks</span>
+
+   Because of its small size and simple configuration, Babel has been
+   deployed in small, unmanaged networks (e.g., home and small office
+   networks), where it serves as a more efficient replacement for RIP
+   [<a href="/doc/html/rfc2453" title="&quot;RIP Version 2&quot;">RFC2453</a>], over which it has two significant advantages: the ability
+   to route multiple address families (IPv6 and IPv4) in a single
+   protocol instance and good support for using wireless links for
+   transit.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   As is the case in all distance-vector routing protocols, a Babel
+   speaker receives reachability information from its neighbours, which
+   by default is trusted by all nodes in the routing domain.
+
+   At the time of writing, the Babel protocol is usually run over a
+   network that is secured either at the physical layer (e.g.,
+   physically protecting Ethernet sockets) or at the link layer (using a
+   protocol such as Wi-Fi Protected Access 2 (WPA2)).  If Babel is being
+   run over an unprotected network, then the routing traffic needs to be
+   protected using a sufficiently strong cryptographic mechanism.
+
+   At the time of writing, two such mechanisms have been defined.
+   Message Authentication Code (MAC) authentication for Babel (Babel-
+   MAC) [<a href="/doc/html/rfc8967" title="&quot;MAC Authentication for the Babel Routing Protocol&quot;">RFC8967</a>] is a simple and easy to implement mechanism that only
+   guarantees authenticity, integrity, and replay protection of the
+   routing traffic and only supports symmetric keying with a small
+   number of keys (typically just one or two).  Babel-DTLS [<a href="/doc/html/rfc8968" title="&quot;Babel Routing Protocol over Datagram Transport Layer Security&quot;">RFC8968</a>] is
+   a more complex mechanism that requires some minor changes to be made
+   to a typical Babel implementation and depends on a DTLS stack being
+   available, but inherits all of the features of DTLS, notably
+   confidentiality, optional replay protection, and the ability to use
+   asymmetric keys.
+
+   Due to its simplicity, Babel-MAC should be the preferred security
+   mechanism in most deployments, with Babel-DTLS available for networks
+   that require its additional features.
+
+   In addition to the above, the information that a mobile Babel node
+   announces to the whole routing domain is often sufficient to
+   determine a mobile node&#x27;s physical location with reasonable
+   precision.  This might make Babel unapplicable in scenarios where a
+   node&#x27;s location is considered confidential.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC8966">RFC8966</a>]  Chroboczek, J. and D. Schinazi, &quot;The Babel Routing
+              Protocol&quot;, <a href="/doc/html/rfc8966">RFC 8966</a>, DOI 10.17487/RFC8966, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8966">https://www.rfc-editor.org/info/rfc8966</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Informative References</span>
+
+   [<a id="ref-BABEL-RTT">BABEL-RTT</a>]
+              Jonglez, B. and J. Chroboczek, &quot;Delay-based Metric
+              Extension for the Babel Routing Protocol&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-jonglez-babel-rtt-extension-02">draft-jonglez-babel-rtt-</a>
+              <a href="/doc/html/draft-jonglez-babel-rtt-extension-02">extension-02</a>, 11 March 2019, &lt;<a href="https://tools.ietf.org/html/draft-jonglez-babel-rtt-extension-02">https://tools.ietf.org/html/</a>
+              <a href="https://tools.ietf.org/html/draft-jonglez-babel-rtt-extension-02">draft-jonglez-babel-rtt-extension-02</a>&gt;.
+
+   [<a id="ref-BABEL-SS">BABEL-SS</a>] Boutier, M. and J. Chroboczek, &quot;Source-Specific Routing in
+              Babel&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-babel-source-specific-07">draft-ietf-</a>
+              <a href="/doc/html/draft-ietf-babel-source-specific-07">babel-source-specific-07</a>, 28 October 2020,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-babel-source-specific-07">https://tools.ietf.org/html/draft-ietf-babel-source-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-babel-source-specific-07">specific-07</a>&gt;.
+
+   [<a id="ref-BABEL-TOS">BABEL-TOS</a>]
+              Chouasne, G. and J. Chroboczek, &quot;TOS-Specific Routing in
+              Babel&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-chouasne-babel-tos-specific-00">draft-chouasne-</a>
+              <a href="/doc/html/draft-chouasne-babel-tos-specific-00">babel-tos-specific-00</a>, 3 July 2017,
+              &lt;<a href="https://tools.ietf.org/html/draft-chouasne-babel-tos-specific-00">https://tools.ietf.org/html/draft-chouasne-babel-tos-</a>
+              <a href="https://tools.ietf.org/html/draft-chouasne-babel-tos-specific-00">specific-00</a>&gt;.
+
+   [<a id="ref-BABEL-Z">BABEL-Z</a>]  Chroboczek, J., &quot;Diversity Routing for the Babel Routing
+              Protocol&quot;, Work in Progress, Internet-Draft, <a href="/doc/html/draft-chroboczek-babel-diversity-routing-01">draft-</a>
+              <a href="/doc/html/draft-chroboczek-babel-diversity-routing-01">chroboczek-babel-diversity-routing-01</a>, 15 February 2016,
+              &lt;<a href="https://tools.ietf.org/html/draft-chroboczek-babel-diversity-routing-01">https://tools.ietf.org/html/draft-chroboczek-babel-</a>
+              <a href="https://tools.ietf.org/html/draft-chroboczek-babel-diversity-routing-01">diversity-routing-01</a>&gt;.
+
+   [<a id="ref-BRIDGING-LAYERS">BRIDGING-LAYERS</a>]
+              Murray, D., Dixon, M., and T. Koziniec, &quot;An Experimental
+              Comparison of Routing Protocols in Multi Hop Ad Hoc
+              Networks&quot;, In Proceedings of ATNAC,
+              DOI 10.1109/ATNAC.2010.5680190, October 2010,
+              &lt;<a href="https://doi.org/10.1109/ATNAC.2010.5680190">https://doi.org/10.1109/ATNAC.2010.5680190</a>&gt;.
+
+   [<a id="ref-DELAY-BASED">DELAY-BASED</a>]
+              Jonglez, B., Boutier, M., and J. Chroboczek, &quot;A delay-
+              based routing metric&quot;, March 2014,
+              &lt;<a href="http://arxiv.org/abs/1403.3488">http://arxiv.org/abs/1403.3488</a>&gt;.
+
+   [<a id="ref-DSDV">DSDV</a>]     Perkins, C. and P. Bhagwat, &quot;Highly Dynamic Destination-
+              Sequenced Distance-Vector Routing (DSDV) for Mobile
+              Computers&quot;, ACM SIGCOMM &#x27;94: Proceedings of the Conference
+              on Communications Architectures, Protocols and
+              Applications, pp. 234-244, DOI 10.1145/190314.190336,
+              October 1994, &lt;<a href="https://doi.org/10.1145/190314.190336">https://doi.org/10.1145/190314.190336</a>&gt;.
+
+   [<a id="ref-DUAL">DUAL</a>]     Garcia-Luna-Aceves, J. J., &quot;Loop-Free Routing Using
+              Diffusing Computations&quot;, IEEE/ACM Transactions on
+              Networking, Volume 1, Issue 1, DOI 10.1109/90.222913,
+              February 1993, &lt;<a href="https://doi.org/10.1109/90.222913">https://doi.org/10.1109/90.222913</a>&gt;.
+
+   [<a id="ref-LOADng">LOADng</a>]   Clausen, T. H., Verdiere, A. C. D., Yi, J., Niktash, A.,
+              Igarashi, Y., Satoh, H., Herberg, U., Lavenu, C., Lys, T.,
+              and J. Dean, &quot;The Lightweight On-demand Ad hoc Distance-
+              vector Routing Protocol - Next Generation (LOADng)&quot;, Work
+              in Progress, Internet-Draft, <a href="/doc/html/draft-clausen-lln-loadng-15">draft-clausen-lln-loadng-15</a>,
+              4 July 2016,
+              &lt;<a href="https://tools.ietf.org/html/draft-clausen-lln-loadng-15">https://tools.ietf.org/html/draft-clausen-lln-loadng-15</a>&gt;.
+
+   [<a id="ref-METAROUTING">METAROUTING</a>]
+              Griffin, T. G. and J. L. Sobrinho, &quot;Metarouting&quot;, ACM
+              SIGCOMM Computer Communication Review, Volume 35, Issue 4,
+              DOI 10.1145/1090191.1080094, August 2005,
+              &lt;<a href="https://doi.org/10.1145/1090191.1080094">https://doi.org/10.1145/1090191.1080094</a>&gt;.
+
+   [<a id="ref-REAL-WORLD">REAL-WORLD</a>]
+              Abolhasan, M., Hagelstein, B., and J. C.-P. Wang, &quot;Real-
+              world performance of current proactive multi-hop mesh
+              protocols&quot;, 15th Asia-Pacific Conference on
+              Communications, DOI 10.1109/APCC.2009.5375690, October
+              2009, &lt;<a href="https://doi.org/10.1109/APCC.2009.5375690">https://doi.org/10.1109/APCC.2009.5375690</a>&gt;.
+
+   [<a id="ref-RFC1195">RFC1195</a>]  Callon, R., &quot;Use of OSI IS-IS for routing in TCP/IP and
+              dual environments&quot;, <a href="/doc/html/rfc1195">RFC 1195</a>, DOI 10.17487/RFC1195,
+              December 1990, &lt;<a href="https://www.rfc-editor.org/info/rfc1195">https://www.rfc-editor.org/info/rfc1195</a>&gt;.
+
+   [<a id="ref-RFC2453">RFC2453</a>]  Malkin, G., &quot;RIP Version 2&quot;, STD 56, <a href="/doc/html/rfc2453">RFC 2453</a>,
+              DOI 10.17487/RFC2453, November 1998,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2453">https://www.rfc-editor.org/info/rfc2453</a>&gt;.
+
+   [<a id="ref-RFC3561">RFC3561</a>]  Perkins, C., Belding-Royer, E., and S. Das, &quot;Ad hoc On-
+              Demand Distance Vector (AODV) Routing&quot;, <a href="/doc/html/rfc3561">RFC 3561</a>,
+              DOI 10.17487/RFC3561, July 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3561">https://www.rfc-editor.org/info/rfc3561</a>&gt;.
+
+   [<a id="ref-RFC5340">RFC5340</a>]  Coltun, R., Ferguson, D., Moy, J., and A. Lindem, &quot;OSPF
+              for IPv6&quot;, <a href="/doc/html/rfc5340">RFC 5340</a>, DOI 10.17487/RFC5340, July 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5340">https://www.rfc-editor.org/info/rfc5340</a>&gt;.
+
+   [<a id="ref-RFC6550">RFC6550</a>]  Winter, T., Ed., Thubert, P., Ed., Brandt, A., Hui, J.,
+              Kelsey, R., Levis, P., Pister, K., Struik, R., Vasseur,
+              JP., and R. Alexander, &quot;RPL: IPv6 Routing Protocol for
+              Low-Power and Lossy Networks&quot;, <a href="/doc/html/rfc6550">RFC 6550</a>,
+              DOI 10.17487/RFC6550, March 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6550">https://www.rfc-editor.org/info/rfc6550</a>&gt;.
+
+   [<a id="ref-RFC7181">RFC7181</a>]  Clausen, T., Dearlove, C., Jacquet, P., and U. Herberg,
+              &quot;The Optimized Link State Routing Protocol Version 2&quot;,
+              <a href="/doc/html/rfc7181">RFC 7181</a>, DOI 10.17487/RFC7181, April 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7181">https://www.rfc-editor.org/info/rfc7181</a>&gt;.
+
+   [<a id="ref-RFC7779">RFC7779</a>]  Rogge, H. and E. Baccelli, &quot;Directional Airtime Metric
+              Based on Packet Sequence Numbers for Optimized Link State
+              Routing Version 2 (OLSRv2)&quot;, <a href="/doc/html/rfc7779">RFC 7779</a>,
+              DOI 10.17487/RFC7779, April 2016,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7779">https://www.rfc-editor.org/info/rfc7779</a>&gt;.
+
+   [<a id="ref-RFC7868">RFC7868</a>]  Savage, D., Ng, J., Moore, S., Slice, D., Paluch, P., and
+              R. White, &quot;Cisco&#x27;s Enhanced Interior Gateway Routing
+              Protocol (EIGRP)&quot;, <a href="/doc/html/rfc7868">RFC 7868</a>, DOI 10.17487/RFC7868, May
+              2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7868">https://www.rfc-editor.org/info/rfc7868</a>&gt;.
+
+   [<a id="ref-RFC8967">RFC8967</a>]  Dô, C., Kolodziejak, W., and J. Chroboczek, &quot;MAC
+              Authentication for the Babel Routing Protocol&quot;, <a href="/doc/html/rfc8967">RFC 8967</a>,
+              DOI 10.17487/RFC8967, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8967">https://www.rfc-editor.org/info/rfc8967</a>&gt;.
+
+   [<a id="ref-RFC8968">RFC8968</a>]  Décimo, A., Schinazi, D., and J. Chroboczek, &quot;Babel
+              Routing Protocol over Datagram Transport Layer Security&quot;,
+              <a href="/doc/html/rfc8968">RFC 8968</a>, DOI 10.17487/RFC8968, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8968">https://www.rfc-editor.org/info/rfc8968</a>&gt;.
+
+   [<a id="ref-SS-ROUTING">SS-ROUTING</a>]
+              Boutier, M. and J. Chroboczek, &quot;Source-specific routing&quot;,
+              In Proceedings of the IFIP Networking Conference,
+              DOI 10.1109/IFIPNetworking.2015.7145305, May 2015,
+              &lt;<a href="http://arxiv.org/pdf/1403.0445">http://arxiv.org/pdf/1403.0445</a>&gt;.
+
+Acknowledgments
+
+   The author is indebted to Jean-Paul Smetz and Alexander Vainshtein
+   for their input to this document.
+
+Author&#x27;s Address
+
+   Juliusz Chroboczek
+   IRIF, University of Paris-Diderot
+   Case 7014
+   75205 Paris CEDEX 13
+   France
+
+   Email: jch@irif.fr
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

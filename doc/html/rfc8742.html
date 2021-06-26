@@ -1,0 +1,698 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8742
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-cbor-sequence/">
+  <meta name="description" content="Concise Binary Object Representation (CBOR) Sequences (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8742.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8742.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8742.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8742.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8742/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8742/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/cbor/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-cbor-sequence@ietf.org?subject=draft-ietf-cbor-sequence" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-cbor-sequence-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-cbor-sequence-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-cbor-sequence-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-cbor-sequence-02">draft-ietf-cbor-sequence-02</a>                      Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        C. Bormann
+Request for Comments: 8742                        Universität Bremen TZI
+Category: Standards Track                                  February 2020
+ISSN: 2070-1721
+
+
+         <span class="h1">Concise Binary Object Representation (CBOR) Sequences</span>
+
+Abstract
+
+   This document describes the Concise Binary Object Representation
+   (CBOR) Sequence format and associated media type &quot;application/cbor-
+   seq&quot;.  A CBOR Sequence consists of any number of encoded CBOR data
+   items, simply concatenated in sequence.
+
+   Structured syntax suffixes for media types allow other media types to
+   build on them and make it explicit that they are built on an existing
+   media type as their foundation.  This specification defines and
+   registers &quot;+cbor-seq&quot; as a structured syntax suffix for CBOR
+   Sequences.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8742">https://www.rfc-editor.org/info/rfc8742</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Conventions Used in This Document
+   2.  CBOR Sequence Format
+   3.  The &quot;+cbor-seq&quot; Structured Syntax Suffix
+   4.  Practical Considerations
+     4.1.  Specifying CBOR Sequences in Concise Data Definition
+           Language (CDDL)
+     4.2.  Diagnostic Notation
+     4.3.  Optimizing CBOR Sequences for Skipping Elements
+   5.  Security Considerations
+   6.  IANA Considerations
+     6.1.  Media Type
+     6.2.  CoAP Content-Format Registration
+     6.3.  Structured Syntax Suffix
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
+   Acknowledgements
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Concise Binary Object Representation (CBOR) [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] can be used
+   for serialization of data in the JSON [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>] data model or in its
+   own, somewhat expanded, data model.  When serializing a sequence of
+   such values, it is sometimes convenient to have a format where these
+   sequences can simply be concatenated to obtain a serialization of the
+   concatenated sequence of values or to encode a sequence of values
+   that might grow at the end by just appending further CBOR data items.
+
+   This document describes the concept and format of &quot;CBOR Sequences&quot;,
+   which are composed of zero or more encoded CBOR data items.  CBOR
+   Sequences can be consumed (and produced) incrementally without
+   requiring a streaming CBOR parser that is able to deliver
+   substructures of a data item incrementally (or a streaming encoder
+   able to encode from substructures incrementally).
+
+   This document defines and registers the &quot;application/cbor-seq&quot; media
+   type in the &quot;Media Types&quot; registry along with a Constrained
+   Application Protocol (CoAP) Content-Format identifier.  Media type
+   structured syntax suffixes [<a href="/doc/html/rfc6838" title="&quot;Media Type Specifications and Registration Procedures&quot;">RFC6838</a>] were introduced as a way for a
+   media type to signal that it is based on another media type as its
+   foundation.  CBOR [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] defines the &quot;+cbor&quot; structured syntax
+   suffix.  This document defines and registers the &quot;+cbor-seq&quot;
+   structured syntax suffix in the &quot;Structured Syntax Suffix Registry&quot;.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Conventions Used in This Document</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   In this specification, the term &quot;byte&quot; is used in its now-customary
+   sense as a synonym for &quot;octet&quot;.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  CBOR Sequence Format</span>
+
+   Formally, a CBOR Sequence is a sequence of bytes that is recursively
+   defined as either of the following:
+
+   *  an empty (zero-length) sequence of bytes
+
+   *  the sequence of bytes making up an encoded CBOR data item
+      [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] followed by a CBOR Sequence.
+
+   In short, concatenating zero or more encoded CBOR data items
+   generates a CBOR Sequence.  (Consequently, concatenating zero or more
+   CBOR Sequences also results in a CBOR Sequence.)
+
+   There is no end-of-sequence indicator.  (If one is desired, CBOR
+   encoding an array of the CBOR data model values being encoded,
+   employing either a definite or an indefinite length encoding, as a
+   single CBOR data item may actually be the more appropriate
+   representation.)
+
+   CBOR Sequences, unlike JSON Text Sequences [<a href="/doc/html/rfc7464" title="&quot;JavaScript Object Notation (JSON) Text Sequences&quot;">RFC7464</a>], do not use a
+   marker between items.  This is possible because CBOR-encoded data
+   items are self delimiting and the end can always be calculated.
+   (Note that, while the early object/array-only form of JSON was self
+   delimiting as well, this stopped being the case when simple values
+   such as single numbers were made valid JSON documents.)
+
+   Decoding a CBOR Sequence works as follows:
+
+   *  If the CBOR Sequence is an empty sequence of bytes, the result is
+      an empty sequence of CBOR data model values.
+
+   *  Otherwise, one must decode a single CBOR data item from the bytes
+      of the CBOR Sequence and insert the resulting CBOR data model
+      value at the start of the result of repeating this decoding
+      process recursively with the remaining bytes.  (A streaming
+      decoder would therefore simply deliver zero or more CBOR data
+      model values, each as soon as the bytes making it up are
+      available.)
+
+   This means that if any data item in the sequence is not well formed,
+   it is not possible to reliably decode the rest of the sequence.  (An
+   implementation may be able to recover from some errors in a sequence
+   of bytes that is almost, but not entirely, a well-formed encoded CBOR
+   data item.  Handling malformed data is outside the scope of this
+   specification.)
+
+   This also means that the CBOR Sequence format can reliably detect
+   truncation of the bytes making up the last CBOR data item in the
+   sequence, but it cannot detect entirely missing CBOR data items at
+   the end.  A CBOR Sequence decoder that is used for consuming
+   streaming CBOR Sequence data may simply pause for more data (e.g., by
+   suspending and later resuming decoding) in case a truncated final
+   item is being received.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  The &quot;+cbor-seq&quot; Structured Syntax Suffix</span>
+
+   The use case for the &quot;+cbor-seq&quot; structured syntax suffix is
+   analogous to that for &quot;+cbor&quot;: it SHOULD be used by a media type when
+   the result of parsing the bytes of the media type object as a CBOR
+   Sequence is meaningful and is at least sometimes not just a single
+   CBOR data item.  (Without the qualification at the end, this sentence
+   is trivially true for any +cbor media type, which of course should
+   continue to use the &quot;+cbor&quot; structured syntax suffix.)
+
+   Applications encountering a &quot;+cbor-seq&quot; media type can then either
+   simply use generic processing if all they need is a generic view of
+   the CBOR Sequence or use generic CBOR Sequence tools for initial
+   parsing and then implement their own specific processing on top of
+   that generic parsing tool.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Practical Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Specifying CBOR Sequences in Concise Data Definition Language</span>
+      (CDDL)
+
+   In Concise Data Definition Language (CDDL) [<a href="/doc/html/rfc8610" title="&quot;Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures&quot;">RFC8610</a>], CBOR Sequences
+   are already supported as contents of byte strings using the
+   &quot;.cborseq&quot; control operator (<a href="/doc/html/rfc8610#section-3.8.4">Section&nbsp;3.8.4 of [RFC8610]</a>) by employing
+   an array as the controller type:
+
+   my-embedded-cbor-seq = bytes .cborseq my-array
+   my-array = [* my-element]
+   my-element = my-foo / my-bar
+
+   Currently, CDDL does not provide for unadorned CBOR Sequences as a
+   top-level subject of a specification.  For now, the suggestion is to
+   use an array for the top-level rule, as is used for the &quot;.cborseq&quot;
+   control operator, and add English text that explains that the
+   specification is really about a CBOR Sequence with the elements of
+   the array:
+
+   ; This defines an array, the elements of which are to be used
+   ; in a CBOR Sequence:
+   my-sequence = [* my-element]
+   my-element = my-foo / my-bar
+
+   (Future versions of CDDL may provide a notation for top-level CBOR
+   Sequences, e.g., by using a group as the top-level rule in a CDDL
+   specification.)
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Diagnostic Notation</span>
+
+   CBOR diagnostic notation (see <a href="/doc/html/rfc7049#section-6">Section&nbsp;6 of [RFC7049]</a>) or extended
+   diagnostic notation (Appendix G of [<a href="/doc/html/rfc8610" title="&quot;Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures&quot;">RFC8610</a>]) also does not provide
+   for unadorned CBOR Sequences at this time (the latter does provide
+   for CBOR Sequences embedded in a byte string as per <a href="/doc/html/rfc8610#appendix-G.3">Appendix&nbsp;G.3 of
+   [RFC8610]</a>).
+
+   In a similar spirit to the recommendation for CDDL above, this
+   specification recommends enclosing the CBOR data items in an array.
+   In a more informal setting, where the boundaries within which the
+   notation is used are obvious, it is also possible to leave off the
+   outer brackets for this array, as shown in these two examples:
+
+   [1, 2, 3]
+
+   1, 2, 3
+
+   Note that it is somewhat difficult to discuss zero-length CBOR
+   Sequences in the latter form.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Optimizing CBOR Sequences for Skipping Elements</span>
+
+   In certain applications, being able to efficiently skip an element
+   without the need for decoding its substructure, or efficiently
+   fanning out elements to multi-threaded decoding processes, is of the
+   utmost importance.  For these applications, byte strings (which carry
+   length information in bytes) containing embedded CBOR can be used as
+   the elements of a CBOR Sequence:
+
+   ; This defines an array of CBOR byte strings, the elements of which
+   ; are to be used in a CBOR Sequence:
+   my-sequence = [* my-element]
+   my-element = bytes .cbor my-element-structure
+   my-element-structure = my-foo / my-bar
+
+   Within limits, this may also enable recovering from elements that
+   internally are not well formed; the limitation is that the sequence
+   of byte strings does need to be well formed as such.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   The security considerations of CBOR [<a href="/doc/html/rfc7049" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC7049</a>] apply.  This format
+   provides no cryptographic integrity protection of any kind but can be
+   combined with security specifications such as CBOR Object Signing and
+   Encryption (COSE) [<a href="/doc/html/rfc8152" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">RFC8152</a>] to do so.  (COSE protections can be
+   applied to an entire CBOR Sequence or to each of the elements of the
+   sequence independently; in the latter case, additional effort may be
+   required if there is a need to protect the relationship of the
+   elements in the sequence.)
+
+   As usual, decoders must operate on input that is assumed to be
+   untrusted.  This means that decoders MUST fail gracefully in the face
+   of malicious inputs.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Media Type</span>
+
+   Media types are registered in the &quot;Media Types&quot; registry
+   [<a href="#ref-IANA-MEDIA-TYPES">IANA-MEDIA-TYPES</a>].  IANA has registered the media type for CBOR
+   Sequence, application/cbor-seq, as follows:
+
+   Type name: application
+
+   Subtype name: cbor-seq
+
+   Required parameters: N/A
+
+   Optional parameters: N/A
+
+   Encoding considerations: binary
+
+   Security considerations: See <a href="/doc/html/rfc8742#section-5">RFC 8742, Section&nbsp;5</a>.
+
+   Interoperability considerations: Described herein.
+
+   Published specification: <a href="/doc/html/rfc8742">RFC 8742</a>.
+
+   Applications that use this media type: Data serialization and
+   deserialization.
+
+   Fragment identifier considerations: N/A
+
+   Additional information:
+
+   *  Deprecated alias names for this type: N/A
+
+   *  Magic number(s): N/A
+
+   *  File extension(s): N/A
+
+   *  Macintosh file type code(s): N/A
+
+   Person &amp; email address to contact for further information:
+      cbor@ietf.org
+
+   Intended usage: COMMON
+
+   Author: Carsten Bormann (cabo@tzi.org)
+
+   Change controller: IETF
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  CoAP Content-Format Registration</span>
+
+   IANA has assigned a CoAP Content-Format ID for the media type
+   &quot;application/cbor-seq&quot;, within the &quot;CoAP Content-Formats&quot; subregistry
+   of the &quot;Constrained RESTful Environments (CoRE) Parameters&quot; registry
+   [<a href="#ref-IANA-CORE-PARAMETERS">IANA-CORE-PARAMETERS</a>], from the &quot;Expert Review&quot; (0-255) range
+   ([<a href="/doc/html/rfc8126" title="">RFC8126</a>]).  The assigned ID is shown in Table 1.
+
+           +----------------------+----------+----+-----------+
+           | Media type           | Encoding | ID | Reference |
+           +======================+==========+====+===========+
+           | application/cbor-seq | -        | 63 | <a href="/doc/html/rfc8742">RFC 8742</a>  |
+           +----------------------+----------+----+-----------+
+
+                     Table 1: CoAP Content-Format ID
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Structured Syntax Suffix</span>
+
+   Structured Syntax Suffixes are registered within the &quot;Structured
+   Syntax Suffix Registry&quot; maintained at
+   [<a href="#ref-IANA-STRUCTURED-SYNTAX-SUFFIX">IANA-STRUCTURED-SYNTAX-SUFFIX</a>].  IANA has registered the &quot;+cbor-seq&quot;
+   structured syntax suffix in accordance with [<a href="/doc/html/rfc6838" title="&quot;Media Type Specifications and Registration Procedures&quot;">RFC6838</a>] as follows:
+
+      Name: CBOR Sequence
+
+      +suffix: +cbor-seq
+
+      References: <a href="/doc/html/rfc8742">RFC 8742</a>
+
+      Encoding considerations: binary
+
+      Fragment identifier considerations: The syntax and semantics of
+      fragment identifiers specified for +cbor-seq SHOULD be the same as
+      that specified for &quot;application/cbor-seq&quot;.  (At the time of
+      publication of this document, there is no fragment identification
+      syntax defined for &quot;application/cbor-seq&quot;.)
+
+         The syntax and semantics for fragment identifiers for a
+         specific &quot;xxx/yyy+cbor-seq&quot; SHOULD be processed as follows:
+
+         o  For cases defined in +cbor-seq, if the fragment identifier
+            resolves per the +cbor-seq rules, then process as specified
+            in +cbor-seq.
+
+         o  For cases defined in +cbor-seq, if the fragment identifier
+            does not resolve per the +cbor-seq rules, then process as
+            specified in &quot;xxx/yyy+cbor-seq&quot;.
+
+         o  For cases not defined in +cbor-seq, process as specified in
+            &quot;xxx/yyy+cbor-seq&quot;.
+
+      Interoperability considerations: n/a
+
+      Security considerations: See <a href="/doc/html/rfc8742#section-5">RFC 8742, Section&nbsp;5</a>
+
+      Contact: CBOR WG mailing list (cbor@ietf.org), or any IESG-
+      designated successor.
+
+      Author/Change controller: IETF
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-IANA-CORE-PARAMETERS">IANA-CORE-PARAMETERS</a>]
+              IANA, &quot;Constrained RESTful Environments (CoRE)
+              Parameters&quot;,
+              &lt;<a href="https://www.iana.org/assignments/core-parameters">https://www.iana.org/assignments/core-parameters</a>&gt;.
+
+   [<a id="ref-IANA-MEDIA-TYPES">IANA-MEDIA-TYPES</a>]
+              IANA, &quot;Media Types&quot;,
+              &lt;<a href="https://www.iana.org/assignments/media-types">https://www.iana.org/assignments/media-types</a>&gt;.
+
+   [<a id="ref-IANA-STRUCTURED-SYNTAX-SUFFIX">IANA-STRUCTURED-SYNTAX-SUFFIX</a>]
+              IANA, &quot;Structured Syntax Suffix Registry&quot;,
+              &lt;<a href="https://www.iana.org/assignments/media-type-structured-suffix">https://www.iana.org/assignments/media-type-structured-</a>
+              <a href="https://www.iana.org/assignments/media-type-structured-suffix">suffix</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC7049">RFC7049</a>]  Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, <a href="/doc/html/rfc7049">RFC 7049</a>, DOI 10.17487/RFC7049,
+              October 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7049">https://www.rfc-editor.org/info/rfc7049</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC6838">RFC6838</a>]  Freed, N., Klensin, J., and T. Hansen, &quot;Media Type
+              Specifications and Registration Procedures&quot;, <a href="/doc/html/bcp13">BCP 13</a>,
+              <a href="/doc/html/rfc6838">RFC 6838</a>, DOI 10.17487/RFC6838, January 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6838">https://www.rfc-editor.org/info/rfc6838</a>&gt;.
+
+   [<a id="ref-RFC7464">RFC7464</a>]  Williams, N., &quot;JavaScript Object Notation (JSON) Text
+              Sequences&quot;, <a href="/doc/html/rfc7464">RFC 7464</a>, DOI 10.17487/RFC7464, February 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7464">https://www.rfc-editor.org/info/rfc7464</a>&gt;.
+
+   [<a id="ref-RFC8091">RFC8091</a>]  Wilde, E., &quot;A Media Type Structured Syntax Suffix for JSON
+              Text Sequences&quot;, <a href="/doc/html/rfc8091">RFC 8091</a>, DOI 10.17487/RFC8091, February
+              2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8091">https://www.rfc-editor.org/info/rfc8091</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8152">RFC8152</a>]  Schaad, J., &quot;CBOR Object Signing and Encryption (COSE)&quot;,
+              <a href="/doc/html/rfc8152">RFC 8152</a>, DOI 10.17487/RFC8152, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8152">https://www.rfc-editor.org/info/rfc8152</a>&gt;.
+
+   [<a id="ref-RFC8259">RFC8259</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, STD 90, <a href="/doc/html/rfc8259">RFC 8259</a>,
+              DOI 10.17487/RFC8259, December 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8259">https://www.rfc-editor.org/info/rfc8259</a>&gt;.
+
+   [<a id="ref-RFC8610">RFC8610</a>]  Birkholz, H., Vigano, C., and C. Bormann, &quot;Concise Data
+              Definition Language (CDDL): A Notational Convention to
+              Express Concise Binary Object Representation (CBOR) and
+              JSON Data Structures&quot;, <a href="/doc/html/rfc8610">RFC 8610</a>, DOI 10.17487/RFC8610,
+              June 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8610">https://www.rfc-editor.org/info/rfc8610</a>&gt;.
+
+Acknowledgements
+
+   This document has mostly been generated from [<a href="/doc/html/rfc7464" title="&quot;JavaScript Object Notation (JSON) Text Sequences&quot;">RFC7464</a>] by Nico
+   Williams and [<a href="/doc/html/rfc8091" title="&quot;A Media Type Structured Syntax Suffix for JSON Text Sequences&quot;">RFC8091</a>] by Erik Wilde, which do a similar but slightly
+   more complicated exercise for JSON [<a href="/doc/html/rfc8259" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC8259</a>].  Laurence Lundblade
+   raised an issue on the CBOR mailing list that pointed out the need
+   for this document.  Jim Schaad and John Mattsson provided helpful
+   comments.
+
+Author&#x27;s Address
+
+   Carsten Bormann
+   Universität Bremen TZI
+   Postfach 330440
+   D-28359 Bremen
+   Germany
+
+   Phone: +49-421-218-63921
+   Email: cabo@tzi.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

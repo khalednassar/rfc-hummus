@@ -1,0 +1,740 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc4913
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-legg-xed-asd-gserei/">
+  <meta name="description" content="Abstract Syntax Notation X (ASN.X) Representation of Encoding Instructions for the Generic String Encoding Rules (GSER) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgyellow"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc4913.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc4913.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc4913.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc4913/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc4913/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/app/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-legg-xed-asd-gserei@ietf.org?subject=draft-legg-xed-asd-gserei" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-legg-xed-asd-gserei-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-legg-xed-asd-gserei-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-legg-xed-asd-gserei-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-legg-xed-asd-gserei-03">draft-legg-xed-asd-gserei-03</a>                          Experimental</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                            S. Legg
+Request for Comments: 4913                                       eB2Bcom
+Category: Experimental                                         July 2007
+
+
+           <span class="h1">Abstract Syntax Notation X (ASN.X) Representation</span>
+                      <span class="h1">of Encoding Instructions for</span>
+                <span class="h1">the Generic String Encoding Rules (GSER)</span>
+
+Status of This Memo
+
+   This memo defines an Experimental Protocol for the Internet
+   community.  It does not specify an Internet standard of any kind.
+   Discussion and suggestions for improvement are requested.
+   Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The IETF Trust (2007).
+
+Abstract
+
+   Abstract Syntax Notation X (ASN.X) is an Extensible Markup Language
+   (XML) representation for Abstract Syntax Notation One (ASN.1)
+   specifications.  This document specifies the ASN.X representation of
+   encoding instructions for the Generic String Encoding Rules (GSER).
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Conventions .....................................................<a href="#page-2">2</a>
+   <a href="#section-3">3</a>. EncodingInstructionAssignmentList Translation ...................<a href="#page-3">3</a>
+   <a href="#section-4">4</a>. EncodingInstruction Translation .................................<a href="#page-3">3</a>
+      <a href="#section-4.1">4.1</a>. ChoiceOfStringsInstruction Translation .....................<a href="#page-3">3</a>
+   <a href="#section-5">5</a>. Security Considerations .........................................<a href="#page-4">4</a>
+   <a href="#section-6">6</a>. Normative References ............................................<a href="#page-4">4</a>
+   <a href="#appendix-A">Appendix A</a>. ASN.1 for GSER Encoding Instruction Notation ...........<a href="#page-6">6</a>
+   <a href="#appendix-B">Appendix B</a>. ASN.X for GSER Encoding Instruction Notation ...........<a href="#page-7">7</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Abstract Syntax Notation X (ASN.X) [<a href="#ref-ASN.X" title="&quot;Abstract Syntax Notation X (ASN.X)&quot;">ASN.X</a>] is an Extensible Markup
+   Language (XML) [<a href="#ref-XML10" title="&quot;Extensible Markup Language (XML) 1.0 (Fourth Edition)&quot;">XML10</a>][XML11] representation for Abstract Syntax
+   Notation One (ASN.1) [<a href="#ref-X.680">X.680</a>] specifications.  The ASN.X
+   representation for the ASN.1 basic notation [<a href="#ref-X.680">X.680</a>] [<a href="#ref-X.680-1">X.680-1</a>] is
+   described elsewhere [<a href="#ref-ASN.X" title="&quot;Abstract Syntax Notation X (ASN.X)&quot;">ASN.X</a>].
+
+   The grammar of ASN.1 permits the application of encoding instructions
+   [<a href="#ref-X.680-1">X.680-1</a>], through type prefixes and encoding control sections, that
+   modify how abstract values are encoded by nominated encoding rules.
+
+   The generic notation for type prefixes and encoding control sections
+   is defined by the ASN.1 basic notation; however, the notation for
+   specific encoding instructions, i.e., the EncodingInstruction and
+   EncodingInstructionAssignmentList productions of the notation, are
+   defined separately for each set of encoding rules using encoding
+   instructions.  This document specifies the ASN.X representation for
+   EncodingInstructionAssignmentList and EncodingInstruction as they are
+   defined for the Generic String Encoding Rules (GSER) [<a href="#ref-GSER" title="&quot;Generic String Encoding Rules (GSER) for ASN.1 Types&quot;">GSER</a>][GSEREI].
+
+   ASN.X is defined in terms of rules for translating from an ASN.1
+   specification.  This does not preclude an ASN.X module being written
+   directly without a pre-existing ASN.1 module; however, such an ASN.X
+   module is considered valid if and only if there exists, in principle,
+   an ASN.1 module that when translated would yield the ASN.X module.
+
+   By design, an ASN.X module is also the Robust XML Encoding Rules
+   (RXER) [<a href="#ref-RXER" title="&quot;Robust XML Encoding Rules (RXER) for Abstract Syntax Notation One (ASN.1)&quot;">RXER</a>] encoding of an ASN.1 value.  The ASN.1 type definitions
+   for such values, insofar as they pertain to the ASN.1 basic notation,
+   are provided elsewhere [<a href="#ref-ASN.X" title="&quot;Abstract Syntax Notation X (ASN.X)&quot;">ASN.X</a>]; however, this document provides the
+   ASN.1 type definitions for representing GSER encoding instructions as
+   abstract values.  These definitions appear in <a href="#appendix-A">Appendix A</a>.
+
+   The ASN.X translation of the ASN.1 module in <a href="#appendix-A">Appendix A</a> is presented
+   in <a href="#appendix-B">Appendix B</a>.
+
+   The General Considerations of the specification for ASN.X [<a href="#ref-ASN.X" title="&quot;Abstract Syntax Notation X (ASN.X)&quot;">ASN.X</a>]
+   also apply here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, and &quot;MAY&quot; in this document are
+   to be interpreted as described in <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a> [<a href="#ref-BCP14" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">BCP14</a>].  The key
+   word &quot;OPTIONAL&quot; is exclusively used with its ASN.1 meaning.
+
+
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+   A reference to an ASN.1 production [<a href="#ref-X.680">X.680</a>] (e.g., Type, NamedType) is
+   a reference to the text in an ASN.1 specification corresponding to
+   that production.
+
+   The description of the translation of GSER encoding instructions into
+   ASN.X makes use of definitions from the XML Information Set (Infoset)
+   [<a href="#ref-INFOSET" title="&quot;XML Information Set (Second Edition)&quot;">INFOSET</a>].  In particular, information item property names follow the
+   Infoset convention of being shown in square brackets, e.g.,
+   [local name].  Literal values of Infoset properties are enclosed in
+   double quotes; however, the double quotes are not part of the
+   property values.  In the sections that follow, &quot;information item&quot;
+   will be abbreviated to &quot;item&quot;, e.g., &quot;element information item&quot; is
+   abbreviated to &quot;element item&quot;.  Element items will be referred to by
+   their [local name] in angle brackets, e.g., &quot;the &lt;type&gt; element item&quot;
+   means the element item with the [local name] &quot;type&quot;.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  EncodingInstructionAssignmentList Translation</span>
+
+   As described in the specification for ASN.X [<a href="#ref-ASN.X" title="&quot;Abstract Syntax Notation X (ASN.X)&quot;">ASN.X</a>], the translation
+   of an EncodingControlSection for GSER is an element item with the
+   [local name] &quot;GSER&quot;.  The translation of the
+   EncodingInstructionAssignmentList in such an EncodingControlSection
+   determines the content of the &lt;GSER&gt; element item.
+
+   The EncodingInstructionAssignmentList for GSER is currently defined
+   to be empty [<a href="#ref-GSEREI" title="&quot;Encoding Instructions for the Generic String Encoding Rules (GSER)&quot;">GSEREI</a>]; therefore, the [attributes] and [children] of
+   the &lt;GSER&gt; element item are both empty.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  EncodingInstruction Translation</span>
+
+   The translation of an EncodingInstruction for GSER can appear in the
+   translation of an EncodingPrefix.  The translation for an
+   EncodingPrefix is described by the specification for ASN.X.
+
+   The translation of an EncodingInstruction for GSER is the translation
+   of the ChoiceOfStringsInstruction in the EncodingInstruction
+   (currently the only defined encoding instruction for GSER).
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  ChoiceOfStringsInstruction Translation</span>
+
+   The translation of a ChoiceOfStringsInstruction is an element item
+   with the [local name] &quot;choiceOfStrings&quot;.
+
+   If the ChoiceOfStringsInstruction has an AlternativesPrecedence, then
+   an attribute item with the [local name] &quot;precedence&quot; SHALL be added
+   to the [attributes] of the &lt;choiceOfStrings&gt; element item.  The
+   [normalized value] of this attribute item is the white space
+   separated list of qualified names for the expanded names [<a href="#ref-XMLNS10" title="&quot;Namespaces in XML 1.0 (Second Edition)&quot;">XMLNS10</a>] of
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+   the NamedType instances (see [<a href="#ref-RXEREI" title="&quot;Encoding Instructions for the Robust XML Encoding Rules (RXER)&quot;">RXEREI</a>]) corresponding to the
+   identifiers nested in the PrecedenceList in the
+   AlternativesPrecedence.
+
+   Example
+
+      [GSER:CHOICE-OF-STRINGS PRECEDENCE utf8 visible] CHOICE {
+          visible  [RXER:NAME &quot;ascii&quot;] VisibleString,
+          utf8     UTF8String
+      }
+
+      &lt;type xmlns:asnx=&quot;urn:ietf:params:xml:ns:asnx&quot;&gt;
+       &lt;prefixed&gt;
+        &lt;GSER&gt;&lt;choiceOfStrings precedence=&quot;utf8 ascii&quot;/&gt;&lt;/GSER&gt;
+        &lt;type&gt;
+         &lt;choice&gt;
+          &lt;element name=&quot;ascii&quot; identifier=&quot;visible&quot;
+                   type=&quot;asnx:VisibleString&quot;/&gt;
+          &lt;element name=&quot;utf8&quot; type=&quot;asnx:UTF8String&quot;/&gt;
+         &lt;/choice&gt;
+        &lt;/type&gt;
+       &lt;/prefixed&gt;
+      &lt;/type&gt;
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   The ASN.X translation of a GSER encoding instruction is semantically
+   equivalent to the original GSER encoding instruction.  The security
+   considerations that apply to an application built from an original
+   ASN.1 specification with GSER encoding instructions apply equally to
+   an application built from the ASN.X translation of the ASN.1
+   specification.
+
+   See the main specification for ASN.X [<a href="#ref-ASN.X" title="&quot;Abstract Syntax Notation X (ASN.X)&quot;">ASN.X</a>] for security
+   considerations related to ASN.X modules.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Normative References</span>
+
+   [<a id="ref-BCP14">BCP14</a>]    Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-GSER">GSER</a>]     Legg, S., &quot;Generic String Encoding Rules (GSER) for ASN.1
+              Types&quot;, <a href="/doc/html/rfc3641">RFC 3641</a>, October 2003.
+
+   [<a id="ref-GSEREI">GSEREI</a>]   Legg, S., &quot;Encoding Instructions for the Generic String
+              Encoding Rules (GSER)&quot;, <a href="/doc/html/rfc4792">RFC 4792</a>, January 2007.
+
+
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+   [<a id="ref-RXER">RXER</a>]     Legg, S. and D. Prager, &quot;Robust XML Encoding Rules (RXER)
+              for Abstract Syntax Notation One (ASN.1)&quot;, <a href="/doc/html/rfc4910">RFC 4910</a>, July
+              2007.
+
+   [<a id="ref-RXEREI">RXEREI</a>]   Legg, S., &quot;Encoding Instructions for the Robust XML
+              Encoding Rules (RXER)&quot;, <a href="/doc/html/rfc4911">RFC 4911</a>, July 2007.
+
+   [<a id="ref-ASN.X">ASN.X</a>]    Legg, S., &quot;Abstract Syntax Notation X (ASN.X)&quot;, <a href="/doc/html/rfc4912">RFC 4912</a>,
+              July 2007.
+
+   [<a id="ref-X.680">X.680</a>]    ITU-T Recommendation X.680 (07/02) | ISO/IEC 8824-1,
+              Information technology - Abstract Syntax Notation One
+              (ASN.1):  Specification of basic notation.
+
+   [<a id="ref-X.680-1">X.680-1</a>]  ITU-T Recommendation X.680 (2002) Amendment 1 (10/03) |
+              ISO/IEC 8824-1:2002/Amd 1:2004, Support for EXTENDED-XER.
+
+   [<a id="ref-XML10">XML10</a>]    Bray, T., Paoli, J., Sperberg-McQueen, C., Maler, E. and
+              F. Yergeau, &quot;Extensible Markup Language (XML) 1.0 (Fourth
+              Edition)&quot;, W3C Recommendation,
+              <a href="http://www.w3.org/TR/2006/REC-xml-20060816">http://www.w3.org/TR/2006/REC-xml-20060816</a>, August 2006.
+
+   [<a id="ref-XML11">XML11</a>]    Bray, T., Paoli, J., Sperberg-McQueen, C., Maler, E.,
+              Yergeau, F., and J. Cowan, &quot;Extensible Markup Language
+              (XML) 1.1 (Second Edition)&quot;, W3C Recommendation,
+              <a href="http://www.w3.org/TR/2006/REC-xml11-20060816">http://www.w3.org/TR/2006/REC-xml11-20060816</a>, August 2006.
+
+   [<a id="ref-XMLNS10">XMLNS10</a>]  Bray, T., Hollander, D., Layman, A., and R. Tobin,
+              &quot;Namespaces in XML 1.0 (Second Edition)&quot;, W3C
+              Recommendation,
+              <a href="http://www.w3.org/TR/2006/REC-xml-names-20060816">http://www.w3.org/TR/2006/REC-xml-names-20060816</a>, August
+              2006.
+
+   [<a id="ref-INFOSET">INFOSET</a>]  Cowan, J. and R. Tobin, &quot;XML Information Set (Second
+              Edition)&quot;, W3C Recommendation,
+              <a href="http://www.w3.org/TR/2004/REC-xml-infoset-20040204">http://www.w3.org/TR/2004/REC-xml-infoset-20040204</a>,
+              February 2004.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  ASN.1 for GSER Encoding Instruction Notation</span>
+
+   This appendix is normative.
+
+   GSER-EncodingInstructionNotation
+       { iso(1) identified-organization(3) dod(6)
+         internet(1) private(4) enterprise(1)
+         xmled(21472) asnx(1) module(0) gser-ei-notation(2) }
+
+   -- Copyright (C) The IETF Trust (2007).  This version of
+   -- this ASN.1 module is part of <a href="/doc/html/rfc4913">RFC 4913</a>; see the RFC itself
+   -- for full legal notices.
+   --
+   -- Regarding this ASN.1 module or any portion of it, the author
+   -- makes no guarantees and is not responsible for any damage
+   -- resulting from its use.  The author grants irrevocable permission
+   -- to anyone to use, modify, and distribute it in any way that does
+   -- not diminish the rights of anyone else to use, modify, and
+   -- distribute it, provided that redistributed derivative works do
+   -- not contain misleading author or version information.
+   -- Derivative works need not be licensed under similar terms.
+
+   DEFINITIONS
+   RXER INSTRUCTIONS
+   AUTOMATIC TAGS
+   EXTENSIBILITY IMPLIED ::= BEGIN
+
+   IMPORTS
+       PrecedenceList
+           FROM AbstractSyntaxNotation-X
+               { iso(1) identified-organization(3) dod(6)
+                 internet(1) private(4) enterprise(1)
+                 xmled(21472) asnx(1) module(0) notation(1) }
+       ;
+
+   GSER-EncodingInstruction ::= [SINGULAR-INSERTIONS] CHOICE {
+       choiceOfStrings  GSER-ChoiceOfStringsInstruction
+   }
+
+   GSER-EncodingInstructionAssignmentList ::= SEQUENCE { }
+
+   GSER-ChoiceOfStringsInstruction ::= SEQUENCE {
+       precedence  [ATTRIBUTE] PrecedenceList OPTIONAL
+   }
+
+   ENCODING-CONTROL RXER
+
+       SCHEMA-IDENTITY  &quot;urn:oid:1.3.6.1.4.1.21472.1.0.2&quot;
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+       TARGET-NAMESPACE &quot;urn:ietf:params:xml:ns:asnx&quot; PREFIX &quot;asnx&quot;
+
+   END
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  ASN.X for GSER Encoding Instruction Notation</span>
+
+   This appendix is non-normative.
+
+   &lt;?xml version=&quot;1.0&quot;?&gt;
+   &lt;asnx:module xmlns:asnx=&quot;urn:ietf:params:xml:ns:asnx&quot;
+                name=&quot;GSER-EncodingInstructionNotation&quot;
+                identifier=&quot;1.3.6.1.4.1.21472.1.0.2&quot;
+                schemaIdentity=&quot;urn:oid:1.3.6.1.4.1.21472.1.0.2&quot;
+                targetNamespace=&quot;urn:ietf:params:xml:ns:asnx&quot;
+                targetPrefix=&quot;asnx&quot;
+                extensibilityImplied=&quot;true&quot;&gt;
+
+    &lt;annotation&gt;
+     Copyright (C) The IETF Trust (2007).  This version of
+     this ASN.X module is part of <a href="/doc/html/rfc4913">RFC 4913</a>; see the RFC itself
+     for full legal notices.
+
+     Regarding this ASN.X module or any portion of it, the author
+     makes no guarantees and is not responsible for any damage
+     resulting from its use.  The author grants irrevocable permission
+     to anyone to use, modify, and distribute it in any way that does
+     not diminish the rights of anyone else to use, modify, and
+     distribute it, provided that redistributed derivative works do
+     not contain misleading author or version information.
+     Derivative works need not be licensed under similar terms.
+    &lt;/annotation&gt;
+
+    &lt;import name=&quot;AbstractSyntaxNotation-X&quot;
+            identifier=&quot;1.3.6.1.4.1.21472.1.0.1&quot;
+            schemaIdentity=&quot;urn:oid:1.3.6.1.4.1.21472.1.0.1&quot;
+            namespace=&quot;urn:ietf:params:xml:ns:asnx&quot;/&gt;
+
+    &lt;namedType name=&quot;GSER-EncodingInstruction&quot;&gt;
+     &lt;type&gt;
+      &lt;choice insertions=&quot;singular&quot;&gt;
+       &lt;element name=&quot;choiceOfStrings&quot;
+                type=&quot;asnx:GSER-ChoiceOfStringsInstruction&quot;/&gt;
+      &lt;/choice&gt;
+     &lt;/type&gt;
+    &lt;/namedType&gt;
+
+    &lt;namedType name=&quot;GSER-EncodingInstructionAssignmentList&quot;&gt;
+     &lt;type&gt;
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+      &lt;sequence/&gt;
+     &lt;/type&gt;
+    &lt;/namedType&gt;
+
+    &lt;namedType name=&quot;GSER-ChoiceOfStringsInstruction&quot;&gt;
+     &lt;type&gt;
+      &lt;sequence&gt;
+       &lt;optional&gt;
+        &lt;attribute name=&quot;precedence&quot; type=&quot;asnx:PrecedenceList&quot;/&gt;
+       &lt;/optional&gt;
+      &lt;/sequence&gt;
+     &lt;/type&gt;
+    &lt;/namedType&gt;
+
+   &lt;/asnx:module&gt;
+
+Author&#x27;s Address
+
+   Dr. Steven Legg
+   eB2Bcom
+   Suite 3, Woodhouse Corporate Centre
+   935 Station Street
+   Box Hill North, Victoria 3129
+   AUSTRALIA
+
+   Phone: +61 3 9896 7830
+   Fax:   +61 3 9896 7801
+   EMail: steven.legg@eb2bcom.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Legg                          Experimental                      [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc4913">RFC 4913</a>           ASN.X: GSER Encoding Instructions   July 2007</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The IETF Trust (2007).
+
+   This document is subject to the rights, licenses and restrictions
+   contained in <a href="/doc/html/bcp78">BCP 78</a>, and except as set forth therein, the authors
+   retain all their rights.
+
+   This document and the information contained herein are provided on an
+   &quot;AS IS&quot; basis and THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS
+   OR IS SPONSORED BY (IF ANY), THE INTERNET SOCIETY, THE IETF TRUST AND
+   THE INTERNET ENGINEERING TASK FORCE DISCLAIM ALL WARRANTIES, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
+   THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+   WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   Intellectual Property Rights or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; nor does it represent that it has
+   made any independent effort to identify any such rights.  Information
+   on the procedures with respect to rights in RFC documents can be
+   found in <a href="/doc/html/bcp78">BCP 78</a> and <a href="/doc/html/bcp79">BCP 79</a>.
+
+   Copies of IPR disclosures made to the IETF Secretariat and any
+   assurances of licenses to be made available, or the result of an
+   attempt made to obtain a general license or permission for the use of
+   such proprietary rights by implementers or users of this
+   specification can be obtained from the IETF on-line IPR repository at
+   <a href="http://www.ietf.org/ipr">http://www.ietf.org/ipr</a>.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights that may cover technology that may be required to implement
+   this standard.  Please address the information to the IETF at
+   ietf-ipr@ietf.org.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+Legg                          Experimental                      [Page 9]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

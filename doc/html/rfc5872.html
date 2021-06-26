@@ -1,0 +1,516 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc5872
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-arkko-pana-iana/">
+  <meta name="description" content="IANA Rules for the Protocol for Carrying Authentication for Network Access (PANA) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc5872.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc5872.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc5872.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc5872/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc5872/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/int/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-arkko-pana-iana@ietf.org?subject=draft-arkko-pana-iana" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-arkko-pana-iana-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-arkko-pana-iana-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-arkko-pana-iana-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-arkko-pana-iana-02">draft-arkko-pana-iana-02</a>                         Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          J. Arkko
+Request for Comments: 5872                                      Ericsson
+Updates: <a href="/doc/html/rfc5191">5191</a>                                                   A. Yegin
+Category: Standards Track                                        Samsung
+ISSN: 2070-1721                                                 May 2010
+
+
+                           <span class="h1">IANA Rules for the</span>
+     <span class="h1">Protocol for Carrying Authentication for Network Access (PANA)</span>
+
+Abstract
+
+   This document relaxes the IANA rules for the Protocol for Carrying
+   Authentication for Network Access (PANA).
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc5872">http://www.rfc-editor.org/info/rfc5872</a>.
+
+Copyright Notice
+
+   Copyright (c) 2010 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+
+
+<span class="grey">Arkko &amp; Yegin                Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc5872">RFC 5872</a>                     PANA IANA Rules                    May 2010</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document relaxes the IANA rules for the Protocol for Carrying
+   Authentication for Network Access (PANA) [<a href="/doc/html/rfc5191" title="&quot;Protocol for Carrying Authentication for Network Access (PANA)&quot;">RFC5191</a>].  Rules for the
+   following protocol fields, all defined in [<a href="/doc/html/rfc5191" title="&quot;Protocol for Carrying Authentication for Network Access (PANA)&quot;">RFC5191</a>], are affected:
+
+   o  Message Types
+
+   o  Message Flags
+
+   o  Attribute-Value Pair (AVP) Flags
+
+   o  Result-Code AVP Values
+
+   o  Termination-Cause AVP Values
+
+   The rationale for this update is that there can be situations in
+   which it makes sense to grant an allocation under special
+   circumstances.  At the time of this writing, the IETF is in the
+   process of approving one such allocation.  By changing the current
+   IANA rules to allow for IESG Approval [<a href="/doc/html/rfc5226" title="">RFC5226</a>] as well, it has
+   become possible for the Internet Engineering Steering Group (IESG) to
+   consider an allocation request, even if it does not fulfill the
+   default rule.  For instance, an experimental protocol extension could
+   perhaps deserve an allocation from a field of reserved bits, as long
+   as a sufficient number of bits still remain for other purposes, and
+   the PANA community is happy with such allocation.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  IANA Considerations</span>
+
+   IANA has updated the registries related to PANA Message Types,
+   Message Flags, AVP Flags, Result-Code AVP Values, and Termination-
+   Cause AVP Values, as specified below.  All other PANA IANA registries
+   are to remain unchanged.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Message Types</span>
+
+   The Message Types namespace is used to identify PANA messages.  Value
+   0 is not used and is not assigned by IANA.  The range of values from
+   1 - 65,519 are for permanent, standard Message Types, allocated by
+   IETF Review or IESG Approval [<a href="/doc/html/rfc5226" title="">RFC5226</a>].  Previously, the rule for
+   this range was allocation by IETF Review only.  [<a href="/doc/html/rfc5191" title="&quot;Protocol for Carrying Authentication for Network Access (PANA)&quot;">RFC5191</a>] defined the
+   range of values from 1 - 4.  The same Message Type is used for both
+   the request and the answer messages, except for type 1.  The Request
+   bit distinguishes requests from answers.
+
+
+
+
+
+
+<span class="grey">Arkko &amp; Yegin                Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc5872">RFC 5872</a>                     PANA IANA Rules                    May 2010</span>
+
+
+   The range of values from 65,520 - 65,535 (hexadecimal values 0xfff0 -
+   0xffff) is reserved for experimental messages.  As these codes are
+   only for experimental and testing purposes, no guarantee is made for
+   interoperability between the communicating PANA Client (PaC) and PANA
+   Authentication Agent (PAA) using experimental commands, as outlined
+   in [<a href="/doc/html/rfc3692" title="&quot;Assigning Experimental and Testing Numbers Considered Useful&quot;">RFC3692</a>].
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Message Flags</span>
+
+   There are 16 bits in the Flags field of the PANA message header.
+   <a href="/doc/html/rfc5191#section-6.2">Section&nbsp;6.2 of [RFC5191]</a> assigned bit 0 (&#x27;R&#x27;), 1 (&#x27;S&#x27;), 2 (&#x27;C&#x27;), 3
+   (&#x27;A&#x27;), 4 (&#x27;P&#x27;), and 5 (&#x27;I&#x27;).  Allocations from the remaining free
+   bits in the PANA header Flag field are made via Standards Action or
+   IESG Approval [<a href="/doc/html/rfc5226" title="">RFC5226</a>].  Previously, the rule for these bits was
+   allocation by Standards Action only.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  AVP Flags</span>
+
+   There are 16 bits in the AVP Flags field of the AVP header, defined
+   in <a href="/doc/html/rfc5191#section-6.3">Section&nbsp;6.3 of [RFC5191]</a>.  That RFC also assigned bit 0 (&#x27;V&#x27;).
+   The remaining bits are assigned via Standards Action or IESG Approval
+   [<a href="/doc/html/rfc5226" title="">RFC5226</a>].  Previously, the rule for these bits was allocation by
+   Standards Action only.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Result-Code AVP Values</span>
+
+   As defined in <a href="/doc/html/rfc5191#section-8.7">Section&nbsp;8.7 of [RFC5191]</a>, the Result-Code AVP (AVP
+   Code 7) defines the values from 0 - 2.
+
+   All remaining values are available for assignment via IETF Review or
+   IESG Approval [<a href="/doc/html/rfc5226" title="">RFC5226</a>].  Previously, the rule for these values was
+   allocation by IETF Review only.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>.  Termination-Cause AVP Values</span>
+
+   As defined in <a href="/doc/html/rfc5191#section-8.9">Section&nbsp;8.9 of [RFC5191]</a>, the Termination-Cause AVP
+   (AVP Code 9) defines the values 1, 4, and 8.
+
+   All remaining values are available for assignment via IETF Review or
+   IESG Approval [<a href="/doc/html/rfc5226" title="">RFC5226</a>].  Previously, the rule for these values was
+   allocation by IETF Review only.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Arkko &amp; Yegin                Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc5872">RFC 5872</a>                     PANA IANA Rules                    May 2010</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   This specification does not change the security properties of PANA.
+
+   However, a few words are necessary about the use of the experimental
+   code points defined in <a href="#section-2.1">Section 2.1</a>.  Potentially harmful side effects
+   from the use of the experimental values need to be carefully
+   evaluated before deploying any experiment across networks that the
+   owner of the experiment does not entirely control.  Guidance given in
+   [<a href="/doc/html/rfc3692" title="&quot;Assigning Experimental and Testing Numbers Considered Useful&quot;">RFC3692</a>] about the use of experimental values needs to be followed.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC5191">RFC5191</a>]  Forsberg, D., Ohba, Y., Patil, B., Tschofenig, H., and A.
+              Yegin, &quot;Protocol for Carrying Authentication for Network
+              Access (PANA)&quot;, <a href="/doc/html/rfc5191">RFC 5191</a>, May 2008.
+
+   [<a id="ref-RFC5226">RFC5226</a>]  Narten, T. and H. Alvestrand, &quot;Guidelines for Writing an
+              IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>, <a href="/doc/html/rfc5226">RFC 5226</a>,
+              May 2008.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC3692">RFC3692</a>]  Narten, T., &quot;Assigning Experimental and Testing Numbers
+              Considered Useful&quot;, <a href="/doc/html/bcp82">BCP 82</a>, <a href="/doc/html/rfc3692">RFC 3692</a>, January 2004.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Arkko &amp; Yegin                Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc5872">RFC 5872</a>                     PANA IANA Rules                    May 2010</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Changes from <a href="/doc/html/rfc5191">RFC 5191</a></span>
+
+   This document changes the IANA rules for: Message Types, Message
+   Flags, AVP Flags, Result-Code AVP Values, and Termination-Cause AVP
+   Values.
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Acknowledgments</span>
+
+   The authors would like to thank Yoshihiro Ohba, Ralph Droms,
+   Magnus Westerlund, and Alfred Hoenes for reviews and comments on this
+   topic.
+
+Authors&#x27; Addresses
+
+   Jari Arkko
+   Ericsson
+   Jorvas  02420
+   Finland
+
+   EMail: jari.arkko@piuha.net
+
+
+   Alper Yegin
+   Samsung
+   Istanbul
+   Turkey
+
+   EMail: alper.yegin@yegin.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Arkko &amp; Yegin                Standards Track                    [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,685 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6652
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-marf-spf-reporting/">
+  <meta name="description" content="Sender Policy Framework (SPF) Authentication Failure Reporting Using the Abuse Reporting Format (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6652.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6652.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6652.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6652/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6652/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/marf/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-marf-spf-reporting@ietf.org?subject=draft-ietf-marf-spf-reporting" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-marf-spf-reporting-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-marf-spf-reporting-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-marf-spf-reporting-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-marf-spf-reporting-10">draft-ietf-marf-spf-reporting-10</a>                 Proposed Standard
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=6652&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      S. Kitterman
+Request for Comments: 6652                                         Agari
+Updates: <a href="/doc/html/rfc4408">4408</a>                                                  June 2012
+Category: Standards Track
+ISSN: 2070-1721
+
+
+     <span class="h1">Sender Policy Framework (SPF) Authentication Failure Reporting</span>
+                    <span class="h1">Using the Abuse Reporting Format</span>
+
+Abstract
+
+   This memo presents extensions to the Abuse Reporting Format (ARF) and
+   Sender Policy Framework (SPF) specifications to allow for detailed
+   reporting of message authentication failures in an on-demand fashion.
+
+   This memo updates <a href="/doc/html/rfc4408">RFC 4408</a> by providing an IANA registry for SPF
+   modifiers.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6652">http://www.rfc-editor.org/info/rfc6652</a>.
+
+Copyright Notice
+
+   Copyright (c) 2012 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Definitions .....................................................<a href="#page-3">3</a>
+      <a href="#section-2.1">2.1</a>. Key Words ..................................................<a href="#page-3">3</a>
+      <a href="#section-2.2">2.2</a>. Imported Definitions .......................................<a href="#page-3">3</a>
+   <a href="#section-3">3</a>. Optional Reporting Address for SPF ..............................<a href="#page-3">3</a>
+   <a href="#section-4">4</a>. Requested Reports ...............................................<a href="#page-4">4</a>
+      <a href="#section-4.1">4.1</a>. Requested Reports for SPF Failures .........................<a href="#page-5">5</a>
+   <a href="#section-5">5</a>. IANA Considerations .............................................<a href="#page-5">5</a>
+      <a href="#section-5.1">5.1</a>. SPF Modifier Registration ..................................<a href="#page-5">5</a>
+   <a href="#section-6">6</a>. Security Considerations .........................................<a href="#page-6">6</a>
+      <a href="#section-6.1">6.1</a>. Identity Selection .........................................<a href="#page-6">6</a>
+      <a href="#section-6.2">6.2</a>. Report Volume ..............................................<a href="#page-6">6</a>
+   <a href="#section-7">7</a>. References ......................................................<a href="#page-7">7</a>
+      <a href="#section-7.1">7.1</a>. Normative References .......................................<a href="#page-7">7</a>
+      <a href="#section-7.2">7.2</a>. Informative References .....................................<a href="#page-7">7</a>
+   <a href="#appendix-A">Appendix A</a>. Acknowledgements .......................................<a href="#page-8">8</a>
+   <a href="#appendix-B">Appendix B</a>. Examples ...............................................<a href="#page-8">8</a>
+      B.1. SPF DNS Record for Domain That Sends No Mail but
+           Requests Reports ...........................................<a href="#page-8">8</a>
+      B.2. Minimal SPF DNS Record Change to Add a Reporting
+           Address ....................................................<a href="#page-8">8</a>
+      B.3. SPF DNS Record with Reporting Address, Report
+           Percentage, and Requested Report Type ......................<a href="#page-8">8</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Abuse Reporting Format [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>] defines a message format for sending
+   reports of abuse in the messaging infrastructure, with an eye toward
+   automating both the generation and consumption of those reports.
+
+   The Sender Policy Framework [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] is one mechanism for message sender
+   authentication; it is &quot;path-based&quot;, meaning it authenticates the
+   route that a message took from origin to destination.  The output is
+   a verified domain name that can then be subjected to some sort of
+   evaluation process (e.g., comparison to a known-good list, submission
+   to a reputation service, etc.).
+
+   This document extends [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] to add an optional reporting address and
+   other parameters.  Extension of [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>] to add features required for
+   the reporting of these incidents is covered in [<a href="#ref-ARF-AUTHFAIL">ARF-AUTHFAIL</a>] and
+   [<a href="#ref-ARF-AS" title="&quot;Creation and Use of Email Feedback Reports: An Applicability Statement for the Abuse Reporting Format (ARF)&quot;">ARF-AS</a>].
+
+   This document additionally creates a an IANA registry of [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] record
+   modifiers to avoid modifier namespace collisions.
+
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Definitions</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Key Words</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="#ref-KEYWORDS" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">KEYWORDS</a>].
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Imported Definitions</span>
+
+   The [<a href="#ref-ABNF" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">ABNF</a>] token &quot;qp-section&quot; is defined in [<a href="#ref-MIME" title="&quot;Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies&quot;">MIME</a>].
+
+   &quot;local-part&quot; is defined in [<a href="#ref-MAIL" title="&quot;Internet Message Format&quot;">MAIL</a>].
+
+   &quot;addr-spec&quot; is defined in [<a href="#ref-MAIL" title="&quot;Internet Message Format&quot;">MAIL</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Optional Reporting Address for SPF</span>
+
+   There exist cases in which an ADministrative Management Domain (ADMD)
+   (see [<a href="#ref-EMAIL-ARCH">EMAIL-ARCH</a>]) employing [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] for announcing sending practices
+   may want to know when messages are received via unauthorized routing.
+   Currently, there is no such method defined in conjunction with
+   standardized approaches such as [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>].  Similar information can be
+   gathered using a specially crafted [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] record and a special DNS
+   server to track [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] record lookups.
+
+   This document defines the following optional &quot;modifier&quot; (as defined
+   in Section 4.6.1 of [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>]) to SPF records, using the form defined in
+   that specification:
+
+   ra=  Reporting Address (plain-text; OPTIONAL; no default).  MUST be a
+        local-part (see Section 3.4.1 of [<a href="#ref-MAIL" title="&quot;Internet Message Format&quot;">MAIL</a>]) specifying an e-mail
+        address to which a report SHOULD be sent when mail claiming to
+        be from this domain (see Section 2.4 of [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] for a description
+        of how domains are identified for SPF checks) has failed the
+        evaluation algorithm described in [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>], in particular because a
+        message arrived via an unauthorized route.  To generate a
+        complete address to which the report is sent, the Verifier
+        simply appends to this value an &quot;@&quot; followed by the
+        SPF-compliant domain per Section 4.1 of [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>].  ra= modifiers in
+        a record that was reached by following an &quot;include&quot; mechanism
+        (defined in Section 5.2 of [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>]) MUST be ignored.
+
+      ABNF:
+
+      spf-report-tag = &quot;ra=&quot; qp-section
+
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+   rp=  Requested Report Percentage (plain-text; OPTIONAL; default is
+        &quot;100&quot;).  The value is an integer from 0 to 100 inclusive that
+        indicates what percentage of incidents of SPF failures, selected
+        at random, are to cause reports to be generated.  The report
+        generator SHOULD NOT issue reports for more than the requested
+        percentage of incidents.  An exception to this might be some
+        out-of-band arrangement between two parties to override it with
+        some mutually agreed value.  Report generators MAY make use of
+        the &quot;Incidents:&quot; field in [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>] to indicate that there are more
+        reportable incidents than there are reports.
+
+      ABNF:
+
+      spf-rp-tag = &quot;rp=&quot; 1*12DIGIT &quot;/&quot; 1*12DIGIT
+
+   rr=  Requested Reports (plain-text; OPTIONAL; default is &quot;all&quot;).  The
+        value MUST be a colon-separated list of tokens representing
+        those conditions under which a report is desired.  See
+        <a href="#section-4.1">Section 4.1</a> for a list of valid tags.
+
+      ABNF:
+
+      spf-rr-type = ( &quot;all&quot; / &quot;e&quot; / &quot;f&quot; / &quot;s&quot; / &quot;n&quot; )
+
+      spf-rr-tag = &quot;rr=&quot; spf-rr-type *( &quot;:&quot; spf-rr-type )
+
+   In the absence of an &quot;ra=&quot; tag in the SPF record, the &quot;rp=&quot; and &quot;rr=&quot;
+   tags MUST be ignored, and the report generator MUST NOT issue a
+   report.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Requested Reports</span>
+
+   This memo also includes, as the &quot;rr&quot; tokens defined above, the means
+   by which the sender can request reports for specific circumstances of
+   interest.  Verifiers MUST NOT generate reports for incidents that do
+   not match a requested report and MUST ignore requests for reports not
+   included in this list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Requested Reports for SPF Failures</span>
+
+   The following report requests are defined for SPF results:
+
+   all  All reports are requested.
+
+   e    Reports are requested for messages that produced an SPF result
+        of &quot;TempError&quot; or &quot;PermError&quot;.
+
+   f    Reports are requested for messages that produced an SPF result
+        of &quot;Fail&quot;.
+
+   s    Reports are requested for messages that produced an SPF result
+        of &quot;SoftFail&quot;.
+
+   n    Reports are requested for messages that produced an SPF result
+        of &quot;Neutral&quot; or &quot;None&quot;.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   As required by [<a href="#ref-IANA-CONS">IANA-CONS</a>], this section contains registry
+   information for the new [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] modifiers.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  SPF Modifier Registration</span>
+
+   IANA has created the Modifier Names registry under Sender Policy
+   Framework Parameters, to include a list of all registered SPF
+   modifier names and their defining documents.
+
+   New registrations or updates are to be published in accordance with
+   the &quot;Specification Required&quot; guidelines as described in [<a href="#ref-IANA-CONS">IANA-CONS</a>].
+   New registrations and updates MUST contain the following information:
+
+   1.  Name of the modifier being registered or updated
+
+   2.  The document in which the specification of the modifier is
+       published
+
+   3.  New or updated status, which MUST be one of the following:
+
+       Current:  The field is in current use
+
+       Deprecated:  The field might be in current use but its use is
+          discouraged
+
+       Historic:  The field is no longer in current use
+
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+   An update may make a notation on an existing registration indicating
+   that a registered field is historic or deprecated if appropriate.
+
+                 +------------+-----------------+---------+
+                 | MODIFIER   | REFERENCE       | STATUS  |
+                 +------------+-----------------+---------+
+                 | exp        | <a href="/doc/html/rfc4408">RFC 4408</a>        | Current |
+                 | redirect   | <a href="/doc/html/rfc4408">RFC 4408</a>        | Current |
+                 | ra         | (this document) | Current |
+                 | rp         | (this document) | Current |
+                 | rr         | (this document) | Current |
+                 +------------+-----------------+---------+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   Inherited considerations: implementers are advised to consider the
+   Security Considerations sections of [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>], [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>], [<a href="#ref-ARF-AS" title="&quot;Creation and Use of Email Feedback Reports: An Applicability Statement for the Abuse Reporting Format (ARF)&quot;">ARF-AS</a>], and
+   [<a href="#ref-ARF-AUTHFAIL">ARF-AUTHFAIL</a>].
+
+   In addition to the advice in the Security Considerations section of
+   [<a href="#ref-ARF-AS" title="&quot;Creation and Use of Email Feedback Reports: An Applicability Statement for the Abuse Reporting Format (ARF)&quot;">ARF-AS</a>], these additional considerations apply to the generation of
+   [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] authentication failure reports:
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Identity Selection</span>
+
+   Preventing an [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] failure for SPF authentication failure reports is
+   essential to mitigate the risk of data loops.
+
+      If the [<a href="#ref-SMTP" title="&quot;Simple Mail Transfer Protocol&quot;">SMTP</a>] return address to be used will not be the NULL
+      return address, i.e., &quot;MAIL FROM:&lt;&gt;&quot;, then the selected return
+      address MUST be selected such that it will pass [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] MAIL FROM
+      checks upon initial receipt.
+
+      If the report is passed to the Message Submission Agent (MSA) (MSA
+      is described in [<a href="#ref-EMAIL-ARCH">EMAIL-ARCH</a>] using [<a href="#ref-SMTP" title="&quot;Simple Mail Transfer Protocol&quot;">SMTP</a>]), the HELO/EHLO command
+      parameter SHOULD also be selected so that it will pass [<a href="#ref-SPF" title="&quot;Sender Policy Framework (SPF) for Authorizing Use of Domains in E-Mail, Version 1&quot;">SPF</a>] HELO
+      checks.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Report Volume</span>
+
+   It is impossible to predict the volume of reports this facility will
+   generate when enabled by a report receiver.  An implementer ought to
+   anticipate substantial volume, since the amount of abuse occurring at
+   receivers cannot be known ahead of time, and may vary rapidly and
+   unpredictably.
+
+
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-ABNF">ABNF</a>]     Crocker, D., Ed., and P. Overell, &quot;Augmented BNF for
+              Syntax Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>,
+              January 2008.
+
+   [<a id="ref-ARF">ARF</a>]      Shafranovich, Y., Levine, J., and M. Kucherawy, &quot;An
+              Extensible Format for Email Feedback Reports&quot;, <a href="/doc/html/rfc5965">RFC 5965</a>,
+              August 2010.
+
+   [<a id="ref-ARF-AS">ARF-AS</a>]   Falk, J. and M. Kucherawy, Ed., &quot;Creation and Use of Email
+              Feedback Reports: An Applicability Statement for the Abuse
+              Reporting Format (ARF)&quot;, <a href="/doc/html/rfc6650">RFC 6650</a>, June 2012.
+
+   [<a id="ref-ARF-AUTHFAIL">ARF-AUTHFAIL</a>]
+              Fontana, H., &quot;Authentication Failure Reporting Using the
+              Abuse Reporting Format&quot;, <a href="/doc/html/rfc6591">RFC 6591</a>, April 2012.
+
+   [<a id="ref-IANA-CONS">IANA-CONS</a>]
+              Narten, T. and H. Alvestrand, &quot;Guidelines for Writing an
+              IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>, <a href="/doc/html/rfc5226">RFC 5226</a>,
+              May 2008.
+
+   [<a id="ref-KEYWORDS">KEYWORDS</a>] Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-MAIL">MAIL</a>]     Resnick, P., Ed., &quot;Internet Message Format&quot;, <a href="/doc/html/rfc5322">RFC 5322</a>,
+              October 2008.
+
+   [<a id="ref-MIME">MIME</a>]     Freed, N. and N. Borenstein, &quot;Multipurpose Internet Mail
+              Extensions (MIME) Part One: Format of Internet Message
+              Bodies&quot;, <a href="/doc/html/rfc2045">RFC 2045</a>, November 1996.
+
+   [<a id="ref-SMTP">SMTP</a>]     Klensin, J., &quot;Simple Mail Transfer Protocol&quot;, <a href="/doc/html/rfc5321">RFC 5321</a>,
+              October 2008.
+
+   [<a id="ref-SPF">SPF</a>]      Wong, M. and W. Schlitt, &quot;Sender Policy Framework (SPF)
+              for Authorizing Use of Domains in E-Mail, Version 1&quot;,
+              <a href="/doc/html/rfc4408">RFC 4408</a>, April 2006.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-EMAIL-ARCH">EMAIL-ARCH</a>]
+              Crocker, D., &quot;Internet Mail Architecture&quot;, <a href="/doc/html/rfc5598">RFC 5598</a>,
+              July 2009.
+
+
+
+
+<span class="grey">Kitterman                    Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc6652">RFC 6652</a>               SPF Auth Failure Reporting              June 2012</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Acknowledgements</span>
+
+   The author wishes to acknowledge the following for their review and
+   constructive criticism of this proposal: Murray Kucherawy, Tim
+   Draegen, Julian Mehnle, and John Levine.
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Examples</span>
+
+<span class="h3"><a class="selflink" id="appendix-B.1" href="#appendix-B.1">B.1</a>.  SPF DNS Record for Domain That Sends No Mail but Requests Reports</span>
+
+   v=spf1 ra=postmaster -all
+
+<span class="h3"><a class="selflink" id="appendix-B.2" href="#appendix-B.2">B.2</a>.  Minimal SPF DNS Record Change to Add a Reporting Address</span>
+
+   v=spf1 mx:example.org ra=postmaster -all
+
+<span class="h3"><a class="selflink" id="appendix-B.3" href="#appendix-B.3">B.3</a>.  SPF DNS Record with Reporting Address, Report Percentage, and</span>
+      Requested Report Type
+
+   v=spf1 mx:example.org -all ra=postmaster rp=10 rr=e
+
+Author&#x27;s Address
+
+   Scott Kitterman
+   Agari
+   3611 Scheel Dr.
+   Ellicott City, MD  21042
+   US
+
+   Phone: +1 301 325 5475
+   EMail: scott@kitterman.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kitterman                    Standards Track                    [Page 8]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

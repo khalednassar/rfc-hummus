@@ -1,0 +1,516 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6692
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-kucherawy-marf-source-ports/">
+  <meta name="description" content="Source Ports in Abuse Reporting Format (ARF) Reports (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6692.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6692.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6692.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6692/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6692/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/app/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-kucherawy-marf-source-ports@ietf.org?subject=draft-kucherawy-marf-source-ports" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-kucherawy-marf-source-ports-05.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-kucherawy-marf-source-ports-05.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-kucherawy-marf-source-ports-05.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-kucherawy-marf-source-ports-05">draft-kucherawy-marf-source-ports-05</a>             Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        R. Clayton
+Request for Comments: 6692                       University of Cambridge
+Updates: <a href="/doc/html/rfc6591">6591</a>                                               M. Kucherawy
+Category: Standards Track                                Cloudmark, Inc.
+ISSN: 2070-1721                                                July 2012
+
+
+          <span class="h1">Source Ports in Abuse Reporting Format (ARF) Reports</span>
+
+Abstract
+
+   This document defines an additional header field for use in Abuse
+   Reporting Format (ARF) reports to permit the identification of the
+   source port of the connection involved in an abuse incident.
+
+   This document updates <a href="/doc/html/rfc6591">RFC 6591</a>.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6692">http://www.rfc-editor.org/info/rfc6692</a>.
+
+Copyright Notice
+
+   Copyright (c) 2012 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+<span class="grey">Clayton &amp; Kucherawy          Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6692">RFC 6692</a>                    ARF Source Ports                   July 2012</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Keywords ........................................................<a href="#page-2">2</a>
+   <a href="#section-3">3</a>. Source-Port Field Definition ....................................<a href="#page-2">2</a>
+   <a href="#section-4">4</a>. Time Accuracy ...................................................<a href="#page-3">3</a>
+   <a href="#section-5">5</a>. IANA Considerations .............................................<a href="#page-3">3</a>
+   <a href="#section-6">6</a>. Security Considerations .........................................<a href="#page-3">3</a>
+   <a href="#section-7">7</a>. References ......................................................<a href="#page-4">4</a>
+      <a href="#section-7.1">7.1</a>. Normative References .......................................<a href="#page-4">4</a>
+      <a href="#section-7.2">7.2</a>. Informative References .....................................<a href="#page-4">4</a>
+   <a href="#appendix-A">Appendix A</a>. Acknowledgements .......................................<a href="#page-5">5</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a id="ref-ARF">ARF</a>] defined the Abuse Reporting Format, an extensible message
+   format for Email Feedback Reports.  These reports are used to report
+   incidents of email abuse.  ARF was extended by [<a href="#ref-AUTHFAILURE-REPORT">AUTHFAILURE-REPORT</a>]
+   to enable the reporting of email authentication failures.  These
+   specifications provided for the source IP address to be included in a
+   report.  As explained in [<a href="#ref-LOG" title="&quot;Logging Recommendations for Internet-Facing Servers&quot;">LOG</a>], the deployment of IP address sharing
+   techniques requires the source port values to be included in reports
+   if unambiguous identification of the origin of abuse is to be
+   achieved.
+
+   This document defines an ARF reporting field to contain this
+   information and provides guidance for its use.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Keywords</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="#ref-KEYWORDS">KEYWORDS</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Source-Port Field Definition</span>
+
+   A new ARF header field called &quot;Source-Port&quot; is defined.  When present
+   in a report, it MUST contain the client port of the TCP connection
+   from which the reported message originated, corresponding to the
+   &quot;Source-IP&quot; field that contains the client address of that same
+   connection, thereby describing completely the origin of the abuse
+   incident.
+
+   Per, [<a href="#ref-ABNF" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">ABNF</a>], the formal syntax is:
+
+     source-port = &quot;Source-Port:&quot; [CFWS] 1*5DIGIT [CFWS] CRLF
+
+
+
+
+
+<span class="grey">Clayton &amp; Kucherawy          Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6692">RFC 6692</a>                    ARF Source Ports                   July 2012</span>
+
+
+   &quot;CFWS&quot;, which represents email-style comments or folding white space,
+   is imported from [<a href="#ref-MAIL" title="&quot;Internet Message Format&quot;">MAIL</a>].
+
+   When any report is generated that includes the &quot;Source-IP&quot; field (see
+   Section 3.2 of [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>]), this field SHOULD also be present, unless the
+   port number is unavailable.
+
+   Use of this field is RECOMMENDED for reports generated per
+   [<a href="#ref-AUTHFAILURE-REPORT">AUTHFAILURE-REPORT</a>] (see <a href="#section-3.1">Section 3.1</a> of that document).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Time Accuracy</span>
+
+   [<a id="ref-LOG">LOG</a>] underscores the importance of accurate clocks when generating
+   reports that include source port information because of the fact that
+   source ports can be recycled very quickly in Internet Service
+   Provider environments.  The same considerations described there apply
+   here.
+
+   Report generators that include an Arrival-Date report field MAY
+   choose to express the value of that date in Universal Coordinated
+   Time (UTC) to enable simpler correlation with local records at sites
+   that are following the provisions of [<a href="#ref-LOG" title="&quot;Logging Recommendations for Internet-Facing Servers&quot;">LOG</a>].
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA has added the following entry to the &quot;Feedback Report Header
+   Fields&quot; registry:
+
+   Field Name:  Source-Port
+
+   Description:  TCP source port from which the original message was
+      received
+
+   Multiple Appearances:  No
+
+   Related &quot;Feedback-Type&quot;:  any
+
+   Reference:  [<a href="/doc/html/rfc6692">RFC6692</a>]
+
+   Status:  current
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   This extension introduces no new security considerations not already
+   covered in [<a href="#ref-ARF" title="&quot;An Extensible Format for Email Feedback Reports&quot;">ARF</a>].
+
+   Some security considerations related to the general topic of source
+   port logging can be found in [<a href="#ref-LOG" title="&quot;Logging Recommendations for Internet-Facing Servers&quot;">LOG</a>].
+
+
+
+<span class="grey">Clayton &amp; Kucherawy          Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6692">RFC 6692</a>                    ARF Source Ports                   July 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-ABNF">ABNF</a>]     Crocker, D. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>, January 2008.
+
+   [<a id="ref-ARF">ARF</a>]      Shafranovich, Y., Levine, J., and M. Kucherawy, &quot;An
+              Extensible Format for Email Feedback Reports&quot;, <a href="/doc/html/rfc5965">RFC 5965</a>,
+              August 2010.
+
+   [<a id="ref-AUTHFAILURE-REPORT">AUTHFAILURE-REPORT</a>]
+              Fontana, H., &quot;Authentication Failure Reporting Using the
+              Abuse Reporting Format&quot;, <a href="/doc/html/rfc6591">RFC 6591</a>, April 2012.
+
+   [<a id="ref-KEYWORDS">KEYWORDS</a>]
+              Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-MAIL">MAIL</a>]     Resnick, P., Ed., &quot;Internet Message Format&quot;, <a href="/doc/html/rfc5322">RFC 5322</a>,
+              October 2008.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-LOG">LOG</a>]      Durand, A., Gashinsky, I., Lee, D., and S. Sheppard,
+              &quot;Logging Recommendations for Internet-Facing Servers&quot;,
+              <a href="/doc/html/bcp162">BCP 162</a>, <a href="/doc/html/rfc6302">RFC 6302</a>, June 2011.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Clayton &amp; Kucherawy          Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6692">RFC 6692</a>                    ARF Source Ports                   July 2012</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Acknowledgements</span>
+
+   The authors wish to acknowledge the following for their review and
+   constructive criticism of this proposal: Steve Atkins, Scott
+   Kitterman, John Levine, and Doug Otis.
+
+   The idea for this work originated within the Messaging Anti-Abuse
+   Working Group (MAAWG).
+
+Authors&#x27; Addresses
+
+   Richard Clayton
+   University of Cambridge
+   Computer Laboratory
+   JJ Thomson Avenue
+   Cambridge  CB3 0FD
+   United Kingdom
+
+   Phone: +44 1223 763570
+   EMail: richard.clayton@cl.cam.ac.uk
+
+
+   Murray S. Kucherawy
+   Cloudmark, Inc.
+   128 King St., 2nd Floor
+   San Francisco, CA 94107
+   US
+
+   Phone: +1 415 946 3800
+   EMail: superuser@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Clayton &amp; Kucherawy          Standards Track                    [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

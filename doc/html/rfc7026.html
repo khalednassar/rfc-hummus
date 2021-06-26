@@ -1,0 +1,516 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc7026
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-mpls-retire-ach-tlv/">
+  <meta name="description" content="Retiring TLVs from the Associated Channel Header of the MPLS Generic Associated Channel (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc7026.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc7026.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc7026.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc7026/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc7026/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/mpls/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-mpls-retire-ach-tlv@ietf.org?subject=draft-ietf-mpls-retire-ach-tlv" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-mpls-retire-ach-tlv-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-mpls-retire-ach-tlv-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-mpls-retire-ach-tlv-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-mpls-retire-ach-tlv-03">draft-ietf-mpls-retire-ach-tlv-03</a>                Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         A. Farrel
+Request for Comments: 7026                              Juniper Networks
+Updates: <a href="/doc/html/rfc5586">5586</a>                                                  S. Bryant
+Category: Standards Track                                  Cisco Systems
+ISSN: 2070-1721                                           September 2013
+
+
+            <span class="h1">Retiring TLVs from the Associated Channel Header</span>
+                 <span class="h1">of the MPLS Generic Associated Channel</span>
+
+Abstract
+
+   The MPLS Generic Associated Channel (G-ACh) is a generalization of
+   the applicability of the pseudowire (PW) Associated Channel Header
+   (ACH).  <a href="/doc/html/rfc5586">RFC 5586</a> defines the concept of TLV constructs that can be
+   carried in messages on the G-ACh by placing them in the ACH between
+   the fixed header fields and the G-ACh message.  These TLVs are called
+   ACH TLVs
+
+   No Associated Channel Type yet defined uses an ACH TLV.  Furthermore,
+   it is believed that handling TLVs in hardware introduces significant
+   problems to the fast path, and since G-ACh messages are intended to
+   be processed substantially in hardware, the use of ACH TLVs is
+   undesirable.
+
+   This document updates <a href="/doc/html/rfc5586">RFC 5586</a> by retiring ACH TLVs and removing the
+   associated registry.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by
+   the Internet Engineering Steering Group (IESG).  Further
+   information on Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of
+   RFC 5741</a>.
+
+   Information about the current status of this document, any
+   errata, and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc7026">http://www.rfc-editor.org/info/rfc7026</a>.
+
+
+
+
+
+
+
+
+
+<span class="grey">Farrel &amp; Bryant              Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc7026">RFC 7026</a>                    Retiring ACH TLVs             September 2013</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2013 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction and Scope</span>
+
+   <a href="/doc/html/rfc4385">RFC 4385</a> [<a href="/doc/html/rfc4385" title="&quot;Pseudowire Emulation Edge-to-Edge (PWE3) Control Word for Use over an MPLS PSN&quot;">RFC4385</a>] says that if the first nibble of a PW packet
+   carried over an MPLS network has a value of 1, then the packet starts
+   with a specific header format called the Pseudowire Associated
+   Channel Header (PWACH) or more generally known as the ACH.  This
+   mechanism creates an Associated Channel that is a message channel
+   associated with a specific pseudowire (PW).
+
+   The applicability of the ACH is generalized in <a href="/doc/html/rfc5586">RFC 5586</a> [<a href="/doc/html/rfc5586" title="&quot;MPLS Generic Associated Channel&quot;">RFC5586</a>] to
+   define the MPLS Generic Associated Channel (G-ACh).  This creates a
+   common encapsulation header for control channel messages associated
+   with MPLS Sections, Label Switching Paths (LSPs), and PWs.
+
+   As part of making the ACH fully generic, <a href="/doc/html/rfc5586">RFC 5586</a> defines ACH TLV
+   constructs.  According to <a href="/doc/html/rfc5586">RFC 5586</a>:
+
+     In some applications of the generalized associated control channel,
+     it is necessary to include one or more ACH TLVs to provide
+     additional context information to the G-ACh packet.
+
+   <a href="/doc/html/rfc5586">RFC 5586</a> goes on to say:
+
+     If the G-ACh message MAY be preceded by one or more ACH TLVs, then
+     this MUST be explicitly specified in the definition of an ACH
+     Channel Type.
+
+   However, at the time of writing, of the 18 ACH Channel Types defined,
+   none allows the use of ACH TLVs [<a href="#ref-IANA-ACH" title="&quot;Pseudowire Associated Channel Types&quot;">IANA-ACH</a>].  At the time of writing,
+   there are no unexpired Internet-Drafts that utilize ACH TLVs.
+
+
+
+
+
+
+<span class="grey">Farrel &amp; Bryant              Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc7026">RFC 7026</a>                    Retiring ACH TLVs             September 2013</span>
+
+
+   Furthermore, G-ACh packets are intended to be substantially processed
+   in hardware; however, processing TLVs in hardware can be difficult
+   because of the unpredictable formats and lengths that they introduce
+   to the normal ACH format.
+
+   This document states that ACH TLVs, as specified in <a href="/doc/html/rfc5586">RFC 5586</a>, are not
+   useful and might be harmful.  It updates <a href="/doc/html/rfc5586">RFC 5586</a> by deprecating the
+   ACH TLV and updating the associated IANA registries as described in
+   <a href="#section-4">Section 4</a> of this document.  This document makes no comment about the
+   use of TLVs in other places.  In particular, proposals to use TLVs
+   within ACH messages or as an appendage to ACH messages, are not in
+   scope of this document.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Specification of Requirements</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Update to <a href="/doc/html/rfc5586">RFC 5586</a></span>
+
+   <a href="/doc/html/rfc5586#section-3">Section&nbsp;3 of RFC 5586</a> is deleted.
+
+   References to ACH TLVs in <a href="/doc/html/rfc5586#section-4">Section&nbsp;4 of RFC 5586</a> should also be
+   disregarded.  Note that the text in <a href="#section-4">Section 4</a> currently uses phrases
+   like &quot;ACH TLV(s), if present&quot; so, with the removal of <a href="#section-3">Section 3</a> that
+   used to define ACH TLVs, they will not be present.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Implication for the ACH</span>
+
+   A G-ACh message MUST NOT be preceded by an ACH TLV.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   This document details two changes to the IANA registries.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Associated Channel Header TLV Registry</span>
+
+   The &quot;Pseudowire Name Spaces (PWE3)&quot; registry has a subregistry called
+   the &quot;Associated Channel Header TLV Registry&quot;.  IANA has entirely
+   deleted this subregistry but has left a tombstone record in the top-
+   level list of registries that says:
+
+     Associated Channel Header TLV Registry (DELETED)
+
+     Reference
+     [<a href="/doc/html/rfc5586" title="&quot;MPLS Generic Associated Channel&quot;">RFC5586</a>] [<a href="/doc/html/rfc7026">RFC7026</a>]
+
+
+
+
+<span class="grey">Farrel &amp; Bryant              Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc7026">RFC 7026</a>                    Retiring ACH TLVs             September 2013</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Pseudowire Associated Channel Types Registry</span>
+
+     The &quot;Pseudowire Name Spaces (PWE3)&quot; registry has a subregistry
+     called the &quot;Pseudowire Associated Channel Types&quot; registry.  This
+     subregistry previously included a column marked &quot;TLV Follows&quot;.
+     IANA has entirely deleted this column leaving no record.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Manageability Considerations</span>
+
+     This document will have no impact on network or device
+     manageability because there are no ACH Types that allow the use of
+     TLVs.  The document removes a feature that might have been used to
+     enhance management messages, and especially Operations, Management,
+     and Administration (OAM) messages.  However, given the considerable
+     experience in defining MPLS OAM messages in the last few years, it
+     would appear that this feature is not useful.
+
+     It is possible that packet sniffers that have already been
+     implemented will look for ACH TLVs.  The deletion of the construct
+     will not have a negative impact.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+     Deleting the ACH TLV has a marginal positive effect on security
+     because it removes a feature that might have been used as an attack
+     vector to carry false information or to bloat G-ACh messages.
+
+     On the other hand, it had been suggested that the ACH TLV could
+     have been used to carry security parameters to secure the messages
+     on the G-ACh in a generic way.  However, no mechanisms have been
+     proposed at the time of writing, and it has generally been
+     considered that it is the responsibility of the specification that
+     defines G-ACh messages to consider the security requirements of
+     those messages that may be different for the different
+     applications.
+
+     Otherwise, this document has no implications for security.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Acknowledgements</span>
+
+     Thanks to Eric Osborne, Thomas Morin, Lizhong Jin, Greg Mirsky, Jia
+     He, and Pearl Liang for suggestions to improve the text.
+
+
+
+
+
+
+
+
+
+<span class="grey">Farrel &amp; Bryant              Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc7026">RFC 7026</a>                    Retiring ACH TLVs             September 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC4385">RFC4385</a>]   Bryant, S., Swallow, G., Martini, L., and D. McPherson,
+              &quot;Pseudowire Emulation Edge-to-Edge (PWE3) Control Word for
+              Use over an MPLS PSN&quot;, <a href="/doc/html/rfc4385">RFC 4385</a>, February 2006.
+
+   [<a id="ref-RFC5586">RFC5586</a>]   Bocci, M., Ed., Vigoureux, M., Ed., and S. Bryant, Ed.,
+              &quot;MPLS Generic Associated Channel&quot;, <a href="/doc/html/rfc5586">RFC 5586</a>, June 2009.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-IANA-ACH">IANA-ACH</a>] &quot;Pseudowire Associated Channel Types&quot;, IANA,
+              &lt;<a href="http://www.iana.org/assignments/pwe3-parameters">http://www.iana.org/assignments/pwe3-parameters</a>&gt;
+
+Authors&#x27; Addresses
+
+   Adrian Farrel
+   Juniper Networks
+   EMail: adrian@olddog.co.uk
+
+   Stewart Bryant
+   Cisco Systems
+   EMail: stbryant@cisco.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Farrel &amp; Bryant              Standards Track                    [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

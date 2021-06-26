@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1796
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-iab-rfc-not-std/">
+  <meta name="description" content="Not All RFCs are Standards (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1796.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1796.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1796.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1796/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1796/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-iab-rfc-not-std@ietf.org?subject=draft-iab-rfc-not-std" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-iab-rfc-not-std-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-iab-rfc-not-std-00">draft-iab-rfc-not-std-00</a>                             Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                         C. Huitema
+Request for Comments: 1796                                         INRIA
+Category: Informational                                        J. Postel
+                                                                     ISI
+                                                              S. Crocker
+                                                               CyberCash
+                                                              April 1995
+
+
+                       <span class="h1">Not All RFCs are Standards</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Abstract
+
+   This document discusses the relationship of the Request for Comments
+   (RFCs) notes to Internet Standards.
+
+Not All RFCs Are Standards
+
+   The &quot;Request for Comments&quot; (RFC) document series is the official
+   publication channel for Internet standards documents and other
+   publications of the IESG, IAB, and Internet community.  From time to
+   time, and about every six months in the last few years, someone
+   questions the rationality of publishing both Internet standards and
+   informational documents as RFCs.  The argument is generally that this
+   introduces some confusion between &quot;real standards&quot; and &quot;mere
+   publications&quot;.
+
+   It is a regrettably well spread misconception that publication as an
+   RFC provides some level of recognition.  It does not, or at least not
+   any more than the publication in a regular journal.  In fact, each
+   RFC has a status, relative to its relation with the Internet
+   standardization process: Informational, Experimental, or Standards
+   Track (Proposed Standard, Draft Standard, Internet Standard), or
+   Historic.  This status is reproduced on the first page of the RFC
+   itself, and is also documented in the periodic &quot;Internet Official
+   Protocols Standards&quot; RFC (STD 1).  But this status is sometimes
+   omitted from quotes and references, which may feed the confusion.
+
+   There are two important sources of information on the status of the
+   Internet standards:  they are summarized periodically in an RFC
+   entitled &quot;Internet Official Protocol Standards&quot; and they are
+   documented in the &quot;STD&quot; subseries.  When a specification has been
+
+
+
+<span class="grey">Huitema, Postel &amp; Crocker                                       [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1796">RFC 1796</a>               Not All RFCs are Standards             April 1995</span>
+
+
+   adopted as an Internet Standard, it is given the additional label
+   &quot;STD xxxx&quot;, but it keeps its RFC number and its place in the RFC
+   series.
+
+   It is important to note that the relationship of STD numbers to RFC
+   numbers is not one to one.  STD numbers identify protocols, RFC
+   numbers identify documents.  Sometimes more than one document is used
+   to specify a Standard protocol.
+
+   In order to further increase the publicity of the standardization
+   status, the IAB proposes the following actions:
+
+      Use the STD number, rather than just the RFC numbers, in the cross
+      references between standard tracks documents,
+
+      Utilize the &quot;web&quot; hypertext technology to publicize the state of
+      the standardization process.
+
+   More precisely, we propose to add to the current RFC repository an
+   &quot;html&quot; version of the &quot;STD-1&quot; document, i.e., the list of Internet
+   standards.  We are considering the extension of this document to also
+   describes actions in progress, i.e., standards track work at the
+   &quot;proposed&quot; or &quot;draft&quot; stage.
+
+A Single Archive
+
+   The IAB believes that the community benefitted significantly from
+   having a single archival document series.  Documents are easy to find
+   and to retrieve, and file servers are easy to organize.  This has
+   been very important over the long term.  Experience of the past shows
+   that subseries, or series of limited scope, tend to vanish from the
+   network.  And, there is no evidence that alternate document schemes
+   would result in less confusion.
+
+   Moreover, we believe that the presence of additional documents does
+   not actually hurt the standardization process.  The solution which we
+   propose is to better publicize the &quot;standard&quot; status of certain
+   documents, which is made relatively easy by the advent of networked
+   hypertext technologies.
+
+Rather Document Than Ignore
+
+   The RFC series includes some documents which are informational by
+   nature and other documents which describe experiences.  A problem of
+   perception occurs when such a document &quot;looks like&quot; an official
+   protocol specification.  Misguided vendors may claim conformance to
+   it, and misguided clients may actually believe that they are buying
+   an Internet standard.
+
+
+
+<span class="grey">Huitema, Postel &amp; Crocker                                       [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1796">RFC 1796</a>               Not All RFCs are Standards             April 1995</span>
+
+
+   The IAB believes that the proper help to misguided vendors and
+   clients is to provide them guidance.  There is actually very little
+   evidence of vendors purposely attempting to present informational or
+   experimental RFCs as &quot;Internet standards&quot;.  If such attempts
+   occurred, proper response would indeed be required.
+
+   The IAB believes that the community is best served by openly
+   developed specifications.  The Internet standardization process
+   provides guarantees of openness and thorough review, and the normal
+   way to develop the specification of an Internet protocol is indeed
+   through the IETF.
+
+   The community is also well served by having access to specifications
+   of which have been developed outside the IETF standards process,
+   either because the protocols are experimental in nature, were
+   developed privately, or failed to achieve the acquire the degree of
+   consensus required for elevation to the standards track.
+
+   The IAB believes that publication is better than ignorance.  If a
+   particular specification ends up being used in products that are
+   deployed over the Internet, we are better off if the specification is
+   easy to retrieve as an RFC than if it is hidden in some private
+   repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Huitema, Postel &amp; Crocker                                       [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1796">RFC 1796</a>               Not All RFCs are Standards             April 1995</span>
+
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Authors&#x27; Addresses
+
+   Christian Huitema
+   INRIA, Sophia-Antipolis
+   2004 Route des Lucioles
+   BP 109
+   F-06561 Valbonne Cedex
+   France
+
+   Phone: +33 93 65 77 15
+   EMail: Christian.Huitema@MIRSA.INRIA.FR
+
+
+   Jon Postel
+   USC/Information Sciences Institute
+   4676 Admiralty Way
+   Marina del Rey, CA 90292
+
+   Phone: 1-310-822-1511
+   EMail: Postel@ISI.EDU
+
+
+   Steve Crocker
+   CyberCash, Inc.
+   2086 Hunters Crest Way
+   Vienna, VA 22181
+
+   Phone: 1- 703-620-1222
+   EMail: crocker@cybercash.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Huitema, Postel &amp; Crocker                                       [Page 4]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

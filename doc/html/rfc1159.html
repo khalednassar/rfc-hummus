@@ -1,0 +1,348 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1159
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1159/">
+  <meta name="description" content="Message Send Protocol (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgbrown"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1159.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1159.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1159.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1159/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1159/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1159@ietf.org?subject=rfc1159" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1159-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1159-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1159-.txt" title="Run an idnits check of this document">Nits</a>]
+
+Obsoleted by: <a href="/doc/html/rfc1312">1312</a>                                          Experimental</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                          R. Nelson
+Request for Comments: 1159                           Clarkson University
+                                                               June 1990
+
+
+                         <span class="h1">Message Send Protocol</span>
+
+Status of this Memo
+
+   This RFC suggests an Experimental Protocol for the Internet
+   community.  Hosts on the Internet that choose to implement a Message
+   Send Protocol may experiment with this protocol.  Please refer to the
+   current edition of the &quot;IAB Official Protocol Standards&quot; for the
+   standardization state and status of this protocol.  Distribution of
+   this memo is unlimited.
+
+Discussion
+
+   The Message Send Protocol is used to send a short message to a given
+   user on a given terminal on a given host.  This is similar to the
+   service provided by Unix&#x27;s write command, which is limited to the
+   users on that host.  This service is also known on some hosts as
+   &quot;SEND&quot;.
+
+   As the Internet grows, more and more people are using hosts that do
+   not run TCP/IP at all times.  These hosts may be able to use a simple
+   protocol that can be implemented in a subset of TCP/IP.  The Message
+   Send Protocol is one such protocol.
+
+   Note that a message sending protocol is already defined using TCP.
+   The SMTP protocol includes a &quot;SEND&quot; command that will direct mail to
+   a user&#x27;s terminal.  SMTP&#x27;s SEND is not useful in this instance
+   because TCP requires quite a bit of code.  For the purposes of
+   standardization, we will include a TCP based Message Send Service.
+
+TCP Based Message Send Service
+
+   One message send service is defined as a connection based application
+   on TCP.  A server listens for TCP connections on TCP port 18.  Once a
+   connection is established a short message is sent by the client out
+   the connection (and any data received by the client is thrown away).
+   The client closes the connection after sending the message.
+
+UDP Based Message Send Service
+
+   Another message send service is defined as a datagram based
+   application on UDP.  A server listens for UDP datagrams on UDP port
+   18.  When a datagram is received by the server, an answering datagram
+
+
+
+<span class="grey">Nelson                                                          [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1159">RFC 1159</a>                 Message Send Protocol                 June 1990</span>
+
+
+   is sent back to the client containing exactly the same data.
+
+Message Syntax
+
+   The message should consist of several parts.  The first part is a
+   single octet indicating the protocol revision, currently decimal 65,
+   &#x27;A&#x27;.  The second part is the name of the user that the message is
+   directed to.  This and the remaining parts are null-terminated, and
+   consist of eight-bit characters.  Do not strip the eighth bit of the
+   characters.  The third part is the name of the terminal.  The fourth
+   part is the actual message.
+
+   The total length of the message shall be less than 512 octets.  This
+   includes all four parts, and any terminating nulls.
+
+   If the terminal part is empty, then &quot;the right&quot; terminal is chosen.
+   If the user part is empty, then the message is written on the
+   console.
+
+   If this protocol is changed, the revision number will be changed.  In
+   no case will any of the four parts be removed.
+
+Advisories
+
+   It is advisable for servers to strip escape sequences before sending
+   them to actual terminals.  Some terminals can do nasty things when
+   you send them certain escape sequence.
+
+   In both the TCP and UDP versions of the service, checksums are always
+   used.
+
+Security Considerations
+
+   Security issues are not addressed in this memo.
+
+Author&#x27;s Address
+
+   Russell Nelson
+   Educational Computing System
+   Clarkson University
+   Potsdam, NY 13699-5730
+
+   Phone:  (315) 268-6455
+
+   EMail:  nelson@sun.soe.clarkson.edu
+
+
+
+
+
+
+Nelson                                                          [Page 2]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

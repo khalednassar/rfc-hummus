@@ -1,0 +1,572 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6248
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-morton-ippm-rfc4148-obsolete/">
+  <meta name="description" content="RFC 4148 and the IP Performance Metrics (IPPM) Registry of Metrics Are Obsolete (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6248.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6248.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6248.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6248/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6248/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ippm/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-morton-ippm-rfc4148-obsolete@ietf.org?subject=draft-morton-ippm-rfc4148-obsolete" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-morton-ippm-rfc4148-obsolete-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-morton-ippm-rfc4148-obsolete-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-morton-ippm-rfc4148-obsolete-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-morton-ippm-rfc4148-obsolete-03">draft-morton-ippm-rfc4148-obsolete-03</a>                Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         A. Morton
+Request for Comments: 6248                                     AT&amp;T Labs
+Obsoletes: <a href="/doc/html/rfc4148">4148</a>                                               April 2011
+Updates: <a href="/doc/html/rfc4737">4737</a>, <a href="/doc/html/rfc5560">5560</a>, <a href="/doc/html/rfc5644">5644</a>, <a href="/doc/html/rfc6049">6049</a>
+Category: Informational
+ISSN: 2070-1721
+
+
+   <span class="h1">RFC 4148 and the IP Performance Metrics (IPPM) Registry of Metrics</span>
+                              <span class="h1">Are Obsolete</span>
+
+Abstract
+
+   This memo reclassifies <a href="/doc/html/rfc4148">RFC 4148</a>, &quot;IP Performance Metrics (IPPM)
+   Metrics Registry&quot;, as Obsolete, and withdraws the IANA IPPM Metrics
+   Registry itself from use because it is obsolete.  The current
+   registry structure has been found to be insufficiently detailed to
+   uniquely identify IPPM metrics.  Despite apparent efforts to find
+   current or even future users, no one responded to the call for
+   interest in the <a href="/doc/html/rfc4148">RFC 4148</a> registry during the second half of 2010.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are a candidate for any level of Internet
+   Standard; see <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6248">http://www.rfc-editor.org/info/rfc6248</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Morton                        Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6248">RFC 6248</a>                  <a href="/doc/html/rfc4148">RFC 4148</a> is Obsolete                April 2011</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2011 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   2. Action to Reclassify <a href="/doc/html/rfc4148">RFC 4148</a> and the Corresponding IANA
+      Registry as Obsolete ............................................<a href="#page-3">3</a>
+   <a href="#section-3">3</a>. Security Considerations .........................................<a href="#page-4">4</a>
+   <a href="#section-4">4</a>. IANA Considerations .............................................<a href="#page-4">4</a>
+   <a href="#section-5">5</a>. Acknowledgements ................................................<a href="#page-4">4</a>
+   <a href="#section-6">6</a>. References ......................................................<a href="#page-5">5</a>
+      <a href="#section-6.1">6.1</a>. Normative References .......................................<a href="#page-5">5</a>
+      <a href="#section-6.2">6.2</a>. Informative References .....................................<a href="#page-5">5</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The IP Performance Metrics (IPPM) framework [<a href="/doc/html/rfc2330" title="&quot;Framework for IP Performance Metrics&quot;">RFC2330</a>] describes
+   several ways to record options and metric parameter settings, in
+   order to account for sources of measurement variability.  For
+   example, <a href="/doc/html/rfc2330#section-13">Section&nbsp;13 of [RFC2330]</a> describes the notion of &quot;Type P&quot; so
+   that metrics can be specified in general, but the specifics (such as
+   payload length in octets and protocol type) can replace P to
+   disambiguate the results.
+
+   When the IPPM Metrics Registry [<a href="/doc/html/rfc4148" title="&quot;IP Performance Metrics (IPPM) Metrics Registry&quot;">RFC4148</a>] was designed, the
+   variability of the &quot;Type P&quot; notion, and the variability possible with
+   the many metric parameters (see <a href="/doc/html/rfc2679#section-4.2">Section&nbsp;4.2 of [RFC2679]</a>), were not
+   fully appreciated.  Further, some of the early metric definitions
+   only indicate Poisson streams [<a href="/doc/html/rfc2330" title="&quot;Framework for IP Performance Metrics&quot;">RFC2330</a>] (see the metrics in
+   [<a href="/doc/html/rfc2679" title="&quot;A One-way Delay Metric for IPPM&quot;">RFC2679</a>], [<a href="/doc/html/rfc2680" title="&quot;A One-way Packet Loss Metric for IPPM&quot;">RFC2680</a>], and [<a href="/doc/html/rfc3393" title="&quot;IP Packet Delay Variation Metric for IP Performance Metrics (IPPM)&quot;">RFC3393</a>]), but later work standardized the
+   methods for Periodic Stream measurements [<a href="/doc/html/rfc3432" title="&quot;Network performance measurement with periodic streams&quot;">RFC3432</a>], adding to the
+   variability possible when characterizing a metric exactly.
+
+
+
+
+
+
+<span class="grey">Morton                        Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6248">RFC 6248</a>                  <a href="/doc/html/rfc4148">RFC 4148</a> is Obsolete                April 2011</span>
+
+
+   It is not believed to be feasible or even useful to register every
+   possible combination of Type P, metric parameters, and Stream
+   parameters using the current structure of the IPPM Metrics Registry.
+
+   The IPPM Metrics Registry is believed to have very few users, if any.
+   Evidence of this was provided by the fact that one registry entry was
+   syntactically incorrect for months after [<a href="/doc/html/rfc5644" title="&quot;IP Performance Metrics (IPPM): Spatial and Multicast&quot;">RFC5644</a>] was published.
+   The text &quot;:=&quot; was used for the metrics in that document instead of
+   &quot;::=&quot;.  It took eight months before someone offered that a parser
+   found the error.  Even the original registry author agrees that the
+   current registry is not efficient, and has submitted a proposal to
+   effectively create a new registry.
+
+   Despite apparent efforts to find current or even future users, no one
+   responded to the call for interest in the <a href="/doc/html/rfc4148">RFC 4148</a> registry during
+   the second half of 2010.  Therefore, the IETF now declares the
+   registry Obsolete without any further reservations.
+
+   When a registry is designated Obsolete, it simply prevents the IANA
+   from registering new objects, in this case new metrics.  So, even if
+   a registry user was eventually found, they could continue to use the
+   current registry, and its contents will continue to be available.
+
+   The most recently published memo that added metrics to the registry
+   is [<a href="/doc/html/rfc6049" title="&quot;Spatial Composition of Metrics&quot;">RFC6049</a>].  This memo updates all previous memos that registered
+   new metrics, including [<a href="/doc/html/rfc4737" title="&quot;Packet Reordering Metrics&quot;">RFC4737</a>] and [<a href="/doc/html/rfc5560" title="&quot;A One-Way Packet Duplication Metric&quot;">RFC5560</a>], so that the
+   registry&#x27;s Obsolete status will be evident.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Action to Reclassify <a href="/doc/html/rfc4148">RFC 4148</a> and the Corresponding IANA Registry as</span>
+<span class="h2">    Obsolete</span>
+
+   Due to the ambiguities between the current metrics registrations and
+   the metrics used, and the apparent minimal adoption of the registry
+   in practice, it is required that:
+
+   o  the IETF reclassify [<a href="/doc/html/rfc4148" title="&quot;IP Performance Metrics (IPPM) Metrics Registry&quot;">RFC4148</a>] as Obsolete.
+
+   o  the IANA withdraw the current IPPM Metrics Registry from further
+      updates and note that it too is Obsolete.
+
+   It is assumed that parties who wish to establish a replacement
+   registry function will work to specify such a registry.
+
+
+
+
+
+
+
+
+
+<span class="grey">Morton                        Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6248">RFC 6248</a>                  <a href="/doc/html/rfc4148">RFC 4148</a> is Obsolete                April 2011</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   This memo and its recommendations have no known impact on the
+   security of the Internet (especially if there is a zombie apocalypse
+   on the day it is published; humans will have many more security
+   issues to worry about stemming from the rise of the un-dead).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   Metrics defined in the IETF have been typically registered in the
+   IANA IPPM Metrics Registry as described in the initial version of the
+   registry [<a href="/doc/html/rfc4148" title="&quot;IP Performance Metrics (IPPM) Metrics Registry&quot;">RFC4148</a>].  However, areas for improvement of this registry
+   have been identified, and the registry structure has to be revisited
+   when there is working group consensus to do so.
+
+   The current consensus is to designate the IPPM Metrics Registry,
+   originally described in [<a href="/doc/html/rfc4148" title="&quot;IP Performance Metrics (IPPM) Metrics Registry&quot;">RFC4148</a>], as Obsolete.
+
+   The DESCRIPTION of the registry MIB has been modified as follows, and
+   the first two sentences should be included on any IANA-maintained web
+   page describing this registry or its contents:
+
+   DESCRIPTION
+
+      &quot;With the approval and publication of <a href="/doc/html/rfc6248">RFC 6248</a>, this module is
+      designated Obsolete.
+
+      The registry will no longer be updated, and the current contents
+      will be maintained as-is on the day that <a href="/doc/html/rfc6248">RFC 6248</a> was published.
+
+      The original Description text follows below:
+
+      This module defines a registry for IP Performance Metrics.
+
+      ... &quot;
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Acknowledgements</span>
+
+   Henk Uijterwaal suggested additional rationale for the recommendation
+   in this memo.
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Morton                        Informational                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6248">RFC 6248</a>                  <a href="/doc/html/rfc4148">RFC 4148</a> is Obsolete                April 2011</span>
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC4148">RFC4148</a>]  Stephan, E., &quot;IP Performance Metrics (IPPM) Metrics
+              Registry&quot;, <a href="/doc/html/bcp108">BCP 108</a>, <a href="/doc/html/rfc4148">RFC 4148</a>, August 2005.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC2330">RFC2330</a>]  Paxson, V., Almes, G., Mahdavi, J., and M. Mathis,
+              &quot;Framework for IP Performance Metrics&quot;, <a href="/doc/html/rfc2330">RFC 2330</a>,
+              May 1998.
+
+   [<a id="ref-RFC2679">RFC2679</a>]  Almes, G., Kalidindi, S., and M. Zekauskas, &quot;A One-way
+              Delay Metric for IPPM&quot;, <a href="/doc/html/rfc2679">RFC 2679</a>, September 1999.
+
+   [<a id="ref-RFC2680">RFC2680</a>]  Almes, G., Kalidindi, S., and M. Zekauskas, &quot;A One-way
+              Packet Loss Metric for IPPM&quot;, <a href="/doc/html/rfc2680">RFC 2680</a>, September 1999.
+
+   [<a id="ref-RFC3393">RFC3393</a>]  Demichelis, C. and P. Chimento, &quot;IP Packet Delay Variation
+              Metric for IP Performance Metrics (IPPM)&quot;, <a href="/doc/html/rfc3393">RFC 3393</a>,
+              November 2002.
+
+   [<a id="ref-RFC3432">RFC3432</a>]  Raisanen, V., Grotefeld, G., and A. Morton, &quot;Network
+              performance measurement with periodic streams&quot;, <a href="/doc/html/rfc3432">RFC 3432</a>,
+              November 2002.
+
+   [<a id="ref-RFC4737">RFC4737</a>]  Morton, A., Ciavattone, L., Ramachandran, G., Shalunov,
+              S., and J. Perser, &quot;Packet Reordering Metrics&quot;, <a href="/doc/html/rfc4737">RFC 4737</a>,
+              November 2006.
+
+   [<a id="ref-RFC5560">RFC5560</a>]  Uijterwaal, H., &quot;A One-Way Packet Duplication Metric&quot;,
+              <a href="/doc/html/rfc5560">RFC 5560</a>, May 2009.
+
+   [<a id="ref-RFC5644">RFC5644</a>]  Stephan, E., Liang, L., and A. Morton, &quot;IP Performance
+              Metrics (IPPM): Spatial and Multicast&quot;, <a href="/doc/html/rfc5644">RFC 5644</a>,
+              October 2009.
+
+   [<a id="ref-RFC6049">RFC6049</a>]  Morton, A. and E. Stephan, &quot;Spatial Composition of
+              Metrics&quot;, <a href="/doc/html/rfc6049">RFC 6049</a>, January 2011.
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Morton                        Informational                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6248">RFC 6248</a>                  <a href="/doc/html/rfc4148">RFC 4148</a> is Obsolete                April 2011</span>
+
+
+Author&#x27;s Address
+
+   Al Morton
+   AT&amp;T Labs
+   200 Laurel Avenue South
+   Middletown, NJ  07748
+   USA
+
+   Phone: +1 732 420 1571
+   Fax:   +1 732 368 1192
+   EMail: acmorton@att.com
+   URI:   <a href="http://home.comcast.net/~acmacm/">http://home.comcast.net/~acmacm/</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Morton                        Informational                     [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,613 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc643
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc643/">
+  <meta name="description" content="Network Debugging Protocol (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc643.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc643.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc643.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc643/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc643/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc643@ietf.org?subject=rfc643" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc643-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc643-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc643-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Debugging Protocol                          Eric Mader
+RFC: 643                                             July 1974
+NIC #30873
+
+
+     This document describes a proposed protocol  to  be  used  in  an
+implementation   of   a   PDP-11   network  Bootstrap  service  and  a
+cross-network  debugger.   The  protocol  is  designed  for  debugging
+processes  running under an operating system which can perform some of
+the &quot;lower level&quot; debugging  tasks,  such  as  planting  and  removing
+breakpoints  and  single  stepping.  A subset of the protocol could be
+used if such a capability does not exist (a  stand-alone  program  for
+example).
+
+     The protocol is a level 2 protocol, which  bypasses  the  ARPANET
+HOST-HOST  protocol.   (This  is  implemented  on  TENEX using special
+privileged system calls which allow messages to be  sent  directly  to
+and  received  directly  from the IMP).  Messages are sent between the
+PDP-11 and the remote debugger on  one  link  (currently  377  octal).
+Each  message from the remote debugger to the PDP-ll is a request that
+the PDP-11 perform some action, and each message from  the  PDP-11  to
+the remote debugger is either a reply to that request or an indication
+that  a  process  has  stopped  running  (i.e.   has  trapped,  hit  a
+breakpoint, etc).  The exact format of the messages is shown in Figure
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a> below.</span>
+
+     Each  command  consists  of  an  8-bit  op-code,  and  an   8-bit
+process-id,  two  16-bit  arguments,  and  an optional string of 8-bit
+bytes.  The op-code field from the PDP-11 should be the same  as  that
+sent  by  the  remote  host  to  indicate successful completion of the
+request or be the same as that set by the remote host with the 200 bit
+set  to  indicate  failure to complete the request.  Op-codes from the
+PDP-11 which have the 100 bit set are asynchronous indication  that  a
+process  has stopped for a reason other than a request from the remote
+host.  (See description of asynchronous replies  below).   An  op-code
+from  the  PDP-11  with  both  the 100 and 200 bit set is meaningless.
+Thus, the 8-bit op-code field sent by the PDP-11 can be thought of  as
+a CAN&#x27;T Flag, an Asynchronous STOP Flag, and a 6-bit op-code.
+
+     In the description that follows the commands will be given as
+
+   NAME (Process-ID, Argument 1, Argument 2, BYTE STRING)
+with only as many of the fields present as are used.
+
+Op-Code 0 - NOP_______ _ _ ___
+
+     This command is intended to be used to determine if the PDP-11 is
+operational.   It  has no effect on any process running in the PDP-11.
+The response is NOP.
+
+Op-Code 1 - DEBUG (Process)_______ _ _ _____ _________
+
+     This command requests the ability to  debug  the  given  process.
+The PDP-11 should respond with
+
+                                                    Page   2
+
+
+
+                     DEBUGGING (process)
+
+(op-code 1) if no other remote host is currently doing so, and
+
+                    CAN&#x27;T DEBUG (process)
+
+(op-code 201) if another remote host  has  been  given  permission  to
+debug the process, or the process doesn&#x27;t exist.
+
+Op-Code 2 - END DEBUG (Process)_______ _ _ ___ _____ _________
+
+     This command relinquishes the ability to debug  a  process.   The
+PDP-11 should reply
+
+                     END DEBUG (Process)
+
+(op-code 2) unless the remote host isn&#x27;t  debugging  the  process,  in
+which case it should respond
+
+                  CAN&#x27;T END DEBUG (Process)
+
+(op-code 202).  If the process isn&#x27;t running when  the  END  DEBUG  is
+done, then the effect should be the same as
+
+                      RESUME (PROCESS)
+                    END DEBUG (PROCESS)
+
+Op-Code 3 - STOP (Process)_______ _ _ ____ _________
+
+     This command requests the PDP-11 to stop the given  process  from
+running.  The PDP-11 should respond
+
+                      STOPPED (process)
+
+(op-code 3) unless the process isn&#x27;t  being  debugged  by  the  remote
+host.  In this case it should reply
+
+                    CAN&#x27;T STOP (process)
+
+  (op-code 203).
+
+Op-Code 4 - DEPOSIT (Process, Address, Count, Byte String)_______ _ _ _______ _________ ________ ______ ____ _______
+
+     This instructs the PDP-11 to deposit  the  Count  bytes  in  Byte
+String  into  the  given process&#x27;s address space beginning at Address.
+The PDP-11 should reply
+
+             DEPOSITED (Process, Address, Count)
+
+if successful or
+
+           CAN&#x27;T DEPOSIT (Process, Address, Count)
+
+                                                    Page   3
+
+
+
+if the deposit doesn&#x27;t succeed, or the remote host isn&#x27;t debugging the
+process.
+
+Op-Code 5 - RESUME (Process)_______ _ _ ______ _________
+
+     This instructs the PDP-11 to allow the given  process  to  resume
+running.  The PDP-11 should reply
+
+                     RESUMED (Process)
+
+before it starts the process (in case it traps right away), or
+
+                   CAN&#x27;T RESUME (Process)
+
+if the process wasn&#x27;t stopped, or the remote host isn&#x27;t debugging  the
+process.
+
+Op-Code 6 - EXAMINE (Process, Address, Count)_______ _ _ _______ _________ ________ ______
+
+     This instructs the PDP-11 to return Count bytes  from  the  given
+process address space starting at Address.  The PDP-11 should reply
+
+       CONTENTS (Process, Address, Count, Byte String)
+
+if it can supply the bytes, or
+
+           CAN&#x27;T EXAMINE (Process, Address, Count)
+
+if all the bytes don&#x27;t exist in the address space, or the remote  host
+isn&#x27;t debugging the process.
+
+Op-Code 7 - DEPOSIT STATE VECTOR (Process, Index, Byte Count,_______ _ _ _______ _____ ______ _________ ______ ____ ______
+            Byte String)            ____ _______
+
+     This instructs the PDP-11 to deposit the Byte Count bytes in Byte
+String  into the state vector for the given process starting with byte
+Index.  See Figure 2 for the format of the state vector.   The  PDP-11
+should reply
+
+     DEPOSITED STATE VECTOR (Process, Index, Byte Count)
+
+unless the bytes won&#x27;t all fit in the state vector or the remote  host
+isn&#x27;t debugging the process.  In this case the reply should be
+
+  CAN&#x27;T DEPOSIT STATE VECTOR (Process, Index, Byte Count)
+
+Op-Code 10 - BREAK (Process, Address, Proceed Count)_______ __ _ _____ _________ ________ _______ ______
+
+     This instructs the PDP-11 to place a breakpoint at Address in the
+given  process&#x27;s address space, with a proceed count of Proceed Count.
+The proceed count can be changed by issuing another BREAK with a
+different count.  The PDP-11 should reply
+
+                                                    Page   4
+
+
+
+           BROKE (Process, Address, Proceed Count)
+
+if it was able to plant the breakpoint and
+
+        CAN&#x27;T BREAK (Proceed, Address, Proceed Count)
+
+if it was unable to plant the breakpoint because the breakpoint tables
+for  the  process are full, or because the remote host isn&#x27;t debugging
+the process.  Note that the  PDP-11  must  keep  track  of  where  the
+breakpoints are, the old contents of these locations etc.
+
+Op-Code 11 - UNBREAK (Process, Address)_______ __ _ _______ _________ ________
+
+     This instructs the PDP-11 to remove the breakpoint  from  Address
+in the process&#x27;s address space and release all storage associated with
+it.  The PDP-11 should reply
+
+                 UNBROKE (Process, Address)
+
+when the breakpoint is removed, or
+
+              CAN&#x27;T UNBREAK (Process, Address)
+
+if the process doens&#x27;t have a breakpoint at Address or the remote host
+isn&#x27;t debugging the process.
+
+Op-Code 12 - SINGLE STEP (Process)_______ __ _ ______ ____ _________
+
+     This instructs the PDP-11 to let the given  process  execute  one
+instruction, using the Trace Trap feature.  The PDP-11 should reply
+
+                  SINGLE STEPPING (Process)
+
+before the process is started, or
+
+                 CAN&#x27;T SINGLE STEP (Process)
+
+if the process is already running or the remote host  isn&#x27;t  debugging
+the process.
+
+Op-Code 13 - PROCEED BPT (Process)_______ __ _ _______ ___ _________
+
+     This instructs the PDP-11 to allow the process to proceed from  a
+break point trap (BPT, see below).  The PDP-11 should reply
+
+                  PROCEEDING BPT (Process)
+
+before allowing the process to proceed, or
+
+                 CAN&#x27;T PROCEED BPT (Process)
+
+if the process isn&#x27;t stopped at a breakpoint or the remote host  isn&#x27;t
+debugging the process.
+
+                                                    Page   5
+
+
+
+Op-Code 14 - CREATE PROCESS_______ __ _ ______ _______
+
+     This instructs the PDP-11 to  create  a  process  (with  its  own
+virtual address space if the system will support such a feature).  The
+PDP-11 should reply
+
+                  CREATED PROCESS (Process)
+
+if it could create a process, with the process-id in process.  If  the
+process  creation  failed  or  the system cannot create processes, the
+PDP-11 should reply
+
+                    CAN&#x27;T CREATE PROCESS.
+
+Once a remote host has created a process it is debugging it, that is a
+
+                       DEBUG (process)
+
+need not be done.
+
+Op-Code 15 - DESTROY PROCESS (Process)_______ __ _ _______ _______ _________
+
+     This instructs the PDP-11 to destroy the  given  process.   After
+the  process  is destroyed the remote host cannot, of course, debug it
+so there is no need to do an
+
+                    END DEBUG (Process).
+
+The PDP-11 should reply
+
+                 DESTROYED PROCESS (Process)
+
+if the process has been destroyed.  If the system  doesn&#x27;t  support  a
+multi-process structure or the remote host isn&#x27;t debugging the process
+the PDP-11 should reply
+
+              CAN&#x27;T DESTROY PROCESS (Process).
+
+
+
+
+                 Asynchronous Stop Replies                 ____________ ____ _______
+
+     These replies (op-code between 100 and 177 octal) are sent by the
+PDP-11  wherever a process being debugged stops running for any reason
+other than in response to the
+
+                       STOP (Process)
+
+command.  Each of these replies includes the entire state  vector  for
+the process.
+
+                                                    Page   6
+
+
+
+Op-Code 100 - TRAP (Process, Reason, 0, STATE VECTOR)_______ ___ _ ____ _________ _______ __ _____ _______
+
+     This informs the remote host that a  process  has  &quot;trapped&quot;,  or
+terminated abnormally.  The reason is a system error code, or could be
+a trap vector address in the stand-alone case.
+
+Op-Code 101 - HALT (Process, 0,0, STATE VECTOR)_______ ___ _ ____ _________ ____ _____ _______
+
+     This  informs  the  remote  host  that  the  given  process   has
+terminated normally.
+
+Op-Code 102 - BPT (Process, 0, 0, STATE VECTOR)_______ ___ _ ___ _________ __ __ _____ _______
+
+     This informs the remote host that the given  process  has  hit  a
+breakpoint trap.
+
+Op-Code 103 - TTRAP (Process, 0, 0, STATE VECTOR)_______ ___ _ _____ _________ __ __ _____ _______
+
+     This informs the remote host that the given  process  has  hit  a
+trace trap, i.e.  has just executed one instruction in response to the
+
+                    SINGLE STEP (Process)
+
+command.
+
+                                                    Page   7
+
+
+                          Figure 1
+
+             FORMAT OF NETWORK DEBUGGER MESSAGES
+
+
+                    ----------------
+                   | TYPE | HOST    |
+                    ----------------
+                   | LINK | STYPE   |
+                    ----------------
+                   | CMD  |  PID    |
+                    ----------------
+                   |    ARG1        |
+                    ----------------
+                   |    ARG2        |
+                    ----------------
+
+     TYPE -- The HOST-IMP/IMP-HOST message type, should
+             always be zero.
+
+     HOST -- The source host ID.
+
+     LINK -- The debugger link.
+
+    STYPE -- The message subtype, always zero.
+
+      CMD -- The debugger command op-code, excess 100 for
+             asynchronous reply&#x27;s, excess 200 for &quot;can&#x27;t&quot;
+             reply&#x27;s.
+
+      PID -- Process ID of process being debugged.
+
+     ARG1 -- The first argument of the command.
+
+     ARG2 -- The second argument of the command.
+
+
+                                                 Page 8
+
+
+
+
+                          Figure 2
+
+                  FORMAT OF STATE VECTORS
+
+                      ------------
+                     |    R0      |
+                      ------------
+                     |    R1      |
+                      ------------
+                     |    R2      |
+                      ------------
+                     |   ...      |
+                      ------------
+                     |    PC      |
+                      ------------
+                     |    PS      |
+                      ------------</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

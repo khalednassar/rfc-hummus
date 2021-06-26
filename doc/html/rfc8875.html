@@ -1,0 +1,537 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8875
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-git-github-wg-configuration/">
+  <meta name="description" content="Working Group GitHub Administration (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8875.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8875.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8875.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8875.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8875/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8875/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/git/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-git-github-wg-configuration@ietf.org?subject=draft-ietf-git-github-wg-configuration" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-git-github-wg-configuration-07.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-git-github-wg-configuration-07.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-git-github-wg-configuration-07.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-git-github-wg-configuration-07">draft-ietf-git-github-wg-configuration-07</a>            Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         A. Cooper
+Request for Comments: 8875                                         Cisco
+Category: Informational                                       P. Hoffman
+ISSN: 2070-1721                                                    ICANN
+                                                             August 2020
+
+
+                  <span class="h1">Working Group GitHub Administration</span>
+
+Abstract
+
+   The use of GitHub in IETF working group processes is increasing.
+   This document describes uses and conventions for working groups that
+   are considering starting to use GitHub.  It does not mandate any
+   processes and does not require changes to the processes used by
+   current and future working groups not using GitHub.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8875">https://www.rfc-editor.org/info/rfc8875</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Administrative Process and Conventions
+     2.1.  Creation of GitHub Organizations
+     2.2.  Migration of an Existing Organization
+     2.3.  Personnel Changes
+     2.4.  Working Group Closing
+     2.5.  Creation of Document Repository
+     2.6.  Listing Related Repositories
+   3.  Working Group Process
+     3.1.  Contributions
+     3.2.  Backing Up and Archiving GitHub Content
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  Informative References
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Many IETF working groups and participants make use of GitHub in
+   different ways as part of their work on IETF documents.  Some others
+   are interested in having their working groups use GitHub to
+   facilitate the development of working group documents, but they are
+   unfamiliar with how to get started or unclear about which conventions
+   to follow.  Some other working groups use or plan to use other code-
+   repository services such as GitLab and Bitbucket, which have
+   different properties than GitHub.
+
+   This document specifies a set of administrative processes and
+   conventions for IETF working groups to use if they choose as a
+   working group to use GitHub to facilitate their work.  The
+   specifications in this document are not directed at working groups or
+   individuals that are already using GitHub to do IETF work.  Practices
+   vary among existing working groups, and some of them are not
+   consistent with the conventions proposed here: that is fine.  The
+   goal of the specifications in this document is not to require
+   uniformity in current practice, but to help working groups get
+   started using GitHub in a reviewed and validated way, if desired.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Administrative Process and Conventions</span>
+
+   This section specifies an administrative process and conventions to
+   support the creation and management of GitHub organizations for
+   working groups and single-document repositories in a uniform way.
+   The steps may be done manually by the IETF Secretariat, or they may
+   be automated.  See &lt;<a href="https://github.com/richsalz/ietf-gh-scripts">https://github.com/richsalz/ietf-gh-scripts</a>&gt; and
+   &lt;<a href="https://github.com/martinthomson/i-d-template">https://github.com/martinthomson/i-d-template</a>&gt; for working examples
+   of automation that is in use in some working groups.
+
+   In this document the question of whether processes should be manual
+   or automated is deliberately left unspecified, since these are
+   implementation details that the IETF Secretariat and Tools Team will
+   address.
+
+   Most of the conventions below are drawn from [<a href="/doc/html/rfc8874" title="&quot;Working Group GitHub Usage Guidance&quot;">RFC8874</a>].
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Creation of GitHub Organizations</span>
+
+   This document specifies that there be a facility in the IETF
+   Datatracker (&lt;<a href="https://datatracker.ietf.org/">https://datatracker.ietf.org/</a>&gt;) interface to allow an
+   area director (AD) or working group chair to request the creation of
+   a GitHub organization for a particular working group.  Ideally, this
+   facility would appear both as part of the working group chartering UI
+   and the working group page UI.
+
+   When an area director or working group chair makes a request to
+   create a GitHub organization, the following process would be
+   initiated:
+
+   1.  Create a GitHub organization for the working group.
+
+   2.  Name the organization in the format ietf-wg-&lt;wgname&gt;...
+
+   3.  Initialize the organization by designating the IETF Secretariat
+       and the area directors in the working group&#x27;s area as owners.  If
+       the responsible AD for the working group is from another area,
+       that AD will be an owner as well.
+
+   4.  Initialize the organization with a team that has administrator
+       access.  This team will consist of the working group chairs and
+       working group secretary, if one exists.
+
+   After the organization is created, the URL for the organization would
+   be added to the working group&#x27;s page in the Datatracker.
+
+   Steps 3 and 4 above imply that the GitHub identities of the
+   organization owners and administrators are known.  Recording GitHub
+   identities in the Datatracker (see
+   &lt;<a href="https://trac.tools.ietf.org/tools/ietfdb/ticket/2548">https://trac.tools.ietf.org/tools/ietfdb/ticket/2548</a>&gt;) would
+   facilitate this.  The person requesting the organization would need
+   to be notified if the GitHub identities of any of the people meant to
+   be owners or administrators were not available.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Migration of an Existing Organization</span>
+
+   If a working group already has an organization, it would be useful to
+   be able to make it have the same management as one would get by going
+   through the steps in <a href="#section-2.1">Section 2.1</a>.  That is, it would be good to be
+   able to run Steps 3 and 4 from <a href="#section-2.1">Section 2.1</a> so that the rest of the
+   activities in this section, such as personnel changes, work the same
+   way as for organizations that were created as specified herein.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Personnel Changes</span>
+
+   When there are personnel changes in the area or the working group,
+   those changes would be reflected in the GitHub organization.  There
+   should be an ability in the Datatracker to specify that personnel
+   changes have occurred.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Working Group Closing</span>
+
+   When a working group is closed, the team with administrative access
+   would be removed, and the owner list would be returned to the
+   Secretariat and current ADs at the time of closing.  The organization
+   summary and the repositories within the organization would be updated
+   to indicate that they are no longer under development.  Later, the
+   owner list could become just the Secretariat, or it might include
+   others chosen by the Secretariat or the IESG.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>.  Creation of Document Repository</span>
+
+   There are many different scenarios and configurations where it might
+   be useful to have automation or established administrative
+   conventions for repositories within WG organizations, such as:
+
+   *  Creating a new repository for an individual draft (at the
+      discretion of the WG chair);
+
+   *  Creating a new repository for an already adopted working group
+      draft;
+
+   *  Migrating an existing document repository into the WG
+      organization; and
+
+   *  Creating a new repository that contains multiple drafts.
+
+   As an incremental step, this document specifies that there be a
+   facility in the Datatracker interface to allow an administrator of an
+   ietf-wg-&lt;wgname&gt; organization to request the creation of a new
+   repository within that organization for a single document.  The
+   document authors would be identified as collaborators.  The
+   repository name would be the draft name.  Ideally, the repository
+   would be configured with a skeleton draft file, default CONTRIBUTING,
+   LICENSE, and README files, and continuous integration support, in the
+   vein of &lt;<a href="https://github.com/martinthomson/i-d-template">https://github.com/martinthomson/i-d-template</a>&gt;.  Performing
+   this step would automatically inform the IETF Secretariat that this
+   repository should be backed up as described in <a href="#section-3.2">Section 3.2</a>.
+
+<span class="h3"><a class="selflink" id="section-2.6" href="#section-2.6">2.6</a>.  Listing Related Repositories</span>
+
+   The IETF Datatracker should allow users to add links to repositories
+   (for GitHub and other repository services) on working group,
+   document, and user pages.  At the time of this writing, this feature
+   was under development.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Working Group Process</span>
+
+   [<a id="ref-RFC8874">RFC8874</a>] contains discussion of the different possible ways that a
+   working group can use GitHub and the large number of decisions
+   associated with doing so.  This section specifies a basic set of
+   administrative policies for working groups to follow and the
+   administrative support needed to carry out those policies.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Contributions</span>
+
+   At a minimum, every repository created in a working group
+   organization needs to incorporate into its CONTRIBUTING file the
+   boilerplate text at &lt;<a href="https://trustee.ietf.org/license-for-open-source-repositories.html">https://trustee.ietf.org/license-for-open-</a>
+   <a href="https://trustee.ietf.org/license-for-open-source-repositories.html">source-repositories.html</a>&gt; from the IETF license file for open-source
+   repositories.  The CONTRIBUTING file can contain other information as
+   well (see &lt;<a href="https://github.com/ietf/repo-files/tree/master/contributing-samples">https://github.com/ietf/repo-files/tree/master/</a>
+   <a href="https://github.com/ietf/repo-files/tree/master/contributing-samples">contributing-samples</a>&gt; for examples).
+
+   It would be useful if the user data in the Datatracker could list (at
+   a minimum) the GitHub account of the user so that their contributions
+   could be tracked more easily.
+
+   Some working groups choose to have more than one draft in a
+   repository, particularly for drafts that are tightly linked with
+   significant cross-references.  In such a case, the README for the
+   repository needs to say so clearly, so that a participant understands
+   that changes might be made to multiple drafts at once.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Backing Up and Archiving GitHub Content</span>
+
+   IETF working group mailing lists are automatically backed up by the
+   IETF Secretariat, and the archives are publicly available.  All
+   official interactions in a WG must be archived.
+
+   Working group GitHub content also needs to be backed up and publicly
+   archived.  This document specifies using the Git protocol
+   [<a href="#ref-git-protocol">git-protocol</a>] itself for both of these tasks.
+
+   Every IETF working group repository on GitHub will have a mirror
+   repository of the same name on a server maintained by the IETF
+   Secretariat.  Every hour, a service will use the &quot;git fetch&quot; command
+   on every GitHub repository that is being tracked.  The mirror
+   repository will allow anyone to read the repository.
+
+   Note that this system will not back up GitHub issues or pull
+   requests.  These should be backed up as well; the GitHub API allows
+   for this.  The IETF Secretariat should back up those at the same time
+   as it is backing up the GitHub repositories.
+
+   The steps in <a href="#section-2.5">Section 2.5</a> inform the IETF Secretariat which
+   repositories should be backed up.  Working group chairs and area
+   directors should also be able to request that the IETF Secretariat
+   back up additional repositories that are related to IETF working
+   groups.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   An attacker who can change the contents of Internet-Drafts,
+   particularly late in a working group&#x27;s process, can possibly cause
+   unnoticed changes in protocols that are eventually adopted.
+
+   There is a risk of data loss due to centralization of data in one
+   service.  This is recognized and mitigated by the plan described in
+   <a href="#section-3.2">Section 3.2</a>.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Informative References</span>
+
+   [<a id="ref-git-protocol">git-protocol</a>]
+              Chacon, S. and B. Straub, &quot;Git on the Server - The
+              Protocols&quot;, in Pro Git, 2014, &lt;<a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols#The-Git-Protocol">https://git-</a>
+              <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols#The-Git-Protocol">scm.com/book/en/v2/Git-on-the-Server-The-Protocols#The-</a>
+              <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols#The-Git-Protocol">Git-Protocol</a>&gt;.
+
+   [<a id="ref-RFC8874">RFC8874</a>]  Thomson, M. and B. Stark, &quot;Working Group GitHub Usage
+              Guidance&quot;, <a href="/doc/html/rfc8874">RFC 8874</a>, DOI 10.17487/RFC8874, August 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8874">https://www.rfc-editor.org/info/rfc8874</a>&gt;.
+
+Authors&#x27; Addresses
+
+   Alissa Cooper
+   Cisco
+
+   Email: alcoop@cisco.com
+
+
+   Paul Hoffman
+   ICANN
+
+   Email: paul.hoffman@icann.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

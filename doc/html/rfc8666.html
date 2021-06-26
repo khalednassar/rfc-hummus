@@ -1,0 +1,1196 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8666
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ospf-ospfv3-segment-routing-extensions/">
+  <meta name="description" content="OSPFv3 Extensions for Segment Routing (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8666.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8666.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8666.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8666.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8666/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8666/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/lsr/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ospf-ospfv3-segment-routing-extensions@ietf.org?subject=draft-ietf-ospf-ospfv3-segment-routing-extensions" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ospf-ospfv3-segment-routing-extensions-23.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ospf-ospfv3-segment-routing-extensions-23.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ospf-ospfv3-segment-routing-extensions-23.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ospf-ospfv3-segment-routing-extensions-23">draft-ietf-ospf-ospfv3-segment-routing-extensions-23</a>              
+                                                       Proposed Standard
+                                                        <a class="text-warning" href="/ipr/search/?submit=draft&amp;id=draft-ietf-ospf-ospfv3-segment-routing-extensions">IPR declarations</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                    P. Psenak, Ed.
+Request for Comments: 8666                               S. Previdi, Ed.
+Category: Standards Track                            Cisco Systems, Inc.
+ISSN: 2070-1721                                            December 2019
+
+
+                 <span class="h1">OSPFv3 Extensions for Segment Routing</span>
+
+Abstract
+
+   Segment Routing (SR) allows a flexible definition of end-to-end paths
+   within IGP topologies by encoding paths as sequences of topological
+   subpaths called &quot;segments&quot;.  These segments are advertised by the
+   link-state routing protocols (IS-IS and OSPF).
+
+   This document describes the OSPFv3 extensions required for Segment
+   Routing with the MPLS data plane.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8666">https://www.rfc-editor.org/info/rfc8666</a>.
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Segment Routing Identifiers
+     3.1.  SID/Label Sub-TLV
+   4.  Segment Routing Capabilities
+   5.  OSPFv3 Extended Prefix Range TLV
+   6.  Prefix-SID Sub-TLV
+   7.  Adjacency Segment Identifier (Adj-SID)
+     7.1.  Adj-SID Sub-TLV
+     7.2.  LAN Adj-SID Sub-TLV
+   8.  Elements of Procedure
+     8.1.  Intra-area Segment Routing in OSPFv3
+     8.2.  Inter-area Segment Routing in OSPFv3
+     8.3.  Segment Routing for External Prefixes
+     8.4.  Advertisement of Adj-SID
+       8.4.1.  Advertisement of Adj-SID on Point-to-Point Links
+       8.4.2.  Adjacency SID on Broadcast or NBMA Interfaces
+   9.  IANA Considerations
+     9.1.  &quot;OSPFv3 Extended-LSA TLVs&quot; Registry
+     9.2.  &quot;OSPFv3 Extended-LSA Sub-TLVs&quot; Registry
+   10. TLV/Sub-TLV Error Handling
+   11. Security Considerations
+   12. References
+     12.1.  Normative References
+     12.2.  Informative References
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Segment Routing (SR) allows a flexible definition of end-to-end paths
+   within IGP topologies by encoding paths as sequences of topological
+   subpaths called &quot;segments&quot;.  These segments are advertised by the
+   link-state routing protocols (IS-IS and OSPF).  Prefix segments
+   represent an ECMP-aware shortest path to a prefix (or a node) as per
+   the state of the IGP topology.  Adjacency segments represent a hop
+   over a specific adjacency between two nodes in the IGP.  A prefix
+   segment is typically a multi-hop path while an adjacency segment, in
+   most cases, is a one-hop path.  SR&#x27;s control plane can be applied to
+   both IPv6 and MPLS data planes, and it does not require any
+   additional signaling (other than IGP extensions).  The IPv6 data
+   plane is out of the scope of this specification; the OSPFv3 extension
+   for SR with the IPv6 data plane will be specified in a separate
+   document.  When used in MPLS networks, SR paths do not require any
+   LDP or RSVP-TE signaling.  However, SR can interoperate in the
+   presence of Label Switched Paths (LSPs) established with RSVP or LDP.
+
+   This document describes the OSPFv3 extensions required for Segment
+   Routing with the MPLS data plane.
+
+   Segment Routing architecture is described in [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>].
+
+   Segment Routing use cases are described in [<a href="/doc/html/rfc7855" title="&quot;Source Packet Routing in Networking (SPRING) Problem Statement and Requirements&quot;">RFC7855</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This section lists some of the terminology used in this document:
+
+   ABR:        Area Border Router
+
+   Adj-SID:    Adjacency Segment Identifier
+
+   AS:         Autonomous System
+
+   ASBR:       Autonomous System Boundary Router
+
+   DR:         Designated Router
+
+   IS-IS:      Intermediate System to Intermediate System
+
+   LDP:        Label Distribution Protocol
+
+   LSP:        Label Switched Path
+
+   MPLS:       Multiprotocol Label Switching
+
+   OSPF:       Open Shortest Path First
+
+   SPF:        Shortest Path First
+
+   RSVP:       Resource Reservation Protocol
+
+   SID:        Segment Identifier
+
+   SR:         Segment Routing
+
+   SRGB:       Segment Routing Global Block
+
+   SRLB:       Segment Routing Local Block
+
+   SRMS:       Segment Routing Mapping Server
+
+   TLV:        Type Length Value
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="/doc/html/bcp14">BCP</a>
+   <a href="/doc/html/bcp14">14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Segment Routing Identifiers</span>
+
+   Segment Routing defines various types of Segment Identifiers (SIDs):
+   Prefix-SID, Adjacency SID, and LAN Adjacency SID.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  SID/Label Sub-TLV</span>
+
+   The SID/Label sub-TLV appears in multiple TLVs or sub-TLVs defined
+   later in this document.  It is used to advertise the SID or label
+   associated with a prefix or adjacency.  The SID/Label sub-TLV has the
+   following format:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |              Type             |             Length            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                      SID/Label (variable)                     |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   where:
+
+      Type:  7
+
+      Length:  3 or 4 octets.
+
+      SID/Label:  If the length is set to 3, then the 20 rightmost bits
+         represent a label.  If the length is set to 4, then the value
+         represents a 32-bit SID.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Segment Routing Capabilities</span>
+
+   Segment Routing requires some additional router capabilities to be
+   advertised to other routers in the area.
+
+   These SR capabilities are advertised in the OSPFv3 Router Information
+   Opaque LSA (defined in [<a href="/doc/html/rfc7770" title="&quot;Extensions to OSPF for Advertising Optional Router Capabilities&quot;">RFC7770</a>]) and specified in [<a href="/doc/html/rfc8665" title="&quot;OSPF Extensions for Segment Routing&quot;">RFC8665</a>].
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  OSPFv3 Extended Prefix Range TLV</span>
+
+   In some cases, it is useful to advertise attributes for a range of
+   prefixes in a single advertisement.  The SR Mapping Server, which is
+   described in [<a href="/doc/html/rfc8661" title="&quot;Segment Routing MPLS Interworking with LDP&quot;">RFC8661</a>], is an example of where SIDs for multiple
+   prefixes can be advertised.  To optimize such advertisement in case
+   of multiple prefixes from a contiguous address range, OSPFv3 Extended
+   Prefix Range TLV is defined.
+
+   The OSPFv3 Extended Prefix Range TLV is a top-level TLV of the
+   following LSAs defined in [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>]:
+
+      E-Intra-Area-Prefix-LSA
+
+      E-Inter-Area-Prefix-LSA
+
+      E-AS-External-LSA
+
+      E-Type-7-LSA
+
+   Multiple OSPFv3 Extended Prefix Range TLVs MAY be advertised in each
+   LSA mentioned above.  The OSPFv3 Extended Prefix Range TLV has the
+   following format:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |              Type             |             Length            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | Prefix Length |       AF      |         Range Size            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |    Flags      |                 Reserved                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                     Address Prefix (variable)                 |
+   |                           ...                                 |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                      Sub-TLVs (variable)                      |
+   +-                                                             -+
+   |                                                               |
+
+   where:
+
+      Type:  9
+
+      Length:  Variable, in octets, depending on the sub-TLVs.
+
+      Prefix Length:  Length of prefix in bits.
+
+      AF:  Address family for the prefix.
+
+         AF:  0 - IPv4 unicast
+
+         AF:  1 - IPv6 unicast
+
+      Range Size:  Represents the number of prefixes that are covered by
+         the advertisement.  The Range Size MUST NOT exceed the number
+         of prefixes that could be satisfied by the Prefix Length
+         without including:
+
+            Addresses from the IPv4 multicast address range
+            (224.0.0.0/3), if the AF is IPv4 unicast.
+
+            Addresses other than the IPv6 unicast addresses, if the AF
+            is IPv6 unicast.
+
+      Flags:  Reserved.  MUST be zero when sent and are ignored when
+         received.
+
+      Reserved:  SHOULD be set to 0 on transmission and MUST be ignored
+         on reception.
+
+      Address Prefix:  For the address family IPv4 unicast, the
+            prefix itself is encoded as a 32-bit value.  The default
+            route is represented by a prefix of length 0.
+
+            For the address family IPv6 unicast, the
+            prefix is encoded as an even multiple of 32-bit words and
+            padded with zeroed bits as necessary.  This encoding
+            consumes ((PrefixLength + 31) / 32) 32-bit words.
+
+            Prefix encoding for other address families is
+            beyond the scope of this specification.  Prefix encoding for
+            other address families can be defined in future Standards
+            Track specifications from the IETF stream.
+
+   The range represents the contiguous set of prefixes with the same
+   prefix length as specified by the Prefix Length field.  The set
+   starts with the prefix that is specified by the Address Prefix field.
+   The number of prefixes in the range is equal to the Range Size.
+
+   If the OSPFv3 Extended Prefix Range TLVs advertising the exact same
+   range appears in multiple LSAs of the same type, originated by the
+   same OSPFv3 router, the LSA with the numerically smallest Instance ID
+   MUST be used, and subsequent instances of the OSPFv3 Extended Prefix
+   Range TLVs MUST be ignored.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Prefix-SID Sub-TLV</span>
+
+   The Prefix-SID sub-TLV is a sub-TLV of the following OSPFv3 TLVs as
+   defined in [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>] and in <a href="#section-5">Section 5</a>:
+
+      Intra-Area Prefix TLV
+
+      Inter-Area Prefix TLV
+
+      External Prefix TLV
+
+      OSPFv3 Extended Prefix Range TLV
+
+   It MAY appear more than once in the parent TLV and has the following
+   format:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |               Type            |            Length             |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Flags     |  Algorithm    |           Reserved            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                       SID/Index/Label (variable)              |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   where:
+
+      Type:  4
+
+      Length:  7 or 8 octets, depending on the V-Flag.
+
+      Flags:  Single-octet field.  The following flags are defined:
+
+
+           0  1  2  3  4  5  6  7
+         +--+--+--+--+--+--+--+--+
+         |  |NP|M |E |V |L |  |  |
+         +--+--+--+--+--+--+--+--+
+
+         where:
+
+         NP-Flag:  No-PHP (Penultimate Hop Popping) Flag.  If set, then
+            the penultimate hop MUST NOT pop the Prefix-SID before
+            delivering packets to the node that advertised the Prefix-
+            SID.
+
+         M-Flag:  Mapping Server Flag.  If set, the SID was advertised
+            by an SR Mapping Server as described in [<a href="/doc/html/rfc8661" title="&quot;Segment Routing MPLS Interworking with LDP&quot;">RFC8661</a>].
+
+         E-Flag:  Explicit Null Flag.  If set, any upstream neighbor of
+            the Prefix-SID originator MUST replace the Prefix-SID with
+            the Explicit NULL label (0 for IPv4, 2 for IPv6) before
+            forwarding the packet.
+
+         V-Flag:  Value/Index Flag.  If set, then the Prefix-SID carries
+            an absolute value.  If not set, then the Prefix-SID carries
+            an index.
+
+         L-Flag:  Local/Global Flag.  If set, then the value/index
+            carried by the Prefix-SID has local significance.  If not
+            set, then the value/index carried by this sub-TLV has global
+            significance.
+
+         Other bits:  Reserved.  These MUST be zero when sent and are
+            ignored when received.
+
+      Reserved:  SHOULD be set to 0 on transmission and MUST be ignored
+         on reception.
+
+      Algorithm:  Single octet identifying the algorithm the Prefix-SID
+         is associated with as defined in the IGP Algorithm Types
+         registry [<a href="#ref-ALGOREG" title="&quot;Interior Gateway Protocol (IGP) Parameters&quot;">ALGOREG</a>].
+
+         A router receiving a Prefix-SID from a remote node and with an
+         algorithm value that the remote node has not advertised in the
+         SR-Algorithm TLV [<a href="/doc/html/rfc8665" title="&quot;OSPF Extensions for Segment Routing&quot;">RFC8665</a>] MUST ignore the Prefix-SID sub-TLV.
+
+      SID/Index/Label:  According to the V-Flag and L-Flag, it contains:
+
+            V-Flag is set to 0 and L-Flag is set to 0: The SID/Index/
+            Label field is a 4-octet index defining the offset in the
+            SID/Label space advertised by this router.
+
+            V-Flag is set to 1 and L-Flag is set to 1: The SID/Index/
+            Label field is a 3-octet local label where the 20 rightmost
+            bits are used for encoding the label value.
+
+            All other combinations of V-Flag and L-Flag are invalid and
+            any SID Advertisement received with an invalid setting for
+            V- and L-Flags MUST be ignored.
+
+   If an OSPFv3 router advertises multiple Prefix-SIDs for the same
+   prefix, topology, and algorithm, all of them MUST be ignored.
+
+   When calculating the outgoing label for the prefix, the router MUST
+   take into account, as described below, the E-, NP-, and M-Flags
+   advertised by the next-hop router if that router advertised the SID
+   for the prefix.  This MUST be done regardless of whether the next-hop
+   router contributes to the best path to the prefix.
+
+   The NP-Flag (No-PHP) MUST be set and the E-Flag MUST be clear for
+   Prefix-SIDs allocated to prefixes that are propagated between areas
+   by an ABR based on intra-area or inter-area reachability, unless the
+   advertised prefix is directly attached to such ABR.
+
+   The NP-Flag (No-PHP) MUST be set and the E-Flag MUST be clear for
+   Prefix-SIDs allocated to redistributed prefixes, unless the
+   redistributed prefix is directly attached to the advertising ASBR.
+
+   If the NP-Flag is not set, then:
+
+      Any upstream neighbor of the Prefix-SID originator MUST pop the
+      Prefix-SID.  This is equivalent to the penultimate hop-popping
+      mechanism used in the MPLS data plane.
+
+      The received E-Flag is ignored.
+
+   If the NP-Flag is set and the E-Flag is not set, then:
+
+      Any upstream neighbor of the Prefix-SID originator MUST keep the
+      Prefix-SID on top of the stack.  This is useful when the
+      originator of the Prefix-SID needs to stitch the incoming packet
+      into a continuing MPLS LSP to the final destination.  This could
+      occur at an ABR (prefix propagation from one area to another) or
+      at an ASBR (prefix propagation from one domain to another).
+
+   If both the NP-Flag and E-Flag are set, then:
+
+      Any upstream neighbor of the Prefix-SID originator MUST replace
+      the Prefix-SID with an Explicit NULL label.  This is useful, e.g.,
+      when the originator of the Prefix-SID is the final destination for
+      the related prefix and the originator wishes to receive the packet
+      with the original Traffic Class field [<a href="/doc/html/rfc5462" title="&quot;Multiprotocol Label Switching (MPLS) Label Stack Entry: &quot;">RFC5462</a>].
+
+   When the M-Flag is set, the NP-Flag and the E-Flag MUST be ignored on
+   reception.
+
+   As the Mapping Server does not specify the originator of a prefix
+   advertisement, it is not possible to determine PHP behavior solely
+   based on the Mapping Server Advertisement.  However, PHP behavior
+   SHOULD be done in the following cases:
+
+      The Prefix is intra-area type and the downstream neighbor is the
+      originator of the prefix.
+
+      The Prefix is inter-area type and the downstream neighbor is an
+      ABR, which is advertising prefix reachability and is setting the
+      LA-bit in the Prefix Options as described in [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>].
+
+      The Prefix is external type and the downstream neighbor is an
+      ASBR, which is advertising prefix reachability and is setting the
+      LA-bit in the Prefix Options as described in [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>].
+
+   When a Prefix-SID is advertised in the OSPFv3 Extended Prefix Range
+   TLV, then the value advertised in the Prefix-SID sub-TLV is
+   interpreted as a starting SID/Label value.
+
+   Example 1: If the following router addresses (loopback addresses)
+   need to be mapped into the corresponding Prefix-SID indexes:
+
+             Router-A: 2001:DB8::1/128, Prefix-SID: Index 1
+             Router-B: 2001:DB8::2/128, Prefix-SID: Index 2
+             Router-C: 2001:DB8::3/128, Prefix-SID: Index 3
+             Router-D: 2001:DB8::4/128, Prefix-SID: Index 4
+
+   then the Address Prefix field in the OSPFv3 Extended Prefix Range TLV
+   would be set to 2001:DB8::1, the Prefix Length would be set to 128,
+   the Range Size would be set to 4, and the Index value in the Prefix-
+   SID sub-TLV would be set to 1.
+
+   Example 2: If the following prefixes need to be mapped into the
+   corresponding Prefix-SID indexes:
+
+             2001:DB8:1::0/120,   Prefix-SID: Index 51
+             2001:DB8:1::100/120, Prefix-SID: Index 52
+             2001:DB8:1::200/120, Prefix-SID: Index 53
+             2001:DB8:1::300/120, Prefix-SID: Index 54
+             2001:DB8:1::400/120, Prefix-SID: Index 55
+             2001:DB8:1::500/120, Prefix-SID: Index 56
+             2001:DB8:1::600/120, Prefix-SID: Index 57
+
+   then the Prefix field in the OSPFv3 Extended Prefix Range TLV would
+   be set to 2001:DB8:1::0, the Prefix Length would be set to 120, the
+   Range Size would be set to 7, and the Index value in the Prefix-SID
+   sub-TLV would be set to 51.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Adjacency Segment Identifier (Adj-SID)</span>
+
+   An Adjacency Segment Identifier (Adj-SID) represents a router
+   adjacency in Segment Routing.
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Adj-SID Sub-TLV</span>
+
+   The Adj-SID sub-TLV is an optional sub-TLV of the Router-Link TLV as
+   defined in [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>].  It MAY appear multiple times in the Router-
+   Link TLV.  The Adj-SID sub-TLV has the following format:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |               Type            |              Length           |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | Flags         |     Weight    |             Reserved          |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                   SID/Label/Index (variable)                  |
+   +---------------------------------------------------------------+
+
+   where:
+
+      Type:  5
+
+      Length:  7 or 8 octets, depending on the V-Flag.
+
+      Flags:  Single-octet field containing the following flags:
+
+             0 1 2 3 4 5 6 7
+            +-+-+-+-+-+-+-+-+
+            |B|V|L|G|P|     |
+            +-+-+-+-+-+-+-+-+
+
+         where:
+
+         B-Flag:  Backup Flag.  If set, the Adj-SID refers to an
+            adjacency that is eligible for protection (e.g., using IP
+            Fast Reroute (IPFRR) or MPLS-FRR (MPLS Fast Reroute)) as
+            described in <a href="/doc/html/rfc8402#section-3.4">Section&nbsp;3.4 of [RFC8402]</a>.
+
+         V-Flag:  Value/Index Flag.  If set, then the Adj-SID carries an
+            absolute value.  If not set, then the Adj-SID carries an
+            index.
+
+         L-Flag:  Local/Global Flag.  If set, then the value/index
+            carried by the Adj-SID has local significance.  If not set,
+            then the value/index carried by this sub-TLV has global
+            significance.
+
+         G-Flag:  Group Flag.  When set, the G-Flag indicates that the
+            Adj-SID refers to a group of adjacencies (and therefore MAY
+            be assigned to other adjacencies as well).
+
+         P-Flag.  Persistent Flag.  When set, the P-Flag indicates that
+            the Adj-SID is persistently allocated, i.e., the Adj-SID
+            value remains the same across router restart and/or
+            interface flap.
+
+         Other bits:  Reserved.  These MUST be zero when sent and are
+            ignored when received.
+
+      Reserved:  SHOULD be set to 0 on transmission and MUST be ignored
+         on reception.
+
+      Weight:  Weight used for load-balancing purposes.  The use of the
+         weight is defined in [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>].
+
+      SID/Index/Label:  As described in <a href="#section-6">Section 6</a>.
+
+   An SR-capable router MAY allocate an Adj-SID for each of its
+   adjacencies and set the B-Flag when the adjacency is eligible for
+   protection by an FRR mechanism (IP or MPLS) as described in
+   [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>].
+
+   An SR-capable router MAY allocate more than one Adj-SID to an
+   adjacency.
+
+   An SR-capable router MAY allocate the same Adj-SID to different
+   adjacencies.
+
+   When the P-Flag is not set, the Adj-SID MAY be persistent.  When the
+   P-Flag is set, the Adj-SID MUST be persistent.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  LAN Adj-SID Sub-TLV</span>
+
+   The LAN Adjacency SID is an optional sub-TLV of the Router-Link TLV.
+   It MAY appear multiple times in the Router-Link TLV.  It is used to
+   advertise a SID/Label for an adjacency to a non-DR router on a
+   broadcast, Non-Broadcast Multi-Access (NBMA), or hybrid [<a href="/doc/html/rfc6845" title="&quot;OSPF Hybrid Broadcast and Point-to-Multipoint Interface Type&quot;">RFC6845</a>]
+   network.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |              Type             |            Length             |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Flags     |     Weight    |            Reserved           |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                           Neighbor ID                         |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    SID/Label/Index (variable)                 |
+   +---------------------------------------------------------------+
+
+   where:
+
+      Type:  6
+
+      Length:  11 or 12 octets, depending on the V-Flag.
+
+      Flags:  Same as in <a href="#section-7.1">Section 7.1</a>.
+
+      Weight:  Weight used for load-balancing purposes.  The use of the
+         weight is defined in [<a href="/doc/html/rfc8402" title="&quot;Segment Routing Architecture&quot;">RFC8402</a>].
+
+      Reserved:  SHOULD be set to 0 on transmission and MUST be ignored
+         on reception.
+
+      Neighbor ID:  The Router ID of the neighbor for which the LAN
+         Adjacency SID is advertised.
+
+      SID/Index/Label:  As described in <a href="#section-6">Section 6</a>.
+
+         When the P-Flag is not set, the LAN Adjacency SID MAY be
+         persistent.  When the P-Flag is set, the LAN Adjacency SID MUST
+         be persistent.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Elements of Procedure</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Intra-area Segment Routing in OSPFv3</span>
+
+   An OSPFv3 router that supports Segment Routing MAY advertise Prefix-
+   SIDs for any prefix to which it is advertising reachability (e.g., a
+   loopback IP address as described in <a href="#section-6">Section 6</a>).
+
+   A Prefix-SID can also be advertised by SR Mapping Servers (as
+   described in [<a href="/doc/html/rfc8661" title="&quot;Segment Routing MPLS Interworking with LDP&quot;">RFC8661</a>]).  A Mapping Server advertises Prefix-SIDs for
+   remote prefixes that exist in the OSPFv3 routing domain.  Multiple
+   Mapping Servers can advertise Prefix-SIDs for the same prefix, in
+   which case the same Prefix-SID MUST be advertised by all of them.
+   The SR Mapping Server could use either area flooding scope or
+   autonomous system flooding scope when advertising Prefix-SIDs for
+   prefixes, based on the configuration of the SR Mapping Server.
+   Depending on the flooding scope used, the SR Mapping Server chooses
+   the OSPFv3 LSA type that will be used.  If the area flooding scope is
+   needed, an E-Intra-Area-Prefix-LSA [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>] is used.  If autonomous
+   system flooding scope is needed, an E-AS-External-LSA [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>] is
+   used.
+
+   When a Prefix-SID is advertised by the Mapping Server, which is
+   indicated by the M-Flag in the Prefix-SID sub-TLV (<a href="#section-6">Section 6</a>), the
+   route type as implied by the LSA type is ignored and the Prefix-SID
+   is bound to the corresponding prefix independent of the route type.
+
+   Advertisement of the Prefix-SID by the Mapping Server using an Inter-
+   Area Prefix TLV, External-Prefix TLV, or Intra-Area-Prefix TLV
+   [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>] does not itself contribute to the prefix reachability.  The
+   NU-bit [<a href="/doc/html/rfc5340" title="&quot;OSPF for IPv6&quot;">RFC5340</a>] MUST be set in the PrefixOptions field of the LSA,
+   which is used by the Mapping Server to advertise SID or SID Range,
+   which prevents the advertisement from contributing to prefix
+   reachability.
+
+   An SR Mapping Server MUST use the OSPFv3 Extended Prefix Range TLVs
+   when advertising SIDs for prefixes.  Prefixes of different route
+   types can be combined in a single OSPFv3 Extended Prefix Range TLV
+   advertised by an SR Mapping Server.
+
+   Area-scoped OSPFv3 Extended Prefix Range TLVs are propagated between
+   areas, similar to propagation of prefixes between areas.  Same rules
+   that are used for propagating prefixes between areas [<a href="/doc/html/rfc5340" title="&quot;OSPF for IPv6&quot;">RFC5340</a>] are
+   used for the propagation of the prefix ranges.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Inter-area Segment Routing in OSPFv3</span>
+
+   In order to support SR in a multiarea environment, OSPFv3 MUST
+   propagate Prefix-SID information between areas.  The following
+   procedure is used to propagate Prefix-SIDs between areas.
+
+   When an OSPFv3 ABR advertises an Inter-Area-Prefix-LSA from an intra-
+   area prefix to all its connected areas, it will also include the
+   Prefix-SID sub-TLV as described in <a href="#section-6">Section 6</a>.  The Prefix-SID value
+   will be set as follows:
+
+      The ABR will look at its best path to the prefix in the source
+      area and find the advertising router associated with the best path
+      to that prefix.
+
+      The ABR will then determine if this router advertised a Prefix-SID
+      for the prefix and use it when advertising the Prefix-SID to other
+      connected areas.
+
+      If no Prefix-SID was advertised for the prefix in the source area
+      by the router that contributes to the best path to the prefix, the
+      originating ABR will use the Prefix-SID advertised by any other
+      router when propagating the Prefix-SID for the prefix to other
+      areas.
+
+   When an OSPFv3 ABR advertises an Inter-Area-Prefix-LSA from an inter-
+   area route to all its connected areas, it will also include the
+   Prefix-SID sub-TLV as described in <a href="#section-6">Section 6</a>.  The Prefix-SID value
+   will be set as follows:
+
+      The ABR will look at its best path to the prefix in the backbone
+      area and find the advertising router associated with the best path
+      to that prefix.
+
+      The ABR will then determine if this router advertised a Prefix-SID
+      for the prefix and use it when advertising the Prefix-SID to other
+      connected areas.
+
+      If no Prefix-SID was advertised for the prefix in the backbone
+      area by the ABR that contributes to the best path to the prefix,
+      the originating ABR will use the Prefix-SID advertised by any
+      other router when propagating the Prefix-SID for the prefix to
+      other areas.
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  Segment Routing for External Prefixes</span>
+
+   AS-External-LSAs are flooded domain wide.  When an ASBR, which
+   supports SR, originates an E-AS-External-LSA, it SHOULD also include
+   a Prefix-SID sub-TLV as described in <a href="#section-6">Section 6</a>.  The Prefix-SID value
+   will be set to the SID that has been reserved for that prefix.
+
+   When a Not-So-Stubby Area (NSSA) [<a href="/doc/html/rfc3101" title="&quot;The OSPF Not-So-Stubby Area (NSSA) Option&quot;">RFC3101</a>] ABR translates an E-NSSA-
+   LSA into an E-AS-External-LSA, it SHOULD also advertise the Prefix-
+   SID for the prefix.  The NSSA ABR determines its best path to the
+   prefix advertised in the translated E-NSSA-LSA and finds the
+   advertising router associated with that path.  If the advertising
+   router has advertised a Prefix-SID for the prefix, then the NSSA ABR
+   uses it when advertising the Prefix-SID for the E-AS-External-LSA.
+   Otherwise, the Prefix-SID advertised by any other router will be
+   used.
+
+<span class="h3"><a class="selflink" id="section-8.4" href="#section-8.4">8.4</a>.  Advertisement of Adj-SID</span>
+
+   The Adjacency Segment Routing Identifier (Adj-SID) is advertised
+   using the Adj-SID sub-TLV as described in <a href="#section-7">Section 7</a>.
+
+<span class="h4"><a class="selflink" id="section-8.4.1" href="#section-8.4.1">8.4.1</a>.  Advertisement of Adj-SID on Point-to-Point Links</span>
+
+   An Adj-SID MAY be advertised for any adjacency on a point-to-point
+   (P2P) link that is in neighbor state 2-Way or higher.  If the
+   adjacency on a P2P link transitions from the FULL state, then the
+   Adj-SID for that adjacency MAY be removed from the area.  If the
+   adjacency transitions to a state lower than 2-Way, then the Adj-SID
+   Advertisement MUST be withdrawn from the area.
+
+<span class="h4"><a class="selflink" id="section-8.4.2" href="#section-8.4.2">8.4.2</a>.  Adjacency SID on Broadcast or NBMA Interfaces</span>
+
+   Broadcast, NBMA, or hybrid [<a href="/doc/html/rfc6845" title="&quot;OSPF Hybrid Broadcast and Point-to-Multipoint Interface Type&quot;">RFC6845</a>] networks in OSPFv3 are
+   represented by a star topology where the DR is the central point to
+   which all other routers on the broadcast, NBMA, or hybrid network
+   connect.  As a result, routers on the broadcast, NBMA, or hybrid
+   network advertise only their adjacency to the DR.  Routers that do
+   not act as DR do not form or advertise adjacencies with each other.
+   They do, however, maintain 2-Way adjacency state with each other and
+   are directly reachable.
+
+   When Segment Routing is used, each router on the broadcast, NBMA, or
+   hybrid network MAY advertise the Adj-SID for its adjacency to the DR
+   using the Adj-SID sub-TLV as described in <a href="#section-7.1">Section 7.1</a>.
+
+   SR-capable routers MAY also advertise a LAN Adjacency SID for other
+   neighbors (e.g., Backup Designated Router (BDR), DR-OTHER, etc.) on
+   the broadcast, NBMA, or hybrid network using the LAN Adj-SID sub-TLV
+   as described in <a href="#section-7.2">Section 7.2</a>.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+   This specification updates two existing OSPFv3 registries.
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  &quot;OSPFv3 Extended-LSA TLVs&quot; Registry</span>
+
+   The following values have been allocated:
+
+   +-------+----------------------------------+---------------+
+   | Value | Description                      | Reference     |
+   +=======+==================================+===============+
+   | 9     | OSPFv3 Extended Prefix Range TLV | This document |
+   +-------+----------------------------------+---------------+
+
+                Table 1: OSPFv3 Extended-LSA TLVs
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  &quot;OSPFv3 Extended-LSA Sub-TLVs&quot; Registry</span>
+
+   The following values have been allocated:
+
+   +-------+---------------------+---------------+
+   | Value | Description         | Reference     |
+   +=======+=====================+===============+
+   | 4     | Prefix-SID sub-TLV  | This document |
+   +-------+---------------------+---------------+
+   | 5     | Adj-SID sub-TLV     | This document |
+   +-------+---------------------+---------------+
+   | 6     | LAN Adj-SID sub-TLV | This document |
+   +-------+---------------------+---------------+
+   | 7     | SID/Label sub-TLV   | This document |
+   +-------+---------------------+---------------+
+
+        Table 2: OSPFv3 Extended-LSA Sub-TLVs
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  TLV/Sub-TLV Error Handling</span>
+
+   For any new TLVs/sub-TLVs defined in this document, if the length is
+   invalid, the LSA in which it is advertised is considered malformed
+   and MUST be ignored.  Errors SHOULD be logged subject to rate
+   limiting.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Security Considerations</span>
+
+   With the OSPFv3 Segment Routing extensions defined herein, OSPFv3
+   will now program the MPLS data plane [<a href="/doc/html/rfc3031" title="&quot;Multiprotocol Label Switching Architecture&quot;">RFC3031</a>].  Previously, LDP
+   [<a href="/doc/html/rfc5036" title="&quot;LDP Specification&quot;">RFC5036</a>] or another label distribution mechanism was required to
+   advertise MPLS labels and program the MPLS data plane.
+
+   In general, the same types of attacks that can be carried out on the
+   IP control plane can be carried out on the MPLS control plane
+   resulting in traffic being misrouted in the respective data planes.
+   However, the latter can be more difficult to detect and isolate.
+
+   Existing security extensions, as described in [<a href="/doc/html/rfc5340" title="&quot;OSPF for IPv6&quot;">RFC5340</a>] and
+   [<a href="/doc/html/rfc8362" title="&quot;OSPFv3 Link State Advertisement (LSA) Extensibility&quot;">RFC8362</a>], apply to these Segment Routing extensions.  While OSPFv3
+   is under a single administrative domain, there can be deployments
+   where potential attackers have access to one or more networks in the
+   OSPFv3 routing domain.  In these deployments, stronger authentication
+   mechanisms, such as those specified in [<a href="/doc/html/rfc4552" title="&quot;Authentication/Confidentiality for OSPFv3&quot;">RFC4552</a>] or [<a href="/doc/html/rfc7166" title="&quot;Supporting Authentication Trailer for OSPFv3&quot;">RFC7166</a>], SHOULD
+   be used.
+
+   Implementations MUST ensure that malformed TLVs and sub-TLVs defined
+   in this document are detected and that they do not provide a
+   vulnerability for attackers to crash the OSPFv3 router or routing
+   process.  Reception of a malformed TLV or sub-TLV SHOULD be counted
+   and/or logged for further analysis.  Logging of malformed TLVs and
+   sub-TLVs SHOULD be rate limited to prevent a Denial-of-Service (DoS)
+   attack (distributed or otherwise) from overloading the OSPFv3 control
+   plane.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  Normative References</span>
+
+   [<a id="ref-ALGOREG">ALGOREG</a>]  IANA, &quot;Interior Gateway Protocol (IGP) Parameters&quot;,
+              &lt;<a href="https://www.iana.org/assignments/igp-parameters">https://www.iana.org/assignments/igp-parameters</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3031">RFC3031</a>]  Rosen, E., Viswanathan, A., and R. Callon, &quot;Multiprotocol
+              Label Switching Architecture&quot;, <a href="/doc/html/rfc3031">RFC 3031</a>,
+              DOI 10.17487/RFC3031, January 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3031">https://www.rfc-editor.org/info/rfc3031</a>&gt;.
+
+   [<a id="ref-RFC3101">RFC3101</a>]  Murphy, P., &quot;The OSPF Not-So-Stubby Area (NSSA) Option&quot;,
+              <a href="/doc/html/rfc3101">RFC 3101</a>, DOI 10.17487/RFC3101, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3101">https://www.rfc-editor.org/info/rfc3101</a>&gt;.
+
+   [<a id="ref-RFC5036">RFC5036</a>]  Andersson, L., Ed., Minei, I., Ed., and B. Thomas, Ed.,
+              &quot;LDP Specification&quot;, <a href="/doc/html/rfc5036">RFC 5036</a>, DOI 10.17487/RFC5036,
+              October 2007, &lt;<a href="https://www.rfc-editor.org/info/rfc5036">https://www.rfc-editor.org/info/rfc5036</a>&gt;.
+
+   [<a id="ref-RFC5340">RFC5340</a>]  Coltun, R., Ferguson, D., Moy, J., and A. Lindem, &quot;OSPF
+              for IPv6&quot;, <a href="/doc/html/rfc5340">RFC 5340</a>, DOI 10.17487/RFC5340, July 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5340">https://www.rfc-editor.org/info/rfc5340</a>&gt;.
+
+   [<a id="ref-RFC5462">RFC5462</a>]  Andersson, L. and R. Asati, &quot;Multiprotocol Label Switching
+              (MPLS) Label Stack Entry: &quot;EXP&quot; Field Renamed to &quot;Traffic
+              Class&quot; Field&quot;, <a href="/doc/html/rfc5462">RFC 5462</a>, DOI 10.17487/RFC5462, February
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5462">https://www.rfc-editor.org/info/rfc5462</a>&gt;.
+
+   [<a id="ref-RFC6845">RFC6845</a>]  Sheth, N., Wang, L., and J. Zhang, &quot;OSPF Hybrid Broadcast
+              and Point-to-Multipoint Interface Type&quot;, <a href="/doc/html/rfc6845">RFC 6845</a>,
+              DOI 10.17487/RFC6845, January 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6845">https://www.rfc-editor.org/info/rfc6845</a>&gt;.
+
+   [<a id="ref-RFC7770">RFC7770</a>]  Lindem, A., Ed., Shen, N., Vasseur, JP., Aggarwal, R., and
+              S. Shaffer, &quot;Extensions to OSPF for Advertising Optional
+              Router Capabilities&quot;, <a href="/doc/html/rfc7770">RFC 7770</a>, DOI 10.17487/RFC7770,
+              February 2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7770">https://www.rfc-editor.org/info/rfc7770</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8362">RFC8362</a>]  Lindem, A., Roy, A., Goethals, D., Reddy Vallem, V., and
+              F. Baker, &quot;OSPFv3 Link State Advertisement (LSA)
+              Extensibility&quot;, <a href="/doc/html/rfc8362">RFC 8362</a>, DOI 10.17487/RFC8362, April
+              2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8362">https://www.rfc-editor.org/info/rfc8362</a>&gt;.
+
+   [<a id="ref-RFC8402">RFC8402</a>]  Filsfils, C., Ed., Previdi, S., Ed., Ginsberg, L.,
+              Decraene, B., Litkowski, S., and R. Shakir, &quot;Segment
+              Routing Architecture&quot;, <a href="/doc/html/rfc8402">RFC 8402</a>, DOI 10.17487/RFC8402,
+              July 2018, &lt;<a href="https://www.rfc-editor.org/info/rfc8402">https://www.rfc-editor.org/info/rfc8402</a>&gt;.
+
+   [<a id="ref-RFC8661">RFC8661</a>]  Bashandy, A., Ed., Filsfils, C., Ed., Previdi, S.,
+              Decraene, B., and S. Litkowski, &quot;Segment Routing MPLS
+              Interworking with LDP&quot;, <a href="/doc/html/rfc8661">RFC 8661</a>, DOI 10.17487/RFC8661,
+              December 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8661">https://www.rfc-editor.org/info/rfc8661</a>&gt;.
+
+   [<a id="ref-RFC8665">RFC8665</a>]  Psenak, P., Ed., Previdi, S., Ed., Filfils, C., Gredler,
+              H., Shakir, R., Henderickx, W., and J. Tantsura, &quot;OSPF
+              Extensions for Segment Routing&quot;, <a href="/doc/html/rfc8665">RFC 8665</a>,
+              DOI 10.17487/RFC8665, December 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8665">https://www.rfc-editor.org/info/rfc8665</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4552">RFC4552</a>]  Gupta, M. and N. Melam, &quot;Authentication/Confidentiality
+              for OSPFv3&quot;, <a href="/doc/html/rfc4552">RFC 4552</a>, DOI 10.17487/RFC4552, June 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4552">https://www.rfc-editor.org/info/rfc4552</a>&gt;.
+
+   [<a id="ref-RFC7166">RFC7166</a>]  Bhatia, M., Manral, V., and A. Lindem, &quot;Supporting
+              Authentication Trailer for OSPFv3&quot;, <a href="/doc/html/rfc7166">RFC 7166</a>,
+              DOI 10.17487/RFC7166, March 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7166">https://www.rfc-editor.org/info/rfc7166</a>&gt;.
+
+   [<a id="ref-RFC7855">RFC7855</a>]  Previdi, S., Ed., Filsfils, C., Ed., Decraene, B.,
+              Litkowski, S., Horneffer, M., and R. Shakir, &quot;Source
+              Packet Routing in Networking (SPRING) Problem Statement
+              and Requirements&quot;, <a href="/doc/html/rfc7855">RFC 7855</a>, DOI 10.17487/RFC7855, May
+              2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7855">https://www.rfc-editor.org/info/rfc7855</a>&gt;.
+
+Contributors
+
+   The following people gave a substantial contribution to the content
+   of this document and should be considered coauthors:
+
+
+      Clarence Filsfils
+      Cisco Systems, Inc.
+      Brussels
+      Belgium
+
+      Email: cfilsfil@cisco.com
+
+
+      Hannes Gredler
+      RtBrick Inc.
+      Austria
+
+      Email: hannes@rtbrick.com
+
+
+      Rob Shakir
+      Google, Inc.
+      United States of America
+
+      Email: robjs@google.com
+
+
+      Wim Henderickx
+      Nokia
+      Belgium
+
+      Email: wim.henderickx@nokia.com
+
+
+      Jeff Tantsura
+      Apstra, Inc.
+      United States of America
+
+      Email: jefftant.ietf@gmail.com
+
+   Thanks to Acee Lindem for his substantial contribution to the content
+   of this document.
+
+   We would like to thank Anton Smirnov for his contribution as well.
+
+Authors&#x27; Addresses
+
+   Peter Psenak (editor)
+   Cisco Systems, Inc.
+   Eurovea Centre, Central 3, Pribinova Street 10
+   81109 Bratislava
+   Slovakia
+
+   Email: ppsenak@cisco.com
+
+
+   Stefano Previdi (editor)
+   Cisco Systems, Inc.
+
+   Email: stefano@previdi.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

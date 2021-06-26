@@ -1,0 +1,516 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc3691
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-melnikov-imap-unselect/">
+  <meta name="description" content="Internet Message Access Protocol (IMAP) UNSELECT command (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc3691.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc3691.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc3691.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc3691/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc3691/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/app/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-melnikov-imap-unselect@ietf.org?subject=draft-melnikov-imap-unselect" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-melnikov-imap-unselect-01.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-melnikov-imap-unselect-01.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-melnikov-imap-unselect-01.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-melnikov-imap-unselect-01">draft-melnikov-imap-unselect-01</a>                  Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        A. Melnikov
+Request for Comments: 3691                                    Isode Ltd.
+Category: Standards Track                                  February 2004
+
+
+        <span class="h1">Internet Message Access Protocol (IMAP) UNSELECT command</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2004).  All Rights Reserved.
+
+Abstract
+
+   This document defines an UNSELECT command that can be used to close
+   the current mailbox in an Internet Message Access Protocol - version
+   4 (IMAP4) session without expunging it.  Certain types of IMAP
+   clients need to release resources associated with the selected
+   mailbox without selecting a different mailbox.  While IMAP4 provides
+   this functionality (via a SELECT command with a nonexistent mailbox
+   name or reselecting the same mailbox with EXAMINE command), a more
+   clean solution is desirable.
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-2">2</a>
+   <a href="#section-2">2</a>.  UNSELECT command . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-2">2</a>
+   <a href="#section-3">3</a>.  Security Considerations. . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-4">4</a>.  Formal Syntax. . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-5">5</a>.  IANA Considerations. . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-6">6</a>.  Acknowledgments. . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-7">7</a>.  Normative References . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+   <a href="#section-8">8</a>.  Author&#x27;s Address . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+   <a href="#section-9">9</a>.  Full Copyright Statement . . . . . . . . . . . . . . . . . . .  <a href="#page-5">5</a>
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Melnikov                    Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc3691">RFC 3691</a>                 IMAP UNSELECT command             February 2004</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Certain types of IMAP clients need to release resources associated
+   with the selected mailbox without selecting a different mailbox.
+   While [<a href="#ref-IMAP4" title="&quot;Internet Message Access Protocol - Version 4rev1&quot;">IMAP4</a>] provides this functionality (via a SELECT command with
+   a nonexistent mailbox name or reselecting the same mailbox with
+   EXAMINE command), a more clean solution is desirable.
+
+   [<a id="ref-IMAP4">IMAP4</a>] defines the CLOSE command that closes the selected mailbox as
+   well as permanently removes all messages with the \Deleted flag set.
+
+   However [<a href="#ref-IMAP4" title="&quot;Internet Message Access Protocol - Version 4rev1&quot;">IMAP4</a>] lacks a command that simply closes the mailbox
+   without expunging it.  This document defines the UNSELECT command for
+   this purpose.
+
+   A server which supports this extension indicates this with a
+   capability name of &quot;UNSELECT&quot;.
+
+   &quot;C:&quot; and &quot;S:&quot; in examples show lines sent by the client and server
+   respectively.
+
+   The keywords &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, and &quot;MAY&quot; in
+   this document when typed in uppercase are to be interpreted as
+   defined in &quot;Key words for use in RFCs to Indicate Requirement Levels&quot;
+   [<a href="#ref-KEYWORDS" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">KEYWORDS</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  UNSELECT Command</span>
+
+   Arguments:  none
+
+   Responses:  no specific responses for this command
+
+   Result:     OK - unselect completed, now in authenticated state
+               BAD - no mailbox selected, or argument supplied but
+                     none permitted
+
+      The UNSELECT command frees server&#x27;s resources associated with the
+      selected mailbox and returns the server to the authenticated
+      state.  This command performs the same actions as CLOSE, except
+      that no messages are permanently removed from the currently
+      selected mailbox.
+
+   Example:    C: A341 UNSELECT
+               S: A341 OK Unselect completed
+
+
+
+
+
+
+
+<span class="grey">Melnikov                    Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc3691">RFC 3691</a>                 IMAP UNSELECT command             February 2004</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Security Considerations</span>
+
+   It is believed that this extension doesn&#x27;t raise any additional
+   security concerns not already discussed in [<a href="#ref-IMAP4" title="&quot;Internet Message Access Protocol - Version 4rev1&quot;">IMAP4</a>].
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Formal Syntax</span>
+
+   The following syntax specification uses the Augmented Backus-Naur
+   Form (ABNF) notation as specified in [<a href="#ref-ABNF" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">ABNF</a>].  Non-terminals
+   referenced but not defined below are as defined by [<a href="#ref-IMAP4" title="&quot;Internet Message Access Protocol - Version 4rev1&quot;">IMAP4</a>].
+
+   Except as noted otherwise, all alphabetic characters are case-
+   insensitive.  The use of upper or lower case characters to define
+   token strings is for editorial clarity only.  Implementations MUST
+   accept these strings in a case-insensitive fashion.
+
+   command-select  /= &quot;UNSELECT&quot;
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IMAP4 capabilities are registered by publishing a standards track or
+   IESG approved experimental RFC.  The registry is currently located
+   at:
+
+      <a href="http://www.iana.org/assignments/imap4-capabilities">http://www.iana.org/assignments/imap4-capabilities</a>
+
+   This document defines the UNSELECT IMAP capabilities.  IANA has added
+   this capability to the registry.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Acknowledgments</span>
+
+   UNSELECT command was originally implemented by Tim Showalter in Cyrus
+   IMAP server.
+
+   Also, the author of the document would like to thank Vladimir Butenko
+   and Mark Crispin for reminding that UNSELECT has to be documented.
+   Also thanks to Simon Josefsson for pointing out that there are
+   multiple ways to implement UNSELECT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Melnikov                    Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc3691">RFC 3691</a>                 IMAP UNSELECT command             February 2004</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Normative References</span>
+
+   [<a id="ref-KEYWORDS">KEYWORDS</a>] Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-IMAP4">IMAP4</a>]    Crispin, M., &quot;Internet Message Access Protocol - Version
+              4rev1&quot;, <a href="/doc/html/rfc3501">RFC 3501</a>, March 2003.
+
+   [<a id="ref-ABNF">ABNF</a>]     Crocker, D., Ed. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, <a href="/doc/html/rfc2234">RFC 2234</a>, November 1997.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Author&#x27;s Address</span>
+
+   Alexey Melnikov
+   Isode Limited
+   5 Castle Business Village
+   Hampton, Middlesex TW12 2BX
+
+   EMail: Alexey.Melnikov@isode.com
+   URI: <a href="http://www.melnikov.ca/">http://www.melnikov.ca/</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Melnikov                    Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc3691">RFC 3691</a>                 IMAP UNSELECT command             February 2004</span>
+
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Full Copyright Statement</span>
+
+   Copyright (C) The Internet Society (2004).  This document is subject
+   to the rights, licenses and restrictions contained in <a href="/doc/html/bcp78">BCP 78</a> and
+   except as set forth therein, the authors retain all their rights.
+
+   This document and the information contained herein are provided on an
+   &quot;AS IS&quot; basis and THE CONTRIBUTOR, THE ORGANIZATION HE/SHE
+   REPRESENTS OR IS SPONSORED BY (IF ANY), THE INTERNET SOCIETY AND THE
+   INTERNET ENGINEERING TASK FORCE DISCLAIM ALL WARRANTIES, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
+   THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+   WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   Intellectual Property Rights or other rights that might be claimed
+   to pertain to the implementation or use of the technology
+   described in this document or the extent to which any license
+   under such rights might or might not be available; nor does it
+   represent that it has made any independent effort to identify any
+   such rights.  Information on the procedures with respect to
+   rights in RFC documents can be found in <a href="/doc/html/bcp78">BCP 78</a> and <a href="/doc/html/bcp79">BCP 79</a>.
+
+   Copies of IPR disclosures made to the IETF Secretariat and any
+   assurances of licenses to be made available, or the result of an
+   attempt made to obtain a general license or permission for the use
+   of such proprietary rights by implementers or users of this
+   specification can be obtained from the IETF on-line IPR repository
+   at <a href="http://www.ietf.org/ipr">http://www.ietf.org/ipr</a>.
+
+   The IETF invites any interested party to bring to its attention
+   any copyrights, patents or patent applications, or other
+   proprietary rights that may cover technology that may be required
+   to implement this standard.  Please address the information to the
+   IETF at ietf-ipr@ietf.org.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+Melnikov                    Standards Track                     [Page 5]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

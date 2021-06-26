@@ -1,0 +1,740 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6133
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-sieve-autoreply/">
+  <meta name="description" content="Sieve Email Filtering: Use of Presence Information with Auto-Responder Functionality (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6133.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6133.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6133.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6133/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6133/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sieve/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-sieve-autoreply@ietf.org?subject=draft-ietf-sieve-autoreply" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-sieve-autoreply-04.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sieve-autoreply-04.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-sieve-autoreply-04.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-sieve-autoreply-04">draft-ietf-sieve-autoreply-04</a>                        Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         R. George
+Request for Comments: 6133                                      B. Leiba
+Category: Informational                              Huawei Technologies
+ISSN: 2070-1721                                              A. Melnikov
+                                                           Isode Limited
+                                                               July 2011
+
+
+                         <span class="h1">Sieve Email Filtering:</span>
+     <span class="h1">Use of Presence Information with Auto-Responder Functionality</span>
+
+Abstract
+
+   This document describes how the Sieve email filtering language, along
+   with some extensions, can be used to create automatic replies to
+   incoming electronic mail messages based on the address book and
+   presence information of the recipient.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are a candidate for any level of Internet
+   Standard; see <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6133">http://www.rfc-editor.org/info/rfc6133</a>.
+
+Copyright Notice
+
+   Copyright (c) 2011 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-2">2</a>
+   <a href="#section-2">2</a>.  How To Create Auto-Replies  . . . . . . . . . . . . . . . . . . <a href="#page-3">3</a>
+   <a href="#section-3">3</a>.  Example Use Cases for Auto-Replies  . . . . . . . . . . . . . . <a href="#page-3">3</a>
+   <a href="#section-4">4</a>.  Security Considerations . . . . . . . . . . . . . . . . . . . . <a href="#page-6">6</a>
+   <a href="#section-5">5</a>.  Normative References  . . . . . . . . . . . . . . . . . . . . . <a href="#page-8">8</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document describes how the Sieve email filtering language
+   [<a href="/doc/html/rfc5228" title="&quot;Sieve: An Email Filtering Language&quot;">RFC5228</a>], along with some extensions [<a href="/doc/html/rfc5230" title="&quot;Sieve Email Filtering: Vacation Extension&quot;">RFC5230</a>] [<a href="/doc/html/rfc5435" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">RFC5435</a>] [<a href="/doc/html/rfc6134" title="&quot;Sieve Extension: Externally Stored Lists&quot;">RFC6134</a>]
+   [<a href="/doc/html/rfc6132" title="&quot;Sieve Notification Using Presence Information&quot;">RFC6132</a>] [<a href="/doc/html/rfc6131" title="&quot;Sieve Vacation Extension: &quot;">RFC6131</a>], can be used to generate automatic replies to
+   incoming electronic mail messages based on the presence information
+   of the recipient.  This can be used, for example, to inform the
+   sender that messages will not be answered immediately because the
+   recipient is busy or away.
+
+   The auto-reply message can additionally be based on information about
+   the sender from the recipient&#x27;s address book, sub-lists therefrom, or
+   other lists available to the recipient, so that different senders
+   might get different responses.  The recipient can create separate
+   rules for friends, family members, colleagues, and so on.
+
+   This can be used in mail filtering software, email-based information
+   services, and other automatic responder situations.  There are many
+   programs currently in use that automatically respond to email.  Some
+   of them send many useless or unwanted responses, or send responses to
+   inappropriate addresses.  The mechanism described herein will help
+   avoid those problems (but see the discussion in <a href="#section-4">Section 4</a>).
+   Implementations need to take care of tracking previous messages
+   received from the same sender, and they will start or stop sending
+   responses as the presence status of the recipient changes.
+
+   An important note, though: users of any auto-reply mechanism should
+   really think about whether automatic replies are necessary, and at
+   what interval they make sense when they are.  Email is not Instant
+   Messaging, and senders generally expect that replies might take a
+   while.  Consider whether it&#x27;s truly important to tell people that
+   you&#x27;ll read their mail in an hour or so, or whether that can just be
+   taken as how email works.  There are times when this makes sense, but
+   let&#x27;s not use it to exacerbate information overload.  Judicious use
+   of appropriate presence information might serve to mitigate these
+   issues.
+
+   Implementors, therefore, need to consider this with respect to the
+   features they expose to users, and the potential for inappropriate
+   use those features represent.  The ability to create auto responders
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+   might be hidden behind an &quot;advanced&quot; button, and users might be
+   warned of the consequences and advised of the considerations in the
+   previous paragraph.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  How To Create Auto-Replies</span>
+
+   When an email message arrives, the Sieve script can use the
+   notify_method_capability of the Notify extension [<a href="/doc/html/rfc5435" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">RFC5435</a>] to check
+   the recipient&#x27;s presence information.  The Notify-presence extension
+   [<a href="/doc/html/rfc6132" title="&quot;Sieve Notification Using Presence Information&quot;">RFC6132</a>] makes additional presence, such as &quot;away&quot; and &quot;do not
+   disturb&quot; status, available.  The script can use the External-lists
+   extension [<a href="/doc/html/rfc6134" title="&quot;Sieve Extension: Externally Stored Lists&quot;">RFC6134</a>] to look the sender up in the recipient&#x27;s address
+   book or other list.  If the information retrieved warrants an auto-
+   reply message, the message can then be composed based on that
+   information.
+
+   The Vacation extension [<a href="/doc/html/rfc5230" title="&quot;Sieve Email Filtering: Vacation Extension&quot;">RFC5230</a>] provides an easy way to send the
+   auto-reply message to the sender, as it automatically keeps track of
+   the automatic replies and attempts to avoid excessive messages and
+   mail loops.  The Vacation-seconds extension [<a href="/doc/html/rfc6131" title="&quot;Sieve Vacation Extension: &quot;">RFC6131</a>] allows auto-
+   replies to be sent this way more frequently than once per day, when
+   that&#x27;s appropriate.  (Alternatively, the script can use the Notify
+   extension [<a href="/doc/html/rfc5435" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">RFC5435</a>] to send a notification by a means other than
+   email.)
+
+   Personal and Group Responders can refuse to generate responses except
+   to known correspondents or addresses otherwise known to the
+   recipient.  Such responders can also generate different kinds of
+   responses for &quot;trusted&quot; vs. &quot;untrusted&quot; addresses.  This might be
+   useful, for instance, to avoid inappropriate disclosure of personal
+   or confidential information to arbitrary addresses.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Example Use Cases for Auto-Replies</span>
+
+   1.  In this example, we check that the envelope &quot;from&quot; is in the
+       recipient&#x27;s address book [<a href="/doc/html/rfc6134" title="&quot;Sieve Extension: Externally Stored Lists&quot;">RFC6134</a>] and that the recipient&#x27;s
+       presence shows &quot;extended away&quot; [<a href="/doc/html/rfc6132" title="&quot;Sieve Notification Using Presence Information&quot;">RFC6132</a>].  If both of those are
+       true, the &quot;vacation&quot; action [<a href="/doc/html/rfc5230" title="&quot;Sieve Email Filtering: Vacation Extension&quot;">RFC5230</a>] is used to send an auto-
+       reply, making sure we don&#x27;t reply to the same sender more than
+       once every half hour [<a href="/doc/html/rfc6131" title="&quot;Sieve Vacation Extension: &quot;">RFC6131</a>].  The variables extension
+       [<a href="/doc/html/rfc5229" title="&quot;Sieve Email Filtering: Variables Extension&quot;">RFC5229</a>] is used to extract the value of the recipient&#x27;s
+       natural-language presence status message, which will be used as
+       the response to the sender.
+
+
+
+
+
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+   require [&quot;envelope&quot;, &quot;extlists&quot;, &quot;enotify&quot;, &quot;variables&quot;,
+            &quot;vacation-seconds&quot;];
+   if allof (
+       envelope :list &quot;from&quot; &quot;:addrbook:default&quot;,
+       notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot; &quot;xa&quot;
+     ) {
+       # :matches &quot;*&quot; is used here to extract the value
+       if notify_method_capability :matches
+           &quot;xmpp:myjid@example.com&quot; &quot;status&quot; &quot;*&quot; {
+         set &quot;resp_msg&quot; &quot;${1}&quot;;
+       } else {
+         set &quot;resp_msg&quot; &quot;Away for a while, without access to email.&quot;;
+       }
+       vacation :handle &quot;ext-away&quot; :seconds 1800 &quot;${resp_msg}&quot;;
+     }
+
+
+   2.  In the next example, we&#x27;ll check for the recipient&#x27;s personal
+       assistant, and give very detailed information about the
+       recipient&#x27;s status to that sender.  For other senders in the
+       &quot;family&quot; and &quot;friends&quot; lists, we&#x27;ll also send an auto-reply.
+       Other senders will be considered less important, and don&#x27;t need
+       auto-replies.
+
+   require [&quot;envelope&quot;, &quot;extlists&quot;, &quot;enotify&quot;, &quot;vacation-seconds&quot;];
+
+   if envelope :is &quot;from&quot; &quot;assistant@example.com&quot;
+     {
+       if notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot; &quot;away&quot;
+         {
+           vacation :handle &quot;away&quot; :seconds 600
+               &quot;I&#x27;m away for now, but I&#x27;ll be back soon.&quot;;
+         }
+       elsif notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot; &quot;dnd&quot;
+         {
+           vacation :handle &quot;dnd&quot; :seconds 1800
+               &quot;I&#x27;m not to be disturbed.  I&#x27;ll check mail later.&quot;;
+         }
+       elsif notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot; &quot;xa&quot;
+         {
+           vacation :handle &quot;ext-away&quot; :seconds 3600
+               &quot;I&#x27;m away for a while, without access to email.&quot;;
+         }
+       elsif notify_method_capability &quot;xmpp:me@example.com&quot; &quot;busy&quot; &quot;yes&quot;
+         {
+           vacation :handle &quot;busy&quot; :seconds 1800
+               &quot;I&#x27;m very busy, but might check email now and then.&quot;;
+         }
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+     }
+   elsif envelope :list &quot;from&quot; [&quot;:addrbook:family&quot;,
+                                &quot;:addrbook:friends&quot;]
+     {
+       if notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot;
+              [&quot;away&quot;, &quot;dnd&quot;, &quot;xa&quot;]
+         {
+           vacation :handle &quot;away&quot; :seconds 3600
+               &quot;I&#x27;m not available to respond to email.&quot;;
+         }
+     }
+   else
+     { # We could respond as below, making it only once a day
+       # for less important senders.  Better to just omit
+       # that, though (see the end of the Introduction section).
+       #
+       # vacation :handle &quot;catchall&quot; :days 1
+       #     &quot;I got your message, and might read it eventually.&quot;;
+     }
+
+
+   3.  For this example, if the sender is a work colleague and the
+       recipient is on extended away status, then reply with a message
+       giving alternative contact information.  The message might also
+       include details about the reason for the absence, or other
+       personal or confidential information that shouldn&#x27;t be shared
+       with senders who aren&#x27;t associated with the recipient&#x27;s company.
+
+
+   require [&quot;envelope&quot;, &quot;extlists&quot;, &quot;enotify&quot;, &quot;vacation&quot;];
+
+   if envelope :list &quot;from&quot; &quot;:addrbook:co-workers&quot;
+     {
+       if notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot; &quot;xa&quot;
+         {
+           vacation :handle &quot;bigtrip&quot; :days 3
+               &quot;I&#x27;m on an extended business trip to Texas for the Foo
+                project.  Contact my backup, Susan &lt;susan@example.com&gt;,
+                or call my assistant on +1 666 555 1234 if you urgently
+                need to contact me.&quot;;
+         }
+     }
+
+
+   4.  This example is used to send an acknowledgment to every message
+       received.  A :seconds value of zero is used to reply to every
+       message, with no removal of duplicates to the same sender.  This
+       requires that the Sieve engine allow an interval of zero; if it
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+       does not, and it imposes a minimum value, not every message will
+       receive an auto-reply.
+
+
+   require [&quot;envelope&quot;, &quot;extlists&quot;, &quot;vacation-seconds&quot;];
+
+   if not envelope :list &quot;from&quot; &quot;:addrbook:staff&quot;
+     {
+       vacation :handle &quot;auto-resp&quot; :seconds 0
+           &quot;Your request has been received.  A service
+            representative will contact you as soon as
+            possible, usually within one business day.&quot;;
+     }
+
+
+   5.  This example uses the same structure to automatically send a copy
+       of each incoming message to the recipient&#x27;s backup, if the sender
+       is a customer contact or co-worker, or if the message&#x27;s subject
+       includes the word &quot;urgent&quot;.
+
+   require [&quot;envelope&quot;, &quot;extlists&quot;, &quot;enotify&quot;];
+
+   if anyof (
+       envelope :list &quot;from&quot; [&quot;:addrbook:customers&quot;,
+                              &quot;:addrbook:co-workers&quot;],
+       header :contains &quot;subject&quot; &quot;urgent&quot;
+     ) {
+       if notify_method_capability &quot;xmpp:me@example.com&quot; &quot;show&quot; &quot;xa&quot;
+         {
+           redirect &quot;susan@example.com&quot;; # send a copy to my backup
+           keep; # also keep a copy for myself
+         }
+     }
+   }
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   See the Security Considerations sections of the following
+   specifications for discussion of security considerations not covered
+   here:
+
+   o  Sieve base specification [<a href="/doc/html/rfc5228" title="&quot;Sieve: An Email Filtering Language&quot;">RFC5228</a>]
+
+   o  Sieve Vacation extension [<a href="/doc/html/rfc5230" title="&quot;Sieve Email Filtering: Vacation Extension&quot;">RFC5230</a>]
+
+   o  Vacation &quot;Seconds&quot; parameter [<a href="/doc/html/rfc6131" title="&quot;Sieve Vacation Extension: &quot;">RFC6131</a>]
+
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+   o  Sieve Externally Stored Lists extension [<a href="/doc/html/rfc6134" title="&quot;Sieve Extension: Externally Stored Lists&quot;">RFC6134</a>]
+
+   o  Sieve Notify extension [<a href="/doc/html/rfc5435" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">RFC5435</a>] (and any applicable notification
+      methods)
+
+   This document describes how to set up a system that creates automatic
+   replies in an intelligent way.  Despite the &quot;intelligence&quot;, errors in
+   scripts can result in too many auto-reply messages, especially when
+   the reply interval is minimal (using the &quot;notify&quot; action, or the
+   &quot;vacation&quot; action with a small value for &quot;:seconds&quot;).
+
+   Despite the &quot;intelligence&quot;, too, errors in scripts can result in
+   private information getting to senders inappropriately.  In example 3
+   in <a href="#section-3">Section 3</a>, for instance, if the :list test checks the wrong list,
+   or none at all, information about the recipient&#x27;s business trip might
+   be sent to someone who has no need to know about it, and that
+   information should not have been sent.
+
+   Even without errors in scripts, a sender who recognizes that auto-
+   replies are dependent upon the recipient&#x27;s presence can use that fact
+   to probe the presence information.  One result of that can be that
+   the sender discerns changes in the recipient&#x27;s presence that the
+   sender would normally not be allowed to see, making this an
+   unintentional back door into the user&#x27;s presence information.
+   Another result is that this can create a &quot;covert channel&quot;, allowing
+   the recipient to send information to a sender by changing his
+   presence information, his address book, and/or his Sieve script
+   (though in this regard, the exposure is comparable to any other case
+   of shared presence information).
+
+   An auto responder can cause leaks of other pieces of information,
+   including potentially providing the ability to attack cryptographic
+   keying material.  For example, using the time it takes to perform a
+   cryptographic operation, an attacker may obtain information about the
+   secret key.  An auto responder that doesn&#x27;t take timing into account
+   could accidentally leak this kind of information.
+
+   Moreover, if an auto responder script directly returns the results of
+   a cryptographic operation, that could also provide an attack vector.
+   For example, if a script returns the results of a decryption
+   operation, an attacker can send an arbitrarily encrypted message and
+   use the results as a chosen cyphertext attack to decode the
+   encryption key.  Authors of scripts should be careful about what
+   information they return to senders.
+
+
+
+
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Normative References</span>
+
+   [<a id="ref-RFC5228">RFC5228</a>]  Guenther, P. and T. Showalter, &quot;Sieve: An Email Filtering
+              Language&quot;, <a href="/doc/html/rfc5228">RFC 5228</a>, January 2008.
+
+   [<a id="ref-RFC5229">RFC5229</a>]  Homme, K., &quot;Sieve Email Filtering: Variables Extension&quot;,
+              <a href="/doc/html/rfc5229">RFC 5229</a>, January 2008.
+
+   [<a id="ref-RFC5230">RFC5230</a>]  Showalter, T. and N. Freed, &quot;Sieve Email Filtering:
+              Vacation Extension&quot;, <a href="/doc/html/rfc5230">RFC 5230</a>, January 2008.
+
+   [<a id="ref-RFC5435">RFC5435</a>]  Melnikov, A., Leiba, B., Segmuller, W., and T. Martin,
+              &quot;Sieve Email Filtering: Extension for Notifications&quot;,
+              <a href="/doc/html/rfc5435">RFC 5435</a>, January 2009.
+
+   [<a id="ref-RFC6131">RFC6131</a>]  George, R. and B. Leiba, &quot;Sieve Vacation Extension:
+              &quot;Seconds&quot; Parameter&quot;, <a href="/doc/html/rfc6131">RFC 6131</a>, July 2011.
+
+   [<a id="ref-RFC6132">RFC6132</a>]  George, R. and B. Leiba, &quot;Sieve Notification Using
+              Presence Information&quot;, <a href="/doc/html/rfc6132">RFC 6132</a>, July 2011.
+
+   [<a id="ref-RFC6134">RFC6134</a>]  Melnikov, A. and B. Leiba, &quot;Sieve Extension: Externally
+              Stored Lists&quot;, <a href="/doc/html/rfc6134">RFC 6134</a>, July 2011.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">George, et al.                Informational                     [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc6133">RFC 6133</a>                      Auto Response                    July 2011</span>
+
+
+Authors&#x27; Addresses
+
+   Robins George
+   Huawei Technologies
+   Bangalore, Karnataka  560071
+   India
+
+   Phone: +91-080-41117676
+   EMail: robinsgv@gmail.com
+
+
+   Barry Leiba
+   Huawei Technologies
+
+   Phone: +1 646 827 0648
+   EMail: barryleiba@computer.org
+   URI:   <a href="http://internetmessagingtechnology.org/">http://internetmessagingtechnology.org/</a>
+
+
+   Alexey Melnikov
+   Isode Limited
+   5 Castle Business Village, 36 Station Road
+   Hampton, Middlesex  TW12 2BX
+   UK
+
+   EMail: Alexey.Melnikov@isode.com
+   URI:   <a href="http://www.melnikov.ca/">http://www.melnikov.ca/</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+George, et al.                Informational                     [Page 9]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

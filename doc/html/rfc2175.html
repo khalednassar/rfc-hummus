@@ -1,0 +1,572 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2175
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-rfced-info-murakami2/">
+  <meta name="description" content="MAPOS 16 - Multiple Access Protocol over SONET/SDH with 16 Bit Addressing (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2175.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2175.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2175.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2175/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2175/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-rfced-info-murakami2@ietf.org?subject=draft-rfced-info-murakami2" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-rfced-info-murakami2-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-rfced-info-murakami2-00">draft-rfced-info-murakami2-00</a>                        Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        K. Murakami
+Request for Comments: 2175                                   M. Maruyama
+Category: Informational                                 NTT Laboratories
+                                                               June 1997
+
+
+               <span class="h1">MAPOS 16 - Multiple Access Protocol over</span>
+                    <span class="h1">SONET/SDH with 16 Bit Addressing</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Authors&#x27; note
+
+   This memo documents MAPOS 16, a multiple access protocol for
+   transmission of network-protocol datagrams, encapsulated in HDLC
+   frames with 16 bit addressing, over SONET/SDH.  The primary
+   difference with MAPOS version 1 is that it has 16 bit address field
+   that offers significant wide address space. This document is NOT the
+   product of an IETF working group nor is it a standards track
+   document.  It has not necessarily benefited from the widespread and
+   in depth community review that standards track documents receive.
+
+Abstract
+
+   This document describes the protocol MAPOS 16, Multiple Access
+   Protocol over SONET/SDH with 16 Bit Addressing, for transmitting
+   network-protocol datagrams over SONET/SDH.  The primary difference
+   with MAPOS version 1 is that it has 16 bit address field that offers
+   significant wide address space. It first describes the major
+   differences between MAPOS and MAPOS 16 briefly. Then, it explains the
+   header format and its 16 bit address format.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   MAPOS is a multiple access protocol for transmission of High-level
+   Datalink Control (HDLC) frames over the Synchronous Optical Network /
+   Synchronous Digital Hierarchy(SONET/SDH)[<a href="#ref-1">1</a>][2][<a href="#ref-3">3</a>][4]. It provides
+   multiple access capability to SONET/SDH, an inherently point-to-point
+   link.
+
+   MAPOS version 1[5] focuses on the frame format compatibility with the
+   conventional PPP[6], resulting with its narrow 8 bit address field.
+   In contrast to MAPOS version 1, MAPOS 16 has a 16 bit address space.
+
+
+
+
+<span class="grey">Murakami &amp; Maruyama          Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2175">RFC 2175</a>                        MAPOS 16                       June 1997</span>
+
+
+   In this document, header format and its 16 bit format are described.
+   It also explains that 16 bit addressing has minimal influence on the
+   conventional MAPOS protocol family such as Node-Switch Protocol[7]
+   and Switch-Switch Protocol[8].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. MAPOS 16 Frame Format</span>
+
+   Like MAPOS version 1, MAPOS 16 framing is based on the HDLC-like
+   framing used in PPP-over-SONET/SDH, described in <a href="/doc/html/rfc1662">RFC-1662</a>[<a href="#ref-6">6</a>].
+   However, the address field is extended to 16 bits, and the control
+   field in the MAPOS version 1 is omitted for maintain the 32bit
+   alignment of the header.
+
+   Figure 2 shows the MAPOS 16 frame format.  Logical Link Control
+   (LLC), and Sublayer/Sub-Network Access Protocol (SNAP) are not used.
+   It does not include the bytes for transparency.  The fields are
+   transmitted from left to right.
+
+
+           +----------+---------------------+----------+
+           |          |                     |          |
+           |   Flag   |       Address       | Protocol |
+           | 01111110 |        16bits       |  16 bits |
+           +----------+---------------------+----------+
+              +-------------+------------+----------+-----------
+              |             |            |          | Inter-frame
+              | Information |    FCS     |   Flag   | fill or next
+              |             | 16/32 bits | 01111110 | address
+              +-------------+------------+----------+------------
+
+                        Figure 2.  Frame format
+
+     Flag Sequence
+
+     Flag sequence is used for frame synchronization.  Each frame begins
+     and ends with a flag sequence 01111110 (0x7E).  If a frame
+     immediately follows another, one flag sequence may be treated as
+     the end of the preceding frame and the beginning of the immediately
+     following frame.  When the line is idle, the flag sequence is to be
+     transmitted continuously on the line.
+
+     Address
+
+     The address field contains the destination HDLC address.  A frame
+     is forwarded by a switch based on this field.  It is 16 bits wide.
+     The LSB of the first byte indicates the continuation of this field,
+     and must always be 0. The LSB of the second byte indicates the end
+     of this field, and must always be 1.  The MSB of the first byte is
+
+
+
+<span class="grey">Murakami &amp; Maruyama          Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2175">RFC 2175</a>                        MAPOS 16                       June 1997</span>
+
+
+     used to indicate if the frame is a unicast or multicast frame.  The
+     MSB of 0 means unicast, with the remaining thirteen bits indicating
+     the destination node address including two E/A bits. MSB of 1 means
+     multicast, with the remaining thirteen bits indicating the group
+     address.  The address 0xFEFF means that the frame is a broadcast
+     frame. The address (0x0001) is reserved to identify the control
+     processor inside a switch.  Frames with an invalid address should
+     be silently discarded.
+
+             +-------------+-+-------------+-+
+             | | | | | | | | | | | | | | | | |
+             | | node addr |0|  node addr  |1|
+             +-+-----------+-+-------------+-+
+              ^             ^               ^
+              |             |               |
+              |             |               +------- EA bit (always 1)
+              |             +------- EA bit (always 0)
+              1 : broadcast, multicast
+              0 : unicast
+
+                        Figure 3 Address format
+
+
+
+     Protocol
+
+     The protocol field indicates the protocol to which the datagram
+     encapsulated in the information field belongs.  It conforms to the
+     ISO 3309 extension mechanism, and the value for this field may be
+     obtained from the most recent ``Assigned Numbers&#x27;&#x27; [<a href="#ref-9">9</a>] and ``MAPOS
+     Version 1 Assigned Numbers&#x27;&#x27; [<a href="#ref-10">10</a>].
+
+     Information
+
+     The information field contains the datagram for the protocol
+     specified in the protocol field.  The length of this field may
+     vary, but shall not exceed 65,280 (64K - 256) octets.
+
+     Frame Check Sequence (FCS)
+
+     By default, the frame check sequence (FCS) field is 16-bits long.
+     Optionally, 32 bit FCS may be used instead.  The FCS is calculated
+     over all bits of the address, protocol, and information fields
+     prior to escape conversions.  The least significant octet of the
+     result is transmitted first as it contains the coefficient of the
+     highest term.
+
+
+
+
+
+<span class="grey">Murakami &amp; Maruyama          Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc2175">RFC 2175</a>                        MAPOS 16                       June 1997</span>
+
+
+     Inter-frame fill
+
+     A sending station must continuously transmit the flag sequence as
+     inter-frame fill after the FCS field.  The inter-frame flag
+     sequences must be silently discarded by the receiving station.
+     When an under-run occurs during DMA in the sending station, it must
+     abort the frame transfer and continuously send the flag sequence to
+     indicate the error.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a> Octet-Synchronous Framing</span>
+
+   MAPOS 16 uses the same octet stuffing procedure[6] as MAPOS version
+   1[5]. Since SONET/SDH provides transparency, Async-Control-
+   Character-Map (ACCM) is not used.  HDLC frames are mapped into the
+   SONET/SDH payload as follows.
+
+   Each HDLC frame is separated from another frame by one or more flag
+   sequence, 01111110 (0x7E).  An escape sequence is defined to escape
+   the flag sequence and itself.  Prior to sending the frame, but after
+   the FCS computation, every occurrence of 01111110 (0x7E) other than
+   the flags is to be converted to the sequence 01111101 01011110 (0x7D
+   0x5E), and the sequence 01111101 (0x7D) is to be converted to the
+   sequence 01111101 01011101 (0x7D 0x5D).  Upon receiving a frame, this
+   conversion must be reversed prior to FCS computation.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>. Influence on MAPOS ARP, UNARP, NSP, and SSP</span>
+
+   Since all of the MAPOS protocol family, ARP[11], UNARP[11], NSP[7],
+   and SSP[8], use 32-bit address field for 8-bit MAPOS address, the
+   16-bit addressing has no influence on them.  Each protocol only have
+   to place a 16 bit address in the least significant place in their 32
+   bit address fields as follows;
+
+   (1) MAPOS ARP and UNARP
+    16-bit addresses are placed in the least significant places of the
+    32-bit sender and target HDLC addresses.
+
+   (2) NSP
+    In address assignment packet, a 16-bit address is placed in the
+    least significant bytes of the 32-bit address field. The rest of the
+    field is padded with zeros.
+
+   (3) SSP
+    In route entry of an SSP packet, the 16-bit MAPOS address is placed
+    in the least significant bytes of the 32-bit address field.
+
+
+
+
+
+
+<span class="grey">Murakami &amp; Maruyama          Informational                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc2175">RFC 2175</a>                        MAPOS 16                       June 1997</span>
+
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>. Mapping IP Multicast Address to MAPOS 16 Address</span>
+
+   When transmitting IP multicast[11], the thirteen bits of the HDLC
+   address must contain the lowest-order thirteen bits of the IP
+   multicast group address.  Exceptions arise when these thirteen bits
+   are either all zeros or all ones, in which case the address 1111 1110
+   1111 1101 should be used.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>. Security Considerations</span>
+
+   Security issues are not discussed in this memo.
+
+References
+
+   [<a id="ref-1">1</a>]  CCITT Recommendation G.707: Synchronous Digital Hierarchy Bit
+        Rates (1990).
+
+   [<a id="ref-2">2</a>]  CCITT Recommendation G.708: Network Node Interface for
+        Synchronous Digital Hierarchy (1990).
+
+   [<a id="ref-3">3</a>]  CCITT Recommendation G.709: Synchronous Multiplexing Structure
+        (1990).
+
+   [<a id="ref-4">4</a>]  American National Standard for Telecommunications - Digital
+        Hierarchy - Optical Interface Rates and Formats Specification,
+        ANSI T1.105-1991.
+
+   [<a id="ref-5">5</a>]  Murakami, K. and M. Maruyama, &quot; MAPOS - Multiple Access Protocol
+        over SONET/SDH version 1&quot;, <a href="/doc/html/rfc2171">RFC2171</a>, June, 1997.
+
+   [<a id="ref-6">6</a>]  Simpson, W., editor, &quot;PPP in HDLC-like Framing,&quot; <a href="/doc/html/rfc1662">RFC1662</a>, July
+        1994.
+
+   [<a id="ref-7">7</a>]  Murakami, K. and M. Maruyama, &quot;A MAPOS version 1 Extension -
+        Node Switch Protocol,&quot; <a href="/doc/html/rfc2173">RFC2173</a>, June, 1997.
+
+   [<a id="ref-8">8</a>]  Murakami, K. and M. Maruyama, &quot;A MAPOS version 1 Extension -
+        Switch Switch Protocol,&quot; <a href="/doc/html/rfc2174">RFC2174</a>, June, 1997.
+
+   [<a id="ref-9">9</a>]  Reynolds, J. and J. Postel, &quot;ASSIGNED NUMBERS,&quot; <a href="/doc/html/rfc1700">RFC1700</a>, Oct.
+        1994.
+
+   [<a id="ref-10">10</a>] Maruyama, M. and K. Murakami, &quot;MAPOS Version 1 Assigned
+        Numbers,&quot; <a href="/doc/html/rfc2172">RFC2172</a>, June, 1997.
+
+   [<a id="ref-11">11</a>] Murakami, K. and M. Maruyama, &quot;IPv4 over MAPOS Version 1,&quot;
+        <a href="/doc/html/rfc2176">RFC2176</a>, June, 1997.
+
+
+
+
+<span class="grey">Murakami &amp; Maruyama          Informational                      [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc2175">RFC 2175</a>                        MAPOS 16                       June 1997</span>
+
+
+Acknowledgements
+
+   The authors would like to acknowledge the contributions and
+   thoughtful suggestions of John P. Mullaney, Clark Bremer, Masayuki
+   Kobayashi, Paul Francis, Toshiaki Yoshida, and Takahiro Sajima.
+
+Author&#x27;s Address
+
+             Ken Murakami
+             NTT Software Laboratories
+             3-9-11, Midori-cho
+             Musashino-shi
+             Tokyo-180, Japan
+             E-mail: murakami@ntt-20.ecl.net
+
+             Mitsuru Maruyama
+             NTT Software Laboratories
+             3-9-11, Midori-cho
+             Musashino-shi
+             Tokyo-180, Japan
+             E-mail: mitsuru@ntt-20.ecl.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Murakami &amp; Maruyama          Informational                      [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

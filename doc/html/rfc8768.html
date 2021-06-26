@@ -1,0 +1,623 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8768
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-core-hop-limit/">
+  <meta name="description" content="Constrained Application Protocol (CoAP) Hop-Limit Option (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8768.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8768.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8768.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8768.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8768/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8768/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/core/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-core-hop-limit@ietf.org?subject=draft-ietf-core-hop-limit" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-core-hop-limit-07.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-core-hop-limit-07.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-core-hop-limit-07.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-core-hop-limit-07">draft-ietf-core-hop-limit-07</a>                     Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                      M. Boucadair
+Request for Comments: 8768                                        Orange
+Category: Standards Track                                     T. Reddy.K
+ISSN: 2070-1721                                                   McAfee
+                                                              J. Shallow
+                                                              March 2020
+
+
+        <span class="h1">Constrained Application Protocol (CoAP) Hop-Limit Option</span>
+
+Abstract
+
+   The presence of Constrained Application Protocol (CoAP) proxies may
+   lead to infinite forwarding loops, which is undesirable.  To prevent
+   and detect such loops, this document specifies the Hop-Limit CoAP
+   option.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8768">https://www.rfc-editor.org/info/rfc8768</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Intended Usage
+   2.  Terminology
+   3.  Hop-Limit Option
+   4.  Debugging and Troubleshooting
+   5.  HTTP Mapping Considerations
+   6.  IANA Considerations
+     6.1.  CoAP Response Code
+     6.2.  CoAP Option Number
+   7.  Security Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   More and more applications are using the Constrained Application
+   Protocol (CoAP) [<a href="/doc/html/rfc7252" title="&quot;The Constrained Application Protocol (CoAP)&quot;">RFC7252</a>] as a communication protocol between
+   application agents.  For example, [<a href="#ref-DOTS-SIG-CHANNEL">DOTS-SIG-CHANNEL</a>] specifies how
+   CoAP is used as a signaling protocol between domains under
+   distributed denial-of-service (DDoS) attacks and DDoS mitigation
+   providers.  In such contexts, a CoAP client can communicate directly
+   with a server or indirectly via proxies.
+
+   When multiple proxies are involved, infinite forwarding loops may be
+   experienced (e.g., routing misconfiguration, policy conflicts).  To
+   prevent such loops, this document defines a new CoAP option, called
+   Hop-Limit (<a href="#section-3">Section 3</a>).  Also, the document defines a new CoAP
+   Response Code (<a href="#section-6.1">Section 6.1</a>) to report loops together with relevant
+   diagnostic information to ease troubleshooting (<a href="#section-4">Section 4</a>).
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Intended Usage</span>
+
+   The Hop-Limit option was originally designed for a specific use case
+   [<a href="#ref-DOTS-SIG-CHANNEL">DOTS-SIG-CHANNEL</a>].  However, its intended usage is general:
+
+      New CoAP proxies MUST implement this option and have it enabled by
+      default.
+
+   Note that this means that a server that receives requests both via
+   proxies and directly from clients may see otherwise identical
+   requests with and without the Hop-Limit option included; servers with
+   internal caching will therefore also want to implement this option,
+   since understanding the Hop-Limit option will improve caching
+   efficiency.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   Readers should be familiar with the terms and concepts defined in
+   [<a href="/doc/html/rfc7252" title="&quot;The Constrained Application Protocol (CoAP)&quot;">RFC7252</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Hop-Limit Option</span>
+
+   The properties of the Hop-Limit option are shown in Table 1.  The
+   formatting of this table follows the one used in Table 4 of [<a href="/doc/html/rfc7252" title="&quot;The Constrained Application Protocol (CoAP)&quot;">RFC7252</a>]
+   (<a href="#section-5.10">Section 5.10</a>).  The C, U, N, and R columns indicate the properties
+   Critical, Unsafe, NoCacheKey, and Repeatable defined in <a href="/doc/html/rfc7252#section-5.4">Section&nbsp;5.4
+   of [RFC7252]</a>.  None of these properties is marked for the Hop-Limit
+   option.
+
+    +--------+---+---+---+---+-----------+--------+--------+---------+
+    | Number | C | U | N | R | Name      | Format | Length | Default |
+    +========+===+===+===+===+===========+========+========+=========+
+    | 16     |   |   |   |   | Hop-Limit | uint   | 1      | 16      |
+    +--------+---+---+---+---+-----------+--------+--------+---------+
+
+                Table 1: CoAP Hop-Limit Option Properties
+
+   The Hop-Limit option (<a href="#section-6.2">Section 6.2</a>) is an elective option used to
+   detect and prevent infinite loops of CoAP requests when proxies are
+   involved.  The option is not repeatable.  Therefore, any request
+   carrying multiple Hop-Limit options MUST be handled following the
+   procedure specified in <a href="/doc/html/rfc7252#section-5.4.5">Section&nbsp;5.4.5 of [RFC7252]</a>.
+
+   The value of the Hop-Limit option is encoded as an unsigned integer
+   (see <a href="/doc/html/rfc7252#section-3.2">Section&nbsp;3.2 of [RFC7252]</a>).  This value MUST be between 1 and 255
+   inclusive.  CoAP requests received with a Hop-Limit option set to &#x27;0&#x27;
+   or greater than &#x27;255&#x27; MUST be rejected by a CoAP server/proxy using
+   4.00 (Bad Request).
+
+   The Hop-Limit option is safe to forward.  That is, a CoAP proxy that
+   does not understand the Hop-Limit option should forward it on.  The
+   option is also part of the cache key.  As such, a CoAP proxy that
+   does not understand the Hop-Limit option must follow the
+   recommendations in <a href="/doc/html/rfc7252#section-5.7.1">Section&nbsp;5.7.1 of [RFC7252]</a> for caching.  Note that
+   loops that involve only such proxies will not be detected.
+   Nevertheless, the presence of such proxies will not prevent infinite
+   loop detection if at least one CoAP proxy that supports the Hop-Limit
+   option is involved in the loop.
+
+   A CoAP proxy that understands the Hop-Limit option SHOULD be
+   instructed, using a configuration parameter, to insert a Hop-Limit
+   option when relaying a request that does not include the Hop-Limit
+   option.
+
+   The initial Hop-Limit value should be configurable.  If no initial
+   value is explicitly provided, the default initial Hop-Limit value of
+   16 MUST be used.  This value is chosen so that in the majority of
+   cases, it is sufficiently large to guarantee that a CoAP request
+   would not be dropped in networks when there were no loops, but not so
+   large as to consume CoAP proxy resources when a loop does occur.  The
+   value is still configurable to accommodate unusual topologies.  Lower
+   values should be used with caution and only in networks where
+   topologies are known by the CoAP client (or proxy) inserting the Hop-
+   Limit option.
+
+   Because forwarding errors may occur if inadequate Hop-Limit values
+   are used, proxies at the boundaries of an administrative domain MAY
+   be instructed to remove or rewrite the value of Hop-Limit carried in
+   received requests (i.e., ignore the value of Hop-Limit received in a
+   request).  This modification should be done with caution in case
+   proxy-forwarded traffic repeatedly crosses the administrative domain
+   boundary in a loop, rendering ineffective the efficacy of loop
+   detection through the Hop-Limit option.
+
+   Otherwise, a CoAP proxy that understands the Hop-Limit option MUST
+   decrement the value of the option by 1 prior to forwarding it.  A
+   CoAP proxy that understands the Hop-Limit option MUST NOT use a
+   stored 5.08 (Hop Limit Reached) error response unless the value of
+   the Hop-Limit option in the presented request is smaller than or
+   equal to the value of the Hop-Limit option in the request used to
+   obtain the stored response.  Otherwise, the CoAP proxy follows the
+   behavior in <a href="/doc/html/rfc7252#section-5.6">Section&nbsp;5.6 of [RFC7252]</a>.
+
+      Note: If a request with a given value of Hop-Limit failed to reach
+      a server because the hop limit is exhausted, then the same failure
+      will be observed if a smaller value of the Hop-Limit option is
+      used instead.
+
+   CoAP requests MUST NOT be forwarded if the Hop-Limit option is set to
+   &#x27;0&#x27; after decrement.  Requests that cannot be forwarded because of
+   exhausted Hop-Limit SHOULD be logged with a 5.08 (Hop Limit Reached)
+   error response sent back to the CoAP peer.  It is RECOMMENDED that
+   CoAP implementations support means to alert administrators about loop
+   errors so that appropriate actions are undertaken.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Debugging and Troubleshooting</span>
+
+   To ease debugging and troubleshooting, the CoAP proxy that detects a
+   loop includes an identifier for itself in the diagnostic payload
+   under the conditions detailed in <a href="/doc/html/rfc7252#section-5.5.2">Section&nbsp;5.5.2 of [RFC7252]</a>.  That
+   identifier MUST NOT include any space character (ASCII value 32).
+   The identifier inserted by a CoAP proxy can be, for example, a proxy
+   name (e.g., p11.example.net), proxy alias (e.g., myproxyalias), or IP
+   address (e.g., 2001:db8::1).
+
+   Each intermediate proxy involved in relaying a 5.08 (Hop Limit
+   Reached) error message prepends its own identifier in the diagnostic
+   payload with a space character used as separator.  Only one
+   identifier per proxy should appear in the diagnostic payload.  This
+   approach allows the limiting of the size of the 5.08 (Hop Limit
+   Reached) error message, eases the correlation with hops count, and
+   detects whether a proxy was involved in the forwarding of the 5.08
+   (Hop Limit Reached) error message.  Note that an intermediate proxy
+   prepends its identifier only if there is enough space as determined
+   by the Path MTU (<a href="/doc/html/rfc7252#section-4.6">Section&nbsp;4.6 of [RFC7252]</a>).  If not, an intermediate
+   proxy forwards the 5.08 (Hop Limit Reached) error message to the next
+   hop without updating the diagnostic payload.
+
+   An intermediate proxy MUST NOT forward a 5.08 (Hop Limit Reached)
+   error message if it detects that its identifier is included in the
+   diagnostic payload.  Such messages SHOULD be logged and appropriate
+   alerts sent to the administrators.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  HTTP Mapping Considerations</span>
+
+   This section focuses on the HTTP mappings specific to the CoAP
+   extension specified in this document.  As a reminder, the basic
+   normative requirements on HTTP/CoAP mappings are defined in
+   <a href="/doc/html/rfc7252#section-10">Section&nbsp;10 of [RFC7252]</a>.  The implementation guidelines for HTTP/CoAP
+   mappings are elaborated in [<a href="/doc/html/rfc8075" title="&quot;Guidelines for Mapping Implementations: HTTP to the Constrained Application Protocol (CoAP)&quot;">RFC8075</a>].
+
+   By default, the HTTP-to-CoAP Proxy inserts a Hop-Limit option
+   following the guidelines in <a href="#section-3">Section 3</a>.  The HTTP-to-CoAP Proxy may be
+   instructed by policy to insert a Hop-Limit option only if a Via
+   (<a href="/doc/html/rfc7230#section-5.7.1">Section&nbsp;5.7.1 of [RFC7230]</a>) or CDN-Loop header field [<a href="/doc/html/rfc8586" title="&quot;Loop Detection in Content Delivery Networks (CDNs)&quot;">RFC8586</a>] is
+   present in the HTTP request.
+
+   The HTTP-to-CoAP Proxy uses 508 (Loop Detected) as the HTTP response
+   status code to map 5.08 (Hop Limit Reached).  Furthermore, it maps
+   the diagnostic payload of 5.08 (Hop Limit Reached) as per <a href="/doc/html/rfc8075#section-6.6">Section&nbsp;6.6
+   of [RFC8075]</a>.
+
+   By default, the CoAP-to-HTTP Proxy inserts a Via header field in the
+   HTTP request if the CoAP request includes a Hop-Limit option.  The
+   CoAP-to-HTTP Proxy may be instructed by policy to insert a CDN-Loop
+   header field instead of the Via header field.
+
+   The CoAP-to-HTTP Proxy maps the 508 (Loop Detected) HTTP response
+   status code to 5.08 (Hop Limit Reached).  Moreover, the CoAP-to-HTTP
+   Proxy inserts its information following the guidelines in <a href="#section-4">Section 4</a>.
+
+   When both HTTP-to-CoAP and CoAP-to-HTTP proxies are involved, the
+   loop detection may break if the proxy-forwarded traffic repeatedly
+   crosses the HTTP-to-CoAP and CoAP-to-HTTP proxies.  Nevertheless, if
+   the loop is within the CoAP or HTTP legs, the loop detection is still
+   functional.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  CoAP Response Code</span>
+
+   IANA has registered the following entry in the &quot;CoAP Response Codes&quot;
+   subregistry available at &lt;<a href="https://www.iana.org/assignments/core-parameters">https://www.iana.org/assignments/core-</a>
+   <a href="https://www.iana.org/assignments/core-parameters">parameters</a>&gt;:
+
+                 +------+-------------------+-----------+
+                 | Code | Description       | Reference |
+                 +======+===================+===========+
+                 | 5.08 | Hop Limit Reached | <a href="/doc/html/rfc8768">RFC 8768</a>  |
+                 +------+-------------------+-----------+
+
+                       Table 2: CoAP Response Codes
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  CoAP Option Number</span>
+
+   IANA has registered the following entry in the &quot;CoAP Option Numbers&quot;
+   subregistry available at &lt;<a href="https://www.iana.org/assignments/core-parameters">https://www.iana.org/assignments/core-</a>
+   <a href="https://www.iana.org/assignments/core-parameters">parameters</a>&gt;:
+
+                    +--------+-----------+-----------+
+                    | Number | Name      | Reference |
+                    +========+===========+===========+
+                    | 16     | Hop-Limit | <a href="/doc/html/rfc8768">RFC 8768</a>  |
+                    +--------+-----------+-----------+
+
+                       Table 3: CoAP Option Number
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   Security considerations related to CoAP proxying are discussed in
+   <a href="/doc/html/rfc7252#section-11.2">Section&nbsp;11.2 of [RFC7252]</a>.
+
+   A CoAP endpoint can probe the topology of a network into which it is
+   making requests by tweaking the value of the Hop-Limit option.  Such
+   probing is likely to fail if proxies at the boundaries of that
+   network rewrite the value of Hop-Limit carried in received requests
+   (see <a href="#section-3">Section 3</a>).
+
+   The diagnostic payload of a 5.08 (Hop Limit Reached) error message
+   may leak sensitive information revealing the topology of an
+   administrative domain.  To prevent that, a CoAP proxy that is located
+   at the boundary of an administrative domain MAY be instructed to
+   strip the diagnostic payload or part of it before forwarding on the
+   5.08 (Hop Limit Reached) response.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC7230">RFC7230</a>]  Fielding, R., Ed. and J. Reschke, Ed., &quot;Hypertext Transfer
+              Protocol (HTTP/1.1): Message Syntax and Routing&quot;,
+              <a href="/doc/html/rfc7230">RFC 7230</a>, DOI 10.17487/RFC7230, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7230">https://www.rfc-editor.org/info/rfc7230</a>&gt;.
+
+   [<a id="ref-RFC7252">RFC7252</a>]  Shelby, Z., Hartke, K., and C. Bormann, &quot;The Constrained
+              Application Protocol (CoAP)&quot;, <a href="/doc/html/rfc7252">RFC 7252</a>,
+              DOI 10.17487/RFC7252, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7252">https://www.rfc-editor.org/info/rfc7252</a>&gt;.
+
+   [<a id="ref-RFC8075">RFC8075</a>]  Castellani, A., Loreto, S., Rahman, A., Fossati, T., and
+              E. Dijk, &quot;Guidelines for Mapping Implementations: HTTP to
+              the Constrained Application Protocol (CoAP)&quot;, <a href="/doc/html/rfc8075">RFC 8075</a>,
+              DOI 10.17487/RFC8075, February 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8075">https://www.rfc-editor.org/info/rfc8075</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-DOTS-SIG-CHANNEL">DOTS-SIG-CHANNEL</a>]
+              Reddy, T., Boucadair, M., Patil, P., Mortensen, A., and N.
+              Teague, &quot;Distributed Denial-of-Service Open Threat
+              Signaling (DOTS) Signal Channel Specification&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-ietf-dots-signal-channel-41">draft-ietf-dots-signal-channel-</a>
+              <a href="/doc/html/draft-ietf-dots-signal-channel-41">41</a>, 6 January 2020, &lt;<a href="https://tools.ietf.org/html/draft-ietf-dots-signal-channel-41">https://tools.ietf.org/html/draft-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-dots-signal-channel-41">ietf-dots-signal-channel-41</a>&gt;.
+
+   [<a id="ref-RFC8586">RFC8586</a>]  Ludin, S., Nottingham, M., and N. Sullivan, &quot;Loop
+              Detection in Content Delivery Networks (CDNs)&quot;, <a href="/doc/html/rfc8586">RFC 8586</a>,
+              DOI 10.17487/RFC8586, April 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8586">https://www.rfc-editor.org/info/rfc8586</a>&gt;.
+
+Acknowledgements
+
+   This specification was part of [<a href="#ref-DOTS-SIG-CHANNEL">DOTS-SIG-CHANNEL</a>].  Many thanks to
+   those who reviewed DOTS specifications.
+
+   Thanks to Klaus Hartke, Carsten Bormann, Peter van der Stok, Jim
+   Schaad, Jaime Jiménez, Roni Even, Scott Bradner, Thomas Fossati,
+   Radia Perlman, Éric Vyncke, Suresh Krishnan, Roman Danyliw, Barry
+   Leiba, Christer Holmberg, Benjamin Kaduk, and Adam Roach for their
+   review and comments.
+
+   Carsten Bormann provided the &quot;Intended Usage&quot; text.
+
+Authors&#x27; Addresses
+
+   Mohamed Boucadair
+   Orange
+   35000 Rennes
+   France
+
+   Email: mohamed.boucadair@orange.com
+
+
+   Tirumaleswar Reddy.K
+   McAfee, Inc.
+   Embassy Golf Link Business Park
+   Bangalore 560071
+   Karnataka
+   India
+
+   Email: kondtir@gmail.com
+
+
+   Jon Shallow
+   United Kingdom
+
+   Email: supjps-ietf@jpshallow.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,573 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6315
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-enum-iax/">
+  <meta name="description" content="IANA Registration for Enumservice &#39;iax&#39; (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6315.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6315.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6315.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6315/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6315/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/enum/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-enum-iax@ietf.org?subject=draft-ietf-enum-iax" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-enum-iax-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-enum-iax-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-enum-iax-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-enum-iax-10">draft-ietf-enum-iax-10</a>                               Informational
+                                                        <a class="text-warning" href="/ipr/search/?submit=draft&amp;id=draft-ietf-enum-iax">IPR declarations</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                            E. Guy
+Request for Comments: 6315                                   CleverSpoke
+Category: Informational                                      K. Darilion
+ISSN: 2070-1721                                                   nic.at
+                                                               July 2011
+
+
+                <span class="h1">IANA Registration for Enumservice &#x27;iax&#x27;</span>
+
+Abstract
+
+   This document registers an Enumservice for the Inter-Asterisk
+   eXchange (IAX) protocol according to the guidelines given in <a href="/doc/html/rfc6117">RFC</a>
+   <a href="/doc/html/rfc6117">6117</a>.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are a candidate for any level of Internet
+   Standard; see <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6315">http://www.rfc-editor.org/info/rfc6315</a>.
+
+Copyright Notice
+
+   Copyright (c) 2011 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+<span class="grey">Guy &amp; Darilion                Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6315">RFC 6315</a>         IANA Registration for Enumservice &#x27;iax&#x27;       July 2011</span>
+
+
+   This document may contain material from IETF Documents or IETF
+   Contributions published or made publicly available before November
+   10, 2008.  The person(s) controlling the copyright in some of this
+   material may not have granted the IETF Trust the right to allow
+   modifications of such material outside the IETF Standards Process.
+   Without obtaining an adequate license from the person(s) controlling
+   the copyright in such materials, this document may not be modified
+   outside the IETF Standards Process, and derivative works of it may
+   not be created outside the IETF Standards Process, except to format
+   it for publication as an RFC or to translate it into languages other
+   than English.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. IANA Registration ...............................................<a href="#page-3">3</a>
+   <a href="#section-3">3</a>. Examples ........................................................<a href="#page-4">4</a>
+      <a href="#section-3.1">3.1</a>. Simple IAX URI .............................................<a href="#page-4">4</a>
+      <a href="#section-3.2">3.2</a>. IAX URI with a Context .....................................<a href="#page-4">4</a>
+   <a href="#section-4">4</a>. Security Considerations .........................................<a href="#page-4">4</a>
+   <a href="#section-5">5</a>. IANA Considerations .............................................<a href="#page-5">5</a>
+   <a href="#section-6">6</a>. DNS Considerations ..............................................<a href="#page-5">5</a>
+   <a href="#section-7">7</a>. Acknowledgments .................................................<a href="#page-5">5</a>
+   <a href="#section-8">8</a>. References ......................................................<a href="#page-5">5</a>
+      <a href="#section-8.1">8.1</a>. Normative References .......................................<a href="#page-5">5</a>
+      <a href="#section-8.2">8.2</a>. Informative References .....................................<a href="#page-6">6</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The E.164 to Uniform Resource Identifiers (URIs) [<a href="/doc/html/rfc3986" title="&quot;Uniform Resource Identifier (URI): Generic Syntax&quot;">RFC3986</a>] Dynamic
+   Delegation Discovery System (DDDS) Application (ENUM) [<a href="/doc/html/rfc6116" title="&quot;The E.164 to Uniform Resource Identifiers (URI) Dynamic Delegation Discovery System (DDDS) Application (ENUM)&quot;">RFC6116</a>]
+   transforms E.164 [<a href="#ref-E164" title="&quot;The International Public Telecommunication Numbering Plan&quot;">E164</a>] numbers into URIs using the Domain Name
+   System (DNS) [<a href="/doc/html/rfc1035" title="&quot;Domain names - implementation and specification&quot;">RFC1035</a>].
+
+   IAX (Inter-Asterisk eXchange) [<a href="/doc/html/rfc5456" title="&quot;IAX: Inter-Asterisk eXchange Version 2&quot;">RFC5456</a>] is an &quot;all-in-one&quot; protocol
+   for handling multimedia in IP networks.  It combines both control and
+   media services in the same protocol.
+
+   This document registers an Enumservice for the IAX [<a href="/doc/html/rfc5456" title="&quot;IAX: Inter-Asterisk eXchange Version 2&quot;">RFC5456</a>] protocol
+   according to the guidelines given in [<a href="/doc/html/rfc6117" title="&quot;IANA Registration of Enumservices: Guide, Template, and IANA Considerations&quot;">RFC6117</a>].
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Guy &amp; Darilion                Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6315">RFC 6315</a>         IANA Registration for Enumservice &#x27;iax&#x27;       July 2011</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  IANA Registration</span>
+
+         &lt;record&gt;
+          &lt;!-- iax --&gt;
+          &lt;class&gt;Protocol-Based&lt;/class&gt;
+          &lt;type&gt;iax&lt;/type&gt;
+          &lt;!-- No subtype --&gt;
+          &lt;urischeme&gt;iax&lt;/urischeme&gt;
+          &lt;functionalspec&gt;
+            &lt;paragraph&gt;
+              The &#x27;iax&#x27; Enumservice is used to map E.164 numbers to
+              IAX URIs.  Such URIs identify resources capable of being
+              contacted to provide a communication session using the
+              IAX protocol &lt;xref target=&quot;<a href="/doc/html/rfc5456">RFC5456</a>&quot;/&gt;.
+            &lt;/paragraph&gt;
+            &lt;paragraph&gt;
+              A client selecting this NAPTR needs to be able to support
+              communication utilizing the IAX protocol.
+            &lt;/paragraph&gt;
+          &lt;/functionalspec&gt;
+          &lt;security&gt;
+            See &lt;xref type=&quot;rfc&quot; data=&quot;6315&quot;/&gt;, <a href="#section-4">Section 4</a>.
+          &lt;/security&gt;
+          &lt;usage&gt;COMMON&lt;/usage&gt;
+          &lt;registrationdocs&gt;
+            &lt;xref type=&quot;rfc&quot; data=&quot;6315&quot;/&gt;
+          &lt;/registrationdocs&gt;
+          &lt;requesters&gt;
+            &lt;xref type=&quot;person&quot; data=&quot;Ed_Guy&quot;/&gt;
+            &lt;xref type=&quot;person&quot; data=&quot;Klaus_Darilion&quot;/&gt;
+          &lt;/requesters&gt;
+        &lt;/record&gt;
+
+        &lt;people&gt;
+          &lt;person id=&quot;Ed_Guy&quot;&gt;
+            &lt;name&gt;Ed Guy&lt;/name&gt;
+            &lt;org&gt;CleverSpoke, Inc&lt;/org&gt;
+            &lt;uri&gt;mailto:edguy@CleverSpoke.com&lt;/uri&gt;
+            &lt;updated&gt;2010-11-01&lt;/updated&gt;
+          &lt;/person&gt;
+          &lt;person id=&quot;Klaus_Darilion&quot;&gt;
+            &lt;name&gt;Klaus Darilion&lt;/name&gt;
+            &lt;org&gt;nic.at&lt;/org&gt;
+            &lt;uri&gt;mailto:klaus.darilion@nic.at&lt;/uri&gt;
+            &lt;updated&gt;2011-03-24&lt;/updated&gt;
+          &lt;/person&gt;
+        &lt;/people&gt;
+
+
+
+
+<span class="grey">Guy &amp; Darilion                Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6315">RFC 6315</a>         IANA Registration for Enumservice &#x27;iax&#x27;       July 2011</span>
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Examples</span>
+
+   The following examples are just for illustrative purposes and will in
+   no way limit the usage of the &#x27;iax&#x27; Enumservice to other usage
+   scenarios.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Simple IAX URI</span>
+
+   The following Naming Authority Pointer (NAPTR) resource record is an
+   example of the &#x27;iax&#x27; Enumservice.
+
+     $ORIGIN 8.4.1.0.6.4.9.7.0.2.4.4.e164.arpa.
+
+     @     IN NAPTR ( 10 100 &quot;u&quot; &quot;E2U+iax&quot;
+                &quot;!^.*$!iax:example.com/alice!&quot; . )
+
+   This contact information indicates that the party addressed by the
+   E.164 number +442079460148 can be contacted using the IAX protocol to
+   domain &#x27;example.com&#x27;.  The called party, service, or program on that
+   domain is identified by &#x27;alice&#x27;.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  IAX URI with a Context</span>
+
+   The following is an example of the &#x27;iax&#x27; Enumservice using an IPv6
+   destination address and a destination &#x27;context&#x27;.
+
+     $ORIGIN 9.4.1.0.6.4.9.7.0.2.4.4.e164.arpa.
+
+     @     IN NAPTR ( 10 100 &quot;u&quot; &quot;E2U+iax&quot;
+                &quot;!^.*$!iax:[2001:db8::1]:4569/alice?friends!&quot; . )
+
+   This NAPTR resource record indicates that +442079460149 may be
+   contacted by using the IAX protocol at IPv6 address 2001:db8::1,
+   port 4569 with the called party &#x27;alice&#x27; in the context (or user
+   partition) &#x27;friends&#x27;.  For further usage of IAX URIs, see <a href="/doc/html/rfc5456#section-5">Section&nbsp;5
+   of [RFC5456]</a>.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   The &#x27;iax&#x27; Enumservice does not introduce any new security issues
+   beyond any already present in the ENUM, DNS, and IAX protocols,
+   except that this Enumservice provides for disclosure of information
+   that may facilitate an attack or a violation of user privacy in some
+   way.  The primary result of these exploits is unwanted
+   communications.  These issues are discussed in further detail in
+   [<a href="/doc/html/rfc3833" title="&quot;Threat Analysis of the Domain Name System (DNS)&quot;">RFC3833</a>].
+
+
+
+
+
+<span class="grey">Guy &amp; Darilion                Informational                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6315">RFC 6315</a>         IANA Registration for Enumservice &#x27;iax&#x27;       July 2011</span>
+
+
+   The use of DNS Security (DNSSEC) [<a href="/doc/html/rfc4033" title="&quot;DNS Security Introduction and Requirements&quot;">RFC4033</a>] is recommended to improve
+   operational security.
+
+   For security considerations that apply to all Enumservices, please
+   refer to <a href="/doc/html/rfc6116#section-7">RFC 6116, Section&nbsp;7</a>.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   This document registers the &#x27;iax&#x27; Enumservice according to the
+   guidelines and specifications in [<a href="/doc/html/rfc6117" title="&quot;IANA Registration of Enumservices: Guide, Template, and IANA Considerations&quot;">RFC6117</a>] and the definitions in
+   <a href="#section-2">Section 2</a> in this document.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  DNS Considerations</span>
+
+   Misconfiguration or delays in zone changes can result in call loops,
+   perhaps with different protocols or networks.  Implementations should
+   take care to ensure such loops can be detected without interrupting
+   other services, including SIP-based, IAX-based, and DNS itself.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Acknowledgments</span>
+
+   This work was supported by Internet Foundation Austria.  In addition,
+   thanks to Michael Haberler, Bernie Hoeneisen, and Richard Stastny for
+   their support and guidance in writing this document.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3986">RFC3986</a>]  Berners-Lee, T., Fielding, R., and L. Masinter, &quot;Uniform
+              Resource Identifier (URI): Generic Syntax&quot;, STD 66,
+              <a href="/doc/html/rfc3986">RFC 3986</a>, January 2005.
+
+   [<a id="ref-RFC5456">RFC5456</a>]  Spencer, M., Capouch, B., Guy, E., Ed., Miller, F., and K.
+              Shumard, &quot;IAX: Inter-Asterisk eXchange Version 2&quot;,
+              <a href="/doc/html/rfc5456">RFC 5456</a>, February 2010.
+
+   [<a id="ref-RFC6116">RFC6116</a>]  Bradner, S., Conroy, L., and K. Fujiwara, &quot;The E.164 to
+              Uniform Resource Identifiers (URI) Dynamic Delegation
+              Discovery System (DDDS) Application (ENUM)&quot;, <a href="/doc/html/rfc6116">RFC 6116</a>,
+              March 2011.
+
+   [<a id="ref-RFC6117">RFC6117</a>]  Hoeneisen, B., Mayrhofer, A., and J. Livingood, &quot;IANA
+              Registration of Enumservices: Guide, Template, and IANA
+              Considerations&quot;, <a href="/doc/html/rfc6117">RFC 6117</a>, March 2011.
+
+
+
+
+
+
+<span class="grey">Guy &amp; Darilion                Informational                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6315">RFC 6315</a>         IANA Registration for Enumservice &#x27;iax&#x27;       July 2011</span>
+
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-E164">E164</a>]     ITU-T, &quot;The International Public Telecommunication
+              Numbering Plan&quot;, Recommendation E.164, May 1997.
+
+   [<a id="ref-RFC1035">RFC1035</a>]  Mockapetris, P., &quot;Domain names - implementation and
+              specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, November 1987.
+
+   [<a id="ref-RFC3833">RFC3833</a>]  Atkins, D. and R. Austein, &quot;Threat Analysis of the Domain
+              Name System (DNS)&quot;, <a href="/doc/html/rfc3833">RFC 3833</a>, August 2004.
+
+   [<a id="ref-RFC4033">RFC4033</a>]  Arends, R., Austein, R., Larson, M., Massey, D., and S.
+              Rose, &quot;DNS Security Introduction and Requirements&quot;,
+              <a href="/doc/html/rfc4033">RFC 4033</a>, March 2005.
+
+Authors&#x27; Addresses
+
+   Ed Guy
+   CleverSpoke
+   12 Williams Road
+   Chatham, NJ  07928
+   US
+
+   Phone: +1 973 437 4519
+   EMail: edguy@CleverSpoke.com
+   URI:   <a href="http://www.cleverspoke.com/">http://www.cleverspoke.com/</a>
+
+
+   Klaus Darilion
+   nic.at
+   Karlsplatz 1/2/9
+   1010 Wien
+   Austria
+
+   Phone: +43 1 5056416 36
+   EMail: klaus.darilion@nic.at
+   URI:   <a href="http://www.nic.at/">http://www.nic.at/</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Guy &amp; Darilion                Informational                     [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

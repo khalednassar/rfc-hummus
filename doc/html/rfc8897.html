@@ -1,0 +1,795 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8897
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-sidrops-rp/">
+  <meta name="description" content="Requirements for Resource Public Key Infrastructure (RPKI) Relying Parties (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8897.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8897.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8897.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8897.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8897/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8897/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sidrops/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-sidrops-rp@ietf.org?subject=draft-ietf-sidrops-rp" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-sidrops-rp-06.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sidrops-rp-06.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-sidrops-rp-06.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-sidrops-rp-06">draft-ietf-sidrops-rp-06</a>                             Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                             D. Ma
+Request for Comments: 8897                                          ZDNS
+Category: Informational                                          S. Kent
+ISSN: 2070-1721                                              Independent
+                                                          September 2020
+
+
+   <span class="h1">Requirements for Resource Public Key Infrastructure (RPKI) Relying</span>
+                                <span class="h1">Parties</span>
+
+Abstract
+
+   This document provides a single reference point for requirements for
+   Relying Party (RP) software for use in the Resource Public Key
+   Infrastructure (RPKI).  It cites requirements that appear in several
+   RPKI RFCs, making it easier for implementers to become aware of these
+   requirements.  Over time, this RFC will be updated to reflect changes
+   to the requirements and guidance specified in the RFCs discussed
+   herein.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8897">https://www.rfc-editor.org/info/rfc8897</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Fetching and Caching RPKI Repository Objects
+     2.1.  TAL Configuration and Processing
+     2.2.  Locating RPKI Objects Using Authority and Subject
+           Information Extensions
+     2.3.  Dealing with Key Rollover
+     2.4.  Dealing with Algorithm Transition
+     2.5.  Strategies for Efficient Cache Maintenance
+   3.  Certificate and CRL Processing
+     3.1.  Verifying Resource Certificate and Syntax
+     3.2.  Certificate Path Validation
+     3.3.  CRL Processing
+   4.  Processing RPKI Repository Signed Objects
+     4.1.  Basic Signed Object Syntax Checks
+     4.2.  Syntax and Validation for Each Type of Signed Object
+       4.2.1.  Manifest
+       4.2.2.  ROA
+       4.2.3.  Ghostbusters
+       4.2.4.  Verifying BGPsec Router Certificate
+     4.3.  How to Make Use of Manifest Data
+     4.4.  What To Do with Ghostbusters Information
+   5.  Distributing Validated Cache
+   6.  Local Control
+   7.  Security Considerations
+   8.  IANA Considerations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   RPKI Relying Party (RP) software is used by network operators and
+   others to acquire and verify Internet Number Resource (INR) data
+   stored in the RPKI repository system.  RPKI data, when verified,
+   allows an RP to verify assertions about which Autonomous Systems
+   (ASes) are authorized to originate routes for IP address prefixes.
+   RPKI data also establishes a binding between public keys and BGP
+   routers and indicates the AS numbers that each router is authorized
+   to represent.
+
+   The essential requirements imposed on RP software to support secure
+   Internet routing [<a href="/doc/html/rfc6480" title="&quot;An Infrastructure to Support Secure Internet Routing&quot;">RFC6480</a>] are scattered throughout numerous
+   protocol-specific RFCs and Best Current Practice RFCs.  The following
+   RFCs define these requirements:
+
+      <a href="/doc/html/rfc6481">RFC 6481</a> (Repository Structure)
+      <a href="/doc/html/rfc6482">RFC 6482</a> (ROA format)
+      <a href="/doc/html/rfc6486">RFC 6486</a> (Manifests)
+      <a href="/doc/html/rfc6487">RFC 6487</a> (Certificate and CRL profile)
+      <a href="/doc/html/rfc6488">RFC 6488</a> (RPKI Signed Objects)
+      <a href="/doc/html/rfc6489">RFC 6489</a> (Key Rollover)
+      <a href="/doc/html/rfc6810">RFC 6810</a> (RPKI to Router Protocol)
+      <a href="/doc/html/rfc6916">RFC 6916</a> (Algorithm Agility)
+      <a href="/doc/html/rfc7935">RFC 7935</a> (Algorithms)
+      <a href="/doc/html/rfc8209">RFC 8209</a> (Router Certificates)
+      <a href="/doc/html/rfc8210">RFC 8210</a> (RPKI to Router Protocol, Version 1)
+      <a href="/doc/html/rfc8360">RFC 8360</a> (Certificate Validation Procedure)
+      <a href="/doc/html/rfc8630">RFC 8630</a> (Trust Anchor Locator)
+
+   The distribution of RPKI RP requirements across these 13 documents
+   makes it hard for an implementer to be confident that he/she has
+   addressed all of these requirements.  Additionally, good software
+   engineering practice may call for segmenting the RP system into
+   components with orthogonal functionalities so that those components
+   may be distributed.  A taxonomy of the collected RP software
+   requirements can help clarify the role of the RP.
+
+   To consolidate RP software requirements in one document, with
+   pointers to all the relevant RFCs, this document outlines a set of
+   baseline requirements imposed on RPs and provides a single reference
+   point for requirements for RP software for use in the RPKI.  The
+   requirements are organized into four groups:
+
+   *  Fetching and Caching RPKI Repository Objects
+
+   *  Processing Certificates and Certificate Revocation Lists (CRLs)
+
+   *  Processing RPKI Repository Signed Objects
+
+   *  Distributing Validated Cache of the RPKI Data
+
+   This document will be updated to reflect new or changed requirements
+   as these RFCs are updated or additional RFCs are written.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Fetching and Caching RPKI Repository Objects</span>
+
+   RP software uses synchronization mechanisms supported by targeted
+   repositories (e.g., [<a href="#ref-rsync" title="&quot;rsync&quot;">rsync</a>] or RRDP [<a href="/doc/html/rfc8182" title="&quot;The RPKI Repository Delta Protocol (RRDP)&quot;">RFC8182</a>]) to download RPKI
+   signed objects from the repository system in order to update a local
+   cache.  These mechanisms download only those objects that have been
+   added or replaced with new versions since the time when the RP most
+   recently checked the repository.  RP software validates the RPKI data
+   and uses it to generate authenticated data identifying which ASes are
+   authorized to originate routes for address prefixes and which routers
+   are authorized to sign BGP updates on behalf of specified ASes.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  TAL Configuration and Processing</span>
+
+   In the RPKI, each RP chooses a set of trust anchors (TAs).
+   Consistent with the extant INR allocation hierarchy, the IANA and/or
+   the five Regional Internet Registries (RIRs) are obvious candidates
+   to be default TAs for the RP.
+
+   An RP does not retrieve TAs directly.  A set of Trust Anchor Locators
+   (TALs) is used by RP software to retrieve and verify the authenticity
+   of each TA.
+
+   TAL configuration and processing are specified in <a href="/doc/html/rfc8630#section-3">Section&nbsp;3 of
+   [RFC8630]</a>.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Locating RPKI Objects Using Authority and Subject Information</span>
+<span class="h3">      Extensions</span>
+
+   The RPKI repository system is a distributed one, consisting of
+   multiple repository instances.  Each repository instance contains one
+   or more repository publication points.  RP software discovers
+   publication points using the Subject Information Access (SIA) and the
+   Authority Information Access (AIA) extensions from (validated)
+   certificates.
+
+   <a href="/doc/html/rfc6481#section-5">Section&nbsp;5 of [RFC6481]</a> specifies how RP software locates all RPKI
+   objects by using the SIA and AIA extensions.  Detailed specifications
+   of SIA and AIA extensions in a resource certificate are described in
+   Sections <a href="#section-4.8.8">4.8.8</a> and <a href="#section-4.8.7">4.8.7</a> of [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>], respectively.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Dealing with Key Rollover</span>
+
+   RP software takes the key rollover period into account with regard to
+   its frequency of synchronization with the RPKI repository system.
+
+   RP software requirements for dealing with key rollover are described
+   in <a href="/doc/html/rfc6489#section-3">Section&nbsp;3 of [RFC6489]</a> and <a href="/doc/html/rfc8634#section-3">Section&nbsp;3 of [RFC8634]</a>.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Dealing with Algorithm Transition</span>
+
+   The set of cryptographic algorithms used with the RPKI is expected to
+   change over time.  Each RP is expected to be aware of the milestones
+   established for the algorithm transition and what actions are
+   required at every juncture.
+
+   RP software requirements for dealing with algorithm transition are
+   specified in <a href="/doc/html/rfc6916#section-4">Section&nbsp;4 of [RFC6916]</a>.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>.  Strategies for Efficient Cache Maintenance</span>
+
+   Each RP is expected to maintain a local cache of RPKI objects.  The
+   cache needs to be brought up to date and made consistent with the
+   repository publication point data as frequently as allowed by
+   repository publication points and by locally selected RP processing
+   constraints.
+
+   The last paragraph of <a href="/doc/html/rfc6481#section-5">Section&nbsp;5 of [RFC6481]</a> provides guidance for
+   maintenance of a local cache.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Certificate and CRL Processing</span>
+
+   The RPKI makes use of X.509 certificates and CRLs, but it profiles
+   the standard formats described in [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>].  The major change to the
+   profile established in [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>] is the mandatory use of a new
+   extension in RPKI certificates, defined in [<a href="/doc/html/rfc3779" title="&quot;X.509 Extensions for IP Addresses and AS Identifiers&quot;">RFC3779</a>].
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Verifying Resource Certificate and Syntax</span>
+
+   Certificates in the RPKI are called resource certificates, and they
+   are required to conform to the profile described in [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>].  An RP
+   is required to verify that a resource certificate adheres to the
+   profile established by <a href="/doc/html/rfc6487#section-4">Section&nbsp;4 of [RFC6487]</a>.  This means that all
+   extensions mandated by <a href="/doc/html/rfc6487#section-4.8">Section&nbsp;4.8 of [RFC6487]</a> must be present and
+   the value of each extension must be within the range specified by
+   [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>].  Moreover, any extension excluded by <a href="/doc/html/rfc6487#section-4.8">Section&nbsp;4.8 of
+   [RFC6487]</a> must be omitted.
+
+   <a href="/doc/html/rfc6487#section-7.1">Section&nbsp;7.1 of [RFC6487]</a> specifies the procedure that RP software
+   follows when verifying extensions described in [<a href="/doc/html/rfc3779" title="&quot;X.509 Extensions for IP Addresses and AS Identifiers&quot;">RFC3779</a>].
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Certificate Path Validation</span>
+
+   Initially, the INRs in the issuer&#x27;s certificate are required to
+   encompass the INRs in the subject&#x27;s certificate.  This is one of the
+   necessary principles of certificate path validation in addition to
+   cryptographic verification (i.e., verification of the signature on
+   each certificate using the public key of the parent certificate).
+
+   <a href="/doc/html/rfc6487#section-7.2">Section&nbsp;7.2 of [RFC6487]</a> specifies the procedure that RP software
+   should follow to perform certificate path validation.
+
+   Certification Authorities (CAs) that want to reduce aspects of
+   operational fragility will migrate to the new OIDs [<a href="/doc/html/rfc8360" title="&quot;Resource Public Key Infrastructure (RPKI) Validation Reconsidered&quot;">RFC8360</a>],
+   informing RP software to use an alternative RPKI validation
+   algorithm.  An RP is expected to support the amended procedure to
+   handle accidental overclaiming, which is described in <a href="/doc/html/rfc8360#section-4">Section&nbsp;4 of
+   [RFC8360]</a>.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  CRL Processing</span>
+
+   The CRL processing requirements imposed on CAs and RPs are described
+   in <a href="/doc/html/rfc6487#section-5">Section&nbsp;5 of [RFC6487]</a>.  CRLs in the RPKI are tightly constrained;
+   only the AuthorityKeyIdentifier (<a href="/doc/html/rfc6487#section-4.8.3">Section&nbsp;4.8.3 of [RFC6487]</a>) and
+   CRLNumber (<a href="/doc/html/rfc5280#section-5.2.3">Section&nbsp;5.2.3 of [RFC5280]</a>) extensions are allowed, and
+   they are required to be present.  No other CRL extensions are
+   allowed, and no CRLEntry extensions are permitted.  RP software is
+   required to verify that these constraints have been met.  Each CRL in
+   the RPKI must be verified using the public key from the certificate
+   of the CA that issued the CRL.
+
+   In the RPKI, RPs are expected to pay extra attention when dealing
+   with a CRL that is not consistent with the manifest associated with
+   the publication point associated with the CRL.
+
+   Processing of a CRL that is not consistent with a manifest is a
+   matter of local policy, as described in the fifth paragraph of
+   <a href="/doc/html/rfc6486#section-6.6">Section&nbsp;6.6 of [RFC6486]</a>.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Processing RPKI Repository Signed Objects</span>
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Basic Signed Object Syntax Checks</span>
+
+   Before an RP can use a signed object from the RPKI repository, RP
+   software is required to check the signed-object syntax.
+
+   <a href="/doc/html/rfc6488#section-3">Section&nbsp;3 of [RFC6488]</a> lists all the steps that RP software is
+   required to execute in order to validate the top-level syntax of a
+   repository signed object.
+
+   Note that these checks are necessary but not sufficient.  Additional
+   validation checks must be performed based on the specific type of
+   signed object, as described in <a href="#section-4.2">Section 4.2</a>.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Syntax and Validation for Each Type of Signed Object</span>
+
+<span class="h4"><a class="selflink" id="section-4.2.1" href="#section-4.2.1">4.2.1</a>.  Manifest</span>
+
+   To determine whether a manifest is valid, RP software is required to
+   perform manifest-specific checks in addition to the generic signed-
+   object checks specified in [<a href="/doc/html/rfc6488" title="&quot;Signed Object Template for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6488</a>].
+
+   Specific checks for a manifest are described in <a href="/doc/html/rfc6486#section-4">Section&nbsp;4 of
+   [RFC6486]</a>.  If any of these checks fail, indicating that the manifest
+   is invalid, then the manifest will be discarded, and RP software will
+   act as though no manifest were present.
+
+<span class="h4"><a class="selflink" id="section-4.2.2" href="#section-4.2.2">4.2.2</a>.  ROA</span>
+
+   To validate a Route Origin Authorization (ROA), RP software is
+   required to perform all the checks specified in [<a href="/doc/html/rfc6488" title="&quot;Signed Object Template for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6488</a>] as well as
+   additional, ROA-specific validation steps.  The IP Address Delegation
+   extension [<a href="/doc/html/rfc3779" title="&quot;X.509 Extensions for IP Addresses and AS Identifiers&quot;">RFC3779</a>] present in the end-entity (EE) certificate
+   (contained within the ROA) must encompass each of the IP address
+   prefix(es) in the ROA.
+
+   More details for ROA validation are specified in <a href="/doc/html/rfc6482#section-4">Section&nbsp;4 of
+   [RFC6482]</a>.
+
+<span class="h4"><a class="selflink" id="section-4.2.3" href="#section-4.2.3">4.2.3</a>.  Ghostbusters</span>
+
+   The Ghostbusters Record is optional; a publication point in the RPKI
+   can have zero or more associated Ghostbusters Records.  If a CA has
+   at least one Ghostbusters Record, RP software is required to verify
+   that this Ghostbusters Record conforms to the syntax of signed
+   objects defined in [<a href="/doc/html/rfc6488" title="&quot;Signed Object Template for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6488</a>].
+
+   The payload of this signed object is a (severely) profiled vCard.  RP
+   software is required to verify that the payload of Ghostbusters
+   conforms to format as profiled in [<a href="/doc/html/rfc6493" title="&quot;The Resource Public Key Infrastructure (RPKI) Ghostbusters Record&quot;">RFC6493</a>].
+
+<span class="h4"><a class="selflink" id="section-4.2.4" href="#section-4.2.4">4.2.4</a>.  Verifying BGPsec Router Certificate</span>
+
+   A BGPsec Router Certificate is a resource certificate, so it is
+   required to comply with [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>].  Additionally, the certificate
+   must contain an AS Identifier Delegation extension (<a href="/doc/html/rfc6487#section-4.8.11">Section&nbsp;4.8.11 of
+   [RFC6487]</a>) and must not contain an IP Address Delegation extension
+   (<a href="/doc/html/rfc6487#section-4.8.10">Section&nbsp;4.8.10 of [RFC6487]</a>).  The validation procedure used for
+   BGPsec Router Certificates is analogous to the validation procedure
+   described in <a href="/doc/html/rfc6487#section-7">Section&nbsp;7 of [RFC6487]</a>, but it uses the constraints
+   defined in <a href="/doc/html/rfc8209#section-3">Section&nbsp;3 of [RFC8209]</a>.
+
+   Note that the cryptographic algorithms used by BGPsec routers are
+   found in [<a href="/doc/html/rfc8608" title="&quot;BGPsec Algorithms, Key Formats, and Signature Formats&quot;">RFC8608</a>].  Currently, the algorithms specified in [<a href="/doc/html/rfc8608" title="&quot;BGPsec Algorithms, Key Formats, and Signature Formats&quot;">RFC8608</a>]
+   and [<a href="/doc/html/rfc7935" title="&quot;The Profile for Algorithms and Key Sizes for Use in the Resource Public Key Infrastructure&quot;">RFC7935</a>] are different.  BGPsec RP software will need to support
+   algorithms that are used to validate BGPsec signatures as well as the
+   algorithms that are needed to validate signatures on BGPsec
+   certificates, RPKI CA certificates, and RPKI CRLs.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  How to Make Use of Manifest Data</span>
+
+   For a given publication point, RP software ought to perform tests, as
+   specified in <a href="/doc/html/rfc6486#section-6.1">Section&nbsp;6.1 of [RFC6486]</a>, to determine the state of the
+   manifest at the publication point.  A manifest can be classified as
+   either valid or invalid, and a valid manifest is either current or
+   stale.  An RP decides how to make use of a manifest based on its
+   state, according to local (RP) policy.
+
+   If there are valid objects in a publication point that are not
+   present on a manifest, [<a href="/doc/html/rfc6486" title="&quot;Manifests for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6486</a>] does not mandate specific RP
+   behavior with respect to such objects.
+
+   In the absence of a manifest, an RP is expected to accept all valid
+   signed objects present in the publication point (see <a href="/doc/html/rfc6486#section-6.2">Section&nbsp;6.2 of
+   [RFC6486]</a>).  If a manifest is stale or invalid and an RP has no way
+   to acquire a more recent valid manifest, the RP is expected to
+   contact the repository manager via Ghostbusters Records and
+   thereafter make decisions according to local (RP) policy (see
+   Sections <a href="#section-6.3">6.3</a> and <a href="#section-6.4">6.4</a> of [<a href="/doc/html/rfc6486" title="&quot;Manifests for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6486</a>]).
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  What To Do with Ghostbusters Information</span>
+
+   RP software may encounter a stale manifest or CRL, or an expired CA
+   certificate or ROA at a publication point.  An RP is expected to use
+   the information from the Ghostbusters Records to contact the
+   maintainer of the publication point where any stale/expired objects
+   were encountered.  The intent here is to encourage the relevant CA
+   and/or repository manager to update the stale or expired objects.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Distributing Validated Cache</span>
+
+   On a periodic basis, BGP speakers within an AS request updated
+   validated origin AS data and router/ASN data from the (local)
+   validated cache of RPKI data.  The RP may either transfer the
+   validated data to the BGP speakers directly, or it may transfer the
+   validated data to a cache server that is responsible for provisioning
+   such data to BGP speakers.  The specifications of the protocol
+   designed to deliver validated cache data to a BGP Speaker are
+   provided in [<a href="/doc/html/rfc6810" title="&quot;The Resource Public Key Infrastructure (RPKI) to Router Protocol&quot;">RFC6810</a>] and [<a href="/doc/html/rfc8210" title="&quot;The Resource Public Key Infrastructure (RPKI) to Router Protocol, Version 1&quot;">RFC8210</a>].
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Local Control</span>
+
+   ISPs may want to establish a local view of exceptions to the RPKI
+   data in the form of local filters and additions.  For instance, a
+   network operator might wish to make use of a local override
+   capability to protect routes from adverse actions [<a href="/doc/html/rfc8211" title="&quot;Adverse Actions by a Certification Authority (CA) or Repository Manager in the Resource Public Key Infrastructure (RPKI)&quot;">RFC8211</a>].  The
+   mechanisms developed to provide this capability to network operators
+   are called Simplified Local Internet Number Resource Management with
+   the RPKI (SLURM).  If an ISP wants to implement SLURM, its RP system
+   can follow the instruction specified in [<a href="/doc/html/rfc8416" title="&quot;Simplified Local Internet Number Resource Management with the RPKI (SLURM)&quot;">RFC8416</a>].
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   This document does not introduce any new security considerations; it
+   is a resource for implementers.  The RP links the RPKI provisioning
+   side and the routing system, establishing a verified, local view of
+   global RPKI data to BGP speakers.  The security of the RP is critical
+   for exchanging BGP messages.  Each RP implementation is expected to
+   offer cache backup management to facilitate recovery from outages.
+   RP software should also support secure transport (e.g., IPsec
+   [<a href="/doc/html/rfc4301" title="&quot;Security Architecture for the Internet Protocol&quot;">RFC4301</a>]) that can protect validated cache delivery in an unsafe
+   environment.  This document highlights many validation actions
+   applied to RPKI signed objects, an essential element of secure
+   operation of RPKI security.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC3779">RFC3779</a>]  Lynn, C., Kent, S., and K. Seo, &quot;X.509 Extensions for IP
+              Addresses and AS Identifiers&quot;, <a href="/doc/html/rfc3779">RFC 3779</a>,
+              DOI 10.17487/RFC3779, June 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3779">https://www.rfc-editor.org/info/rfc3779</a>&gt;.
+
+   [<a id="ref-RFC5280">RFC5280</a>]  Cooper, D., Santesson, S., Farrell, S., Boeyen, S.,
+              Housley, R., and W. Polk, &quot;Internet X.509 Public Key
+              Infrastructure Certificate and Certificate Revocation List
+              (CRL) Profile&quot;, <a href="/doc/html/rfc5280">RFC 5280</a>, DOI 10.17487/RFC5280, May 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5280">https://www.rfc-editor.org/info/rfc5280</a>&gt;.
+
+   [<a id="ref-RFC6481">RFC6481</a>]  Huston, G., Loomans, R., and G. Michaelson, &quot;A Profile for
+              Resource Certificate Repository Structure&quot;, <a href="/doc/html/rfc6481">RFC 6481</a>,
+              DOI 10.17487/RFC6481, February 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6481">https://www.rfc-editor.org/info/rfc6481</a>&gt;.
+
+   [<a id="ref-RFC6482">RFC6482</a>]  Lepinski, M., Kent, S., and D. Kong, &quot;A Profile for Route
+              Origin Authorizations (ROAs)&quot;, <a href="/doc/html/rfc6482">RFC 6482</a>,
+              DOI 10.17487/RFC6482, February 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6482">https://www.rfc-editor.org/info/rfc6482</a>&gt;.
+
+   [<a id="ref-RFC6486">RFC6486</a>]  Austein, R., Huston, G., Kent, S., and M. Lepinski,
+              &quot;Manifests for the Resource Public Key Infrastructure
+              (RPKI)&quot;, <a href="/doc/html/rfc6486">RFC 6486</a>, DOI 10.17487/RFC6486, February 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6486">https://www.rfc-editor.org/info/rfc6486</a>&gt;.
+
+   [<a id="ref-RFC6487">RFC6487</a>]  Huston, G., Michaelson, G., and R. Loomans, &quot;A Profile for
+              X.509 PKIX Resource Certificates&quot;, <a href="/doc/html/rfc6487">RFC 6487</a>,
+              DOI 10.17487/RFC6487, February 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6487">https://www.rfc-editor.org/info/rfc6487</a>&gt;.
+
+   [<a id="ref-RFC6488">RFC6488</a>]  Lepinski, M., Chi, A., and S. Kent, &quot;Signed Object
+              Template for the Resource Public Key Infrastructure
+              (RPKI)&quot;, <a href="/doc/html/rfc6488">RFC 6488</a>, DOI 10.17487/RFC6488, February 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6488">https://www.rfc-editor.org/info/rfc6488</a>&gt;.
+
+   [<a id="ref-RFC6489">RFC6489</a>]  Huston, G., Michaelson, G., and S. Kent, &quot;Certification
+              Authority (CA) Key Rollover in the Resource Public Key
+              Infrastructure (RPKI)&quot;, <a href="/doc/html/bcp174">BCP 174</a>, <a href="/doc/html/rfc6489">RFC 6489</a>,
+              DOI 10.17487/RFC6489, February 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6489">https://www.rfc-editor.org/info/rfc6489</a>&gt;.
+
+   [<a id="ref-RFC6493">RFC6493</a>]  Bush, R., &quot;The Resource Public Key Infrastructure (RPKI)
+              Ghostbusters Record&quot;, <a href="/doc/html/rfc6493">RFC 6493</a>, DOI 10.17487/RFC6493,
+              February 2012, &lt;<a href="https://www.rfc-editor.org/info/rfc6493">https://www.rfc-editor.org/info/rfc6493</a>&gt;.
+
+   [<a id="ref-RFC6810">RFC6810</a>]  Bush, R. and R. Austein, &quot;The Resource Public Key
+              Infrastructure (RPKI) to Router Protocol&quot;, <a href="/doc/html/rfc6810">RFC 6810</a>,
+              DOI 10.17487/RFC6810, January 2013,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6810">https://www.rfc-editor.org/info/rfc6810</a>&gt;.
+
+   [<a id="ref-RFC6916">RFC6916</a>]  Gagliano, R., Kent, S., and S. Turner, &quot;Algorithm Agility
+              Procedure for the Resource Public Key Infrastructure
+              (RPKI)&quot;, <a href="/doc/html/bcp182">BCP 182</a>, <a href="/doc/html/rfc6916">RFC 6916</a>, DOI 10.17487/RFC6916, April
+              2013, &lt;<a href="https://www.rfc-editor.org/info/rfc6916">https://www.rfc-editor.org/info/rfc6916</a>&gt;.
+
+   [<a id="ref-RFC7935">RFC7935</a>]  Huston, G. and G. Michaelson, Ed., &quot;The Profile for
+              Algorithms and Key Sizes for Use in the Resource Public
+              Key Infrastructure&quot;, <a href="/doc/html/rfc7935">RFC 7935</a>, DOI 10.17487/RFC7935,
+              August 2016, &lt;<a href="https://www.rfc-editor.org/info/rfc7935">https://www.rfc-editor.org/info/rfc7935</a>&gt;.
+
+   [<a id="ref-RFC8209">RFC8209</a>]  Reynolds, M., Turner, S., and S. Kent, &quot;A Profile for
+              BGPsec Router Certificates, Certificate Revocation Lists,
+              and Certification Requests&quot;, <a href="/doc/html/rfc8209">RFC 8209</a>,
+              DOI 10.17487/RFC8209, September 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8209">https://www.rfc-editor.org/info/rfc8209</a>&gt;.
+
+   [<a id="ref-RFC8210">RFC8210</a>]  Bush, R. and R. Austein, &quot;The Resource Public Key
+              Infrastructure (RPKI) to Router Protocol, Version 1&quot;,
+              <a href="/doc/html/rfc8210">RFC 8210</a>, DOI 10.17487/RFC8210, September 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8210">https://www.rfc-editor.org/info/rfc8210</a>&gt;.
+
+   [<a id="ref-RFC8360">RFC8360</a>]  Huston, G., Michaelson, G., Martinez, C., Bruijnzeels, T.,
+              Newton, A., and D. Shaw, &quot;Resource Public Key
+              Infrastructure (RPKI) Validation Reconsidered&quot;, <a href="/doc/html/rfc8360">RFC 8360</a>,
+              DOI 10.17487/RFC8360, April 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8360">https://www.rfc-editor.org/info/rfc8360</a>&gt;.
+
+   [<a id="ref-RFC8608">RFC8608</a>]  Turner, S. and O. Borchert, &quot;BGPsec Algorithms, Key
+              Formats, and Signature Formats&quot;, <a href="/doc/html/rfc8608">RFC 8608</a>,
+              DOI 10.17487/RFC8608, June 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8608">https://www.rfc-editor.org/info/rfc8608</a>&gt;.
+
+   [<a id="ref-RFC8630">RFC8630</a>]  Huston, G., Weiler, S., Michaelson, G., Kent, S., and T.
+              Bruijnzeels, &quot;Resource Public Key Infrastructure (RPKI)
+              Trust Anchor Locator&quot;, <a href="/doc/html/rfc8630">RFC 8630</a>, DOI 10.17487/RFC8630,
+              August 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8630">https://www.rfc-editor.org/info/rfc8630</a>&gt;.
+
+   [<a id="ref-RFC8634">RFC8634</a>]  Weis, B., Gagliano, R., and K. Patel, &quot;BGPsec Router
+              Certificate Rollover&quot;, <a href="/doc/html/bcp224">BCP 224</a>, <a href="/doc/html/rfc8634">RFC 8634</a>,
+              DOI 10.17487/RFC8634, August 2019,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8634">https://www.rfc-editor.org/info/rfc8634</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4301">RFC4301</a>]  Kent, S. and K. Seo, &quot;Security Architecture for the
+              Internet Protocol&quot;, <a href="/doc/html/rfc4301">RFC 4301</a>, DOI 10.17487/RFC4301,
+              December 2005, &lt;<a href="https://www.rfc-editor.org/info/rfc4301">https://www.rfc-editor.org/info/rfc4301</a>&gt;.
+
+   [<a id="ref-RFC6480">RFC6480</a>]  Lepinski, M. and S. Kent, &quot;An Infrastructure to Support
+              Secure Internet Routing&quot;, <a href="/doc/html/rfc6480">RFC 6480</a>, DOI 10.17487/RFC6480,
+              February 2012, &lt;<a href="https://www.rfc-editor.org/info/rfc6480">https://www.rfc-editor.org/info/rfc6480</a>&gt;.
+
+   [<a id="ref-RFC8182">RFC8182</a>]  Bruijnzeels, T., Muravskiy, O., Weber, B., and R. Austein,
+              &quot;The RPKI Repository Delta Protocol (RRDP)&quot;, <a href="/doc/html/rfc8182">RFC 8182</a>,
+              DOI 10.17487/RFC8182, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8182">https://www.rfc-editor.org/info/rfc8182</a>&gt;.
+
+   [<a id="ref-RFC8211">RFC8211</a>]  Kent, S. and D. Ma, &quot;Adverse Actions by a Certification
+              Authority (CA) or Repository Manager in the Resource
+              Public Key Infrastructure (RPKI)&quot;, <a href="/doc/html/rfc8211">RFC 8211</a>,
+              DOI 10.17487/RFC8211, September 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8211">https://www.rfc-editor.org/info/rfc8211</a>&gt;.
+
+   [<a id="ref-RFC8416">RFC8416</a>]  Ma, D., Mandelberg, D., and T. Bruijnzeels, &quot;Simplified
+              Local Internet Number Resource Management with the RPKI
+              (SLURM)&quot;, <a href="/doc/html/rfc8416">RFC 8416</a>, DOI 10.17487/RFC8416, August 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8416">https://www.rfc-editor.org/info/rfc8416</a>&gt;.
+
+   [<a id="ref-rsync">rsync</a>]    &quot;rsync&quot;, &lt;<a href="http://rsync.samba.org/">http://rsync.samba.org/</a>&gt;.
+
+Acknowledgements
+
+   The authors thank David Mandelberg, Wei Wang, Tim Bruijnzeels, George
+   Michaelson, and Oleg Muravskiy for their review, feedback, and
+   editorial assistance in preparing this document.
+
+Authors&#x27; Addresses
+
+   Di Ma
+   ZDNS
+   4 South 4th St. Zhongguancun
+   Haidian
+   Beijing, 100190
+   China
+
+   Email: madi@zdns.cn
+
+
+   Stephen Kent
+   Independent
+
+   Email: kent@alum.mit.edu
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,572 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1877
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-rfced-info-cobb/">
+  <meta name="description" content="PPP Internet Protocol Control Protocol Extensions for Name Server Addresses (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1877.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1877.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1877.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1877/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1877/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-rfced-info-cobb@ietf.org?subject=draft-rfced-info-cobb" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-rfced-info-cobb-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-rfced-info-cobb-00">draft-rfced-info-cobb-00</a>                             Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                            S. Cobb
+Request for Comments: 1877                                     Microsoft
+Category: Informational                                    December 1995
+
+
+         <span class="h1">PPP Internet Protocol Control Protocol Extensions for</span>
+                         <span class="h1">Name Server Addresses</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Abstract
+
+   The Point-to-Point Protocol (PPP) [<a href="#ref-1">1</a>] provides a standard method for
+   transporting multi-protocol datagrams over point-to-point links.  PPP
+   defines an extensible Link Control Protocol and a family of Network
+   Control Protocols (NCPs) for establishing and configuring different
+   network-layer protocols.
+
+   This document extends the NCP for establishing and configuring the
+   Internet Protocol over PPP [<a href="#ref-2">2</a>], defining the negotiation of primary
+   and secondary Domain Name System (DNS) [<a href="#ref-3">3</a>] and NetBIOS Name Server
+   (NBNS) [<a href="#ref-4">4</a>] addresses.
+
+Table of Contents
+
+     <a href="#section-1">1</a>.     Additional IPCP Configuration options .................    <a href="#page-1">1</a>
+        <a href="#section-1.1">1.1</a>         Primary DNS Server Address ....................    <a href="#page-2">2</a>
+        <a href="#section-1.2">1.2</a>         Primary NBNS Server Address ...................    <a href="#page-3">3</a>
+        <a href="#section-1.3">1.3</a>         Secondary DNS Server Address ..................    <a href="#page-4">4</a>
+        <a href="#section-1.4">1.4</a>         Secondary NBNS Server Address .................    <a href="#page-5">5</a>
+     REFRENCES ....................................................    <a href="#page-6">6</a>
+     SECURITY CONSIDERATIONS ......................................    <a href="#page-6">6</a>
+     CHAIR&#x27;S ADDRESS ..............................................    <a href="#page-6">6</a>
+     AUTHOR&#x27;S ADDRESS .............................................    <a href="#page-6">6</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Additional IPCP Configuration Options</span>
+
+   The four name server address configuration options, 129 to 132,
+   provide a method of obtaining the addresses of Domain Name System
+   (DNS) servers and (NetBIOS Name Server (NBNS) nodes on the remote
+   network.
+
+
+
+
+
+
+<span class="grey">Cobb                         Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1877">RFC 1877</a>                  PPP IPCP Extensions              December 1995</span>
+
+
+   Primary and secondary addresses are negotiated independently.  They
+   serve identical purposes, except that when both are present an
+   attempt SHOULD be made to resolve names using the primary address
+   before using the secondary address.
+
+   For implementational convenience, these options are designed to be
+   identical in format and behavior to option 3 (IP-Address) which is
+   already present in most IPCP implementations.
+
+   Since the usefulness of name server address information is dependent
+   on the topology of the remote network and local peer&#x27;s application,
+   it is suggested that these options not be included in the list of
+   &quot;IPCP Recommended Options&quot;.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Primary DNS Server Address</span>
+
+   Description
+
+      This Configuration Option defines a method for negotiating with
+      the remote peer the address of the primary DNS server to be used
+      on the local end of the link.  If local peer requests an invalid
+      server address (which it will typically do intentionally) the
+      remote peer specifies the address by NAKing this option, and
+      returning the IP address of a valid DNS server.
+
+      By default, no primary DNS address is provided.
+
+   A summary of the Primary DNS Address Configuration Option format is
+   shown below.  The fields are transmitted from left to right.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Type      |    Length     |      Primary-DNS-Address
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      Primary-DNS-Address (cont)   |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Type
+
+      129
+
+   Length
+
+      6
+
+
+
+
+
+
+<span class="grey">Cobb                         Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1877">RFC 1877</a>                  PPP IPCP Extensions              December 1995</span>
+
+
+   Primary-DNS-Address
+
+      The four octet Primary-DNS-Address is the address of the primary
+      DNS server to be used by the local peer.  If all four octets are
+      set to zero, it indicates an explicit request that the peer
+      provide the address information in a Config-Nak packet.
+
+   Default
+
+      No address is provided.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Primary NBNS Server Address</span>
+
+   Description
+
+      This Configuration Option defines a method for negotiating with
+      the remote peer the address of the primary NBNS server to be used
+      on the local end of the link.  If local peer requests an invalid
+      server address (which it will typically do intentionally) the
+      remote peer specifies the address by NAKing this option, and
+      returning the IP address of a valid NBNS server.
+
+      By default, no primary NBNS address is provided.
+
+   A summary of the Primary NBNS Address Configuration Option format is
+   shown below.  The fields are transmitted from left to right.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Type      |    Length     |      Primary-NBNS-Address
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      Primary-NBNS-Address (cont)  |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Type
+
+      130
+
+   Length
+
+      6
+
+   Primary-NBNS-Address
+
+      The four octet Primary-NBNS-Address is the address of the primary
+      NBNS server to be used by the local peer.  If all four octets are
+      set to zero, it indicates an explicit request that the peer
+
+
+
+<span class="grey">Cobb                         Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1877">RFC 1877</a>                  PPP IPCP Extensions              December 1995</span>
+
+
+      provide the address information in a Config-Nak packet.
+
+   Default
+
+      No address is provided.
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Secondary DNS Server Address</span>
+
+   Description
+
+      This Configuration Option defines a method for negotiating with
+      the remote peer the address of the secondary DNS server to be used
+      on the local end of the link.  If local peer requests an invalid
+      server address (which it will typically do intentionally) the
+      remote peer specifies the address by NAKing this option, and
+      returning the IP address of a valid DNS server.
+
+      By default, no secondary DNS address is provided.
+
+   A summary of the Secondary DNS Address Configuration Option format is
+   shown below.  The fields are transmitted from left to right.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Type      |    Length     |      Secondary-DNS-Address
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      Secondary-DNS-Address (cont) |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Type
+
+      131
+
+   Length
+
+      6
+
+   Secondary-DNS-Address
+
+      The four octet Secondary-DNS-Address is the address of the primary
+      NBNS server to be used by the local peer.  If all four octets are
+      set to zero, it indicates an explicit request that the peer
+      provide the address information in a Config-Nak packet.
+
+   Default
+
+      No address is provided.
+
+
+
+<span class="grey">Cobb                         Informational                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc1877">RFC 1877</a>                  PPP IPCP Extensions              December 1995</span>
+
+
+<span class="h3"><a class="selflink" id="section-1.4" href="#section-1.4">1.4</a>.  Secondary NBNS Server Address</span>
+
+   Description
+
+      This Configuration Option defines a method for negotiating with
+      the remote peer the address of the secondary NBNS server to be
+      used on the local end of the link.  If local peer requests an
+      invalid server address (which it will typically do intentionally)
+      the remote peer specifies the address by NAKing this option, and
+      returning the IP address of a valid NBNS server.
+
+      By default, no secondary NBNS address is provided.
+
+   A summary of the Secondary NBNS Address Configuration Option format
+   is shown below.  The fields are transmitted from left to right.
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |     Type      |    Length     |      Secondary-NBNS-Address
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+        Secondary-NBNS-Address (cont) |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+      Type
+
+         132
+
+      Length
+
+         6
+
+      Secondary-NBNS-Address
+
+         The four octet Secondary-NBNS-Address is the address of the
+         secondary NBNS server to be used by the local peer.  If all
+         four octets are set to zero, it indicates an explicit request
+         that the peer provide the address information in a Config-Nak
+         packet.
+
+      Default
+
+         No address is provided.
+
+
+
+
+
+
+
+
+<span class="grey">Cobb                         Informational                      [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc1877">RFC 1877</a>                  PPP IPCP Extensions              December 1995</span>
+
+
+References
+
+   [<a id="ref-1">1</a>] Simpson, W., Editor, &quot;The Point-to-Point Protocol (PPP)&quot;, STD 51,
+       <a href="/doc/html/rfc1661">RFC 1661</a>, Daydreamer, July 1994.
+
+   [<a id="ref-2">2</a>] McGregor, G., &quot;PPP Internet Control Protocol&quot;, <a href="/doc/html/rfc1332">RFC 1332</a>, Merit,
+       May 1992.
+
+   [<a id="ref-3">3</a>] Auerbach, K., and A. Aggarwal, &quot;Protocol Standard for a NetBIOS
+       Service on a TCP/UDP Transport&quot;, STD 19, RFCs 1001 and 1002,
+       March 1987.
+
+   [<a id="ref-4">4</a>] Mockapetris, P., &quot;Domain Names - Concepts and Facilities&quot;, STD
+       13, <a href="/doc/html/rfc1034">RFC 1034</a>, USC/Information Sciences Institute, November 1987.
+
+   [<a id="ref-5">5</a>] Mockapetris, P., &quot;Domain Names - Implementation and
+       Specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, USC/Information Sciences
+       Institute, November 1987.
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Chair&#x27;s Address
+
+   The working group can be contacted via the current chair:
+
+      Fred Baker
+      Cisco Systems
+      519 Lado Drive
+      Santa Barbara, California  93111
+
+      EMail: fred@cisco.com
+
+Author&#x27;s Address
+
+   Questions about this memo can also be directed to:
+
+      Steve Cobb
+      Microsoft Corporation
+      One Microsoft Way
+      Redmond, WA  98052-6399
+
+      Phone: (206) 882-8080
+
+      EMail: stevec@microsoft.com
+
+
+
+
+
+Cobb                         Informational                      [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

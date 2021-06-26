@@ -1,0 +1,796 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2721
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-rtfm-applicability-statement/">
+  <meta name="description" content="RTFM: Applicability Statement (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2721.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2721.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2721.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2721/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2721/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/rtfm/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-rtfm-applicability-statement@ietf.org?subject=draft-ietf-rtfm-applicability-statement" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-rtfm-applicability-statement-04.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-rtfm-applicability-statement-04.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-rtfm-applicability-statement-04.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-rtfm-applicability-statement-04">draft-ietf-rtfm-applicability-statement-04</a>           Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        N. Brownlee
+Request for Comments: 2721                    The University of Auckland
+Category: Informational                                     October 1999
+
+
+                     <span class="h1">RTFM: Applicability Statement</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+Abstract
+
+   This document provides an overview covering all aspects of Realtime
+   Traffic Flow Measurement, including its area of applicability and its
+   limitations.
+
+Table of Contents
+
+   <a href="#section-1">1</a>  The RTFM Documents . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-2">2</a>
+   <a href="#section-2">2</a>  Brief Technical Specification (TS) . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-3">3</a>  Applicability Statement (AS) . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-4">4</a>  Limitations  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+   <a href="#section-5">5</a>  Security Considerations  . . . . . . . . . . . . . . . . . . .  <a href="#page-5">5</a>
+   <a href="#section-6">6</a>  Policy Considerations  . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+   <a href="#section-7">7</a>  Soundness  . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+   <a href="#section-8">8</a>  <a href="#appendix-A">Appendix A</a>: WG Report on the Meter MIB . . . . . . . . . . . .  <a href="#page-8">8</a>
+   <a href="#section-9">9</a>  References . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+   <a href="#section-10">10</a> Author&#x27;s Address . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+   <a href="#section-11">11</a> Full Copyright Statement . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>  The RTFM Documents</span>
+
+   The RTFM Traffic Measurement System has been developed by the
+   Realtime Traffic Flow Measurement Working Group.  It is described in
+   six other documents, as follows:
+
+   [<a id="ref-ACT-BKG">ACT-BKG</a>] Internet Accounting: Background             (Informational)
+
+      Sets out the requirements for a usage reporting system for network
+      traffic.  Sketches out the RTFM Architecture (meters, meter
+      readers and managers) allowing for multiple meters and meter
+      readers, with asynchronous reading from the meters.  Proposes
+      methods of classifying traffic flows, the need for flows to be
+      bi-directional (with separate sets of counters for each direction)
+      and the need for each packet to be counted in a single flow (the &#x27;
+      count in one bucket&#x27; principle).
+
+   [<a id="ref-RTFM-ARC">RTFM-ARC</a>] RTFM Architecture                          (Informational)
+
+      Defines the RTFM Architecture, giving descriptions of each
+      component.  Explains how traffic flows are viewed as logical
+      entities described in terms of their address-attribute values, so
+      that each is defined by the attributes of its end-points.  Gives a
+      detailed description of the RTFM traffic meter, with full details
+      of how flows are stored in the meter&#x27;s flow table, and how packets
+      are matched in accordance with rules stored in a ruleset.
+
+   [<a id="ref-RTFM-MIB">RTFM-MIB</a>] RTFM Meter MIB                         (Proposed Standard)
+
+      Describes the SNMP Management Information Base for an RTFM meter,
+      including its flow table, rule table (storing the meter&#x27;s
+      rulesets) and the control tables used for managing a meter and
+      reading flow data from it.
+
+   [<a id="ref-RTFM-SRL">RTFM-SRL</a>] SRL: A Language for Describing Traffic     (Informational)
+              Flows and Specifying Actions for Flow Groups
+
+      An RTFM ruleset is an array of rules, used by the meter to decide
+      which flows are of interest, which end-point is the flow source,
+      and how much detail (i.e. what attribute values) must be saved for
+      each flow.  SRL is a high-level language providing a clear,
+      logical way to write rulesets.  It should also be useful for other
+      applications which select flows and perform actions upon them,
+      e.g. packet-marking gateways, RSVP policy agents, etc.
+
+
+
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+   [<a id="ref-RTFM-NEW">RTFM-NEW</a>] RTFM New Attributes                         (Experimental)
+
+      There has been considerable interest from users in extending the
+      RTFM Architecture so as to allow a meter to report on an increased
+      number of flow-related measures.  This RFC documents work on
+      specifying such measures (the &#x27;new&#x27; attributes) and reports on
+      experience of implementing them.
+
+   [<a id="ref-RTFM-NTM">RTFM-NTM</a>] RTFM: Experiences with NeTraMet            (Informational)
+
+      NeTraMet is a free software implementation of the RTFM
+      Architecture which has been available since 1993.  This RFC
+      records RTFM implementation experience gained with NeTraMet up to
+      late 1996.  One particularly important result is the realisation
+      that groups of rules which test the same attribute using the same
+      mask can be implemented as a single hashed comparison, allowing
+      the meter to rapidly determine whether a packet belongs to one of
+      a large number of networks.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>  Brief Technical Specification (TS)</span>
+
+   RTFM provides for the measurement of network traffic &#x27;flows&#x27;, i.e.
+
+   - a method of specifying traffic flows within a network
+   - a hierarchy of devices (meters, meter readers, managers) for
+     measuring the specified flows
+   - a mechanism for configuring meters and meter readers, and for
+     collecting the flow data from remote meters
+
+   RTFM provides high time resolution for flow first- and last-packet
+   times.  Counters for long-duration flows may be read at intervals
+   determined by a manager.  The RTFM Meter is designed so as to do as
+   much data reduction work as possible, which minimizes the amount of
+   data to be read and the amount of processing needed to produce useful
+   reports from it.
+
+   RTFM flow data can be used for a wide range of purposes, such as
+   usage accounting, long-term recording of network usage (classified by
+   IP address attributes) and real-time analysis of traffic flows at
+   remote metering points.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>  Applicability Statement (AS)</span>
+
+   To use RTFM for collecting network traffic information one must first
+   consider where in the network traffic flows are to be measured.  Once
+   that is decided, an RTFM Meter must be installed at each chosen
+   measurement point.
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+   At least one Meter Reader is needed to collect the measured data from
+   the meters, and a single Manager is needed to control the meters and
+   meter readers.
+
+   RTFM Meters may be single- or multi-user hosts running a meter
+   program (one such program is available as free software, a second is
+   under development at IBM Research).  Alternatively, meters could be
+   run as firmware in switches or routers.  A hybrid approach in which
+   an RTFM meter takes raw traffic data from a router provides another
+   useful implementation path.
+
+   RTFM Managers are programs running on a host, communicating with
+   meters and meter readers via the network.  For this purpose meters
+   are SNMP agents implementing the RTFM Meter MIB, and managers are
+   SNMP clients using the Meter MIB to store and access the flow data.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>  Limitations</span>
+
+   RTFM is designed to measure traffic flows for traffic passing a point
+   in a network.  If packets for a flow pass the metering point in both
+   directions the meter will match them up, providing counters for each
+   direction.  If packets only pass in one direction the meter can only
+   provide counts for that direction.
+
+   Users of RTFM should note that installing meters, meter readers and
+   managers merely provides one with the capability to collect flow
+   data.  Further installation work will be needed to develop
+   configuration files (RTFM rulesets) for each meter, data processing
+   applications to analyse the flow data, and various scripts, cron
+   jobs, etc.  so as to create a useful production-quality measurement
+   system which suits a user&#x27;s particular needs.
+
+   One of the strengths of RTFM is its ability to collect flow data at
+   whatever level of detail (or &#x27;granularity&#x27;) is required.  It can be
+   tempting to simply collect &#x27;all possible data&#x27;, but there are severe
+   resource constraints.  If one tries to save the complete address-
+   attribute value for all attributes of every possible flow a very
+   large amount of data may be produced rapidly, but the meter has only
+   a finite amount of memory for its flow table.  A better approach is
+   to save the minimum amount of data required to achieve the
+   measurement system goals.
+
+   For example, to collect usage data so as to bill subscribers
+   identified by their IP address one could just save the full IP
+   address, nothing more.  The RTFM meter would produce flow data for
+   each subscriber IP address, with PDU and Octet counts for data sent
+   and received, which would be the minimum needed to produce bills.  In
+   practice one would probably want to save at least part of the
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+   Destination IP address, which would allow the production of usage
+   logs showing subscriber activity over time.
+
+   The simplest way to determine how much detail can be collected is to
+   create an initial ruleset which collects the minimum amount, then to
+   modify it step by step, gradually increasing the amount of
+   information saved for each flow.  An RTFM meter ought to provide some
+   measures of its own performance (e.g. number of active flows,
+   percentage idle processor time, packets metered, packets not
+   metered).  Such measures will be implementation-specific, but should
+   allow a user to assess the impact of each change to the ruleset.
+
+   If the network data rate is too high, i.e. the meter reports that it
+   cannot meter all the packets even with the initial ruleset above, one
+   may be able to use other strategies.  For example one could
+
+   - run the meter on a faster computer, e.g. move from a DOS PC to a
+     workstation, or perhaps use a meter implemented in firmware within
+     a switch or router.
+
+   - use sampling.  The details of such sampling are not defined within
+     the RTFM Architecture, but the Meter MIB provides one simple method
+     by allowing one to specify that only every nth packet on an
+     interface will be metered.   This would probably not be acceptable
+     for producing billing data, but might well be acceptable for
+     traffic engineering purposes.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>  Security Considerations</span>
+
+   These are discussed in detail in the Architecture and Meter MIB
+   documents.  In brief, an RTFM Meter is an SNMP agent which observes a
+   network and collects flow data from it.  Since it doesn&#x27;t control the
+   network directly, it has no direct effect on network security.
+
+   On the other hand, the flow data itself may well be valuable - to the
+   network operator (as billing data) or to an attacker (who may wish to
+   modify that data, or the meter&#x27;s ruleset(s)).  It is therefore
+   important to take proper precautions to ensure that access to the
+   meter and its data is sufficiently secure.
+
+   For example, a meter port attached to a network should be passive, so
+   that it cannot respond to login attempts of any kind.  Control and
+   data connections to a meter should be via a secure management
+   network.  Finally, suitable security should be established for the
+   meter, as it would be for any other SNMP agent.
+
+
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+   Meters may, like any other network component, be subjected to Denial
+   of Service and other attacks.  These are outside the RTFM
+   Architecture - countermeasures for them are available, but are also
+   outside RTFM.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>  Policy Considerations</span>
+
+   When collecting traffic data, one must have well-defined operations
+   policies covering points such as:
+
+   - Exactly what data is to be collected, at what level of detail?
+   - How long will the data be kept?
+   - What may the data be used for?
+   - Who will be allowed to see the raw data?
+   - May summaries of the data be shown to other people?
+
+   Policy issues such as these should normally be considered as part of
+   an organisation&#x27;s Network Security Policy.
+
+   Other policy issues relating more directly to the traffic data are
+   essentially part of the measurement system design, such as:
+
+   - How much time resolution is required for the data?
+     (Less resolution implies longer collection intervals, but that may
+     require more memory in the meters to hold flow data between
+     collections).
+
+   - What level of hardware redundancy is needed?
+     (A single meter and meter reader is generally enough.  For greater
+     reliability, meters and meter readers can be duplicated).
+
+   - Who is allowed to use the system?
+     (Approved users will need permissions to download rulesets to the
+     meters, and to collect their data, possibly via their own meter
+     readers).
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>  Soundness</span>
+
+   NeTraMet, the first implementation of the RTFM Architecture, has been
+   in use worldwide since 1994.  Currently there are many organisations,
+   large and small, using it to collect traffic data for billing
+   purposes.
+
+   One example of these is Kawaihiko, the New Zealand Universities&#x27;
+   Network, which has seven RTFM meters located at sites throughout New
+   Zealand.  One of the sites is NZIX, the New Zealand Internet eXchange
+   at the University of Waikato, where Kawaihiko has a meter (attached
+   to a 100baseT network) observing traffic flows across the exchange to
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+   each of Kawaihiko&#x27;s three international Internet Service Providers.
+   5-minute Octet counts are collected from all the Kawaihiko meters by
+   a single meter reader at Auckland.  Traffic data from the meters is
+   used to determine the cost per month for each of the Kawaihiko sites.
+
+   It is difficult to estimate how many organisations are using RTFM
+   traffic measurement.  There are about 250 people on the NeTraMet
+   mailing list, which often carries questions like &#x27;why doesn&#x27;t this
+   ruleset do what I meant&#x27;?  Once new users have the system running,
+   however, they tend to simply use it without further comment.
+
+   From time to time the list provides useful feedback.  For example,
+   early in 1998 there were two very significant user contributions:
+
+   - Jacek Kowalski (Telstra, Melbourne) described an improved hash
+     algorithm for NeTraMet&#x27;s flow table, which provided almost an order
+     of magnitude improvement in packet-handling performance.
+
+   - Kevin Hoadley (JANET, U.K.) reported having problems with very
+     large rulesets.  These were resolved, and better methods of
+     downloading rules developed, allowing NeTraMet to work well for
+     rulesets with more than 32,000 rules.
+
+   Perhaps one reason why there is little discussion of NeTraMet&#x27;s use
+   in collecting billing data is that users may consider that the way
+   collect their data is a commercially sensitive matter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>  <a href="#appendix-A">Appendix A</a>: WG Report on the Meter MIB</span>
+
+   The Meter MIB (in its current form) was developed early in 1996.  It
+   was produced as an SNMPv2 MIB, following a number of detailed (and
+   continuing) discussions with David Perkins beginning at the Dallas
+   IETF meeting in December 1995.
+
+   There are two current implementations:
+
+   - NeTraMet (Nevil Brownlee, The University of Auckland)
+
+   - IBM Meter (Sig Handelman &amp; Stephen Stibler, IBM Research, N.Y, Bert
+     Wijnen provided further help with SNMP)
+
+   The NeTraMet meter is a stand-alone SNMP agent using an SNMPv2C
+   implementation derived from CMU SNMPv2.
+
+   The IBM meter runs as a sub-agent on an AIX system.  All the meter
+   code has been written by Stephen Stibler - it was not derived from
+   the NeTraMet code.  Stephen has found it useful to use nifty, one of
+   NeTraMet&#x27;s manager/reader programs, to test the IBM meter.
+
+   As indicated above, there have only been two implementors to date,
+   and the Working Group consensus has been very strong.
+
+   The MIB has one unusual aspect:  the method used to read large
+   amounts of data from its Flow Table.  An earlier SNMPv1 version of
+   the MIB was in use from 1992 to 1997; it used opaque objects to read
+   column slices from the flow table for flows which had been active
+   since a specified time.  This was very non-standard (or at least very
+   application-specific).
+
+   With the change to SNMPv2 we were able to use 64-bit counters for
+   PDUs and Octets, RowStatus variables for control tables and GETBULK
+   requests to read rows from the flow table.  We also use the
+   TimeFilter convention from the RMON2 MIB to select flows to be read;
+   this gives the meter MIB a strong resemblance to RMON2.
+
+   The current MIB introduces a better way of reading large amounts of
+   data from the flow table.  This is the &#x27;DataPackage&#x27; convention,
+   which specifies the attribute values to be read from a flow table
+   row.  The meter returns the values for each required attribute within
+   a BER-encoded sequence.  This means there is only one object
+   identifier for the whole sequence, greatly reducing the number of
+   bytes required to retrieve the data.  The combination of
+
+
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+   TimeFilter:  to select the flows to be read
+   DataPackage: to select the attributes required for each flow
+   GetBulk:     to read many flows with a single SNMP PDU
+
+   provides a very effective way to read flow data from a traffic meter.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>  References</span>
+
+   [<a id="ref-ACT-BKG">ACT-BKG</a>]  Mills, C., Hirsch, G. and G. Ruth, &quot;Internet Accounting
+              Background&quot;, <a href="/doc/html/rfc1272">RFC 1272</a>, November 1991.
+
+   [<a id="ref-RTFM-ARC">RTFM-ARC</a>] Brownlee, N., Mills, C. and G. Ruth, &quot;Traffic Flow
+              Measurement: Architecture&quot;, <a href="/doc/html/rfc2722">RFC 2722</a>, October 1999.
+
+   [<a id="ref-RTFM-MIB">RTFM-MIB</a>] Brownlee, N., &quot;Traffic Flow Measurement: Meter MIB&quot;, <a href="/doc/html/rfc2720">RFC</a>
+              <a href="/doc/html/rfc2720">2720</a>, October 1999.
+
+   [<a id="ref-RTFM-NEW">RTFM-NEW</a>] Handelman, S., Stibler, S., Brownlee, N. and G. Ruth,
+              &quot;RTFM: New Attributes for Traffic Flow Measurement&quot;, <a href="/doc/html/rfc2724">RFC</a>
+              <a href="/doc/html/rfc2724">2724</a>, October 1999.
+
+   [<a id="ref-RTFM-NTM">RTFM-NTM</a>] Brownlee, N., &quot;Traffic Flow Measurement: Experiences with
+              NeTraMet&quot;, <a href="/doc/html/rfc2123">RFC 2123</a>, March 1997.
+
+   [<a id="ref-RTFM-SRL">RTFM-SRL</a>] Brownlee, N., &quot;SRL: A Language for Describing Traffic
+              Flows and Specifying Actions for Flow Groups&quot;, <a href="/doc/html/rfc2723">RFC 2723</a>,
+              October 1999.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>  Author&#x27;s Address</span>
+
+   Nevil Brownlee
+   Information Technology Systems &amp; Services
+   The University of Auckland
+   Private Bag 92-019
+   Auckland, New Zealand
+
+   Phone: +64 9 373 7599 x8941
+   EMail: n.brownlee@auckland.ac.nz
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Brownlee                     Informational                      [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc2721">RFC 2721</a>             RTFM: Applicability Statement          October 1999</span>
+
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>  Full Copyright Statement</span>
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Brownlee                     Informational                     [Page 10]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

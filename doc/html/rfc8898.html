@@ -1,0 +1,981 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8898
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-sipcore-sip-token-authnz/">
+  <meta name="description" content="Third-Party Token-Based Authentication and Authorization for Session Initiation Protocol (SIP) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8898.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8898.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8898.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8898.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8898/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8898/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sipcore/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-sipcore-sip-token-authnz@ietf.org?subject=draft-ietf-sipcore-sip-token-authnz" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-sipcore-sip-token-authnz-17.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sipcore-sip-token-authnz-17.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-sipcore-sip-token-authnz-17.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-sipcore-sip-token-authnz-17">draft-ietf-sipcore-sip-token-authnz-17</a>           Proposed Standard
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=8898&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                    R. Shekh-Yusef
+Request for Comments: 8898                                         Auth0
+Updates: <a href="/doc/html/rfc3261">3261</a>                                                C. Holmberg
+Category: Standards Track                                       Ericsson
+ISSN: 2070-1721                                               V. Pascual
+                                                                   Nokia
+                                                          September 2020
+
+
+  <span class="h1">Third-Party Token-Based Authentication and Authorization for Session</span>
+                       <span class="h1">Initiation Protocol (SIP)</span>
+
+Abstract
+
+   This document defines the &quot;Bearer&quot; authentication scheme for the
+   Session Initiation Protocol (SIP) and a mechanism by which user
+   authentication and SIP registration authorization is delegated to a
+   third party, using the OAuth 2.0 framework and OpenID Connect Core
+   1.0.  This document updates <a href="/doc/html/rfc3261">RFC 3261</a> to provide guidance on how a SIP
+   User Agent Client (UAC) responds to a SIP 401/407 response that
+   contains multiple WWW-Authenticate/Proxy-Authenticate header fields.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8898">https://www.rfc-editor.org/info/rfc8898</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Terminology
+     1.2.  Applicability
+     1.3.  Token Types and Formats
+     1.4.  Example Flows
+       1.4.1.  Registration
+       1.4.2.  Registration with Preconfigured AS
+   2.  SIP Procedures
+     2.1.  UAC Behavior
+       2.1.1.  Obtaining Tokens and Responding to Challenges
+       2.1.2.  Protecting the Access Token
+       2.1.3.  REGISTER Request
+       2.1.4.  Non-REGISTER Request
+     2.2.  User Agent Server (UAS) and Registrar Behavior
+     2.3.  Proxy Behavior
+   3.  Access Token Claims
+   4.  WWW-Authenticate Response Header Field
+   5.  Security Considerations
+   6.  IANA Considerations
+     6.1.  New Proxy-Authenticate Header Field Parameters
+     6.2.  New WWW-Authenticate Header Field Parameters
+   7.  Normative References
+   8.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Session Initiation Protocol (SIP) [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>] uses the same
+   framework as HTTP [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>] to authenticate users: a simple
+   challenge-response authentication mechanism that allows a SIP User
+   Agent Server (UAS), proxy, or registrar to challenge a SIP User Agent
+   Client (UAC) request and allows the UAC to provide authentication
+   information in response to that challenge.
+
+   OAuth 2.0 [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>] defines a token-based authorization framework to
+   allow an OAuth client to access resources on behalf of its user.
+
+   The OpenID Connect Core 1.0 specification [<a href="#ref-OPENID" title="&quot;OpenID Connect Core 1.0&quot;">OPENID</a>] defines a simple
+   identity layer on top of the OAuth 2.0 protocol, which enables OAuth/
+   OpenID clients to verify the identity of the user based on the
+   authentication performed by a dedicated authorization server (AS),
+   referred to as OpenID Provider (OP), as well as to obtain basic
+   profile information about the user.
+
+   This document defines the &quot;Bearer&quot; authentication scheme for SIP and
+   a mechanism by which user authentication and SIP registration
+   authorization is delegated to a third party, using the OAuth 2.0
+   framework and OpenID Connect Core 1.0.  This kind of user
+   authentication enables single sign-on, which allows the user to
+   authenticate once and gain access to both SIP and non-SIP services.
+
+   This document also updates [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>] by defining the UAC procedures
+   when a UAC receives a 401/407 response with multiple WWW-
+   Authenticate/Proxy-Authenticate header fields, providing challenges
+   using different authentication schemes for the same realm.
+
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Applicability</span>
+
+   This document covers cases where grants that allow the UAC to obtain
+   an access token from the AS are used.  Cases where the UAC is not
+   able to obtain an access token (e.g., in the case of an authorization
+   code grant) are not covered.
+
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Token Types and Formats</span>
+
+   The tokens used in third-party authorization depend on the type of
+   AS.
+
+   An OAuth AS provides the following tokens to a successfully
+   authorized UAC:
+
+   Access Token:
+      The UAC will use this token to gain access to services by
+      providing the token to a SIP server.
+
+   Refresh Token:
+      The UAC will present this token to the AS to refresh a stale
+      access token.
+
+   An OP returns an additional token:
+
+   ID Token:
+      This token contains a SIP URI associated with the user and other
+      user-specific details that will be consumed by the UAC.
+
+   Tokens can be represented in two different formats:
+
+   Structured Token:
+      A token that consists of a structured object that contains the
+      claims associated with the token, e.g., JSON Web Token (JWT), as
+      defined in [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>].
+
+   Reference Token:
+      A token that consists of an opaque string that is used to obtain
+      the details of the token and its associated claims, as defined in
+      [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+
+   Access tokens are represented in one of the above two formats.
+   Refresh tokens usually are represented in a reference format, as this
+   token is consumed only by the AS that issued the token.  The ID token
+   is defined as a structured token in the form of a JWT.
+
+
+<span class="h3"><a class="selflink" id="section-1.4" href="#section-1.4">1.4</a>.  Example Flows</span>
+
+<span class="h4"><a class="selflink" id="section-1.4.1" href="#section-1.4.1">1.4.1</a>.  Registration</span>
+
+   Figure 1 below shows an example of a SIP registration where the
+   registrar informs the UAC about the AS from which the UAC can obtain
+   an access token.
+
+     UAC                         Registrar                         AS/OP
+   ---------------------------------------------------------------------
+     |                               |                               |
+     | [1] REGISTER                  |                               |
+     |------------------------------&gt;|                               |
+     |                               |                               |
+     | [2] 401 Unauthorized          |                               |
+     |     WWW-Authenticate: Bearer &quot;authz_server&quot;=&quot;&lt;authz_server&gt;&quot;  |
+     |&lt;------------------------------|                               |
+     |                               |                               |
+     | [3] The UAC interacts with the AS and obtains tokens using    |
+     |     some out-of-scope mechanism.                              |
+     |&lt;=============================================================&gt;|
+     |                               |                               |
+     | [4] REGISTER                  |                               |
+     |     Authorization: Bearer &lt;access_token&gt;                      |
+     |------------------------------&gt;|                               |
+     |                               | [5] HTTP POST /introspect     |
+     |                               |     {access_token}            |
+     |                               |       (OPTIONAL)              |
+     |                               |------------------------------&gt;|
+     |                               |                               |
+     |                               | [6] 200 OK {metadata}         |
+     |                               |       (OPTIONAL)              |
+     |                               |&lt;------------------------------|
+     |                               |                               |
+     | [7] 200 OK                    |                               |
+     |&lt;------------------------------|                               |
+     |                               |                               |
+
+                    Figure 1: Example Registration Flow
+
+   In step [1], the UAC starts the registration process by sending a SIP
+   REGISTER request to the registrar without any credentials.
+
+   In step [2], the registrar challenges the UA by sending a SIP 401
+   (Unauthorized) response to the REGISTER request.  In the response,
+   the registrar includes information about the AS to contact in order
+   to obtain a token.
+
+   In step [3], the UAC interacts with the AS via an out-of-scope
+   mechanism, potentially using the OAuth Native App mechanism defined
+   in [<a href="/doc/html/rfc8252" title="&quot;OAuth 2.0 for Native Apps&quot;">RFC8252</a>].  The AS authenticates the user and provides the UAC
+   with the tokens needed to access the SIP service.
+
+   In step [4], the UAC retries the registration process by sending a
+   new REGISTER request that includes the access token that the UAC
+   obtained in the step above.
+
+   The registrar validates the access token.  If the access token is a
+   reference token, the registrar MAY perform an introspection
+   [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>], as in steps [5] and [6], in order to obtain more
+   information about the access token and its scope, per [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>].
+   Otherwise, after the registrar validates the token, it inspects its
+   claims and acts upon it.
+
+   In step [7], once the registrar has successfully verified and
+   accepted the access token, it sends a 200 (OK) response to the
+   REGISTER request.
+
+
+<span class="h4"><a class="selflink" id="section-1.4.2" href="#section-1.4.2">1.4.2</a>.  Registration with Preconfigured AS</span>
+
+   Figure 2 shows an example of a SIP registration where the UAC has
+   been preconfigured with information about the AS from which to obtain
+   the access token.
+
+     UAC                         Registrar                         AS/OP
+   ---------------------------------------------------------------------
+     |                               |                               |
+     | [1] The UAC interacts with the AS and obtains tokens using    |
+     |     some out-of-scope mechanism.                              |
+     |&lt;=============================================================&gt;|
+     |                               |                               |
+     | [2] REGISTER                  |                               |
+     |     Authorization: Bearer &lt;access_token&gt;                      |
+     |------------------------------&gt;|                               |
+     |                               | [3] HTTP POST /introspect     |
+     |                               |     {access_token}            |
+     |                               |       (OPTIONAL)              |
+     |                               |------------------------------&gt;|
+     |                               |                               |
+     |                               | [4] 200 OK {metadata}         |
+     |                               |       (OPTIONAL)              |
+     |                               |&lt;------------------------------|
+     |                               |                               |
+     | [5] 200 OK                    |                               |
+     |&lt;------------------------------|                               |
+     |                               |                               |
+
+     Figure 2: Example Registration Flow - AS Information Preconfigured
+
+   In step [1], the UAC interacts with the AS using an out-of-scope
+   mechanism, potentially using the OAuth Native App mechanism defined
+   in [<a href="/doc/html/rfc8252" title="&quot;OAuth 2.0 for Native Apps&quot;">RFC8252</a>].  The AS authenticates the user and provides the UAC
+   with the tokens needed to access the SIP service.
+
+   In step [2], the UAC initiates the registration process by sending a
+   new REGISTER request that includes the access token that the UAC
+   obtained in the step above.
+
+   The registrar validates the access token.  If the access token is a
+   reference token, the registrar MAY perform an introspection
+   [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>], as in steps [4] and [5], in order to obtain more
+   information about the access token and its scope, per [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>].
+   Otherwise, after the registrar validates the token, it inspects its
+   claims and acts upon it.
+
+   In step [5], once the registrar has successfully verified and
+   accepted the access token, it sends a 200 (OK) response to the
+   REGISTER request.
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  SIP Procedures</span>
+
+   <a href="/doc/html/rfc3261#section-22">Section&nbsp;22 of [RFC3261]</a> defines the SIP procedures for the Digest
+   authentication mechanism.  The same procedures apply to the &quot;Bearer&quot;
+   authentication mechanism, with the changes described in this section.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  UAC Behavior</span>
+
+<span class="h4"><a class="selflink" id="section-2.1.1" href="#section-2.1.1">2.1.1</a>.  Obtaining Tokens and Responding to Challenges</span>
+
+   When a UAC sends a request without credentials (or with invalid
+   credentials), it could receive either a 401 (Unauthorized) response
+   with a WWW-Authenticate header field or a 407 (Proxy Authentication
+   Required) response with a Proxy-Authenticate header field.  If the
+   WWW-Authenticate or Proxy-Authenticate header field indicates
+   &quot;Bearer&quot; scheme authentication and contains an address to an AS, the
+   UAC contacts the AS in order to obtain tokens and includes the
+   requested scopes, based on a local configuration (Figure 1).  The UAC
+   MUST check the AS URL received in the 401/407 response against a list
+   of trusted ASs configured on the UAC in order to prevent several
+   classes of possible vulnerabilities when a client blindly attempts to
+   use any provided AS.
+
+   The detailed OAuth2 procedure to authenticate the user and obtain
+   these tokens is out of scope of this document.  The address of the AS
+   might already be known to the UAC via configuration.  In such cases,
+   the UAC can contact the AS for tokens before it sends a SIP request
+   (Figure 2).  Procedures for native applications are defined in
+   [<a href="/doc/html/rfc8252" title="&quot;OAuth 2.0 for Native Apps&quot;">RFC8252</a>].  When using the mechanism defined in [<a href="/doc/html/rfc8252" title="&quot;OAuth 2.0 for Native Apps&quot;">RFC8252</a>], the user
+   of the UAC will be directed to interact with the AS using a web
+   browser, which allows the AS to prompt the user for multi-factor
+   authentication, to redirect the user to third-party identity
+   providers, and to enable the use of single sign-on sessions.
+
+   The tokens returned to the UAC depend on the type of AS; an OAuth AS
+   provides an access token and, optionally, a refresh token [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+   The refresh token is only used between the UAC and the AS.  If the AS
+   provides a refresh token to the UAC, the UAC uses it to request a new
+   access token from the AS before the currently used access token
+   expires (<a href="/doc/html/rfc6749#section-1.5">[RFC6749], Section&nbsp;1.5</a>).  If the AS does not provide a
+   refresh token, the UAC needs to reauthenticate the user in order to
+   get a new access token before the currently used access token
+   expires.  An OP returns an additional ID token that contains claims
+   about the authentication of the user by an authorization server.  The
+   ID token can potentially include other optional claims about the
+   user, e.g., the SIP URI, that will be consumed by the UAC and later
+   used to register with the registrar.
+
+   If the UAC receives a 401/407 response with multiple WWW-
+   Authenticate/Proxy-Authenticate header fields, providing challenges
+   using different authentication schemes for the same realm, the UAC
+   provides credentials for one of the schemes that it supports, based
+   on local policy.
+
+      |  NOTE: At the time of writing, detailed procedures for the cases
+      |  where a UAC receives multiple different authentication schemes
+      |  had not been defined.  A future specification might define such
+      |  procedures.
+
+      |  NOTE: The address of the AS might be known to the UAC, e.g.,
+      |  using means of configuration, in which case the UAC can contact
+      |  the AS in order to obtain the access token before it sends SIP
+      |  request without credentials.
+
+<span class="h4"><a class="selflink" id="section-2.1.2" href="#section-2.1.2">2.1.2</a>.  Protecting the Access Token</span>
+
+   [<a id="ref-RFC6749">RFC6749</a>] mandates that access tokens are protected with TLS when in
+   transit.  However, SIP makes use of intermediary SIP proxies, and TLS
+   only guarantees hop-to-hop protection when used to protect SIP
+   signaling.  Therefore, the access token MUST be protected in a way so
+   that only authorized SIP servers will have access to it.  SIP
+   endpoints that support this document MUST use encrypted JWTs
+   [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>] for encoding and protecting access tokens when they are
+   included in SIP requests, unless some other mechanism is used to
+   guarantee that only authorized SIP endpoints have access to the
+   access token.  TLS can still be used for protecting traffic between
+   SIP endpoints and the AS, as defined in [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+
+
+<span class="h4"><a class="selflink" id="section-2.1.3" href="#section-2.1.3">2.1.3</a>.  REGISTER Request</span>
+
+   The procedures in this section apply when the UAC has received a
+   challenge that contains a &quot;Bearer&quot; scheme and the UAC has obtained a
+   token, as specified in <a href="#section-2.1.1">Section 2.1.1</a>.
+
+   The UAC sends a REGISTER request with an Authorization header field
+   containing the response to the challenge, including the &quot;Bearer&quot;
+   scheme carrying a valid access token in the request, as specified in
+   [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>].
+
+   Note that if there were multiple challenges with different schemes,
+   then the UAC may be able to successfully retry the request using
+   non-&quot;Bearer&quot; credentials.
+
+   Typically, a UAC will obtain a new access token for each new binding.
+   However, based on local policy, a UAC MAY include an access token
+   that has been used for another binding associated with the same
+   Address Of Record (AOR) in the request.
+
+   If the access token included in a REGISTER request is not accepted
+   and the UAC receives a 401 response or a 407 response, the UAC
+   follows the procedures in <a href="#section-2.1.1">Section 2.1.1</a>.
+
+
+<span class="h4"><a class="selflink" id="section-2.1.4" href="#section-2.1.4">2.1.4</a>.  Non-REGISTER Request</span>
+
+   The procedures in this section apply when the UAC has received a
+   challenge that contains a &quot;Bearer&quot; scheme and the UAC has obtained a
+   token, as specified in <a href="#section-2.1.1">Section 2.1.1</a>.
+
+   When the UAC sends a request, it MUST include an Authorization header
+   field with a &quot;Bearer&quot; scheme carrying a valid access token obtained
+   from the AS indicated in the challenge in the request, as specified
+   in [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>].  Based on local policy, the UAC MAY include an access
+   token that has been used for another dialog, or for another stand-
+   alone request, if the target of the new request is the same.
+
+   If the access token included in a request is not accepted and the UAC
+   receives a 401 response or a 407 response, the UAC follows the
+   procedures in <a href="#section-2.1.1">Section 2.1.1</a>.
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  User Agent Server (UAS) and Registrar Behavior</span>
+
+   When a UAS or registrar receives a request that fails to contain
+   authorization credentials acceptable to it, the UAS/registrar SHOULD
+   challenge the request by sending a 401 (Unauthorized) response.  If
+   the UAS/registrar chooses to challenge the request and is willing to
+   accept an access token as a credential, it MUST include a WWW-
+   Authenticate header field in the response that indicates a &quot;Bearer&quot;
+   scheme and includes an AS address, encoded as an https URI [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>],
+   from which the UAC can obtain an access token.
+
+   When a UAS or registrar receives a SIP request that contains an
+   Authorization header field with an access token, the UAS/registrar
+   MUST validate the access token using the procedures associated with
+   the type of access token (structured or reference) used, e.g.,
+   [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>].  If the token provided is an expired access token, then
+   the UAS/registrar MUST reply with a 401 (Unauthorized) response, as
+   defined in <a href="/doc/html/rfc6750#section-3">Section&nbsp;3 of [RFC6750]</a>.  If the validation is successful,
+   the UAS/registrar can continue to process the request using normal
+   SIP procedures.  If the validation fails, the UAS/registrar MUST
+   reply with a 401 (Unauthorized) response.
+
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Proxy Behavior</span>
+
+   When a proxy receives a request that fails to contain authorization
+   credentials acceptable to it, it SHOULD challenge the request by
+   sending a 407 (Proxy Authentication Required) response.  If the proxy
+   chooses to challenge the request and is willing to accept an access
+   token as a credential, it MUST include a Proxy-Authenticate header
+   field in the response that indicates a &quot;Bearer&quot; scheme and includes
+   an AS address, encoded as an https URI [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>], from which the UAC
+   can obtain an access token.
+
+   When a proxy wishes to authenticate a received request, it MUST
+   search the request for Proxy-Authorization header fields with &#x27;realm&#x27;
+   parameters that match its realm.  It then MUST successfully validate
+   the credentials from at least one Proxy-Authorization header field
+   for its realm.  When the scheme is &quot;Bearer&quot;, the proxy MUST validate
+   the access token using the procedures associated with the type of
+   access token (structured or reference) used, e.g., [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>].
+
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Access Token Claims</span>
+
+   The type of services to which an access token grants access can be
+   determined using different methods.  The methods used and the access
+   provided by the token are based on local policy agreed between the AS
+   and the registrar.
+
+   If an access token is encoded as a JWT, it will contain a list of
+   claims [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>], including both registered and application-specific
+   claims.  The registrar can grant access to services based on such
+   claims, some other mechanism, or a combination of claims and some
+   other mechanism.  If an access token is a reference token, the
+   registrar will grant access based on some other mechanism.  Examples
+   of such other mechanisms are introspection [<a href="/doc/html/rfc7662" title="&quot;OAuth 2.0 Token Introspection&quot;">RFC7662</a>] and user profile
+   lookups.
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  WWW-Authenticate Response Header Field</span>
+
+   This section uses ABNF [<a href="/doc/html/rfc5234" title="&quot;Augmented BNF for Syntax Specifications: ABNF&quot;">RFC5234</a>] to describe the syntax of the WWW-
+   Authenticate header field when used with the &quot;Bearer&quot; scheme to
+   challenge the UAC for credentials by extending the &#x27;challenge&#x27;
+   parameter defined by [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>].
+
+   challenge  =/  (&quot;Bearer&quot; LWS bearer-cln *(COMMA bearer-cln))
+   bearer-cln = realm / scope-param / authz-server-param / error-param /
+                auth-param
+   realm = &lt;defined in <a href="/doc/html/rfc3261">RFC 3261</a>&gt;
+   scope-param = &quot;scope&quot; EQUAL DQUOTE scope DQUOTE
+   scope = &lt;defined in <a href="/doc/html/rfc6749">RFC 6749</a>&gt;
+   authz-server-param = &quot;authz_server&quot; EQUAL DQUOTE authz-server DQUOTE
+   authz-server = https-URI
+   https-URI = &lt;defined in <a href="/doc/html/rfc7230">RFC 7230</a>&gt;
+   error-param = &quot;error&quot; EQUAL DQUOTE error DQUOTE
+   error = &lt;defined in <a href="/doc/html/rfc6749">RFC 6749</a>&gt;
+   auth-param = &lt;defined in <a href="/doc/html/rfc3261">RFC 3261</a>&gt;
+
+                      Figure 3: &quot;Bearer&quot; Scheme Syntax
+
+   The authz_server parameter contains the HTTPS URI, as defined in
+   [<a href="/doc/html/rfc7230" title="&quot;Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing&quot;">RFC7230</a>], of the AS.  The UAC can discover metadata about the AS
+   using a mechanism like the one defined in [<a href="/doc/html/rfc8414" title="&quot;OAuth 2.0 Authorization Server Metadata&quot;">RFC8414</a>].
+
+   The realm and auth-param parameters are defined in [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>].
+
+   Per [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>], &quot;the realm string alone defines the protection
+   domain&quot;.  [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>] states that the realm string must be globally
+   unique and recommends that the realm string contain a hostname or
+   domain name.  It also states that the realm string should be a human-
+   readable identifier that can be rendered to the user.
+
+   The scope and error parameters are defined in [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+
+   The scope parameter can be used by the registrar/proxy to indicate to
+   the UAC the minimum scope that must be associated with the access
+   token to be able to get service.  As defined in [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>], the value
+   of the scope parameter is expressed as a list of space-delimited,
+   case-sensitive strings.  The strings are defined by the AS.  The
+   values of the scope parameter are out of scope of this document.  The
+   UAC will use the scope provided by the registrar to contact the AS
+   and obtain a proper token with the requested scope.
+
+   The error parameter could be used by the registrar/proxy to indicate
+   to the UAC the reason for the error, with possible values of
+   &quot;invalid_token&quot; or &quot;invalid_scope&quot;.
+
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   The security considerations for OAuth are defined in [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].  The
+   security considerations for &quot;Bearer&quot; tokens are defined in [<a href="/doc/html/rfc6750" title="&quot;The OAuth 2.0 Authorization Framework: Bearer Token Usage&quot;">RFC6750</a>].
+   The security considerations for JWTs are defined in [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>].  These
+   security considerations also apply to SIP usage of access tokens, as
+   defined in this document.
+
+   [<a id="ref-RFC6749">RFC6749</a>] mandates that access tokens are protected with TLS when in
+   transit.  However, SIP makes use of intermediary SIP proxies, and TLS
+   only guarantees hop-to-hop protection when used to protect SIP
+   signaling.  Therefore, the access token MUST be protected in a way so
+   that only authorized SIP servers will have access to it.  SIP
+   endpoints that support this document MUST use encrypted JWTs
+   [<a href="/doc/html/rfc7519" title="&quot;JSON Web Token (JWT)&quot;">RFC7519</a>] for encoding and protecting access tokens when they are
+   included in SIP requests, unless some other mechanism is used to
+   guarantee that only authorized SIP endpoints have access to the
+   access token.  TLS can still be used for protecting traffic between
+   SIP endpoints and the AS, as defined in [<a href="/doc/html/rfc6749" title="&quot;The OAuth 2.0 Authorization Framework&quot;">RFC6749</a>].
+
+   Single Sign-On (SSO) enables the user to use one set of credentials
+   to authenticate once and gain access to multiple SIP and non-SIP
+   services using access token(s).  If the SSO login is compromised,
+   that single point of compromise has a much broader effect than is the
+   case without SSO.  Further, an attacker can often use a compromised
+   account to set up Single Sign-On for other services that the victim
+   has not established an account with and sometimes can even switch a
+   dedicated account into SSO mode, creating a still broader attack.
+
+   Because of that, it is critical to make sure that extra security
+   measures be taken to safeguard credentials used for Single Sign-On.
+   Examples of such measures include a long passphrase instead of a
+   password, enabling multi-factor authentication, and the use of the
+   native platform browser when possible, as defined in [<a href="/doc/html/rfc8252" title="&quot;OAuth 2.0 for Native Apps&quot;">RFC8252</a>].
+
+   Although this is out of scope for this document, it is important to
+   carefully consider the claims provided in the tokens used to access
+   these services to make sure of the privacy of the user accessing
+   these services.  As mentioned above, this document calls for
+   encrypting JWTs representing the access token.
+
+   It is important that both parties participating in SSO provide
+   mechanisms for users to sever the SSO relationship so that it is
+   possible without undue difficulty to mitigate a compromise that has
+   already happened.
+
+   The operator of an SSO authentication system has access to private
+   information about sites and services that their users log into and
+   even, to some extent, their usage patterns.  It&#x27;s important to call
+   these out in privacy disclosures and policies and to make sure that
+   users can be aware of the trade-offs between convenience and privacy
+   when they choose to use SSO.
+
+   When a registrar chooses to challenge a REGISTER request, if the
+   registrar can provide access to different levels of services, it is
+   RECOMMENDED that the registrar include a scope in the response in
+   order to indicate the minimum scope needed to register and access
+   basic services.  The access token might include an extended scope
+   that gives the user access to more advanced features beyond basic
+   services.  In SIP, the AS administrator will typically decide what
+   level of access is provided for a given user.
+
+   The UAC MUST check the AS URL received in the 401/407 response
+   against a list of trusted ASs configured on the UAC in order to
+   prevent several classes of possible vulnerabilities when a client
+   blindly attempts to use any provided AS.
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  New Proxy-Authenticate Header Field Parameters</span>
+
+   This section defines new SIP header field parameters in the &quot;Header
+   Field Parameters and Parameter Values&quot; subregistry of the &quot;Session
+   Initiation Protocol (SIP) Parameters&quot; registry:
+   &lt;<a href="https://www.iana.org/assignments/sip-parameters">https://www.iana.org/assignments/sip-parameters</a>&gt;
+
+            +================+===================+===========+
+            | Parameter Name | Predefined Values | Reference |
+            +================+===================+===========+
+            | authz_server   | No                | <a href="/doc/html/rfc8898">RFC 8898</a>  |
+            +----------------+-------------------+-----------+
+            | error          | No                | <a href="/doc/html/rfc8898">RFC 8898</a>  |
+            +----------------+-------------------+-----------+
+            | scope          | No                | <a href="/doc/html/rfc8898">RFC 8898</a>  |
+            +----------------+-------------------+-----------+
+
+                Table 1: Header Field: Proxy-Authenticate
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  New WWW-Authenticate Header Field Parameters</span>
+
+   This section defines new SIP header field parameters in the &quot;Header
+   Field Parameters and Parameter Values&quot; subregistry of the &quot;Session
+   Initiation Protocol (SIP) Parameters&quot; registry:
+   &lt;<a href="https://www.iana.org/assignments/sip-parameters">https://www.iana.org/assignments/sip-parameters</a>&gt;
+
+            +================+===================+===========+
+            | Parameter Name | Predefined Values | Reference |
+            +================+===================+===========+
+            | authz_server   | No                | <a href="/doc/html/rfc8898">RFC 8898</a>  |
+            +----------------+-------------------+-----------+
+            | error          | No                | <a href="/doc/html/rfc8898">RFC 8898</a>  |
+            +----------------+-------------------+-----------+
+            | scope          | No                | <a href="/doc/html/rfc8898">RFC 8898</a>  |
+            +----------------+-------------------+-----------+
+
+                 Table 2: Header Field: WWW-Authenticate
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Normative References</span>
+
+   [<a id="ref-OPENID">OPENID</a>]   Sakimura, N., Bradley, J., Jones, M., de Medeiros, B., and
+              C. Mortimore, &quot;OpenID Connect Core 1.0&quot;, February 2014.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3261">RFC3261</a>]  Rosenberg, J., Schulzrinne, H., Camarillo, G., Johnston,
+              A., Peterson, J., Sparks, R., Handley, M., and E.
+              Schooler, &quot;SIP: Session Initiation Protocol&quot;, <a href="/doc/html/rfc3261">RFC 3261</a>,
+              DOI 10.17487/RFC3261, June 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3261">https://www.rfc-editor.org/info/rfc3261</a>&gt;.
+
+   [<a id="ref-RFC5234">RFC5234</a>]  Crocker, D., Ed. and P. Overell, &quot;Augmented BNF for Syntax
+              Specifications: ABNF&quot;, STD 68, <a href="/doc/html/rfc5234">RFC 5234</a>,
+              DOI 10.17487/RFC5234, January 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5234">https://www.rfc-editor.org/info/rfc5234</a>&gt;.
+
+   [<a id="ref-RFC6749">RFC6749</a>]  Hardt, D., Ed., &quot;The OAuth 2.0 Authorization Framework&quot;,
+              <a href="/doc/html/rfc6749">RFC 6749</a>, DOI 10.17487/RFC6749, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6749">https://www.rfc-editor.org/info/rfc6749</a>&gt;.
+
+   [<a id="ref-RFC6750">RFC6750</a>]  Jones, M. and D. Hardt, &quot;The OAuth 2.0 Authorization
+              Framework: Bearer Token Usage&quot;, <a href="/doc/html/rfc6750">RFC 6750</a>,
+              DOI 10.17487/RFC6750, October 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6750">https://www.rfc-editor.org/info/rfc6750</a>&gt;.
+
+   [<a id="ref-RFC7230">RFC7230</a>]  Fielding, R., Ed. and J. Reschke, Ed., &quot;Hypertext Transfer
+              Protocol (HTTP/1.1): Message Syntax and Routing&quot;,
+              <a href="/doc/html/rfc7230">RFC 7230</a>, DOI 10.17487/RFC7230, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7230">https://www.rfc-editor.org/info/rfc7230</a>&gt;.
+
+   [<a id="ref-RFC7519">RFC7519</a>]  Jones, M., Bradley, J., and N. Sakimura, &quot;JSON Web Token
+              (JWT)&quot;, <a href="/doc/html/rfc7519">RFC 7519</a>, DOI 10.17487/RFC7519, May 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7519">https://www.rfc-editor.org/info/rfc7519</a>&gt;.
+
+   [<a id="ref-RFC7662">RFC7662</a>]  Richer, J., Ed., &quot;OAuth 2.0 Token Introspection&quot;,
+              <a href="/doc/html/rfc7662">RFC 7662</a>, DOI 10.17487/RFC7662, October 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7662">https://www.rfc-editor.org/info/rfc7662</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Informative References</span>
+
+   [<a id="ref-RFC8252">RFC8252</a>]  Denniss, W. and J. Bradley, &quot;OAuth 2.0 for Native Apps&quot;,
+              <a href="/doc/html/bcp212">BCP 212</a>, <a href="/doc/html/rfc8252">RFC 8252</a>, DOI 10.17487/RFC8252, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8252">https://www.rfc-editor.org/info/rfc8252</a>&gt;.
+
+   [<a id="ref-RFC8414">RFC8414</a>]  Jones, M., Sakimura, N., and J. Bradley, &quot;OAuth 2.0
+              Authorization Server Metadata&quot;, <a href="/doc/html/rfc8414">RFC 8414</a>,
+              DOI 10.17487/RFC8414, June 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8414">https://www.rfc-editor.org/info/rfc8414</a>&gt;.
+
+Acknowledgments
+
+   The authors would like to specially thank Paul Kyzivat for his
+   multiple detailed reviews and suggested text that significantly
+   improved the quality of the document.
+
+   The authors would also like to thank the following for their review
+   and feedback on this document:
+
+   Olle Johansson, Roman Shpount, Dale Worley, and Jorgen Axell.
+
+   The authors would also like to thank the following for their review
+   and feedback of the original document that was replaced with this
+   document:
+
+   Andrew Allen, Martin Dolly, Keith Drage, Paul Kyzivat, Jon Peterson,
+   Michael Procter, Roy Radhika, Matt Ryan, Ivo Sedlacek, Roman Shpount,
+   Robert Sparks, Asveren Tolga, Dale Worley, and Yehoshua Gev.
+
+   Roman Danyliw, Benjamin Kaduk, Erik Kline, Barry Leiba, Eric Vyncke,
+   and Magnus Westerlund provided feedback and suggestions for
+   improvements as part of the IESG evaluation of the document.  Special
+   thanks to Benjamin Kaduk for his detailed and comprehensive reviews
+   and comments.
+
+   The authors would also like to specially thank Jean Mahoney for her
+   multiple reviews, editorial help, and the conversion of the XML
+   source file from v2 to v3.
+
+Authors&#x27; Addresses
+
+   Rifaat Shekh-Yusef
+   Auth0
+   Ottawa Ontario
+   Canada
+
+   Email: rifaat.s.ietf@gmail.com
+
+
+   Christer Holmberg
+   Ericsson
+   Hirsalantie 11
+   FI-02420 Jorvas
+   Finland
+
+   Email: christer.holmberg@ericsson.com
+
+
+   Victor Pascual
+   Nokia
+   Barcelona
+   Spain
+
+   Email: victor.pascual_avila@nokia.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

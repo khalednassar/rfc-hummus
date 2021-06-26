@@ -1,0 +1,797 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6489
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-sidr-keyroll/">
+  <meta name="description" content="Certification Authority (CA) Key Rollover in the Resource Public Key Infrastructure (RPKI) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgmagenta"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6489.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6489.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6489.txt.pdf" title="PDF version of this document">pdf</a>|<a href="https://www.rfc-editor.org/rfc/inline-errata/rfc6489.html">with errata</a>|<a href="/doc/rfc6489/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6489/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sidr/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-sidr-keyroll@ietf.org?subject=draft-ietf-sidr-keyroll" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-sidr-keyroll-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sidr-keyroll-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-sidr-keyroll-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-sidr-keyroll-08">draft-ietf-sidr-keyroll-08</a>                   Best Current Practice
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=6489&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         G. Huston
+Request for Comments: 6489                                 G. Michaelson
+BCP: 174                                                           APNIC
+Category: Best Current Practice                                  S. Kent
+ISSN: 2070-1721                                                      BBN
+                                                           February 2012
+
+
+              <span class="h1">Certification Authority (CA) Key Rollover in</span>
+             <span class="h1">the Resource Public Key Infrastructure (RPKI)</span>
+
+Abstract
+
+   This document describes how a Certification Authority (CA) in the
+   Resource Public Key Infrastructure (RPKI) performs a planned rollover
+   of its key pair.  This document also notes the implications of this
+   key rollover procedure for relying parties (RPs).  In general, RPs
+   are expected to maintain a local cache of the objects that have been
+   published in the RPKI repository, and thus the way in which a CA
+   performs key rollover impacts RPs.
+
+Status of This Memo
+
+   This memo documents an Internet Best Current Practice.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   BCPs is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6489">http://www.rfc-editor.org/info/rfc6489</a>.
+
+Copyright Notice
+
+   Copyright (c) 2012 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in <a href="#section-4">Section 4</a>.e of
+
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-2">2</a>
+      <a href="#section-1.1">1.1</a>. Terminology and Concepts ...................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. CA Key Rollover Procedure .......................................<a href="#page-3">3</a>
+   <a href="#section-3">3</a>. Relying Party Requirements ......................................<a href="#page-6">6</a>
+   <a href="#section-4">4</a>. Reissuing Certificates and RPKI Signed Objects ..................<a href="#page-7">7</a>
+      <a href="#section-4.1">4.1</a>. CA Certificates ............................................<a href="#page-7">7</a>
+      <a href="#section-4.2">4.2</a>. RPKI Signed Objects ........................................<a href="#page-7">7</a>
+   <a href="#section-5">5</a>. Security Considerations .........................................<a href="#page-8">8</a>
+   <a href="#section-6">6</a>. Acknowledgements ................................................<a href="#page-8">8</a>
+   <a href="#section-7">7</a>. References ......................................................<a href="#page-9">9</a>
+      <a href="#section-7.1">7.1</a>. Normative References .......................................<a href="#page-9">9</a>
+      <a href="#section-7.2">7.2</a>. Informative References .....................................<a href="#page-9">9</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   This document describes an algorithm to be employed by a
+   Certification Authority (CA) in the Resource Public Key
+   Infrastructure (RPKI) [<a href="/doc/html/rfc6480" title="&quot;An Infrastructure to Support Secure Internet Routing&quot;">RFC6480</a>] to perform a rollover of its key
+   pair.
+
+   This document defines a conservative procedure for such entities to
+   follow when performing a key rollover.  This procedure is
+   &quot;conservative&quot; in that the CA&#x27;s actions in key rollover are not
+   intended to disrupt the normal operation of relying parties (RPs) in
+   maintaining a local cached version of the RPKI distributed
+   repository.  Using this procedure, RPs are in a position to be able
+   to validate all authentic objects in the RPKI using the validation
+   procedure described in [<a href="/doc/html/rfc6480" title="&quot;An Infrastructure to Support Secure Internet Routing&quot;">RFC6480</a>] at all times.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology and Concepts</span>
+
+   It is assumed that the reader is familiar with the terms and concepts
+   described in &quot;Internet X.509 Public Key Infrastructure Certificate
+   and Certificate Revocation List (CRL) Profile&quot; [<a href="/doc/html/rfc5280" title="&quot;Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile&quot;">RFC5280</a>], &quot;X.509
+   Extensions for IP Addresses and AS Identifiers&quot; [<a href="/doc/html/rfc3779" title="&quot;X.509 Extensions for IP Addresses and AS Identifiers&quot;">RFC3779</a>], the
+   profile for RPKI Certificates [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>], and the RPKI repository
+   structure [<a href="/doc/html/rfc6481" title="&quot;A Profile for Resource Certificate Repository Structure&quot;">RFC6481</a>] .
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>].
+
+
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  CA Key Rollover Procedure</span>
+
+   A CA in the RPKI is an entity that issues CA and end-entity (EE)
+   certificates and Certificate Revocation Lists (CRLs).  A CA instance
+   is associated with a single key pair [<a href="/doc/html/rfc6487" title="&quot;A Profile for X.509 PKIX Resource Certificates&quot;">RFC6487</a>], implying that if key
+   rollover is a regularly scheduled event, then, over time, there will
+   be many CA instances.  The implication in the context of key rollover
+   is that, strictly speaking, a CA does not perform a key rollover per
+   se.  In order to perform the equivalent of a key rollover, the CA
+   creates a &quot;new&quot; instance of itself, with a new key pair, and then
+   effectively substitutes this &quot;new&quot; CA instance into the RPKI
+   hierarchy in place of the &quot;old&quot; CA instance.
+
+   Note that focus of this procedure is planned key rollover, not an
+   emergency key rollover, e.g., promoted by a suspected or detected
+   private key compromise.  However, the procedure described here is
+   applicable in emergency key rollover situations, with the exception
+   of the &quot;Staging Period&quot; duration.
+
+   There are several considerations regarding this procedure that MUST
+   be followed by a CA performing a key rollover operation.  The
+   critical consideration is that the RPKI has potential application in
+   the area of control of routing integrity [<a href="/doc/html/rfc6480" title="&quot;An Infrastructure to Support Secure Internet Routing&quot;">RFC6480</a>], and key rollover
+   should not cause any transient hiatus in which an RP is led to
+   incorrect conclusions regarding the authenticity of attestations made
+   in the context of the RPKI.  A CA cannot assume that all RPs will
+   perform path validation and path discovery in the same fashion;
+   therefore, the key rollover procedure MUST preserve the integrity of
+   the CRL Distribution Points (CRLDP), Subject Information Access
+   (SIA), and Authority Information Access (AIA) pointers in RPKI
+   certificates.
+
+   In the procedure described here, the CA creates a &quot;new&quot; CA instance,
+   and has the associated new public key published in the form of a
+   &quot;new&quot; CA certificate.  While the &quot;current&quot; and &quot;new&quot; CA instances
+   share a single repository publication point, each CA has its own CRL
+   and its own manifest.  Initially, the &quot;new&quot; CA publishes an empty CRL
+   and a manifest that contains a single entry for the CRL.  The
+   &quot;current&quot; CA also maintains its published CRL and manifest at this
+   repository publication point.
+
+   The CA performing key rollover waits for a period of time to afford
+   every RP an opportunity to discover and retrieve this &quot;new&quot; CA
+   certificate, and store it in its local RPKI repository cache
+   instance.  This period of time is termed the Staging Period.  During
+   this period, the CA will have a &quot;new&quot; CA instance, with no
+   subordinate products, and a &quot;current&quot; CA instance that has issued all
+   subordinate products.  At the expiration of the Staging Period, the
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+   &quot;new&quot; CA instance MUST replace all (valid) subordinate products of
+   the &quot;current&quot; CA instance, overwriting the &quot;current&quot; subordinate
+   products in the CA&#x27;s repository publication point.  When this process
+   is complete, the &quot;current&quot; CA instance is retired, and the &quot;new&quot; CA
+   instance becomes the &quot;current&quot; CA.
+
+   During the transition of the &quot;current&quot; and &quot;new&quot; CA instances, the
+   &quot;new&quot; CA instance MUST reissue all subordinate products of the
+   &quot;current&quot; CA.  The procedure described here requires that, with the
+   exception of manifests and CRLs, the reissued subordinate products be
+   published using the same repository publication point object names,
+   effectively overwriting the old objects with these reissued objects.
+   The intent of this overwriting operation is to ensure that the AIA
+   pointers of subordinate products at lower tiers in the RPKI hierarchy
+   remain correct, and that CA key rollover does not require any
+   associated actions by any subordinate CA.
+
+   There are three CA states described here:
+
+   CURRENT:
+      The CURRENT CA is the active CA instance used to accept and
+      process certificate issuance and revocation requests.  The
+      starting point for this algorithm is that the key of the CURRENT
+      CA is to be rolled over.
+
+   NEW:
+      The NEW CA is the CA instance that is being created.  The NEW CA
+      is not active, and thus does not accept nor process certificate
+      issuance and revocation requests.  The NEW CA SHOULD issue a CRL
+      and an EE certificate in association with its manifest to provide
+      a trivial, complete, and consistent instance of a CA.
+
+   OLD:
+      The CA instance is in the process of being removed.  An OLD CA
+      instance is unable to process any certificate issuance and
+      revocation requests.  An OLD CA instance will continue to issue
+      regularly scheduled CRLs and issue an EE certificate as part of
+      the process of updating its manifest to reflect the updated CRL.
+
+      To perform a key rollover operation, the CA MUST perform the
+      following steps in the order given here.  Unless specified
+      otherwise each step SHOULD be performed without any intervening
+      delay.  The process MUST be run through to completion.
+
+      1. Generate a new key pair for use by the NEW CA.  Because the
+         goal of this algorithm is key rollover, the key pair generated
+         in this step MUST be different from the pair in use by the
+         CURRENT CA.
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+      2. Generate a certificate request with this key pair and pass the
+         request to the CA that issued the CURRENT CA certificate.  This
+         request MUST include the same SIA extension that is present in
+         the CURRENT CA certificate.  This request, when satisfied, will
+         result in the publication of the NEW CA certificate.  This
+         (NEW) CA certificate will contain a subject name selected by
+         the issuer, which MUST be distinct from the subject name used
+         in the CURRENT CA certificate.  The Certificate Practice
+         Statement (CPS) for the issuer of the NEW CA certificate will
+         indicate the time frame within which a certificate request is
+         expected to be processed.
+
+      3. Publish the NEW CA&#x27;s CRL and manifest.
+
+         The steps involved here are:
+
+         -  Wait for the issuer of the NEW CA to publish the NEW CA
+            certificate.
+
+         -  As quickly as possible following the publication of the NEW
+            CA certificate, use the key pair associated with the NEW CA
+            to generate an initially empty CRL, and publish this CRL in
+            the NEW CA&#x27;s repository publication point.  It is
+            RECOMMENDED that the CRL for the NEW CA have a nextUpdate
+            value that will cause the CRL to be replaced at the end of
+            the Staging Period (see in Step 4 below).
+
+         -  Generate a new key pair, and generate an associated EE
+            certificate request with an AIA value of the NEW CA&#x27;s
+            repository publication point.  Pass this EE certificate
+            request to the NEW CA, and use the returned (single-use) EE
+            certificate as the NEW CA&#x27;s manifest EE certificate.
+
+         -  Generate a manifest containing the new CA&#x27;s CRL as the only
+            entry, and sign it with the private key associated with the
+            manifest EE certificate.  Publish the manifest at the NEW
+            CA&#x27;s repository publication point.
+
+         -  Destroy the private key associated with the manifest EE
+            certificate.
+
+      4. The NEW CA enters a Staging Period.  The duration of the
+         Staging Period is determined by the CA, but it SHOULD be no
+         less than 24 hours.  The Staging Period is intended to afford
+         an opportunity for all RPs to download the NEW CA certificate
+         prior to publication of certificates, CRLs, and RPKI signed
+         objects under the NEW CA.  During the Staging Period, the NEW
+         CA SHOULD reissue, but not publish, all of the products that
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+         were issued under the CURRENT CA.  This includes all CA
+         certificates, EE certificates, and RPKI signed objects.
+         <a href="#section-4">Section 4</a> describes how each reissued product relates to the
+         product that it replaces.  During the Staging Period, the
+         CURRENT CA SHOULD continue to accept and process certificate
+         issuance requests and MUST continue to accept and process
+         certificate revocation requests.  If any certificates are
+         issued by the CURRENT CA during the Staging Period, they MUST
+         be reissued under the NEW CA during this period.  Any
+         certificates that are revoked under the CURRENT CA MUST NOT be
+         reissued under the NEW CA.  As noted above, in the case of an
+         emergency key rollover, a CA will decide whether the 24 hour
+         minimal Staging Period interval is appropriate, or if a shorter
+         Staging Period is needed.  As the Staging Period imposes no
+         additional burden on Relying Parties, there is no stipulated or
+         recommended maximum Staging Period.
+
+      5. Upon expiration of the Staging Period, the NEW CA MUST publish
+         the signed products that have been reissued under the NEW CA,
+         replacing the corresponding products issued under the CURRENT
+         CA at the NEW CA&#x27;s repository publication point.  This
+         replacement is implied by the file naming requirements imposed
+         by [<a href="/doc/html/rfc6481" title="&quot;A Profile for Resource Certificate Repository Structure&quot;">RFC6481</a>] for these signed products.  The trivial manifest
+         for the NEW CA (which contained only one entry, for the NEW
+         CA&#x27;s CRL) is replaced by a manifest listing all of these
+         reissued, signed products.  At this point, the CURRENT CA
+         becomes the OLD CA, and the NEW CA becomes the CURRENT CA.  Use
+         the OLD CA to issue a manifest that lists only the OLD CA&#x27;s
+         CRL.  It is anticipated that this step is very brief, perhaps a
+         few minutes in duration, because the CA has reissued all of the
+         signed products during the Staging Period.  Nonetheless, it is
+         desirable that the activities performed in this step be viewed
+         as atomic by RPs.
+
+      6. Generate a certificate revocation request for the OLD CA
+         certificate and submit it to the issuer of that certificate.
+         When the OLD CA certificate is revoked, the CRL for the OLD CA
+         is removed from the repository, along with the manifest for the
+         OLD CA.  The private key for the OLD CA is destroyed.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Relying Party Requirements</span>
+
+   This procedure defines a Staging Period for CAs performing a key
+   rollover operation.  This period is defined as a period no shorter
+   than 24 hours.
+
+
+
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+   RPs who maintain a local cache of the distributed RPKI repository
+   MUST perform a local cache synchronization operation against the
+   distributed RPKI repository at regular intervals of no longer than 24
+   hours.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Reissuing Certificates and RPKI Signed Objects</span>
+
+   This section provides rules a CA MUST use when it reissues
+   subordinate certificates and RPKI signed objects [<a href="/doc/html/rfc6488" title="&quot;Signed Object Template for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6488</a>] as part of
+   the key rollover process.  Note that CRLs and manifests are not
+   reissued, per se.  They are generated for each CA instance.  A
+   manifest catalogues the contents of a publication point relative to a
+   CA instance.  A CRL lists revoked certificates relative to a CA
+   instance.  Key rollover processing for CRLs and manifests is
+   described above, in <a href="#section-3">Section 3</a>.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  CA Certificates</span>
+
+   When a CA, as part of the key rollover process, reissues a CA
+   certificate, it copies all of the field and extension values from the
+   old certificate into the new certificate.  The only exceptions to
+   this rule are that the notBefore value MAY be set to the current date
+   and time, and the certificate serial number MAY change.  Because the
+   reissued CA certificate is issued by a different CA instance, it is
+   not a requirement that the certificate serial number change in the
+   reissued certificate.  Nonetheless, the CA MUST ensure that each
+   certificate issued under a specific CA instance (a distinct name and
+   key) contains a unique serial number.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  RPKI Signed Objects</span>
+
+   An RPKI signed object is a Cryptographic Message Syntax (CMS) signed-
+   data object, containing an EE certificate and a payload (content)
+   [<a href="/doc/html/rfc6488" title="&quot;Signed Object Template for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6488</a>].  When a key rollover occurs, the EE certificate for the
+   RPKI signed object MUST be reissued, under the key of the NEW CA.  A
+   CA MAY choose to treat this EE certificate the same way that it deals
+   with CA certificates, i.e., to copy over all fields and extensions,
+   and MAY change only the notBefore date and the serial number.  If the
+   CA adopts this approach, then the new EE certificate is inserted into
+   the CMS wrapper, but the signed context remains the same.  (If the
+   signing time or binary signing time values in the CMS wrapper are
+   non-null, they MAY be updated to reflect the current time.)
+   Alternatively, the CA MAY elect to generate a new key pair for this
+   EE certificate.  If it does so, the object content MUST be resigned
+   under the private key corresponding to the EE certificate.  In this
+   case, the EE certificate MUST contain a new public key and a new
+   notBefore value, and it MAY contain a new notAfter value, but all
+   other field and extension values, other than those relating to the
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+   digital signature and its associated certificate validation path,
+   remain unchanged.  If the signing time or binary signing time values
+   in the CMS wrapper are non-null, they MAY be updated to reflect the
+   current time.
+
+   As noted in Sections <a href="#section-2.1.6.4.3">2.1.6.4.3</a> and <a href="#section-2.1.6.4.4">2.1.6.4.4</a> of [<a href="/doc/html/rfc6488" title="&quot;Signed Object Template for the Resource Public Key Infrastructure (RPKI)&quot;">RFC6488</a>], the
+   presence or absence of the signing-time and/or the binary-signing-
+   time attribute MUST NOT affect the validity of the RPKI signed
+   object.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   No key should be used forever.  The longer a key is in use, the
+   greater the probability that it will have been compromised through
+   carelessness, accident, espionage, or cryptanalysis.  Infrequent key
+   rollover increases the risk that the rollover procedures will not be
+   followed to the appropriate level of precision, increasing the risk
+   of operational failure of some form in the key rollover process.
+   Regular scheduling of key rollover is generally considered to be a
+   part of a prudent key management practice.  However, key rollover
+   does impose additional operational burdens on both the CA and the
+   population of RPs.
+
+   These considerations imply that in choosing lifetimes for the keys it
+   manages, a CA should balance security and operational impact (on
+   RPs).  A CA should perform key rollover at regularly scheduled
+   intervals.  These intervals should be frequent enough to minimize the
+   risks associated with key compromise (noted above) and to maintain
+   local operational proficiency with respect to the key rollover
+   process.  However, key lifetimes should be sufficiently long so that
+   the (system-wide) load associated with key rollover events (across
+   the entire RPKI) does not impose an excessive burden upon the
+   population of RPs.  RPs are encouraged to maintain an accurate local
+   cache of the current state of the RPKI, which implies frequent
+   queries to the RPKI repository system to detect changes.  When a CA
+   rekeys, it changes many signed objects, thus impacting all RPs.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Acknowledgements</span>
+
+   The authors would like to acknowledge the review comments of Tim
+   Bruijnzeels and Sean Turner in preparing this document.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC3779">RFC3779</a>]  Lynn, C., Kent, S., and K. Seo, &quot;X.509 Extensions for IP
+              Addresses and AS Identifiers&quot;, <a href="/doc/html/rfc3779">RFC 3779</a>, June 2004.
+
+   [<a id="ref-RFC5280">RFC5280</a>]  Cooper, D., Santesson, S., Farrell, S., Boeyen, S.,
+              Housley, R., and W. Polk, &quot;Internet X.509 Public Key
+              Infrastructure Certificate and Certificate Revocation List
+              (CRL) Profile&quot;, <a href="/doc/html/rfc5280">RFC 5280</a>, May 2008.
+
+   [<a id="ref-RFC6480">RFC6480</a>]  Lepinski, M. and S. Kent, &quot;An Infrastructure to Support
+              Secure Internet Routing&quot;, <a href="/doc/html/rfc6480">RFC 6480</a>, February 2012.
+
+   [<a id="ref-RFC6481">RFC6481</a>]  Huston, G., Loomans, R., and G. Michaelson, &quot;A Profile for
+              Resource Certificate Repository Structure&quot;, <a href="/doc/html/rfc6481">RFC 6481</a>,
+              February 2012.
+
+   [<a id="ref-RFC6487">RFC6487</a>]  Huston, G., Michaelson, G., and R. Loomans, &quot;A Profile for
+              X.509 PKIX Resource Certificates&quot;, <a href="/doc/html/rfc6487">RFC 6487</a>, February
+              2012.
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC6488">RFC6488</a>]  Lepinski, M., Chi, A., and S. Kent, &quot;Signed Object
+              Template for the Resource Public Key Infrastructure
+              (RPKI)&quot;, <a href="/doc/html/rfc6488">RFC 6488</a>, February 2012.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Huston, et al.            Best Current Practice                 [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc6489">RFC 6489</a>                      Key Rollover                 February 2012</span>
+
+
+Authors&#x27; Addresses
+
+   Geoff Huston
+   APNIC
+
+   EMail: gih@apnic.net
+   URI:   <a href="http://www.apnic.net">http://www.apnic.net</a>
+
+
+   George Michaelson
+   APNIC
+
+   EMail: ggm@apnic.net
+   URI:   <a href="http://www.apnic.net">http://www.apnic.net</a>
+
+
+   Stephen Kent
+   BBN Technologies
+   10 Moulton St.
+   Cambridge, MA  02138
+   USA
+
+   EMail: kent@bbn.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Huston, et al.            Best Current Practice                [Page 10]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

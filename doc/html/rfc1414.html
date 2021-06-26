@@ -1,0 +1,628 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1414
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-ident-mib/">
+  <meta name="description" content="Identification MIB (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bggrey"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1414.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1414.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1414.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1414/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1414/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/ident/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-ident-mib@ietf.org?subject=draft-ietf-ident-mib" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-ident-mib-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ident-mib-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-ident-mib-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-ident-mib-03">draft-ietf-ident-mib-03</a>                                   Historic</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                       M. St. Johns
+Request for Comments: 1414                      US Department of Defense
+                                                                 M. Rose
+                                            Dover Beach Consulting, Inc.
+                                                           February 1993
+
+
+                           <span class="h1">Identification MIB</span>
+
+Status of this Memo
+
+   This RFC specifies an IAB standards track protocol for the Internet
+   community, and requests discussion and suggestions for improvements.
+   Please refer to the current edition of the &quot;IAB Official Protocol
+   Standards&quot; for the standardization state and status of this protocol.
+   Distribution of this memo is unlimited.
+
+Abstract
+
+   This memo defines a MIB for use with identifying the users associated
+   with TCP connections.  It provides functionality approximately
+   equivalent to that provided by the protocol defined in <a href="/doc/html/rfc1413">RFC 1413</a> [<a href="#ref-1" title="&quot;Identification Protocol&quot;">1</a>].
+   This document is a product of the TCP Client Identity Protocol
+   Working Group of the Internet Engineering Task Force (IETF).
+
+Table of Contents
+
+   <a href="#section-1">1</a>. The Network Management Framework .......................    <a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Identification MIB .....................................    <a href="#page-3">3</a>
+   <a href="#section-3">3</a>. Definitions ............................................    <a href="#page-3">3</a>
+   <a href="#section-3.1">3.1</a> Conformance Groups ....................................    <a href="#page-3">3</a>
+   <a href="#section-3.2">3.2</a> Textual Conventions ...................................    <a href="#page-3">3</a>
+   <a href="#section-3.3">3.3</a> The Ident information Group ...........................    <a href="#page-3">3</a>
+   <a href="#section-4">4</a>. Security Considerations ................................    <a href="#page-6">6</a>
+   <a href="#section-5">5</a>. References .............................................    <a href="#page-6">6</a>
+   <a href="#section-6">6</a>. Authors&#x27; Addresses .....................................    <a href="#page-7">7</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">St. Johns &amp; Rose                                                [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1414">RFC 1414</a>                   Identification MIB              February 1993</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  The Network Management Framework</span>
+
+   The Internet-standard Network Management Framework consists of three
+   components.  They are:
+
+      STD 16/RFC 1155 [<a href="#ref-2" title="&quot;Structure and Identification of Management Information for TCP/IP-based internets&quot;">2</a>] which defines the SMI, the mechanisms used for
+      describing and naming objects for the purpose of management.  STD
+      16/RFC 1212 [<a href="#ref-3" title="&quot;Concise MIB Definitions&quot;">3</a>] defines a more concise description mechanism,
+      which is wholly consistent with the SMI.
+
+      STD 17/RFC 1213 [<a href="#ref-4" title="&quot;Management Information Base for Network Management of TCP/IP-based internets&quot;">4</a>] which defines MIB-II, the core set of managed
+      objects for the Internet suite of protocols.
+
+      STD 15/RFC 1157 [<a href="#ref-5" title="&quot;Simple Network Management Protocol&quot;">5</a>] which defines the SNMP, the protocol used for
+      network access to managed objects.
+
+   The Framework permits new objects to be defined for the purpose of
+   experimentation and evaluation.
+
+   Managed objects are accessed via a virtual information store, termed
+   the Management Information Base or MIB.  Within a given MIB module,
+   objects are defined using <a href="/doc/html/rfc1212">RFC 1212</a>&#x27;s OBJECT-TYPE macro.  At a
+   minimum, each object has a name, a syntax, an access-level, and an
+   implementation-status.
+
+   The name is an object identifier, an administratively assigned name,
+   which specifies an object type.  The object type together with an
+   object instance serves to uniquely identify a specific instantiation
+   of the object.  For human convenience, we often use a textual string,
+   termed the object descriptor, to also refer to the object type.
+
+   The syntax of an object type defines the abstract data structure
+   corresponding to that object type.  The ASN.1 [<a href="#ref-6" title=" International Organization for Standardization">6</a>] language is used
+   for this purpose.  However, <a href="/doc/html/rfc1155">RFC 1155</a> purposely restricts the ASN.1
+   constructs which may be used.  These restrictions are explicitly made
+   for simplicity.
+
+   The access-level of an object type defines whether it makes &quot;protocol
+   sense&quot; to read and/or write the value of an instance of the object
+   type.  (This access-level is independent of any administrative
+   authorization policy.)
+
+   The implementation-status of an object type indicates whether the
+   object is mandatory, optional, obsolete, or deprecated.
+
+
+
+
+
+
+
+<span class="grey">St. Johns &amp; Rose                                                [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1414">RFC 1414</a>                   Identification MIB              February 1993</span>
+
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Identification MIB</span>
+
+   The Identification MIB defines a uniform set of objects useful for
+   identifying users associated with TCP connections.  End-systems which
+   support TCP may, at their option, implement this MIB.  However,
+   administrators should read <a href="#section-4">Section 4</a> (&quot;Security Considerations&quot;)
+   before enabling these MIB objects.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Definitions</span>
+
+          <a href="/doc/html/rfc1414">RFC1414</a>-MIB DEFINITIONS ::= BEGIN
+
+          IMPORTS
+              OBJECT-TYPE
+                  FROM <a href="/doc/html/rfc1212">RFC-1212</a>
+              tcpConnLocalAddress, tcpConnLocalPort,
+              tcpConnRemAddress, tcpConnRemPort
+                      FROM <a href="/doc/html/rfc1213">RFC1213</a>-MIB;
+
+
+          ident   OBJECT IDENTIFIER ::= { mib-2 24 }
+
+
+          -- conformance groups
+
+          identInfo       OBJECT IDENTIFIER ::= { ident 1 }
+
+
+          -- textual conventions
+
+          -- none
+
+          -- the ident information system group
+          --
+          -- implementation of this group is mandatory
+
+          identTable OBJECT-TYPE
+                  SYNTAX  SEQUENCE OF IdentEntry
+                  ACCESS  not-accessible
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;A table containing user information for TCP
+                      connections.
+
+                      Note that this table contains entries for all TCP
+                      connections on a managed system.  The
+                      corresponding instance of tcpConnState (defined in
+                      MIB-II) indicates the state of a particular
+
+
+
+<span class="grey">St. Johns &amp; Rose                                                [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1414">RFC 1414</a>                   Identification MIB              February 1993</span>
+
+
+                      connection.&quot;
+                  ::= { identInfo 1 }
+
+          identEntry OBJECT-TYPE
+                  SYNTAX  IdentEntry
+                  ACCESS  not-accessible
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;User information about a particular TCP
+                      connection.&quot;
+                  INDEX   { tcpConnLocalAddress, tcpConnLocalPort,
+                            tcpConnRemAddress, tcpConnRemPort }
+                  ::= { identTable 1 }
+
+          IdentEntry ::=
+              SEQUENCE {
+                  identStatus     INTEGER,
+                  identOpSys      OCTET STRING,
+                  identCharset    OCTET STRING,
+                  identUserid     OCTET STRING,
+                  identMisc       OCTET STRING
+              }
+
+          identStatus OBJECT-TYPE
+                  SYNTAX  INTEGER {
+                              noError(1),
+                              unknownError(2)
+                          }
+                  ACCESS  read-only
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;Indicates whether user information for the
+                      associated TCP connection can be determined.  A
+                      value of `noError(1)&#x27; indicates that user
+                      information is available.  A value of
+                      `unknownError(2)&#x27; indicates that user information
+                      is not available.&quot;
+                  ::= { identEntry 1 }
+
+          identOpSys OBJECT-TYPE
+                  SYNTAX  OCTET STRING (SIZE(0..40))
+                  ACCESS  read-only
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;Indicates the type of operating system in use.
+                      In addition to identifying an operating system,
+                      each assignment made for this purpose also
+                      (implicitly) identifies the textual format and
+
+
+
+<span class="grey">St. Johns &amp; Rose                                                [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc1414">RFC 1414</a>                   Identification MIB              February 1993</span>
+
+
+                      maximum size of the corresponding identUserid and
+                      identMisc objects.
+
+                      The legal values for the `indentOpSys&#x27; strings
+                      are those listed in the SYSTEM NAMES section of
+                      the most recent edition of the ASSIGNED NUMBERS
+                      RFC [<a href="#ref-8" title="&quot;Assigned Numbers&quot;">8</a>].&quot;
+                  ::= { identEntry 2 }
+
+
+          identCharset OBJECT-TYPE
+                  SYNTAX  OCTET STRING (SIZE(0..40))
+                  ACCESS  read-only
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;Indicates the repertoire of the corresponding
+                      identUserid and identMisc objects.
+
+                      The legal values for the `identCharset&#x27; strings
+                      are those listed in the CHARACTER SET section of
+                      the most recent edition of the ASSIGNED NUMBERS
+                      RFC [<a href="#ref-8" title="&quot;Assigned Numbers&quot;">8</a>].&quot;
+                  ::= { identEntry 3 }
+
+          identUserid OBJECT-TYPE
+                  SYNTAX  OCTET STRING (SIZE (0..255))
+                  ACCESS  read-only
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;Indicates the user&#x27;s identity.  Interpretation of
+                      this object requires examination of the
+                      corresponding value of the identOpSys and
+                      identCharset objects.&quot;
+                  ::= { identEntry 4 }
+
+          identMisc OBJECT-TYPE
+                  SYNTAX  OCTET STRING (SIZE (0..255))
+                  ACCESS  read-only
+                  STATUS  mandatory
+                  DESCRIPTION
+                      &quot;Indicates miscellaneous information about the
+                      user.  Interpretation of this object requires
+                      examination of the corresponding value of the
+                      identOpSys and identCharset objects.&quot;
+                  ::= { identEntry 5 }
+
+
+          END
+
+
+
+<span class="grey">St. Johns &amp; Rose                                                [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc1414">RFC 1414</a>                   Identification MIB              February 1993</span>
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   The information available through this MIB is at most as trustworthy
+   as the host providing it OR the organization operating the host.  For
+   example, a PC in an open lab has few if any controls on it to prevent
+   a user from having an SNMP query return any identifier the user
+   wants.  Likewise, if the host has been compromised the information
+   returned may be completely erroneous and misleading.
+
+   This portion of the MIB space should only be used to gain hints as to
+   who &quot;owns&quot; a particular TCP connection -- information returned should
+   NOT be considered authoritative for at least the reasons described
+   above.  At best, this MIB provides some additional auditing
+   information with respect to TCP connections.  At worse it can provide
+   misleading, incorrect or maliciously incorrect information.
+
+   The use of the information contained in this MIB for other than
+   auditing or normal network management functions is strongly
+   discouraged.  Specifically, using information from this MIB space to
+   make access control decisions - either as the primary method (i.e.,
+   no other checks) or as an adjunct to other methods may result in a
+   weakening of normal system security.
+
+   This MIB provides access to information about users, entities,
+   objects or processes which some systems might normally consider
+   private.  The information accessible through this MIB is a rough
+   analog of the CallerID services provided by some phone companies and
+   many of the same privacy consideration and arguments that apply to
+   CallerID service apply to this MIB space.  If you wouldn&#x27;t run a
+   &quot;finger&quot; server [<a href="#ref-7" title="&quot;The Finger User Information Protocol&quot;">7</a>] due to privacy considerations, you might not want
+   to provide access to this MIB space on a general basis.  Access to
+   this portion of the MIB tree may be controlled under the normal
+   methods available through SNMP agent implementations.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  References</span>
+
+   [<a id="ref-1">1</a>] St. Johns, M., &quot;Identification Protocol&quot;, <a href="/doc/html/rfc1413">RFC 1413</a>, US Department
+       of Defense, February 1993.
+
+   [<a id="ref-2">2</a>] Rose M., and K. McCloghrie, &quot;Structure and Identification of
+       Management Information for TCP/IP-based internets&quot;, STD 16, <a href="/doc/html/rfc1155">RFC</a>
+       <a href="/doc/html/rfc1155">1155</a>, Performance Systems International, Hughes LAN Systems, May
+       1990.
+
+   [<a id="ref-3">3</a>] Rose, M., and K. McCloghrie, Editors, &quot;Concise MIB Definitions&quot;,
+       STD 16, <a href="/doc/html/rfc1212">RFC 1212</a>, Performance Systems International, Hughes LAN
+       Systems, March 1991.
+
+
+
+
+<span class="grey">St. Johns &amp; Rose                                                [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc1414">RFC 1414</a>                   Identification MIB              February 1993</span>
+
+
+   [<a id="ref-4">4</a>] McCloghrie K., and M. Rose, Editors, &quot;Management Information Base
+       for Network Management of TCP/IP-based internets&quot;, STD 17, <a href="/doc/html/rfc1213">RFC</a>
+       <a href="/doc/html/rfc1213">1213</a>, Performance Systems International, March 1991.
+
+   [<a id="ref-5">5</a>] Case, J., Fedor, M., Schoffstall, M., and J. Davin, &quot;Simple
+       Network Management Protocol&quot;, STD 15, <a href="/doc/html/rfc1157">RFC 1157</a>, SNMP Research,
+       Performance Systems International, Performance Systems
+       International, MIT Laboratory for Computer Science, May 1990.
+
+   [<a id="ref-6">6</a>] Information processing systems - Open Systems Interconnection -
+       Specification of Abstract Syntax Notation One (ASN.1),
+       International Organization for Standardization, International
+       Standard 8824, December 1987.
+
+   [<a id="ref-7">7</a>] Zimmerman, D., &quot;The Finger User Information Protocol&quot;, <a href="/doc/html/rfc1288">RFC 1288</a>,
+       Center for Discrete Mathematics and Theoretical Computer Science,
+       December 1991.
+
+   [<a id="ref-8">8</a>] Reynolds, J., and J. Postel, &quot;Assigned Numbers&quot;, STD 2, <a href="/doc/html/rfc1340">RFC 1340</a>,
+       USC/Information Sciences Institute, July 1992.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>. Authors&#x27; Addresses</span>
+
+       Michael C. St. Johns
+       U.S. Department of Defense
+       DARPA/CSTO
+       3701 N. Fairfax Dr
+       Arlington, VA 22203
+
+       Phone: (703) 696-2271
+       EMail: stjohns@DARPA.MIL
+
+
+       Marshall T. Rose
+       Dover Beach Consulting, Inc.
+       420 Whisman Court
+       Mountain View, CA 94043-2186
+
+       Phone: (415) 968-1052
+       EMail: mrose@dbc.mtview.ca.us
+
+
+
+
+
+
+
+
+
+
+
+St. Johns &amp; Rose                                                [Page 7]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

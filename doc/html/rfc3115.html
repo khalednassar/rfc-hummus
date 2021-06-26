@@ -1,0 +1,740 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc3115
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-mobileip-vendor-ext/">
+  <meta name="description" content="Mobile IP Vendor/Organization-Specific Extensions (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc3115.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc3115.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc3115.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc3115/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc3115/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/mobileip/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-mobileip-vendor-ext@ietf.org?subject=draft-ietf-mobileip-vendor-ext" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-mobileip-vendor-ext-11.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-mobileip-vendor-ext-11.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-mobileip-vendor-ext-11.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-mobileip-vendor-ext-11">draft-ietf-mobileip-vendor-ext-11</a>                Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                         G. Dommety
+Request for Comments: 3115                                      K. Leung
+Obsoletes: <a href="/doc/html/rfc3025">3025</a>                                            cisco Systems
+Category: Standards Track                                     April 2001
+
+
+           <span class="h1">Mobile IP Vendor/Organization-Specific Extensions</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+RFC Editor Note:
+
+   This memo corrects discrepancies between the values assigned for
+   CVSE-TYPE-NUMBER and NVSE-TYPE-NUMBER in <a href="/doc/html/rfc3025">RFC 3025</a> and in the Internet
+   Assigned Numbers Authority&#x27;s (IANA) repository.  The difference in
+   the assigned values are as follows:
+
+   CVSE-TYPE-NUMBER = 37 in <a href="/doc/html/rfc3025">RFC 3025</a>
+   CVSE-TYPE-NUMBER = 38 in IANA (Under Mobile IP numbers)
+
+   NVSE-TYPE-NUMBER =  133 in <a href="/doc/html/rfc3025">RFC 3025</a>
+   NVSE-TYPE-NUMBER =  134 in IANA (Under Mobile IP numbers)
+
+   This memo obsoletes <a href="/doc/html/rfc3025">RFC 3025</a>, since the current implementations
+   follow the IANA assignments.
+
+Abstract
+
+   This document defines two new extensions to Mobile IP.  These
+   extensions will facilitate equipment vendors and organizations to
+   make specific use of these extensions as they see fit for research or
+   deployment purposes.
+
+
+
+
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   Current specification of Mobile IP [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>] does not allow for
+   organizations and vendors to include organization/vendor-specific
+   information in the Mobile IP messages.  With the imminent wide scale
+   deployment of Mobile IP it is useful to have vendor or organization-
+   Specific Extensions to support this capability.  This document
+   defines two extensions that can be used for making organization
+   specific extensions by vendors/organizations for their own specific
+   purposes.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>. Specification Language</span>
+
+   The keywords &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in <a href="/doc/html/rfc2119">RFC 2119</a> [<a href="#ref-3" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">3</a>].
+
+   In addition, the following words are used to signify the requirements
+   of the specification.
+
+   silently discard
+            The implementation discards the datagram without further
+            processing, and without indicating an error to the sender.
+            The implementation SHOULD provide the capability of logging
+            the error, including the contents of the discarded datagram,
+            and SHOULD record the event in a statistics counter.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. Vendor/Organization Specific Extensions</span>
+
+   Two Vendor/Organization Specific Extensions are described, Critical
+   (CVSE) and Normal (NVSE) Vendor/Organization Specific Extensions.
+   The basic differences between the Critical and Normal Extensions are
+   that when the Critical extension is encountered but not recognized,
+   the message containing the extension MUST be silently discarded,
+   whereas when a Normal Vendor/Organization Specific Extension is
+   encountered but not recognized, the extension SHOULD be ignored, but
+   the rest of the Extensions and message data MUST still be processed.
+   Another difference between the two is that Critical
+   Vendor/Organization Extension has a length field of two octets and
+   the NVSE has a length field of only one octet.
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>. Critical Vendor/Organization Specific Extension (CVSE)</span>
+
+   The format of this extension is as shown below.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Type      |   Reserved    |            Length             |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                        Vendor/Org-ID                          |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |          Vendor-CVSE-Type     |    Vendor-CVSE-Value ...
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+         Figure 1: Critical Vendor/Organization Specific Extension
+
+   Type       CVSE-TYPE-NUMBER 38
+
+   Reserved   Reserved for future use.  MUST be set to 0 on sending,
+              MUST be ignored on reception.
+
+   Length     Length in bytes of this extension, not including the Type
+              and Length bytes.
+
+   Vendor/Org-ID
+              The high-order octet is 0 and the low-order 3 octets are
+              the SMI Network Management Private Enterprise Code of the
+              Vendor in network byte order, as defined in the Assigned
+              Numbers RFC [<a href="#ref-2" title="&quot;Assigned Numbers&quot;">2</a>].
+
+   Vendor-CVSE-Type
+              Indicates the particular type of Vendor-CVSE-Extension.
+              The administration of the Vendor-CVSE-Types is done by the
+              Vendor.
+
+   Vendor-CVSE-Value
+              Vendor/organization specific data of this Vendor-CVSE-
+              Extension.  These data fields may be published in future
+              RFCs.  The Vendor-CVSE-Value is zero or more octets.  The
+              length of this field can be computed from the Length Field
+              Value.
+
+   If an implementation does not recognize the CVSE, according to <a href="/doc/html/rfc2002">RFC</a>
+   <a href="/doc/html/rfc2002">2002</a> [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>], the entire packet is to be silently dropped.
+
+
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>. Normal Vendor/Organization Specific Extension (NVSE)</span>
+
+   The format of this extension is as shown below.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Type      |    Length     |               Reserved        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                             Vendor/Org-ID                     |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |    Vendor-NVSE-Type           | Vendor-NVSE-Value ...
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+          Figure 2: Normal Vendor/Organization Specific Extension
+
+   Type       NVSE-TYPE-NUMBER 134
+
+   Length     Length in bytes of this extension, not including the Type
+              and Length bytes.
+
+   Reserved   Reserved for future use.  To be set to 0.
+
+   Vendor/Org-ID
+              The high-order octet is 0 and the low-order 3 octets are
+              the SMI Network Management Private Enterprise Code of the
+              Vendor in network byte order, as defined in the Assigned
+              Numbers RFC [<a href="#ref-2" title="&quot;Assigned Numbers&quot;">2</a>].
+
+   Vendor-NVSE-Type Indicates the particular type of Vendor-NVSE-
+              Extension. The administration of the Vendor-NVSE-Types is
+              done by the Vendor.
+
+   Vendor-NVSE-Value
+              Vendor/organization specific data of this Vendor-NVSE-
+              Extension.  These data fields may be published in future
+              RFCs.  The Vendor-NVSE-Value is zero or more octets.  The
+              length  of this field can be computed from the Length
+              Field Value.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a> Vendor/Organization Specific Extensions Processing Considerations</span>
+
+   When a Mobile IP entity receives a registration request message (or
+   any other request/update message) with an extension of type CVSE-
+   TYPE-NUMBER and recognizes it, but the extension contains an
+   unknown/unsupported vendor ID or Vendor-CVSE-Type, a registration
+   reject (or the appropriate deny message) MUST be sent with the error
+   code to indicate that the registration was rejected due to the
+   presence of an unknown CVSE.
+
+   When a Mobile IP entity receives a registration reply (or any other
+   mobile IP reply/acknowledgement message) with an extension of type
+   CVSE-TYPE-NUMBER and recognizes it, but the extensions contains an
+   unknown/unsupported vendor ID or Vendor-CVSE-Type, the processing is
+   performed as described below.
+
+   1. If the Mobile IP entity is a transit node for the reply (i.e.,
+   this entity processes and sends the registration reply to another
+   entity) a registration reject (or the appropriate deny message) MUST
+   be sent with the error code to indicate that the registration was
+   rejected due to the presence of an unknown CVSE.  For example, FA
+   when it receives an unknown CVSE in a registration reply from the HA,
+   should send a registration reject to the MN.
+
+   2. If the Mobile IP entity is not a transit node for the reply, the
+   reply is treated as a reject (or the appropriate deny message) due to
+   the presence of an unknown CVSE.
+
+   While designing enhancements wherein a CVSE is included in a reply
+   message, it should noted that the reply message could be discarded by
+   the mobile IP entity processing this message.  Enhancements that
+   include a CVSE should take this into consideration during design.
+
+   When a Mobile IP entity receives a mobile IP related message
+   (registration request/reply, advertisement/solicitation, etc.) with
+   an extension of type NVSE-TYPE-NUMBER and recognizes it, but the
+   extension contains an unknown/unsupported vendor ID or Vendor-NVSE-
+   Type, the entire extension is skipped.
+
+   NOTE that according to <a href="/doc/html/rfc2002">RFC 2002</a> [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>], when an extension numbered
+   within the range 0 through 127 is encountered in a registration
+   message but not recognized, the message containing that extension
+   MUST be silently discarded.  This document is compliant with the
+   above specification and specifies the action if the extension of type
+   CVSE-TYPE-NUMBER is encountered and recognized, but does not support
+   the vendor ID or the vendor type extension within.
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a> Error Codes</span>
+
+   The following error codes are defined.
+
+   Registration denied by the Foreign agent:
+
+        ERROR-FA-1 100: Unsupported Vendor-ID or
+        unable to interpret Vendor-CVSE-Type in the CVSE sent by the
+        Mobile Node to the Foreign Agent.
+
+        ERROR-FA-2 101: Unsupported Vendor-ID or
+        unable to interpret Vendor-CVSE-Type in the CVSE sent by the
+        Home Agent to the Foreign Agent.
+
+   Registration denied by the Home agent:
+
+        ERROR-HA-1 140: Unsupported Vendor-ID or
+        unable to interpret Vendor-CVSE-Type in the CVSE sent by the
+        Mobile Node to the Home Agent.
+
+        ERROR-HA-2 141: Unsupported Vendor-ID or
+        unable to interpret Vendor-CVSE-Type in the CVSE sent by the
+        Foreign Agent to the Home Agent.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>. Restrictions</span>
+
+   Multiple TLV&#x27;s with the types CVSE-TYPE-NUMBER and NVSE-TYPE-NUMBER
+   can be included in a message.  TLVs with types CVSE-TYPE-NUMBER and
+   NVSE-TYPE-NUMBER can be placed anywhere after the fixed portion of
+   the Mobile IP message.  These TLVs are expected to be protected by
+   the corresponding authenticator as necessary.  Ordering of these
+   TLV&#x27;s should not be modified by intermediate nodes.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>. IANA Considerations</span>
+
+   The Critical Vendor/Organization Specific Extension (CVSE) as defined
+   in <a href="#section-2.1">Section 2.1</a> and Normal Vendor/Organization Specific Extension
+   (NVSE) as defined in <a href="#section-2.2">section 2.2</a> are proposed new extensions to the
+   Mobile IP protocol, defined in <a href="/doc/html/rfc2002">RFC 2002</a> [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>] and extended in <a href="/doc/html/rfc2356">RFC 2356</a>
+   [<a href="#ref-5" title="&quot;Sun&#x27;s SKIP Firewall Traversal for Mobile IP&quot;">5</a>].
+
+   IANA has assigned a Type value of CVSE-TYPE-NUMBER for the Critical
+   Vendor/Organization Specific Extension (CVSE), and a Type value of
+   NVSE-TYPE-NUMBER for the Normal Vendor/Organization Specific
+   Extension (NVSE).  The numbers CVSE-TYPE-NUMBER and NVSE-TYPE-NUMBER
+   for the CVSE and the NVSE are taken from the numbering space defined
+   for Mobile IP registration extensions [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>].
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+   IANA has assigned new Foreign Agent Error Codes, ERROR-FA-1 and
+   ERROR-FA-2 taken from the numbering space defined for Mobile IP
+   Foreign Agent error codes [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>].  IANA has also assigned new Home Agent
+   Error Codes, ERROR-HA-1 and ERROR-HA-2 taken from the numbering space
+   defined for Mobile IP Home Agent error codes [<a href="#ref-1" title="&quot;IP Mobility Support&quot;">1</a>].
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>. Security Considerations</span>
+
+   This document assumes that the Mobile IP messages are authenticated
+   using a method defined by the Mobile IP protocol.  This document does
+   not impose any additional requirements on Mobile IP messages from a
+   security point of view.  So this is not expected to be a security
+   issue.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>. Acknowledgments</span>
+
+   The authors would like to thank TR45.4 WG, TR45.6 WG, Basavaraj
+   Patil, Phil Roberts, Jouni Malinen, and Patrice Calhoun for their
+   useful discussions.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>. References</span>
+
+   [<a id="ref-1">1</a>] Perkins, C., &quot;IP Mobility Support&quot;, <a href="/doc/html/rfc2002">RFC 2002</a>, October 1996.
+
+   [<a id="ref-2">2</a>] Reynolds, J. and J. Postel, &quot;Assigned Numbers&quot;, STD 2, <a href="/doc/html/rfc1700">RFC 1700</a>,
+       October 1994.
+
+   [<a id="ref-3">3</a>] Bradner, S., &quot;Key words for use in RFCs to Indicate Requirement
+       Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-4">4</a>] Montenegro, G., &quot;Reverse Tunneling for Mobile IP&quot;, <a href="/doc/html/rfc2344">RFC 2344</a>, May
+       1998.
+
+   [<a id="ref-5">5</a>] Montenegro, G. and V. Gupta, &quot;Sun&#x27;s SKIP Firewall Traversal for
+       Mobile IP&quot;, <a href="/doc/html/rfc2356">RFC 2356</a>, June 1998.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>. Authors&#x27; Addresses</span>
+
+   Gopal Dommety
+   Cisco Systems, Inc.
+   170 West Tasman Drive
+   San Jose, CA 95134
+
+   EMail: gdommety@cisco.com
+
+
+   Kent Leung
+   Cisco Systems, Inc.
+   170 West Tasman Drive
+   San Jose, CA 95134
+
+   EMail: kleung@cisco.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Dommety &amp; Leung             Standards Track                     [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc3115">RFC 3115</a>          Mobile IP Vendor Specific Extensions        April 2001</span>
+
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>. Full Copyright Statement</span>
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dommety &amp; Leung             Standards Track                     [Page 9]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

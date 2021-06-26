@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1137
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc1137/">
+  <meta name="description" content="Mapping between full RFC 822 and RFC 822 with restricted encoding (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bggrey"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1137.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1137.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1137.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1137/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1137/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc1137@ietf.org?subject=rfc1137" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc1137-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc1137-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc1137-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                Historic</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                           S. Kille
+Request for Comments:  1137                    University College London
+Updates:  RFC <a href="/doc/html/rfc976">976</a>                                          December 1989
+
+
+             <span class="h1">Mapping Between Full <a href="/doc/html/rfc822">RFC 822</a> and <a href="/doc/html/rfc822">RFC 822</a> with</span>
+                          <span class="h1">Restricted Encoding</span>
+
+Status of this Memo
+
+   This RFC suggests an electronic mail protocol mapping for the
+   Internet community and UK Academic Community, and requests discussion
+   and suggestions for improvements.  This memo does not specify an
+   Internet standard.  Distribution of this memo is unlimited.
+
+   This document describes a set of address mappings which will enable
+   interworking between systems operating <a href="/doc/html/rfc822">RFC 822</a> protocols in a general
+   manner, and those environments where transfer of <a href="/doc/html/rfc822">RFC 822</a> messages
+   restricts the character set which can be used in addresses.  UUCP
+   transfer of <a href="/doc/html/rfc822">RFC 822</a> messages is an important case of this
+   [<a href="#ref-Crocker82a">Crocker82a</a>, <a href="#ref-Horton86a">Horton86a</a>].
+
+Specification
+
+   This document specifies a mapping between two protocols.  This
+   specification should be used when this mapping is performed on the
+   Internet or in the UK Academic Community. This specification may be
+   modified in the light of implementation experience, but no
+   substantial changes are expected.
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Some mail networks which use <a href="/doc/html/rfc822">RFC 822</a> cannot support the full
+   character set required by all aspects of <a href="/doc/html/rfc822">RFC 822</a>.  This document
+   describes a symmetrical mapping between full <a href="/doc/html/rfc822">RFC 822</a> addressing, and
+   a form for use on these networks.  Any addresses within the networks
+   will not use the full <a href="/doc/html/rfc822">RFC 822</a> addressing, and so any addresses
+   encoded according to this standard will always represent remote
+   addresses.  This document derives from a mapping originally specified
+   in <a href="/doc/html/rfc987">RFC 987</a> [<a href="#ref-Kille86a">Kille86a</a>], where the domain of application was more
+   restricted.  Two terms are now defined:
+
+   Full <a href="/doc/html/rfc822">RFC 822</a>
+
+      This implies full support for transfer to and from any legal <a href="/doc/html/rfc822">RFC</a>
+      <a href="/doc/html/rfc822">822</a> address.  In particular, the quoted-string form of local-part
+      must be supported (e.g., &lt;&quot;Joe Soap&quot;@foo.bar&gt;).
+
+
+
+
+<span class="grey">Kille                                                           [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1137">RFC 1137</a>           E-Mail Address and Quoted Strings       December 1989</span>
+
+
+   Restricted <a href="/doc/html/rfc822">RFC 822</a>
+
+      This implies a subset of <a href="/doc/html/rfc822">RFC 822</a> addressing.  The quoted-string
+      form of local-part need not be supported.  Standard UUCP mail
+      transfer falls into this category.  Restricted <a href="/doc/html/rfc822">RFC 822</a> is
+      undesirable, but in practice it exists in many places.
+
+      When a message is transferred from full <a href="/doc/html/rfc822">RFC 822</a> to restricted <a href="/doc/html/rfc822">RFC</a>
+      <a href="/doc/html/rfc822">822</a>, and address forms used in full <a href="/doc/html/rfc822">RFC 822</a> are involved, message
+      loss may occur (e.g., it may not be possible to return an error
+      message).  This RFC describes a quoting mechanism which may be
+      used to map between full <a href="/doc/html/rfc822">RFC 822</a> and restricted <a href="/doc/html/rfc822">RFC 822</a>, in order
+      to alleviate this problem.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Encoding</span>
+
+   The <a href="/doc/html/rfc822">RFC 822</a> EBNF meta notation is used.  Any EBNF definitions taken
+   from <a href="/doc/html/rfc822">RFC 822</a> are prefixed by the string &quot;822.&quot;.
+
+   The following EBNF is specified.
+
+      atom-encoded    = *( a-char / a-encoded-char )
+      a-char          = &lt;any CHAR except specials (other than &quot;@&quot;
+                              and &quot;.&quot;), SPACE,
+                              CTL, &quot;_&quot;, and &quot;#&quot;&gt;
+      a-encoded-char  = &quot;_&quot;                   ; (space)
+                      / &quot;#u#&quot;                 ; (_)
+                      / &quot;#l#&quot;                 ; &lt;(&gt;
+                      / &quot;#r#&quot;                 ; &lt;)&gt;
+                      / &quot;#m#&quot;                 ; (,)
+                      / &quot;#c#&quot;                 ; (:)
+                      / &quot;#b#&quot;                 ; (\)
+                      / &quot;#h#&quot;                 ; (#)
+                      / &quot;#e#&quot;                 ; (=)
+                      / &quot;#s#&quot;                 ; (/)
+                      / &quot;#&quot; 3DIGIT &quot;#&quot;
+
+   The 822.3DIGIT in EBNF.a-encoded-char must have range 0-127, and is
+   interpreted in decimal as the corresponding ASCII character.  The
+   choice of special abbreviations (as opposed to decimal encoding)
+   provided is based on the manner in which this mapping is most
+   frequently used.  There are special encodings for each of the
+   PrintableString characters not in EBNF.a-char, except &quot;.&quot;.  Space is
+   given a single character encoding, due to its (expected) frequency of
+   use, and backslash as the <a href="/doc/html/rfc822">RFC 822</a> single quote character.
+
+   This mapping is used to transform between the two forms of 822.word:
+   822.quoted-string (restricted <a href="/doc/html/rfc822">RFC 822</a>) and 822.atom (restricted RFC
+
+
+
+<span class="grey">Kille                                                           [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1137">RFC 1137</a>           E-Mail Address and Quoted Strings       December 1989</span>
+
+
+   822).  To encode (full <a href="/doc/html/rfc822">RFC 822</a> -&gt; restricted <a href="/doc/html/rfc822">RFC 822</a>), first remove
+   any quoting from any 822.quoted-string.  Then, all EBNF.a-char are
+   used directly and all other CHAR are encoded as EBNF.a-encoded-char.
+
+   To decode (restricted <a href="/doc/html/rfc822">RFC 822</a> -&gt; full <a href="/doc/html/rfc822">RFC 822</a>): if the address can be
+   parsed as EBNF.encoded-atom reverse the previous mapping.  If it
+   cannot be so parsed, map the characters directly.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Application</span>
+
+   This mapping should be used for all addresses, at the MTS or Header
+   level.  It is applied to the 822.local-part of the addresses.  For
+   example:
+
+      Full <a href="/doc/html/rfc822">RFC 822</a>                       Restricted <a href="/doc/html/rfc822">RFC 822</a>
+
+      Steve.Kille@cs.ucl.ac.uk     &lt;-&gt;   Steve.Kille@cs.ucl.ac.uk
+      &quot;Steve Kille&quot;@cs.ucl.ac.uk   &lt;-&gt;   Steve_Kille@cs.ucl.ac.uk
+      &quot;argle#~&quot;@blargle            &lt;-&gt;   argle#h##126#@blargle
+
+References
+
+   [<a id="ref-Crocker82a">Crocker82a</a>]  Crocker, D., &quot;Standard of the Format of ARPA Internet
+   Text Messages&quot;, <a href="/doc/html/rfc822">RFC 822</a>, August 1982.
+
+   [<a id="ref-Horton86a">Horton86a</a>]  Horton, M., &quot;UUCP Mail Interchange Format Standard&quot;,
+   <a href="/doc/html/rfc976">RFC 976</a>, February 1986.
+
+   [<a id="ref-Kille86a">Kille86a</a>]  Kille, S., &quot;Mapping Between X.400 and <a href="/doc/html/rfc822">RFC 822</a>&quot;,
+   UK Academic Community Report (MG.19), <a href="/doc/html/rfc987">RFC 987</a>, June 1986.
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Author&#x27;s Address
+
+   Steve Kille
+   University College London
+   Gower Street
+   WC1E 6BT
+   England
+
+   Phone: +44-1-380-7294
+
+   EMail: S.Kille@Cs.Ucl.AC.UK
+
+
+
+
+
+Kille                                                           [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,545 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8833
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-rtcweb-alpn/">
+  <meta name="description" content="Application-Layer Protocol Negotiation (ALPN) for WebRTC (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8833.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8833.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8833.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8833.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8833/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8833/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/rtcweb/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-rtcweb-alpn@ietf.org?subject=draft-ietf-rtcweb-alpn" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-rtcweb-alpn-04.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-rtcweb-alpn-04.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-rtcweb-alpn-04.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-rtcweb-alpn-04">draft-ietf-rtcweb-alpn-04</a>                        Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        M. Thomson
+Request for Comments: 8833                                       Mozilla
+Category: Standards Track                                   January 2021
+ISSN: 2070-1721
+
+
+        <span class="h1">Application-Layer Protocol Negotiation (ALPN) for WebRTC</span>
+
+Abstract
+
+   This document specifies two Application-Layer Protocol Negotiation
+   (ALPN) labels for use with Web Real-Time Communication (WebRTC).  The
+   &quot;webrtc&quot; label identifies regular WebRTC: a DTLS session that is used
+   to establish keys for the Secure Real-time Transport Protocol (SRTP)
+   or to establish data channels using the Stream Control Transmission
+   Protocol (SCTP) over DTLS.  The &quot;c-webrtc&quot; label describes the same
+   protocol, but the peers also agree to maintain the confidentiality of
+   the media by not sharing it with other applications.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8833">https://www.rfc-editor.org/info/rfc8833</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Conventions
+   2.  ALPN Labels for WebRTC
+   3.  Media Confidentiality
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Web Real-Time Communication (WebRTC) [<a href="/doc/html/rfc8825" title="&quot;Overview: Real-Time Protocols for Browser-Based Applications&quot;">RFC8825</a>] uses Datagram
+   Transport Layer Security (DTLS) [<a href="/doc/html/rfc6347" title="&quot;Datagram Transport Layer Security Version 1.2&quot;">RFC6347</a>] to secure all peer-to-peer
+   communications.
+
+   Identifying WebRTC protocol usage with Application-Layer Protocol
+   Negotiation (ALPN) [<a href="/doc/html/rfc7301" title="&quot;Transport Layer Security (TLS) Application-Layer Protocol Negotiation Extension&quot;">RFC7301</a>] enables an endpoint to positively
+   identify WebRTC uses and distinguish them from other DTLS uses.
+
+   Different WebRTC uses can be advertised and behavior can be
+   constrained to what is appropriate to a given use.  In particular,
+   this allows for the identification of sessions that require
+   confidentiality protection from the application that manages the
+   signaling for the session.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="/doc/html/bcp14">BCP</a>
+   <a href="/doc/html/bcp14">14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  ALPN Labels for WebRTC</span>
+
+   The following identifiers are defined for use in ALPN:
+
+   webrtc:  The DTLS session is used to establish keys for the Secure
+      Real-time Transport Protocol (SRTP) -- known as DTLS-SRTP -- as
+      described in [<a href="/doc/html/rfc5764" title="&quot;Datagram Transport Layer Security (DTLS) Extension to Establish Keys for the Secure Real-time Transport Protocol (SRTP)&quot;">RFC5764</a>].  The DTLS record layer is used for WebRTC
+      data channels [<a href="/doc/html/rfc8831" title="&quot;WebRTC Data Channels&quot;">RFC8831</a>].
+
+   c-webrtc:  The DTLS session is used for confidential WebRTC, where
+      peers agree to maintain the confidentiality of the media, as
+      described in <a href="#section-3">Section 3</a>.  The confidentiality protections ensure
+      that media is protected from other applications, but the
+      confidentiality protections do not extend to messages on data
+      channels.
+
+   Both identifiers describe the same basic protocol: a DTLS session
+   that is used to provide keys for an SRTP session in combination with
+   WebRTC data channels.  Either SRTP or data channels could be absent.
+   The data channels send the Stream Control Transmission Protocol
+   (SCTP) [<a href="/doc/html/rfc4960" title="&quot;Stream Control Transmission Protocol&quot;">RFC4960</a>] over the DTLS record layer, which can be multiplexed
+   with SRTP on the same UDP flow.  WebRTC requires the use of
+   Interactive Connectivity Establishment (ICE) [<a href="/doc/html/rfc8445" title="&quot;Interactive Connectivity Establishment (ICE): A Protocol for Network Address Translator (NAT) Traversal&quot;">RFC8445</a>] to establish
+   UDP flow, but this is not covered by the identifier.
+
+   A more thorough definition of what WebRTC entails is included in
+   [<a href="/doc/html/rfc8835" title="&quot;Transports for WebRTC&quot;">RFC8835</a>].
+
+   There is no functional difference between the identifiers except that
+   an endpoint negotiating &quot;c-webrtc&quot; makes a promise to preserve the
+   confidentiality of the media it receives.
+
+   A peer that is not aware of whether it needs to request
+   confidentiality can use either identifier.  A peer in the client role
+   MUST offer both identifiers if it is not aware of a need for
+   confidentiality.  A peer in the server role SHOULD select &quot;webrtc&quot; if
+   it does not prefer either.
+
+   An endpoint that requires media confidentiality might negotiate a
+   session with a peer that does not support this specification.  An
+   endpoint MUST abort a session if it requires confidentiality but does
+   not successfully negotiate &quot;c-webrtc&quot;.  A peer that is willing to
+   accept &quot;webrtc&quot; SHOULD assume that a peer that does not support this
+   specification has negotiated &quot;webrtc&quot; unless signaling provides other
+   information; however, a peer MUST NOT assume that &quot;c-webrtc&quot; has been
+   negotiated unless explicitly negotiated.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Media Confidentiality</span>
+
+   Private communications in WebRTC depend on separating control (i.e.,
+   signaling) capabilities and access to media [<a href="/doc/html/rfc8827" title="&quot;WebRTC Security Architecture&quot;">RFC8827</a>].  In this way,
+   an application can establish a session that is end-to-end
+   confidential, where the ends in question are user agents (or
+   browsers) and not the signaling application.  This allows an
+   application to manage signaling for a session without having access
+   to the media that is exchanged in the session.
+
+   Without some form of indication that is securely bound to the
+   session, a WebRTC endpoint is unable to properly distinguish between
+   a session that requires this confidentiality protection and one that
+   does not.  The ALPN identifier provides that signal.
+
+   A browser is required to enforce this confidentiality protection
+   using isolation controls similar to those used in content cross-
+   origin protections (see the &quot;Origin&quot; section of [<a href="#ref-HTML5" title="&quot;HTML - Living Standard&quot;">HTML5</a>]).  These
+   protections ensure that media is protected from applications, which
+   are not able to read or modify the contents of a protected flow of
+   media.  Media that is produced from a session using the &quot;c-webrtc&quot;
+   identifier MUST only be displayed to users.
+
+   The promise to apply confidentiality protections do not apply to data
+   that is sent using data channels.  Confidential data depends on
+   having both data sources and consumers that are exclusively browser
+   or user based.  No mechanisms currently exist to take advantage of
+   data confidentiality, though some use cases suggest that this could
+   be useful, for example, confidential peer-to-peer file transfer.
+   Alternative labels might be provided in the future to support these
+   use cases.
+
+   This mechanism explicitly does not define a specific authentication
+   method; a WebRTC endpoint that accepts a session with this ALPN
+   identifier MUST respect confidentiality no matter what identity is
+   attributed to a peer.
+
+   RTP middleboxes and entities that forward media or data cannot
+   promise to maintain confidentiality.  Any entity that forwards
+   content, or records content for later access by entities other than
+   the authenticated peer, MUST NOT offer or accept a session with the
+   &quot;c-webrtc&quot; identifier.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   Confidential communications depend on more than just an agreement
+   from browsers.
+
+   Information is not confidential if it is displayed to others than for
+   whom it is intended.  Peer authentication [<a href="/doc/html/rfc8827" title="&quot;WebRTC Security Architecture&quot;">RFC8827</a>] is necessary to
+   ensure that data is only sent to the intended peer.
+
+   This is not a digital rights management mechanism.  A user is not
+   prevented from using other mechanisms to record or forward media.
+   This means that (for example) screen-recording devices, tape
+   recorders, portable cameras, or a cunning arrangement of mirrors
+   could variously be used to record or redistribute media once
+   delivered.  Similarly, if media is visible or audible (or otherwise
+   accessible) to others in the vicinity, there are no technical
+   measures that protect the confidentiality of that media.
+
+   The only guarantee provided by this mechanism and the browser that
+   implements it is that the media was delivered to the user that was
+   authenticated.  Individual users will still need to make a judgment
+   about how their peer intends to respect the confidentiality of any
+   information provided.
+
+   On a shared computing platform like a browser, other entities with
+   access to that platform (i.e., web applications) might be able to
+   access information that would compromise the confidentiality of
+   communications.  Implementations MAY choose to limit concurrent
+   access to input devices during confidential communications sessions.
+
+   For instance, another application that is able to access a microphone
+   might be able to sample confidential audio that is playing through
+   speakers.  This is true even if acoustic echo cancellation, which
+   attempts to prevent this from happening, is used.  Similarly, an
+   application with access to a video camera might be able to use
+   reflections to obtain all or part of a confidential video stream.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   The following two entries have been added to the &quot;TLS Application-
+   Layer Protocol Negotiation (ALPN) Protocol IDs&quot; registry established
+   by [<a href="/doc/html/rfc7301" title="&quot;Transport Layer Security (TLS) Application-Layer Protocol Negotiation Extension&quot;">RFC7301</a>]:
+
+   webrtc:
+      The &quot;webrtc&quot; label identifies mixed media and data communications
+      using SRTP and data channels:
+
+      Protocol:  WebRTC Media and Data
+
+      Identification Sequence:  0x77 0x65 0x62 0x72 0x74 0x63 (&quot;webrtc&quot;)
+
+      Specification:  <a href="/doc/html/rfc8833">RFC 8833</a> (this document)
+
+   c-webrtc:
+      The &quot;c-webrtc&quot; label identifies WebRTC with a promise to protect
+      media confidentiality:
+
+      Protocol:  Confidential WebRTC Media and Data
+
+      Identification Sequence:  0x63 0x2d 0x77 0x65 0x62 0x72 0x74 0x63
+         (&quot;c-webrtc&quot;)
+
+      Specification:  <a href="/doc/html/rfc8833">RFC 8833</a> (this document)
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC5764">RFC5764</a>]  McGrew, D. and E. Rescorla, &quot;Datagram Transport Layer
+              Security (DTLS) Extension to Establish Keys for the Secure
+              Real-time Transport Protocol (SRTP)&quot;, <a href="/doc/html/rfc5764">RFC 5764</a>,
+              DOI 10.17487/RFC5764, May 2010,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5764">https://www.rfc-editor.org/info/rfc5764</a>&gt;.
+
+   [<a id="ref-RFC6347">RFC6347</a>]  Rescorla, E. and N. Modadugu, &quot;Datagram Transport Layer
+              Security Version 1.2&quot;, <a href="/doc/html/rfc6347">RFC 6347</a>, DOI 10.17487/RFC6347,
+              January 2012, &lt;<a href="https://www.rfc-editor.org/info/rfc6347">https://www.rfc-editor.org/info/rfc6347</a>&gt;.
+
+   [<a id="ref-RFC7301">RFC7301</a>]  Friedl, S., Popov, A., Langley, A., and E. Stephan,
+              &quot;Transport Layer Security (TLS) Application-Layer Protocol
+              Negotiation Extension&quot;, <a href="/doc/html/rfc7301">RFC 7301</a>, DOI 10.17487/RFC7301,
+              July 2014, &lt;<a href="https://www.rfc-editor.org/info/rfc7301">https://www.rfc-editor.org/info/rfc7301</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8827">RFC8827</a>]  Rescorla, E., &quot;WebRTC Security Architecture&quot;, <a href="/doc/html/rfc8827">RFC 8827</a>,
+              DOI 10.17487/RFC8827, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8827">https://www.rfc-editor.org/info/rfc8827</a>&gt;.
+
+   [<a id="ref-RFC8831">RFC8831</a>]  Jesup, R., Loreto, S., and M. Tüxen, &quot;WebRTC Data
+              Channels&quot;, <a href="/doc/html/rfc8831">RFC 8831</a>, DOI 10.17487/RFC8831, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8831">https://www.rfc-editor.org/info/rfc8831</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-HTML5">HTML5</a>]    WHATWG, &quot;HTML - Living Standard&quot;, <a href="#section-7.5">Section 7.5</a>, January
+              2021, &lt;<a href="https://html.spec.whatwg.org/#origin">https://html.spec.whatwg.org/#origin</a>&gt;.
+
+   [<a id="ref-RFC4960">RFC4960</a>]  Stewart, R., Ed., &quot;Stream Control Transmission Protocol&quot;,
+              <a href="/doc/html/rfc4960">RFC 4960</a>, DOI 10.17487/RFC4960, September 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4960">https://www.rfc-editor.org/info/rfc4960</a>&gt;.
+
+   [<a id="ref-RFC8445">RFC8445</a>]  Keranen, A., Holmberg, C., and J. Rosenberg, &quot;Interactive
+              Connectivity Establishment (ICE): A Protocol for Network
+              Address Translator (NAT) Traversal&quot;, <a href="/doc/html/rfc8445">RFC 8445</a>,
+              DOI 10.17487/RFC8445, July 2018,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8445">https://www.rfc-editor.org/info/rfc8445</a>&gt;.
+
+   [<a id="ref-RFC8825">RFC8825</a>]  Alvestrand, H., &quot;Overview: Real-Time Protocols for
+              Browser-Based Applications&quot;, <a href="/doc/html/rfc8825">RFC 8825</a>,
+              DOI 10.17487/RFC8825, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8825">https://www.rfc-editor.org/info/rfc8825</a>&gt;.
+
+   [<a id="ref-RFC8835">RFC8835</a>]  Alvestrand, H., &quot;Transports for WebRTC&quot;, <a href="/doc/html/rfc8835">RFC 8835</a>,
+              DOI 10.17487/RFC8835, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8835">https://www.rfc-editor.org/info/rfc8835</a>&gt;.
+
+Author&#x27;s Address
+
+   Martin Thomson
+   Mozilla
+
+   Email: martin.thomson@gmail.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

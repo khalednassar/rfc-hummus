@@ -1,0 +1,517 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8726
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ise-iana-policy/">
+  <meta name="description" content="How Requests for IANA Action Will Be Handled on the Independent Stream (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8726.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8726.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8726.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8726.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8726/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8726/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-ise-iana-policy@ietf.org?subject=draft-ise-iana-policy" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ise-iana-policy-03.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ise-iana-policy-03.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ise-iana-policy-03.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ise-iana-policy-03">draft-ise-iana-policy-03</a>                             Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Independent Submission                                         A. Farrel
+Request for Comments: 8726                Independent Submissions Editor
+Category: Informational                                    November 2020
+ISSN: 2070-1721
+
+
+ <span class="h1">How Requests for IANA Action Will Be Handled on the Independent Stream</span>
+
+Abstract
+
+   The Internet Assigned Numbers Authority (IANA) maintains registries
+   to track code points used by protocols such as those defined by the
+   IETF and documented in RFCs developed on the IETF Stream.
+
+   The Independent Submission Stream is another source of documents that
+   can be published as RFCs.  This stream is under the care of the
+   Independent Submissions Editor (ISE).
+
+   This document complements <a href="/doc/html/rfc4846">RFC 4846</a> by providing a description of how
+   the ISE currently handles documents in the Independent Submission
+   Stream that request actions from IANA.  Nothing in this document
+   changes existing IANA registries or their allocation policies, nor
+   does it change any previously documented processes.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This is a contribution to the RFC Series, independently of any other
+   RFC stream.  The RFC Editor has chosen to publish this document at
+   its discretion and makes no statement about its value for
+   implementation or deployment.  Documents approved for publication by
+   the RFC Editor are not candidates for any level of Internet Standard;
+   see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8726">https://www.rfc-editor.org/info/rfc8726</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Allocations from Existing Registries
+   3.  Changing Policies of Existing Registries
+   4.  Creating New IANA Registries
+   5.  Assigning Designated Experts
+   6.  Transfer of Control
+   7.  IANA Considerations
+   8.  Security Considerations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgements
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Internet Assigned Numbers Authority (IANA) maintains registries
+   to track code points used by protocols such as those defined by the
+   IETF and documented in RFCs developed on the IETF Stream.  A full
+   list of registries and code points can be found at
+   <a href="https://www.iana.org/protocols">https://www.iana.org/protocols</a>.
+
+   Requests may be made to IANA for actions to create registries or to
+   allocate code points from existing registries.  Procedures for these
+   operations are described in [<a href="/doc/html/rfc8126" title="">RFC8126</a>].
+
+   Many requests for IANA action are included in documents that are
+   progressed for publication as RFCs.  RFCs may be sourced from within
+   the IETF (on the IETF Stream) but may also be sourced from other
+   streams, including the Independent Submission Stream (the Independent
+   Stream), as described in [<a href="/doc/html/rfc4846" title="&quot;Independent Submissions to the RFC Editor&quot;">RFC4846</a>].  The Independent Stream is under
+   the care of the Independent Submissions Editor (ISE).
+
+   This document complements [<a href="/doc/html/rfc4846" title="&quot;Independent Submissions to the RFC Editor&quot;">RFC4846</a>] by providing a description of how
+   the ISE currently handles documents in the Independent Stream that
+   request actions from IANA.  Nothing in this document changes existing
+   IANA registries or their allocation policies, nor does it change any
+   previously documented processes.
+
+   If a case arises that is not precisely covered by this document, the
+   ISE may discuss a solution with the interested parties, including
+   IANA, the IESG, the stream managers for other streams, and the
+   authors of an Independent Submission that requests IANA action.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Allocations from Existing Registries</span>
+
+   Each IANA registry is governed by an allocation policy -- the rules
+   that IANA applies to determine which code points can be allocated and
+   under what circumstances.  These policies are described in [<a href="/doc/html/rfc8126" title="">RFC8126</a>].
+
+   Documents proceeding from the Independent Stream will always follow
+   the assignment policies defined for the registries from which they
+   request allocations.  Similarly, all code point assignments are
+   subject to the oversight of any designated expert (DE) appointed for
+   the registry.
+
+   It should be noted that documents on the Independent Stream can never
+   result in Standards Track RFCs and Independent Stream documents are
+   never subject to IETF review.  Thus, a registry whose policy is &quot;IETF
+   Review&quot; or &quot;Standards Action&quot; [<a href="/doc/html/rfc8126" title="">RFC8126</a>] is not available to
+   Independent Stream documents.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Changing Policies of Existing Registries</span>
+
+   From time to time, a decision is made to change the allocation policy
+   for a registry.  Such changes are normally only made using the
+   allocation policy of the registry itself and usually require
+   documentation from the same stream that created the registry.
+
+   Independent Stream RFCs will not seek to change the allocation
+   policies of any registries except those created by documents from the
+   Independent Stream.  The list of such registries is itself very
+   limited (see <a href="#section-4">Section 4</a>).
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Creating New IANA Registries</span>
+
+   Sometimes registries are needed to track a new set of code points for
+   a new protocol or an extension to an existing protocol.
+
+   In general, documents on the Independent Stream cannot request the
+   creation of a new IANA registry.
+
+   The only exception to this rule is when a document to be published in
+   the Independent Submission Stream requests the allocation of a code
+   point from an existing registry with the allocation policy
+   Specification Required, Expert Review, RFC Required, or First Come
+   First Served.  Then the document to be published may also need to
+   create a registry that is tied to that specific code point and is
+   used for interpreting a sub-code.
+
+   Consider, for example, the &quot;Uniform Resource Identifier (URI)
+   Schemes&quot; registry [<a href="#ref-URL-URIschemes">URL-URIschemes</a>].  From time to time, a URI scheme
+   may need a registry of associated parameters; for example, consider
+   the tel URI scheme that has a register of parameters called the &quot;tel
+   URI Parameters&quot; [<a href="#ref-URL-telURI">URL-telURI</a>].
+
+   Such examples are rare and only exist to support the allocation from
+   the base registry.  In such cases, where there is an appointed DE for
+   the existing base registry, the assignment of the individual code
+   point from the existing base registry and the creation of the new
+   registry can only happen if the DE approves both actions.
+
+   There are several further constraints on the new registry:
+
+   *  The allocation policy for the new registry may only be First Come
+      First Served, RFC Required, Experimental, or Private Use.  In
+      particular, no registry may be created that would require IETF
+      action to achieve a future code point allocation.  See <a href="#section-5">Section 5</a>
+      for an explanation of why the application of Specification
+      Required and Expert Review are not acceptable policies for any
+      registry created from a document in the Independent Stream.
+
+   *  If the allocation policy for the new registry is First Come First
+      Served, the document must contain a brief statement and
+      explanation of the expected arrival rate of new registrations over
+      time.
+
+   *  The new registry must contain a clear statement of the escalation
+      process for any issues that arise with the registry.  A model for
+      this statement is as follows:
+
+   |  This registry was created by [RFCXXXX], which was published on the
+   |  Independent Submission Stream.  Any issues that arise with the
+   |  management of this registry will be resolved by IANA in
+   |  consultation with the Independent Submissions Editor.
+
+   *  The IESG will be invited to provide its opinions about the
+      advisability of the creation of any new registries during its
+      conflict review of the document [<a href="/doc/html/rfc5742" title="&quot;IESG Procedures for Handling of Independent and IRTF Stream Submissions&quot;">RFC5742</a>], and the ISE will give
+      full consideration to such opinions.
+
+   Authors of Independent Submission Stream documents should consider
+   the most appropriate venue to host such registries, taking into
+   account where the expertise for managing and reviewing registry
+   assignments may be found.  In some cases, this may mean that
+   registries are hosted by organizations other than IANA.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Assigning Designated Experts</span>
+
+   Some IANA allocation policies (specifically, Specification Required
+   and Expert Review) utilize the review of a DE.  The procedures
+   applicable to the appointment and actions of a DE are described in
+   <a href="/doc/html/rfc8126#section-5">Section&nbsp;5 of [RFC8126]</a>.
+
+   When a DE is appointed, the position must be maintained and supported
+   by whoever designated the DE in the first place.  That is, someone
+   must appoint replacement DEs if necessary, and someone must provide a
+   backstop in case the appointed DEs are unresponsive.
+
+   The ISE will not appoint a DE.  That means that no subregistry
+   created for Independent Stream documents will require the review of a
+   DE.  That means that no new subregistry can be created that uses the
+   Specification Required or Expert Review policies.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Transfer of Control</span>
+
+   Very rarely, it may be desirable to transfer &quot;ownership&quot; of an IANA
+   registry from the Independent Stream to the IETF Stream.  This might
+   happen, for example, if a protocol was originally documented in the
+   Independent Stream but has been adopted for work and standardization
+   in the IETF.  Such a transfer may require an IETF Stream RFC to act
+   as the base reference for the registry and will require discussion
+   and agreement with the ISE.
+
+   Ownership of a registry will not be transferred from the IETF Stream
+   to the Independent Stream.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+   This document is all about IANA actions but makes no request for IANA
+   action.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   There are no direct security considerations arising from this
+   document.  It may be noted that some IANA registries relate to
+   security protocols, and the stability and proper management of those
+   registries contribute to the stability of the protocols themselves.
+   That is a benefit for the security of the Internet and the users of
+   the Internet.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC4846">RFC4846</a>]  Klensin, J., Ed. and D. Thaler, Ed., &quot;Independent
+              Submissions to the RFC Editor&quot;, <a href="/doc/html/rfc4846">RFC 4846</a>,
+              DOI 10.17487/RFC4846, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4846">https://www.rfc-editor.org/info/rfc4846</a>&gt;.
+
+   [<a id="ref-RFC5742">RFC5742</a>]  Alvestrand, H. and R. Housley, &quot;IESG Procedures for
+              Handling of Independent and IRTF Stream Submissions&quot;,
+              <a href="/doc/html/bcp92">BCP 92</a>, <a href="/doc/html/rfc5742">RFC 5742</a>, DOI 10.17487/RFC5742, December 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5742">https://www.rfc-editor.org/info/rfc5742</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-URL-telURI">URL-telURI</a>]
+              &quot;tel URI Parameters&quot;,
+              &lt;<a href="https://www.iana.org/assignments/tel-uri-parameters">https://www.iana.org/assignments/tel-uri-parameters</a>&gt;.
+
+   [<a id="ref-URL-URIschemes">URL-URIschemes</a>]
+              &quot;Uniform Resource Identifier (URI) Schemes&quot;,
+              &lt;<a href="https://www.iana.org/assignments/uri-schemes">https://www.iana.org/assignments/uri-schemes</a>&gt;.
+
+Acknowledgements
+
+   Thanks to Brian Carpenter, Subramanian Moonesamy, Craig Partridge,
+   Michelle Cotton, Andrew Malis, Warren Kumari, Ned Freed, Rich Salz,
+   Michael Richardson, Colin Perkins, Stephen Farrell, Barry Leiba, and
+   Benjamin Kaduk for suggestions and advice.
+
+Author&#x27;s Address
+
+   Adrian Farrel
+   Independent Submissions Editor
+
+   Email: rfc-ise@rfc-editor.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

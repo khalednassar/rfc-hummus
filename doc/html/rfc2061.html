@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2061
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-crispin-imap-compat/">
+  <meta name="description" content="IMAP4 Compatibility with IMAP2bis (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2061.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2061.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2061.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2061/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2061/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-crispin-imap-compat@ietf.org?subject=draft-crispin-imap-compat" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-crispin-imap-compat-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-crispin-imap-compat-00">draft-crispin-imap-compat-00</a>                         Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                         M. Crispin
+Request for Comments: 2061                      University of Washington
+Category: Informational                                    December 1996
+
+
+                   <span class="h1">IMAP4 COMPATIBILITY WITH IMAP2BIS</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Introduction
+
+   The Internet Message Access Protocol (IMAP) has been through several
+   revisions and variants in its 10-year history.  Many of these are
+   either extinct or extremely rare; in particular, several undocumented
+   variants and the variants described in <a href="/doc/html/rfc1064">RFC 1064</a>, <a href="/doc/html/rfc1176">RFC 1176</a>, and <a href="/doc/html/rfc1203">RFC</a>
+   <a href="/doc/html/rfc1203">1203</a> fall into this category.
+
+   One variant, IMAP2bis, is at the time of this writing very common and
+   has been widely distributed with the Pine mailer.  Unfortunately,
+   there is no definite document describing IMAP2bis.  This document is
+   intended to be read along with <a href="/doc/html/rfc1176">RFC 1176</a> and the most recent IMAP4
+   specification (<a href="/doc/html/rfc2060">RFC 2060</a>) to assist implementors in creating an IMAP4
+   implementation to interoperate with implementations that conform to
+   earlier specifications.  Nothing in this document is required by the
+   IMAP4 specification; implementors must decide for themselves whether
+   they want their implementation to fail if it encounters old software.
+
+   At the time of this writing, IMAP4 has been updated from the version
+   described in <a href="/doc/html/rfc1730">RFC 1730</a>.  An implementor who wishes to interoperate
+   with both <a href="/doc/html/rfc1730">RFC 1730</a> and <a href="/doc/html/rfc2060">RFC 2060</a> should refer to both documents.
+
+   This information is not complete; it reflects current knowledge of
+   server and client implementations as well as &quot;folklore&quot; acquired in
+   the evolution of the protocol.  It is NOT a description of how to
+   interoperate with all variants of IMAP, but rather with the old
+   variant that is most likely to be encountered.  For detailed
+   information on interoperating with other old variants, refer to <a href="/doc/html/rfc1732">RFC</a>
+   <a href="/doc/html/rfc1732">1732</a>.
+
+IMAP4 client interoperability with IMAP2bis servers
+
+   A quick way to check whether a server implementation supports the
+   IMAP4 specification is to try the CAPABILITY command.  An OK response
+   will indicate which variant(s) of IMAP4 are supported by the server.
+
+
+
+<span class="grey">Crispin                      Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2061">RFC 2061</a>                  IMAP4 Compatibility              December 1996</span>
+
+
+   If the client does not find any of its known variant in the response,
+   it should treat the server as IMAP2bis.  A BAD response indicates an
+   IMAP2bis or older server.
+
+   Most IMAP4 facilities are in IMAP2bis.  The following exceptions
+   exist:
+
+   CAPABILITY command
+            The absense of this command indicates IMAP2bis (or older).
+
+   AUTHENTICATE command.
+            Use the LOGIN command.
+
+   LSUB, SUBSCRIBE, and UNSUBSCRIBE commands
+            No direct functional equivalent.  IMAP2bis had a concept
+            called &quot;bboards&quot; which is not in IMAP4.  <a href="/doc/html/rfc1176">RFC 1176</a> supported
+            these with the BBOARD and FIND BBOARDS commands.  IMAP2bis
+            augmented these with the FIND ALL.BBOARDS, SUBSCRIBE BBOARD,
+            and UNSUBSCRIBE BBOARD commands.  It is recommended that
+            none of these commands be implemented in new software,
+            including servers that support old clients.
+
+   LIST command
+            Use the command FIND ALL.MAILBOXES, which has a similar syn-
+            tax and response to the FIND MAILBOXES command described in
+            <a href="/doc/html/rfc1176">RFC 1176</a>.  The FIND MAILBOXES command is unlikely to produce
+            useful information.
+
+   * in a sequence
+            Use the number of messages in the mailbox from the EXISTS
+            unsolicited response.
+
+   SEARCH extensions (character set, additional criteria)
+            Reformulate the search request using only the <a href="/doc/html/rfc1176">RFC 1176</a> syn-
+            tax.  This may entail doing multiple searches to achieve the
+            desired results.
+
+   BODYSTRUCTURE fetch data item
+            Use the non-extensible BODY data item.
+
+   body sections HEADER, TEXT, MIME, HEADER.FIELDS, HEADER.FIELDS.NOT
+            Use body section numbers only.
+
+   BODY.PEEK[section]
+            Use BODY[section] and manually clear the \Seen flag as
+            necessary.
+
+
+
+
+
+<span class="grey">Crispin                      Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2061">RFC 2061</a>                  IMAP4 Compatibility              December 1996</span>
+
+
+   FLAGS.SILENT, +FLAGS.SILENT, and -FLAGS.SILENT store data items
+            Use the corresponding non-SILENT versions and ignore the
+            untagged FETCH responses which come back.
+
+   UID fetch data item and the UID commands
+            No functional equivalent.
+
+   CLOSE command
+            No functional equivalent.
+
+
+   In IMAP2bis, the TRYCREATE special information token is sent as a
+   separate unsolicited OK response instead of inside the NO response.
+
+   IMAP2bis is ambiguous about whether or not flags or internal dates
+   are preserved on COPY.  It is impossible to know what behavior is
+   supported by the server.
+
+IMAP4 server interoperability with IMAP2bis clients
+
+   The only interoperability problem between an IMAP4 server and a
+   well-written IMAP2bis client is an incompatibility with the use of
+   &quot;\&quot; in quoted strings.  This is best avoided by using literals
+   instead of quoted strings if &quot;\&quot; or &lt;&quot;&gt; is embedded in the string.
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Author&#x27;s Address
+
+   Mark R. Crispin
+   Networks and Distributed Computing
+   University of Washington
+   4545 15th Aveneue NE
+   Seattle, WA  98105-4527
+
+   Phone: (206) 543-5762
+   EMail: MRC@CAC.Washington.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+Crispin                      Informational                      [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

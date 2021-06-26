@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2053
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-rfced-info-edd/">
+  <meta name="description" content="The AM (Armenia) Domain (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2053.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2053.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2053.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2053/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2053/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-rfced-info-edd@ietf.org?subject=draft-rfced-info-edd" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-rfced-info-edd-00.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-rfced-info-edd-00">draft-rfced-info-edd-00</a>                              Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                 E. Der-Danieliantz
+Request for Comments: 2053                 AM Network Information Center
+Category: Informational                                     October 1996
+
+
+                        <span class="h1">The AM (Armenia) Domain</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+The AM Domain
+
+   The AM Domain is an official Internet top-level domain of Armenia.
+
+   AM is the ISO-3166 2-letter country code for the Republic of Armenia
+   and thus the AM Domain is established as a top-level domain and
+   registered with the InterNIC the same way other country domains are.
+
+Naming Structure
+
+   The AM Domain hierarchy is flat. This means that any organization may
+   be registered directly under the AM TLD. Example: arminco.am.
+
+   However, subdomains are allowed, such as ORG and MIL, as well as CO
+   and AC.
+
+   Please note that MIL.AM and GOV.AM domains are reserved by the
+   Ministry of Defense and The Government of Armenia, respectively.
+   Other domains may be reserved for appropriate organizations by
+   contacting AM Network Information Center at HOSTMASTER@AMNIC.NET.
+
+Registration
+
+   There are two types of registrations (1) Delegation, where a branch
+   of the AM Domain is delegated to an organization running name servers
+   to support that branch; or (2) Direct Registration, in which the
+   information is put directly into the main database.
+
+   In Direct Registration there are two cases: (a) an IP-host (with an
+   IP address), and (b) non-IP host (for example, a UUCP host).  Any
+   particular registration will involve any one of these three
+   situations.
+
+
+
+
+
+
+<span class="grey">Der-Danieliantz              Informational                      [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2053">RFC 2053</a>                The AM (Armenia) Domain             October 1996</span>
+
+
+   The registration is performed by the AM Network Information Center,
+   national Internet registry of Armenia. For more information about AM
+   Network Information Center, please visit:
+
+                           <a href="http://www.amnic.net">http://www.amnic.net</a>
+
+Requirements
+
+   Anyone requesting to register a host in the AM Domain is sent a copy
+   of the &quot;AM second-level domain registration template&quot;. It is
+   necessary to fill out this template and send via Internet e-mail to
+   HOSTMASTER@AMNIC.NET for consideration.
+
+   The AM Domain template, is similar to the InterNIC Domain template,
+   but it is not the same.  To request a copy of the AM Domain template,
+   send a message to HOSTMASTER@AMNIC.NET.
+
+References
+
+   [<a id="ref-1">1</a>]  Stahl, M., &quot;Domain Administrators Guide&quot;, <a href="/doc/html/rfc1032">RFC 1032</a>, SRI
+        International, November 1987.
+
+   [<a id="ref-2">2</a>]  Lottor, M., &quot;Domain Administrators Operations Guide&quot; <a href="/doc/html/rfc1033">RFC 1033</a>,
+        SRI International, November 1987.
+
+   [<a id="ref-3">3</a>]  Mockapetris, P., &quot;Domain Names - Concepts and Facilities&quot;,
+        STD 13, <a href="/doc/html/rfc1034">RFC 1034</a>, ISI, November 1987.
+
+   [<a id="ref-4">4</a>]  Mockapetris, P., &quot;Domain Names - Implementation and
+        Specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, ISI, November 1987.
+
+   [<a id="ref-5">5</a>]  Dunlap, K., &quot;Name Server Operations Guide for Bind,
+        Release 4.3&quot;, UC Berkeley, SMM:11-3.
+
+   [<a id="ref-6">6</a>]  Partridge, C., &quot;Mail Routing and the Domain Name System&quot;,
+        STD 14, <a href="/doc/html/rfc974">RFC 974</a>, BBN, January 1986.
+
+   [<a id="ref-7">7</a>]  Albitz, P., C. Liu, &quot;DNS and Bind&quot; Help for UNIX System
+        Administrators, O&#x27;Reilly and Associates, Inc., October 1992.
+
+   [<a id="ref-8">8</a>]  Reynolds, J., and J. Postel, &quot;Assigned Numbers&quot;, STD 2,
+        <a href="/doc/html/rfc1700">RFC 1700</a>, ISI, October 1994.
+
+
+
+
+
+
+
+
+
+<span class="grey">Der-Danieliantz              Informational                      [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2053">RFC 2053</a>                The AM (Armenia) Domain             October 1996</span>
+
+
+Security Considerations
+
+   Security issues are not discussed in this memo.
+
+Author&#x27;s Address
+
+   Edgar Der-Danieliantz
+   AM Network Information Center
+   c/o Arminco Limited
+   Mashtotz Avenue 51
+   Yerevan, ARMENIA
+
+   Phone: +374 2 28 14 25
+   Fax:   +374 2 28 50 82
+   EMail: edd@acm.org
+          edd@amnic.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Der-Danieliantz              Informational                      [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

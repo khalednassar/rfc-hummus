@@ -1,0 +1,1245 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc6902
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-appsawg-json-patch/">
+  <meta name="description" content="JavaScript Object Notation (JSON) Patch (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc6902.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc6902.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc6902.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc6902/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc6902/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/appsawg/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-appsawg-json-patch@ietf.org?subject=draft-ietf-appsawg-json-patch" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-appsawg-json-patch-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-appsawg-json-patch-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-appsawg-json-patch-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-appsawg-json-patch-10">draft-ietf-appsawg-json-patch-10</a>                 Proposed Standard
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=6902&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                     P. Bryan, Ed.
+Request for Comments: 6902                                Salesforce.com
+Category: Standards Track                             M. Nottingham, Ed.
+ISSN: 2070-1721                                                   Akamai
+                                                              April 2013
+
+
+                <span class="h1">JavaScript Object Notation (JSON) Patch</span>
+
+Abstract
+
+   JSON Patch defines a JSON document structure for expressing a
+   sequence of operations to apply to a JavaScript Object Notation
+   (JSON) document; it is suitable for use with the HTTP PATCH method.
+   The &quot;application/json-patch+json&quot; media type is used to identify such
+   patch documents.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc5741#section-2">Section&nbsp;2 of RFC 5741</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc6902">http://www.rfc-editor.org/info/rfc6902</a>.
+
+Copyright Notice
+
+   Copyright (c) 2013 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-2">2</a>.  Conventions  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-3">3</a>.  Document Structure . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-4">4</a>.  Operations . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+     <a href="#section-4.1">4.1</a>.  add  . . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+     <a href="#section-4.2">4.2</a>.  remove . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+     <a href="#section-4.3">4.3</a>.  replace  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+     <a href="#section-4.4">4.4</a>.  move . . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+     <a href="#section-4.5">4.5</a>.  copy . . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-7">7</a>
+     <a href="#section-4.6">4.6</a>.  test . . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-7">7</a>
+   <a href="#section-5">5</a>.  Error Handling . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-8">8</a>
+   <a href="#section-6">6</a>.  IANA Considerations  . . . . . . . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+   <a href="#section-7">7</a>.  Security Considerations  . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+   <a href="#section-8">8</a>.  Acknowledgements . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+   <a href="#section-9">9</a>.  References . . . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+     <a href="#section-9.1">9.1</a>.  Normative References . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+     <a href="#section-9.2">9.2</a>.  Informative References . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+   <a href="#appendix-A">Appendix A</a>.  Examples  . . . . . . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+     <a href="#appendix-A.1">A.1</a>.  Adding an Object Member  . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+     <a href="#appendix-A.2">A.2</a>.  Adding an Array Element  . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+     <a href="#appendix-A.3">A.3</a>.  Removing an Object Member  . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+     <a href="#appendix-A.4">A.4</a>.  Removing an Array Element  . . . . . . . . . . . . . . . . <a href="#page-13">13</a>
+     <a href="#appendix-A.5">A.5</a>.  Replacing a Value  . . . . . . . . . . . . . . . . . . . . <a href="#page-13">13</a>
+     <a href="#appendix-A.6">A.6</a>.  Moving a Value . . . . . . . . . . . . . . . . . . . . . . <a href="#page-14">14</a>
+     <a href="#appendix-A.7">A.7</a>.  Moving an Array Element  . . . . . . . . . . . . . . . . . <a href="#page-14">14</a>
+     <a href="#appendix-A.8">A.8</a>.  Testing a Value: Success . . . . . . . . . . . . . . . . . <a href="#page-15">15</a>
+     <a href="#appendix-A.9">A.9</a>.  Testing a Value: Error . . . . . . . . . . . . . . . . . . <a href="#page-15">15</a>
+     <a href="#appendix-A.10">A.10</a>. Adding a Nested Member Object  . . . . . . . . . . . . . . <a href="#page-15">15</a>
+     <a href="#appendix-A.11">A.11</a>. Ignoring Unrecognized Elements . . . . . . . . . . . . . . <a href="#page-16">16</a>
+     <a href="#appendix-A.12">A.12</a>. Adding to a Nonexistent Target . . . . . . . . . . . . . . <a href="#page-16">16</a>
+     <a href="#appendix-A.13">A.13</a>. Invalid JSON Patch Document  . . . . . . . . . . . . . . . <a href="#page-17">17</a>
+     <a href="#appendix-A.14">A.14</a>. ~ Escape Ordering  . . . . . . . . . . . . . . . . . . . . <a href="#page-17">17</a>
+     <a href="#appendix-A.15">A.15</a>. Comparing Strings and Numbers  . . . . . . . . . . . . . . <a href="#page-17">17</a>
+     <a href="#appendix-A.16">A.16</a>. Adding an Array Value  . . . . . . . . . . . . . . . . . . <a href="#page-18">18</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   JavaScript Object Notation (JSON) [<a href="/doc/html/rfc4627" title="&quot;The application/json Media Type for JavaScript Object Notation (JSON)&quot;">RFC4627</a>] is a common format for
+   the exchange and storage of structured data.  HTTP PATCH [<a href="/doc/html/rfc5789" title="&quot;PATCH Method for HTTP&quot;">RFC5789</a>]
+   extends the Hypertext Transfer Protocol (HTTP) [<a href="/doc/html/rfc2616" title="&quot;Hypertext Transfer Protocol -- HTTP/1.1&quot;">RFC2616</a>] with a
+   method to perform partial modifications to resources.
+
+   JSON Patch is a format (identified by the media type &quot;application/
+   json-patch+json&quot;) for expressing a sequence of operations to apply to
+   a target JSON document; it is suitable for use with the HTTP PATCH
+   method.
+
+   This format is also potentially useful in other cases in which it is
+   necessary to make partial updates to a JSON document or to a data
+   structure that has similar constraints (i.e., they can be serialized
+   as an object or an array using the JSON grammar).
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in <a href="/doc/html/rfc2119">RFC 2119</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Document Structure</span>
+
+   A JSON Patch document is a JSON [<a href="/doc/html/rfc4627" title="&quot;The application/json Media Type for JavaScript Object Notation (JSON)&quot;">RFC4627</a>] document that represents an
+   array of objects.  Each object represents a single operation to be
+   applied to the target JSON document.
+
+   The following is an example JSON Patch document, transferred in an
+   HTTP PATCH request:
+
+   PATCH /my/data HTTP/1.1
+   Host: example.org
+   Content-Length: 326
+   Content-Type: application/json-patch+json
+   If-Match: &quot;abc123&quot;
+
+   [
+     { &quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: &quot;foo&quot; },
+     { &quot;op&quot;: &quot;remove&quot;, &quot;path&quot;: &quot;/a/b/c&quot; },
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: [ &quot;foo&quot;, &quot;bar&quot; ] },
+     { &quot;op&quot;: &quot;replace&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: 42 },
+     { &quot;op&quot;: &quot;move&quot;, &quot;from&quot;: &quot;/a/b/c&quot;, &quot;path&quot;: &quot;/a/b/d&quot; },
+     { &quot;op&quot;: &quot;copy&quot;, &quot;from&quot;: &quot;/a/b/d&quot;, &quot;path&quot;: &quot;/a/b/e&quot; }
+   ]
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   Evaluation of a JSON Patch document begins against a target JSON
+   document.  Operations are applied sequentially in the order they
+   appear in the array.  Each operation in the sequence is applied to
+   the target document; the resulting document becomes the target of the
+   next operation.  Evaluation continues until all operations are
+   successfully applied or until an error condition is encountered.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Operations</span>
+
+   Operation objects MUST have exactly one &quot;op&quot; member, whose value
+   indicates the operation to perform.  Its value MUST be one of &quot;add&quot;,
+   &quot;remove&quot;, &quot;replace&quot;, &quot;move&quot;, &quot;copy&quot;, or &quot;test&quot;; other values are
+   errors.  The semantics of each object is defined below.
+
+   Additionally, operation objects MUST have exactly one &quot;path&quot; member.
+   That member&#x27;s value is a string containing a JSON-Pointer value
+   [<a href="/doc/html/rfc6901" title="&quot;JavaScript Object Notation (JSON) Pointer&quot;">RFC6901</a>] that references a location within the target document (the
+   &quot;target location&quot;) where the operation is performed.
+
+   The meanings of other operation object members are defined by
+   operation (see the subsections below).  Members that are not
+   explicitly defined for the operation in question MUST be ignored
+   (i.e., the operation will complete as if the undefined member did not
+   appear in the object).
+
+   Note that the ordering of members in JSON objects is not significant;
+   therefore, the following operation objects are equivalent:
+
+   { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: &quot;foo&quot; }
+   { &quot;path&quot;: &quot;/a/b/c&quot;, &quot;op&quot;: &quot;add&quot;, &quot;value&quot;: &quot;foo&quot; }
+   { &quot;value&quot;: &quot;foo&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;op&quot;: &quot;add&quot; }
+
+   Operations are applied to the data structures represented by a JSON
+   document, i.e., after any unescaping (see <a href="/doc/html/rfc4627#section-2.5">[RFC4627], Section&nbsp;2.5</a>)
+   takes place.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  add</span>
+
+   The &quot;add&quot; operation performs one of the following functions,
+   depending upon what the target location references:
+
+   o  If the target location specifies an array index, a new value is
+      inserted into the array at the specified index.
+
+   o  If the target location specifies an object member that does not
+      already exist, a new member is added to the object.
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   o  If the target location specifies an object member that does exist,
+      that member&#x27;s value is replaced.
+
+   The operation object MUST contain a &quot;value&quot; member whose content
+   specifies the value to be added.
+
+   For example:
+
+   { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: [ &quot;foo&quot;, &quot;bar&quot; ] }
+
+   When the operation is applied, the target location MUST reference one
+   of:
+
+   o  The root of the target document - whereupon the specified value
+      becomes the entire content of the target document.
+
+   o  A member to add to an existing object - whereupon the supplied
+      value is added to that object at the indicated location.  If the
+      member already exists, it is replaced by the specified value.
+
+   o  An element to add to an existing array - whereupon the supplied
+      value is added to the array at the indicated location.  Any
+      elements at or above the specified index are shifted one position
+      to the right.  The specified index MUST NOT be greater than the
+      number of elements in the array.  If the &quot;-&quot; character is used to
+      index the end of the array (see [<a href="/doc/html/rfc6901" title="&quot;JavaScript Object Notation (JSON) Pointer&quot;">RFC6901</a>]), this has the effect of
+      appending the value to the array.
+
+   Because this operation is designed to add to existing objects and
+   arrays, its target location will often not exist.  Although the
+   pointer&#x27;s error handling algorithm will thus be invoked, this
+   specification defines the error handling behavior for &quot;add&quot; pointers
+   to ignore that error and add the value as specified.
+
+   However, the object itself or an array containing it does need to
+   exist, and it remains an error for that not to be the case.  For
+   example, an &quot;add&quot; with a target location of &quot;/a/b&quot; starting with this
+   document:
+
+   { &quot;a&quot;: { &quot;foo&quot;: 1 } }
+
+   is not an error, because &quot;a&quot; exists, and &quot;b&quot; will be added to its
+   value.  It is an error in this document:
+
+   { &quot;q&quot;: { &quot;bar&quot;: 2 } }
+
+   because &quot;a&quot; does not exist.
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  remove</span>
+
+   The &quot;remove&quot; operation removes the value at the target location.
+
+   The target location MUST exist for the operation to be successful.
+
+   For example:
+
+   { &quot;op&quot;: &quot;remove&quot;, &quot;path&quot;: &quot;/a/b/c&quot; }
+
+   If removing an element from an array, any elements above the
+   specified index are shifted one position to the left.
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  replace</span>
+
+   The &quot;replace&quot; operation replaces the value at the target location
+   with a new value.  The operation object MUST contain a &quot;value&quot; member
+   whose content specifies the replacement value.
+
+   The target location MUST exist for the operation to be successful.
+
+   For example:
+
+   { &quot;op&quot;: &quot;replace&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: 42 }
+
+   This operation is functionally identical to a &quot;remove&quot; operation for
+   a value, followed immediately by an &quot;add&quot; operation at the same
+   location with the replacement value.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  move</span>
+
+   The &quot;move&quot; operation removes the value at a specified location and
+   adds it to the target location.
+
+   The operation object MUST contain a &quot;from&quot; member, which is a string
+   containing a JSON Pointer value that references the location in the
+   target document to move the value from.
+
+   The &quot;from&quot; location MUST exist for the operation to be successful.
+
+   For example:
+
+   { &quot;op&quot;: &quot;move&quot;, &quot;from&quot;: &quot;/a/b/c&quot;, &quot;path&quot;: &quot;/a/b/d&quot; }
+
+   This operation is functionally identical to a &quot;remove&quot; operation on
+   the &quot;from&quot; location, followed immediately by an &quot;add&quot; operation at
+   the target location with the value that was just removed.
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   The &quot;from&quot; location MUST NOT be a proper prefix of the &quot;path&quot;
+   location; i.e., a location cannot be moved into one of its children.
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  copy</span>
+
+   The &quot;copy&quot; operation copies the value at a specified location to the
+   target location.
+
+   The operation object MUST contain a &quot;from&quot; member, which is a string
+   containing a JSON Pointer value that references the location in the
+   target document to copy the value from.
+
+   The &quot;from&quot; location MUST exist for the operation to be successful.
+
+   For example:
+
+   { &quot;op&quot;: &quot;copy&quot;, &quot;from&quot;: &quot;/a/b/c&quot;, &quot;path&quot;: &quot;/a/b/e&quot; }
+
+   This operation is functionally identical to an &quot;add&quot; operation at the
+   target location using the value specified in the &quot;from&quot; member.
+
+<span class="h3"><a class="selflink" id="section-4.6" href="#section-4.6">4.6</a>.  test</span>
+
+   The &quot;test&quot; operation tests that a value at the target location is
+   equal to a specified value.
+
+   The operation object MUST contain a &quot;value&quot; member that conveys the
+   value to be compared to the target location&#x27;s value.
+
+   The target location MUST be equal to the &quot;value&quot; value for the
+   operation to be considered successful.
+
+   Here, &quot;equal&quot; means that the value at the target location and the
+   value conveyed by &quot;value&quot; are of the same JSON type, and that they
+   are considered equal by the following rules for that type:
+
+   o  strings: are considered equal if they contain the same number of
+      Unicode characters and their code points are byte-by-byte equal.
+
+   o  numbers: are considered equal if their values are numerically
+      equal.
+
+   o  arrays: are considered equal if they contain the same number of
+      values, and if each value can be considered equal to the value at
+      the corresponding position in the other array, using this list of
+      type-specific rules.
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   o  objects: are considered equal if they contain the same number of
+      members, and if each member can be considered equal to a member in
+      the other object, by comparing their keys (as strings) and their
+      values (using this list of type-specific rules).
+
+   o  literals (false, true, and null): are considered equal if they are
+      the same.
+
+   Note that the comparison that is done is a logical comparison; e.g.,
+   whitespace between the member values of an array is not significant.
+
+   Also, note that ordering of the serialization of object members is
+   not significant.
+
+   For example:
+
+   { &quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: &quot;foo&quot; }
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Error Handling</span>
+
+   If a normative requirement is violated by a JSON Patch document, or
+   if an operation is not successful, evaluation of the JSON Patch
+   document SHOULD terminate and application of the entire patch
+   document SHALL NOT be deemed successful.
+
+   See <a href="/doc/html/rfc5789#section-2.2">[RFC5789], Section&nbsp;2.2</a> for considerations regarding handling
+   errors when JSON Patch is used with the HTTP PATCH method, including
+   suggested status codes to use to indicate various conditions.
+
+   Note that the HTTP PATCH method is atomic, as per [<a href="/doc/html/rfc5789" title="&quot;PATCH Method for HTTP&quot;">RFC5789</a>].
+   Therefore, the following patch would result in no changes being made
+   to the document at all (because the &quot;test&quot; operation results in an
+   error):
+
+   [
+     { &quot;op&quot;: &quot;replace&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: 42 },
+     { &quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/a/b/c&quot;, &quot;value&quot;: &quot;C&quot; }
+   ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  IANA Considerations</span>
+
+   The Internet media type for a JSON Patch document is application/
+   json-patch+json.
+
+   Type name:  application
+
+   Subtype name:  json-patch+json
+
+   Required parameters:  none
+
+   Optional parameters:   none
+
+   Encoding considerations:  binary
+
+   Security considerations:
+      See Security Considerations in <a href="#section-7">Section 7</a>.
+
+   Interoperability considerations:  N/A
+
+   Published specification:
+      <a href="/doc/html/rfc6902">RFC 6902</a>
+
+   Applications that use this media type:
+      Applications that manipulate JSON documents.
+
+   Additional information:
+
+      Magic number(s):  N/A
+
+      File extension(s):  .json-patch
+
+      Macintosh file type code(s):  TEXT
+
+   Person &amp; email address to contact for further information:
+      Paul C. Bryan &lt;pbryan@anode.ca&gt;
+
+   Intended usage:  COMMON
+
+   Restrictions on usage:  none
+
+   Author:  Paul C. Bryan &lt;pbryan@anode.ca&gt;
+
+   Change controller:  IETF
+
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                    [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   This specification has the same security considerations as JSON
+   [<a href="/doc/html/rfc4627" title="&quot;The application/json Media Type for JavaScript Object Notation (JSON)&quot;">RFC4627</a>] and JSON-Pointer [<a href="/doc/html/rfc6901" title="&quot;JavaScript Object Notation (JSON) Pointer&quot;">RFC6901</a>].
+
+   A few older Web browsers can be coerced into loading an arbitrary
+   JSON document whose root is an array, leading to a situation in which
+   a JSON Patch document containing sensitive information could be
+   exposed to attackers, even if access is authenticated.  This is known
+   as a Cross-Site Request Forgery (CSRF) attack [<a href="#ref-CSRF" title="&quot;Robust Defenses for Cross-Site Request Forgery&quot;">CSRF</a>].
+
+   However, such browsers are not widely used (at the time of writing,
+   it is estimated that they are used in less than 1% of the market).
+   Publishers who are nevertheless concerned about this attack are
+   advised to avoid making such documents available with HTTP GET.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Acknowledgements</span>
+
+   The following individuals contributed ideas, feedback and wording to
+   this specification:
+
+      Mike Acar, Mike Amundsen, Cyrus Daboo, Paul Davis, Stefan Koegl,
+      Murray S. Kucherawy, Dean Landolt, Randall Leeds, James Manger,
+      Julian Reschke, James Snell, Eli Stevens, and Henry S. Thompson.
+
+   The structure of a JSON Patch document was influenced by the XML
+   Patch document specification [<a href="/doc/html/rfc5261" title="&quot;An Extensible Markup Language (XML) Patch Operations Framework Utilizing XML Path Language (XPath) Selectors&quot;">RFC5261</a>].
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC4627">RFC4627</a>]  Crockford, D., &quot;The application/json Media Type for
+              JavaScript Object Notation (JSON)&quot;, <a href="/doc/html/rfc4627">RFC 4627</a>, July 2006.
+
+   [<a id="ref-RFC6901">RFC6901</a>]  Bryan, P., Ed., Zyp, K., and M. Nottingham, Ed.,
+              &quot;JavaScript Object Notation (JSON) Pointer&quot;, <a href="/doc/html/rfc6901">RFC 6901</a>,
+              April 2013.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-CSRF">CSRF</a>]     Barth, A., Jackson, C., and J. Mitchell, &quot;Robust Defenses
+              for Cross-Site Request Forgery&quot;, ACM Conference
+              on Computer and Communications Security, October 2008,
+              &lt;<a href="http://seclab.stanford.edu/websec/csrf/csrf.pdf">http://seclab.stanford.edu/websec/csrf/csrf.pdf</a>&gt;.
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   [<a id="ref-RFC2616">RFC2616</a>]  Fielding, R., Gettys, J., Mogul, J., Frystyk, H.,
+              Masinter, L., Leach, P., and T. Berners-Lee, &quot;Hypertext
+              Transfer Protocol -- HTTP/1.1&quot;, <a href="/doc/html/rfc2616">RFC 2616</a>, June 1999.
+
+   [<a id="ref-RFC5261">RFC5261</a>]  Urpalainen, J., &quot;An Extensible Markup Language (XML) Patch
+              Operations Framework Utilizing XML Path Language (XPath)
+              Selectors&quot;, <a href="/doc/html/rfc5261">RFC 5261</a>, September 2008.
+
+   [<a id="ref-RFC5789">RFC5789</a>]  Dusseault, L. and J. Snell, &quot;PATCH Method for HTTP&quot;,
+              <a href="/doc/html/rfc5789">RFC 5789</a>, March 2010.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Examples</span>
+
+<span class="h3"><a class="selflink" id="appendix-A.1" href="#appendix-A.1">A.1</a>.  Adding an Object Member</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: &quot;bar&quot;}
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/baz&quot;, &quot;value&quot;: &quot;qux&quot; }
+   ]
+
+   The resulting JSON document:
+
+   {
+     &quot;baz&quot;: &quot;qux&quot;,
+     &quot;foo&quot;: &quot;bar&quot;
+   }
+
+<span class="h3"><a class="selflink" id="appendix-A.2" href="#appendix-A.2">A.2</a>.  Adding an Array Element</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: [ &quot;bar&quot;, &quot;baz&quot; ] }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/foo/1&quot;, &quot;value&quot;: &quot;qux&quot; }
+   ]
+
+   The resulting JSON document:
+
+   { &quot;foo&quot;: [ &quot;bar&quot;, &quot;qux&quot;, &quot;baz&quot; ] }
+
+<span class="h3"><a class="selflink" id="appendix-A.3" href="#appendix-A.3">A.3</a>.  Removing an Object Member</span>
+
+   An example target JSON document:
+
+   {
+     &quot;baz&quot;: &quot;qux&quot;,
+     &quot;foo&quot;: &quot;bar&quot;
+   }
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;remove&quot;, &quot;path&quot;: &quot;/baz&quot; }
+   ]
+
+   The resulting JSON document:
+
+   { &quot;foo&quot;: &quot;bar&quot; }
+
+<span class="h3"><a class="selflink" id="appendix-A.4" href="#appendix-A.4">A.4</a>.  Removing an Array Element</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: [ &quot;bar&quot;, &quot;qux&quot;, &quot;baz&quot; ] }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;remove&quot;, &quot;path&quot;: &quot;/foo/1&quot; }
+   ]
+
+   The resulting JSON document:
+
+   { &quot;foo&quot;: [ &quot;bar&quot;, &quot;baz&quot; ] }
+
+<span class="h3"><a class="selflink" id="appendix-A.5" href="#appendix-A.5">A.5</a>.  Replacing a Value</span>
+
+   An example target JSON document:
+
+   {
+     &quot;baz&quot;: &quot;qux&quot;,
+     &quot;foo&quot;: &quot;bar&quot;
+   }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;replace&quot;, &quot;path&quot;: &quot;/baz&quot;, &quot;value&quot;: &quot;boo&quot; }
+   ]
+
+   The resulting JSON document:
+
+   {
+     &quot;baz&quot;: &quot;boo&quot;,
+     &quot;foo&quot;: &quot;bar&quot;
+   }
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.6" href="#appendix-A.6">A.6</a>.  Moving a Value</span>
+
+   An example target JSON document:
+
+   {
+     &quot;foo&quot;: {
+       &quot;bar&quot;: &quot;baz&quot;,
+       &quot;waldo&quot;: &quot;fred&quot;
+     },
+     &quot;qux&quot;: {
+       &quot;corge&quot;: &quot;grault&quot;
+     }
+   }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;move&quot;, &quot;from&quot;: &quot;/foo/waldo&quot;, &quot;path&quot;: &quot;/qux/thud&quot; }
+   ]
+
+   The resulting JSON document:
+
+   {
+     &quot;foo&quot;: {
+       &quot;bar&quot;: &quot;baz&quot;
+     },
+     &quot;qux&quot;: {
+       &quot;corge&quot;: &quot;grault&quot;,
+       &quot;thud&quot;: &quot;fred&quot;
+     }
+   }
+
+<span class="h3"><a class="selflink" id="appendix-A.7" href="#appendix-A.7">A.7</a>.  Moving an Array Element</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: [ &quot;all&quot;, &quot;grass&quot;, &quot;cows&quot;, &quot;eat&quot; ] }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;move&quot;, &quot;from&quot;: &quot;/foo/1&quot;, &quot;path&quot;: &quot;/foo/3&quot; }
+   ]
+
+   The resulting JSON document:
+
+   { &quot;foo&quot;: [ &quot;all&quot;, &quot;cows&quot;, &quot;eat&quot;, &quot;grass&quot; ] }
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 14]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-15" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.8" href="#appendix-A.8">A.8</a>.  Testing a Value: Success</span>
+
+   An example target JSON document:
+
+   {
+     &quot;baz&quot;: &quot;qux&quot;,
+     &quot;foo&quot;: [ &quot;a&quot;, 2, &quot;c&quot; ]
+   }
+
+   A JSON Patch document that will result in successful evaluation:
+
+   [
+     { &quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/baz&quot;, &quot;value&quot;: &quot;qux&quot; },
+     { &quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/foo/1&quot;, &quot;value&quot;: 2 }
+   ]
+
+<span class="h3"><a class="selflink" id="appendix-A.9" href="#appendix-A.9">A.9</a>.  Testing a Value: Error</span>
+
+   An example target JSON document:
+
+   { &quot;baz&quot;: &quot;qux&quot; }
+
+   A JSON Patch document that will result in an error condition:
+
+   [
+     { &quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/baz&quot;, &quot;value&quot;: &quot;bar&quot; }
+   ]
+
+<span class="h3"><a class="selflink" id="appendix-A.10" href="#appendix-A.10">A.10</a>.  Adding a Nested Member Object</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: &quot;bar&quot; }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/child&quot;, &quot;value&quot;: { &quot;grandchild&quot;: { } } }
+   ]
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 15]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-16" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   The resulting JSON document:
+
+   {
+     &quot;foo&quot;: &quot;bar&quot;,
+     &quot;child&quot;: {
+       &quot;grandchild&quot;: {
+       }
+     }
+   }
+
+<span class="h3"><a class="selflink" id="appendix-A.11" href="#appendix-A.11">A.11</a>.  Ignoring Unrecognized Elements</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: &quot;bar&quot; }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/baz&quot;, &quot;value&quot;: &quot;qux&quot;, &quot;xyz&quot;: 123 }
+   ]
+
+   The resulting JSON document:
+
+   {
+     &quot;foo&quot;: &quot;bar&quot;,
+     &quot;baz&quot;: &quot;qux&quot;
+   }
+
+<span class="h3"><a class="selflink" id="appendix-A.12" href="#appendix-A.12">A.12</a>.  Adding to a Nonexistent Target</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: &quot;bar&quot; }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/baz/bat&quot;, &quot;value&quot;: &quot;qux&quot; }
+   ]
+
+   This JSON Patch document, applied to the target JSON document above,
+   would result in an error (therefore, it would not be applied),
+   because the &quot;add&quot; operation&#x27;s target location that references neither
+   the root of the document, nor a member of an existing object, nor a
+   member of an existing array.
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 16]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-17" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.13" href="#appendix-A.13">A.13</a>.  Invalid JSON Patch Document</span>
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/baz&quot;, &quot;value&quot;: &quot;qux&quot;, &quot;op&quot;: &quot;remove&quot; }
+   ]
+
+   This JSON Patch document cannot be treated as an &quot;add&quot; operation,
+   because it contains a later &quot;op&quot;:&quot;remove&quot; element.  JSON requires
+   that object member names be unique with a &quot;SHOULD&quot; requirement, and
+   there is no standard error handling for duplicates.
+
+<span class="h3"><a class="selflink" id="appendix-A.14" href="#appendix-A.14">A.14</a>.  ~ Escape Ordering</span>
+
+   An example target JSON document:
+
+   {
+     &quot;/&quot;: 9,
+     &quot;~1&quot;: 10
+   }
+
+   A JSON Patch document:
+
+   [
+     {&quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/~01&quot;, &quot;value&quot;: 10}
+   ]
+
+   The resulting JSON document:
+
+   {
+     &quot;/&quot;: 9,
+     &quot;~1&quot;: 10
+   }
+
+<span class="h3"><a class="selflink" id="appendix-A.15" href="#appendix-A.15">A.15</a>.  Comparing Strings and Numbers</span>
+
+   An example target JSON document:
+
+   {
+     &quot;/&quot;: 9,
+     &quot;~1&quot;: 10
+   }
+
+
+
+
+
+
+
+
+<span class="grey">Bryan &amp; Nottingham           Standards Track                   [Page 17]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-18" ></span>
+<span class="grey"><a href="/doc/html/rfc6902">RFC 6902</a>                       JSON Patch                     April 2013</span>
+
+
+   A JSON Patch document:
+
+   [
+     {&quot;op&quot;: &quot;test&quot;, &quot;path&quot;: &quot;/~01&quot;, &quot;value&quot;: &quot;10&quot;}
+   ]
+
+   This results in an error, because the test fails.  The document value
+   is numeric, whereas the value being tested for is a string.
+
+<span class="h3"><a class="selflink" id="appendix-A.16" href="#appendix-A.16">A.16</a>.  Adding an Array Value</span>
+
+   An example target JSON document:
+
+   { &quot;foo&quot;: [&quot;bar&quot;] }
+
+   A JSON Patch document:
+
+   [
+     { &quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/foo/-&quot;, &quot;value&quot;: [&quot;abc&quot;, &quot;def&quot;] }
+   ]
+
+   The resulting JSON document:
+
+   { &quot;foo&quot;: [&quot;bar&quot;, [&quot;abc&quot;, &quot;def&quot;]] }
+
+Authors&#x27; Addresses
+
+   Paul C. Bryan (editor)
+   Salesforce.com
+
+   Phone: +1 604 783 1481
+   EMail: pbryan@anode.ca
+
+
+   Mark Nottingham (editor)
+   Akamai
+
+   EMail: mnot@mnot.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bryan &amp; Nottingham           Standards Track                   [Page 18]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

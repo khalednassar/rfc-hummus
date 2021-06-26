@@ -1,0 +1,1020 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc5437
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-sieve-notify-xmpp/">
+  <meta name="description" content="Sieve Notification Mechanism: Extensible Messaging and Presence Protocol (XMPP) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc5437.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc5437.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc5437.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc5437/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc5437/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sieve/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-sieve-notify-xmpp@ietf.org?subject=draft-ietf-sieve-notify-xmpp" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-sieve-notify-xmpp-09.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sieve-notify-xmpp-09.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-sieve-notify-xmpp-09.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-sieve-notify-xmpp-09">draft-ietf-sieve-notify-xmpp-09</a>                  Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                     P. Saint-Andre
+Request for Comments: 5437                                         Cisco
+Category: Standards Track                                    A. Melnikov
+                                                           Isode Limited
+                                                            January 2009
+
+
+                     <span class="h1">Sieve Notification Mechanism:</span>
+           <span class="h1">Extensible Messaging and Presence Protocol (XMPP)</span>
+
+Status of This Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (c) 2009 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/</a>
+   <a href="http://trustee.ietf.org/license-info">license-info</a>) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+Abstract
+
+   This document describes a profile of the Sieve extension for
+   notifications, to allow notifications to be sent over the Extensible
+   Messaging and Presence Protocol (XMPP), also known as Jabber.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-3">3</a>
+      <a href="#section-1.1">1.1</a>. Overview ...................................................<a href="#page-3">3</a>
+      <a href="#section-1.2">1.2</a>. Terminology ................................................<a href="#page-3">3</a>
+   <a href="#section-2">2</a>. Definition ......................................................<a href="#page-3">3</a>
+      <a href="#section-2.1">2.1</a>. Notify Parameter &quot;method&quot; ..................................<a href="#page-3">3</a>
+      <a href="#section-2.2">2.2</a>. Test notify_method_capability ..............................<a href="#page-3">3</a>
+      <a href="#section-2.3">2.3</a>. Notify Tag &quot;:from&quot; .........................................<a href="#page-4">4</a>
+      <a href="#section-2.4">2.4</a>. Notify Tag &quot;:importance&quot; ...................................<a href="#page-4">4</a>
+      <a href="#section-2.5">2.5</a>. Notify Tag &quot;:message&quot; ......................................<a href="#page-4">4</a>
+      <a href="#section-2.6">2.6</a>. Notify Tag &quot;:options&quot; ......................................<a href="#page-4">4</a>
+      <a href="#section-2.7">2.7</a>. XMPP Syntax ................................................<a href="#page-4">4</a>
+   <a href="#section-3">3</a>. Examples ........................................................<a href="#page-6">6</a>
+      <a href="#section-3.1">3.1</a>. Basic Action ...............................................<a href="#page-6">6</a>
+      <a href="#section-3.2">3.2</a>. Action with &quot;body&quot; .........................................<a href="#page-7">7</a>
+      3.3. Action with &quot;body&quot;, &quot;:importance&quot;, &quot;:message&quot;, and
+           &quot;subject&quot; ..................................................<a href="#page-7">7</a>
+      3.4. Action with &quot;:from&quot;, &quot;:message&quot;, &quot;:importance&quot;,
+           &quot;body&quot;, and &quot;subject&quot; ......................................<a href="#page-8">8</a>
+   <a href="#section-4">4</a>. Requirements Conformance ........................................<a href="#page-9">9</a>
+   <a href="#section-5">5</a>. Internationalization Considerations ............................<a href="#page-10">10</a>
+   <a href="#section-6">6</a>. Security Considerations ........................................<a href="#page-11">11</a>
+   <a href="#section-7">7</a>. IANA Considerations ............................................<a href="#page-12">12</a>
+   <a href="#section-8">8</a>. References .....................................................<a href="#page-12">12</a>
+      <a href="#section-8.1">8.1</a>. Normative References ......................................<a href="#page-12">12</a>
+      <a href="#section-8.2">8.2</a>. Informative References ....................................<a href="#page-13">13</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Overview</span>
+
+   The [<a href="#ref-NOTIFY" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">NOTIFY</a>] extension to the [<a href="#ref-SIEVE" title="&quot;Sieve: An Email Filtering Language&quot;">SIEVE</a>] mail filtering language is a
+   framework for providing notifications by employing URIs to specify
+   the notification mechanism.  This document defines how xmpp URIs (see
+   [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>]) are used to generate notifications via the Extensible
+   Messaging and Presence Protocol [<a href="#ref-XMPP" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Core&quot;">XMPP</a>], which is widely implemented
+   in Jabber instant messaging technologies.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Terminology</span>
+
+   This document inherits terminology from [<a href="#ref-NOTIFY" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">NOTIFY</a>], [<a href="#ref-SIEVE" title="&quot;Sieve: An Email Filtering Language&quot;">SIEVE</a>], and
+   [<a href="#ref-XMPP" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Core&quot;">XMPP</a>].  In particular, the terms &quot;parameter&quot; and &quot;tag&quot; are used as
+   described in [<a href="#ref-NOTIFY" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">NOTIFY</a>] to refer to aspects of Sieve scripts, and the
+   term &quot;key&quot; is used as described in [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>] to refer to aspects of
+   an XMPP URI.
+
+   The capitalized key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;,
+   &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT
+   RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this document are to be
+   interpreted as described in [<a href="#ref-TERMS" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">TERMS</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Definition</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Notify Parameter &quot;method&quot;</span>
+
+   The &quot;method&quot; parameter MUST be a URI that conforms to the xmpp URI
+   scheme (as specified in [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>]) and that identifies an XMPP
+   account associated with the email inbox.  The URI MAY include the
+   resource identifier of an XMPP address and/or the query component
+   portion of an XMPP URI, but SHOULD NOT include an authority component
+   or fragment identifier component.  The processing application MUST
+   extract an XMPP address from the URI in accordance with the
+   processing rules specified in [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>].  The resulting XMPP address
+   MUST be encapsulated in XMPP syntax as the value of the XMPP &#x27;to&#x27;
+   attribute.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Test notify_method_capability</span>
+
+   In response to a notify_method_capability test for the &quot;online&quot;
+   notification-capability, an implementation SHOULD return a value of
+   &quot;yes&quot; if it has knowledge of an active presence session (see
+   [<a href="#ref-XMPP-IM" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence&quot;">XMPP-IM</a>]) for the specified XMPP notification-uri; otherwise, it
+   SHOULD return a value of &quot;maybe&quot; (since typical XMPP systems may not
+   allow a Sieve engine to gain knowledge about the presence of XMPP
+   entities).
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Notify Tag &quot;:from&quot;</span>
+
+   If included, the &quot;:from&quot; tag MUST be an electronic address that
+   conforms to the &quot;Mailbox&quot; rule defined in [<a href="/doc/html/rfc5321" title="&quot;Simple Mail Transfer Protocol&quot;">RFC5321</a>].  The value of
+   the &quot;:from&quot; tag MAY be included in the human-readable XML character
+   data of the XMPP notification; alternatively or in addition, it MAY
+   be transformed into formal XMPP syntax, in which case it MUST be
+   encapsulated as the value of an XMPP SHIM (Stanza Headers and
+   Internet Metadata) [<a href="#ref-SHIM" title="&quot;Stanza Headers and Internet Metadata&quot;">SHIM</a>] header named &quot;Resent-From&quot;.
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  Notify Tag &quot;:importance&quot;</span>
+
+   The &quot;:importance&quot; tag has no special meaning for this notification
+   mechanism, and this specification puts no restriction on its use.
+   The value of the &quot;:importance&quot; tag MAY be transformed into XMPP
+   syntax (in addition to or instead of including appropriate text in
+   the XML character data of the XMPP &lt;body/&gt; element); if so, it SHOULD
+   be encapsulated as the value of an XMPP SHIM (Stanza Headers and
+   Internet Metadata) [<a href="#ref-SHIM" title="&quot;Stanza Headers and Internet Metadata&quot;">SHIM</a>] header named &quot;Urgency&quot;, where the XML
+   character of that header is &quot;high&quot; if the value of the &quot;:importance&quot;
+   tag is &quot;1&quot;, &quot;medium&quot; if the value of the &quot;:importance&quot; tag is &quot;2&quot;,
+   and &quot;low&quot; if the value of the &quot;:importance&quot; tag is &quot;3&quot;.
+
+<span class="h3"><a class="selflink" id="section-2.5" href="#section-2.5">2.5</a>.  Notify Tag &quot;:message&quot;</span>
+
+   If the &quot;:message&quot; tag is included, that string MUST be transformed
+   into the XML character data of an XMPP &lt;body/&gt; element (where the
+   string is generated according to the guidelines specified in <a href="#section-3.6">Section</a>
+   <a href="#section-3.6">3.6</a> of [<a href="#ref-NOTIFY" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">NOTIFY</a>]).
+
+<span class="h3"><a class="selflink" id="section-2.6" href="#section-2.6">2.6</a>.  Notify Tag &quot;:options&quot;</span>
+
+   The &quot;:options&quot; tag has no special meaning for this notification
+   mechanism.  Any handling of this tag is the responsibility of an
+   implementation.
+
+<span class="h3"><a class="selflink" id="section-2.7" href="#section-2.7">2.7</a>.  XMPP Syntax</span>
+
+   The xmpp mechanism results in the sending of an XMPP message to
+   notify a recipient about an email message.  The general XMPP syntax
+   is as follows:
+
+   o  The notification MUST be an XMPP &lt;message/&gt; stanza.
+
+
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+   o  The value of the XMPP &#x27;from&#x27; attribute SHOULD be the XMPP address
+      of the notification service associated with the Sieve engine or
+      the XMPP address of the entity to be notified.  The value of the
+      XMPP &#x27;from&#x27; attribute MUST NOT be generated from the Sieve &quot;:from&quot;
+      tag.
+
+   o  The value of the XMPP &#x27;to&#x27; attribute MUST be the XMPP address
+      specified in the XMPP URI contained in the &quot;method&quot; notify
+      parameter.
+
+   o  The value of the XMPP &#x27;type&#x27; attribute MUST be &#x27;headline&#x27; or
+      &#x27;normal&#x27;.
+
+   o  The XMPP &lt;message/&gt; stanza MUST include a &lt;body/&gt; child element.
+      If the &quot;:message&quot; tag is included in the Sieve script, that string
+      MUST be used as the XML character data of the &lt;body/&gt; element.  If
+      not and if the XMPP URI contained in the &quot;method&quot; notify parameter
+      specified a &quot;body&quot; key in the query component, that value SHOULD
+      be used.  Otherwise, the XML character data SHOULD be some
+      configurable text indicating that the message is a Sieve
+      notification.
+
+   o  The XMPP &lt;message/&gt; stanza MAY include a &lt;subject/&gt; child element.
+      If the XMPP URI contained in the &quot;method&quot; notify parameter
+      specified a &quot;subject&quot; key in the query component, that value
+      SHOULD be used as the XML character data of the &lt;subject/&gt;
+      element.  Otherwise, the XML character data SHOULD be some
+      configurable text indicating that the message is a Sieve
+      notification.
+
+   o  The XMPP &lt;message/&gt; stanza SHOULD include a URI, for the recipient
+      to use as a hint in locating the message, encapsulated as the XML
+      character data of a &lt;url/&gt; child element of an &lt;x/&gt; element
+      qualified by the &#x27;jabber:x:oob&#x27; namespace, as specified in [<a href="#ref-OOB" title="&quot;Out of Band Data&quot;">OOB</a>].
+      If included, the URI SHOULD be an Internet Message Access Protocol
+      [<a href="#ref-IMAP" title="&quot;INTERNET MESSAGE ACCESS PROTOCOL - VERSION 4rev1&quot;">IMAP</a>] URL that specifies the location of the message, as defined
+      in [<a href="#ref-IMAP-URL" title="&quot;IMAP URL Scheme&quot;">IMAP-URL</a>], but MAY be another URI type that can specify or
+      hint at the location of an email message, such as a URI for an
+      HTTP resource [<a href="#ref-HTTP" title="&quot;Hypertext Transfer Protocol -- HTTP/1.1&quot;">HTTP</a>] or a Post Office Protocol Version 3 (POP3)
+      mailbox [<a href="#ref-POP-URL" title="&quot;POP URL Scheme&quot;">POP-URL</a>] at which the message can be accessed.  It is not
+      expected that an XMPP user agent shall directly handle such a URI,
+      but instead that it shall invoke an appropriate helper application
+      to handle the URI.
+
+   o  The XMPP &lt;message/&gt; stanza MAY include an XMPP SHIM (Stanza
+      Headers and Internet Metadata) [<a href="#ref-SHIM" title="&quot;Stanza Headers and Internet Metadata&quot;">SHIM</a>] header named &quot;Resent-From&quot;.
+      If the Sieve script included a &quot;:from&quot; tag, the &quot;Resent-From&quot;
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+      value MUST be the value of the &quot;:from&quot; tag; otherwise, the
+      &quot;Resent-From&quot; value SHOULD be the envelope recipient address of
+      the original email message that triggered the notification.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Examples</span>
+
+   In the following examples, the sender of the email has an address of
+   &lt;mailto:juliet@example.org&gt;, the entity to be notified has an email
+   address of &lt;mailto:romeo@example.com&gt; and an XMPP address of
+   romeo@im.example.com (resulting in an XMPP URI of
+   &lt;xmpp:romeo@im.example.com&gt;), and the notification service associated
+   with the Sieve engine has an XMPP address of notify.example.com.
+
+   Note: In the following examples, line breaks are included in XMPP
+   URIs solely for the purpose of readability.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Basic Action</span>
+
+   The following is a basic Sieve notify action with only a method.  The
+   XML character data of the XMPP &lt;body/&gt; and &lt;subject/&gt; elements are
+   therefore generated by the Sieve engine based on configuration.  In
+   addition, the Sieve engine includes a URI pointing to the message.
+
+   Basic action (Sieve syntax)
+
+     notify &quot;xmpp:romeo@im.example.com&quot;
+
+   The resulting XMPP &lt;message/&gt; stanza might be as follows:
+
+   Basic action (XMPP syntax)
+
+     &lt;message from=&#x27;notify.example.com&#x27;
+              to=&#x27;romeo@im.example.com&#x27;
+              type=&#x27;headline&#x27;
+              xml:lang=&#x27;en&#x27;&gt;
+       &lt;subject&gt;SIEVE&lt;/subject&gt;
+       &lt;body&gt;&amp;lt;juliet@example.com&amp;gt; You got mail.&lt;/body&gt;
+       &lt;x xmlns=&#x27;jabber:x:oob&#x27;&gt;
+         &lt;url&gt;
+           imap://romeo@example.com/INBOX;UIDVALIDITY=385759043/;UID=18
+         &lt;/url&gt;
+       &lt;/x&gt;
+     &lt;/message&gt;
+
+
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Action with &quot;body&quot;</span>
+
+   The following action contains a &quot;body&quot; key in the query component of
+   the XMPP URI but no &quot;:message&quot; tag in the Sieve script.  As a result,
+   the XML character data of the XMPP &lt;body/&gt; element in the XMPP
+   notification is taken from the XMPP URI.  In addition, the Sieve
+   engine includes a URI pointing to the message.
+
+   Action with &quot;body&quot; (Sieve syntax)
+
+     notify &quot;xmpp:romeo@im.example.com?message
+              ;body=Wherefore%20art%20thou%3F&quot;
+
+   The resulting XMPP &lt;message/&gt; stanza might be as follows.
+
+   Action with &quot;body&quot; (XMPP syntax)
+
+     &lt;message from=&#x27;notify.example.com&#x27;
+              to=&#x27;romeo@im.example.com&#x27;
+              type=&#x27;headline&#x27;
+              xml:lang=&#x27;en&#x27;&gt;
+       &lt;subject&gt;SIEVE&lt;/subject&gt;
+       &lt;body&gt;Wherefore art thou?&lt;/body&gt;
+       &lt;x xmlns=&#x27;jabber:x:oob&#x27;&gt;
+         &lt;url&gt;
+           imap://romeo@example.com/INBOX;UIDVALIDITY=385759044/;UID=19
+         &lt;/url&gt;
+       &lt;/x&gt;
+     &lt;/message&gt;
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Action with &quot;body&quot;, &quot;:importance&quot;, &quot;:message&quot;, and &quot;subject&quot;</span>
+
+   The following action specifies an &quot;:importance&quot; tag and a &quot;:message&quot;
+   tag in the Sieve script, as well as a &quot;body&quot; key and a &quot;subject&quot; key
+   in the query component of the XMPP URI.  As a result, the &quot;:message&quot;
+   tag from the Sieve script overrides the &quot;body&quot; key from the XMPP URI
+   when generating the XML character data of the XMPP &lt;body/&gt; element.
+   In addition, the Sieve engine includes a URI pointing to the message.
+
+   Action with &quot;body&quot;, &quot;:importance&quot;, &quot;:message&quot;, and &quot;subject&quot; (Sieve
+   syntax)
+
+     notify :importance &quot;1&quot;
+            :message &quot;Contact Juliet immediately!&quot;
+            &quot;xmpp:romeo@im.example.com?message
+              ;body=You%27re%20in%20trouble
+              ;subject=ALERT%21&quot;
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+   The resulting XMPP &lt;message/&gt; stanza might be as follows.
+
+   Action with &quot;body&quot;, &quot;:importance&quot;, &quot;:message&quot;, and &quot;subject&quot; (XMPP
+   syntax)
+
+     &lt;message from=&#x27;notify.example.com&#x27;
+              to=&#x27;romeo@im.example.com&#x27;
+              type=&#x27;headline&#x27;
+              xml:lang=&#x27;en&#x27;&gt;
+       &lt;subject&gt;ALERT!&lt;/subject&gt;
+       &lt;body&gt;Contact Juliet immediately!&lt;/body&gt;
+       &lt;headers xmlns=&#x27;http://jabber.org/protocol/shim&#x27;&gt;
+         &lt;header name=&#x27;Urgency&#x27;&gt;high&lt;/header&gt;
+       &lt;/headers&gt;
+       &lt;x xmlns=&#x27;jabber:x:oob&#x27;&gt;
+         &lt;url&gt;
+           imap://romeo@example.com/INBOX;UIDVALIDITY=385759045/;UID=20
+         &lt;/url&gt;
+       &lt;/x&gt;
+     &lt;/message&gt;
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Action with &quot;:from&quot;, &quot;:message&quot;, &quot;:importance&quot;, &quot;body&quot;, and</span>
+      &quot;subject&quot;
+
+   The following action specifies a &quot;:from&quot; tag, an &quot;:importance&quot; tag,
+   and a &quot;:message&quot; tag in the Sieve script, as well as a &quot;body&quot; key and
+   a &quot;subject&quot; key in the query component of the XMPP URI.  As a result,
+   the &quot;:message&quot; tag from the Sieve script overrides the &quot;body&quot; key
+   from the XMPP URI when generating the XML character data of the XMPP
+   &lt;body/&gt; element.  In addition, the Sieve engine includes a URI
+   pointing to the message, as well as an XMPP SHIM (Stanza Headers and
+   Internet Metadata) [<a href="#ref-SHIM" title="&quot;Stanza Headers and Internet Metadata&quot;">SHIM</a>] header named &quot;Resent-From&quot; (which
+   encapsulates the value of the &quot;:from&quot; tag).
+
+   Action with &quot;:from&quot;, &quot;:importance&quot;, &quot;:message&quot;, &quot;body&quot;, and &quot;subject&quot;
+   (Sieve syntax)
+
+     notify :from &quot;romeo.my.romeo@example.com&quot;
+            :importance &quot;1&quot;
+            :message &quot;Contact Juliet immediately!&quot;
+            &quot;xmpp:romeo@im.example.com?message
+              ;body=You%27re%20in%20trouble
+              ;subject=ALERT%21&quot;
+
+   The resulting XMPP &lt;message/&gt; stanza might be as follows.
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+   Action with &quot;:from&quot;, &quot;:importance&quot;, &quot;:message&quot;, &quot;body&quot;, and &quot;subject&quot;
+   (XMPP syntax)
+
+     &lt;message from=&#x27;notify.example.com&#x27;
+              to=&#x27;romeo@im.example.com&#x27;
+              type=&#x27;headline&#x27;
+              xml:lang=&#x27;en&#x27;&gt;
+       &lt;subject&gt;ALERT!&lt;/subject&gt;
+       &lt;body&gt;Contact Juliet immediately!&lt;/body&gt;
+       &lt;headers xmlns=&#x27;http://jabber.org/protocol/shim&#x27;&gt;
+         &lt;header name=&#x27;Resent-From&#x27;&gt;romeo.my.romeo@example.com&lt;/header&gt;
+         &lt;header name=&#x27;Urgency&#x27;&gt;high&lt;/header&gt;
+       &lt;/headers&gt;
+       &lt;x xmlns=&#x27;jabber:x:oob&#x27;&gt;
+         &lt;url&gt;
+           imap://romeo@example.com/INBOX;UIDVALIDITY=385759045/;UID=21
+         &lt;/url&gt;
+       &lt;/x&gt;
+     &lt;/message&gt;
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Requirements Conformance</span>
+
+   Section 3.8 of [<a href="#ref-NOTIFY" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">NOTIFY</a>] specifies a set of requirements for Sieve
+   notification methods.  The conformance of the xmpp notification
+   mechanism is provided here.
+
+   1.   An implementation of the xmpp notification method SHOULD NOT
+        modify the final notification text (e.g., to limit the length);
+        however, a given deployment MAY do so (e.g., if recipients pay
+        per character or byte for XMPP messages).  Modification of
+        characters themselves should not be necessary, since XMPP
+        character data is encoded in [<a href="#ref-UTF-8" title="&quot;UTF-8, a transformation format of ISO 10646&quot;">UTF-8</a>].
+
+   2.   An implementation MAY ignore parameters specified in the
+        &quot;:from&quot;, &quot;:importance&quot;, and &quot;:options&quot; tags.
+
+   3.   There is no recommended default message for an implementation to
+        include if the &quot;:message&quot; tag is not specified.
+
+   4.   A notification sent via the xmpp notification method MAY include
+        a timestamp in the textual message.
+
+   5.   The value of the XMPP &#x27;from&#x27; attribute MUST be the XMPP address
+        of the notification service associated with the Sieve engine.
+        The value of the Sieve &quot;:from&quot; tag MAY be transformed into the
+        value of an XMPP SHIM (Stanza Headers and Internet Metadata)
+        [<a href="#ref-SHIM" title="&quot;Stanza Headers and Internet Metadata&quot;">SHIM</a>] header named &quot;Resent-From&quot;.
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                     [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+   6.   The value of the XMPP &#x27;to&#x27; attribute MUST be the XMPP address
+        specified in the XMPP URI contained in the &quot;method&quot; parameter.
+
+   7.   In accordance with [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>], an implementation MUST ignore any
+        URI action or key it does not understand (i.e., the URI MUST be
+        processed as if the action or key were not present).  It is
+        RECOMMENDED to support the XMPP &quot;message&quot; query type (see
+        [<a href="#ref-QUERIES" title="&quot;XMPP URI Scheme Query Components&quot;">QUERIES</a>]) and the associated &quot;body&quot; and &quot;subject&quot; keys, which
+        SHOULD be mapped to the XMPP &lt;body/&gt; and &lt;subject/&gt; child
+        elements of the XMPP &lt;message/&gt; stanza, respectively.  However,
+        if included, then the Sieve notify &quot;:message&quot; tag MUST be mapped
+        to the XMPP &lt;body/&gt; element, overriding the &quot;body&quot; key (if any)
+        included in the XMPP URI.
+
+   8.   An implementation MUST NOT include any other extraneous
+        information not specified in parameters to the notify action.
+
+   9.   In response to a notify_method_capability test for the &quot;online&quot;
+        notification-capability, an implementation SHOULD return a value
+        of &quot;yes&quot; if it has knowledge of an active presence session (see
+        [<a href="#ref-XMPP-IM" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence&quot;">XMPP-IM</a>]) for the specified XMPP notification-uri, but only if
+        the entity that requested the test is authorized to know the
+        presence of the associated XMPP entity (e.g., via explicit
+        presence subscription as specified in [<a href="#ref-XMPP-IM" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence&quot;">XMPP-IM</a>]); otherwise, it
+        SHOULD return a value of &quot;maybe&quot; (since typical XMPP systems may
+        not allow a Sieve engine to gain knowledge about the presence of
+        XMPP entities).
+
+   10.  An implementation SHOULD NOT attempt to retry delivery of a
+        notification if it receives an XMPP error of type &quot;auth&quot; or
+        &quot;cancel&quot;, MAY attempt to retry delivery if it receives an XMPP
+        error of type &quot;wait&quot;, and MAY attempt to retry delivery if it
+        receives an XMPP error of &quot;modify&quot;, but only if it makes
+        appropriate modifications to the notification (see [<a href="#ref-XMPP" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Core&quot;">XMPP</a>]); in
+        any case, the number of retries SHOULD be limited to a
+        configurable number no less than 3 and no more than 10.  An
+        implementation MAY throttle notifications if the number of
+        notifications within a given time period becomes excessive
+        according to local service policy.  Duplicate suppression (if
+        any) is a matter of implementation and is not specified herein.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Internationalization Considerations</span>
+
+   Although an XMPP address may contain nearly any [<a href="#ref-UNICODE" title="&quot;The Unicode Standard, Version 3.2.0&quot;">UNICODE</a>] character,
+   the value of the &quot;method&quot; parameter MUST be a Uniform Resource
+   Identifier (see [<a href="#ref-URI" title="&quot;Uniform Resource Identifier (URI): Generic Syntax&quot;">URI</a>]) rather than an Internationalized Resource
+   Identifier (see [<a href="#ref-IRI" title="&quot;Internationalized Resource Identifiers (IRIs)&quot;">IRI</a>]).  The rules specified in [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>] MUST be
+   followed when generating XMPP URIs.
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                    [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+   In accordance with <a href="/doc/html/rfc3920#section-13">Section&nbsp;13 of RFC 3920</a>, all data sent over XMPP
+   MUST be encoded in [<a href="#ref-UTF-8" title="&quot;UTF-8, a transformation format of ISO 10646&quot;">UTF-8</a>].
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   Depending on the information included, sending a notification can be
+   comparable to forwarding mail to the notification recipient.  Care
+   must be taken when forwarding mail automatically, to ensure that
+   confidential information is not sent into an insecure environment.
+   In particular, implementations MUST conform to the security
+   considerations given in [<a href="#ref-NOTIFY" title="&quot;Sieve Email Filtering: Extension for Notifications&quot;">NOTIFY</a>], [<a href="#ref-SIEVE" title="&quot;Sieve: An Email Filtering Language&quot;">SIEVE</a>], and [<a href="#ref-XMPP" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Core&quot;">XMPP</a>].
+
+   [<a id="ref-NOTIFY">NOTIFY</a>] specifies that a notification method MUST provide mechanisms
+   for avoiding notification loops.  One type of notification loop can
+   be caused by message forwarding; however, such loops are prevented
+   because XMPP does not support the forwarding of messages from one
+   XMPP address to another.  Another type of notification loop can be
+   caused by auto-replies to XMPP messages received by the XMPP
+   notification service associated with the Sieve engine; therefore,
+   such a service MUST NOT auto-reply to XMPP messages it receives.
+
+   A common use case might be for a user to create a script that enables
+   the Sieve engine to act differently if the user is currently
+   available at a particular type of service (e.g., send notifications
+   to the user&#x27;s XMPP address if the user has an active session at an
+   XMPP service).  Whether the user is currently available can be
+   determined by means of a notify_method_capability test for the
+   &quot;online&quot; notification-capability.  In XMPP, information about current
+   network availability is called &quot;presence&quot; (see also [<a href="#ref-MODEL" title="&quot;A Model for Presence and Instant Messaging&quot;">MODEL</a>]).  Since
+   [<a href="#ref-XMPP-IM" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence&quot;">XMPP-IM</a>] requires that a user must approve a presence subscription
+   before an entity can gain access to the user&#x27;s presence information,
+   a limited but reasonably safe implementation might be for the Sieve
+   engine to request a subscription to the user&#x27;s presence.  The user
+   would then need to approve that subscription request so that the
+   Sieve engine can act appropriately depending on whether the user is
+   online or offline.  However, the Sieve engine MUST NOT use the user&#x27;s
+   presence information when processing scripts on behalf of a script
+   owner other than the user, unless the Sieve engine has explicit
+   knowledge (e.g., via integration with an XMPP server&#x27;s presence
+   authorization rules) that the script owner is authorized to know the
+   user&#x27;s presence.  While it would be possible to design a more
+   advanced approach to the delegation of presence authorization, any
+   such approach is left to future standards work.
+
+
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                    [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+   The following template provides the IANA registration of the Sieve
+   notification mechanism specified in this document:
+
+     To: iana@iana.org
+     Subject: Registration of new Sieve notification mechanism
+     Mechanism name: xmpp
+     Mechanism URI: <a href="/doc/html/rfc5122">RFC 5122</a> [<a href="#ref-XMPP-URI" title="&quot;Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible Messaging and Presence Protocol (XMPP)&quot;">XMPP-URI</a>]
+     Mechanism-specific options: none
+     Permanent and readily available reference: <a href="/doc/html/rfc5437">RFC 5437</a>
+     Person and email address to contact for further information:
+          Peter Saint-Andre &lt;registrar@xmpp.org&gt;
+
+   This information has been added to the list of Sieve notification
+   mechanisms maintained at &lt;<a href="http://www.iana.org">http://www.iana.org</a>&gt;.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Normative References</span>
+
+   [<a id="ref-NOTIFY">NOTIFY</a>]    Melnikov, A., Ed., Leiba, B., Ed., Segmuller, W., and T.
+               Martin, &quot;Sieve Email Filtering: Extension for
+               Notifications&quot;, <a href="/doc/html/rfc5435">RFC 5435</a>, January 2009.
+
+   [<a id="ref-OOB">OOB</a>]       Saint-Andre, P., &quot;Out of Band Data&quot;, XSF XEP 0066,
+               August 2006.
+
+   [<a id="ref-QUERIES">QUERIES</a>]   Saint-Andre, P., &quot;XMPP URI Scheme Query Components&quot;, XSF
+               XEP 0147, September 2006.
+
+   [<a id="ref-RFC5321">RFC5321</a>]   Klensin, J., &quot;Simple Mail Transfer Protocol&quot;, <a href="/doc/html/rfc5321">RFC 5321</a>,
+               October 2008.
+
+   [<a id="ref-SHIM">SHIM</a>]      Saint-Andre, P. and J. Hildebrand, &quot;Stanza Headers and
+               Internet Metadata&quot;, XSF XEP 0131, July 2006.
+
+   [<a id="ref-SIEVE">SIEVE</a>]     Guenther, P., Ed. and T. Showalter, Ed., &quot;Sieve: An Email
+               Filtering Language&quot;, <a href="/doc/html/rfc5228">RFC 5228</a>, January 2008.
+
+   [<a id="ref-TERMS">TERMS</a>]     Bradner, S., &quot;Key words for use in RFCs to Indicate
+               Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-XMPP-URI">XMPP-URI</a>]  Saint-Andre, P., &quot;Internationalized Resource Identifiers
+               (IRIs) and Uniform Resource Identifiers (URIs) for the
+               Extensible Messaging and Presence Protocol (XMPP)&quot;,
+               <a href="/doc/html/rfc5122">RFC 5122</a>, February 2008.
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                    [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  Informative References</span>
+
+   [<a id="ref-HTTP">HTTP</a>]      Fielding, R., Gettys, J., Mogul, J., Frystyk, H.,
+               Masinter, L., Leach, P., and T. Berners-Lee, &quot;Hypertext
+               Transfer Protocol -- HTTP/1.1&quot;, <a href="/doc/html/rfc2616">RFC 2616</a>, June 1999.
+
+   [<a id="ref-IMAP">IMAP</a>]      Crispin, M., &quot;INTERNET MESSAGE ACCESS PROTOCOL - VERSION
+               4rev1&quot;, <a href="/doc/html/rfc3501">RFC 3501</a>, March 2003.
+
+   [<a id="ref-IMAP-URL">IMAP-URL</a>]  Melnikov, A. and C. Newman, &quot;IMAP URL Scheme&quot;, <a href="/doc/html/rfc5092">RFC 5092</a>,
+               November 2007.
+
+   [<a id="ref-IRI">IRI</a>]       Duerst, M. and M. Suignard, &quot;Internationalized Resource
+               Identifiers (IRIs)&quot;, <a href="/doc/html/rfc3987">RFC 3987</a>, January 2005.
+
+   [<a id="ref-MODEL">MODEL</a>]     Day, M., Rosenberg, J., and H. Sugano, &quot;A Model for
+               Presence and Instant Messaging&quot;, <a href="/doc/html/rfc2778">RFC 2778</a>, February 2000.
+
+   [<a id="ref-POP-URL">POP-URL</a>]   Gellens, R., &quot;POP URL Scheme&quot;, <a href="/doc/html/rfc2384">RFC 2384</a>, August 1998.
+
+   [<a id="ref-UNICODE">UNICODE</a>]   The Unicode Consortium, &quot;The Unicode Standard, Version
+               3.2.0&quot;, 2000.
+
+               The Unicode Standard, Version 3.2.0 is defined by The
+               Unicode Standard, Version 3.0 (Reading, MA, Addison-
+               Wesley, 2000.  ISBN 0-201-61633-5), as amended by the
+               Unicode Standard Annex #27: Unicode 3.1
+               (<a href="http://www.unicode.org/reports/tr27/">http://www.unicode.org/reports/tr27/</a>) and by the Unicode
+               Standard Annex #28: Unicode 3.2
+               (<a href="http://www.unicode.org/reports/tr28/">http://www.unicode.org/reports/tr28/</a>).
+
+   [<a id="ref-URI">URI</a>]       Berners-Lee, T., Fielding, R., and L. Masinter, &quot;Uniform
+               Resource Identifier (URI): Generic Syntax&quot;, STD 66,
+               <a href="/doc/html/rfc3986">RFC 3986</a>, January 2005.
+
+   [<a id="ref-UTF-8">UTF-8</a>]     Yergeau, F., &quot;UTF-8, a transformation format of ISO
+               10646&quot;, STD 63, <a href="/doc/html/rfc3629">RFC 3629</a>, November 2003.
+
+   [<a id="ref-XMPP">XMPP</a>]      Saint-Andre, P., &quot;Extensible Messaging and Presence
+               Protocol (XMPP): Core&quot;, <a href="/doc/html/rfc3920">RFC 3920</a>, October 2004.
+
+   [<a id="ref-XMPP-IM">XMPP-IM</a>]   Saint-Andre, P., &quot;Extensible Messaging and Presence
+               Protocol (XMPP): Instant Messaging and Presence&quot;,
+               <a href="/doc/html/rfc3921">RFC 3921</a>, October 2004.
+
+
+
+
+
+
+
+<span class="grey">Saint-Andre &amp; Melnikov      Standards Track                    [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc5437">RFC 5437</a>               Sieve Notify Method: XMPP            January 2009</span>
+
+
+Authors&#x27; Addresses
+
+   Peter Saint-Andre
+   Cisco
+
+   EMail: psaintan@cisco.com
+
+
+   Alexey Melnikov
+   Isode Limited
+
+   EMail: Alexey.Melnikov@isode.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Saint-Andre &amp; Melnikov      Standards Track                    [Page 14]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

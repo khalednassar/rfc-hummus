@@ -1,0 +1,573 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc2537
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-dnssec-rsa/">
+  <meta name="description" content="RSA/MD5 KEYs and SIGs in the Domain Name System (DNS) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgbrown"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc2537.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc2537.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc2537.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc2537/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc2537/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/dnssec/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-dnssec-rsa@ietf.org?subject=draft-ietf-dnssec-rsa" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-dnssec-rsa-01.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dnssec-rsa-01.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-dnssec-rsa-01.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-dnssec-rsa-01">draft-ietf-dnssec-rsa-01</a>                         Proposed Standard
+Obsoleted by: <a href="/doc/html/rfc3110">3110</a>                                                      </pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                        D. Eastlake
+Request for Comments: 2537                                           IBM
+Category: Standards Track                                     March 1999
+
+
+         <span class="h1">RSA/MD5 KEYs and SIGs in the Domain Name System (DNS)</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+Abstract
+
+   A standard method for storing RSA keys and and RSA/MD5 based
+   signatures in the Domain Name System is described which utilizes DNS
+   KEY and SIG resource records.
+
+Table of Contents
+
+   Abstract...................................................<a href="#page-1">1</a>
+   <a href="#section-1">1</a>. Introduction............................................<a href="#page-1">1</a>
+   <a href="#section-2">2</a>. RSA Public KEY Resource Records.........................<a href="#page-2">2</a>
+   <a href="#section-3">3</a>. RSA/MD5 SIG Resource Records............................<a href="#page-2">2</a>
+   <a href="#section-4">4</a>. Performance Considerations..............................<a href="#page-3">3</a>
+   <a href="#section-5">5</a>. Security Considerations.................................<a href="#page-4">4</a>
+   References.................................................<a href="#page-4">4</a>
+   Author&#x27;s Address...........................................<a href="#page-5">5</a>
+   Full Copyright Statement...................................<a href="#page-6">6</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   The Domain Name System (DNS) is the global hierarchical replicated
+   distributed database system for Internet addressing, mail proxy, and
+   other information. The DNS has been extended to include digital
+   signatures and cryptographic keys as described in [<a href="/doc/html/rfc2535">RFC 2535</a>].  Thus
+   the DNS can now be secured and used for secure key distribution.
+
+
+
+
+
+
+
+<span class="grey">Eastlake                    Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc2537">RFC 2537</a>            RSA/MD5 KEYs and SIGs in the DNS          March 1999</span>
+
+
+   This document describes how to store RSA keys and and RSA/MD5 based
+   signatures in the DNS.  Familiarity with the RSA algorithm is assumed
+   [<a href="#ref-Schneier">Schneier</a>].  Implementation of the RSA algorithm in DNS is
+   recommended.
+
+   The key words &quot;MUST&quot;, &quot;REQUIRED&quot;, &quot;SHOULD&quot;, &quot;RECOMMENDED&quot;, and &quot;MAY&quot;
+   in this document are to be interpreted as described in <a href="/doc/html/rfc2119">RFC 2119</a>.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. RSA Public KEY Resource Records</span>
+
+   RSA public keys are stored in the DNS as KEY RRs using algorithm
+   number 1 [<a href="/doc/html/rfc2535">RFC 2535</a>].  The structure of the algorithm specific portion
+   of the RDATA part of such RRs is as shown below.
+
+           Field             Size
+           -----             ----
+           exponent length   1 or 3 octets (see text)
+           exponent          as specified by length field
+           modulus           remaining space
+
+   For interoperability, the exponent and modulus are each currently
+   limited to 4096 bits in length.  The public key exponent is a
+   variable length unsigned integer.  Its length in octets is
+   represented as one octet if it is in the range of 1 to 255 and by a
+   zero octet followed by a two octet unsigned length if it is longer
+   than 255 bytes.  The public key modulus field is a multiprecision
+   unsigned integer.  The length of the modulus can be determined from
+   the RDLENGTH and the preceding RDATA fields including the exponent.
+   Leading zero octets are prohibited in the exponent and modulus.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>. RSA/MD5 SIG Resource Records</span>
+
+   The signature portion of the SIG RR RDATA area, when using the
+   RSA/MD5 algorithm, is calculated as shown below.  The data signed is
+   determined as specified in [<a href="/doc/html/rfc2535">RFC 2535</a>].  See [<a href="/doc/html/rfc2535">RFC 2535</a>] for fields in
+   the SIG RR RDATA which precede the signature itself.
+
+
+     hash = MD5 ( data )
+
+     signature = ( 00 | 01 | FF* | 00 | prefix | hash ) ** e (mod n)
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Eastlake                    Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc2537">RFC 2537</a>            RSA/MD5 KEYs and SIGs in the DNS          March 1999</span>
+
+
+   where MD5 is the message digest algorithm documented in [<a href="/doc/html/rfc1321">RFC 1321</a>],
+   &quot;|&quot; is concatenation, &quot;e&quot; is the private key exponent of the signer,
+   and &quot;n&quot; is the modulus of the signer&#x27;s public key.  01, FF, and 00
+   are fixed octets of the corresponding hexadecimal value. &quot;prefix&quot; is
+   the ASN.1 BER MD5 algorithm designator prefix specified in [RFC
+   2437], that is,
+
+      hex 3020300c06082a864886f70d020505000410 [<a href="#ref-NETSEC">NETSEC</a>].
+
+   This prefix is included to make it easier to use RSAREF (or similar
+   packages such as EuroRef).  The FF octet MUST be repeated the maximum
+   number of times such that the value of the quantity being
+   exponentiated is the same length in octets as the value of n.
+
+   (The above specifications are identical to the corresponding part of
+   Public Key Cryptographic Standard #1 [<a href="/doc/html/rfc2437">RFC 2437</a>].)
+
+   The size of n, including most and least significant bits (which will
+   be 1) MUST be not less than 512 bits and not more than 4096 bits.  n
+   and e SHOULD be chosen such that the public exponent is small.
+
+   Leading zero bytes are permitted in the RSA/MD5 algorithm signature.
+
+   A public exponent of 3 minimizes the effort needed to verify a
+   signature.  Use of 3 as the public exponent is weak for
+   confidentiality uses since, if the same data can be collected
+   encrypted under three different keys with an exponent of 3 then,
+   using the Chinese Remainder Theorem [<a href="#ref-NETSEC">NETSEC</a>], the original plain text
+   can be easily recovered.  This weakness is not significant for DNS
+   security because we seek only authentication, not confidentiality.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>. Performance Considerations</span>
+
+   General signature generation speeds are roughly the same for RSA and
+   DSA [<a href="/doc/html/rfc2536">RFC 2536</a>].  With sufficient pre-computation, signature
+   generation with DSA is faster than RSA.  Key generation is also
+   faster for DSA.  However, signature verification is an order of
+   magnitude slower with DSA when the RSA public exponent is chosen to
+   be small as is recommended for KEY RRs used in domain name system
+   (DNS) data authentication.
+
+   Current DNS implementations are optimized for small transfers,
+   typically less than 512 bytes including overhead.  While larger
+   transfers will perform correctly and work is underway to make larger
+
+
+
+
+
+
+
+<span class="grey">Eastlake                    Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc2537">RFC 2537</a>            RSA/MD5 KEYs and SIGs in the DNS          March 1999</span>
+
+
+   transfers more efficient, it is still advisable at this time to make
+   reasonable efforts to minimize the size of KEY RR sets stored within
+   the DNS consistent with adequate security.  Keep in mind that in a
+   secure zone, at least one authenticating SIG RR will also be
+   returned.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>. Security Considerations</span>
+
+   Many of the general security consideration in [<a href="/doc/html/rfc2535">RFC 2535</a>] apply.  Keys
+   retrieved from the DNS should not be trusted unless (1) they have
+   been securely obtained from a secure resolver or independently
+   verified by the user and (2) this secure resolver and secure
+   obtainment or independent verification conform to security policies
+   acceptable to the user.  As with all cryptographic algorithms,
+   evaluating the necessary strength of the key is essential and
+   dependent on local policy.
+
+   For interoperability, the RSA key size is limited to 4096 bits.  For
+   particularly critical applications, implementors are encouraged to
+   consider the range of available algorithms and key sizes.
+
+References
+
+   [<a id="ref-NETSEC">NETSEC</a>]     Kaufman, C., Perlman, R. and M. Speciner, &quot;Network
+                Security: PRIVATE Communications in a PUBLIC World&quot;,
+                Series in Computer Networking and Distributed
+                Communications, 1995.
+
+   [<a id="ref-RFC 2437">RFC 2437</a>]   Kaliski, B. and J. Staddon, &quot;PKCS #1: RSA Cryptography
+                Specifications Version 2.0&quot;, <a href="/doc/html/rfc2437">RFC 2437</a>, October 1998.
+
+   [<a id="ref-RFC 1034">RFC 1034</a>]   Mockapetris, P., &quot;Domain Names - Concepts and
+                Facilities&quot;, STD 13, <a href="/doc/html/rfc1034">RFC 1034</a>, November 1987.
+
+   [<a id="ref-RFC 1035">RFC 1035</a>]   Mockapetris, P., &quot;Domain Names - Implementation and
+                Specification&quot;, STD 13, <a href="/doc/html/rfc1035">RFC 1035</a>, November 1987.
+
+   [<a id="ref-RFC 1321">RFC 1321</a>]   Rivest, R., &quot;The MD5 Message-Digest Algorithm&quot;, <a href="/doc/html/rfc1321">RFC 1321</a>
+                April 1992.
+
+   [<a id="ref-RFC 2535">RFC 2535</a>]   Eastlake, D., &quot;Domain Name System Security Extensions&quot;,
+                <a href="/doc/html/rfc2535">RFC 2535</a>, March 1999.
+
+   [<a id="ref-RFC 2536">RFC 2536</a>]   EastLake, D., &quot;DSA KEYs and SIGs in the Domain Name
+                System (DNS)&quot;, <a href="/doc/html/rfc2536">RFC 2536</a>, March 1999.
+
+
+
+
+
+
+<span class="grey">Eastlake                    Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc2537">RFC 2537</a>            RSA/MD5 KEYs and SIGs in the DNS          March 1999</span>
+
+
+   [<a id="ref-Schneier">Schneier</a>]   Bruce Schneier, &quot;Applied Cryptography Second Edition:
+                protocols, algorithms, and source code in C&quot;, 1996, John
+                Wiley and Sons, ISBN 0-471-11709-9.
+
+Author&#x27;s Address
+
+   Donald E. Eastlake 3rd
+   IBM
+   65 Shindegan Hill Road, RR #1
+   Carmel, NY 10512
+
+   Phone:   +1-914-276-2668(h)
+            +1-914-784-7913(w)
+   Fax:     +1-914-784-3833(w)
+   EMail:   dee3@us.ibm.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Eastlake                    Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc2537">RFC 2537</a>            RSA/MD5 KEYs and SIGs in the DNS          March 1999</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Eastlake                    Standards Track                     [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,813 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8651
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-manet-dlep-pause-extension/">
+  <meta name="description" content="Dynamic Link Exchange Protocol (DLEP) Control-Plane-Based Pause Extension (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8651.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8651.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8651.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8651.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8651/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8651/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/manet/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-manet-dlep-pause-extension@ietf.org?subject=draft-ietf-manet-dlep-pause-extension" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-manet-dlep-pause-extension-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-manet-dlep-pause-extension-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-manet-dlep-pause-extension-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-manet-dlep-pause-extension-08">draft-ietf-manet-dlep-pause-extension-08</a>         Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                          B. Cheng
+Request for Comments: 8651                                    D. Wiggins
+Category: Standards Track                         MIT Lincoln Laboratory
+ISSN: 2070-1721                                           L. Berger, Ed.
+                                                 LabN Consulting, L.L.C.
+                                                            October 2019
+
+
+                 <span class="h1">Dynamic Link Exchange Protocol (DLEP)</span>
+                  <span class="h1">Control-Plane-Based Pause Extension</span>
+
+Abstract
+
+   This document defines an extension to the Dynamic Link Exchange
+   Protocol (DLEP) that enables a modem to use DLEP messages to pause
+   and resume data traffic coming from its peer router.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8651">https://www.rfc-editor.org/info/rfc8651</a>.
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Key Words
+   2.  Extension Usage and Identification
+   3.  Extension Data Items
+     3.1.  Queue Parameters
+       3.1.1.  Queue Parameter Sub-Data Item
+     3.2.  Pause
+     3.3.  Restart
+   4.  Security Considerations
+   5.  IANA Considerations
+     5.1.  Extension Type Value
+     5.2.  Data Item Values
+     5.3.  Queue Parameter Sub-Data Item Values
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgments
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Dynamic Link Exchange Protocol (DLEP) is defined in [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>].
+   It provides the exchange of link-related control information between
+   a modem and a router.  DLEP defines a base set of mechanisms as well
+   as support for possible extensions.  This document defines one such
+   extension.
+
+   The base DLEP specification does not include any data-plane
+   flow-control capability.  The extension defined in this document
+   supports flow control of data traffic based on explicit messages sent
+   via DLEP by a modem to indicate when a router should hold off sending
+   traffic and when it should resume.  This functionality parallels the
+   flow-control mechanism found in PPP over Ethernet (PPPoE) per
+   [<a href="/doc/html/rfc5578" title="&quot;PPP over Ethernet (PPPoE) Extensions for Credit Flow and Link Metrics&quot;">RFC5578</a>].  The extension also optionally supports DSCP-aware flow
+   control (&quot;DSCP&quot; stands for &quot;Differentiated Services Code Point&quot;) for
+   use by Diffserv-aware modems.  (For general background on
+   Differentiated Services, see [<a href="/doc/html/rfc2475" title="&quot;An Architecture for Differentiated Services&quot;">RFC2475</a>].)  This functionality is very
+   similar to that provided by Ethernet priority-based flow control; see
+   [<a href="#ref-IEEE.802.1Q_2014">IEEE.802.1Q_2014</a>].  The extension defined in this document is
+   referred to as &quot;Control-Plane-Based Pause&quot;.  Other flow-control
+   methods are possible with DLEP; for example, see [<a href="#ref-DLEP-DIFFSERV">DLEP-DIFFSERV</a>] and
+   [<a href="#ref-DLEP-CREDIT">DLEP-CREDIT</a>].
+
+   Note that this mechanism only applies to traffic that is to be
+   transmitted on the modem&#x27;s attached data channel and not to DLEP
+   control messages themselves.  Furthermore, it applies only to the
+   single subnetwork that is used to connect a modem and a router, and
+   for traffic sent from a router to a modem.
+
+   This document defines a new DLEP Extension Type Value that is used to
+   indicate the use of the extension; see <a href="#section-2">Section 2</a>.  Three new DLEP
+   Data Items are defined in <a href="#section-3">Section 3</a>.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Key Words</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Extension Usage and Identification</span>
+
+   The use of the Control-Plane-Based Pause Extension SHOULD be
+   configurable.  To indicate that the implementation supports the use
+   of the Control-Plane-Based Pause Extension, an implementation MUST
+   include the Control-Plane-Based Pause Extension Type Value in the
+   Extensions Supported Data Item.  The Extensions Supported Data Item
+   is sent and processed according to [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>].
+
+   The Control-Plane-Based Pause Extension Type Value is 2; see
+   <a href="#section-5">Section 5</a>.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Extension Data Items</span>
+
+   Three Data Items are defined by this extension.  The Queue Parameters
+   Data Item is used by a modem to provide information about the DSCPs
+   it uses in forwarding.  The Pause Data Item is used by a modem to
+   indicate when a router should cease sending packets, and the Restart
+   Data Item is used by a modem to indicate when a router can resume
+   sending packets.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Queue Parameters</span>
+
+   The Queue Parameters Data Item is sent by a modem to a router to
+   indicate DSCP values that may be independently paused.  This Data
+   Item MUST be included in a Session Initialization Response Message
+   that also contains the Control-Plane-Based Pause Extension Type Value
+   in the Extensions Supported Data Item.  Updates to these parameters
+   MAY be sent by a modem by including the Data Item in Session Update
+   Messages.
+
+   The Queue Parameters Data Item groups DSCPs into logical queues, each
+   of which is identified by a &quot;Queue Index&quot; field.  The number of
+   logical queues is variable, as is the number of DSCPs associated with
+   each queue.  A queue size (in bytes) is provided for informational
+   purposes.  Queue Index fields are numbered sequentially from zero,
+   where queue index zero is a special case covering DSCPs that are not
+   otherwise associated with a Queue Index field.
+
+   An implementation that does not support DSCPs would indicate one
+   queue with zero DSCPs, and the number of bytes that may be in its
+   associated link transmit queue.  Additional logical queues are
+   represented in a variable series of Queue Parameter Sub-Data Items.
+
+   The format of the Queue Parameters Data Item is:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Data Item Type                | Length                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |   Num Queues  | Scale |              Reserved                 |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |               Queue Parameter Sub-Data Item 1                 |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      :                                ...                            :
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |               Queue Parameter Sub-Data Item n                 |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Data Item Type:
+      23
+
+   Length:
+      Variable
+
+      Per [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>], Length is the number of octets in the Data Item,
+      excluding the Type and Length fields.
+
+   Num Queues:
+      An 8-bit unsigned integer indicating the number of Queue Parameter
+      Sub-Data Items that follow.  This field MUST contain a value of at
+      least one (1).
+
+   Scale:
+      A 4-bit unsigned integer indicating the scale used in the Queue
+      Size Qn field.  The valid values are:
+
+                   +-------+--------------------------+
+                   | Value | Scale                    |
+                   +=======+==========================+
+                   | 0     | B - Bytes (Octets)       |
+                   +-------+--------------------------+
+                   | 1     | KB - Kilobytes (1024 B)  |
+                   +-------+--------------------------+
+                   | 2     | MB - Megabytes (1024 KB) |
+                   +-------+--------------------------+
+                   | 3     | GB - Gigabytes (1024 MB) |
+                   +-------+--------------------------+
+
+                   Table 1: Queue Size Qn Field Values
+
+   Reserved:  A 20-bit field that MUST be set to zero (0) by the sender
+      (a modem) and ignored by the receiver (a router).
+
+<span class="h4"><a class="selflink" id="section-3.1.1" href="#section-3.1.1">3.1.1</a>.  Queue Parameter Sub-Data Item</span>
+
+   Queue Parameter Sub-Data Items are an unordered list composed of
+   Sub-Data Items with a common format.  The format of the Queue
+   Parameter Sub-Data Item is patterned after the standard format for
+   the DLEP Data Item; see <a href="/doc/html/rfc8175#section-11.3">[RFC8175], Section&nbsp;11.3</a>.  Any errors or
+   inconsistencies encountered in parsing Sub-Data Items are handled in
+   the same fashion as any other Data Item parsing error encountered in
+   DLEP.  In particular, the receiving implementation MUST issue a
+   Session Termination Message containing a Status Data Item with status
+   code set to 130 (&quot;Invalid Data&quot;) and transition to the Session
+   Termination state.
+
+   The format of the Queue Parameter Sub-Data Item is:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Sub-Data Item Type (1)        | Length                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                           Value...                            |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   and Value has the format:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |  Queue Index  |             Queue Size Qn                     |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Num DSCPs Qn  |  DS Field Qn  |              ...              :
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      :                          ...                  |  DS Field Qn  |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Sub-Data Item Type:
+      A 16-bit unsigned integer that indicates the type and
+      corresponding format of the Sub-Data Item&#x27;s Value field.  Sub-Data
+      Item Types are scoped within the Data Item in which they are
+      carried, i.e., the Sub-Data Item Type field MUST be used together
+      with the Queue Parameters Data Item Type to identify the format of
+      the Sub-Data Item.  This field MUST be set to one (1) for the
+      Queue Parameter Sub-Data Item.
+
+   Length:
+      Variable
+
+      Length is the number of octets in the Sub-Data Item, excluding the
+      Type and Length fields.
+
+   Queue Index:
+      An 8-bit field indicating the queue index of the queue parameter
+      represented in the Sub-Data Item.  Only the first instance of a
+      particular Queue Index value is meaningful.  Subsequent Sub-Data
+      Items containing the same Queue Index values, if present, MAY be
+      logged via a management interface and MUST otherwise be ignored.
+      Note that the value 255 is reserved and MUST NOT be used in this
+      field.
+
+   Queue Size Qn:
+      A 24-bit unsigned integer representing the size, in the octet
+      scale indicated by the Scale field, of the queue that supports the
+      traffic with the DSCPs associated with the queue index.
+
+   Num DSCPs Qn:
+      An 8-bit unsigned integer indicating the number of DSCPs
+      associated with the queue index associated with the Sub-Data Item.
+
+   DS Field Qn:
+      The Data Item contains a sequence of 8-bit DS fields.  The number
+      of DS fields present MUST equal the Num DSCPs Qn field value.
+
+      The DS field structure is the same as the structure shown in
+      [<a href="/doc/html/rfc2474" title="&quot;Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers&quot;">RFC2474</a>].
+
+        0   1   2   3   4   5   6   7
+      +---+---+---+---+---+---+---+---+
+      |         DSCP          |  CU   |
+      +---+---+---+---+---+---+---+---+
+
+      DSCP: Differentiated Services Code Point
+
+      CU: Currently Unused; MUST be zero
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Pause</span>
+
+   The Pause Data Item is sent by a modem to a router to indicate to its
+   peer that traffic is to be suppressed, i.e., paused.  The motivating
+   use case for this Data Item is when a modem&#x27;s internal queue length
+   exceeds a particular threshold.  Other use cases are possible, e.g.,
+   when there are non-queue-related congestion points within a modem.
+   Such cases are not explicitly described in this document.
+
+   A modem can indicate that traffic is to be suppressed on a
+   device-wide or destination-specific basis.  An example of when a
+   modem might use device-wide suppression is when output queues are
+   shared across all destinations.  Destination-specific suppression
+   might be used when per-destination queuing is used.  To indicate that
+   suppression applies to all destinations, a modem MUST send the Pause
+   Data Item in a Session Update Message.  To indicate that suppression
+   applies to a particular destination, a modem MUST send the Pause Data
+   Item in a Destination Update Message.
+
+   Each Pause Data Item identifies the traffic to be suppressed by the
+   Queue Index field (<a href="#section-3.1">Section 3.1</a>), which in turn indicates traffic
+   identified by one or more DSCPs.  The special value of 255 is used to
+   indicate that all traffic is to be suppressed.
+
+   While there is no restriction on the number of messages containing
+   Pause Data Items that may be sent by a modem, a modem SHOULD include
+   multiple queue indexes in the same message when possible.
+
+   A router that receives the Pause Data Item MUST cease sending the
+   identified traffic to the modem.  This may of course translate into
+   the router&#x27;s queues exceeding their own thresholds.  If a received
+   Pause Data Item contains a Queue Index value other than 255 or a
+   queue index established by a Session Initialization or Session Update
+   Message, the router MUST terminate the session with a Status Data
+   Item indicating &quot;Invalid Data&quot;.
+
+   The format of the Pause Data Item is:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Data Item Type                | Length                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |  Queue Index  |               ...                             :
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      :                                ...            |  Queue Index  |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Data Item Type:
+      24
+
+   Length:
+      Variable
+
+      Per [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>], Length is the number of octets in the Data Item,
+      excluding the Type and Length fields.  It will equal the number of
+      Queue Index fields carried in the Data Item.
+
+   Queue Index:
+      One or more 8-bit fields used to indicate a queue index defined by
+      a Queue Parameters Data Item.  The special value of 255 indicates
+      that (1) all traffic to the modem is to be suppressed when the
+      Data Item is carried in a Session Update Message or (2) all
+      traffic to a particular destination is to be suppressed when the
+      Data Item is carried in a Destination Update Message.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Restart</span>
+
+   The Restart Data Item is sent by a modem to a router to indicate to
+   its peer that transmission of previously suppressed traffic may be
+   resumed.  An example of when a modem might send this Data Item is
+   when an internal queue length drops below a particular threshold.
+
+   The sending of this Data Item parallels the Pause Data Item (see
+   <a href="#section-3.2">Section 3.2</a>) and follows the same rules.  To indicate that
+   transmission can resume to all destinations, a modem MUST send the
+   Restart Data Item in a Session Update Message.  To indicate that
+   transmission can resume to a particular destination, a modem MUST
+   send the Restart Data Item in a Destination Update Message.  Finally,
+   the same rules apply to queue indexes.
+
+   A router that receives the Restart Data Item SHOULD resume
+   transmission of the identified traffic to the modem.
+
+   The format of the Restart Data Item matches the Pause Data Item
+   and is:
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      | Data Item Type                | Length                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |  Queue Index  |               ...                             :
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      :                                ...            |  Queue Index  |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Data Item Type:  25
+
+   Length:  See <a href="#section-3.2">Section 3.2</a>.
+
+   Queue Index:  See <a href="#section-3.2">Section 3.2</a>.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   The extension defined in this document introduces a new mechanism for
+   flow control between a router and modem using DLEP.  The extension
+   does not introduce any vulnerabilities that are inherently different
+   from those documented in [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>].  The approach taken to security
+   in that document applies equally when running the extension defined
+   in this document.
+
+   Implementations of the extension defined in this document MUST
+   support the configuration and use of TLS, as described in [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>],
+   in order to protect configurations where injection attacks are
+   possible, i.e., when the link between a modem and router is not
+   otherwise protected.
+
+   Note that this extension does allow a compromised or impersonating
+   modem to suppress transmission by the router or a switch that
+   interconnects the modem and router.  Similar attacks are generally
+   possible with base DLEP -- for example, an impersonating modem may
+   cause a session reset, or a compromised modem can simply drop all
+   traffic destined for or sent by a router.  [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>] defines the use
+   of TLS to protect against such impersonating attackers.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   This document assigns four new values and creates a new subregistry
+   in the &quot;Dynamic Link Exchange Protocol (DLEP) Parameters&quot; registry.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Extension Type Value</span>
+
+   This document adds a new assignment to the DLEP extensions registry
+   named &quot;Extension Type Values&quot; [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>], per the &quot;Specification
+   Required&quot; policy [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  IANA has assigned the following value:
+
+
+                   +------+---------------------------+
+                   | Code | Description               |
+                   +======+===========================+
+                   | 2    | Control-Plane-Based Pause |
+                   +------+---------------------------+
+
+                      Table 2: Extension Type Value
+
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Data Item Values</span>
+
+   This document adds three new assignments to the DLEP Data Item
+   registry named &quot;Data Item Type Values&quot; [<a href="/doc/html/rfc8175" title="&quot;Dynamic Link Exchange Protocol (DLEP)&quot;">RFC8175</a>], per the
+   &quot;Specification Required&quot; policy [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  IANA has assigned the
+   following values:
+
+
+                     +-----------+------------------+
+                     | Type Code | Description      |
+                     +===========+==================+
+                     | 23        | Queue Parameters |
+                     +-----------+------------------+
+                     | 24        | Pause            |
+                     +-----------+------------------+
+                     | 25        | Restart          |
+                     +-----------+------------------+
+
+                        Table 3: Data Item Values
+
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  Queue Parameter Sub-Data Item Values</span>
+
+   IANA has created a new DLEP registry named &quot;Queue Parameter Sub-Data
+   Item Type Values&quot;.
+
+   Table 4 provides initial registry values and the registration
+   policies [<a href="/doc/html/rfc8126" title="">RFC8126</a>] that apply:
+
+                 +-------------+------------------------+
+                 | Type Code   | Description/Policy     |
+                 +=============+========================+
+                 | 0           | Reserved               |
+                 +-------------+------------------------+
+                 | 1           | Queue Parameter        |
+                 +-------------+------------------------+
+                 | 2-65407     | Specification Required |
+                 +-------------+------------------------+
+                 | 65408-65534 | Private Use            |
+                 +-------------+------------------------+
+                 | 65535       | Reserved               |
+                 +-------------+------------------------+
+
+                     Table 4: Initial Registry Values
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8175">RFC8175</a>]  Ratliff, S., Jury, S., Satterwhite, D., Taylor, R., and B.
+              Berry, &quot;Dynamic Link Exchange Protocol (DLEP)&quot;, <a href="/doc/html/rfc8175">RFC 8175</a>,
+              DOI 10.17487/RFC8175, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8175">https://www.rfc-editor.org/info/rfc8175</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-DLEP-CREDIT">DLEP-CREDIT</a>]
+              Cheng, B., Wiggins, D., Berger, L., and S. Ratliff, &quot;DLEP
+              Credit-Based Flow Control Messages and Data Items&quot;, Work
+              in Progress, Internet-Draft, <a href="/doc/html/draft-ietf-manet-dlep-credit-flow-control-04">draft-ietf-manet-dlep-credit-</a>
+              <a href="/doc/html/draft-ietf-manet-dlep-credit-flow-control-04">flow-control-04</a>, 6 March 2019,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-manet-dlep-credit-flow-control-04">https://tools.ietf.org/html/draft-ietf-manet-dlep-credit-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-manet-dlep-credit-flow-control-04">flow-control-04</a>&gt;.
+
+   [<a id="ref-DLEP-DIFFSERV">DLEP-DIFFSERV</a>]
+              Cheng, B., Wiggins, D., and L. Berger, &quot;DLEP DiffServ
+              Aware Credit Window Extension&quot;, Work in Progress,
+              Internet-Draft, <a href="/doc/html/draft-ietf-manet-dlep-da-credit-extension-07">draft-ietf-manet-dlep-da-credit-extension-</a>
+              <a href="/doc/html/draft-ietf-manet-dlep-da-credit-extension-07">07</a>, 6 March 2019,
+              &lt;<a href="https://tools.ietf.org/html/draft-ietf-manet-dlep-da-credit-extension-07">https://tools.ietf.org/html/draft-ietf-manet-dlep-da-</a>
+              <a href="https://tools.ietf.org/html/draft-ietf-manet-dlep-da-credit-extension-07">credit-extension-07</a>&gt;.
+
+   [<a id="ref-IEEE.802.1Q_2014">IEEE.802.1Q_2014</a>]
+              IEEE, &quot;IEEE Standard for Local and metropolitan area
+              networks--Bridges and Bridged Networks&quot;, IEEE 802.1Q-2014,
+              &lt;<a href="https://ieeexplore.ieee.org/document/6991462">https://ieeexplore.ieee.org/document/6991462</a>&gt;.
+
+   [<a id="ref-RFC2474">RFC2474</a>]  Nichols, K., Blake, S., Baker, F., and D. Black,
+              &quot;Definition of the Differentiated Services Field (DS
+              Field) in the IPv4 and IPv6 Headers&quot;, <a href="/doc/html/rfc2474">RFC 2474</a>,
+              DOI 10.17487/RFC2474, December 1998,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2474">https://www.rfc-editor.org/info/rfc2474</a>&gt;.
+
+   [<a id="ref-RFC2475">RFC2475</a>]  Blake, S., Black, D., Carlson, M., Davies, E., Wang, Z.,
+              and W. Weiss, &quot;An Architecture for Differentiated
+              Services&quot;, <a href="/doc/html/rfc2475">RFC 2475</a>, DOI 10.17487/RFC2475, December 1998,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2475">https://www.rfc-editor.org/info/rfc2475</a>&gt;.
+
+   [<a id="ref-RFC5578">RFC5578</a>]  Berry, B., Ed., Ratliff, S., Paradise, E., Kaiser, T., and
+              M. Adams, &quot;PPP over Ethernet (PPPoE) Extensions for Credit
+              Flow and Link Metrics&quot;, <a href="/doc/html/rfc5578">RFC 5578</a>, DOI 10.17487/RFC5578,
+              February 2010, &lt;<a href="https://www.rfc-editor.org/info/rfc5578">https://www.rfc-editor.org/info/rfc5578</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+Acknowledgments
+
+   The format for the Sub-Data Item was inspired by Rick Taylor&#x27;s &quot;Data
+   Item Containers&quot; idea.
+
+Authors&#x27; Addresses
+
+   Bow-Nan Cheng
+   MIT Lincoln Laboratory
+   Massachusetts Institute of Technology
+   244 Wood Street
+   Lexington, MA 02421-6426
+   United States of America
+
+   Email: bcheng@ll.mit.edu
+
+
+   David Wiggins
+   MIT Lincoln Laboratory
+   Massachusetts Institute of Technology
+   244 Wood Street
+   Lexington, MA 02420-9108
+   United States of America
+
+   Email: David.Wiggins@ll.mit.edu
+
+
+   Lou Berger (editor)
+   LabN Consulting, L.L.C.
+
+   Email: lberger@labn.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

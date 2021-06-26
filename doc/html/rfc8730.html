@@ -1,0 +1,488 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8730
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-iasa2-rfc6548bis/">
+  <meta name="description" content="Independent Submission Editor Model (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8730.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8730.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8730.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8730.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8730/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8730/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-ietf-iasa2-rfc6548bis@ietf.org?subject=draft-ietf-iasa2-rfc6548bis" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-iasa2-rfc6548bis-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-iasa2-rfc6548bis-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-iasa2-rfc6548bis-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-iasa2-rfc6548bis-02">draft-ietf-iasa2-rfc6548bis-02</a>                       Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Architecture Board (IAB)                       N. Brownlee, Ed.
+Request for Comments: 8730                    The University of Auckland
+Obsoletes: <a href="/doc/html/rfc6548">6548</a>                                           R. Hinden, Ed.
+Category: Informational                             Check Point Software
+ISSN: 2070-1721                                            February 2020
+
+
+                  <span class="h1">Independent Submission Editor Model</span>
+
+Abstract
+
+   This document describes the function and responsibilities of the RFC
+   Independent Submission Editor (ISE).  The Independent Submission
+   stream is one of the stream producers that create draft RFCs, with
+   the ISE as its stream approver.  The ISE is overall responsible for
+   activities within the Independent Submission stream, working with
+   draft editors and reviewers, and interacts with the RFC Production
+   Center and Publisher, and the RFC Series Editor (RSE).  The ISE is
+   appointed by the IAB, and also interacts with the IETF Administration
+   Limited Liability Company (LLC).
+
+   This version obsoletes <a href="/doc/html/rfc6548">RFC 6548</a> to replace all references to the
+   Internet Administrative Support Activity (IASA) and related
+   structures with those defined by the IASA 2.0 structure.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Architecture Board (IAB)
+   and represents information that the IAB has deemed valuable to
+   provide for permanent record.  It represents the consensus of the
+   Internet Architecture Board (IAB).  Documents approved for
+   publication by the IAB are not candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8730">https://www.rfc-editor.org/info/rfc8730</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Independent Submission Editor
+     2.1.  Qualifications
+     2.2.  Responsibilities
+   3.  Independent Submission Editorial Board
+   4.  Security Considerations
+   5.  References
+     5.1.  Normative References
+     5.2.  Informative References
+   IAB Members at the Time of Approval
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The RFC Editor Model [<a href="/doc/html/rfc8728" title="&quot;RFC Editor Model (Version 2)&quot;">RFC8728</a>] defines a set of streams that produce
+   draft RFCs, which are submitted for publication.  This document
+   defines the management function for the Independent Submission
+   stream, specifically the role of Independent Submission Editor (ISE).
+
+   The previous version of this document [<a href="/doc/html/rfc6548" title="&quot;Independent Submission Editor Model&quot;">RFC6548</a>] is a derivative of
+   <a href="/doc/html/rfc5620#section-3.2">[RFC5620], Section&nbsp;3.2</a>, and was separated out from [<a href="/doc/html/rfc6635" title="&quot;RFC Editor Model (Version 2)&quot;">RFC6635</a>].
+
+   This document updates the Independent Submission Editor Model to
+   align it with the IASA 2.0 structure [<a href="/doc/html/rfc8711" title="&quot;Structure of the IETF Administrative Support Activity, Version 2.0&quot;">RFC8711</a>] that creates the IETF
+   Administration Limited Liability Company (&quot;LLC&quot;) managed by a board
+   of directors (&quot;LLC Board&quot;).  This document obsoletes [<a href="/doc/html/rfc6548" title="&quot;Independent Submission Editor Model&quot;">RFC6548</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Independent Submission Editor</span>
+
+   The ISE is an individual who is responsible for the Independent
+   Submission stream of RFCs, as defined by [<a href="/doc/html/rfc8729" title="&quot;The RFC Series and RFC Editor&quot;">RFC8729</a>].  The Independent
+   Submission stream and the ISE are not under the authority or
+   direction of the RSE or the RFC Series Oversight Committee (RSOC)
+   (see [<a href="/doc/html/rfc8728" title="&quot;RFC Editor Model (Version 2)&quot;">RFC8728</a>]).  As noted below, the ISE is appointed by and is
+   responsible directly to the IAB.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Qualifications</span>
+
+   The ISE is a senior position for which the following qualifications
+   are desired:
+
+   1.  Technical competence, i.e., broad technical experience and
+       perspective across a wide range of Internet technologies and
+       applications, and also the ability to work effectively with
+       portions of that spectrum in which they have no personal
+       expertise.
+
+   2.  Thorough familiarity with the RFC series.
+
+   3.  An ability to define and constitute advisory and document review
+       arrangements.  If those arrangements include an Editorial Board
+       similar to the current one or some equivalent arrangement, the
+       ability to assess the technical competence of potential Editorial
+       Board members (see <a href="#section-3">Section 3</a>).
+
+   4.  Good standing in the technical community, in and beyond the IETF.
+
+   5.  Demonstrated editorial skills, good command of the English
+       language, and demonstrated history of being able to work
+       effectively with technical documents and materials created by
+       others.
+
+   6.  The ability to work effectively in a multi-actor environment with
+       divided authority and responsibility similar to that described in
+       [<a href="/doc/html/rfc6635" title="&quot;RFC Editor Model (Version 2)&quot;">RFC6635</a>].
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Responsibilities</span>
+
+   The ISE is an individual who may have assistants and who is
+   responsible for:
+
+   1.  Maintaining technical quality of the Independent Submission
+       stream.
+
+   2.  Reviewing, approving, and processing Independent Submissions.
+
+   3.  Forwarding draft RFCs in the Independent Submission stream to the
+       RFC Production Center.
+
+   4.  Defining and developing the scope of the Independent Submission
+       stream as a part of the overall RFC Editor function [<a href="/doc/html/rfc6635" title="&quot;RFC Editor Model (Version 2)&quot;">RFC6635</a>].
+
+   5.  Reviewing and approving RFC errata for Independent Submissions.
+
+   6.  Coordinating work and conforming to general RFC Series policies
+       as specified by the IAB and RSE.
+
+   7.  Providing statistics and documentation as requested by the RSE
+       and/or LLC.
+
+   The ISE may choose to select individuals to participate in an
+   Advisory Board for assistance in special topics as the ISE deems
+   appropriate.  Such an Advisory Board exists at the pleasure of the
+   ISE, and its members serve at the pleasure of the ISE.
+
+   The individual with the listed qualifications is selected by the IAB
+   after input has been collected from the community.
+
+   While the ISE itself is considered a volunteer function, the IAB
+   considers maintaining the Independent Submission stream part of the
+   IAB&#x27;s supported activities.  Therefore, the LLC should include these
+   costs in the IASA budget.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Independent Submission Editorial Board</span>
+
+   The ISE is supported by an Editorial Board for the review of
+   Independent Submission stream documents.  This board is known as the
+   Independent Submission Editorial Board.  This volunteer Editorial
+   Board exists at the pleasure of the ISE, and its members serve at the
+   pleasure of the ISE.  The existence of this board is simply noted
+   within this model, and additional discussion of such is considered
+   out of scope of this document.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Security Considerations</span>
+
+   This document has no specific security implications, however the same
+   security considerations as those in [<a href="/doc/html/rfc4846" title="&quot;Independent Submissions to the RFC Editor&quot;">RFC4846</a>] and [<a href="/doc/html/rfc8729" title="&quot;The RFC Series and RFC Editor&quot;">RFC8729</a>] apply.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC4846">RFC4846</a>]  Klensin, J., Ed. and D. Thaler, Ed., &quot;Independent
+              Submissions to the RFC Editor&quot;, <a href="/doc/html/rfc4846">RFC 4846</a>,
+              DOI 10.17487/RFC4846, July 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4846">https://www.rfc-editor.org/info/rfc4846</a>&gt;.
+
+   [<a id="ref-RFC6548">RFC6548</a>]  Brownlee, N., Ed. and IAB, &quot;Independent Submission Editor
+              Model&quot;, <a href="/doc/html/rfc6548">RFC 6548</a>, DOI 10.17487/RFC6548, June 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6548">https://www.rfc-editor.org/info/rfc6548</a>&gt;.
+
+   [<a id="ref-RFC8711">RFC8711</a>]  Haberman, B., Hall, J., and J. Livingood, &quot;Structure of
+              the IETF Administrative Support Activity, Version 2.0&quot;,
+              <a href="/doc/html/bcp101">BCP 101</a>, <a href="/doc/html/rfc8711">RFC 8711</a>, DOI 10.17487/RFC8711, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8711">https://www.rfc-editor.org/info/rfc8711</a>&gt;.
+
+   [<a id="ref-RFC8728">RFC8728</a>]  Kolkman, O., Ed., Halpern, J., Ed., and R. Hinden, Ed.,
+              &quot;RFC Editor Model (Version 2)&quot;, <a href="/doc/html/rfc8728">RFC 8728</a>,
+              DOI 10.17487/RFC8728, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8728">https://www.rfc-editor.org/info/rfc8728</a>&gt;.
+
+   [<a id="ref-RFC8729">RFC8729</a>]  Housley, R., Ed. and L. Daigle, Ed., &quot;The RFC Series and
+              RFC Editor&quot;, <a href="/doc/html/rfc8729">RFC 8729</a>, DOI 10.17487/RFC8729, February
+              2020, &lt;<a href="https://www.rfc-editor.org/info/rfc8729">https://www.rfc-editor.org/info/rfc8729</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC5620">RFC5620</a>]  Kolkman, O., Ed. and IAB, &quot;RFC Editor Model (Version 1)&quot;,
+              <a href="/doc/html/rfc5620">RFC 5620</a>, DOI 10.17487/RFC5620, August 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5620">https://www.rfc-editor.org/info/rfc5620</a>&gt;.
+
+   [<a id="ref-RFC6635">RFC6635</a>]  Kolkman, O., Ed., Halpern, J., Ed., and IAB, &quot;RFC Editor
+              Model (Version 2)&quot;, <a href="/doc/html/rfc6635">RFC 6635</a>, DOI 10.17487/RFC6635, June
+              2012, &lt;<a href="https://www.rfc-editor.org/info/rfc6635">https://www.rfc-editor.org/info/rfc6635</a>&gt;.
+
+IAB Members at the Time of Approval
+
+   The IAB members at the time of approval of [<a href="/doc/html/rfc6548" title="&quot;Independent Submission Editor Model&quot;">RFC6548</a>] were: Bernard
+   Aboba, Ross Callon, Alissa Cooper, Joel Halpern, Spencer Dawkins,
+   Russ Housley, David Kessens, Olaf Kolkman, Danny McPherson, Jon
+   Peterson, Andrei Robachevsky, Dave Thaler, and Hannes Tschofenig.
+
+   The IAB members at the time of approval of this document (<a href="/doc/html/rfc8730">RFC 8730</a>)
+   were: Jari Arkko, Alissa Cooper, Stephen Farrell, Wes Hardaker, Ted
+   Hardie, Christian Huitema, Zhenbin Li, Erik Nordmark, Mark
+   Nottingham, Melinda Shore, Jeff Tantsura, Martin Thomson, and Brian
+   Trammell.
+
+Acknowledgements
+
+   Generous thanks to Joel Halpern for all his help with this document,
+   and for all his work on [<a href="/doc/html/rfc6635" title="&quot;RFC Editor Model (Version 2)&quot;">RFC6635</a>].  Thanks also to the IAB members,
+   whose comments and suggestions were both welcome and useful.
+
+   Bob Hinden served as document editor for this RFC to align it with
+   the IASA 2.0 structure.
+
+Authors&#x27; Addresses
+
+   Nevil Brownlee (editor)
+   The University of Auckland
+
+   Email: n.brownlee@auckland.ac.nz
+
+
+   Robert M. Hinden (editor)
+   Check Point Software
+   959 Skyway Road
+   San Carlos, CA 94070
+   United States of America
+
+   Email: bob.hinden@gmail.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

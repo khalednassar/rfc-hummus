@@ -1,0 +1,1617 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8780
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-pce-wson-rwa-ext/">
+  <meta name="description" content="The Path Computation Element Communication Protocol (PCEP) Extension for Wavelength Switched Optical Network (WSON) Routing and Wavelength Assignment (RWA) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8780.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8780.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8780.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8780.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8780/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8780/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/pce/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-pce-wson-rwa-ext@ietf.org?subject=draft-ietf-pce-wson-rwa-ext" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-pce-wson-rwa-ext-17.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-wson-rwa-ext-17.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-pce-wson-rwa-ext-17.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-pce-wson-rwa-ext-17">draft-ietf-pce-wson-rwa-ext-17</a>                   Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       Y. Lee, Ed.
+Request for Comments: 8780                           Samsung Electronics
+Category: Standards Track                               R. Casellas, Ed.
+ISSN: 2070-1721                                                     CTTC
+                                                               July 2020
+
+
+The Path Computation Element Communication Protocol (PCEP) Extension for
+   Wavelength Switched Optical Network (WSON) Routing and Wavelength
+                            Assignment (RWA)
+
+Abstract
+
+   This document provides Path Computation Element Communication
+   Protocol (PCEP) extensions for the support of Routing and Wavelength
+   Assignment (RWA) in Wavelength Switched Optical Networks (WSONs).
+   Path provisioning in WSONs requires an RWA process.  From a path
+   computation perspective, wavelength assignment is the process of
+   determining which wavelength can be used on each hop of a path and
+   forms an additional routing constraint to optical path computation.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8780">https://www.rfc-editor.org/info/rfc8780</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Requirements Language
+   4.  Encoding of an RWA Path Request
+     4.1.  Wavelength Assignment (WA) Object
+     4.2.  Wavelength Selection TLV
+     4.3.  Wavelength Restriction TLV
+       4.3.1.  Link Identifier Field
+       4.3.2.  Wavelength Constraint Field
+     4.4.  Signal Processing Capability Restrictions
+       4.4.1.  Signal Processing Exclusion
+       4.4.2.  Signal Processing Inclusion
+   5.  Encoding of an RWA Path Reply
+     5.1.  Wavelength Allocation TLV
+     5.2.  Error Indicator
+     5.3.  NO-PATH Indicator
+   6.  Manageability Considerations
+     6.1.  Control of Function and Policy
+     6.2.  Liveness Detection and Monitoring
+     6.3.  Verifying Correct Operation
+     6.4.  Requirements on Other Protocols and Functional Components
+     6.5.  Impact on Network Operation
+   7.  Security Considerations
+   8.  IANA Considerations
+     8.1.  New PCEP Object: Wavelength Assignment Object
+     8.2.  WA Object Flag Field
+     8.3.  New PCEP TLV: Wavelength Selection TLV
+     8.4.  New PCEP TLV: Wavelength Restriction TLV
+     8.5.  Wavelength Restriction TLV Action Values
+     8.6.  New PCEP TLV: Wavelength Allocation TLV
+     8.7.  Wavelength Allocation TLV Flag Field
+     8.8.  New PCEP TLV: Optical Interface Class List TLV
+     8.9.  New PCEP TLV: Client Signal Information TLV
+     8.10. New Bit Flag for NO-PATH-VECTOR TLV
+     8.11. New Error-Types and Error-Values
+     8.12. New Subobjects for the Exclude Route Object
+     8.13. New Subobjects for the Include Route Object
+     8.14. Request for Updated Note for LMP TE Link Object Class Type
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgments
+   Contributors
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   [<a id="ref-RFC5440">RFC5440</a>] specifies the Path Computation Element Communication
+   Protocol (PCEP) for communications between a Path Computation Client
+   (PCC) and a PCE, or between two PCEs.  Such interactions include Path
+   Computation Requests (PCReqs) and Path Computation Replies (PCReps)
+   as well as notifications of specific states related to the use of a
+   PCE in the context of Multiprotocol Label Switching (MPLS) and
+   Generalized MPLS (GMPLS) Traffic Engineering (TE).
+
+   A PCC is said to be any network component that makes such a request
+   and may be, for instance, an optical switching element within a
+   Wavelength Division Multiplexing (WDM) network.  The PCE, itself, can
+   be located anywhere within the network and may be within an optical
+   switching element, a Network Management System (NMS), or an
+   Operational Support System (OSS), or it may be an independent network
+   server.
+
+   This document provides the PCEP extensions for the support of Routing
+   and Wavelength Assignment (RWA) in Wavelength Switched Optical
+   Networks (WSONs) based on the requirements specified in [<a href="/doc/html/rfc6163" title="&quot;Framework for GMPLS and Path Computation Element (PCE) Control of Wavelength Switched Optical Networks (WSONs)&quot;">RFC6163</a>] and
+   [<a href="/doc/html/rfc7449" title="&quot;Path Computation Element Communication Protocol (PCEP) Requirements for Wavelength Switched Optical Network (WSON) Routing and Wavelength Assignment&quot;">RFC7449</a>].
+
+   WSON refers to WDM-based optical networks in which switching is
+   performed selectively based on the wavelength of an optical signal.
+   The devices used in WSONs that are able to switch signals based on
+   signal wavelength are known as Lambda Switch Capable (LSC).  WSONs
+   can be transparent or translucent.  A transparent optical network is
+   made up of optical devices that can switch but not convert from one
+   wavelength to another, all within the optical domain.  On the other
+   hand, translucent networks include 3R regenerators (reamplification,
+   reshaping, and retiming) that are sparsely placed.  The main function
+   of the 3R regenerators is to convert one optical wavelength to
+   another.
+
+   An LSC Label Switched Path (LSP) may span one or several transparent
+   segments, which are delimited by 3R regenerators typically with
+   electronic regenerator and optional wavelength conversion.  Each
+   transparent segment or path in WSON is referred to as an optical
+   path.  An optical path may span multiple fiber links, and the path
+   should be assigned the same wavelength for each link.  In a case, the
+   optical path is said to satisfy the wavelength-continuity constraint.
+   Figure 1 illustrates the relationship between an LSC LSP and
+   transparent segments (optical paths).
+
+   +---+       +-----+       +-----+      +-----+         +-----+
+   |   |I1     |     |       |     |      |     |       I2|     |
+   |   |o------|     |-------[(3R) ]------|     |--------o|     |
+   |   |       |     |       |     |      |     |         |     |
+   +---+       +-----+       +-----+      +-----+         +-----+
+       (X  LSC)     (LSC  LSC)    (LSC  LSC)     (LSC  X)
+        &lt;-------&gt;   &lt;-------&gt;       &lt;-----&gt;     &lt;-------&gt;
+        &lt;-----------------------&gt;&lt;----------------------&gt;
+         Transparent Segment         Transparent Segment
+       &lt;-------------------------------------------------&gt;
+                              LSC LSP
+
+       Figure 1: Illustration of an LSC LSP and Transparent Segments
+
+   Note that two transparent segments within a WSON LSP do not need to
+   operate on the same wavelength (due to wavelength conversion
+   capabilities).  Two optical channels that share a common fiber link
+   cannot be assigned the same wavelength; otherwise, the two signals
+   would interfere with each other.  Note that advanced additional
+   multiplexing techniques such as polarization-based multiplexing are
+   not addressed in this document since the physical-layer aspects are
+   not currently standardized.  Therefore, assigning the proper
+   wavelength on a path is an essential requirement in the optical path
+   computation process.
+
+   When a switching node has the ability to perform wavelength
+   conversion, the wavelength-continuity constraint can be relaxed, and
+   an LSP may use different wavelengths on different links along its
+   route from origin to destination.  It is, however, to be noted that
+   wavelength converters may be limited due to their relatively high
+   cost, while the number of WDM channels that can be supported in a
+   fiber is also limited.  As a WSON can be composed of network nodes
+   that cannot perform wavelength conversion, nodes with limited
+   wavelength conversion, and nodes with full wavelength conversion
+   abilities, wavelength assignment is an additional routing constraint
+   to be considered in all optical path computation.
+
+   For example (see Figure 1), within a translucent WSON, an LSC LSP may
+   be established between interfaces I1 and I2, spanning two transparent
+   segments (optical paths) where the wavelength continuity constraint
+   applies (i.e., the same unique wavelength must be assigned to the LSP
+   at each TE link of the segment).  If the LSC LSP induced a Forwarding
+   Adjacency / TE link, the switching capabilities of the TE link would
+   be (X X), where X refers to the switching capability of I1 and I2.
+   For example, X can be Packet Switch Capable (PSC), Time-Division
+   Multiplexing (TDM), etc.
+
+   This document aligns with [<a href="/doc/html/rfc8779" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for GMPLS&quot;">RFC8779</a>] for generic properties such as
+   label, label set, and label assignment, noting that a wavelength is a
+   type of label.  Wavelength restrictions and constraints are also
+   formulated in terms of labels per [<a href="/doc/html/rfc7579" title="&quot;General Network Element Constraint Encoding for GMPLS-Controlled Networks&quot;">RFC7579</a>].
+
+   The optical modulation properties, which are also referred to as
+   signal compatibility, are already considered in the signaling in
+   [<a href="/doc/html/rfc7581" title="&quot;Routing and Wavelength Assignment Information Encoding for Wavelength Switched Optical Networks&quot;">RFC7581</a>] and [<a href="/doc/html/rfc7688" title="&quot;GMPLS OSPF Enhancement for Signal and Network Element Compatibility for Wavelength Switched Optical Networks&quot;">RFC7688</a>].  In order to improve the signal quality and
+   limit some optical effects, several advanced modulation processing
+   capabilities are used by the mechanisms specified in this document.
+   These modulation capabilities not only contribute to optical signal
+   quality checks but also constrain the selection of sender and
+   receiver, as they should have matching signal processing
+   capabilities.  This document includes signal compatibility
+   constraints as part of RWA path computation.  That is, the signal
+   processing capabilities (e.g., modulation and Forward Error
+   Correction (FEC)) indicated by means of the Optical Interface Class
+   (OIC) must be compatible between the sender and the receiver of the
+   optical path across all optical elements.
+
+   This document, however, does not address optical impairments as part
+   of RWA path computation.  See [<a href="/doc/html/rfc6566" title="&quot;A Framework for the Control of Wavelength Switched Optical Networks (WSONs) with Impairments&quot;">RFC6566</a>] for the framework for optical
+   impairments.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This document uses the terminology defined in [<a href="/doc/html/rfc4655" title="&quot;A Path Computation Element (PCE)-Based Architecture&quot;">RFC4655</a>] and
+   [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Encoding of an RWA Path Request</span>
+
+   Figure 2 shows one typical PCE-based implementation, which is
+   referred to as the Combined Process (R&amp;WA).  With this architecture,
+   the two processes of routing and wavelength assignment are accessed
+   via a single PCE.  This architecture is the base architecture
+   specified in [<a href="/doc/html/rfc6163" title="&quot;Framework for GMPLS and Path Computation Element (PCE) Control of Wavelength Switched Optical Networks (WSONs)&quot;">RFC6163</a>], and the PCEP extensions that are specified in
+   this document are based on this architecture.
+
+                          +----------------------------+
+            +-----+       |     +-------+     +--+     |
+            |     |       |     |Routing|     |WA|     |
+            | PCC |&lt;-----&gt;|     +-------+     +--+     |
+            |     |       |                            |
+            +-----+       |             PCE            |
+                          +----------------------------+
+
+               Figure 2: Combined Process (R&amp;WA) Architecture
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Wavelength Assignment (WA) Object</span>
+
+   Wavelength allocation can be performed by the PCE by means of:
+
+   (a)  Explicit Label Control [<a href="/doc/html/rfc3471" title="&quot;Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description&quot;">RFC3471</a>] where the PCE allocates which
+        label to use for each interface/node along the path.  The
+        allocated labels MAY appear after an interface route subobject.
+
+   (b)  A Label Set where the PCE provides a range of potential labels
+        to be allocated by each node along the path.
+
+   Option (b) allows distributed label allocation (performed during
+   signaling) to complete wavelength assignment.
+
+   Additionally, given a range of potential labels to allocate, a PCReq
+   SHOULD convey the heuristic or mechanism used for the allocation.
+
+   Per [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>], the format of a PCReq message after incorporating the
+   Wavelength Assignment (WA) object is as follows:
+
+   &lt;PCReq Message&gt; ::= &lt;Common Header&gt;
+
+                          [&lt;svec-list&gt;]
+
+                          &lt;request-list&gt;
+
+   Where:
+
+         &lt;request-list&gt;::=&lt;request&gt;[&lt;request-list&gt;]
+
+         &lt;request&gt;::= &lt;RP&gt;
+                      &lt;END-POINTS&gt;
+
+                      &lt;WA&gt;
+
+                      [other optional objects...]
+
+   If the WA object is present in the request, it MUST be encoded after
+   the END-POINTS object as defined in [<a href="/doc/html/rfc8779" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for GMPLS&quot;">RFC8779</a>].  The WA object is
+   mandatory in this document.  Orderings for the other optional objects
+   are irrelevant.
+
+   For the WA object, the Object-Class is 42, and the Object-Type is 1.
+
+   The format of the WA object body is as follows:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |          Reserved             |            Flags            |M|
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   //                            TLVs                             //
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                            Figure 3: WA Object
+
+   Reserved (16 bits):  Reserved for future use and SHOULD be zeroed and
+      ignored on receipt.
+
+   Flags field (16 bits):  One flag bit is allocated as follows:
+
+      M (1 bit):  Wavelength Allocation Mode.  The M bit is used to
+         indicate the mode of wavelength assignment.  When the M bit is
+         set to 1, this indicates that the label assigned by the PCE
+         must be explicit.  That is, the selected way to convey the
+         allocated wavelength is by means of Explicit Label Control for
+         each hop of a computed LSP.  Otherwise (M bit is set to 0), the
+         label assigned by the PCE need not be explicit (i.e., it can be
+         suggested in the form of Label Set objects in the corresponding
+         response, to allow distributed WA.  If M is 0, the PCE MUST
+         return a Label Set Field as described in <a href="/doc/html/rfc7579#section-2.6">Section&nbsp;2.6 of
+         [RFC7579]</a> in the response.  See <a href="#section-5">Section 5</a> of this document for
+         the encoding discussion of a Label Set Field in a PCRep
+         message.
+
+      All unused flags SHOULD be zeroed.  IANA has created a new
+      registry to manage the Flags field of the WA object.
+
+   TLVs (variable):  In the TLVs field, the following two TLVs are
+      defined.  At least one TLV MUST be present.
+
+      Wavelength Selection TLV:  The type of this TLV is 8, and it has a
+         fixed length of 32 bits.  This TLV indicates the wavelength
+         selection.  See <a href="#section-4.2">Section 4.2</a> for details.
+
+      Wavelength Restriction TLV:  The type of this TLV is 9, and it has
+         a variable length.  This TLV indicates wavelength restrictions.
+         See <a href="#section-4.3">Section 4.3</a> for details.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Wavelength Selection TLV</span>
+
+   The Wavelength Selection TLV is used to indicate the wavelength
+   selection constraint in regard to the order of wavelength assignment
+   to be returned by the PCE.  This TLV is only applied when the M bit
+   is set in the WA object specified in <a href="#section-4.1">Section 4.1</a>.  This TLV MUST NOT
+   be used when the M bit is cleared.
+
+   The encoding of this TLV is specified as the WavelengthSelection sub-
+   TLV in <a href="/doc/html/rfc7689#section-4.2.2">Section&nbsp;4.2.2 of [RFC7689]</a>.  IANA has allocated a new TLV type
+   for the Wavelength Selection TLV (Type 8).
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Wavelength Restriction TLV</span>
+
+   For any request that contains a wavelength assignment, the requester
+   (PCC) MUST specify a restriction on the wavelengths to be used.  This
+   restriction is to be interpreted by the PCE as a constraint on the
+   tuning ability of the origination laser transmitter or on any other
+   maintenance-related constraints.  Note that if the LSC LSP spans
+   different segments, the PCE must have mechanisms to know the
+   tunability restrictions of the involved wavelength converters/
+   regenerators, e.g., by means of the Traffic Engineering Database
+   (TED) via either IGP or NMS.  Even if the PCE knows the tunability of
+   the transmitter, the PCC must be able to apply additional constraints
+   to the request.
+
+   The format of the Wavelength Restriction TLV is as follows:
+
+   &lt;Wavelength Restriction&gt; ::=
+
+                  (&lt;Action&gt; &lt;Count&gt; &lt;Reserved&gt;
+
+                  &lt;Link Identifiers&gt; &lt;Wavelength Constraint&gt;)...
+
+   Where:
+
+   &lt;Link Identifiers&gt; ::= &lt;Link Identifier&gt; [&lt;Link Identifiers&gt;]
+
+   See <a href="#section-4.3.1">Section 4.3.1</a> for the encoding of the Link Identifier field.
+
+   These fields (i.e., &lt;Action&gt;, &lt;Link Identifiers&gt;, and &lt;Wavelength
+   Constraint&gt;, etc.)  MAY appear together more than once to be able to
+   specify multiple actions and their restrictions.
+
+   IANA has allocated a new TLV type for the Wavelength Restriction TLV
+   (Type 9).
+
+   The TLV data is defined as follows:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | Action        |    Count      |           Reserved            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                      Link Identifiers                         |
+   //                          . . .                              //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Wavelength Constraint                      |
+   //                        . . . .                              //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   ~                         . . . .                               ~
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | Action        |    Count      |           Reserved            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                      Link Identifiers                         |
+   //                          . . .                              //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Wavelength Constraint                      |
+   //                        . . . .                              //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+               Figure 4: Wavelength Restriction TLV Encoding
+
+   Action (8 bits):
+      0:  Inclusive List.  Indicates that one or more link identifiers
+         are included in the Link Set. Each identifies a separate link
+         that is part of the set.
+
+      1:  Inclusive Range.  Indicates that the Link Set defines a range
+         of links.  It contains two link identifiers.  The first
+         identifier indicates the start of the range (inclusive).  The
+         second identifier indicates the end of the range (inclusive).
+         All links with numeric values between the bounds are considered
+         to be part of the set.  A value of zero in either position
+         indicates that there is no bound on the corresponding portion
+         of the range.
+
+      2-255:  Unassigned.
+
+      IANA has created a new registry to manage the Action values of the
+      Wavelength Restriction TLV.
+
+      If a PCE receives an unrecognized Action value, the PCE MUST send
+      a PCEP Error (PCErr) message with a PCEP-ERROR object with Error-
+      Type=27 and an Error-value=3.  See <a href="#section-5.2">Section 5.2</a> for details.
+
+      Note that &quot;links&quot; are assumed to be bidirectional.
+
+   Count (8 bits):
+      The number of the link identifiers.
+
+      Note that a PCC MAY add a Wavelength restriction that applies to
+      all links by setting the Count field to zero and specifying just a
+      set of wavelengths.
+
+      Note that all link identifiers in the same list MUST be of the
+      same type.
+
+   Reserved (16 bits):
+      Reserved for future use and SHOULD be zeroed and ignored on
+      receipt.
+
+   Link Identifiers:
+      Identifies each link ID for which restriction is applied.  The
+      length is dependent on the link format and the Count field.  See
+      <a href="#section-4.3.1">Section 4.3.1</a> for encoding of the Link Identifier field.
+
+   Wavelength Constraint:
+      See <a href="#section-4.3.2">Section 4.3.2</a> for the encoding of the Wavelength Constraint
+      field.
+
+   Various encoding errors are possible with this TLV (e.g., not exactly
+   two link identifiers with the range case, unknown identifier types,
+   no matching link for a given identifier, etc.).  To indicate errors
+   associated with this encoding, a PCEP speaker MUST send a PCErr
+   message with Error-Type=27 and Error-value=3.  See <a href="#section-5.2">Section 5.2</a> for
+   details.
+
+<span class="h4"><a class="selflink" id="section-4.3.1" href="#section-4.3.1">4.3.1</a>.  Link Identifier Field</span>
+
+   The Link Identifier field can be an IPv4 [<a href="/doc/html/rfc3630" title="&quot;Traffic Engineering (TE) Extensions to OSPF Version 2&quot;">RFC3630</a>], IPv6 [<a href="/doc/html/rfc5329" title="&quot;Traffic Engineering Extensions to OSPF Version 3&quot;">RFC5329</a>],
+   or unnumbered interface ID [<a href="/doc/html/rfc4203" title="&quot;OSPF Extensions in Support of Generalized Multi-Protocol Label Switching (GMPLS)&quot;">RFC4203</a>].
+
+   &lt;Link Identifier&gt; ::=
+
+               &lt;IPv4 Address&gt; | &lt;IPv6 Address&gt; | &lt;Unnumbered IF ID&gt;
+
+   The encoding of each case is as follows.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Type = 1     |    Reserved  (24 bits)                        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | IPv4 address (4 bytes)                                        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                        Figure 5: IPv4 Address Field
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Type = 2     |    Reserved  (24 bits)                        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | IPv6 address (16 bytes)                                       |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | IPv6 address (continued)                                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | IPv6 address (continued)                                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | IPv6 address (continued)                                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                        Figure 6: IPv6 Address Field
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Type = 3     |    Reserved (24 bits)                         |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                        TE Node ID (32 bits)                   |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                        Interface ID (32 bits)                 |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+              Figure 7: Unnumbered Interface ID Address Field
+
+   Type (8 bits):  Indicates the type of the link identifier.
+
+   Reserved (24 bits):  Reserved for future use and SHOULD be zeroed and
+      ignored on receipt.
+
+   Link Identifier:  When the Type field is 1, a 4-byte IPv4 address is
+      encoded; when the Type field is 2, a 16-byte IPv6 address is
+      encoded; and when the Type field is 3, a tuple of a 4-byte TE node
+      ID and a 4-byte interface ID is encoded.
+
+   The Type field is extensible and matches the &quot;TE_LINK Object Class
+   type name space (Value 11)&quot; registry created for the Link Management
+   Protocol (LMP) [<a href="/doc/html/rfc4204" title="&quot;Link Management Protocol (LMP)&quot;">RFC4204</a>] (see [<a href="#ref-LMP-PARAM">LMP-PARAM</a>]).  IANA has added an
+   introductory note before the aforementioned registry stating that the
+   values have additional usage for the Link Identifier Type field.  See
+   <a href="#section-8.14">Section 8.14</a>.
+
+<span class="h4"><a class="selflink" id="section-4.3.2" href="#section-4.3.2">4.3.2</a>.  Wavelength Constraint Field</span>
+
+   The Wavelength Constraint field of the Wavelength Restriction TLV is
+   encoded as a Label Set Field as specified in <a href="/doc/html/rfc7579#section-2.6">Section&nbsp;2.6 of [RFC7579]</a>
+   with the base label encoded as a 32-bit LSC label, as defined in
+   [<a href="/doc/html/rfc6205" title="&quot;Generalized Labels for Lambda-Switch-Capable (LSC) Label Switching Routers&quot;">RFC6205</a>].  The Label Set format is repeated here for convenience,
+   with the base label internal structure included.  See [<a href="/doc/html/rfc6205" title="&quot;Generalized Labels for Lambda-Switch-Capable (LSC) Label Switching Routers&quot;">RFC6205</a>] for a
+   description of Grid, Channel Spacing (C.S.), Identifier, and n, and
+   see [<a href="/doc/html/rfc7579" title="&quot;General Network Element Constraint Encoding for GMPLS-Controlled Networks&quot;">RFC7579</a>] for the details of each action.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | Action|    Num Labels         |          Length               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |Grid | C.S.  |    Identifier   |              n                |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |     Additional fields as necessary per action                 |
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                   Figure 8: Wavelength Constraint Field
+
+   Action (4 bits):
+      0:  Inclusive List
+
+      1:  Exclusive List
+
+      2:  Inclusive Range
+
+      3:  Exclusive Range
+
+      4:  Bitmap Set
+
+   Num Labels (12 bits):
+      It is generally the number of labels.  It has a specific meaning
+      depending on the action value.
+
+   Length (16 bits):
+      It is the length in bytes of the entire Wavelength Constraint
+      field.
+
+   Identifier (9 bits):
+      The Identifier is always set to 0.  If PCC receives the value of
+      the identifier other than 0, it will ignore.
+
+   See Sections <a href="#section-2.6.1">2.6.1</a>-<a href="#section-2.6.3">2.6.3</a> of [<a href="/doc/html/rfc7579" title="&quot;General Network Element Constraint Encoding for GMPLS-Controlled Networks&quot;">RFC7579</a>] for details on additional field
+   discussion for each action.
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Signal Processing Capability Restrictions</span>
+
+   Path computation for WSON includes the checking of signal processing
+   capabilities at each interface against requested capability; the PCE
+   MUST have mechanisms to know the signal processing capabilities at
+   each interface, e.g., by means of (TED) via either IGP or NMS.
+   Moreover, a PCC should be able to indicate additional restrictions to
+   signal processing compatibility, on either the endpoint or any given
+   link.
+
+   The supported signal processing capabilities considered in the RWA
+   Information Model [<a href="/doc/html/rfc7446" title="&quot;Routing and Wavelength Assignment Information Model for Wavelength Switched Optical Networks&quot;">RFC7446</a>] are:
+
+   *  Optical Interface Class List
+
+   *  Bit Rate
+
+   *  Client Signal
+
+   The bit rate restriction is already expressed in the BANDWIDTH object
+   in [<a href="/doc/html/rfc8779" title="&quot;Path Computation Element Communication Protocol (PCEP) Extensions for GMPLS&quot;">RFC8779</a>].
+
+   In order to support the optical interface class information and the
+   client signal information, new TLVs are introduced as endpoint
+   restrictions in the END-POINTS type Generalized Endpoint:
+
+   *  Client Signal Information TLV
+
+   *  Optical Interface Class List TLV
+
+   The END-POINTS type Generalized Endpoint is extended as follows:
+
+   &lt;endpoint-restriction&gt; ::=
+                         &lt;LABEL-REQUEST&gt; &lt;label-restriction-list&gt;
+
+   &lt;label-restriction-list&gt; ::= &lt;label-restriction&gt;
+                                [&lt;label-restriction-list&gt;]
+
+   &lt;label-restriction&gt; ::= (&lt;LABEL-SET&gt;|
+                           [&lt;Wavelength Restriction&gt;]
+                           [&lt;signal-compatibility-restriction&gt;])
+
+   Where:
+
+   &lt;signal-compatibility-restriction&gt; ::=
+       [&lt;Optical Interface Class List&gt;] [&lt;Client Signal Information&gt;]
+
+   The Wavelength Restriction TLV is defined in <a href="#section-4.3">Section 4.3</a>.
+
+   A new Optical Interface Class List TLV (Type 11) is defined; the
+   encoding of the value part of this TLV is described in <a href="/doc/html/rfc7581#section-4.1">Section&nbsp;4.1 of
+   [RFC7581]</a>.
+
+   A new Client Signal Information TLV (Type 12) is defined; the
+   encoding of the value part of this TLV is described in <a href="/doc/html/rfc7581#section-4.2">Section&nbsp;4.2 of
+   [RFC7581]</a>.
+
+<span class="h4"><a class="selflink" id="section-4.4.1" href="#section-4.4.1">4.4.1</a>.  Signal Processing Exclusion</span>
+
+   The PCC/PCE should be able to exclude particular types of signal
+   processing along the path in order to handle client restriction or
+   multi-domain path computation.  [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>] defines how the Exclude
+   Route Object (XRO) subobject is used.  In this document, we add two
+   new XRO Signal Processing Exclusion subobjects.
+
+   The first XRO subobject type (8) is the Optical Interface Class List,
+   which is defined as follows:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |X|  Type=8     |     Length    |   Reserved    | Attribute     |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   //              Optical Interface Class List                   //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+            Figure 9: Optical Interface Class List XRO Subobject
+
+   Refer to [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>] for the definitions of X, Length, and Attribute.
+
+   Type (7 bits):  The type of the Signaling Processing Exclusion field.
+      IANA has assigned value 8 for the Optical Interface Class List XRO
+      subobject type.
+
+   Reserved bits (8 bits):  These are for future use and SHOULD be
+      zeroed and ignored on receipt.
+
+   Attribute (8 bits):  [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>] defines several Attribute values; the
+      only permitted Attribute values for this field are 0 (Interface)
+      or 1 (Node).
+
+   Optical Interface Class List:  This field is encoded as described in
+      <a href="/doc/html/rfc7581#section-4.1">Section&nbsp;4.1 of [RFC7581]</a>.
+
+   The second XRO subobject type (9) is the Client Signal Information,
+   which is defined as follows:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |X|  Type=9     |     Length    |   Reserved    |  Attribute    |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   //                Client Signal Information                    //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+             Figure 10: Client Signal Information XRO Subobject
+
+   Refer to [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>] for the definitions of X, Length, and Attribute.
+
+   Type (7 bits):  The type of the Signaling Processing Exclusion field.
+      IANA has assigned value 9 for the Client Signal Information XRO
+      subobject type.
+
+   Reserved bits (8 bits):  These are for future use and SHOULD be
+      zeroed and ignored on receipt.
+
+   Attribute (8 bits):  [<a href="/doc/html/rfc5521" title="&quot;Extensions to the Path Computation Element Communication Protocol (PCEP) for Route Exclusions&quot;">RFC5521</a>] defines several Attribute values; the
+      only permitted Attribute values for this field are 0 (Interface)
+      or 1 (Node).
+
+   Client Signal Information:  This field is encoded as described in
+      <a href="/doc/html/rfc7581#section-4.2">Section&nbsp;4.2 of [RFC7581]</a>.
+
+   The XRO needs to support the new Signaling Processing Exclusion XRO
+   subobject types:
+
+      8:  Optical Interface Class List
+
+      9:  Client Signal Information
+
+<span class="h4"><a class="selflink" id="section-4.4.2" href="#section-4.4.2">4.4.2</a>.  Signal Processing Inclusion</span>
+
+   Similar to the XRO subobject, the PCC/PCE should be able to include
+   particular types of signal processing along the path in order to
+   handle client restriction or multi-domain path computation.
+   [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] defines how the Include Route Object (IRO) subobject is
+   used.  In this document, we add two new Signal Processing Inclusion
+   subobjects.
+
+   The IRO needs to support the new IRO subobject types (8 and 9) for
+   the PCEP IRO object [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>]:
+
+      8:  Optical Interface Class List
+
+      9:  Client Signal Information
+
+   The encoding of the Signal Processing Inclusion subobjects is similar
+   to the process in <a href="#section-4.4.1">Section 4.4.1</a> where the &#x27;X&#x27; field is replaced with
+   the &#x27;L&#x27; field; all the other fields remain the same.  The &#x27;L&#x27; field
+   is described in [<a href="/doc/html/rfc3209" title="&quot;RSVP-TE: Extensions to RSVP for LSP Tunnels&quot;">RFC3209</a>].
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Encoding of an RWA Path Reply</span>
+
+   This section provides the encoding of an RWA Path Reply for a
+   wavelength allocation request as discussed in <a href="#section-4">Section 4</a>.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Wavelength Allocation TLV</span>
+
+   Recall that wavelength allocation can be performed by the PCE by
+   means of:
+
+   (a)  Explicit Label Control (ELC) where the PCE allocates which label
+        to use for each interface/node along the path.
+
+   (b)  A Label Set where the PCE provides a range of potential labels
+        to be allocated by each node along the path.
+
+   Option (b) allows distributed label allocation (performed during
+   signaling) to complete wavelength allocation.
+
+   The type for the Wavelength Allocation TLV is 10 (see <a href="#section-8.4">Section 8.4</a>).
+   Note that this TLV is used for both (a) and (b) above.  The TLV data
+   is defined as follows:
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |            Reserved           |          Flags              |M|
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                       Link Identifier                         |
+   //                          . . .                              //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Allocated Wavelength(s)                    |
+   //                        . . . .                              //
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+               Figure 11: Wavelength Allocation TLV Encoding
+
+   Reserved (16 bits):  Reserved for future use.
+
+   Flags field (16 bits):  One flag bit is allocated as follows:
+
+      M (1 bit):  Wavelength Allocation Mode.
+
+         0:  Indicates the allocation relies on the use of Label Sets.
+
+         1:  Indicates the allocation is done using Explicit Label
+            Control.
+
+      IANA has created a new registry to manage the Flags field of the
+      Wavelength Allocation TLV.
+
+   Link Identifier:  Identifies the interface to which the assignment
+      wavelength(s) is applied.  See <a href="#section-4.3.1">Section 4.3.1</a> for encoding of the
+      Link Identifier field.
+
+   Allocated Wavelength(s):  Indicates the allocated wavelength(s) to be
+      associated with the link identifier.  See <a href="#section-4.3.2">Section 4.3.2</a> for
+      encoding details.
+
+   This TLV is carried in a PCRep message as an Attribute TLV [<a href="/doc/html/rfc5420" title="&quot;Encoding of Attributes for MPLS LSP Establishment Using Resource Reservation Protocol Traffic Engineering (RSVP-TE)&quot;">RFC5420</a>]
+   in the Hop Attribute subobjects [<a href="/doc/html/rfc7570" title="&quot;Label Switched Path (LSP) Attribute in the Explicit Route Object (ERO)&quot;">RFC7570</a>] in the Explicit Route
+   Object (ERO) [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Error Indicator</span>
+
+   To indicate errors associated with the RWA request, a new Error-Type
+   27 (WSON RWA Error) and subsequent Error-values are defined as
+   follows for inclusion in the PCEP-ERROR object:
+
+   *  Error-Type=27; Error-value=1: If a PCE receives an RWA request and
+      the PCE is not capable of processing the request due to
+      insufficient memory, the PCE MUST send a PCErr message with a
+      PCEP-ERROR object with Error-Type=27 and Error-value=1.  The PCE
+      stops processing the request.  The corresponding RWA request MUST
+      be canceled at the PCC.
+
+   *  Error-Type=27; Error-value=2: If a PCE receives an RWA request and
+      the PCE is not capable of RWA computation, the PCE MUST send a
+      PCErr message with a PCEP-ERROR object with Error-Type=27 and
+      Error-value=2.  The PCE stops processing the request.  The
+      corresponding RWA computation MUST be canceled at the PCC.
+
+   *  Error-Type=27; Error-value=3: If a PCE receives an RWA request and
+      there are syntactical encoding errors (e.g., not exactly two link
+      identifiers with the range case, unknown identifier types, no
+      matching link for a given identifier, unknown Action value, etc.),
+      the PCE MUST send a PCErr message with a PCEP-ERROR object with
+      Error-Type=27 and Error-value=3.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  NO-PATH Indicator</span>
+
+   To communicate the reason(s) for not being able to find RWA for the
+   path request, the NO-PATH object can be used in the corresponding
+   response.  The format of the NO-PATH object body is defined in
+   [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>].  The object may contain a NO-PATH-VECTOR TLV to provide
+   additional information about why a path computation has failed.
+
+   This document defines a new bit flag to be carried in the Flags field
+   in the NO-PATH-VECTOR TLV, which is carried in the NO-PATH object:
+
+   Bit 23:  When set, the PCE indicates no feasible route was found that
+      meets all the constraints (e.g., wavelength restriction, signal
+      compatibility, etc.) associated with RWA.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Manageability Considerations</span>
+
+   Manageability of WSON RWA with PCE must address the considerations in
+   the following subsections.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Control of Function and Policy</span>
+
+   In addition to the parameters already listed in <a href="/doc/html/rfc5440#section-8.1">Section&nbsp;8.1 of
+   [RFC5440]</a>, a PCEP implementation SHOULD allow configuration of the
+   following PCEP session parameters on a PCC:
+
+   *  The ability to send a WSON RWA request.
+
+   In addition to the parameters already listed in <a href="/doc/html/rfc5440#section-8.1">Section&nbsp;8.1 of
+   [RFC5440]</a>, a PCEP implementation SHOULD allow configuration of the
+   following PCEP session parameters on a PCE:
+
+   *  The support for WSON RWA.
+
+   *  A set of WSON-RWA-specific policies (authorized sender, request
+      rate limiter, etc).
+
+   These parameters may be configured as default parameters for any PCEP
+   session the PCEP speaker participates in, or they may apply to a
+   specific session with a given PCEP peer or a specific group of
+   sessions with a specific group of PCEP peers.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Liveness Detection and Monitoring</span>
+
+   Mechanisms defined in this document do not imply any new liveness
+   detection and monitoring requirements, aside from those already
+   listed in <a href="/doc/html/rfc5440#section-8.3">Section&nbsp;8.3 of [RFC5440]</a>.
+
+<span class="h3"><a class="selflink" id="section-6.3" href="#section-6.3">6.3</a>.  Verifying Correct Operation</span>
+
+   Mechanisms defined in this document do not imply any new verification
+   requirements, aside from those already listed in <a href="/doc/html/rfc5440#section-8.4">Section&nbsp;8.4 of
+   [RFC5440]</a>.
+
+<span class="h3"><a class="selflink" id="section-6.4" href="#section-6.4">6.4</a>.  Requirements on Other Protocols and Functional Components</span>
+
+   The PCEP Link-State mechanism [<a href="#ref-PCEP-LS" title="&quot;PCEP Extension for Distribution of Link- State and TE information for Optical Networks&quot;">PCEP-LS</a>] may be used to advertise WSON
+   RWA path computation capabilities to PCCs.
+
+<span class="h3"><a class="selflink" id="section-6.5" href="#section-6.5">6.5</a>.  Impact on Network Operation</span>
+
+   Mechanisms defined in this document do not imply any new network
+   operation requirements, aside from those already listed in
+   <a href="/doc/html/rfc5440#section-8.6">Section&nbsp;8.6 of [RFC5440]</a>.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Security Considerations</span>
+
+   The security considerations discussed in [<a href="/doc/html/rfc5440" title="&quot;Path Computation Element (PCE) Communication Protocol (PCEP)&quot;">RFC5440</a>] are relevant for
+   this document; this document does not introduce any new security
+   issues.  If an operator wishes to keep the information distributed by
+   WSON private, PCEPS (Usage of TLS to Provide a Secure Transport for
+   PCEP) [<a href="/doc/html/rfc8253" title="&quot;PCEPS: Usage of TLS to Provide a Secure Transport for the Path Computation Element Communication Protocol (PCEP)&quot;">RFC8253</a>] SHOULD be used.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  IANA Considerations</span>
+
+   IANA maintains a registry of PCEP parameters.  IANA has made
+   allocations from the subregistries as described in the following
+   sections.
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  New PCEP Object: Wavelength Assignment Object</span>
+
+   As described in <a href="#section-4.1">Section 4.1</a>, a new PCEP object is defined to carry
+   wavelength-assignment-related constraints.  IANA has allocated the
+   following in the &quot;PCEP Objects&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +====================+======+==========================+===========+
+   | Object-Class Value | Name | Object-Type              | Reference |
+   +====================+======+==========================+===========+
+   | 42                 | WA   | 0: Reserved              | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +--------------------+------+--------------------------+-----------+
+   |                    |      | 1: Wavelength Assignment | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +--------------------+------+--------------------------+-----------+
+
+                                 Table 1
+
+<span class="h3"><a class="selflink" id="section-8.2" href="#section-8.2">8.2</a>.  WA Object Flag Field</span>
+
+   As described in <a href="#section-4.1">Section 4.1</a>, IANA has created the &quot;WA Object Flag
+   Field&quot; subregistry under the &quot;Path Computation Element Protocol
+   (PCEP) Numbers&quot; registry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>] to manage the Flags field of
+   the WA object.  New values are to be assigned by Standards Action
+   [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  Each bit should be tracked with the following qualities:
+
+   *  Bit number (counting from bit 0 as the most significant bit)
+
+   *  Capability description
+
+   *  Defining RFC
+
+   The initial contents of this registry are shown below.  One bit has
+   been allocated for the flag defined in this document:
+
+   +======+============================+===========+
+   | Bit  | Description                | Reference |
+   +======+============================+===========+
+   | 0-14 | Unassigned                 |           |
+   +------+----------------------------+-----------+
+   | 15   | Wavelength Allocation Mode | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +------+----------------------------+-----------+
+
+                        Table 2
+
+<span class="h3"><a class="selflink" id="section-8.3" href="#section-8.3">8.3</a>.  New PCEP TLV: Wavelength Selection TLV</span>
+
+   In <a href="#section-4.2">Section 4.2</a>, a new PCEP TLV is defined to indicate wavelength
+   selection constraints.  IANA has made the following allocation in the
+   &quot;PCEP TLV Type Indicators&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +=======+======================+===========+
+   | Value | Description          | Reference |
+   +=======+======================+===========+
+   | 8     | Wavelength Selection | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+----------------------+-----------+
+
+                     Table 3
+
+<span class="h3"><a class="selflink" id="section-8.4" href="#section-8.4">8.4</a>.  New PCEP TLV: Wavelength Restriction TLV</span>
+
+   In <a href="#section-4.3">Section 4.3</a>, a new PCEP TLV is defined to indicate wavelength
+   restrictions.  IANA has made the following allocation in the &quot;PCEP
+   TLV Type Indicators&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +=======+========================+===========+
+   | Value | Description            | Reference |
+   +=======+========================+===========+
+   | 9     | Wavelength Restriction | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+------------------------+-----------+
+
+                      Table 4
+
+<span class="h3"><a class="selflink" id="section-8.5" href="#section-8.5">8.5</a>.  Wavelength Restriction TLV Action Values</span>
+
+   As described in <a href="#section-4.3">Section 4.3</a>, IANA has created the new &quot;Wavelength
+   Restriction TLV Action Values&quot; subregistry under the &quot;Path
+   Computation Element Protocol (PCEP) Numbers&quot; registry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]
+   to manage the Action values of the Action field of the Wavelength
+   Restriction TLV.  New values are assigned by Standards Action
+   [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  Each value should be tracked with the following
+   qualities:
+
+   *  Value
+
+   *  Meaning
+
+   *  Defining RFC
+
+   The initial contents of this registry are shown below:
+
+   +=======+=================+===========+
+   | Value | Meaning         | Reference |
+   +=======+=================+===========+
+   | 0     | Inclusive List  | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+-----------------+-----------+
+   | 1     | Inclusive Range | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+-----------------+-----------+
+   | 2-255 | Unassigned      |           |
+   +-------+-----------------+-----------+
+
+                   Table 5
+
+<span class="h3"><a class="selflink" id="section-8.6" href="#section-8.6">8.6</a>.  New PCEP TLV: Wavelength Allocation TLV</span>
+
+   In <a href="#section-5.1">Section 5.1</a>, a new PCEP TLV is defined to indicate the allocation
+   of the wavelength(s) by the PCE in response to a request by the PCC.
+   IANA has made the following allocation in &quot;PCEP TLV Type Indicators&quot;
+   subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +=======+=======================+===========+
+   | Value | Description           | Reference |
+   +=======+=======================+===========+
+   | 10    | Wavelength Allocation | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+-----------------------+-----------+
+
+                      Table 6
+
+<span class="h3"><a class="selflink" id="section-8.7" href="#section-8.7">8.7</a>.  Wavelength Allocation TLV Flag Field</span>
+
+   As described in <a href="#section-5.1">Section 5.1</a>, IANA has created a new &quot;Wavelength
+   Allocation TLV Flag Field&quot; subregistry under the &quot;Path Computation
+   Element Protocol (PCEP) Numbers&quot; registry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>] to manage
+   the Flags field of the Wavelength Allocation TLV.  New values are to
+   be assigned by Standards Action [<a href="/doc/html/rfc8126" title="">RFC8126</a>].  Each bit should be
+   tracked with the following qualities:
+
+   *  Bit number (counting from bit 0 as the most significant bit)
+
+   *  Capability description
+
+   *  Defining RFC
+
+   One bit is defined for the flag defined in this document.  The
+   initial contents of this registry are shown below:
+
+   +======+============================+===========+
+   | Bit  | Description                | Reference |
+   +======+============================+===========+
+   | 0-14 | Unassigned                 |           |
+   +------+----------------------------+-----------+
+   | 15   | Wavelength Allocation Mode | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +------+----------------------------+-----------+
+
+                        Table 7
+
+<span class="h3"><a class="selflink" id="section-8.8" href="#section-8.8">8.8</a>.  New PCEP TLV: Optical Interface Class List TLV</span>
+
+   In <a href="#section-4.4">Section 4.4</a>, a new PCEP TLV is defined to indicate the Optical
+   Interface Class List.  IANA has made the following allocation in the
+   &quot;PCEP TLV Type Indicators&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +=======+==============================+===========+
+   | Value | Description                  | Reference |
+   +=======+==============================+===========+
+   | 11    | Optical Interface Class List | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+------------------------------+-----------+
+
+                         Table 8
+
+<span class="h3"><a class="selflink" id="section-8.9" href="#section-8.9">8.9</a>.  New PCEP TLV: Client Signal Information TLV</span>
+
+   In <a href="#section-4.4">Section 4.4</a>, a new PCEP TLV is defined to indicate the Client
+   Signal Information.  IANA has made the following allocation in the
+   &quot;PCEP TLV Type Indicators&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +=======+===========================+===========+
+   | Value | Description               | Reference |
+   +=======+===========================+===========+
+   | 12    | Client Signal Information | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+---------------------------+-----------+
+
+                        Table 9
+
+<span class="h3"><a class="selflink" id="section-8.10" href="#section-8.10">8.10</a>.  New Bit Flag for NO-PATH-VECTOR TLV</span>
+
+   In <a href="#section-5.3">Section 5.3</a>, a new bit flag is defined to be carried in the Flags
+   field in the NO-PATH-VECTOR TLV, which is carried in the NO-PATH
+   object.  This flag, when set, indicates that no feasible route was
+   found that meets all the RWA constraints (e.g., wavelength
+   restriction, signal compatibility, etc.) associated with an RWA path
+   computation request.
+
+   IANA has made the following allocation for this new bit flag in the
+   &quot;NO-PATH-VECTOR TLV Flag Field&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +=====+========================+===========+
+   | Bit | Description            | Reference |
+   +=====+========================+===========+
+   | 23  | No RWA constraints met | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-----+------------------------+-----------+
+
+                     Table 10
+
+<span class="h3"><a class="selflink" id="section-8.11" href="#section-8.11">8.11</a>.  New Error-Types and Error-Values</span>
+
+   In <a href="#section-5.2">Section 5.2</a>, new PCEP error codes are defined for WSON RWA errors.
+   IANA has made the following allocations in the &quot;PCEP-ERROR Object
+   Error Types and Values&quot; subregistry [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]:
+
+   +============+================+========================+===========+
+   | Error-Type | Meaning        | Error-value            | Reference |
+   +============+================+========================+===========+
+   | 27         | WSON RWA error | 0: Unassigned          | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +------------+----------------+------------------------+-----------+
+   |            |                | 1: Insufficient memory | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +------------+----------------+------------------------+-----------+
+   |            |                | 2: RWA computation not | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   |            |                | supported              |           |
+   +------------+----------------+------------------------+-----------+
+   |            |                | 3: Syntactical         | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   |            |                | encoding error         |           |
+   +------------+----------------+------------------------+-----------+
+   |            |                | 4-255: Unassigned      | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +------------+----------------+------------------------+-----------+
+
+                                 Table 11
+
+<span class="h3"><a class="selflink" id="section-8.12" href="#section-8.12">8.12</a>.  New Subobjects for the Exclude Route Object</span>
+
+   The &quot;Path Computation Element Protocol (PCEP) Numbers&quot; registry
+   contains a subregistry titled &quot;XRO Subobjects&quot; [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>].  Per
+   <a href="#section-4.4.1">Section 4.4.1</a>, IANA has added the following subobjects that can be
+   carried in the XRO:
+
+   +=======+==============================+===========+
+   | Value | Description                  | Reference |
+   +=======+==============================+===========+
+   | 8     | Optical Interface Class List | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+------------------------------+-----------+
+   | 9     | Client Signal Information    | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+------------------------------+-----------+
+
+                         Table 12
+
+<span class="h3"><a class="selflink" id="section-8.13" href="#section-8.13">8.13</a>.  New Subobjects for the Include Route Object</span>
+
+   The &quot;Path Computation Element Protocol (PCEP) Numbers&quot; registry
+   contains a subregistry titled &quot;IRO Subobjects&quot; [<a href="#ref-PCEP-NUMBERS">PCEP-NUMBERS</a>].  Per
+   <a href="#section-4.4.2">Section 4.4.2</a>, IANA has added the following subobjects that can be
+   carried in the IRO:
+
+   +=======+==============================+===========+
+   | Value | Description                  | Reference |
+   +=======+==============================+===========+
+   | 8     | Optical Interface Class List | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+------------------------------+-----------+
+   | 9     | Client Signal Information    | <a href="/doc/html/rfc8780">RFC 8780</a>  |
+   +-------+------------------------------+-----------+
+
+                         Table 13
+
+<span class="h3"><a class="selflink" id="section-8.14" href="#section-8.14">8.14</a>.  Request for Updated Note for LMP TE Link Object Class Type</span>
+
+   The &quot;TE_LINK Object Class type name space (Value 11)&quot; registry was
+   created for the Link Management Protocol (LMP) [<a href="/doc/html/rfc4204" title="&quot;Link Management Protocol (LMP)&quot;">RFC4204</a>].  As
+   discussed in <a href="#section-4.3.1">Section 4.3.1</a>, IANA has added the following note at the
+   top of the &quot;TE_LINK Object Class type name space (Value 11)&quot; registry
+   [<a href="#ref-LMP-PARAM">LMP-PARAM</a>]:
+
+      These values have additional usage for the Link Identifier Type
+      field.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3209">RFC3209</a>]  Awduche, D., Berger, L., Gan, D., Li, T., Srinivasan, V.,
+              and G. Swallow, &quot;RSVP-TE: Extensions to RSVP for LSP
+              Tunnels&quot;, <a href="/doc/html/rfc3209">RFC 3209</a>, DOI 10.17487/RFC3209, December 2001,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3209">https://www.rfc-editor.org/info/rfc3209</a>&gt;.
+
+   [<a id="ref-RFC3630">RFC3630</a>]  Katz, D., Kompella, K., and D. Yeung, &quot;Traffic Engineering
+              (TE) Extensions to OSPF Version 2&quot;, <a href="/doc/html/rfc3630">RFC 3630</a>,
+              DOI 10.17487/RFC3630, September 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3630">https://www.rfc-editor.org/info/rfc3630</a>&gt;.
+
+   [<a id="ref-RFC5329">RFC5329</a>]  Ishiguro, K., Manral, V., Davey, A., and A. Lindem, Ed.,
+              &quot;Traffic Engineering Extensions to OSPF Version 3&quot;,
+              <a href="/doc/html/rfc5329">RFC 5329</a>, DOI 10.17487/RFC5329, September 2008,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5329">https://www.rfc-editor.org/info/rfc5329</a>&gt;.
+
+   [<a id="ref-RFC5440">RFC5440</a>]  Vasseur, JP., Ed. and JL. Le Roux, Ed., &quot;Path Computation
+              Element (PCE) Communication Protocol (PCEP)&quot;, <a href="/doc/html/rfc5440">RFC 5440</a>,
+              DOI 10.17487/RFC5440, March 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5440">https://www.rfc-editor.org/info/rfc5440</a>&gt;.
+
+   [<a id="ref-RFC6205">RFC6205</a>]  Otani, T., Ed. and D. Li, Ed., &quot;Generalized Labels for
+              Lambda-Switch-Capable (LSC) Label Switching Routers&quot;,
+              <a href="/doc/html/rfc6205">RFC 6205</a>, DOI 10.17487/RFC6205, March 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6205">https://www.rfc-editor.org/info/rfc6205</a>&gt;.
+
+   [<a id="ref-RFC7570">RFC7570</a>]  Margaria, C., Ed., Martinelli, G., Balls, S., and B.
+              Wright, &quot;Label Switched Path (LSP) Attribute in the
+              Explicit Route Object (ERO)&quot;, <a href="/doc/html/rfc7570">RFC 7570</a>,
+              DOI 10.17487/RFC7570, July 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7570">https://www.rfc-editor.org/info/rfc7570</a>&gt;.
+
+   [<a id="ref-RFC7579">RFC7579</a>]  Bernstein, G., Ed., Lee, Y., Ed., Li, D., Imajuku, W., and
+              J. Han, &quot;General Network Element Constraint Encoding for
+              GMPLS-Controlled Networks&quot;, <a href="/doc/html/rfc7579">RFC 7579</a>,
+              DOI 10.17487/RFC7579, June 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7579">https://www.rfc-editor.org/info/rfc7579</a>&gt;.
+
+   [<a id="ref-RFC7581">RFC7581</a>]  Bernstein, G., Ed., Lee, Y., Ed., Li, D., Imajuku, W., and
+              J. Han, &quot;Routing and Wavelength Assignment Information
+              Encoding for Wavelength Switched Optical Networks&quot;,
+              <a href="/doc/html/rfc7581">RFC 7581</a>, DOI 10.17487/RFC7581, June 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7581">https://www.rfc-editor.org/info/rfc7581</a>&gt;.
+
+   [<a id="ref-RFC7688">RFC7688</a>]  Lee, Y., Ed. and G. Bernstein, Ed., &quot;GMPLS OSPF
+              Enhancement for Signal and Network Element Compatibility
+              for Wavelength Switched Optical Networks&quot;, <a href="/doc/html/rfc7688">RFC 7688</a>,
+              DOI 10.17487/RFC7688, November 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7688">https://www.rfc-editor.org/info/rfc7688</a>&gt;.
+
+   [<a id="ref-RFC7689">RFC7689</a>]  Bernstein, G., Ed., Xu, S., Lee, Y., Ed., Martinelli, G.,
+              and H. Harai, &quot;Signaling Extensions for Wavelength
+              Switched Optical Networks&quot;, <a href="/doc/html/rfc7689">RFC 7689</a>,
+              DOI 10.17487/RFC7689, November 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7689">https://www.rfc-editor.org/info/rfc7689</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8253">RFC8253</a>]  Lopez, D., Gonzalez de Dios, O., Wu, Q., and D. Dhody,
+              &quot;PCEPS: Usage of TLS to Provide a Secure Transport for the
+              Path Computation Element Communication Protocol (PCEP)&quot;,
+              <a href="/doc/html/rfc8253">RFC 8253</a>, DOI 10.17487/RFC8253, October 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8253">https://www.rfc-editor.org/info/rfc8253</a>&gt;.
+
+   [<a id="ref-RFC8779">RFC8779</a>]  Margaria, C., Ed., Gonzalez de Dios, O., Ed., and F.
+              Zhang, Ed., &quot;Path Computation Element Communication
+              Protocol (PCEP) Extensions for GMPLS&quot;, <a href="/doc/html/rfc8779">RFC 8779</a>,
+              DOI 10.17487/RFC8779, July 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8779">https://www.rfc-editor.org/info/rfc8779</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-LMP-PARAM">LMP-PARAM</a>]
+              IANA, &quot;Link Management Protocol (LMP) Parameters&quot;,
+              &lt;<a href="https://www.iana.org/assignments/lmp-parameters/">https://www.iana.org/assignments/lmp-parameters/</a>&gt;.
+
+   [<a id="ref-PCEP-LS">PCEP-LS</a>]  Lee, Y., Zheng, H., Ceccarelli, D., Wang, W., Park, P.,
+              and B. Yoon, &quot;PCEP Extension for Distribution of Link-
+              State and TE information for Optical Networks&quot;, Work in
+              Progress, Internet-Draft, <a href="/doc/html/draft-lee-pce-pcep-ls-optical-09">draft-lee-pce-pcep-ls-optical-</a>
+              <a href="/doc/html/draft-lee-pce-pcep-ls-optical-09">09</a>, 9 March 2020, &lt;<a href="https://tools.ietf.org/html/draft-lee-pce-pcep-ls-optical-09">https://tools.ietf.org/html/draft-lee-</a>
+              <a href="https://tools.ietf.org/html/draft-lee-pce-pcep-ls-optical-09">pce-pcep-ls-optical-09</a>&gt;.
+
+   [<a id="ref-PCEP-NUMBERS">PCEP-NUMBERS</a>]
+              IANA, &quot;Path Computation Element Protocol (PCEP) Numbers&quot;,
+              &lt;<a href="https://www.iana.org/assignments/pcep/">https://www.iana.org/assignments/pcep/</a>&gt;.
+
+   [<a id="ref-RFC3471">RFC3471</a>]  Berger, L., Ed., &quot;Generalized Multi-Protocol Label
+              Switching (GMPLS) Signaling Functional Description&quot;,
+              <a href="/doc/html/rfc3471">RFC 3471</a>, DOI 10.17487/RFC3471, January 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3471">https://www.rfc-editor.org/info/rfc3471</a>&gt;.
+
+   [<a id="ref-RFC4203">RFC4203</a>]  Kompella, K., Ed. and Y. Rekhter, Ed., &quot;OSPF Extensions in
+              Support of Generalized Multi-Protocol Label Switching
+              (GMPLS)&quot;, <a href="/doc/html/rfc4203">RFC 4203</a>, DOI 10.17487/RFC4203, October 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4203">https://www.rfc-editor.org/info/rfc4203</a>&gt;.
+
+   [<a id="ref-RFC4204">RFC4204</a>]  Lang, J., Ed., &quot;Link Management Protocol (LMP)&quot;, <a href="/doc/html/rfc4204">RFC 4204</a>,
+              DOI 10.17487/RFC4204, October 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4204">https://www.rfc-editor.org/info/rfc4204</a>&gt;.
+
+   [<a id="ref-RFC4655">RFC4655</a>]  Farrel, A., Vasseur, J.-P., and J. Ash, &quot;A Path
+              Computation Element (PCE)-Based Architecture&quot;, <a href="/doc/html/rfc4655">RFC 4655</a>,
+              DOI 10.17487/RFC4655, August 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4655">https://www.rfc-editor.org/info/rfc4655</a>&gt;.
+
+   [<a id="ref-RFC5420">RFC5420</a>]  Farrel, A., Ed., Papadimitriou, D., Vasseur, JP., and A.
+              Ayyangar, &quot;Encoding of Attributes for MPLS LSP
+              Establishment Using Resource Reservation Protocol Traffic
+              Engineering (RSVP-TE)&quot;, <a href="/doc/html/rfc5420">RFC 5420</a>, DOI 10.17487/RFC5420,
+              February 2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5420">https://www.rfc-editor.org/info/rfc5420</a>&gt;.
+
+   [<a id="ref-RFC5521">RFC5521</a>]  Oki, E., Takeda, T., and A. Farrel, &quot;Extensions to the
+              Path Computation Element Communication Protocol (PCEP) for
+              Route Exclusions&quot;, <a href="/doc/html/rfc5521">RFC 5521</a>, DOI 10.17487/RFC5521, April
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5521">https://www.rfc-editor.org/info/rfc5521</a>&gt;.
+
+   [<a id="ref-RFC6163">RFC6163</a>]  Lee, Y., Ed., Bernstein, G., Ed., and W. Imajuku,
+              &quot;Framework for GMPLS and Path Computation Element (PCE)
+              Control of Wavelength Switched Optical Networks (WSONs)&quot;,
+              <a href="/doc/html/rfc6163">RFC 6163</a>, DOI 10.17487/RFC6163, April 2011,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6163">https://www.rfc-editor.org/info/rfc6163</a>&gt;.
+
+   [<a id="ref-RFC6566">RFC6566</a>]  Lee, Y., Ed., Bernstein, G., Ed., Li, D., and G.
+              Martinelli, &quot;A Framework for the Control of Wavelength
+              Switched Optical Networks (WSONs) with Impairments&quot;,
+              <a href="/doc/html/rfc6566">RFC 6566</a>, DOI 10.17487/RFC6566, March 2012,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc6566">https://www.rfc-editor.org/info/rfc6566</a>&gt;.
+
+   [<a id="ref-RFC7446">RFC7446</a>]  Lee, Y., Ed., Bernstein, G., Ed., Li, D., and W. Imajuku,
+              &quot;Routing and Wavelength Assignment Information Model for
+              Wavelength Switched Optical Networks&quot;, <a href="/doc/html/rfc7446">RFC 7446</a>,
+              DOI 10.17487/RFC7446, February 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7446">https://www.rfc-editor.org/info/rfc7446</a>&gt;.
+
+   [<a id="ref-RFC7449">RFC7449</a>]  Lee, Y., Ed., Bernstein, G., Ed., Martensson, J., Takeda,
+              T., Tsuritani, T., and O. Gonzalez de Dios, &quot;Path
+              Computation Element Communication Protocol (PCEP)
+              Requirements for Wavelength Switched Optical Network
+              (WSON) Routing and Wavelength Assignment&quot;, <a href="/doc/html/rfc7449">RFC 7449</a>,
+              DOI 10.17487/RFC7449, February 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7449">https://www.rfc-editor.org/info/rfc7449</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+Acknowledgments
+
+   The authors would like to thank Adrian Farrel, Julien Meuric, Dhruv
+   Dhody, and Benjamin Kaduk for many helpful comments that greatly
+   improved the contents of this document.
+
+Contributors
+
+   Fatai Zhang
+   Huawei Technologies
+
+   Email: zhangfatai@huawei.com
+
+
+   Cyril Margaria
+   Nokia Siemens Networks
+   St. Martin Strasse 76
+   81541 Munich
+   Germany
+
+   Phone: +49 89 5159 16934
+   Email: cyril.margaria@nsn.com
+
+
+   Oscar Gonzalez de Dios
+   Telefonica Investigacion y Desarrollo
+   C/ Emilio Vargas 6
+   28043 Madrid
+   Spain
+
+   Phone: +34 91 3374013
+   Email: ogondio@tid.es
+
+
+   Greg Bernstein
+   Grotto Networking
+   Fremont, CA
+   United States of America
+
+   Phone: +1 510 573 2237
+   Email: gregb@grotto-networking.com
+
+
+Authors&#x27; Addresses
+
+   Young Lee (editor)
+   Samsung Electronics
+
+   Email: younglee.tx@gmail.com
+
+
+   Ramon Casellas, Editor (editor)
+   CTTC
+   Carl Friedrich Gauss 7
+   PMT Ed B4 Av.
+   08860 Castelldefels Barcelona
+   Spain
+
+   Phone: +34 936452916
+   Email: ramon.casellas@cttc.es
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

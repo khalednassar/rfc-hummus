@@ -1,0 +1,684 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc3140
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-diffserv-2836bis/">
+  <meta name="description" content="Per Hop Behavior Identification Codes (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc3140.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc3140.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc3140.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc3140/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc3140/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/diffserv/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-diffserv-2836bis@ietf.org?subject=draft-ietf-diffserv-2836bis" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-diffserv-2836bis-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-diffserv-2836bis-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-diffserv-2836bis-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-diffserv-2836bis-02">draft-ietf-diffserv-2836bis-02</a>                   Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                           D. Black
+Request for Comments: 3140                                       S. Brim
+Obsoletes: <a href="/doc/html/rfc2836">2836</a>                                             B. Carpenter
+Category: Standards Track                                 F. Le Faucheur
+                                                               June 2001
+
+
+                 <span class="h1">Per Hop Behavior Identification Codes</span>
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+Abstract
+
+   This document defines a 16 bit encoding mechanism for the
+   identification of differentiated services Per Hop Behaviors in
+   protocol messages.  It replaces <a href="/doc/html/rfc2836">RFC 2836</a>.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction.................................................<a href="#page-2">2</a>
+   <a href="#section-1.1">1.1</a>. Usage Scenarios............................................<a href="#page-2">2</a>
+   <a href="#section-2">2</a>. Encoding.....................................................<a href="#page-3">3</a>
+   <a href="#section-3">3</a>. Signalling the Class Selector Codepoints.....................<a href="#page-4">4</a>
+   <a href="#section-4">4</a>. IANA Considerations..........................................<a href="#page-5">5</a>
+   <a href="#section-5">5</a>. Security Considerations......................................<a href="#page-5">5</a>
+   Changes from <a href="/doc/html/rfc2836">RFC 2836</a>...........................................<a href="#page-5">5</a>
+   Acknowledgements................................................<a href="#page-6">6</a>
+   References......................................................<a href="#page-6">6</a>
+   Authors&#x27; Addresses..............................................<a href="#page-6">6</a>
+   Intellectual Property...........................................<a href="#page-7">7</a>
+   Full Copyright Statement........................................<a href="#page-8">8</a>
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>. Introduction</span>
+
+   Differentiated Services [RFC 2474, <a href="/doc/html/rfc2475">RFC 2475</a>] introduces the notion of
+   Per Hop Behaviors (PHBs) that define how traffic belonging to a
+   particular behavior aggregate is treated at an individual network
+   node.  In IP packet headers, PHBs are not indicated as such; instead
+   Differentiated Services Codepoint (DSCP) values are used.  There are
+   only 64 possible DSCP values, but there is no such limit on the
+   number of PHBs.  In a given network domain, there is a locally
+   defined mapping between DSCP values and PHBs.  Standardized PHBs
+   recommend a DSCP mapping, but network operators may choose
+   alternative mappings.
+
+   In some cases it is necessary or desirable to identify a particular
+   PHB in a protocol message, such as a message negotiating bandwidth
+   management or path selection, especially when such messages pass
+   between management domains.  Examples where work is in progress
+   include communication between bandwidth brokers, and MPLS support of
+   diffserv.
+
+   In certain cases, what needs to be identified is not an individual
+   PHB, but a set of PHBs.  One example is a set of PHBs that must
+   follow the same physical path to prevent re-ordering.  An instance of
+   this is the set of three PHBs belonging to a single Assured
+   Forwarding class, such as the PHBs AF11, AF12 and AF13 [<a href="/doc/html/rfc2597">RFC 2597</a>].
+
+   This document defines a binary encoding to uniquely identify PHBs
+   and/or sets of PHBs in protocol messages.  This encoding MUST be used
+   when such identification is required.
+
+   This document replaces <a href="/doc/html/rfc2836">RFC 2836</a>, which omitted considerations for the
+   Class Selector codepoints.
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+   document are to be interpreted as described in [<a href="/doc/html/rfc2119">RFC2119</a>].
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>. Usage Scenarios</span>
+
+   Diffserv services are expected to be supported over various
+   underlying technologies which we broadly refer to as &quot;link layers&quot;
+   for the purpose of this discussion.  For the transport of IP packets,
+   some of these link layers make use of connections or logical
+   connections where the forwarding behavior supported by each link
+   layer device is a property of the connection.  In particular, within
+   the link layer domain, each link layer node will schedule traffic
+   depending on which connection the traffic is transported in.
+   Examples of such &quot;link layers&quot; include ATM and MPLS.
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+   For efficient support of diffserv over these link layers, one model
+   is for different Behavior Aggregates (BAs) (or sets of Behavior
+   Aggregates) to be transported over different connections so that they
+   are granted different (and appropriate) forwarding behaviors inside
+   the link layer cloud.  When those connections are dynamically
+   established for the transport of diffserv traffic, it is very useful
+   to communicate at connection establishment time what forwarding
+   behavior(s) is (are) to be granted to each connection by the link
+   layer device so that the BAs transported experience consistent
+   forwarding behavior inside the link layer cloud.  This can be
+   achieved by including in the connection establishment signaling
+   messages the encoding of the corresponding PHB, or set of PHBs, as
+   defined in this document.  Details on proposed usage of PHB encodings
+   by some MPLS label distribution protocols (RSVP and LDP) for support
+   of Diff-Serv over MPLS, can be found in [<a href="#ref-MPLS-DS">MPLS-DS</a>].
+
+   In another approach, the ATM Forum has a requirement to indicate
+   desired IP QOS treatments in ATM signaling, so that ATM switches can
+   be just as supportive of the desired service as are IP forwarders.
+   To do so the Forum is defining a new VC call setup information
+   element is which will carry PHB identification codes (although will
+   be generalized to do more if needed).
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>. Encoding</span>
+
+   PHBs and sets of PHBs are encoded in an unsigned 16 bit binary field.
+
+   The 16 bit field is arranged as follows:
+
+   Case 1: PHBs defined by standards action, as per [<a href="/doc/html/rfc2474">RFC 2474</a>].
+
+   The encoding for a single PHB is the recommended DSCP value for that
+   PHB, left-justified in the 16 bit field, with bits 6 through 15 set
+   to zero.  Note that the recommended DSCP value MUST be used, even if
+   the network in question has chosen a different mapping.
+
+   The encoding for a set of PHBs is the numerically smallest of the set
+   of encodings for the various PHBs in the set, with bit 14 set to 1.
+   (Thus for the AF1x PHBs, the encoding is that of the AF11 PHB, with
+   bit 14 set to 1.)
+
+         0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+       +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+       |         DSCP          | 0   0   0   0   0   0   0   0   X   0 |
+       +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+
+
+
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+   Case 2: PHBs not defined by standards action, i.e., experimental or
+   local use PHBs as allowed by [<a href="/doc/html/rfc2474">RFC 2474</a>].  In this case an arbitrary
+   12 bit PHB identification code, assigned by the IANA, is placed
+   left-justified in the 16 bit field.  Bit 15 is set to 1, and bit 14
+   is zero for a single PHB or 1 for a set of PHBs.  Bits 12 and 13 are
+   zero.
+
+         0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+       +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+       |                      PHB id code              | 0   0   X   1 |
+       +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+
+   Bits 12 and 13 are reserved either for expansion of the PHB
+   identification code, or for other use, at some point in the future.
+
+   In both cases, when a single PHBID is used to identify a set of PHBs
+   (i.e., bit 14 is set to 1), that set of PHBs MUST constitute a PHB
+   Scheduling Class (i.e., use of PHBs from the set MUST NOT cause
+   intra-microflow traffic reordering when different PHBs from the set
+   are applied to traffic in the same microflow).  The set of AF1x PHBs
+   [<a href="/doc/html/rfc2597">RFC 2597</a>] is an example of a PHB Scheduling Class.  Sets of PHBs
+   that do not constitute a PHB Scheduling Class can be identified by
+   using more than one PHBID.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>. Signalling the Class Selector Codepoints</span>
+
+   [<a id="ref-RFC 2474">RFC 2474</a>] defines the eight DS codepoint values of the form &#x27;xxx000&#x27;
+   (where x may be &#x27;0&#x27; or &#x27;1&#x27;) as the Class Selector Codepoints.
+   Codepoint 000000 is the recommended DSCP value for the Default PHB,
+   and hence the Case 1 PHBID constructed from that codepoint is used to
+   signal the Default PHB (see <a href="#section-2">Section 2</a> above).
+
+   For convenience and consistent operation with networks that employ IP
+   Precedence [<a href="/doc/html/rfc1812">RFC 1812</a>], the Case 1 format PHBIDs constructed from the
+   other seven Class Selector Codepoints may also be used to signal
+   PHBs.  In each case, the PHB signaled by such a PHBID is the PHB to
+   which the embedded class selector codepoint (or IP Precedence value
+   that corresponds to it in non-diffserv domains) is mapped in the
+   recipient&#x27;s network.  Note that different networks will employ
+   different mappings; see <a href="/doc/html/rfc2474#section-4">Section&nbsp;4 of [RFC 2474]</a> for further
+   discussion.
+
+   Any specified use of PHBIDs SHOULD allow the use of the eight Case 1
+   PHBIDs constructed from the Class Selector Codepoints.
+
+
+
+
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>. IANA Considerations</span>
+
+   IANA is requested to create a new assignment registry for &quot;Per-Hop
+   Behavior Identification Codes&quot;, initially allowing values in the
+   range 0 to 4095 decimal.
+
+   Assignment of values in this field require:
+
+      -  the identity of the assignee
+      -  a brief description of the new PHB, with enough detail to
+         distinguish it from existing standardized and non-standardized
+         PHBs. In the case of a set of PHBs, this description should
+         cover all PHBs in the set.
+      -  a reference to a stable document describing the PHB in detail.
+
+   During the first year of existence of this registry, IANA is
+   requested to refer all requests to the IETF diffserv WG for review.
+   Subsequently, requests should be reviewed by the IETF Transport Area
+   Directors or by an expert that they designate.
+
+   If the number of assignments begins to approach 4096, the Transport
+   Area Directors should be alerted.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>. Security Considerations</span>
+
+   This encoding in itself raises no security issues. However, users of
+   this encoding should consider that modifying a PHB identification
+   code may constitute theft or denial of service, so protocols using
+   this encoding must be adequately protected.
+
+   Just signalling a PHBID SHOULD NOT be sufficient to grant the sender
+   access to a PHB that it would otherwise not be able to use.  In cases
+   where this is an issue, receivers SHOULD treat received PHBIDs as
+   requests for service, and use local policy to determine whether to
+   grant or deny such requests.
+
+Changes from <a href="/doc/html/rfc2836">RFC 2836</a>
+
+   [<a id="ref-RFC 2836">RFC 2836</a>] did not consider the Class Selector code points, which are
+   covered by <a href="#section-3">section 3</a> of the present document. A clarification has
+   been added at the end of <a href="#section-2">section 2</a> for the case of PHB Scheduling
+   Classes.  The second paragraph of <a href="#section-5">section 5</a> has been added.
+
+
+
+
+
+
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+Acknowledgements
+
+   Useful comments were made by members of the IETF Diffserv working
+   group.
+
+References
+
+   [<a id="ref-RFC 2119">RFC 2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+               Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>, March 1997.
+
+   [<a id="ref-RFC 2474">RFC 2474</a>]  Nichols, K., Blake, S., Baker, F. and D. Black,
+               &quot;Definition of the Differentiated Services Field (DS
+               Field) in the IPv4 and IPv6 Headers&quot;, <a href="/doc/html/rfc2474">RFC 2474</a>, December
+               1998.
+
+   [<a id="ref-RFC 2475">RFC 2475</a>]  Blake, S., Black, D., Carlson, M., Davies, E., Wang, Z.
+               and W. Weiss, &quot;An Architecture for Differentiated
+               Services&quot;, <a href="/doc/html/rfc2475">RFC 2475</a>, December 1998.
+
+   [<a id="ref-RFC 2597">RFC 2597</a>]  Heinanen, J., Baker, F., Weiss, W. and J. Wroclawski,
+               &quot;Assured Forwarding PHB Group&quot;, <a href="/doc/html/rfc2597">RFC 2597</a>, June 1999.
+
+   [<a id="ref-RFC 2836">RFC 2836</a>]  Brim, S., Carpenter, B. and F. Le Faucheur, &quot;Per Hop
+               Behavior Identification Codes&quot;, <a href="/doc/html/rfc2836">RFC 2836</a>, May 2000.
+
+   [<a id="ref-MPLS-DS">MPLS-DS</a>]   Le Faucheur, F., et al., &quot;MPLS Support of Differentiated
+               Services&quot;, Work in Progress.
+
+Authors&#x27; Addresses
+
+   David L. Black
+   EMC Corporation
+   42 South St.
+   Hopkinton, MA   01748
+
+   EMail: black_david@emc.com
+
+
+   Scott W. Brim
+   146 Honness Lane
+   Ithaca, NY 14850
+   USA
+
+   EMail: sbrim@cisco.com
+
+
+
+
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+   Brian E. Carpenter
+   IBM
+   c/o iCAIR
+   Suite 150
+   1890 Maple Avenue
+   Evanston, IL 60201
+   USA
+
+   EMail: brian@icair.org
+
+
+   Francois Le Faucheur
+   Cisco Systems
+   Petra B - Les Lucioles
+   291, rue Albert Caquot
+   06560 Valbonne
+   France
+
+   EMail: flefauch@cisco.com
+
+Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   intellectual property or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; neither does it represent that it
+   has made any effort to identify any such rights.  Information on the
+   IETF&#x27;s procedures with respect to rights in standards-track and
+   standards-related documentation can be found in <a href="/doc/html/bcp11">BCP-11</a>.  Copies of
+   claims of rights made available for publication and any assurances of
+   licenses to be made available, or the result of an attempt made to
+   obtain a general license or permission for the use of such
+   proprietary rights by implementors or users of this specification can
+   be obtained from the IETF Secretariat.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights which may cover technology that may be required to practice
+   this standard.  Please address the information to the IETF Executive
+   Director.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Black, et al.               Standards Track                     [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc3140">RFC 3140</a>         Per Hop Behavior Identification Codes         June 2001</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   &quot;AS IS&quot; basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Black, et al.               Standards Track                     [Page 8]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

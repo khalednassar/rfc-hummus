@@ -1,0 +1,484 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8769
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-schaad-cbor-content/">
+  <meta name="description" content="Cryptographic Message Syntax (CMS) Content Types for Concise Binary Object Representation (CBOR) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8769.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8769.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8769.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8769.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8769/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8769/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/sec/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-schaad-cbor-content@ietf.org?subject=draft-schaad-cbor-content" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-schaad-cbor-content-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-schaad-cbor-content-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-schaad-cbor-content-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-schaad-cbor-content-02">draft-schaad-cbor-content-02</a>                         Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         J. Schaad
+Request for Comments: 8769                                August Cellars
+Category: Informational                                       March 2020
+ISSN: 2070-1721
+
+
+  <span class="h1">Cryptographic Message Syntax (CMS) Content Types for Concise Binary</span>
+                      <span class="h1">Object Representation (CBOR)</span>
+
+Abstract
+
+   Concise Binary Object Representation (CBOR) is becoming a widely used
+   method of doing content encoding.  The Cryptographic Message Syntax
+   (CMS) is still a widely used method of doing message-based security.
+   This document defines a set of content types for CMS that hold CBOR
+   content.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not all documents
+   approved by the IESG are candidates for any level of Internet
+   Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8769">https://www.rfc-editor.org/info/rfc8769</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  CBOR Content Type
+   3.  CBOR Sequence Content Type
+   4.  ASN.1 Module
+   5.  IANA Considerations
+   6.  Security Considerations
+   7.  Normative References
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Concise Binary Object Representation (CBOR) [<a href="#ref-CBOR" title="&quot;Concise Binary Object Representation (CBOR)&quot;">CBOR</a>] is a compact self-
+   describing binary encoding formation that is starting to be used in
+   many different applications.  One of the primary uses of CBOR is in
+   the Internet of Things, the constrained nature of which means that
+   having minimal size of encodings becomes very important.  The
+   Cryptographic Message Syntax (CMS) [<a href="#ref-CMS" title="&quot;Cryptographic Message Syntax (CMS)&quot;">CMS</a>] is still one of the most
+   common methods for providing message-based security, although in many
+   cases, the CBOR Object Signing and Encryption (COSE) [<a href="#ref-COSE" title="&quot;CBOR Object Signing and Encryption (COSE)&quot;">COSE</a>] message-
+   based security system is starting to be used.  Given that CBOR is
+   going to be transported using CMS, it makes sense to define CMS
+   content types for the purpose of denoting that the embedded content
+   is CBOR.  This document defines two new content types: CBOR content
+   type and CBOR Sequence content type [<a href="#ref-CBOR-SEQ" title="&quot;Concise Binary Object Representation (CBOR) Sequences&quot;">CBOR-SEQ</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  CBOR Content Type</span>
+
+   [<a id="ref-CBOR">CBOR</a>] defines an encoded CBOR item.  This section defines a new
+   content type for wrapping an encoded CBOR item in a CMS object.
+
+   The following object identifier identifies the CBOR content type:
+
+   id-ct-cbor OBJECT IDENTIFIER ::= { iso(1) member-body(2) usa(840)
+           rsadsi(113549) pkcs(1) pkcs9(9) smime(16) ct(1) 44 }
+
+   The CBOR content type is intended to refer to a single object encoded
+   using the CBOR encoding format [<a href="#ref-CBOR" title="&quot;Concise Binary Object Representation (CBOR)&quot;">CBOR</a>].  Nothing is stated about the
+   specific CBOR object that is included.  CBOR can always be decoded to
+   a tree, as the encoding is self descriptive.
+
+   The CBOR content type is intended to be encapsulated in the signed
+   data and auth-enveloped data, but it can be included in any CMS
+   wrapper.  It cannot be predicted whether the compressed CMS
+   encapsulation will provide compression, because the content may be
+   binary rather than text.
+
+   [<a id="ref-RFC7193">RFC7193</a>] defined an optional parameter, &quot;innerContent&quot;, to allow for
+   identification of what the inner content is for an application/cms
+   media type.  This document defines the string &quot;cbor&quot; as a new value
+   that can be placed in this parameter when a CBOR content type is
+   used.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  CBOR Sequence Content Type</span>
+
+   [<a id="ref-CBOR-SEQ">CBOR-SEQ</a>] defines a CBOR Sequence as a concatenation of zero or more
+   CBOR objects.  This section defines a new content type for wrapping a
+   CBOR Sequence in a CMS object.
+
+   The following object identifier identifies the CBOR Sequence content
+   type:
+
+   id-ct-cborSequence OBJECT IDENTIFIER ::= { iso(1) member-body(2)
+           usa(840) rsadsi(113549) pkcs(1) pkcs9(9) smime(16) ct(1)
+           45 }
+
+   The CBOR Sequence content type is intended to refer to a sequence of
+   objects encoded using the CBOR encoding format.  The objects are
+   concatenated without any markers delimiting the individual CBOR
+   objects.  Nothing is stated about the specific CBOR objects that are
+   included.  CBOR can always be decoded to a tree, because the encoding
+   is self descriptive.
+
+   The CBOR Sequence content type is intended to be encapsulated in the
+   signed data and auth-enveloped data, but it can be included in any
+   CMS wrapper.  It cannot be predicted whether the compressed CMS
+   encapsulation will provide compression, because the content may be
+   binary rather than text.
+
+   [<a id="ref-RFC7193">RFC7193</a>] defined an optional parameter, &quot;innerContent&quot;, to allow for
+   identification of what the inner content is for an application/cms
+   media type.  This document defines the string &quot;cborSequence&quot; as a new
+   value that can be placed in this parameter when a CBOR Sequence
+   content type is used.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  ASN.1 Module</span>
+
+   CborContentTypes { iso(1) member-body(2) usa(840)
+           rsadsi(113549) pkcs(1) pkcs9(9) smime(16) modules(0)
+           id-mod-cbor-2019(71) }
+   DEFINITIONS EXPLICIT TAGS ::= BEGIN
+
+   IMPORTS
+       CONTENT-TYPE
+       FROM  CryptographicMessageSyntax-2010
+         { iso(1) member-body(2) us(840) rsadsi(113549)
+            pkcs(1) pkcs-9(9) smime(16) modules(0) id-mod-cms-2009(58) }
+       ;
+
+       id-ct-cbor OBJECT IDENTIFIER ::= { iso(1) member-body(2)
+           us(840) rsadsi(113549) pkcs(1) pkcs9(9) smime(16) ct(1)
+           44 }
+
+       id-ct-cborSequence OBJECT IDENTIFIER ::= { iso(1) member-body(2)
+           us(840) rsadsi(113549) pkcs(1) pkcs9(9) smime(16) ct(1)
+           45 }
+
+       -- Content is encoded directly and does not have any ASN.1
+       --    structure
+       ct-Cbor CONTENT-TYPE ::= { IDENTIFIED BY id-ct-cbor }
+
+       -- Content is encoded directly and does not have any ASN.1
+       --    structure
+       ct-CborSequence CONTENT-TYPE ::= {
+           IDENTIFIED BY id-ct-cborSequence
+       }
+
+   END
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  IANA Considerations</span>
+
+   IANA has registered the following in the &quot;SMI Security for S/MIME
+   Module Identifier (1.2.840.113549.1.9.16.0)&quot; subregistry within the
+   SMI Numbers registry:
+
+                +---------+------------------+------------+
+                | Decimal | Description      | References |
+                +=========+==================+============+
+                | 71      | id-mod-cbor-2019 | <a href="/doc/html/rfc8769">RFC 8769</a>   |
+                +---------+------------------+------------+
+
+                                  Table 1
+
+   IANA has registered the following in the &quot;SMI Security for S/MIME CMS
+   Content Type (1.2.840.113549.1.9.16.1)&quot; subregistry within the SMI
+   Numbers registry:
+
+               +---------+--------------------+------------+
+               | Decimal | Description        | References |
+               +=========+====================+============+
+               | 44      | id-ct-cbor         | <a href="/doc/html/rfc8769">RFC 8769</a>   |
+               +---------+--------------------+------------+
+               | 45      | id-ct-cborSequence | <a href="/doc/html/rfc8769">RFC 8769</a>   |
+               +---------+--------------------+------------+
+
+                                  Table 2
+
+   IANA has registered the following in the &quot;CMS Inner Content Types&quot;
+   subregistry within the &quot;MIME Media Type Sub-Parameter Registries&quot;:
+
+         +--------------+----------------------------+-----------+
+         | Name         | Object Identifier          | Reference |
+         +==============+============================+===========+
+         | cbor         | 1.2.840.113549.1.9.16.1.44 | <a href="/doc/html/rfc8769">RFC 8769</a>  |
+         +--------------+----------------------------+-----------+
+         | cborSequence | 1.2.840.113549.1.9.16.1.45 | <a href="/doc/html/rfc8769">RFC 8769</a>  |
+         +--------------+----------------------------+-----------+
+
+                                  Table 3
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Security Considerations</span>
+
+   This document only provides identification for content types; it does
+   not introduce any new security issues by itself.  The new content
+   types mean that id-data does not need to be used to identify these
+   content types; they can therefore reduce confusion.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Normative References</span>
+
+   [<a id="ref-CBOR">CBOR</a>]     Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, <a href="/doc/html/rfc7049">RFC 7049</a>, DOI 10.17487/RFC7049,
+              October 2013, &lt;<a href="https://www.rfc-editor.org/info/rfc7049">https://www.rfc-editor.org/info/rfc7049</a>&gt;.
+
+   [<a id="ref-CBOR-SEQ">CBOR-SEQ</a>] Bormann, C., &quot;Concise Binary Object Representation (CBOR)
+              Sequences&quot;, <a href="/doc/html/rfc8742">RFC 8742</a>, DOI 10.17487/RFC8742, February 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8742">https://www.rfc-editor.org/info/rfc8742</a>&gt;.
+
+   [<a id="ref-CMS">CMS</a>]      Housley, R., &quot;Cryptographic Message Syntax (CMS)&quot;, STD 70,
+              <a href="/doc/html/rfc5652">RFC 5652</a>, DOI 10.17487/RFC5652, September 2009,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc5652">https://www.rfc-editor.org/info/rfc5652</a>&gt;.
+
+   [<a id="ref-COSE">COSE</a>]     Schaad, J., &quot;CBOR Object Signing and Encryption (COSE)&quot;,
+              <a href="/doc/html/rfc8152">RFC 8152</a>, DOI 10.17487/RFC8152, July 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8152">https://www.rfc-editor.org/info/rfc8152</a>&gt;.
+
+   [<a id="ref-RFC7193">RFC7193</a>]  Turner, S., Housley, R., and J. Schaad, &quot;The application/
+              cms Media Type&quot;, <a href="/doc/html/rfc7193">RFC 7193</a>, DOI 10.17487/RFC7193, April
+              2014, &lt;<a href="https://www.rfc-editor.org/info/rfc7193">https://www.rfc-editor.org/info/rfc7193</a>&gt;.
+
+Author&#x27;s Address
+
+   Jim Schaad
+   August Cellars
+
+   Email: ietf@augustcellars.com
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

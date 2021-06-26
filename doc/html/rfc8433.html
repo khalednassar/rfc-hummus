@@ -1,0 +1,2756 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8433
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-worley-alert-info-fsm/">
+  <meta name="description" content="A Simpler Method for Resolving Alert-Info URNs (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8433.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8433.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc8433.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8433/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8433/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-worley-alert-info-fsm@ietf.org?subject=draft-worley-alert-info-fsm" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-worley-alert-info-fsm-10.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-worley-alert-info-fsm-10.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-worley-alert-info-fsm-10.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-worley-alert-info-fsm-10">draft-worley-alert-info-fsm-10</a>                       Informational</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Independent Submission                                         D. Worley
+Request for Comments: 8433                                       Ariadne
+Category: Informational                                      August 2018
+ISSN: 2070-1721
+
+
+             <span class="h1">A Simpler Method for Resolving Alert-Info URNs</span>
+
+Abstract
+
+   The &quot;alert&quot; namespace of Uniform Resource Names (URNs) can be used in
+   the Alert-Info header field of Session Initiation Protocol (SIP)
+   requests and responses to inform a voice over IP (VoIP) telephone
+   (user agent) of the characteristics of the call that the user agent
+   has originated or terminated.  The user agent must resolve the URNs
+   into a signal; that is, it must select the best available signal to
+   present to its user to indicate the characteristics of the call.
+
+   <a href="/doc/html/rfc7462">RFC 7462</a> describes a non-normative algorithm for signal selection.
+   This document describes a more efficient alternative algorithm: a
+   user agent&#x27;s designer can, based on the user agent&#x27;s signals and
+   their meanings, construct a finite state machine (FSM) to process the
+   URNs to select a signal in a way that obeys the restrictions given in
+   the definition of the &quot;alert&quot; URN namespace.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This is a contribution to the RFC Series, independently of any other
+   RFC stream.  The RFC Editor has chosen to publish this document at
+   its discretion and makes no statement about its value for
+   implementation or deployment.  Documents approved for publication by
+   the RFC Editor are not candidates for any level of Internet Standard;
+   see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8433">https://www.rfc-editor.org/info/rfc8433</a>.
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2018 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ....................................................<a href="#page-3">3</a>
+      <a href="#section-1.1">1.1</a>. Requirements Governing Resolution Algorithms ...............<a href="#page-4">4</a>
+      <a href="#section-1.2">1.2</a>. Summary of the New Resolution Algorithm ....................<a href="#page-5">5</a>
+      <a href="#section-1.3">1.3</a>. Conventions Used in This Document ..........................<a href="#page-7">7</a>
+   <a href="#section-2">2</a>. Selecting the Signals and Their Corresponding &quot;alert&quot; URNs ......<a href="#page-7">7</a>
+   <a href="#section-3">3</a>. General Considerations for Processing Alert-Info ................<a href="#page-9">9</a>
+   4. Constructing the Finite State Machine for a Very Simple
+      Example ........................................................<a href="#page-10">10</a>
+      <a href="#section-4.1">4.1</a>. Listing the Expressed URNs ................................<a href="#page-11">11</a>
+      <a href="#section-4.2">4.2</a>. Constructing the Alphabet of Symbols ......................<a href="#page-11">11</a>
+      <a href="#section-4.3">4.3</a>. Constructing the States and Transitions ...................<a href="#page-13">13</a>
+      <a href="#section-4.4">4.4</a>. Summary ...................................................<a href="#page-17">17</a>
+      <a href="#section-4.5">4.5</a>. Examples of Processing Alert-Info URNs ....................<a href="#page-19">19</a>
+   <a href="#section-5">5</a>. Further Examples ...............................................<a href="#page-20">20</a>
+      <a href="#section-5.1">5.1</a>. Example with &quot;source&quot; and &quot;priority&quot; URNs .................<a href="#page-20">20</a>
+      <a href="#section-5.2">5.2</a>. Example 1 of <a href="/doc/html/rfc7462">RFC 7462</a> .....................................<a href="#page-24">24</a>
+      <a href="#section-5.3">5.3</a>. Examples 2, 3, and 4 of <a href="/doc/html/rfc7462">RFC 7462</a> ..........................<a href="#page-30">30</a>
+      <a href="#section-5.4">5.4</a>. An Example That Subsets Internal Sources ..................<a href="#page-33">33</a>
+      <a href="#section-5.5">5.5</a>. An Example of &quot;alert:service&quot; URNs ........................<a href="#page-34">34</a>
+      <a href="#section-5.6">5.6</a>. An Example Using Country Codes ............................<a href="#page-34">34</a>
+   <a href="#section-6">6</a>. Prioritizing Signals ...........................................<a href="#page-40">40</a>
+   <a href="#section-7">7</a>. Dynamic Sets of Signals ........................................<a href="#page-41">41</a>
+   <a href="#section-8">8</a>. Security Considerations ........................................<a href="#page-43">43</a>
+   <a href="#section-9">9</a>. IANA Considerations ............................................<a href="#page-43">43</a>
+   <a href="#section-10">10</a>. References ....................................................<a href="#page-44">44</a>
+      <a href="#section-10.1">10.1</a>. Normative References .....................................<a href="#page-44">44</a>
+      <a href="#section-10.2">10.2</a>. Informative References ...................................<a href="#page-44">44</a>
+   Acknowledgments ...................................................<a href="#page-45">45</a>
+   Author&#x27;s Address ..................................................<a href="#page-45">45</a>
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   When a SIP user agent (UA) server receives an incoming INVITE
+   request, it chooses an alerting signal (the ring tone) to present to
+   its user (the called user) by processing the Alert-Info header
+   field(s) in the incoming INVITE request [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>].  Similarly, a SIP
+   UA client determines an alerting signal (the ringback tone) to
+   present to its user (the calling user) by processing the Alert-Info
+   header field(s) in the incoming provisional response(s) to its
+   outgoing INVITE request.
+
+   [<a id="ref-RFC3261">RFC3261</a>] envisioned that the Alert-Info header field value would be
+   a URL that the UA could use to retrieve the encoded media of the
+   signal.  This usage has security problems and is inconvenient to
+   implement in practice.
+
+   [<a id="ref-RFC7462">RFC7462</a>] introduced an alternative practice: the Alert-Info values
+   can be URNs in the &quot;alert&quot; URN namespace that specify features of the
+   call or of the signal that should be signaled to the user.  [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>]
+   defined a large set of &quot;alert&quot; URNs and procedures for extending
+   the set.
+
+   A UA is unlikely to provide more than a small set of alerting
+   signals, and there are an infinite number of possible combinations of
+   &quot;alert&quot; URNs.  Thus, a UA is often required to select an alerting
+   signal that renders only a subset of the information in the
+   Alert-Info header field(s) -- which is the resolution process for
+   &quot;alert&quot; URNs.  The requirements for resolving &quot;alert&quot; URNs are given
+   in <a href="/doc/html/rfc7462#section-11.1">Section&nbsp;11.1 of [RFC7462]</a>.
+
+   <a href="/doc/html/rfc7462#section-12">Section&nbsp;12 of [RFC7462]</a> gives a (non-normative) resolution algorithm
+   for selecting a signal that satisfies the requirements of
+   <a href="#section-11.1">Section 11.1</a> of that document.  That algorithm can be used regardless
+   of the set of alerting signals that the UA provides and their
+   specified meanings.  The existence of the algorithm defined in
+   [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] demonstrates that the resolution requirements can always be
+   satisfied.  However, the algorithm is complex and slow.
+
+   The purpose of this document is to describe an improved
+   implementation -- a more efficient resolution algorithm for selecting
+   signals that conforms to the requirements of <a href="/doc/html/rfc7462#section-11.1">Section&nbsp;11.1 of
+   [RFC7462]</a>.  (Of course, like any such algorithm, it is non-normative,
+   and the implementation is free to use any algorithm that conforms to
+   the requirements of <a href="/doc/html/rfc7462#section-11.1">Section&nbsp;11.1 of [RFC7462]</a>.)
+
+   In the algorithm defined in this document, once the UA designer has
+   chosen the set of signals that the UA produces and the &quot;alert&quot; URNs
+   that they express, a finite state machine (FSM) is constructed that
+
+
+
+<span class="grey">Worley                        Informational                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   selects alerting signals based on the URNs in the Alert-Info header
+   field(s) in a SIP message.  The incoming &quot;alert&quot; URNs are
+   preprocessed in a straightforward manner into a sequence of &quot;symbols&quot;
+   drawn from a fixed finite set; these symbols are then used as input
+   to the FSM.  After processing the input, the state of the FSM selects
+   the correct alerting signal to present to the user.
+
+   Both the preprocessor and the FSM are determined only by the selected
+   set of signals and the set of &quot;alert&quot; URNs expressed by the signals,
+   so the processing machinery can be fixed at the time of designing
+   the UA.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Governing Resolution Algorithms</span>
+
+   The requirements for the resolution of &quot;alert&quot; URNs are given in
+   <a href="/doc/html/rfc7462#section-11.1">Section&nbsp;11.1 of [RFC7462]</a> and can be described as follows:
+
+   o  The &quot;alert&quot; URNs are processed from left to right.  Each &quot;alert&quot;
+      URN has precedence over all URNs that follow it, and its
+      interpretation is subordinate to all URNs that precede it.
+
+   o  As each URN is processed, one of the UA&#x27;s signals is chosen that
+      expresses that URN as far as can be done without reducing the
+      degree to which any of the preceding URNs were expressed by the
+      signal chosen for the preceding URN.  Thus, as processing
+      proceeds, the chosen signals become increasingly specific and
+      contain more information, but all of the information about a
+      particular URN that is expressed by the signal chosen for that URN
+      is also expressed by the signals chosen for all following URNs.
+
+   o  If the entirety of the current URN cannot be expressed by any
+      allowed signal, then each of the trailing alert-ind-parts (the
+      sections separated by colons) is in turn removed until the reduced
+      URN can be expressed by some signal that also expresses at least
+      the same reduced versions of the preceding URNs that were
+      expressed by the signal chosen for the preceding URN.  This can be
+      described as &quot;a signal that expresses as much of the current URN
+      as possible while still expressing as much of the previous URNs as
+      the preceding signal did.&quot;
+
+   So, for instance, consider processing
+
+       Alert-Info: urn:alert:category-a:part-a1:part-a2,
+                   urn:alert:category-b:part-b1:part-b2
+
+   If the UA has no signal for urn:alert:category-a:part-a1:part-a2, it
+   removes part-a2 from the URN and checks whether it has a signal for
+   the less-specific URN urn:alert:category-a:part-a1.  If it has no
+
+
+
+<span class="grey">Worley                        Informational                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   signal for that URN, it gives up on the URN entirely (since
+   urn:alert:category-a doesn&#x27;t exist and can be considered to express
+   nothing about the call), and the chosen signal is the default signal
+   of the UA, i.e., the signal that is used when there is no Alert-Info.
+
+   But let us suppose the UA has a signal for
+   urn:alert:category-a:part-a1 and chooses that signal when processing
+   the first URN.  All processing after this point will be restricted to
+   signals that express urn:alert:category-a:part-a1 or a more specific
+   URN of the category &quot;category-a&quot;.
+
+   The UA then goes on to examine the next URN,
+   urn:alert:category-b:part-b1:part-b2.  If there is a signal that
+   expresses both urn:alert:category-a:part-a1 and
+   urn:alert:category-b:part-b1:part-b2, then the UA chooses that
+   signal.  If there is no such signal, the second URN is reduced to
+   urn:alert:category-b:part-b1, and the UA checks for a signal that
+   expresses that URN along with urn:alert:category-a:part-a1.  If there
+   is no such signal that matches that relaxed requirement, the second
+   URN is reduced to urn:alert:category-b, which is discarded, and the
+   chosen signal for the first URN is chosen for the second URN.  In any
+   case, all processing after this point will be restricted to signals
+   that express urn:alert:category-a:part-a1 or a more specific URN of
+   the category &quot;category-a&quot; and that also express the chosen part of
+   urn:alert:category-b:part-b1:part-b2.
+
+   This process is continued until the last &quot;alert&quot; URN is processed;
+   the signal chosen for the last URN is the signal that the UA uses.
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Summary of the New Resolution Algorithm</span>
+
+   The purpose of this document is to describe a resolution algorithm
+   that conforms to <a href="/doc/html/rfc7462#section-11.1">Section&nbsp;11.1 of [RFC7462]</a> but is simpler than the
+   algorithm described in <a href="/doc/html/rfc7462#section-12">Section&nbsp;12 of [RFC7462]</a>: once the UA designer
+   has chosen a set of signals and the URNs that they express, an FSM is
+   constructed that selects alerting signals based on the URNs in the
+   Alert-Info header field(s) in a SIP message.
+
+   o  The designer selects the set of signals that the UA produces,
+      matching each signal to a set of &quot;alert&quot; URNs that together
+      specify the meaning that is carried by the signal.  (If the signal
+      is a &quot;default&quot; signal that has no specific meaning, the set is
+      empty.  If the signal carries the meaning of one &quot;alert&quot; URN, the
+      set contains that URN.  If the signal carries a meaning that is
+      the logical AND of two or more &quot;alert&quot; URNs, the set contains
+      those URNs.)
+
+
+
+
+
+<span class="grey">Worley                        Informational                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   o  Based on the UA&#x27;s signals and their meanings, the designer
+      constructs an &quot;alphabet&quot; containing a finite number of symbols;
+      each possible &quot;alert&quot; URN is mapped into one particular symbol.
+
+   o  The designer constructs an FSM whose input is the alphabet of
+      symbols and whose states describe the information extracted from
+      the Alert-Info URNs.
+
+   o  Each state of the FSM has an associated signal.  Processing the
+      Alert-Info URNs will leave the FSM in some particular state; the
+      UA renders the signal that is attached to that final state.
+
+   To select a ring tone or ringback tone based on a SIP message, the UA
+   processes the &quot;alert&quot; URNs in the Alert-Info header field from left
+   to right.  Initially, the FSM is in a designated initial state.  The
+   UA maps each successive URN into the corresponding symbol and then
+   executes the state transition of the FSM specified by the symbol.
+   The state of the FSM after processing the URNs determines which
+   signal the UA will render to the user.
+
+   Note that the UA generally has two FSMs, because a UA usually wants
+   to signal different information in ring tones than it signals in
+   ringback tones.  One FSM is used to select the ring tone to render
+   for an incoming INVITE request.  The other FSM is used to select the
+   ringback tone to render based on an incoming provisional response to
+   an outgoing INVITE request.  Both FSMs are constructed in the same
+   way, but the constructions are based on different lists of signals
+   and corresponding URNs.
+
+   All of the steps of the method after the designer has selected the
+   signals and their URNs are algorithmic, and the algorithm of those
+   steps ensures that the operation of the FSM will satisfy the
+   constraints of <a href="/doc/html/rfc7462#section-11.1">Section&nbsp;11.1 of [RFC7462]</a>.  A Python implementation of
+   the algorithmic steps is provided in [<a href="#ref-code" title="&quot;draft-worley-alert-info-fsm.aux&quot;">code</a>].
+
+   In simple situations, a suitable FSM or equivalent ad hoc code can be
+   constructed by hand using ad hoc analysis.  Generally, this is only
+   practical in situations where a small number of alert-categories and
+   alert-indications are signaled and the categories interact in a
+   simple, uniform way.  For example, the examples in Sections <a href="#section-5.1">5.1</a> and
+   5.2 could be constructed by ad hoc analysis.  But automatic
+   processing is valuable if the situation is too complicated to
+   construct a correct FSM by ad hoc analysis, or if the set of signals
+   will change too frequently for human production to be economical.
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Conventions Used in This Document</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Selecting the Signals and Their Corresponding &quot;alert&quot; URNs</span>
+
+   The designer must select signals that the UA will generate and define
+   the meanings that the signals will have to the user.  Based on this,
+   the designer determines for each signal the &quot;alert&quot; URN or
+   combination of &quot;alert&quot; URNs that (1) indicate that signal&#x27;s meaning
+   in SIP messages and (2) consequently should elicit that signal from
+   the UA.
+
+   For example, suppose the UA has a particular ring tone for calls from
+   an external source.  A call from an external source is marked with
+   the URN urn:alert:source:external (specified in <a href="/doc/html/rfc7462#section-9">Section&nbsp;9 of
+   [RFC7462]</a>).  Thus, the table of signals includes:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       external source                 urn:alert:source:external
+
+   Similarly, if the UA has a particular ring tone for calls from an
+   internal source, the table includes:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       internal source                 urn:alert:source:internal
+
+   If the UA has ring tones for calls that are marked as having higher
+   or lower priority, then the table includes:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       high priority                   urn:alert:priority:high
+       low priority                    urn:alert:priority:low
+
+   Note that the UA must be able to signal for a message that has no
+   &quot;alert&quot; URNs in the Alert-Info header field, which means that there
+   must always be a default signal that has zero corresponding URNs:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       default                         (none)
+
+
+
+<span class="grey">Worley                        Informational                     [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   A signal can be defined to indicate a combination of conditions.  For
+   instance, a signal that is used only for high-priority, internal-
+   source calls expresses two URNs and will only be used when both URNs
+   are present in Alert-Info:
+
+       Signal                          URN(s)
+       ------------------------------  -------------------------------
+       high priority, internal source  urn:alert:priority:high,
+                                           urn:alert:source:internal
+
+   A signal can be defined to cover a number of related conditions by
+   specifying a URN that is the common prefix of the URNs for the
+   various conditions.  For instance, the URNs for &quot;recall due to
+   callback&quot;, &quot;recall due to call hold&quot;, and &quot;recall due to transfer&quot;
+   all start with urn:alert:service:recall, and so one signal can be
+   provided for all of them by:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       recall                          urn:alert:service:recall
+
+   But if a specific signal is also provided for &quot;recall due to
+   callback&quot; by this entry:
+
+       Signal                          URN(s)
+       ----------------------------    ---------------------------------
+       recall generally                urn:alert:service:recall
+       recall due to callback          urn:alert:service:recall:callback
+
+   then if the message contains urn:alert:service:recall:callback, the
+   &quot;recall due to callback&quot; signal will be chosen instead of &quot;recall
+   generally&quot; because the UA chooses the signal that most completely
+   expresses the information in the Alert-Info header field.
+
+   The designer may wish to define extension URNs that provide more
+   specific information about a call than the standard &quot;alert&quot; URNs do.
+   One method is to add additional components to standard URNs.  For
+   instance, an extra-high priority could be indicated by the URN
+   urn:alert:priority:high:extra@example.  The final &quot;extra@example&quot; is
+   an &quot;alert-ind-part&quot; that is a private extension.  (See Sections <a href="#section-7">7</a> and
+   10.2 of [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] for a discussion of private extensions.)  In any
+   case, adding an alert-ind-part to a URN makes its meaning more
+   specific, in that any call to which the longer URN can be applied can
+   also have the shorter URN applied.  In this case, &quot;extra-high-
+   priority calls&quot; are considered a subset of &quot;high-priority calls&quot;.
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                     [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       Signal                URN(s)
+       --------------------- -----------------------------------------
+       high priority         urn:alert:priority:high
+       extra-high priority   urn:alert:priority:high:extra@example.com
+
+   Of course, for this extension to be useful, the senders of SIP
+   messages (e.g., other UAs) must generate the extension URN in
+   suitable circumstances.
+
+   In some circumstances, the designer may want to create an entirely
+   new category of &quot;alert&quot; URNs to indicate a type of information that
+   is not indicated by any standard category of URNs.  In that case, the
+   designer uses a private extension as the alert-category (the third
+   component of the URN), combined with whatever alert-ind-part (fourth
+   component) values are desired.  For example, a simplified version of
+   the U.S. military security designations could be:
+
+       Signal                    URN(s)
+       -----------------------   ---------------------------------------
+       unclassified              urn:alert:security@example:unclassified
+       confidential              urn:alert:security@example:confidential
+       secret                    urn:alert:security@example:secret
+       top secret                urn:alert:security@example:top-secret
+
+   The designer should ensure that the new alert-category is orthogonal
+   to all defined standard alert-categories, in that any combination of
+   one of the new URNs with one of the standard URNs is meaningful in
+   that there could be a message carrying both URNs.
+
+   In addition, the set of alert-ind-parts for the new alert-category
+   should be comprehensive and disjoint, in that every message can be
+   described by exactly one of them.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  General Considerations for Processing Alert-Info</span>
+
+   In this section, we will discuss various considerations that arise
+   when processing Alert-Info.  These have to be taken care of properly
+   in order to conform to the standards, as well as to ensure a good
+   user experience.  But since they are largely independent of the
+   generated FSM and its processing, they are gathered here in a
+   separate section.
+
+   The UA may have a number of different FSMs for processing URNs.
+   Generally, there will be different FSMs for processing Alert-Info in
+   incoming INVITE requests and for incoming provisional responses to
+   outgoing INVITE requests.  But any situation that changes the set of
+   signals that the UA is willing to generate specifies a different set
+   of signals and corresponding URNs and thus generates a different FSM.
+
+
+
+<span class="grey">Worley                        Informational                     [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   For example, if a call is active on the UA, all audible signals may
+   become unavailable, or audible signals may be available only if
+   urn:alert:priority:high is specified.
+
+   Similarly, if the set of signals is customized by user action or
+   local policy, the generated FSM must be updated.  This can be done by
+   (1) regenerating it according to the method described here or
+   (2) generating a &quot;generic&quot; FSM and instantiating it based on the
+   available signals.  (See <a href="#section-7">Section 7</a> for a discussion of this.)
+
+   Note that the values in an Alert-Info header field are allowed to be
+   URIs of any scheme and, within the &quot;urn&quot; scheme, are allowed to have
+   any namespace [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>].  The processing of URIs that are not &quot;alert&quot;
+   URNs is not considered by this document, nor is that processing
+   specified by [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>].  But the algorithm designer must consider
+   what to do with such URIs if they are encountered.  The simplest
+   choice is to ignore them.  Alternatively, the algorithm may examine
+   the URI to determine if it names an alerting signal or describes how
+   to retrieve an alerting signal, and, if so, choose to render that
+   signal rather than process the &quot;alert&quot; URNs to select a signal.  In
+   any case, the remainder of this document assumes that (1) the signal
+   is to be chosen based on the &quot;alert&quot; URNs in Alert-Info and (2) all
+   Alert-Info URIs that are not &quot;alert&quot; URNs have been removed.
+
+   The UA may also receive &quot;alert&quot; URNs that are semantically invalid in
+   various ways.  For example, the URN may have only three components,
+   despite the fact that all valid &quot;alert&quot; URNs have at least one
+   alert-ind-part and thus four components.  The only useful strategy is
+   to ignore such URNs (and possibly log them for analysis).
+
+   The method described here is robust in its handling of categories and
+   alert-ind-parts that are unknown to the UA; as a consequence, it is
+   also robust if they are not valid standardized URNs.  Thus, these
+   error conditions need not be handled specially.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Constructing the Finite State Machine for a Very Simple Example</span>
+
+   Constructing the FSM involves:
+
+   1.  Listing the URNs that are expressed by the various signals of
+       the UA.
+
+   2.  From the expressed URNs, constructing the finite alphabet of
+       symbols into which input URNs are mapped and that drive the state
+       transitions of the FSM.
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   3.  Constructing the states of the FSM and the transitions between
+       them.
+
+   4.  Selecting a signal to be associated with each FSM state.
+
+   We will explain the process using a very simple example in which
+   there are two signals -- one expressing &quot;internal source&quot; and one
+   expressing &quot;external source&quot; -- along with a default signal (for when
+   there is no source information to signal).  The &quot;internal source&quot;
+   signal expresses urn:alert:source:internal, and the &quot;external source&quot;
+   signal expresses urn:alert:source:external.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Listing the Expressed URNs</span>
+
+   The first step is to establish for each of the UA&#x27;s signals what call
+   characteristics it represents, which is to say, the set of &quot;alert&quot;
+   URNs that are its information content.
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       default                         (none)
+       internal source                 urn:alert:source:internal
+       external source                 urn:alert:source:external
+
+   From the totality of these expressed URNs, the designer can then
+   determine which sets of URNs must be distinguished from each other.
+   In our simple example, the expressed URNs are:
+
+       urn:alert:source:external
+       urn:alert:source:internal
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Constructing the Alphabet of Symbols</span>
+
+   In order to reduce the infinite set of possible &quot;alert&quot; URNs to a
+   finite alphabet of input symbols that cause the FSM&#x27;s transitions,
+   the designer must partition the &quot;alert&quot; URNs into a finite set of
+   categories.
+
+   Once we&#x27;ve listed all the expressed URNs, we can list all of the
+   alert-categories that are relevant to the UA&#x27;s signaling; &quot;alert&quot;
+   URNs in any other alert-category cannot affect the signaling and can
+   be ignored.  (The easiest way to ignore the non-relevant URNs is to
+   skip over them during Alert-Info processing.  A more formal method is
+   to map all of them into one &quot;Other&quot; symbol and then, for each state
+   of the FSM, have the &quot;Other&quot; symbol transition to that same state.)
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   Within each relevant alert-category, we now define a distinct
+   symbol for every expressed URN and for all of their &quot;ancestor&quot; URNs
+   (those that can be created by removing one or more trailing
+   alert-ind-parts).  In order to name the symbols in a way that
+   distinguishes them from the corresponding URNs, we remove the initial
+   &quot;urn:alert:&quot; and capitalize each alert-ind-part.  Thus, in our
+   example, we get these symbols:
+
+       Source
+       Source:External
+       Source:Internal
+
+   Note that there is a &quot;Source&quot; symbol even though there is no
+   corresponding URN.  (urn:alert:source is not a valid URN -- see
+   <a href="/doc/html/rfc7462#section-7">Section&nbsp;7 of [RFC7462]</a> -- although the processing algorithm must be
+   prepared to screen out such a purported URN if it appears in the
+   Alert-Info header field.)  However, its existence as a symbol will be
+   useful later when we construct the FSM.
+
+   For each of these symbols, we add a symbol that classifies URNs that
+   extend the symbol&#x27;s corresponding URN with alert-ind-parts that
+   cannot be expressed by signals:
+
+       Source:Other
+       Source:External:Other
+       Source:Internal:Other
+
+   The latter two classify URNs, such as
+   urn:alert:source:external:foo@example, that extend URNs that we
+   already have symbols for.  The first is for classifying URNs, such as
+   urn:alert:source:bar@example, that have first alert-ind-parts that
+   contradict all the &quot;source&quot; URNs that the UA can signal.
+
+   These steps give us this set of symbols:
+
+       Source
+       Source:External
+       Source:External:Other
+       Source:Internal
+       Source:Internal:Other
+       Source:Other
+
+   We can then simplify the set of symbols by removing the ones like
+   Source:External:Other and Source:Internal:Other that consist of
+   adding &quot;Other&quot; to a symbol that corresponds to an expressed URN that
+   is not ancestral to any other expressed URNs.  This works because
+   adding further alert-ind-parts to a URN that is a leaf in regard to
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   the set of signals has no additional effect.  In this example,
+   urn:alert:source:external:foo@example has the same effect as
+   urn:alert:source:external for both (1) causing a signal to be chosen
+   and (2) suppressing the effect of later URNs.
+
+   This leaves the following symbols for the &quot;source&quot; category:
+
+       Source
+       Source:External
+       Source:Internal
+       Source:Other
+
+   These can be visually summarized by showing the infinite tree of
+   possible source &quot;alert&quot; URNs and how it is partitioned into subtrees
+   that map to each of these symbols.  We also mark with &quot;*&quot; the
+   expressed URNs.
+
+                                urn:alert
+                                    |
+                                {   |    }
+                                { source } --&gt; 1
+                                {   |    }
+                                    |
+               +--------------------+------------------+
+               |                    |                  |
+          {    |      }        {    |      }        {  |  }
+          { external* } --&gt; 2  { internal* } --&gt; 3  { ... } --&gt; 4
+          {    |      }        {    |      }        {     }
+          {   ...     }        {   ...     }
+          {           }        {           }
+
+       1 = Source
+       2 = Source:External
+       3 = Source:Internal
+       4 = Source:Other
+
+<span class="h3"><a class="selflink" id="section-4.3" href="#section-4.3">4.3</a>.  Constructing the States and Transitions</span>
+
+   The UA processes the Alert-Info URNs from left to right using an FSM,
+   with each successive URN causing the FSM to transition to a new
+   state.  Each state of the FSM records the information that has so far
+   been extracted from the URNs.  The state of the FSM after processing
+   all the URNs determines which signal the UA will render to the user.
+
+   We label each state with a set of symbols, one from each relevant
+   category, that describe the information that&#x27;s been extracted from
+   all of the URNs that have so far been processed.  The initial state
+   is labeled with the &quot;null&quot; symbols that are just the category names,
+
+
+
+<span class="grey">Worley                        Informational                    [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   because no information has yet been recorded.  In our simple example,
+   the initial state is labeled &quot;Source&quot;, since that&#x27;s the only relevant
+   category.
+
+       State: Source (initial state)
+
+   Each state has a corresponding alerting signal, which is the signal
+   that the UA will produce when URN processing leaves the FSM in that
+   state.  The signal is the one that best expresses the information
+   that has been extracted from the URNs.  Usually, the choice of signal
+   is obvious to the designer, but there are certain constraints that
+   the choice must satisfy.  The main constraint is that the signal&#x27;s
+   expressed URNs must be semantic supersets of (i.e., identical to or a
+   prefix of) the URNs corresponding to the symbols in the state&#x27;s
+   label.  In particular, if the expressed URN of the signal in a
+   certain category is shorter than the state&#x27;s label, we show that in
+   the state&#x27;s name by putting parentheses around the trailing part of
+   the symbol that is not expressed by the signal.  For instance, if the
+   symbol in the label is &quot;Source:External&quot; but the signal only
+   expresses &quot;Source&quot; (i.e., no &quot;source&quot; URN at all), then the symbol in
+   the label is modified to be &quot;Source:(External)&quot;.
+
+   The reason for this nonintuitive construction is that in some states,
+   the FSM has recorded information that the chosen signal cannot
+   express.
+
+   Note that the parentheses are part of the state name, so in some
+   circumstances there may be two or more distinct states labeled with
+   the same symbols but with different placement of parentheses within
+   the symbols.  These similar state names are relevant when the FSM can
+   record information from multiple &quot;alert&quot; URNs but cannot express all
+   of them -- depending on the order in which the URNs appear, the UA
+   may have to render different signals, so it needs states that record
+   the same information but render different subsets of that
+   information.
+
+   The initial state&#x27;s label is the string of null symbols for the
+   relevant categories, so the only allowed signal is the default
+   signal, which expresses no URNs:
+
+       State: Source (initial state)
+       Signal: default
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 14]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-15" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   From each state, we must construct the transition for each possible
+   input symbol.  For a particular current state and symbol, we
+   construct the label of the next state by combining the input symbol
+   with the symbol in the current state&#x27;s label for the same category.
+   If one of the symbols is a prefix of the other, we select the longer
+   one; if not, we select the symbol in the current state&#x27;s label.
+
+   Thus, in our simple example, the initial state has the following
+   transitions:
+
+       State: Source (initial state)
+       Signal: default
+       Transitions:
+           Source:External -&gt; Source:External
+           Source:Internal -&gt; Source:Internal
+           Source:Other -&gt; Source:Other
+
+   In all of these transitions, the input symbol is compatible with the
+   matching label of the current state, &quot;Source&quot;, so the next state&#x27;s
+   label is the full input symbol.
+
+   However, there is a further constraint on the next state: its signal
+   must express URNs that at least contain the expressed URNs of the
+   signal of the current state.  Within that constraint, and being
+   compatible with the next state&#x27;s label, for the category of the input
+   URN, the next state&#x27;s signal must express the longest URN that can be
+   expressed by any signal.
+
+   In our example, this means that the next Source:External state has
+   the &quot;external source&quot; signal, which expresses
+   urn:alert:source:external.  Since that signal expresses all of the
+   state&#x27;s label, it is the chosen state.  Similarly, the next
+   Source:Internal state has the &quot;internal source&quot; signal.  But for the
+   transition on input Source:Other, the &quot;Source:Other&quot; state must have
+   the default signal, as there is no signal that expresses
+   urn:alert:source:[some-unknown-alert-ind-part].  So the next state is
+   &quot;Source:(Other)&quot;, where the parentheses record that the &quot;Other&quot; part
+   of the label is not expressed by the state&#x27;s signal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 15]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-16" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   Thus, the current state and the next states that it can transition
+   to are:
+
+       State: Source (initial state)
+       Signal: default
+       Transitions:
+           Source:External -&gt; Source:External
+           Source:Internal -&gt; Source:Internal
+           Source:Other -&gt; Source:(Other)
+
+       State: Source:External
+       Signal: external source (urn:alert:source:external)
+
+       State: Source:Internal
+       Signal: internal source (urn:alert:source:internal)
+
+       State: Source:(Other)
+       Signal: default
+
+   Looking at the state Source:External, we see that it is incompatible
+   with all input symbols other than Source:External, and thus all of
+   its transitions are to itself:
+
+       State: Source:External
+       Signal: external source (urn:alert:source:external)
+       Transitions:
+           Source:External -&gt; Source:External
+           Source:Internal -&gt; Source:External
+           Source:Other -&gt; Source:External
+
+   and similarly:
+
+       State: Source:Internal
+       Signal: internal source (urn:alert:source:internal)
+       Transitions:
+           Source:External -&gt; Source:Internal
+           Source:Internal -&gt; Source:Internal
+           Source:Other -&gt; Source:Internal
+
+       State: Source:(Other)
+       Signal: default
+       Transitions:
+           Source:External -&gt; Source:(Other)
+           Source:Internal -&gt; Source:(Other)
+           Source:Other -&gt; Source:(Other)
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 16]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-17" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.4" href="#section-4.4">4.4</a>.  Summary</span>
+
+   The FSM can be constructed by processing the file &quot;very-simple.txt&quot;
+   with the program &quot;alert-info-fsm.py&quot; in [<a href="#ref-code" title="&quot;draft-worley-alert-info-fsm.aux&quot;">code</a>].  The program&#x27;s output
+   shows the stages of the construction, which are as follows:
+
+   1.  The signals have the meanings:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       default                         (none)
+       internal source                 urn:alert:source:internal
+       external source                 urn:alert:source:external
+
+   2.  The expressed URNs are:
+
+       urn:alert:source:external
+       urn:alert:source:internal
+
+   3.  The relevant categories of &quot;alert&quot; URNs are only:
+
+       source
+
+   4.  Thus, the infinite universe of possible &quot;alert&quot; URNs can be
+       reduced to these symbols, which are the categories of URNs that
+       are different in ways that are significant to the resolution
+       process:
+
+       Source
+       Source:External
+       Source:Internal
+       Source:Other
+
+   5.  The FSM is:
+
+       State: Source (initial state)
+       Signal: default
+       Transitions:
+           Source:External -&gt; Source:External
+           Source:Internal -&gt; Source:Internal
+           Source:Other -&gt; Source:(Other)
+
+       State: Source:External
+       Signal: external source (urn:alert:source:external)
+       Transitions:
+           Source:External -&gt; Source:External
+           Source:Internal -&gt; Source:External
+           Source:Other -&gt; Source:External
+
+
+
+<span class="grey">Worley                        Informational                    [Page 17]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-18" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: Source:Internal
+       Signal: internal source (urn:alert:source:internal)
+       Transitions:
+           Source:External -&gt; Source:Internal
+           Source:Internal -&gt; Source:Internal
+           Source:Other -&gt; Source:Internal
+
+       State: Source:(Other)
+       Signal: default
+       Transitions:
+           Source:External -&gt; Source:(Other)
+           Source:Internal -&gt; Source:(Other)
+           Source:Other -&gt; Source:(Other)
+
+       *  Each state is labeled by a set of symbols that describe the
+          information that has been extracted from the URNs so far.
+
+       *  Each state has a signal that is a semantic superset of the
+          state&#x27;s label, i.e., the signal&#x27;s expressed URNs match the
+          initial portion of the label symbols.  If Alert-Info
+          processing finishes with the FSM in a state, the UA will
+          render the state&#x27;s signal to the user.
+
+       *  The state&#x27;s label is marked to show what subset of the symbols
+          are expressed by the state&#x27;s signal.  Two states can have the
+          same label but different signals.
+
+       *  If a transition&#x27;s input symbol is compatible with (is a
+          semantic subset of) the current state&#x27;s label for that
+          category, the next state&#x27;s label is updated with the input
+          symbol.  If not, the next state is the current state.  This is
+          how the state&#x27;s label records what information has been
+          accumulated while processing the Alert-Info URNs.
+
+       *  A transition&#x27;s next state has a signal that semantically
+          subsets the current state&#x27;s signal as much as possible in the
+          category of the input symbol.  (In most cases, the choice of
+          signal is unique.  In rare cases, there may be more than one
+          signal that meets this criterion, so the designer may have
+          some flexibility.)
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 18]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-19" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h3"><a class="selflink" id="section-4.5" href="#section-4.5">4.5</a>.  Examples of Processing Alert-Info URNs</span>
+
+   In the trivial case where the UA receives no Alert-Info URNs,
+   processing begins and ends with the FSM in the initial state, and the
+   default signal is selected.
+
+   If the UA receives
+
+       Alert-Info: &lt;urn:alert:source:internal&gt;
+
+   then processing progresses:
+
+       State: Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Source:Internal
+       Signal: internal source
+
+   If the UA receives
+
+       Alert-Info: &lt;urn:alert:source:external&gt;,
+           &lt;urn:alert:source:internal&gt;
+
+   then processing progresses:
+
+       State: Source
+           Process: Source:External (urn:alert:source:external)
+       State: Source:External
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Source:External
+       Signal: external source
+
+   If the UA receives
+
+       Alert-Info: &lt;urn:alert:source:unclassified&gt;,
+           &lt;urn:alert:source:internal&gt;
+
+   then processing progresses:
+
+       State: Source
+           Process: Source:Other (urn:alert:source:unclassified)
+       State: Source:(Other)
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Source:(Other)
+       Signal: default
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 19]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-20" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   If the UA receives
+
+       Alert-Info: &lt;urn:alert:priority:high&gt;,
+           &lt;urn:alert:source:internal&gt;
+
+   then processing progresses:
+
+       State: Source
+           Ignore: urn:alert:priority:high
+       State: Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Source:Internal
+       Signal: internal source
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Further Examples</span>
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  Example with &quot;source&quot; and &quot;priority&quot; URNs</span>
+
+   Now consider an example where the UA can signal &quot;external source&quot;,
+   &quot;internal source&quot;, &quot;low priority&quot;, and &quot;high priority&quot; individually
+   or in any combination of source and priority, along with a default
+   signal.  This example is essentially the Cartesian product of two
+   copies of the example in <a href="#section-4">Section 4</a>: one dealing with the call&#x27;s
+   source and one dealing with the call&#x27;s priority.  So there are a
+   total of 9 signals:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       default                         (none)
+       external source                 urn:alert:source:external
+       internal source                 urn:alert:source:internal
+       low priority                    urn:alert:priority:low
+       low priority/external source    urn:alert:priority:low,
+                                           urn:alert:source:external
+       low priority/internal source    urn:alert:priority:low,
+                                           urn:alert:source:internal
+       high priority                   urn:alert:priority:high
+       high priority/external source   urn:alert:priority:high,
+                                           urn:alert:source:external
+       high priority/internal source   urn:alert:priority:high,
+                                           urn:alert:source:internal
+
+   The expressed URNs are:
+
+       urn:alert:source:external
+       urn:alert:source:internal
+       urn:alert:priority:low
+       urn:alert:priority:high
+
+
+
+<span class="grey">Worley                        Informational                    [Page 20]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-21" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   The relevant categories of &quot;alert&quot; URNs are only:
+
+       source
+       priority
+
+   The alphabet of symbols is:
+
+       Source
+       Source:External
+       Source:Internal
+       Source:Other
+       Priority
+       Priority:Low
+       Priority:High
+       Priority:Other
+
+   The 16 states are as follows, where 9 states are &quot;sink&quot; states from
+   which no further information can be recorded, as all transitions from
+   the state lead to itself.
+
+       State: Priority/Source
+       Signal: default
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source
+           Priority:High -&gt; Priority:High/Source
+           Priority:Low -&gt; Priority:Low/Source
+           Source:Other -&gt; Priority/Source:(Other)
+           Source:External -&gt; Priority/Source:External
+           Source:Internal -&gt; Priority/Source:Internal
+
+       State: Priority:(Other)/Source
+       Signal: default
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source
+           Priority:High -&gt; Priority:(Other)/Source
+           Priority:Low -&gt; Priority:(Other)/Source
+           Source:Other -&gt; Priority:(Other)/Source:(Other)
+           Source:External -&gt; Priority:(Other)/Source:External
+           Source:Internal -&gt; Priority:(Other)/Source:Internal
+
+       State: Priority:(Other)/Source:(Other)
+       Signal: default
+       Transitions:
+           any -&gt; Priority:(Other)/Source:(Other)
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 21]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-22" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: Priority:(Other)/Source:External
+       Signal: external source
+       Transitions:
+           any -&gt; Priority:(Other)/Source:External
+
+       State: Priority:(Other)/Source:Internal
+       Signal: internal source
+       Transitions:
+           any -&gt; Priority:(Other)/Source:Internal
+
+       State: Priority:High/Source
+       Signal: high priority
+       Transitions:
+           Priority:Other -&gt; Priority:High/Source
+           Priority:High -&gt; Priority:High/Source
+           Priority:Low -&gt; Priority:High/Source
+           Source:Other -&gt; Priority:High/Source:(Other)
+           Source:External -&gt; Priority:High/Source:External
+           Source:Internal -&gt; Priority:High/Source:Internal
+
+       State: Priority:High/Source:(Other)
+       Signal: high priority
+       Transitions:
+           any -&gt; Priority:High/Source:(Other)
+
+       State: Priority:High/Source:External
+       Signal: high priority/external source
+       Transitions:
+           any -&gt; Priority:High/Source:External
+
+       State: Priority:High/Source:Internal
+       Signal: high priority/internal source
+       Transitions:
+           any -&gt; Priority:High/Source:Internal
+
+       State: Priority:Low/Source
+       Signal: low priority
+       Transitions:
+           Priority:Other -&gt; Priority:Low/Source
+           Priority:High -&gt; Priority:Low/Source
+           Priority:Low -&gt; Priority:Low/Source
+           Source:Other -&gt; Priority:Low/Source:(Other)
+           Source:External -&gt; Priority:Low/Source:External
+           Source:Internal -&gt; Priority:Low/Source:Internal
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 22]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-23" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: Priority:Low/Source:(Other)
+       Signal: low priority
+       Transitions:
+           any -&gt; Priority:Low/Source:(Other)
+
+       State: Priority:Low/Source:External
+       Signal: low priority/external source
+       Transitions:
+           any -&gt; Priority:Low/Source:External
+
+       State: Priority:Low/Source:Internal
+       Signal: low priority/internal source
+       Transitions:
+           any -&gt; Priority:Low/Source:Internal
+
+       State: Priority/Source:(Other)
+       Signal: default
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source:(Other)
+           Priority:High -&gt; Priority:High/Source:(Other)
+           Priority:Low -&gt; Priority:Low/Source:(Other)
+           Source:Other -&gt; Priority/Source:(Other)
+           Source:External -&gt; Priority/Source:(Other)
+           Source:Internal -&gt; Priority/Source:(Other)
+
+       State: Priority/Source:External
+       Signal: external source
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source:External
+           Priority:High -&gt; Priority:High/Source:External
+           Priority:Low -&gt; Priority:Low/Source:External
+           Source:Other -&gt; Priority/Source:External
+           Source:External -&gt; Priority/Source:External
+           Source:Internal -&gt; Priority/Source:External
+
+       State: Priority/Source:Internal
+       Signal: internal source
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source:Internal
+           Priority:High -&gt; Priority:High/Source:Internal
+           Priority:Low -&gt; Priority:Low/Source:Internal
+           Source:Other -&gt; Priority/Source:Internal
+           Source:External -&gt; Priority/Source:Internal
+           Source:Internal -&gt; Priority/Source:Internal
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 23]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-24" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   An example of processing that involves multiple &quot;source&quot; URNs and one
+   &quot;priority&quot; URN:
+
+       Alert-Info: &lt;urn:alert:source:internal&gt;,
+           &lt;urn:alert:source:unclassified&gt;,
+           &lt;urn:alert:priority:high&gt;
+
+   in which case processing progresses:
+
+       State: Source/Priority
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Source:Internal/Priority
+           Process: Source:(Other) (urn:alert:source:unclassified)
+       State: Source:Internal/Priority
+           Process: Priority:High (urn:alert:priority:high)
+       State: Source:Internal/Priority:High
+       Signal: internal source/high priority
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  Example 1 of <a href="/doc/html/rfc7462">RFC 7462</a></span>
+
+   A more complicated example is provided in <a href="/doc/html/rfc7462#section-12.2.1">Section&nbsp;12.2.1 of
+   [RFC7462]</a>.  It is like the example in <a href="#section-5.1">Section 5.1</a> of this document,
+   except that the UA can only signal &quot;external source&quot;, &quot;internal
+   source&quot;, &quot;low priority&quot;, and &quot;high priority&quot; individually but not in
+   combination, as well as a default signal:
+
+       Signal                          URN(s)
+       ----------------------------    -------------------------------
+       default                         (none)
+       internal source                 urn:alert:source:external
+       external source                 urn:alert:source:internal
+       low priority                    urn:alert:priority:low
+       high priority                   urn:alert:priority:high
+
+   The signals can express the following URNs:
+
+       urn:alert:source:external
+       urn:alert:source:internal
+       urn:alert:priority:low
+       urn:alert:priority:high
+
+   The relevant categories of &quot;alert&quot; URNs are:
+
+       source
+       priority
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 24]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-25" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   The alphabet of symbols is:
+
+       Source
+       Source:External
+       Source:Internal
+       Source:Other
+       Priority
+       Priority:Low
+       Priority:High
+       Priority:Other
+
+   In this example, the FSM has 20 states because both &quot;source&quot; and
+   &quot;priority&quot; URNs are recorded, but the order in which the two appear
+   affects the signal:
+
+       State: Priority/Source
+       Signal: default
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source
+           Priority:High -&gt; Priority:High/Source
+           Priority:Low -&gt; Priority:Low/Source
+           Source:Other -&gt; Priority/Source:(Other)
+           Source:External -&gt; Priority/Source:External
+           Source:Internal -&gt; Priority/Source:Internal
+
+   State Priority:(Other)/Source can transition to states that can
+   signal the source, because the recorded priority can&#x27;t be signaled
+   and thus does not block the signaling of the source:
+
+       State: Priority:(Other)/Source
+       Signal: default
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source
+           Priority:High -&gt; Priority:(Other)/Source
+           Priority:Low -&gt; Priority:(Other)/Source
+           Source:Other -&gt; Priority:(Other)/Source:(Other)
+           Source:External -&gt; Priority:(Other)/Source:External
+           Source:Internal -&gt; Priority:(Other)/Source:Internal
+
+       State: Priority:(Other)/Source:(Other)
+       Signal: default
+       Transitions:
+           any -&gt; Priority:(Other)/Source:(Other)
+
+       State: Priority:(Other)/Source:External
+       Signal: external source
+       Transitions:
+           any -&gt; Priority:(Other)/Source:External
+
+
+
+<span class="grey">Worley                        Informational                    [Page 25]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-26" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: Priority:(Other)/Source:Internal
+       Signal: internal source
+       Transitions:
+           any -&gt; Priority:(Other)/Source:Internal
+
+   Because there are no signals for combinations of &quot;source&quot; and
+   &quot;priority&quot; URNs, processing a &quot;source&quot; URN from the state
+   Priority:High/Source leads to a state that records the priority
+   information but does not signal it:
+
+       State: Priority:High/Source
+       Signal: high priority
+       Transitions:
+           Priority:Other -&gt; Priority:High/Source
+           Priority:High -&gt; Priority:High/Source
+           Priority:Low -&gt; Priority:High/Source
+           Source:Other -&gt; Priority:High/Source:(Other)
+           Source:External -&gt; Priority:High/Source:(External)
+           Source:Internal -&gt; Priority:High/Source:(Internal)
+
+       State: Priority:High/Source:(Other)
+       Signal: high priority
+       Transitions:
+           any -&gt; Priority:High/Source:(Other)
+
+   From the state Priority:High/Source, &quot;source&quot; URNs transition to
+   states that record both source and priority but signal only priority,
+   one of which is Priority:High/Source:(External).  But from
+   Priority/Source:External, the symbol Priority:High transitions to the
+   state Priority:(High)/Source:External, which records the same
+   information but signals the source, not the priority.  One state is
+   reached by processing a &quot;priority&quot; URN and then a &quot;source&quot; URN,
+   whereas the other is reached by processing a &quot;source&quot; URN and then a
+   &quot;priority&quot; URN.
+
+       State: Priority:High/Source:(External)
+       Signal: high priority
+       Transitions:
+           any -&gt; Priority:High/Source:(External)
+
+       State: Priority:High/Source:(Internal)
+       Signal: high priority
+       Transitions:
+           any -&gt; Priority:High/Source:(Internal)
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 26]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-27" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   and similarly for Priority:Low/Source:
+
+       State: Priority:Low/Source
+       Signal: low priority
+       Transitions:
+           Priority:Other -&gt; Priority:Low/Source
+           Priority:High -&gt; Priority:Low/Source
+           Priority:Low -&gt; Priority:Low/Source
+           Source:Other -&gt; Priority:Low/Source:(Other)
+           Source:External -&gt; Priority:Low/Source:(External)
+           Source:Internal -&gt; Priority:Low/Source:(Internal)
+
+       State: Priority:Low/Source:(Other)
+       Signal: low priority
+       Transitions:
+           any -&gt; Priority:Low/Source:(Other)
+
+       State: Priority:Low/Source:(External)
+       Signal: low priority
+       Transitions:
+           any -&gt; Priority:Low/Source:(External)
+
+       State: Priority:Low/Source:(Internal)
+       Signal: low priority
+       Transitions:
+           any -&gt; Priority:Low/Source:(Internal)
+
+       State: Priority/Source:(Other)
+       Signal: default
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source:(Other)
+           Priority:High -&gt; Priority:High/Source:(Other)
+           Priority:Low -&gt; Priority:Low/Source:(Other)
+           Source:Other -&gt; Priority/Source:(Other)
+           Source:External -&gt; Priority/Source:(Other)
+           Source:Internal -&gt; Priority/Source:(Other)
+
+       State: Priority/Source:External
+       Signal: external source
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source:External
+           Priority:High -&gt; Priority:(High)/Source:External
+           Priority:Low -&gt; Priority:(Low)/Source:External
+           Source:Other -&gt; Priority/Source:External
+           Source:External -&gt; Priority/Source:External
+           Source:Internal -&gt; Priority/Source:External
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 27]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-28" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: Priority:(High)/Source:External
+       Signal: external source
+       Transitions:
+           any -&gt; Priority:(High)/Source:External
+
+       State: Priority:(Low)/Source:External
+       Signal: external source
+       Transitions:
+           any -&gt; Priority:(Low)/Source:External
+
+       State: Priority/Source:Internal
+       Signal: internal source
+       Transitions:
+           Priority:Other -&gt; Priority:(Other)/Source:Internal
+           Priority:High -&gt; Priority:(High)/Source:Internal
+           Priority:Low -&gt; Priority:(Low)/Source:Internal
+           Source:Other -&gt; Priority/Source:Internal
+           Source:External -&gt; Priority/Source:Internal
+           Source:Internal -&gt; Priority/Source:Internal
+
+       State: Priority:(High)/Source:Internal
+       Signal: internal source
+       Transitions:
+           any -&gt; Priority:(High)/Source:Internal
+
+       State: Priority:(Low)/Source:Internal
+       Signal: internal source
+       Transitions:
+           any -&gt; Priority:(Low)/Source:Internal
+
+   As an example of processing, if the UA receives
+
+       Alert-Info: &lt;urn:alert:source:internal&gt;
+
+   then processing progresses:
+
+       State: Priority/Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority/Source:Internal
+       Signal: internal source
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 28]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-29" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   A more complicated example involves multiple &quot;source&quot; URNs that do
+   not select a non-default signal and one &quot;priority&quot; URN that can be
+   signaled:
+
+       Alert-Info: &lt;urn:alert:source:unclassified&gt;,
+           &lt;urn:alert:source:internal&gt;,
+           &lt;urn:alert:priority:high&gt;
+
+   in which case processing progresses:
+
+       State: Priority/Source
+           Process: Source:Other (urn:alert:source:unclassified)
+       State: Priority/Source:(Other)
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority/Source:(Other)
+           Process: Priority:High (urn:alert:priority:high)
+       State: Priority:High/Source:(Other)
+       Signal: high priority
+
+   The only output of the FSM is the state&#x27;s signal.  Based on this,
+   several groups of states in this FSM can be merged using standard FSM
+   optimization algorithms:
+
+       states with signal &quot;high priority&quot;:
+           Priority:High/Source
+           Priority:High/Source:(Other)
+           Priority:High/Source:(External)
+           Priority:High/Source:(Internal)
+
+       states with signal &quot;low priority&quot;:
+           Priority:Low/Source
+           Priority:Low/Source:(Other)
+           Priority:Low/Source:(External)
+           Priority:Low/Source:(Internal)
+
+       states with signal &quot;external source&quot;:
+           Priority/Source:External
+           Priority:(High)/Source:External
+           Priority:(Low)/Source:External
+           Priority:(Other)/Source:External
+
+       states with signal &quot;internal source&quot;:
+           Priority/Source:Internal
+           Priority:(High)/Source:Internal
+           Priority:(Low)/Source:Internal
+           Priority:(Other)/Source:Internal
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 29]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-30" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   This reduces the FSM to eight states:
+
+       Priority/Source
+       Priority:(Other)/Source
+       Priority:(Other)/Source:(Other)
+       Priority:High/Source  [aggregated]
+       Priority:Low/Source  [aggregated]
+       Priority/Source:(Other)
+       Priority/Source:External  [aggregated]
+       Priority/Source:Internal  [aggregated]
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  Examples 2, 3, and 4 of <a href="/doc/html/rfc7462">RFC 7462</a></span>
+
+   Examples 2, 3, and 4 of [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] are similar to the example in
+   <a href="#section-5.1">Section 5.1</a> of this document, but they do not include a signal for
+   the combination &quot;internal source, low priority&quot; to make resolution
+   examples work asymmetrically.
+
+   The FSM for this example has the same alphabet as the FSM of
+   <a href="#section-5.1">Section 5.1</a>.  Most of the states of this FSM are the same as the
+   states of the FSM of <a href="#section-5.1">Section 5.1</a>, but the state
+   Source:Internal/Priority:Low is missing because there is no signal
+   for that combination.  It is replaced by two states:
+
+   1.  One state is Source:Internal/Priority:(Low); it records that
+       Source:Internal was specified first (and is to be signaled) and
+       that Priority:Low was specified later (and cannot be signaled --
+       but it still prevents any further &quot;priority&quot; URNs from having an
+       effect).
+
+   2.  The other state is Source:(Internal)/Priority:Low; it records the
+       reverse sequence of events.
+
+   The changes in the FSM are:
+
+       State: Priority:Low/Source
+       Signal: low priority
+       Transitions:
+           Source:Internal -&gt; Priority:Low/Source:(Internal)
+           (other transitions unchanged)
+
+       State: Priority:Low/Source:(Internal)
+       Signal: low priority
+       Transitions:
+           any -&gt; Priority:Low/Source:(Internal)
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 30]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-31" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: Priority/Source:Internal
+       Signal: internal source
+       Transitions:
+           Priority:Low -&gt; Priority:(Low)/Source:Internal
+           (other transitions unchanged)
+
+       State: Priority:(Low)/Source:Internal
+       Signal: internal source
+       Transitions:
+           any -&gt; Priority:(Low)/Source:Internal
+
+   An example of processing that involves multiple &quot;source&quot; URNs and one
+   &quot;priority&quot; URN:
+
+       Alert-Info: &lt;urn:alert:source:internal&gt;,
+           &lt;urn:alert:source:unclassified&gt;,
+           &lt;urn:alert:priority:high&gt;
+
+   then processing progresses:
+
+       State: Priority/Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority/Source:Internal
+           Process: Source:Other (urn:alert:source:unclassified)
+       State: Priority/Source:Internal
+           Process: Priority:High (urn:alert:priority:high)
+       State: Priority:High/Source:Internal
+       Signal: internal source/high priority
+
+   If the UA receives
+
+       Alert-Info: &lt;urn:alert:source:internal&gt;
+
+   then processing progresses:
+
+       State: Priority/Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority/Source:Internal
+       Signal: internal source
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 31]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-32" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   If the UA receives
+
+       Alert-Info: &lt;urn:alert:source:external&gt;,
+           &lt;urn:alert:priority:low&gt;
+
+   then processing progresses:
+
+       State: Priority/Source
+           Process: Source:External (urn:alert:source:external)
+       State: Priority/Source:External
+           Process: Priority:Low (urn:alert:priority:low)
+       State: Priority:Low/Source:External
+       Signal: external source/low priority
+
+   Suppose the same UA receives
+
+       Alert-Info: &lt;urn:alert:source:internal&gt;,
+           &lt;urn:alert:priority:low&gt;
+
+   Note that there is no signal that corresponds to this combination.
+   In that case, the processing is:
+
+       State: Priority/Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority/Source:Internal
+           Process: Priority:Low (urn:alert:priority:low)
+       State: Priority:(Low)/Source:Internal
+       Signal: internal source
+
+   If the order of the URNs is reversed, what is signaled is the meaning
+   of the now-different first URN:
+
+       Alert-Info: &lt;urn:alert:priority:low&gt;,
+           &lt;urn:alert:source:internal&gt;
+
+       State: Priority/Source
+           Process: Priority:Low (urn:alert:priority:low)
+       State: Priority:Low/Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority:Low/Source:(Internal)
+       Signal: low priority
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 32]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-33" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   Notice that the existence of the new states prevents later URNs of a
+   category from overriding earlier URNs of that category, even if the
+   earlier one was not itself signalable and the later one would be
+   signalable in the absence of the earlier one:
+
+       Alert-Info: &lt;urn:alert:priority:low&gt;,
+           &lt;urn:alert:source:internal&gt;,
+           &lt;urn:alert:source:external&gt;
+
+       State: Priority/Source
+           Process: Priority:Low (urn:alert:priority:low)
+       State: Priority:Low/Source
+           Process: Source:Internal (urn:alert:source:internal)
+       State: Priority:Low/Source:(Internal)
+           Process: Source:External (urn:alert:source:external)
+       State: Priority:Low/Source:(Internal)
+       Signal: low priority
+
+   This situation shows the necessity of states whose labels contain
+   parentheses.  If the second transition had been to the state
+   Priority:Low/Source (on the basis that there is no proper state
+   Priority:Low/Source:Internal), then the third transition would have
+   been to the state Priority:Low/Source:External, and the signal would
+   have been &quot;external source/low priority&quot;.
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  An Example That Subsets Internal Sources</span>
+
+   In the example of <a href="#section-4">Section 4</a>, there are signals for &quot;external source&quot;
+   and &quot;internal source&quot;.  Let us add to that example a signal for
+   &quot;source internal from a VIP (Very Important Person)&quot;.  That last
+   signal expresses the private extension URN
+   urn:alert:source:internal:vip@example, which is a subset of
+   urn:alert:source:internal, which is expressed by the &quot;source
+   internal&quot; signal.  There are a total of three expressed URNs, one of
+   which is a subset of another:
+
+       urn:alert:source:internal
+       urn:alert:source:internal:vip@example
+       urn:alert:source:external
+
+   This generates the following alphabet of symbols, which includes two
+   &quot;Other&quot; symbols for the &quot;source&quot; category:
+
+       Source
+       Source:Internal
+       Source:Internal:Vip@example
+       Source:Internal:Other
+       Source:Other
+
+
+
+<span class="grey">Worley                        Informational                    [Page 33]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-34" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h3"><a class="selflink" id="section-5.5" href="#section-5.5">5.5</a>.  An Example of &quot;alert:service&quot; URNs</span>
+
+   In this example, there are signals for &quot;service forward&quot; (the call
+   has been forwarded) and &quot;source recall callback&quot; (a recall due to a
+   callback).  This gives two expressed URNs:
+
+       urn:alert:service:forward
+       urn:alert:service:recall:callback
+
+   This generates the following alphabet of symbols.  Note that there
+   are two &quot;Other&quot; symbols, because the &quot;alert:service&quot; URNs have an
+   additional level of qualification.
+
+       Service
+       Service:Forward
+       Service:Recall
+       Service:Recall:Callback
+       Service:Recall:Other
+       Service:Other
+
+<span class="h3"><a class="selflink" id="section-5.6" href="#section-5.6">5.6</a>.  An Example Using Country Codes</span>
+
+   In this example, we consider how a UA generates ringback signals when
+   the UA wishes to reproduce the traditional behavior where the caller
+   hears the ringback signals defined by the telephone service in the
+   callee&#x27;s country rather than the ringback signals defined by the
+   service in the caller&#x27;s country.  In the Alert-Info header field of
+   the 180 (Ringing) provisional response, we assume that the called UA
+   provides an &quot;alert:country&quot; URN [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] containing the ISO 3166-1
+   [<a href="#ref-ISO-3166-1">ISO-3166-1</a>] alpha-2 country code of the callee&#x27;s country.
+
+   The UA has a default signal and a &quot;non-country&quot; signal for
+   urn:alert:service:call-waiting.  For the example country with code
+   &quot;XA&quot;, the UA has a default signal and signals for
+   urn:alert:service:call-waiting and urn:alert:service:forward.  For
+   the example country with code &quot;XB&quot;, the UA has a default signal and a
+   signal for urn:alert:service:forward.  These inconsistencies between
+   the non-country signals and the country signals are chosen to
+   demonstrate the flexibility of the construction method, showing that
+   three systems of signals can be combined correctly even when the
+   systems were established without coordination between them.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 34]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-35" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   The signals are:
+
+       Signal                        URN(s)
+       --------------------------    ----------------------------------
+       default                       (none)
+       call-waiting                  urn:alert:service:call-waiting
+
+       XA default                    urn:alert:country:xa
+       XA call-waiting               urn:alert:country:xa,
+                                         urn:alert:service:call-waiting
+       XA forward                    urn:alert:country:xa,
+                                         urn:alert:service:forward
+
+       XB default                    urn:alert:country:xb
+       XB forward                    urn:alert:country:xb,
+                                        urn:alert:service:forward
+
+   The expressed URNs are:
+
+       urn:alert:country:xa
+       urn:alert:country:xb
+       urn:alert:service:call-waiting
+       urn:alert:service:forward
+
+   The relevant categories of &quot;alert&quot; URNs are only:
+
+       country
+       service
+
+   The alphabet of symbols is:
+
+       Country
+       Country:[other]
+       Country:Xa
+       Country:Xb
+       Service
+       Service:[other]
+       Service:Call-waiting
+       Service:Forward
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 35]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-36" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   The 17 states are as follows:
+
+       State: 0 Country/Service
+       Signal: default
+       Transitions:
+           Country:[other] -&gt; 1 Country:([other])/Service
+           Country:Xa -&gt; 5 Country:Xa/Service
+           Country:Xb -&gt; 9 Country:Xb/Service
+           Service:[other] -&gt; 13 Country/Service:([other])
+           Service:Call-waiting -&gt; 14 Country/Service:Call-waiting
+           Service:Forward -&gt; 16 Country/Service:(Forward)
+
+    State: 1 Country:([other])/Service
+    Signal: default
+    Transitions:
+        Country:[other] -&gt; 1 Country:([other])/Service
+        Country:Xa -&gt; 1 Country:([other])/Service
+        Country:Xb -&gt; 1 Country:([other])/Service
+        Service:[other] -&gt; 2 Country:([other])/Service:([other])
+        Service:Call-waiting -&gt; 3 Country:([other])/Service:Call-waiting
+        Service:Forward -&gt; 4 Country:([other])/Service:(Forward)
+
+       State: 2 Country:([other])/Service:([other])
+       Signal: default
+       Transitions:
+           any -&gt; 2 Country:([other])/Service:([other])
+
+       State: 3 Country:([other])/Service:Call-waiting
+       Signal: call-waiting
+       Transitions:
+           any -&gt; 3 Country:([other])/Service:Call-waiting
+
+       State: 4 Country:([other])/Service:(Forward)
+       Signal: default
+       Transitions:
+           any -&gt; 4 Country:([other])/Service:(Forward)
+
+       State: 5 Country:Xa/Service
+       Signal: XA default
+       Transitions:
+           Country:[other] -&gt; 5 Country:Xa/Service
+           Country:Xa -&gt; 5 Country:Xa/Service
+           Country:Xb -&gt; 5 Country:Xa/Service
+           Service:[other] -&gt; 6 Country:Xa/Service:([other])
+           Service:Call-waiting -&gt; 7 Country:Xa/Service:Call-waiting
+           Service:Forward -&gt; 8 Country:Xa/Service:Forward
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 36]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-37" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: 6 Country:Xa/Service:([other])
+       Signal: XA default
+       Transitions:
+           any -&gt; 6 Country:Xa/Service:([other])
+
+       State: 7 Country:Xa/Service:Call-waiting
+       Signal: XA call-waiting
+       Transitions:
+           any -&gt; 7 Country:Xa/Service:Call-waiting
+
+       State: 8 Country:Xa/Service:Forward
+       Signal: XA forward
+       Transitions:
+           any -&gt; 8 Country:Xa/Service:Forward
+
+       State: 9 Country:Xb/Service
+       Signal: XB default
+       Transitions:
+           Country:[other] -&gt; 9 Country:Xb/Service
+           Country:Xa -&gt; 9 Country:Xb/Service
+           Country:Xb -&gt; 9 Country:Xb/Service
+           Service:[other] -&gt; 10 Country:Xb/Service:([other])
+           Service:Call-waiting -&gt; 11 Country:Xb/Service:(Call-waiting)
+           Service:Forward -&gt; 12 Country:Xb/Service:Forward
+
+       State: 10 Country:Xb/Service:([other])
+       Signal: XB default
+       Transitions:
+           any -&gt; 10 Country:Xb/Service:([other])
+
+       State: 11 Country:Xb/Service:(Call-waiting)
+       Signal: XB default
+       Transitions:
+           any -&gt; 11 Country:Xb/Service:(Call-waiting)
+
+       State: 12 Country:Xb/Service:Forward
+       Signal: XB forward
+       Transitions:
+           any -&gt; 12 Country:Xb/Service:Forward
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 37]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-38" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+       State: 13 Country/Service:([other])
+       Signal: default
+       Transitions:
+           Country:[other] -&gt; 2 Country:([other])/Service:([other])
+           Country:Xa -&gt; 6 Country:Xa/Service:([other])
+           Country:Xb -&gt; 10 Country:Xb/Service:([other])
+           Service:[other] -&gt; 13 Country/Service:([other])
+           Service:Call-waiting -&gt; 13 Country/Service:([other])
+           Service:Forward -&gt; 13 Country/Service:([other])
+
+       State: 14 Country/Service:Call-waiting
+       Signal: call-waiting
+       Transitions:
+           Country:[other] -&gt; 3 Country:([other])/Service:Call-waiting
+           Country:Xa -&gt; 7 Country:Xa/Service:Call-waiting
+           Country:Xb -&gt; 15 Country:(Xb)/Service:Call-waiting
+           Service:[other] -&gt; 14 Country/Service:Call-waiting
+           Service:Call-waiting -&gt; 14 Country/Service:Call-waiting
+           Service:Forward -&gt; 14 Country/Service:Call-waiting
+
+       State: 15 Country:(Xb)/Service:Call-waiting
+       Signal: call-waiting
+       Transitions:
+           any -&gt; 15 Country:(Xb)/Service:Call-waiting
+
+       State: 16 Country/Service:(Forward)
+       Signal: default
+       Transitions:
+           Country:[other] -&gt; 4 Country:([other])/Service:(Forward)
+           Country:Xa -&gt; 8 Country:Xa/Service:Forward
+           Country:Xb -&gt; 12 Country:Xb/Service:Forward
+           Service:[other] -&gt; 16 Country/Service:(Forward)
+           Service:Call-waiting -&gt; 16 Country/Service:(Forward)
+           Service:Forward -&gt; 16 Country/Service:(Forward)
+
+   Call-waiting can be signaled in conjunction with country XA but not
+   in conjunction with country XB, as the UA does not have a signal to
+   present call-waiting alerts for country XB.  Thus, the ordering of
+   urn:alert:service:call-waiting with urn:alert:country:xa does not
+   matter, but if urn:alert:country:xb appears before
+   urn:alert:service:call-waiting, call-waiting cannot be signaled.
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 38]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-39" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   On the other hand, if urn:alert:service:call-waiting appears before
+   urn:alert:country:xb, then call-waiting is signaled, but using the
+   non-country signal.
+
+      Alert-Info: urn:alert:country:xa,
+              urn:alert:service:call-waiting
+
+      State: 0 Country/Service
+          Process: Country:Xa (urn:alert:country:xa)
+      State: 5 Country:Xa/Service
+          Process: Service:Call-waiting (urn:alert:service:call-waiting)
+      State: 7 Country:Xa/Service:Call-waiting
+      Signal: XA call-waiting
+
+      Alert-Info: urn:alert:service:call-waiting,
+              urn:alert:country:xa
+
+      State: 0 Country/Service
+          Process: Service:Call-waiting (urn:alert:service:call-waiting)
+      State: 14 Country/Service:Call-waiting
+          Process: Country:Xa (urn:alert:country:xa)
+      State: 7 Country:Xa/Service:Call-waiting
+      Signal: XA call-waiting
+
+      Alert-Info: urn:alert:country:xb,
+              urn:alert:service:call-waiting
+
+      State: 0 Country/Service
+          Process: Country:Xb (urn:alert:country:xb)
+      State: 9 Country:Xb/Service
+          Process: Service:Call-waiting (urn:alert:service:call-waiting)
+      State: 11 Country:Xb/Service:(Call-waiting)
+      Signal: XB default
+
+      Alert-Info: urn:alert:service:call-waiting,
+              urn:alert:country:xb
+
+      State: 0 Country/Service
+          Process: Service:Call-waiting (urn:alert:service:call-waiting)
+      State: 14 Country/Service:Call-waiting
+          Process: Country:Xb (urn:alert:country:xb)
+      State: 15 Country:(Xb)/Service:Call-waiting
+      Signal: call-waiting
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 39]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-40" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Prioritizing Signals</span>
+
+   The specifications provided in [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] are oriented toward giving
+   the sender of Alert-Info control over which of the &quot;alert&quot; URNs are
+   most important.  But in some situations, the UA may prefer to
+   prioritize expressing one URN category over another regardless of the
+   order in which their URNs appear in Alert-Info.  This section
+   describes how that can be accommodated within the framework of
+   [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] and presents an example FSM resulting from that approach.
+
+   This example uses the signals of <a href="#section-5.2">Section 5.2</a>, viz., &quot;external
+   source&quot;, &quot;internal source&quot;, &quot;low priority&quot;, and &quot;high priority&quot;, but
+   this time, we want to signal &quot;high priority&quot; in preference to any
+   other signal that might be applicable.
+
+   We accommodate this within the framework of [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] by assigning
+   the signal &quot;high priority&quot; for each of these combinations of URNs:
+
+       urn:alert:priority:high
+       urn:alert:priority:high, urn:alert:source:internal
+       urn:alert:priority:high, urn:alert:source:external
+
+   The result is that the signal &quot;high priority&quot; is the &quot;best&quot; signal
+   for any combination of urn:alert:priority:high with &quot;source&quot; URNs.
+
+   Constructing the symbols produces the same results as before.  The
+   signals can express the following URNs:
+
+       urn:alert:source:external
+       urn:alert:source:internal
+       urn:alert:priority:low
+       urn:alert:priority:high
+
+   The relevant categories of &quot;alert&quot; URNs are:
+
+       source
+       priority
+
+   The alphabet of symbols is:
+
+       Source
+       Source:External
+       Source:Internal
+       Source:Other
+       Priority
+       Priority:Low
+       Priority:High
+       Priority:Other
+
+
+
+<span class="grey">Worley                        Informational                    [Page 40]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-41" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   When the FSM is constructed, it is the same as the FSM of
+   <a href="#section-5.2">Section 5.2</a>, except that certain states are effectively renamed and
+   merged, because any &quot;source&quot; is defined to be expressed if high
+   priority is expressed:
+
+       Priority:(High)/Source:External and
+       Priority:High/Source:(External) become:
+
+           State: Priority:High/Source:External
+           Signal: high priority
+
+       Priority:(High)/Source:Internal and
+       Priority:High/Source:(Internal) become:
+
+           State: Priority:High/Source:Internal
+           Signal: high priority
+
+   This reduces the FSM to 18 states.  In addition, these two new
+   states, along with a number of other states, can be merged by FSM
+   optimization, since all of them have the signal &quot;high priority&quot; and
+   from them, there are no transitions to states outside this set.  The
+   optimized FSM has 10 states.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Dynamic Sets of Signals</span>
+
+   This section discusses how to construct FSMs for a UA that allows
+   variable sets of signals -- for example, if the user can configure
+   the use of ring tones.  Several approaches can be used:
+
+   o  Whenever the set of ring tones is changed, re-execute the
+      processes of <a href="#section-4">Section 4</a>.
+
+   o  Whenever the set of ring tones is changed, rebuild the list of
+      expressed URNs (<a href="#section-4.1">Section 4.1</a>) and reconstruct the alphabet of
+      symbols (<a href="#section-4.2">Section 4.2</a>).  Then, use an algorithm for dynamically
+      constructing the states of the FSM as needed during Alert-Info
+      processing.
+
+   o  If the sets of possible URNs expressed by the ring tones are
+      sufficiently limited, the steps of <a href="#section-4">Section 4</a> can be carried out
+      &quot;generically&quot;, and the generic FSM can be specialized for the
+      current ring tone configuration.
+
+   The remainder of this section gives an example of the third approach.
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 41]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-42" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   For the example, we will use a set of ring tones that express the
+   identity of the caller.  To signal this information, a private
+   extension &quot;alert&quot; URN category, &quot;caller@example&quot;, is used:
+
+       urn:alert:caller@example:alice@example.com
+       urn:alert:caller@example:bob@example.com
+       etc.
+
+   which we can express by the generic pattern
+
+       urn:alert:caller@example:IDENTITY
+
+   where &quot;IDENTITY&quot; is replaced in succession by the set of caller
+   identities that have their own ring tones to generate the set of
+   expressed URNs.
+
+   The alphabet is then:
+
+       Caller@example
+       Caller@example:IDENTITY
+       Caller@example:Other
+
+   where &quot;IDENTITY&quot; is replaced in succession by the set of caller
+   identities.  The &quot;Caller@example:Other&quot; symbol includes all URNs of
+   the category &quot;caller@example&quot; that are not included in any of the
+   &quot;Caller@example:IDENTITY&quot; symbols, i.e, where the second
+   alert-ind-part is not one of the known caller identities.
+
+   The states and transitions of the FSM are:
+
+       State: Caller@example (initial state)
+       Signal: default
+       Transitions:
+           Caller@example:IDENTITY -&gt; Caller@example:IDENTITY
+           Caller@example:Other -&gt; Caller@example:(Other)
+
+       State: Caller@example:IDENTITY
+       Signal: signal for caller IDENTITY
+       Transitions:
+           any -&gt; Caller@example:IDENTITY
+
+       State: Caller@example:(Other)
+       Signal: default
+       Transitions:
+           any -&gt; Caller@example:(Other)
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 42]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-43" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+   where again, the second state is replicated once for each caller
+   identity that has a ring tone, with &quot;IDENTITY&quot; replaced with the
+   caller identity.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   The security considerations discussed in <a href="/doc/html/rfc7462#section-16">Section&nbsp;16 of [RFC7462]</a>
+   regarding the use and processing of &quot;alert&quot; URNs MUST be followed
+   when the algorithm described in this document is used.
+
+   Like any implementation of [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>], implementations of the
+   algorithm defined in this document MUST take into account that the
+   value of a received Alert-Info header field may contain URIs of any
+   scheme, may contain syntactically invalid values, and may be
+   syntactically invalid overall.  The handling of syntactically invalid
+   values is specified by [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>].  The handling of URIs other than
+   &quot;alert&quot; URIs is outside the scope of this document (and outside the
+   scope of [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>]) and MAY be subject to local policy.
+
+   Like the algorithm described in <a href="/doc/html/rfc7462#section-12">Section&nbsp;12 of [RFC7462]</a>, the output
+   of the algorithm defined in this document is limited to a choice
+   among the signals that it has been configured for, limiting the
+   security issues regarding the processing of its output.  This
+   algorithm will use at most linear time and constant space to process
+   a sequence of &quot;alert&quot; URNs.  This is significantly more efficient
+   than the algorithm of [<a href="/doc/html/rfc7462" title="&quot;URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)&quot;">RFC7462</a>] and minimizes the security
+   vulnerabilities of this processing step that are due to resource
+   consumption.
+
+   However, the process defined in this document for constructing an FSM
+   can use more than linear time and constant space -- probably
+   exponential time and space in the worst case.  This SHOULD be taken
+   into consideration whenever an FSM is constructed using this
+   algorithm and MUST be taken into consideration when it is done
+   dynamically by a UA.  Whenever an FSM is constructed by a process
+   that is not under the direct supervision of a human user, procedures
+   MUST be used to ensure that (1) the processing and memory consumption
+   are limited to acceptable amounts and (2) if the FSM construction is
+   aborted due to excessive consumption, the designated consumers of the
+   FSM MUST have appropriate fallback procedures.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 43]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-44" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  Normative References</span>
+
+   [<a id="ref-ISO-3166-1">ISO-3166-1</a>]
+              International Organization for Standardization, &quot;Codes for
+              the representation of names of countries and their
+              subdivisions -- Part 1: Country codes&quot;, ISO
+              Standard 3166-1:2013, November 2013,
+              &lt;<a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3261">RFC3261</a>]  Rosenberg, J., Schulzrinne, H., Camarillo, G., Johnston,
+              A., Peterson, J., Sparks, R., Handley, M., and E.
+              Schooler, &quot;SIP: Session Initiation Protocol&quot;, <a href="/doc/html/rfc3261">RFC 3261</a>,
+              DOI 10.17487/RFC3261, June 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3261">https://www.rfc-editor.org/info/rfc3261</a>&gt;.
+
+   [<a id="ref-RFC7462">RFC7462</a>]  Liess, L., Ed., Jesske, R., Johnston, A., Worley, D., and
+              P. Kyzivat, &quot;URNs for the Alert-Info Header Field of the
+              Session Initiation Protocol (SIP)&quot;, <a href="/doc/html/rfc7462">RFC 7462</a>,
+              DOI 10.17487/RFC7462, March 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7462">https://www.rfc-editor.org/info/rfc7462</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in
+              <a href="/doc/html/rfc2119">RFC 2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>,
+              DOI 10.17487/RFC8174, May 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  Informative References</span>
+
+   [<a id="ref-code">code</a>]     Worley, D., &quot;<a href="/doc/html/draft-worley-alert-info-fsm">draft-worley-alert-info-fsm</a>.aux&quot;,
+              February 2017, &lt;<a href="http://svn.resiprocate.org/rep/ietf-drafts/worley/draft-worley-alert-info-fsm.aux">http://svn.resiprocate.org/rep/</a>
+              <a href="http://svn.resiprocate.org/rep/ietf-drafts/worley/draft-worley-alert-info-fsm.aux">ietf-drafts/worley/draft-worley-alert-info-fsm.aux</a>&gt;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Worley                        Informational                    [Page 44]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-45" ></span>
+<span class="grey"><a href="/doc/html/rfc8433">RFC 8433</a>                Resolving Alert-Info URNs            August 2018</span>
+
+
+Acknowledgments
+
+   Thanks to Paul Kyzivat, whose relentless identification of the
+   weaknesses of earlier versions made the final document much, much
+   better than it would have been, by changing it from the exposition of
+   a concept into a practical tool.  Thanks to Rifaat Shekh-Yusef, Eric
+   Burger, and Gonzalo Camarillo for their thorough reviews.  Thanks to
+   the earlier Independent Submissions Editor, Nevil Brownlee, for his
+   work obtaining reviewers, and the later Independent Submissions
+   Editor, Adrian Farrel, for prompting me to write the Security
+   Considerations section (which I had expected to be trivial but
+   was not).
+
+Author&#x27;s Address
+
+   Dale R. Worley
+   Ariadne Internet Services
+   738 Main St.
+   Waltham, MA  02451
+   United States of America
+
+   Email: worley@ariadne.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Worley                        Informational                    [Page 45]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

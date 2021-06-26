@@ -1,0 +1,573 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc1624
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-anil-incremental-checksum/">
+  <meta name="description" content="Computation of the Internet Checksum via Incremental Update (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgorange"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc1624.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc1624.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc1624.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc1624/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc1624/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:draft-anil-incremental-checksum@ietf.org?subject=draft-anil-incremental-checksum" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-anil-incremental-checksum-02.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-anil-incremental-checksum-02.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-anil-incremental-checksum-02.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-anil-incremental-checksum-02">draft-anil-incremental-checksum-02</a>                   Informational
+                                                            <a class="text-warning" href="https://www.rfc-editor.org/errata_search.php?rfc=1624&amp;rec_status=0">Errata exist</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                             A. Rijsinghani, Editor
+Request for Comments: 1624                 Digital Equipment Corporation
+Updates: <a href="/doc/html/rfc1141">1141</a>                                                   May 1994
+Category: Informational
+
+
+                  <span class="h1">Computation of the Internet Checksum</span>
+                         <span class="h1">via Incremental Update</span>
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This memo
+   does not specify an Internet standard of any kind.  Distribution of
+   this memo is unlimited.
+
+Abstract
+
+   This memo describes an updated technique for incremental computation
+   of the standard Internet checksum.  It updates the method described
+   in <a href="/doc/html/rfc1141">RFC 1141</a>.
+
+Table of Contents
+
+   <a href="#section-1">1</a>. Introduction ..........................................  <a href="#page-1">1</a>
+   <a href="#section-2">2</a>. Notation and Equations ................................  <a href="#page-2">2</a>
+   <a href="#section-3">3</a>. Discussion ............................................  <a href="#page-2">2</a>
+   <a href="#section-4">4</a>. Examples ..............................................  <a href="#page-3">3</a>
+   <a href="#section-5">5</a>. Checksum verification by end systems ..................  <a href="#page-4">4</a>
+   <a href="#section-6">6</a>. Historical Note .......................................  <a href="#page-4">4</a>
+   <a href="#section-7">7</a>. Acknowledgments .......................................  <a href="#page-5">5</a>
+   <a href="#section-8">8</a>. Security Considerations ...............................  <a href="#page-5">5</a>
+   <a href="#section-9">9</a>. Conclusions ...........................................  <a href="#page-5">5</a>
+   <a href="#section-10">10</a>. Author&#x27;s Address .....................................  <a href="#page-5">5</a>
+   <a href="#section-11">11</a>. References ...........................................  <a href="#page-6">6</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Incremental checksum update is useful in speeding up several
+   types of operations routinely performed on IP packets, such as
+   TTL update, IP fragmentation, and source route update.
+
+   <a href="/doc/html/rfc1071">RFC 1071</a>, on pages 4 and 5, describes a procedure to
+   incrementally update the standard Internet checksum.  The
+   relevant discussion, though comprehensive, was not complete.
+   Therefore, <a href="/doc/html/rfc1141">RFC 1141</a> was published to replace this description
+   on Incremental Update.  In particular, <a href="/doc/html/rfc1141">RFC 1141</a> provides a
+   more detailed exposure to the procedure described in <a href="/doc/html/rfc1071">RFC 1071</a>.
+   However, it computes a result for certain cases that differs
+
+
+
+<span class="grey">Rijsinghani                                                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc1624">RFC 1624</a>             Incremental Internet Checksum              May 1994</span>
+
+
+   from the one obtained from scratch (one&#x27;s complement of one&#x27;s
+   complement sum of the original fields).
+
+   For the sake of completeness, this memo briefly highlights key
+   points from RFCs 1071 and 1141.  Based on these discussions,
+   an updated procedure to incrementally compute the standard
+   Internet checksum is developed and presented.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Notation and Equations</span>
+
+   Given the following notation:
+
+          HC  - old checksum in header
+          C   - one&#x27;s complement sum of old header
+          HC&#x27; - new checksum in header
+          C&#x27;  - one&#x27;s complement sum of new header
+          m   - old value of a 16-bit field
+          m&#x27;  - new value of a 16-bit field
+
+          <a href="/doc/html/rfc1071">RFC 1071</a> states that C&#x27; is:
+
+          C&#x27; = C + (-m) + m&#x27;    --    [Eqn. 1]
+             = C + (m&#x27; - m)
+
+   As <a href="/doc/html/rfc1141">RFC 1141</a> points out, the equation above is not useful for direct
+   use in incremental updates since C and C&#x27; do not refer to the actual
+   checksum stored in the header.  In addition, it is pointed out that
+   <a href="/doc/html/rfc1071">RFC 1071</a> did not specify that all arithmetic must be performed using
+   one&#x27;s complement arithmetic.
+
+   Finally, complementing the above equation to get the actual checksum,
+   <a href="/doc/html/rfc1141">RFC 1141</a> presents the following:
+
+          HC&#x27; = ~(C + (-m) + m&#x27;)
+              = HC + (m - m&#x27;)
+              = HC + m + ~m&#x27;    --    [Eqn. 2]
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Discussion</span>
+
+   Although this equation appears to work, there are boundary conditions
+   under which it produces a result which differs from the one obtained
+   by checksum computation from scratch.  This is due to the way zero is
+   handled in one&#x27;s complement arithmetic.
+
+   In one&#x27;s complement, there are two representations of zero: the all
+   zero and the all one bit values, often referred to as +0 and -0.
+   One&#x27;s complement addition of non-zero inputs can produce -0 as a
+   result, but never +0.  Since there is guaranteed to be at least one
+
+
+
+<span class="grey">Rijsinghani                                                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc1624">RFC 1624</a>             Incremental Internet Checksum              May 1994</span>
+
+
+   non-zero field in the IP header, and the checksum field in the
+   protocol header is the complement of the sum, the checksum field can
+   never contain ~(+0), which is -0 (0xFFFF).  It can, however, contain
+   ~(-0), which is +0 (0x0000).
+
+   <a href="/doc/html/rfc1141">RFC 1141</a> yields an updated header checksum of -0 when it should be
+   +0.  This is because it assumed that one&#x27;s complement has a
+   distributive property, which does not hold when the result is 0 (see
+   derivation of [Eqn. 2]).
+
+   The problem is avoided by not assuming this property.  The correct
+   equation is given below:
+
+          HC&#x27; = ~(C + (-m) + m&#x27;)    --    [Eqn. 3]
+              = ~(~HC + ~m + m&#x27;)
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Examples</span>
+
+   Consider an IP packet header in which a 16-bit field m = 0x5555
+   changes to m&#x27; = 0x3285.  Also, the one&#x27;s complement sum of all other
+   header octets is 0xCD7A.
+
+   Then the header checksum would be:
+
+          HC = ~(0xCD7A + 0x5555)
+             = ~0x22D0
+             =  0xDD2F
+
+   The new checksum via recomputation is:
+
+          HC&#x27; = ~(0xCD7A + 0x3285)
+              = ~0xFFFF
+              =  0x0000
+
+   Using [Eqn. 2], as specified in <a href="/doc/html/rfc1141">RFC 1141</a>, the new checksum is
+   computed as:
+
+          HC&#x27; = HC + m + ~m&#x27;
+              =  0xDD2F + 0x5555 + ~0x3285
+              =  0xFFFF
+
+   which does not match that computed from scratch, and moreover can
+   never obtain for an IP header.
+
+
+
+
+
+
+
+
+<span class="grey">Rijsinghani                                                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc1624">RFC 1624</a>             Incremental Internet Checksum              May 1994</span>
+
+
+   Applying [Eqn. 3] to the example above, we get the correct result:
+
+          HC&#x27; = ~(C + (-m) + m&#x27;)
+              = ~(0x22D0 + ~0x5555 + 0x3285)
+              = ~0xFFFF
+              =  0x0000
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Checksum verification by end systems</span>
+
+   If an end system verifies the checksum by including the checksum
+   field itself in the one&#x27;s complement sum and then comparing the
+   result against -0, as recommended by <a href="/doc/html/rfc1071">RFC 1071</a>, it does not matter if
+   an intermediate system generated a -0 instead of +0 due to the <a href="/doc/html/rfc1141">RFC</a>
+   <a href="/doc/html/rfc1141">1141</a> property described here.  In the example above:
+
+          0xCD7A + 0x3285 + 0xFFFF = 0xFFFF
+          0xCD7A + 0x3285 + 0x0000 = 0xFFFF
+
+   However, implementations exist which verify the checksum by computing
+   it and comparing against the header checksum field.
+
+   It is recommended that intermediate systems compute incremental
+   checksum using the method described in this document, and end systems
+   verify checksum as per the method described in <a href="/doc/html/rfc1071">RFC 1071</a>.
+
+   The method in [Eqn. 3] is slightly more expensive than the one in <a href="/doc/html/rfc1141">RFC</a>
+   <a href="/doc/html/rfc1141">1141</a>.  If this is a concern, the two additional instructions can be
+   eliminated by subtracting complements with borrow [see Sec. 7].  This
+   would result in the following equation:
+
+          HC&#x27; = HC - ~m - m&#x27;    --    [Eqn. 4]
+
+          In the example shown above,
+
+          HC&#x27; = HC - ~m - m&#x27;
+              =  0xDD2F - ~0x5555 - 0x3285
+              =  0x0000
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Historical Note</span>
+
+   A historical aside: the fact that standard one&#x27;s complement
+   arithmetic produces negative zero results is one of its main
+   drawbacks; it makes for difficulty in interpretation.  In the CDC
+   6000 series computers [<a href="#ref-4" title="&quot;Design of a Computer -- the Control Data 6600&quot;">4</a>], this problem was avoided by using
+   subtraction as the primitive in one&#x27;s complement arithmetic (i.e.,
+   addition is subtraction of the complement).
+
+
+
+
+
+<span class="grey">Rijsinghani                                                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc1624">RFC 1624</a>             Incremental Internet Checksum              May 1994</span>
+
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Acknowledgments</span>
+
+   The contribution of the following individuals to the work that led to
+   this document is acknowledged:
+
+          Manu Kaycee - Ascom Timeplex, Incorporated
+          Paul Koning - Digital Equipment Corporation
+          Tracy Mallory - 3Com Corporation
+          Krishna Narayanaswamy - Digital Equipment Corporation
+          Atul Pandya - Digital Equipment Corporation
+
+   The failure condition was uncovered as a result of IP testing on a
+   product which implemented the <a href="/doc/html/rfc1141">RFC 1141</a> algorithm.  It was analyzed,
+   and the updated algorithm devised.  This algorithm was also verified
+   using simulation.  It was also shown that the failure condition
+   disappears if the checksum verification is done as per <a href="/doc/html/rfc1071">RFC 1071</a>.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   Security issues are not discussed in this memo.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Conclusions</span>
+
+   It is recommended that either [Eqn. 3] or [Eqn. 4] be the
+   implementation technique used for incremental update of the standard
+   Internet checksum.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Author&#x27;s Address</span>
+
+   Anil Rijsinghani
+   Digital Equipment Corporation
+   550 King St
+   Littleton, MA 01460
+
+   Phone: (508) 486-6786
+   EMail: anil@levers.enet.dec.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Rijsinghani                                                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc1624">RFC 1624</a>             Incremental Internet Checksum              May 1994</span>
+
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  References</span>
+
+   [<a id="ref-1">1</a>] Postel, J., &quot;Internet Protocol - DARPA Internet Program Protocol
+       Specification&quot;, STD 5, <a href="/doc/html/rfc791">RFC 791</a>, DARPA, September 1981.
+
+   [<a id="ref-2">2</a>] Braden, R., Borman, D., and C. Partridge, &quot;Computing the Internet
+       Checksum&quot;, <a href="/doc/html/rfc1071">RFC 1071</a>, ISI, Cray Research, BBN Laboratories,
+       September 1988.
+
+   [<a id="ref-3">3</a>] Mallory, T., and A. Kullberg, &quot;Incremental Updating of the
+       Internet Checksum&quot;, <a href="/doc/html/rfc1141">RFC 1141</a>, BBN Communications, January 1990.
+
+   [<a id="ref-4">4</a>] Thornton, J., &quot;Design of a Computer -- the Control
+       Data 6600&quot;, Scott, Foresman and Company, 1970.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rijsinghani                                                     [Page 6]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

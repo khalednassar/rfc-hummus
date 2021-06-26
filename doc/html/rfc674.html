@@ -1,0 +1,533 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc674
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc674/">
+  <meta name="description" content="Procedure call documents: Version 2 (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgwhite"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc674.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc674.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc674.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc674/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc674/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc674@ietf.org?subject=rfc674" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc674-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc674-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc674-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                                 Unknown</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>&lt;GJOURNAL&gt;31484.NLS;1, 12-DEC-74 04:32 XXX ;;;;   Title:  Author(s):
+Jonathan B. Postel/JBP; Distribution: /NAG( [ ACTION ] ) NLG( [ ACTION ]
+) NSW( [ ACTION ] ) PI( [ ACTION ] ) ; Sub-Collections: NIC NWG  SRI-ARC
+NAG NLG NSW PI; RFC# 674; Clerk: JAKE;         Origin: &lt; NETINFO,
+<a href="/doc/html/rfc674">RFC674</a>.NLS;2, &gt;, 11-DEC-74 17:58 JAKE ;;;;####;
+
+NWG/RFC# 674                                JBP 11-DEC-74 18:04  31484
+Procedure Call Protocol Documents
+
+
+
+Request for Comments 674                                    Jon Postel
+NIC 31484                                                    Jim White
+                                                               SRI-ARC
+                                                      12 December 1974
+
+                  <span class="h1">Procedure Call Protocol Documents</span>
+                              <span class="h1">Version 2</span>
+
+
+                                                                           1
+
+As many of you may know SRI is part of a team working on the National
+Software Works project. In the course of our work we have developed a
+Procedure Call Protocol to be used between the modules which make up
+the NSW. We are interested in your comments on this protocol. Please
+foreward your remarks to either:                                           2
+
+   James E. White (WHITE@SRI-ARC) or Jon Postel (POSTEL@SRI-ARC)          2a
+
+                     Augmentation Research Center
+                     Stanford Research Institute
+                     Menlo Park, California 94025                         2b
+
+            (415) 326-6200 x2960 (White) or x3718 (Postel)                2c
+
+This note announces the release of the second published version of
+several National Software Works (NSW) and Procedure Call Protocol
+(PCP) documents. Version 2 is SUBSTANTIALLY different than Version 1;
+it and all intermediate, informally distributed PCP documents are
+obsoleted by this release.                                                 3
+
+Each of the following documents is available on-line in two forms: as
+an NLS file and as a formatted text file.  The Journal number (e.g.
+24459) refers to the former, of course, and the pathname (e.g.
+[SRI-ARC]&lt;NLS&gt;PCP.TXT) to the latter, accessible via FTP using
+USER=ANONYMOUS and PASSWORD=GUEST (no account required). Let it be
+emphasised that files indicated by pathname of the form
+[SRI-ARC]&lt;NLS&gt;name.TXT are ASCII text files not NLS files.                 4
+
+The specifications are contained in the following documents:               5
+
+   HOST      (24581,)  &quot;NSW Host Protocol&quot;                                5a
+
+      This document describes the host level protocol used in the NSW.
+      The protocol is a slightly constrained version of the standard
+      ARPANET host to host protocol. The constraints  affect the
+      allocation, RFNM wait, and retransmission policies.                5a1
+
+NWG/RFC# 674                                JBP 11-DEC-74 18:04  31484
+<a href="/doc/html/rfc674">RFC 674</a>;                                              PCP Announcement
+
+
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;HOST.TXT                               5a1a
+
+   PCP       (24459,)  &quot;The Procedure Call Protocol&quot;                      5b
+
+      This document describes the virtual programming environment
+      provided by PCP, and the inter-process exchanges that implement
+      it.                                                                5b1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PCP.TXT                                5b1a
+
+   PIP       (24460,)  &quot;The Procedure Interface Package&quot;                  5c
+
+      This document describes a package that runs in the setting
+      provided by PCP and that serves as a procedure-call-level
+      interface to PCP proper.  It includes procedures for calling,
+      resuming, interrupting, and aborting remote procedures.            5c1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PIP.TXT                                5c1a
+
+   PSP       (24461,)  &quot;The PCP Support Package&quot;                          5d
+
+      This document describes a package that runs in the setting
+      provided by PCP and that augments PCP proper, largely in the
+      area of data store manipulation.  It includes procedures for
+      obtaining access to groups of remote procedures and data stores,
+      manipulating remote data stores, and creating temporary ones.      5d1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PSP.TXT                                5d1a
+
+   PMP       (24462,)  &quot;The Process Management Package&quot;                   5e
+
+      This document describes a package that runs in the setting
+      provided by PCP and that provides the necessary tools for
+      interconnecting two or more processes to form a multi-process
+      system (e.g. NSW).  It includes procedures for creating,
+      deleting, logically and physically interconnecting processes,
+      and for allocating and releasing processors.                       5e1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PMP.TXT                                5e1a
+
+   PCPFMT    (24576,)  &quot;PCP Data Structure Formats&quot;                       5f
+
+      This document defines formats for PCP data structures, each of
+      which is appropriate for one or more physical channel types.       5f1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PCPFMT.TXT                             5f1a
+
+
+
+
+
+
+                                  1
+
+NWG/RFC# 674                                JBP 11-DEC-74 18:04  31484
+<a href="/doc/html/rfc674">RFC 674</a>;                                              PCP Announcement
+
+
+
+   PCPHST    (24577,)  &quot;PCP ARPANET Inter-Host IPC Implementation&quot;        5g
+
+      This document defines an implementation, appropriate for
+      mediating communication between Tenex forks, of the IPC
+      primitives required by PCP.                                        5g1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PCPHST.TXT                             5g1a
+
+   PCPFRK    (24578,)  &quot;PCP Tenex Inter-Fork IPC Implementation&quot;          5h
+
+      This document defines an implementation, appropriate for
+      mediating communication between processes on different hosts
+      within the ARPANET, of the IPC primitives required by PCP.         5h1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;PCPFRK.TXT                             5h1a
+
+   EXEC      (24580,)  &quot;The Executive Package&quot;                            5i
+
+      This document describes a package that runs in the setting
+      provided by PCP.  It includes procedures and data stores for
+      user identification, accounting, and usage information.            5i1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;EXEC.TXT                               5i1a
+
+   FILE      (24582,)  &quot;The File Package&quot;                                 5j
+
+      This document describes a package that runs in the setting
+      provided by PCP.  It includes procedures and data stores for
+      opening, closing, and listing directories, for creating,
+      deleting, and renaming files, and for transfering files and file
+      elements between processes.                                        5j1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;FILE.TXT                               5j1a
+
+   BATCH     (24583,)  &quot;The Batch Job Package&quot;                            5k
+
+      This document describes a package that runs in the setting
+      provided by PCP.  It includes procedures for creating and
+      deleting batch jobs, obtaining the status of a batch job, and
+      communicating with the operator of a batch processing host. This
+      package is implemented at the host that provides the batch
+      processing facility.                                               5k1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;BATCH.TXT                              5k1a
+
+   RJE-MODEL (24655,)  &quot;The NSW Remote Job Entry Model&quot;                   5l
+
+
+
+
+
+
+                                  2
+
+NWG/RFC# 674                                JBP 11-DEC-74 18:04  31484
+<a href="/doc/html/rfc674">RFC 674</a>;                                              PCP Announcement
+
+
+
+      This document discusses the process of utilizing a batch
+      processing facility to complete a programming task in the NSW
+      environment. This same activity in another environment might
+      utilize a remote job entry system.                                 5l1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;RJE-MODEL.TXT                          5l1a
+
+   LLDBUG    (24579,)  &quot;The Low-Level Debug Package&quot;                      5m
+
+      This document describes a package that runs in the setting
+      provided by PCP.  It includes procedures for a remote process to
+      debug at the assembly-language level, any process known to the
+      local process.  The package contains procedures for manipulating
+      and searching the process&#x27; address space, for manipulating and
+      searching its symbol tables, and for setting and removing
+      breakpoints from its address space.  Its data stores hold
+      process characteristics and state information, and the contents
+      of program symbol tables.                                          5m1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;LLDBUG.TXT                             5m1a
+
+   TBH       (24656,)  &quot;NSW Requirments on Tool Bearing Hosts&quot;            5n
+
+      This document discusses the environment needed in the tool
+      bearing host and the interfaces to the operating system
+      components by various PCP packages.                                5n1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;TBH.TXT                                5n1a
+
+   BOXES     (24584,)  &quot;Black Boxes in PCP&quot;                               5o
+
+      This document describes the transliteration of the black boxes
+      defined by Millstein and Warshall into the setting provided by
+      PCP, especially the File Package and the Executive Package.        5o1
+
+         Pathname: [SRI-ARC]&lt;NLS&gt;BOXES.TXT                              5o1a
+
+The document on the Host level protocol, HOST, is a suggestion for
+some restrictions on the regular ARPANET host protocol for use in NSW,
+this topic has little impact on the remainder of the NSW protocols.
+The reader is urged to begin with the major Procedure Call Protocol
+documents.                                                                 6
+
+The document on PCP is the place the interested reader should start.
+It gives the required motivation for the Protocol and states the
+substance of the Protocol proper.                                          7
+
+
+
+
+
+
+                                  3
+
+NWG/RFC# 674                                JBP 11-DEC-74 18:04  31484
+<a href="/doc/html/rfc674">RFC 674</a>;                                              PCP Announcement
+
+
+
+The reader may then proceed to the next three documents: PIP, PSP and
+PMP. The latter has the most relavence to the casual reader; the
+programmer faced with coding in the PCP environment should read all
+three.                                                                     8
+
+The three documents PCPFMT, PCPHST, and PCPFRK specify low level
+details of the communication formats and are of interest only to PCP
+implementers.                                                              9
+
+The documents EXEC, FILE and BATCH describe procedure packages to be
+implemented as appropriate to provide the services of the
+accounting/status/usage statistics subsystem, the file subsystem or
+batch processing subsystem respectively.                                  10
+
+The document RJE-MODEL describes how a user would utilize various
+tools in the NSW in the process of  carrying out tasks he might in the
+absence of NSW achieve using a remote job entry system. This should be
+read with the document on BATCH.
+                                                                          11
+
+The LLDBUG package specifies a debugging package that operates in the
+PCP environment.                                                          12
+
+The document called BOXES describes a mapping between the PCP
+mechanisms and the File Package procedures and the Black Boxes needed
+by the Works Manager.                                                     13
+
+The document TBH speaks to the requirements placed on the Tool Bearing
+Host. This document indicates how and where various PCP packages
+interface to an operating system.                                         14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  4</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

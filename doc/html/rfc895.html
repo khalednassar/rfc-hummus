@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc895
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc895/">
+  <meta name="description" content="Standard for the transmission of IP datagrams over experimental Ethernet networks (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bggreen"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc895.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc895.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/pdfrfc/rfc895.txt.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc895/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc895/" title="Datatracker information for this document">Tracker</a>] [<a href="mailto:rfc895@ietf.org?subject=rfc895" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=rfc895-.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=rfc895-.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/rfc895-.txt" title="Run an idnits check of this document">Nits</a>]
+
+                                                       Internet Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Network Working Group                                         Jon Postel
+Request for Comments: 895                                            ISI
+                                                              April 1984
+
+            <span class="h1">A Standard for the Transmission of IP Datagrams</span>
+                  <span class="h1">over Experimental Ethernet Networks</span>
+
+
+Status of this Memo
+
+   This RFC specifies a standard method of encapsulating Internet
+   Protocol (IP) [<a href="#ref-1" title="&quot;Internet Protocol&quot;">1</a>] datagrams on an Experimental Ethernet [<a href="#ref-2" title="&quot;Ethernet: Distributed Packet Switching for Local Computer Networks&quot;">2</a>].  This
+   RFC specifies a standard protocol for the ARPA Internet community.
+
+Introduction
+
+   This memo applies to the Experimental Ethernet (3-megabit/second,
+   8-bit addresses).  The procedure for transmission of IP datagrams on
+   the Ethernet (10-megabit/second, 48-bit addresses) is described in
+   [<a href="#ref-3" title="&quot;A Standard for the Transmission of IP Datagrams over Ethernet Networks&quot;">3</a>].
+
+Frame Format
+
+   IP datagrams are transmitted in standard Experimental Ethernet
+   frames.  The type field of the Ethernet frame must contain the value
+   513 (1001 octal).  The data field contains the IP header followed
+   immediately by the IP data.
+
+   If necessary, the data field should be padded to meet the
+   Experimental Ethernet minimum frame size.  This padding is not part
+   of the IP packet and is not included in the total length field of the
+   IP header.
+
+   The maximum length of an IP datagram sent over an Experimental
+   Ethernet is 1536 octets.  Implementations are encouraged to support
+   full-length packets.  Gateway implementations MUST be prepared to
+   accept full-length packets and fragment them if necessary.  If a
+   system cannot receive full-length packets, it should take steps to
+   discourage others from sending them, such as using the TCP Maximum
+   Segment Size option [<a href="#ref-4" title="&quot;The TCP Maximum Segment Size Option and Related Topics&quot;">4</a>].
+
+   Note:  Datagrams on the Ethernet may be longer than the general
+   Internet default maximum packet size of 576 octets.  Hosts connected
+   to an Ethernet should keep this in mind when sending datagrams to
+   hosts not on the same Ethernet.  It may be appropriate to send
+   smaller datagrams to avoid unnecessary fragmentation at intermediate
+   gateways.  Please see [<a href="#ref-4" title="&quot;The TCP Maximum Segment Size Option and Related Topics&quot;">4</a>] for further information on this point.
+
+
+
+
+
+
+<span class="grey">Postel                                                          [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc895">RFC 895</a>                                                       April 1984</span>
+
+
+Address Mappings
+
+   The mapping between 32-bit Internet addresses to 8-bit Experimental
+   Ethernet addresses can be done several ways.
+
+   The easiest thing to do is to use the last eight bits of host number
+   part of the Internet address as the host&#x27;s address on the
+   Experimental Ethernet.  This is the recommended approach.
+
+   Broadcast Address
+
+      The broadcast Internet address (the address on that network with a
+      host part of all binary ones) should be mapped to the broadcast
+      Experimental Ethernet address (address zero).
+
+Trailer Formats
+
+   Some versions of Unix 4.2bsd use a different encapsulation method in
+   order to get better network performance with the VAX virtual memory
+   architecture.  Consenting systems on the same Ethernet may use this
+   format between themselves.
+
+   No host is required to implement it, and no datagrams in this format
+   should be sent to any host unless the sender has positive knowledge
+   that the recipient will be able to interpret them.  Details of the
+   trailer encapsulation may be found in [<a href="#ref-6" title="&quot;Trailer Encapsulations&quot;">6</a>].
+
+   (Note:  At the present time Unix 4.2bsd will either always use
+   trailers or never use them (per interface), depending on a boot-time
+   option.  This is expected to be changed in the future.  Unix 4.2bsd
+   also uses a non-standard Internet broadcast address with a host part
+   of all zeroes, this will also be changed in the future.)
+
+Byte Order
+
+   As described in <a href="#appendix-B">Appendix B</a> of the Internet Protocol
+   specification [<a href="#ref-1" title="&quot;Internet Protocol&quot;">1</a>], the IP datagram is transmitted over the Ethernet
+   as a series of 8-bit bytes.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Postel                                                          [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc895">RFC 895</a>                                                       April 1984</span>
+
+
+References
+
+   [<a id="ref-1">1</a>]  Postel, J., &quot;Internet Protocol&quot;, <a href="/doc/html/rfc791">RFC-791</a>, USC/Information
+   Sciences Institute, September 1981.
+
+   [<a id="ref-2">2</a>]  Metcalfe, R. and D. Boggs, &quot;Ethernet: Distributed Packet
+   Switching for Local Computer Networks&quot;, Communications of the ACM,
+   V.19, N.7, pp 395-402, July 1976.
+
+   [<a id="ref-3">3</a>]  Hornig, C., &quot;A Standard for the Transmission of IP Datagrams
+   over Ethernet Networks&quot;, <a href="/doc/html/rfc894">RFC-894</a>, Symbolics Cambridge Research
+   Center, April 1984.
+
+   [<a id="ref-4">4</a>]  Postel, J., &quot;The TCP Maximum Segment Size Option and Related
+   Topics&quot;, <a href="/doc/html/rfc879">RFC-879</a>, USC/Information Sciences Institute, November 1983.
+
+   [<a id="ref-5">5</a>]  Plummer, D., &quot;An Ethernet Address Resolution Protocol&quot;, <a href="/doc/html/rfc826">RFC-826</a>,
+   Symbolics Cambridge Research Center, November 1982.
+
+   [<a id="ref-6">6</a>]  Leffler, S., and M. Karels, &quot;Trailer Encapsulations&quot;, <a href="/doc/html/rfc893">RFC-893</a>,
+   University of California at Berkeley, April 1984.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postel                                                          [Page 3]
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

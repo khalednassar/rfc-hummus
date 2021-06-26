@@ -1,0 +1,3297 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8847
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-clue-protocol/">
+  <meta name="description" content="Protocol for Controlling Multiple Streams for Telepresence (CLUE) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgyellow"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8847.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8847.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8847.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8847.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8847/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8847/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/clue/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-clue-protocol@ietf.org?subject=draft-ietf-clue-protocol" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-clue-protocol-19.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-clue-protocol-19.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-clue-protocol-19.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-clue-protocol-19">draft-ietf-clue-protocol-19</a>                           Experimental
+                                                        <a class="text-warning" href="/ipr/search/?submit=draft&amp;id=draft-ietf-clue-protocol">IPR declarations</a></pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                         R. Presta
+Request for Comments: 8847                                   S P. Romano
+Category: Experimental                              University of Napoli
+ISSN: 2070-1721                                             January 2021
+
+
+   <span class="h1">Protocol for Controlling Multiple Streams for Telepresence (CLUE)</span>
+
+Abstract
+
+   The Controlling Multiple Streams for Telepresence (CLUE) protocol is
+   an application protocol conceived for the description and negotiation
+   of a telepresence session.  The design of the CLUE protocol takes
+   into account the requirements and the framework defined within the
+   IETF CLUE Working Group.  A companion document, <a href="/doc/html/rfc8848">RFC 8848</a>, delves into
+   CLUE signaling details as well as the SIP / Session Description
+   Protocol (SDP) session establishment phase.  CLUE messages flow over
+   the CLUE data channel, based on reliable and ordered SCTP-over-DTLS
+   transport.  (&quot;SCTP&quot; stands for &quot;Stream Control Transmission
+   Protocol&quot;.)  Message details, together with the behavior of CLUE
+   Participants acting as Media Providers and/or Media Consumers, are
+   herein discussed.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for examination, experimental implementation, and
+   evaluation.
+
+   This document defines an Experimental Protocol for the Internet
+   community.  This document is a product of the Internet Engineering
+   Task Force (IETF).  It represents the consensus of the IETF
+   community.  It has received public review and has been approved for
+   publication by the Internet Engineering Steering Group (IESG).  Not
+   all documents approved by the IESG are candidates for any level of
+   Internet Standard; see <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8847">https://www.rfc-editor.org/info/rfc8847</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Terminology
+   3.  Conventions
+   4.  Overview of the CLUE Protocol
+   5.  Protocol Messages
+     5.1.  &#x27;options&#x27;
+     5.2.  &#x27;optionsResponse&#x27;
+     5.3.  &#x27;advertisement&#x27;
+     5.4.  &#x27;ack&#x27;
+     5.5.  &#x27;configure&#x27;
+     5.6.  &#x27;configureResponse&#x27;
+     5.7.  Response Codes and Reason Strings
+   6.  Protocol State Machines
+     6.1.  Media Provider&#x27;s State Machine
+     6.2.  Media Consumer&#x27;s State Machine
+   7.  Versioning
+   8.  Extensions
+     8.1.  Extension Example
+   9.  XML Schema
+   10. Call Flow Example
+     10.1.  CLUE Message No. 1: &#x27;options&#x27;
+     10.2.  CLUE Message No. 2: &#x27;optionsResponse&#x27;
+     10.3.  CLUE Message No. 3: &#x27;advertisement&#x27;
+     10.4.  CLUE Message No. 4: &#x27;configure+ack&#x27;
+     10.5.  CLUE Message No. 5: &#x27;configureResponse&#x27;
+     10.6.  CLUE Message No. 6: &#x27;advertisement&#x27;
+     10.7.  CLUE Message No. 7: &#x27;ack&#x27;
+     10.8.  CLUE Message No. 8: &#x27;configure&#x27;
+     10.9.  CLUE Message No. 9: &#x27;configureResponse&#x27;
+   11. Security Considerations
+   12. IANA Considerations
+     12.1.  URN Sub-Namespace Registration
+     12.2.  XML Schema Registration
+     12.3.  Media Type Registration for &quot;application/clue+xml&quot;
+     12.4.  CLUE Protocol Registry
+       12.4.1.  CLUE Message Types
+       12.4.2.  CLUE Response Codes
+   13. References
+     13.1.  Normative References
+     13.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Controlling Multiple Streams for Telepresence (CLUE) protocol is
+   an application protocol used by two CLUE Participants to enhance the
+   experience of a multimedia telepresence session.  The main goals of
+   the CLUE protocol are as follows:
+
+   1.  enabling a Media Provider (MP) to properly announce its current
+       telepresence capabilities to a Media Consumer (MC) in terms of
+       available media captures, groups of encodings, simultaneity
+       constraints, and other information defined in [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>].
+
+   2.  enabling an MC to request the desired multimedia streams from the
+       offering MP.
+
+   CLUE-capable endpoints are connected by means of the CLUE data
+   channel -- an SCTP-over-DTLS channel that is opened and established
+   as described in [<a href="/doc/html/rfc8848" title="&quot;Session Signaling for Controlling Multiple Streams for Telepresence (CLUE)&quot;">RFC8848</a>] and [<a href="/doc/html/rfc8850" title="&quot;Controlling Multiple Streams for Telepresence (CLUE) Protocol Data Channel&quot;">RFC8850</a>].  (&quot;SCTP&quot; stands for &quot;Stream
+   Control Transmission Protocol&quot;.)  CLUE protocol messages flowing over
+   such a channel are detailed in this document, both syntactically and
+   semantically.
+
+   In <a href="#section-4">Section 4</a>, we provide a general overview of the CLUE protocol.
+   CLUE protocol messages are detailed in <a href="#section-5">Section 5</a>.  The CLUE protocol
+   state machines are introduced in <a href="#section-6">Section 6</a>.  Versioning and
+   extensions are discussed in Sections <a href="#section-7">7</a> and <a href="#section-8">8</a>, respectively.  The XML
+   schema [<a href="#ref-W3C.REC-xml-20081126">W3C.REC-xml-20081126</a>] defining the CLUE messages is provided
+   in <a href="#section-9">Section 9</a>.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Terminology</span>
+
+   This document refers to terminology that is also used in [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>]
+   and [<a href="/doc/html/rfc7262" title="&quot;Requirements for Telepresence Multistreams&quot;">RFC7262</a>].  For convenience, we list those terms below.  The
+   definition of &quot;CLUE Participant&quot;, as also listed below, originates
+   from this document.
+
+   Capture Encoding:  A specific encoding of a Media Capture, to be sent
+      via RTP [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>].
+
+   CLUE Participant (CP):  An entity able to use the CLUE protocol
+      within a telepresence session.  It can be an endpoint or an MCU
+      (Multipoint Control Unit) able to use the CLUE protocol.
+
+   CLUE-capable device:  A device that (1) supports the CLUE data
+      channel [<a href="/doc/html/rfc8850" title="&quot;Controlling Multiple Streams for Telepresence (CLUE) Protocol Data Channel&quot;">RFC8850</a>], the CLUE protocol, and the principles of CLUE
+      negotiation and (2) seeks CLUE-enabled calls.
+
+   Endpoint:  A CLUE-capable device that is the logical point of final
+      termination through receiving, decoding, and rendering, and/or
+      initiation through the capturing, encoding, and sending of media
+      streams.  An endpoint consists of one or more physical devices
+      that source and sink media streams, and exactly one participant
+      (as described in [<a href="/doc/html/rfc4353" title="&quot;A Framework for Conferencing with the Session Initiation Protocol (SIP)&quot;">RFC4353</a>]) that, in turn, includes exactly one
+      user agent [<a href="/doc/html/rfc3261" title="&quot;SIP: Session Initiation Protocol&quot;">RFC3261</a>].  Endpoints can be anything from multiscreen/
+      multicamera rooms to handheld devices.
+
+   Multipoint Control Unit (MCU):  A CLUE-capable device that connects
+      two or more endpoints together into one single multimedia
+      conference [<a href="/doc/html/rfc7667" title="&quot;RTP Topologies&quot;">RFC7667</a>].  An MCU includes a mixer (as defined in
+      [<a href="/doc/html/rfc4353" title="&quot;A Framework for Conferencing with the Session Initiation Protocol (SIP)&quot;">RFC4353</a>]), without the requirement per [<a href="/doc/html/rfc4353" title="&quot;A Framework for Conferencing with the Session Initiation Protocol (SIP)&quot;">RFC4353</a>] to send media to
+      each participant.
+
+   Media:  Any data that, after suitable encoding, can be conveyed over
+      RTP, including audio, video, or timed text.
+
+   Media Capture:  A source of media -- for example, from one or more
+      Capture Devices or constructed from other Media streams.
+
+   Media Consumer (MC):  A CP (i.e., an Endpoint or an MCU) able to
+      receive Capture Encodings.
+
+   Media Provider (MP):  A CP (i.e., an Endpoint or an MCU) able to send
+      Capture Encodings.
+
+   Stream:  A Capture Encoding sent from an MP to an MC via RTP
+      [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>].
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Conventions</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Overview of the CLUE Protocol</span>
+
+   The CLUE protocol is conceived to enable CLUE telepresence sessions.
+   It is designed to address Session Description Protocol (SDP)
+   limitations in terms of the description of some information about the
+   multimedia streams that are involved in a real-time multimedia
+   conference.  Indeed, by simply using SDP, it is not possible to
+   convey information about the features of the flowing multimedia
+   streams that are needed to enable a &quot;being there&quot; rendering
+   experience.  Such information is contained in the CLUE framework
+   document [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>] and formally defined and described in the CLUE
+   data model document [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>].  The CLUE protocol represents the
+   mechanism for the exchange of telepresence information between CPs.
+   It mainly provides the messages to enable an MP to advertise its
+   telepresence capabilities and to enable an MC to select the desired
+   telepresence options.
+
+   The CLUE protocol, as defined in this document and further described
+   below, is a stateful client-server XML-based application protocol.
+   CLUE protocol messages flow on a reliable and ordered SCTP-over-DTLS
+   transport channel connecting two CPs.  Messages carry information
+   taken from the XML-based CLUE data model [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>].  Three main
+   communication phases can be identified:
+
+   Establishment of the CLUE data channel:
+      In this phase, the CLUE data channel setup takes place.  If it
+      completes successfully, the CPs are able to communicate and start
+      the initiation phase.
+
+   Negotiation of the CLUE protocol version and extensions
+   (initiation phase):
+      The CPs connected via the CLUE data channel agree on the protocol
+      version and extensions to be used during the telepresence session.
+      Special CLUE messages are used for such a task (&#x27;options&#x27; and
+      &#x27;optionsResponse&#x27;).  The negotiation of the version and extensions
+      can be performed once during the CLUE session and only at this
+      stage.  At the end of that basic negotiation, each CP starts its
+      activity as a CLUE MP and/or CLUE MC.
+
+   Description and negotiation of CLUE telepresence capabilities:
+      In this phase, the MP-MC dialogues take place on the data channel
+      by means of the CLUE protocol messages.
+
+   As soon as the channel is ready, the CPs must agree on the protocol
+   version and extensions to be used within the telepresence session.
+   CLUE protocol version numbers are characterized by a major version
+   number and a minor version number, both unsigned integers, separated
+   by a dot.  While minor version numbers denote backward-compatible
+   changes in the context of a given major version, different major
+   version numbers generally indicate a lack of interoperability between
+   the protocol implementations.  In order to correctly establish a CLUE
+   dialogue, the involved CPs must have in common a major version number
+   (see <a href="#section-7">Section 7</a> for further details).  The subset of the extensions
+   that are allowed within the CLUE session is also determined in the
+   initiation phase.  It includes only the extensions that are supported
+   by both parties.  A mechanism for the negotiation of the CLUE
+   protocol version and extensions is part of the initiation phase.
+   According to such a solution, the CP that is the CLUE Channel
+   Initiator (CI) issues a proper CLUE message (&#x27;options&#x27;) to the CP
+   that is the Channel Receiver (CR), specifying the supported version
+   and extensions.  The CR then answers by selecting the subset of the
+   CI extensions that it is able to support and determines the protocol
+   version to be used.
+
+   After the negotiation phase is completed, CPs describe and agree on
+   the media flows to be exchanged.  In many cases, CPs will seek to
+   both transmit and receive media.  Hence, in a call between two CPs
+   (e.g., CPs A and B), there would be two separate message exchange
+   sequences, as follows:
+
+   1.  the one needed to describe and set up the media streams sent from
+       A to B, i.e., the dialogue between A&#x27;s MP side and B&#x27;s MC side.
+
+   2.  the one needed to describe and set up the media streams sent from
+       B to A, i.e., the dialogue between B&#x27;s MP side and A&#x27;s MC side.
+
+   CLUE messages for the media session description and negotiation are
+   designed by considering the MP side to be the server side of the
+   protocol, since it produces and provides media streams, and the MC
+   side as the client side of the protocol, since it requests and
+   receives media streams.  The messages that are exchanged to set up
+   the telepresence media session are described by focusing on a single
+   MP-MC dialogue.
+
+   The MP first advertises its available media captures and encoding
+   capabilities to the MC, as well as its simultaneity constraints,
+   according to the information model defined in [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>].  The CLUE
+   message conveying the MP&#x27;s multimedia offer is the &#x27;advertisement&#x27;
+   message.  Such a message leverages the XML data model definitions
+   provided in [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>].
+
+   The MC selects the desired streams of the MP by using the &#x27;configure&#x27;
+   message, which makes reference to the information carried in the
+   previously received &#x27;advertisement&#x27;.
+
+   Besides &#x27;advertisement&#x27; and &#x27;configure&#x27;, other messages have been
+   conceived in order to provide all needed mechanisms and operations.
+   Such messages are detailed in the following sections.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Protocol Messages</span>
+
+   CLUE protocol messages are textual XML-based messages that enable the
+   configuration of the telepresence session.  The formal definition of
+   such messages is provided in the XML schema in <a href="#section-9">Section 9</a>.  This
+   section includes non-normative excerpts of the schema to aid in
+   describing it.
+
+   The XML definitions of the CLUE information provided in [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>] are
+   included within some CLUE protocol messages (namely the
+   &#x27;advertisement&#x27; and &#x27;configure&#x27; messages), in order to use the
+   concepts defined in [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>].
+
+   The CLUE protocol messages are as follows:
+
+   *  options
+
+   *  optionsResponse
+
+   *  advertisement
+
+   *  ack
+
+   *  configure
+
+   *  configureResponse
+
+   While the &#x27;options&#x27; and &#x27;optionsResponse&#x27; messages are exchanged in
+   the initiation phase between the CPs, the other messages are involved
+   in MP-MC dialogues.  Please note that the word &quot;dialogue&quot; as used in
+   this document is not related to SIP&#x27;s usage of the same term.  It
+   refers to message exchange sequences between a CLUE MP and a Clue MC.
+
+   Each CLUE message inherits a basic structure, as depicted in the
+   following excerpt (Figure 1):
+
+   &lt;xs:complexType name=&quot;clueMessageType&quot; abstract=&quot;true&quot;&gt;
+     &lt;xs:sequence&gt;
+       &lt;xs:element name=&quot;clueId&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot;/&gt;
+       &lt;xs:element name=&quot;sequenceNr&quot; type=&quot;xs:positiveInteger&quot;/&gt;
+     &lt;/xs:sequence&gt;
+     &lt;xs:attribute name=&quot;protocol&quot; type=&quot;xs:string&quot; fixed=&quot;CLUE&quot;
+           use=&quot;required&quot;/&gt;
+     &lt;xs:attribute name=&quot;v&quot; type=&quot;versionType&quot; use=&quot;required&quot;/&gt;
+   &lt;/xs:complexType&gt;
+
+   &lt;!-- VERSION TYPE --&gt;
+   &lt;xs:simpleType name=&quot;versionType&quot;&gt;
+     &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+       &lt;xs:pattern value=&quot;[1-9][0-9]*\.[0-9]+&quot; /&gt;
+     &lt;/xs:restriction&gt;
+   &lt;/xs:simpleType&gt;
+
+                   Figure 1: Structure of a CLUE Message
+
+   The information contained in each CLUE message is as follows:
+
+   clueId:  An optional XML element containing the identifier (in the
+      form of a generic string) of the CP within the telepresence
+      system.
+
+   sequenceNr:  An XML element containing the local message sequence
+      number.  The sender MUST increment the sequence number by one for
+      each new message sent, and the receiver MUST remember the most
+      recent sequence number received and send back a 402 error if it
+      receives a message with an unexpected sequence number (e.g.,
+      sequence number gap, repeated sequence number, sequence number too
+      small).  The initial sequence number can be chosen randomly by
+      each party.
+
+   protocol:  A mandatory attribute set to &quot;CLUE&quot;, identifying the
+      protocol the messages refer to.
+
+   v:  A mandatory attribute carrying the version of the protocol.  The
+      content of the &quot;v&quot; attribute is composed of the major version
+      number followed by a dot and then by the minor version number of
+      the CLUE protocol in use.  The major number cannot be &quot;0&quot;, and if
+      it is more than one digit, it cannot start with a &quot;0&quot;.  Allowed
+      values of this kind are &quot;1.3&quot;, &quot;2.0&quot;, &quot;20.44&quot;, etc.  This document
+      describes version 1.0.
+
+   Each CP is responsible for creating and updating up to three
+   independent streams of sequence numbers in messages it sends: (i) one
+   for the messages sent in the initiation phase, (ii) one for the
+   messages sent as an MP (if it is acting as an MP), and (iii) one for
+   the messages sent as an MC (if it is acting as an MC).
+
+   In particular, CLUE response messages (&#x27;optionsResponse&#x27;, &#x27;ack&#x27;,
+   &#x27;configureResponse&#x27;) derive from a base type, inheriting from the
+   clueMessageType, which is defined as follows (Figure 2):
+
+   &lt;xs:complexType name=&quot;clueResponseType&quot;&gt;
+    &lt;xs:complexContent&gt;
+     &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+      &lt;xs:sequence&gt;
+       &lt;xs:element name=&quot;responseCode&quot; type=&quot;responseCodeType&quot;/&gt;
+       &lt;xs:element name=&quot;reasonString&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot;/&gt;
+      &lt;/xs:sequence&gt;
+     &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+               Figure 2: Structure of CLUE Response Messages
+
+   The elements &lt;responseCode&gt; and &lt;reasonString&gt; are populated as
+   detailed in <a href="#section-5.7">Section 5.7</a>.
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  &#x27;options&#x27;</span>
+
+   The &#x27;options&#x27; message is sent by the CP that is the CI to the CP that
+   is the CR as soon as the CLUE data channel is ready.  Besides the
+   information envisioned in the basic structure, it specifies:
+
+   &lt;mediaProvider&gt;:  A mandatory boolean field set to &quot;true&quot; if the CP
+      is able to act as an MP.
+
+   &lt;mediaConsumer&gt;:  A mandatory boolean field set to &quot;true&quot; if the CP
+      is able to act as an MC.
+
+   &lt;supportedVersions&gt;:  The list of supported versions.
+
+   &lt;supportedExtensions&gt;:  The list of supported extensions.
+
+   The XML schema of such a message is shown below (Figure 3):
+
+   &lt;!-- CLUE OPTIONS --&gt;
+   &lt;xs:complexType name=&quot;optionsMessageType&quot;&gt;
+     &lt;xs:complexContent&gt;
+       &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+         &lt;xs:sequence&gt;
+           &lt;xs:element name=&quot;mediaProvider&quot; type=&quot;xs:boolean&quot; /&gt;
+           &lt;xs:element name=&quot;mediaConsumer&quot; type=&quot;xs:boolean&quot; /&gt;
+           &lt;xs:element name=&quot;supportedVersions&quot; type=&quot;versionsListType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;supportedExtensions&quot;
+                 type=&quot;extensionsListType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+       &lt;/xs:extension&gt;
+     &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+   &lt;!-- VERSIONS LIST TYPE --&gt;
+   &lt;xs:complexType name=&quot;versionsListType&quot;&gt;
+     &lt;xs:sequence&gt;
+       &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot; minOccurs=&quot;1&quot;
+           maxOccurs=&quot;unbounded&quot;/&gt;
+       &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot; minOccurs=&quot;0&quot;/&gt;
+     &lt;/xs:sequence&gt;
+     &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+   &lt;/xs:complexType&gt;
+
+   &lt;!-- EXTENSIONS LIST TYPE --&gt;
+   &lt;xs:complexType name=&quot;extensionsListType&quot;&gt;
+     &lt;xs:sequence&gt;
+       &lt;xs:element name=&quot;extension&quot; type=&quot;extensionType&quot; minOccurs=&quot;1&quot;
+           maxOccurs=&quot;unbounded&quot;/&gt;
+       &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot; minOccurs=&quot;0&quot;/&gt;
+     &lt;/xs:sequence&gt;
+     &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+   &lt;/xs:complexType&gt;
+
+   &lt;!-- EXTENSION TYPE --&gt;
+   &lt;xs:complexType name=&quot;extensionType&quot;&gt;
+     &lt;xs:sequence&gt;
+       &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; /&gt;
+       &lt;xs:element name=&quot;schemaRef&quot; type=&quot;xs:anyURI&quot; /&gt;
+       &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot; /&gt;
+       &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot; minOccurs=&quot;0&quot;/&gt;
+     &lt;/xs:sequence&gt;
+     &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+   &lt;/xs:complexType&gt;
+
+              Figure 3: Structure of a CLUE &#x27;options&#x27; Message
+
+   &lt;supportedVersions&gt; contains the list of versions that are supported
+   by the CI, each one represented in a child &lt;version&gt; element.  The
+   content of each &lt;version&gt; element is a string made of the major
+   version number followed by a dot and then by the minor version number
+   (e.g., 1.3 or 2.4).  Exactly one &lt;version&gt; element MUST be provided
+   for each major version supported, containing the maximum minor
+   version number of such a version, since all minor versions are
+   backward compatible.  If no &lt;supportedVersions&gt; is carried within the
+   &#x27;options&#x27; message, the CI supports only the version declared in the
+   &quot;v&quot; attribute and all the versions having the same major version
+   number and lower minor version number.  For example, if the &quot;v&quot;
+   attribute has a value of &quot;3.4&quot; and there is no &lt;supportedVersions&gt;
+   element in the &#x27;options&#x27; message, it means the CI supports only major
+   version 3 with all minor versions from 3.0 through 3.4.  If
+   &lt;supportedVersions&gt; is provided, at least one &lt;version&gt; element MUST
+   be included.  In this case, the &quot;v&quot; attribute SHOULD be set to the
+   largest minor version of the smallest major version advertised in the
+   &lt;supportedVersions&gt; list.  Indeed, the intention behind the &quot;v&quot;
+   attribute is that some implementation that receives a version number
+   in the &quot;v&quot; field with a major number higher than it understands is
+   supposed to close the connection, since it runs a risk of
+   misinterpreting the contents of messages.  The minor version is less
+   useful in this context, since minor versions are defined to be both
+   backward and forward compatible and the value can in any case be
+   parsed out of the &lt;version&gt; list.  It is more useful to know the
+   highest minor version supported than some random minor version, as it
+   indicates the full feature set that is supported.
+
+   The &lt;supportedExtensions&gt; element specifies the list of extensions
+   supported by the CI.  If there is no &lt;supportedExtensions&gt; in the
+   &#x27;options&#x27; message, the CI does not support anything other than what
+   is envisioned in the versions it supports.  For each extension, an
+   &lt;extension&gt; element is provided.  An extension is characterized by a
+   name, an XML schema of reference where the extension is defined, and
+   the version of the protocol that the extension refers to.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  &#x27;optionsResponse&#x27;</span>
+
+   The &#x27;optionsResponse&#x27; (Figure 4) is sent by a CR to a CI as a reply
+   to the &#x27;options&#x27; message.  The &#x27;optionsResponse&#x27; contains a mandatory
+   response code and a reason string indicating the processing result of
+   the &#x27;options&#x27; message.  If the responseCode is between 200 and 299
+   inclusive, the response MUST also include &lt;mediaProvider&gt;,
+   &lt;mediaConsumer&gt;, &lt;version&gt;, and &lt;commonExtensions&gt; elements; it MAY
+   include them for any other response code.  &lt;mediaProvider&gt; and
+   &lt;mediaConsumer&gt; elements (which are of a boolean nature) are
+   associated with the supported roles (in terms of the MP and the MC,
+   respectively), similarly to what the CI does in the &#x27;options&#x27;
+   message.  The &lt;version&gt; element indicates the highest commonly
+   supported version number.  The content of the &lt;version&gt; element MUST
+   be a string made of the major version number followed by a dot and
+   then by the minor version number (e.g., 1.3 or 2.4).  Finally, the
+   commonly supported extensions are copied in the &lt;commonExtensions&gt;
+   element.
+
+   &lt;!-- CLUE &#x27;optionsResponse&#x27; --&gt;
+   &lt;xs:complexType name=&quot;optionsResponseMessageType&quot;&gt;
+     &lt;xs:complexContent&gt;
+       &lt;xs:extension base=&quot;clueResponseType&quot;&gt;
+         &lt;xs:sequence&gt;
+           &lt;xs:element name=&quot;mediaProvider&quot; type=&quot;xs:boolean&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;mediaConsumer&quot; type=&quot;xs:boolean&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot; minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;commonExtensions&quot; type=&quot;extensionsListType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+       &lt;/xs:extension&gt;
+     &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+          Figure 4: Structure of a CLUE &#x27;optionsResponse&#x27; Message
+
+   Upon reception of the &#x27;optionsResponse&#x27;, the version to be used is
+   the one provided in the &lt;version&gt; element of the message.  The
+   subsequent CLUE messages MUST use such a version number in the &quot;v&quot;
+   attribute.  The allowed extensions in the CLUE dialogue are those
+   indicated in the &lt;commonExtensions&gt; element of the &#x27;optionsResponse&#x27;
+   message.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  &#x27;advertisement&#x27;</span>
+
+   The &#x27;advertisement&#x27; message is used by each MP to advertise the
+   available media captures and related information to the corresponding
+   MC.  The MP sends an &#x27;advertisement&#x27; to the MC as soon as it is ready
+   after the successful completion of the initiation phase, i.e., as
+   soon as the CPs have agreed on the version and extensions of the CLUE
+   protocol.  During a single CLUE session, an MP may send new
+   &#x27;advertisement&#x27; messages to replace the previous advertisement if,
+   for instance, its CLUE telepresence media capabilities change
+   mid-call.  A new &#x27;advertisement&#x27; completely replaces the previous
+   &#x27;advertisement&#x27;.
+
+   The &#x27;advertisement&#x27; structure is defined in the schema excerpt below
+   (Figure 5).  The &#x27;advertisement&#x27; contains elements compliant with the
+   CLUE data model that characterize the MP&#x27;s telepresence offer.
+   Namely, such elements are the list of
+
+   *  media captures (&lt;mediaCaptures&gt;),
+
+   *  encoding groups (&lt;encodingGroups&gt;),
+
+   *  capture scenes (&lt;captureScenes&gt;),
+
+   *  simultaneous sets (&lt;simultaneousSets&gt;),
+
+   *  global views (&lt;globalViews&gt;), and
+
+   *  represented participants (&lt;people&gt;).
+
+   Each of them is fully described in the CLUE framework document
+   [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>] and formally defined in the CLUE data model document
+   [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>].
+
+   &lt;!-- CLUE ADVERTISEMENT MESSAGE TYPE --&gt;
+   &lt;xs:complexType name=&quot;advertisementMessageType&quot;&gt;
+     &lt;xs:complexContent&gt;
+       &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+         &lt;xs:sequence&gt;
+           &lt;!-- mandatory --&gt;
+           &lt;xs:element name=&quot;mediaCaptures&quot;
+                 type=&quot;dm:mediaCapturesType&quot;/&gt;
+           &lt;xs:element name=&quot;encodingGroups&quot;
+                 type=&quot;dm:encodingGroupsType&quot;/&gt;
+           &lt;xs:element name=&quot;captureScenes&quot;
+                 type=&quot;dm:captureScenesType&quot;/&gt;
+           &lt;!-- optional --&gt;
+           &lt;xs:element name=&quot;simultaneousSets&quot;
+                 type=&quot;dm:simultaneousSetsType&quot; minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;globalViews&quot; type=&quot;dm:globalViewsType&quot;
+                 minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;people&quot;
+                 type=&quot;dm:peopleType&quot; minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                 minOccurs=&quot;0&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+       &lt;/xs:extension&gt;
+     &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+           Figure 5: Structure of a CLUE &#x27;advertisement&#x27; Message
+
+<span class="h3"><a class="selflink" id="section-5.4" href="#section-5.4">5.4</a>.  &#x27;ack&#x27;</span>
+
+   The &#x27;ack&#x27; message is sent by an MC to an MP to acknowledge an
+   &#x27;advertisement&#x27; message.  As can be seen from the message schema
+   provided in the following excerpt (Figure 6), the &#x27;ack&#x27; contains a
+   response code and may contain a reason string for describing the
+   processing result of the &#x27;advertisement&#x27;.  The &lt;advSequenceNr&gt;
+   element carries the sequence number of the &#x27;advertisement&#x27; message
+   the &#x27;ack&#x27; refers to.
+
+   &lt;!-- &#x27;ack&#x27; MESSAGE TYPE --&gt;
+   &lt;xs:complexType name=&quot;advAcknowledgementMessageType&quot;&gt;
+     &lt;xs:complexContent&gt;
+       &lt;xs:extension base=&quot;clueResponseType&quot;&gt;
+         &lt;xs:sequence&gt;
+           &lt;xs:element name=&quot;advSequenceNr&quot; type=&quot;xs:positiveInteger&quot;/&gt;
+           &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+       &lt;/xs:extension&gt;
+     &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+                Figure 6: Structure of a CLUE &#x27;ack&#x27; Message
+
+<span class="h3"><a class="selflink" id="section-5.5" href="#section-5.5">5.5</a>.  &#x27;configure&#x27;</span>
+
+   The &#x27;configure&#x27; message is sent from an MC to an MP to list the
+   advertised captures the MC wants to receive.  The MC MUST send a
+   &#x27;configure&#x27; after the reception of an &#x27;advertisement&#x27;, as well as
+   each time it wants to request other captures that have been
+   previously advertised by the MP.  The content of the &#x27;configure&#x27;
+   message is shown below (Figure 7).
+
+   &lt;!-- CLUE &#x27;configure&#x27; MESSAGE TYPE --&gt;
+   &lt;xs:complexType name=&quot;configureMessageType&quot;&gt;
+     &lt;xs:complexContent&gt;
+       &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+         &lt;xs:sequence&gt;
+           &lt;!-- mandatory fields --&gt;
+           &lt;xs:element name=&quot;advSequenceNr&quot; type=&quot;xs:positiveInteger&quot;/&gt;
+           &lt;xs:element name=&quot;ack&quot; type=&quot;successResponseCodeType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:element name=&quot;captureEncodings&quot;
+                   type=&quot;dm:captureEncodingsType&quot; minOccurs=&quot;0&quot;/&gt;
+           &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+       &lt;/xs:extension&gt;
+     &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+             Figure 7: Structure of a CLUE &#x27;configure&#x27; Message
+
+   The &lt;advSequenceNr&gt; element contains the sequence number of the
+   &#x27;advertisement&#x27; message the &#x27;configure&#x27; refers to.
+
+   The optional &lt;ack&gt; element, when present, contains a success response
+   code, as defined in <a href="#section-5.7">Section 5.7</a>.  It indicates that the &#x27;configure&#x27;
+   message also acknowledges with success the referred advertisement
+   (&#x27;configure+ack&#x27; message).  The &lt;ack&gt; element MUST NOT be present if
+   an &#x27;ack&#x27; message (associated with the advertisement carrying that
+   specific sequence number) has already been sent back to the MP.
+
+   The most important content of the &#x27;configure&#x27; message is the list of
+   capture encodings provided in the &lt;captureEncodings&gt; element (see
+   [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>] for the definition of &lt;captureEncodings&gt;).  Such an element
+   contains a sequence of capture encodings, representing the streams to
+   be instantiated.
+
+<span class="h3"><a class="selflink" id="section-5.6" href="#section-5.6">5.6</a>.  &#x27;configureResponse&#x27;</span>
+
+   The &#x27;configureResponse&#x27; message is sent from the MP to the MC to
+   communicate the processing result of requests carried in the
+   previously received &#x27;configure&#x27; message.  As shown in Figure 8, it
+   contains a response code (and, optionally, a reason string)
+   indicating either the success or failure (along with failure details)
+   of the &#x27;configure&#x27; request processing.  The &lt;confSequenceNr&gt; element
+   that follows contains the sequence number of the &#x27;configure&#x27; message
+   the response refers to.  There is no partial execution of commands.
+   As an example, if an MP is able to understand all the selected
+   capture encodings except one, then the whole command fails and
+   nothing is instantiated.
+
+   &lt;!-- &#x27;configureResponse&#x27; MESSAGE TYPE --&gt;
+   &lt;xs:complexType name=&quot;configureResponseMessageType&quot;&gt;
+     &lt;xs:complexContent&gt;
+       &lt;xs:extension base=&quot;clueResponseType&quot;&gt;
+         &lt;xs:sequence&gt;
+           &lt;xs:element name=&quot;confSequenceNr&quot;
+                 type=&quot;xs:positiveInteger&quot; /&gt;
+           &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                 minOccurs=&quot;0&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot; /&gt;
+       &lt;/xs:extension&gt;
+     &lt;/xs:complexContent&gt;
+   &lt;/xs:complexType&gt;
+
+         Figure 8: Structure of a CLUE &#x27;configureResponse&#x27; Message
+
+<span class="h3"><a class="selflink" id="section-5.7" href="#section-5.7">5.7</a>.  Response Codes and Reason Strings</span>
+
+   Response codes are defined as a sequence of three digits.  A well-
+   defined meaning is associated with the first digit.  Response codes
+   beginning with &quot;2&quot; are associated with successful responses.
+   Response codes that do not begin with either &quot;2&quot; or &quot;1&quot; indicate an
+   error response, i.e., that an error occurred while processing a CLUE
+   request.  In particular, response codes beginning with &quot;3&quot; indicate
+   problems with the XML content of the message (&quot;Bad syntax&quot;, &quot;Invalid
+   value&quot;, etc.), while response codes beginning with &quot;4&quot; refer to
+   problems related to CLUE protocol semantics (&quot;Invalid sequencing&quot;,
+   &quot;Version not supported&quot;, etc.).  200, 300, and 400 codes are the most
+   generic codes in their respective categories.  Further response codes
+   can be defined either in future versions of the protocol or by
+   leveraging the extension mechanism.  In both cases, the new response
+   codes MUST be registered with IANA.  Such new response codes MUST NOT
+   override the codes defined in this document, and they MUST respect
+   the semantics of the first code digit.
+
+   This document does not define response codes starting with &quot;1&quot;, and
+   such response codes are not allowed to appear in major version 1 of
+   the CLUE protocol.  The range from 100 to 199 inclusive is reserved
+   for future major versions of the protocol to define response codes
+   for delayed or incomplete operations, if necessary.  Response codes
+   starting with &quot;5&quot; through &quot;9&quot; are reserved for future major versions
+   of the protocol to define new classes of responses and are not
+   allowed in major version 1 of the CLUE protocol.  Response codes
+   starting with &quot;0&quot; are not allowed.
+
+   The response codes and reason strings defined for use with version 1
+   of the CLUE protocol are listed in Table 1.  The &quot;Description&quot; text
+   contained in the table can be sent in the &lt;reasonString&gt; element of a
+   response message.  Implementations can (and are encouraged to)
+   include descriptions of the error condition that are more specific,
+   if possible.
+
+   +==========+===============+========================================+
+   | Response | Reason String |              Description               |
+   | Code     |               |                                        |
+   +==========+===============+========================================+
+   | 200      | Success       | The request has been                   |
+   |          |               | successfully processed.                |
+   +----------+---------------+----------------------------------------+
+   | 300      | Low-level     | A generic low-level request            |
+   |          | request error | error has occurred.                    |
+   +----------+---------------+----------------------------------------+
+   | 301      | Bad syntax    | The XML syntax of the message          |
+   |          |               | is not correct.                        |
+   +----------+---------------+----------------------------------------+
+   | 302      | Invalid value | The message contains an                |
+   |          |               | invalid parameter value.               |
+   +----------+---------------+----------------------------------------+
+   | 303      | Conflicting   | The message contains values            |
+   |          | values        | that cannot be used together.          |
+   +----------+---------------+----------------------------------------+
+   | 400      | Semantic      | The received CLUE protocol             |
+   |          | errors        | message contains semantic              |
+   |          |               | errors.                                |
+   +----------+---------------+----------------------------------------+
+   | 401      | Version not   | The protocol version used in           |
+   |          | supported     | the message is not supported.          |
+   +----------+---------------+----------------------------------------+
+   | 402      | Invalid       | The received message contains          |
+   |          | sequencing    | an unexpected sequence number          |
+   |          |               | (e.g., sequence number gap,            |
+   |          |               | repeated sequence number, or           |
+   |          |               | sequence number outdated).             |
+   +----------+---------------+----------------------------------------+
+   | 403      | Invalid       | The clueId used in the                 |
+   |          | identifier    | message is invalid or                  |
+   |          |               | unknown.                               |
+   +----------+---------------+----------------------------------------+
+   | 404      | Advertisement | The sequence number of the             |
+   |          | expired       | advertisement the &#x27;configure&#x27;          |
+   |          |               | message refers to is out of            |
+   |          |               | date.                                  |
+   +----------+---------------+----------------------------------------+
+   | 405      | Subset choice | The subset choice is not               |
+   |          | not allowed   | allowed for the specified              |
+   |          |               | Multiple Content Capture.              |
+   +----------+---------------+----------------------------------------+
+
+                        Table 1: CLUE Response Codes
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Protocol State Machines</span>
+
+   The CLUE protocol is an application protocol used between two CPs in
+   order to properly configure a multimedia telepresence session.  CLUE
+   protocol messages flow over the CLUE data channel, an SCTP-over-DTLS
+   channel established as depicted in [<a href="/doc/html/rfc8850" title="&quot;Controlling Multiple Streams for Telepresence (CLUE) Protocol Data Channel&quot;">RFC8850</a>].  We herein discuss the
+   state machines associated with the CP (Figure 9), the MP role
+   (Figure 10 in <a href="#section-6.1">Section 6.1</a>), and the MC role (Figure 11 in
+   <a href="#section-6.2">Section 6.2</a>), respectively.  Endpoints often wish to both send and
+   receive media, i.e., act as both an MP and an MC.  As such, there
+   will often be two sets of messages flowing in opposite directions;
+   the state machines of these two flows do not interact with each
+   other.  Only the CLUE application logic is considered.  The
+   interaction of CLUE protocol and SDP negotiations for the media
+   streams exchanged is discussed in [<a href="/doc/html/rfc8848" title="&quot;Session Signaling for Controlling Multiple Streams for Telepresence (CLUE)&quot;">RFC8848</a>].
+
+                               +----+
+       +----------------------&gt;|IDLE|&lt;----------------------------+
+       |                       +-+--+                             |
+       |                         |                                |
+       |                         |  start                         |
+       |                         |  channel                       |
+       |                         v                                |
+       |  channel error /     +--------+                          |
+       |  session ends        | CHANNEL|                          |
+       +----------------------+ SETUP  |                          |
+       |                      +--+-----+                          |
+       |                         |                                |
+       |                         |  channel                       |
+       |                         |  established                   |
+       |  channel error /        v                 OPTIONS phase  |
+       |  session ends         +-------+           failure        |
+       +-----------------------+OPTIONS+--------------------------+
+       |                       +-+-----+
+       |                         |
+       |                         |  OPTIONS phase
+       |                         |  success
+       |                         v
+       |   channel error /    +---------+
+       |   session ends       | ACTIVE  |
+       +----------------------+         |
+                              | +----+  +------------------+
+                              | | MP |  |    send/receive  |
+                              | +----+  |    CLUE messages |
+                              |         |&lt;-----------------+
+                              | +----+  |
+                              | | MC |  |
+                              | +----+  |
+                              |         |
+                              +---------+
+
+                  Figure 9: CLUE Participant State Machine
+
+   The main state machines focus on the behavior of the CP acting as a
+   CLUE CI/CR.
+
+   The initial state is the IDLE state.  When in the IDLE state, the
+   CLUE data channel is not established and no CLUE-controlled media are
+   exchanged between the two CLUE-capable devices in question (if there
+   is an ongoing exchange of media streams, such media streams are not
+   currently CLUE controlled).
+
+   When the CLUE data channel is set up (&quot;start channel&quot;), the CP moves
+   from the IDLE state to the CHANNEL SETUP state.
+
+   If the CLUE data channel is successfully set up (&quot;channel
+   established&quot;), the CP moves from the CHANNEL SETUP state to the
+   OPTIONS state.  Otherwise, if a &quot;channel error&quot; occurs, it moves back
+   to the IDLE state.  The same transition happens if the CLUE-enabled
+   telepresence session ends (&quot;session ends&quot;), i.e., when an SDP
+   negotiation for removing the CLUE data channel is performed.
+
+   When in the OPTIONS state, the CP addresses the initiation phase
+   where both parts agree on the version and extensions to be used in
+   the subsequent CLUE message exchange phase.  If the CP is the CI, it
+   sends an &#x27;options&#x27; message and waits for the &#x27;optionsResponse&#x27;
+   message.  If the CP is the CR, it waits for the &#x27;options&#x27; message
+   and, as soon as it arrives, replies with the &#x27;optionsResponse&#x27;
+   message.  If the negotiation is successfully completed (&quot;OPTIONS
+   phase success&quot;), the CP moves from the OPTIONS state to the ACTIVE
+   state.  If the initiation phase fails (&quot;OPTIONS phase failure&quot;), the
+   CP moves from the OPTIONS state to the IDLE state.  The initiation
+   phase might fail for one of the following reasons:
+
+   1.  The CI receives an &#x27;optionsResponse&#x27; with an error response code.
+
+   2.  The CI does not receive any &#x27;optionsResponse&#x27;, and a timeout
+       error is raised.
+
+   3.  The CR does not receive any &#x27;options&#x27;, and a timeout error is
+       raised.
+
+   When in the ACTIVE state, the CP starts the envisioned sub-state
+   machines (i.e., the MP state machine and the MC state machine)
+   according to the roles it plays in the telepresence sessions.  Such
+   roles have been previously declared in the &#x27;options&#x27; and
+   &#x27;optionsResponse&#x27; messages involved in the initiation phase (see
+   Sections <a href="#section-5.1">5.1</a> and <a href="#section-5.2">5.2</a> for details).  When in the ACTIVE state, the CP
+   delegates the sending and processing of the CLUE messages to the
+   appropriate MP/MC sub-state machines.  If the CP receives a further
+   &#x27;options&#x27;/&#x27;optionsResponse&#x27; message, it MUST ignore the message and
+   stay in the ACTIVE state.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Media Provider&#x27;s State Machine</span>
+
+   As soon as the sub-state machine of the MP (Figure 10) is activated,
+   it is in the ADV state.  In the ADV state, the MP prepares the
+   &#x27;advertisement&#x27; message reflecting its actual telepresence
+   capabilities.
+
+                             +-----+
+               +------------&gt;| ADV |&lt;-------------------+
+               |             +-+---+                    |
+               |  advertisement|       NACK received    |
+               |           sent|                        |
+               |               v                        |
+        changed|             +--------+                 |
+   telepresence+-------------+WAIT FOR+-----------------+
+       settings|  +----------+  ACK   |
+               |  |configure +-+------+
+               |  |  +ack      |
+               |  |received    |ack received
+               |  |            v
+               |  |          +--------+
+               +-------------+WAIT FOR|
+               |  |          |  CONF  |
+               |  |          +-+------+&lt;-----------------------------+
+               |  |            |                                     |
+               |  |            |configure received                   |
+               |  |            v                                     |
+               |  +---------&gt;+---------+ error configureResponse sent|
+               +-------------+CONF     |-----------------------------+
+               |  +---------&gt;|RESPONSE +
+               |  |          +---------+
+               |  |              |
+               |  |              |successful
+               |  |              |configureResponse
+               |  |              |sent
+               |  |              |
+               |  |              |
+               |  |configure     |
+               |  |received      v
+               |  |          +-----------+
+               |  +----------+ESTABLISHED|
+               +-------------+-----------+
+
+                 Figure 10: Media Provider&#x27;s State Machine
+
+   After the &#x27;advertisement&#x27; has been sent (&quot;advertisement sent&quot;), the
+   MP moves from the ADV state to the WAIT FOR ACK state.  If an &#x27;ack&#x27;
+   message with a successful response code arrives (&quot;ack received&quot;), the
+   MP moves to the WAIT FOR CONF state.  If a NACK arrives (i.e., an
+   &#x27;ack&#x27; message with an error response code), the MP moves back to the
+   ADV state for preparation of a new &#x27;advertisement&#x27;.  When in the WAIT
+   FOR ACK state, if a &#x27;configure&#x27; message with the &lt;ack&gt; element set to
+   &quot;200&quot; arrives (&quot;configure+ack received&quot;), the MP goes directly to the
+   CONF RESPONSE state.  &#x27;configure+ack&#x27; messages referring to out-of-
+   date (i.e., having a sequence number less than the highest generated
+   so far) advertisements MUST be ignored, i.e., they do not trigger any
+   state transition.  If the telepresence settings of the MP change
+   while in the WAIT FOR ACK state (&quot;changed telepresence settings&quot;),
+   the MP switches from the WAIT FOR ACK state to the ADV state to
+   create a new &#x27;advertisement&#x27;.
+
+   When in the WAIT FOR CONF state, the MP listens to the channel for a
+   &#x27;configure&#x27; request coming from the MC.  When a &#x27;configure&#x27; arrives
+   (&quot;configure received&quot;), the MP switches to the CONF RESPONSE state.
+   If the telepresence settings change in the meantime (&quot;changed
+   telepresence settings&quot;), the MP moves from the WAIT FOR CONF state
+   back to the ADV state to create the new &#x27;advertisement&#x27; to be sent to
+   the MC.
+
+   The MP in the CONF RESPONSE state processes the received &#x27;configure&#x27;
+   in order to produce a &#x27;configureResponse&#x27; message.  If the MP
+   successfully processes the MC&#x27;s configuration, then it sends a 200
+   &#x27;configureResponse&#x27; (&quot;successful configureResponse sent&quot;) and moves
+   to the ESTABLISHED state.  If there are errors in the &#x27;configure&#x27;
+   processing, then the MP issues a &#x27;configureResponse&#x27; carrying an
+   error response code and goes back to the WAIT FOR CONF state to wait
+   for a new configuration request.  Finally, if there are changes in
+   the MP&#x27;s telepresence settings (&quot;changed telepresence settings&quot;), the
+   MP switches to the ADV state.
+
+   The MP in the ESTABLISHED state has successfully negotiated the media
+   streams with the MC by means of the CLUE messages.  If there are
+   changes in the MP&#x27;s telepresence settings (&quot;changed telepresence
+   settings&quot;), the MP moves back to the ADV state.  In the ESTABLISHED
+   state, the CLUE-controlled media streams of the session are those
+   described in the last successfully processed &#x27;configure&#x27; message.
+
+   Messages not shown for a state do not cause the state to change.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Media Consumer&#x27;s State Machine</span>
+
+   As soon as the sub-state machine of the MC (Figure 11) is activated,
+   it is in the WAIT FOR ADV state.  An MC in the WAIT FOR ADV state is
+   waiting for an &#x27;advertisement&#x27; coming from the MP.  If the
+   &#x27;advertisement&#x27; arrives (&quot;ADV received&quot;), the MC moves to the ADV
+   PROCESSING state.  Otherwise, the MC stays in the WAIT FOR ADV state.
+
+                         +----------+
+                         | WAIT FOR |
+                         |   ADV    |
+                         +----+-----+&lt;--------+
+                              |               |
+                 advertisement|      NACK sent|
+                      received|               |
+                              v               |
+                         +-----------+--------+
+                         |  ADV      +
+                         | PROCESSING|&lt;-----------------------+
+                         +-+-----+---+                        |
+                           |     |                            |
+            configure+ack  |     |  ack                       |
+                   sent    |     |  sent                      |
+                           |     v                            |
+                           |  +-----+                         |
+                           |  |CONF |  advertisement received |
+     +-----------------------&gt;|     +-------------------------+
+     |error                |  +--+--+                         |
+     |configureResponse    |     |                            |
+     |received             |     |configure                   |
+     |                     |     |sent                        |
+     |                     |     |                            |
+     |                     v     v              advertisement |
+     +------------------+---------------+            received |
+             +---------&gt;|   WAIT FOR    +---------------------+
+             |          |  CONF RESPONSE+                     |
+             |          +-------+-------+                     |
+             |                  |                             |
+             |                  |                             |
+             |                  |successful                   |
+             |                  |configureResponse            |
+             |                  |received                     |
+             |configure         v                             |
+             |sent        +-----------+ advertisement received|
+             +------------+ESTABLISHED+-----------------------+
+                          +-----------+
+
+                 Figure 11: Media Consumer&#x27;s State Machine
+
+   In the ADV PROCESSING state, the &#x27;advertisement&#x27; is parsed by the MC.
+   If the &#x27;advertisement&#x27; is successfully processed, two scenarios are
+   possible.  In the first case, the MC issues a successful &#x27;ack&#x27;
+   message to the MP (&quot;ack sent&quot;) and moves to the CONF state.  This
+   typically happens when the MC needs some more time to produce the
+   &#x27;configure&#x27; message associated with the received &#x27;advertisement&#x27;.  In
+   the latter case, the MC is able to immediately prepare and send back
+   to the MP a &#x27;configure&#x27; message.  Such a message will have the &lt;ack&gt;
+   element set to &quot;200&quot; (&quot;configure+ack sent&quot;) and will allow the MC to
+   move directly to the WAIT FOR CONF RESPONSE state.
+
+   If the processing of the &#x27;advertisement&#x27; is unsuccessful (bad syntax,
+   missing XML elements, etc.), the MC sends a NACK message (i.e., an
+   &#x27;ack&#x27; with an error response code) to the MP and, optionally, further
+   describes the problem via a proper reason phrase.  In this scenario
+   (&quot;NACK sent&quot;), the MC switches back to the WAIT FOR ADV state and
+   waits for a new &#x27;advertisement&#x27;.
+
+   When in the CONF state, the MC prepares the &#x27;configure&#x27; request to be
+   issued to the MP on the basis of the previously acked
+   &#x27;advertisement&#x27;.  When the &#x27;configure&#x27; has been sent (&quot;configure
+   sent&quot;), the MC moves to the WAIT FOR CONF RESPONSE state.  If a new
+   &#x27;advertisement&#x27; arrives in the meantime (&quot;advertisement received&quot;),
+   the MC goes back to the ADV PROCESSING state.
+
+   In the WAIT FOR CONF RESPONSE state, the MC waits for the MP&#x27;s
+   response to the issued &#x27;configure&#x27; or &#x27;configure+ack&#x27;.  If a 200
+   &#x27;configureResponse&#x27; message is received (&quot;successful
+   configureResponse received&quot;), it means that the MP and the MC have
+   successfully agreed on the media streams to be shared.  Then, the MC
+   can move to the ESTABLISHED state.  On the other hand, if an error
+   response is received (&quot;error configureResponse received&quot;), the MC
+   moves back to the CONF state to prepare a new &#x27;configure&#x27; request.
+   If a new &#x27;advertisement&#x27; is received in the WAIT FOR CONF RESPONSE
+   state, the MC switches to the ADV PROCESSING state.
+
+   When the MC is in the ESTABLISHED state, the telepresence session
+   configuration has been set up at the CLUE application level according
+   to the MC&#x27;s preferences.  Both the MP and the MC have agreed on (and
+   are aware of) the CLUE-controlled media streams to be exchanged
+   within the call.  While in the ESTABLISHED state, the MC might decide
+   to change something in the call settings; in this case, the MC then
+   issues a new &#x27;configure&#x27; (&quot;configure sent&quot;) and moves to the WAIT FOR
+   CONF RESPONSE state to wait for the new &#x27;configureResponse&#x27;.  On the
+   other hand, if the MC is in the ESTABLISHED state and a new
+   &#x27;advertisement&#x27; (&quot;advertisement received&quot;) arrives from the MP, it
+   means that something has changed on the MP&#x27;s side; the MC then moves
+   to the ADV PROCESSING state.
+
+   Messages not shown for a state do not cause the state to change.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Versioning</span>
+
+   CLUE protocol messages are XML messages compliant to the CLUE
+   protocol XML schema [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>].  The version of the protocol
+   corresponds to the version of the schema.  Both the client and the
+   server have to test the compliance of the received messages with the
+   XML schema of the CLUE protocol.  If the compliance is not verified,
+   the message cannot be processed further.
+
+   The client and server cannot communicate if they do not share exactly
+   the same XML schema.  Such a schema is associated with the CLUE URN
+   &quot;urn:ietf:params:xml:ns:clue-protocol&quot;.  If all CLUE-enabled devices
+   use that schema, there will be no interoperability problems due to
+   schema issues.
+
+   This document defines version 1.0 of the CLUE protocol schema, using
+   XML schema version 1.0 [<a href="#ref-W3C.REC-xml-20081126">W3C.REC-xml-20081126</a>].  The version usage is
+   similar in philosophy to the Extensible Messaging and Presence
+   Protocol (XMPP) [<a href="/doc/html/rfc6120" title="&quot;Extensible Messaging and Presence Protocol (XMPP): Core&quot;">RFC6120</a>].  A version number has major and minor
+   components, each a non-negative integer.  Changes to the major
+   version denote non-interoperable changes.  Changes to the minor
+   version denote schema changes that are backward compatible by
+   ignoring unknown XML elements or other backward-compatible changes.
+
+   The minor versions of the XML schema MUST be backward compatible, not
+   only in terms of the schema but semantically and procedurally as
+   well.  This means that they should define further features and
+   functionality besides those defined in the previous versions, in an
+   incremental way, without impacting the basic rules defined in the
+   previous version of the schema.  In this way, if an MP is able to
+   &quot;speak&quot;, for example, version 1.5 of the protocol while the MC only
+   understands version 1.4, the MP should have no problem in reverting
+   the dialogue back to version 1.4 without exploiting 1.5 features and
+   functionality.  Version 1.4 is the one to be spoken and has to appear
+   in the &quot;v&quot; attribute of the subsequent CLUE messages.  In other
+   words, in this example, the MP MUST use version 1.4.  That said, and
+   in keeping with the general IETF protocol &quot;robustness principle&quot;
+   stating that an implementation must be conservative in its sending
+   behavior and liberal in its receiving behavior [<a href="/doc/html/rfc1122" title="&quot;Requirements for Internet Hosts - Communication Layers&quot;">RFC1122</a>], CPs MUST
+   ignore unknown elements or attributes that are not envisioned in the
+   negotiated protocol version and related extensions.
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Extensions</span>
+
+   Although the standard version of the CLUE protocol XML schema is
+   designed to thoroughly cope with the requirements emerging from the
+   application domain, new needs might arise, and new extensions can
+   then be designed.  Extensions specify information and behaviors that
+   are not described in a certain version of the protocol and specified
+   in the related RFC document.  Such information and behaviors can be
+   optionally used in a CLUE dialogue and MUST be negotiated in the CLUE
+   initiation phase.  They can relate to:
+
+   1.  new information, to be carried in the existing messages.  For
+       example, more fields may be added within an existing message.
+
+   2.  new messages.  This is the case if there is no proper message for
+       a certain task, so a brand new CLUE message needs to be defined.
+
+   As to the first category of extensions, it is possible to distinguish
+   between protocol-specific and data model information.  Indeed, CLUE
+   messages are envelopes carrying both of the following:
+
+   1.  XML elements defined within the CLUE protocol XML schema itself
+       (protocol-specific information).
+
+   2.  other XML elements compliant to the CLUE data model schema (data
+       model information).
+
+   When new protocol-specific information is needed somewhere in the
+   protocol messages, it can be added in place of the &lt;any&gt; elements and
+   &lt;anyAttribute&gt; elements envisioned by the protocol schema.  The
+   policy currently defined in the protocol schema for handling &lt;any&gt;
+   and &lt;anyAttribute&gt; elements is as follows:
+
+   *  elementFormDefault=&quot;qualified&quot;
+
+   *  attributeFormDefault=&quot;unqualified&quot;
+
+   The new information must be qualified by namespaces other than
+   &quot;urn:ietf:params:xml:ns:clue-protocol&quot; (the protocol URN) and
+   &quot;urn:ietf:params:xml:ns:clue-info&quot; (the data model URN).  Elements or
+   attributes from unknown namespaces MUST be ignored.
+
+   The other matter concerns data model information.  Data model
+   information is defined by the XML schema associated with the URN
+   &quot;urn:ietf:params:xml:ns:clue-info&quot;.  Note that there are also
+   extensibility issues for the XML elements defined in such a schema.
+   Those issues are overcome by using &lt;any&gt; and &lt;anyAttribute&gt;
+   placeholders.  New information within data model elements can be
+   added in place of &lt;any&gt; and &lt;anyAttribute&gt; schema elements, as long
+   as they are properly namespace qualified.
+
+   On the other hand (the second category of extensions), &quot;extra&quot; CLUE
+   protocol messages, i.e., messages not envisioned in the latest
+   standard version of the schema, might be needed.  In that case, the
+   messages and the associated behavior should be defined in external
+   documents that both communication parties must be aware of.
+
+   As shown in Figure 12, the fields of the &lt;extension&gt; element (either
+   new information or new messages) take the following values:
+
+   *  a name.
+
+   *  an external XML schema defining the XML information and/or the XML
+      messages representing the extension.
+
+   *  the major standard version of the protocol that the extension
+      refers to.
+
+     &lt;xs:complexType name=&quot;extensionType&quot;&gt;
+       &lt;xs:sequence&gt;
+         &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; /&gt;
+         &lt;xs:element name=&quot;schemaRef&quot; type=&quot;xs:anyURI&quot;/&gt;
+         &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot;/&gt;
+         &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+               minOccurs=&quot;0&quot;/&gt;
+       &lt;/xs:sequence&gt;
+       &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+     &lt;/xs:complexType&gt;
+
+                     Figure 12: The &lt;extension&gt; Element
+
+   The above-described &lt;extension&gt; element is carried within the
+   &#x27;options&#x27; and &#x27;optionsResponse&#x27; messages to represent the extensions
+   supported by both the CI and the CR.
+
+   Extensions MUST be defined in a separate XML schema file and MUST be
+   provided with a companion document describing their semantics and
+   use.
+
+<span class="h3"><a class="selflink" id="section-8.1" href="#section-8.1">8.1</a>.  Extension Example</span>
+
+   An example of an extension might be a &quot;new&quot; capture attribute (i.e.,
+   a capture attribute that is not envisioned in the current standard
+   defining the CLUE data model in [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>]) needed to further describe
+   a video capture.
+
+   The CLUE data model document [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>] envisions the possibility of
+   adding this kind of &quot;extra&quot; information in the description of a video
+   capture.  For convenience, the XML definition of a video capture
+   taken from [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>] is shown in Figure 13 below.
+
+   &lt;!-- VIDEO CAPTURE TYPE --&gt;
+      &lt;xs:complexType name=&quot;videoCaptureType&quot;&gt;
+       &lt;xs:complexContent&gt;
+        &lt;xs:extension base=&quot;tns:mediaCaptureType&quot;&gt;
+         &lt;xs:sequence&gt;
+          &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                minOccurs=&quot;0&quot;
+          maxOccurs=&quot;unbounded&quot;/&gt;
+         &lt;/xs:sequence&gt;
+         &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+        &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+      &lt;/xs:complexType&gt;
+
+             Figure 13: XML Definition of a CLUE Video Capture
+
+   According to such a definition, a video capture might have, after the
+   set of generic media capture attributes, a set of new attributes
+   defined elsewhere, i.e., in an XML schema defining an extension.  The
+   XML schema defining the extension might look like the following
+   (Figure 14):
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+   &lt;xs:schema version=&quot;1.0&quot;
+     targetNamespace=&quot;https://example.extensions.com/myVideoExtensions&quot;
+     xmlns:xs=&quot;https://www.w3.org/2001/XMLSchema&quot;
+     xmlns=&quot;https://example.extensions.com/myVideoExtensions&quot;
+     elementFormDefault=&quot;qualified&quot;
+     attributeFormDefault=&quot;unqualified&quot;&gt;
+
+           &lt;!--
+                 This is the new element to be put in place of the &lt;any&gt;
+                 element in the video capture definition
+                 of the CLUE data model schema
+           --&gt;
+
+           &lt;xs:element name=&quot;myVideoExtension&quot;&gt;
+                   &lt;xs:complexType&gt;
+                           &lt;xs:sequence&gt;
+                                &lt;xs:element ref=&quot;newVideoAttribute1&quot;/&gt;
+                                &lt;xs:element ref=&quot;newVideoAttribute2&quot;/&gt;
+                           &lt;/xs:sequence&gt;
+                   &lt;/xs:complexType&gt;
+           &lt;/xs:element&gt;
+
+           &lt;xs:element name=&quot;newVideoAttribute1&quot; type=&quot;xs:string&quot;/&gt;
+
+           &lt;xs:element name = &quot;newVideoAttribute2&quot; type = &quot;xs:boolean&quot;/&gt;
+   &lt;/xs:schema&gt;
+
+                Figure 14: XML Schema Defining an Extension
+
+   By using the extension above, a video capture can be further
+   described in the advertisement using the &lt;myVideoExtension&gt; element
+   containing two extra pieces of information (&lt;newVideoAttribute1&gt; and
+   &lt;newVideoAttribute2&gt;), besides using the attributes envisioned for a
+   generic media capture.  As stated in this document, both participants
+   must be aware of the extension schema and related semantics to use
+   such an extension and must negotiate it via the &#x27;options&#x27; and
+   &#x27;optionsResponse&#x27; messages.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  XML Schema</span>
+
+   The XML schema defining the CLUE messages is provided below
+   (Figure 15).
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   &lt;xs:schema xmlns:xs=&quot;https://www.w3.org/2001/XMLSchema&quot;
+           xmlns=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+           xmlns:dm=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+           version=&quot;1.0&quot;
+           targetNamespace=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+           elementFormDefault=&quot;qualified&quot;
+           attributeFormDefault=&quot;unqualified&quot;&gt;
+     &lt;!-- Import data model schema --&gt;
+     &lt;xs:import namespace=&quot;urn:ietf:params:xml:ns:clue-info&quot;/&gt;
+     &lt;!-- ELEMENT DEFINITIONS --&gt;
+     &lt;xs:element name=&quot;options&quot; type=&quot;optionsMessageType&quot; /&gt;
+     &lt;xs:element name=&quot;optionsResponse&quot;
+           type=&quot;optionsResponseMessageType&quot;/&gt;
+     &lt;xs:element name=&quot;advertisement&quot; type=&quot;advertisementMessageType&quot;/&gt;
+     &lt;xs:element name=&quot;ack&quot; type=&quot;advAcknowledgementMessageType&quot;/&gt;
+     &lt;xs:element name=&quot;configure&quot; type=&quot;configureMessageType&quot;/&gt;
+     &lt;xs:element name=&quot;configureResponse&quot;
+           type=&quot;configureResponseMessageType&quot;/&gt;
+     &lt;!-- CLUE MESSAGE TYPE --&gt;
+     &lt;xs:complexType name=&quot;clueMessageType&quot; abstract=&quot;true&quot;&gt;
+       &lt;xs:sequence&gt;
+         &lt;xs:element name=&quot;clueId&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;
+         &lt;xs:element name=&quot;sequenceNr&quot; type=&quot;xs:positiveInteger&quot; /&gt;
+       &lt;/xs:sequence&gt;
+       &lt;xs:attribute name=&quot;protocol&quot; type=&quot;xs:string&quot; fixed=&quot;CLUE&quot;
+           use=&quot;required&quot; /&gt;
+       &lt;xs:attribute name=&quot;v&quot; type=&quot;versionType&quot; use=&quot;required&quot; /&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- CLUE RESPONSE TYPE --&gt;
+     &lt;xs:complexType name=&quot;clueResponseType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;xs:element name=&quot;responseCode&quot; type=&quot;responseCodeType&quot; /&gt;
+             &lt;xs:element name=&quot;reasonString&quot; type=&quot;xs:string&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- VERSION TYPE --&gt;
+     &lt;xs:simpleType name=&quot;versionType&quot;&gt;
+       &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+         &lt;xs:pattern value=&quot;[1-9][0-9]*\.[0-9]+&quot; /&gt;
+       &lt;/xs:restriction&gt;
+     &lt;/xs:simpleType&gt;
+     &lt;!-- RESPONSE CODE TYPE --&gt;
+     &lt;xs:simpleType name=&quot;responseCodeType&quot;&gt;
+       &lt;xs:restriction base=&quot;xs:integer&quot;&gt;
+         &lt;xs:pattern value=&quot;[1-9][0-9][0-9]&quot; /&gt;
+       &lt;/xs:restriction&gt;
+     &lt;/xs:simpleType&gt;
+     &lt;!-- SUCCESS RESPONSE CODE TYPE --&gt;
+     &lt;xs:simpleType name=&quot;successResponseCodeType&quot;&gt;
+       &lt;xs:restriction base=&quot;xs:integer&quot;&gt;
+         &lt;xs:pattern value=&quot;2[0-9][0-9]&quot; /&gt;
+       &lt;/xs:restriction&gt;
+     &lt;/xs:simpleType&gt;
+     &lt;!-- CLUE OPTIONS --&gt;
+     &lt;xs:complexType name=&quot;optionsMessageType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;xs:element name=&quot;mediaProvider&quot; type=&quot;xs:boolean&quot;/&gt;
+             &lt;xs:element name=&quot;mediaConsumer&quot; type=&quot;xs:boolean&quot;/&gt;
+             &lt;xs:element name=&quot;supportedVersions&quot;
+                   type=&quot;versionsListType&quot;
+                   minOccurs=&quot;0&quot; /&gt;
+             &lt;xs:element name=&quot;supportedExtensions&quot;
+                   type=&quot;extensionsListType&quot; minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+           &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- VERSIONS LIST TYPE --&gt;
+     &lt;xs:complexType name=&quot;versionsListType&quot;&gt;
+       &lt;xs:sequence&gt;
+         &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot; minOccurs=&quot;1&quot;
+           maxOccurs=&quot;unbounded&quot;/&gt;
+         &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+           minOccurs=&quot;0&quot;/&gt;
+       &lt;/xs:sequence&gt;
+       &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot; /&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- EXTENSIONS LIST TYPE --&gt;
+     &lt;xs:complexType name=&quot;extensionsListType&quot;&gt;
+       &lt;xs:sequence&gt;
+         &lt;xs:element name=&quot;extension&quot; type=&quot;extensionType&quot;
+           minOccurs=&quot;1&quot;
+           maxOccurs=&quot;unbounded&quot;/&gt;
+         &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+           minOccurs=&quot;0&quot;/&gt;
+       &lt;/xs:sequence&gt;
+       &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot; /&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- EXTENSION TYPE --&gt;
+     &lt;xs:complexType name=&quot;extensionType&quot;&gt;
+       &lt;xs:sequence&gt;
+         &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; /&gt;
+         &lt;xs:element name=&quot;schemaRef&quot; type=&quot;xs:anyURI&quot; /&gt;
+         &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot; /&gt;
+         &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+           minOccurs=&quot;0&quot;/&gt;
+       &lt;/xs:sequence&gt;
+       &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- CLUE &#x27;optionsResponse&#x27; --&gt;
+     &lt;xs:complexType name=&quot;optionsResponseMessageType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueResponseType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;xs:element name=&quot;mediaProvider&quot; type=&quot;xs:boolean&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:element name=&quot;mediaConsumer&quot; type=&quot;xs:boolean&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:element name=&quot;version&quot; type=&quot;versionType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:element name=&quot;commonExtensions&quot;
+                   type=&quot;extensionsListType&quot; minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+           &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- CLUE ADVERTISEMENT MESSAGE TYPE --&gt;
+     &lt;xs:complexType name=&quot;advertisementMessageType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;!-- mandatory --&gt;
+             &lt;xs:element name=&quot;mediaCaptures&quot;
+                   type=&quot;dm:mediaCapturesType&quot;/&gt;
+             &lt;xs:element name=&quot;encodingGroups&quot;
+                   type=&quot;dm:encodingGroupsType&quot;/&gt;
+             &lt;xs:element name=&quot;captureScenes&quot;
+                   type=&quot;dm:captureScenesType&quot;/&gt;
+             &lt;!-- optional --&gt;
+             &lt;xs:element name=&quot;simultaneousSets&quot;
+                   type=&quot;dm:simultaneousSetsType&quot; minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:element name=&quot;globalViews&quot; type=&quot;dm:globalViewsType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:element name=&quot;people&quot;
+                   type=&quot;dm:peopleType&quot; minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+           &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- &#x27;ack&#x27; MESSAGE TYPE --&gt;
+     &lt;xs:complexType name=&quot;advAcknowledgementMessageType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueResponseType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;xs:element name=&quot;advSequenceNr&quot;
+                   type=&quot;xs:positiveInteger&quot;/&gt;
+             &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+           &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- CLUE &#x27;configure&#x27; MESSAGE TYPE --&gt;
+     &lt;xs:complexType name=&quot;configureMessageType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueMessageType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;!-- mandatory fields --&gt;
+             &lt;xs:element name=&quot;advSequenceNr&quot;
+                   type=&quot;xs:positiveInteger&quot;/&gt;
+             &lt;xs:element name=&quot;ack&quot; type=&quot;successResponseCodeType&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:element name=&quot;captureEncodings&quot;
+                   type=&quot;dm:captureEncodingsType&quot; minOccurs=&quot;0&quot;/&gt;
+             &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+           &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+     &lt;!-- &#x27;configureResponse&#x27; MESSAGE TYPE --&gt;
+     &lt;xs:complexType name=&quot;configureResponseMessageType&quot;&gt;
+       &lt;xs:complexContent&gt;
+         &lt;xs:extension base=&quot;clueResponseType&quot;&gt;
+           &lt;xs:sequence&gt;
+             &lt;xs:element name=&quot;confSequenceNr&quot;
+                   type=&quot;xs:positiveInteger&quot;/&gt;
+             &lt;xs:any namespace=&quot;##other&quot; processContents=&quot;lax&quot;
+                   minOccurs=&quot;0&quot;/&gt;
+           &lt;/xs:sequence&gt;
+           &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+         &lt;/xs:extension&gt;
+       &lt;/xs:complexContent&gt;
+     &lt;/xs:complexType&gt;
+   &lt;/xs:schema&gt;
+
+                  Figure 15: Schema Defining CLUE Messages
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Call Flow Example</span>
+
+   This section describes the CLUE protocol messages exchanged in the
+   following call flow.  For simplicity, only one direction of media is
+   shown, as the other direction is precisely symmetric.
+
+                    +-----+               +-----+
+                    |     |               |     |
+                    | CP1 |               | CP2 |
+                    |     |               |     |
+                    +--+--+               +--+--+
+                       |                     |
+                       |    1. options       |
+                       +--------------------&gt;|
+                       |                     |
+                       |                     |
+                       |2. optionsResponse   |
+                       |&lt;--------------------+
+                       |                     |
+                       |                     |
+                       |3. advertisement     |
+                       +--------------------&gt;|
+                       |                     |
+                       |                     |
+                       |4. configure+ack     |
+                       |&lt;--------------------+
+                       |                     |
+                       |                     |
+                       |5. configureResponse |
+                       +--------------------&gt;|
+                       |                     |
+                       |                     |
+                       |6. advertisement     |
+                       +--------------------&gt;|
+                       |                     |
+                       |                     |
+                       |    7. ack           |
+                       |&lt;--------------------+
+                       |                     |
+                       |                     |
+                       |8. configure         |
+                       |&lt;--------------------+
+                       |                     |
+                       |                     |
+                       |9. configureResponse |
+                       +--------------------&gt;|
+                       |                     |
+                       |                     |
+                       .                     .
+                       .                     .
+                       .                     .
+
+   Two CPs, CP1 and CP2, have successfully set up the CLUE channel
+   according to [<a href="/doc/html/rfc8850" title="&quot;Controlling Multiple Streams for Telepresence (CLUE) Protocol Data Channel&quot;">RFC8850</a>].  CP1 is the CI, and CP2 is the CR.
+
+   *  The initiation phase starts (negotiation of the CLUE protocol
+      version and extensions).  CP1, as the CI, sends to CP2 an
+      &#x27;options&#x27; message specifying the supported versions and extensions
+      (<a href="#section-10.1">Section 10.1</a>).  CP1 supports (i) version 1.4 with extensions E1,
+      E2, and E3 and (ii) version 2.7 with extensions E4 and E5.
+      Because of such capabilities, CP1 sends an &#x27;options&#x27; message with
+      the &quot;v&quot; attribute set to &quot;1.4&quot; and explicitly specifies all the
+      supported versions and extensions in the corresponding fields of
+      the &#x27;options&#x27; message.  In the &#x27;options&#x27; message, CP1 also
+      specifies that it intends to act as both an MP and an MC.
+
+   *  CP2 supports versions 3.0, 2.9, and 1.9 of the CLUE protocol, each
+      version without any extensions.  Version 2.7 is the best common
+      choice.  Given the received &#x27;options&#x27; message, CP2 answers with an
+      &#x27;optionsResponse&#x27; message in which it specifies only version 2.7
+      as the agreed-upon version of the CLUE protocol to be used,
+      leaving blank the extensions part of the message to say that no
+      extensions will be used in the CLUE session (<a href="#section-10.2">Section 10.2</a>).  In
+      the &#x27;optionsResponse&#x27; message, CP2 also specifies that it intends
+      to act as both an MP and an MC.
+
+   After the initiation phase is completed, CP1 and CP2 start their
+   activity as the MP and the MC, respectively.  For the sake of
+   simplicity, the rest of the call flow focuses only on the dialogue
+   between MP CP1 and MC CP2.
+
+   *  CP1 advertises a telepresence configuration like the one described
+      in <a href="/doc/html/rfc8846#section-27">[RFC8846], Section&nbsp;27</a>, where there are (i) three main video
+      streams captured by three cameras, with the central camera capable
+      of capturing a zoomed-out view of the overall telepresence room,
+      (ii) a multicontent capture of the loudest segment of the room,
+      and (iii) one audio capture for the audio of the whole room
+      (<a href="#section-10.3">Section 10.3</a>).
+
+   *  CP2 receives CP1&#x27;s &#x27;advertisement&#x27; message and, after processing
+      it, sends back to CP1 a &#x27;configure+ack&#x27; message in which it
+      declares its interest in the multicontent capture and the audio
+      capture only (<a href="#section-10.4">Section 10.4</a>).
+
+   *  CP1 answers CP2&#x27;s &#x27;configure+ack&#x27; message with a
+      &#x27;configureResponse&#x27; message that includes a 200 (Success) response
+      code to accept all of CP2&#x27;s requests (<a href="#section-10.5">Section 10.5</a>).
+
+   *  To reflect the changes in its telepresence offer, CP1 issues a new
+      &#x27;advertisement&#x27; message to CP2 (<a href="#section-10.6">Section 10.6</a>), this time also
+      adding a composed capture made of a big picture representing the
+      current speaker and two picture-in-picture boxes representing the
+      previous speakers (see <a href="/doc/html/rfc8846#section-28">[RFC8846], Section&nbsp;28</a> for more details
+      regarding the telepresence description).
+
+   *  CP2 acknowledges the second &#x27;advertisement&#x27; message with an &#x27;ack&#x27;
+      message (<a href="#section-10.7">Section 10.7</a>).
+
+   *  Later in the session, CP2 changes the requested media streams from
+      CP1 by sending to CP1 a &#x27;configure&#x27; message replacing the
+      previously selected video streams with the new composed media
+      streams advertised by CP1 (<a href="#section-10.8">Section 10.8</a>).  Media streams from the
+      previous configuration continue to flow during the reconfiguration
+      process.
+
+   *  Finally, CP1 accepts CP2&#x27;s latest request with a
+      &#x27;configureResponse&#x27; message (<a href="#section-10.9">Section 10.9</a>).
+
+   We would also like to point out that in the depicted flow three
+   distinct sequence number spaces per sender are involved (two of which
+   appear in the snippets, since we only show one direction of media).
+   The discontinuity between the sequence number values in Sections <a href="#section-10.2">10.2</a>
+   and 10.3 is hence correct.
+
+<span class="h3"><a class="selflink" id="section-10.1" href="#section-10.1">10.1</a>.  CLUE Message No. 1: &#x27;options&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;options xmlns=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;1.4&quot;&gt;
+       &lt;clueId&gt;CP1&lt;/clueId&gt;
+       &lt;sequenceNr&gt;51&lt;/sequenceNr&gt;
+       &lt;mediaProvider&gt;true&lt;/mediaProvider&gt;
+       &lt;mediaConsumer&gt;true&lt;/mediaConsumer&gt;
+       &lt;supportedVersions&gt;
+           &lt;version&gt;1.4&lt;/version&gt;
+           &lt;version&gt;2.7&lt;/version&gt;
+       &lt;/supportedVersions&gt;
+       &lt;supportedExtensions&gt;
+           &lt;extension&gt;
+                   &lt;name&gt;E1&lt;/name&gt;
+                   &lt;schemaRef&gt;URL_E1&lt;/schemaRef&gt;
+                   &lt;version&gt;1.4&lt;/version&gt;
+           &lt;/extension&gt;
+           &lt;extension&gt;
+                   &lt;name&gt;E2&lt;/name&gt;
+                   &lt;schemaRef&gt;URL_E2&lt;/schemaRef&gt;
+                   &lt;version&gt;1.4&lt;/version&gt;
+           &lt;/extension&gt;
+           &lt;extension&gt;
+                   &lt;name&gt;E3&lt;/name&gt;
+                   &lt;schemaRef&gt;URL_E3&lt;/schemaRef&gt;
+                   &lt;version&gt;1.4&lt;/version&gt;
+           &lt;/extension&gt;
+           &lt;extension&gt;
+                   &lt;name&gt;E4&lt;/name&gt;
+                   &lt;schemaRef&gt;URL_E4&lt;/schemaRef&gt;
+                   &lt;version&gt;2.7&lt;/version&gt;
+           &lt;/extension&gt;
+           &lt;extension&gt;
+                   &lt;name&gt;E5&lt;/name&gt;
+                   &lt;schemaRef&gt;URL_E5&lt;/schemaRef&gt;
+                   &lt;version&gt;2.7&lt;/version&gt;
+           &lt;/extension&gt;
+       &lt;/supportedExtensions&gt;
+   &lt;/options&gt;
+
+<span class="h3"><a class="selflink" id="section-10.2" href="#section-10.2">10.2</a>.  CLUE Message No. 2: &#x27;optionsResponse&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;optionsResponse xmlns=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;1.4&quot;&gt;
+       &lt;clueId&gt;CP2&lt;/clueId&gt;
+       &lt;sequenceNr&gt;62&lt;/sequenceNr&gt;
+       &lt;responseCode&gt;200&lt;/responseCode&gt;
+       &lt;reasonString&gt;Success&lt;/reasonString&gt;
+       &lt;mediaProvider&gt;true&lt;/mediaProvider&gt;
+       &lt;mediaConsumer&gt;true&lt;/mediaConsumer&gt;
+       &lt;version&gt;2.7&lt;/version&gt;
+   &lt;/optionsResponse&gt;
+
+<span class="h3"><a class="selflink" id="section-10.3" href="#section-10.3">10.3</a>.  CLUE Message No. 3: &#x27;advertisement&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ns2:advertisement xmlns=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;ns2:clueId&gt;CP1&lt;/ns2:clueId&gt;
+       &lt;ns2:sequenceNr&gt;11&lt;/ns2:sequenceNr&gt;
+       &lt;ns2:mediaCaptures&gt;
+         &lt;mediaCapture
+            xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+            xsi:type=&quot;audioCaptureType&quot; captureID=&quot;AC0&quot;
+            mediaType=&quot;audio&quot;&gt;
+            &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+               &lt;spatialInformation&gt;
+                   &lt;captureOrigin&gt;
+                      &lt;capturePoint&gt;
+                         &lt;x&gt;0.0&lt;/x&gt;
+                         &lt;y&gt;0.0&lt;/y&gt;
+                         &lt;z&gt;10.0&lt;/z&gt;
+                    &lt;/capturePoint&gt;
+                    &lt;lineOfCapturePoint&gt;
+                      &lt;x&gt;0.0&lt;/x&gt;
+                      &lt;y&gt;1.0&lt;/y&gt;
+                      &lt;z&gt;10.0&lt;/z&gt;
+                     &lt;/lineOfCapturePoint&gt;
+                   &lt;/captureOrigin&gt;
+                 &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG1&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;main audio from the room
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;room&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;alice&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;bob&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;ciccio&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC0&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;-2.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;-1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;-1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;left camera video capture
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;ciccio&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC1&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;0.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;central camera video capture
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;alice&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC2&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;2.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;right camera video capture
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;bob&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC3&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;content&gt;
+                    &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+                &lt;/content&gt;
+                &lt;policy&gt;SoundLevel:0&lt;/policy&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;loudest room segment
+                &lt;/description&gt;
+                &lt;priority&gt;2&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC4&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;0.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;7.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;7.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;13.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;13.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;zoomed-out view of all people in
+                the room&lt;/description&gt;
+                &lt;priority&gt;2&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;room&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;alice&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;bob&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;ciccio&lt;/personIDREF&gt;
+                    &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+        &lt;/ns2:mediaCaptures&gt;
+        &lt;ns2:encodingGroups&gt;
+            &lt;encodingGroup encodingGroupID=&quot;EG0&quot;&gt;
+                &lt;maxGroupBandwidth&gt;600000&lt;/maxGroupBandwidth&gt;
+                &lt;encodingIDList&gt;
+                    &lt;encodingID&gt;ENC1&lt;/encodingID&gt;
+                    &lt;encodingID&gt;ENC2&lt;/encodingID&gt;
+                    &lt;encodingID&gt;ENC3&lt;/encodingID&gt;
+                &lt;/encodingIDList&gt;
+            &lt;/encodingGroup&gt;
+            &lt;encodingGroup encodingGroupID=&quot;EG1&quot;&gt;
+                &lt;maxGroupBandwidth&gt;300000&lt;/maxGroupBandwidth&gt;
+                &lt;encodingIDList&gt;
+                    &lt;encodingID&gt;ENC4&lt;/encodingID&gt;
+                    &lt;encodingID&gt;ENC5&lt;/encodingID&gt;
+                &lt;/encodingIDList&gt;
+            &lt;/encodingGroup&gt;
+        &lt;/ns2:encodingGroups&gt;
+        &lt;ns2:captureScenes&gt;
+            &lt;captureScene scale=&quot;unknown&quot; sceneID=&quot;CS1&quot;&gt;
+                &lt;sceneViews&gt;
+                    &lt;sceneView sceneViewID=&quot;SE1&quot;&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC0&lt;/mediaCaptureIDREF&gt;
+                            &lt;mediaCaptureIDREF&gt;VC1&lt;/mediaCaptureIDREF&gt;
+                            &lt;mediaCaptureIDREF&gt;VC2&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE2&quot;&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC3&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE3&quot;&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC4&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE4&quot;&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;AC0&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                &lt;/sceneViews&gt;
+            &lt;/captureScene&gt;
+        &lt;/ns2:captureScenes&gt;
+        &lt;ns2:simultaneousSets&gt;
+            &lt;simultaneousSet setID=&quot;SS1&quot;&gt;
+                &lt;mediaCaptureIDREF&gt;VC3&lt;/mediaCaptureIDREF&gt;
+                &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+            &lt;/simultaneousSet&gt;
+            &lt;simultaneousSet setID=&quot;SS2&quot;&gt;
+                &lt;mediaCaptureIDREF&gt;VC0&lt;/mediaCaptureIDREF&gt;
+                &lt;mediaCaptureIDREF&gt;VC2&lt;/mediaCaptureIDREF&gt;
+                &lt;mediaCaptureIDREF&gt;VC4&lt;/mediaCaptureIDREF&gt;
+            &lt;/simultaneousSet&gt;
+        &lt;/ns2:simultaneousSets&gt;
+        &lt;ns2:people&gt;
+            &lt;person personID=&quot;bob&quot;&gt;
+                &lt;personInfo&gt;
+                    &lt;ns3:fn&gt;
+                      &lt;ns3:text&gt;Bob&lt;/ns3:text&gt;
+                    &lt;/ns3:fn&gt;
+                &lt;/personInfo&gt;
+                &lt;personType&gt;minute taker&lt;/personType&gt;
+            &lt;/person&gt;
+            &lt;person personID=&quot;alice&quot;&gt;
+                &lt;personInfo&gt;
+                    &lt;ns3:fn&gt;
+                        &lt;ns3:text&gt;Alice&lt;/ns3:text&gt;
+                    &lt;/ns3:fn&gt;
+                &lt;/personInfo&gt;
+                &lt;personType&gt;presenter&lt;/personType&gt;
+            &lt;/person&gt;
+            &lt;person personID=&quot;ciccio&quot;&gt;
+                &lt;personInfo&gt;
+                    &lt;ns3:fn&gt;
+                        &lt;ns3:text&gt;Ciccio&lt;/ns3:text&gt;
+                    &lt;/ns3:fn&gt;
+                &lt;/personInfo&gt;
+                &lt;personType&gt;chairman&lt;/personType&gt;
+                &lt;personType&gt;timekeeper&lt;/personType&gt;
+            &lt;/person&gt;
+        &lt;/ns2:people&gt;
+   &lt;/ns2:advertisement&gt;
+
+<span class="h3"><a class="selflink" id="section-10.4" href="#section-10.4">10.4</a>.  CLUE Message No. 4: &#x27;configure+ack&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ns2:configure xmlns=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;ns2:clueId&gt;CP2&lt;/ns2:clueId&gt;
+       &lt;ns2:sequenceNr&gt;22&lt;/ns2:sequenceNr&gt;
+       &lt;ns2:advSequenceNr&gt;11&lt;/ns2:advSequenceNr&gt;
+       &lt;ns2:ack&gt;200&lt;/ns2:ack&gt;
+       &lt;ns2:captureEncodings&gt;
+           &lt;captureEncoding ID=&quot;ce123&quot;&gt;
+              &lt;captureID&gt;AC0&lt;/captureID&gt;
+              &lt;encodingID&gt;ENC4&lt;/encodingID&gt;
+           &lt;/captureEncoding&gt;
+           &lt;captureEncoding ID=&quot;ce223&quot;&gt;
+              &lt;captureID&gt;VC3&lt;/captureID&gt;
+              &lt;encodingID&gt;ENC1&lt;/encodingID&gt;
+              &lt;configuredContent&gt;
+                 &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+              &lt;/configuredContent&gt;
+          &lt;/captureEncoding&gt;
+       &lt;/ns2:captureEncodings&gt;
+   &lt;/ns2:configure&gt;
+
+<span class="h3"><a class="selflink" id="section-10.5" href="#section-10.5">10.5</a>.  CLUE Message No. 5: &#x27;configureResponse&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ns2:configureResponse xmlns=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;ns2:clueId&gt;CP1&lt;/ns2:clueId&gt;
+       &lt;ns2:sequenceNr&gt;12&lt;/ns2:sequenceNr&gt;
+       &lt;ns2:responseCode&gt;200&lt;/ns2:responseCode&gt;
+       &lt;ns2:reasonString&gt;Success&lt;/ns2:reasonString&gt;
+       &lt;ns2:confSequenceNr&gt;22&lt;/ns2:confSequenceNr&gt;
+   &lt;/ns2:configureResponse&gt;
+
+<span class="h3"><a class="selflink" id="section-10.6" href="#section-10.6">10.6</a>.  CLUE Message No. 6: &#x27;advertisement&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ns2:advertisement xmlns=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;ns2:clueId&gt;CP1&lt;/ns2:clueId&gt;
+       &lt;ns2:sequenceNr&gt;13&lt;/ns2:sequenceNr&gt;
+       &lt;ns2:mediaCaptures&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;audioCaptureType&quot; captureID=&quot;AC0&quot;
+             mediaType=&quot;audio&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;0.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                        &lt;lineOfCapturePoint&gt;
+                            &lt;x&gt;0.0&lt;/x&gt;
+                            &lt;y&gt;1.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/lineOfCapturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG1&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;main audio from the room
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;room&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;alice&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;bob&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;ciccio&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC0&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;0.5&lt;/x&gt;
+                            &lt;y&gt;1.0&lt;/y&gt;
+                            &lt;z&gt;0.5&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                        &lt;lineOfCapturePoint&gt;
+                            &lt;x&gt;0.5&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;0.5&lt;/z&gt;
+                        &lt;/lineOfCapturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;left camera video capture
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;ciccio&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC1&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;0.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;central camera video capture
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;alice&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC2&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;2.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;1.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;right camera video capture
+                &lt;/description&gt;
+                &lt;priority&gt;1&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;bob&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC3&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;content&gt;
+                    &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+                &lt;/content&gt;
+                &lt;policy&gt;SoundLevel:0&lt;/policy&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;loudest room segment
+                &lt;/description&gt;
+                &lt;priority&gt;2&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC4&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureOrigin&gt;
+                            &lt;capturePoint&gt;
+                            &lt;x&gt;0.0&lt;/x&gt;
+                            &lt;y&gt;0.0&lt;/y&gt;
+                            &lt;z&gt;10.0&lt;/z&gt;
+                        &lt;/capturePoint&gt;
+                    &lt;/captureOrigin&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;7.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;7.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;13.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;13.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;individual&gt;true&lt;/individual&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;
+                  zoomed-out view of all people in the room
+                &lt;/description&gt;
+                &lt;priority&gt;2&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;room&lt;/view&gt;
+                &lt;capturedPeople&gt;
+                    &lt;personIDREF&gt;alice&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;bob&lt;/personIDREF&gt;
+                    &lt;personIDREF&gt;ciccio&lt;/personIDREF&gt;
+                &lt;/capturedPeople&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC5&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;content&gt;
+                    &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+                &lt;/content&gt;
+                &lt;policy&gt;SoundLevel:1&lt;/policy&gt;
+                &lt;description lang=&quot;en&quot;&gt;penultimate loudest room segment
+                &lt;/description&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC6&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;content&gt;
+                    &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+                &lt;/content&gt;
+                &lt;policy&gt;SoundLevel:2&lt;/policy&gt;
+                &lt;description lang=&quot;en&quot;&gt;last but two loudest room segment
+                &lt;/description&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+            &lt;/mediaCapture&gt;
+            &lt;mediaCapture
+             xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+             xsi:type=&quot;videoCaptureType&quot; captureID=&quot;VC7&quot;
+             mediaType=&quot;video&quot;&gt;
+                &lt;captureSceneIDREF&gt;CS1&lt;/captureSceneIDREF&gt;
+                &lt;spatialInformation&gt;
+                    &lt;captureArea&gt;
+                            &lt;bottomLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomLeft&gt;
+                            &lt;bottomRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;9.0&lt;/z&gt;
+                            &lt;/bottomRight&gt;
+                            &lt;topLeft&gt;
+                            &lt;x&gt;-3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topLeft&gt;
+                            &lt;topRight&gt;
+                            &lt;x&gt;3.0&lt;/x&gt;
+                            &lt;y&gt;20.0&lt;/y&gt;
+                            &lt;z&gt;11.0&lt;/z&gt;
+                            &lt;/topRight&gt;
+                    &lt;/captureArea&gt;
+                &lt;/spatialInformation&gt;
+                &lt;content&gt;
+                    &lt;mediaCaptureIDREF&gt;VC3&lt;/mediaCaptureIDREF&gt;
+                    &lt;mediaCaptureIDREF&gt;VC5&lt;/mediaCaptureIDREF&gt;
+                    &lt;mediaCaptureIDREF&gt;VC6&lt;/mediaCaptureIDREF&gt;
+                &lt;/content&gt;
+                &lt;maxCaptures exactNumber=&quot;true&quot;&gt;3&lt;/maxCaptures&gt;
+                &lt;encGroupIDREF&gt;EG0&lt;/encGroupIDREF&gt;
+                &lt;description lang=&quot;en&quot;&gt;big picture of the current
+                speaker + pips about previous speakers&lt;/description&gt;
+                &lt;priority&gt;3&lt;/priority&gt;
+                &lt;lang&gt;it&lt;/lang&gt;
+                &lt;mobility&gt;static&lt;/mobility&gt;
+                &lt;view&gt;individual&lt;/view&gt;
+            &lt;/mediaCapture&gt;
+        &lt;/ns2:mediaCaptures&gt;
+        &lt;ns2:encodingGroups&gt;
+            &lt;encodingGroup encodingGroupID=&quot;EG0&quot;&gt;
+                &lt;maxGroupBandwidth&gt;600000&lt;/maxGroupBandwidth&gt;
+                &lt;encodingIDList&gt;
+                    &lt;encodingID&gt;ENC1&lt;/encodingID&gt;
+                    &lt;encodingID&gt;ENC2&lt;/encodingID&gt;
+                    &lt;encodingID&gt;ENC3&lt;/encodingID&gt;
+                &lt;/encodingIDList&gt;
+            &lt;/encodingGroup&gt;
+            &lt;encodingGroup encodingGroupID=&quot;EG1&quot;&gt;
+                &lt;maxGroupBandwidth&gt;300000&lt;/maxGroupBandwidth&gt;
+                &lt;encodingIDList&gt;
+                    &lt;encodingID&gt;ENC4&lt;/encodingID&gt;
+                    &lt;encodingID&gt;ENC5&lt;/encodingID&gt;
+                &lt;/encodingIDList&gt;
+            &lt;/encodingGroup&gt;
+        &lt;/ns2:encodingGroups&gt;
+        &lt;ns2:captureScenes&gt;
+            &lt;captureScene scale=&quot;unknown&quot; sceneID=&quot;CS1&quot;&gt;
+                &lt;sceneViews&gt;
+                    &lt;sceneView sceneViewID=&quot;SE1&quot;&gt;
+                        &lt;description lang=&quot;en&quot;&gt;participants&#x27; individual
+                        videos&lt;/description&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC0&lt;/mediaCaptureIDREF&gt;
+                            &lt;mediaCaptureIDREF&gt;VC1&lt;/mediaCaptureIDREF&gt;
+                            &lt;mediaCaptureIDREF&gt;VC2&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE2&quot;&gt;
+                        &lt;description lang=&quot;en&quot;&gt;loudest segment of the
+                        room&lt;/description&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC3&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE5&quot;&gt;
+                        &lt;description lang=&quot;en&quot;&gt;loudest segment of the
+                        room + pips&lt;/description&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC7&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE4&quot;&gt;
+                        &lt;description lang=&quot;en&quot;&gt;room audio&lt;/description&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;AC0&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                    &lt;sceneView sceneViewID=&quot;SE3&quot;&gt;
+                        &lt;description lang=&quot;en&quot;&gt;room video&lt;/description&gt;
+                        &lt;mediaCaptureIDs&gt;
+                            &lt;mediaCaptureIDREF&gt;VC4&lt;/mediaCaptureIDREF&gt;
+                        &lt;/mediaCaptureIDs&gt;
+                    &lt;/sceneView&gt;
+                &lt;/sceneViews&gt;
+            &lt;/captureScene&gt;
+        &lt;/ns2:captureScenes&gt;
+        &lt;ns2:simultaneousSets&gt;
+            &lt;simultaneousSet setID=&quot;SS1&quot;&gt;
+                &lt;mediaCaptureIDREF&gt;VC3&lt;/mediaCaptureIDREF&gt;
+                &lt;mediaCaptureIDREF&gt;VC7&lt;/mediaCaptureIDREF&gt;
+                &lt;sceneViewIDREF&gt;SE1&lt;/sceneViewIDREF&gt;
+            &lt;/simultaneousSet&gt;
+            &lt;simultaneousSet setID=&quot;SS2&quot;&gt;
+                &lt;mediaCaptureIDREF&gt;VC0&lt;/mediaCaptureIDREF&gt;
+                &lt;mediaCaptureIDREF&gt;VC2&lt;/mediaCaptureIDREF&gt;
+                &lt;mediaCaptureIDREF&gt;VC4&lt;/mediaCaptureIDREF&gt;
+            &lt;/simultaneousSet&gt;
+        &lt;/ns2:simultaneousSets&gt;
+        &lt;ns2:people&gt;
+            &lt;person personID=&quot;bob&quot;&gt;
+                &lt;personInfo&gt;
+                    &lt;ns3:fn&gt;
+                        &lt;ns3:text&gt;Bob&lt;/ns3:text&gt;
+                    &lt;/ns3:fn&gt;
+                &lt;/personInfo&gt;
+                &lt;personType&gt;minute taker&lt;/personType&gt;
+            &lt;/person&gt;
+            &lt;person personID=&quot;alice&quot;&gt;
+                &lt;personInfo&gt;
+                    &lt;ns3:fn&gt;
+                        &lt;ns3:text&gt;Alice&lt;/ns3:text&gt;
+                    &lt;/ns3:fn&gt;
+                &lt;/personInfo&gt;
+                &lt;personType&gt;presenter&lt;/personType&gt;
+            &lt;/person&gt;
+            &lt;person personID=&quot;ciccio&quot;&gt;
+                &lt;personInfo&gt;
+                    &lt;ns3:fn&gt;
+                        &lt;ns3:text&gt;Ciccio&lt;/ns3:text&gt;
+                    &lt;/ns3:fn&gt;
+                &lt;/personInfo&gt;
+                &lt;personType&gt;chairman&lt;/personType&gt;
+                &lt;personType&gt;timekeeper&lt;/personType&gt;
+            &lt;/person&gt;
+        &lt;/ns2:people&gt;
+   &lt;/ns2:advertisement&gt;
+
+<span class="h3"><a class="selflink" id="section-10.7" href="#section-10.7">10.7</a>.  CLUE Message No. 7: &#x27;ack&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ack xmlns=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;clueId&gt;CP2&lt;/clueId&gt;
+       &lt;sequenceNr&gt;23&lt;/sequenceNr&gt;
+       &lt;responseCode&gt;200&lt;/responseCode&gt;
+       &lt;reasonString&gt;Success&lt;/reasonString&gt;
+       &lt;advSequenceNr&gt;13&lt;/advSequenceNr&gt;
+   &lt;/ack&gt;
+
+<span class="h3"><a class="selflink" id="section-10.8" href="#section-10.8">10.8</a>.  CLUE Message No. 8: &#x27;configure&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ns2:configure xmlns=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;ns2:clueId&gt;CP2&lt;/ns2:clueId&gt;
+       &lt;ns2:sequenceNr&gt;24&lt;/ns2:sequenceNr&gt;
+       &lt;ns2:advSequenceNr&gt;13&lt;/ns2:advSequenceNr&gt;
+       &lt;ns2:captureEncodings&gt;
+                  &lt;captureEncoding ID=&quot;ce123&quot;&gt;
+                           &lt;captureID&gt;AC0&lt;/captureID&gt;
+                           &lt;encodingID&gt;ENC4&lt;/encodingID&gt;
+                   &lt;/captureEncoding&gt;
+                   &lt;captureEncoding ID=&quot;ce456&quot;&gt;
+                           &lt;captureID&gt;VC7&lt;/captureID&gt;
+                           &lt;encodingID&gt;ENC1&lt;/encodingID&gt;
+                           &lt;configuredContent&gt;
+                                   &lt;sceneViewIDREF&gt;SE5&lt;/sceneViewIDREF&gt;
+                           &lt;/configuredContent&gt;
+                   &lt;/captureEncoding&gt;
+        &lt;/ns2:captureEncodings&gt;
+   &lt;/ns2:configure&gt;
+
+<span class="h3"><a class="selflink" id="section-10.9" href="#section-10.9">10.9</a>.  CLUE Message No. 9: &#x27;configureResponse&#x27;</span>
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+   &lt;ns2:configureResponse xmlns=&quot;urn:ietf:params:xml:ns:clue-info&quot;
+    xmlns:ns2=&quot;urn:ietf:params:xml:ns:clue-protocol&quot;
+    xmlns:ns3=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;
+    xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    protocol=&quot;CLUE&quot; v=&quot;2.7&quot;&gt;
+       &lt;ns2:clueId&gt;CP1&lt;/ns2:clueId&gt;
+       &lt;ns2:sequenceNr&gt;14&lt;/ns2:sequenceNr&gt;
+       &lt;ns2:responseCode&gt;200&lt;/ns2:responseCode&gt;
+       &lt;ns2:reasonString&gt;Success&lt;/ns2:reasonString&gt;
+       &lt;ns2:confSequenceNr&gt;24&lt;/ns2:confSequenceNr&gt;
+   &lt;/ns2:configureResponse&gt;
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Security Considerations</span>
+
+   As a general consideration, we would like to point out that the CLUE
+   framework (and related protocol) has been conceived from the outset
+   by embracing the security-by-design paradigm.  As a result, a number
+   of requirements have been identified and properly standardized as
+   mandatory within the entire set of documents associated with the CLUE
+   architecture.  Requirements include (i) the use of cryptography and
+   authentication, (ii) protection of all sensitive fields, (iii) mutual
+   authentication between CLUE endpoints, (iv) the presence of
+   authorization mechanisms, and (v) the presence of native defense
+   mechanisms against malicious activities such as eavesdropping,
+   selective modification, deletion, and replay (and related
+   combinations thereof).  Hence, security of the single components of
+   the CLUE solution cannot be evaluated independently of the integrated
+   view of the final architecture.
+
+   The CLUE protocol is an application-level protocol allowing a Media
+   Producer and an MC to negotiate a variegated set of parameters
+   associated with the establishment of a telepresence session.  This
+   unavoidably exposes a CLUE-enabled telepresence system to a number of
+   potential threats, most of which are extensively discussed in the
+   CLUE framework document [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>].  The Security Considerations
+   section of [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>] actually discusses issues associated with the
+   setup and management of a telepresence session in both (1) the basic
+   case involving two CLUE endpoints acting as the MP and the MC,
+   respectively and (2) the more advanced scenario envisaging the
+   presence of an MCU.
+
+   The CLUE framework document [<a href="/doc/html/rfc8845" title="&quot;Framework for Telepresence Multi-Streams&quot;">RFC8845</a>] also mentions that the
+   information carried within CLUE protocol messages might contain
+   sensitive data, which SHOULD hence be accessed only by authenticated
+   endpoints.  Security issues associated with the CLUE data model
+   schema are discussed in [<a href="/doc/html/rfc8846" title="&quot;An XML Schema for the Controlling Multiple Streams for Telepresence (CLUE) Data Model&quot;">RFC8846</a>].
+
+   There is extra information carried by the CLUE protocol that is not
+   associated with the CLUE data model schema and that exposes
+   information that might be of concern.  This information is primarily
+   exchanged during the negotiation phase via the &#x27;options&#x27; and
+   &#x27;optionsResponse&#x27; messages.  In the CP state machine&#x27;s OPTIONS state,
+   both parties agree on the version and extensions to be used in the
+   subsequent CLUE message exchange phase.  A malicious participant
+   might either (1) try to retrieve a detailed footprint of a specific
+   CLUE protocol implementation during this initial setup phase or
+   (2) force the communicating party to use a version of the protocol
+   that is outdated and that they know how to break.  Indeed, exposing
+   all of the supported versions and extensions could conceivably leak
+   information about the specific implementation of the protocol.  In
+   theory, an implementation could choose not to announce all of the
+   versions it supports if it wants to avoid such leakage, although this
+   would come at the expense of interoperability.  With respect to the
+   above considerations, it is noted that the OPTIONS state is only
+   reached after the CLUE data channel has been successfully set up.
+   This ensures that only authenticated parties can exchange &#x27;options&#x27;
+   messages and related &#x27;optionsResponse&#x27; messages, and hence
+   drastically reduces the attack surface that is exposed to malicious
+   parties.
+
+   The CLUE framework clearly states the requirement to protect CLUE
+   protocol messages against threats deriving from the presence of a
+   malicious agent capable of gaining access to the CLUE data channel.
+   Such a requirement is met by the CLUE data channel solution described
+   in [<a href="/doc/html/rfc8850" title="&quot;Controlling Multiple Streams for Telepresence (CLUE) Protocol Data Channel&quot;">RFC8850</a>], which ensures protection from both message recovery and
+   message tampering.  With respect to this last point, any
+   implementation of the CLUE protocol compliant with the CLUE
+   specification MUST rely on the exchange of messages that flow on top
+   of a reliable and ordered SCTP-over-DTLS transport channel connecting
+   two CPs.
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  IANA Considerations</span>
+
+   This document registers a new XML namespace, a new XML schema, and
+   the media type for the schema.  This document also registers the
+   &quot;CLUE&quot; Application Service tag and the &quot;CLUE&quot; Application Protocol
+   tag and defines registries for the CLUE messages and response codes.
+
+<span class="h3"><a class="selflink" id="section-12.1" href="#section-12.1">12.1</a>.  URN Sub-Namespace Registration</span>
+
+   This section registers a new XML namespace,
+   &quot;urn:ietf:params:xml:ns:clue-protocol&quot;.
+
+   URI:  urn:ietf:params:xml:ns:clue-protocol
+
+   Registrant Contact:  IESG (iesg@ietf.org).
+
+   XML:
+
+   &lt;CODE BEGINS&gt;
+    &lt;?xml version=&quot;1.0&quot;?&gt;
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+      &quot;https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+    &lt;html xmlns=&quot;https://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+        &lt;title&gt;CLUE Messages&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Namespace for CLUE Messages&lt;/h1&gt;
+        &lt;h2&gt;urn:ietf:params:xml:ns:clue-protocol&lt;/h2&gt;
+        &lt;p&gt;See &lt;a href=&quot;https://www.rfc-editor.org/rfc/rfc8847.txt&quot;&gt;
+           <a href="/doc/html/rfc8847">RFC 8847</a>&lt;/a&gt;.&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+   &lt;CODE ENDS&gt;
+
+<span class="h3"><a class="selflink" id="section-12.2" href="#section-12.2">12.2</a>.  XML Schema Registration</span>
+
+   This section registers an XML schema per the guidelines in [<a href="/doc/html/rfc3688" title="&quot;The IETF XML Registry&quot;">RFC3688</a>].
+
+   URI:  urn:ietf:params:xml:schema:clue-protocol
+
+   Registrant Contact:  IESG (iesg@ietf.org).
+
+   Schema:  The XML for this schema can be found in <a href="#section-9">Section 9</a> of this
+      document.
+
+<span class="h3"><a class="selflink" id="section-12.3" href="#section-12.3">12.3</a>.  Media Type Registration for &quot;application/clue+xml&quot;</span>
+
+   This section registers the &quot;application/clue+xml&quot; media type.
+
+   To:  ietf-types@iana.org
+
+   Subject:  Registration of media type &quot;application/clue+xml&quot;
+
+   Media type name:  application
+
+   Subtype name:  clue+xml
+
+   Required parameters:  (none)
+
+   Optional parameters:  charset.  Same as the charset parameter of
+      &quot;application/xml&quot; as specified in <a href="/doc/html/rfc7303#section-4.2">[RFC7303], Section&nbsp;4.2</a>.
+
+   Encoding considerations:  Same as the encoding considerations of
+      &quot;application/xml&quot; as specified in <a href="/doc/html/rfc7303#section-4.2">[RFC7303], Section&nbsp;4.2</a>.
+
+   Security considerations:  This content type is designed to carry
+      protocol data related to telepresence session control.  Some of
+      the data could be considered private.  This media type does not
+      provide any protection; thus, other mechanisms, such as those
+      described in <a href="#section-11">Section 11</a> of this document, are required to protect
+      the data.  This media type does not contain executable content.
+
+   Interoperability considerations:  None.
+
+   Published specification:  <a href="/doc/html/rfc8847">RFC 8847</a>
+
+   Applications that use this media type:  CLUE Participants.
+
+   Additional Information:
+
+      Magic Number(s):  (none)
+      File extension(s):  .xml
+      Macintosh File Type Code(s):  TEXT
+
+   Person &amp; email address to contact for further information:  Simon
+      Pietro Romano (spromano@unina.it).
+
+   Intended usage:  LIMITED USE
+
+   Author/Change controller:  The IETF
+
+   Other information:  This media type is a specialization of
+      application/xml [<a href="/doc/html/rfc7303" title="&quot;XML Media Types&quot;">RFC7303</a>], and many of the considerations
+      described there also apply to application/clue+xml.
+
+<span class="h3"><a class="selflink" id="section-12.4" href="#section-12.4">12.4</a>.  CLUE Protocol Registry</span>
+
+   Per this document, IANA has created new registries for CLUE messages
+   and response codes.
+
+<span class="h4"><a class="selflink" id="section-12.4.1" href="#section-12.4.1">12.4.1</a>.  CLUE Message Types</span>
+
+   The following summarizes the registry for CLUE messages:
+
+   Related Registry:  CLUE Message Types
+
+   Defining RFC:  <a href="/doc/html/rfc8847">RFC 8847</a>
+
+   Registration/Assignment Procedures:  Following the policies outlined
+      in [<a href="/doc/html/rfc8126" title="">RFC8126</a>], the IANA policy for assigning new values for the
+      CLUE message types for the CLUE protocol is Specification
+      Required.
+
+   Registrant Contact:  IESG (iesg@ietf.org).
+
+   The initial table of CLUE messages is populated using the CLUE
+   messages described in <a href="#section-5">Section 5</a> and defined in the XML schema in
+   <a href="#section-9">Section 9</a>.
+
+    +===================+=================================+===========+
+    | Message           | Description                     | Reference |
+    +===================+=================================+===========+
+    | options           | Sent by the CI to the CR in the | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+    |                   | initiation phase to specify the |           |
+    |                   | roles played by the CI, the     |           |
+    |                   | supported versions, and the     |           |
+    |                   | supported extensions.           |           |
+    +-------------------+---------------------------------+-----------+
+    | optionsResponse   | Sent by the CI to the CR in     | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+    |                   | reply to an &#x27;options&#x27; message,  |           |
+    |                   | to establish the version and    |           |
+    |                   | extensions to be used in the    |           |
+    |                   | subsequent exchange of CLUE     |           |
+    |                   | messages.                       |           |
+    +-------------------+---------------------------------+-----------+
+    | advertisement     | Sent by the MP to the MC to     | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+    |                   | specify the telepresence        |           |
+    |                   | capabilities of the MP          |           |
+    |                   | expressed according to the CLUE |           |
+    |                   | framework.                      |           |
+    +-------------------+---------------------------------+-----------+
+    | ack               | Sent by the MC to the MP to     | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+    |                   | acknowledge the reception of an |           |
+    |                   | &#x27;advertisement&#x27; message.        |           |
+    +-------------------+---------------------------------+-----------+
+    | configure         | Sent by the MC to the MP to     | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+    |                   | specify the desired media       |           |
+    |                   | captures among those specified  |           |
+    |                   | in the &#x27;advertisement&#x27;.         |           |
+    +-------------------+---------------------------------+-----------+
+    | configureResponse | Sent by the MP to the MC in     | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+    |                   | reply to a &#x27;configure&#x27; message  |           |
+    |                   | to communicate whether or not   |           |
+    |                   | the configuration request has   |           |
+    |                   | been successfully processed.    |           |
+    +-------------------+---------------------------------+-----------+
+
+                Table 2: Initial IANA Table of CLUE Messages
+
+<span class="h4"><a class="selflink" id="section-12.4.2" href="#section-12.4.2">12.4.2</a>.  CLUE Response Codes</span>
+
+   The following summarizes the registry for CLUE response codes:
+
+   Related Registry:  CLUE Response Codes
+
+   Defining RFC:  <a href="/doc/html/rfc8847">RFC 8847</a>
+
+   Registration/Assignment Procedures:  Following the policies outlined
+      in [<a href="/doc/html/rfc8126" title="">RFC8126</a>], the IANA policy for assigning new values for the
+      response codes for CLUE is Specification Required.
+
+   Registrant Contact:  IESG (iesg@ietf.org).
+
+   The initial table of CLUE response codes is populated using the
+   response codes defined in <a href="#section-5.7">Section 5.7</a> as follows:
+
+   +========+===============+==============================+===========+
+   | Number | Default       | Description                  | Reference |
+   |        | Reason String |                              |           |
+   +========+===============+==============================+===========+
+   | 200    | Success       | The request has been         | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        |               | successfully                 |           |
+   |        |               | processed.                   |           |
+   +--------+---------------+------------------------------+-----------+
+   | 300    | Low-level     | A generic low-level          | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | request error | request error has            |           |
+   |        |               | occurred.                    |           |
+   +--------+---------------+------------------------------+-----------+
+   | 301    | Bad syntax    | The XML syntax of the        | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        |               | message is not               |           |
+   |        |               | correct.                     |           |
+   +--------+---------------+------------------------------+-----------+
+   | 302    | Invalid value | The message contains         | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        |               | an invalid parameter         |           |
+   |        |               | value.                       |           |
+   +--------+---------------+------------------------------+-----------+
+   | 303    | Conflicting   | The message contains         | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | values        | values that cannot be        |           |
+   |        |               | used together.               |           |
+   +--------+---------------+------------------------------+-----------+
+   | 400    | Semantic      | The received CLUE            | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | errors        | protocol message             |           |
+   |        |               | contains semantic            |           |
+   |        |               | errors.                      |           |
+   +--------+---------------+------------------------------+-----------+
+   | 401    | Version not   | The protocol version         | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | supported     | used in the message is       |           |
+   |        |               | not supported.               |           |
+   +--------+---------------+------------------------------+-----------+
+   | 402    | Invalid       | The received message         | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | sequencing    | contains an unexpected       |           |
+   |        |               | sequence number (e.g.,       |           |
+   |        |               | sequence number gap,         |           |
+   |        |               | repeated sequence            |           |
+   |        |               | number, or sequence          |           |
+   |        |               | number outdated).            |           |
+   +--------+---------------+------------------------------+-----------+
+   | 403    | Invalid       | The clueId used in the       | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | identifier    | message is invalid or        |           |
+   |        |               | unknown.                     |           |
+   +--------+---------------+------------------------------+-----------+
+   | 404    | Advertisement | The sequence number of       | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | expired       | the advertisement the        |           |
+   |        |               | &#x27;configure&#x27; message          |           |
+   |        |               | refers to is out of          |           |
+   |        |               | date.                        |           |
+   +--------+---------------+------------------------------+-----------+
+   | 405    | Subset choice | The subset choice is         | <a href="/doc/html/rfc8847">RFC 8847</a>  |
+   |        | not allowed   | not allowed for the          |           |
+   |        |               | specified Multiple           |           |
+   |        |               | Content Capture.             |           |
+   +--------+---------------+------------------------------+-----------+
+
+             Table 3: Initial IANA Table of CLUE Response Codes
+
+<span class="h2"><a class="selflink" id="section-13" href="#section-13">13</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-13.1" href="#section-13.1">13.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3550">RFC3550</a>]  Schulzrinne, H., Casner, S., Frederick, R., and V.
+              Jacobson, &quot;RTP: A Transport Protocol for Real-Time
+              Applications&quot;, STD 64, <a href="/doc/html/rfc3550">RFC 3550</a>, DOI 10.17487/RFC3550,
+              July 2003, &lt;<a href="https://www.rfc-editor.org/info/rfc3550">https://www.rfc-editor.org/info/rfc3550</a>&gt;.
+
+   [<a id="ref-RFC3688">RFC3688</a>]  Mealling, M., &quot;The IETF XML Registry&quot;, <a href="/doc/html/bcp81">BCP 81</a>, <a href="/doc/html/rfc3688">RFC 3688</a>,
+              DOI 10.17487/RFC3688, January 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3688">https://www.rfc-editor.org/info/rfc3688</a>&gt;.
+
+   [<a id="ref-RFC7303">RFC7303</a>]  Thompson, H. and C. Lilley, &quot;XML Media Types&quot;, <a href="/doc/html/rfc7303">RFC 7303</a>,
+              DOI 10.17487/RFC7303, July 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7303">https://www.rfc-editor.org/info/rfc7303</a>&gt;.
+
+   [<a id="ref-RFC8126">RFC8126</a>]  Cotton, M., Leiba, B., and T. Narten, &quot;Guidelines for
+              Writing an IANA Considerations Section in RFCs&quot;, <a href="/doc/html/bcp26">BCP 26</a>,
+              <a href="/doc/html/rfc8126">RFC 8126</a>, DOI 10.17487/RFC8126, June 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8126">https://www.rfc-editor.org/info/rfc8126</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8845">RFC8845</a>]  Duckworth, M., Ed., Pepperell, A., and S. Wenger,
+              &quot;Framework for Telepresence Multi-Streams&quot;, <a href="/doc/html/rfc8845">RFC 8845</a>,
+              DOI 10.17487/RFC8845, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8845">https://www.rfc-editor.org/info/rfc8845</a>&gt;.
+
+   [<a id="ref-RFC8846">RFC8846</a>]  Presta, R. and S P. Romano, &quot;An XML Schema for the
+              Controlling Multiple Streams for Telepresence (CLUE) Data
+              Model&quot;, <a href="/doc/html/rfc8846">RFC 8846</a>, DOI 10.17487/RFC8846, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8846">https://www.rfc-editor.org/info/rfc8846</a>&gt;.
+
+   [<a id="ref-RFC8848">RFC8848</a>]  Hanton, R., Kyzivat, P., Xiao, L., and C. Groves, &quot;Session
+              Signaling for Controlling Multiple Streams for
+              Telepresence (CLUE)&quot;, <a href="/doc/html/rfc8848">RFC 8848</a>, DOI 10.17487/RFC8848,
+              January 2021, &lt;<a href="https://www.rfc-editor.org/info/rfc8848">https://www.rfc-editor.org/info/rfc8848</a>&gt;.
+
+   [<a id="ref-RFC8850">RFC8850</a>]  Holmberg, C., &quot;Controlling Multiple Streams for
+              Telepresence (CLUE) Protocol Data Channel&quot;, <a href="/doc/html/rfc8850">RFC 8850</a>,
+              DOI 10.17487/RFC8850, January 2021,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8850">https://www.rfc-editor.org/info/rfc8850</a>&gt;.
+
+   [<a id="ref-W3C.REC-xml-20081126">W3C.REC-xml-20081126</a>]
+              Bray, T., Paoli, J., Sperberg-McQueen, M., Maler, E., and
+              F. Yergeau, &quot;Extensible Markup Language (XML) 1.0 (Fifth
+              Edition)&quot;, World Wide Web Consortium Recommendation REC-
+              xml-20081126, November 2008,
+              &lt;<a href="https://www.w3.org/TR/2008/REC-xml-20081126">https://www.w3.org/TR/2008/REC-xml-20081126</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-13.2" href="#section-13.2">13.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC1122">RFC1122</a>]  Braden, R., Ed., &quot;Requirements for Internet Hosts -
+              Communication Layers&quot;, STD 3, <a href="/doc/html/rfc1122">RFC 1122</a>,
+              DOI 10.17487/RFC1122, October 1989,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc1122">https://www.rfc-editor.org/info/rfc1122</a>&gt;.
+
+   [<a id="ref-RFC3261">RFC3261</a>]  Rosenberg, J., Schulzrinne, H., Camarillo, G., Johnston,
+              A., Peterson, J., Sparks, R., Handley, M., and E.
+              Schooler, &quot;SIP: Session Initiation Protocol&quot;, <a href="/doc/html/rfc3261">RFC 3261</a>,
+              DOI 10.17487/RFC3261, June 2002,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3261">https://www.rfc-editor.org/info/rfc3261</a>&gt;.
+
+   [<a id="ref-RFC4353">RFC4353</a>]  Rosenberg, J., &quot;A Framework for Conferencing with the
+              Session Initiation Protocol (SIP)&quot;, <a href="/doc/html/rfc4353">RFC 4353</a>,
+              DOI 10.17487/RFC4353, February 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4353">https://www.rfc-editor.org/info/rfc4353</a>&gt;.
+
+   [<a id="ref-RFC6120">RFC6120</a>]  Saint-Andre, P., &quot;Extensible Messaging and Presence
+              Protocol (XMPP): Core&quot;, <a href="/doc/html/rfc6120">RFC 6120</a>, DOI 10.17487/RFC6120,
+              March 2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6120">https://www.rfc-editor.org/info/rfc6120</a>&gt;.
+
+   [<a id="ref-RFC7262">RFC7262</a>]  Romanow, A., Botzko, S., and M. Barnes, &quot;Requirements for
+              Telepresence Multistreams&quot;, <a href="/doc/html/rfc7262">RFC 7262</a>,
+              DOI 10.17487/RFC7262, June 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7262">https://www.rfc-editor.org/info/rfc7262</a>&gt;.
+
+   [<a id="ref-RFC7667">RFC7667</a>]  Westerlund, M. and S. Wenger, &quot;RTP Topologies&quot;, <a href="/doc/html/rfc7667">RFC 7667</a>,
+              DOI 10.17487/RFC7667, November 2015,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7667">https://www.rfc-editor.org/info/rfc7667</a>&gt;.
+
+Acknowledgements
+
+   The authors thank all the CLUErs for their precious feedback and
+   support -- in particular, Paul Kyzivat, Christian Groves, and
+   Scarlett Liuyan.
+
+Authors&#x27; Addresses
+
+   Roberta Presta
+   University of Napoli
+   Via Claudio 21
+   80125 Napoli
+   Italy
+
+   Email: roberta.presta@unina.it
+
+
+   Simon Pietro Romano
+   University of Napoli
+   Via Claudio 21
+   80125 Napoli
+   Italy
+
+   Email: spromano@unina.it
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

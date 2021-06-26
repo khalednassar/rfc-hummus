@@ -1,0 +1,979 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc8759
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.33.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-payload-rtp-ttml/">
+  <meta name="description" content="RTP Payload for Timed Text Markup Language (TTML) (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.33.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.33.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.33.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc8759.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc8759.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc8759.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc8759.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc8759/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc8759/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/avtcore/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-payload-rtp-ttml@ietf.org?subject=draft-ietf-payload-rtp-ttml" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-payload-rtp-ttml-06.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-payload-rtp-ttml-06.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-payload-rtp-ttml-06.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-payload-rtp-ttml-06">draft-ietf-payload-rtp-ttml-06</a>                   Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                       J. Sandford
+Request for Comments: 8759              British Broadcasting Corporation
+Category: Standards Track                                     March 2020
+ISSN: 2070-1721
+
+
+           <span class="h1">RTP Payload for Timed Text Markup Language (TTML)</span>
+
+Abstract
+
+   This memo describes a Real-time Transport Protocol (RTP) payload
+   format for Timed Text Markup Language (TTML), an XML-based timed text
+   format from W3C.  This payload format is specifically targeted at
+   streaming workflows using TTML.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc8759">https://www.rfc-editor.org/info/rfc8759</a>.
+
+Copyright Notice
+
+   Copyright (c) 2020 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions and Definitions
+   3.  Media Format Description
+     3.1.  Relation to Other Text Payload Types
+     3.2.  TTML2
+   4.  Payload Format
+     4.1.  RTP Header Usage
+     4.2.  Payload Data
+   5.  Payload Content Restrictions
+   6.  Payload Processing Requirements
+     6.1.  TTML Processor Profile
+       6.1.1.  Feature Extension Designation
+       6.1.2.  Processor Profile Document
+       6.1.3.  Processor Profile Signalling
+   7.  Payload Examples
+   8.  Fragmentation of TTML Documents
+   9.  Protection against Loss of Data
+   10. Congestion Control Considerations
+   11. Payload Format Parameters
+     11.1.  Clock Rate
+     11.2.  Session Description Protocol (SDP) Considerations
+       11.2.1.  Examples
+   12. IANA Considerations
+   13. Security Considerations
+   14. Normative References
+   15. Informative References
+   Acknowledgements
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   TTML (Timed Text Markup Language) [<a href="#ref-TTML2" title="&quot;Timed Text Markup Language 2 (TTML2)&quot;">TTML2</a>] is a media type for
+   describing timed text, such as closed captions and subtitles in
+   television workflows or broadcasts, as XML.  This document specifies
+   how TTML should be mapped into an RTP stream in streaming workflows,
+   including (but not restricted to) those described in the television-
+   broadcast-oriented European Broadcasting Union Timed Text (EBU-TT)
+   Part 3 [<a href="#ref-TECH3370" title="&quot;EBU-TT, Part 3, Live Subtitling Applications: System Model and Content Profile for Authoring and Contribution&quot;">TECH3370</a>] specification.  This document does not define a
+   media type for TTML but makes use of the existing application/
+   ttml+xml media type [<a href="#ref-TTML-MTPR">TTML-MTPR</a>].
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Conventions and Definitions</span>
+
+   Unless otherwise stated, the term &quot;document&quot; refers to the TTML
+   document being transmitted in the payload of the RTP packet(s).
+
+   The term &quot;word&quot; refers to a data word aligned to a specified number
+   of bits in a computing sense and not to linguistic words that might
+   appear in the transported text.
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Media Format Description</span>
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Relation to Other Text Payload Types</span>
+
+   Prior payload types for text are not suited to the carriage of closed
+   captions in television workflows.  &quot;RTP Payload for Text
+   Conversation&quot; [<a href="/doc/html/rfc4103" title="&quot;RTP Payload for Text Conversation&quot;">RFC4103</a>] is intended for low data rate conversation
+   with its own session management and minimal formatting capabilities.
+   &quot;Definition of Events for Modem, Fax, and Text Telephony Signals&quot;
+   [<a href="/doc/html/rfc4734" title="&quot;Definition of Events for Modem, Fax, and Text Telephony Signals&quot;">RFC4734</a>] deals in large parts with the control signalling of
+   facsimile and other systems.  &quot;RTP Payload Format for 3rd Generation
+   Partnership Project (3GPP) Timed Text&quot; [<a href="/doc/html/rfc4396" title="&quot;RTP Payload Format for 3rd Generation Partnership Project (3GPP) Timed Text&quot;">RFC4396</a>] describes the
+   carriage of a timed text format with much more restricted formatting
+   capabilities than TTML.  The lack of an existing format for TTML or
+   generic XML has necessitated the creation of this payload format.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  TTML2</span>
+
+   TTML2 (Timed Text Markup Language, Version 2) [<a href="#ref-TTML2" title="&quot;Timed Text Markup Language 2 (TTML2)&quot;">TTML2</a>] is an XML-based
+   markup language for describing textual information with associated
+   timing metadata.  One of its primary use cases is the description of
+   subtitles and closed captions.  A number of profiles exist that adapt
+   TTML2 for use in specific contexts [<a href="#ref-TTML-MTPR">TTML-MTPR</a>].  These include both
+   file-based and streaming workflows.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Payload Format</span>
+
+   In addition to the required RTP headers, the payload contains a
+   section for the TTML document being transmitted (User Data Words) and
+   a field for the length of that data.  Each RTP payload contains one
+   or part of one TTML document.
+
+   A representation of the payload format for TTML is Figure 1.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |V=2|P|X| CC    |M|    PT       |        Sequence Number        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                           Timestamp                           |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |           Synchronization Source (SSRC) Identifier            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |           Reserved            |             Length            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                       User Data Words...
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                   Figure 1: RTP Payload Format for TTML
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  RTP Header Usage</span>
+
+   RTP packet header fields SHALL be interpreted, as per [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>], with
+   the following specifics:
+
+   Marker Bit (M): 1 bit
+      The marker bit is set to &quot;1&quot; to indicate the last packet of a
+      document.  Otherwise, set to &quot;0&quot;.  Note: The first packet might
+      also be the last.
+
+   Timestamp: 32 bits
+      The RTP Timestamp encodes the epoch of the TTML document in User
+      Data Words.  Further detail on its usage may be found in
+      <a href="#section-6">Section 6</a>.  The clock frequency used is dependent on the
+      application and is specified in the media type rate parameter, as
+      per <a href="#section-11.1">Section 11.1</a>.  Documents spread across multiple packets MUST
+      use the same timestamp but different consecutive Sequence Numbers.
+      Sequential documents MUST NOT use the same timestamp.  Because
+      packets do not represent any constant duration, the timestamp
+      cannot be used to directly infer packet loss.
+
+   Reserved: 16 bits
+      These bits are reserved for future use and MUST be set to 0x0 and
+      ignored upon reception.
+
+   Length: 16 bits
+      The length of User Data Words in bytes.
+
+   User Data Words: The length of User Data Words MUST match the
+   value specified in the Length field
+      The User Data Words section contains the text of the whole
+      document being transmitted or a part of the document being
+      transmitted.  Documents using character encodings where characters
+      are not represented by a single byte MUST be serialised in big-
+      endian order, a.k.a., network byte order.  Where a document will
+      not fit within the Path MTU, it may be fragmented across multiple
+      packets.  Further detail on fragmentation may be found in
+      <a href="#section-8">Section 8</a>.
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Payload Data</span>
+
+   TTML documents define a series of changes to text over time.  TTML
+   documents carried in User Data Words are encoded in accordance with
+   one or more of the defined TTML profiles specified in the TTML
+   registry [<a href="#ref-TTML-MTPR">TTML-MTPR</a>].  These profiles specify the document structure
+   used, systems models, timing, and other considerations.  TTML
+   profiles may restrict the complexity of the changes, and operational
+   requirements may limit the maximum duration of TTML documents by a
+   deployment configuration.  Both of these cases are out of scope of
+   this document.
+
+   Documents carried over RTP MUST conform to the following profile, in
+   addition to any others used.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Payload Content Restrictions</span>
+
+   This section defines constraints on the content of TTML documents
+   carried over RTP.
+
+   Multiple TTML subtitle streams MUST NOT be interleaved in a single
+   RTP stream.
+
+   The TTML document instance&#x27;s root &quot;tt&quot; element in the
+   &quot;http://www.w3.org/ns/ttml&quot; namespace MUST include a &quot;timeBase&quot;
+   attribute in the &quot;http://www.w3.org/ns/ttml#parameter&quot; namespace
+   containing the value &quot;media&quot;.
+
+   This is equivalent to the TTML2 content profile definition document
+   in Figure 2.
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   &lt;profile xmlns=&quot;http://www.w3.org/ns/ttml#parameter&quot;
+       xmlns:ttm=&quot;http://www.w3.org/ns/ttml#metadata&quot;
+       xmlns:tt=&quot;http://www.w3.org/ns/ttml&quot;
+       type=&quot;content&quot;
+       designator=&quot;urn:ietf:rfc:8759#content&quot;
+       combine=&quot;mostRestrictive&quot;&gt;
+       &lt;features xml:base=&quot;http://www.w3.org/ns/ttml/feature/&quot;&gt;
+           &lt;tt:metadata&gt;
+               &lt;ttm:desc&gt;
+                   This document is a minimal TTML2 content profile
+                   definition document intended to express the
+                   minimal requirements to apply when carrying TTML
+                   over RTP.
+               &lt;/ttm:desc&gt;
+           &lt;/tt:metadata&gt;
+           &lt;feature value=&quot;required&quot;&gt;#timeBase-media&lt;/feature&gt;
+           &lt;feature value=&quot;prohibited&quot;&gt;#timeBase-smpte&lt;/feature&gt;
+           &lt;feature value=&quot;prohibited&quot;&gt;#timeBase-clock&lt;/feature&gt;
+       &lt;/features&gt;
+   &lt;/profile&gt;
+
+      Figure 2: TTML2 Content Profile Definition for Documents Carried
+                                  over RTP
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Payload Processing Requirements</span>
+
+   This section defines constraints on the processing of the TTML
+   documents carried over RTP.
+
+   If a TTML document is assessed to be invalid, then it MUST be
+   discarded.  This includes empty documents, i.e., those of zero
+   length.  When processing a valid document, the following requirements
+   apply.
+
+   Each TTML document becomes active at its epoch E.  E MUST be set to
+   the RTP Timestamp in the header of the RTP packet carrying the TTML
+   document.  Computed TTML media times are offset relative to E, in
+   accordance with Section I.2 of [<a href="#ref-TTML2" title="&quot;Timed Text Markup Language 2 (TTML2)&quot;">TTML2</a>].
+
+   When processing a sequence of TTML documents, where each is delivered
+   in the same RTP stream, exactly zero or one document SHALL be
+   considered active at each moment in the RTP time line.  In the event
+   that a document D_(n-1) with E_(n-1) is active, and document D_(n) is
+   delivered with E_(n) where E_(n-1) &lt; E_(n), processing of D_(n-1)
+   MUST be stopped at E_(n) and processing of D_(n) MUST begin.
+
+   When all defined content within a document has ended, then processing
+   of the document MAY be stopped.  This can be tested by constructing
+   the intermediate synchronic document sequence from the document, as
+   defined by [<a href="#ref-TTML2" title="&quot;Timed Text Markup Language 2 (TTML2)&quot;">TTML2</a>].  If the last intermediate synchronic document in
+   the sequence is both active and contains no region elements, then all
+   defined content within the document has ended.
+
+   As described above, the RTP Timestamp does not specify the exact
+   timing of the media in this payload format.  Additionally, documents
+   may be fragmented across multiple packets.  This renders the RTCP
+   jitter calculation unusable.
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  TTML Processor Profile</span>
+
+<span class="h4"><a class="selflink" id="section-6.1.1" href="#section-6.1.1">6.1.1</a>.  Feature Extension Designation</span>
+
+   This specification defines the following TTML feature extension
+   designation:
+
+      &quot;urn:ietf:rfc:8759#rtp-relative-media-time&quot;
+
+   The namespace &quot;urn:ietf:rfc:8759&quot; is as defined by [<a href="/doc/html/rfc2648" title="&quot;A URN Namespace for IETF Documents&quot;">RFC2648</a>].
+
+   A TTML content processor supports the &quot;#rtp-relative-media-time&quot;
+   feature extension if it processes media times in accordance with the
+   payload processing requirements specified in this document, i.e.,
+   that the epoch E is set to the time equivalent to the RTP Timestamp,
+   as detailed above in <a href="#section-6">Section 6</a>.
+
+<span class="h4"><a class="selflink" id="section-6.1.2" href="#section-6.1.2">6.1.2</a>.  Processor Profile Document</span>
+
+   The required syntax and semantics declared in the minimal TTML2
+   processor profile in Figure 3 MUST be supported by the receiver, as
+   signified by those &quot;feature&quot; or &quot;extension&quot; elements whose &quot;value&quot;
+   attribute is set to &quot;required&quot;.
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   &lt;profile xmlns=&quot;http://www.w3.org/ns/ttml#parameter&quot;
+       xmlns:ttm=&quot;http://www.w3.org/ns/ttml#metadata&quot;
+       xmlns:tt=&quot;http://www.w3.org/ns/ttml&quot;
+       type=&quot;processor&quot;
+       designator=&quot;urn:ietf:rfc:8759#processor&quot;
+       combine=&quot;mostRestrictive&quot;&gt;
+       &lt;features xml:base=&quot;http://www.w3.org/ns/ttml/feature/&quot;&gt;
+           &lt;tt:metadata&gt;
+               &lt;ttm:desc&gt;
+                   This document is a minimal TTML2 processor profile
+                   definition document intended to express the
+                   minimal requirements of a TTML processor able to
+                   process TTML delivered over RTP according to
+                   <a href="/doc/html/rfc8759">RFC 8759</a>.
+               &lt;/ttm:desc&gt;
+           &lt;/tt:metadata&gt;
+           &lt;feature value=&quot;required&quot;&gt;#timeBase-media&lt;/feature&gt;
+           &lt;feature value=&quot;optional&quot;&gt;
+               #profile-full-version-2
+           &lt;/feature&gt;
+       &lt;/features&gt;
+       &lt;extensions xml:base=&quot;urn:ietf:rfc:8759&quot;&gt;
+           &lt;extension restricts=&quot;#timeBase-media&quot; value=&quot;required&quot;&gt;
+               #rtp-relative-media-time
+           &lt;/extension&gt;
+       &lt;/extensions&gt;
+   &lt;/profile&gt;
+
+        Figure 3: TTML2 Processor Profile Definition for Processing
+                         Documents Carried over RTP
+
+   Note that this requirement does not imply that the receiver needs to
+   support either TTML1 or TTML2 profile processing, i.e., the TTML2
+   &quot;#profile-full-version-2&quot; feature or any of its dependent features.
+
+<span class="h4"><a class="selflink" id="section-6.1.3" href="#section-6.1.3">6.1.3</a>.  Processor Profile Signalling</span>
+
+   The &quot;codecs&quot; media type parameter MUST specify at least one processor
+   profile.  Short codes for TTML profiles are registered at
+   [<a href="#ref-TTML-MTPR">TTML-MTPR</a>].  The processor profiles specified in &quot;codecs&quot; MUST be
+   compatible with the processor profile specified in this document.
+   Where multiple options exist in &quot;codecs&quot; for possible processor
+   profile combinations (i.e., separated by &quot;|&quot; operator), every
+   permitted option MUST be compatible with the processor profile
+   specified in this document.  Where processor profiles (other than the
+   one specified in this document) are advertised in the &quot;codecs&quot;
+   parameter, the requirements of the processor profile specified in
+   this document MAY be signalled, additionally using the &quot;+&quot; operator
+   with its registered short code.
+
+   A processor profile (X) is compatible with the processor profile
+   specified here (P) if X includes all the features and extensions in P
+   (identified by their character content) and the &quot;value&quot; attribute of
+   each is, at least, as restrictive as the &quot;value&quot; attribute of the
+   feature or extension in P that has the same character content.  The
+   term &quot;restrictive&quot; here is as defined in Section 6 of [<a href="#ref-TTML2" title="&quot;Timed Text Markup Language 2 (TTML2)&quot;">TTML2</a>].
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  Payload Examples</span>
+
+   Figure 4 is an example of a valid TTML document that may be carried
+   using the payload format described in this document.
+
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   &lt;tt xml:lang=&quot;en&quot;
+    xmlns=&quot;http://www.w3.org/ns/ttml&quot;
+    xmlns:ttm=&quot;http://www.w3.org/ns/ttml#metadata&quot;
+    xmlns:ttp=&quot;http://www.w3.org/ns/ttml#parameter&quot;
+    xmlns:tts=&quot;http://www.w3.org/ns/ttml#styling&quot;
+    ttp:timeBase=&quot;media&quot;
+    &gt;
+     &lt;head&gt;
+       &lt;metadata&gt;
+         &lt;ttm:title&gt;Timed Text TTML Example&lt;/ttm:title&gt;
+         &lt;ttm:copyright&gt;The Authors (c) 2006&lt;/ttm:copyright&gt;
+       &lt;/metadata&gt;
+       &lt;styling&gt;
+         &lt;!--
+           s1 specifies default color, font, and text alignment
+         --&gt;
+         &lt;style xml:id=&quot;s1&quot;
+           tts:color=&quot;white&quot;
+           tts:fontFamily=&quot;proportionalSansSerif&quot;
+           tts:fontSize=&quot;100%&quot;
+           tts:textAlign=&quot;center&quot;
+         /&gt;
+       &lt;/styling&gt;
+       &lt;layout&gt;
+         &lt;region xml:id=&quot;subtitleArea&quot;
+           style=&quot;s1&quot;
+           tts:extent=&quot;78% 11%&quot;
+           tts:padding=&quot;1% 5%&quot;
+           tts:backgroundColor=&quot;black&quot;
+           tts:displayAlign=&quot;after&quot;
+         /&gt;
+       &lt;/layout&gt;
+     &lt;/head&gt;
+     &lt;body region=&quot;subtitleArea&quot;&gt;
+       &lt;div&gt;
+         &lt;p xml:id=&quot;subtitle1&quot; dur=&quot;5.0s&quot; style=&quot;s1&quot;&gt;
+           How truly delightful!
+         &lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/body&gt;
+   &lt;/tt&gt;
+
+                      Figure 4: Example TTML Document
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Fragmentation of TTML Documents</span>
+
+   Many of the use cases for TTML are low bit-rate with RTP packets
+   expected to fit within the Path MTU.  However, some documents may
+   exceed the Path MTU.  In these cases, they may be split between
+   multiple packets.  Where fragmentation is used, the following
+   guidelines MUST be followed:
+
+   *  It is RECOMMENDED that documents be fragmented as seldom as
+      possible, i.e., the least possible number of fragments is created
+      out of a document.
+
+   *  Text strings MUST split at character boundaries.  This enables
+      decoding of partial documents.  As a consequence, document
+      fragmentation requires knowledge of the UTF-8/UTF-16 encoding
+      formats to determine character boundaries.
+
+   *  Document fragments SHOULD be protected against packet losses.
+      More information can be found in <a href="#section-9">Section 9</a>.
+
+   When a document spans more than one RTP packet, the entire document
+   is obtained by concatenating User Data Words from each consecutive
+   contributing packet in ascending order of Sequence Number.
+
+   As described in <a href="#section-6">Section 6</a>, only zero or one TTML document may be
+   active at any point in time.  As such, there MUST only be one
+   document transmitted for a given RTP Timestamp.  Furthermore, as
+   stated in <a href="#section-4.1">Section 4.1</a>, the marker bit MUST be set for a packet
+   containing the last fragment of a document.  A packet following one
+   where the marker bit is set contains the first fragment of a new
+   document.  The first fragment might also be the last.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Protection against Loss of Data</span>
+
+   Consideration must be devoted to keeping loss of documents due to
+   packet loss within acceptable limits.  What is deemed acceptable
+   limits is dependent on the TTML profile(s) used and use case, among
+   other things.  As such, specific limits are outside the scope of this
+   document.
+
+   Documents MAY be sent without additional protection if end-to-end
+   network conditions guarantee that document loss will be within
+   acceptable limits under all anticipated load conditions.  Where such
+   guarantees cannot be provided, implementations MUST use a mechanism
+   to protect against packet loss.  Potential mechanisms include Forward
+   Error Correction (FEC) [<a href="/doc/html/rfc5109" title="&quot;RTP Payload Format for Generic Forward Error Correction&quot;">RFC5109</a>], retransmission [<a href="/doc/html/rfc4588" title="&quot;RTP Retransmission Payload Format&quot;">RFC4588</a>],
+   duplication [<a href="#ref-ST2022-7" title="&quot;Seamless Protection Switching of RTP Datagrams&quot;">ST2022-7</a>], or an equivalent technique.
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Congestion Control Considerations</span>
+
+   Congestion control for RTP SHALL be used in accordance with [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>]
+   and with any applicable RTP profile, e.g., [<a href="/doc/html/rfc3551" title="&quot;RTP Profile for Audio and Video Conferences with Minimal Control&quot;">RFC3551</a>].  &quot;Multimedia
+   Congestion Control: Circuit Breakers for Unicast RTP Sessions&quot;
+   [<a href="/doc/html/rfc8083" title="&quot;Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions&quot;">RFC8083</a>] is an update to &quot;RTP: A Transport Protocol for Real-time
+   Applications&quot; [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>], which defines criteria for when one is
+   required to stop sending RTP packet streams.  Applications
+   implementing this standard MUST comply with [<a href="/doc/html/rfc8083" title="&quot;Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions&quot;">RFC8083</a>], with
+   particular attention paid to <a href="#section-4.4">Section 4.4</a> on Media Usability.
+   [<a href="/doc/html/rfc8085" title="&quot;UDP Usage Guidelines&quot;">RFC8085</a>] provides additional information on the best practices for
+   applying congestion control to UDP streams.
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Payload Format Parameters</span>
+
+   This RTP payload format is identified using the existing application/
+   ttml+xml media type as registered with IANA [<a href="#ref-IANA" title="&quot;Media Types&quot;">IANA</a>] and defined in
+   [<a href="#ref-TTML-MTPR">TTML-MTPR</a>].
+
+<span class="h3"><a class="selflink" id="section-11.1" href="#section-11.1">11.1</a>.  Clock Rate</span>
+
+   The default clock rate for TTML over RTP is 1000 Hz.  The clock rate
+   SHOULD be included in any advertisements of the RTP stream where
+   possible.  This parameter has not been added to the media type
+   definition as it is not applicable to TTML usage other than within
+   RTP streams.  In other contexts, timing is defined within the TTML
+   document.
+
+   When choosing a clock rate, implementers should consider what other
+   media their TTML streams may be used in conjunction with (e.g., video
+   or audio).  In these situations, it is RECOMMENDED that streams use
+   the same clock source and clock rate as the related media.  As TTML
+   streams may be aperiodic, implementers should also consider the
+   frequency range over which they expect packets to be sent and the
+   temporal resolution required.
+
+<span class="h3"><a class="selflink" id="section-11.2" href="#section-11.2">11.2</a>.  Session Description Protocol (SDP) Considerations</span>
+
+   The mapping of the application/ttml+xml media type and its parameters
+   [<a href="#ref-TTML-MTPR">TTML-MTPR</a>] SHALL be done according to <a href="/doc/html/rfc4855#section-3">Section&nbsp;3 of [RFC4855]</a>.
+
+   *  The type name &quot;application&quot; goes in SDP &quot;m=&quot; as the media name.
+
+   *  The media subtype &quot;ttml+xml&quot; goes in SDP &quot;a=rtpmap&quot; as the
+      encoding name.
+
+   *  The clock rate also goes in &quot;a=rtpmap&quot; as the clock rate.
+
+   Additional format-specific parameters, as described in the media type
+   specification, SHALL be included in the SDP file in &quot;a=fmtp&quot; as a
+   semicolon-separated list of &quot;parameter=value&quot; pairs, as described in
+   [<a href="/doc/html/rfc4855" title="&quot;Media Type Registration of RTP Payload Formats&quot;">RFC4855</a>].  The &quot;codecs&quot; parameter MUST be included in the &quot;a=fmtp&quot;
+   line of the SDP file.  Specific requirements for the &quot;codecs&quot;
+   parameter are included in <a href="#section-6.1.3">Section 6.1.3</a>.
+
+<span class="h4"><a class="selflink" id="section-11.2.1" href="#section-11.2.1">11.2.1</a>.  Examples</span>
+
+   A sample SDP mapping is presented in Figure 5.
+
+   m=application 30000 RTP/AVP 112
+   a=rtpmap:112 ttml+xml/90000
+   a=fmtp:112 charset=utf-8;codecs=im2t
+
+                       Figure 5: Example SDP Mapping
+
+   In this example, a dynamic payload type 112 is used.  The 90 kHz RTP
+   timestamp rate is specified in the &quot;a=rtpmap&quot; line after the subtype.
+   The codecs parameter defined in the &quot;a=fmtp&quot; line indicates that the
+   TTML data conforms to Internet Media and Captions (IMSC) 1.1 Text
+   profile [<a href="#ref-TTML-IMSC1.1">TTML-IMSC1.1</a>].
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  IANA Considerations</span>
+
+   This document has no IANA actions.
+
+<span class="h2"><a class="selflink" id="section-13" href="#section-13">13</a>.  Security Considerations</span>
+
+   RTP packets using the payload format defined in this specification
+   are subject to the security considerations discussed in the RTP
+   specification [<a href="/doc/html/rfc3550" title="&quot;RTP: A Transport Protocol for Real-Time Applications&quot;">RFC3550</a>] and in any applicable RTP profile, such as
+   RTP/AVP [<a href="/doc/html/rfc3551" title="&quot;RTP Profile for Audio and Video Conferences with Minimal Control&quot;">RFC3551</a>], RTP/AVPF [<a href="/doc/html/rfc4585" title="&quot;Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;">RFC4585</a>], RTP/SAVP [<a href="/doc/html/rfc3711" title="&quot;The Secure Real-time Transport Protocol (SRTP)&quot;">RFC3711</a>], or RTP/
+   SAVPF [<a href="/doc/html/rfc5124" title="&quot;Extended Secure RTP Profile for Real-time Transport Control Protocol (RTCP)-Based Feedback (RTP/SAVPF)&quot;">RFC5124</a>].  However, as &quot;Securing the RTP Protocol Framework:
+   Why RTP Does Not Mandate a Single Media Security Solution&quot; [<a href="/doc/html/rfc7202" title="&quot;Securing the RTP Framework: Why RTP Does Not Mandate a Single Media Security Solution&quot;">RFC7202</a>]
+   discusses, it is not an RTP payload format&#x27;s responsibility to
+   discuss or mandate what solutions are used to meet the basic security
+   goals (like confidentiality, integrity, and source authenticity) for
+   RTP in general.  This responsibility lays on anyone using RTP in an
+   application.  They can find guidance on available security mechanisms
+   and important considerations in &quot;Options for Securing RTP Sessions&quot;
+   [<a href="/doc/html/rfc7201" title="&quot;Options for Securing RTP Sessions&quot;">RFC7201</a>].  Applications SHOULD use one or more appropriate strong
+   security mechanisms.  The rest of this Security Considerations
+   section discusses the security impacting properties of the payload
+   format itself.
+
+   To avoid potential buffer overflow attacks, receivers should take
+   care to validate that the User Data Words in the RTP payload are of
+   the appropriate length (using the Length field).
+
+   This payload format places no specific restrictions on the size of
+   TTML documents that may be transmitted.  As such, malicious
+   implementations could be used to perform denial-of-service (DoS)
+   attacks.  [<a href="/doc/html/rfc4732" title="&quot;Internet Denial-of-Service Considerations&quot;">RFC4732</a>] provides more information on DoS attacks and
+   describes some mitigation strategies.  Implementers should take into
+   consideration that the size and frequency of documents transmitted
+   using this format may vary over time.  As such, sender
+   implementations should avoid producing streams that exhibit DoS-like
+   behaviour, and receivers should avoid false identification of a
+   legitimate stream as malicious.
+
+   As with other XML types and as noted in <a href="#section-10">Section 10</a> of &quot;XML Media
+   Types&quot; [<a href="/doc/html/rfc7303" title="&quot;XML Media Types&quot;">RFC7303</a>], repeated expansion of maliciously constructed XML
+   entities can be used to consume large amounts of memory, which may
+   cause XML processors in constrained environments to fail.
+
+   In addition, because of the extensibility features for TTML and of
+   XML in general, it is possible that &quot;application/ttml+xml&quot; may
+   describe content that has security implications beyond those
+   described here.  However, TTML does not provide for any sort of
+   active or executable content, and if the processor follows only the
+   normative semantics of the published specification, this content will
+   be outside TTML namespaces and may be ignored.  Only in the case
+   where the processor recognizes and processes the additional content
+   or where further processing of that content is dispatched to other
+   processors would security issues potentially arise.  And in that
+   case, they would fall outside the domain of this RTP payload format
+   and the application/ttml+xml registration document.
+
+   Although not prohibited, there are no expectations that XML
+   signatures or encryption would normally be employed.
+
+   Further information related to privacy and security at a document
+   level can be found in <a href="#appendix-P">Appendix P</a> of [<a href="#ref-TTML2" title="&quot;Timed Text Markup Language 2 (TTML2)&quot;">TTML2</a>].
+
+<span class="h2"><a class="selflink" id="section-14" href="#section-14">14</a>.  Normative References</span>
+
+   [<a id="ref-IANA">IANA</a>]     IANA, &quot;Media Types&quot;,
+              &lt;<a href="https://www.iana.org/assignments/media-types">https://www.iana.org/assignments/media-types</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC3550">RFC3550</a>]  Schulzrinne, H., Casner, S., Frederick, R., and V.
+              Jacobson, &quot;RTP: A Transport Protocol for Real-Time
+              Applications&quot;, STD 64, <a href="/doc/html/rfc3550">RFC 3550</a>, DOI 10.17487/RFC3550,
+              July 2003, &lt;<a href="https://www.rfc-editor.org/info/rfc3550">https://www.rfc-editor.org/info/rfc3550</a>&gt;.
+
+   [<a id="ref-RFC4103">RFC4103</a>]  Hellstrom, G. and P. Jones, &quot;RTP Payload for Text
+              Conversation&quot;, <a href="/doc/html/rfc4103">RFC 4103</a>, DOI 10.17487/RFC4103, June 2005,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4103">https://www.rfc-editor.org/info/rfc4103</a>&gt;.
+
+   [<a id="ref-RFC4855">RFC4855</a>]  Casner, S., &quot;Media Type Registration of RTP Payload
+              Formats&quot;, <a href="/doc/html/rfc4855">RFC 4855</a>, DOI 10.17487/RFC4855, February 2007,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4855">https://www.rfc-editor.org/info/rfc4855</a>&gt;.
+
+   [<a id="ref-RFC7303">RFC7303</a>]  Thompson, H. and C. Lilley, &quot;XML Media Types&quot;, <a href="/doc/html/rfc7303">RFC 7303</a>,
+              DOI 10.17487/RFC7303, July 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7303">https://www.rfc-editor.org/info/rfc7303</a>&gt;.
+
+   [<a id="ref-RFC8083">RFC8083</a>]  Perkins, C. and V. Singh, &quot;Multimedia Congestion Control:
+              Circuit Breakers for Unicast RTP Sessions&quot;, <a href="/doc/html/rfc8083">RFC 8083</a>,
+              DOI 10.17487/RFC8083, March 2017,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8083">https://www.rfc-editor.org/info/rfc8083</a>&gt;.
+
+   [<a id="ref-RFC8085">RFC8085</a>]  Eggert, L., Fairhurst, G., and G. Shepherd, &quot;UDP Usage
+              Guidelines&quot;, <a href="/doc/html/bcp145">BCP 145</a>, <a href="/doc/html/rfc8085">RFC 8085</a>, DOI 10.17487/RFC8085,
+              March 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8085">https://www.rfc-editor.org/info/rfc8085</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-TECH3370">TECH3370</a>] European Broadcasting Union, &quot;EBU-TT, Part 3, Live
+              Subtitling Applications: System Model and Content Profile
+              for Authoring and Contribution&quot;, EBU-TT Part 3, Tech 3370,
+              May 2017, &lt;<a href="https://tech.ebu.ch/publications/tech3370">https://tech.ebu.ch/publications/tech3370</a>&gt;.
+
+   [<a id="ref-TTML-MTPR">TTML-MTPR</a>]
+              Adams, G., Ed. and M. Dolan, Ed., &quot;TTML Media Type
+              Definition and Profile Registry&quot;, W3C Working Group Note,
+              April 2019,
+              &lt;<a href="https://www.w3.org/TR/ttml-profile-registry/">https://www.w3.org/TR/ttml-profile-registry/</a>&gt;.
+
+   [<a id="ref-TTML2">TTML2</a>]    Adams, G., Ed. and C. Concolato, Ed., &quot;Timed Text Markup
+              Language 2 (TTML2)&quot;, W3C Recommendation REC-
+              ttml2-20181108, November 2018,
+              &lt;<a href="https://www.w3.org/TR/ttml2/">https://www.w3.org/TR/ttml2/</a>&gt;.
+
+<span class="h2"><a class="selflink" id="section-15" href="#section-15">15</a>.  Informative References</span>
+
+   [<a id="ref-RFC2648">RFC2648</a>]  Moats, R., &quot;A URN Namespace for IETF Documents&quot;, <a href="/doc/html/rfc2648">RFC 2648</a>,
+              DOI 10.17487/RFC2648, August 1999,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2648">https://www.rfc-editor.org/info/rfc2648</a>&gt;.
+
+   [<a id="ref-RFC3551">RFC3551</a>]  Schulzrinne, H. and S. Casner, &quot;RTP Profile for Audio and
+              Video Conferences with Minimal Control&quot;, STD 65, <a href="/doc/html/rfc3551">RFC 3551</a>,
+              DOI 10.17487/RFC3551, July 2003,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3551">https://www.rfc-editor.org/info/rfc3551</a>&gt;.
+
+   [<a id="ref-RFC3711">RFC3711</a>]  Baugher, M., McGrew, D., Naslund, M., Carrara, E., and K.
+              Norrman, &quot;The Secure Real-time Transport Protocol (SRTP)&quot;,
+              <a href="/doc/html/rfc3711">RFC 3711</a>, DOI 10.17487/RFC3711, March 2004,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc3711">https://www.rfc-editor.org/info/rfc3711</a>&gt;.
+
+   [<a id="ref-RFC4396">RFC4396</a>]  Rey, J. and Y. Matsui, &quot;RTP Payload Format for 3rd
+              Generation Partnership Project (3GPP) Timed Text&quot;,
+              <a href="/doc/html/rfc4396">RFC 4396</a>, DOI 10.17487/RFC4396, February 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4396">https://www.rfc-editor.org/info/rfc4396</a>&gt;.
+
+   [<a id="ref-RFC4585">RFC4585</a>]  Ott, J., Wenger, S., Sato, N., Burmeister, C., and J. Rey,
+              &quot;Extended RTP Profile for Real-time Transport Control
+              Protocol (RTCP)-Based Feedback (RTP/AVPF)&quot;, <a href="/doc/html/rfc4585">RFC 4585</a>,
+              DOI 10.17487/RFC4585, July 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4585">https://www.rfc-editor.org/info/rfc4585</a>&gt;.
+
+   [<a id="ref-RFC4588">RFC4588</a>]  Rey, J., Leon, D., Miyazaki, A., Varsa, V., and R.
+              Hakenberg, &quot;RTP Retransmission Payload Format&quot;, <a href="/doc/html/rfc4588">RFC 4588</a>,
+              DOI 10.17487/RFC4588, July 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4588">https://www.rfc-editor.org/info/rfc4588</a>&gt;.
+
+   [<a id="ref-RFC4732">RFC4732</a>]  Handley, M., Ed., Rescorla, E., Ed., and IAB, &quot;Internet
+              Denial-of-Service Considerations&quot;, <a href="/doc/html/rfc4732">RFC 4732</a>,
+              DOI 10.17487/RFC4732, December 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4732">https://www.rfc-editor.org/info/rfc4732</a>&gt;.
+
+   [<a id="ref-RFC4734">RFC4734</a>]  Schulzrinne, H. and T. Taylor, &quot;Definition of Events for
+              Modem, Fax, and Text Telephony Signals&quot;, <a href="/doc/html/rfc4734">RFC 4734</a>,
+              DOI 10.17487/RFC4734, December 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4734">https://www.rfc-editor.org/info/rfc4734</a>&gt;.
+
+   [<a id="ref-RFC5109">RFC5109</a>]  Li, A., Ed., &quot;RTP Payload Format for Generic Forward Error
+              Correction&quot;, <a href="/doc/html/rfc5109">RFC 5109</a>, DOI 10.17487/RFC5109, December
+              2007, &lt;<a href="https://www.rfc-editor.org/info/rfc5109">https://www.rfc-editor.org/info/rfc5109</a>&gt;.
+
+   [<a id="ref-RFC5124">RFC5124</a>]  Ott, J. and E. Carrara, &quot;Extended Secure RTP Profile for
+              Real-time Transport Control Protocol (RTCP)-Based Feedback
+              (RTP/SAVPF)&quot;, <a href="/doc/html/rfc5124">RFC 5124</a>, DOI 10.17487/RFC5124, February
+              2008, &lt;<a href="https://www.rfc-editor.org/info/rfc5124">https://www.rfc-editor.org/info/rfc5124</a>&gt;.
+
+   [<a id="ref-RFC7201">RFC7201</a>]  Westerlund, M. and C. Perkins, &quot;Options for Securing RTP
+              Sessions&quot;, <a href="/doc/html/rfc7201">RFC 7201</a>, DOI 10.17487/RFC7201, April 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7201">https://www.rfc-editor.org/info/rfc7201</a>&gt;.
+
+   [<a id="ref-RFC7202">RFC7202</a>]  Perkins, C. and M. Westerlund, &quot;Securing the RTP
+              Framework: Why RTP Does Not Mandate a Single Media
+              Security Solution&quot;, <a href="/doc/html/rfc7202">RFC 7202</a>, DOI 10.17487/RFC7202, April
+              2014, &lt;<a href="https://www.rfc-editor.org/info/rfc7202">https://www.rfc-editor.org/info/rfc7202</a>&gt;.
+
+   [<a id="ref-ST2022-7">ST2022-7</a>] SMPTE, &quot;Seamless Protection Switching of RTP Datagrams&quot;,
+              ST 2022-7:2019, DOI 10.5594/SMPTE.ST2022-7.2019, May 2019,
+              &lt;<a href="https://ieeexplore.ieee.org/document/8716822">https://ieeexplore.ieee.org/document/8716822</a>&gt;.
+
+   [<a id="ref-TTML-IMSC1.1">TTML-IMSC1.1</a>]
+              Lemieux, P., Ed., &quot;TTML Profiles for Internet Media
+              Subtitles and Captions 1.1&quot;, W3C Recommendation REC-ttml-
+              imsc1.1-20181108, November 2018,
+              &lt;<a href="https://www.w3.org/TR/ttml-imsc1.1/">https://www.w3.org/TR/ttml-imsc1.1/</a>&gt;.
+
+Acknowledgements
+
+   Thanks to Nigel Megitt, James Gruessing, Robert Wadge, Andrew Bonney,
+   James Weaver, John Fletcher, Frans de Jong, and Willem Vermost for
+   their valuable feedback throughout the development of this document.
+   Thanks to the W3C Timed Text Working Group and EBU Timed Text Working
+   Group for their substantial efforts in developing the timed text
+   format this payload format is intended to carry.
+
+Author&#x27;s Address
+
+   James Sandford
+   British Broadcasting Corporation
+   Dock House, MediaCityUK
+   Salford
+   United Kingdom
+
+   Phone: +44 30304 09549
+   Email: james.sandford@bbc.co.uk
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+
