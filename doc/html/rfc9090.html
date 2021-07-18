@@ -1,0 +1,910 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc9090
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.34.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.34.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-cbor-tags-oid/">
+  <meta name="description" content="Concise Binary Object Representation (CBOR) Tags for Object Identifiers (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.34.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.34.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.34.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.34.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc9090.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc9090.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc9090.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc9090.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc9090/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc9090/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/cbor/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-cbor-tags-oid@ietf.org?subject=draft-ietf-cbor-tags-oid" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-cbor-tags-oid-08.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-cbor-tags-oid-08.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-cbor-tags-oid-08.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-cbor-tags-oid-08">draft-ietf-cbor-tags-oid-08</a>                      Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                        C. Bormann
+Request for Comments: 9090                        Universität Bremen TZI
+Category: Standards Track                                      July 2021
+ISSN: 2070-1721
+
+
+Concise Binary Object Representation (CBOR) Tags for Object Identifiers
+
+Abstract
+
+   The Concise Binary Object Representation (CBOR), defined in <a href="/doc/html/rfc8949">RFC 8949</a>,
+   is a data format whose design goals include the possibility of
+   extremely small code size, fairly small message size, and
+   extensibility without the need for version negotiation.
+
+   This document defines CBOR tags for object identifiers (OIDs) and is
+   the reference document for the IANA registration of the CBOR tags so
+   defined.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc9090">https://www.rfc-editor.org/info/rfc9090</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Terminology
+   2.  Object Identifiers
+     2.1.  Requirements on the Byte String Being Tagged
+     2.2.  Preferred Serialization Considerations
+     2.3.  Discussion
+   3.  Basic Examples
+     3.1.  Encoding of the SHA-256 OID
+     3.2.  Encoding of a MIB Relative OID
+   4.  Tag Factoring with Arrays and Maps
+     4.1.  Preferred Serialization Considerations
+     4.2.  Tag Factoring Example: X.500 Distinguished Name
+   5.  CDDL Control Operators
+   6.  CDDL Type Names
+   7.  IANA Considerations
+     7.1.  CBOR Tags
+     7.2.  CDDL Control Operators
+   8.  Security Considerations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
+   Acknowledgments
+   Contributors
+   Author&#x27;s Address
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Concise Binary Object Representation (CBOR) [<a href="/doc/html/rfc8949" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC8949</a>] provides
+   for the interchange of structured data without a requirement for a
+   pre-agreed schema.  [<a href="/doc/html/rfc8949" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC8949</a>] defines a basic set of data types, as
+   well as a tagging mechanism that enables extending the set of data
+   types supported via an IANA registry.
+
+   This document defines CBOR tags for object identifiers (OIDs)
+   [<a href="#ref-X.660" title="&quot;Information technology - Procedures for the operation of object identifier registration authorities: General procedures and top arcs of the international object identifier tree&quot;">X.660</a>], which many IETF protocols carry.  The ASN.1 Basic Encoding
+   Rules (BER) [<a href="#ref-X.690" title="&quot;Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X.690</a>] specify binary encodings of both (absolute)
+   object identifiers and relative object identifiers.  The contents of
+   these encodings (the &quot;value&quot; part of BER&#x27;s type-length-value
+   structure) can be carried in a CBOR byte string.  This document
+   defines two CBOR tags that cover the two kinds of ASN.1 object
+   identifiers encoded in this way and a third one to enable a common
+   optimization.  The tags can also be applied to arrays and maps to
+   efficiently tag all elements of an array or all keys of a map.  This
+   document is the reference document for the IANA registration of the
+   tags so defined.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Terminology</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+   The terminology of [<a href="/doc/html/rfc8949" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC8949</a>] applies; in particular, the term &quot;byte&quot;
+   is used in its now-customary sense as a synonym for &quot;octet&quot;.  The
+   verb &quot;to tag (something)&quot; is used to express the construction of a
+   CBOR tag, with the object (something) as the tag content and a tag
+   number indicated elsewhere in the sentence (for instance, in a &quot;with&quot;
+   clause or by the shorthand &quot;an NNN tag&quot; for &quot;a tag with tag number
+   NNN&quot;).  The term &quot;SDNV&quot; (Self-Delimiting Numeric Value) is used as
+   defined in [<a href="/doc/html/rfc6256" title="&quot;Using Self-Delimiting Numeric Values in Protocols&quot;">RFC6256</a>], with the additional restriction detailed in
+   <a href="#section-2.1">Section 2.1</a> (no leading zeros).
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Object Identifiers</span>
+
+   The International Object Identifier tree [<a href="#ref-X.660" title="&quot;Information technology - Procedures for the operation of object identifier registration authorities: General procedures and top arcs of the international object identifier tree&quot;">X.660</a>] is a hierarchically
+   managed space of identifiers, each of which is uniquely represented
+   as a sequence of unsigned integer values [<a href="#ref-X.680" title="&quot;Information technology - Abstract Syntax Notation One (ASN.1): Specification of basic notation&quot;">X.680</a>].  (These integer
+   values are called &quot;primary integer values&quot; in [<a href="#ref-X.660" title="&quot;Information technology - Procedures for the operation of object identifier registration authorities: General procedures and top arcs of the international object identifier tree&quot;">X.660</a>] because they
+   can be accompanied by (not necessarily unambiguous) secondary
+   identifiers.  We ignore the latter and simply use the term &quot;integer
+   values&quot; here, occasionally calling out their unsignedness.  We also
+   use the term &quot;arc&quot; when the focus is on the edge of the tree labeled
+   by such an integer value, as well as in the sense of a &quot;long arc&quot;,
+   i.e., a (sub)sequence of such integer values.)
+
+   While these sequences can easily be represented in CBOR arrays of
+   unsigned integers, a more compact representation can often be
+   achieved by adopting the widely used representation of object
+   identifiers defined in BER; this representation may also be more
+   amenable to processing by other software that makes use of object
+   identifiers.
+
+   BER represents the sequence of unsigned integers by concatenating
+   self-delimiting representations [<a href="/doc/html/rfc6256" title="&quot;Using Self-Delimiting Numeric Values in Protocols&quot;">RFC6256</a>] of each of the integer
+   values in sequence.
+
+   ASN.1 distinguishes absolute object identifiers (ASN.1 type &quot;OBJECT
+   IDENTIFIER&quot;), which begin at a root arc ([<a href="#ref-X.660" title="&quot;Information technology - Procedures for the operation of object identifier registration authorities: General procedures and top arcs of the international object identifier tree&quot;">X.660</a>], Clause 3.5.21),
+   from relative object identifiers (ASN.1 type &quot;RELATIVE-OID&quot;), which
+   begin relative to some object identifier known from context ([<a href="#ref-X.680" title="&quot;Information technology - Abstract Syntax Notation One (ASN.1): Specification of basic notation&quot;">X.680</a>],
+   Clause 3.8.63).  As a special optimization, BER combines the first
+   two integers in an absolute object identifier into one numeric
+   identifier by making use of the property of the hierarchy that the
+   first arc has only three integer values (0, 1, and 2) and the second
+   arcs under 0 and 1 are limited to the integer values between 0 and
+   39.  (The root arc &quot;joint-iso-itu-t(2)&quot; has no such limitations on
+   its second arc.)  If X and Y are the first two integer values, the
+   single integer value actually encoded is computed as:
+
+      X * 40 + Y
+
+   The inverse transformation (again making use of the known ranges of X
+   and Y) is applied when decoding the object identifier.
+
+   Since the semantics of absolute and relative object identifiers
+   differ and since it is very common for companies to use self-assigned
+   numbers under the arc &quot;1.3.6.1.4.1&quot; (IANA Private Enterprise Number
+   OID [<a href="#ref-IANA.enterprise-numbers">IANA.enterprise-numbers</a>]) that adds 5 fixed bytes to an encoded
+   OID value, this specification defines three tags, collectively called
+   the &quot;OID tags&quot; here:
+
+   Tag number 111:  Used to tag a byte string as the BER encoding
+      [<a href="#ref-X.690" title="&quot;Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X.690</a>] of an absolute object identifier (simply &quot;object
+      identifier&quot; or &quot;OID&quot;).
+
+   Tag number 110:  Used to tag a byte string as the BER encoding
+      [<a href="#ref-X.690" title="&quot;Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X.690</a>] of a relative object identifier (also called &quot;relative
+      OID&quot;).  Since the encoding of each number is the same as for Self-
+      Delimiting Numeric Values (SDNVs) [<a href="/doc/html/rfc6256" title="&quot;Using Self-Delimiting Numeric Values in Protocols&quot;">RFC6256</a>], this tag can also be
+      used for tagging a byte string that contains a sequence of zero or
+      more SDNVs (or a more application-specific tag can be created for
+      such an application).
+
+   Tag number 112:  Structurally like tag 110 but understood to be
+      relative to &quot;1.3.6.1.4.1&quot; (IANA Private Enterprise Number OID
+      [<a href="#ref-IANA.enterprise-numbers">IANA.enterprise-numbers</a>]).  Hence, the semantics of the result
+      are that of an absolute object identifier.
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Requirements on the Byte String Being Tagged</span>
+
+   To form a valid tag, a byte string tagged with 111, 110, or 112 MUST
+   be syntactically valid contents (the value part) for a BER
+   representation of an object identifier (see Table 1):
+
+                    +============+====================+
+                    | Tag number | Section of [<a href="#ref-X.690" title="&quot;Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X.690</a>] |
+                    +============+====================+
+                    | 111        | 8.19               |
+                    +------------+--------------------+
+                    | 110        | 8.20               |
+                    +------------+--------------------+
+                    | 112        | 8.20               |
+                    +------------+--------------------+
+
+                          Table 1: Tag Number and
+                       Section of X.690 Governing Tag
+                                  Content
+
+   This is a concatenation of zero or more SDNV values, where each SDNV
+   value is a sequence of one or more bytes that all have their most
+   significant bit set, except for the last byte, where it is unset.
+   Also, the first byte of each SDNV cannot be a leading zero in SDNV&#x27;s
+   base-128 arithmetic, so it cannot take the value 0x80 (bullet (c) in
+   Section 8.1.2.4.2 of [<a href="#ref-X.690" title="&quot;Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X.690</a>]).
+
+   In other words:
+
+   *  The byte string&#x27;s first byte, and any byte that follows a byte
+      that has the most significant bit unset, MUST NOT be 0x80 (this
+      requirement requires expressing the integer values in their
+      shortest form, with no leading zeroes).
+
+   *  The byte string&#x27;s last byte MUST NOT have the most significant bit
+      set (this requirement excludes an incomplete final integer value).
+
+   If either of these invalid conditions are encountered, the tag is
+   invalid.
+
+   [<a id="ref-X.680">X.680</a>] restricts RELATIVE-OID values to having at least one arc,
+   i.e., their encoding would have at least one SDNV.  This
+   specification permits empty relative object identifiers; they may
+   still be excluded by application semantics.
+
+   To facilitate the search for specific object ID values, it is
+   RECOMMENDED that definite length encoding (see <a href="/doc/html/rfc8949#section-3.2.3">Section&nbsp;3.2.3 of
+   [RFC8949]</a>) be used for the byte strings that are used as tag content
+   for these tags.
+
+   The valid set of byte strings can also be expressed using regular
+   expressions on bytes, using no specific notation but resembling Perl
+   Compatible Regular Expressions [<a href="#ref-PCRE" title="&quot;PCRE - Perl Compatible Regular Expressions&quot;">PCRE</a>].  Unlike typical regular
+   expressions that operate on character sequences, the following
+   regular expressions take bytes as their domain, so they can be
+   applied directly to CBOR byte strings.
+
+   For byte strings with tag 111:
+
+      &quot;/^(([\x81-\xFF][\x80-\xFF]*)?[\x00-\x7F])+$/&quot;
+
+   For byte strings with tags 110 or 112:
+
+      &quot;/^(([\x81-\xFF][\x80-\xFF]*)?[\x00-\x7F])*$/&quot;
+
+   A tag with tagged content that does not conform to the applicable
+   regular expression is invalid.
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Preferred Serialization Considerations</span>
+
+   For an absolute OID with a prefix of &quot;1.3.6.1.4.1&quot;, representations
+   with both the 111 and 112 tags are applicable, where the
+   representation with 112 will be five bytes shorter (by leaving out
+   the prefix h&#x27;2b06010401&#x27; from the enclosed byte string).  This
+   specification makes that shorter representation the preferred
+   serialization (see Sections <a href="#section-3.4">3.4</a> and <a href="#section-4.1">4.1</a> of [<a href="/doc/html/rfc8949" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC8949</a>]).  Note that
+   this also implies that the Core Deterministic Encoding Requirements
+   (<a href="/doc/html/rfc8949#section-4.2.1">Section&nbsp;4.2.1 of [RFC8949]</a>) require the use of 112 tags instead of
+   111 tags wherever that is possible.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Discussion</span>
+
+   Staying close to the way object identifiers are encoded in ASN.1 BER
+   makes back-and-forth translation easy; otherwise, we would choose a
+   more efficient encoding.  Object identifiers in IETF protocols are
+   serialized in dotted decimal form or BER form, so there is an
+   advantage in not inventing a third form.  Also, expectations of the
+   cost of encoding object identifiers are based on BER; using a
+   different encoding might not be aligned with these expectations.  If
+   additional information about an OID is desired, lookup services such
+   as the OID Resolution Service (ORS) [<a href="#ref-X.672" title="&quot;Information technology - Open systems interconnection - Object identifier resolution system (ORS)&quot;">X.672</a>] and the OID Repository
+   [<a href="#ref-OID-INFO" title="&quot;Object Identifier (OID) Repository&quot;">OID-INFO</a>] are available.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Basic Examples</span>
+
+   This section gives simple examples of an absolute and a relative
+   object identifier, represented via tag numbers 111 and 110,
+   respectively.
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Encoding of the SHA-256 OID</span>
+
+   ASN.1 Value Notation:
+      { joint-iso-itu-t(2) country(16) us(840) organization(1) gov(101)
+        csor(3) nistalgorithm(4) hashalgs(2) sha256(1) }
+
+   Dotted Decimal Notation:  2.16.840.1.101.3.4.2.1
+
+   06                                # UNIVERSAL TAG 6
+      09                             # 9 bytes, primitive
+         60 86 48 01 65 03 04 02 01  # X.690 Clause 8.19
+   #      |   840  1  |  3  4  2  1    show component encoding
+   #   2.16         101
+
+                        Figure 1: SHA-256 OID in BER
+
+   D8 6F                             # tag(111)
+      49                             # 0b010_01001: mt 2, 9 bytes
+         60 86 48 01 65 03 04 02 01  # X.690 Clause 8.19
+
+                       Figure 2: SHA-256 OID in CBOR
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Encoding of a MIB Relative OID</span>
+
+   Given some OID (e.g., &quot;lowpanMib&quot;, assumed to be &quot;1.3.6.1.2.1.226&quot;
+   [<a href="/doc/html/rfc7388" title="&quot;Definition of Managed Objects for IPv6 over Low-Power Wireless Personal Area Networks (6LoWPANs)&quot;">RFC7388</a>]), to which the following is added:
+
+   ASN.1 Value Notation:
+      { lowpanObjects(1) lowpanStats(1) lowpanOutTransmits(29) }
+
+   Dotted Decimal Notation:  .1.1.29
+
+   0D                                # UNIVERSAL TAG 13
+      03                             # 3 bytes, primitive
+         01 01 1D                    # X.690 Clause 8.20
+   #      1  1 29                      show component encoding
+
+              Figure 3: MIB Relative Object Identifier in BER
+
+   D8 6E                             # tag(110)
+      43                             # 0b010_00011: mt 2 (bstr), 3 bytes
+         01 01 1D                    # X.690 Clause 8.20
+
+              Figure 4: MIB Relative Object Identifier in CBOR
+
+   This relative OID saves seven bytes compared to the full OID
+   encoding.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Tag Factoring with Arrays and Maps</span>
+
+   The tag content of OID tags can be byte strings (as discussed above)
+   but also CBOR arrays and maps.  The idea in the latter case is that
+   the tag construct is factored out from each individual item in the
+   container; the tag is placed on the array or map instead.
+
+   When the tag content of an OID tag is an array, this means that the
+   respective tag is imputed to all elements of the array that are byte
+   strings, arrays, or maps.  (There is no effect on other elements,
+   including text strings or tags.)  For example, when the tag content
+   of a 111 tag is an array, every array element that is a byte string
+   is an OID, and every element that is an array or map is, in turn,
+   treated as discussed here.
+
+   When the tag content of an OID tag is a map, this means that a tag
+   with the same tag number is imputed to all keys in the map that are
+   byte strings, arrays, or maps; again, there is no effect on keys of
+   other major types.  Note that there is also no effect on the values
+   in the map.
+
+   As a result of these rules, tag factoring in nested arrays and maps
+   is supported.  For example, a 3-dimensional array of OIDs can be
+   composed by using a single 111 tag containing an array of arrays of
+   arrays of byte strings.  All such byte strings are then considered
+   OIDs.
+
+<span class="h3"><a class="selflink" id="section-4.1" href="#section-4.1">4.1</a>.  Preferred Serialization Considerations</span>
+
+   Where tag factoring with tag number 111 is used, some OIDs enclosed
+   in the tag may be encoded in a shorter way by using tag number 112
+   instead of encoding an unadorned byte string.  This remains the
+   preferred serialization (see also <a href="#section-2.2">Section 2.2</a>).  However, this
+   specification does not make the presence or absence of tag factoring
+   a preferred serialization; application protocols can define where tag
+   factoring is to be used or not (and will need to do so if they have
+   deterministic encoding requirements).
+
+<span class="h3"><a class="selflink" id="section-4.2" href="#section-4.2">4.2</a>.  Tag Factoring Example: X.500 Distinguished Name</span>
+
+   Consider the X.500 distinguished name:
+
+              +==============================+=============+
+              | Attribute Types              | Attribute   |
+              |                              | Values      |
+              +==============================+=============+
+              | c (2.5.4.6)                  | US          |
+              +------------------------------+-------------+
+              | l (2.5.4.7)                  | Los Angeles |
+              | s (2.5.4.8)                  | CA          |
+              | postalCode (2.5.4.17)        | 90013       |
+              +------------------------------+-------------+
+              | street (2.5.4.9)             | 532 S Olive |
+              |                              | St          |
+              +------------------------------+-------------+
+              | businessCategory (2.5.4.15)  | Public Park |
+              | buildingName                 | Pershing    |
+              | (0.9.2342.19200300.100.1.48) | Square      |
+              +------------------------------+-------------+
+
+                Table 2: Example X.500 Distinguished Name
+
+   Table 2 has four &quot;relative distinguished names&quot; (RDNs).  The country
+   (first) and street (third) RDNs are single valued.  The second and
+   fourth RDNs are multivalued.
+
+   The equivalent representations in CBOR diagnostic notation (<a href="/doc/html/rfc8949#section-8">Section&nbsp;8
+   of [RFC8949]</a>) and CBOR are:
+
+   111([{ h&#x27;550406&#x27;: &quot;US&quot; },
+        { h&#x27;550407&#x27;: &quot;Los Angeles&quot;,
+          h&#x27;550408&#x27;: &quot;CA&quot;,
+          h&#x27;550411&#x27;: &quot;90013&quot; },
+        { h&#x27;550409&#x27;: &quot;532 S Olive St&quot; },
+        { h&#x27;55040f&#x27;: &quot;Public Park&quot;,
+          h&#x27;0992268993f22c640130&#x27;: &quot;Pershing Square&quot; }])
+
+          Figure 5: Distinguished Name in CBOR Diagnostic Notation
+
+   d8 6f                                      # tag(111)
+      84                                      # array(4)
+         a1                                   # map(1)
+            43 550406                         # 2.5.4.6 (4)
+            62                                # text(2)
+               5553                           # &quot;US&quot;
+         a3                                   # map(3)
+            43 550407                         # 2.5.4.7 (4)
+            6b                                # text(11)
+               4c6f7320416e67656c6573         # &quot;Los Angeles&quot;
+            43 550408                         # 2.5.4.8 (4)
+            62                                # text(2)
+               4341                           # &quot;CA&quot;
+            43 550411                         # 2.5.4.17 (4)
+            65                                # text(5)
+               3930303133                     # &quot;90013&quot;
+         a1                                   # map(1)
+            43 550409                         # 2.5.4.9 (4)
+            6e                                # text(14)
+               3533322053204f6c697665205374   # &quot;532 S Olive St&quot;
+         a2                                   # map(2)
+            43 55040f                         # 2.5.4.15 (4)
+            6b                                # text(11)
+               5075626c6963205061726b         # &quot;Public Park&quot;
+            4a 0992268993f22c640130    # 0.9.2342.19200300.100.1.48 (11)
+            6f                                # text(15)
+               5065727368696e6720537175617265 # &quot;Pershing Square&quot;
+
+              Figure 6: Distinguished Name in CBOR (109 Bytes)
+
+   (This example encoding assumes that all attribute values are UTF-8
+   strings or can be represented as UTF-8 strings with no loss of
+   information.)
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  CDDL Control Operators</span>
+
+   Concise Data Definition Language (CDDL) specifications [<a href="/doc/html/rfc8610" title="&quot;Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures&quot;">RFC8610</a>] may
+   want to specify the use of SDNVs or SDNV sequences (as defined for
+   the tag content for tag 110).  This document introduces two new
+   control operators that can be applied to a target value that is a
+   byte string:
+
+   *  &quot;.sdnv&quot;, with a control type that contains unsigned integers.  The
+      byte string is specified to be encoded as an SDNV (BER encoding)
+      [<a href="/doc/html/rfc6256" title="&quot;Using Self-Delimiting Numeric Values in Protocols&quot;">RFC6256</a>] for the matching values of the control type.
+
+   *  &quot;.sdnvseq&quot;, with a control type that contains arrays of unsigned
+      integers.  The byte string is specified to be encoded as a
+      sequence of SDNVs (BER encoding) [<a href="/doc/html/rfc6256" title="&quot;Using Self-Delimiting Numeric Values in Protocols&quot;">RFC6256</a>] that decodes to an
+      array of unsigned integers matching the control type.
+
+   *  &quot;.oid&quot;, like &quot;.sdnvseq&quot;, except that the X*40+Y translation for
+      absolute OIDs is included (see Figure 8).
+
+   Figure 7 shows an example for the use of &quot;.sdnvseq&quot; for a part of a
+   structure using OIDs that could be used in Figure 6; Figure 8 shows
+   the same with the &quot;.oid&quot; operator.
+
+   country-rdn = {country-oid =&gt; country-value}
+   country-oid = bytes .sdnvseq [85, 4, 6]
+   country-value = text .size 2
+
+                          Figure 7: Using .sdnvseq
+
+   country-rdn = {country-oid =&gt; country-value}
+   country-oid = bytes .oid [2, 5, 4, 6]
+   country-value = text .size 2
+
+                            Figure 8: Using .oid
+
+   Note that the control type need not be a literal; for example, &quot;bytes
+   .oid [2, 5, 4, *uint]&quot; matches all OIDs inside OID arc &quot;2.5.4&quot;,
+   &quot;attributeType&quot;.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  CDDL Type Names</span>
+
+   For the use with CDDL, the type names defined in Figure 9 are
+   recommended:
+
+   oid = #6.111(bstr)
+   roid = #6.110(bstr)
+   pen = #6.112(bstr)
+
+                 Figure 9: Recommended Type Names for CDDL
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  IANA Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  CBOR Tags</span>
+
+   IANA has assigned the CBOR tag numbers in Table 3 in the 1+1 byte
+   space (24..255) of the &quot;CBOR Tags&quot; registry [<a href="#ref-IANA.cbor-tags">IANA.cbor-tags</a>], with
+   this document as the specification reference.
+
+     +=====+===============+============================+===========+
+     | Tag | Data Item     | Semantics                  | Reference |
+     +=====+===============+============================+===========+
+     | 111 | byte string,  | object identifier (BER     | <a href="/doc/html/rfc9090">RFC 9090</a>  |
+     |     | array, or map | encoding)                  |           |
+     +-----+---------------+----------------------------+-----------+
+     | 110 | byte string,  | relative object identifier | <a href="/doc/html/rfc9090">RFC 9090</a>  |
+     |     | array, or map | (BER encoding); SDNV       |           |
+     |     |               | [<a href="/doc/html/rfc6256" title="&quot;Using Self-Delimiting Numeric Values in Protocols&quot;">RFC6256</a>] sequence         |           |
+     +-----+---------------+----------------------------+-----------+
+     | 112 | byte string,  | object identifier (BER     | <a href="/doc/html/rfc9090">RFC 9090</a>  |
+     |     | array, or map | encoding), relative to     |           |
+     |     |               | 1.3.6.1.4.1                |           |
+     +-----+---------------+----------------------------+-----------+
+
+                         Table 3: New Tag Numbers
+
+<span class="h3"><a class="selflink" id="section-7.2" href="#section-7.2">7.2</a>.  CDDL Control Operators</span>
+
+   IANA has assigned the CDDL control operators in Table 4 in the &quot;CDDL
+   Control Operators&quot; registry [<a href="#ref-IANA.cddl">IANA.cddl</a>], with this document as the
+   specification reference.
+
+                          +==========+===========+
+                          | Name     | Reference |
+                          +==========+===========+
+                          | .sdnv    | <a href="/doc/html/rfc9090">RFC 9090</a>  |
+                          +----------+-----------+
+                          | .sdnvseq | <a href="/doc/html/rfc9090">RFC 9090</a>  |
+                          +----------+-----------+
+                          | .oid     | <a href="/doc/html/rfc9090">RFC 9090</a>  |
+                          +----------+-----------+
+
+                             Table 4: New CDDL
+                             Control Operators
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Security Considerations</span>
+
+   The security considerations of [<a href="/doc/html/rfc8949" title="&quot;Concise Binary Object Representation (CBOR)&quot;">RFC8949</a>] apply.
+
+   The encodings in Clauses 8.19 and 8.20 of [<a href="#ref-X.690" title="&quot;Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)&quot;">X.690</a>] are quite compact
+   and unambiguous but MUST be followed precisely to avoid security
+   pitfalls.  In particular, the requirements set out in <a href="#section-2.1">Section 2.1</a> of
+   this document need to be followed; otherwise, an attacker may be able
+   to subvert a checking process by submitting alternative
+   representations that are later taken as the original (or even
+   something else entirely) by another decoder that is intended to be
+   protected by the checking process.
+
+   OIDs and relative OIDs can always be treated as opaque byte strings.
+   Actually understanding the structure that was used for generating
+   them is not necessary, and, except for checking the structure
+   requirements, it is strongly NOT RECOMMENDED to perform any
+   processing of this kind (e.g., converting into dotted notation and
+   back) unless absolutely necessary.  If the OIDs are translated into
+   other representations, the usual security considerations for non-
+   trivial representation conversions apply; the integer values are
+   unlimited in range.
+
+   An attacker might trick an application into using a byte string
+   inside a tag-factored data item, where the byte string is not
+   actually intended to fall under one of the tags defined here.  This
+   may cause the application to emit data with semantics different from
+   what was intended.  Applications therefore need to be restrictive
+   with respect to what data items they apply tag factoring to.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-9.1" href="#section-9.1">9.1</a>.  Normative References</span>
+
+   [<a id="ref-IANA.cbor-tags">IANA.cbor-tags</a>]
+              IANA, &quot;Concise Binary Object Representation (CBOR) Tags&quot;,
+              &lt;<a href="https://www.iana.org/assignments/cbor-tags">https://www.iana.org/assignments/cbor-tags</a>&gt;.
+
+   [<a id="ref-IANA.cddl">IANA.cddl</a>]
+              IANA, &quot;Concise Data Definition Language (CDDL)&quot;,
+              &lt;<a href="https://www.iana.org/assignments/cddl">https://www.iana.org/assignments/cddl</a>&gt;.
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC6256">RFC6256</a>]  Eddy, W. and E. Davies, &quot;Using Self-Delimiting Numeric
+              Values in Protocols&quot;, <a href="/doc/html/rfc6256">RFC 6256</a>, DOI 10.17487/RFC6256, May
+              2011, &lt;<a href="https://www.rfc-editor.org/info/rfc6256">https://www.rfc-editor.org/info/rfc6256</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+   [<a id="ref-RFC8610">RFC8610</a>]  Birkholz, H., Vigano, C., and C. Bormann, &quot;Concise Data
+              Definition Language (CDDL): A Notational Convention to
+              Express Concise Binary Object Representation (CBOR) and
+              JSON Data Structures&quot;, <a href="/doc/html/rfc8610">RFC 8610</a>, DOI 10.17487/RFC8610,
+              June 2019, &lt;<a href="https://www.rfc-editor.org/info/rfc8610">https://www.rfc-editor.org/info/rfc8610</a>&gt;.
+
+   [<a id="ref-RFC8949">RFC8949</a>]  Bormann, C. and P. Hoffman, &quot;Concise Binary Object
+              Representation (CBOR)&quot;, STD 94, <a href="/doc/html/rfc8949">RFC 8949</a>,
+              DOI 10.17487/RFC8949, December 2020,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc8949">https://www.rfc-editor.org/info/rfc8949</a>&gt;.
+
+   [<a id="ref-X.660">X.660</a>]    ITU-T, &quot;Information technology - Procedures for the
+              operation of object identifier registration authorities:
+              General procedures and top arcs of the international
+              object identifier tree&quot;, ITU-T Recommendation X.660, July
+              2011, &lt;<a href="https://www.itu.int/rec/T-REC-X.660">https://www.itu.int/rec/T-REC-X.660</a>&gt;.
+
+   [<a id="ref-X.680">X.680</a>]    ITU-T, &quot;Information technology - Abstract Syntax Notation
+              One (ASN.1): Specification of basic notation&quot;, ITU-T
+              Recommendation X.680, August 2015,
+              &lt;<a href="https://www.itu.int/rec/T-REC-X.680">https://www.itu.int/rec/T-REC-X.680</a>&gt;.
+
+   [<a id="ref-X.690">X.690</a>]    ITU-T, &quot;Information technology - ASN.1 encoding rules:
+              Specification of Basic Encoding Rules (BER), Canonical
+              Encoding Rules (CER) and Distinguished Encoding Rules
+              (DER)&quot;, ITU-T Recommendation X.690, August 2015,
+              &lt;<a href="https://www.itu.int/rec/T-REC-X.690">https://www.itu.int/rec/T-REC-X.690</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-9.2" href="#section-9.2">9.2</a>.  Informative References</span>
+
+   [<a id="ref-IANA.enterprise-numbers">IANA.enterprise-numbers</a>]
+              IANA, &quot;Private Enterprise Numbers&quot;,
+              &lt;<a href="https://www.iana.org/assignments/enterprise-numbers">https://www.iana.org/assignments/enterprise-numbers</a>&gt;.
+
+   [<a id="ref-OID-INFO">OID-INFO</a>] Orange SA, &quot;Object Identifier (OID) Repository&quot;,
+              &lt;<a href="http://www.oid-info.com/">http://www.oid-info.com/</a>&gt;.
+
+   [<a id="ref-PCRE">PCRE</a>]     &quot;PCRE - Perl Compatible Regular Expressions&quot;,
+              &lt;<a href="http://www.pcre.org/">http://www.pcre.org/</a>&gt;.
+
+   [<a id="ref-RFC7388">RFC7388</a>]  Schoenwaelder, J., Sehgal, A., Tsou, T., and C. Zhou,
+              &quot;Definition of Managed Objects for IPv6 over Low-Power
+              Wireless Personal Area Networks (6LoWPANs)&quot;, <a href="/doc/html/rfc7388">RFC 7388</a>,
+              DOI 10.17487/RFC7388, October 2014,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc7388">https://www.rfc-editor.org/info/rfc7388</a>&gt;.
+
+   [<a id="ref-X.672">X.672</a>]    ITU-T, &quot;Information technology - Open systems
+              interconnection - Object identifier resolution system
+              (ORS)&quot;, ITU-T Recommendation X.672, August 2010,
+              &lt;<a href="https://www.itu.int/rec/T-REC-X.672">https://www.itu.int/rec/T-REC-X.672</a>&gt;.
+
+Acknowledgments
+
+   Sean Leonard started the work on this document in 2014 with an
+   elaborate proposal.  Jim Schaad provided a significant review of this
+   document.  Rob Wilton&#x27;s IESG review prompted us to provide preferred
+   serialization considerations.
+
+Contributors
+
+   Sean Leonard
+   Penango, Inc.
+   5900 Wilshire Boulevard
+   21st Floor
+   Los Angeles, CA 90036
+   United States of America
+
+   Email: dev+ietf@seantek.com
+
+
+Author&#x27;s Address
+
+   Carsten Bormann
+   Universität Bremen TZI
+   Postfach 330440
+   D-28359 Bremen
+   Germany
+
+   Phone: +49-421-218-63921
+   Email: cabo@tzi.org
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+

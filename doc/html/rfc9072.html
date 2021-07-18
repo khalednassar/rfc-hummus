@@ -1,0 +1,504 @@
+<!DOCTYPE html> 
+
+<!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/htmlized_base.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+  
+    rfc9072
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+  @media only screen 
+    and (min-width: 992px)
+    and (max-width: 1199px) {
+      body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 768px)
+    and (max-width: 991px) {
+            body { font-size: 14pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-width: 480px)
+    and (max-width: 767px) {
+            body { font-size: 11pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (max-width: 479px) {
+            body { font-size: 8pt; }
+            div.content { width: 96ex; margin: 0 auto; }
+        }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) {
+            body { font-size: 9.5pt; }
+            div.content { width: 96ex; margin: 0; }
+        }
+  @media only screen 
+    and (min-device-width: 1200px) {
+            body { font-size: 10pt; margin: 0 4em; }
+            div.content { width: 96ex; margin: 0; }
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold;
+            /* line-height: 0pt; */
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+      font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+  .pre {
+      white-space: pre;
+      font-family: monospace;
+  }
+  .header{
+      font-weight: bold;
+  }
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                margin-top: 5em;
+                font-family: monospace;
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1em;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+  @media screen {
+      .grey, .grey a:link, .grey a:visited {
+    color: #777;
+      }
+            .meta-info {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .pad {
+                padding-top: 7px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+  }
+    
+     
+
+.bgwhite  { background-color: white; }
+.bgred    { background-color: #F44; }
+.bggrey   { background-color: #666; }
+.bgbrown  { background-color: #840; }            
+.bgorange { background-color: #FA0; }
+.bgyellow { background-color: #EE0; }
+.bgmagenta{ background-color: #F4F; }
+.bgblue   { background-color: #66F; }
+.bgcyan   { background-color: #4DD; }
+.bggreen  { background-color: #4F4; }
+
+.draftcontent { margin-top:0px !important;}
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="https://www.ietf.org/lib/dt/7.34.0/html5shiv/html5shiv.min.js"></script>
+        <script src="https://www.ietf.org/lib/dt/7.34.0/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/draft-ietf-idr-ext-opt-param/">
+  <meta name="description" content="Extended Optional Parameters Length for BGP OPEN Message (RFC )">
+  <script src="https://www.ietf.org/lib/dt/7.34.0/d3/d3.min.js"></script>
+  <script src="https://www.ietf.org/lib/dt/7.34.0/jquery/jquery.min.js"></script>
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.34.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.34.0/ietf/images/apple-touch-icon.png">
+  </head>
+
+  <body style="padding-top: 0;">
+
+	  <div class="content" id="content">
+        
+  <!-- template: /a/www/ietf-datatracker/web/ietf/templates/doc/document_html.html -->
+ 
+  <div class="rfcmarkup">
+    <div class="noprint" style="height: 6px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showLegend();"
+         onmouseout="hideLegend()"
+         style="height: 6px; min-height: 6px; width: 96ex; position: absolute; margin-top:0; "
+         class="meta-info bgblue"
+         title="Click for colour legend." >&nbsp;</div>
+      <div id="legend"
+           class="meta-info noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showLegend();"
+           onmouseout="hideLegend();">
+      </div>
+    </div>
+
+    
+      <div class="noprint">
+	 <pre class="pre meta-info">[<a href="https://datatracker.ietf.org" title="Document search and retrieval page">Search</a>] [<a href="https://www.rfc-editor.org/rfc/rfc9072.txt" title="Plaintext version of this document">txt</a>|<a href="https://www.rfc-editor.org/rfc/rfc9072.html" title="HTML version of this document, from XML2RFC">html</a>|<a href="https://www.rfc-editor.org/rfc/rfc9072.xml" title="XML source for this document">xml</a>|<a href="https://www.rfc-editor.org/rfc/rfc9072.pdf" title="PDF version of this document">pdf</a>|<a href="/doc/rfc9072/bibtex" title="BibTex entry for this document">bibtex</a>] [<a href="/doc/rfc9072/" title="Datatracker information for this document">Tracker</a>] [<a href="/group/idr/" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-idr-ext-opt-param@ietf.org?subject=draft-ietf-idr-ext-opt-param" title="Send email to the document authors">Email</a>] [<a href="https://www.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-idr-ext-opt-param-13.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-ext-opt-param-13.txt" title="Side-by-side diff">Diff2</a>] [<a href="https://www.ietf.org/tools/idnits?url=https://www.ietf.org/archive/id/draft-ietf-idr-ext-opt-param-13.txt" title="Run an idnits check of this document">Nits</a>]
+
+From: <a href="/doc/html/draft-ietf-idr-ext-opt-param-13">draft-ietf-idr-ext-opt-param-13</a>                  Proposed Standard</pre>
+      </div>
+    
+
+    <div class="draftcontent">
+    <pre>Internet Engineering Task Force (IETF)                           E. Chen
+Request for Comments: 9072                            Palo Alto Networks
+Updates: <a href="/doc/html/rfc4271">4271</a>                                                 J. Scudder
+Category: Standards Track                               Juniper Networks
+ISSN: 2070-1721                                                July 2021
+
+
+        <span class="h1">Extended Optional Parameters Length for BGP OPEN Message</span>
+
+Abstract
+
+   The Optional Parameters in the BGP OPEN message as defined in the
+   base BGP specification are limited to 255 octets due to a one-octet
+   length field.  BGP capabilities are carried in this field and may
+   foreseeably exceed 255 octets in the future, leading to concerns
+   about this limitation.
+
+   This document updates <a href="/doc/html/rfc4271">RFC 4271</a> by extending, in a backward-compatible
+   manner, the length of the Optional Parameters in a BGP OPEN message.
+   The Parameter Length field of individual Optional Parameters is also
+   extended.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="https://www.rfc-editor.org/info/rfc9072">https://www.rfc-editor.org/info/rfc9072</a>.
+
+Copyright Notice
+
+   Copyright (c) 2021 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Requirements Language
+   2.  Update to <a href="/doc/html/rfc4271">RFC 4271</a>
+   3.  Backward Compatibility
+   4.  IANA Considerations
+   5.  Security Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgements
+   Authors&#x27; Addresses
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   The Optional Parameters Length field in the BGP OPEN message is
+   defined in the base BGP specification [<a href="/doc/html/rfc4271" title="&quot;A Border Gateway Protocol 4 (BGP-4)&quot;">RFC4271</a>] as one octet, thus
+   limiting the Optional Parameters field in the OPEN message to 255
+   octets.  Since BGP capabilities [<a href="/doc/html/rfc5492" title="&quot;Capabilities Advertisement with BGP-4&quot;">RFC5492</a>] are carried in the Optional
+   Parameters field, and new BGP capabilities continue to be introduced,
+   the limitation is a concern for BGP development.
+
+   This document updates [<a href="/doc/html/rfc4271" title="&quot;A Border Gateway Protocol 4 (BGP-4)&quot;">RFC4271</a>] by extending the length of the
+   Optional Parameters in BGP OPEN in a backward-compatible manner.
+   This is done by using Optional Parameter type code 255 as a
+   distinguished value, which indicates an extended Optional Parameters
+   Length field follows and that the parsing of the BGP OPEN should be
+   modified according to these procedures.  In this case, the Parameter
+   Length field of the individual Optional Parameters in the BGP OPEN
+   message is also extended.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   <a href="/doc/html/bcp14">BCP 14</a> [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>] [<a href="/doc/html/rfc8174" title="&quot;Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words&quot;">RFC8174</a>] when, and only when, they appear in all
+   capitals, as shown here.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Update to <a href="/doc/html/rfc4271">RFC 4271</a></span>
+
+   This document reserves Optional Parameter type code 255 as the
+   &quot;Extended Length&quot;.
+
+   In the event that the length of the Optional Parameters in the BGP
+   OPEN message does not exceed 255, the encodings of the base BGP
+   specification [<a href="/doc/html/rfc4271" title="&quot;A Border Gateway Protocol 4 (BGP-4)&quot;">RFC4271</a>] SHOULD be used without alteration.
+   Configuration MAY override this to force the extended format to be
+   used in all cases; this might be used, for example, to test that a
+   peer supports this specification.  (In any case, an implementation
+   MUST accept an OPEN message that uses the encoding of this
+   specification even if the length of the Optional Parameters is 255 or
+   less.)
+
+   However, if the length of the Optional Parameters in the BGP OPEN
+   message does exceed 255, the OPEN message MUST be encoded according
+   to the procedure below.
+
+        0                   1                   2                   3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+
+       |    Version    |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |     My Autonomous System      |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |           Hold Time           |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                         BGP Identifier                        |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |Non-Ext OP Len.|Non-Ext OP Type|  Extended Opt. Parm. Length   |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |                                                               |
+       |             Optional Parameters (variable)                    |
+       |                                                               |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+               Figure 1: Extended Encoding OPEN Format
+
+   The Non-Extended Optional Parameters Length field (Non-Ext OP Len.)
+   SHOULD be set to 255 on transmission and, in any event, MUST NOT be
+   set to 0; it MUST be ignored on receipt once the use of the extended
+   format is determined positively by inspection of the Non-Extended
+   Optional Parameters Type (Non-Ext OP Type) field.
+
+   The subsequent one-octet field (which would be the first Optional
+   Parameter Type field in the non-extended format and is called &quot;Non-
+   Ext OP Type&quot; in the figure above) MUST be set to 255 on transmission.
+   On receipt, a value of 255 for this field is the indication that the
+   extended format is in use.
+
+   In this extended encoding, the subsequent two-octet field, termed the
+   &quot;Extended Optional Parameters Length field&quot;, is an unsigned integer
+   indicating the total length of the Optional Parameters field in
+   octets.  If the value of this field is zero, no Optional Parameters
+   are present.
+
+   Likewise, in that situation, the Optional Parameters encoding is
+   modified to be the following:
+
+        0                   1                   2
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |  Parm. Type   |        Parameter Length       |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       ~            Parameter Value (variable)         ~
+       |                                               |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                    Figure 2: Extended Parameters Format
+
+   The rules for encoding Optional Parameters are unchanged with respect
+   to those given in [<a href="/doc/html/rfc4271" title="&quot;A Border Gateway Protocol 4 (BGP-4)&quot;">RFC4271</a>], except that the Parameter Length field
+   is extended to be a two-octet unsigned integer.
+
+   In parsing an OPEN message, if the one-octet Optional Parameters
+   Length field (labeled &quot;Non-Ext OP Len.&quot; in Figure 1) is non-zero, a
+   BGP speaker MUST use the value of the octet following the one-octet
+   Optional Parameters Length field (labeled &quot;Non-Ext OP Type&quot; in
+   Figure 1) to determine both the encoding of the Optional Parameters
+   length and the size of the Parameter Length field of individual
+   Optional Parameters.  If the value of the &quot;Non-Ext OP Type&quot; field is
+   255, then the encoding described above is used for the Optional
+   Parameters length.  Otherwise, the encoding defined in [<a href="/doc/html/rfc4271" title="&quot;A Border Gateway Protocol 4 (BGP-4)&quot;">RFC4271</a>] is
+   used.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Backward Compatibility</span>
+
+   If a BGP speaker supporting this specification (a &quot;new speaker&quot;) is
+   peering with one that does not (an &quot;old speaker&quot;), no
+   interoperability issues arise unless the new speaker needs to encode
+   Optional Parameters whose length exceeds 255.  In that case, it will
+   transmit an OPEN message that the old speaker will interpret as
+   containing an Optional Parameter with type code 255.  Since the old
+   speaker will not recognize that type code by definition, the old
+   speaker is expected to close the connection with a NOTIFICATION with
+   an error code of &quot;OPEN Message Error&quot; and an error subcode of
+   &quot;Unsupported Optional Parameters&quot;, according to <a href="/doc/html/rfc4271#section-6.2">Section&nbsp;6.2 of
+   [RFC4271]</a>.
+
+   Although the Optional Parameter type code 255 is used in this
+   specification as the indication that the extended encoding is in use,
+   it is not a bona fide Optional Parameter type code in the usual sense
+   and MUST NOT be used other than as described above.  If encountered
+   other than as the Non-Ext OP Type, it MUST be treated as an
+   unrecognized Optional Parameter and handled according to <a href="/doc/html/rfc4271#section-6.2">[RFC4271],
+   Section&nbsp;6.2</a>.
+
+   It is not considered an error to receive an OPEN message whose
+   Extended Optional Parameters Length value is less than or equal to
+   255.  It is not considered a fatal error to receive an OPEN message
+   whose (non-extended) Optional Parameters Length value is not 255 and
+   whose first Optional Parameter type code is 255 -- in this case, the
+   encoding of this specification MUST be used for decoding the message.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  IANA Considerations</span>
+
+   IANA has assigned value 255 as the Extended Length type code in the
+   &quot;BGP OPEN Optional Parameter Types&quot; registry.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   This extension to BGP does not change the underlying security or
+   confidentiality issues inherent in the existing BGP [<a href="/doc/html/rfc4272" title="&quot;BGP Security Vulnerabilities Analysis&quot;">RFC4272</a>].
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC4271">RFC4271</a>]  Rekhter, Y., Ed., Li, T., Ed., and S. Hares, Ed., &quot;A
+              Border Gateway Protocol 4 (BGP-4)&quot;, <a href="/doc/html/rfc4271">RFC 4271</a>,
+              DOI 10.17487/RFC4271, January 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4271">https://www.rfc-editor.org/info/rfc4271</a>&gt;.
+
+   [<a id="ref-RFC8174">RFC8174</a>]  Leiba, B., &quot;Ambiguity of Uppercase vs Lowercase in <a href="/doc/html/rfc2119">RFC</a>
+              <a href="/doc/html/rfc2119">2119</a> Key Words&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc8174">RFC 8174</a>, DOI 10.17487/RFC8174,
+              May 2017, &lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC4272">RFC4272</a>]  Murphy, S., &quot;BGP Security Vulnerabilities Analysis&quot;,
+              <a href="/doc/html/rfc4272">RFC 4272</a>, DOI 10.17487/RFC4272, January 2006,
+              &lt;<a href="https://www.rfc-editor.org/info/rfc4272">https://www.rfc-editor.org/info/rfc4272</a>&gt;.
+
+   [<a id="ref-RFC5492">RFC5492</a>]  Scudder, J. and R. Chandra, &quot;Capabilities Advertisement
+              with BGP-4&quot;, <a href="/doc/html/rfc5492">RFC 5492</a>, DOI 10.17487/RFC5492, February
+              2009, &lt;<a href="https://www.rfc-editor.org/info/rfc5492">https://www.rfc-editor.org/info/rfc5492</a>&gt;.
+
+Acknowledgements
+
+   The authors would like to thank Yakov Rekhter and Srihari Sangli for
+   discussing various options to enlarge the Optional Parameters field.
+   We would also like to thank Matthew Bocci, Bruno Decraene, John
+   Heasley, Jakob Heitz, Christer Holmberg, Pradosh Mohapatra, Keyur
+   Patel, and Hannes Gredler for their valuable comments.
+
+Authors&#x27; Addresses
+
+   Enke Chen
+   Palo Alto Networks
+
+   Email: enchen@paloaltonetworks.com
+
+
+   John Scudder
+   Juniper Networks
+
+   Email: jgs@juniper.net
+</pre>
+    </div>
+
+  </div>
+
+
+        
+	  </div>
+
+	
+
+	
+
+    </div>
+
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      
+    <script type="text/javascript"><!--
+    var legend_html = "Colour legend:<br /> \
+     <table> \
+        <tr><td>Unknown:</td>                   <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft:</td>                     <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Informational:</td>             <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Experimental:</td>              <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Best Common Practice:</td>      <td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Proposed Standard:</td>         <td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Draft Standard (old designation):</td> <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Internet Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Historic:</td>                  <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+        <tr><td>Obsolete:</td>                  <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr> \
+    </table>";
+    function showLegend() {
+        var elem = document.getElementById('legend');
+        elem.innerHTML = legend_html
+        elem.style.visibility='visible';
+    }
+    function hideLegend() {
+        var elem = document.getElementById('legend');
+        elem.style.visibility='hidden';
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+
+  </body>
+</html>
+
